@@ -432,3 +432,55 @@ Forward Return Profile: Expected CAGR: 14% - 18% | Expected Volatility: ~28% | E
 Bull Case: A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.
 
 Bear Case: Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.
+
+5. Investor AB (INVE-B.ST)
+
+Valuation Multiples: Trades at a consistent ~10-15% discount to Net Asset Value (NAV)
+
+SOTA Metrics: ~18% Historical NAV CAGR | Massive EQT stake (9-10% of portfolio)
+
+Forward Return Profile: Expected CAGR: 12% - 15% | Expected Volatility: ~22% | Expected Sharpe Ratio: ~0.55
+
+Bull Case: The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.
+
+Bear Case: High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.
+
+6. Exor N.V. (EXO.AS)
+
+Valuation Multiples: Trades at a deep ~40-45% discount to NAV
+
+SOTA Metrics: 18%+ Historical NAV Growth | $8B+ AUM in internal asset management (Lingotto)
+
+Forward Return Profile: Expected CAGR: 15% - 18% | Expected Volatility: ~26% | Expected Sharpe Ratio: ~0.50
+
+Bull Case: Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.
+
+Bear Case: Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.
+
+7. TerraVest Industries (TVK.TO)
+
+Valuation Multiples: ~12x - 14x Forward EV/EBITDA
+
+Profitability & Cash Flow: Low dividend payout ratio (~11%) allowing massive reinvestment
+
+SOTA Metrics: Serial acquirer buying at 5-6x EBITDA and optimizing cash flow
+
+Forward Return Profile: Expected CAGR: 18% - 22% | Expected Volatility: ~28% | Expected Sharpe Ratio: ~0.65
+
+Bull Case: "The Constellation Software of Tanks and Trailers." TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.
+
+Bear Case: Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its "picks and shovels" approach mitigates direct commodity price risk.
+
+8. Nelnet (NNI)
+
+Valuation Multiples: Trading near or below adjusted Book Value
+
+Profitability & Cash Flow: Retains ~68% of earnings for aggressive reinvestment
+
+SOTA Metrics: Hidden asset values (ALLO, real estate, solar tax equity)
+
+Forward Return Profile: Expected CAGR: 12% - 16% | Expected Volatility: ~24% | Expected Sharpe Ratio: ~0.45
+
+Bull Case: A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value "baby Berkshire."
+
+Bear Case: Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.
