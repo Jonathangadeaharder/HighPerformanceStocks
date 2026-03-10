@@ -25,7 +25,15 @@
             "bear": "10%",
             "base": "16%",
             "bull": "18%"
-        }
+        },
+        "epsGrowth": "12%",
+        "exitPE": {
+            "bear": 10,
+            "base": 14,
+            "bull": 18
+        },
+        "dividendYield": "0%",
+        "basis": "Estimated compounder baseline"
     },
     "lastUpdated": "2026-03-10T14:19:31.255Z"
 }
