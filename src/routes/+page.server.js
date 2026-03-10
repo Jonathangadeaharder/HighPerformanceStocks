@@ -15,6 +15,7 @@ const GROUP_ORDER = [
 	'Energy',
 	'Royalties',
 	'Energy Royalties',
+	'The Capital Compounders',
 	'Emerging Markets',
 	'Ruthlessly Cut',
 	'Disqualified'

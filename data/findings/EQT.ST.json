@@ -4,7 +4,7 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "low",
 	"confidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
-	"marketCap": "331.7B SEK",
+	"marketCap": "331.9B SEK",
 	"sharpeRatio": 0.25,
 	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~40%",
@@ -50,5 +50,5 @@
 		},
 		"basis": "5yr normalized PE (IPO 2019)"
 	},
-	"lastUpdated": "2026-03-10T12:30:38.080Z"
+	"lastUpdated": "2026-03-10T12:36:15.387Z"
 }

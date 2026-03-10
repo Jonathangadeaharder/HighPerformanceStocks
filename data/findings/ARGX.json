@@ -28,7 +28,7 @@
 	"currentPrice": "$740.40",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1019.76"
+		"yahoo": "$1020.00"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,5 +47,5 @@
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-10T12:30:35.878Z"
+	"lastUpdated": "2026-03-10T12:36:13.351Z"
 }

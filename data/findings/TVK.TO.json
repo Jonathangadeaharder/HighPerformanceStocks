@@ -10,7 +10,7 @@
 	"expectedVolatility": "~28%",
 	"valuation": {
 		"pegRatio": null,
-		"evEbitda": 13.0
+		"evEbitda": 13
 	},
 	"metrics": {
 		"roe": null
@@ -27,5 +27,5 @@
 			"bull": "22%"
 		}
 	},
-	"lastUpdated": "2026-03-10T12:00:00.000Z"
+	"lastUpdated": "2026-03-10T12:36:09.828Z"
 }

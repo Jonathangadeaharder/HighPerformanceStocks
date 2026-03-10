@@ -5,7 +5,7 @@
 	"confidence": "medium",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
 	"marketCap": "€24B+",
-	"sharpeRatio": 0.50,
+	"sharpeRatio": 0.5,
 	"expectedCAGR": "15% - 18%",
 	"expectedVolatility": "~26%",
 	"valuation": {
@@ -27,5 +27,5 @@
 			"bull": "18%"
 		}
 	},
-	"lastUpdated": "2026-03-10T12:00:00.000Z"
+	"lastUpdated": "2026-03-10T12:36:09.711Z"
 }

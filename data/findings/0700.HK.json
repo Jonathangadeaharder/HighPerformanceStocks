@@ -26,7 +26,7 @@
 	"currentPrice": "HK$553.50",
 	"consensus": {
 		"tipranks": "HK$590",
-		"yahoo": "HK$759.35",
+		"yahoo": "HK$759.22",
 		"stockanalysis": "HK$575"
 	},
 	"cagrModel": {
@@ -46,5 +46,5 @@
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
 	},
-	"lastUpdated": "2026-03-10T12:30:34.878Z"
+	"lastUpdated": "2026-03-10T12:36:12.319Z"
 }

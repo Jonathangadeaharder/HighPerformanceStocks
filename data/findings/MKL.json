@@ -5,7 +5,7 @@
 	"confidence": "medium",
 	"confidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
 	"marketCap": "$20B+",
-	"sharpeRatio": 0.50,
+	"sharpeRatio": 0.5,
 	"expectedCAGR": "10% - 14%",
 	"expectedVolatility": "~20%",
 	"valuation": {
@@ -27,5 +27,5 @@
 			"bull": "14%"
 		}
 	},
-	"lastUpdated": "2026-03-10T12:00:00.000Z"
+	"lastUpdated": "2026-03-10T12:36:09.788Z"
 }

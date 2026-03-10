@@ -5,7 +5,7 @@
 	"confidence": "high",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
 	"marketCap": "C$35B+",
-	"sharpeRatio": 0.60,
+	"sharpeRatio": 0.6,
 	"expectedCAGR": "12% - 16%",
 	"expectedVolatility": "~22%",
 	"valuation": {
@@ -27,5 +27,5 @@
 			"bull": "16%"
 		}
 	},
-	"lastUpdated": "2026-03-10T12:00:00.000Z"
+	"lastUpdated": "2026-03-10T12:36:09.730Z"
 }
