@@ -1,0 +1,31 @@
+{
+	"ticker": "FFH.TO",
+	"name": "Fairfax Financial",
+	"group": "The Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
+	"marketCap": "C$35B+",
+	"sharpeRatio": 0.60,
+	"expectedCAGR": "12% - 16%",
+	"expectedVolatility": "~22%",
+	"valuation": {
+		"pegRatio": null,
+		"evEbitda": null
+	},
+	"metrics": {
+		"roe": "15% - 17%"
+	},
+	"targetPrice": null,
+	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
+	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
+	"currentPrice": null,
+	"cagrModel": {
+		"horizon": 5,
+		"scenarios": {
+			"bear": "10%",
+			"base": "14%",
+			"bull": "16%"
+		}
+	},
+	"lastUpdated": "2026-03-10T12:00:00.000Z"
+}

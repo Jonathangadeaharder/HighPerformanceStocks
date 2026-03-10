@@ -1,0 +1,31 @@
+{
+	"ticker": "FIH.U.TO",
+	"name": "Fairfax India Holdings",
+	"group": "The Capital Compounders",
+	"confidence": "medium",
+	"confidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
+	"marketCap": "$2B+",
+	"sharpeRatio": 0.45,
+	"expectedCAGR": "14% - 18%",
+	"expectedVolatility": "~28%",
+	"valuation": {
+		"pegRatio": null,
+		"evEbitda": null
+	},
+	"metrics": {
+		"roe": "9% - 11%"
+	},
+	"targetPrice": null,
+	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
+	"bearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.",
+	"currentPrice": null,
+	"cagrModel": {
+		"horizon": 5,
+		"scenarios": {
+			"bear": "8%",
+			"base": "15%",
+			"bull": "18%"
+		}
+	},
+	"lastUpdated": "2026-03-10T12:00:00.000Z"
+}
