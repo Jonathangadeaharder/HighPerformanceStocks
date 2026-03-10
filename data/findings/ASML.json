@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
-	"marketCap": "$533.0B USD",
+	"marketCap": "$541.9B USD",
 	"sharpeRatio": 0.06,
 	"expectedCAGR": "3% - 11%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 47.4,
-		"forwardPE": 31.4,
+		"trailingPE": 48.2,
+		"forwardPE": 31.9,
 		"pegRatio": null,
 		"evEbitda": 41.9
 	},
@@ -25,10 +25,10 @@
 	"targetPrice": "$1,529",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
-	"currentPrice": "$1357.42",
+	"currentPrice": "$1380.18",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1474.94",
+		"yahoo": "$1475.63",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr & 10yr avg PE (~36)"
 	},
-	"lastUpdated": "2026-03-10T12:36:13.562Z"
+	"lastUpdated": "2026-03-10T14:19:34.231Z"
 }

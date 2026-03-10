@@ -1,39 +1,42 @@
 {
-	"ticker": "RXRX",
-	"name": "Recursion Pharmaceuticals",
-	"group": "Disqualified",
-	"confidence": "cut",
-	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
-	"marketCap": null,
-	"sharpeRatio": null,
-	"sharpeNote": "Negative",
-	"expectedCAGR": "N/A (pre-profit)",
-	"expectedVolatility": ">80%",
-	"valuation": {
-		"trailingPE": null,
-		"forwardPE": null,
-		"pegRatio": null,
-		"evEbitda": null
-	},
-	"metrics": {
-		"fcfMargin": null,
-		"fcfYield": null,
-		"roic": null,
-		"roe": "-91.07%",
-		"netDebtEbitda": null,
-		"ruleOf40": null
-	},
-	"targetPrice": "$7",
-	"bullCase": null,
-	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
-	"currentPrice": "$3.60",
-	"consensus": {
-		"tipranks": "$7.00",
-		"yahoo": "$6.71",
-		"stockanalysis": "$7.20"
-	},
-	"cagrModel": {
-		"note": "Pre-profit biotech; PE-based model not applicable"
-	},
-	"lastUpdated": "2026-03-10T12:36:09.814Z"
+    "ticker": "RXRX",
+    "name": "Recursion Pharmaceuticals",
+    "group": "Disqualified",
+    "confidence": "cut",
+    "confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
+    "marketCap": "$1B",
+    "sharpeRatio": null,
+    "sharpeNote": "Negative",
+    "expectedCAGR": "N/A (pre-profit)",
+    "expectedVolatility": ">80%",
+    "valuation": {
+        "trailingPE": null,
+        "forwardPE": null,
+        "pegRatio": null,
+        "evEbitda": null
+    },
+    "metrics": {
+        "fcfMargin": null,
+        "fcfYield": null,
+        "roic": null,
+        "roe": "-91.07%",
+        "netDebtEbitda": null,
+        "ruleOf40": null
+    },
+    "targetPrice": "$7",
+    "bullCase": "N/A",
+    "bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
+    "currentPrice": "$3.60",
+    "consensus": {
+        "tipranks": "$7.00",
+        "yahoo": "$6.71",
+        "stockanalysis": "$7.20"
+    },
+    "cagrModel": {
+        "note": "Pre-profit biotech; PE-based model not applicable",
+        "scenarios": {
+            "base": "0%"
+        }
+    },
+    "lastUpdated": "2026-03-10T14:19:31.263Z"
 }

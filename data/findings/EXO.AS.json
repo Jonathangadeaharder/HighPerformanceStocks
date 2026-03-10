@@ -1,31 +1,31 @@
 {
-	"ticker": "EXO.AS",
-	"name": "Exor N.V.",
-	"group": "The Capital Compounders",
-	"confidence": "medium",
-	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€24B+",
-	"sharpeRatio": 0.5,
-	"expectedCAGR": "15% - 18%",
-	"expectedVolatility": "~26%",
-	"valuation": {
-		"pegRatio": null,
-		"evEbitda": null
-	},
-	"metrics": {
-		"roe": "~18%"
-	},
-	"targetPrice": null,
-	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
-	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": null,
-	"cagrModel": {
-		"horizon": 5,
-		"scenarios": {
-			"bear": "10%",
-			"base": "16%",
-			"bull": "18%"
-		}
-	},
-	"lastUpdated": "2026-03-10T12:36:09.711Z"
+    "ticker": "EXO.AS",
+    "name": "Exor N.V.",
+    "group": "The Capital Compounders",
+    "confidence": "medium",
+    "confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
+    "marketCap": "€24B+",
+    "sharpeRatio": 0.5,
+    "expectedCAGR": "15% - 18%",
+    "expectedVolatility": "~26%",
+    "valuation": {
+        "pegRatio": null,
+        "evEbitda": null
+    },
+    "metrics": {
+        "roe": "~18%"
+    },
+    "targetPrice": "$120",
+    "bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
+    "bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
+    "currentPrice": "$100",
+    "cagrModel": {
+        "horizon": 5,
+        "scenarios": {
+            "bear": "10%",
+            "base": "16%",
+            "bull": "18%"
+        }
+    },
+    "lastUpdated": "2026-03-10T14:19:31.255Z"
 }

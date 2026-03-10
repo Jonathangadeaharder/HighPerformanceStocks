@@ -4,12 +4,12 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
-	"marketCap": "$13.0B USD",
-	"sharpeRatio": 0.13,
-	"expectedCAGR": "5% - 13%",
+	"marketCap": "$13.1B USD",
+	"sharpeRatio": 0.12,
+	"expectedCAGR": "5% - 12%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 27.9,
+		"trailingPE": 28,
 		"forwardPE": 13.4,
 		"pegRatio": null,
 		"evEbitda": 18
@@ -25,7 +25,7 @@
 	"targetPrice": "$180",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
-	"currentPrice": "$129.93",
+	"currentPrice": "$130.28",
 	"consensus": {
 		"tipranks": "$180",
 		"yahoo": "$178.01"
@@ -43,9 +43,9 @@
 		"scenarios": {
 			"bear": "5%",
 			"base": "10%",
-			"bull": "13%"
+			"bull": "12%"
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-10T12:36:19.463Z"
+	"lastUpdated": "2026-03-10T14:19:40.182Z"
 }

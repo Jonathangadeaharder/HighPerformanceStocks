@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
-	"marketCap": "$117.1B USD",
-	"sharpeRatio": 0.03,
-	"expectedCAGR": "1% - 10%",
-	"expectedVolatility": "~36%",
+	"marketCap": "$126.2B USD",
+	"sharpeRatio": -0.01,
+	"expectedCAGR": "0% - 8%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 30.1,
-		"forwardPE": 21.1,
+		"trailingPE": 32.5,
+		"forwardPE": 22.7,
 		"pegRatio": null,
 		"evEbitda": 23.1,
 		"evFcf": 24
@@ -26,7 +26,7 @@
 	"targetPrice": "$535",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$460.87",
+	"currentPrice": "$496.93",
 	"consensus": {
 		"tipranks": "$542",
 		"yahoo": "$538.11",
@@ -43,11 +43,11 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "1%",
-			"base": "6%",
-			"bull": "10%"
+			"bear": "0%",
+			"base": "4%",
+			"bull": "8%"
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-10T12:36:22.530Z"
+	"lastUpdated": "2026-03-10T14:19:43.037Z"
 }

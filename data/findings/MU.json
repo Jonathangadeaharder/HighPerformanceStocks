@@ -4,13 +4,13 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$438.2B USD",
-	"sharpeRatio": -0.03,
-	"expectedCAGR": "-2% - 7%",
+	"marketCap": "$457.4B USD",
+	"sharpeRatio": -0.05,
+	"expectedCAGR": "-3% - 6%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 37,
-		"forwardPE": 8.3,
+		"trailingPE": 38.7,
+		"forwardPE": 8.7,
 		"pegRatio": null,
 		"evEbitda": 19.8
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$360",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$389.32",
+	"currentPrice": "$406.42",
 	"consensus": {
 		"tipranks": "$431",
 		"yahoo": "$415.37",
@@ -42,11 +42,11 @@
 			"bull": 24
 		},
 		"scenarios": {
-			"bear": "-2%",
-			"base": "3%",
-			"bull": "7%"
+			"bear": "-3%",
+			"base": "2%",
+			"bull": "6%"
 		},
 		"basis": "Upper 10yr avg range; cyclical semi — model less reliable"
 	},
-	"lastUpdated": "2026-03-10T12:36:18.523Z"
+	"lastUpdated": "2026-03-10T14:19:39.414Z"
 }

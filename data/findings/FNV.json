@@ -4,13 +4,13 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$50.9B USD",
-	"sharpeRatio": -0.03,
-	"expectedCAGR": "-1% - 8%",
+	"marketCap": "$51.7B USD",
+	"sharpeRatio": -0.04,
+	"expectedCAGR": "-2% - 8%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 55.3,
-		"forwardPE": 31.7,
+		"trailingPE": 56.2,
+		"forwardPE": 32.2,
 		"pegRatio": 5,
 		"evEbitda": 36.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$256",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$263.02",
+	"currentPrice": "$267.30",
 	"consensus": {
 		"tipranks": "$250",
 		"yahoo": "$285.13",
@@ -42,11 +42,11 @@
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-1%",
+			"bear": "-2%",
 			"base": "3%",
 			"bull": "8%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T12:36:16.297Z"
+	"lastUpdated": "2026-03-10T14:19:37.082Z"
 }

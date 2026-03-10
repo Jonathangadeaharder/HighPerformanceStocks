@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$172.7B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "3% - 13%",
+	"marketCap": "$175.7B USD",
+	"sharpeRatio": 0.06,
+	"expectedCAGR": "3% - 12%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 50.1,
-		"forwardPE": 32.4,
+		"trailingPE": 50.9,
+		"forwardPE": 32.9,
 		"pegRatio": 1.44,
 		"evEbitda": 41.1
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$177",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$137.17",
+	"currentPrice": "$139.50",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$178.06",
@@ -45,9 +45,9 @@
 		"scenarios": {
 			"bear": "3%",
 			"base": "8%",
-			"bull": "13%"
+			"bull": "12%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T12:36:12.550Z"
+	"lastUpdated": "2026-03-10T14:19:33.457Z"
 }

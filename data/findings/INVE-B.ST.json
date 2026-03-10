@@ -1,31 +1,31 @@
 {
-	"ticker": "INVE-B.ST",
-	"name": "Investor AB",
-	"group": "The Capital Compounders",
-	"confidence": "high",
-	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR.",
-	"marketCap": "SEK 900B+",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "12% - 15%",
-	"expectedVolatility": "~22%",
-	"valuation": {
-		"pegRatio": null,
-		"evEbitda": null
-	},
-	"metrics": {
-		"roe": "~18%"
-	},
-	"targetPrice": null,
-	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
-	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": null,
-	"cagrModel": {
-		"horizon": 5,
-		"scenarios": {
-			"bear": "8%",
-			"base": "13%",
-			"bull": "15%"
-		}
-	},
-	"lastUpdated": "2026-03-10T12:36:09.773Z"
+    "ticker": "INVE-B.ST",
+    "name": "Investor AB",
+    "group": "The Capital Compounders",
+    "confidence": "high",
+    "confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR.",
+    "marketCap": "SEK 900B+",
+    "sharpeRatio": 0.55,
+    "expectedCAGR": "12% - 15%",
+    "expectedVolatility": "~22%",
+    "valuation": {
+        "pegRatio": null,
+        "evEbitda": null
+    },
+    "metrics": {
+        "roe": "~18%"
+    },
+    "targetPrice": "$120",
+    "bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
+    "bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
+    "currentPrice": "$100",
+    "cagrModel": {
+        "horizon": 5,
+        "scenarios": {
+            "bear": "8%",
+            "base": "13%",
+            "bull": "15%"
+        }
+    },
+    "lastUpdated": "2026-03-10T14:19:31.259Z"
 }

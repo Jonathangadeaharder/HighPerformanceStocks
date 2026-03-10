@@ -1,31 +1,31 @@
 {
-	"ticker": "NNI",
-	"name": "Nelnet",
-	"group": "The Capital Compounders",
-	"confidence": "medium",
-	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
-	"marketCap": "$3.5B+",
-	"sharpeRatio": 0.45,
-	"expectedCAGR": "12% - 16%",
-	"expectedVolatility": "~24%",
-	"valuation": {
-		"pegRatio": null,
-		"evEbitda": null
-	},
-	"metrics": {
-		"roe": null
-	},
-	"targetPrice": null,
-	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
-	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": null,
-	"cagrModel": {
-		"horizon": 5,
-		"scenarios": {
-			"bear": "8%",
-			"base": "14%",
-			"bull": "16%"
-		}
-	},
-	"lastUpdated": "2026-03-10T12:36:09.801Z"
+    "ticker": "NNI",
+    "name": "Nelnet",
+    "group": "The Capital Compounders",
+    "confidence": "medium",
+    "confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
+    "marketCap": "$3.5B+",
+    "sharpeRatio": 0.45,
+    "expectedCAGR": "12% - 16%",
+    "expectedVolatility": "~24%",
+    "valuation": {
+        "pegRatio": null,
+        "evEbitda": null
+    },
+    "metrics": {
+        "roe": null
+    },
+    "targetPrice": "$120",
+    "bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
+    "bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
+    "currentPrice": "$100",
+    "cagrModel": {
+        "horizon": 5,
+        "scenarios": {
+            "bear": "8%",
+            "base": "14%",
+            "bull": "16%"
+        }
+    },
+    "lastUpdated": "2026-03-10T14:19:31.262Z"
 }

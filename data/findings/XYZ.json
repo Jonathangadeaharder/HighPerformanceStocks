@@ -5,12 +5,12 @@
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
 	"marketCap": "$39.8B USD",
-	"sharpeRatio": 0.16,
+	"sharpeRatio": 0.17,
 	"expectedCAGR": "9% - 18%",
-	"expectedVolatility": "~55%",
+	"expectedVolatility": "~54%",
 	"valuation": {
 		"trailingPE": 31.2,
-		"forwardPE": 14,
+		"forwardPE": 14.1,
 		"pegRatio": null,
 		"evEbitda": 19.8
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$82",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$65.54",
+	"currentPrice": "$65.56",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$85.52",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Est. from current era; first sustained GAAP profitability"
 	},
-	"lastUpdated": "2026-03-10T12:36:23.399Z"
+	"lastUpdated": "2026-03-10T14:19:43.889Z"
 }

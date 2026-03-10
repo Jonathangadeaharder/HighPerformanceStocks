@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
-	"marketCap": "$609.2B USD",
+	"marketCap": "$603.2B USD",
 	"sharpeRatio": 0.42,
 	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 29.7,
-		"forwardPE": 21.8,
+		"trailingPE": 29.4,
+		"forwardPE": 21.5,
 		"pegRatio": null,
 		"evEbitda": 21
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$400",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$315.97",
+	"currentPrice": "$312.88",
 	"consensus": {
 		"tipranks": "$400",
 		"yahoo": "$400.47",
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T12:36:21.532Z"
+	"lastUpdated": "2026-03-10T14:19:42.129Z"
 }

@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
-	"marketCap": "C$9.3B",
+	"marketCap": "C$9.0B",
 	"sharpeRatio": 0.17,
 	"expectedCAGR": "7% - 16%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 140.6,
-		"forwardPE": 25.4,
+		"trailingPE": 137.4,
+		"forwardPE": 24.9,
 		"pegRatio": null,
 		"evEbitda": 30.6,
 		"evFcf": 31
@@ -26,10 +26,10 @@
 	"targetPrice": "C$176",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
-	"currentPrice": "C$111.06",
+	"currentPrice": "C$108.54",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$139.95"
+		"yahoo": "C$140.13"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -48,5 +48,5 @@
 		},
 		"basis": "Normalized EPS ex-NRI (Asseco one-time excluded); 5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T12:36:21.577Z"
+	"lastUpdated": "2026-03-10T14:19:42.060Z"
 }

@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
-	"marketCap": "C$6.7B",
-	"sharpeRatio": 0.15,
-	"expectedCAGR": "8% - 16%",
+	"marketCap": "C$6.4B",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "9% - 17%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 41.3,
-		"forwardPE": 17.5,
+		"trailingPE": 39.3,
+		"forwardPE": 16.6,
 		"pegRatio": null,
 		"evEbitda": 23.2
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "C$50",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$26.05",
+	"currentPrice": "C$24.78",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
@@ -41,11 +41,11 @@
 			"bull": 26
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "9%",
+			"base": "14%",
+			"bull": "17%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T12:36:17.412Z"
+	"lastUpdated": "2026-03-10T14:19:38.236Z"
 }

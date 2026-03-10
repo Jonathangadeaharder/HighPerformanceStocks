@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
-	"marketCap": "$84.2B USD",
-	"sharpeRatio": 0.21,
-	"expectedCAGR": "9% - 20%",
-	"expectedVolatility": "~47%",
+	"marketCap": "$82.8B USD",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "9% - 21%",
+	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 38.9,
-		"forwardPE": 11.4,
+		"trailingPE": 38.2,
+		"forwardPE": 11.3,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$145",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
-	"currentPrice": "$90.94",
+	"currentPrice": "$89.39",
 	"consensus": {
 		"tipranks": "$149",
 		"yahoo": "$140.35",
@@ -44,10 +44,10 @@
 		},
 		"scenarios": {
 			"bear": "9%",
-			"base": "15%",
-			"bull": "20%"
+			"base": "16%",
+			"bull": "21%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-10T12:36:17.298Z"
+	"lastUpdated": "2026-03-10T14:19:38.222Z"
 }

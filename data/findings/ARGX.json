@@ -4,13 +4,13 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
-	"marketCap": "$45.8B USD",
+	"marketCap": "$45.9B USD",
 	"sharpeRatio": 0.35,
 	"expectedCAGR": "12% - 20%",
 	"expectedVolatility": "~33%",
 	"valuation": {
 		"trailingPE": 37.9,
-		"forwardPE": 22.6,
+		"forwardPE": 22.7,
 		"pegRatio": null,
 		"evEbitda": 37.8
 	},
@@ -25,10 +25,10 @@
 	"targetPrice": "$950",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$740.40",
+	"currentPrice": "$741.49",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1020.00"
+		"yahoo": "$1020.47"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,5 +47,5 @@
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-10T12:36:13.351Z"
+	"lastUpdated": "2026-03-10T14:19:34.302Z"
 }
