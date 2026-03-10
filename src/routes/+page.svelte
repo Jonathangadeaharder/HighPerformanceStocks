@@ -204,8 +204,8 @@
 
 						{#if stock.belowCAGRFloor}
 							<div class="floor-warning">Below {data.cagrFloor}% CAGR floor</div>
-						{:else if stock.cagrRangeLow < data.cagrFloor}
-							<div class="floor-borderline">Borderline — upper range beats {data.cagrFloor}%</div>
+						{:else if stock.cagrModel?.scenarios?.base && parseFloat(stock.cagrModel.scenarios.base) < data.cagrFloor && stock.cagrRangeHigh >= data.cagrFloor}
+							<div class="floor-borderline">Borderline — base scenario < {data.cagrFloor}%</div>
 						{/if}
 					</div>
 
