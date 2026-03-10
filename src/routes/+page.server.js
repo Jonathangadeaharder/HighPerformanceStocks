@@ -6,9 +6,13 @@ const CAGR_FLOOR = 14; // minimum expected CAGR to beat momentum ETFs
 const GROUP_ORDER = [
 	'Serial Acquirers',
 	'AI & Semiconductors',
+	'Cybersecurity',
+	'Robotics',
 	'Healthcare Monopolies',
+	'Biotech',
 	'Financials & Alt Assets',
 	'Defensive Monopolies',
+	'Energy',
 	'Royalties',
 	'Energy Royalties',
 	'Emerging Markets',

@@ -10,7 +10,7 @@
 	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 32.6,
-		"forwardPE": 17.2,
+		"forwardPE": 17.1,
 		"pegRatio": 1.5,
 		"evEbitda": 30
 	},
@@ -48,5 +48,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-10T11:05:51.350Z"
+	"lastUpdated": "2026-03-10T12:30:41.413Z"
 }

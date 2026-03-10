@@ -1,0 +1,51 @@
+{
+	"ticker": "PANW",
+	"name": "Palo Alto Networks",
+	"group": "Cybersecurity",
+	"confidence": "medium",
+	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
+	"marketCap": "$134.7B USD",
+	"sharpeRatio": 0,
+	"expectedCAGR": "1% - 8%",
+	"expectedVolatility": "~36%",
+	"valuation": {
+		"trailingPE": 91.7,
+		"forwardPE": 41.5,
+		"pegRatio": null,
+		"evEbitda": 90.1
+	},
+	"metrics": {
+		"fcfMargin": "~28%",
+		"fcfYield": "~2%",
+		"roic": null,
+		"roe": "16.3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "43%"
+	},
+	"targetPrice": "$220",
+	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
+	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
+	"currentPrice": "$165.10",
+	"consensus": {
+		"tipranks": "$220",
+		"yahoo": "$208.16"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 3.68,
+		"epsGrowth": "20%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 25,
+			"base": 32,
+			"bull": 35
+		},
+		"scenarios": {
+			"bear": "1%",
+			"base": "6%",
+			"bull": "8%"
+		},
+		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
+	},
+	"lastUpdated": "2026-03-10T12:30:42.275Z"
+}

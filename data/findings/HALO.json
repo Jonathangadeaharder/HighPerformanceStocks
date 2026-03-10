@@ -1,0 +1,51 @@
+{
+	"ticker": "HALO",
+	"name": "Halozyme Therapeutics",
+	"group": "Biotech",
+	"confidence": "medium",
+	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
+	"marketCap": "$8.0B USD",
+	"sharpeRatio": 0.31,
+	"expectedCAGR": "11% - 26%",
+	"expectedVolatility": "~45%",
+	"valuation": {
+		"trailingPE": 26.6,
+		"forwardPE": 6.9,
+		"pegRatio": null,
+		"evEbitda": 11.2
+	},
+	"metrics": {
+		"fcfMargin": "~13%",
+		"fcfYield": "~2%",
+		"roic": "~35%",
+		"roe": "153.6%",
+		"netDebtEbitda": "2.3x",
+		"ruleOf40": "65%"
+	},
+	"targetPrice": "$95",
+	"bullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
+	"bearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility.",
+	"currentPrice": "$68.14",
+	"consensus": {
+		"tipranks": "$95",
+		"yahoo": "$84.50"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 7.75,
+		"epsGrowth": "20%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 8,
+			"base": 12,
+			"bull": 15
+		},
+		"scenarios": {
+			"bear": "11%",
+			"base": "21%",
+			"bull": "26%"
+		},
+		"basis": "Non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
+	},
+	"lastUpdated": "2026-03-10T12:30:39.254Z"
+}

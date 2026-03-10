@@ -1,0 +1,51 @@
+{
+	"ticker": "CRWD",
+	"name": "CrowdStrike Holdings",
+	"group": "Cybersecurity",
+	"confidence": "medium",
+	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
+	"marketCap": "$110.1B USD",
+	"sharpeRatio": -0.16,
+	"expectedCAGR": "-8% - 2%",
+	"expectedVolatility": "~46%",
+	"valuation": {
+		"trailingPE": null,
+		"forwardPE": 70.3,
+		"pegRatio": null,
+		"evEbitda": -2265.9
+	},
+	"metrics": {
+		"fcfMargin": "~33%",
+		"fcfYield": "~1%",
+		"roic": null,
+		"roe": "-4.1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "57%"
+	},
+	"targetPrice": "$550",
+	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
+	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
+	"currentPrice": "$434.13",
+	"consensus": {
+		"tipranks": "$550",
+		"yahoo": "$493.85"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 3.79,
+		"epsGrowth": "32%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 30,
+			"base": 40,
+			"bull": 50
+		},
+		"scenarios": {
+			"bear": "-8%",
+			"base": "-3%",
+			"bull": "2%"
+		},
+		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
+	},
+	"lastUpdated": "2026-03-10T12:30:36.921Z"
+}

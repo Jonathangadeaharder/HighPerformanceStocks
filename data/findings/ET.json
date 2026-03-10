@@ -1,0 +1,51 @@
+{
+	"ticker": "ET",
+	"name": "Energy Transfer",
+	"group": "Energy",
+	"confidence": "medium",
+	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
+	"marketCap": "$64.0B USD",
+	"sharpeRatio": 0.12,
+	"expectedCAGR": "2% - 13%",
+	"expectedVolatility": "~25%",
+	"valuation": {
+		"trailingPE": 15.4,
+		"forwardPE": 11.8,
+		"pegRatio": null,
+		"evEbitda": 10.1
+	},
+	"metrics": {
+		"fcfMargin": "~3%",
+		"fcfYield": "~3%",
+		"roic": "~8%",
+		"roe": "11.9%",
+		"netDebtEbitda": "4.6x",
+		"ruleOf40": "32%"
+	},
+	"targetPrice": "$24",
+	"bullCase": "Largest and most diversified US midstream network (130,000 miles of pipeline). 7%+ distribution yield growing 3-5% annually. AI data center power demand is a secular tailwind for natural gas. Low valuation relative to peers.",
+	"bearCase": "High leverage at 4x net debt/EBITDA. MLP structure adds tax complexity. Management has a mixed capital allocation track record. Commodity price sensitivity on gathering and processing segments.",
+	"currentPrice": "$18.59",
+	"consensus": {
+		"tipranks": "$23",
+		"yahoo": "$21.68"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 1.21,
+		"epsGrowth": "10%",
+		"dividendYield": "7%",
+		"exitPE": {
+			"bear": 8,
+			"base": 11,
+			"bull": 14
+		},
+		"scenarios": {
+			"bear": "2%",
+			"base": "8%",
+			"bull": "13%"
+		},
+		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
+	},
+	"lastUpdated": "2026-03-10T12:30:38.098Z"
+}

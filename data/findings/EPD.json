@@ -1,0 +1,51 @@
+{
+	"ticker": "EPD",
+	"name": "Enterprise Products Partners",
+	"group": "Energy",
+	"confidence": "medium",
+	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
+	"marketCap": "$80.2B USD",
+	"sharpeRatio": 0.32,
+	"expectedCAGR": "7% - 14%",
+	"expectedVolatility": "~19%",
+	"valuation": {
+		"trailingPE": 13.9,
+		"forwardPE": 12,
+		"pegRatio": null,
+		"evEbitda": 12
+	},
+	"metrics": {
+		"fcfMargin": "~0%",
+		"fcfYield": "~0%",
+		"roic": "~12%",
+		"roe": "19.5%",
+		"netDebtEbitda": "3.5x",
+		"ruleOf40": "-3%"
+	},
+	"targetPrice": "$42",
+	"bullCase": "Most conservative and best-managed midstream MLP. 25 consecutive years of distribution increases. Investment-grade balance sheet. NGL and petrochemical infrastructure benefits from US shale production growth. 5.8% yield with 3-5% distribution growth.",
+	"bearCase": "Slower growth profile than ET or LNG. MLP tax complexity. Lower upside at current valuation. Energy transition could reduce long-term hydrocarbon volumes.",
+	"currentPrice": "$37.09",
+	"consensus": {
+		"tipranks": "$40",
+		"yahoo": "$37.15"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 2.66,
+		"epsGrowth": "6%",
+		"dividendYield": "6%",
+		"exitPE": {
+			"bear": 11,
+			"base": 13,
+			"bull": 15
+		},
+		"scenarios": {
+			"bear": "7%",
+			"base": "11%",
+			"bull": "14%"
+		},
+		"basis": "GAAP EPS; utility-like stability warrants narrow PE range"
+	},
+	"lastUpdated": "2026-03-10T12:30:38.024Z"
+}

@@ -1,0 +1,51 @@
+{
+	"ticker": "ISRG",
+	"name": "Intuitive Surgical",
+	"group": "Robotics",
+	"confidence": "medium",
+	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
+	"marketCap": "$175.3B USD",
+	"sharpeRatio": -0.09,
+	"expectedCAGR": "-2% - 5%",
+	"expectedVolatility": "~34%",
+	"valuation": {
+		"trailingPE": 62.9,
+		"forwardPE": 43.1,
+		"pegRatio": null,
+		"evEbitda": 47.7
+	},
+	"metrics": {
+		"fcfMargin": "~23%",
+		"fcfYield": "~1%",
+		"roic": "~20%",
+		"roe": "16.7%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "41%"
+	},
+	"targetPrice": "$620",
+	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
+	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
+	"currentPrice": "$493.56",
+	"consensus": {
+		"tipranks": "$620",
+		"yahoo": "$609.82"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 7.85,
+		"epsGrowth": "14%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 35,
+			"base": 42,
+			"bull": 50
+		},
+		"scenarios": {
+			"bear": "-2%",
+			"base": "2%",
+			"bull": "5%"
+		},
+		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
+	},
+	"lastUpdated": "2026-03-10T12:30:40.137Z"
+}

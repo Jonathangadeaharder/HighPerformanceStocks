@@ -26,7 +26,7 @@
 	"targetPrice": "5,634p",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
 	"bearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E.",
-	"currentPrice": "£52.25",
+	"currentPrice": "£52.15",
 	"consensus": {
 		"tipranks": "5,634p",
 		"yahoo": "£60.40"
@@ -48,5 +48,5 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-10T11:05:48.347Z"
+	"lastUpdated": "2026-03-10T12:30:38.043Z"
 }

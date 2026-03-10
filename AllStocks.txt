@@ -376,3 +376,4 @@ Forward Return Profile: Expected CAGR: 15% - 20% | Expected Volatility: ~45% | E
 Bull Case: The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.
 
 Bear Case: Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.
+MELI	MercadoLibre	Emerging Markets	35%

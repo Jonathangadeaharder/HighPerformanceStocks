@@ -28,7 +28,7 @@
 	"currentPrice": "C$2975",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4232.85"
+		"yahoo": "C$4228.79"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,5 +47,5 @@
 		},
 		"basis": "Normalized EPS (excl Asseco one-time); 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T11:05:48.275Z"
+	"lastUpdated": "2026-03-10T12:30:36.944Z"
 }
