@@ -127,7 +127,37 @@ export function load() {
 		s.cagrRangeHigh = upper;
 
 		const cur = parsePrice(s.currentPrice);
-		const tgt = parsePrice(s.targetPrice);
+		
+		let tgtPrices = [];
+		if (s.consensus) {
+			for (const key in s.consensus) {
+				const p = parsePrice(s.consensus[key]);
+				if (p !== null) tgtPrices.push(p);
+			}
+		}
+
+		let tgt = null;
+		if (tgtPrices.length > 0) {
+			tgt = tgtPrices.reduce((a, b) => a + b, 0) / tgtPrices.length;
+			
+			// Update targetPrice string to the consensus average
+			const template = s.targetPrice || s.currentPrice || '';
+			const isPence = /\d\s*p$/i.test(template);
+			let displayNum = isPence ? tgt * 100 : tgt;
+			
+			const formattedNum = displayNum % 1 === 0 
+			    ? displayNum.toString() 
+			    : displayNum.toFixed(2);
+			    
+			if (template) {
+				s.targetPrice = template.replace(/[0-9.,]+/, formattedNum);
+			} else {
+				s.targetPrice = formattedNum;
+			}
+		} else {
+			tgt = parsePrice(s.targetPrice);
+		}
+
 		s.upside = cur && tgt ? Math.round(((tgt - cur) / cur) * 100) : null;
 
 		// Override manual confidence with model-derived confidence
