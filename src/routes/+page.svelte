@@ -216,7 +216,7 @@
 
 							{#if stock.cagrModel?.scenarios}
 								<div class="scenarios-panel">
-									<div class="scenario-header">CAGR Scenarios ({stock.cagrModel.horizon}yr)</div>
+									<div class="scenario-header">CAGR Scenarios ({stock.cagrModel.horizon || 5}yr)</div>
 									<div class="scenarios-row">
 										<div class="scenario-item">
 											<span class="scenario-label">Bear</span>
@@ -232,11 +232,9 @@
 										</div>
 									</div>
 									<div class="scenario-params">
-										EPS growth {stock.cagrModel.epsGrowth}
-										<span class="param-sep"></span>
-										Exit P/E {stock.cagrModel.exitPE.bear}/{stock.cagrModel.exitPE.base}/{stock.cagrModel.exitPE.bull}
-										<span class="param-sep"></span>
-										DY {stock.cagrModel.dividendYield}
+										{#if stock.cagrModel.epsGrowth}EPS growth {stock.cagrModel.epsGrowth}<span class="param-sep"></span>{/if}
+										{#if stock.cagrModel.exitPE?.base}Exit P/E {stock.cagrModel.exitPE.bear || '?'}/{stock.cagrModel.exitPE.base}/{stock.cagrModel.exitPE.bull || '?'}<span class="param-sep"></span>{/if}
+										{#if stock.cagrModel.dividendYield}DY {stock.cagrModel.dividendYield}{/if}
 									</div>
 									{#if stock.cagrModel.basis}
 										<div class="scenario-basis">{stock.cagrModel.basis}</div>
@@ -245,16 +243,18 @@
 							{/if}
 
 							<div class="cases">
-								{#if stock.bullCase}
+								{#if stock.bullCase && stock.bullCase !== 'N/A'}
 									<div class="case bull">
 										<div class="case-label">Bull Case</div>
 										<p>{stock.bullCase}</p>
 									</div>
 								{/if}
-								<div class="case bear">
-									<div class="case-label">Bear Case</div>
-									<p>{stock.bearCase}</p>
-								</div>
+								{#if stock.bearCase && stock.bearCase !== 'N/A'}
+									<div class="case bear">
+										<div class="case-label">Bear Case</div>
+										<p>{stock.bearCase}</p>
+									</div>
+								{/if}
 							</div>
 
 							<div class="data-section">
