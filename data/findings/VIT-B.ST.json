@@ -5,12 +5,12 @@
 	"confidence": "medium",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%).",
 	"marketCap": "9.7B SEK",
-	"sharpeRatio": 0.45,
-	"expectedCAGR": "19% - 29%",
+	"sharpeRatio": 0.22,
+	"expectedCAGR": "9% - 19%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 22.3,
-		"forwardPE": 19,
+		"trailingPE": 22.2,
+		"forwardPE": 18.9,
 		"pegRatio": null,
 		"evEbitda": 9.1,
 		"evFcf": 15
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 10.97,
+		"ttmEPS": 10.96,
 		"epsGrowth": "12%",
 		"dividendYield": "2%",
 		"exitPE": {
-			"bear": 32,
-			"base": 40,
-			"bull": 48
+			"bear": 20,
+			"base": 25,
+			"bull": 32
 		},
 		"scenarios": {
-			"bear": "19%",
-			"base": "25%",
-			"bull": "29%"
+			"bear": "9%",
+			"base": "14%",
+			"bull": "19%"
 		},
-		"basis": "Below 10yr avg (51); adjusted for rerating + dilution"
+		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-10T11:05:54.443Z"
+	"lastUpdated": "2026-03-10T11:36:58.762Z"
 }
