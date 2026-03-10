@@ -1,12 +1,12 @@
 {
 	"ticker": "VNOM",
 	"name": "Viper Energy",
-	"group": "Royalties",
+	"group": "Energy Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
 	"marketCap": "$16.2B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "-2% - 5%",
+	"sharpeRatio": 0.18,
+	"expectedCAGR": "4% - 15%",
 	"expectedVolatility": "~28%",
 	"valuation": {
 		"trailingPE": 17,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 1.69,
+		"ttmEPS": 3.65,
 		"epsGrowth": "8%",
 		"dividendYield": "5%",
 		"exitPE": {
-			"bear": 13,
-			"base": 16,
-			"bull": 19
+			"bear": 8,
+			"base": 11,
+			"bull": 14
 		},
 		"scenarios": {
-			"bear": "-2%",
-			"base": "2%",
-			"bull": "5%"
+			"bear": "4%",
+			"base": "10%",
+			"bull": "15%"
 		},
-		"basis": "Adjusted EPS; 5yr avg PE"
+		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T09:07:57.326Z"
+	"lastUpdated": "2026-03-10T10:32:50.010Z"
 }

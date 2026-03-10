@@ -2,11 +2,11 @@
 	"ticker": "FNV",
 	"name": "Franco-Nevada",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Pristine balance sheet (net cash, zero debt) is best-in-class, but trailing P/E of ~49x and PEG of 5.0x reflect extreme growth pricing after a 99% rally in 52 weeks.",
+	"confidence": "low",
+	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$50.9B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "-3% - 5%",
+	"sharpeRatio": -0.04,
+	"expectedCAGR": "-1% - 8%",
 	"expectedVolatility": "~25%",
 	"valuation": {
 		"trailingPE": 55.3,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 4.76,
-		"epsGrowth": "14%",
+		"ttmEPS": 6.8,
+		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
+			"bear": 22,
+			"base": 28,
+			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-3%",
-			"base": "2%",
-			"bull": "5%"
+			"bear": "-1%",
+			"base": "3%",
+			"bull": "8%"
 		},
-		"basis": "5yr avg midpoint (30-39)"
+		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T09:07:02.346Z"
+	"lastUpdated": "2026-03-10T10:32:45.636Z"
 }

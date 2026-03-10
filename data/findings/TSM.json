@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
 	"marketCap": "$1808.5B USD",
-	"sharpeRatio": 0.5,
-	"expectedCAGR": "5% - 13%",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "7% - 16%",
 	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 33.7,
@@ -39,16 +39,16 @@
 		"epsGrowth": "28%",
 		"dividendYield": "1%",
 		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 26
+			"bear": 20,
+			"base": 25,
+			"bull": 30
 		},
 		"scenarios": {
-			"bear": "5%",
-			"base": "9%",
-			"bull": "13%"
+			"bear": "7%",
+			"base": "12%",
+			"bull": "16%"
 		},
-		"basis": "10yr avg PE"
+		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-10T09:07:47.983Z"
+	"lastUpdated": "2026-03-10T10:32:49.163Z"
 }

@@ -5,7 +5,7 @@
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
 	"marketCap": "$32.1B USD",
-	"sharpeRatio": 0.35,
+	"sharpeRatio": 0.36,
 	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~28%",
 	"valuation": {
@@ -48,5 +48,5 @@
 		},
 		"basis": "Below historical avg (70); adjusted for maturation"
 	},
-	"lastUpdated": "2026-03-10T09:07:52.395Z"
+	"lastUpdated": "2026-03-10T10:32:49.326Z"
 }

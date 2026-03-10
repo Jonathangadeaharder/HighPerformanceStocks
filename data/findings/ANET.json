@@ -5,7 +5,7 @@
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
 	"marketCap": "$172.7B USD",
-	"sharpeRatio": 0.45,
+	"sharpeRatio": 0.1,
 	"expectedCAGR": "3% - 13%",
 	"expectedVolatility": "~35%",
 	"valuation": {
@@ -49,5 +49,5 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T09:06:36.912Z"
+	"lastUpdated": "2026-03-10T10:32:43.081Z"
 }

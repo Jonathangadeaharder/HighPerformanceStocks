@@ -10,8 +10,10 @@ const GROUP_ORDER = [
 	'Financials & Alt Assets',
 	'Defensive Monopolies',
 	'Royalties',
+	'Energy Royalties',
 	'Emerging Markets',
-	'Ruthlessly Cut'
+	'Ruthlessly Cut',
+	'Disqualified'
 ];
 
 function parseCAGRRange(cagr) {
@@ -23,7 +25,10 @@ function parsePrice(str) {
 	if (!str) return null;
 	const m = str.replace(/[^0-9.]/g, '');
 	const n = parseFloat(m);
-	return isNaN(n) ? null : n;
+	if (isNaN(n)) return null;
+	// Convert pence to pounds (e.g. "5,634p" → 56.34)
+	if (/\d\s*p$/i.test(str)) return n / 100;
+	return n;
 }
 
 function parsePercent(str) {

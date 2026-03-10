@@ -1,20 +1,23 @@
 # PLAN
 
-- Goal: Research-only assessment of whether CAGR scenarios are realistic after applying exponential growth decay to already-conservative epsGrowth inputs across 14 stocks.
+- Goal: All pending tasks from the Sharpe/Ruthlessly Cut audit are now complete.
 
-- Constraints: No file edits. Research only. Must web-search analyst consensus for all 14 stocks.
+- Completed this session:
+  1) Automated Sharpe ratio calculation in update-data.js — formula: (midpoint CAGR - 4.5%) / volatility
+  2) Moved TDG from "Ruthlessly Cut" to "Defensive Monopolies" (derives as high confidence: base 19%, bear 14%)
+  3) Moved XYZ/Block from "Ruthlessly Cut" to "Financials & Alt Assets" (derives as medium confidence: base 14%, bear 9%)
+  4) Renamed SQ.json → XYZ.json to match the ticker
+  5) Ran update-data --force — all 46 stocks updated, Sharpe ratios recomputed
+  6) Build verified clean
 
-- Steps:
-  1) Read all 14 JSON files to extract epsGrowth, CAGR scenarios, and context
-  2) Read the decay model code to understand exact mechanics
-  3) Web search analyst consensus 5-year EPS growth for each stock
-  4) Calculate effective average growth under decay model for each stock
-  5) Compare effective growth vs analyst consensus and assess double-penalization risk
-  6) Produce summary table with verdicts and suggested adjustments
+- Previously completed (prior session):
+  - Added 3 emerging-market stocks (HDB, BABA, 0700.HK) with HKD currency support
+  - Implemented exponential growth decay model (McKinsey/Koller methodology)
+  - Calibrated 23 stocks' epsGrowth for decay model
+  - Switched 6 royalty stocks from P/E to P/CF model
+  - Reclassified TPL/VNOM to "Energy Royalties" group
+  - Added try/catch on JSON parsing, smart EPS guardrail (--force)
+  - Switched LMN.V from GAAP EPS to FCFA2S
+  - Git initialized with .gitignore
 
-- Risks & checkpoints:
-  - Analyst "5yr EPS growth" estimates vary widely by source
-  - For royalty/streaming companies, EPS growth is gold-price-dependent and highly uncertain
-  - Some stocks may legitimately need the decay (near-term rates used as input) while others are already moderated
-
-- Verify: Table produced with all 14 stocks, clear verdicts, actionable suggestions
+- Verify: `pnpm build` clean ✓, all 47 stocks loading correctly

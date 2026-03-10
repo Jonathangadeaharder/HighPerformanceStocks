@@ -5,7 +5,7 @@
 	"confidence": "medium",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
 	"marketCap": "$117.1B USD",
-	"sharpeRatio": 0.4,
+	"sharpeRatio": 0.05,
 	"expectedCAGR": "1% - 10%",
 	"expectedVolatility": "~22%",
 	"valuation": {
@@ -49,5 +49,5 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-10T09:08:01.969Z"
+	"lastUpdated": "2026-03-10T10:32:49.999Z"
 }

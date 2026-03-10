@@ -3,23 +3,23 @@
 	"name": "KKR & Co.",
 	"group": "Financials & Alt Assets",
 	"confidence": "high",
-	"confidenceReason": "Mathematically mispriced at 0.7x EV/EBITDA. Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
+	"confidenceReason": "Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
 	"marketCap": "$84.2B USD",
-	"sharpeRatio": 0.4,
+	"sharpeRatio": 0.29,
 	"expectedCAGR": "9% - 20%",
 	"expectedVolatility": "~35%",
 	"valuation": {
 		"trailingPE": 38.9,
 		"forwardPE": 11.4,
 		"pegRatio": null,
-		"evEbitda": 0.7
+		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
 		"roic": null,
 		"roe": "8.6%",
-		"netDebtEbitda": "3.7x",
+		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": "104%",
 		"bessemerRuleOfX": "158%"
 	},
@@ -49,5 +49,5 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-10T09:07:11.194Z"
+	"lastUpdated": "2026-03-10T10:32:46.511Z"
 }

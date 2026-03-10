@@ -2,11 +2,11 @@
 	"ticker": "TFPM",
 	"name": "Triple Flag Precious Metals",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Most attractive valuation among precious metals streamers (lowest P/E, best PEG ~1.0, highest FCF yield). Zero debt and negative beta. But smallest/least liquid of the group with limited analyst coverage.",
+	"confidence": "low",
+	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$8.1B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "3% - 12%",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "1% - 10%",
 	"expectedVolatility": "~22%",
 	"valuation": {
 		"trailingPE": 33,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 1.18,
+		"ttmEPS": 1.54,
 		"epsGrowth": "8%",
 		"dividendYield": "1%",
 		"exitPE": {
-			"bear": 26,
-			"base": 33,
-			"bull": 40
+			"bear": 18,
+			"base": 23,
+			"bull": 28
 		},
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
-			"bull": "12%"
+			"bear": "1%",
+			"base": "6%",
+			"bull": "10%"
 		},
-		"basis": "Current PE; IPO 2021 — limited history"
+		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T09:07:43.357Z"
+	"lastUpdated": "2026-03-10T10:32:48.478Z"
 }

@@ -1,11 +1,11 @@
 {
 	"ticker": "MU",
 	"name": "Micron Technology",
-	"group": "AI & Semiconductors",
-	"confidence": "medium",
-	"confidenceReason": "HBM structural supply shortage driving gross margin expansion (38.4% to 56%). But traditional memory is cyclical commodity. Requires strict monitoring.",
+	"group": "Disqualified",
+	"confidence": "cut",
+	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
 	"marketCap": "$438.2B USD",
-	"sharpeRatio": 0.35,
+	"sharpeRatio": -0.04,
 	"expectedCAGR": "-2% - 7%",
 	"expectedVolatility": "~45%",
 	"valuation": {
@@ -24,7 +24,7 @@
 	},
 	"targetPrice": "$360",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
-	"bearCase": "Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
+	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
 	"currentPrice": "$389.32",
 	"consensus": {
 		"tipranks": "$431",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Upper 10yr avg range; cyclical semi — model less reliable"
 	},
-	"lastUpdated": "2026-03-10T09:07:22.819Z"
+	"lastUpdated": "2026-03-10T10:32:47.427Z"
 }

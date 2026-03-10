@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 2.5x.",
 	"marketCap": "$83.8B USD",
-	"sharpeRatio": 0.3,
-	"expectedCAGR": "0% - 9%",
+	"sharpeRatio": 0.33,
+	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 67.2,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 6.51,
+		"ttmEPS": 13.73,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"exitPE": {
-			"bear": 38,
-			"base": 48,
-			"bull": 58
+			"bear": 28,
+			"base": 35,
+			"bull": 42
 		},
 		"scenarios": {
-			"bear": "0%",
-			"base": "5%",
-			"bull": "9%"
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
 		},
-		"basis": "GAAP EPS (Ansys-depressed); 10yr avg GAAP PE"
+		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-10T09:07:36.749Z"
+	"lastUpdated": "2026-03-10T10:32:48.269Z"
 }

@@ -2,11 +2,11 @@
 	"ticker": "RGLD",
 	"name": "Royal Gold",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Transformational Sandstorm acquisition drives record revenue, but elevated net debt (~1.6x) and trailing P/E of 42x price in a lot of gold upside.",
+	"confidence": "low",
+	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$23.9B USD",
-	"sharpeRatio": 0.42,
-	"expectedCAGR": "0% - 8%",
+	"sharpeRatio": -0.08,
+	"expectedCAGR": "-3% - 8%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 42.2,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 6.68,
-		"epsGrowth": "15%",
+		"ttmEPS": 8.35,
+		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"exitPE": {
-			"bear": 24,
-			"base": 30,
-			"bull": 36
+			"bear": 18,
+			"base": 24,
+			"bull": 30
 		},
 		"scenarios": {
-			"bear": "0%",
-			"base": "5%",
+			"bear": "-3%",
+			"base": "3%",
 			"bull": "8%"
 		},
-		"basis": "5yr avg PE"
+		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T09:07:32.211Z"
+	"lastUpdated": "2026-03-10T10:32:48.316Z"
 }

@@ -1,11 +1,11 @@
 {
 	"ticker": "XYZ",
 	"name": "Block Inc.",
-	"group": "Ruthlessly Cut",
+	"group": "Financials & Alt Assets",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
 	"marketCap": "$39.8B USD",
-	"sharpeRatio": 0.1,
+	"sharpeRatio": 0.15,
 	"expectedCAGR": "9% - 18%",
 	"expectedVolatility": "~60%",
 	"valuation": {
@@ -48,5 +48,5 @@
 		},
 		"basis": "Est. from current era; first sustained GAAP profitability"
 	},
-	"lastUpdated": "2026-03-10T09:07:38.959Z"
+	"lastUpdated": "2026-03-10T10:32:51.080Z"
 }

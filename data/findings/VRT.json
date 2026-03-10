@@ -5,7 +5,7 @@
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
 	"marketCap": "$101.1B USD",
-	"sharpeRatio": 0.25,
+	"sharpeRatio": -0.01,
 	"expectedCAGR": "0% - 8%",
 	"expectedVolatility": "~45%",
 	"valuation": {
@@ -51,5 +51,5 @@
 		},
 		"basis": "Normalized from mature period (public since 2020 only)"
 	},
-	"lastUpdated": "2026-03-10T09:07:59.638Z"
+	"lastUpdated": "2026-03-10T10:32:49.993Z"
 }

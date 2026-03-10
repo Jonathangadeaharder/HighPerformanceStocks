@@ -30,7 +30,8 @@ const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
 const HORIZON = 5;
 const TERMINAL_GROWTH_PCT = 6; // nominal GDP — long-run EPS growth floor (McKinsey/Koller)
 const GROWTH_DECAY = 0.80; // excess-growth half-life ~3 yrs (Chan, Karceski & Lakonishok 2003)
-const SEQUENTIAL_DELAY_MS = 2000; // between quoteSummary calls
+const CONCURRENCY = 5; // parallel quoteSummary requests per batch
+const BATCH_DELAY_MS = 500; // pause between batches to avoid Yahoo rate limits
 const FORCE = process.argv.includes('--force');
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -164,7 +165,10 @@ function applyUpdates(stock, quote, summary) {
 		if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
 		if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
 		if (peg != null) stock.valuation.pegRatio = +peg.toFixed(2);
-		if (evEbitda != null) stock.valuation.evEbitda = +evEbitda.toFixed(1);
+		// Skip EV/EBITDA for alt-asset managers (consolidated insurance/real-estate balance sheets distort it)
+		if (evEbitda != null && stock.valuation.evEbitda !== null) {
+			stock.valuation.evEbitda = +evEbitda.toFixed(1);
+		}
 	}
 
 	// ── metrics ──
@@ -187,7 +191,9 @@ function applyUpdates(stock, quote, summary) {
 		const totalDebt = fd.totalDebt;
 		const totalCash = fd.totalCash;
 		const ebitda = fd.ebitda;
-		if (totalDebt != null && totalCash != null && ebitda != null && Math.abs(ebitda) > 0) {
+		// Skip Net Debt/EBITDA if marked "N/M" (alt-asset consolidated balance sheets)
+		const isNM = /^N\/M/i.test(stock.metrics.netDebtEbitda ?? '');
+		if (!isNM && totalDebt != null && totalCash != null && ebitda != null && Math.abs(ebitda) > 0) {
 			const netDebt = totalDebt - totalCash;
 			stock.metrics.netDebtEbitda = netDebt < 0
 				? 'Net cash'
@@ -231,7 +237,7 @@ function applyUpdates(stock, quote, summary) {
 		const ttmEpsRaw = quote.epsTrailingTwelveMonths;
 		if (ttmEpsRaw != null && ttmEpsRaw > 0) {
 			const basis = model.basis ?? '';
-			const isAdjusted = /adjusted|normalized|distributable|ANI|non-IFRS/i.test(basis);
+			const isAdjusted = /adjusted|normalized|distributable|ANI|non-IFRS|CFO|FCFA2S/i.test(basis);
 			if (!isAdjusted) {
 				const newEps = Math.round(ttmEpsRaw * 100) / 100;
 				// Sanity check: warn if change exceeds 50% (possible unit/currency bug)
@@ -275,6 +281,18 @@ function applyUpdates(stock, quote, summary) {
 			if (bear != null && bull != null) {
 				stock.expectedCAGR = `${bear}% - ${bull}%`;
 			}
+		}
+	}
+
+	// ── Sharpe ratio (derived: midpoint CAGR over risk-free, divided by volatility) ──
+	const vol = parsePercent(stock.expectedVolatility);
+	if (vol != null && vol > 0 && stock.cagrModel?.scenarios) {
+		const bearS = parsePercent(stock.cagrModel.scenarios.bear);
+		const bullS = parsePercent(stock.cagrModel.scenarios.bull);
+		if (bearS != null && bullS != null) {
+			const midCagr = (bearS + bullS) / 2;
+			const RISK_FREE = 4.5;
+			stock.sharpeRatio = +((midCagr - RISK_FREE) / vol).toFixed(2);
 		}
 	}
 
@@ -329,36 +347,45 @@ async function main() {
 		console.error(`  ❌ Batch quote failed: ${err.message}\n`);
 	}
 
-	// ── Step 2: Sequential quoteSummary per ticker ──
+	// ── Step 2: Parallel quoteSummary in batches of CONCURRENCY ──
 	let updated = 0;
 	let failed = 0;
-	for (const { stock, path } of withModel) {
-		const ticker = stock.ticker;
-		const quote = quotesObj[ticker];
 
-		if (!quote?.regularMarketPrice) {
-			console.log(`  ⚠️  ${ticker} — no quote data`);
-			failed++;
-			continue;
+	for (let i = 0; i < withModel.length; i += CONCURRENCY) {
+		const batch = withModel.slice(i, i + CONCURRENCY);
+		const results = await Promise.allSettled(
+			batch.map(async ({ stock, path }) => {
+				const ticker = stock.ticker;
+				const quote = quotesObj[ticker];
+
+				if (!quote?.regularMarketPrice) {
+					console.log(`  ⚠️  ${ticker} — no quote data`);
+					return false;
+				}
+
+				const summary = await fetchSummary(ticker);
+				const ok = applyUpdates(stock, quote, summary);
+
+				if (ok) {
+					writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
+					const s = stock.cagrModel?.scenarios;
+					const scenarios = s?.bear && s?.base && s?.bull
+						? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
+						: 'no scenarios';
+					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}`);
+				} else {
+					console.log(`  ⚠️  ${ticker} — update failed (no price)`);
+				}
+				return ok;
+			})
+		);
+
+		for (const r of results) {
+			if (r.status === 'fulfilled' && r.value) updated++;
+			else failed++;
 		}
 
-		const summary = await fetchSummary(ticker);
-		const ok = applyUpdates(stock, quote, summary);
-
-		if (ok) {
-			writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
-			const s = stock.cagrModel?.scenarios;
-			const scenarios = s?.bear && s?.base && s?.bull
-				? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
-				: 'no scenarios';
-			console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}`);
-			updated++;
-		} else {
-			console.log(`  ⚠️  ${ticker} — update failed (no price)`);
-			failed++;
-		}
-
-		await sleep(SEQUENTIAL_DELAY_MS);
+		if (i + CONCURRENCY < withModel.length) await sleep(BATCH_DELAY_MS);
 	}
 
 	console.log(`\n✅ Done: ${updated} updated, ${failed} failed.`);

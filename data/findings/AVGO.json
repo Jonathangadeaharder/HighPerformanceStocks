@@ -5,7 +5,7 @@
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
 	"marketCap": "$1639.3B USD",
-	"sharpeRatio": 0.5,
+	"sharpeRatio": 0.31,
 	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~32%",
 	"valuation": {
@@ -49,5 +49,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-10T09:06:43.824Z"
+	"lastUpdated": "2026-03-10T10:32:43.790Z"
 }

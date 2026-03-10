@@ -1,11 +1,11 @@
 {
 	"ticker": "TDG",
 	"name": "TransDigm Group",
-	"group": "Ruthlessly Cut",
-	"confidence": "cut",
+	"group": "Serial Acquirers",
+	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
 	"marketCap": "$72.2B USD",
-	"sharpeRatio": 0.15,
+	"sharpeRatio": 0.4,
 	"expectedCAGR": "14% - 23%",
 	"expectedVolatility": "~35%",
 	"valuation": {
@@ -48,5 +48,5 @@
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-10T09:07:41.175Z"
+	"lastUpdated": "2026-03-10T10:32:48.277Z"
 }

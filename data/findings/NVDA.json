@@ -5,7 +5,7 @@
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
 	"marketCap": "$4439.3B USD",
-	"sharpeRatio": 0.55,
+	"sharpeRatio": 0.29,
 	"expectedCAGR": "11% - 21%",
 	"expectedVolatility": "~40%",
 	"valuation": {
@@ -48,5 +48,5 @@
 		},
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-10T09:07:27.433Z"
+	"lastUpdated": "2026-03-10T10:32:47.440Z"
 }

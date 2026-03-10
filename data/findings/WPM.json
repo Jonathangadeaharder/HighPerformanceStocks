@@ -2,11 +2,11 @@
 	"ticker": "WPM",
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Best organic production growth profile in streaming (40% by 2029), but trailing P/E of 65x and $66.7B market cap on ~$1B earnings is demanding. Stock has doubled in 52 weeks.",
+	"confidence": "low",
+	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$67.3B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "-4% - 4%",
+	"sharpeRatio": -0.2,
+	"expectedCAGR": "-6% - 5%",
 	"expectedVolatility": "~25%",
 	"valuation": {
 		"trailingPE": 67.3,
@@ -33,20 +33,20 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 2.2,
-		"epsGrowth": "16%",
+		"ttmEPS": 3.26,
+		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"exitPE": {
-			"bear": 32,
-			"base": 40,
-			"bull": 48
+			"bear": 20,
+			"base": 27,
+			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-4%",
+			"bear": "-6%",
 			"base": "0%",
-			"bull": "4%"
+			"bull": "5%"
 		},
-		"basis": "5yr avg midpoint (35-45)"
+		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T09:08:04.301Z"
+	"lastUpdated": "2026-03-10T10:32:50.232Z"
 }

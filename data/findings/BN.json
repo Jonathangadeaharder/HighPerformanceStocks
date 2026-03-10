@@ -5,7 +5,7 @@
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
 	"marketCap": "$92.3B USD",
-	"sharpeRatio": 0.35,
+	"sharpeRatio": 0.4,
 	"expectedCAGR": "11% - 22%",
 	"expectedVolatility": "~30%",
 	"valuation": {
@@ -19,7 +19,7 @@
 		"fcfYield": null,
 		"roic": "15%+ economic (~3% reported, distorted)",
 		"roe": "2.0%",
-		"netDebtEbitda": "8.0x",
+		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": null,
 		"aum": "$1T+"
 	},
@@ -49,5 +49,5 @@
 		},
 		"basis": "Distributable Earnings (DE) before realizations per share; post-Oct 2025 3:2 split; P/DE basis"
 	},
-	"lastUpdated": "2026-03-10T09:06:46.312Z"
+	"lastUpdated": "2026-03-10T10:32:43.986Z"
 }
