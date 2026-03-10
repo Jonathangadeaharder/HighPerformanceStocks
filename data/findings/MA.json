@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$457.9B USD",
-	"sharpeRatio": 0.56,
-	"expectedCAGR": "13% - 23%",
+	"marketCap": "$461.7B USD",
+	"sharpeRatio": 0.48,
+	"expectedCAGR": "11% - 21%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 31.1,
-		"forwardPE": 22.7,
+		"trailingPE": 31.3,
+		"forwardPE": 22.9,
 		"pegRatio": null,
 		"evEbitda": 22.9
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$660",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$513.11",
+	"currentPrice": "$517.38",
 	"consensus": {
 		"tipranks": "$659",
 		"yahoo": "$662.80",
@@ -34,7 +34,7 @@
 	"cagrModel": {
 		"horizon": 5,
 		"ttmEPS": 16.52,
-		"epsGrowth": "18%",
+		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"exitPE": {
 			"bear": 30,
@@ -42,11 +42,11 @@
 			"bull": 46
 		},
 		"scenarios": {
-			"bear": "13%",
-			"base": "18%",
-			"bull": "23%"
+			"bear": "11%",
+			"base": "16%",
+			"bull": "21%"
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T14:19:39.222Z"
+	"lastUpdated": "2026-03-10T16:33:53.454Z"
 }

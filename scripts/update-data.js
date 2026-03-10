@@ -34,6 +34,10 @@ const CONCURRENCY = 5; // parallel quoteSummary requests per batch
 const BATCH_DELAY_MS = 500; // pause between batches to avoid Yahoo rate limits
 const FORCE = process.argv.includes('--force');
 
+// US share class tickers use dots (BRK.B, HEI.A) but yahoo-finance2 needs dashes
+const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A' };
+function yahooTicker(t) { return YAHOO_TICKER_MAP[t] || t; }
+
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 function sleep(ms) {
@@ -261,8 +265,10 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 	}
 
 	// ── consensus.yahoo (analyst mean target price) ──
-	if (stock.consensus && fd.targetMeanPrice != null) {
+	if (fd.targetMeanPrice != null) {
+		if (!stock.consensus) stock.consensus = {};
 		stock.consensus.yahoo = fmtPrice(fd.targetMeanPrice, currency);
+		if (!stock.targetPrice) stock.targetPrice = stock.consensus.yahoo;
 	}
 
 	// ── cagrModel ──
@@ -378,7 +384,7 @@ async function main() {
 	}
 
 	// ── Step 1: Batch-fetch all quotes in ONE HTTP request ──
-	const tickers = withModel.map(({ stock }) => stock.ticker);
+	const tickers = withModel.map(({ stock }) => yahooTicker(stock.ticker));
 	console.log(`📡 Batch fetching quotes for ${tickers.length} tickers...`);
 	let quotesObj = {};
 	try {
@@ -397,7 +403,8 @@ async function main() {
 		const results = await Promise.allSettled(
 			batch.map(async ({ stock, path }) => {
 				const ticker = stock.ticker;
-				const quote = quotesObj[ticker];
+				const yTicker = yahooTicker(ticker);
+				const quote = quotesObj[yTicker];
 
 				if (!quote?.regularMarketPrice) {
 					console.log(`  ⚠️  ${ticker} — no quote data`);
@@ -405,8 +412,8 @@ async function main() {
 				}
 
 				const [summary, realizedVol] = await Promise.all([
-					fetchSummary(ticker),
-					fetchHistoricalVol(ticker)
+					fetchSummary(yTicker),
+					fetchHistoricalVol(yTicker)
 				]);
 				const ok = applyUpdates(stock, quote, summary, realizedVol);
 

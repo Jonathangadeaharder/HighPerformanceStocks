@@ -4,13 +4,13 @@
 	"group": "Energy",
 	"confidence": "medium",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
-	"marketCap": "$53.0B USD",
-	"sharpeRatio": 0.33,
-	"expectedCAGR": "9% - 19%",
+	"marketCap": "$53.4B USD",
+	"sharpeRatio": 0.21,
+	"expectedCAGR": "5% - 16%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 10.2,
-		"forwardPE": 16.2,
+		"trailingPE": 10.3,
+		"forwardPE": 16.4,
 		"pegRatio": null,
 		"evEbitda": 7.9
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$280",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$246.13",
+	"currentPrice": "$248.03",
 	"consensus": {
 		"tipranks": "$280",
 		"yahoo": "$272.77"
@@ -33,7 +33,7 @@
 	"cagrModel": {
 		"horizon": 5,
 		"ttmEPS": 24.13,
-		"epsGrowth": "10%",
+		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"exitPE": {
 			"bear": 10,
@@ -41,11 +41,11 @@
 			"bull": 16
 		},
 		"scenarios": {
-			"bear": "9%",
-			"base": "15%",
-			"bull": "19%"
+			"bear": "5%",
+			"base": "11%",
+			"bull": "16%"
 		},
-		"basis": "GAAP EPS; current ~14x is mid-range for LNG infrastructure"
+		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-10T14:19:39.036Z"
+	"lastUpdated": "2026-03-10T16:33:53.441Z"
 }
