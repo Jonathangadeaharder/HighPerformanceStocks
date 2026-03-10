@@ -376,3 +376,59 @@ Forward Return Profile: Expected CAGR: 15% - 20% | Expected Volatility: ~45% | E
 Bull Case: The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.
 
 Bear Case: Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.
+
+Group 8: The Capital Compounders (Insurance Float & Holding Cos)
+
+These companies employ the classic "Outsider" model, utilizing insurance float or specialized permanent capital vehicles to fund high-return investments. While they may exhibit lower top-line growth than pure software plays, they offer unassailable balance sheets and deeply discounted valuation floors.
+
+1. Berkshire Hathaway (BRK.B)
+
+Valuation Multiples: ~1.5x P/B
+
+Profitability & Cash Flow: ~$380B+ Cash Fortress
+
+SOTA Metrics: 6% - 8% ROE (Depressed by cash drag)
+
+Forward Return Profile: Expected CAGR: 8% - 10% | Expected Volatility: ~15% | Expected Sharpe Ratio: ~0.45
+
+Bull Case: The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.
+
+Bear Case: The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.
+
+2. Fairfax Financial (FFH.TO)
+
+Valuation Multiples: ~1.35x Stated P/B (Closer to 1.24x Adjusted P/B due to hidden value)
+
+Profitability & Cash Flow: Combined Ratio consistently <93%
+
+SOTA Metrics: 15% - 17% ROE (Consistently hitting targets)
+
+Forward Return Profile: Expected CAGR: 12% - 16% | Expected Volatility: ~22% | Expected Sharpe Ratio: ~0.60
+
+Bull Case: The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive "hidden" fair value on the balance sheet makes the stock intrinsically cheaper than it appears.
+
+Bear Case: Susceptibility to catastrophic "fat-tail" insurance events and volatility in global bond markets which can temporarily impair book value.
+
+3. Markel Group (MKL)
+
+Valuation Multiples: ~1.46x P/B
+
+SOTA Metrics: 13% - 14% ROE (Trending towards 15%)
+
+Forward Return Profile: Expected CAGR: 10% - 14% | Expected Volatility: ~20% | Expected Sharpe Ratio: ~0.50
+
+Bull Case: Markel's ongoing restructuring is bearing fruit as it exits lower-margin reinsurance to focus on highly profitable specialty lines. The "Markel Ventures" private equity arm provides a robust, non-correlated earnings floor, driving margin expansion.
+
+Bear Case: Restructuring execution risk remains. If the combined ratio slips above 95%, the compounding math breaks down and the historical premium multiple will face permanent compression.
+
+4. Fairfax India Holdings (FIH.U.TO)
+
+Valuation Multiples: ~0.65x - 0.75x P/B (Steep discount to intrinsic value)
+
+SOTA Metrics: 9% - 11% Consolidated ROE (Underlying assets 18%+)
+
+Forward Return Profile: Expected CAGR: 14% - 18% | Expected Volatility: ~28% | Expected Sharpe Ratio: ~0.45
+
+Bull Case: A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.
+
+Bear Case: Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.
