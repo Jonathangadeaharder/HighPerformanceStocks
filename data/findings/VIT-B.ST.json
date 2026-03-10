@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%).",
-	"marketCap": "9.6B SEK",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "20% - 30%",
-	"expectedVolatility": "~30%",
+	"marketCap": "9.7B SEK",
+	"sharpeRatio": 0.45,
+	"expectedCAGR": "19% - 29%",
+	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 22.1,
-		"forwardPE": 18.8,
+		"trailingPE": 22.3,
+		"forwardPE": 19,
 		"pegRatio": null,
 		"evEbitda": 9.1,
 		"evFcf": 15
@@ -26,7 +26,7 @@
 	"targetPrice": "456 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "242 SEK",
+	"currentPrice": "244 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
 		"yahoo": "456 SEK"
@@ -42,11 +42,11 @@
 			"bull": 48
 		},
 		"scenarios": {
-			"bear": "20%",
+			"bear": "19%",
 			"base": "25%",
-			"bull": "30%"
+			"bull": "29%"
 		},
 		"basis": "Below 10yr avg (51); adjusted for rerating + dilution"
 	},
-	"lastUpdated": "2026-03-10T10:32:50.007Z"
+	"lastUpdated": "2026-03-10T11:05:54.443Z"
 }

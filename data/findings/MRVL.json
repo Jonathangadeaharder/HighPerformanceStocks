@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
 	"marketCap": "$80.9B USD",
-	"sharpeRatio": 0.27,
+	"sharpeRatio": 0.19,
 	"expectedCAGR": "12% - 21%",
-	"expectedVolatility": "~45%",
+	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 32.6,
 		"forwardPE": 17.2,
@@ -48,5 +48,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-10T10:32:47.445Z"
+	"lastUpdated": "2026-03-10T11:05:51.350Z"
 }

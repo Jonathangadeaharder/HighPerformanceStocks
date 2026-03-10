@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Trading at 12.3% discount to DCF intrinsic value ($340 vs $298). Cash machine. But PEG 2.3x signals slowing growth, too low-beta for 2x strategy.",
 	"marketCap": "$3706.0B USD",
-	"sharpeRatio": 0.15,
+	"sharpeRatio": 0.1,
 	"expectedCAGR": "3% - 12%",
-	"expectedVolatility": "~20%",
+	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 28.3,
 		"forwardPE": 22.8,
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:45.640Z"
+	"lastUpdated": "2026-03-10T11:05:49.295Z"
 }

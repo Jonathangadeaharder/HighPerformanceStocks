@@ -5,9 +5,9 @@
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
 	"marketCap": "$438.2B USD",
-	"sharpeRatio": -0.04,
+	"sharpeRatio": -0.03,
 	"expectedCAGR": "-2% - 7%",
-	"expectedVolatility": "~45%",
+	"expectedVolatility": "~64%",
 	"valuation": {
 		"trailingPE": 37,
 		"forwardPE": 8.3,
@@ -48,5 +48,5 @@
 		},
 		"basis": "Upper 10yr avg range; cyclical semi — model less reliable"
 	},
-	"lastUpdated": "2026-03-10T10:32:47.427Z"
+	"lastUpdated": "2026-03-10T11:05:51.385Z"
 }

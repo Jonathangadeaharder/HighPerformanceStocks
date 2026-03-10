@@ -22,7 +22,7 @@ import YahooFinance from 'yahoo-finance2';
 
 const yf = new YahooFinance({
 	validation: { logErrors: false },
-	suppressNotices: ['yahooSurvey']
+	suppressNotices: ['yahooSurvey', 'ripHistorical']
 });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -133,9 +133,45 @@ async function fetchSummary(ticker) {
 	}
 }
 
+/** Fetch 1yr daily prices and compute annualized realized volatility. */
+async function fetchHistoricalVol(ticker) {
+	try {
+		const end = new Date();
+		const start = new Date();
+		start.setFullYear(start.getFullYear() - 1);
+
+		const history = await yf.historical(ticker, {
+			period1: start,
+			period2: end,
+			interval: '1d'
+		});
+
+		if (!history || history.length < 60) return null;
+
+		const logReturns = [];
+		for (let i = 1; i < history.length; i++) {
+			const prev = history[i - 1].close;
+			const curr = history[i].close;
+			if (prev > 0 && curr > 0) {
+				logReturns.push(Math.log(curr / prev));
+			}
+		}
+
+		if (logReturns.length < 50) return null;
+
+		const mean = logReturns.reduce((s, r) => s + r, 0) / logReturns.length;
+		const variance = logReturns.reduce((s, r) => s + (r - mean) ** 2, 0) / (logReturns.length - 1);
+		const annualizedVol = Math.sqrt(variance) * Math.sqrt(252) * 100;
+
+		return Math.round(annualizedVol);
+	} catch {
+		return null;
+	}
+}
+
 // ─── Apply updates to one stock ─────────────────────────────────────────────
 
-function applyUpdates(stock, quote, summary) {
+function applyUpdates(stock, quote, summary, realizedVol) {
 	const currency = quote.currency ?? 'USD';
 	const rawPrice = quote.regularMarketPrice;
 	if (!rawPrice) return false;
@@ -284,6 +320,11 @@ function applyUpdates(stock, quote, summary) {
 		}
 	}
 
+	// ── Realized volatility (1yr annualized) ──
+	if (realizedVol != null) {
+		stock.expectedVolatility = `~${realizedVol}%`;
+	}
+
 	// ── Sharpe ratio (derived: midpoint CAGR over risk-free, divided by volatility) ──
 	const vol = parsePercent(stock.expectedVolatility);
 	if (vol != null && vol > 0 && stock.cagrModel?.scenarios) {
@@ -363,8 +404,11 @@ async function main() {
 					return false;
 				}
 
-				const summary = await fetchSummary(ticker);
-				const ok = applyUpdates(stock, quote, summary);
+				const [summary, realizedVol] = await Promise.all([
+					fetchSummary(ticker),
+					fetchHistoricalVol(ticker)
+				]);
+				const ok = applyUpdates(stock, quote, summary, realizedVol);
 
 				if (ok) {
 					writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');

@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
 	"marketCap": "C$6.7B",
-	"sharpeRatio": 0.29,
+	"sharpeRatio": 0.15,
 	"expectedCAGR": "8% - 16%",
-	"expectedVolatility": "~26%",
+	"expectedVolatility": "~49%",
 	"valuation": {
 		"trailingPE": 41.3,
 		"forwardPE": 17.5,
@@ -47,5 +47,5 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T10:32:46.520Z"
+	"lastUpdated": "2026-03-10T11:05:50.288Z"
 }

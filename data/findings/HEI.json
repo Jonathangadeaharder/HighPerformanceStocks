@@ -5,9 +5,9 @@
 	"confidence": "high",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
 	"marketCap": "$43.3B USD",
-	"sharpeRatio": 0.16,
+	"sharpeRatio": 0.14,
 	"expectedCAGR": "4% - 13%",
-	"expectedVolatility": "~25%",
+	"expectedVolatility": "~29%",
 	"valuation": {
 		"trailingPE": 61.3,
 		"forwardPE": 49,
@@ -50,5 +50,5 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:45.828Z"
+	"lastUpdated": "2026-03-10T11:05:49.441Z"
 }

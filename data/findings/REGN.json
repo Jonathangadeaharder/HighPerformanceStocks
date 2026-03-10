@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
 	"marketCap": "$82.6B USD",
-	"sharpeRatio": 0.17,
+	"sharpeRatio": 0.08,
 	"expectedCAGR": "3% - 13%",
-	"expectedVolatility": "~20%",
+	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 18.8,
 		"forwardPE": 14.8,
@@ -51,5 +51,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:47.585Z"
+	"lastUpdated": "2026-03-10T11:05:51.600Z"
 }

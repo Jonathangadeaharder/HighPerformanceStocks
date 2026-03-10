@@ -5,9 +5,9 @@
 	"confidence": "high",
 	"confidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
 	"marketCap": "C$9.3B",
-	"sharpeRatio": 0.29,
+	"sharpeRatio": 0.17,
 	"expectedCAGR": "7% - 16%",
-	"expectedVolatility": "~24%",
+	"expectedVolatility": "~40%",
 	"valuation": {
 		"trailingPE": 140.6,
 		"forwardPE": 25.4,
@@ -48,5 +48,5 @@
 		},
 		"basis": "Normalized EPS ex-NRI (Asseco one-time excluded); 5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:49.150Z"
+	"lastUpdated": "2026-03-10T11:05:53.584Z"
 }

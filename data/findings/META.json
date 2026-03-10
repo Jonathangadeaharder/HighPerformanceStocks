@@ -5,9 +5,9 @@
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
 	"marketCap": "$1637.6B USD",
-	"sharpeRatio": 0.2,
+	"sharpeRatio": 0.13,
 	"expectedCAGR": "5% - 14%",
-	"expectedVolatility": "~25%",
+	"expectedVolatility": "~39%",
 	"valuation": {
 		"trailingPE": 27.5,
 		"forwardPE": 18,
@@ -50,5 +50,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:46.755Z"
+	"lastUpdated": "2026-03-10T11:05:50.448Z"
 }

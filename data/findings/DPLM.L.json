@@ -5,9 +5,9 @@
 	"confidence": "low",
 	"confidenceReason": "UK serial acquirer in technical products distribution. ROIC ~15%, ROE ~20%, 14% organic revenue growth in Q1 2026. Unanimous analyst Buy. But CAGR of 12-16% is borderline on the floor.",
 	"marketCap": "£7.0B",
-	"sharpeRatio": 0.3,
+	"sharpeRatio": 0.22,
 	"expectedCAGR": "6% - 15%",
-	"expectedVolatility": "~20%",
+	"expectedVolatility": "~27%",
 	"valuation": {
 		"trailingPE": 38.1,
 		"forwardPE": 25.1,
@@ -48,5 +48,5 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-10T10:32:44.715Z"
+	"lastUpdated": "2026-03-10T11:05:48.347Z"
 }

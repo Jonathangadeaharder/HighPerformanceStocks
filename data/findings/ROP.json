@@ -5,9 +5,9 @@
 	"confidence": "high",
 	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
 	"marketCap": "$39.1B USD",
-	"sharpeRatio": 0.63,
+	"sharpeRatio": 0.5,
 	"expectedCAGR": "12% - 22%",
-	"expectedVolatility": "~20%",
+	"expectedVolatility": "~25%",
 	"valuation": {
 		"trailingPE": 25.6,
 		"forwardPE": 15.6,
@@ -49,5 +49,5 @@
 		},
 		"basis": "GAAP EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:48.264Z"
+	"lastUpdated": "2026-03-10T11:05:52.434Z"
 }

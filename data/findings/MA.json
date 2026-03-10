@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
 	"marketCap": "$462.0B USD",
-	"sharpeRatio": 0.78,
+	"sharpeRatio": 0.52,
 	"expectedCAGR": "12% - 22%",
-	"expectedVolatility": "~16%",
+	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 31.3,
 		"forwardPE": 22.9,
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T10:32:46.528Z"
+	"lastUpdated": "2026-03-10T11:05:50.424Z"
 }

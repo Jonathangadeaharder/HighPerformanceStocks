@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
 	"marketCap": "$16.2B USD",
-	"sharpeRatio": 0.18,
+	"sharpeRatio": 0.14,
 	"expectedCAGR": "4% - 15%",
-	"expectedVolatility": "~28%",
+	"expectedVolatility": "~36%",
 	"valuation": {
 		"trailingPE": 17,
 		"forwardPE": 26.1,
@@ -48,5 +48,5 @@
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-10T10:32:50.010Z"
+	"lastUpdated": "2026-03-10T11:05:54.463Z"
 }

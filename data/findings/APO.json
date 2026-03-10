@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
 	"marketCap": "$62.8B USD",
-	"sharpeRatio": 0.47,
+	"sharpeRatio": 0.38,
 	"expectedCAGR": "16% - 26%",
-	"expectedVolatility": "~35%",
+	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": 19.5,
 		"forwardPE": 9.9,
@@ -50,5 +50,5 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-10T10:32:43.764Z"
+	"lastUpdated": "2026-03-10T11:05:47.237Z"
 }

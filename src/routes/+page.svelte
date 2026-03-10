@@ -164,12 +164,17 @@
 									<span class="group-tag">{stock.group}</span>
 								{/if}
 							</div>
-							<span
-								class="badge"
-								style="background:{badgeColors[stock.confidence].bg};border-color:{badgeColors[stock.confidence].border};color:{badgeColors[stock.confidence].text}"
-							>
-								{stock.confidence}
-							</span>
+							<div class="badge-row">
+								{#if stock.dataAge != null && stock.dataAge > 7}
+									<span class="stale-badge" title="Last updated {stock.dataAge} days ago">{stock.dataAge}d</span>
+								{/if}
+								<span
+									class="badge"
+									style="background:{badgeColors[stock.confidence].bg};border-color:{badgeColors[stock.confidence].border};color:{badgeColors[stock.confidence].text}"
+								>
+									{stock.confidence}
+								</span>
+							</div>
 						</div>
 
 						<div class="name">{stock.name}</div>
@@ -639,6 +644,24 @@
 		font-size: 0.6rem;
 		color: #3f3f46;
 		font-weight: 500;
+	}
+
+	.badge-row {
+		display: flex;
+		align-items: center;
+		gap: 0.375rem;
+	}
+
+	.stale-badge {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.55rem;
+		font-weight: 600;
+		color: #f87171;
+		background: rgba(239,68,68,0.1);
+		border: 1px solid rgba(239,68,68,0.25);
+		padding: 1px 5px;
+		border-radius: 3px;
+		letter-spacing: 0.02em;
 	}
 
 	.badge {

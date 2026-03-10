@@ -129,6 +129,11 @@ export function load() {
 		const derived = deriveConfidence(s);
 		s.confidence = derived.confidence;
 		s.confidenceReason = derived.confidenceReason;
+
+		// Staleness detection: days since last update
+		s.dataAge = s.lastUpdated
+			? Math.floor((Date.now() - new Date(s.lastUpdated).getTime()) / 86400000)
+			: null;
 	}
 
 	// Sort: confidence tier (derived), then Sharpe descending
