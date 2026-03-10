@@ -1,0 +1,51 @@
+{
+	"ticker": "CSU.TO",
+	"name": "Constellation Software",
+	"group": "Serial Acquirers",
+	"confidence": "high",
+	"confidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
+	"marketCap": "C$63.0B",
+	"sharpeRatio": 0.85,
+	"expectedCAGR": "8% - 17%",
+	"expectedVolatility": "~18%",
+	"valuation": {
+		"trailingPE": 67.6,
+		"forwardPE": 15.7,
+		"pegRatio": null,
+		"evEbitda": 34.3
+	},
+	"metrics": {
+		"fcfMargin": "~19%",
+		"fcfYield": "~3%",
+		"roic": null,
+		"roe": "20.4%",
+		"netDebtEbitda": "1.4x",
+		"ruleOf40": "35%"
+	},
+	"targetPrice": "C$4,400",
+	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
+	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
+	"currentPrice": "C$2975",
+	"consensus": {
+		"tipranks": "C$4,481",
+		"yahoo": "C$4237.15"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 44.2,
+		"epsGrowth": "18%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 54,
+			"base": 68,
+			"bull": 82
+		},
+		"scenarios": {
+			"bear": "8%",
+			"base": "13%",
+			"bull": "17%"
+		},
+		"basis": "Normalized EPS (excl Asseco one-time); 10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:06:50.799Z"
+}

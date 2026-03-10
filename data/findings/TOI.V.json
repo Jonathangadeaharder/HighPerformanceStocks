@@ -1,0 +1,52 @@
+{
+	"ticker": "TOI.V",
+	"name": "Topicus.com",
+	"group": "Serial Acquirers",
+	"confidence": "high",
+	"confidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
+	"marketCap": "C$9.3B",
+	"sharpeRatio": 0.75,
+	"expectedCAGR": "7% - 16%",
+	"expectedVolatility": "~24%",
+	"valuation": {
+		"trailingPE": 140.6,
+		"forwardPE": 25.4,
+		"pegRatio": null,
+		"evEbitda": 30.6,
+		"evFcf": 31
+	},
+	"metrics": {
+		"fcfMargin": "~29%",
+		"fcfYield": "~5%",
+		"roic": "17.03%",
+		"roe": "10.7%",
+		"netDebtEbitda": "1.4x",
+		"ruleOf40": "49%"
+	},
+	"targetPrice": "C$176",
+	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
+	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
+	"currentPrice": "C$111.06",
+	"consensus": {
+		"tipranks": "C$160",
+		"yahoo": "C$140.46"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 1.69,
+		"epsGrowth": "25%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 43,
+			"base": 54,
+			"bull": 65
+		},
+		"scenarios": {
+			"bear": "7%",
+			"base": "12%",
+			"bull": "16%"
+		},
+		"basis": "Normalized EPS ex-NRI (Asseco one-time excluded); 5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:45.680Z"
+}

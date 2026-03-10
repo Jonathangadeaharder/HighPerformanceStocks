@@ -1,0 +1,53 @@
+{
+	"ticker": "ANET",
+	"name": "Arista Networks",
+	"group": "AI & Semiconductors",
+	"confidence": "high",
+	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
+	"marketCap": "$172.7B USD",
+	"sharpeRatio": 0.45,
+	"expectedCAGR": "3% - 13%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 50.1,
+		"forwardPE": 32.4,
+		"pegRatio": 1.44,
+		"evEbitda": 41.1
+	},
+	"metrics": {
+		"fcfMargin": "~38%",
+		"fcfYield": "~2%",
+		"roic": "~192%",
+		"roe": "31.4%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "67%",
+		"grossMargin": "64.06%"
+	},
+	"targetPrice": "$177",
+	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
+	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
+	"currentPrice": "$137.17",
+	"consensus": {
+		"tipranks": "$182",
+		"yahoo": "$178.06",
+		"stockanalysis": "$174"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 2.74,
+		"epsGrowth": "22%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 30,
+			"base": 38,
+			"bull": 46
+		},
+		"scenarios": {
+			"bear": "3%",
+			"base": "8%",
+			"bull": "13%"
+		},
+		"basis": "10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:06:36.912Z"
+}

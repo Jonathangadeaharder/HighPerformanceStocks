@@ -1,0 +1,50 @@
+{
+	"ticker": "BABA",
+	"name": "Alibaba",
+	"group": "Emerging Markets",
+	"confidence": "medium",
+	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
+	"marketCap": "$316.7B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "11% - 23%",
+	"expectedVolatility": "~40%",
+	"valuation": {
+		"trailingPE": 17.5,
+		"forwardPE": 15.2,
+		"pegRatio": null,
+		"evEbitda": 15.4
+	},
+	"metrics": {
+		"roe": "11.2%",
+		"fcfMargin": "~-5%",
+		"fcfYield": "~-16%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$180",
+	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
+	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
+	"currentPrice": "$132.64",
+	"consensus": {
+		"tipranks": "$168",
+		"yahoo": "$199.66",
+		"stockanalysis": "$160"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 9.01,
+		"epsGrowth": "13%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"scenarios": {
+			"bear": "11%",
+			"base": "18%",
+			"bull": "23%"
+		},
+		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
+	},
+	"lastUpdated": "2026-03-10T09:06:46.126Z"
+}

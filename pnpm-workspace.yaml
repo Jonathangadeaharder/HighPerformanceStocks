@@ -1,0 +1,9 @@
+supportedArchitectures:
+  os:
+    - linux
+    - win32
+    - current
+  cpu:
+    - x64
+  libc:
+    - glibc

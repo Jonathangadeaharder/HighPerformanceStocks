@@ -1,0 +1,52 @@
+{
+	"ticker": "EXEL",
+	"name": "Exelixis",
+	"group": "Healthcare Monopolies",
+	"confidence": "low",
+	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
+	"marketCap": "$11.4B USD",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "22% - 32%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 15.2,
+		"forwardPE": 10.8,
+		"pegRatio": 0.8,
+		"evEbitda": 11
+	},
+	"metrics": {
+		"fcfMargin": "~27%",
+		"fcfYield": "~6%",
+		"roic": "20.7% - 53.0%",
+		"roe": "35.5%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "33%"
+	},
+	"targetPrice": "$46",
+	"bullCase": "A classic value anomaly. A highly profitable, cash-generating oncology firm trading at deep value multiples. It absorbs macroeconomic volatility shocks that typically devastate high-beta tech holdings.",
+	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
+	"currentPrice": "$42.37",
+	"consensus": {
+		"tipranks": "$45",
+		"yahoo": "$46.83",
+		"stockanalysis": "$46"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 2.78,
+		"epsGrowth": "24%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 20,
+			"base": 25,
+			"bull": 30
+		},
+		"scenarios": {
+			"bear": "22%",
+			"base": "28%",
+			"bull": "32%"
+		},
+		"basis": "5yr & 10yr median PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:00.039Z"
+}

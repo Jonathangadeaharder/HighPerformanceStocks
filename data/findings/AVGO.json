@@ -1,0 +1,53 @@
+{
+	"ticker": "AVGO",
+	"name": "Broadcom",
+	"group": "AI & Semiconductors",
+	"confidence": "high",
+	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
+	"marketCap": "$1639.3B USD",
+	"sharpeRatio": 0.5,
+	"expectedCAGR": "10% - 19%",
+	"expectedVolatility": "~32%",
+	"valuation": {
+		"trailingPE": 67.5,
+		"forwardPE": 20,
+		"pegRatio": null,
+		"evEbitda": 4.6
+	},
+	"metrics": {
+		"fcfMargin": "~37%",
+		"fcfYield": "~2%",
+		"roic": null,
+		"roe": "33.4%",
+		"netDebtEbitda": "0.8x",
+		"ruleOf40": "54%"
+	},
+	"targetPrice": "$452",
+	"dcfFairValue": "$340.27 (Current $330.48)",
+	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
+	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
+	"currentPrice": "$345.75",
+	"consensus": {
+		"tipranks": "$460",
+		"yahoo": "$467.81",
+		"stockanalysis": "$431"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 7.07,
+		"epsGrowth": "30%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 32,
+			"base": 40,
+			"bull": 48
+		},
+		"scenarios": {
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
+		},
+		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
+	},
+	"lastUpdated": "2026-03-10T09:06:43.824Z"
+}

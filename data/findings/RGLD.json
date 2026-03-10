@@ -1,0 +1,52 @@
+{
+	"ticker": "RGLD",
+	"name": "Royal Gold",
+	"group": "Royalties",
+	"confidence": "medium",
+	"confidenceReason": "Transformational Sandstorm acquisition drives record revenue, but elevated net debt (~1.6x) and trailing P/E of 42x price in a lot of gold upside.",
+	"marketCap": "$23.9B USD",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "0% - 8%",
+	"expectedVolatility": "~24%",
+	"valuation": {
+		"trailingPE": 42.2,
+		"forwardPE": 20,
+		"pegRatio": 1.69,
+		"evEbitda": 35.5
+	},
+	"metrics": {
+		"fcfMargin": "~0%",
+		"fcfYield": "~0%",
+		"roic": "~9.9%",
+		"roe": "11.0%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "6%"
+	},
+	"targetPrice": "$251",
+	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
+	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
+	"currentPrice": "$281.86",
+	"consensus": {
+		"tipranks": "$249",
+		"yahoo": "$328.82",
+		"stockanalysis": "$231"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 6.68,
+		"epsGrowth": "15%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 24,
+			"base": 30,
+			"bull": 36
+		},
+		"scenarios": {
+			"bear": "0%",
+			"base": "5%",
+			"bull": "8%"
+		},
+		"basis": "5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:32.211Z"
+}

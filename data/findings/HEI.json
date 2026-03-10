@@ -1,0 +1,54 @@
+{
+	"ticker": "HEI",
+	"name": "HEICO Corporation",
+	"group": "Serial Acquirers",
+	"confidence": "high",
+	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
+	"marketCap": "$43.3B USD",
+	"sharpeRatio": 0.45,
+	"expectedCAGR": "4% - 13%",
+	"expectedVolatility": "~25%",
+	"valuation": {
+		"trailingPE": 61.3,
+		"forwardPE": 49,
+		"pegRatio": null,
+		"evEbitda": 36.4
+	},
+	"metrics": {
+		"fcfMargin": "~15%",
+		"fcfYield": "~2%",
+		"roic": "~29%",
+		"roe": "16.6%",
+		"netDebtEbitda": "1.8x",
+		"ruleOf40": "29%",
+		"operatingMargin": "~22%",
+		"fcfConversion": "~105% of net income"
+	},
+	"targetPrice": "$366",
+	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
+	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
+	"currentPrice": "$310.29",
+	"consensus": {
+		"tipranks": "$366",
+		"yahoo": "$371.50",
+		"stockanalysis": "$366"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 5.06,
+		"epsGrowth": "18%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 42,
+			"base": 52,
+			"bull": 62
+		},
+		"scenarios": {
+			"bear": "4%",
+			"base": "9%",
+			"bull": "13%"
+		},
+		"basis": "10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:08.981Z"
+}

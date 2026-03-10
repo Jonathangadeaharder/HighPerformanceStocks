@@ -1,0 +1,39 @@
+{
+	"ticker": "RXRX",
+	"name": "Recursion Pharmaceuticals",
+	"group": "Ruthlessly Cut",
+	"confidence": "cut",
+	"confidenceReason": "Capital incinerator. -$644.76M net loss, ROE -91%. $368.57M in recent dilutive filings. Analyst fair value $1.97. Binary outcome.",
+	"marketCap": null,
+	"sharpeRatio": null,
+	"sharpeNote": "Negative",
+	"expectedCAGR": "N/A (pre-profit)",
+	"expectedVolatility": ">80%",
+	"valuation": {
+		"trailingPE": null,
+		"forwardPE": null,
+		"pegRatio": null,
+		"evEbitda": null
+	},
+	"metrics": {
+		"fcfMargin": null,
+		"fcfYield": null,
+		"roic": null,
+		"roe": "-91.07%",
+		"netDebtEbitda": null,
+		"ruleOf40": null
+	},
+	"targetPrice": "$7",
+	"bullCase": null,
+	"bearCase": "A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
+	"currentPrice": "$3.60",
+	"consensus": {
+		"tipranks": "$7.00",
+		"yahoo": "$6.71",
+		"stockanalysis": "$7.20"
+	},
+	"cagrModel": {
+		"note": "Pre-profit biotech; PE-based model not applicable"
+	},
+	"lastUpdated": "2026-03-10T09:06:25.835Z"
+}

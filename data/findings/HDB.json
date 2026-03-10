@@ -1,0 +1,48 @@
+{
+	"ticker": "HDB",
+	"name": "HDFC Bank",
+	"group": "Emerging Markets",
+	"confidence": "medium",
+	"confidenceReason": "India's largest private bank by market cap. Consistent ~15% loan growth post-merger with HDFC Ltd. Low NPAs (~1.3%) and strong ROA (~1.9%). ADR trades at slight premium to local shares.",
+	"marketCap": "$152.5B USD",
+	"sharpeRatio": 0.5,
+	"expectedCAGR": "6% - 15%",
+	"expectedVolatility": "~25%",
+	"valuation": {
+		"trailingPE": 20.4,
+		"forwardPE": 21.8,
+		"pegRatio": null,
+		"evEbitda": null
+	},
+	"metrics": {
+		"roe": "14.0%",
+		"netDebtEbitda": null
+	},
+	"targetPrice": "$80",
+	"bullCase": "India's banking sector is under-penetrated with credit-to-GDP at ~55% vs 150%+ in developed markets, giving HDFC Bank a multi-decade growth runway. The HDFC Ltd merger creates the largest private-sector balance sheet in India with cross-selling opportunities across mortgages, insurance, and asset management. Net interest margins remain best-in-class at ~3.5%. Digital adoption (PayZapp, SmartBUY) is accelerating fee income. Post-merger cost synergies are still being unlocked.",
+	"bearCase": "Post-merger integration is diluting ROE from ~17% to ~15% as the lower-yielding mortgage book gets absorbed. The RBI's tightening cycle has compressed NIMs. Intense competition from Jio Financial and other fintechs could pressure market share in unsecured lending. ADR investors face INR depreciation risk (~3-4% annual drag historically). Regulatory risk from RBI's increasing scrutiny of digital lending practices.",
+	"currentPrice": "$29.72",
+	"consensus": {
+		"tipranks": "$78",
+		"yahoo": "$42.95",
+		"stockanalysis": "$75"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 1.46,
+		"epsGrowth": "14%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 16,
+			"base": 20,
+			"bull": 24
+		},
+		"scenarios": {
+			"bear": "6%",
+			"base": "11%",
+			"bull": "15%"
+		},
+		"basis": "GAAP diluted EPS (ADR); post 2:1 split Sep 2025"
+	},
+	"lastUpdated": "2026-03-10T09:07:06.774Z"
+}

@@ -1,0 +1,55 @@
+{
+	"ticker": "REGN",
+	"name": "Regeneron Pharmaceuticals",
+	"group": "Healthcare Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
+	"marketCap": "$82.6B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "3% - 13%",
+	"expectedVolatility": "~20%",
+	"valuation": {
+		"trailingPE": 18.8,
+		"forwardPE": 14.8,
+		"pegRatio": null,
+		"evEbitda": 17.6,
+		"evFcf": 15
+	},
+	"metrics": {
+		"fcfMargin": "~23%",
+		"fcfYield": "~4%",
+		"roic": "28% (5yr avg)",
+		"roe": "14.9%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "25%",
+		"operatingMargin": "~23%",
+		"beta": "0.4"
+	},
+	"targetPrice": "$819",
+	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
+	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
+	"currentPrice": "$781.60",
+	"consensus": {
+		"tipranks": "$813",
+		"yahoo": "$872.67",
+		"stockanalysis": "$820"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 41.5,
+		"epsGrowth": "12%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 14,
+			"base": 18,
+			"bull": 22
+		},
+		"scenarios": {
+			"bear": "3%",
+			"base": "8%",
+			"bull": "13%"
+		},
+		"basis": "5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:29.769Z"
+}

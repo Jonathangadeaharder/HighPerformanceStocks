@@ -1,0 +1,52 @@
+{
+	"ticker": "V",
+	"name": "Visa",
+	"group": "Defensive Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
+	"marketCap": "$609.2B USD",
+	"sharpeRatio": 0.5,
+	"expectedCAGR": "10% - 19%",
+	"expectedVolatility": "~16%",
+	"valuation": {
+		"trailingPE": 29.7,
+		"forwardPE": 21.8,
+		"pegRatio": null,
+		"evEbitda": 21
+	},
+	"metrics": {
+		"fcfMargin": "~53%",
+		"fcfYield": "~4%",
+		"roic": ">50%",
+		"roe": "54.0%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "68%"
+	},
+	"targetPrice": "$400",
+	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
+	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
+	"currentPrice": "$315.97",
+	"consensus": {
+		"tipranks": "$400",
+		"yahoo": "$400.47",
+		"stockanalysis": "$399"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 10.65,
+		"epsGrowth": "14%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 28,
+			"base": 35,
+			"bull": 42
+		},
+		"scenarios": {
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
+		},
+		"basis": "5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:50.171Z"
+}

@@ -1,0 +1,53 @@
+{
+	"ticker": "DHR",
+	"name": "Danaher Corporation",
+	"group": "Serial Acquirers",
+	"confidence": "low",
+	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
+	"marketCap": "$140.6B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "0% - 8%",
+	"expectedVolatility": "~20%",
+	"valuation": {
+		"trailingPE": 39.5,
+		"forwardPE": 21.8,
+		"pegRatio": null,
+		"evEbitda": 19.9
+	},
+	"metrics": {
+		"fcfMargin": "~19%",
+		"fcfYield": "~3%",
+		"roic": "~6.8% (trough)",
+		"roe": "7.1%",
+		"netDebtEbitda": "1.9x",
+		"ruleOf40": "23%",
+		"historicalTotalReturn": "450%+ over 10 years"
+	},
+	"targetPrice": "$254",
+	"bullCase": "Historically elite serial acquirer with proven Danaher Business System (DBS). 450%+ total return over 10 years. Current trough could be a re-entry point. Masimo acquisition adds new capabilities.",
+	"bearCase": "ROIC depressed at ~6.8%. Mid-single-digit growth. Integration risk from $9.9B Masimo acquisition. Recovery timeline uncertain.",
+	"currentPrice": "$198.80",
+	"consensus": {
+		"tipranks": "$248",
+		"yahoo": "$264.91",
+		"stockanalysis": "$251"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 5.03,
+		"epsGrowth": "10%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 26,
+			"base": 32,
+			"bull": 38
+		},
+		"scenarios": {
+			"bear": "0%",
+			"base": "5%",
+			"bull": "8%"
+		},
+		"basis": "GAAP diluted EPS; 10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:06:53.105Z"
+}

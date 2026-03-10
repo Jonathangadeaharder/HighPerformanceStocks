@@ -1,0 +1,52 @@
+{
+	"ticker": "VEEV",
+	"name": "Veeva Systems",
+	"group": "Healthcare Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
+	"marketCap": "$32.1B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "10% - 19%",
+	"expectedVolatility": "~28%",
+	"valuation": {
+		"trailingPE": 36,
+		"forwardPE": 19.8,
+		"pegRatio": null,
+		"evEbitda": 26.1
+	},
+	"metrics": {
+		"fcfMargin": "~33%",
+		"fcfYield": "~3%",
+		"roic": null,
+		"roe": "13.9%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "49%"
+	},
+	"targetPrice": "$298",
+	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
+	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
+	"currentPrice": "$195.57",
+	"consensus": {
+		"tipranks": "$300",
+		"yahoo": "$275.43",
+		"stockanalysis": "$284"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 5.12,
+		"epsGrowth": "16%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 36,
+			"base": 45,
+			"bull": 54
+		},
+		"scenarios": {
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
+		},
+		"basis": "Below historical avg (70); adjusted for maturation"
+	},
+	"lastUpdated": "2026-03-10T09:07:52.395Z"
+}

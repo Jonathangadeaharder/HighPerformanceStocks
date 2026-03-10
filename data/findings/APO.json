@@ -1,0 +1,54 @@
+{
+	"ticker": "APO",
+	"name": "Apollo Global Management",
+	"group": "Financials & Alt Assets",
+	"confidence": "medium",
+	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
+	"marketCap": "$62.8B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "16% - 26%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 19.5,
+		"forwardPE": 9.9,
+		"pegRatio": null,
+		"evEbitda": null
+	},
+	"metrics": {
+		"fcfMargin": null,
+		"fcfYield": null,
+		"roic": "6.57%",
+		"roe": "14.7%",
+		"netDebtEbitda": null,
+		"ruleOf40": null,
+		"aum": "$938B",
+		"aumGrowth": "25% YoY"
+	},
+	"targetPrice": "$163",
+	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
+	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
+	"currentPrice": "$108.14",
+	"consensus": {
+		"tipranks": "$165",
+		"yahoo": "$156.59",
+		"stockanalysis": "$156"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 8.38,
+		"epsGrowth": "20%",
+		"dividendYield": "2%",
+		"exitPE": {
+			"bear": 13,
+			"base": 16,
+			"bull": 20
+		},
+		"scenarios": {
+			"bear": "16%",
+			"base": "20%",
+			"bull": "26%"
+		},
+		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
+	},
+	"lastUpdated": "2026-03-10T09:06:39.216Z"
+}

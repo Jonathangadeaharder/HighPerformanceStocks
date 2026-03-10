@@ -1,0 +1,53 @@
+{
+	"ticker": "NU",
+	"name": "Nu Holdings",
+	"group": "Financials & Alt Assets",
+	"confidence": "medium",
+	"confidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
+	"marketCap": "$71.2B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "13% - 22%",
+	"expectedVolatility": "~50%",
+	"valuation": {
+		"trailingPE": 24.9,
+		"forwardPE": 12.5,
+		"pegRatio": 0.6,
+		"evEbitda": null
+	},
+	"metrics": {
+		"fcfMargin": null,
+		"fcfYield": null,
+		"roic": null,
+		"roe": "30.3%",
+		"netDebtEbitda": null,
+		"ruleOf40": null,
+		"efficiencyRatio": "~34%"
+	},
+	"targetPrice": "$18",
+	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
+	"bearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche.",
+	"currentPrice": "$14.67",
+	"consensus": {
+		"tipranks": "$18",
+		"yahoo": "$20.17",
+		"stockanalysis": "$18"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 0.59,
+		"epsGrowth": "28%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 20,
+			"base": 25,
+			"bull": 30
+		},
+		"scenarios": {
+			"bear": "13%",
+			"base": "18%",
+			"bull": "22%"
+		},
+		"basis": "Current PE; limited profitable history"
+	},
+	"lastUpdated": "2026-03-10T09:07:25.122Z"
+}

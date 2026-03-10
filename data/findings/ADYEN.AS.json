@@ -1,0 +1,53 @@
+{
+	"ticker": "ADYEN.AS",
+	"name": "Adyen N.V.",
+	"group": "Financials & Alt Assets",
+	"confidence": "medium",
+	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
+	"marketCap": "€30.1B",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "18% - 28%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 28.4,
+		"forwardPE": 20,
+		"pegRatio": null,
+		"evEbitda": 16
+	},
+	"metrics": {
+		"fcfMargin": "~22%",
+		"fcfYield": "~2%",
+		"roic": "14% - 35%",
+		"roe": "22.3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "39%",
+		"ebitdaMargin": "~50%",
+		"beta": "1.9"
+	},
+	"targetPrice": "€1,478",
+	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
+	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
+	"currentPrice": "€955",
+	"consensus": {
+		"tipranks": "€1,494",
+		"yahoo": "€1460.82"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 33.59,
+		"epsGrowth": "18%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 36,
+			"base": 45,
+			"bull": 54
+		},
+		"scenarios": {
+			"bear": "18%",
+			"base": "23%",
+			"bull": "28%"
+		},
+		"basis": "Below 5yr avg (72); normalized for post-2021 era"
+	},
+	"lastUpdated": "2026-03-10T09:06:34.679Z"
+}

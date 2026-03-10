@@ -1,0 +1,52 @@
+{
+	"ticker": "VNOM",
+	"name": "Viper Energy",
+	"group": "Royalties",
+	"confidence": "medium",
+	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
+	"marketCap": "$16.2B USD",
+	"sharpeRatio": 0.29,
+	"expectedCAGR": "-2% - 5%",
+	"expectedVolatility": "~28%",
+	"valuation": {
+		"trailingPE": 17,
+		"forwardPE": 26.1,
+		"pegRatio": null,
+		"evEbitda": 12.4
+	},
+	"metrics": {
+		"fcfMargin": "~-120%",
+		"fcfYield": "~-10%",
+		"roic": "~4%",
+		"roe": "-2.9%",
+		"netDebtEbitda": "1.7x",
+		"ruleOf40": "-30%"
+	},
+	"targetPrice": "$52",
+	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
+	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
+	"currentPrice": "$44.14",
+	"consensus": {
+		"tipranks": "$51",
+		"yahoo": "$51.35",
+		"stockanalysis": "$53"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 1.69,
+		"epsGrowth": "8%",
+		"dividendYield": "5%",
+		"exitPE": {
+			"bear": 13,
+			"base": 16,
+			"bull": 19
+		},
+		"scenarios": {
+			"bear": "-2%",
+			"base": "2%",
+			"bull": "5%"
+		},
+		"basis": "Adjusted EPS; 5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:57.326Z"
+}

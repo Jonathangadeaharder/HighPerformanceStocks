@@ -1,0 +1,52 @@
+{
+	"ticker": "XYZ",
+	"name": "Block Inc.",
+	"group": "Ruthlessly Cut",
+	"confidence": "cut",
+	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
+	"marketCap": "$39.8B USD",
+	"sharpeRatio": 0.1,
+	"expectedCAGR": "9% - 18%",
+	"expectedVolatility": "~60%",
+	"valuation": {
+		"trailingPE": 31.2,
+		"forwardPE": 14,
+		"pegRatio": null,
+		"evEbitda": 19.8
+	},
+	"metrics": {
+		"fcfMargin": "~-4%",
+		"fcfYield": "~-3%",
+		"roic": null,
+		"roe": "6.0%",
+		"netDebtEbitda": "0.9x",
+		"ruleOf40": "-1%"
+	},
+	"targetPrice": "$82",
+	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
+	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
+	"currentPrice": "$65.54",
+	"consensus": {
+		"tipranks": "$81",
+		"yahoo": "$85.52",
+		"stockanalysis": "$81"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 2.1,
+		"epsGrowth": "22%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 24,
+			"base": 30,
+			"bull": 36
+		},
+		"scenarios": {
+			"bear": "9%",
+			"base": "14%",
+			"bull": "18%"
+		},
+		"basis": "Est. from current era; first sustained GAAP profitability"
+	},
+	"lastUpdated": "2026-03-10T09:07:38.959Z"
+}

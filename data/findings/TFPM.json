@@ -1,0 +1,52 @@
+{
+	"ticker": "TFPM",
+	"name": "Triple Flag Precious Metals",
+	"group": "Royalties",
+	"confidence": "medium",
+	"confidenceReason": "Most attractive valuation among precious metals streamers (lowest P/E, best PEG ~1.0, highest FCF yield). Zero debt and negative beta. But smallest/least liquid of the group with limited analyst coverage.",
+	"marketCap": "$8.1B USD",
+	"sharpeRatio": 0.48,
+	"expectedCAGR": "3% - 12%",
+	"expectedVolatility": "~22%",
+	"valuation": {
+		"trailingPE": 33,
+		"forwardPE": 25.8,
+		"pegRatio": 1.02,
+		"evEbitda": 26.9
+	},
+	"metrics": {
+		"fcfMargin": "~-1%",
+		"fcfYield": "~0%",
+		"roic": "~10%",
+		"roe": "12.7%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "59%"
+	},
+	"targetPrice": "$35",
+	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
+	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
+	"currentPrice": "$38.97",
+	"consensus": {
+		"tipranks": "C$59",
+		"yahoo": "$41.75",
+		"stockanalysis": "$35"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 1.18,
+		"epsGrowth": "8%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 26,
+			"base": 33,
+			"bull": 40
+		},
+		"scenarios": {
+			"bear": "3%",
+			"base": "8%",
+			"bull": "12%"
+		},
+		"basis": "Current PE; IPO 2021 — limited history"
+	},
+	"lastUpdated": "2026-03-10T09:07:43.357Z"
+}

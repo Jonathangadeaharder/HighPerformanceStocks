@@ -1,0 +1,53 @@
+{
+	"ticker": "ROP",
+	"name": "Roper Technologies",
+	"group": "Serial Acquirers",
+	"confidence": "high",
+	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
+	"marketCap": "$39.1B USD",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "12% - 22%",
+	"expectedVolatility": "~20%",
+	"valuation": {
+		"trailingPE": 25.6,
+		"forwardPE": 15.6,
+		"pegRatio": null,
+		"evEbitda": 14.9
+	},
+	"metrics": {
+		"fcfMargin": "~27%",
+		"fcfYield": "~5%",
+		"roic": null,
+		"roe": "7.9%",
+		"netDebtEbitda": "2.9x",
+		"ruleOf40": "37%"
+	},
+	"targetPrice": "$478",
+	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
+	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
+	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
+	"currentPrice": "$363.06",
+	"consensus": {
+		"tipranks": "$479",
+		"yahoo": "$462.19",
+		"stockanalysis": "$495"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 14.2,
+		"epsGrowth": "12%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 28,
+			"base": 35,
+			"bull": 42
+		},
+		"scenarios": {
+			"bear": "12%",
+			"base": "17%",
+			"bull": "22%"
+		},
+		"basis": "GAAP EPS; 10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:34.428Z"
+}

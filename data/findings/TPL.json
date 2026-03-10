@@ -1,0 +1,52 @@
+{
+	"ticker": "TPL",
+	"name": "Texas Pacific Land",
+	"group": "Royalties",
+	"confidence": "medium",
+	"confidenceReason": "Irreplaceable 880K-acre Permian asset with world-class profitability (39% ROE, 30% ROIC, 62% FCF margin). Data center optionality via Bolt partnership. But 41x P/E after 50% February rally prices in much of the upside.",
+	"marketCap": "$37.2B USD",
+	"sharpeRatio": 0.34,
+	"expectedCAGR": "-8% - -1%",
+	"expectedVolatility": "~32%",
+	"valuation": {
+		"trailingPE": 77.6,
+		"forwardPE": 7.4,
+		"pegRatio": null,
+		"evEbitda": 56.6
+	},
+	"metrics": {
+		"fcfMargin": "~-10%",
+		"fcfYield": "~0%",
+		"roic": "~30%",
+		"roe": "37.2%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "4%"
+	},
+	"targetPrice": "$639",
+	"bullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
+	"bearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot.",
+	"currentPrice": "$539.79",
+	"consensus": {
+		"tipranks": "$639",
+		"yahoo": "$444.50",
+		"stockanalysis": "$639"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 6.98,
+		"epsGrowth": "16%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 30,
+			"base": 37,
+			"bull": 44
+		},
+		"scenarios": {
+			"bear": "-8%",
+			"base": "-4%",
+			"bull": "-1%"
+		},
+		"basis": "10yr avg PE (post 3:1 split adjusted)"
+	},
+	"lastUpdated": "2026-03-10T09:07:45.682Z"
+}

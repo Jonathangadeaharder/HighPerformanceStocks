@@ -1,0 +1,52 @@
+{
+	"ticker": "ASML",
+	"name": "ASML Holding",
+	"group": "AI & Semiconductors",
+	"confidence": "low",
+	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
+	"marketCap": "$533.0B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "3% - 11%",
+	"expectedVolatility": "~38%",
+	"valuation": {
+		"trailingPE": 47.4,
+		"forwardPE": 31.5,
+		"pegRatio": null,
+		"evEbitda": 41.9
+	},
+	"metrics": {
+		"fcfMargin": "~33%",
+		"fcfYield": "~2%",
+		"roic": null,
+		"roe": "50.5%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "38%"
+	},
+	"targetPrice": "$1,529",
+	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
+	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
+	"currentPrice": "$1357.42",
+	"consensus": {
+		"tipranks": "$1,625",
+		"yahoo": "$1477.35",
+		"stockanalysis": "$1,476"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 28.64,
+		"epsGrowth": "18%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 29,
+			"base": 36,
+			"bull": 43
+		},
+		"scenarios": {
+			"bear": "3%",
+			"base": "7%",
+			"bull": "11%"
+		},
+		"basis": "5yr & 10yr avg PE (~36)"
+	},
+	"lastUpdated": "2026-03-10T09:06:41.518Z"
+}

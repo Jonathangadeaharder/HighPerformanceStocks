@@ -1,0 +1,55 @@
+{
+	"ticker": "VRT",
+	"name": "Vertiv Holdings",
+	"group": "AI & Semiconductors",
+	"confidence": "low",
+	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
+	"marketCap": "$101.1B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "0% - 8%",
+	"expectedVolatility": "~45%",
+	"valuation": {
+		"trailingPE": 77.5,
+		"forwardPE": 33.5,
+		"pegRatio": null,
+		"evEbitda": 46.4
+	},
+	"metrics": {
+		"fcfMargin": "~14%",
+		"fcfYield": "~1%",
+		"roic": "~25%",
+		"roe": "41.8%",
+		"netDebtEbitda": "0.6x",
+		"ruleOf40": "37%",
+		"revenueGrowth": "22.7%",
+		"backlog": "$15B",
+		"orderGrowth": "252% YoY"
+	},
+	"targetPrice": "$251",
+	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
+	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
+	"currentPrice": "$264.35",
+	"consensus": {
+		"tipranks": "$280",
+		"yahoo": "$263.20",
+		"stockanalysis": "$217"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 3.41,
+		"epsGrowth": "30%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 32,
+			"base": 40,
+			"bull": 48
+		},
+		"scenarios": {
+			"bear": "0%",
+			"base": "4%",
+			"bull": "8%"
+		},
+		"basis": "Normalized from mature period (public since 2020 only)"
+	},
+	"lastUpdated": "2026-03-10T09:07:59.638Z"
+}

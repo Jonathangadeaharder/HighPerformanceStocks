@@ -1,0 +1,52 @@
+{
+	"ticker": "TDG",
+	"name": "TransDigm Group",
+	"group": "Ruthlessly Cut",
+	"confidence": "cut",
+	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
+	"marketCap": "$72.2B USD",
+	"sharpeRatio": 0.15,
+	"expectedCAGR": "14% - 23%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 41.2,
+		"forwardPE": 27.8,
+		"pegRatio": null,
+		"evEbitda": 21.5
+	},
+	"metrics": {
+		"fcfMargin": "~15%",
+		"fcfYield": "~2%",
+		"roic": null,
+		"roe": null,
+		"netDebtEbitda": "5.9x",
+		"ruleOf40": "28%"
+	},
+	"targetPrice": "$1,584",
+	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
+	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
+	"currentPrice": "$1277.93",
+	"consensus": {
+		"tipranks": "$1,568",
+		"yahoo": "$1594",
+		"stockanalysis": "$1,590"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 31.07,
+		"epsGrowth": "18%",
+		"dividendYield": "4%",
+		"exitPE": {
+			"bear": 37,
+			"base": 46,
+			"bull": 55
+		},
+		"scenarios": {
+			"bear": "14%",
+			"base": "19%",
+			"bull": "23%"
+		},
+		"basis": "10yr avg PE; DY includes normalized special dividends"
+	},
+	"lastUpdated": "2026-03-10T09:07:41.175Z"
+}

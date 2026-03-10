@@ -1,0 +1,52 @@
+{
+	"ticker": "CDNS",
+	"name": "Cadence Design Systems",
+	"group": "AI & Semiconductors",
+	"confidence": "low",
+	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
+	"marketCap": "$82.2B USD",
+	"sharpeRatio": 0.3,
+	"expectedCAGR": "1% - 10%",
+	"expectedVolatility": "~30%",
+	"valuation": {
+		"trailingPE": 73.6,
+		"forwardPE": 31.7,
+		"pegRatio": 3.9,
+		"evEbitda": 42.3
+	},
+	"metrics": {
+		"fcfMargin": "~29%",
+		"fcfYield": "~2%",
+		"roic": "21.8% - 25.1%",
+		"roe": "21.9%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "35%"
+	},
+	"targetPrice": "$373",
+	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
+	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
+	"currentPrice": "$298.05",
+	"consensus": {
+		"tipranks": "$369",
+		"yahoo": "$371.82",
+		"stockanalysis": "$369"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 4.05,
+		"epsGrowth": "20%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 42,
+			"base": 52,
+			"bull": 62
+		},
+		"scenarios": {
+			"bear": "1%",
+			"base": "6%",
+			"bull": "10%"
+		},
+		"basis": "10yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:06:48.518Z"
+}

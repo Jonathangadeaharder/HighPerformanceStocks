@@ -1,0 +1,52 @@
+{
+	"ticker": "MA",
+	"name": "Mastercard",
+	"group": "Defensive Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
+	"marketCap": "$462.0B USD",
+	"sharpeRatio": 0.5,
+	"expectedCAGR": "12% - 22%",
+	"expectedVolatility": "~16%",
+	"valuation": {
+		"trailingPE": 31.3,
+		"forwardPE": 22.9,
+		"pegRatio": null,
+		"evEbitda": 22.9
+	},
+	"metrics": {
+		"fcfMargin": "~50%",
+		"fcfYield": "~4%",
+		"roic": ">50%",
+		"roe": "209.9%",
+		"netDebtEbitda": "0.4x",
+		"ruleOf40": "67%"
+	},
+	"targetPrice": "$660",
+	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
+	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
+	"currentPrice": "$517.72",
+	"consensus": {
+		"tipranks": "$659",
+		"yahoo": "$662.80",
+		"stockanalysis": "$660"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 16.52,
+		"epsGrowth": "18%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 30,
+			"base": 38,
+			"bull": 46
+		},
+		"scenarios": {
+			"bear": "12%",
+			"base": "18%",
+			"bull": "22%"
+		},
+		"basis": "5yr avg PE"
+	},
+	"lastUpdated": "2026-03-10T09:07:15.788Z"
+}

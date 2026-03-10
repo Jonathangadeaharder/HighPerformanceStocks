@@ -1,0 +1,53 @@
+{
+	"ticker": "BN",
+	"name": "Brookfield Corporation",
+	"group": "Financials & Alt Assets",
+	"confidence": "medium",
+	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
+	"marketCap": "$92.3B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "11% - 22%",
+	"expectedVolatility": "~30%",
+	"valuation": {
+		"trailingPE": 83.8,
+		"forwardPE": 7,
+		"pegRatio": null,
+		"evEbitda": 15
+	},
+	"metrics": {
+		"fcfMargin": null,
+		"fcfYield": null,
+		"roic": "15%+ economic (~3% reported, distorted)",
+		"roe": "2.0%",
+		"netDebtEbitda": "8.0x",
+		"ruleOf40": null,
+		"aum": "$1T+"
+	},
+	"targetPrice": "$52",
+	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
+	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
+	"currentPrice": "$41.08",
+	"consensus": {
+		"tipranks": "$55",
+		"yahoo": "$53.95",
+		"stockanalysis": "$46"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 2.27,
+		"epsGrowth": "25%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 14,
+			"base": 18,
+			"bull": 22
+		},
+		"scenarios": {
+			"bear": "11%",
+			"base": "17%",
+			"bull": "22%"
+		},
+		"basis": "Distributable Earnings (DE) before realizations per share; post-Oct 2025 3:2 split; P/DE basis"
+	},
+	"lastUpdated": "2026-03-10T09:06:46.312Z"
+}
