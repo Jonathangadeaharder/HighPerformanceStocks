@@ -1,62 +1,116 @@
-<script>
-	let { data } = $props();
-	let expandedDeploy = $state(null);
-	let expandedWait = $state(null);
-	let showWatchlist = $state(false);
-	let expandedWatch = $state({});
+<script lang="ts">
+	import type { PageData } from './$types';
 
-	function toggleDeploy(ticker) {
+	type Stock = PageData['deployNow'][number];
+	type ScenarioKey = 'bear' | 'base' | 'bull';
+	type WorldVolSignal = PageData['worldVolSignal'];
+	const scenarioKeys: ScenarioKey[] = ['bear', 'base', 'bull'];
+
+	let { data }: { data: PageData } = $props();
+	let expandedDeploy = $state<string | null>(null);
+	let expandedWait = $state<string | null>(null);
+	let showWatchlist = $state(false);
+	let expandedWatch = $state<Record<string, boolean>>({});
+
+	function toggleDeploy(ticker: string): void {
 		expandedDeploy = expandedDeploy === ticker ? null : ticker;
 	}
 
-	function toggleWait(ticker) {
+	function toggleWait(ticker: string): void {
 		expandedWait = expandedWait === ticker ? null : ticker;
 	}
 
-	function toggleWatch(ticker) {
-		expandedWatch[ticker] = !expandedWatch[ticker];
+	function toggleWatch(ticker: string): void {
+		expandedWatch = {
+			...expandedWatch,
+			[ticker]: !expandedWatch[ticker]
+		};
 	}
 
-	function scoreColor(score) {
+	function scoreColor(score: number | null | undefined): string {
 		if (score == null) return '#71717a';
 		if (score <= 0.5) return '#22c55e';
 		if (score <= 0.75) return '#4ade80';
 		return '#a3e635';
 	}
 
-	function upsideColor(n) {
+	function upsideColor(n: number | null | undefined): string {
 		if (n == null) return '#52525b';
 		if (n < 0) return '#f87171';
 		if (n < 15) return '#facc15';
 		return '#4ade80';
 	}
 
-	function usesGrowthScore(stock) {
-		return stock.screener.engine !== 'totalReturn' && stock.screener.engine !== 'N/A';
+	function usesGrowthScore(stock: Stock): boolean {
+		return stock.screener?.engine !== 'totalReturn' && stock.screener?.engine !== 'N/A';
 	}
 
-	function scoreLabel(stock) {
+	function scoreLabel(stock: Stock): string {
 		if (usesGrowthScore(stock)) {
-			return `${stock.screener.score} score`;
+			return `${stock.screener?.score ?? 'N/A'} score`;
 		}
-		return `${stock.screener.score}% return`;
+		return `${stock.screener?.score ?? 'N/A'}% return`;
 	}
 
-	function volToneClass(signal) {
-		if (!signal?.available) return 'unavailable';
-		return signal.tone ?? 'hold';
+	function screenerLabel(stock: Stock): string {
+		return stock.screener?.inputs?.multipleType ?? stock.screener?.engine ?? 'N/A';
 	}
 
-	function componentWeight(weight) {
+	function detailLabel(stock: Stock): string {
+		if (usesGrowthScore(stock)) {
+			return `${stock.screener?.inputs?.growth ?? 'N/A'}% growth · ${stock.screener?.inputs?.multiple ?? 'N/A'}× ${screenerLabel(stock)}`;
+		}
+
+		const dividendYield = stock.screener?.inputs?.dividendYield ?? 'N/A';
+		const growth = stock.screener?.inputs?.growth ?? 'N/A';
+		const debtPenalty = stock.screener?.inputs?.debtPenalty ? ' · 30% debt penalty' : '';
+		return `${dividendYield}% yield + ${growth}% growth${debtPenalty}`;
+	}
+
+	function stabilizationReturn(value: number | null | undefined = 0): string {
+		const displayValue = value ?? 0;
+		return `${displayValue > 0 ? '+' : ''}${displayValue}%`;
+	}
+
+	function deploymentReason(stock: Stock): string {
+		return stock.deployment?.reason ?? 'No deployment rationale available.';
+	}
+
+	function screenerNote(stock: Stock): string {
+		return stock.screener?.note ?? 'No screener note available.';
+	}
+
+	function revisionsSummary(stock: Stock): string {
+		const up30d = stock.screener?.realityChecks?.revisions?.up30d ?? 0;
+		const down30d = stock.screener?.realityChecks?.revisions?.down30d ?? 0;
+		return `✓ ${up30d}↑ ${down30d}↓ revisions`;
+	}
+
+	function scenarioValue(stock: Stock, scenario: ScenarioKey): string | null {
+		return stock.cagrModel?.scenarios?.[scenario] ?? null;
+	}
+
+	function volToneClass(signal: WorldVolSignal): string {
+		return signal.available ? signal.tone : 'unavailable';
+	}
+
+	function componentWeight(weight: number | null | undefined): string | null {
 		return weight == null ? null : `${Math.round(weight * 100)}%`;
+	}
+
+	function watchSignalClass(stock: Stock): string {
+		return stock.deployment?.status ? stock.deployment.status.toLowerCase() : 'no_data';
 	}
 </script>
 
 <svelte:head>
 	<title>Portfolio Dashboard</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <div class="page">
@@ -67,9 +121,12 @@
 
 	<section class="section">
 		<div class="section-label">Global Developed Volatility</div>
-		<div class="mini-guide">Why this is here: a broad-market stress proxy helps decide whether 2x developed-markets exposure is attractive, neutral, or too risky.</div>
+		<div class="mini-guide">
+			Why this is here: a broad-market stress proxy helps decide whether 2x developed-markets
+			exposure is attractive, neutral, or too risky.
+		</div>
 		<div class="vol-card {volToneClass(data.worldVolSignal)}">
-			{#if data.worldVolSignal?.available}
+			{#if data.worldVolSignal.available}
 				<div class="vol-main">
 					<div class="vol-value">{data.worldVolSignal.impliedVol}%</div>
 					<div class="vol-meta">
@@ -107,10 +164,15 @@
 					<div class="vol-value">N/A</div>
 					<div class="vol-meta">
 						<div class="vol-action">Signal unavailable</div>
-						<div class="vol-detail">Source {data.worldVolSignal?.source ?? 'Global developed volatility proxies'} · {data.worldVolSignal?.reason ?? 'Yahoo market data is temporarily unavailable.'}</div>
+						<div class="vol-detail">
+							Source {data.worldVolSignal.source} · {data.worldVolSignal.reason}
+						</div>
 					</div>
 				</div>
-				<div class="vol-note">This card prefers a VIX/VSTOXX blend and falls back gracefully when one of the feeds is unavailable.</div>
+				<div class="vol-note">
+					This card prefers a VIX/VSTOXX blend and falls back gracefully when one of the feeds is
+					unavailable.
+				</div>
 			{/if}
 		</div>
 	</section>
@@ -118,7 +180,10 @@
 	<!-- Core Allocation -->
 	<section class="section">
 		<div class="section-label">Core Allocation</div>
-		<div class="mini-guide">Why this is here: ETFs are the default portfolio. Stocks only earn capital when the evidence is unusually strong.</div>
+		<div class="mini-guide">
+			Why this is here: ETFs are the default portfolio. Stocks only earn capital when the evidence
+			is unusually strong.
+		</div>
 		<div class="alloc-grid">
 			<div class="alloc-box scv">
 				<div class="alloc-pct">45%</div>
@@ -136,7 +201,10 @@
 				<div class="alloc-sub">Cap-weighted</div>
 			</div>
 		</div>
-		<p class="alloc-note">Default position is to stay in ETFs. Move capital into individual stocks only when valuation, forward return, and stabilization all agree.</p>
+		<p class="alloc-note">
+			Default position is to stay in ETFs. Move capital into individual stocks only when valuation,
+			forward return, and stabilization all agree.
+		</p>
 	</section>
 
 	<!-- Deploy Now -->
@@ -147,8 +215,15 @@
 				<span class="count-badge green">{data.deployNow.length}</span>
 			{/if}
 		</div>
-		<div class="mini-guide">Why this is here: these names are cheap enough, strong enough, and either stabilized already or sitting on a likely value floor.</div>
-		<p class="section-note">Must beat the ETF alternative with base CAGR at least {data.hurdles.etfCagr}% and bear CAGR above {data.hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside floor looks unusually strong.</p>
+		<div class="mini-guide">
+			Why this is here: these names are cheap enough, strong enough, and either stabilized already
+			or sitting on a likely value floor.
+		</div>
+		<p class="section-note">
+			Must beat the ETF alternative with base CAGR at least {data.hurdles.etfCagr}% and bear CAGR
+			above {data.hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside
+			floor looks unusually strong.
+		</p>
 
 		{#if data.topPicks.length > 0}
 			<div class="top-picks">
@@ -161,13 +236,17 @@
 						</div>
 						<div class="top-pick-metrics">
 							<span>{scoreLabel(stock)}</span>
-							<span>{stock.screener.inputs?.multipleType ?? stock.screener.engine}</span>
+							<span>{screenerLabel(stock)}</span>
 							<span>Base {stock.cagrModel?.scenarios?.base}</span>
 							{#if stock.upside != null}
-								<span style="color:{upsideColor(stock.upside)}">Upside {stock.upside > 0 ? '+' : ''}{stock.upside}%</span>
+								<span style="color:{upsideColor(stock.upside)}"
+									>Upside {stock.upside > 0 ? '+' : ''}{stock.upside}%</span
+								>
 							{/if}
 						</div>
-						<div class="top-pick-note">Strong mix of valuation, expected return, and resilience right now.</div>
+						<div class="top-pick-note">
+							Strong mix of valuation, expected return, and resilience right now.
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -176,7 +255,9 @@
 		{#if data.deployNow.length === 0}
 			<div class="empty-state">
 				<p class="empty-title">No deployable stock signals</p>
-				<p class="empty-sub">Nothing currently clears all three gates. Stay the course with ETFs.</p>
+				<p class="empty-sub">
+					Nothing currently clears all three gates. Stay the course with ETFs.
+				</p>
 			</div>
 		{:else}
 			<div class="signal-list">
@@ -184,7 +265,9 @@
 					<button
 						class="signal-card"
 						class:expanded={expandedDeploy === stock.ticker}
-						onclick={() => toggleDeploy(stock.ticker)}
+						onclick={() => {
+							toggleDeploy(stock.ticker);
+						}}
 					>
 						<div class="signal-row1">
 							<span class="ticker">{stock.ticker}</span>
@@ -193,26 +276,29 @@
 						</div>
 
 						<div class="signal-row2">
-							<span class="score" style="color:{usesGrowthScore(stock) ? scoreColor(stock.screener.score) : '#22c55e'}">
+							<span
+								class="score"
+								style="color:{usesGrowthScore(stock)
+									? scoreColor(stock.screener?.score)
+									: '#22c55e'}"
+							>
 								{scoreLabel(stock)}
 							</span>
-							<span class="detail">
-								{#if usesGrowthScore(stock)}
-									{stock.screener.inputs.growth}% growth · {stock.screener.inputs.multiple}× {stock.screener.inputs.multipleType}
-								{:else}
-									{stock.screener.inputs.dividendYield}% yield + {stock.screener.inputs.growth}% growth{#if stock.screener.inputs.debtPenalty} · 30% debt penalty{/if}
-								{/if}
-							</span>
+							<span class="detail">{detailLabel(stock)}</span>
 						</div>
 
-						{#if stock.screener.realityChecks}
+						{#if stock.screener?.realityChecks}
 							<div class="signal-row3">
 								{#if stock.screener.realityChecks.stabilization}
-									<span class="rc pass">✓ {stock.screener.realityChecks.stabilization.return6m > 0 ? '+' : ''}{stock.screener.realityChecks.stabilization.return6m}% 6m</span>
-									<span class="rc pass">✓ {stock.screener.realityChecks.stabilization.return1m > 0 ? '+' : ''}{stock.screener.realityChecks.stabilization.return1m}% 1m</span>
+									<span class="rc pass"
+										>✓ {stabilizationReturn(stock.screener.realityChecks.stabilization.return6m)} 6m</span
+									>
+									<span class="rc pass"
+										>✓ {stabilizationReturn(stock.screener.realityChecks.stabilization.return1m)} 1m</span
+									>
 								{/if}
 								{#if stock.screener.realityChecks.revisions}
-									<span class="rc pass">✓ {stock.screener.realityChecks.revisions.up30d}↑ {stock.screener.realityChecks.revisions.down30d}↓ revisions</span>
+									<span class="rc pass">{revisionsSummary(stock)}</span>
 								{/if}
 							</div>
 						{/if}
@@ -229,31 +315,44 @@
 								{/if}
 							{/if}
 							<span class="spacer"></span>
-							<span class="cagr">Rank {stock.deploymentRank} · Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}</span>
+							<span class="cagr"
+								>Rank {stock.deploymentRank} · Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock
+									.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}</span
+							>
 						</div>
 
 						{#if expandedDeploy === stock.ticker}
 							<!-- svelte-ignore a11y_no_static_element_interactions -->
 							<!-- svelte-ignore a11y_click_events_have_key_events -->
-							<div class="expanded" onclick={(e) => e.stopPropagation()}>
-								<div class="summary-line success">{stock.deployment.reason}</div>
+							<div
+								class="expanded"
+								onclick={(e) => {
+									e.stopPropagation();
+								}}
+							>
+								<div class="summary-line success">{deploymentReason(stock)}</div>
 								{#if stock.cagrModel?.scenarios}
 									<div class="scenarios-panel">
-										<div class="scenarios-label">CAGR Scenarios ({stock.cagrModel.horizon || 5}yr)</div>
+										<div class="scenarios-label">
+											CAGR Scenarios ({stock.cagrModel.horizon ?? 5}yr)
+										</div>
 										<div class="scenarios-row">
-											{#each ['bear', 'base', 'bull'] as s}
-												{#if stock.cagrModel.scenarios[s]}
-													<div class="scenario" class:base={s === 'base'}>
-														<span class="scenario-label">{s}</span>
-														<span class="scenario-value">{stock.cagrModel.scenarios[s]}</span>
+											{#each scenarioKeys as scenario (scenario)}
+												{#if scenarioValue(stock, scenario)}
+													<div class="scenario" class:base={scenario === 'base'}>
+														<span class="scenario-label">{scenario}</span>
+														<span class="scenario-value">{scenarioValue(stock, scenario)}</span>
 													</div>
 												{/if}
 											{/each}
 										</div>
 										<div class="scenario-params">
 											{#if stock.cagrModel.epsGrowth}EPS growth {stock.cagrModel.epsGrowth}{/if}
-											{#if stock.cagrModel.exitPE?.base} · Exit PE {stock.cagrModel.exitPE.bear}/{stock.cagrModel.exitPE.base}/{stock.cagrModel.exitPE.bull}{/if}
-											{#if stock.cagrModel.dividendYield && stock.cagrModel.dividendYield !== '0%'} · DY {stock.cagrModel.dividendYield}{/if}
+											{#if stock.cagrModel.exitPE?.base}
+												· Exit PE {stock.cagrModel.exitPE.bear}/{stock.cagrModel.exitPE.base}/{stock
+													.cagrModel.exitPE.bull}{/if}
+											{#if stock.cagrModel.dividendYield && stock.cagrModel.dividendYield !== '0%'}
+												· DY {stock.cagrModel.dividendYield}{/if}
 										</div>
 										{#if stock.cagrModel.basis}
 											<div class="basis">{stock.cagrModel.basis}</div>
@@ -289,8 +388,14 @@
 				<span class="count-badge amber">{data.cheapWait.length}</span>
 			{/if}
 		</div>
-		<div class="mini-guide">Why this is here: these may become opportunities, but the price action still suggests patience.</div>
-		<p class="section-note">These stocks look cheap enough, but the drawdown still looks active. They are candidates for monitoring, not deployment.</p>
+		<div class="mini-guide">
+			Why this is here: these may become opportunities, but the price action still suggests
+			patience.
+		</div>
+		<p class="section-note">
+			These stocks look cheap enough, but the drawdown still looks active. They are candidates for
+			monitoring, not deployment.
+		</p>
 
 		{#if data.cheapWait.length === 0}
 			<div class="empty-state compact">
@@ -302,7 +407,9 @@
 					<button
 						class="signal-card wait"
 						class:expanded={expandedWait === stock.ticker}
-						onclick={() => toggleWait(stock.ticker)}
+						onclick={() => {
+							toggleWait(stock.ticker);
+						}}
 					>
 						<div class="signal-row1">
 							<span class="ticker">{stock.ticker}</span>
@@ -311,14 +418,20 @@
 						</div>
 
 						<div class="signal-row2">
-							<span class="score" style="color:{scoreColor(stock.screener.score)}">{scoreLabel(stock)}</span>
-							<span class="detail">{stock.deployment.reason}</span>
+							<span class="score" style="color:{scoreColor(stock.screener?.score)}"
+								>{scoreLabel(stock)}</span
+							>
+							<span class="detail">{deploymentReason(stock)}</span>
 						</div>
 
-						{#if stock.screener.realityChecks?.stabilization}
+						{#if stock.screener?.realityChecks?.stabilization}
 							<div class="signal-row3">
-								<span class="rc wait">{stock.screener.realityChecks.stabilization.return6m > 0 ? '+' : ''}{stock.screener.realityChecks.stabilization.return6m}% 6m</span>
-								<span class="rc wait">{stock.screener.realityChecks.stabilization.return1m > 0 ? '+' : ''}{stock.screener.realityChecks.stabilization.return1m}% 1m</span>
+								<span class="rc wait"
+									>{stabilizationReturn(stock.screener.realityChecks.stabilization.return6m)} 6m</span
+								>
+								<span class="rc wait"
+									>{stabilizationReturn(stock.screener.realityChecks.stabilization.return1m)} 1m</span
+								>
 								{#if stock.screener.realityChecks.stabilization.near3mLow}
 									<span class="rc wait">near 3m low</span>
 								{/if}
@@ -331,18 +444,28 @@
 								<span class="arrow">→</span>
 								<span class="mono">{stock.targetPrice}</span>
 								{#if stock.upside != null}
-									<span class="mono" style="color:{upsideColor(stock.upside)}">({stock.upside > 0 ? '+' : ''}{stock.upside}%)</span>
+									<span class="mono" style="color:{upsideColor(stock.upside)}"
+										>({stock.upside > 0 ? '+' : ''}{stock.upside}%)</span
+									>
 								{/if}
 							{/if}
 							<span class="spacer"></span>
-							<span class="cagr">Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}</span>
+							<span class="cagr"
+								>Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios
+									?.base} / {stock.cagrModel?.scenarios?.bull}</span
+							>
 						</div>
 
 						{#if expandedWait === stock.ticker}
 							<!-- svelte-ignore a11y_no_static_element_interactions -->
 							<!-- svelte-ignore a11y_click_events_have_key_events -->
-							<div class="expanded" onclick={(e) => e.stopPropagation()}>
-								<div class="summary-line warn">{stock.screener.note}</div>
+							<div
+								class="expanded"
+								onclick={(e) => {
+									e.stopPropagation();
+								}}
+							>
+								<div class="summary-line warn">{screenerNote(stock)}</div>
 								{#if stock.bullCase}
 									<div class="case bull">
 										<div class="case-label">Bull</div>
@@ -365,36 +488,57 @@
 
 	<!-- Watchlist -->
 	<section class="section">
-		<button class="watchlist-header" onclick={() => showWatchlist = !showWatchlist}>
+		<button
+			class="watchlist-header"
+			onclick={() => {
+				showWatchlist = !showWatchlist;
+			}}
+		>
 			<span class="section-label" style="margin:0">Watchlist</span>
 			<span class="watchlist-counts">
-				{data.counts.reject} rejected · {data.counts.fail} insufficient edge/return · {data.counts.noData} no data
+				{data.counts.reject} rejected · {data.counts.fail} insufficient edge/return · {data.counts
+					.noData} no data
 			</span>
 			<span class="chevron" class:open={showWatchlist}>›</span>
 		</button>
-		<div class="mini-guide" style="margin-top:0.5rem">Why this is here: these names currently fail on value, return, trend, revisions, or data quality.</div>
+		<div class="mini-guide" style="margin-top:0.5rem">
+			Why this is here: these names currently fail on value, return, trend, revisions, or data
+			quality.
+		</div>
 
 		{#if showWatchlist}
 			<div class="watchlist">
 				{#each data.watchlist as stock (stock.ticker)}
-					<button class="watch-row" onclick={() => toggleWatch(stock.ticker)}>
+					<button
+						class="watch-row"
+						onclick={() => {
+							toggleWatch(stock.ticker);
+						}}
+					>
 						<div class="watch-main">
 							<span class="watch-ticker">{stock.ticker}</span>
 							<span class="watch-name">{stock.name}</span>
-							<span class="watch-signal {stock.deployment?.status?.toLowerCase() ?? 'no_data'}">
+							<span class="watch-signal {watchSignalClass(stock)}">
 								{stock.deployment?.status ?? 'N/A'}
 							</span>
 							{#if stock.screener?.engine !== 'N/A' && stock.screener?.score != null}
-								<span class="watch-score">{stock.screener.inputs?.multipleType ?? stock.screener.engine} · {stock.screener.score}</span>
+								<span class="watch-score">{screenerLabel(stock)} · {stock.screener.score}</span>
 							{/if}
 							{#if stock.screener?.realityChecks?.stabilization}
-								<span class="watch-mom" class:neg={stock.screener.realityChecks.stabilization.return6m < 0}>{stock.screener.realityChecks.stabilization.return6m > 0 ? '+' : ''}{stock.screener.realityChecks.stabilization.return6m}%</span>
+								<span
+									class="watch-mom"
+									class:neg={(stock.screener.realityChecks.stabilization.return6m ?? 0) < 0}
+									>{stabilizationReturn(stock.screener.realityChecks.stabilization.return6m)}</span
+								>
 							{/if}
 						</div>
 						{#if expandedWatch[stock.ticker]}
 							<div class="watch-detail">
 								<span>{stock.deployment?.reason}</span>
-								<span>CAGR {stock.expectedCAGR} · {stock.currentPrice}{#if stock.upside != null} → {stock.targetPrice} ({stock.upside > 0 ? '+' : ''}{stock.upside}%){/if}</span>
+								<span
+									>CAGR {stock.expectedCAGR} · {stock.currentPrice}{#if stock.upside != null}
+										→ {stock.targetPrice} ({stock.upside > 0 ? '+' : ''}{stock.upside}%){/if}</span
+								>
 							</div>
 						{/if}
 					</button>
@@ -407,7 +551,11 @@
 <style>
 	:global(body) {
 		margin: 0;
-		font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+		font-family:
+			'DM Sans',
+			-apple-system,
+			BlinkMacSystemFont,
+			sans-serif;
 		background: #09090b;
 		color: #e4e4e7;
 		-webkit-font-smoothing: antialiased;
@@ -628,9 +776,15 @@
 		border: 1px solid #1e1e22;
 	}
 
-	.alloc-box.scv { border-left: 3px solid rgba(59, 130, 246, 0.5); }
-	.alloc-box.mom { border-left: 3px solid rgba(139, 92, 246, 0.5); }
-	.alloc-box.em { border-left: 3px solid rgba(20, 184, 166, 0.5); }
+	.alloc-box.scv {
+		border-left: 3px solid rgba(59, 130, 246, 0.5);
+	}
+	.alloc-box.mom {
+		border-left: 3px solid rgba(139, 92, 246, 0.5);
+	}
+	.alloc-box.em {
+		border-left: 3px solid rgba(20, 184, 166, 0.5);
+	}
 
 	.alloc-pct {
 		font-family: 'JetBrains Mono', monospace;
@@ -707,9 +861,15 @@
 		transition: border-color 0.15s;
 	}
 
-	.signal-card:hover { border-color: #27272a; }
-	.signal-card.expanded { border-color: rgba(34, 197, 94, 0.2); }
-	.signal-card.wait.expanded { border-color: rgba(245, 158, 11, 0.2); }
+	.signal-card:hover {
+		border-color: #27272a;
+	}
+	.signal-card.expanded {
+		border-color: rgba(34, 197, 94, 0.2);
+	}
+	.signal-card.wait.expanded {
+		border-color: rgba(245, 158, 11, 0.2);
+	}
 
 	.signal-row1 {
 		display: flex;
@@ -796,8 +956,13 @@
 		color: #a1a1aa;
 	}
 
-	.arrow { color: #3f3f46; font-size: 0.75rem; }
-	.spacer { flex: 1; }
+	.arrow {
+		color: #3f3f46;
+		font-size: 0.75rem;
+	}
+	.spacer {
+		flex: 1;
+	}
 
 	.cagr {
 		font-family: 'JetBrains Mono', monospace;
@@ -863,7 +1028,9 @@
 		border: 1px solid #1e1e22;
 	}
 
-	.scenario.base { border-color: #27272a; }
+	.scenario.base {
+		border-color: #27272a;
+	}
 
 	.scenario-label {
 		display: block;
@@ -906,7 +1073,9 @@
 		border-radius: 6px;
 	}
 
-	.case p { margin: 0; }
+	.case p {
+		margin: 0;
+	}
 
 	.case-label {
 		font-size: 0.58rem;
@@ -922,7 +1091,9 @@
 		border: 1px solid rgba(34, 197, 94, 0.08);
 	}
 
-	.case.bull .case-label { color: #4ade80; }
+	.case.bull .case-label {
+		color: #4ade80;
+	}
 
 	.case.bear {
 		background: rgba(239, 68, 68, 0.04);
@@ -930,7 +1101,9 @@
 		border: 1px solid rgba(239, 68, 68, 0.08);
 	}
 
-	.case.bear .case-label { color: #f87171; }
+	.case.bear .case-label {
+		color: #f87171;
+	}
 
 	/* ── Watchlist ── */
 	.watchlist-header {
@@ -947,7 +1120,9 @@
 		box-sizing: border-box;
 	}
 
-	.watchlist-header:hover { border-color: #27272a; }
+	.watchlist-header:hover {
+		border-color: #27272a;
+	}
 
 	.watchlist-counts {
 		font-size: 0.68rem;
@@ -961,7 +1136,9 @@
 		transition: transform 0.2s;
 	}
 
-	.chevron.open { transform: rotate(90deg); }
+	.chevron.open {
+		transform: rotate(90deg);
+	}
 
 	.watchlist {
 		margin-top: 0.5rem;
@@ -982,8 +1159,12 @@
 		transition: background 0.1s;
 	}
 
-	.watch-row:last-child { border-bottom: none; }
-	.watch-row:hover { background: #111113; }
+	.watch-row:last-child {
+		border-bottom: none;
+	}
+	.watch-row:hover {
+		background: #111113;
+	}
 
 	.watch-main {
 		display: flex;
@@ -1053,7 +1234,9 @@
 		flex-shrink: 0;
 	}
 
-	.watch-mom.neg { color: #f87171; }
+	.watch-mom.neg {
+		color: #f87171;
+	}
 
 	.watch-detail {
 		display: flex;
@@ -1068,12 +1251,27 @@
 
 	/* ── Responsive ── */
 	@media (max-width: 640px) {
-		.page { padding: 1rem; }
-		.alloc-grid { flex-direction: column; }
-		.top-picks { grid-template-columns: 1fr; }
-		.vol-main { flex-direction: column; align-items: flex-start; }
-		.vol-value { min-width: 0; }
-		.signal-row4 { flex-wrap: wrap; }
-		.watch-name { display: none; }
+		.page {
+			padding: 1rem;
+		}
+		.alloc-grid {
+			flex-direction: column;
+		}
+		.top-picks {
+			grid-template-columns: 1fr;
+		}
+		.vol-main {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.vol-value {
+			min-width: 0;
+		}
+		.signal-row4 {
+			flex-wrap: wrap;
+		}
+		.watch-name {
+			display: none;
+		}
 	}
 </style>

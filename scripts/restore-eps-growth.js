@@ -18,21 +18,56 @@ const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
 // Base CAGR from the first successful update run (live prices + original epsGrowth).
 // Source: pnpm update-data output before indexTrend was added.
 const FIRST_RUN_BASE_CAGR = {
-	ABBV: -11, 'ADDT-B.ST': 6, 'ADYEN.AS': 30, ANET: 11, APO: 17, ASML: 13,
-	AVGO: 12, BN: -11, CDNS: 8, 'CSU.TO': 18, DHR: 6, 'EQT.ST': 22,
-	EXEL: 31, FNV: 5, GOOGL: 10, HEI: 8, KKR: 0, 'LIFCO-B.ST': 10,
-	'LMN.V': 11, MA: 21, META: 13, MRVL: 20, MU: 2, NU: 28,
-	NVDA: 18, REGN: 8, RGLD: 8, ROP: 20, SNPS: 8, XYZ: 21,
-	TDG: 21, TFPM: 9, 'TOI.V': -1, TPL: 0, TSM: 9, V: 19,
-	VEEV: 20, 'VIT-B.ST': 27, VNOM: 3, VRT: 7, VRTX: 9, WPM: 5
+	ABBV: -11,
+	'ADDT-B.ST': 6,
+	'ADYEN.AS': 30,
+	ANET: 11,
+	APO: 17,
+	ASML: 13,
+	AVGO: 12,
+	BN: -11,
+	CDNS: 8,
+	'CSU.TO': 18,
+	DHR: 6,
+	'EQT.ST': 22,
+	EXEL: 31,
+	FNV: 5,
+	GOOGL: 10,
+	HEI: 8,
+	KKR: 0,
+	'LIFCO-B.ST': 10,
+	'LMN.V': 11,
+	MA: 21,
+	META: 13,
+	MRVL: 20,
+	MU: 2,
+	NU: 28,
+	NVDA: 18,
+	REGN: 8,
+	RGLD: 8,
+	ROP: 20,
+	SNPS: 8,
+	XYZ: 21,
+	TDG: 21,
+	TFPM: 9,
+	'TOI.V': -1,
+	TPL: 0,
+	TSM: 9,
+	V: 19,
+	VEEV: 20,
+	'VIT-B.ST': 27,
+	VNOM: 3,
+	VRT: 7,
+	VRTX: 9,
+	WPM: 5
 };
 
 // Manual overrides: stocks where Yahoo EPS is wrong type (GAAP vs adjusted)
 // or where a GBp conversion bug corrupted the value.
 const MANUAL_OVERRIDES = {
-	ABBV: { epsGrowth: '15%', ttmEPS: 10.65 },   // Model uses adjusted EPS, not GAAP
+	ABBV: { epsGrowth: '15%', ttmEPS: 10.65 }, // Model uses adjusted EPS, not GAAP
 	'CSU.TO': { epsGrowth: '18%', ttmEPS: 44.2 }, // Model uses normalized EPS
-	'DPLM.L': { epsGrowth: '14%', ttmEPS: 1.37 }  // GBp bug: EPS was divided by 100
+	'DPLM.L': { epsGrowth: '14%', ttmEPS: 1.37 } // GBp bug: EPS was divided by 100
 };
 
 function parsePercent(str) {
@@ -52,7 +87,10 @@ function calcCAGR(price, ttmEPS, epsGrowth, exitPE, dividendYield, horizon = 5) 
 }
 
 function solveEpsGrowth(price, ttmEPS, exitPE, dy, targetBaseCagr) {
-	let lo = -20, hi = 100, mid = 0, cagr;
+	let lo = -20,
+		hi = 100,
+		mid = 0,
+		cagr;
 	for (let i = 0; i < 200; i++) {
 		mid = (lo + hi) / 2;
 		cagr = calcCAGR(price, ttmEPS, mid, exitPE, dy);
@@ -82,7 +120,9 @@ for (const f of files) {
 		if (override.epsGrowth) model.epsGrowth = override.epsGrowth;
 		if (override.ttmEPS != null) model.ttmEPS = override.ttmEPS;
 		writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
-		console.log(`  📝 ${ticker}: manual override → epsGrowth ${prev.epsGrowth}→${model.epsGrowth}, ttmEPS ${prev.ttmEPS}→${model.ttmEPS}`);
+		console.log(
+			`  📝 ${ticker}: manual override → epsGrowth ${prev.epsGrowth}→${model.epsGrowth}, ttmEPS ${prev.ttmEPS}→${model.ttmEPS}`
+		);
 		continue;
 	}
 
@@ -107,7 +147,9 @@ for (const f of files) {
 	model.epsGrowth = `${recovered}%`;
 	writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
 	const check = calcCAGR(price, ttmEPS, recovered, exitPE, dy).toFixed(1);
-	console.log(`  🔄 ${ticker}: epsGrowth ${prev}→${recovered}% (target base ${target}%, actual ${check}%)`);
+	console.log(
+		`  🔄 ${ticker}: epsGrowth ${prev}→${recovered}% (target base ${target}%, actual ${check}%)`
+	);
 }
 
 console.log('\n✅ Restoration complete. Run: pnpm update-data --force');

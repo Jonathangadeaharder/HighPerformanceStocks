@@ -29,14 +29,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
 const HORIZON = 5;
 const TERMINAL_GROWTH_PCT = 6; // nominal GDP — long-run EPS growth floor (McKinsey/Koller)
-const GROWTH_DECAY = 0.80; // excess-growth half-life ~3 yrs (Chan, Karceski & Lakonishok 2003)
+const GROWTH_DECAY = 0.8; // excess-growth half-life ~3 yrs (Chan, Karceski & Lakonishok 2003)
 const CONCURRENCY = 5; // parallel quoteSummary requests per batch
 const BATCH_DELAY_MS = 500; // pause between batches to avoid Yahoo rate limits
 const FORCE = process.argv.includes('--force');
 
 // US share class tickers use dots (BRK.B, HEI.A) but yahoo-finance2 needs dashes
 const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
-function yahooTicker(t) { return YAHOO_TICKER_MAP[t] || t; }
+function yahooTicker(t) {
+	return YAHOO_TICKER_MAP[t] || t;
+}
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -114,10 +116,19 @@ function fmtMarketCap(rawCap, currency) {
 /** CAGR calculation with exponential growth decay toward terminal rate.
  *  growth(yr) = terminal + (initial - terminal) * decay^yr
  *  Price and EPS must be in the same units (both pounds, both USD, etc.) */
-function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor = GROWTH_DECAY) {
+function calcCAGR(
+	price,
+	ttmEPS,
+	epsGrowthPct,
+	exitPE,
+	dividendYieldPct,
+	horizon,
+	decayFactor = GROWTH_DECAY
+) {
 	let eps = ttmEPS;
 	for (let yr = 1; yr <= horizon; yr++) {
-		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
+		const g =
+			TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
 		eps *= 1 + g / 100;
 	}
 	const futurePrice = eps * exitPE;
@@ -131,25 +142,32 @@ function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon
 
 const GROWTH_ROUTING_THRESHOLD = 8;
 const CV_BENCHMARK = 0.08;
-const R2_NOISE = 0.60;
+const R2_NOISE = 0.6;
 const FPERG_THRESHOLD = 1.0;
 const TOTAL_RETURN_THRESHOLD = 12.0;
 const DEBT_PENALTY_THRESHOLD = 150; // Yahoo reports D/E as percentage (150 = 1.5×)
-const DEBT_PENALTY_FACTOR = 0.30;
+const DEBT_PENALTY_FACTOR = 0.3;
 const STABILIZATION_6M_THRESHOLD = -10;
 const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
 
 function getAnalystDispersion(earningsTrend) {
 	if (!earningsTrend?.trend) return null;
-	const entry = earningsTrend.trend.find(t => t.period === '+1y');
+	const entry = earningsTrend.trend.find((t) => t.period === '+1y');
 	if (!entry?.earningsEstimate) return null;
 	const { avg, low, high } = entry.earningsEstimate;
 	if (avg == null || low == null || high == null || avg <= 0) return null;
 	return { avg, low, high };
 }
 
-function computeGrowthScore(engine, multipleType, multiple, growthPct, cvStock, threshold = FPERG_THRESHOLD) {
+function computeGrowthScore(
+	engine,
+	multipleType,
+	multiple,
+	growthPct,
+	cvStock,
+	threshold = FPERG_THRESHOLD
+) {
 	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
 	const score = (multiple / growthPct) * riskMultiplier;
 	return {
@@ -189,7 +207,11 @@ function detectGrowthBranch(stock, valuationPrice) {
 		};
 	}
 
-	if (/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|cash flow/.test(lowerBasis)) {
+	if (
+		/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|cash flow/.test(
+			lowerBasis
+		)
+	) {
 		return {
 			engine: 'fCFG',
 			multipleType: valuation.evFcf != null ? 'EV/FCF' : 'P/CF',
@@ -197,8 +219,11 @@ function detectGrowthBranch(stock, valuationPrice) {
 		};
 	}
 
-	if ((/serial acquirer|amortization/.test(lowerBasis) || stock.group === 'Serial Acquirers')
-		&& valuation.evEbitda != null && valuation.evEbitda > 0) {
+	if (
+		(/serial acquirer|amortization/.test(lowerBasis) || stock.group === 'Serial Acquirers') &&
+		valuation.evEbitda != null &&
+		valuation.evEbitda > 0
+	) {
 		return {
 			engine: 'fEVG',
 			multipleType: 'EV/EBITDA',
@@ -217,9 +242,15 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 	const earningsYield = (1 / forwardPE) * 100;
 	if (earningsYield <= divYieldPct) {
 		return {
-			engine: 'totalReturn', score: null, signal: 'FAIL',
+			engine: 'totalReturn',
+			score: null,
+			signal: 'FAIL',
 			note: 'Dividend exceeds forward earnings (value trap)',
-			inputs: { growth: growthPct, dividendYield: divYieldPct, earningsYield: +earningsYield.toFixed(1) }
+			inputs: {
+				growth: growthPct,
+				dividendYield: divYieldPct,
+				earningsYield: +earningsYield.toFixed(1)
+			}
 		};
 	}
 	const hasPenalty = debtToEquity > DEBT_PENALTY_THRESHOLD;
@@ -229,7 +260,12 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 		engine: 'totalReturn',
 		score: +riskAdjReturn.toFixed(1),
 		signal: riskAdjReturn >= TOTAL_RETURN_THRESHOLD ? 'PASS' : 'FAIL',
-		inputs: { growth: growthPct, dividendYield: divYieldPct, debtToEquity: +(debtToEquity ?? 0).toFixed(0), debtPenalty: hasPenalty }
+		inputs: {
+			growth: growthPct,
+			dividendYield: divYieldPct,
+			debtToEquity: +(debtToEquity ?? 0).toFixed(0),
+			debtPenalty: hasPenalty
+		}
 	};
 }
 
@@ -243,13 +279,20 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 	const price6mAgo = historicalData?.price6mAgo;
 	const price1mAgo = historicalData?.price1mAgo;
 	const low3m = historicalData?.low3m;
-	if (rawPrice != null && price6mAgo != null && price1mAgo != null && low3m != null && price6mAgo > 0 && price1mAgo > 0 && low3m > 0) {
-		const return6m = ((rawPrice / price6mAgo) - 1) * 100;
-		const return1m = ((rawPrice / price1mAgo) - 1) * 100;
+	if (
+		rawPrice != null &&
+		price6mAgo != null &&
+		price1mAgo != null &&
+		low3m != null &&
+		price6mAgo > 0 &&
+		price1mAgo > 0 &&
+		low3m > 0
+	) {
+		const return6m = (rawPrice / price6mAgo - 1) * 100;
+		const return1m = (rawPrice / price1mAgo - 1) * 100;
 		const near3mLow = rawPrice <= low3m * STABILIZATION_LOW_BUFFER;
-		const stillFalling = return6m < STABILIZATION_6M_THRESHOLD
-			&& return1m < STABILIZATION_1M_THRESHOLD
-			&& near3mLow;
+		const stillFalling =
+			return6m < STABILIZATION_6M_THRESHOLD && return1m < STABILIZATION_1M_THRESHOLD && near3mLow;
 		checks.stabilization = {
 			pass: !stillFalling,
 			price: +rawPrice.toFixed(2),
@@ -267,7 +310,7 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 	}
 
 	// Reality Check 2: Analyst Revisions (from earningsTrend +1y epsRevisions)
-	const entry = summary?.earningsTrend?.trend?.find(t => t.period === '+1y');
+	const entry = summary?.earningsTrend?.trend?.find((t) => t.period === '+1y');
 	const rev = entry?.epsRevisions;
 	const up = rev?.upLast30days ?? 0;
 	const down = rev?.downLast30days ?? 0;
@@ -286,18 +329,30 @@ function computeScreener(stock, summary, rawPrice, valuationPrice, historicalDat
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
 
-	const isPreProfit = model.exitPE && Object.values(model.exitPE).every(v => v === 0);
-	if (isPreProfit) return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
+	const isPreProfit = model.exitPE && Object.values(model.exitPE).every((v) => v === 0);
+	if (isPreProfit)
+		return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
 		const branch = detectGrowthBranch(stock, valuationPrice);
 		if (!branch.multiple || branch.multiple <= 0) {
-			return { engine: branch.engine, signal: 'NO_DATA', note: `Missing/negative ${branch.multipleType}` };
+			return {
+				engine: branch.engine,
+				signal: 'NO_DATA',
+				note: `Missing/negative ${branch.multipleType}`
+			};
 		}
 		const dispersion = getAnalystDispersion(summary?.earningsTrend);
-		if (!dispersion) return { engine: branch.engine, signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
-		const cvStock = ((dispersion.high - dispersion.low) / 4) / dispersion.avg;
-		const result = computeGrowthScore(branch.engine, branch.multipleType, branch.multiple, growthPct, cvStock);
+		if (!dispersion)
+			return { engine: branch.engine, signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
+		const cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
+		const result = computeGrowthScore(
+			branch.engine,
+			branch.multipleType,
+			branch.multiple,
+			growthPct,
+			cvStock
+		);
 		if (result.signal === 'PASS') {
 			applyRealityChecks(result, rawPrice, historicalData, summary);
 		}
@@ -305,7 +360,8 @@ function computeScreener(stock, summary, rawPrice, valuationPrice, historicalDat
 	}
 
 	const forwardPE = stock.valuation?.forwardPE;
-	if (!forwardPE || forwardPE <= 0) return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
+	if (!forwardPE || forwardPE <= 0)
+		return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
 	const divYieldPct = parsePercent(model.dividendYield) || 0;
 	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
 	return computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
@@ -325,7 +381,7 @@ async function fetchAllQuotes(tickers) {
 		} catch (e) {
 			console.error(`Chunk quote failed: ${e.message}`);
 		}
-		if (i + chunkSize < tickers.length) await new Promise(r => setTimeout(r, 1000));
+		if (i + chunkSize < tickers.length) await new Promise((r) => setTimeout(r, 1000));
 	}
 	return result;
 }
@@ -354,21 +410,23 @@ async function fetchHistoricalData(ticker) {
 			interval: '1d'
 		});
 
-		if (!history || history.length < 60) return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
+		if (!history || history.length < 60)
+			return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
 
 		// Historical anchors for stabilization detection
 		const sixMonthsAgo = new Date();
 		sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-		const entry6m = history.find(h => new Date(h.date) >= sixMonthsAgo);
+		const entry6m = history.find((h) => new Date(h.date) >= sixMonthsAgo);
 		const price6mAgo = entry6m?.close ?? null;
 		const oneMonthAgo = new Date();
 		oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
-		const entry1m = history.find(h => new Date(h.date) >= oneMonthAgo);
+		const entry1m = history.find((h) => new Date(h.date) >= oneMonthAgo);
 		const price1mAgo = entry1m?.close ?? null;
 		const trailing3m = history.slice(-63);
-		const low3m = trailing3m.length > 0
-			? Math.min(...trailing3m.map(h => h.low ?? h.close).filter(v => v > 0))
-			: null;
+		const low3m =
+			trailing3m.length > 0
+				? Math.min(...trailing3m.map((h) => h.low ?? h.close).filter((v) => v > 0))
+				: null;
 
 		const logReturns = [];
 		for (let i = 1; i < history.length; i++) {
@@ -442,7 +500,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// FCF yield uses market cap in same currency (rawCap is in native units, rawCap for GBp would be in pence * shares)
 		// Yahoo's marketCap for GBp stocks is already in £ (Yahoo normalises it to major currency)
 		if (fcf != null && rawCap != null && rawCap > 0) {
-			const fcfYieldPct = isGBp ? ((fcf / rawCap) * 100) : ((fcf / rawCap) * 100);
+			const fcfYieldPct = isGBp ? (fcf / rawCap) * 100 : (fcf / rawCap) * 100;
 			stock.metrics.fcfYield = `~${Math.round(fcfYieldPct)}%`;
 		}
 
@@ -453,9 +511,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		const isNM = /^N\/M/i.test(stock.metrics.netDebtEbitda ?? '');
 		if (!isNM && totalDebt != null && totalCash != null && ebitda != null && Math.abs(ebitda) > 0) {
 			const netDebt = totalDebt - totalCash;
-			stock.metrics.netDebtEbitda = netDebt < 0
-				? 'Net cash'
-				: fmtMultiple(netDebt / ebitda);
+			stock.metrics.netDebtEbitda = netDebt < 0 ? 'Net cash' : fmtMultiple(netDebt / ebitda);
 		}
 
 		// Rule of 40: revenue growth % + FCF margin %
@@ -504,10 +560,14 @@ function applyUpdates(stock, quote, summary, historicalData) {
 				// With --force, update anyway (legitimate crashes e.g. MU downcycle can exceed 50%)
 				if (model.ttmEPS && Math.abs(newEps - model.ttmEPS) / model.ttmEPS > 0.5) {
 					if (FORCE) {
-						console.log(`  ⚠️  ${stock.ticker} — ttmEPS change >50% (${model.ttmEPS} → ${newEps}), updating (--force)`);
+						console.log(
+							`  ⚠️  ${stock.ticker} — ttmEPS change >50% (${model.ttmEPS} → ${newEps}), updating (--force)`
+						);
 						model.ttmEPS = newEps;
 					} else {
-						console.log(`  ⚠️  ${stock.ticker} — ttmEPS change >50% (${model.ttmEPS} → ${newEps}), skipping (run --force to override)`);
+						console.log(
+							`  ⚠️  ${stock.ticker} — ttmEPS change >50% (${model.ttmEPS} → ${newEps}), skipping (run --force to override)`
+						);
 					}
 				} else {
 					model.ttmEPS = newEps;
@@ -525,14 +585,22 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// epsGrowth is kept manual — no reliable per-stock LTG source in Yahoo Finance
 
 		// Recalculate scenarios
-			const epsGrowth = parsePercent(model.epsGrowth);
+		const epsGrowth = parsePercent(model.epsGrowth);
 		const dyPct = parsePercent(model.dividendYield) || 0;
-			const decayFactor = typeof model.decayFactor === 'number' ? model.decayFactor : GROWTH_DECAY;
+		const decayFactor = typeof model.decayFactor === 'number' ? model.decayFactor : GROWTH_DECAY;
 
 		if (epsGrowth != null && model.ttmEPS) {
 			const scenarios = {};
 			for (const [scenario, exitPE] of Object.entries(model.exitPE)) {
-					const cagr = calcCAGR(priceForCalc, model.ttmEPS, epsGrowth, exitPE, dyPct, HORIZON, decayFactor);
+				const cagr = calcCAGR(
+					priceForCalc,
+					model.ttmEPS,
+					epsGrowth,
+					exitPE,
+					dyPct,
+					HORIZON,
+					decayFactor
+				);
 				scenarios[scenario] = fmtRoundPct(cagr);
 			}
 			model.scenarios = scenarios;
@@ -584,7 +652,9 @@ async function main() {
 	const upToDate = allStocks.length - stale.length;
 
 	if (stale.length === 0) {
-		console.log(`✅ All ${allStocks.length} stocks already updated today. Use --force to re-fetch.`);
+		console.log(
+			`✅ All ${allStocks.length} stocks already updated today. Use --force to re-fetch.`
+		);
 		return;
 	}
 	if (upToDate > 0) {
@@ -644,13 +714,17 @@ async function main() {
 				if (ok) {
 					writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
 					const s = stock.cagrModel?.scenarios;
-					const scenarios = s?.bear && s?.base && s?.bull
-						? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
-						: 'no scenarios';
+					const scenarios =
+						s?.bear && s?.base && s?.bull
+							? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
+							: 'no scenarios';
 					const sc = stock.screener;
-					const screenerTag = sc?.score != null
-						? ` | ${sc.engine}: ${sc.score} ${sc.signal}`
-						: sc?.note ? ` | ${sc.note}` : '';
+					const screenerTag =
+						sc?.score != null
+							? ` | ${sc.engine}: ${sc.score} ${sc.signal}`
+							: sc?.note
+								? ` | ${sc.note}`
+								: '';
 					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}${screenerTag}`);
 				} else {
 					console.log(`  ⚠️  ${ticker} — update failed (no price)`);

@@ -1,26 +1,18 @@
 {
-  "output": {
-    "filePath": "repomix-output.xml",
-    "style": "xml"
-  },
-  "include": [
-    "src/**/*",
-    "scripts/**/*",
-    "data/**/*",
-    "AllStocks.txt",
-    "*.json",
-    "*.js",
-    "*.yaml"
-  ],
-  "ignore": {
-    "useGitignore": true,
-    "useDefaultPatterns": true,
-    "customPatterns": [
-      ".svelte-kit/**",
-      ".claude/**",
-      "pnpm-lock.yaml",
-      "repomix-output.xml",
-      "repomix-output.txt"
-    ]
-  }
+	"output": {
+		"filePath": "repomix-output.xml",
+		"style": "xml"
+	},
+	"include": ["src/**/*", "scripts/**/*", "data/**/*", "AllStocks.txt", "*.json", "*.js", "*.yaml"],
+	"ignore": {
+		"useGitignore": true,
+		"useDefaultPatterns": true,
+		"customPatterns": [
+			".svelte-kit/**",
+			".claude/**",
+			"pnpm-lock.yaml",
+			"repomix-output.xml",
+			"repomix-output.txt"
+		]
+	}
 }

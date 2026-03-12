@@ -7,12 +7,21 @@ const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
 
 const HORIZON = 5;
 const TERMINAL_GROWTH_PCT = 6;
-const GROWTH_DECAY = 0.80;
+const GROWTH_DECAY = 0.8;
 
-function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor = GROWTH_DECAY) {
+function calcCAGR(
+	price,
+	ttmEPS,
+	epsGrowthPct,
+	exitPE,
+	dividendYieldPct,
+	horizon,
+	decayFactor = GROWTH_DECAY
+) {
 	let eps = ttmEPS;
 	for (let yr = 1; yr <= horizon; yr++) {
-		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
+		const g =
+			TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
 		eps *= 1 + g / 100;
 	}
 	const futurePrice = eps * exitPE;
@@ -42,7 +51,7 @@ const requiredFields = [
 ];
 
 function verifyData() {
-	const files = readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
 	let hasErrors = false;
 	const today = new Date().toISOString().slice(0, 10);
 
@@ -103,7 +112,11 @@ function verifyData() {
 			if (!validSignals.includes(data.screener.signal)) {
 				errors.push(`Invalid screener.signal: '${data.screener.signal}'`);
 			}
-			if (data.screener.signal !== 'NO_DATA' && data.screener.score == null && !data.screener.note) {
+			if (
+				data.screener.signal !== 'NO_DATA' &&
+				data.screener.score == null &&
+				!data.screener.note
+			) {
 				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
 			}
 		}
@@ -133,10 +146,20 @@ function verifyData() {
 					if (statedCAGR == null) continue;
 					if (exitPE == null) continue;
 
-					const expectedCAGR = calcCAGR(price, cm.ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor);
+					const expectedCAGR = calcCAGR(
+						price,
+						cm.ttmEPS,
+						epsGrowthPct,
+						exitPE,
+						dividendYieldPct,
+						horizon,
+						decayFactor
+					);
 					const rounded = Math.round(expectedCAGR);
 					if (Math.abs(rounded - statedCAGR) > 2) {
-						errors.push(`CAGR mismatch in '${label}': stated ${statedCAGR}% but model calculates ~${rounded}% (diff ${Math.abs(rounded - statedCAGR)}pp)`);
+						errors.push(
+							`CAGR mismatch in '${label}': stated ${statedCAGR}% but model calculates ~${rounded}% (diff ${Math.abs(rounded - statedCAGR)}pp)`
+						);
 					}
 				}
 			}
@@ -144,7 +167,7 @@ function verifyData() {
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);
-			errors.forEach(e => console.log(`   - ${e}`));
+			errors.forEach((e) => console.log(`   - ${e}`));
 			hasErrors = true;
 		}
 	}
