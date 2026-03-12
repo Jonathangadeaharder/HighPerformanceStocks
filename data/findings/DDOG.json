@@ -1,0 +1,47 @@
+{
+	"ticker": "DDOG",
+	"name": "Datadog",
+	"group": "Cybersecurity",
+	"confidence": "medium",
+	"confidenceReason": "Cloud observability tollbooth maintaining ~20% revenue growth.",
+	"marketCap": "$45.1B USD",
+	"sharpeRatio": -0.63,
+	"expectedCAGR": "-33% - -26%",
+	"expectedVolatility": "~54%",
+	"valuation": {
+		"trailingPE": 411.3,
+		"forwardPE": 48.2,
+		"evEbitda": 5545.8
+	},
+	"metrics": {
+		"roe": "3.3%",
+		"fcfMargin": "~26%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$182.43",
+	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
+	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
+	"currentPrice": "$127.49",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "-33%",
+			"base": "-29%",
+			"bull": "-26%"
+		},
+		"ttmEPS": 0.31,
+		"horizon": 5,
+		"epsGrowth": "20%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 30,
+			"base": 40,
+			"bull": 50
+		},
+		"basis": "High-growth observability SaaS multiple"
+	},
+	"lastUpdated": "2026-03-12T08:08:07.903Z",
+	"consensus": {
+		"yahoo": "$182.43"
+	}
+}

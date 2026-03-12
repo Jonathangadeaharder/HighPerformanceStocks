@@ -1,0 +1,47 @@
+{
+	"ticker": "MELI",
+	"name": "MercadoLibre",
+	"group": "Emerging Markets",
+	"confidence": "high",
+	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
+	"marketCap": "$89.5B USD",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "3% - 16%",
+	"expectedVolatility": "~39%",
+	"valuation": {
+		"trailingPE": 44.8,
+		"forwardPE": 22.9,
+		"evEbitda": 23.5
+	},
+	"metrics": {
+		"roe": "36.0%",
+		"fcfMargin": "~-8%",
+		"fcfYield": "~-3%",
+		"netDebtEbitda": "1.3x"
+	},
+	"targetPrice": "$2683.92",
+	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
+	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
+	"currentPrice": "$1766.10",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "3%",
+			"base": "11%",
+			"bull": "16%"
+		},
+		"ttmEPS": 39.38,
+		"horizon": 5,
+		"epsGrowth": "25%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 25,
+			"base": 35,
+			"bull": 45
+		},
+		"basis": "High-growth e-commerce/fintech normalized PE"
+	},
+	"lastUpdated": "2026-03-12T08:08:13.181Z",
+	"consensus": {
+		"yahoo": "$2683.92"
+	}
+}

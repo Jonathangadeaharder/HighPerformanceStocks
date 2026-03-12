@@ -1,0 +1,47 @@
+{
+	"ticker": "SHOP",
+	"name": "Shopify",
+	"group": "Defensive Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Unavoidable e-commerce infrastructure with 26-28% EPS growth estimates.",
+	"marketCap": "$169.0B USD",
+	"sharpeRatio": -0.19,
+	"expectedCAGR": "-11% - -3%",
+	"expectedVolatility": "~61%",
+	"valuation": {
+		"trailingPE": 136.3,
+		"forwardPE": 56.4,
+		"evEbitda": 84.6
+	},
+	"metrics": {
+		"roe": "9.8%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$160.04",
+	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
+	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
+	"currentPrice": "$129.52",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "-11%",
+			"base": "-6%",
+			"bull": "-3%"
+		},
+		"ttmEPS": 0.95,
+		"horizon": 5,
+		"epsGrowth": "26%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 35,
+			"base": 45,
+			"bull": 55
+		},
+		"basis": "Premium software/e-commerce platform multiple"
+	},
+	"lastUpdated": "2026-03-12T08:08:16.952Z",
+	"consensus": {
+		"yahoo": "$160.04"
+	}
+}

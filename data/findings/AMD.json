@@ -1,0 +1,47 @@
+{
+	"ticker": "AMD",
+	"name": "Advanced Micro Devices",
+	"group": "AI & Semiconductors",
+	"confidence": "medium",
+	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
+	"marketCap": "$334.0B USD",
+	"sharpeRatio": -0.07,
+	"expectedCAGR": "-3% - 3%",
+	"expectedVolatility": "~63%",
+	"valuation": {
+		"trailingPE": 78.8,
+		"forwardPE": 18.8,
+		"evEbitda": 48.5
+	},
+	"metrics": {
+		"roe": "7.1%",
+		"fcfMargin": "~13%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$289.72",
+	"bullCase": "The only viable merchant silicon alternative to NVIDIA. EPYC server CPUs are taking massive share from Intel, while MI450 offers a strong AI GPU roadmap.",
+	"bearCase": "Highly cyclical end markets (PC, gaming) can drag down data center outperformance. Remains a distant second to NVIDIA in AI software ecosystem (CUDA).",
+	"currentPrice": "$204.83",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "-3%",
+			"base": "0%",
+			"bull": "3%"
+		},
+		"ttmEPS": 2.6,
+		"horizon": 5,
+		"epsGrowth": "35%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 25,
+			"base": 30,
+			"bull": 35
+		},
+		"basis": "Cyclical semiconductor multiple post-hypergrowth"
+	},
+	"lastUpdated": "2026-03-12T08:08:05.057Z",
+	"consensus": {
+		"yahoo": "$289.72"
+	}
+}

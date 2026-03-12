@@ -1,0 +1,46 @@
+{
+	"ticker": "NET",
+	"name": "Cloudflare",
+	"group": "Cybersecurity",
+	"confidence": "medium",
+	"confidenceReason": "Monopoly on edge-computing and internet routing, ~28% EPS growth.",
+	"marketCap": "$75.0B USD",
+	"sharpeRatio": -0.56,
+	"expectedCAGR": "-28% - -21%",
+	"expectedVolatility": "~52%",
+	"valuation": {
+		"forwardPE": 147.4,
+		"evEbitda": -1752.7
+	},
+	"metrics": {
+		"roe": "-8.2%",
+		"fcfMargin": "~18%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$232.43",
+	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
+	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
+	"currentPrice": "$213",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "-28%",
+			"base": "-24%",
+			"bull": "-21%"
+		},
+		"ttmEPS": 0.55,
+		"horizon": 5,
+		"epsGrowth": "27%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 35,
+			"base": 45,
+			"bull": 55
+		},
+		"basis": "Premium tech infrastructure / edge computing monopoly multiple"
+	},
+	"lastUpdated": "2026-03-12T08:08:14.273Z",
+	"consensus": {
+		"yahoo": "$232.43"
+	}
+}

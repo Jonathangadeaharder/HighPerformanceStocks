@@ -1,0 +1,47 @@
+{
+	"ticker": "LLY",
+	"name": "Eli Lilly",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
+	"marketCap": "$894.9B USD",
+	"sharpeRatio": 0.1,
+	"expectedCAGR": "5% - 12%",
+	"expectedVolatility": "~42%",
+	"valuation": {
+		"trailingPE": 43.5,
+		"forwardPE": 23.8,
+		"evEbitda": 29.3
+	},
+	"metrics": {
+		"roe": "101.2%",
+		"fcfMargin": "~3%",
+		"fcfYield": "~0%",
+		"netDebtEbitda": "1.2x"
+	},
+	"targetPrice": "$1214.34",
+	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with gross margins holding near 45%.",
+	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
+	"currentPrice": "$999.84",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "5%",
+			"base": "8%",
+			"bull": "12%"
+		},
+		"ttmEPS": 23,
+		"horizon": 5,
+		"epsGrowth": "24%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 25,
+			"base": 30,
+			"bull": 35
+		},
+		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
+	},
+	"lastUpdated": "2026-03-12T08:08:12.161Z",
+	"consensus": {
+		"yahoo": "$1214.34"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"ticker": "RBRK",
+	"name": "Rubrik",
+	"group": "Cybersecurity",
+	"confidence": "medium",
+	"confidenceReason": "Recently profitable data security platform with ~24% expected growth.",
+	"marketCap": "$11.5B USD",
+	"sharpeRatio": -0.23,
+	"expectedCAGR": "-15% - -6%",
+	"expectedVolatility": "~66%",
+	"valuation": {
+		"forwardPE": 800,
+		"evEbitda": -31.1
+	},
+	"metrics": {
+		"fcfMargin": "~31%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$100.52",
+	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
+	"bearCase": "Newly public company with limited track record of sustained profitability; highly competitive data protection market.",
+	"currentPrice": "$57.52",
+	"cagrModel": {
+		"scenarios": {
+			"bear": "-15%",
+			"base": "-10%",
+			"bull": "-6%"
+		},
+		"ttmEPS": 0.4,
+		"horizon": 5,
+		"epsGrowth": "24%",
+		"dividendYield": "0%",
+		"exitPE": {
+			"bear": 30,
+			"base": 40,
+			"bull": 50
+		},
+		"basis": "High-growth cybersecurity/data protection multiple"
+	},
+	"lastUpdated": "2026-03-12T08:08:16.005Z",
+	"consensus": {
+		"yahoo": "$100.52"
+	}
+}

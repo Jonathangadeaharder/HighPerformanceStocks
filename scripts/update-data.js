@@ -35,7 +35,7 @@ const BATCH_DELAY_MS = 500; // pause between batches to avoid Yahoo rate limits
 const FORCE = process.argv.includes('--force');
 
 // US share class tickers use dots (BRK.B, HEI.A) but yahoo-finance2 needs dashes
-const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A' };
+const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
 function yahooTicker(t) { return YAHOO_TICKER_MAP[t] || t; }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -122,8 +122,19 @@ function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon
 
 /** Batch-fetch quotes for all tickers in a single HTTP call. */
 async function fetchAllQuotes(tickers) {
-	const result = await yf.quote(tickers, { return: 'object' });
-	return result; // { [ticker]: QuoteEquity }
+	const result = {};
+	const chunkSize = 20;
+	for (let i = 0; i < tickers.length; i += chunkSize) {
+		const chunk = tickers.slice(i, i + chunkSize);
+		try {
+			const res = await yf.quote(chunk, { return: 'object' });
+			Object.assign(result, res);
+		} catch (e) {
+			console.error(`Chunk quote failed: ${e.message}`);
+		}
+		if (i + chunkSize < tickers.length) await new Promise(r => setTimeout(r, 1000));
+	}
+	return result;
 }
 
 /** Fetch detailed summary modules per ticker (sequential, with caller-controlled delay). */
