@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$169.0B USD",
+	"marketCap": "$166.4B USD",
 	"sharpeRatio": 0.04,
 	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~61%",
 	"valuation": {
-		"trailingPE": 136.3,
-		"forwardPE": 56.4,
+		"trailingPE": 134.2,
+		"forwardPE": 55.6,
 		"evEbitda": 84.6
 	},
 	"metrics": {
@@ -22,11 +22,11 @@
 	"targetPrice": "$160.04",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$129.52",
+	"currentPrice": "$127.52",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "2%",
-			"base": "7%",
+			"base": "8%",
 			"bull": "12%"
 		},
 		"ttmEPS": 1.89,
@@ -40,17 +40,18 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:17.367Z",
+	"lastUpdated": "2026-03-12T14:56:11.336Z",
 	"consensus": {
 		"yahoo": "$160.04"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.26,
+		"score": 2.23,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 26,
-			"forwardPE": 56.4,
+			"multipleType": "Forward P/E",
+			"multiple": 55.6,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		}

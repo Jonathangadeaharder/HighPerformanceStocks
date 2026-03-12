@@ -4,13 +4,13 @@
 	"group": "Emerging Markets",
 	"confidence": "medium",
 	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
-	"marketCap": "$325.4B USD",
-	"sharpeRatio": 0.26,
-	"expectedCAGR": "11% - 22%",
+	"marketCap": "$319.6B USD",
+	"sharpeRatio": 0.27,
+	"expectedCAGR": "11% - 23%",
 	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 18,
-		"forwardPE": 15.6,
+		"trailingPE": 17.7,
+		"forwardPE": 15.3,
 		"pegRatio": null,
 		"evEbitda": 15.8
 	},
@@ -23,7 +23,7 @@
 	"targetPrice": "$199.73",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
-	"currentPrice": "$136.29",
+	"currentPrice": "$133.88",
 	"consensus": {
 		"tipranks": "$168",
 		"yahoo": "$199.73",
@@ -42,18 +42,19 @@
 		"scenarios": {
 			"bear": "11%",
 			"base": "17%",
-			"bull": "22%"
+			"bull": "23%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-12T12:38:07.329Z",
+	"lastUpdated": "2026-03-12T14:55:58.326Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.29,
+		"score": 1.26,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
-			"forwardPE": 15.6,
+			"multipleType": "Forward P/E",
+			"multiple": 15.3,
 			"cvStock": 0.201,
 			"riskMultiplier": 1.072
 		}

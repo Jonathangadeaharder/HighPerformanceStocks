@@ -4,13 +4,13 @@
 	"group": "Emerging Markets",
 	"confidence": "high",
 	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
-	"marketCap": "$89.5B USD",
-	"sharpeRatio": 0.13,
-	"expectedCAGR": "3% - 16%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$84.2B USD",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "5% - 18%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 44.8,
-		"forwardPE": 22.9,
+		"trailingPE": 42.2,
+		"forwardPE": 21.5,
 		"evEbitda": 23.5
 	},
 	"metrics": {
@@ -22,12 +22,12 @@
 	"targetPrice": "$2683.92",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1766.10",
+	"currentPrice": "$1660.69",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "3%",
-			"base": "11%",
-			"bull": "16%"
+			"bear": "5%",
+			"base": "12%",
+			"bull": "18%"
 		},
 		"ttmEPS": 39.38,
 		"horizon": 5,
@@ -40,27 +40,37 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:13.618Z",
+	"lastUpdated": "2026-03-12T14:56:04.531Z",
 	"consensus": {
 		"yahoo": "$2683.92"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.93,
-		"signal": "REJECTED",
+		"score": 0.88,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 25,
-			"forwardPE": 22.9,
+			"multipleType": "Forward P/E",
+			"multiple": 21.5,
 			"cvStock": 0.112,
 			"riskMultiplier": 1.019
 		},
-		"note": "Negative 6-month momentum (-25%; intermediate trend broken)",
+		"note": "Cheap, but still stabilizing (downtrend remains active)",
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": false,
-				"price": 1766.1,
-				"price6mAgo": 2339.36,
-				"return6m": -24.5
+				"price": 1660.69,
+				"price6mAgo": 2335.82,
+				"price1mAgo": 1988.26,
+				"low3m": 1654.24,
+				"return6m": -28.9,
+				"return1m": -16.5,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 10
 			}
 		}
 	}

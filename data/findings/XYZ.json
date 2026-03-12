@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$39.3B USD",
-	"sharpeRatio": 0.16,
-	"expectedCAGR": "9% - 18%",
+	"marketCap": "$37.5B USD",
+	"sharpeRatio": 0.18,
+	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 30.8,
-		"forwardPE": 13.8,
+		"trailingPE": 29.4,
+		"forwardPE": 13.2,
 		"pegRatio": null,
 		"evEbitda": 19.5
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$85.52",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$64.63",
+	"currentPrice": "$61.66",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$85.52",
@@ -42,30 +42,39 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "9%",
-			"base": "14%",
-			"bull": "18%"
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:20.203Z",
+	"lastUpdated": "2026-03-12T14:56:14.530Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.65,
-		"signal": "REJECTED",
+		"score": 0.62,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 22,
-			"forwardPE": 13.8,
+			"multipleType": "Forward P/E",
+			"multiple": 13.2,
 			"cvStock": 0.146,
 			"riskMultiplier": 1.039
 		},
-		"note": "Negative 6-month momentum (-11%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 64.63,
-				"price6mAgo": 72.87,
-				"return6m": -11.3
+			"stabilization": {
+				"pass": true,
+				"price": 61.66,
+				"price6mAgo": 74.63,
+				"price1mAgo": 49.8,
+				"low3m": 48.21,
+				"return6m": -17.4,
+				"return1m": 23.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 21,
+				"down30d": 1
 			}
 		}
 	}

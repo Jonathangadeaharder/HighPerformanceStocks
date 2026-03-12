@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "low",
 	"confidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
-	"marketCap": "321.5B SEK",
+	"marketCap": "320.3B SEK",
 	"sharpeRatio": 0.29,
 	"expectedCAGR": "12% - 20%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 41.7,
-		"forwardPE": 18.8,
+		"trailingPE": 41.5,
+		"forwardPE": 18.7,
 		"pegRatio": null,
 		"evEbitda": null,
 		"priceToFRE": "~21.0x"
@@ -25,13 +25,13 @@
 		"realizedExitsLTM": "€19B",
 		"aumGrowth": "~12% YoY"
 	},
-	"targetPrice": "403 SEK",
+	"targetPrice": "405 SEK",
 	"bullCase": "Europe's premier private equity firm. Strong fundraising momentum and a strategic push into Asia and retail wealth management channels provide a long, diversified runway for fee-related earnings growth.",
 	"bearCase": "The European macro stagnation noted across the portfolio is toxic for private equity. If the European IPO and M&A exit windows freeze due to flat industrial output, EQT's carried interest will collapse, trapping capital.",
-	"currentPrice": "274 SEK",
+	"currentPrice": "273 SEK",
 	"consensus": {
 		"tipranks": "403 SEK",
-		"yahoo": "403 SEK"
+		"yahoo": "405 SEK"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -45,30 +45,22 @@
 		},
 		"scenarios": {
 			"bear": "12%",
-			"base": "16%",
+			"base": "17%",
 			"bull": "20%"
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-03-12T12:38:09.344Z",
+	"lastUpdated": "2026-03-12T14:56:00.274Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.93,
-		"signal": "REJECTED",
+		"engine": "fFREG",
+		"score": 1.04,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
-			"forwardPE": 18.8,
+			"multipleType": "P/FRE",
+			"multiple": 21,
 			"cvStock": 0.071,
 			"riskMultiplier": 0.994
-		},
-		"note": "Negative 6-month momentum (-21%; intermediate trend broken)",
-		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 274.2,
-				"price6mAgo": 345.6,
-				"return6m": -20.7
-			}
 		}
 	}
 }

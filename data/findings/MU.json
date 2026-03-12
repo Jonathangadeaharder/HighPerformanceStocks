@@ -4,13 +4,13 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$471.2B USD",
-	"sharpeRatio": -0.05,
-	"expectedCAGR": "-3% - 5%",
+	"marketCap": "$450.4B USD",
+	"sharpeRatio": -0.04,
+	"expectedCAGR": "-2% - 6%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 39.8,
-		"forwardPE": 8.9,
+		"trailingPE": 38.1,
+		"forwardPE": 8.4,
 		"pegRatio": null,
 		"evEbitda": 21.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$417.82",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$418.69",
+	"currentPrice": "$400.16",
 	"consensus": {
 		"tipranks": "$431",
 		"yahoo": "$417.82",
@@ -42,29 +42,34 @@
 			"bull": 24
 		},
 		"scenarios": {
-			"bear": "-3%",
-			"base": "1%",
-			"bull": "5%"
+			"bear": "-2%",
+			"base": "2%",
+			"bull": "6%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-12T12:38:14.504Z",
+	"lastUpdated": "2026-03-12T14:56:08.467Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.38,
+		"score": 0.36,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 25,
-			"forwardPE": 8.9,
+			"multipleType": "Forward P/E",
+			"multiple": 8.4,
 			"cvStock": 0.184,
 			"riskMultiplier": 1.063
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 418.69,
-				"price6mAgo": 157.23,
-				"return6m": 166.3
+				"price": 400.16,
+				"price6mAgo": 157.77,
+				"price1mAgo": 411.66,
+				"low3m": 221.69,
+				"return6m": 153.6,
+				"return1m": -2.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

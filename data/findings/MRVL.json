@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
-	"marketCap": "$79.0B USD",
-	"sharpeRatio": 0.16,
-	"expectedCAGR": "10% - 19%",
-	"expectedVolatility": "~63%",
+	"marketCap": "$77.3B USD",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "11% - 19%",
+	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 29.5,
-		"forwardPE": 16.6,
+		"trailingPE": 28.8,
+		"forwardPE": 16.3,
 		"pegRatio": 1.5,
 		"evEbitda": 29.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$120.28",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$90.44",
+	"currentPrice": "$88.47",
 	"consensus": {
 		"tipranks": "$122",
 		"yahoo": "$120.28",
@@ -42,29 +42,34 @@
 			"bull": 32
 		},
 		"scenarios": {
-			"bear": "10%",
+			"bear": "11%",
 			"base": "15%",
 			"bull": "19%"
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-12T12:38:14.463Z",
+	"lastUpdated": "2026-03-12T14:56:08.388Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.55,
+		"score": 0.54,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
-			"forwardPE": 16.6,
+			"multipleType": "Forward P/E",
+			"multiple": 16.3,
 			"cvStock": 0.074,
 			"riskMultiplier": 0.996
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 90.44,
-				"price6mAgo": 67.35,
-				"return6m": 34.3
+				"price": 88.47,
+				"price6mAgo": 67.43,
+				"price1mAgo": 78.61,
+				"low3m": 70.69,
+				"return6m": 31.2,
+				"return1m": 12.5,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

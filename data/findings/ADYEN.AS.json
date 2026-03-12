@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
-	"marketCap": "€29.2B",
+	"marketCap": "€29.0B",
 	"sharpeRatio": 0.33,
 	"expectedCAGR": "13% - 24%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 27.5,
-		"forwardPE": 19.4,
+		"trailingPE": 27.4,
+		"forwardPE": 19.3,
 		"pegRatio": null,
 		"evEbitda": 15.6
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€926",
+	"currentPrice": "€921",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
@@ -49,14 +49,15 @@
 		},
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:05.454Z",
+	"lastUpdated": "2026-03-12T14:55:56.400Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.08,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
-			"forwardPE": 19.4,
+			"multipleType": "Forward P/E",
+			"multiple": 19.3,
 			"cvStock": 0.086,
 			"riskMultiplier": 1.004
 		}

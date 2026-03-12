@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Trading at 12.3% discount to DCF intrinsic value ($340 vs $298). Cash machine. But PEG 2.3x signals slowing growth, too low-beta for 2x strategy.",
-	"marketCap": "$3734.3B USD",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "3% - 12%",
+	"marketCap": "$3657.9B USD",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "5% - 14%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 28.6,
-		"forwardPE": 23,
+		"trailingPE": 28,
+		"forwardPE": 22.5,
 		"pegRatio": 2.3,
 		"evEbitda": 24.5
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$376.95",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$308.70",
+	"currentPrice": "$302.38",
 	"consensus": {
 		"tipranks": "$352",
 		"yahoo": "$376.95",
@@ -42,20 +42,22 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
-			"bull": "12%"
+			"bear": "5%",
+			"base": "10%",
+			"bull": "14%"
 		},
+		"decayFactor": 0.88,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:11.453Z",
+	"lastUpdated": "2026-03-12T14:56:02.248Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.53,
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"forwardPE": 23,
+			"multipleType": "Forward P/E",
+			"multiple": 22.5,
 			"cvStock": 0.074,
 			"riskMultiplier": 0.997
 		}

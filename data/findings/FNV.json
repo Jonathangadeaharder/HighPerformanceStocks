@@ -4,13 +4,13 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$51.4B USD",
-	"sharpeRatio": -0.04,
-	"expectedCAGR": "-2% - 8%",
+	"marketCap": "$50.8B USD",
+	"sharpeRatio": -0.03,
+	"expectedCAGR": "-1% - 8%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 55.6,
-		"forwardPE": 27.9,
+		"trailingPE": 54.9,
+		"forwardPE": 27.5,
 		"pegRatio": 5,
 		"evEbitda": 30.6
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$285.38",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$265.72",
+	"currentPrice": "$262.45",
 	"consensus": {
 		"tipranks": "$250",
 		"yahoo": "$285.38",
@@ -42,20 +42,21 @@
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-2%",
+			"bear": "-1%",
 			"base": "3%",
 			"bull": "8%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:10.599Z",
+	"lastUpdated": "2026-03-12T14:56:01.425Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.45,
+		"engine": "fCFG",
+		"score": 3.38,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
-			"forwardPE": 27.9,
+			"multipleType": "P/CF",
+			"multiple": 38.6,
 			"cvStock": 0.167,
 			"riskMultiplier": 1.052
 		}

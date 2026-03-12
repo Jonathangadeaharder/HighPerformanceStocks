@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
-	"marketCap": "$894.9B USD",
+	"marketCap": "$882.6B USD",
 	"sharpeRatio": 0.1,
 	"expectedCAGR": "5% - 12%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 43.5,
-		"forwardPE": 23.8,
+		"trailingPE": 42.9,
+		"forwardPE": 23.5,
 		"evEbitda": 29.3
 	},
 	"metrics": {
@@ -22,11 +22,11 @@
 	"targetPrice": "$1216.93",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with gross margins holding near 45%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$999.84",
+	"currentPrice": "$986.15",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "5%",
-			"base": "8%",
+			"base": "9%",
 			"bull": "12%"
 		},
 		"ttmEPS": 23,
@@ -40,26 +40,31 @@
 		},
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-12T12:38:13.362Z",
+	"lastUpdated": "2026-03-12T14:56:04.287Z",
 	"consensus": {
 		"yahoo": "$1216.93"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.98,
+		"score": 0.97,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 24,
-			"forwardPE": 23.8,
+			"multipleType": "Forward P/E",
+			"multiple": 23.5,
 			"cvStock": 0.067,
 			"riskMultiplier": 0.992
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 999.84,
-				"price6mAgo": 755.39,
-				"return6m": 32.4
+				"price": 986.15,
+				"price6mAgo": 748.19,
+				"price1mAgo": 1040,
+				"low3m": 965.6,
+				"return6m": 31.8,
+				"return1m": -5.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,

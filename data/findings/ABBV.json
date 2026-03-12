@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$402.6B USD",
-	"sharpeRatio": 0.5,
-	"expectedCAGR": "14% - 22%",
+	"marketCap": "$399.5B USD",
+	"sharpeRatio": 0.52,
+	"expectedCAGR": "14% - 23%",
 	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 96.1,
-		"forwardPE": 14.1,
+		"trailingPE": 95.3,
+		"forwardPE": 14,
 		"pegRatio": 1.06,
 		"evEbitda": 15.9
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$248.86",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$227.68",
+	"currentPrice": "$225.92",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$248.86",
@@ -46,27 +46,32 @@
 		"scenarios": {
 			"bear": "14%",
 			"base": "19%",
-			"bull": "22%"
+			"bull": "23%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-12T12:38:05.397Z",
+	"lastUpdated": "2026-03-12T14:55:56.366Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.92,
+		"score": 0.91,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
-			"forwardPE": 14.1,
+			"multipleType": "Forward P/E",
+			"multiple": 14,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 227.68,
-				"price6mAgo": 218.34,
-				"return6m": 4.3
+				"price": 225.92,
+				"price6mAgo": 217.61,
+				"price1mAgo": 231.5,
+				"low3m": 204.27,
+				"return6m": 3.8,
+				"return1m": -2.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

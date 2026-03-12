@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$30.8B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "14% - 24%",
+	"marketCap": "$31.1B USD",
+	"sharpeRatio": 0.39,
+	"expectedCAGR": "14% - 23%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 34.4,
-		"forwardPE": 18.9,
+		"trailingPE": 34.7,
+		"forwardPE": 19.1,
 		"pegRatio": null,
 		"evEbitda": 24.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$187.09",
+	"currentPrice": "$188.96",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -44,28 +44,37 @@
 		"scenarios": {
 			"bear": "14%",
 			"base": "19%",
-			"bull": "24%"
+			"bull": "23%"
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:19.269Z",
+	"lastUpdated": "2026-03-12T14:56:13.482Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.96,
-		"signal": "REJECTED",
+		"score": 0.97,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
-			"forwardPE": 18.9,
+			"multipleType": "Forward P/E",
+			"multiple": 19.1,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
 		},
-		"note": "Negative 6-month momentum (-32%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 187.09,
-				"price6mAgo": 276.43,
-				"return6m": -32.3
+			"stabilization": {
+				"pass": true,
+				"price": 188.96,
+				"price6mAgo": 276.27,
+				"price1mAgo": 174.11,
+				"low3m": 168.14,
+				"return6m": -31.6,
+				"return1m": 8.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 17,
+				"down30d": 4
 			}
 		}
 	}

@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
-	"marketCap": "C$8.7B",
-	"sharpeRatio": 0.2,
-	"expectedCAGR": "8% - 17%",
-	"expectedVolatility": "~41%",
+	"marketCap": "C$8.6B",
+	"sharpeRatio": 0.21,
+	"expectedCAGR": "8% - 18%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 132,
-		"forwardPE": 23.7,
+		"trailingPE": 131.3,
+		"forwardPE": 23.6,
 		"pegRatio": null,
 		"evEbitda": 28.8,
 		"evFcf": 31
@@ -23,13 +23,13 @@
 		"netDebtEbitda": "1.4x",
 		"ruleOf40": "49%"
 	},
-	"targetPrice": "C$139.29",
+	"targetPrice": "C$139.24",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
-	"currentPrice": "C$104.27",
+	"currentPrice": "C$103.75",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$139.29"
+		"yahoo": "C$139.24"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -44,29 +44,21 @@
 		"scenarios": {
 			"bear": "8%",
 			"base": "13%",
-			"bull": "17%"
+			"bull": "18%"
 		},
 		"basis": "Normalized adjusted EPS ex-NRI; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:18.314Z",
+	"lastUpdated": "2026-03-12T14:56:12.440Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.97,
-		"signal": "REJECTED",
+		"engine": "fEVG",
+		"score": 1.18,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
-			"forwardPE": 23.7,
+			"multipleType": "EV/EBITDA",
+			"multiple": 28.8,
 			"cvStock": 0.115,
 			"riskMultiplier": 1.021
-		},
-		"note": "Negative 6-month momentum (-37%; intermediate trend broken)",
-		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 104.27,
-				"price6mAgo": 165.45,
-				"return6m": -37
-			}
 		}
 	}
 }

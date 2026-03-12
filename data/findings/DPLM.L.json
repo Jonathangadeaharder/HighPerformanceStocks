@@ -9,7 +9,7 @@
 	"expectedCAGR": "7% - 16%",
 	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 37.3,
+		"trailingPE": 37.4,
 		"forwardPE": 24.8,
 		"pegRatio": null,
 		"evEbitda": 20.7
@@ -26,7 +26,7 @@
 	"targetPrice": "£60.40",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
 	"bearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E.",
-	"currentPrice": "£51.50",
+	"currentPrice": "£51.55",
 	"consensus": {
 		"tipranks": "5,634p",
 		"yahoo": "£60.40"
@@ -48,14 +48,15 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-12T12:38:09.251Z",
+	"lastUpdated": "2026-03-12T14:56:00.242Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.5,
+		"engine": "fEVG",
+		"score": 1.25,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
-			"forwardPE": 24.8,
+			"multipleType": "EV/EBITDA",
+			"multiple": 20.7,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		}

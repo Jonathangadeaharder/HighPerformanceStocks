@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
-	"marketCap": "$134.6B USD",
+	"marketCap": "$137.5B USD",
 	"sharpeRatio": 0.06,
 	"expectedCAGR": "1% - 12%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 91.6,
-		"forwardPE": 41.5,
+		"trailingPE": 93.6,
+		"forwardPE": 42.4,
 		"pegRatio": null,
 		"evEbitda": 90
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$207.75",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
-	"currentPrice": "$164.93",
+	"currentPrice": "$168.48",
 	"consensus": {
 		"tipranks": "$220",
 		"yahoo": "$207.75"
@@ -42,19 +42,20 @@
 		},
 		"scenarios": {
 			"bear": "1%",
-			"base": "7%",
+			"base": "6%",
 			"bull": "12%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-12T12:38:16.331Z",
+	"lastUpdated": "2026-03-12T14:56:10.348Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.18,
+		"score": 2.23,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
-			"forwardPE": 41.5,
+			"multipleType": "Forward P/E",
+			"multiple": 42.4,
 			"cvStock": 0.164,
 			"riskMultiplier": 1.05
 		}

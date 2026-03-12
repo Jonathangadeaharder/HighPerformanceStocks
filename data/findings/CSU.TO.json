@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$57.2B",
-	"sharpeRatio": 0.26,
-	"expectedCAGR": "10% - 19%",
+	"marketCap": "C$58.6B",
+	"sharpeRatio": 0.33,
+	"expectedCAGR": "13% - 22%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 61.4,
-		"forwardPE": 14.9,
+		"trailingPE": 62.8,
+		"forwardPE": 15.3,
 		"pegRatio": null,
 		"evEbitda": 24.3
 	},
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4194.29",
+	"targetPrice": "C$4196.48",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2700.08",
+	"currentPrice": "C$2764.05",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4194.29"
+		"yahoo": "C$4196.48"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -41,31 +41,24 @@
 			"bull": 82
 		},
 		"scenarios": {
-			"bear": "10%",
-			"base": "15%",
-			"bull": "19%"
+			"bear": "13%",
+			"base": "18%",
+			"bull": "22%"
 		},
+		"decayFactor": 0.94,
 		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-12T12:38:08.282Z",
+	"lastUpdated": "2026-03-12T14:55:59.263Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.8,
-		"signal": "REJECTED",
+		"engine": "fEVG",
+		"score": 1.31,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
-			"forwardPE": 14.9,
+			"multipleType": "EV/EBITDA",
+			"multiple": 24.3,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
-		},
-		"note": "Negative 6-month momentum (-39%; intermediate trend broken)",
-		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 2700.08,
-				"price6mAgo": 4392.79,
-				"return6m": -38.5
-			}
 		}
 	}
 }

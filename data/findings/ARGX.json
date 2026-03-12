@@ -4,13 +4,13 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
-	"marketCap": "$45.1B USD",
-	"sharpeRatio": 0.23,
-	"expectedCAGR": "8% - 16%",
+	"marketCap": "$44.2B USD",
+	"sharpeRatio": 0.24,
+	"expectedCAGR": "9% - 16%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 37.2,
-		"forwardPE": 22.1,
+		"trailingPE": 36.4,
+		"forwardPE": 21.7,
 		"pegRatio": null,
 		"evEbitda": 37.1
 	},
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "87%"
 	},
-	"targetPrice": "$1011.66",
+	"targetPrice": "$1010.73",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$728.09",
+	"currentPrice": "$714.04",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1011.66"
+		"yahoo": "$1010.73"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -41,30 +41,39 @@
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "12%",
+			"bear": "9%",
+			"base": "13%",
 			"bull": "16%"
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-12T12:38:06.415Z",
+	"lastUpdated": "2026-03-12T14:55:57.371Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.87,
-		"signal": "REJECTED",
+		"score": 0.85,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 27,
-			"forwardPE": 22.1,
+			"multipleType": "Forward P/E",
+			"multiple": 21.7,
 			"cvStock": 0.185,
 			"riskMultiplier": 1.063
 		},
-		"note": "Negative 6-month momentum (-4%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 728.09,
-				"price6mAgo": 756.38,
-				"return6m": -3.7
+			"stabilization": {
+				"pass": true,
+				"price": 714.04,
+				"price6mAgo": 756.83,
+				"price1mAgo": 821.96,
+				"low3m": 705.89,
+				"return6m": -5.7,
+				"return1m": -13.1,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 11
 			}
 		}
 	}

@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
 	"marketCap": "$449.8B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "11% - 21%",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "14% - 24%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 30.5,
@@ -25,7 +25,7 @@
 	"targetPrice": "$662.80",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$504",
+	"currentPrice": "$503.98",
 	"consensus": {
 		"tipranks": "$659",
 		"yahoo": "$662.80",
@@ -42,20 +42,22 @@
 			"bull": 46
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "17%",
-			"bull": "21%"
+			"bear": "14%",
+			"base": "19%",
+			"bull": "24%"
 		},
+		"decayFactor": 0.93,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:13.526Z",
+	"lastUpdated": "2026-03-12T14:56:04.713Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.43,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"forwardPE": 22.3,
+			"multipleType": "Forward P/E",
+			"multiple": 22.3,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.963
 		}

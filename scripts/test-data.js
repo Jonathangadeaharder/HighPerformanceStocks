@@ -9,10 +9,10 @@ const HORIZON = 5;
 const TERMINAL_GROWTH_PCT = 6;
 const GROWTH_DECAY = 0.80;
 
-function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon) {
+function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor = GROWTH_DECAY) {
 	let eps = ttmEPS;
 	for (let yr = 1; yr <= horizon; yr++) {
-		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(GROWTH_DECAY, yr);
+		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
 		eps *= 1 + g / 100;
 	}
 	const futurePrice = eps * exitPE;
@@ -95,8 +95,8 @@ function verifyData() {
 		if (!data.screener) {
 			errors.push(`Missing 'screener' object`);
 		} else {
-			const validEngines = ['fPERG', 'totalReturn', 'N/A'];
-			const validSignals = ['PASS', 'FAIL', 'REJECTED', 'NO_DATA'];
+			const validEngines = ['fPERG', 'fEVG', 'fCFG', 'fANIG', 'fFREG', 'totalReturn', 'N/A'];
+			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}
@@ -124,15 +124,16 @@ function verifyData() {
 			const epsGrowthPct = parsePercent(cm.epsGrowth);
 			const dividendYieldPct = parsePercent(cm.dividendYield) ?? 0;
 			const horizon = cm.horizon ?? HORIZON;
+			const decayFactor = typeof cm.decayFactor === 'number' ? cm.decayFactor : GROWTH_DECAY;
 
 			if (price && !isNaN(price) && epsGrowthPct != null) {
 				for (const [label, scenario] of Object.entries(cm.scenarios)) {
-					if (!scenario || scenario.exitPE == null || scenario.cagr == null) continue;
-					const exitPE = scenario.exitPE;
-					const statedCAGR = parsePercent(scenario.cagr);
+					const exitPE = cm.exitPE?.[label];
+					const statedCAGR = parsePercent(scenario);
 					if (statedCAGR == null) continue;
+					if (exitPE == null) continue;
 
-					const expectedCAGR = calcCAGR(price, cm.ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon);
+					const expectedCAGR = calcCAGR(price, cm.ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor);
 					const rounded = Math.round(expectedCAGR);
 					if (Math.abs(rounded - statedCAGR) > 2) {
 						errors.push(`CAGR mismatch in '${label}': stated ${statedCAGR}% but model calculates ~${rounded}% (diff ${Math.abs(rounded - statedCAGR)}pp)`);

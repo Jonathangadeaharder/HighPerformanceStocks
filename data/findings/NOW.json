@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$122.0B USD",
+	"marketCap": "$122.9B USD",
 	"sharpeRatio": 0.14,
 	"expectedCAGR": "6% - 15%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 69.2,
-		"forwardPE": 23.1,
+		"trailingPE": 69.7,
+		"forwardPE": 23.2,
 		"evEbitda": 42.8
 	},
 	"metrics": {
@@ -22,7 +22,7 @@
 	"targetPrice": "$189.30",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$115.63",
+	"currentPrice": "$116.44",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "6%",
@@ -40,7 +40,7 @@
 		},
 		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:15.464Z",
+	"lastUpdated": "2026-03-12T14:56:09.428Z",
 	"consensus": {
 		"yahoo": "$189.30"
 	},
@@ -50,7 +50,8 @@
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
-			"forwardPE": 23.1,
+			"multipleType": "Forward P/E",
+			"multiple": 23.2,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		}

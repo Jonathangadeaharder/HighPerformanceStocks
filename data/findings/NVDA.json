@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4521.5B USD",
-	"sharpeRatio": 0.27,
-	"expectedCAGR": "11% - 20%",
+	"marketCap": "$4432.5B USD",
+	"sharpeRatio": 0.22,
+	"expectedCAGR": "9% - 18%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 38,
-		"forwardPE": 17.2,
+		"trailingPE": 37.3,
+		"forwardPE": 16.9,
 		"pegRatio": 1.6,
 		"evEbitda": 33.5
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$266.35",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$186.03",
+	"currentPrice": "$182.37",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$266.35",
@@ -42,29 +42,35 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "9%",
+			"base": "14%",
+			"bull": "18%"
 		},
+		"decayFactor": 0.75,
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-12T12:38:15.522Z",
+	"lastUpdated": "2026-03-12T14:56:09.562Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.51,
+		"score": 0.5,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
-			"forwardPE": 17.2,
+			"multipleType": "Forward P/E",
+			"multiple": 16.9,
 			"cvStock": 0.131,
 			"riskMultiplier": 1.031
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 186.03,
-				"price6mAgo": 177.82,
-				"return6m": 4.6
+				"price": 182.37,
+				"price6mAgo": 177.75,
+				"price1mAgo": 182.81,
+				"low3m": 170.31,
+				"return6m": 2.6,
+				"return1m": -0.2,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

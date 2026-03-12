@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
-	"marketCap": "$1619.5B USD",
-	"sharpeRatio": 0.22,
-	"expectedCAGR": "10% - 20%",
+	"marketCap": "$1582.2B USD",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "11% - 20%",
 	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 66.7,
-		"forwardPE": 19.5,
+		"trailingPE": 65.2,
+		"forwardPE": 19,
 		"pegRatio": null,
 		"evEbitda": 4.6
 	},
@@ -26,7 +26,7 @@
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$341.57",
+	"currentPrice": "$333.71",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$467.80",
@@ -43,30 +43,39 @@
 			"bull": 48
 		},
 		"scenarios": {
-			"bear": "10%",
-			"base": "15%",
+			"bear": "11%",
+			"base": "16%",
 			"bull": "20%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:07.305Z",
+	"lastUpdated": "2026-03-12T14:55:58.265Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.66,
-		"signal": "REJECTED",
+		"engine": "fEVG",
+		"score": 0.16,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
-			"forwardPE": 19.5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 4.6,
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},
-		"note": "Negative 6-month momentum (-5%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 341.57,
-				"price6mAgo": 359.87,
-				"return6m": -5.1
+			"stabilization": {
+				"pass": true,
+				"price": 333.71,
+				"price6mAgo": 364.09,
+				"price1mAgo": 325.17,
+				"low3m": 295.3,
+				"return6m": -8.3,
+				"return1m": 2.6,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 29,
+				"down30d": 0
 			}
 		}
 	}

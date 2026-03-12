@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
-	"marketCap": "$61.6B USD",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "16% - 26%",
+	"marketCap": "$59.3B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "17% - 27%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 19.2,
-		"forwardPE": 9.8,
+		"trailingPE": 18.4,
+		"forwardPE": 9.4,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$156.59",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$106.10",
+	"currentPrice": "$102.16",
 	"consensus": {
 		"tipranks": "$165",
 		"yahoo": "$156.59",
@@ -44,30 +44,40 @@
 			"bull": 20
 		},
 		"scenarios": {
-			"bear": "16%",
-			"base": "21%",
-			"bull": "26%"
+			"bear": "17%",
+			"base": "22%",
+			"bull": "27%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-12T12:38:06.428Z",
+	"lastUpdated": "2026-03-12T14:55:57.260Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.47,
-		"signal": "REJECTED",
+		"engine": "fANIG",
+		"score": 0.59,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
-			"forwardPE": 9.8,
+			"multipleType": "P/ANI",
+			"multiple": 12.2,
 			"cvStock": 0.022,
 			"riskMultiplier": 0.965
 		},
-		"note": "Negative 6-month momentum (-23%; intermediate trend broken)",
+		"note": "Cheap, but still stabilizing (downtrend remains active)",
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": false,
-				"price": 106.1,
-				"price6mAgo": 138.03,
-				"return6m": -23.1
+				"price": 102.16,
+				"price6mAgo": 138.48,
+				"price1mAgo": 125.07,
+				"low3m": 99.56,
+				"return6m": -26.2,
+				"return1m": -18.3,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 9,
+				"down30d": 1
 			}
 		}
 	}

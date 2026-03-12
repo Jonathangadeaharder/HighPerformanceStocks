@@ -4,20 +4,20 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
-	"marketCap": "$1.8B USD",
+	"marketCap": "$1.7B USD",
 	"sharpeRatio": null,
 	"sharpeNote": "Negative",
 	"expectedCAGR": "N/A (pre-profit)",
 	"expectedVolatility": "~83%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": -4.1,
+		"forwardPE": -3.9,
 		"pegRatio": null,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": "~-279%",
-		"fcfYield": "~-11%",
+		"fcfYield": "~-12%",
 		"roic": null,
 		"roe": "-59.5%",
 		"netDebtEbitda": "Net cash",
@@ -26,7 +26,7 @@
 	"targetPrice": "$6.71",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
 	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
-	"currentPrice": "$3.45",
+	"currentPrice": "$3.28",
 	"consensus": {
 		"tipranks": "$7.00",
 		"yahoo": "$6.71",
@@ -46,7 +46,7 @@
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-12T12:38:17.387Z",
+	"lastUpdated": "2026-03-12T14:56:11.326Z",
 	"screener": {
 		"engine": "N/A",
 		"signal": "NO_DATA",

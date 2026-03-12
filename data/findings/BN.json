@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$91.1B USD",
-	"sharpeRatio": 0.37,
-	"expectedCAGR": "12% - 22%",
+	"marketCap": "$88.7B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "12% - 23%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 82.7,
-		"forwardPE": 6.9,
+		"trailingPE": 80.6,
+		"forwardPE": 6.7,
 		"pegRatio": null,
 		"evEbitda": 14.9
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$40.54",
+	"currentPrice": "$39.49",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -44,14 +44,14 @@
 		},
 		"scenarios": {
 			"bear": "12%",
-			"base": "17%",
-			"bull": "22%"
+			"base": "18%",
+			"bull": "23%"
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-12T12:38:07.337Z",
+	"lastUpdated": "2026-03-12T14:55:58.314Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fANIG",
 		"signal": "NO_DATA",
 		"note": "Missing analyst dispersion data"
 	}

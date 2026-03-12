@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$181.9B USD",
-	"sharpeRatio": 0.2,
-	"expectedCAGR": "7% - 16%",
+	"marketCap": "$190.3B USD",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "6% - 15%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 24.9,
-		"forwardPE": 13,
+		"trailingPE": 26,
+		"forwardPE": 13.6,
 		"pegRatio": 0.88,
 		"evEbitda": 14.9
 	},
@@ -24,7 +24,7 @@
 	"targetPrice": "$275.27",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$194.13",
+	"currentPrice": "$203.10",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$275.27",
@@ -41,30 +41,39 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "6%",
+			"base": "11%",
+			"bull": "15%"
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-12T12:38:08.286Z",
+	"lastUpdated": "2026-03-12T14:55:59.223Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.86,
-		"signal": "REJECTED",
+		"score": 0.9,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
-			"forwardPE": 13,
+			"multipleType": "Forward P/E",
+			"multiple": 13.6,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
-		"note": "Negative 6-month momentum (-20%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 194.13,
-				"price6mAgo": 242.76,
-				"return6m": -20
+			"stabilization": {
+				"pass": true,
+				"price": 203.1,
+				"price6mAgo": 242.52,
+				"price1mAgo": 189.72,
+				"low3m": 174.57,
+				"return6m": -16.3,
+				"return1m": 7.1,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 17,
+				"down30d": 15
 			}
 		}
 	}

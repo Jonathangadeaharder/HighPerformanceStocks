@@ -4,13 +4,13 @@
 	"group": "Ad-Tech",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$155.9B USD",
+	"marketCap": "$156.8B USD",
 	"sharpeRatio": -0.01,
-	"expectedCAGR": "-5% - 13%",
+	"expectedCAGR": "-5% - 12%",
 	"expectedVolatility": "~81%",
 	"valuation": {
-		"trailingPE": 45.9,
-		"forwardPE": 22.8,
+		"trailingPE": 46.1,
+		"forwardPE": 22.9,
 		"pegRatio": 0.8,
 		"evEbitda": 36.7
 	},
@@ -29,7 +29,7 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$461.45",
+	"currentPrice": "$464.08",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "30%",
@@ -42,29 +42,38 @@
 		"scenarios": {
 			"bear": "-5%",
 			"base": "5%",
-			"bull": "13%"
+			"bull": "12%"
 		},
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.06
 	},
-	"lastUpdated": "2026-03-12T12:38:06.420Z",
+	"lastUpdated": "2026-03-12T14:55:57.282Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.77,
-		"signal": "REJECTED",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
-			"forwardPE": 22.8,
+			"multipleType": "Forward P/E",
+			"multiple": 22.9,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
-		"note": "Negative 6-month momentum (-21%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 461.45,
-				"price6mAgo": 582,
-				"return6m": -20.7
+			"stabilization": {
+				"pass": true,
+				"price": 464.08,
+				"price6mAgo": 593.14,
+				"price1mAgo": 390.55,
+				"low3m": 359,
+				"return6m": -21.8,
+				"return1m": 18.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 12,
+				"down30d": 2
 			}
 		}
 	}

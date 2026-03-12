@@ -46,14 +46,15 @@
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
 	},
-	"lastUpdated": "2026-03-12T12:38:05.367Z",
+	"lastUpdated": "2026-03-12T14:55:56.290Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.01,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"forwardPE": 15.4,
+			"multipleType": "Forward P/E",
+			"multiple": 15.4,
 			"cvStock": 0.054,
 			"riskMultiplier": 0.984
 		}

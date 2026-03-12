@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1656.5B USD",
-	"sharpeRatio": 0.13,
-	"expectedCAGR": "5% - 14%",
+	"marketCap": "$1631.4B USD",
+	"sharpeRatio": 0.19,
+	"expectedCAGR": "7% - 17%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 27.9,
-		"forwardPE": 18.3,
+		"trailingPE": 27.4,
+		"forwardPE": 18,
 		"pegRatio": 1.05,
 		"evEbitda": 16.3
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$862.25",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$654.86",
+	"currentPrice": "$644.94",
 	"consensus": {
 		"tipranks": "$836",
 		"yahoo": "$862.25",
@@ -44,30 +44,40 @@
 			"bull": 29
 		},
 		"scenarios": {
-			"bear": "5%",
-			"base": "10%",
-			"bull": "14%"
+			"bear": "7%",
+			"base": "13%",
+			"bull": "17%"
 		},
+		"decayFactor": 0.9,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:38:14.400Z",
+	"lastUpdated": "2026-03-12T14:56:08.343Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.97,
-		"signal": "REJECTED",
+		"score": 0.95,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
-			"forwardPE": 18.3,
+			"multipleType": "Forward P/E",
+			"multiple": 18,
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
 		},
-		"note": "Negative 6-month momentum (-13%; intermediate trend broken)",
 		"realityChecks": {
-			"momentum6m": {
-				"pass": false,
-				"price": 654.86,
-				"price6mAgo": 755.59,
-				"return6m": -13.3
+			"stabilization": {
+				"pass": true,
+				"price": 644.94,
+				"price6mAgo": 764.7,
+				"price1mAgo": 639.77,
+				"low3m": 600,
+				"return6m": -15.7,
+				"return1m": 0.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 26,
+				"down30d": 9
 			}
 		}
 	}

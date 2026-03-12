@@ -4,19 +4,19 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1838.9B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "7% - 16%",
-	"expectedVolatility": "~37%",
+	"marketCap": "$1752.2B USD",
+	"sharpeRatio": 0.21,
+	"expectedCAGR": "8% - 17%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 34.1,
-		"forwardPE": 19.7,
+		"trailingPE": 32.5,
+		"forwardPE": 18.7,
 		"pegRatio": 0.57,
 		"evEbitda": 2.8
 	},
 	"metrics": {
 		"fcfMargin": "~17%",
-		"fcfYield": "~35%",
+		"fcfYield": "~37%",
 		"roic": "45% - 49%",
 		"roe": "35.1%",
 		"netDebtEbitda": "Net cash",
@@ -27,7 +27,7 @@
 	"targetPrice": "$429.49",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$354.56",
+	"currentPrice": "$337.84",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$429.49",
@@ -44,29 +44,34 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "8%",
+			"base": "13%",
+			"bull": "17%"
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-12T12:38:18.356Z",
+	"lastUpdated": "2026-03-12T14:56:12.483Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.69,
+		"score": 0.66,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 28,
-			"forwardPE": 19.7,
+			"multipleType": "Forward P/E",
+			"multiple": 18.7,
 			"cvStock": 0.05,
 			"riskMultiplier": 0.982
 		},
 		"realityChecks": {
-			"momentum6m": {
+			"stabilization": {
 				"pass": true,
-				"price": 354.56,
-				"price6mAgo": 259.33,
-				"return6m": 36.7
+				"price": 337.84,
+				"price6mAgo": 261.38,
+				"price1mAgo": 366.36,
+				"low3m": 275.08,
+				"return6m": 29.3,
+				"return1m": -7.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

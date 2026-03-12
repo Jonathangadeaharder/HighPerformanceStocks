@@ -58,6 +58,13 @@ function parsePercent(str) {
 	return m ? parseFloat(m[0]) : null;
 }
 
+function parseNumber(str) {
+	if (str == null) return null;
+	if (typeof str === 'number') return Number.isFinite(str) ? str : null;
+	const m = String(str).match(/-?\d+(?:\.\d+)?/);
+	return m ? parseFloat(m[0]) : null;
+}
+
 function fmtPct(n, decimals = 0) {
 	if (n == null) return null;
 	return `${n.toFixed(decimals)}%`;
@@ -107,10 +114,10 @@ function fmtMarketCap(rawCap, currency) {
 /** CAGR calculation with exponential growth decay toward terminal rate.
  *  growth(yr) = terminal + (initial - terminal) * decay^yr
  *  Price and EPS must be in the same units (both pounds, both USD, etc.) */
-function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon) {
+function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon, decayFactor = GROWTH_DECAY) {
 	let eps = ttmEPS;
 	for (let yr = 1; yr <= horizon; yr++) {
-		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(GROWTH_DECAY, yr);
+		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
 		eps *= 1 + g / 100;
 	}
 	const futurePrice = eps * exitPE;
@@ -129,6 +136,9 @@ const FPERG_THRESHOLD = 1.0;
 const TOTAL_RETURN_THRESHOLD = 12.0;
 const DEBT_PENALTY_THRESHOLD = 150; // Yahoo reports D/E as percentage (150 = 1.5×)
 const DEBT_PENALTY_FACTOR = 0.30;
+const STABILIZATION_6M_THRESHOLD = -10;
+const STABILIZATION_1M_THRESHOLD = 0;
+const STABILIZATION_LOW_BUFFER = 1.05;
 
 function getAnalystDispersion(earningsTrend) {
 	if (!earningsTrend?.trend) return null;
@@ -139,14 +149,67 @@ function getAnalystDispersion(earningsTrend) {
 	return { avg, low, high };
 }
 
-function computeFPERG(forwardPE, growthPct, cvStock) {
+function computeGrowthScore(engine, multipleType, multiple, growthPct, cvStock, threshold = FPERG_THRESHOLD) {
 	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
-	const score = (forwardPE / growthPct) * riskMultiplier;
+	const score = (multiple / growthPct) * riskMultiplier;
+	return {
+		engine,
+		score: +score.toFixed(2),
+		signal: score <= threshold ? 'PASS' : 'FAIL',
+		inputs: {
+			growth: growthPct,
+			multipleType,
+			multiple: +multiple.toFixed(1),
+			cvStock: +cvStock.toFixed(3),
+			riskMultiplier: +riskMultiplier.toFixed(3)
+		}
+	};
+}
+
+function detectGrowthBranch(stock, valuationPrice) {
+	const basis = stock.cagrModel?.basis ?? '';
+	const lowerBasis = basis.toLowerCase();
+	const valuation = stock.valuation ?? {};
+	const ttmBasis = stock.cagrModel?.ttmEPS;
+	const priceToBasis = valuationPrice != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
+
+	if (/fee-related earnings|\bfre\b/.test(lowerBasis)) {
+		return {
+			engine: 'fFREG',
+			multipleType: 'P/FRE',
+			multiple: parseNumber(valuation.priceToFRE) ?? priceToBasis
+		};
+	}
+
+	if (/adjusted net income|\bani\b|distributable earnings/.test(lowerBasis)) {
+		return {
+			engine: 'fANIG',
+			multipleType: 'P/ANI',
+			multiple: priceToBasis
+		};
+	}
+
+	if (/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|cash flow/.test(lowerBasis)) {
+		return {
+			engine: 'fCFG',
+			multipleType: valuation.evFcf != null ? 'EV/FCF' : 'P/CF',
+			multiple: parseNumber(valuation.evFcf) ?? priceToBasis
+		};
+	}
+
+	if ((/serial acquirer|amortization/.test(lowerBasis) || stock.group === 'Serial Acquirers')
+		&& valuation.evEbitda != null && valuation.evEbitda > 0) {
+		return {
+			engine: 'fEVG',
+			multipleType: 'EV/EBITDA',
+			multiple: valuation.evEbitda
+		};
+	}
+
 	return {
 		engine: 'fPERG',
-		score: +score.toFixed(2),
-		signal: score <= FPERG_THRESHOLD ? 'PASS' : 'FAIL',
-		inputs: { growth: growthPct, forwardPE, cvStock: +cvStock.toFixed(3), riskMultiplier: +riskMultiplier.toFixed(3) }
+		multipleType: 'Forward P/E',
+		multiple: valuation.forwardPE
 	};
 }
 
@@ -170,22 +233,36 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 	};
 }
 
-/** Post-PASS reality checks for fPERG stocks (defeats analyst lag).
- *  RC1: 6-month time-series momentum (Jegadeesh-Titman) — bypasses crowded 200-SMA.
+/** Post-PASS reality checks for fPERG stocks.
+ *  RC1: Stabilization filter — reject only if weakness is ongoing and near fresh lows.
  *  RC2: Analyst revisions — detects actively collapsing consensus. */
-function applyRealityChecks(result, rawPrice, price6mAgo, summary) {
+function applyRealityChecks(result, rawPrice, historicalData, summary) {
 	const checks = {};
 
-	// Reality Check 1: 6-Month Time-Series Momentum
-	if (rawPrice != null && price6mAgo != null && price6mAgo > 0) {
+	// Reality Check 1: Stabilization, not absolute momentum.
+	const price6mAgo = historicalData?.price6mAgo;
+	const price1mAgo = historicalData?.price1mAgo;
+	const low3m = historicalData?.low3m;
+	if (rawPrice != null && price6mAgo != null && price1mAgo != null && low3m != null && price6mAgo > 0 && price1mAgo > 0 && low3m > 0) {
 		const return6m = ((rawPrice / price6mAgo) - 1) * 100;
-		const passed = rawPrice > price6mAgo;
-		checks.momentum6m = { pass: passed, price: +rawPrice.toFixed(2), price6mAgo: +price6mAgo.toFixed(2), return6m: +return6m.toFixed(1) };
-		if (!passed) {
-			result.signal = 'REJECTED';
-			result.note = `Negative 6-month momentum (${return6m.toFixed(0)}%; intermediate trend broken)`;
-			result.realityChecks = checks;
-			return;
+		const return1m = ((rawPrice / price1mAgo) - 1) * 100;
+		const near3mLow = rawPrice <= low3m * STABILIZATION_LOW_BUFFER;
+		const stillFalling = return6m < STABILIZATION_6M_THRESHOLD
+			&& return1m < STABILIZATION_1M_THRESHOLD
+			&& near3mLow;
+		checks.stabilization = {
+			pass: !stillFalling,
+			price: +rawPrice.toFixed(2),
+			price6mAgo: +price6mAgo.toFixed(2),
+			price1mAgo: +price1mAgo.toFixed(2),
+			low3m: +low3m.toFixed(2),
+			return6m: +return6m.toFixed(1),
+			return1m: +return1m.toFixed(1),
+			near3mLow
+		};
+		if (stillFalling) {
+			result.signal = 'WAIT';
+			result.note = 'Cheap, but still stabilizing (downtrend remains active)';
 		}
 	}
 
@@ -204,7 +281,7 @@ function applyRealityChecks(result, rawPrice, price6mAgo, summary) {
 	result.realityChecks = checks;
 }
 
-function computeScreener(stock, summary, rawPrice, price6mAgo) {
+function computeScreener(stock, summary, rawPrice, valuationPrice, historicalData) {
 	const model = stock.cagrModel;
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
@@ -212,20 +289,22 @@ function computeScreener(stock, summary, rawPrice, price6mAgo) {
 	const isPreProfit = model.exitPE && Object.values(model.exitPE).every(v => v === 0);
 	if (isPreProfit) return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
 
-	const forwardPE = stock.valuation?.forwardPE;
-
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
-		if (!forwardPE || forwardPE <= 0) return { engine: 'fPERG', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
+		const branch = detectGrowthBranch(stock, valuationPrice);
+		if (!branch.multiple || branch.multiple <= 0) {
+			return { engine: branch.engine, signal: 'NO_DATA', note: `Missing/negative ${branch.multipleType}` };
+		}
 		const dispersion = getAnalystDispersion(summary?.earningsTrend);
-		if (!dispersion) return { engine: 'fPERG', signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
+		if (!dispersion) return { engine: branch.engine, signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
 		const cvStock = ((dispersion.high - dispersion.low) / 4) / dispersion.avg;
-		const result = computeFPERG(forwardPE, growthPct, cvStock);
+		const result = computeGrowthScore(branch.engine, branch.multipleType, branch.multiple, growthPct, cvStock);
 		if (result.signal === 'PASS') {
-			applyRealityChecks(result, rawPrice, price6mAgo, summary);
+			applyRealityChecks(result, rawPrice, historicalData, summary);
 		}
 		return result;
 	}
 
+	const forwardPE = stock.valuation?.forwardPE;
 	if (!forwardPE || forwardPE <= 0) return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
 	const divYieldPct = parsePercent(model.dividendYield) || 0;
 	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
@@ -262,7 +341,7 @@ async function fetchSummary(ticker) {
 	}
 }
 
-/** Fetch 1yr daily prices → annualized volatility + 6-month-ago close for momentum. */
+/** Fetch 1yr daily prices → volatility + stabilization anchors. */
 async function fetchHistoricalData(ticker) {
 	try {
 		const end = new Date();
@@ -275,13 +354,21 @@ async function fetchHistoricalData(ticker) {
 			interval: '1d'
 		});
 
-		if (!history || history.length < 60) return { vol: null, price6mAgo: null };
+		if (!history || history.length < 60) return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
 
-		// 6-month-ago close for time-series momentum (Jegadeesh-Titman)
+		// Historical anchors for stabilization detection
 		const sixMonthsAgo = new Date();
 		sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
 		const entry6m = history.find(h => new Date(h.date) >= sixMonthsAgo);
 		const price6mAgo = entry6m?.close ?? null;
+		const oneMonthAgo = new Date();
+		oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+		const entry1m = history.find(h => new Date(h.date) >= oneMonthAgo);
+		const price1mAgo = entry1m?.close ?? null;
+		const trailing3m = history.slice(-63);
+		const low3m = trailing3m.length > 0
+			? Math.min(...trailing3m.map(h => h.low ?? h.close).filter(v => v > 0))
+			: null;
 
 		const logReturns = [];
 		for (let i = 1; i < history.length; i++) {
@@ -292,15 +379,15 @@ async function fetchHistoricalData(ticker) {
 			}
 		}
 
-		if (logReturns.length < 50) return { vol: null, price6mAgo };
+		if (logReturns.length < 50) return { vol: null, price6mAgo, price1mAgo, low3m };
 
 		const mean = logReturns.reduce((s, r) => s + r, 0) / logReturns.length;
 		const variance = logReturns.reduce((s, r) => s + (r - mean) ** 2, 0) / (logReturns.length - 1);
 		const vol = Math.round(Math.sqrt(variance) * Math.sqrt(252) * 100);
 
-		return { vol, price6mAgo };
+		return { vol, price6mAgo, price1mAgo, low3m };
 	} catch {
-		return { vol: null, price6mAgo: null };
+		return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
 	}
 }
 
@@ -438,13 +525,14 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// epsGrowth is kept manual — no reliable per-stock LTG source in Yahoo Finance
 
 		// Recalculate scenarios
-		const epsGrowth = parsePercent(model.epsGrowth);
+			const epsGrowth = parsePercent(model.epsGrowth);
 		const dyPct = parsePercent(model.dividendYield) || 0;
+			const decayFactor = typeof model.decayFactor === 'number' ? model.decayFactor : GROWTH_DECAY;
 
 		if (epsGrowth != null && model.ttmEPS) {
 			const scenarios = {};
 			for (const [scenario, exitPE] of Object.entries(model.exitPE)) {
-				const cagr = calcCAGR(priceForCalc, model.ttmEPS, epsGrowth, exitPE, dyPct, HORIZON);
+					const cagr = calcCAGR(priceForCalc, model.ttmEPS, epsGrowth, exitPE, dyPct, HORIZON, decayFactor);
 				scenarios[scenario] = fmtRoundPct(cagr);
 			}
 			model.scenarios = scenarios;
@@ -476,7 +564,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 	}
 
 	// ── Bifurcated screener (fPERG / Total Return) ──
-	stock.screener = computeScreener(stock, summary, rawPrice, historicalData?.price6mAgo);
+	stock.screener = computeScreener(stock, summary, rawPrice, priceForCalc, historicalData);
 
 	stock.lastUpdated = new Date().toISOString();
 	return true;
