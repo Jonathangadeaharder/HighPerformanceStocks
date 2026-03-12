@@ -17,7 +17,8 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"preview": "vite preview",
-		"update-data": "node scripts/update-data.js"
+		"update-data": "node scripts/update-data.js",
+		"validate-data": "node scripts/validate-data.js"
 	},
 	"dependencies": {
 		"yahoo-finance2": "^3.13.0"

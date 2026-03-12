@@ -1,39 +1,15 @@
 import { readdirSync, readFileSync, statSync } from 'fs';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { resolve } from 'path';
+import {
+	DEFAULT_GROWTH_DECAY,
+	DEFAULT_HORIZON,
+	calcDecayedCagr,
+	parseDisplayPrice,
+	parsePercent
+} from '../lib/finance-core.js';
+import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
-
-const HORIZON = 5;
-const TERMINAL_GROWTH_PCT = 6;
-const GROWTH_DECAY = 0.8;
-
-function calcCAGR(
-	price,
-	ttmEPS,
-	epsGrowthPct,
-	exitPE,
-	dividendYieldPct,
-	horizon,
-	decayFactor = GROWTH_DECAY
-) {
-	let eps = ttmEPS;
-	for (let yr = 1; yr <= horizon; yr++) {
-		const g =
-			TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
-		eps *= 1 + g / 100;
-	}
-	const futurePrice = eps * exitPE;
-	const priceReturn = Math.pow(futurePrice / price, 1 / horizon) - 1;
-	return (priceReturn + dividendYieldPct / 100) * 100;
-}
-
-function parsePercent(str) {
-	if (!str) return null;
-	const m = str.match(/-?\d+(?:\.\d+)?/);
-	return m ? parseFloat(m[0]) : null;
-}
+const DATA_DIR = STOCK_RECORDS_DIR;
 
 const requiredFields = [
 	'ticker',
@@ -127,17 +103,13 @@ function verifyData() {
 			// Parse currentPrice — strip currency symbols/letters
 			let price = null;
 			if (data.currentPrice) {
-				const priceStr = String(data.currentPrice).replace(/[^0-9.\-]/g, '');
-				price = parseFloat(priceStr);
-				// GBp/GBX prices are in pence; convert to pounds to match EPS units
-				if (data.currentPrice.includes('£') === false && /GBp|GBX/i.test(data.currentPrice)) {
-					price /= 100;
-				}
+				price = parseDisplayPrice(data.currentPrice);
 			}
 			const epsGrowthPct = parsePercent(cm.epsGrowth);
 			const dividendYieldPct = parsePercent(cm.dividendYield) ?? 0;
-			const horizon = cm.horizon ?? HORIZON;
-			const decayFactor = typeof cm.decayFactor === 'number' ? cm.decayFactor : GROWTH_DECAY;
+			const horizon = cm.horizon ?? DEFAULT_HORIZON;
+			const decayFactor =
+				typeof cm.decayFactor === 'number' ? cm.decayFactor : DEFAULT_GROWTH_DECAY;
 
 			if (price && !isNaN(price) && epsGrowthPct != null) {
 				for (const [label, scenario] of Object.entries(cm.scenarios)) {
@@ -146,15 +118,15 @@ function verifyData() {
 					if (statedCAGR == null) continue;
 					if (exitPE == null) continue;
 
-					const expectedCAGR = calcCAGR(
+					const expectedCAGR = calcDecayedCagr({
 						price,
-						cm.ttmEPS,
+						ttmEPS: cm.ttmEPS,
 						epsGrowthPct,
 						exitPE,
 						dividendYieldPct,
 						horizon,
 						decayFactor
-					);
+					});
 					const rounded = Math.round(expectedCAGR);
 					if (Math.abs(rounded - statedCAGR) > 2) {
 						errors.push(

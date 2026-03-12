@@ -16,438 +16,35 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
-import YahooFinance from 'yahoo-finance2';
+import {
+	DEFAULT_GROWTH_DECAY,
+	DEFAULT_HORIZON,
+	calcDecayedCagr,
+	parsePercent
+} from '../lib/finance-core.js';
+import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
+import {
+	fmtApproxPct,
+	fmtMarketCap,
+	fmtMultiple,
+	fmtPct,
+	fmtPrice,
+	fmtRoundPct,
+	isUpToDate,
+	sleep
+} from './lib/display-formatters.js';
+import { computeScreener } from './lib/screener.js';
+import {
+	fetchAllQuotes,
+	fetchHistoricalData,
+	fetchSummary,
+	yahooTicker
+} from './lib/yahoo-client.js';
 
-const yf = new YahooFinance({
-	validation: { logErrors: false },
-	suppressNotices: ['yahooSurvey', 'ripHistorical']
-});
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
-const HORIZON = 5;
-const TERMINAL_GROWTH_PCT = 6; // nominal GDP — long-run EPS growth floor (McKinsey/Koller)
-const GROWTH_DECAY = 0.8; // excess-growth half-life ~3 yrs (Chan, Karceski & Lakonishok 2003)
+const DATA_DIR = STOCK_RECORDS_DIR;
 const CONCURRENCY = 5; // parallel quoteSummary requests per batch
 const BATCH_DELAY_MS = 500; // pause between batches to avoid Yahoo rate limits
 const FORCE = process.argv.includes('--force');
-
-// US share class tickers use dots (BRK.B, HEI.A) but yahoo-finance2 needs dashes
-const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
-function yahooTicker(t) {
-	return YAHOO_TICKER_MAP[t] || t;
-}
-
-// ─── Helpers ────────────────────────────────────────────────────────────────
-
-function sleep(ms) {
-	return new Promise((r) => setTimeout(r, ms));
-}
-
-function todayISO() {
-	return new Date().toISOString().slice(0, 10);
-}
-
-function isUpToDate(stock) {
-	return !FORCE && stock.lastUpdated?.slice(0, 10) === todayISO();
-}
-
-function parsePercent(str) {
-	if (!str) return null;
-	const m = str.match(/-?\d+(?:\.\d+)?/);
-	return m ? parseFloat(m[0]) : null;
-}
-
-function parseNumber(str) {
-	if (str == null) return null;
-	if (typeof str === 'number') return Number.isFinite(str) ? str : null;
-	const m = String(str).match(/-?\d+(?:\.\d+)?/);
-	return m ? parseFloat(m[0]) : null;
-}
-
-function fmtPct(n, decimals = 0) {
-	if (n == null) return null;
-	return `${n.toFixed(decimals)}%`;
-}
-
-function fmtRoundPct(n) {
-	if (n == null) return null;
-	return `${Math.round(n)}%`;
-}
-
-function fmtApproxPct(n) {
-	if (n == null) return null;
-	return `~${Math.round(n)}%`;
-}
-
-function fmtMultiple(n, decimals = 1) {
-	if (n == null) return null;
-	return `${n.toFixed(decimals)}x`;
-}
-
-/** Format price for display, handling GBp (pence → pounds) and other currencies. */
-function fmtPrice(rawPrice, currency) {
-	if (rawPrice == null) return null;
-	if (currency === 'GBp' || currency === 'GBX') {
-		return `£${(rawPrice / 100).toFixed(2)}`;
-	}
-	if (currency === 'SEK') return `${Math.round(rawPrice)} SEK`;
-	if (currency === 'CAD') return `C$${rawPrice % 1 === 0 ? rawPrice : rawPrice.toFixed(2)}`;
-	if (currency === 'HKD') return `HK$${rawPrice % 1 === 0 ? rawPrice : rawPrice.toFixed(2)}`;
-	const sym = { USD: '$', EUR: '€' }[currency] ?? `${currency} `;
-	return `${sym}${rawPrice % 1 === 0 ? rawPrice : rawPrice.toFixed(2)}`;
-}
-
-/** Format market cap as e.g. "$12.3B USD", "C$54.4B", "€8.1B" */
-function fmtMarketCap(rawCap, currency) {
-	if (!rawCap) return null;
-	const b = (rawCap / 1e9).toFixed(1);
-	if (currency === 'GBp' || currency === 'GBX') return `£${(rawCap / 1e9).toFixed(1)}B`; // Yahoo normalises GBp market cap to £
-	if (currency === 'SEK') return `${b}B SEK`;
-	if (currency === 'CAD') return `C$${b}B`;
-	if (currency === 'HKD') return `HK$${b}B`;
-	const sym = { USD: '$', EUR: '€' }[currency] ?? `${currency} `;
-	const suffix = currency === 'USD' ? ' USD' : '';
-	return `${sym}${b}B${suffix}`;
-}
-
-/** CAGR calculation with exponential growth decay toward terminal rate.
- *  growth(yr) = terminal + (initial - terminal) * decay^yr
- *  Price and EPS must be in the same units (both pounds, both USD, etc.) */
-function calcCAGR(
-	price,
-	ttmEPS,
-	epsGrowthPct,
-	exitPE,
-	dividendYieldPct,
-	horizon,
-	decayFactor = GROWTH_DECAY
-) {
-	let eps = ttmEPS;
-	for (let yr = 1; yr <= horizon; yr++) {
-		const g =
-			TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(decayFactor, yr);
-		eps *= 1 + g / 100;
-	}
-	const futurePrice = eps * exitPE;
-	const priceReturn = Math.pow(futurePrice / price, 1 / horizon) - 1;
-	return (priceReturn + dividendYieldPct / 100) * 100;
-}
-
-// ─── Bifurcated Screener ─────────────────────────────────────────────────────
-// Engine 1 (fPERG): growth > 8% — Agnostic Fundamental Risk-Adjusted Forward PEG
-// Engine 2 (totalReturn): growth ≤ 8% — Risk-Adjusted Dividend + Growth
-
-const GROWTH_ROUTING_THRESHOLD = 8;
-const CV_BENCHMARK = 0.08;
-const R2_NOISE = 0.6;
-const FPERG_THRESHOLD = 1.0;
-const TOTAL_RETURN_THRESHOLD = 12.0;
-const DEBT_PENALTY_THRESHOLD = 150; // Yahoo reports D/E as percentage (150 = 1.5×)
-const DEBT_PENALTY_FACTOR = 0.3;
-const STABILIZATION_6M_THRESHOLD = -10;
-const STABILIZATION_1M_THRESHOLD = 0;
-const STABILIZATION_LOW_BUFFER = 1.05;
-
-function getAnalystDispersion(earningsTrend) {
-	if (!earningsTrend?.trend) return null;
-	const entry = earningsTrend.trend.find((t) => t.period === '+1y');
-	if (!entry?.earningsEstimate) return null;
-	const { avg, low, high } = entry.earningsEstimate;
-	if (avg == null || low == null || high == null || avg <= 0) return null;
-	return { avg, low, high };
-}
-
-function computeGrowthScore(
-	engine,
-	multipleType,
-	multiple,
-	growthPct,
-	cvStock,
-	threshold = FPERG_THRESHOLD
-) {
-	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
-	const score = (multiple / growthPct) * riskMultiplier;
-	return {
-		engine,
-		score: +score.toFixed(2),
-		signal: score <= threshold ? 'PASS' : 'FAIL',
-		inputs: {
-			growth: growthPct,
-			multipleType,
-			multiple: +multiple.toFixed(1),
-			cvStock: +cvStock.toFixed(3),
-			riskMultiplier: +riskMultiplier.toFixed(3)
-		}
-	};
-}
-
-function detectGrowthBranch(stock, valuationPrice) {
-	const basis = stock.cagrModel?.basis ?? '';
-	const lowerBasis = basis.toLowerCase();
-	const valuation = stock.valuation ?? {};
-	const ttmBasis = stock.cagrModel?.ttmEPS;
-	const priceToBasis = valuationPrice != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
-
-	if (/fee-related earnings|\bfre\b/.test(lowerBasis)) {
-		return {
-			engine: 'fFREG',
-			multipleType: 'P/FRE',
-			multiple: parseNumber(valuation.priceToFRE) ?? priceToBasis
-		};
-	}
-
-	if (/adjusted net income|\bani\b|distributable earnings/.test(lowerBasis)) {
-		return {
-			engine: 'fANIG',
-			multipleType: 'P/ANI',
-			multiple: priceToBasis
-		};
-	}
-
-	if (
-		/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|cash flow/.test(
-			lowerBasis
-		)
-	) {
-		return {
-			engine: 'fCFG',
-			multipleType: valuation.evFcf != null ? 'EV/FCF' : 'P/CF',
-			multiple: parseNumber(valuation.evFcf) ?? priceToBasis
-		};
-	}
-
-	if (
-		(/serial acquirer|amortization/.test(lowerBasis) || stock.group === 'Serial Acquirers') &&
-		valuation.evEbitda != null &&
-		valuation.evEbitda > 0
-	) {
-		return {
-			engine: 'fEVG',
-			multipleType: 'EV/EBITDA',
-			multiple: valuation.evEbitda
-		};
-	}
-
-	return {
-		engine: 'fPERG',
-		multipleType: 'Forward P/E',
-		multiple: valuation.forwardPE
-	};
-}
-
-function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
-	const earningsYield = (1 / forwardPE) * 100;
-	if (earningsYield <= divYieldPct) {
-		return {
-			engine: 'totalReturn',
-			score: null,
-			signal: 'FAIL',
-			note: 'Dividend exceeds forward earnings (value trap)',
-			inputs: {
-				growth: growthPct,
-				dividendYield: divYieldPct,
-				earningsYield: +earningsYield.toFixed(1)
-			}
-		};
-	}
-	const hasPenalty = debtToEquity > DEBT_PENALTY_THRESHOLD;
-	const baseReturn = divYieldPct + growthPct;
-	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
-	return {
-		engine: 'totalReturn',
-		score: +riskAdjReturn.toFixed(1),
-		signal: riskAdjReturn >= TOTAL_RETURN_THRESHOLD ? 'PASS' : 'FAIL',
-		inputs: {
-			growth: growthPct,
-			dividendYield: divYieldPct,
-			debtToEquity: +(debtToEquity ?? 0).toFixed(0),
-			debtPenalty: hasPenalty
-		}
-	};
-}
-
-/** Post-PASS reality checks for fPERG stocks.
- *  RC1: Stabilization filter — reject only if weakness is ongoing and near fresh lows.
- *  RC2: Analyst revisions — detects actively collapsing consensus. */
-function applyRealityChecks(result, rawPrice, historicalData, summary) {
-	const checks = {};
-
-	// Reality Check 1: Stabilization, not absolute momentum.
-	const price6mAgo = historicalData?.price6mAgo;
-	const price1mAgo = historicalData?.price1mAgo;
-	const low3m = historicalData?.low3m;
-	if (
-		rawPrice != null &&
-		price6mAgo != null &&
-		price1mAgo != null &&
-		low3m != null &&
-		price6mAgo > 0 &&
-		price1mAgo > 0 &&
-		low3m > 0
-	) {
-		const return6m = (rawPrice / price6mAgo - 1) * 100;
-		const return1m = (rawPrice / price1mAgo - 1) * 100;
-		const near3mLow = rawPrice <= low3m * STABILIZATION_LOW_BUFFER;
-		const stillFalling =
-			return6m < STABILIZATION_6M_THRESHOLD && return1m < STABILIZATION_1M_THRESHOLD && near3mLow;
-		checks.stabilization = {
-			pass: !stillFalling,
-			price: +rawPrice.toFixed(2),
-			price6mAgo: +price6mAgo.toFixed(2),
-			price1mAgo: +price1mAgo.toFixed(2),
-			low3m: +low3m.toFixed(2),
-			return6m: +return6m.toFixed(1),
-			return1m: +return1m.toFixed(1),
-			near3mLow
-		};
-		if (stillFalling) {
-			result.signal = 'WAIT';
-			result.note = 'Cheap, but still stabilizing (downtrend remains active)';
-		}
-	}
-
-	// Reality Check 2: Analyst Revisions (from earningsTrend +1y epsRevisions)
-	const entry = summary?.earningsTrend?.trend?.find((t) => t.period === '+1y');
-	const rev = entry?.epsRevisions;
-	const up = rev?.upLast30days ?? 0;
-	const down = rev?.downLast30days ?? 0;
-	const passed = !(down > 0 && up === 0);
-	checks.revisions = { pass: passed, up30d: up, down30d: down };
-	if (!passed) {
-		result.signal = 'REJECTED';
-		result.note = 'Consensus actively collapsing (analyst lag)';
-	}
-
-	result.realityChecks = checks;
-}
-
-function computeScreener(stock, summary, rawPrice, valuationPrice, historicalData) {
-	const model = stock.cagrModel;
-	const growthPct = parsePercent(model?.epsGrowth);
-	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
-
-	const isPreProfit = model.exitPE && Object.values(model.exitPE).every((v) => v === 0);
-	if (isPreProfit)
-		return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
-
-	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
-		const branch = detectGrowthBranch(stock, valuationPrice);
-		if (!branch.multiple || branch.multiple <= 0) {
-			return {
-				engine: branch.engine,
-				signal: 'NO_DATA',
-				note: `Missing/negative ${branch.multipleType}`
-			};
-		}
-		const dispersion = getAnalystDispersion(summary?.earningsTrend);
-		if (!dispersion)
-			return { engine: branch.engine, signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
-		const cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
-		const result = computeGrowthScore(
-			branch.engine,
-			branch.multipleType,
-			branch.multiple,
-			growthPct,
-			cvStock
-		);
-		if (result.signal === 'PASS') {
-			applyRealityChecks(result, rawPrice, historicalData, summary);
-		}
-		return result;
-	}
-
-	const forwardPE = stock.valuation?.forwardPE;
-	if (!forwardPE || forwardPE <= 0)
-		return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
-	const divYieldPct = parsePercent(model.dividendYield) || 0;
-	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
-	return computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
-}
-
-// ─── Fetch ───────────────────────────────────────────────────────────────────
-
-/** Batch-fetch quotes for all tickers in a single HTTP call. */
-async function fetchAllQuotes(tickers) {
-	const result = {};
-	const chunkSize = 20;
-	for (let i = 0; i < tickers.length; i += chunkSize) {
-		const chunk = tickers.slice(i, i + chunkSize);
-		try {
-			const res = await yf.quote(chunk, { return: 'object' });
-			Object.assign(result, res);
-		} catch (e) {
-			console.error(`Chunk quote failed: ${e.message}`);
-		}
-		if (i + chunkSize < tickers.length) await new Promise((r) => setTimeout(r, 1000));
-	}
-	return result;
-}
-
-/** Fetch detailed summary modules per ticker (sequential, with caller-controlled delay). */
-async function fetchSummary(ticker) {
-	try {
-		return await yf.quoteSummary(ticker, {
-			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earningsTrend']
-		});
-	} catch {
-		return {};
-	}
-}
-
-/** Fetch 1yr daily prices → volatility + stabilization anchors. */
-async function fetchHistoricalData(ticker) {
-	try {
-		const end = new Date();
-		const start = new Date();
-		start.setFullYear(start.getFullYear() - 1);
-
-		const history = await yf.historical(ticker, {
-			period1: start,
-			period2: end,
-			interval: '1d'
-		});
-
-		if (!history || history.length < 60)
-			return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
-
-		// Historical anchors for stabilization detection
-		const sixMonthsAgo = new Date();
-		sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-		const entry6m = history.find((h) => new Date(h.date) >= sixMonthsAgo);
-		const price6mAgo = entry6m?.close ?? null;
-		const oneMonthAgo = new Date();
-		oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
-		const entry1m = history.find((h) => new Date(h.date) >= oneMonthAgo);
-		const price1mAgo = entry1m?.close ?? null;
-		const trailing3m = history.slice(-63);
-		const low3m =
-			trailing3m.length > 0
-				? Math.min(...trailing3m.map((h) => h.low ?? h.close).filter((v) => v > 0))
-				: null;
-
-		const logReturns = [];
-		for (let i = 1; i < history.length; i++) {
-			const prev = history[i - 1].close;
-			const curr = history[i].close;
-			if (prev > 0 && curr > 0) {
-				logReturns.push(Math.log(curr / prev));
-			}
-		}
-
-		if (logReturns.length < 50) return { vol: null, price6mAgo, price1mAgo, low3m };
-
-		const mean = logReturns.reduce((s, r) => s + r, 0) / logReturns.length;
-		const variance = logReturns.reduce((s, r) => s + (r - mean) ** 2, 0) / (logReturns.length - 1);
-		const vol = Math.round(Math.sqrt(variance) * Math.sqrt(252) * 100);
-
-		return { vol, price6mAgo, price1mAgo, low3m };
-	} catch {
-		return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
-	}
-}
 
 // ─── Apply updates to one stock ─────────────────────────────────────────────
 
@@ -587,20 +184,21 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// Recalculate scenarios
 		const epsGrowth = parsePercent(model.epsGrowth);
 		const dyPct = parsePercent(model.dividendYield) || 0;
-		const decayFactor = typeof model.decayFactor === 'number' ? model.decayFactor : GROWTH_DECAY;
+		const decayFactor =
+			typeof model.decayFactor === 'number' ? model.decayFactor : DEFAULT_GROWTH_DECAY;
 
 		if (epsGrowth != null && model.ttmEPS) {
 			const scenarios = {};
 			for (const [scenario, exitPE] of Object.entries(model.exitPE)) {
-				const cagr = calcCAGR(
-					priceForCalc,
-					model.ttmEPS,
-					epsGrowth,
+				const cagr = calcDecayedCagr({
+					price: priceForCalc,
+					ttmEPS: model.ttmEPS,
+					epsGrowthPct: epsGrowth,
 					exitPE,
-					dyPct,
-					HORIZON,
+					dividendYieldPct: dyPct,
+					horizon: DEFAULT_HORIZON,
 					decayFactor
-				);
+				});
 				scenarios[scenario] = fmtRoundPct(cagr);
 			}
 			model.scenarios = scenarios;
@@ -648,7 +246,7 @@ async function main() {
 	});
 
 	// Filter to stocks that need updating
-	const stale = allStocks.filter(({ stock }) => !isUpToDate(stock));
+	const stale = allStocks.filter(({ stock }) => !isUpToDate(stock, FORCE));
 	const upToDate = allStocks.length - stale.length;
 
 	if (stale.length === 0) {

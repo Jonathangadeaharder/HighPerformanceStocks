@@ -3,7 +3,7 @@
 		"filePath": "repomix-output.xml",
 		"style": "xml"
 	},
-	"include": ["src/**/*", "scripts/**/*", "data/**/*", "AllStocks.txt", "*.json", "*.js", "*.yaml"],
+	"include": ["src/**/*", "scripts/**/*", "docs/**/*", "data/**/*", "*.json", "*.js", "*.yaml"],
 	"ignore": {
 		"useGitignore": true,
 		"useDefaultPatterns": true,

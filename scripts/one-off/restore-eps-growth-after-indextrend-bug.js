@@ -1,5 +1,6 @@
 /**
- * restore-eps-growth.js — One-time restoration of epsGrowth (and adjusted ttmEPS) values
+ * restore-eps-growth-after-indextrend-bug.js — One-time restoration of epsGrowth
+ * (and adjusted ttmEPS) values
  * that were overwritten when indexTrend mistakenly set every stock to 12% (S&P 500 index LTG).
  *
  * Strategy:
@@ -9,11 +10,16 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { resolve } from 'path';
+import {
+	DEFAULT_HORIZON,
+	calcDecayedCagr,
+	parseDisplayPrice,
+	parsePercent
+} from '../../lib/finance-core.js';
+import { STOCK_RECORDS_DIR } from '../../lib/project-paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
+const DATA_DIR = STOCK_RECORDS_DIR;
 
 // Base CAGR from the first successful update run (live prices + original epsGrowth).
 // Source: pnpm update-data output before indexTrend was added.
@@ -70,22 +76,6 @@ const MANUAL_OVERRIDES = {
 	'DPLM.L': { epsGrowth: '14%', ttmEPS: 1.37 } // GBp bug: EPS was divided by 100
 };
 
-function parsePercent(str) {
-	if (!str) return null;
-	const m = str.match(/-?\d+(?:\.\d+)?/);
-	return m ? parseFloat(m[0]) : null;
-}
-
-function parsePrice(str) {
-	if (!str) return null;
-	return parseFloat(str.replace(/[^0-9.\-]/g, '')) || null;
-}
-
-function calcCAGR(price, ttmEPS, epsGrowth, exitPE, dividendYield, horizon = 5) {
-	const futureEPS = ttmEPS * Math.pow(1 + epsGrowth / 100, horizon);
-	return (Math.pow((futureEPS * exitPE) / price, 1 / horizon) - 1 + dividendYield / 100) * 100;
-}
-
 function solveEpsGrowth(price, ttmEPS, exitPE, dy, targetBaseCagr) {
 	let lo = -20,
 		hi = 100,
@@ -93,7 +83,14 @@ function solveEpsGrowth(price, ttmEPS, exitPE, dy, targetBaseCagr) {
 		cagr;
 	for (let i = 0; i < 200; i++) {
 		mid = (lo + hi) / 2;
-		cagr = calcCAGR(price, ttmEPS, mid, exitPE, dy);
+		cagr = calcDecayedCagr({
+			price,
+			ttmEPS,
+			epsGrowthPct: mid,
+			exitPE,
+			dividendYieldPct: dy,
+			horizon: DEFAULT_HORIZON
+		});
 		if (Math.abs(cagr - targetBaseCagr) < 0.001) break;
 		if (cagr < targetBaseCagr) lo = mid;
 		else hi = mid;
@@ -132,7 +129,7 @@ for (const f of files) {
 		continue;
 	}
 
-	const price = parsePrice(stock.currentPrice);
+	const price = parseDisplayPrice(stock.currentPrice);
 	const ttmEPS = model.ttmEPS;
 	const exitPE = model.exitPE.base;
 	const dy = parsePercent(model.dividendYield) || 0;
@@ -146,7 +143,14 @@ for (const f of files) {
 	const prev = model.epsGrowth;
 	model.epsGrowth = `${recovered}%`;
 	writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
-	const check = calcCAGR(price, ttmEPS, recovered, exitPE, dy).toFixed(1);
+	const check = calcDecayedCagr({
+		price,
+		ttmEPS,
+		epsGrowthPct: recovered,
+		exitPE,
+		dividendYieldPct: dy,
+		horizon: DEFAULT_HORIZON
+	}).toFixed(1);
 	console.log(
 		`  🔄 ${ticker}: epsGrowth ${prev}→${recovered}% (target base ${target}%, actual ${check}%)`
 	);

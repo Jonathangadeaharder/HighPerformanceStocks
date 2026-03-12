@@ -3,5 +3,5 @@ build
 coverage
 dist
 node_modules
-data/findings
+data/stock-records
 pnpm-lock.yaml
