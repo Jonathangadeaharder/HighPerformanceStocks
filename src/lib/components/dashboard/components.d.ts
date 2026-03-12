@@ -1,4 +1,6 @@
 declare module '$lib/components/dashboard/*.svelte' {
-	const component: any;
+	import type { Component } from 'svelte';
+
+	const component: Component;
 	export default component;
 }
