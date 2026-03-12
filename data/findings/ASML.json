@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "38%"
 	},
-	"targetPrice": "$1463.22",
+	"targetPrice": "$1462.71",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
 	"currentPrice": "$1386.68",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1463.22",
+		"yahoo": "$1462.71",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
@@ -48,7 +48,7 @@
 		},
 		"basis": "5yr & 10yr avg PE (~36)"
 	},
-	"lastUpdated": "2026-03-12T12:28:48.105Z",
+	"lastUpdated": "2026-03-12T12:34:10.875Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.79,

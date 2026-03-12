@@ -50,7 +50,7 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:28:55.683Z",
+	"lastUpdated": "2026-03-12T12:34:18.641Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.97,
@@ -60,6 +60,18 @@
 			"forwardPE": 18.3,
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 654.86,
+				"sma200": 691.74
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 26,
+				"down30d": 9
+			}
 		}
 	}
 }

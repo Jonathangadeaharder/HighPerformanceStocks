@@ -47,16 +47,24 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T12:28:54.795Z",
+	"lastUpdated": "2026-03-12T12:34:17.670Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.94,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 17,
 			"forwardPE": 16.8,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
+		},
+		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"realityChecks": {
+			"sma200": {
+				"pass": false,
+				"price": 25.05,
+				"sma200": 36.62
+			}
 		}
 	}
 }

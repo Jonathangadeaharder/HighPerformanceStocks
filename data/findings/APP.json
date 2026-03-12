@@ -47,16 +47,24 @@
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.06
 	},
-	"lastUpdated": "2026-03-12T12:28:47.982Z",
+	"lastUpdated": "2026-03-12T12:34:10.792Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.77,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 30,
 			"forwardPE": 22.8,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
+		},
+		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"realityChecks": {
+			"sma200": {
+				"pass": false,
+				"price": 461.45,
+				"sma200": 513.03
+			}
 		}
 	}
 }

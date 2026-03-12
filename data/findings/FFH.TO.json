@@ -20,7 +20,7 @@
 		"fcfYield": "~5%",
 		"netDebtEbitda": "0.8x"
 	},
-	"targetPrice": "C$2688.20",
+	"targetPrice": "C$2688.38",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
 	"currentPrice": "C$2272.66",
@@ -41,9 +41,9 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 290.45
 	},
-	"lastUpdated": "2026-03-12T12:28:51.838Z",
+	"lastUpdated": "2026-03-12T12:34:14.695Z",
 	"consensus": {
-		"yahoo": "C$2688.20"
+		"yahoo": "C$2688.38"
 	},
 	"screener": {
 		"engine": "fPERG",

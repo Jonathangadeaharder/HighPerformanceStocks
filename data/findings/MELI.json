@@ -40,19 +40,27 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-12T12:28:54.889Z",
+	"lastUpdated": "2026-03-12T12:34:17.848Z",
 	"consensus": {
 		"yahoo": "$2683.92"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.93,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 25,
 			"forwardPE": 22.9,
 			"cvStock": 0.112,
 			"riskMultiplier": 1.019
+		},
+		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"realityChecks": {
+			"sma200": {
+				"pass": false,
+				"price": 1766.1,
+				"sma200": 2224.33
+			}
 		}
 	}
 }

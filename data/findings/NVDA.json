@@ -48,7 +48,7 @@
 		},
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-12T12:28:56.808Z",
+	"lastUpdated": "2026-03-12T12:34:19.767Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.51,
@@ -58,6 +58,18 @@
 			"forwardPE": 17.2,
 			"cvStock": 0.131,
 			"riskMultiplier": 1.031
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 186.03,
+				"sma200": 176.91
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 27,
+				"down30d": 5
+			}
 		}
 	}
 }

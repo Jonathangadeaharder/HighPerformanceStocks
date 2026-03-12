@@ -50,16 +50,24 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-12T12:28:47.945Z",
+	"lastUpdated": "2026-03-12T12:34:10.709Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.47,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"forwardPE": 9.8,
 			"cvStock": 0.022,
 			"riskMultiplier": 0.965
+		},
+		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"realityChecks": {
+			"sma200": {
+				"pass": false,
+				"price": 106.1,
+				"sma200": 134.8
+			}
 		}
 	}
 }

@@ -48,7 +48,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-12T12:28:55.752Z",
+	"lastUpdated": "2026-03-12T12:34:18.707Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.55,
@@ -58,6 +58,18 @@
 			"forwardPE": 16.6,
 			"cvStock": 0.074,
 			"riskMultiplier": 0.996
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 90.44,
+				"sma200": 79.39
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 11,
+				"down30d": 2
+			}
 		}
 	}
 }

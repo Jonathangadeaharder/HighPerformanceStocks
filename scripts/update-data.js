@@ -170,7 +170,42 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 	};
 }
 
-function computeScreener(stock, summary) {
+const SMA_REJECTION_FACTOR = 0.90; // price < 90% of 200-SMA → value trap
+
+/** Post-PASS reality checks for fPERG stocks (defeats analyst lag). */
+function applyRealityChecks(result, rawPrice, summary) {
+	const sma200 = summary?.summaryDetail?.twoHundredDayAverage;
+	const checks = {};
+
+	// Reality Check 1: Price vs 200-day SMA
+	if (rawPrice != null && sma200 != null && sma200 > 0) {
+		const threshold = sma200 * SMA_REJECTION_FACTOR;
+		const passed = rawPrice >= threshold;
+		checks.sma200 = { pass: passed, price: +rawPrice.toFixed(2), sma200: +sma200.toFixed(2) };
+		if (!passed) {
+			result.signal = 'REJECTED';
+			result.note = 'Price below 90% of 200-SMA (value trap risk)';
+			result.realityChecks = checks;
+			return;
+		}
+	}
+
+	// Reality Check 2: Analyst Revisions (from earningsTrend +1y epsRevisions)
+	const entry = summary?.earningsTrend?.trend?.find(t => t.period === '+1y');
+	const rev = entry?.epsRevisions;
+	const up = rev?.upLast30days ?? 0;
+	const down = rev?.downLast30days ?? 0;
+	const passed = !(down > 0 && up === 0);
+	checks.revisions = { pass: passed, up30d: up, down30d: down };
+	if (!passed) {
+		result.signal = 'REJECTED';
+		result.note = 'Consensus actively collapsing (analyst lag)';
+	}
+
+	result.realityChecks = checks;
+}
+
+function computeScreener(stock, summary, rawPrice) {
 	const model = stock.cagrModel;
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
@@ -185,7 +220,11 @@ function computeScreener(stock, summary) {
 		const dispersion = getAnalystDispersion(summary?.earningsTrend);
 		if (!dispersion) return { engine: 'fPERG', signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
 		const cvStock = ((dispersion.high - dispersion.low) / 4) / dispersion.avg;
-		return computeFPERG(forwardPE, growthPct, cvStock);
+		const result = computeFPERG(forwardPE, growthPct, cvStock);
+		if (result.signal === 'PASS') {
+			applyRealityChecks(result, rawPrice, summary);
+		}
+		return result;
 	}
 
 	if (!forwardPE || forwardPE <= 0) return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
@@ -431,7 +470,7 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 	}
 
 	// ── Bifurcated screener (fPERG / Total Return) ──
-	stock.screener = computeScreener(stock, summary);
+	stock.screener = computeScreener(stock, summary, rawPrice);
 
 	stock.lastUpdated = new Date().toISOString();
 	return true;

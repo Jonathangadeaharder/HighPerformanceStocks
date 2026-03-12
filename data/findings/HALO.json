@@ -47,7 +47,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-12T12:28:52.799Z",
+	"lastUpdated": "2026-03-12T12:34:15.673Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.33,
@@ -57,6 +57,18 @@
 			"forwardPE": 6.8,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 66.48,
+				"sma200": 66.57
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 1
+			}
 		}
 	}
 }

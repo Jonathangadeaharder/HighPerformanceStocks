@@ -48,7 +48,7 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-12T12:29:01.453Z",
+	"lastUpdated": "2026-03-12T12:34:24.626Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.65,
@@ -58,6 +58,18 @@
 			"forwardPE": 13.8,
 			"cvStock": 0.146,
 			"riskMultiplier": 1.039
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 64.63,
+				"sma200": 68.39
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 21,
+				"down30d": 1
+			}
 		}
 	}
 }

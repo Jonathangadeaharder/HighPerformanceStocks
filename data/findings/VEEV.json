@@ -48,16 +48,24 @@
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T12:29:00.511Z",
+	"lastUpdated": "2026-03-12T12:34:23.669Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.96,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 19,
 			"forwardPE": 18.9,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
+		},
+		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"realityChecks": {
+			"sma200": {
+				"pass": false,
+				"price": 187.09,
+				"sma200": 256.89
+			}
 		}
 	}
 }

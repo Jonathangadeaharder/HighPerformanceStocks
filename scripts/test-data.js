@@ -96,7 +96,7 @@ function verifyData() {
 			errors.push(`Missing 'screener' object`);
 		} else {
 			const validEngines = ['fPERG', 'totalReturn', 'N/A'];
-			const validSignals = ['PASS', 'FAIL', 'NO_DATA'];
+			const validSignals = ['PASS', 'FAIL', 'REJECTED', 'NO_DATA'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}

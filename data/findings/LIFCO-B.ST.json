@@ -4,7 +4,7 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "134.9B SEK",
+	"marketCap": "135.0B SEK",
 	"sharpeRatio": 0.14,
 	"expectedCAGR": "4% - 13%",
 	"expectedVolatility": "~28%",
@@ -48,7 +48,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:28:53.924Z",
+	"lastUpdated": "2026-03-12T12:34:16.850Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 3.1,

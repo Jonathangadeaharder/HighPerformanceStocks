@@ -40,7 +40,7 @@
 		},
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-12T12:28:54.714Z",
+	"lastUpdated": "2026-03-12T12:34:17.666Z",
 	"consensus": {
 		"yahoo": "$1216.93"
 	},
@@ -53,6 +53,18 @@
 			"forwardPE": 23.8,
 			"cvStock": 0.067,
 			"riskMultiplier": 0.992
+		},
+		"realityChecks": {
+			"sma200": {
+				"pass": true,
+				"price": 999.84,
+				"sma200": 885.02
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 13,
+				"down30d": 6
+			}
 		}
 	}
 }
