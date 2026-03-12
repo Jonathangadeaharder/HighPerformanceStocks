@@ -4,13 +4,13 @@
 	"group": "Energy",
 	"confidence": "medium",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
-	"marketCap": "$63.4B USD",
-	"sharpeRatio": 0.12,
+	"marketCap": "$64.5B USD",
+	"sharpeRatio": 0.13,
 	"expectedCAGR": "2% - 13%",
-	"expectedVolatility": "~25%",
+	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 15.2,
-		"forwardPE": 11.7,
+		"trailingPE": 15.5,
+		"forwardPE": 11.9,
 		"pegRatio": null,
 		"evEbitda": 10.1
 	},
@@ -25,10 +25,10 @@
 	"targetPrice": "$24",
 	"bullCase": "Largest and most diversified US midstream network (130,000 miles of pipeline). 7%+ distribution yield growing 3-5% annually. AI data center power demand is a secular tailwind for natural gas. Low valuation relative to peers.",
 	"bearCase": "High leverage at 4x net debt/EBITDA. MLP structure adds tax complexity. Management has a mixed capital allocation track record. Commodity price sensitivity on gathering and processing segments.",
-	"currentPrice": "$18.44",
+	"currentPrice": "$18.75",
 	"consensus": {
 		"tipranks": "$23",
-		"yahoo": "$21.68"
+		"yahoo": "$21.82"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,5 +47,5 @@
 		},
 		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
 	},
-	"lastUpdated": "2026-03-10T14:19:36.201Z"
+	"lastUpdated": "2026-03-12T08:08:08.871Z"
 }

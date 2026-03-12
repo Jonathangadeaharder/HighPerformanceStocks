@@ -12,7 +12,7 @@
 		"trailingPE": 15,
 		"forwardPE": 10.6,
 		"pegRatio": 0.8,
-		"evEbitda": 11
+		"evEbitda": 10.8
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$46",
 	"bullCase": "A classic value anomaly. A highly profitable, cash-generating oncology firm trading at deep value multiples. It absorbs macroeconomic volatility shocks that typically devastate high-beta tech holdings.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$41.69",
+	"currentPrice": "$41.75",
 	"consensus": {
 		"tipranks": "$45",
 		"yahoo": "$46.83",
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-10T16:33:52.404Z"
+	"lastUpdated": "2026-03-12T08:08:08.918Z"
 }

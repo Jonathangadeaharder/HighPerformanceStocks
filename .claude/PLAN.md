@@ -1,23 +1,16 @@
 # PLAN
 
-- Goal: All pending tasks from the Sharpe/Ruthlessly Cut audit are now complete.
+- Goal: Peer review all 75 stock data files for correctness, rational estimates, and internal consistency
 
-- Completed this session:
-  1) Automated Sharpe ratio calculation in update-data.js — formula: (midpoint CAGR - 4.5%) / volatility
-  2) Moved TDG from "Ruthlessly Cut" to "Defensive Monopolies" (derives as high confidence: base 19%, bear 14%)
-  3) Moved XYZ/Block from "Ruthlessly Cut" to "Financials & Alt Assets" (derives as medium confidence: base 14%, bear 9%)
-  4) Renamed SQ.json → XYZ.json to match the ticker
-  5) Ran update-data --force — all 46 stocks updated, Sharpe ratios recomputed
-  6) Build verified clean
+- Constraints: 75 stock JSON files, each with valuation metrics, CAGR model, and consensus data
 
-- Previously completed (prior session):
-  - Added 3 emerging-market stocks (HDB, BABA, 0700.HK) with HKD currency support
-  - Implemented exponential growth decay model (McKinsey/Koller methodology)
-  - Calibrated 23 stocks' epsGrowth for decay model
-  - Switched 6 royalty stocks from P/E to P/CF model
-  - Reclassified TPL/VNOM to "Energy Royalties" group
-  - Added try/catch on JSON parsing, smart EPS guardrail (--force)
-  - Switched LMN.V from GAAP EPS to FCFA2S
-  - Git initialized with .gitignore
+- Steps:
+  1) Read data schema and validation script
+  2) Extract key fields from all files programmatically
+  3) Run automated checks (CAGR math, Sharpe, target vs consensus, etc.)
+  4) Deep-dive flagged stocks manually
+  5) Present findings categorized by severity
 
-- Verify: `pnpm build` clean ✓, all 47 stocks loading correctly
+- Risks & checkpoints: Prices may be stale; model may use undocumented adjustments (e.g. decay model)
+
+- Verify: Each finding cross-referenced against at least 2 data points

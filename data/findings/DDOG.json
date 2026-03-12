@@ -1,9 +1,9 @@
 {
 	"ticker": "DDOG",
 	"name": "Datadog",
-	"group": "Cybersecurity",
-	"confidence": "medium",
-	"confidenceReason": "Cloud observability tollbooth maintaining ~20% revenue growth.",
+	"group": "Cloud Infrastructure",
+	"confidence": "low",
+	"confidenceReason": "Cloud observability tollbooth maintaining ~20% revenue growth. However, extreme trailing valuation (411x PE) means the CAGR model shows deeply negative returns at current prices.",
 	"marketCap": "$45.1B USD",
 	"sharpeRatio": -0.63,
 	"expectedCAGR": "-33% - -26%",

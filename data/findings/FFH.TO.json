@@ -1,39 +1,48 @@
 {
-    "ticker": "FFH.TO",
-    "name": "Fairfax Financial",
-    "group": "The Capital Compounders",
-    "confidence": "high",
-    "confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
-    "marketCap": "C$35B+",
-    "sharpeRatio": 0.6,
-    "expectedCAGR": "12% - 16%",
-    "expectedVolatility": "~22%",
-    "valuation": {
-        "pegRatio": null,
-        "evEbitda": null
-    },
-    "metrics": {
-        "roe": "15% - 17%"
-    },
-    "targetPrice": "$120",
-    "bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
-    "bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-    "currentPrice": "$100",
-    "cagrModel": {
-        "horizon": 5,
-        "scenarios": {
-            "bear": "10%",
-            "base": "14%",
-            "bull": "16%"
-        },
-        "epsGrowth": "10%",
-        "exitPE": {
-            "bear": 8,
-            "base": 12,
-            "bull": 15
-        },
-        "dividendYield": "0%",
-        "basis": "Estimated compounder baseline"
-    },
-    "lastUpdated": "2026-03-10T14:19:31.257Z"
+	"ticker": "FFH.TO",
+	"name": "Fairfax Financial",
+	"group": "The Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
+	"marketCap": "C$50.3B",
+	"sharpeRatio": 0.54,
+	"expectedCAGR": "10% - 24%",
+	"expectedVolatility": "~23%",
+	"valuation": {
+		"pegRatio": null,
+		"evEbitda": null,
+		"trailingPE": 7.8,
+		"forwardPE": 11
+	},
+	"metrics": {
+		"roe": "17.8%",
+		"fcfMargin": "~6%",
+		"fcfYield": "~5%",
+		"netDebtEbitda": "0.8x"
+	},
+	"targetPrice": "C$2685",
+	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
+	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
+	"currentPrice": "C$2272.66",
+	"cagrModel": {
+		"horizon": 5,
+		"scenarios": {
+			"bear": "10%",
+			"base": "19%",
+			"bull": "24%"
+		},
+		"epsGrowth": "10%",
+		"exitPE": {
+			"bear": 8,
+			"base": 12,
+			"bull": 15
+		},
+		"dividendYield": "1%",
+		"basis": "Estimated compounder baseline",
+		"ttmEPS": 290.45
+	},
+	"lastUpdated": "2026-03-12T08:08:09.791Z",
+	"consensus": {
+		"yahoo": "C$2684.51"
+	}
 }

@@ -4,31 +4,31 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$61.4B",
-	"sharpeRatio": 0.22,
-	"expectedCAGR": "8% - 18%",
-	"expectedVolatility": "~38%",
+	"marketCap": "C$57.2B",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "10% - 19%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 65.9,
-		"forwardPE": 15.5,
+		"trailingPE": 61.4,
+		"forwardPE": 14.9,
 		"pegRatio": null,
-		"evEbitda": 34.3
+		"evEbitda": 24.3
 	},
 	"metrics": {
-		"fcfMargin": "~19%",
-		"fcfYield": "~3%",
+		"fcfMargin": "~23%",
+		"fcfYield": "~5%",
 		"roic": null,
-		"roe": "20.4%",
-		"netDebtEbitda": "1.4x",
-		"ruleOf40": "35%"
+		"roe": "15.5%",
+		"netDebtEbitda": "1.1x",
+		"ruleOf40": "40%"
 	},
 	"targetPrice": "C$4,400",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2899.73",
+	"currentPrice": "C$2700.08",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4231.57"
+		"yahoo": "C$4187.41"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -41,11 +41,11 @@
 			"bull": 82
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "13%",
-			"bull": "18%"
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
 		},
-		"basis": "Normalized EPS (excl Asseco one-time); 10yr avg PE"
+		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-10T14:19:35.341Z"
+	"lastUpdated": "2026-03-12T08:08:07.876Z"
 }

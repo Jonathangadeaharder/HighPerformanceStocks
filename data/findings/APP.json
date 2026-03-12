@@ -1,18 +1,18 @@
 {
 	"ticker": "APP",
 	"name": "AppLovin",
-	"group": "AI & Semiconductors",
+	"group": "Ad-Tech",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$161.8B USD",
-	"sharpeRatio": -0.02,
-	"expectedCAGR": "-6% - 12%",
+	"marketCap": "$155.9B USD",
+	"sharpeRatio": -0.01,
+	"expectedCAGR": "-5% - 13%",
 	"expectedVolatility": "~81%",
 	"valuation": {
-		"trailingPE": 47.7,
-		"forwardPE": 23.6,
+		"trailingPE": 45.9,
+		"forwardPE": 22.8,
 		"pegRatio": 0.8,
-		"evEbitda": 41.1
+		"evEbitda": 36.7
 	},
 	"metrics": {
 		"roe": "212.9%",
@@ -25,11 +25,11 @@
 	"targetPrice": "$663",
 	"consensus": {
 		"tipranks": "$663",
-		"yahoo": "$649"
+		"yahoo": "$648.57"
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$478.65",
+	"currentPrice": "$461.45",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "30%",
@@ -40,12 +40,12 @@
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-6%",
-			"base": "4%",
-			"bull": "12%"
+			"bear": "-5%",
+			"base": "5%",
+			"bull": "13%"
 		},
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
-		"ttmEPS": 10.03
+		"ttmEPS": 10.06
 	},
-	"lastUpdated": "2026-03-10T16:22:48.217Z"
+	"lastUpdated": "2026-03-12T08:08:05.871Z"
 }

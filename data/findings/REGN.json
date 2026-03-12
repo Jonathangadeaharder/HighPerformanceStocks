@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
-	"marketCap": "$82.5B USD",
-	"sharpeRatio": 0.08,
+	"marketCap": "$81.9B USD",
+	"sharpeRatio": 0.09,
 	"expectedCAGR": "3% - 13%",
-	"expectedVolatility": "~42%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 18.8,
-		"forwardPE": 14.8,
+		"trailingPE": 18.7,
+		"forwardPE": 14.7,
 		"pegRatio": null,
-		"evEbitda": 17.6,
+		"evEbitda": 17.4,
 		"evFcf": 15
 	},
 	"metrics": {
@@ -28,15 +28,15 @@
 	"targetPrice": "$819",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$779.89",
+	"currentPrice": "$774.66",
 	"consensus": {
 		"tipranks": "$813",
-		"yahoo": "$872.67",
+		"yahoo": "$872.85",
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 41.5,
+		"ttmEPS": 41.44,
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"exitPE": {
@@ -51,5 +51,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T14:19:40.341Z"
+	"lastUpdated": "2026-03-12T08:08:16.034Z"
 }

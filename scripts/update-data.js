@@ -279,7 +279,7 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 	if (fd.targetMeanPrice != null) {
 		if (!stock.consensus) stock.consensus = {};
 		stock.consensus.yahoo = fmtPrice(fd.targetMeanPrice, currency);
-		if (!stock.targetPrice) stock.targetPrice = stock.consensus.yahoo;
+		stock.targetPrice = stock.consensus.yahoo;
 	}
 
 	// ── cagrModel ──

@@ -5,6 +5,27 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = resolve(__dirname, '..', 'data', 'findings');
 
+const HORIZON = 5;
+const TERMINAL_GROWTH_PCT = 6;
+const GROWTH_DECAY = 0.80;
+
+function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon) {
+	let eps = ttmEPS;
+	for (let yr = 1; yr <= horizon; yr++) {
+		const g = TERMINAL_GROWTH_PCT + (epsGrowthPct - TERMINAL_GROWTH_PCT) * Math.pow(GROWTH_DECAY, yr);
+		eps *= 1 + g / 100;
+	}
+	const futurePrice = eps * exitPE;
+	const priceReturn = Math.pow(futurePrice / price, 1 / horizon) - 1;
+	return (priceReturn + dividendYieldPct / 100) * 100;
+}
+
+function parsePercent(str) {
+	if (!str) return null;
+	const m = str.match(/-?\d+(?:\.\d+)?/);
+	return m ? parseFloat(m[0]) : null;
+}
+
 const requiredFields = [
 	'ticker',
 	'name',
@@ -67,6 +88,39 @@ function verifyData() {
 			const updatedDate = data.lastUpdated.slice(0, 10);
 			if (updatedDate !== today) {
 				errors.push(`Cache stale: lastUpdated is ${updatedDate} (Expected ${today})`);
+			}
+		}
+
+		// 5. Verify CAGR scenario math matches the exponential growth decay model
+		const cm = data.cagrModel;
+		if (cm && cm.ttmEPS && cm.epsGrowth && cm.exitPE && cm.scenarios && cm.horizon) {
+			// Parse currentPrice — strip currency symbols/letters
+			let price = null;
+			if (data.currentPrice) {
+				const priceStr = String(data.currentPrice).replace(/[^0-9.\-]/g, '');
+				price = parseFloat(priceStr);
+				// GBp/GBX prices are in pence; convert to pounds to match EPS units
+				if (data.currentPrice.includes('£') === false && /GBp|GBX/i.test(data.currentPrice)) {
+					price /= 100;
+				}
+			}
+			const epsGrowthPct = parsePercent(cm.epsGrowth);
+			const dividendYieldPct = parsePercent(cm.dividendYield) ?? 0;
+			const horizon = cm.horizon ?? HORIZON;
+
+			if (price && !isNaN(price) && epsGrowthPct != null) {
+				for (const [label, scenario] of Object.entries(cm.scenarios)) {
+					if (!scenario || scenario.exitPE == null || scenario.cagr == null) continue;
+					const exitPE = scenario.exitPE;
+					const statedCAGR = parsePercent(scenario.cagr);
+					if (statedCAGR == null) continue;
+
+					const expectedCAGR = calcCAGR(price, cm.ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon);
+					const rounded = Math.round(expectedCAGR);
+					if (Math.abs(rounded - statedCAGR) > 2) {
+						errors.push(`CAGR mismatch in '${label}': stated ${statedCAGR}% but model calculates ~${rounded}% (diff ${Math.abs(rounded - statedCAGR)}pp)`);
+					}
+				}
 			}
 		}
 

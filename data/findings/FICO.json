@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$32.1B USD",
-	"sharpeRatio": -0.01,
-	"expectedCAGR": "-2% - 10%",
-	"expectedVolatility": "~49%",
+	"marketCap": "$27.6B USD",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "1% - 13%",
+	"expectedVolatility": "~51%",
 	"valuation": {
-		"trailingPE": 50.2,
-		"forwardPE": 25.3,
+		"trailingPE": 43.1,
+		"forwardPE": 21.8,
 		"pegRatio": 2.1,
-		"evEbitda": 37
+		"evEbitda": 30.5
 	},
 	"metrics": {
 		"roe": "45.0%",
@@ -25,11 +25,11 @@
 	"targetPrice": "$1986",
 	"consensus": {
 		"tipranks": "$1986",
-		"yahoo": "$1956"
+		"yahoo": "$1947.86"
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1351.95",
+	"currentPrice": "$1165.23",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "18%",
@@ -40,12 +40,12 @@
 			"bull": 45
 		},
 		"scenarios": {
-			"bear": "-2%",
-			"base": "5%",
-			"bull": "10%"
+			"bear": "1%",
+			"base": "8%",
+			"bull": "13%"
 		},
 		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 26.95
+		"ttmEPS": 27.03
 	},
-	"lastUpdated": "2026-03-10T16:22:48.341Z"
+	"lastUpdated": "2026-03-12T08:08:09.793Z"
 }

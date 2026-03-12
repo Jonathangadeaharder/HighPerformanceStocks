@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
-	"marketCap": "$138.7B USD",
+	"marketCap": "$137.9B USD",
 	"sharpeRatio": 0.02,
 	"expectedCAGR": "1% - 9%",
 	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 39,
-		"forwardPE": 21.5,
+		"trailingPE": 38.8,
+		"forwardPE": 21.4,
 		"pegRatio": null,
-		"evEbitda": 19.9
+		"evEbitda": 19.5
 	},
 	"metrics": {
 		"fcfMargin": "~19%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$254",
 	"bullCase": "Historically elite serial acquirer with proven Danaher Business System (DBS). 450%+ total return over 10 years. Current trough could be a re-entry point. Masimo acquisition adds new capabilities.",
 	"bearCase": "ROIC depressed at ~6.8%. Mid-single-digit growth. Integration risk from $9.9B Masimo acquisition. Recovery timeline uncertain.",
-	"currentPrice": "$196.17",
+	"currentPrice": "$195.06",
 	"consensus": {
 		"tipranks": "$248",
 		"yahoo": "$264.91",
@@ -49,5 +49,5 @@
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-10T14:19:35.346Z"
+	"lastUpdated": "2026-03-12T08:08:07.971Z"
 }

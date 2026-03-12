@@ -4,15 +4,15 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$174.0B USD",
+	"marketCap": "$175.0B USD",
 	"sharpeRatio": 0.07,
 	"expectedCAGR": "3% - 11%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 62.4,
-		"forwardPE": 42.8,
+		"trailingPE": 62.5,
+		"forwardPE": 43.1,
 		"pegRatio": null,
-		"evEbitda": 47.7
+		"evEbitda": 47.6
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -25,14 +25,14 @@
 	"targetPrice": "$620",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$489.84",
+	"currentPrice": "$492.87",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$609.82"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 7.85,
+		"ttmEPS": 7.89,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"exitPE": {
@@ -47,5 +47,5 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-10T16:33:52.415Z"
+	"lastUpdated": "2026-03-12T08:08:11.954Z"
 }

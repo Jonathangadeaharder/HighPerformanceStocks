@@ -4,15 +4,15 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4455.9B USD",
+	"marketCap": "$4521.5B USD",
 	"sharpeRatio": 0.27,
-	"expectedCAGR": "11% - 21%",
-	"expectedVolatility": "~42%",
+	"expectedCAGR": "11% - 20%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 37.4,
-		"forwardPE": 17,
+		"trailingPE": 38,
+		"forwardPE": 17.2,
 		"pegRatio": 1.6,
-		"evEbitda": 32.9
+		"evEbitda": 33.5
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$266",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$183.33",
+	"currentPrice": "$186.03",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$266.35",
@@ -44,9 +44,9 @@
 		"scenarios": {
 			"bear": "11%",
 			"base": "16%",
-			"bull": "21%"
+			"bull": "20%"
 		},
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-10T14:19:40.300Z"
+	"lastUpdated": "2026-03-12T08:08:15.174Z"
 }

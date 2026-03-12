@@ -1,39 +1,48 @@
 {
-    "ticker": "BRK.B",
-    "name": "Berkshire Hathaway",
-    "group": "The Capital Compounders",
-    "confidence": "high",
-    "confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-    "marketCap": "$900B+",
-    "sharpeRatio": 0.45,
-    "expectedCAGR": "8% - 10%",
-    "expectedVolatility": "~15%",
-    "valuation": {
-        "pegRatio": null,
-        "evEbitda": null
-    },
-    "metrics": {
-        "roe": "6% - 8%"
-    },
-    "targetPrice": "$120",
-    "bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
-    "bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-    "currentPrice": "$100",
-    "cagrModel": {
-        "horizon": 5,
-        "scenarios": {
-            "bear": "6%",
-            "base": "8%",
-            "bull": "10%"
-        },
-        "epsGrowth": "6%",
-        "exitPE": {
-            "bear": 18,
-            "base": 22,
-            "bull": 25
-        },
-        "dividendYield": "0%",
-        "basis": "Estimated compounder baseline"
-    },
-    "lastUpdated": "2026-03-10T14:19:31.251Z"
+	"ticker": "BRK.B",
+	"name": "Berkshire Hathaway",
+	"group": "The Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
+	"marketCap": "$1064.8B USD",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "9% - 16%",
+	"expectedVolatility": "~19%",
+	"valuation": {
+		"pegRatio": null,
+		"evEbitda": null,
+		"trailingPE": 15.9,
+		"forwardPE": 22.8
+	},
+	"metrics": {
+		"roe": "9.8%",
+		"fcfMargin": "~10%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash"
+	},
+	"targetPrice": "$523",
+	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
+	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
+	"currentPrice": "$493.57",
+	"cagrModel": {
+		"horizon": 5,
+		"scenarios": {
+			"bear": "9%",
+			"base": "13%",
+			"bull": "16%"
+		},
+		"epsGrowth": "6%",
+		"exitPE": {
+			"bear": 18,
+			"base": 22,
+			"bull": 25
+		},
+		"dividendYield": "0%",
+		"basis": "Estimated compounder baseline",
+		"ttmEPS": 31.05
+	},
+	"lastUpdated": "2026-03-12T08:08:06.972Z",
+	"consensus": {
+		"yahoo": "$523"
+	}
 }
