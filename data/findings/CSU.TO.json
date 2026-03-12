@@ -22,13 +22,13 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4193.73",
+	"targetPrice": "C$4194.29",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
 	"currentPrice": "C$2700.08",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4193.73"
+		"yahoo": "C$4194.29"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,7 +47,7 @@
 		},
 		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-12T12:34:12.650Z",
+	"lastUpdated": "2026-03-12T12:38:08.282Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.8,
@@ -58,12 +58,13 @@
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		},
-		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"note": "Negative 6-month momentum (-39%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": false,
 				"price": 2700.08,
-				"sma200": 3833.53
+				"price6mAgo": 4392.79,
+				"return6m": -38.5
 			}
 		}
 	}

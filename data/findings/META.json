@@ -50,27 +50,24 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T12:34:18.641Z",
+	"lastUpdated": "2026-03-12T12:38:14.400Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.97,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 19,
 			"forwardPE": 18.3,
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
 		},
+		"note": "Negative 6-month momentum (-13%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
-				"pass": true,
+			"momentum6m": {
+				"pass": false,
 				"price": 654.86,
-				"sma200": 691.74
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 26,
-				"down30d": 9
+				"price6mAgo": 755.59,
+				"return6m": -13.3
 			}
 		}
 	}

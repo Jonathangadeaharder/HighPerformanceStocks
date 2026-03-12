@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-12T12:34:22.652Z",
+	"lastUpdated": "2026-03-12T12:38:18.356Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.69,
@@ -62,10 +62,11 @@
 			"riskMultiplier": 0.982
 		},
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": true,
 				"price": 354.56,
-				"sma200": 279.7
+				"price6mAgo": 259.33,
+				"return6m": 36.7
 			},
 			"revisions": {
 				"pass": true,

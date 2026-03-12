@@ -47,27 +47,24 @@
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-12T12:34:18.809Z",
+	"lastUpdated": "2026-03-12T12:38:14.573Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.8,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 18,
 			"forwardPE": 13.3,
 			"cvStock": 0.224,
 			"riskMultiplier": 1.086
 		},
+		"note": "Negative 6-month momentum (-9%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
-				"pass": true,
+			"momentum6m": {
+				"pass": false,
 				"price": 129.54,
-				"sma200": 136.74
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 1,
-				"down30d": 11
+				"price6mAgo": 141.87,
+				"return6m": -8.7
 			}
 		}
 	}

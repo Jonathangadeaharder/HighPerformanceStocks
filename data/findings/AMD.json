@@ -40,7 +40,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-12T12:34:09.904Z",
+	"lastUpdated": "2026-03-12T12:38:05.537Z",
 	"consensus": {
 		"yahoo": "$289.72"
 	},
@@ -55,10 +55,11 @@
 			"riskMultiplier": 1.087
 		},
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": true,
 				"price": 204.83,
-				"sma200": 189.99
+				"price6mAgo": 158.57,
+				"return6m": 29.2
 			},
 			"revisions": {
 				"pass": true,

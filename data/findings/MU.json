@@ -48,7 +48,7 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-12T12:34:18.717Z",
+	"lastUpdated": "2026-03-12T12:38:14.504Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.38,
@@ -60,10 +60,11 @@
 			"riskMultiplier": 1.063
 		},
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": true,
 				"price": 418.69,
-				"sma200": 219.78
+				"price6mAgo": 157.23,
+				"return6m": 166.3
 			},
 			"revisions": {
 				"pass": true,

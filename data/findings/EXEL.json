@@ -48,7 +48,7 @@
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-12T12:34:13.894Z",
+	"lastUpdated": "2026-03-12T12:38:09.421Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.52,
@@ -60,10 +60,11 @@
 			"riskMultiplier": 1.033
 		},
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": true,
 				"price": 41.75,
-				"sma200": 41.62
+				"price6mAgo": 39.15,
+				"return6m": 6.6
 			},
 			"revisions": {
 				"pass": true,

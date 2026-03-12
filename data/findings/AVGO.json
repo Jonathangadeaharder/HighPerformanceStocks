@@ -49,27 +49,24 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-12T12:34:11.670Z",
+	"lastUpdated": "2026-03-12T12:38:07.305Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 30,
 			"forwardPE": 19.5,
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},
+		"note": "Negative 6-month momentum (-5%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
-				"pass": true,
+			"momentum6m": {
+				"pass": false,
 				"price": 341.57,
-				"sma200": 322.39
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 29,
-				"down30d": 0
+				"price6mAgo": 359.87,
+				"return6m": -5.1
 			}
 		}
 	}

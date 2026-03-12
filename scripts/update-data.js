@@ -170,21 +170,20 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 	};
 }
 
-const SMA_REJECTION_FACTOR = 0.90; // price < 90% of 200-SMA → value trap
-
-/** Post-PASS reality checks for fPERG stocks (defeats analyst lag). */
-function applyRealityChecks(result, rawPrice, summary) {
-	const sma200 = summary?.summaryDetail?.twoHundredDayAverage;
+/** Post-PASS reality checks for fPERG stocks (defeats analyst lag).
+ *  RC1: 6-month time-series momentum (Jegadeesh-Titman) — bypasses crowded 200-SMA.
+ *  RC2: Analyst revisions — detects actively collapsing consensus. */
+function applyRealityChecks(result, rawPrice, price6mAgo, summary) {
 	const checks = {};
 
-	// Reality Check 1: Price vs 200-day SMA
-	if (rawPrice != null && sma200 != null && sma200 > 0) {
-		const threshold = sma200 * SMA_REJECTION_FACTOR;
-		const passed = rawPrice >= threshold;
-		checks.sma200 = { pass: passed, price: +rawPrice.toFixed(2), sma200: +sma200.toFixed(2) };
+	// Reality Check 1: 6-Month Time-Series Momentum
+	if (rawPrice != null && price6mAgo != null && price6mAgo > 0) {
+		const return6m = ((rawPrice / price6mAgo) - 1) * 100;
+		const passed = rawPrice > price6mAgo;
+		checks.momentum6m = { pass: passed, price: +rawPrice.toFixed(2), price6mAgo: +price6mAgo.toFixed(2), return6m: +return6m.toFixed(1) };
 		if (!passed) {
 			result.signal = 'REJECTED';
-			result.note = 'Price below 90% of 200-SMA (value trap risk)';
+			result.note = `Negative 6-month momentum (${return6m.toFixed(0)}%; intermediate trend broken)`;
 			result.realityChecks = checks;
 			return;
 		}
@@ -205,7 +204,7 @@ function applyRealityChecks(result, rawPrice, summary) {
 	result.realityChecks = checks;
 }
 
-function computeScreener(stock, summary, rawPrice) {
+function computeScreener(stock, summary, rawPrice, price6mAgo) {
 	const model = stock.cagrModel;
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
@@ -222,7 +221,7 @@ function computeScreener(stock, summary, rawPrice) {
 		const cvStock = ((dispersion.high - dispersion.low) / 4) / dispersion.avg;
 		const result = computeFPERG(forwardPE, growthPct, cvStock);
 		if (result.signal === 'PASS') {
-			applyRealityChecks(result, rawPrice, summary);
+			applyRealityChecks(result, rawPrice, price6mAgo, summary);
 		}
 		return result;
 	}
@@ -263,8 +262,8 @@ async function fetchSummary(ticker) {
 	}
 }
 
-/** Fetch 1yr daily prices and compute annualized realized volatility. */
-async function fetchHistoricalVol(ticker) {
+/** Fetch 1yr daily prices → annualized volatility + 6-month-ago close for momentum. */
+async function fetchHistoricalData(ticker) {
 	try {
 		const end = new Date();
 		const start = new Date();
@@ -276,7 +275,13 @@ async function fetchHistoricalVol(ticker) {
 			interval: '1d'
 		});
 
-		if (!history || history.length < 60) return null;
+		if (!history || history.length < 60) return { vol: null, price6mAgo: null };
+
+		// 6-month-ago close for time-series momentum (Jegadeesh-Titman)
+		const sixMonthsAgo = new Date();
+		sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+		const entry6m = history.find(h => new Date(h.date) >= sixMonthsAgo);
+		const price6mAgo = entry6m?.close ?? null;
 
 		const logReturns = [];
 		for (let i = 1; i < history.length; i++) {
@@ -287,21 +292,21 @@ async function fetchHistoricalVol(ticker) {
 			}
 		}
 
-		if (logReturns.length < 50) return null;
+		if (logReturns.length < 50) return { vol: null, price6mAgo };
 
 		const mean = logReturns.reduce((s, r) => s + r, 0) / logReturns.length;
 		const variance = logReturns.reduce((s, r) => s + (r - mean) ** 2, 0) / (logReturns.length - 1);
-		const annualizedVol = Math.sqrt(variance) * Math.sqrt(252) * 100;
+		const vol = Math.round(Math.sqrt(variance) * Math.sqrt(252) * 100);
 
-		return Math.round(annualizedVol);
+		return { vol, price6mAgo };
 	} catch {
-		return null;
+		return { vol: null, price6mAgo: null };
 	}
 }
 
 // ─── Apply updates to one stock ─────────────────────────────────────────────
 
-function applyUpdates(stock, quote, summary, realizedVol) {
+function applyUpdates(stock, quote, summary, historicalData) {
 	const currency = quote.currency ?? 'USD';
 	const rawPrice = quote.regularMarketPrice;
 	if (!rawPrice) return false;
@@ -453,6 +458,7 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 	}
 
 	// ── Realized volatility (1yr annualized) ──
+	const realizedVol = historicalData?.vol;
 	if (realizedVol != null) {
 		stock.expectedVolatility = `~${realizedVol}%`;
 	}
@@ -470,7 +476,7 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 	}
 
 	// ── Bifurcated screener (fPERG / Total Return) ──
-	stock.screener = computeScreener(stock, summary, rawPrice);
+	stock.screener = computeScreener(stock, summary, rawPrice, historicalData?.price6mAgo);
 
 	stock.lastUpdated = new Date().toISOString();
 	return true;
@@ -541,11 +547,11 @@ async function main() {
 					return false;
 				}
 
-				const [summary, realizedVol] = await Promise.all([
+				const [summary, historicalData] = await Promise.all([
 					fetchSummary(yTicker),
-					fetchHistoricalVol(yTicker)
+					fetchHistoricalData(yTicker)
 				]);
-				const ok = applyUpdates(stock, quote, summary, realizedVol);
+				const ok = applyUpdates(stock, quote, summary, historicalData);
 
 				if (ok) {
 					writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');

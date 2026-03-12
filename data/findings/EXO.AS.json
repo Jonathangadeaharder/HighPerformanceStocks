@@ -20,7 +20,7 @@
 	"targetPrice": "€114",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€70.45",
+	"currentPrice": "€70.40",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -38,7 +38,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-12T12:34:14.687Z",
+	"lastUpdated": "2026-03-12T12:38:10.241Z",
 	"consensus": {
 		"yahoo": "€114"
 	},

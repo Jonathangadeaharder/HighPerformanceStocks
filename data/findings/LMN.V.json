@@ -47,7 +47,7 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T12:34:17.670Z",
+	"lastUpdated": "2026-03-12T12:38:13.375Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.94,
@@ -58,12 +58,13 @@
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
-		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"note": "Negative 6-month momentum (-45%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": false,
 				"price": 25.05,
-				"sma200": 36.62
+				"price6mAgo": 45.56,
+				"return6m": -45
 			}
 		}
 	}

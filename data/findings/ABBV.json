@@ -50,7 +50,7 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-12T12:34:09.740Z",
+	"lastUpdated": "2026-03-12T12:38:05.397Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.92,
@@ -62,10 +62,11 @@
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": true,
 				"price": 227.68,
-				"sma200": 214.21
+				"price6mAgo": 218.34,
+				"return6m": 4.3
 			},
 			"revisions": {
 				"pass": true,

@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-12T12:34:12.630Z",
+	"lastUpdated": "2026-03-12T12:38:08.286Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.86,
@@ -58,12 +58,13 @@
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
-		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"note": "Negative 6-month momentum (-20%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": false,
 				"price": 194.13,
-				"sma200": 243.52
+				"price6mAgo": 242.76,
+				"return6m": -20
 			}
 		}
 	}

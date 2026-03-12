@@ -49,7 +49,7 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-12T12:34:16.639Z",
+	"lastUpdated": "2026-03-12T12:38:12.379Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.54,
@@ -60,12 +60,13 @@
 			"cvStock": 0.047,
 			"riskMultiplier": 0.98
 		},
-		"note": "Price below 90% of 200-SMA (value trap risk)",
+		"note": "Negative 6-month momentum (-39%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
+			"momentum6m": {
 				"pass": false,
 				"price": 87.13,
-				"sma200": 126.62
+				"price6mAgo": 143.34,
+				"return6m": -39.2
 			}
 		}
 	}

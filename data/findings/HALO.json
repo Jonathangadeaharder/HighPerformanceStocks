@@ -47,27 +47,24 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-12T12:34:15.673Z",
+	"lastUpdated": "2026-03-12T12:38:11.400Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.33,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"forwardPE": 6.8,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
+		"note": "Negative 6-month momentum (-14%; intermediate trend broken)",
 		"realityChecks": {
-			"sma200": {
-				"pass": true,
+			"momentum6m": {
+				"pass": false,
 				"price": 66.48,
-				"sma200": 66.57
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 2,
-				"down30d": 1
+				"price6mAgo": 76.9,
+				"return6m": -13.6
 			}
 		}
 	}
