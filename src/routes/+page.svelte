@@ -41,6 +41,15 @@
 		}
 		return `${stock.screener.score}% return`;
 	}
+
+	function volToneClass(signal) {
+		if (!signal?.available) return 'unavailable';
+		return signal.tone ?? 'hold';
+	}
+
+	function componentWeight(weight) {
+		return weight == null ? null : `${Math.round(weight * 100)}%`;
+	}
 </script>
 
 <svelte:head>
@@ -55,6 +64,56 @@
 		<h1>Portfolio Dashboard</h1>
 		<p class="meta">Updated {data.lastUpdated} · {data.counts.total} stocks tracked</p>
 	</header>
+
+	<section class="section">
+		<div class="section-label">Global Developed Volatility</div>
+		<div class="mini-guide">Why this is here: a broad-market stress proxy helps decide whether 2x developed-markets exposure is attractive, neutral, or too risky.</div>
+		<div class="vol-card {volToneClass(data.worldVolSignal)}">
+			{#if data.worldVolSignal?.available}
+				<div class="vol-main">
+					<div class="vol-value">{data.worldVolSignal.impliedVol}%</div>
+					<div class="vol-meta">
+						<div class="vol-action">{data.worldVolSignal.action}</div>
+						<div class="vol-detail">
+							Band {data.worldVolSignal.band}
+							{#if data.worldVolSignal.expiry}
+								· Expiry {data.worldVolSignal.expiry} ({data.worldVolSignal.daysToExpiry}d)
+							{/if}
+							· Source {data.worldVolSignal.source}
+						</div>
+					</div>
+				</div>
+				{#if data.worldVolSignal.components?.length}
+					<div class="vol-components">
+						{#each data.worldVolSignal.components as component (component.symbol)}
+							<span class="vol-chip">
+								{component.label}
+								{#if componentWeight(component.weight)}
+									{componentWeight(component.weight)}
+								{/if}
+								{#if component.value != null}
+									· {component.value}
+								{/if}
+								{#if component.fresh === false}
+									· stale
+								{/if}
+							</span>
+						{/each}
+					</div>
+				{/if}
+				<div class="vol-note">{data.worldVolSignal.note}</div>
+			{:else}
+				<div class="vol-main">
+					<div class="vol-value">N/A</div>
+					<div class="vol-meta">
+						<div class="vol-action">Signal unavailable</div>
+						<div class="vol-detail">Source {data.worldVolSignal?.source ?? 'Global developed volatility proxies'} · {data.worldVolSignal?.reason ?? 'Yahoo market data is temporarily unavailable.'}</div>
+					</div>
+				</div>
+				<div class="vol-note">This card prefers a VIX/VSTOXX blend and falls back gracefully when one of the feeds is unavailable.</div>
+			{/if}
+		</div>
+	</section>
 
 	<!-- Core Allocation -->
 	<section class="section">
@@ -88,8 +147,8 @@
 				<span class="count-badge green">{data.deployNow.length}</span>
 			{/if}
 		</div>
-		<div class="mini-guide">Why this is here: these names are cheap enough, strong enough, and stable enough to justify leaving the ETF default.</div>
-		<p class="section-note">Must pass the screener, be stabilized, and still beat the ETF alternative with base CAGR at least {data.hurdles.etfCagr}% and bear CAGR above {data.hurdles.bearFloor}%.</p>
+		<div class="mini-guide">Why this is here: these names are cheap enough, strong enough, and either stabilized already or sitting on a likely value floor.</div>
+		<p class="section-note">Must beat the ETF alternative with base CAGR at least {data.hurdles.etfCagr}% and bear CAGR above {data.hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside floor looks unusually strong.</p>
 
 		{#if data.topPicks.length > 0}
 			<div class="top-picks">
@@ -433,6 +492,86 @@
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 0.5rem;
 		margin: 0 0 0.9rem;
+	}
+
+	.vol-card {
+		padding: 0.9rem 1rem;
+		border-radius: 8px;
+		background: #111113;
+		border: 1px solid #1e1e22;
+	}
+
+	.vol-card.buy {
+		border-color: rgba(34, 197, 94, 0.22);
+	}
+
+	.vol-card.hold {
+		border-color: rgba(245, 158, 11, 0.22);
+	}
+
+	.vol-card.sell {
+		border-color: rgba(239, 68, 68, 0.22);
+	}
+
+	.vol-card.unavailable {
+		border-color: rgba(113, 113, 122, 0.16);
+	}
+
+	.vol-main {
+		display: flex;
+		align-items: center;
+		gap: 0.9rem;
+	}
+
+	.vol-value {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: #f4f4f5;
+		min-width: 5.5rem;
+	}
+
+	.vol-meta {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		min-width: 0;
+	}
+
+	.vol-action {
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: #e4e4e7;
+	}
+
+	.vol-detail {
+		font-size: 0.72rem;
+		color: #71717a;
+		line-height: 1.45;
+	}
+
+	.vol-note {
+		margin-top: 0.5rem;
+		font-size: 0.72rem;
+		color: #52525b;
+		line-height: 1.45;
+	}
+
+	.vol-components {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin-top: 0.55rem;
+	}
+
+	.vol-chip {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.64rem;
+		color: #a1a1aa;
+		padding: 2px 8px;
+		border-radius: 999px;
+		background: #0a0a0e;
+		border: 1px solid #1e1e22;
 	}
 
 	.top-pick {
@@ -932,6 +1071,8 @@
 		.page { padding: 1rem; }
 		.alloc-grid { flex-direction: column; }
 		.top-picks { grid-template-columns: 1fr; }
+		.vol-main { flex-direction: column; align-items: flex-start; }
+		.vol-value { min-width: 0; }
 		.signal-row4 { flex-wrap: wrap; }
 		.watch-name { display: none; }
 	}
