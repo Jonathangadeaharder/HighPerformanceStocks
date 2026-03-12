@@ -59,6 +59,7 @@
 	<!-- Core Allocation -->
 	<section class="section">
 		<div class="section-label">Core Allocation</div>
+		<div class="mini-guide">Why this is here: ETFs are the default portfolio. Stocks only earn capital when the evidence is unusually strong.</div>
 		<div class="alloc-grid">
 			<div class="alloc-box scv">
 				<div class="alloc-pct">45%</div>
@@ -87,7 +88,31 @@
 				<span class="count-badge green">{data.deployNow.length}</span>
 			{/if}
 		</div>
+		<div class="mini-guide">Why this is here: these names are cheap enough, strong enough, and stable enough to justify leaving the ETF default.</div>
 		<p class="section-note">Must pass the screener, be stabilized, and still beat the ETF alternative with base CAGR at least {data.hurdles.etfCagr}% and bear CAGR above {data.hurdles.bearFloor}%.</p>
+
+		{#if data.topPicks.length > 0}
+			<div class="top-picks">
+				{#each data.topPicks as stock (stock.ticker)}
+					<div class="top-pick">
+						<div class="top-pick-label">{stock.pickLabel}</div>
+						<div class="top-pick-header">
+							<span class="ticker">{stock.ticker}</span>
+							<span class="name">{stock.name}</span>
+						</div>
+						<div class="top-pick-metrics">
+							<span>{scoreLabel(stock)}</span>
+							<span>{stock.screener.inputs?.multipleType ?? stock.screener.engine}</span>
+							<span>Base {stock.cagrModel?.scenarios?.base}</span>
+							{#if stock.upside != null}
+								<span style="color:{upsideColor(stock.upside)}">Upside {stock.upside > 0 ? '+' : ''}{stock.upside}%</span>
+							{/if}
+						</div>
+						<div class="top-pick-note">Strong mix of valuation, expected return, and resilience right now.</div>
+					</div>
+				{/each}
+			</div>
+		{/if}
 
 		{#if data.deployNow.length === 0}
 			<div class="empty-state">
@@ -145,7 +170,7 @@
 								{/if}
 							{/if}
 							<span class="spacer"></span>
-							<span class="cagr">Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}</span>
+							<span class="cagr">Rank {stock.deploymentRank} · Bear/Base/Bull {stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}</span>
 						</div>
 
 						{#if expandedDeploy === stock.ticker}
@@ -205,6 +230,7 @@
 				<span class="count-badge amber">{data.cheapWait.length}</span>
 			{/if}
 		</div>
+		<div class="mini-guide">Why this is here: these may become opportunities, but the price action still suggests patience.</div>
 		<p class="section-note">These stocks look cheap enough, but the drawdown still looks active. They are candidates for monitoring, not deployment.</p>
 
 		{#if data.cheapWait.length === 0}
@@ -287,6 +313,7 @@
 			</span>
 			<span class="chevron" class:open={showWatchlist}>›</span>
 		</button>
+		<div class="mini-guide" style="margin-top:0.5rem">Why this is here: these names currently fail on value, return, trend, revisions, or data quality.</div>
 
 		{#if showWatchlist}
 			<div class="watchlist">
@@ -374,6 +401,13 @@
 		line-height: 1.5;
 	}
 
+	.mini-guide {
+		font-size: 0.72rem;
+		color: #71717a;
+		margin: 0 0 0.5rem;
+		line-height: 1.45;
+	}
+
 	.count-badge {
 		font-family: 'JetBrains Mono', monospace;
 		font-size: 0.6rem;
@@ -392,6 +426,52 @@
 		background: rgba(245, 158, 11, 0.12);
 		color: #f59e0b;
 		border: 1px solid rgba(245, 158, 11, 0.25);
+	}
+
+	.top-picks {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.5rem;
+		margin: 0 0 0.9rem;
+	}
+
+	.top-pick {
+		padding: 0.8rem 0.9rem;
+		border-radius: 8px;
+		background: #111113;
+		border: 1px solid rgba(34, 197, 94, 0.12);
+	}
+
+	.top-pick-label {
+		font-size: 0.58rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: #4ade80;
+		font-weight: 700;
+		margin-bottom: 0.35rem;
+	}
+
+	.top-pick-header {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+		margin-bottom: 0.35rem;
+	}
+
+	.top-pick-metrics {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.68rem;
+		color: #a1a1aa;
+	}
+
+	.top-pick-note {
+		font-size: 0.68rem;
+		color: #71717a;
+		margin-top: 0.45rem;
+		line-height: 1.4;
 	}
 
 	/* ── Allocation ── */
@@ -851,6 +931,7 @@
 	@media (max-width: 640px) {
 		.page { padding: 1rem; }
 		.alloc-grid { flex-direction: column; }
+		.top-picks { grid-template-columns: 1fr; }
 		.signal-row4 { flex-wrap: wrap; }
 		.watch-name { display: none; }
 	}

@@ -18,6 +18,21 @@ function parsePercent(str) {
 	return m ? parseFloat(m[0]) : null;
 }
 
+function deploymentRank(stock) {
+	const base = stock.baseCagr ?? 0;
+	const bear = stock.bearCagr ?? 0;
+	const upside = Math.min(stock.upside ?? 0, 60);
+
+	let valuationStrength = 0;
+	if (stock.screener?.engine === 'totalReturn') {
+		valuationStrength = Math.max(0, (stock.screener?.score ?? 0) - 10) * 2.5;
+	} else {
+		valuationStrength = Math.max(0, 1.2 - (stock.screener?.score ?? 99)) * 25;
+	}
+
+	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1).toFixed(1);
+}
+
 export function load() {
 	const dir = resolve('data/findings');
 	const files = readdirSync(dir).filter(f => f.endsWith('.json'));
@@ -53,18 +68,18 @@ export function load() {
 		} else {
 			s.deployment = { status: 'NO_DATA', reason: s.screener?.note ?? 'Insufficient data.' };
 		}
+
+		s.deploymentRank = s.deployment.status === 'DEPLOY' ? deploymentRank(s) : null;
 	}
 
 	const deployNow = stocks
 		.filter(s => s.deployment?.status === 'DEPLOY')
-		.sort((a, b) => {
-			if (a.screener.engine === b.screener.engine) {
-				return a.screener.engine === 'fPERG'
-					? a.screener.score - b.screener.score
-					: b.screener.score - a.screener.score;
-			}
-			return a.screener.engine === 'fPERG' ? -1 : 1;
-		});
+		.sort((a, b) => b.deploymentRank - a.deploymentRank);
+
+	const topPicks = deployNow.slice(0, 3).map((stock, index) => ({
+		...stock,
+		pickLabel: ['Top Pick', 'Second Pick', 'Third Pick'][index] ?? 'Pick'
+	}));
 
 	const cheapWait = stocks
 		.filter(s => s.deployment?.status === 'WAIT')
@@ -88,6 +103,7 @@ export function load() {
 		(s.lastUpdated ?? '') > latest ? s.lastUpdated : latest, '').slice(0, 10);
 
 	return {
+		topPicks,
 		deployNow,
 		cheapWait,
 		watchlist,
