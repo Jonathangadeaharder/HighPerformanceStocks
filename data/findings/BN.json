@@ -49,5 +49,10 @@
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:38.897Z"
+	"lastUpdated": "2026-03-12T12:28:48.921Z",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing analyst dispersion data"
+	}
 }

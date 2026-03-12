@@ -4,7 +4,7 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1086.1B SEK",
+	"marketCap": "1088.1B SEK",
 	"sharpeRatio": 0.21,
 	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~21%",
@@ -12,7 +12,7 @@
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 6.9,
-		"forwardPE": 22.5
+		"forwardPE": 22.6
 	},
 	"metrics": {
 		"roe": "17.7%",
@@ -41,8 +41,19 @@
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-12T09:17:43.699Z",
+	"lastUpdated": "2026-03-12T12:28:53.750Z",
 	"consensus": {
 		"yahoo": "362 SEK"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.15,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 10,
+			"forwardPE": 22.6,
+			"cvStock": 0,
+			"riskMultiplier": 0.952
+		}
 	}
 }

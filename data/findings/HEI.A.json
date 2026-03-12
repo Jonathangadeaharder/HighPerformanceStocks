@@ -47,5 +47,10 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-12T09:17:42.825Z"
+	"lastUpdated": "2026-03-12T12:28:52.908Z",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing analyst dispersion data"
+	}
 }

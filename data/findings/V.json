@@ -48,5 +48,16 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T09:17:49.638Z"
+	"lastUpdated": "2026-03-12T12:28:59.703Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.46,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 14,
+			"forwardPE": 21.3,
+			"cvStock": 0.016,
+			"riskMultiplier": 0.962
+		}
+	}
 }

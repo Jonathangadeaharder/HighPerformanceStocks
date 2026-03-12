@@ -49,5 +49,16 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-12T09:17:38.811Z"
+	"lastUpdated": "2026-03-12T12:28:48.969Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.66,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 30,
+			"forwardPE": 19.5,
+			"cvStock": 0.113,
+			"riskMultiplier": 1.02
+		}
+	}
 }

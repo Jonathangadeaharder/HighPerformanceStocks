@@ -47,5 +47,16 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-12T09:17:42.692Z"
+	"lastUpdated": "2026-03-12T12:28:52.799Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.33,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 20,
+			"forwardPE": 6.8,
+			"cvStock": 0.015,
+			"riskMultiplier": 0.961
+		}
+	}
 }

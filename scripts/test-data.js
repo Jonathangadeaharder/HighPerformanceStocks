@@ -91,7 +91,24 @@ function verifyData() {
 			}
 		}
 
-		// 5. Verify CAGR scenario math matches the exponential growth decay model
+		// 5. Verify screener object
+		if (!data.screener) {
+			errors.push(`Missing 'screener' object`);
+		} else {
+			const validEngines = ['fPERG', 'totalReturn', 'N/A'];
+			const validSignals = ['PASS', 'FAIL', 'NO_DATA'];
+			if (!validEngines.includes(data.screener.engine)) {
+				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
+			}
+			if (!validSignals.includes(data.screener.signal)) {
+				errors.push(`Invalid screener.signal: '${data.screener.signal}'`);
+			}
+			if (data.screener.signal !== 'NO_DATA' && data.screener.score == null && !data.screener.note) {
+				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
+			}
+		}
+
+		// 6. Verify CAGR scenario math matches the exponential growth decay model
 		const cm = data.cagrModel;
 		if (cm && cm.ttmEPS && cm.epsGrowth && cm.exitPE && cm.scenarios && cm.horizon) {
 			// Parse currentPrice — strip currency symbols/letters

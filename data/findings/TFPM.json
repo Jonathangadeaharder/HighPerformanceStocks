@@ -48,5 +48,16 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:48.674Z"
+	"lastUpdated": "2026-03-12T12:28:58.728Z",
+	"screener": {
+		"engine": "totalReturn",
+		"score": 9,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 8,
+			"dividendYield": 1,
+			"debtToEquity": 0,
+			"debtPenalty": false
+		}
+	}
 }

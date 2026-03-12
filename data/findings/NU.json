@@ -49,5 +49,16 @@
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:46.691Z"
+	"lastUpdated": "2026-03-12T12:28:56.733Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.44,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 28,
+			"forwardPE": 12.4,
+			"cvStock": 0.078,
+			"riskMultiplier": 0.999
+		}
+	}
 }

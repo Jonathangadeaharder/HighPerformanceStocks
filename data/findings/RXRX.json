@@ -46,5 +46,10 @@
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-12T09:17:48.499Z"
+	"lastUpdated": "2026-03-12T12:28:58.555Z",
+	"screener": {
+		"engine": "N/A",
+		"signal": "NO_DATA",
+		"note": "Pre-profit; screener not applicable"
+	}
 }

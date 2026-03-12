@@ -118,6 +118,82 @@ function calcCAGR(price, ttmEPS, epsGrowthPct, exitPE, dividendYieldPct, horizon
 	return (priceReturn + dividendYieldPct / 100) * 100;
 }
 
+// ─── Bifurcated Screener ─────────────────────────────────────────────────────
+// Engine 1 (fPERG): growth > 8% — Agnostic Fundamental Risk-Adjusted Forward PEG
+// Engine 2 (totalReturn): growth ≤ 8% — Risk-Adjusted Dividend + Growth
+
+const GROWTH_ROUTING_THRESHOLD = 8;
+const CV_BENCHMARK = 0.08;
+const R2_NOISE = 0.60;
+const FPERG_THRESHOLD = 1.0;
+const TOTAL_RETURN_THRESHOLD = 12.0;
+const DEBT_PENALTY_THRESHOLD = 150; // Yahoo reports D/E as percentage (150 = 1.5×)
+const DEBT_PENALTY_FACTOR = 0.30;
+
+function getAnalystDispersion(earningsTrend) {
+	if (!earningsTrend?.trend) return null;
+	const entry = earningsTrend.trend.find(t => t.period === '+1y');
+	if (!entry?.earningsEstimate) return null;
+	const { avg, low, high } = entry.earningsEstimate;
+	if (avg == null || low == null || high == null || avg <= 0) return null;
+	return { avg, low, high };
+}
+
+function computeFPERG(forwardPE, growthPct, cvStock) {
+	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
+	const score = (forwardPE / growthPct) * riskMultiplier;
+	return {
+		engine: 'fPERG',
+		score: +score.toFixed(2),
+		signal: score <= FPERG_THRESHOLD ? 'PASS' : 'FAIL',
+		inputs: { growth: growthPct, forwardPE, cvStock: +cvStock.toFixed(3), riskMultiplier: +riskMultiplier.toFixed(3) }
+	};
+}
+
+function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
+	const earningsYield = (1 / forwardPE) * 100;
+	if (earningsYield <= divYieldPct) {
+		return {
+			engine: 'totalReturn', score: null, signal: 'FAIL',
+			note: 'Dividend exceeds forward earnings (value trap)',
+			inputs: { growth: growthPct, dividendYield: divYieldPct, earningsYield: +earningsYield.toFixed(1) }
+		};
+	}
+	const hasPenalty = debtToEquity > DEBT_PENALTY_THRESHOLD;
+	const baseReturn = divYieldPct + growthPct;
+	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
+	return {
+		engine: 'totalReturn',
+		score: +riskAdjReturn.toFixed(1),
+		signal: riskAdjReturn >= TOTAL_RETURN_THRESHOLD ? 'PASS' : 'FAIL',
+		inputs: { growth: growthPct, dividendYield: divYieldPct, debtToEquity: +(debtToEquity ?? 0).toFixed(0), debtPenalty: hasPenalty }
+	};
+}
+
+function computeScreener(stock, summary) {
+	const model = stock.cagrModel;
+	const growthPct = parsePercent(model?.epsGrowth);
+	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
+
+	const isPreProfit = model.exitPE && Object.values(model.exitPE).every(v => v === 0);
+	if (isPreProfit) return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
+
+	const forwardPE = stock.valuation?.forwardPE;
+
+	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
+		if (!forwardPE || forwardPE <= 0) return { engine: 'fPERG', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
+		const dispersion = getAnalystDispersion(summary?.earningsTrend);
+		if (!dispersion) return { engine: 'fPERG', signal: 'NO_DATA', note: 'Missing analyst dispersion data' };
+		const cvStock = ((dispersion.high - dispersion.low) / 4) / dispersion.avg;
+		return computeFPERG(forwardPE, growthPct, cvStock);
+	}
+
+	if (!forwardPE || forwardPE <= 0) return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
+	const divYieldPct = parsePercent(model.dividendYield) || 0;
+	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
+	return computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
+}
+
 // ─── Fetch ───────────────────────────────────────────────────────────────────
 
 /** Batch-fetch quotes for all tickers in a single HTTP call. */
@@ -141,7 +217,7 @@ async function fetchAllQuotes(tickers) {
 async function fetchSummary(ticker) {
 	try {
 		return await yf.quoteSummary(ticker, {
-			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData']
+			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earningsTrend']
 		});
 	} catch {
 		return {};
@@ -354,6 +430,9 @@ function applyUpdates(stock, quote, summary, realizedVol) {
 		}
 	}
 
+	// ── Bifurcated screener (fPERG / Total Return) ──
+	stock.screener = computeScreener(stock, summary);
+
 	stock.lastUpdated = new Date().toISOString();
 	return true;
 }
@@ -383,6 +462,7 @@ async function main() {
 	// Stocks without a CAGR model (e.g. RXRX) just get a timestamp
 	const noModel = stale.filter(({ stock }) => !stock.cagrModel?.exitPE);
 	for (const { stock, path } of noModel) {
+		stock.screener = { engine: 'N/A', signal: 'NO_DATA', note: 'No valuation model' };
 		stock.lastUpdated = new Date().toISOString();
 		writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
 		console.log(`  ⏭  ${stock.ticker} — no CAGR model, timestamp updated`);
@@ -434,7 +514,11 @@ async function main() {
 					const scenarios = s?.bear && s?.base && s?.bull
 						? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
 						: 'no scenarios';
-					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}`);
+					const sc = stock.screener;
+					const screenerTag = sc?.score != null
+						? ` | ${sc.engine}: ${sc.score} ${sc.signal}`
+						: sc?.note ? ` | ${sc.note}` : '';
+					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}${screenerTag}`);
 				} else {
 					console.log(`  ⚠️  ${ticker} — update failed (no price)`);
 				}

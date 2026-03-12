@@ -49,5 +49,16 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-12T09:17:50.596Z"
+	"lastUpdated": "2026-03-12T12:29:00.686Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.75,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 13,
+			"forwardPE": 22.5,
+			"cvStock": 0.096,
+			"riskMultiplier": 1.009
+		}
+	}
 }

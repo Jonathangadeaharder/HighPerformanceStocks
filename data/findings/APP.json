@@ -47,5 +47,16 @@
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.06
 	},
-	"lastUpdated": "2026-03-12T09:17:37.969Z"
+	"lastUpdated": "2026-03-12T12:28:47.982Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.77,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 30,
+			"forwardPE": 22.8,
+			"cvStock": 0.098,
+			"riskMultiplier": 1.011
+		}
+	}
 }

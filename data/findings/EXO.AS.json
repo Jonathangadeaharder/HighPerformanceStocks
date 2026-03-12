@@ -4,14 +4,14 @@
 	"group": "The Capital Compounders",
 	"confidence": "medium",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€23.0B",
-	"sharpeRatio": 0.46,
-	"expectedCAGR": "9% - 22%",
+	"marketCap": "€23.1B",
+	"sharpeRatio": 0.44,
+	"expectedCAGR": "8% - 22%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"forwardPE": -20.1
+		"forwardPE": -20.2
 	},
 	"metrics": {
 		"roe": "-1.7%",
@@ -20,11 +20,11 @@
 	"targetPrice": "€114",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€70.10",
+	"currentPrice": "€70.45",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "9%",
+			"bear": "8%",
 			"base": "16%",
 			"bull": "22%"
 		},
@@ -38,8 +38,13 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-12T09:17:41.882Z",
+	"lastUpdated": "2026-03-12T12:28:51.818Z",
 	"consensus": {
 		"yahoo": "€114"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative forward PE"
 	}
 }

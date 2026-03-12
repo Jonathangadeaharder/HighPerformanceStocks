@@ -48,5 +48,16 @@
 		},
 		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:49.480Z"
+	"lastUpdated": "2026-03-12T12:28:59.529Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.46,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 15,
+			"forwardPE": 7.2,
+			"cvStock": 0.018,
+			"riskMultiplier": 0.963
+		}
+	}
 }

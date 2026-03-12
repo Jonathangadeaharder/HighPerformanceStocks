@@ -40,8 +40,19 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-12T09:17:44.795Z",
+	"lastUpdated": "2026-03-12T12:28:54.889Z",
 	"consensus": {
 		"yahoo": "$2683.92"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.93,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 25,
+			"forwardPE": 22.9,
+			"cvStock": 0.112,
+			"riskMultiplier": 1.019
+		}
 	}
 }

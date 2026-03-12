@@ -48,5 +48,16 @@
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:50.529Z"
+	"lastUpdated": "2026-03-12T12:29:00.511Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.96,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 19,
+			"forwardPE": 18.9,
+			"cvStock": 0.03,
+			"riskMultiplier": 0.97
+		}
+	}
 }

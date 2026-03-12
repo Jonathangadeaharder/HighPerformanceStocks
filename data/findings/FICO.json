@@ -47,5 +47,16 @@
 		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
 		"ttmEPS": 27.03
 	},
-	"lastUpdated": "2026-03-12T09:17:41.746Z"
+	"lastUpdated": "2026-03-12T12:28:51.846Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.22,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 18,
+			"forwardPE": 21.8,
+			"cvStock": 0.089,
+			"riskMultiplier": 1.005
+		}
+	}
 }

@@ -40,8 +40,19 @@
 		},
 		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:46.623Z",
+	"lastUpdated": "2026-03-12T12:28:56.652Z",
 	"consensus": {
 		"yahoo": "$189.30"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.09,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 21,
+			"forwardPE": 23.1,
+			"cvStock": 0.061,
+			"riskMultiplier": 0.989
+		}
 	}
 }

@@ -39,8 +39,19 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:46.521Z",
+	"lastUpdated": "2026-03-12T12:28:56.707Z",
 	"consensus": {
 		"yahoo": "$232.43"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 5.54,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 27,
+			"forwardPE": 147.4,
+			"cvStock": 0.105,
+			"riskMultiplier": 1.015
+		}
 	}
 }

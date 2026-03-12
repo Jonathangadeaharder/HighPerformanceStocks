@@ -40,8 +40,19 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:39.959Z",
+	"lastUpdated": "2026-03-12T12:28:49.996Z",
 	"consensus": {
 		"yahoo": "$182.43"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.45,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 20,
+			"forwardPE": 48.2,
+			"cvStock": 0.11,
+			"riskMultiplier": 1.018
+		}
 	}
 }

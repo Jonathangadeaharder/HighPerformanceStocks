@@ -47,5 +47,16 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-12T09:17:51.380Z"
+	"lastUpdated": "2026-03-12T12:29:01.461Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.39,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 24,
+			"forwardPE": 33.5,
+			"cvStock": 0.077,
+			"riskMultiplier": 0.998
+		}
+	}
 }

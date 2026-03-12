@@ -47,5 +47,16 @@
 		},
 		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
 	},
-	"lastUpdated": "2026-03-12T09:17:40.919Z"
+	"lastUpdated": "2026-03-12T12:28:50.964Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.27,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 10,
+			"forwardPE": 11.9,
+			"cvStock": 0.185,
+			"riskMultiplier": 1.063
+		}
+	}
 }

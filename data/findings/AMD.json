@@ -40,8 +40,19 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-12T09:17:37.100Z",
+	"lastUpdated": "2026-03-12T12:28:47.057Z",
 	"consensus": {
 		"yahoo": "$289.72"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.58,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 35,
+			"forwardPE": 18.8,
+			"cvStock": 0.226,
+			"riskMultiplier": 1.087
+		}
 	}
 }

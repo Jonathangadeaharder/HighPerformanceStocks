@@ -50,5 +50,16 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-12T09:17:36.932Z"
+	"lastUpdated": "2026-03-12T12:28:46.864Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.92,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 15,
+			"forwardPE": 14.1,
+			"cvStock": 0.038,
+			"riskMultiplier": 0.975
+		}
+	}
 }

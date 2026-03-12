@@ -47,5 +47,16 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-12T09:17:43.670Z"
+	"lastUpdated": "2026-03-12T12:28:53.834Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.99,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 14,
+			"forwardPE": 43.1,
+			"cvStock": 0.031,
+			"riskMultiplier": 0.97
+		}
+	}
 }

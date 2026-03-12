@@ -47,5 +47,16 @@
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-12T09:17:45.735Z"
+	"lastUpdated": "2026-03-12T12:28:55.853Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.8,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 18,
+			"forwardPE": 13.3,
+			"cvStock": 0.224,
+			"riskMultiplier": 1.086
+		}
+	}
 }

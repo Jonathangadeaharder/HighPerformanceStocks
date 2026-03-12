@@ -41,8 +41,19 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-12T09:17:49.559Z",
+	"lastUpdated": "2026-03-12T12:28:59.617Z",
 	"consensus": {
 		"yahoo": "C$182.83"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.54,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"forwardPE": 22.8,
+			"cvStock": 0.107,
+			"riskMultiplier": 1.016
+		}
 	}
 }

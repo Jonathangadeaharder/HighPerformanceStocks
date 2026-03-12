@@ -40,8 +40,19 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:48.510Z",
+	"lastUpdated": "2026-03-12T12:28:58.566Z",
 	"consensus": {
 		"yahoo": "$160.04"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.26,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 26,
+			"forwardPE": 56.4,
+			"cvStock": 0.153,
+			"riskMultiplier": 1.044
+		}
 	}
 }

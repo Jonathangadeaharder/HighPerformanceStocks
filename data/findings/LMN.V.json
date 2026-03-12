@@ -47,5 +47,16 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T09:17:44.639Z"
+	"lastUpdated": "2026-03-12T12:28:54.795Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.94,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 17,
+			"forwardPE": 16.8,
+			"cvStock": 0,
+			"riskMultiplier": 0.952
+		}
+	}
 }

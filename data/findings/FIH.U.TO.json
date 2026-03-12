@@ -43,5 +43,10 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-12T09:17:41.811Z"
+	"lastUpdated": "2026-03-12T12:28:51.909Z",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative forward PE"
+	}
 }

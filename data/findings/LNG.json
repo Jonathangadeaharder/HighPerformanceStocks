@@ -47,5 +47,16 @@
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-12T09:17:44.667Z"
+	"lastUpdated": "2026-03-12T12:28:54.812Z",
+	"screener": {
+		"engine": "totalReturn",
+		"score": 3.5,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 4,
+			"dividendYield": 1,
+			"debtToEquity": 202,
+			"debtPenalty": true
+		}
+	}
 }

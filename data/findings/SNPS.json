@@ -48,5 +48,16 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-12T09:17:48.542Z"
+	"lastUpdated": "2026-03-12T12:28:58.630Z",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.9,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 13,
+			"forwardPE": 25.4,
+			"cvStock": 0.038,
+			"riskMultiplier": 0.975
+		}
+	}
 }
