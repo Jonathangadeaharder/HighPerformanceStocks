@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "42%"
 	},
-	"targetPrice": "$180",
+	"targetPrice": "$178.01",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
 	"currentPrice": "$129.54",
@@ -47,5 +47,5 @@
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-12T08:08:14.204Z"
+	"lastUpdated": "2026-03-12T09:17:45.735Z"
 }

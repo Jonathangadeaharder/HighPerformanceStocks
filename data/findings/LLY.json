@@ -19,7 +19,7 @@
 		"fcfYield": "~0%",
 		"netDebtEbitda": "1.2x"
 	},
-	"targetPrice": "$1214.34",
+	"targetPrice": "$1216.93",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with gross margins holding near 45%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
 	"currentPrice": "$999.84",
@@ -40,8 +40,8 @@
 		},
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-12T08:08:12.161Z",
+	"lastUpdated": "2026-03-12T09:17:44.628Z",
 	"consensus": {
-		"yahoo": "$1214.34"
+		"yahoo": "$1216.93"
 	}
 }

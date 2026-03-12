@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "60%"
 	},
-	"targetPrice": "$240",
+	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
 	"currentPrice": "$153.81",
@@ -47,5 +47,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-12T08:08:19.906Z"
+	"lastUpdated": "2026-03-12T09:17:51.380Z"
 }

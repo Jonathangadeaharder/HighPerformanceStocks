@@ -3,10 +3,10 @@
 	"name": "Cloudflare",
 	"group": "Cybersecurity",
 	"confidence": "low",
-	"confidenceReason": "Monopoly on edge-computing and internet routing, ~28% EPS growth. However, extreme forward valuation (147x PE) means the CAGR model shows deeply negative returns at current prices.",
+	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
 	"marketCap": "$75.0B USD",
-	"sharpeRatio": -0.56,
-	"expectedCAGR": "-28% - -21%",
+	"sharpeRatio": -0.05,
+	"expectedCAGR": "-1% - 5%",
 	"expectedVolatility": "~52%",
 	"valuation": {
 		"forwardPE": 147.4,
@@ -24,22 +24,22 @@
 	"currentPrice": "$213",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-28%",
-			"base": "-24%",
-			"bull": "-21%"
+			"bear": "-1%",
+			"base": "2%",
+			"bull": "5%"
 		},
-		"ttmEPS": 0.55,
+		"ttmEPS": 1.12,
 		"horizon": 5,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"exitPE": {
-			"bear": 35,
-			"base": 45,
-			"bull": 55
+			"bear": 80,
+			"base": 95,
+			"bull": 110
 		},
-		"basis": "Premium tech infrastructure / edge computing monopoly multiple"
+		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:14.273Z",
+	"lastUpdated": "2026-03-12T09:17:46.521Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	}

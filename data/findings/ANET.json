@@ -23,7 +23,7 @@
 		"ruleOf40": "67%",
 		"grossMargin": "64.06%"
 	},
-	"targetPrice": "$177",
+	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
 	"currentPrice": "$138.23",
@@ -49,5 +49,5 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:05.921Z"
+	"lastUpdated": "2026-03-12T09:17:37.877Z"
 }

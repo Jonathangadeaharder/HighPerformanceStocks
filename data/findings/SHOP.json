@@ -2,11 +2,11 @@
 	"ticker": "SHOP",
 	"name": "Shopify",
 	"group": "Defensive Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Unavoidable e-commerce infrastructure with 26-28% EPS growth estimates. However, extreme trailing valuation (136x PE) means the CAGR model shows negative returns at current prices.",
+	"confidence": "medium",
+	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
 	"marketCap": "$169.0B USD",
-	"sharpeRatio": -0.19,
-	"expectedCAGR": "-11% - -3%",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~61%",
 	"valuation": {
 		"trailingPE": 136.3,
@@ -25,11 +25,11 @@
 	"currentPrice": "$129.52",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-11%",
-			"base": "-6%",
-			"bull": "-3%"
+			"bear": "2%",
+			"base": "7%",
+			"bull": "12%"
 		},
-		"ttmEPS": 0.95,
+		"ttmEPS": 1.89,
 		"horizon": 5,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
@@ -38,9 +38,9 @@
 			"base": 45,
 			"bull": 55
 		},
-		"basis": "Premium software/e-commerce platform multiple"
+		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.952Z",
+	"lastUpdated": "2026-03-12T09:17:48.510Z",
 	"consensus": {
 		"yahoo": "$160.04"
 	}

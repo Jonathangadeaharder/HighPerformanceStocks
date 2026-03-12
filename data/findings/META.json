@@ -24,7 +24,7 @@
 		"grossMargin": "82.00%",
 		"operatingMargin": "~41%"
 	},
-	"targetPrice": "$845",
+	"targetPrice": "$862.25",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
 	"currentPrice": "$654.86",
@@ -50,5 +50,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:13.249Z"
+	"lastUpdated": "2026-03-12T09:17:45.565Z"
 }

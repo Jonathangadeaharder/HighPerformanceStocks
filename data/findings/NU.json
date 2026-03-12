@@ -23,7 +23,7 @@
 		"ruleOf40": null,
 		"efficiencyRatio": "~34%"
 	},
-	"targetPrice": "$18",
+	"targetPrice": "$20.17",
 	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche.",
 	"currentPrice": "$14.49",
@@ -49,5 +49,5 @@
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:15.139Z"
+	"lastUpdated": "2026-03-12T09:17:46.691Z"
 }

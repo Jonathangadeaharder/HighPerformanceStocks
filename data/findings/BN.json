@@ -23,7 +23,7 @@
 		"ruleOf40": null,
 		"aum": "$1T+"
 	},
-	"targetPrice": "$52",
+	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
 	"currentPrice": "$40.54",
@@ -49,5 +49,5 @@
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:06.877Z"
+	"lastUpdated": "2026-03-12T09:17:38.897Z"
 }

@@ -2,11 +2,11 @@
 	"ticker": "NOW",
 	"name": "ServiceNow",
 	"group": "Defensive Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth. However, current trailing valuation (69x PE) prices in perfection, yielding flat/negative CAGR.",
+	"confidence": "medium",
+	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
 	"marketCap": "$122.0B USD",
-	"sharpeRatio": -0.13,
-	"expectedCAGR": "-5% - 3%",
+	"sharpeRatio": 0.14,
+	"expectedCAGR": "6% - 15%",
 	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 69.2,
@@ -25,11 +25,11 @@
 	"currentPrice": "$115.63",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-5%",
-			"base": "0%",
-			"bull": "3%"
+			"bear": "6%",
+			"base": "11%",
+			"bull": "15%"
 		},
-		"ttmEPS": 1.67,
+		"ttmEPS": 2.7,
 		"horizon": 5,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
@@ -38,9 +38,9 @@
 			"base": 38,
 			"bull": 45
 		},
-		"basis": "SaaS workflow platform normalized multiple"
+		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:15.075Z",
+	"lastUpdated": "2026-03-12T09:17:46.623Z",
 	"consensus": {
 		"yahoo": "$189.30"
 	}

@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "43%"
 	},
-	"targetPrice": "$220",
+	"targetPrice": "$207.75",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
 	"currentPrice": "$164.93",
@@ -47,5 +47,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-12T08:08:15.241Z"
+	"lastUpdated": "2026-03-12T09:17:47.554Z"
 }

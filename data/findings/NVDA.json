@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "100%"
 	},
-	"targetPrice": "$266",
+	"targetPrice": "$266.35",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
 	"currentPrice": "$186.03",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-12T08:08:15.174Z"
+	"lastUpdated": "2026-03-12T09:17:46.760Z"
 }

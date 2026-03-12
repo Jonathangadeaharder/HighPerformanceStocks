@@ -1,12 +1,12 @@
 {
 	"ticker": "DDOG",
 	"name": "Datadog",
-	"group": "Cloud Infrastructure",
+	"group": "Cybersecurity",
 	"confidence": "low",
-	"confidenceReason": "Cloud observability tollbooth maintaining ~20% revenue growth. However, extreme trailing valuation (411x PE) means the CAGR model shows deeply negative returns at current prices.",
+	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
 	"marketCap": "$45.1B USD",
-	"sharpeRatio": -0.63,
-	"expectedCAGR": "-33% - -26%",
+	"sharpeRatio": -0.01,
+	"expectedCAGR": "-1% - 9%",
 	"expectedVolatility": "~54%",
 	"valuation": {
 		"trailingPE": 411.3,
@@ -25,11 +25,11 @@
 	"currentPrice": "$127.49",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-33%",
-			"base": "-29%",
-			"bull": "-26%"
+			"bear": "-1%",
+			"base": "5%",
+			"bull": "9%"
 		},
-		"ttmEPS": 0.31,
+		"ttmEPS": 2.12,
 		"horizon": 5,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
@@ -38,9 +38,9 @@
 			"base": 40,
 			"bull": 50
 		},
-		"basis": "High-growth observability SaaS multiple"
+		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:07.903Z",
+	"lastUpdated": "2026-03-12T09:17:39.959Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	}

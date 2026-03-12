@@ -22,7 +22,7 @@
 		"netDebtEbitda": "0.7x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "$118",
+	"targetPrice": "$120.28",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
 	"currentPrice": "$90.44",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-12T08:08:14.135Z"
+	"lastUpdated": "2026-03-12T09:17:45.639Z"
 }

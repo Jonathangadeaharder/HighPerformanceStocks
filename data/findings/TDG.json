@@ -22,7 +22,7 @@
 		"netDebtEbitda": "5.9x",
 		"ruleOf40": "28%"
 	},
-	"targetPrice": "$1,584",
+	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
 	"currentPrice": "$1258.34",
@@ -48,5 +48,5 @@
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-12T08:08:17.013Z"
+	"lastUpdated": "2026-03-12T09:17:48.585Z"
 }

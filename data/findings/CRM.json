@@ -1,0 +1,51 @@
+{
+	"ticker": "CRM",
+	"name": "Salesforce",
+	"group": "Defensive Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
+	"marketCap": "$181.9B USD",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "7% - 16%",
+	"expectedVolatility": "~35%",
+	"valuation": {
+		"trailingPE": 24.9,
+		"forwardPE": 13,
+		"pegRatio": 0.88,
+		"evEbitda": 14.9
+	},
+	"metrics": {
+		"fcfMargin": "~39%",
+		"fcfYield": "~9%",
+		"roe": "12.4%",
+		"netDebtEbitda": "0.6x",
+		"ruleOf40": "52%"
+	},
+	"targetPrice": "$275.27",
+	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
+	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
+	"currentPrice": "$194.13",
+	"consensus": {
+		"tipranks": "$268",
+		"yahoo": "$275.27",
+		"stockanalysis": "$283"
+	},
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 7.8,
+		"epsGrowth": "15%",
+		"dividendYield": "1%",
+		"exitPE": {
+			"bear": 20,
+			"base": 25,
+			"bull": 30
+		},
+		"scenarios": {
+			"bear": "7%",
+			"base": "12%",
+			"bull": "16%"
+		},
+		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
+	},
+	"lastUpdated": "2026-03-12T09:17:39.763Z"
+}

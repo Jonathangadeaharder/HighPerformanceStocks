@@ -25,7 +25,7 @@
 		"operatingMargin": "~23%",
 		"beta": "0.4"
 	},
-	"targetPrice": "$819",
+	"targetPrice": "$872.85",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
 	"currentPrice": "$774.66",
@@ -51,5 +51,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.034Z"
+	"lastUpdated": "2026-03-12T09:17:47.620Z"
 }

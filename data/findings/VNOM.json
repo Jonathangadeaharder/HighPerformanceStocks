@@ -22,7 +22,7 @@
 		"netDebtEbitda": "1.7x",
 		"ruleOf40": "-30%"
 	},
-	"targetPrice": "$52",
+	"targetPrice": "$51.71",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
 	"currentPrice": "$43.81",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:19.104Z"
+	"lastUpdated": "2026-03-12T09:17:50.477Z"
 }

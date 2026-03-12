@@ -22,7 +22,7 @@
 		"netDebtEbitda": "0.2x",
 		"ruleOf40": "68%"
 	},
-	"targetPrice": "$400",
+	"targetPrice": "$400.47",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
 	"currentPrice": "$308.96",
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:18.225Z"
+	"lastUpdated": "2026-03-12T09:17:49.638Z"
 }

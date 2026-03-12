@@ -22,7 +22,7 @@
 		"netDebtEbitda": "0.9x",
 		"ruleOf40": "-1%"
 	},
-	"targetPrice": "$82",
+	"targetPrice": "$85.52",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
 	"currentPrice": "$64.63",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-12T08:08:19.878Z"
+	"lastUpdated": "2026-03-12T09:17:51.376Z"
 }

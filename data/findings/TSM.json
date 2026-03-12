@@ -24,7 +24,7 @@
 		"netMargin": "45.1%",
 		"grossMargin": "59.89%"
 	},
-	"targetPrice": "$409",
+	"targetPrice": "$429.49",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
 	"currentPrice": "$354.56",
@@ -50,5 +50,5 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-12T08:08:18.091Z"
+	"lastUpdated": "2026-03-12T09:17:49.535Z"
 }

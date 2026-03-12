@@ -24,7 +24,7 @@
 		"grossMargin": "71.62%",
 		"operatingMargin": "~34%"
 	},
-	"targetPrice": "$250",
+	"targetPrice": "$248.86",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
 	"currentPrice": "$227.68",
@@ -50,5 +50,5 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-12T08:08:04.909Z"
+	"lastUpdated": "2026-03-12T09:17:36.932Z"
 }

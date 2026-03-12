@@ -22,7 +22,7 @@
 		"fcfMargin": "~15%",
 		"fcfYield": "~2%"
 	},
-	"targetPrice": "$366",
+	"targetPrice": "$280",
 	"consensus": {
 		"stockanalysis": "$366",
 		"yahoo": "$280"
@@ -47,5 +47,5 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-12T08:08:10.855Z"
+	"lastUpdated": "2026-03-12T09:17:42.825Z"
 }

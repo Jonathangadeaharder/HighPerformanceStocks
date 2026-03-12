@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
 	"marketCap": "$334.0B USD",
-	"sharpeRatio": -0.07,
-	"expectedCAGR": "-3% - 3%",
+	"sharpeRatio": 0.18,
+	"expectedCAGR": "12% - 20%",
 	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 78.8,
@@ -25,11 +25,11 @@
 	"currentPrice": "$204.83",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-3%",
-			"base": "0%",
-			"bull": "3%"
+			"bear": "12%",
+			"base": "16%",
+			"bull": "20%"
 		},
-		"ttmEPS": 2.6,
+		"ttmEPS": 5.43,
 		"horizon": 5,
 		"epsGrowth": "35%",
 		"dividendYield": "0%",
@@ -38,9 +38,9 @@
 			"base": 30,
 			"bull": 35
 		},
-		"basis": "Cyclical semiconductor multiple post-hypergrowth"
+		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-12T08:08:05.057Z",
+	"lastUpdated": "2026-03-12T09:17:37.100Z",
 	"consensus": {
 		"yahoo": "$289.72"
 	}

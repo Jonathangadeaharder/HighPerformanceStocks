@@ -23,7 +23,7 @@
 		"ruleOf40": "104%",
 		"bessemerRuleOfX": "158%"
 	},
-	"targetPrice": "$145",
+	"targetPrice": "$140.24",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
 	"currentPrice": "$87.13",
@@ -49,5 +49,5 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-12T08:08:11.956Z"
+	"lastUpdated": "2026-03-12T09:17:43.692Z"
 }

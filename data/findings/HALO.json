@@ -22,7 +22,7 @@
 		"netDebtEbitda": "2.3x",
 		"ruleOf40": "65%"
 	},
-	"targetPrice": "$95",
+	"targetPrice": "$84.50",
 	"bullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
 	"bearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility.",
 	"currentPrice": "$66.48",
@@ -45,7 +45,7 @@
 			"base": "21%",
 			"bull": "27%"
 		},
-		"basis": "Non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
+		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-12T08:08:10.853Z"
+	"lastUpdated": "2026-03-12T09:17:42.692Z"
 }

@@ -22,7 +22,7 @@
 		"netDebtEbitda": "5.4x",
 		"ruleOf40": "104%"
 	},
-	"targetPrice": "$538",
+	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~2.5x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
 	"currentPrice": "$432.98",
@@ -48,5 +48,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.970Z"
+	"lastUpdated": "2026-03-12T09:17:48.542Z"
 }

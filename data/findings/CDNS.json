@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "35%"
 	},
-	"targetPrice": "$373",
+	"targetPrice": "$371.82",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
 	"currentPrice": "$294.16",
@@ -48,5 +48,5 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:07.043Z"
+	"lastUpdated": "2026-03-12T09:17:38.982Z"
 }

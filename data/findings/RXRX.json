@@ -23,7 +23,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "402%"
 	},
-	"targetPrice": "$7",
+	"targetPrice": "$6.71",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
 	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
 	"currentPrice": "$3.45",
@@ -46,5 +46,5 @@
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.173Z"
+	"lastUpdated": "2026-03-12T09:17:48.499Z"
 }

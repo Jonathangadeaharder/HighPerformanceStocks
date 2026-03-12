@@ -22,7 +22,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "33%"
 	},
-	"targetPrice": "$46",
+	"targetPrice": "$46.83",
 	"bullCase": "A classic value anomaly. A highly profitable, cash-generating oncology firm trading at deep value multiples. It absorbs macroeconomic volatility shocks that typically devastate high-beta tech holdings.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
 	"currentPrice": "$41.75",
@@ -48,5 +48,5 @@
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:08.918Z"
+	"lastUpdated": "2026-03-12T09:17:40.933Z"
 }

@@ -3,10 +3,10 @@
 	"name": "Rubrik",
 	"group": "Cybersecurity",
 	"confidence": "low",
-	"confidenceReason": "Recently profitable data security platform with ~24% expected growth. However, extreme valuation (800x forward PE) means the CAGR model shows negative returns at current prices.",
+	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
 	"marketCap": "$11.5B USD",
-	"sharpeRatio": -0.23,
-	"expectedCAGR": "-15% - -6%",
+	"sharpeRatio": null,
+	"expectedCAGR": "N/A (pre-profit)",
 	"expectedVolatility": "~66%",
 	"valuation": {
 		"forwardPE": 800,
@@ -22,23 +22,20 @@
 	"bearCase": "Newly public company with limited track record of sustained profitability; highly competitive data protection market.",
 	"currentPrice": "$57.52",
 	"cagrModel": {
-		"scenarios": {
-			"bear": "-15%",
-			"base": "-10%",
-			"bull": "-6%"
-		},
-		"ttmEPS": 0.4,
 		"horizon": 5,
-		"epsGrowth": "24%",
+		"epsGrowth": "0%",
 		"dividendYield": "0%",
 		"exitPE": {
-			"bear": 30,
-			"base": 40,
-			"bull": 50
+			"bear": 0,
+			"base": 0,
+			"bull": 0
 		},
-		"basis": "High-growth cybersecurity/data protection multiple"
+		"scenarios": {
+			"base": "0%"
+		},
+		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.005Z",
+	"lastUpdated": "2026-03-12T09:17:47.589Z",
 	"consensus": {
 		"yahoo": "$100.52"
 	}

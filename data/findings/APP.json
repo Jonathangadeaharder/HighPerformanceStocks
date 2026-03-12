@@ -22,7 +22,7 @@
 		"fcfYield": "~2%",
 		"netDebtEbitda": "0.3x"
 	},
-	"targetPrice": "$663",
+	"targetPrice": "$648.57",
 	"consensus": {
 		"tipranks": "$663",
 		"yahoo": "$648.57"
@@ -47,5 +47,5 @@
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.06
 	},
-	"lastUpdated": "2026-03-12T08:08:05.871Z"
+	"lastUpdated": "2026-03-12T09:17:37.969Z"
 }

@@ -22,7 +22,7 @@
 		"netDebtEbitda": "2.9x",
 		"ruleOf40": "37%"
 	},
-	"targetPrice": "$478",
+	"targetPrice": "$462.19",
 	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
@@ -49,5 +49,5 @@
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-12T08:08:16.097Z"
+	"lastUpdated": "2026-03-12T09:17:47.726Z"
 }

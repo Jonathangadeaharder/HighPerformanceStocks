@@ -22,7 +22,7 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "54%"
 	},
-	"targetPrice": "$452",
+	"targetPrice": "$467.80",
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
@@ -49,5 +49,5 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-12T08:08:06.865Z"
+	"lastUpdated": "2026-03-12T09:17:38.811Z"
 }

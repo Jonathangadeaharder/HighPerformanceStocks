@@ -23,7 +23,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "31%"
 	},
-	"targetPrice": "$535",
+	"targetPrice": "$546.26",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
 	"currentPrice": "$492.38",
@@ -49,5 +49,5 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-12T08:08:19.111Z"
+	"lastUpdated": "2026-03-12T09:17:50.596Z"
 }
