@@ -42,7 +42,7 @@
 			"riskMultiplier": 1.032
 		}
 	},
-	"lastUpdated": "2026-03-15T21:20:31.529Z",
+	"lastUpdated": "2026-03-15T23:11:25.013Z",
 	"valuation": {
 		"trailingPE": 239.6,
 		"forwardPE": 81.7,
@@ -56,5 +56,10 @@
 		"ruleOf40": "98%"
 	},
 	"expectedCAGR": "-17% - -8%",
-	"sharpeRatio": -0.29
+	"sharpeRatio": -0.29,
+	"intrinsicValue": {
+		"dcf": 9.72,
+		"date": "2026-03-15",
+		"discount": -94
+	}
 }

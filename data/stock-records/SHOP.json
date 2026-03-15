@@ -41,7 +41,7 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-15T21:20:32.511Z",
+	"lastUpdated": "2026-03-15T23:11:26.043Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
@@ -56,5 +56,10 @@
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		}
+	},
+	"intrinsicValue": {
+		"dcf": 18.24,
+		"date": "2026-03-15",
+		"discount": -85
 	}
 }

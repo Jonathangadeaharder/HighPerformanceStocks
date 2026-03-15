@@ -49,7 +49,7 @@
 		"decayFactor": 0.75,
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-15T21:20:30.707Z",
+	"lastUpdated": "2026-03-15T23:11:24.147Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.49,
@@ -78,5 +78,10 @@
 				"down30d": 5
 			}
 		}
+	},
+	"intrinsicValue": {
+		"dcf": 234.57,
+		"date": "2026-03-15",
+		"discount": 30
 	}
 }

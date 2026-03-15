@@ -3,6 +3,8 @@
 	import {
 		deploymentReason,
 		detailLabel,
+		intrinsicValueColor,
+		intrinsicValueLabel,
 		revisionsSummary,
 		scenarioKeys,
 		scenarioValue,
@@ -83,6 +85,11 @@
 					({stock.upside > 0 ? '+' : ''}{stock.upside}%)
 				</span>
 			{/if}
+		{/if}
+		{#if intrinsicValueLabel(stock)}
+			<span class="iv-badge" style="color:{intrinsicValueColor(stock)}">
+				{intrinsicValueLabel(stock)}
+			</span>
 		{/if}
 		<span class="spacer"></span>
 		<span class="cagr">

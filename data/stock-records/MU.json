@@ -48,7 +48,7 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-15T21:20:29.722Z",
+	"lastUpdated": "2026-03-15T23:11:23.086Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.35,

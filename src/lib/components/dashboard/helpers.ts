@@ -73,3 +73,21 @@ export function componentWeight(weight: number | null | undefined): string | nul
 export function watchSignalClass(stock: FindingStock): string {
 	return stock.deployment?.status ? stock.deployment.status.toLowerCase() : 'no_data';
 }
+
+export function intrinsicValueLabel(stock: FindingStock): string | null {
+	const iv = stock.intrinsicValue;
+	if (!iv?.dcf) return null;
+	const dcfStr = iv.dcf >= 100 ? `$${Math.round(iv.dcf)}` : `$${iv.dcf.toFixed(1)}`;
+	if (iv.discount == null) return `IV ${dcfStr}`;
+	const sign = iv.discount >= 0 ? '+' : '';
+	return `IV ${dcfStr} (${sign}${iv.discount}%)`;
+}
+
+export function intrinsicValueColor(stock: FindingStock): string {
+	const discount = stock.intrinsicValue?.discount;
+	if (discount == null) return '#71717a';
+	if (discount >= 20) return '#22c55e';
+	if (discount >= 0) return '#4ade80';
+	if (discount >= -20) return '#facc15';
+	return '#f87171';
+}

@@ -49,7 +49,7 @@
 		"decayFactor": 0.88,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-15T21:20:25.981Z",
+	"lastUpdated": "2026-03-15T23:11:19.323Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.49,
@@ -61,5 +61,10 @@
 			"cvStock": 0.074,
 			"riskMultiplier": 0.997
 		}
+	},
+	"intrinsicValue": {
+		"dcf": 157.21,
+		"date": "2026-03-15",
+		"discount": -48
 	}
 }

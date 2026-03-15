@@ -41,7 +41,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-15T21:20:20.426Z",
+	"lastUpdated": "2026-03-15T23:11:13.740Z",
 	"consensus": {
 		"yahoo": "$289.72"
 	},
@@ -73,5 +73,10 @@
 				"down30d": 3
 			}
 		}
+	},
+	"intrinsicValue": {
+		"dcf": 64.41,
+		"date": "2026-03-15",
+		"discount": -67
 	}
 }

@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 /**
  * update-data.js — Refresh all stock data from Yahoo Finance
  *
@@ -17,6 +19,7 @@
 
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { resolve } from 'path';
+import { parseDisplayPrice } from '../lib/finance-core.js';
 import {
 	DEFAULT_GROWTH_DECAY,
 	DEFAULT_HORIZON,
@@ -351,6 +354,27 @@ async function main() {
 		}
 
 		if (i + CONCURRENCY < withModel.length) await sleep(BATCH_DELAY_MS);
+	}
+
+	// ── Step 3: FMP DCF intrinsic values ──
+	const allTickers = allStocks.map(({ stock }) => stock.ticker);
+	const { fetchAllDcf } = await import('./lib/fmp-client.js');
+	const dcfMap = await fetchAllDcf(allTickers);
+
+	for (const { stock, path } of allStocks) {
+		const dcfData = dcfMap[stock.ticker];
+		if (dcfData) {
+			const price = parseDisplayPrice(stock.currentPrice);
+			const discount = price != null && price > 0
+				? +((dcfData.dcf - price) / price * 100).toFixed(0)
+				: null;
+			stock.intrinsicValue = {
+				dcf: dcfData.dcf,
+				date: dcfData.date,
+				discount
+			};
+			writeFileSync(path, JSON.stringify(stock, null, '\t') + '\n');
+		}
 	}
 
 	console.log(`\n✅ Done: ${updated} updated, ${failed} failed.`);

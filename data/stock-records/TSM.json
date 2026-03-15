@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-15T21:20:34.306Z",
+	"lastUpdated": "2026-03-15T23:11:28.079Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
@@ -63,5 +63,10 @@
 			"riskMultiplier": 0.982
 		},
 		"note": "Cheap (0.66) but base CAGR 13% misses the 14% hurdle"
+	},
+	"intrinsicValue": {
+		"dcf": 156.18,
+		"date": "2026-03-15",
+		"discount": -54
 	}
 }

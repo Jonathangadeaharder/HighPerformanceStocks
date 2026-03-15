@@ -634,6 +634,21 @@ header h1 {
 	white-space: nowrap;
 }
 
+.cagr {
+	color: #71717a;
+	white-space: nowrap;
+}
+
+.iv-badge {
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 500;
+	padding: 0.1rem 0.35rem;
+	border-radius: 0.25rem;
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	white-space: nowrap;
+}
+
 .watch-signal {
 	font-family: 'JetBrains Mono', monospace;
 	font-size: 0.6rem;

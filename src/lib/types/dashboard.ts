@@ -92,6 +92,12 @@ export interface DeploymentInfo {
 	reason: string;
 }
 
+export interface IntrinsicValue {
+	dcf: number;
+	date: string;
+	discount: number | null;
+}
+
 export interface FindingStock {
 	ticker: string;
 	name?: string;
@@ -105,6 +111,7 @@ export interface FindingStock {
 	bearCase?: string;
 	cagrModel?: CagrModel;
 	screener?: ScreenerData;
+	intrinsicValue?: IntrinsicValue;
 	upside?: number | null;
 	baseCagr?: number | null;
 	bearCagr?: number | null;
