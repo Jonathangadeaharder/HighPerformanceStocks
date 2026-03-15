@@ -20,10 +20,9 @@ function deploymentRank(stock: FindingStock): number {
 	const bear = stock.bearCagr ?? 0;
 	const upside = Math.min(stock.upside ?? 0, 60);
 
-	const valuationStrength =
-		stock.screener?.engine === 'totalReturn'
-			? Math.max(0, (stock.screener.score ?? 0) - 10) * 2.5
-			: Math.max(0, 1.2 - (stock.screener?.score ?? 99)) * 25;
+	// All engines are now normalized (lower is better, 1.0 = threshold).
+	// A score of 0.5 → strength 17.5, a score of 1.0 → strength 5.0, a score of 1.2+ → 0.
+	const valuationStrength = Math.max(0, 1.2 - (stock.screener?.score ?? 99)) * 25;
 
 	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1).toFixed(1);
 }
