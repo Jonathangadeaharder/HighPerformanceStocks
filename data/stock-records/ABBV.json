@@ -50,7 +50,7 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-15T05:10:20.481Z",
+	"lastUpdated": "2026-03-15T17:31:36.385Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.88,
@@ -66,10 +66,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 219.68,
-				"price6mAgo": 217.61,
+				"price6mAgo": 216.26,
 				"price1mAgo": 232.86,
 				"low3m": 204.27,
-				"return6m": 1,
+				"return6m": 1.6,
 				"return1m": -5.7,
 				"near3mLow": false
 			},

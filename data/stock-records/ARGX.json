@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-15T05:10:21.530Z",
+	"lastUpdated": "2026-03-15T17:31:37.370Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
@@ -63,10 +63,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 700.45,
-				"price6mAgo": 756.83,
+				"price6mAgo": 752.32,
 				"price1mAgo": 843.55,
 				"low3m": 694.14,
-				"return6m": -7.4,
+				"return6m": -6.9,
 				"return1m": -17,
 				"near3mLow": true
 			},

@@ -51,7 +51,7 @@
 		"decayFactor": 0.9,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-15T05:10:29.283Z",
+	"lastUpdated": "2026-03-15T17:31:45.800Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.9,
@@ -68,10 +68,10 @@
 			"stabilization": {
 				"pass": false,
 				"price": 613.71,
-				"price6mAgo": 764.7,
+				"price6mAgo": 779,
 				"price1mAgo": 639.29,
 				"low3m": 600,
-				"return6m": -19.7,
+				"return6m": -21.2,
 				"return1m": -4,
 				"near3mLow": true
 			},

@@ -9,19 +9,19 @@
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "15%",
+		"epsGrowth": "40%",
 		"exitPE": {
 			"bear": 15,
 			"base": 20,
 			"bull": 25
 		},
-		"basis": "Normalized EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 0.99,
 		"scenarios": {
-			"bear": "-25%",
-			"base": "-21%",
-			"bull": "-17%"
+			"bear": "-16%",
+			"base": "-12%",
+			"bull": "-8%"
 		}
 	},
 	"currentPrice": "$107.92",
@@ -32,17 +32,17 @@
 	"expectedVolatility": "~53%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 3.94,
+		"score": 1.48,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 40,
 			"multipleType": "Forward P/E",
 			"multiple": 58.2,
 			"cvStock": 0.104,
 			"riskMultiplier": 1.015
 		}
 	},
-	"lastUpdated": "2026-03-15T05:10:22.695Z",
+	"lastUpdated": "2026-03-15T17:31:38.794Z",
 	"valuation": {
 		"trailingPE": 109,
 		"forwardPE": 58.2,
@@ -55,6 +55,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "15%"
 	},
-	"expectedCAGR": "-25% - -17%",
-	"sharpeRatio": -0.48
+	"expectedCAGR": "-16% - -8%",
+	"sharpeRatio": -0.31
 }

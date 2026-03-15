@@ -47,7 +47,7 @@
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.04
 	},
-	"lastUpdated": "2026-03-15T05:10:21.436Z",
+	"lastUpdated": "2026-03-15T17:31:37.288Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.76,
@@ -63,10 +63,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 458.67,
-				"price6mAgo": 593.14,
+				"price6mAgo": 603.8,
 				"price1mAgo": 376.38,
 				"low3m": 359,
-				"return6m": -22.7,
+				"return6m": -24,
 				"return1m": 21.9,
 				"near3mLow": false
 			},

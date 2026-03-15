@@ -21,13 +21,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "0%"
 	},
-	"targetPrice": "$198.95",
+	"targetPrice": "$198.94",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
 	"currentPrice": "$135.21",
 	"consensus": {
 		"tipranks": "$168",
-		"yahoo": "$198.95",
+		"yahoo": "$198.94",
 		"stockanalysis": "$160"
 	},
 	"cagrModel": {
@@ -47,7 +47,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-15T05:10:22.567Z",
+	"lastUpdated": "2026-03-15T17:31:38.647Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.28,

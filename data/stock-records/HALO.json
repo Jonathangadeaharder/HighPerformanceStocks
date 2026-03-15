@@ -47,7 +47,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-15T05:10:26.434Z",
+	"lastUpdated": "2026-03-15T17:31:42.724Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.31,
@@ -64,10 +64,10 @@
 			"stabilization": {
 				"pass": false,
 				"price": 63.66,
-				"price6mAgo": 76.33,
+				"price6mAgo": 75.85,
 				"price1mAgo": 80.48,
 				"low3m": 61.28,
-				"return6m": -16.6,
+				"return6m": -16.1,
 				"return1m": -20.9,
 				"near3mLow": true
 			},

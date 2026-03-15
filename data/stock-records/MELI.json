@@ -41,7 +41,7 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-15T05:10:29.334Z",
+	"lastUpdated": "2026-03-15T17:31:45.788Z",
 	"consensus": {
 		"yahoo": "$2662.77"
 	},
@@ -61,10 +61,10 @@
 			"stabilization": {
 				"pass": false,
 				"price": 1670,
-				"price6mAgo": 2335.82,
+				"price6mAgo": 2390.14,
 				"price1mAgo": 1975.51,
 				"low3m": 1631.18,
-				"return6m": -28.5,
+				"return6m": -30.1,
 				"return1m": -15.5,
 				"near3mLow": true
 			},

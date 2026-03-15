@@ -9,19 +9,19 @@
 	"bearCase": "Geopolitical risks and potential export route disruptions.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "10%",
+		"epsGrowth": "15%",
 		"exitPE": {
-			"bear": 8,
+			"bear": 10,
 			"base": 12,
 			"bull": 15
 		},
-		"basis": "Normalized EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "6%",
 		"ttmEPS": 6.16,
 		"scenarios": {
-			"bear": "5%",
-			"base": "13%",
-			"bull": "18%"
+			"bear": "12%",
+			"base": "16%",
+			"bull": "21%"
 		}
 	},
 	"currentPrice": "$77.20",
@@ -32,18 +32,35 @@
 	"expectedVolatility": "~46%",
 	"screener": {
 		"engine": "tPERG",
-		"score": 1.25,
-		"signal": "FAIL",
+		"score": 0.84,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 10,
+			"growth": 15,
 			"multipleType": "Trailing P/E",
 			"multiple": 12.5,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 77.2,
+				"price6mAgo": 51.5,
+				"price1mAgo": 82,
+				"low3m": 47.8,
+				"return6m": 49.9,
+				"return1m": -5.9,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		},
 		"note": "Used benchmark CV (missing dispersion data)"
 	},
-	"lastUpdated": "2026-03-15T05:10:27.458Z",
+	"lastUpdated": "2026-03-15T17:31:43.765Z",
 	"valuation": {
 		"trailingPE": 12.5,
 		"forwardPE": 0,
@@ -57,6 +74,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "1%"
 	},
-	"expectedCAGR": "5% - 18%",
-	"sharpeRatio": 0.15
+	"expectedCAGR": "12% - 21%",
+	"sharpeRatio": 0.26
 }

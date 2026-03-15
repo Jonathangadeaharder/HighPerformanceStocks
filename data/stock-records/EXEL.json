@@ -48,7 +48,7 @@
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-15T05:10:25.467Z",
+	"lastUpdated": "2026-03-15T17:31:41.717Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.52,
@@ -64,10 +64,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 41.24,
-				"price6mAgo": 39.01,
+				"price6mAgo": 39.14,
 				"price1mAgo": 44.08,
 				"low3m": 39.71,
-				"return6m": 5.7,
+				"return6m": 5.4,
 				"return1m": -6.4,
 				"near3mLow": true
 			},

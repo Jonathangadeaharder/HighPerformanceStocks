@@ -48,7 +48,7 @@
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-15T05:10:34.988Z",
+	"lastUpdated": "2026-03-15T17:31:51.586Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.92,
@@ -64,10 +64,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 178.88,
-				"price6mAgo": 276.27,
+				"price6mAgo": 273.88,
 				"price1mAgo": 176.82,
 				"low3m": 168.14,
-				"return6m": -35.3,
+				"return6m": -34.7,
 				"return1m": 1.2,
 				"near3mLow": false
 			},

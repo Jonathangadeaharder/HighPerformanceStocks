@@ -48,7 +48,7 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-15T05:10:36.065Z",
+	"lastUpdated": "2026-03-15T17:31:52.625Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.6,
@@ -64,10 +64,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 59.79,
-				"price6mAgo": 74.63,
+				"price6mAgo": 75.78,
 				"price1mAgo": 50.81,
 				"low3m": 48.21,
-				"return6m": -19.9,
+				"return6m": -21.1,
 				"return1m": 17.7,
 				"near3mLow": false
 			},

@@ -9,19 +9,19 @@
 	"bearCase": "TikTok Shop resurgence or failure to maintain gaming hit pipeline severely compresses margins.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "20%",
+		"epsGrowth": "30%",
 		"exitPE": {
-			"bear": 15,
-			"base": 22,
+			"bear": 20,
+			"base": 25,
 			"bull": 30
 		},
-		"basis": "Normalized EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 2.52,
 		"scenarios": {
-			"bear": "-4%",
-			"base": "4%",
-			"bull": "11%"
+			"bear": "7%",
+			"base": "12%",
+			"bull": "16%"
 		}
 	},
 	"currentPrice": "$86",
@@ -32,10 +32,10 @@
 	"expectedVolatility": "~52%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.87,
+		"score": 0.58,
 		"signal": "REJECTED",
 		"inputs": {
-			"growth": 20,
+			"growth": 30,
 			"multipleType": "Forward P/E",
 			"multiple": 16.8,
 			"cvStock": 0.133,
@@ -46,10 +46,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 86,
-				"price6mAgo": 190.46,
+				"price6mAgo": 189.07,
 				"price1mAgo": 108.51,
 				"low3m": 77.05,
-				"return6m": -54.8,
+				"return6m": -54.5,
 				"return1m": -20.7,
 				"near3mLow": false
 			},
@@ -60,7 +60,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-15T05:10:33.102Z",
+	"lastUpdated": "2026-03-15T17:31:49.631Z",
 	"valuation": {
 		"trailingPE": 34.1,
 		"forwardPE": 16.8,
@@ -73,6 +73,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"expectedCAGR": "-4% - 11%",
-	"sharpeRatio": -0.02
+	"expectedCAGR": "7% - 16%",
+	"sharpeRatio": 0.13
 }

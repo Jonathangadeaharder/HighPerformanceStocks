@@ -49,7 +49,7 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-15T05:10:27.534Z",
+	"lastUpdated": "2026-03-15T17:31:43.895Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.9,
@@ -66,10 +66,10 @@
 			"stabilization": {
 				"pass": false,
 				"price": 85.93,
-				"price6mAgo": 144.65,
+				"price6mAgo": 144.38,
 				"price1mAgo": 102.55,
 				"low3m": 82.67,
-				"return6m": -40.6,
+				"return6m": -40.5,
 				"return1m": -16.2,
 				"near3mLow": true
 			},

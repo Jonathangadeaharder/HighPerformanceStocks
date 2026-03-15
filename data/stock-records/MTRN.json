@@ -9,19 +9,19 @@
 	"bearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "12%",
+		"epsGrowth": "15%",
 		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
+			"bear": 18,
+			"base": 22,
+			"bull": 26
 		},
-		"basis": "Normalized EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 3.58,
 		"scenarios": {
-			"bear": "-9%",
-			"base": "-4%",
-			"bull": "0%"
+			"bear": "-5%",
+			"base": "-1%",
+			"bull": "3%"
 		}
 	},
 	"currentPrice": "$135.99",
@@ -32,17 +32,17 @@
 	"expectedVolatility": "~42%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.5,
+		"score": 1.2,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 12,
+			"growth": 15,
 			"multipleType": "Forward P/E",
 			"multiple": 18.5,
 			"cvStock": 0.035,
 			"riskMultiplier": 0.973
 		}
 	},
-	"lastUpdated": "2026-03-15T05:10:30.260Z",
+	"lastUpdated": "2026-03-15T17:31:46.741Z",
 	"valuation": {
 		"trailingPE": 38,
 		"forwardPE": 18.5,
@@ -55,6 +55,6 @@
 		"netDebtEbitda": "2.8x",
 		"ruleOf40": "13%"
 	},
-	"expectedCAGR": "-9% - 0%",
-	"sharpeRatio": -0.21
+	"expectedCAGR": "-5% - 3%",
+	"sharpeRatio": -0.13
 }

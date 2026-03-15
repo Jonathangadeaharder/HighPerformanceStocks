@@ -44,7 +44,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-15T05:10:25.635Z",
+	"lastUpdated": "2026-03-15T17:31:41.889Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.42,
@@ -60,10 +60,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 17.9,
-				"price6mAgo": 17.64,
+				"price6mAgo": 17.95,
 				"price1mAgo": 17.64,
 				"low3m": 16.56,
-				"return6m": 1.5,
+				"return6m": -0.3,
 				"return1m": 1.5,
 				"near3mLow": false
 			},

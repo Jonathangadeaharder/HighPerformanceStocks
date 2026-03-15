@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-15T05:10:34.187Z",
+	"lastUpdated": "2026-03-15T17:31:50.769Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
@@ -66,10 +66,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 338.31,
-				"price6mAgo": 261.38,
+				"price6mAgo": 262.06,
 				"price1mAgo": 364.2,
 				"low3m": 275.08,
-				"return6m": 29.4,
+				"return6m": 29.1,
 				"return1m": -7.1,
 				"near3mLow": false
 			},

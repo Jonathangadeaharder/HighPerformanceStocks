@@ -48,7 +48,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-15T05:10:29.431Z",
+	"lastUpdated": "2026-03-15T17:31:45.959Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.53,
@@ -64,10 +64,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 87.86,
-				"price6mAgo": 67.43,
+				"price6mAgo": 68.86,
 				"price1mAgo": 79.01,
 				"low3m": 70.69,
-				"return6m": 30.3,
+				"return6m": 27.6,
 				"return1m": 11.2,
 				"near3mLow": false
 			},

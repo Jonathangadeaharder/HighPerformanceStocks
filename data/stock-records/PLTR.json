@@ -9,19 +9,19 @@
 	"bearCase": "High valuation and potential lumpiness in government contracts.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "25%",
+		"epsGrowth": "35%",
 		"exitPE": {
-			"bear": 40,
-			"base": 50,
+			"bear": 35,
+			"base": 45,
 			"bull": 60
 		},
-		"basis": "Adjusted EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 0.63,
 		"scenarios": {
-			"bear": "-19%",
-			"base": "-15%",
-			"bull": "-12%"
+			"bear": "-17%",
+			"base": "-13%",
+			"bull": "-8%"
 		}
 	},
 	"currentPrice": "$150.95",
@@ -32,17 +32,17 @@
 	"expectedVolatility": "~58%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 3.37,
+		"score": 2.41,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 25,
+			"growth": 35,
 			"multipleType": "Forward P/E",
 			"multiple": 81.7,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.032
 		}
 	},
-	"lastUpdated": "2026-03-15T05:10:32.112Z",
+	"lastUpdated": "2026-03-15T17:31:48.731Z",
 	"valuation": {
 		"trailingPE": 239.6,
 		"forwardPE": 81.7,
@@ -55,6 +55,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "98%"
 	},
-	"expectedCAGR": "-19% - -12%",
-	"sharpeRatio": -0.34
+	"expectedCAGR": "-17% - -8%",
+	"sharpeRatio": -0.29
 }

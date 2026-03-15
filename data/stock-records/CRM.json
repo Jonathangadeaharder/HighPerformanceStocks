@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-15T05:10:23.536Z",
+	"lastUpdated": "2026-03-15T17:31:39.802Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
@@ -63,10 +63,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 192.83,
-				"price6mAgo": 242.52,
+				"price6mAgo": 239.31,
 				"price1mAgo": 184.29,
 				"low3m": 174.57,
-				"return6m": -20.5,
+				"return6m": -19.4,
 				"return1m": 4.6,
 				"near3mLow": false
 			},

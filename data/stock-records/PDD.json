@@ -4,7 +4,7 @@
 	"group": "Emerging Markets",
 	"confidence": "medium",
 	"confidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
-	"targetPrice": "$148.65",
+	"targetPrice": "$148.64",
 	"bullCase": "Temu's global hyper-expansion successfully disrupts Amazon and local e-commerce worldwide, driving unprecedented cash generation at scale.",
 	"bearCase": "Geopolitical tariffs, cross-border tax loop closures, and Chinese regulatory unpredictability crush the terminal value.",
 	"cagrModel": {
@@ -15,7 +15,7 @@
 			"base": 12,
 			"bull": 18
 		},
-		"basis": "Normalized EPS",
+		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 10.04,
 		"scenarios": {
@@ -27,7 +27,7 @@
 	"currentPrice": "$102.65",
 	"marketCap": "$145.7B USD",
 	"consensus": {
-		"yahoo": "$148.65"
+		"yahoo": "$148.64"
 	},
 	"expectedVolatility": "~36%",
 	"screener": {
@@ -46,10 +46,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 102.65,
-				"price6mAgo": 127.39,
+				"price6mAgo": 129.06,
 				"price1mAgo": 101.83,
 				"low3m": 98.71,
-				"return6m": -19.4,
+				"return6m": -20.5,
 				"return1m": 0.8,
 				"near3mLow": true
 			},
@@ -60,7 +60,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-15T05:10:31.348Z",
+	"lastUpdated": "2026-03-15T17:31:47.880Z",
 	"valuation": {
 		"trailingPE": 10.2,
 		"forwardPE": 8.2,

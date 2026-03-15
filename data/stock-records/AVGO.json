@@ -49,7 +49,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-15T05:10:22.523Z",
+	"lastUpdated": "2026-03-15T17:31:38.623Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.15,
@@ -65,10 +65,10 @@
 			"stabilization": {
 				"pass": true,
 				"price": 322.16,
-				"price6mAgo": 364.09,
+				"price6mAgo": 360,
 				"price1mAgo": 332.54,
 				"low3m": 295.3,
-				"return6m": -11.5,
+				"return6m": -10.5,
 				"return1m": -3.1,
 				"near3mLow": false
 			},
