@@ -4,15 +4,15 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1752.2B USD",
+	"marketCap": "$1754.6B USD",
 	"sharpeRatio": 0.21,
 	"expectedCAGR": "8% - 17%",
 	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 32.5,
-		"forwardPE": 18.7,
+		"trailingPE": 32.6,
+		"forwardPE": 18.8,
 		"pegRatio": 0.57,
-		"evEbitda": 2.8
+		"evEbitda": 2.6
 	},
 	"metrics": {
 		"fcfMargin": "~17%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$429.49",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$337.84",
+	"currentPrice": "$338.31",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$429.49",
@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-12T14:56:12.483Z",
+	"lastUpdated": "2026-03-15T04:38:45.471Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
@@ -58,19 +58,19 @@
 		"inputs": {
 			"growth": 28,
 			"multipleType": "Forward P/E",
-			"multiple": 18.7,
+			"multiple": 18.8,
 			"cvStock": 0.05,
 			"riskMultiplier": 0.982
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 337.84,
+				"price": 338.31,
 				"price6mAgo": 261.38,
-				"price1mAgo": 366.36,
+				"price1mAgo": 364.2,
 				"low3m": 275.08,
-				"return6m": 29.3,
-				"return1m": -7.8,
+				"return6m": 29.4,
+				"return1m": -7.1,
 				"near3mLow": false
 			},
 			"revisions": {

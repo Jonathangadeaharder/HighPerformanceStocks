@@ -20,7 +20,7 @@
 	"targetPrice": "$140",
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$129.98",
+	"currentPrice": "$129.84",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -38,7 +38,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-12T14:56:09.398Z",
+	"lastUpdated": "2026-03-15T04:38:41.494Z",
 	"consensus": {
 		"yahoo": "$140"
 	},

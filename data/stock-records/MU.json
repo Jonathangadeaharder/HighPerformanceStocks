@@ -4,15 +4,15 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$450.4B USD",
-	"sharpeRatio": -0.04,
-	"expectedCAGR": "-2% - 6%",
+	"marketCap": "$479.6B USD",
+	"sharpeRatio": -0.06,
+	"expectedCAGR": "-4% - 5%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 38.1,
-		"forwardPE": 8.4,
+		"trailingPE": 40.5,
+		"forwardPE": 8.6,
 		"pegRatio": null,
-		"evEbitda": 21.3
+		"evEbitda": 21.7
 	},
 	"metrics": {
 		"fcfMargin": "~1%",
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "0.1x",
 		"ruleOf40": "58%"
 	},
-	"targetPrice": "$417.82",
+	"targetPrice": "$425.13",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$400.16",
+	"currentPrice": "$426.13",
 	"consensus": {
 		"tipranks": "$431",
-		"yahoo": "$417.82",
+		"yahoo": "$425.13",
 		"stockanalysis": "$359"
 	},
 	"cagrModel": {
@@ -42,33 +42,33 @@
 			"bull": 24
 		},
 		"scenarios": {
-			"bear": "-2%",
-			"base": "2%",
-			"bull": "6%"
+			"bear": "-4%",
+			"base": "1%",
+			"bull": "5%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-12T14:56:08.467Z",
+	"lastUpdated": "2026-03-15T04:38:41.439Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.36,
+		"score": 0.39,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "Forward P/E",
-			"multiple": 8.4,
-			"cvStock": 0.184,
-			"riskMultiplier": 1.063
+			"multiple": 8.6,
+			"cvStock": 0.299,
+			"riskMultiplier": 1.131
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 400.16,
+				"price": 426.13,
 				"price6mAgo": 157.77,
-				"price1mAgo": 411.66,
+				"price1mAgo": 399.78,
 				"low3m": 221.69,
-				"return6m": 153.6,
-				"return1m": -2.8,
+				"return6m": 170.1,
+				"return1m": 6.6,
 				"near3mLow": false
 			},
 			"revisions": {

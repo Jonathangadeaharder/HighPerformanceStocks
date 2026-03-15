@@ -1,0 +1,32 @@
+{
+	"ticker": "CCJ",
+	"name": "Cameco",
+	"group": "Energy & Infrastructure",
+	"confidence": "high",
+	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
+	"targetPrice": "$125.22",
+	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
+	"bearCase": "Uranium price volatility and execution risks in mining operations.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Normalized EPS"
+	},
+	"currentPrice": "$107.92",
+	"marketCap": "$47.0B USD",
+	"consensus": {
+		"yahoo": "$125.22"
+	},
+	"expectedVolatility": "~53%",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative Forward P/E"
+	},
+	"lastUpdated": "2026-03-15T04:38:33.911Z"
+}

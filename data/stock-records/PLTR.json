@@ -1,0 +1,32 @@
+{
+	"ticker": "PLTR",
+	"name": "Palantir",
+	"group": "Enterprise Software",
+	"confidence": "high",
+	"confidenceReason": "AIP platform gaining massive traction in commercial sector.",
+	"targetPrice": "$186.41",
+	"bullCase": "Unmatched data integration OS becomes the de facto standard for enterprise AI.",
+	"bearCase": "High valuation and potential lumpiness in government contracts.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "25%",
+		"exitPE": {
+			"bear": 40,
+			"base": 50,
+			"bull": 60
+		},
+		"basis": "Adjusted EPS"
+	},
+	"currentPrice": "$150.95",
+	"marketCap": "$361.0B USD",
+	"consensus": {
+		"yahoo": "$186.41"
+	},
+	"expectedVolatility": "~58%",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative Forward P/E"
+	},
+	"lastUpdated": "2026-03-15T04:38:42.441Z"
+}

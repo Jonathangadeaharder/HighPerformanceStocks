@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
-	"marketCap": "$41.6B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "5% - 14%",
+	"marketCap": "$40.2B USD",
+	"sharpeRatio": 0.18,
+	"expectedCAGR": "6% - 14%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 59,
-		"forwardPE": 47.2,
+		"trailingPE": 57.1,
+		"forwardPE": 45.6,
 		"pegRatio": null,
-		"evEbitda": 36.1
+		"evEbitda": 34
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$298.45",
+	"currentPrice": "$288.45",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
@@ -35,7 +35,7 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 5.06,
+		"ttmEPS": 5.05,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"exitPE": {
@@ -44,21 +44,21 @@
 			"bull": 62
 		},
 		"scenarios": {
-			"bear": "5%",
+			"bear": "6%",
 			"base": "10%",
 			"bull": "14%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T14:56:02.412Z",
+	"lastUpdated": "2026-03-15T04:38:38.548Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.97,
+		"score": 1.85,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 36.1,
+			"multiple": 34,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		}

@@ -4,15 +4,15 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
-	"marketCap": "$7.6B USD",
+	"marketCap": "$7.5B USD",
 	"sharpeRatio": 0.36,
 	"expectedCAGR": "13% - 28%",
 	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 25.3,
-		"forwardPE": 6.6,
+		"trailingPE": 24.9,
+		"forwardPE": 6.5,
 		"pegRatio": null,
-		"evEbitda": 11
+		"evEbitda": 10.6
 	},
 	"metrics": {
 		"fcfMargin": "~13%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$84.50",
 	"bullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
 	"bearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility.",
-	"currentPrice": "$64.82",
+	"currentPrice": "$63.66",
 	"consensus": {
 		"tipranks": "$95",
 		"yahoo": "$84.50"
@@ -47,28 +47,29 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-12T14:56:02.271Z",
+	"lastUpdated": "2026-03-15T04:38:37.672Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.32,
-		"signal": "PASS",
+		"score": 0.31,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 6.6,
+			"multiple": 6.5,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
+		"note": "Cheap, but still stabilizing (downtrend remains active)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 64.82,
+				"pass": false,
+				"price": 63.66,
 				"price6mAgo": 76.33,
-				"price1mAgo": 79.44,
-				"low3m": 61.23,
-				"return6m": -15.1,
-				"return1m": -18.4,
-				"near3mLow": false
+				"price1mAgo": 80.48,
+				"low3m": 61.28,
+				"return6m": -16.6,
+				"return1m": -20.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,

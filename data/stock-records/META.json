@@ -4,19 +4,19 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1631.4B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "7% - 17%",
+	"marketCap": "$1552.4B USD",
+	"sharpeRatio": 0.22,
+	"expectedCAGR": "8% - 18%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 27.4,
-		"forwardPE": 18,
+		"trailingPE": 26.1,
+		"forwardPE": 17.1,
 		"pegRatio": 1.05,
-		"evEbitda": 16.3
+		"evEbitda": 15.3
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
-		"fcfYield": "~1%",
+		"fcfYield": "~2%",
 		"roic": "~28%",
 		"roe": "30.2%",
 		"netDebtEbitda": "0.0x",
@@ -27,7 +27,7 @@
 	"targetPrice": "$862.25",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$644.94",
+	"currentPrice": "$613.71",
 	"consensus": {
 		"tipranks": "$836",
 		"yahoo": "$862.25",
@@ -44,35 +44,36 @@
 			"bull": 29
 		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "13%",
-			"bull": "17%"
+			"bear": "8%",
+			"base": "14%",
+			"bull": "18%"
 		},
 		"decayFactor": 0.9,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T14:56:08.343Z",
+	"lastUpdated": "2026-03-15T04:38:40.469Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.95,
-		"signal": "PASS",
+		"score": 0.9,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
-			"multiple": 18,
+			"multiple": 17.1,
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
 		},
+		"note": "Cheap, but still stabilizing (downtrend remains active)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 644.94,
+				"pass": false,
+				"price": 613.71,
 				"price6mAgo": 764.7,
-				"price1mAgo": 639.77,
+				"price1mAgo": 639.29,
 				"low3m": 600,
-				"return6m": -15.7,
-				"return1m": 0.8,
-				"near3mLow": false
+				"return6m": -19.7,
+				"return1m": -4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,

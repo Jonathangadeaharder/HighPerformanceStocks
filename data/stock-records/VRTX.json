@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
-	"marketCap": "$122.2B USD",
-	"sharpeRatio": 0,
-	"expectedCAGR": "0% - 9%",
+	"marketCap": "$119.2B USD",
+	"sharpeRatio": 0.01,
+	"expectedCAGR": "1% - 9%",
 	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 31.4,
-		"forwardPE": 22,
+		"trailingPE": 30.7,
+		"forwardPE": 21.4,
 		"pegRatio": null,
-		"evEbitda": 24.8,
+		"evEbitda": 23.6,
 		"evFcf": 24
 	},
 	"metrics": {
@@ -23,18 +23,18 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "31%"
 	},
-	"targetPrice": "$546.26",
+	"targetPrice": "$545.50",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$480.93",
+	"currentPrice": "$469.34",
 	"consensus": {
 		"tipranks": "$542",
-		"yahoo": "$546.26",
+		"yahoo": "$545.50",
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 15.31,
+		"ttmEPS": 15.3,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"exitPE": {
@@ -43,22 +43,22 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "0%",
+			"bear": "1%",
 			"base": "5%",
 			"bull": "9%"
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-12T14:56:13.666Z",
+	"lastUpdated": "2026-03-15T04:38:46.413Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.71,
+		"score": 1.66,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 22,
-			"cvStock": 0.096,
+			"multiple": 21.4,
+			"cvStock": 0.095,
 			"riskMultiplier": 1.009
 		}
 	}

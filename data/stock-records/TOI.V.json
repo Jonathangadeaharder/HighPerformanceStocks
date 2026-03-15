@@ -4,32 +4,32 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
-	"marketCap": "C$8.6B",
-	"sharpeRatio": 0.21,
-	"expectedCAGR": "8% - 18%",
-	"expectedVolatility": "~40%",
+	"marketCap": "C$8.2B",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "9% - 19%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 131.3,
-		"forwardPE": 23.6,
+		"trailingPE": 125.5,
+		"forwardPE": 22.2,
 		"pegRatio": null,
-		"evEbitda": 28.8,
+		"evEbitda": 27.2,
 		"evFcf": 31
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
-		"fcfYield": "~5%",
+		"fcfYield": "~6%",
 		"roic": "17.03%",
 		"roe": "10.7%",
 		"netDebtEbitda": "1.4x",
 		"ruleOf40": "49%"
 	},
-	"targetPrice": "C$139.24",
+	"targetPrice": "C$139.03",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
-	"currentPrice": "C$103.75",
+	"currentPrice": "C$97.87",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$139.24"
+		"yahoo": "C$139.03"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -42,21 +42,21 @@
 			"bull": 65
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "13%",
-			"bull": "18%"
+			"bear": "9%",
+			"base": "15%",
+			"bull": "19%"
 		},
 		"basis": "Normalized adjusted EPS ex-NRI; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-03-12T14:56:12.440Z",
+	"lastUpdated": "2026-03-15T04:38:44.568Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.18,
+		"score": 1.11,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/EBITDA",
-			"multiple": 28.8,
+			"multiple": 27.2,
 			"cvStock": 0.115,
 			"riskMultiplier": 1.021
 		}

@@ -16,6 +16,7 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { resolve } from 'path';
 import {
 	DEFAULT_GROWTH_DECAY,
 	DEFAULT_HORIZON,

@@ -4,14 +4,14 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$166.4B USD",
-	"sharpeRatio": 0.04,
-	"expectedCAGR": "2% - 12%",
+	"marketCap": "$160.5B USD",
+	"sharpeRatio": 0.06,
+	"expectedCAGR": "3% - 13%",
 	"expectedVolatility": "~61%",
 	"valuation": {
-		"trailingPE": 134.2,
-		"forwardPE": 55.6,
-		"evEbitda": 84.6
+		"trailingPE": 132.2,
+		"forwardPE": 53.4,
+		"evEbitda": 80.2
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -19,15 +19,15 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash"
 	},
-	"targetPrice": "$160.04",
+	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$127.52",
+	"currentPrice": "$122.96",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "2%",
+			"bear": "3%",
 			"base": "8%",
-			"bull": "12%"
+			"bull": "13%"
 		},
 		"ttmEPS": 1.89,
 		"horizon": 5,
@@ -40,18 +40,18 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-12T14:56:11.336Z",
+	"lastUpdated": "2026-03-15T04:38:43.598Z",
 	"consensus": {
-		"yahoo": "$160.04"
+		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.23,
+		"score": 2.14,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "Forward P/E",
-			"multiple": 55.6,
+			"multiple": 53.4,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		}

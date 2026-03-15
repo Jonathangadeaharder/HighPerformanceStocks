@@ -4,15 +4,15 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
-	"marketCap": "C$50.6B",
-	"sharpeRatio": 0.54,
+	"marketCap": "C$48.6B",
+	"sharpeRatio": 0.57,
 	"expectedCAGR": "10% - 24%",
-	"expectedVolatility": "~23%",
+	"expectedVolatility": "~22%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 7.9,
-		"forwardPE": 11.1
+		"trailingPE": 7.8,
+		"forwardPE": 10.4
 	},
 	"metrics": {
 		"roe": "17.8%",
@@ -20,10 +20,10 @@
 		"fcfYield": "~5%",
 		"netDebtEbitda": "0.8x"
 	},
-	"targetPrice": "C$2689.65",
+	"targetPrice": "C$2730.76",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2284.99",
+	"currentPrice": "C$2266.72",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -39,22 +39,22 @@
 		},
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 290.45
+		"ttmEPS": 290.82
 	},
-	"lastUpdated": "2026-03-12T14:56:01.304Z",
+	"lastUpdated": "2026-03-15T04:38:36.645Z",
 	"consensus": {
-		"yahoo": "C$2689.65"
+		"yahoo": "C$2730.76"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.07,
+		"score": 1.02,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 11.1,
-			"cvStock": 0.02,
-			"riskMultiplier": 0.964
+			"multiple": 10.4,
+			"cvStock": 0.041,
+			"riskMultiplier": 0.977
 		}
 	}
 }

@@ -4,15 +4,15 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
-	"marketCap": "$1582.2B USD",
-	"sharpeRatio": 0.23,
-	"expectedCAGR": "11% - 20%",
+	"marketCap": "$1527.4B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "12% - 21%",
 	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 65.2,
-		"forwardPE": 19,
+		"trailingPE": 62.9,
+		"forwardPE": 18.4,
 		"pegRatio": null,
-		"evEbitda": 4.6
+		"evEbitda": 4.3
 	},
 	"metrics": {
 		"fcfMargin": "~37%",
@@ -26,7 +26,7 @@
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$333.71",
+	"currentPrice": "$322.16",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$467.80",
@@ -43,33 +43,33 @@
 			"bull": 48
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "12%",
+			"base": "17%",
+			"bull": "21%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-12T14:55:58.265Z",
+	"lastUpdated": "2026-03-15T04:38:33.743Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.16,
+		"score": 0.15,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/EBITDA",
-			"multiple": 4.6,
+			"multiple": 4.3,
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 333.71,
+				"price": 322.16,
 				"price6mAgo": 364.09,
-				"price1mAgo": 325.17,
+				"price1mAgo": 332.54,
 				"low3m": 295.3,
-				"return6m": -8.3,
-				"return1m": 2.6,
+				"return6m": -11.5,
+				"return1m": -3.1,
 				"near3mLow": false
 			},
 			"revisions": {

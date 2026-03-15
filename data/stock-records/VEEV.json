@@ -4,19 +4,19 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$31.1B USD",
-	"sharpeRatio": 0.39,
-	"expectedCAGR": "14% - 23%",
+	"marketCap": "$29.4B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "15% - 25%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 34.7,
-		"forwardPE": 19.1,
+		"trailingPE": 32.9,
+		"forwardPE": 18.1,
 		"pegRatio": null,
-		"evEbitda": 24.7
+		"evEbitda": 23.3
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"roic": null,
 		"roe": "13.9%",
 		"netDebtEbitda": "Net cash",
@@ -25,7 +25,7 @@
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$188.96",
+	"currentPrice": "$178.88",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -42,33 +42,33 @@
 			"bull": 54
 		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "19%",
-			"bull": "23%"
+			"bear": "15%",
+			"base": "20%",
+			"bull": "25%"
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-12T14:56:13.482Z",
+	"lastUpdated": "2026-03-15T04:38:45.533Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.97,
+		"score": 0.92,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
-			"multiple": 19.1,
+			"multiple": 18.1,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 188.96,
+				"price": 178.88,
 				"price6mAgo": 276.27,
-				"price1mAgo": 174.11,
+				"price1mAgo": 176.82,
 				"low3m": 168.14,
-				"return6m": -31.6,
-				"return1m": 8.5,
+				"return6m": -35.3,
+				"return1m": 1.2,
 				"near3mLow": false
 			},
 			"revisions": {

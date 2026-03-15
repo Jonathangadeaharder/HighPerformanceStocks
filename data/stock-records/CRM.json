@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$190.3B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "6% - 15%",
+	"marketCap": "$180.7B USD",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "7% - 16%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 26,
-		"forwardPE": 13.6,
+		"trailingPE": 24.7,
+		"forwardPE": 12.9,
 		"pegRatio": 0.88,
-		"evEbitda": 14.9
+		"evEbitda": 14.8
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
@@ -21,18 +21,18 @@
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "52%"
 	},
-	"targetPrice": "$275.27",
+	"targetPrice": "$276.33",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$203.10",
+	"currentPrice": "$192.83",
 	"consensus": {
 		"tipranks": "$268",
-		"yahoo": "$275.27",
+		"yahoo": "$276.33",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 7.8,
+		"ttmEPS": 7.81,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"exitPE": {
@@ -41,33 +41,33 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "6%",
-			"base": "11%",
-			"bull": "15%"
+			"bear": "7%",
+			"base": "12%",
+			"bull": "16%"
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-12T14:55:59.223Z",
+	"lastUpdated": "2026-03-15T04:38:34.689Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.9,
+		"score": 0.85,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 13.6,
+			"multiple": 12.9,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 203.1,
+				"price": 192.83,
 				"price6mAgo": 242.52,
-				"price1mAgo": 189.72,
+				"price1mAgo": 184.29,
 				"low3m": 174.57,
-				"return6m": -16.3,
-				"return1m": 7.1,
+				"return6m": -20.5,
+				"return1m": 4.6,
 				"near3mLow": false
 			},
 			"revisions": {

@@ -378,4 +378,43 @@ Forward Return Profile: Expected CAGR: 15% - 20% | Expected Volatility: ~45% | E
 Bull Case: The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.
 
 Bear Case: Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.
-MELI MercadoLibre Emerging Markets 35%
+
+4. MercadoLibre (MELI) – The Emerging Markets Compounder
+
+Forward Return Profile: Expected CAGR: 5% - 18% | Expected Volatility: ~39% | Expected Sharpe Ratio: 0.18
+
+Bull Case: Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.
+
+Bear Case: Highly correlated to local central bank rates and currency devaluation in emerging markets.
+
+5. Cameco (CCJ) – The Tier-1 Uranium Major
+
+Forward Return Profile: Expected Volatility: ~53%
+
+Bull Case: Global nuclear renaissance and supply deficits drive structural bull market in uranium.
+
+Bear Case: Uranium price volatility and execution risks in mining operations.
+
+6. Palantir (PLTR) – The Enterprise AI Standard
+
+Forward Return Profile: Expected Volatility: ~58%
+
+Bull Case: Unmatched data integration OS becomes the de facto standard for enterprise AI.
+
+Bear Case: High valuation and potential lumpiness in government contracts.
+
+7. Kazatomprom (KAP.IL) – The Low-Cost Uranium Producer
+
+Forward Return Profile: Expected Volatility: ~46%
+
+Bull Case: Lowest cost producer benefiting from structural uranium deficits.
+
+Bear Case: Geopolitical risks and potential export route disruptions.
+
+8. Samsung Electronics (SMSN.IL) – The Memory Cycle Leveraged Play
+
+Forward Return Profile: Expected Volatility: ~40%
+
+Bull Case: Memory cycle upswing and HBM catch-up drive massive earnings leverage.
+
+Bear Case: Intense competition in foundry and smartphone markets.

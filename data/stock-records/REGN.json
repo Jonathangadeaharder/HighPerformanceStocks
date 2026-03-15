@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
-	"marketCap": "$80.1B USD",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "4% - 13%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$78.8B USD",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "5% - 15%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 18.3,
-		"forwardPE": 14.4,
+		"trailingPE": 18,
+		"forwardPE": 14.1,
 		"pegRatio": null,
-		"evEbitda": 17.4,
+		"evEbitda": 16.7,
 		"evFcf": 15
 	},
 	"metrics": {
@@ -28,7 +28,7 @@
 	"targetPrice": "$872.85",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$758",
+	"currentPrice": "$745.77",
 	"consensus": {
 		"tipranks": "$813",
 		"yahoo": "$872.85",
@@ -36,30 +36,30 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 41.44,
+		"ttmEPS": 41.46,
 		"epsGrowth": "12%",
-		"dividendYield": "0%",
+		"dividendYield": "1%",
 		"exitPE": {
 			"bear": 14,
 			"base": 18,
 			"bull": 22
 		},
 		"scenarios": {
-			"bear": "4%",
-			"base": "9%",
-			"bull": "13%"
+			"bear": "5%",
+			"base": "10%",
+			"bull": "15%"
 		},
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T14:56:10.381Z",
+	"lastUpdated": "2026-03-15T04:38:43.429Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.22,
+		"score": 1.2,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 14.4,
+			"multiple": 14.1,
 			"cvStock": 0.114,
 			"riskMultiplier": 1.02
 		}

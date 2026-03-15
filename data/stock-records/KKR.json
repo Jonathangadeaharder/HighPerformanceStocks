@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
-	"marketCap": "$77.8B USD",
-	"sharpeRatio": 0.26,
-	"expectedCAGR": "11% - 22%",
-	"expectedVolatility": "~47%",
+	"marketCap": "$79.6B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "10% - 22%",
+	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 35.9,
-		"forwardPE": 10.6,
+		"trailingPE": 36.7,
+		"forwardPE": 10.8,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$140.24",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
-	"currentPrice": "$83.97",
+	"currentPrice": "$85.93",
 	"consensus": {
 		"tipranks": "$149",
 		"yahoo": "$140.24",
@@ -43,21 +43,21 @@
 			"bull": 25
 		},
 		"scenarios": {
-			"bear": "11%",
+			"bear": "10%",
 			"base": "17%",
 			"bull": "22%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-12T14:56:03.338Z",
+	"lastUpdated": "2026-03-15T04:38:38.718Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.88,
+		"score": 0.9,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
-			"multiple": 17.9,
+			"multiple": 18.3,
 			"cvStock": 0.047,
 			"riskMultiplier": 0.98
 		},
@@ -65,12 +65,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 83.97,
+				"price": 85.93,
 				"price6mAgo": 144.65,
-				"price1mAgo": 101.73,
-				"low3m": 83.2,
-				"return6m": -41.9,
-				"return1m": -17.5,
+				"price1mAgo": 102.55,
+				"low3m": 82.67,
+				"return6m": -40.6,
+				"return1m": -16.2,
 				"near3mLow": true
 			},
 			"revisions": {

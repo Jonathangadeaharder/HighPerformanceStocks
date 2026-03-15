@@ -1,0 +1,32 @@
+{
+	"ticker": "KAP.IL",
+	"name": "Kazatomprom",
+	"group": "Energy & Infrastructure",
+	"confidence": "medium",
+	"confidenceReason": "World's largest uranium producer but carries geopolitical risk.",
+	"targetPrice": "$25832.50",
+	"bullCase": "Lowest cost producer benefiting from structural uranium deficits.",
+	"bearCase": "Geopolitical risks and potential export route disruptions.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "10%",
+		"exitPE": {
+			"bear": 8,
+			"base": 12,
+			"bull": 15
+		},
+		"basis": "Normalized EPS"
+	},
+	"currentPrice": "$77.20",
+	"marketCap": "$20.0B USD",
+	"consensus": {
+		"yahoo": "$25832.50"
+	},
+	"expectedVolatility": "~46%",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative Forward P/E"
+	},
+	"lastUpdated": "2026-03-15T04:38:38.639Z"
+}

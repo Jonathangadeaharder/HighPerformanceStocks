@@ -4,61 +4,61 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$66.4B USD",
-	"sharpeRatio": -0.12,
-	"expectedCAGR": "-6% - 5%",
+	"marketCap": "$63.6B USD",
+	"sharpeRatio": -0.07,
+	"expectedCAGR": "-4% - 7%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 66.4,
-		"forwardPE": 26.7,
+		"trailingPE": 63.3,
+		"forwardPE": 24,
 		"pegRatio": 1.41,
-		"evEbitda": 45.4
+		"evEbitda": 32.9
 	},
 	"metrics": {
-		"fcfMargin": "~21%",
-		"fcfYield": "~1%",
+		"fcfMargin": "~3%",
+		"fcfYield": "~0%",
 		"roic": "~15%",
-		"roe": "13.0%",
+		"roe": "18.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "75%"
+		"ruleOf40": "130%"
 	},
-	"targetPrice": "$185.42",
+	"targetPrice": "$191.02",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$146.14",
+	"currentPrice": "$139.87",
 	"consensus": {
 		"tipranks": "$140",
-		"yahoo": "$185.42",
+		"yahoo": "$191.02",
 		"stockanalysis": "$133"
 	},
 	"cagrModel": {
 		"horizon": 5,
 		"ttmEPS": 3.26,
 		"epsGrowth": "15%",
-		"dividendYield": "0%",
+		"dividendYield": "1%",
 		"exitPE": {
 			"bear": 20,
 			"base": 27,
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-6%",
-			"base": "0%",
-			"bull": "5%"
+			"bear": "-4%",
+			"base": "2%",
+			"bull": "7%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-12T14:56:14.365Z",
+	"lastUpdated": "2026-03-15T04:38:46.492Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.16,
+		"score": 3.04,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
-			"multiple": 44.8,
-			"cvStock": 0.178,
-			"riskMultiplier": 1.059
+			"multiple": 42.9,
+			"cvStock": 0.183,
+			"riskMultiplier": 1.062
 		}
 	}
 }

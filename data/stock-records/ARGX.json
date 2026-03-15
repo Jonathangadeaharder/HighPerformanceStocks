@@ -4,15 +4,15 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
-	"marketCap": "$44.2B USD",
-	"sharpeRatio": 0.24,
-	"expectedCAGR": "9% - 16%",
+	"marketCap": "$43.3B USD",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "9% - 17%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 36.4,
-		"forwardPE": 21.7,
+		"trailingPE": 35.7,
+		"forwardPE": 21.5,
 		"pegRatio": null,
-		"evEbitda": 37.1
+		"evEbitda": 35.5
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
@@ -22,17 +22,17 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "87%"
 	},
-	"targetPrice": "$1010.73",
+	"targetPrice": "$1002.87",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$714.04",
+	"currentPrice": "$700.45",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1010.73"
+		"yahoo": "$1002.87"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 19.59,
+		"ttmEPS": 19.6,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"exitPE": {
@@ -43,11 +43,11 @@
 		"scenarios": {
 			"bear": "9%",
 			"base": "13%",
-			"bull": "16%"
+			"bull": "17%"
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-12T14:55:57.371Z",
+	"lastUpdated": "2026-03-15T04:38:32.851Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
@@ -55,19 +55,19 @@
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 21.7,
+			"multiple": 21.5,
 			"cvStock": 0.185,
 			"riskMultiplier": 1.063
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 714.04,
+				"price": 700.45,
 				"price6mAgo": 756.83,
-				"price1mAgo": 821.96,
-				"low3m": 705.89,
-				"return6m": -5.7,
-				"return1m": -13.1,
+				"price1mAgo": 843.55,
+				"low3m": 694.14,
+				"return6m": -7.4,
+				"return1m": -17,
 				"near3mLow": true
 			},
 			"revisions": {

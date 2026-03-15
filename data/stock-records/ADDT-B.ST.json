@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "84.2B SEK",
+	"marketCap": "83.0B SEK",
 	"sharpeRatio": 0.02,
 	"expectedCAGR": "1% - 9%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 40.8,
-		"forwardPE": 39.8,
+		"trailingPE": 40.2,
+		"forwardPE": 39.2,
 		"pegRatio": null,
-		"evEbitda": 24.8
+		"evEbitda": 24.6
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
@@ -26,14 +26,14 @@
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "312 SEK",
+	"currentPrice": "308 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 7.64,
+		"ttmEPS": 7.66,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"exitPE": {
@@ -43,20 +43,20 @@
 		},
 		"scenarios": {
 			"bear": "1%",
-			"base": "5%",
+			"base": "6%",
 			"bull": "9%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-12T14:55:56.382Z",
+	"lastUpdated": "2026-03-15T04:38:22.449Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.63,
+		"score": 1.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.8,
+			"multiple": 24.6,
 			"cvStock": 0.053,
 			"riskMultiplier": 0.984
 		}
