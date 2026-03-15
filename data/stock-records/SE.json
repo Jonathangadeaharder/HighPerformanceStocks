@@ -1,0 +1,32 @@
+{
+	"ticker": "SE",
+	"name": "Sea Limited",
+	"group": "Emerging Markets",
+	"confidence": "high",
+	"confidenceReason": "Dominant position in Southeast Asia e-commerce and gaming, re-accelerating profitable growth.",
+	"targetPrice": "$142.92",
+	"bullCase": "Shopee margins expand massively as competitive intensity fades, while Garena delivers highly profitable gaming cash flows to self-fund growth.",
+	"bearCase": "TikTok Shop resurgence or failure to maintain gaming hit pipeline severely compresses margins.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "20%",
+		"exitPE": {
+			"bear": 15,
+			"base": 22,
+			"bull": 30
+		},
+		"basis": "Normalized EPS"
+	},
+	"currentPrice": "$86",
+	"marketCap": "$50.9B USD",
+	"consensus": {
+		"yahoo": "$142.92"
+	},
+	"expectedVolatility": "~52%",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative Forward P/E"
+	},
+	"lastUpdated": "2026-03-15T04:54:26.002Z"
+}

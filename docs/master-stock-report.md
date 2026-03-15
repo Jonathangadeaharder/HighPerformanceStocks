@@ -418,3 +418,19 @@ Forward Return Profile: Expected Volatility: ~40%
 Bull Case: Memory cycle upswing and HBM catch-up drive massive earnings leverage.
 
 Bear Case: Intense competition in foundry and smartphone markets.
+
+9. Sea Limited (SE) – The SE Asia Compounder
+
+Forward Return Profile: Expected Volatility: ~55%
+
+Bull Case: Shopee margins expand massively as competitive intensity fades, while Garena delivers highly profitable gaming cash flows to self-fund growth.
+
+Bear Case: TikTok Shop resurgence or failure to maintain gaming hit pipeline severely compresses margins.
+
+10. PDD Holdings (PDD) – The Global E-Commerce Disruptor
+
+Forward Return Profile: Expected Volatility: ~60%
+
+Bull Case: Temu's global hyper-expansion successfully disrupts Amazon and local e-commerce worldwide, driving unprecedented cash generation at scale.
+
+Bear Case: Geopolitical tariffs, cross-border tax loop closures, and Chinese regulatory unpredictability crush the terminal value.

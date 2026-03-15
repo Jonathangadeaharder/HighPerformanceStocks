@@ -1,0 +1,32 @@
+{
+	"ticker": "PDD",
+	"name": "PDD Holdings",
+	"group": "Emerging Markets",
+	"confidence": "medium",
+	"confidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
+	"targetPrice": "$148.65",
+	"bullCase": "Temu's global hyper-expansion successfully disrupts Amazon and local e-commerce worldwide, driving unprecedented cash generation at scale.",
+	"bearCase": "Geopolitical tariffs, cross-border tax loop closures, and Chinese regulatory unpredictability crush the terminal value.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "18%",
+		"exitPE": {
+			"bear": 8,
+			"base": 12,
+			"bull": 18
+		},
+		"basis": "Normalized EPS"
+	},
+	"currentPrice": "$102.65",
+	"marketCap": "$145.7B USD",
+	"consensus": {
+		"yahoo": "$148.65"
+	},
+	"expectedVolatility": "~36%",
+	"screener": {
+		"engine": "fPERG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative Forward P/E"
+	},
+	"lastUpdated": "2026-03-15T04:54:24.179Z"
+}
