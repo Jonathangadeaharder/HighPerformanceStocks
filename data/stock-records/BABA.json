@@ -18,7 +18,8 @@
 		"roe": "11.2%",
 		"fcfMargin": "~-5%",
 		"fcfYield": "~-15%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "0%"
 	},
 	"targetPrice": "$198.95",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
@@ -46,7 +47,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-15T04:55:34.957Z",
+	"lastUpdated": "2026-03-15T05:10:22.567Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.28,

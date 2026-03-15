@@ -88,6 +88,16 @@ function detectGrowthBranch(stock, valuationPrice) {
 		};
 	}
 
+	if (!valuation.forwardPE || valuation.forwardPE <= 0) {
+		if (priceToBasis != null && priceToBasis > 0) {
+			return {
+				engine: 'tPERG',
+				multipleType: 'Trailing P/E',
+				multiple: priceToBasis
+			};
+		}
+	}
+
 	return {
 		engine: 'fPERG',
 		multipleType: 'Forward P/E',
@@ -202,15 +212,11 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		}
 
 		const dispersion = getAnalystDispersion(summary?.earningsTrend);
-		if (!dispersion) {
-			return {
-				engine: branch.engine,
-				signal: 'NO_DATA',
-				note: 'Missing analyst dispersion data'
-			};
+		let cvStock = CV_BENCHMARK;
+		if (dispersion) {
+			cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
 		}
 
-		const cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
 		const result = computeGrowthScore(
 			branch.engine,
 			branch.multipleType,
@@ -221,12 +227,22 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		if (result.signal === 'PASS') {
 			applyRealityChecks(result, rawPrice, historicalData, summary);
 		}
+		
+		if (!dispersion) {
+			result.note = result.note ? result.note + ' (Used benchmark CV)' : 'Used benchmark CV (missing dispersion data)';
+		}
+		
 		return result;
 	}
 
-	const forwardPE = stock.valuation?.forwardPE;
+	let forwardPE = stock.valuation?.forwardPE;
 	if (!forwardPE || forwardPE <= 0) {
-		return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE' };
+		const ttmBasis = stock.cagrModel?.ttmEPS;
+		if (valuationPrice != null && ttmBasis > 0) {
+			forwardPE = valuationPrice / ttmBasis;
+		} else {
+			return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE and no trailing EPS fallback' };
+		}
 	}
 
 	const divYieldPct = parsePercent(model.dividendYield) || 0;

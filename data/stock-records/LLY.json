@@ -17,7 +17,8 @@
 		"roe": "101.2%",
 		"fcfMargin": "~3%",
 		"fcfYield": "~0%",
-		"netDebtEbitda": "1.2x"
+		"netDebtEbitda": "1.2x",
+		"ruleOf40": "46%"
 	},
 	"targetPrice": "$1216.93",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with gross margins holding near 45%.",
@@ -40,7 +41,7 @@
 		},
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-15T04:55:40.826Z",
+	"lastUpdated": "2026-03-15T05:10:28.380Z",
 	"consensus": {
 		"yahoo": "$1216.93"
 	},

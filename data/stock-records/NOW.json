@@ -17,7 +17,8 @@
 		"roe": "15.5%",
 		"fcfMargin": "~37%",
 		"fcfYield": "~4%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "58%"
 	},
 	"targetPrice": "$189.30",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
@@ -40,7 +41,7 @@
 		},
 		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-15T04:55:43.602Z",
+	"lastUpdated": "2026-03-15T05:10:31.173Z",
 	"consensus": {
 		"yahoo": "$189.30"
 	},

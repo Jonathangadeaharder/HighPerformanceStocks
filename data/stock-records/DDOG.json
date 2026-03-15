@@ -17,7 +17,8 @@
 		"roe": "3.3%",
 		"fcfMargin": "~26%",
 		"fcfYield": "~2%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "55%"
 	},
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
@@ -40,7 +41,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-15T04:55:36.097Z",
+	"lastUpdated": "2026-03-15T05:10:23.694Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},

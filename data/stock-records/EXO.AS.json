@@ -38,13 +38,38 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-15T04:55:37.883Z",
+	"lastUpdated": "2026-03-15T05:10:25.475Z",
 	"consensus": {
 		"yahoo": "€114"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative Forward P/E"
+		"engine": "tPERG",
+		"score": 0.87,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 12,
+			"multipleType": "Trailing P/E",
+			"multiple": 10.5,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
+		},
+		"note": "Cheap, but still stabilizing (downtrend remains active) (Used benchmark CV)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 68.2,
+				"price6mAgo": 83.9,
+				"price1mAgo": 70.25,
+				"low3m": 66.45,
+				"return6m": -18.7,
+				"return1m": -2.9,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		}
 	}
 }

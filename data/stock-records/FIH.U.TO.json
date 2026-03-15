@@ -17,7 +17,8 @@
 	"metrics": {
 		"roe": "14.3%",
 		"fcfMargin": "~67%",
-		"fcfYield": "~18%"
+		"fcfYield": "~18%",
+		"ruleOf40": "3384%"
 	},
 	"targetPrice": "$21",
 	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
@@ -43,10 +44,35 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-15T04:55:38.029Z",
+	"lastUpdated": "2026-03-15T05:10:25.635Z",
 	"screener": {
-		"engine": "fPERG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative Forward P/E"
+		"engine": "tPERG",
+		"score": 0.42,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 14,
+			"multipleType": "Trailing P/E",
+			"multiple": 5.9,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 17.9,
+				"price6mAgo": 17.64,
+				"price1mAgo": 17.64,
+				"low3m": 16.56,
+				"return6m": 1.5,
+				"return1m": 1.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		},
+		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

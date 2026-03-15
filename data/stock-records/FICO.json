@@ -20,7 +20,8 @@
 		"operatingMargin": "~46%",
 		"netDebtEbitda": "3.0x",
 		"fcfMargin": "~28%",
-		"fcfYield": "~2%"
+		"fcfYield": "~2%",
+		"ruleOf40": "44%"
 	},
 	"targetPrice": "$1947.86",
 	"consensus": {
@@ -47,7 +48,7 @@
 		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
 		"ttmEPS": 27.04
 	},
-	"lastUpdated": "2026-03-15T04:55:37.953Z",
+	"lastUpdated": "2026-03-15T05:10:25.551Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.18,

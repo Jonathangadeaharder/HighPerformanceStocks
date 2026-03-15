@@ -18,7 +18,8 @@
 		"roe": "16.9%",
 		"fcfMargin": "~4%",
 		"fcfYield": "~2%",
-		"netDebtEbitda": "3.5x"
+		"netDebtEbitda": "3.5x",
+		"ruleOf40": "78%"
 	},
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
@@ -41,7 +42,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-15T04:55:47.563Z",
+	"lastUpdated": "2026-03-15T05:10:34.964Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},

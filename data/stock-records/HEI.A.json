@@ -20,7 +20,8 @@
 		"operatingMargin": "~22%",
 		"netDebtEbitda": "1.8x",
 		"fcfMargin": "~15%",
-		"fcfYield": "~2%"
+		"fcfYield": "~2%",
+		"ruleOf40": "29%"
 	},
 	"targetPrice": "$280",
 	"consensus": {
@@ -47,10 +48,18 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-15T04:55:39.011Z",
+	"lastUpdated": "2026-03-15T05:10:26.575Z",
 	"screener": {
 		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing analyst dispersion data"
+		"score": 1.66,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 16,
+			"multipleType": "EV/EBITDA",
+			"multiple": 26.6,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
+		},
+		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

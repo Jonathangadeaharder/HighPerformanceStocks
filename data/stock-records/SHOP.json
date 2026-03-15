@@ -17,7 +17,8 @@
 		"roe": "9.8%",
 		"fcfMargin": "~11%",
 		"fcfYield": "~1%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "42%"
 	},
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
@@ -40,7 +41,7 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-15T04:55:45.660Z",
+	"lastUpdated": "2026-03-15T05:10:33.127Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},

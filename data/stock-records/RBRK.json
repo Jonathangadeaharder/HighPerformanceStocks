@@ -15,7 +15,8 @@
 	"metrics": {
 		"fcfMargin": "~31%",
 		"fcfYield": "~4%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "77%"
 	},
 	"targetPrice": "$88.13",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
@@ -35,7 +36,7 @@
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-15T04:55:44.767Z",
+	"lastUpdated": "2026-03-15T05:10:32.123Z",
 	"consensus": {
 		"yahoo": "$88.13"
 	},

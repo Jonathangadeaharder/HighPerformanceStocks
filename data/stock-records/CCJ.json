@@ -15,7 +15,14 @@
 			"base": 20,
 			"bull": 25
 		},
-		"basis": "Normalized EPS"
+		"basis": "Normalized EPS",
+		"dividendYield": "0%",
+		"ttmEPS": 0.99,
+		"scenarios": {
+			"bear": "-25%",
+			"base": "-21%",
+			"bull": "-17%"
+		}
 	},
 	"currentPrice": "$107.92",
 	"marketCap": "$47.0B USD",
@@ -25,8 +32,29 @@
 	"expectedVolatility": "~53%",
 	"screener": {
 		"engine": "fPERG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative Forward P/E"
+		"score": 3.94,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 58.2,
+			"cvStock": 0.104,
+			"riskMultiplier": 1.015
+		}
 	},
-	"lastUpdated": "2026-03-15T04:55:35.126Z"
+	"lastUpdated": "2026-03-15T05:10:22.695Z",
+	"valuation": {
+		"trailingPE": 109,
+		"forwardPE": 58.2,
+		"evEbitda": 51.4
+	},
+	"metrics": {
+		"roe": "8.9%",
+		"fcfMargin": "~14%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "15%"
+	},
+	"expectedCAGR": "-25% - -17%",
+	"sharpeRatio": -0.48
 }

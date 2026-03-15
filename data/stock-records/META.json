@@ -51,7 +51,7 @@
 		"decayFactor": 0.9,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-15T04:55:41.723Z",
+	"lastUpdated": "2026-03-15T05:10:29.283Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.9,

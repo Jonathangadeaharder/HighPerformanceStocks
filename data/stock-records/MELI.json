@@ -17,7 +17,8 @@
 		"roe": "36.0%",
 		"fcfMargin": "~-8%",
 		"fcfYield": "~-3%",
-		"netDebtEbitda": "1.3x"
+		"netDebtEbitda": "1.3x",
+		"ruleOf40": "36%"
 	},
 	"targetPrice": "$2662.77",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
@@ -40,7 +41,7 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-15T04:55:41.782Z",
+	"lastUpdated": "2026-03-15T05:10:29.334Z",
 	"consensus": {
 		"yahoo": "$2662.77"
 	},

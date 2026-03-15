@@ -70,6 +70,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 	if (rawCap) stock.marketCap = fmtMarketCap(rawCap, currency);
 
 	// ── valuation ──
+	if (!stock.valuation) stock.valuation = {};
 	if (stock.valuation) {
 		const pe = quote.trailingPE ?? sd.trailingPE;
 		const fpe = quote.forwardPE ?? sd.forwardPE;
@@ -86,6 +87,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 	}
 
 	// ── metrics ──
+	if (!stock.metrics) stock.metrics = {};
 	if (stock.metrics) {
 		const roe = fd.returnOnEquity;
 		if (roe != null) stock.metrics.roe = fmtPct(roe * 100, 1);
@@ -114,7 +116,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 
 		// Rule of 40: revenue growth % + FCF margin %
 		const revGrowth = fd.revenueGrowth;
-		if (revGrowth != null && fcfMarginPct != null && stock.metrics.ruleOf40 !== undefined) {
+		if (revGrowth != null && fcfMarginPct != null) {
 			stock.metrics.ruleOf40 = fmtRoundPct(revGrowth * 100 + fcfMarginPct);
 		}
 
@@ -145,15 +147,16 @@ function applyUpdates(stock, quote, summary, historicalData) {
 
 	// ── cagrModel ──
 	const model = stock.cagrModel;
-	if (model?.exitPE && model?.scenarios) {
+	if (model?.exitPE) {
 		// TTM EPS — Yahoo returns EPS in the stock's major currency (£ for GBp stocks, not pence)
 		// Skip for stocks using adjusted/normalized EPS (Yahoo returns GAAP; our model uses adjusted)
 		const ttmEpsRaw = quote.epsTrailingTwelveMonths;
 		if (ttmEpsRaw != null && ttmEpsRaw > 0) {
 			const basis = model.basis ?? '';
 			const isAdjusted = /adjusted|normalized|distributable|ANI|non-IFRS|CFO|FCFA2S/i.test(basis);
-			if (!isAdjusted) {
-				const newEps = Math.round(ttmEpsRaw * 100) / 100;
+			const newEps = Math.round(ttmEpsRaw * 100) / 100;
+			
+			if (!isAdjusted || model.ttmEPS === undefined) {
 				// Sanity check: warn if change exceeds 50% (possible unit/currency bug)
 				// With --force, update anyway (legitimate crashes e.g. MU downcycle can exceed 50%)
 				if (model.ttmEPS && Math.abs(newEps - model.ttmEPS) / model.ttmEPS > 0.5) {
@@ -168,6 +171,9 @@ function applyUpdates(stock, quote, summary, historicalData) {
 						);
 					}
 				} else {
+					if (isAdjusted) {
+						console.log(`  ⚠️  ${stock.ticker} — missing adjusted ttmEPS, initializing with GAAP ${newEps}`);
+					}
 					model.ttmEPS = newEps;
 				}
 			}

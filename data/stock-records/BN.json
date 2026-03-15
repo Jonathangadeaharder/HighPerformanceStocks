@@ -49,10 +49,35 @@
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-15T04:55:35.013Z",
+	"lastUpdated": "2026-03-15T05:10:22.562Z",
 	"screener": {
 		"engine": "fANIG",
-		"signal": "NO_DATA",
-		"note": "Missing analyst dispersion data"
+		"score": 0.68,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 25,
+			"multipleType": "P/ANI",
+			"multiple": 16.9,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
+		},
+		"note": "Cheap, but still stabilizing (downtrend remains active) (Used benchmark CV)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 38.37,
+				"price6mAgo": 46.28,
+				"price1mAgo": 47.78,
+				"low3m": 38.28,
+				"return6m": -17.1,
+				"return1m": -19.7,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		}
 	}
 }

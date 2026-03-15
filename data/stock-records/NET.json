@@ -16,7 +16,8 @@
 		"roe": "-8.2%",
 		"fcfMargin": "~18%",
 		"fcfYield": "~1%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "51%"
 	},
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
@@ -39,7 +40,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-15T04:55:42.762Z",
+	"lastUpdated": "2026-03-15T05:10:30.297Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},

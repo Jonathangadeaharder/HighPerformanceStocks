@@ -18,7 +18,8 @@
 		"roe": "9.8%",
 		"fcfMargin": "~10%",
 		"fcfYield": "~3%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "9%"
 	},
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
@@ -41,7 +42,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 31.02
 	},
-	"lastUpdated": "2026-03-15T04:55:35.066Z",
+	"lastUpdated": "2026-03-15T05:10:22.635Z",
 	"consensus": {
 		"yahoo": "$523"
 	},

@@ -18,7 +18,8 @@
 		"roe": "19.8%",
 		"fcfMargin": "~18%",
 		"fcfYield": "~3%",
-		"netDebtEbitda": "Net cash"
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "33%"
 	},
 	"targetPrice": "HK$756.55",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
@@ -46,7 +47,7 @@
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
 	},
-	"lastUpdated": "2026-03-15T04:55:33.047Z",
+	"lastUpdated": "2026-03-15T05:10:20.476Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.02,

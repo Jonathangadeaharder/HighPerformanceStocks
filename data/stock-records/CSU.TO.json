@@ -48,7 +48,7 @@
 		"decayFactor": 0.94,
 		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-15T04:55:36.001Z",
+	"lastUpdated": "2026-03-15T05:10:23.605Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.23,
