@@ -434,3 +434,11 @@ Forward Return Profile: Expected Volatility: ~60%
 Bull Case: Temu's global hyper-expansion successfully disrupts Amazon and local e-commerce worldwide, driving unprecedented cash generation at scale.
 
 Bear Case: Geopolitical tariffs, cross-border tax loop closures, and Chinese regulatory unpredictability crush the terminal value.
+
+11. Materion (MTRN) – The Advanced Materials Niche Monopoly
+
+Forward Return Profile: Expected Volatility: ~40%
+
+Bull Case: Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.
+
+Bear Case: Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.
