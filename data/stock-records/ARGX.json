@@ -47,11 +47,11 @@
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-15T17:31:37.370Z",
+	"lastUpdated": "2026-03-15T21:20:21.268Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
@@ -59,22 +59,6 @@
 			"cvStock": 0.185,
 			"riskMultiplier": 1.063
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 700.45,
-				"price6mAgo": 752.32,
-				"price1mAgo": 843.55,
-				"low3m": 694.14,
-				"return6m": -6.9,
-				"return1m": -17,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 2,
-				"down30d": 11
-			}
-		}
+		"note": "Cheap (0.85) but base CAGR 13% misses the 14% hurdle"
 	}
 }

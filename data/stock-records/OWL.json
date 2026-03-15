@@ -1,0 +1,80 @@
+{
+	"ticker": "OWL",
+	"name": "Blue Owl Capital",
+	"group": "Financials & Alt Assets",
+	"confidence": "medium",
+	"confidenceReason": "Fee-heavy, permanent capital model with high dividend yield. FRE-based earnings growing 15%+ but GAAP EPS heavily distorted by amortization of acquired intangibles.",
+	"targetPrice": "$16.33",
+	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
+	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",
+	"cagrModel": {
+		"horizon": 5,
+		"ttmEPS": 0.1,
+		"epsGrowth": "15%",
+		"dividendYield": "10%",
+		"exitPE": {
+			"bear": 8,
+			"base": 10,
+			"bull": 13
+		},
+		"scenarios": {
+			"bear": "-21%",
+			"base": "-18%",
+			"bull": "-14%"
+		},
+		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
+	},
+	"valuation": {
+		"trailingPE": 87.5,
+		"forwardPE": 8,
+		"evEbitda": 10.8
+	},
+	"metrics": {
+		"aum": "$235B",
+		"aumGrowth": "20% YoY",
+		"roe": "5.2%",
+		"fcfMargin": "~47%",
+		"fcfYield": "~10%",
+		"netDebtEbitda": "3.0x",
+		"ruleOf40": "67%"
+	},
+	"consensus": {
+		"yahoo": "$16.33"
+	},
+	"currentPrice": "$8.75",
+	"marketCap": "$13.7B USD",
+	"expectedCAGR": "-21% - -14%",
+	"expectedVolatility": "~49%",
+	"sharpeRatio": -0.45,
+	"screener": {
+		"engine": "totalReturn",
+		"score": 0.48,
+		"signal": "REJECTED",
+		"inputs": {
+			"growth": 15,
+			"dividendYield": 10,
+			"debtToEquity": 64,
+			"debtPenalty": false,
+			"rawReturn": 25
+		},
+		"note": "Consensus actively collapsing (analyst lag)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 8.75,
+				"price6mAgo": 18.55,
+				"price1mAgo": 12.08,
+				"low3m": 8.58,
+				"return6m": -52.8,
+				"return1m": -27.6,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 0,
+				"down30d": 5
+			}
+		}
+	},
+	"lastUpdated": "2026-03-15T21:20:30.648Z"
+}

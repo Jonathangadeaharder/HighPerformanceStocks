@@ -42,19 +42,20 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 169.22
 	},
-	"lastUpdated": "2026-03-15T17:31:45.888Z",
+	"lastUpdated": "2026-03-15T21:20:28.817Z",
 	"consensus": {
 		"yahoo": "$2081.75"
 	},
 	"screener": {
 		"engine": "totalReturn",
-		"score": 8,
+		"score": 1.5,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 8,
 			"dividendYield": 0,
 			"debtToEquity": 26,
-			"debtPenalty": false
+			"debtPenalty": false,
+			"rawReturn": 8
 		}
 	}
 }

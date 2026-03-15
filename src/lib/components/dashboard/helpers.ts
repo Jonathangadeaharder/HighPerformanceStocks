@@ -16,16 +16,12 @@ export function upsideColor(value: number | null | undefined): string {
 	return '#4ade80';
 }
 
-export function usesGrowthScore(stock: FindingStock): boolean {
+export function isGrowthEngine(stock: FindingStock): boolean {
 	return stock.screener?.engine !== 'totalReturn' && stock.screener?.engine !== 'N/A';
 }
 
 export function scoreLabel(stock: FindingStock): string {
-	if (usesGrowthScore(stock)) {
-		return `${stock.screener?.score ?? 'N/A'} score`;
-	}
-
-	return `${stock.screener?.score ?? 'N/A'}% return`;
+	return `${stock.screener?.score ?? 'N/A'} score`;
 }
 
 export function screenerLabel(stock: FindingStock): string {
@@ -33,14 +29,14 @@ export function screenerLabel(stock: FindingStock): string {
 }
 
 export function detailLabel(stock: FindingStock): string {
-	if (usesGrowthScore(stock)) {
+	if (isGrowthEngine(stock)) {
 		return `${stock.screener?.inputs?.growth ?? 'N/A'}% growth · ${stock.screener?.inputs?.multiple ?? 'N/A'}× ${screenerLabel(stock)}`;
 	}
 
 	const dividendYield = stock.screener?.inputs?.dividendYield ?? 'N/A';
 	const growth = stock.screener?.inputs?.growth ?? 'N/A';
 	const debtPenalty = stock.screener?.inputs?.debtPenalty ? ' · 30% debt penalty' : '';
-	return `${dividendYield}% yield + ${growth}% growth${debtPenalty}`;
+	return `${dividendYield}% yield + ${growth}% growth · Total Return${debtPenalty}`;
 }
 
 export function stabilizationReturn(value: number | null | undefined = 0): string {

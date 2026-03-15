@@ -66,6 +66,17 @@ function deploymentForWait(stock: FindingStock): DeploymentInfo {
 		: { status: 'WAIT', reason: stock.screener?.note ?? 'Cheap, but still stabilizing.' };
 }
 
+function deploymentForFail(stock: FindingStock): DeploymentInfo {
+	const epsGrowth = parsePercent(stock.cagrModel?.epsGrowth) ?? 0;
+	if (epsGrowth >= 20 && (stock.screener?.score ?? 0) >= 1.5) {
+		return {
+			status: 'OVERPRICED',
+			reason: stock.screener?.note ?? 'High-growth business at an extreme valuation. Wait for significant multiple compression.'
+		};
+	}
+	return { status: 'FAIL', reason: stock.screener?.note ?? 'No valuation edge.' };
+}
+
 function assignDeployment(stock: FindingStock): void {
 	const signal = stock.screener?.signal ?? 'NO_DATA';
 
@@ -86,7 +97,7 @@ function assignDeployment(stock: FindingStock): void {
 			return;
 		}
 		case 'FAIL': {
-			stock.deployment = { status: 'FAIL', reason: stock.screener?.note ?? 'No valuation edge.' };
+			stock.deployment = deploymentForFail(stock);
 			return;
 		}
 		case 'NO_DATA': {
@@ -123,9 +134,10 @@ function compareWatchlistStocks(left: FindingStock, right: FindingStock): number
 	const order: Record<DeploymentStatus, number> = {
 		REJECT: 0,
 		FAIL: 1,
-		NO_DATA: 2,
-		DEPLOY: 3,
-		WAIT: 4
+		OVERPRICED: 2,
+		NO_DATA: 3,
+		DEPLOY: 4,
+		WAIT: 5
 	};
 	const deploymentDiff =
 		order[left.deployment?.status ?? 'NO_DATA'] - order[right.deployment?.status ?? 'NO_DATA'];
@@ -149,6 +161,7 @@ function buildCounts(
 		wait: cheapWait.length,
 		reject: watchlist.filter((stock) => stock.deployment?.status === 'REJECT').length,
 		fail: watchlist.filter((stock) => stock.deployment?.status === 'FAIL').length,
+		overpriced: watchlist.filter((stock) => stock.deployment?.status === 'OVERPRICED').length,
 		noData: watchlist.filter((stock) => stock.deployment?.status === 'NO_DATA').length
 	};
 }

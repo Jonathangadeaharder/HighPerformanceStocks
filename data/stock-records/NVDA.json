@@ -49,7 +49,7 @@
 		"decayFactor": 0.75,
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-15T17:31:47.740Z",
+	"lastUpdated": "2026-03-15T21:20:30.707Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.49,

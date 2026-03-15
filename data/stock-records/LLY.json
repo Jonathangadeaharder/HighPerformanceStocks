@@ -41,14 +41,14 @@
 		},
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-15T17:31:44.765Z",
+	"lastUpdated": "2026-03-15T21:20:27.889Z",
 	"consensus": {
 		"yahoo": "$1216.93"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.97,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
@@ -56,22 +56,6 @@
 			"cvStock": 0.067,
 			"riskMultiplier": 0.992
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 985.08,
-				"price6mAgo": 764.71,
-				"price1mAgo": 1036.05,
-				"low3m": 965.6,
-				"return6m": 28.8,
-				"return1m": -4.9,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 13,
-				"down30d": 6
-			}
-		}
+		"note": "Cheap (0.97) but base CAGR 9% misses the 14% hurdle"
 	}
 }

@@ -10,7 +10,7 @@
 	"expectedVolatility": "~34%",
 	"valuation": {
 		"trailingPE": 59.8,
-		"forwardPE": 41.3,
+		"forwardPE": 41.2,
 		"pegRatio": null,
 		"evEbitda": 45.5
 	},
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-15T17:31:43.694Z",
+	"lastUpdated": "2026-03-15T21:20:26.938Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.86,
@@ -55,7 +55,7 @@
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 41.3,
+			"multiple": 41.2,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.97
 		}

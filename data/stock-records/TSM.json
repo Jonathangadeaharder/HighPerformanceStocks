@@ -50,11 +50,11 @@
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-15T17:31:50.769Z",
+	"lastUpdated": "2026-03-15T21:20:34.306Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 28,
 			"multipleType": "Forward P/E",
@@ -62,22 +62,6 @@
 			"cvStock": 0.05,
 			"riskMultiplier": 0.982
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 338.31,
-				"price6mAgo": 262.06,
-				"price1mAgo": 364.2,
-				"low3m": 275.08,
-				"return6m": 29.1,
-				"return1m": -7.1,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 5,
-				"down30d": 0
-			}
-		}
+		"note": "Cheap (0.66) but base CAGR 13% misses the 14% hurdle"
 	}
 }

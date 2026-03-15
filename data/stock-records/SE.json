@@ -33,7 +33,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.58,
-		"signal": "REJECTED",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
@@ -41,26 +41,9 @@
 			"cvStock": 0.133,
 			"riskMultiplier": 1.032
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 86,
-				"price6mAgo": 189.07,
-				"price1mAgo": 108.51,
-				"low3m": 77.05,
-				"return6m": -54.5,
-				"return1m": -20.7,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 3
-			}
-		}
+		"note": "Cheap (0.58) but base CAGR 12% misses the 14% hurdle"
 	},
-	"lastUpdated": "2026-03-15T17:31:49.631Z",
+	"lastUpdated": "2026-03-15T21:20:32.473Z",
 	"valuation": {
 		"trailingPE": 34.1,
 		"forwardPE": 16.8,

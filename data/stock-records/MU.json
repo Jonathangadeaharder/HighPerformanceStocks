@@ -48,11 +48,11 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-15T17:31:46.780Z",
+	"lastUpdated": "2026-03-15T21:20:29.722Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.35,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "Forward P/E",
@@ -60,22 +60,7 @@
 			"cvStock": 0.299,
 			"riskMultiplier": 1.131
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 426.13,
-				"price6mAgo": 158.82,
-				"price1mAgo": 399.78,
-				"low3m": 221.69,
-				"return6m": 168.3,
-				"return1m": 6.6,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 5,
-				"down30d": 0
-			}
-		}
-	}
+		"note": "Cheap (0.35) but base CAGR 1% misses the 14% hurdle (CYCLICAL EPS)"
+	},
+	"cyclical": true
 }

@@ -47,16 +47,34 @@
 		},
 		"basis": "GAAP EPS; utility-like stability warrants narrow PE range"
 	},
-	"lastUpdated": "2026-03-15T17:31:40.768Z",
+	"lastUpdated": "2026-03-15T21:20:24.097Z",
 	"screener": {
 		"engine": "totalReturn",
-		"score": 12,
+		"score": 1,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 6,
 			"dividendYield": 6,
 			"debtToEquity": 114,
-			"debtPenalty": false
+			"debtPenalty": false,
+			"rawReturn": 12
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 36.99,
+				"price6mAgo": 31.77,
+				"price1mAgo": 36.75,
+				"low3m": 31.55,
+				"return6m": 16.4,
+				"return1m": 0.7,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 3
+			}
 		}
 	}
 }

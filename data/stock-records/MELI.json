@@ -41,14 +41,14 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-15T17:31:45.788Z",
+	"lastUpdated": "2026-03-15T21:20:28.803Z",
 	"consensus": {
 		"yahoo": "$2662.77"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.89,
-		"signal": "WAIT",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "Forward P/E",
@@ -56,23 +56,6 @@
 			"cvStock": 0.123,
 			"riskMultiplier": 1.026
 		},
-		"note": "Cheap, but still stabilizing (downtrend remains active)",
-		"realityChecks": {
-			"stabilization": {
-				"pass": false,
-				"price": 1670,
-				"price6mAgo": 2390.14,
-				"price1mAgo": 1975.51,
-				"low3m": 1631.18,
-				"return6m": -30.1,
-				"return1m": -15.5,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 2,
-				"down30d": 10
-			}
-		}
+		"note": "Cheap (0.89) but base CAGR 12% misses the 14% hurdle"
 	}
 }

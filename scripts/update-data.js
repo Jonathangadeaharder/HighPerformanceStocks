@@ -140,9 +140,14 @@ function applyUpdates(stock, quote, summary, historicalData) {
 
 	// ── consensus.yahoo (analyst mean target price) ──
 	if (fd.targetMeanPrice != null) {
-		if (!stock.consensus) stock.consensus = {};
-		stock.consensus.yahoo = fmtPrice(fd.targetMeanPrice, currency);
-		stock.targetPrice = stock.consensus.yahoo;
+		const isAnomalous = fd.targetMeanPrice > rawPrice * 3 || fd.targetMeanPrice < rawPrice * 0.5;
+		if (isAnomalous) {
+			console.log(`  ⚠️  ${stock.ticker} — anomalous target price (${fd.targetMeanPrice} vs price ${rawPrice}), skipping consensus update (currency bug)`);
+		} else {
+			if (!stock.consensus) stock.consensus = {};
+			stock.consensus.yahoo = fmtPrice(fd.targetMeanPrice, currency);
+			stock.targetPrice = stock.consensus.yahoo;
+		}
 	}
 
 	// ── cagrModel ──
@@ -155,7 +160,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 			const basis = model.basis ?? '';
 			const isAdjusted = /adjusted|normalized|distributable|ANI|non-IFRS|CFO|FCFA2S/i.test(basis);
 			const newEps = Math.round(ttmEpsRaw * 100) / 100;
-			
+
 			if (!isAdjusted || model.ttmEPS === undefined) {
 				// Sanity check: warn if change exceeds 50% (possible unit/currency bug)
 				// With --force, update anyway (legitimate crashes e.g. MU downcycle can exceed 50%)
@@ -172,7 +177,9 @@ function applyUpdates(stock, quote, summary, historicalData) {
 					}
 				} else {
 					if (isAdjusted) {
-						console.log(`  ⚠️  ${stock.ticker} — missing adjusted ttmEPS, initializing with GAAP ${newEps}`);
+						console.log(
+							`  ⚠️  ${stock.ticker} — missing adjusted ttmEPS, initializing with GAAP ${newEps}`
+						);
 					}
 					model.ttmEPS = newEps;
 				}

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { DashboardCounts, FindingStock } from '$lib/types/dashboard';
-	import { detailLabel, screenerLabel, stabilizationReturn, watchSignalClass } from './helpers';
+	import { detailLabel, stabilizationReturn, watchSignalClass } from './helpers';
 
 	let {
 		watchlist,
@@ -23,7 +23,7 @@
 	<button class="watchlist-header" onclick={onToggleWatchlist}>
 		<span class="section-label" style="margin:0">Watchlist</span>
 		<span class="watchlist-counts">
-			{counts.reject} rejected · {counts.fail} insufficient edge/return · {counts.noData} no data
+			{counts.reject} rejected · {counts.overpriced} overpriced · {counts.fail} insufficient edge/return · {counts.noData} no data
 		</span>
 		<span class="chevron" class:open={showWatchlist}>›</span>
 	</button>
@@ -47,7 +47,9 @@
 						<span class="watch-signal {watchSignalClass(stock)}">
 							{stock.deployment?.status ?? 'N/A'}
 						</span>
-						{#if stock.screener?.engine !== 'N/A'}
+						{#if stock.screener?.engine === 'N/A'}
+							<!-- No screener data to display -->
+						{:else}
 							<span class="watch-score">
 								{stock.screener?.score != null ? `${stock.screener.score} · ` : ''}{detailLabel(
 									stock

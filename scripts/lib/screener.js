@@ -4,13 +4,22 @@ import { parseNumber } from './display-formatters.js';
 const GROWTH_ROUTING_THRESHOLD = 8;
 const CV_BENCHMARK = 0.08;
 const R2_NOISE = 0.6;
-const FPERG_THRESHOLD = 1.0;
 const TOTAL_RETURN_THRESHOLD = 12.0;
 const DEBT_PENALTY_THRESHOLD = 150;
 const DEBT_PENALTY_FACTOR = 0.3;
 const STABILIZATION_6M_THRESHOLD = -10;
 const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
+const ETF_HURDLE_CAGR = 14;
+
+const ENGINE_THRESHOLDS = {
+	fPERG: 1.0,
+	tPERG: 1.0,
+	fEVG: 0.6,
+	fFREG: 0.6,
+	fANIG: 0.8,
+	fCFG: 0.8
+};
 
 function getAnalystDispersion(earningsTrend) {
 	if (!earningsTrend?.trend) return null;
@@ -26,11 +35,12 @@ function getAnalystDispersion(earningsTrend) {
 function computeGrowthScore(engine, multipleType, multiple, growthPct, cvStock) {
 	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
 	const score = (multiple / growthPct) * riskMultiplier;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
 
 	return {
 		engine,
 		score: +score.toFixed(2),
-		signal: score <= FPERG_THRESHOLD ? 'PASS' : 'FAIL',
+		signal: score <= threshold ? 'PASS' : 'FAIL',
 		inputs: {
 			growth: growthPct,
 			multipleType,
@@ -125,15 +135,20 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 	const baseReturn = divYieldPct + growthPct;
 	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
 
+	// Normalize score: Price / Expected Return. Lower is better. 1.0 is the hurdle rate.
+	// We want 12% to be 1.0. 24% to be 0.5. 8% to be 1.5.
+	const normalizedScore = TOTAL_RETURN_THRESHOLD / riskAdjReturn;
+
 	return {
 		engine: 'totalReturn',
-		score: +riskAdjReturn.toFixed(1),
+		score: +normalizedScore.toFixed(2),
 		signal: riskAdjReturn >= TOTAL_RETURN_THRESHOLD ? 'PASS' : 'FAIL',
 		inputs: {
 			growth: growthPct,
 			dividendYield: divYieldPct,
 			debtToEquity: +(debtToEquity ?? 0).toFixed(0),
-			debtPenalty: hasPenalty
+			debtPenalty: hasPenalty,
+			rawReturn: +riskAdjReturn.toFixed(1)
 		}
 	};
 }
@@ -202,37 +217,54 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 	}
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
-		const branch = detectGrowthBranch(stock, valuationPrice);
-		if (!branch.multiple || branch.multiple <= 0) {
-			return {
-				engine: branch.engine,
-				signal: 'NO_DATA',
-				note: `Missing/negative ${branch.multipleType}`
-			};
-		}
+		const divYieldPct = parsePercent(model.dividendYield) || 0;
+		if (divYieldPct < 5.0) {
+			const branch = detectGrowthBranch(stock, valuationPrice);
+			if (!branch.multiple || branch.multiple <= 0) {
+				return {
+					engine: branch.engine,
+					signal: 'NO_DATA',
+					note: `Missing/negative ${branch.multipleType}`
+				};
+			}
 
-		const dispersion = getAnalystDispersion(summary?.earningsTrend);
-		let cvStock = CV_BENCHMARK;
-		if (dispersion) {
-			cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
-		}
+			const dispersion = getAnalystDispersion(summary?.earningsTrend);
+			let cvStock = CV_BENCHMARK;
+			if (dispersion) {
+				cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
+			}
 
-		const result = computeGrowthScore(
-			branch.engine,
-			branch.multipleType,
-			branch.multiple,
-			growthPct,
-			cvStock
-		);
-		if (result.signal === 'PASS') {
-			applyRealityChecks(result, rawPrice, historicalData, summary);
+			const result = computeGrowthScore(
+				branch.engine,
+				branch.multipleType,
+				branch.multiple,
+				growthPct,
+				cvStock
+			);
+
+			// CAGR sanity gate: cheap valuation is meaningless if forward returns are poor
+			const baseCagr = parsePercent(model?.scenarios?.base);
+			if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_CAGR) {
+				result.signal = 'FAIL';
+				result.note = `Cheap (${result.score}) but base CAGR ${baseCagr}% misses the ${ETF_HURDLE_CAGR}% hurdle`;
+			}
+
+			if (result.signal === 'PASS') {
+				applyRealityChecks(result, rawPrice, historicalData, summary);
+			}
+
+			if (!dispersion) {
+				result.note = result.note
+					? result.note + ' (Used benchmark CV)'
+					: 'Used benchmark CV (missing dispersion data)';
+			}
+
+			if (stock.cyclical) {
+				result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
+			}
+
+			return result;
 		}
-		
-		if (!dispersion) {
-			result.note = result.note ? result.note + ' (Used benchmark CV)' : 'Used benchmark CV (missing dispersion data)';
-		}
-		
-		return result;
 	}
 
 	let forwardPE = stock.valuation?.forwardPE;
@@ -241,11 +273,25 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		if (valuationPrice != null && ttmBasis > 0) {
 			forwardPE = valuationPrice / ttmBasis;
 		} else {
-			return { engine: 'totalReturn', signal: 'NO_DATA', note: 'Missing/negative forward PE and no trailing EPS fallback' };
+			return {
+				engine: 'totalReturn',
+				signal: 'NO_DATA',
+				note: 'Missing/negative forward PE and no trailing EPS fallback'
+			};
 		}
 	}
 
 	const divYieldPct = parsePercent(model.dividendYield) || 0;
 	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
-	return computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
+	const result = computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
+
+	if (stock.cyclical) {
+		result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
+	}
+
+	if (result.signal === 'PASS') {
+		applyRealityChecks(result, rawPrice, historicalData, summary);
+	}
+
+	return result;
 }

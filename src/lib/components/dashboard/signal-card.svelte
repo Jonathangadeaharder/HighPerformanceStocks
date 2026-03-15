@@ -11,7 +11,7 @@
 		screenerNote,
 		stabilizationReturn,
 		upsideColor,
-		usesGrowthScore
+		isGrowthEngine
 	} from './helpers';
 
 	type CardKind = 'deploy' | 'wait';
@@ -39,7 +39,7 @@
 	<div class="signal-row2">
 		<span
 			class="score"
-			style="color:{kind === 'deploy' && !usesGrowthScore(stock)
+			style="color:{kind === 'deploy' && !isGrowthEngine(stock)
 				? '#22c55e'
 				: scoreColor(stock.screener?.score)}"
 		>

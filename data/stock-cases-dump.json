@@ -1,0 +1,512 @@
+[
+  {
+    "Ticker": "0700.HK",
+    "ConfidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
+    "BullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
+    "BearCase": "Chinese regulatory risk remains — gaming license freezes, antitrust actions, or data privacy rules could resurface. Advertising revenue is cyclically exposed to China's weak consumer economy. International gaming competition from Microsoft/Activision intensifying. VIE structure risk similar to BABA for offshore investors. Heavy investment in AI and cloud could compress margins near-term. HKD-denominated stock adds currency layer for USD-based investors (HKD pegged to USD via 7.75-7.85 band, but peg could theoretically break under extreme stress)."
+  },
+  {
+    "Ticker": "ABBV",
+    "ConfidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
+    "BullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
+    "BearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US."
+  },
+  {
+    "Ticker": "ADDT-B.ST",
+    "ConfidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
+    "BullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
+    "BearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth."
+  },
+  {
+    "Ticker": "ADYEN.AS",
+    "ConfidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
+    "BullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
+    "BearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11)."
+  },
+  {
+    "Ticker": "AMD",
+    "ConfidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
+    "BullCase": "The only viable merchant silicon alternative to NVIDIA. EPYC server CPUs are taking massive share from Intel, while MI450 offers a strong AI GPU roadmap.",
+    "BearCase": "Highly cyclical end markets (PC, gaming) can drag down data center outperformance. Remains a distant second to NVIDIA in AI software ecosystem (CUDA)."
+  },
+  {
+    "Ticker": "ANET",
+    "ConfidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
+    "BullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
+    "BearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant."
+  },
+  {
+    "Ticker": "APO",
+    "ConfidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
+    "BullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
+    "BearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity."
+  },
+  {
+    "Ticker": "APP",
+    "ConfidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
+    "BullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
+    "BearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction."
+  },
+  {
+    "Ticker": "ARGX",
+    "ConfidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
+    "BullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
+    "BearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo)."
+  },
+  {
+    "Ticker": "ASML",
+    "ConfidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
+    "BullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
+    "BearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models."
+  },
+  {
+    "Ticker": "AVGO",
+    "ConfidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
+    "BullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
+    "BearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk."
+  },
+  {
+    "Ticker": "BABA",
+    "ConfidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
+    "BullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
+    "BearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock."
+  },
+  {
+    "Ticker": "BN",
+    "ConfidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
+    "BullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
+    "BearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens."
+  },
+  {
+    "Ticker": "BRK.B",
+    "ConfidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
+    "BullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
+    "BearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine."
+  },
+  {
+    "Ticker": "CCJ",
+    "ConfidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
+    "BullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
+    "BearCase": "Uranium price volatility and execution risks in mining operations."
+  },
+  {
+    "Ticker": "CDNS",
+    "ConfidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
+    "BullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
+    "BearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued."
+  },
+  {
+    "Ticker": "CRM",
+    "ConfidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
+    "BullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
+    "BearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses."
+  },
+  {
+    "Ticker": "CRWD",
+    "ConfidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
+    "BullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
+    "BearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint."
+  },
+  {
+    "Ticker": "CSU.TO",
+    "ConfidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
+    "BullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
+    "BearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk."
+  },
+  {
+    "Ticker": "DDOG",
+    "ConfidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
+    "BullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
+    "BearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools."
+  },
+  {
+    "Ticker": "DHR",
+    "ConfidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
+    "BullCase": "Historically elite serial acquirer with proven Danaher Business System (DBS). 450%+ total return over 10 years. Current trough could be a re-entry point. Masimo acquisition adds new capabilities.",
+    "BearCase": "ROIC depressed at ~6.8%. Mid-single-digit growth. Integration risk from $9.9B Masimo acquisition. Recovery timeline uncertain."
+  },
+  {
+    "Ticker": "DPLM.L",
+    "ConfidenceReason": "UK serial acquirer in technical products distribution. ROIC ~15%, ROE ~20%, 14% organic revenue growth in Q1 2026. Unanimous analyst Buy. But CAGR of 12-16% is borderline on the floor.",
+    "BullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
+    "BearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E."
+  },
+  {
+    "Ticker": "EPD",
+    "ConfidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
+    "BullCase": "Most conservative and best-managed midstream MLP. 25 consecutive years of distribution increases. Investment-grade balance sheet. NGL and petrochemical infrastructure benefits from US shale production growth. 5.8% yield with 3-5% distribution growth.",
+    "BearCase": "Slower growth profile than ET or LNG. MLP tax complexity. Lower upside at current valuation. Energy transition could reduce long-term hydrocarbon volumes."
+  },
+  {
+    "Ticker": "EQT.ST",
+    "ConfidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
+    "BullCase": "Europe's premier private equity firm. Strong fundraising momentum and a strategic push into Asia and retail wealth management channels provide a long, diversified runway for fee-related earnings growth.",
+    "BearCase": "The European macro stagnation noted across the portfolio is toxic for private equity. If the European IPO and M&A exit windows freeze due to flat industrial output, EQT's carried interest will collapse, trapping capital."
+  },
+  {
+    "Ticker": "ET",
+    "ConfidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
+    "BullCase": "Largest and most diversified US midstream network (130,000 miles of pipeline). 7%+ distribution yield growing 3-5% annually. AI data center power demand is a secular tailwind for natural gas. Low valuation relative to peers.",
+    "BearCase": "High leverage at 4x net debt/EBITDA. MLP structure adds tax complexity. Management has a mixed capital allocation track record. Commodity price sensitivity on gathering and processing segments."
+  },
+  {
+    "Ticker": "EXEL",
+    "ConfidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
+    "BullCase": "A classic value anomaly. A highly profitable, cash-generating oncology firm trading at deep value multiples. It absorbs macroeconomic volatility shocks that typically devastate high-beta tech holdings.",
+    "BearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies."
+  },
+  {
+    "Ticker": "EXO.AS",
+    "ConfidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
+    "BullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
+    "BearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns."
+  },
+  {
+    "Ticker": "FFH.TO",
+    "ConfidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
+    "BullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
+    "BearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value."
+  },
+  {
+    "Ticker": "FICO",
+    "ConfidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
+    "BullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
+    "BearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression."
+  },
+  {
+    "Ticker": "FIH.U.TO",
+    "ConfidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
+    "BullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
+    "BearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions."
+  },
+  {
+    "Ticker": "FNV",
+    "ConfidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
+    "BullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
+    "BearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments."
+  },
+  {
+    "Ticker": "GOOGL",
+    "ConfidenceReason": "Trading at 12.3% discount to DCF intrinsic value ($340 vs $298). Cash machine. But PEG 2.3x signals slowing growth, too low-beta for 2x strategy.",
+    "BullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
+    "BearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket."
+  },
+  {
+    "Ticker": "HALO",
+    "ConfidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
+    "BullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
+    "BearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility."
+  },
+  {
+    "Ticker": "HDB",
+    "ConfidenceReason": "India's largest private bank by market cap. Consistent ~15% loan growth post-merger with HDFC Ltd. Low NPAs (~1.3%) and strong ROA (~1.9%). ADR trades at slight premium to local shares.",
+    "BullCase": "India's banking sector is under-penetrated with credit-to-GDP at ~55% vs 150%+ in developed markets, giving HDFC Bank a multi-decade growth runway. The HDFC Ltd merger creates the largest private-sector balance sheet in India with cross-selling opportunities across mortgages, insurance, and asset management. Net interest margins remain best-in-class at ~3.5%. Digital adoption (PayZapp, SmartBUY) is accelerating fee income. Post-merger cost synergies are still being unlocked.",
+    "BearCase": "Post-merger integration is diluting ROE from ~17% to ~15% as the lower-yielding mortgage book gets absorbed. The RBI's tightening cycle has compressed NIMs. Intense competition from Jio Financial and other fintechs could pressure market share in unsecured lending. ADR investors face INR depreciation risk (~3-4% annual drag historically). Regulatory risk from RBI's increasing scrutiny of digital lending practices."
+  },
+  {
+    "Ticker": "HEI.A",
+    "ConfidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
+    "BullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
+    "BearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock."
+  },
+  {
+    "Ticker": "HEI",
+    "ConfidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
+    "BullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
+    "BearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression."
+  },
+  {
+    "Ticker": "INVE-B.ST",
+    "ConfidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
+    "BullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
+    "BearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term."
+  },
+  {
+    "Ticker": "ISRG",
+    "ConfidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
+    "BullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
+    "BearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude."
+  },
+  {
+    "Ticker": "KAP.IL",
+    "ConfidenceReason": "World's largest uranium producer but carries geopolitical risk.",
+    "BullCase": "Lowest cost producer benefiting from structural uranium deficits.",
+    "BearCase": "Geopolitical risks and potential export route disruptions."
+  },
+  {
+    "Ticker": "KKR",
+    "ConfidenceReason": "Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
+    "BullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
+    "BearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly."
+  },
+  {
+    "Ticker": "KYCCF",
+    "ConfidenceReason": "Japan's most profitable manufacturer. 55%+ operating margins in factory automation sensors. Direct sales model creates deep moat. But premium valuation and yen exposure.",
+    "BullCase": "World leader in factory automation sensors and vision systems. 55%+ operating margins are best-in-class in industrial tech. Direct sales model creates stickiness and competitive moat. Massive net cash position. Secular tailwind from global factory automation and AI-driven manufacturing.",
+    "BearCase": "38x PE is expensive for a hardware company. JPY/USD currency risk for US-listed ADR. Cyclical exposure to manufacturing capex. Growth limited to 10-12% in mature markets."
+  },
+  {
+    "Ticker": "LIFCO-B.ST",
+    "ConfidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
+    "BullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
+    "BearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple."
+  },
+  {
+    "Ticker": "LLY",
+    "ConfidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
+    "BullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with gross margins holding near 45%.",
+    "BearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples."
+  },
+  {
+    "Ticker": "LMN.V",
+    "ConfidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
+    "BullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
+    "BearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software."
+  },
+  {
+    "Ticker": "LNG",
+    "ConfidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
+    "BullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
+    "BearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand."
+  },
+  {
+    "Ticker": "MA",
+    "ConfidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
+    "BullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
+    "BearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity."
+  },
+  {
+    "Ticker": "MELI",
+    "ConfidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
+    "BullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
+    "BearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets."
+  },
+  {
+    "Ticker": "META",
+    "ConfidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
+    "BullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
+    "BearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply."
+  },
+  {
+    "Ticker": "MKL",
+    "ConfidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
+    "BullCase": "Markel's ongoing restructuring is bearing fruit as it exits lower-margin reinsurance to focus on highly profitable specialty lines. The 'Markel Ventures' private equity arm provides a robust, non-correlated earnings floor, driving margin expansion.",
+    "BearCase": "Restructuring execution risk remains. If the combined ratio slips above 95%, the compounding math breaks down and the historical premium multiple will face permanent compression."
+  },
+  {
+    "Ticker": "MRVL",
+    "ConfidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
+    "BullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
+    "BearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment."
+  },
+  {
+    "Ticker": "MTRN",
+    "ConfidenceReason": "Niche advanced materials provider with strong exposure to aerospace, defense, and semiconductor end markets.",
+    "BullCase": "Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.",
+    "BearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions."
+  },
+  {
+    "Ticker": "MU",
+    "ConfidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
+    "BullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
+    "BearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle."
+  },
+  {
+    "Ticker": "NBIX",
+    "ConfidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
+    "BullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
+    "BearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates."
+  },
+  {
+    "Ticker": "NET",
+    "ConfidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
+    "BullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
+    "BearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation."
+  },
+  {
+    "Ticker": "NNI",
+    "ConfidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
+    "BullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
+    "BearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing."
+  },
+  {
+    "Ticker": "NOW",
+    "ConfidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
+    "BullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
+    "BearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns."
+  },
+  {
+    "Ticker": "NU",
+    "ConfidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
+    "BullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
+    "BearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche."
+  },
+  {
+    "Ticker": "NVDA",
+    "ConfidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
+    "BullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
+    "BearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent."
+  },
+  {
+    "Ticker": "PANW",
+    "ConfidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
+    "BullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
+    "BearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC."
+  },
+  {
+    "Ticker": "PDD",
+    "ConfidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
+    "BullCase": "Temu's global hyper-expansion successfully disrupts Amazon and local e-commerce worldwide, driving unprecedented cash generation at scale.",
+    "BearCase": "Geopolitical tariffs, cross-border tax loop closures, and Chinese regulatory unpredictability crush the terminal value."
+  },
+  {
+    "Ticker": "PLTR",
+    "ConfidenceReason": "AIP platform gaining massive traction in commercial sector.",
+    "BullCase": "Unmatched data integration OS becomes the de facto standard for enterprise AI.",
+    "BearCase": "High valuation and potential lumpiness in government contracts."
+  },
+  {
+    "Ticker": "RBRK",
+    "ConfidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
+    "BullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
+    "BearCase": "Newly public company with limited track record of sustained profitability; highly competitive data protection market."
+  },
+  {
+    "Ticker": "REGN",
+    "ConfidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
+    "BullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
+    "BearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear."
+  },
+  {
+    "Ticker": "RGLD",
+    "ConfidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
+    "BullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
+    "BearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind."
+  },
+  {
+    "Ticker": "ROP",
+    "ConfidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
+    "BullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
+    "BearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line."
+  },
+  {
+    "Ticker": "RXRX",
+    "ConfidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
+    "BullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
+    "BearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero."
+  },
+  {
+    "Ticker": "SE",
+    "ConfidenceReason": "Dominant position in Southeast Asia e-commerce and gaming, re-accelerating profitable growth.",
+    "BullCase": "Shopee margins expand massively as competitive intensity fades, while Garena delivers highly profitable gaming cash flows to self-fund growth.",
+    "BearCase": "TikTok Shop resurgence or failure to maintain gaming hit pipeline severely compresses margins."
+  },
+  {
+    "Ticker": "SHOP",
+    "ConfidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
+    "BullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
+    "BearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume."
+  },
+  {
+    "Ticker": "SMSN.IL",
+    "ConfidenceReason": "Global leader in memory but cyclical exposure.",
+    "BullCase": "Memory cycle upswing and HBM catch-up drive massive earnings leverage.",
+    "BearCase": "Intense competition in foundry and smartphone markets."
+  },
+  {
+    "Ticker": "SNPS",
+    "ConfidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 2.5x.",
+    "BullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
+    "BearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~2.5x Net Debt/EBITDA adds financial risk on top of extreme valuation."
+  },
+  {
+    "Ticker": "TDG",
+    "ConfidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
+    "BullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
+    "BearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution."
+  },
+  {
+    "Ticker": "TFPM",
+    "ConfidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
+    "BullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
+    "BearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint."
+  },
+  {
+    "Ticker": "TOI.V",
+    "ConfidenceReason": "Strong Sharpe (0.75), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
+    "BullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
+    "BearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs."
+  },
+  {
+    "Ticker": "TPL",
+    "ConfidenceReason": "Irreplaceable 880K-acre Permian asset with world-class profitability (39% ROE, 30% ROIC, 62% FCF margin). Data center optionality via Bolt partnership. But 41x P/E after 50% February rally prices in much of the upside.",
+    "BullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
+    "BearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot."
+  },
+  {
+    "Ticker": "TSM",
+    "ConfidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
+    "BullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
+    "BearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed."
+  },
+  {
+    "Ticker": "TVK.TO",
+    "ConfidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
+    "BullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
+    "BearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk."
+  },
+  {
+    "Ticker": "V",
+    "ConfidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
+    "BullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
+    "BearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity."
+  },
+  {
+    "Ticker": "VEEV",
+    "ConfidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
+    "BullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
+    "BearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk."
+  },
+  {
+    "Ticker": "VIT-B.ST",
+    "ConfidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%).",
+    "BullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
+    "BearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders."
+  },
+  {
+    "Ticker": "VNOM",
+    "ConfidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
+    "BullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
+    "BearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure."
+  },
+  {
+    "Ticker": "VRT",
+    "ConfidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
+    "BullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
+    "BearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story."
+  },
+  {
+    "Ticker": "VRTX",
+    "ConfidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
+    "BullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
+    "BearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic."
+  },
+  {
+    "Ticker": "WPM",
+    "ConfidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
+    "BullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
+    "BearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly."
+  },
+  {
+    "Ticker": "XYZ",
+    "ConfidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
+    "BullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
+    "BearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine."
+  },
+  {
+    "Ticker": "ZS",
+    "ConfidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
+    "BullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
+    "BearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises."
+  }
+]

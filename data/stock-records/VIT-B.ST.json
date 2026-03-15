@@ -48,34 +48,17 @@
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-15T17:31:51.766Z",
+	"lastUpdated": "2026-03-15T21:20:34.463Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.74,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 9.1,
 			"cvStock": 0.045,
 			"riskMultiplier": 0.979
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 240.6,
-				"price6mAgo": 330.2,
-				"price1mAgo": 234,
-				"low3m": 221.8,
-				"return6m": -27.1,
-				"return1m": 2.8,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 3,
-				"down30d": 0
-			}
 		}
 	}
 }

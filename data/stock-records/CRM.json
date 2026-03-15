@@ -47,11 +47,11 @@
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-15T17:31:39.802Z",
+	"lastUpdated": "2026-03-15T21:20:23.115Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
@@ -59,22 +59,6 @@
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 192.83,
-				"price6mAgo": 239.31,
-				"price1mAgo": 184.29,
-				"low3m": 174.57,
-				"return6m": -19.4,
-				"return1m": 4.6,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 17,
-				"down30d": 15
-			}
-		}
+		"note": "Cheap (0.85) but base CAGR 12% misses the 14% hurdle"
 	}
 }

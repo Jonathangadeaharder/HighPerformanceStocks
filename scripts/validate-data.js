@@ -80,7 +80,7 @@ function verifyData() {
 		if (!data.screener) {
 			errors.push(`Missing 'screener' object`);
 		} else {
-			const validEngines = ['fPERG', 'fEVG', 'fCFG', 'fANIG', 'fFREG', 'totalReturn', 'N/A'];
+			const validEngines = ['fPERG', 'tPERG', 'fEVG', 'fCFG', 'fANIG', 'fFREG', 'totalReturn', 'N/A'];
 			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
@@ -94,6 +94,19 @@ function verifyData() {
 				!data.screener.note
 			) {
 				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
+			}
+		}
+
+		// 5b. Verify screener/CAGR consistency: PASS signal should align with viable base CAGR
+		if (
+			data.screener?.signal === 'PASS' &&
+			data.cagrModel?.scenarios?.base
+		) {
+			const baseCagr = parsePercent(data.cagrModel.scenarios.base);
+			if (baseCagr != null && baseCagr < 14) {
+				errors.push(
+					`Screener PASS but base CAGR ${baseCagr}% < 14% ETF hurdle (valuation/CAGR mismatch)`
+				);
 			}
 		}
 

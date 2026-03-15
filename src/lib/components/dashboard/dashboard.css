@@ -651,6 +651,12 @@ header h1 {
 	border: 1px solid rgba(245, 158, 11, 0.2);
 }
 
+.watch-signal.overpriced {
+	background: rgba(139, 92, 246, 0.1);
+	color: #a78bfa;
+	border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
 .watch-signal.fail {
 	background: rgba(113, 113, 122, 0.08);
 	color: #52525b;

@@ -4,7 +4,7 @@
 	"group": "Energy & Infrastructure",
 	"confidence": "medium",
 	"confidenceReason": "World's largest uranium producer but carries geopolitical risk.",
-	"targetPrice": "$25832.50",
+	"targetPrice": "$95.00",
 	"bullCase": "Lowest cost producer benefiting from structural uranium deficits.",
 	"bearCase": "Geopolitical risks and potential export route disruptions.",
 	"cagrModel": {
@@ -27,19 +27,19 @@
 	"currentPrice": "$77.20",
 	"marketCap": "$20.0B USD",
 	"consensus": {
-		"yahoo": "$25832.50"
+		"yahoo": "$95.00"
 	},
 	"expectedVolatility": "~46%",
 	"screener": {
-		"engine": "tPERG",
-		"score": 0.84,
+		"engine": "totalReturn",
+		"score": 0.57,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Trailing P/E",
-			"multiple": 12.5,
-			"cvStock": 0.08,
-			"riskMultiplier": 1
+			"dividendYield": 6,
+			"debtToEquity": 5,
+			"debtPenalty": false,
+			"rawReturn": 21
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -57,10 +57,9 @@
 				"up30d": 0,
 				"down30d": 0
 			}
-		},
-		"note": "Used benchmark CV (missing dispersion data)"
+		}
 	},
-	"lastUpdated": "2026-03-15T17:31:43.765Z",
+	"lastUpdated": "2026-03-15T21:20:27.006Z",
 	"valuation": {
 		"trailingPE": 12.5,
 		"forwardPE": 0,

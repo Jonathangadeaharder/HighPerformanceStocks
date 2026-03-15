@@ -47,16 +47,17 @@
 		},
 		"basis": "Through-cycle normalized growth; current ~5% consensus reflects cyclical trough in factory automation"
 	},
-	"lastUpdated": "2026-03-15T17:31:44.681Z",
+	"lastUpdated": "2026-03-15T21:20:27.822Z",
 	"screener": {
 		"engine": "totalReturn",
-		"score": 9,
+		"score": 1.33,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 8,
 			"dividendYield": 1,
 			"debtToEquity": 0,
-			"debtPenalty": false
+			"debtPenalty": false,
+			"rawReturn": 9
 		}
 	}
 }

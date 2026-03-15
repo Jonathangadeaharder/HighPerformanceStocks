@@ -47,17 +47,34 @@
 		},
 		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
 	},
-	"lastUpdated": "2026-03-15T17:31:40.933Z",
+	"lastUpdated": "2026-03-15T21:20:24.231Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.27,
-		"signal": "FAIL",
+		"engine": "totalReturn",
+		"score": 0.71,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 11.9,
-			"cvStock": 0.185,
-			"riskMultiplier": 1.063
+			"dividendYield": 7,
+			"debtToEquity": 142,
+			"debtPenalty": false,
+			"rawReturn": 17
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 18.75,
+				"price6mAgo": 17.58,
+				"price1mAgo": 18.61,
+				"low3m": 16.18,
+				"return6m": 6.7,
+				"return1m": 0.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 5
+			}
 		}
 	}
 }

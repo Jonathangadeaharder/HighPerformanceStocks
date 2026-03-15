@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A stock research dashboard built with SvelteKit 2 + Svelte 5, deployed via `@sveltejs/adapter-node`. It evaluates ~40+ global equities using a multi-scenario CAGR model with exponential growth decay, a bifurcated screener (fPERG / Total Return engines), and a world volatility regime signal. The single-page dashboard classifies stocks into Deploy / Wait / Watchlist buckets.
+A stock research dashboard built with SvelteKit 2 + Svelte 5, deployed via `@sveltejs/adapter-node`. It evaluates ~85 global equities using a multi-scenario CAGR model with exponential growth decay, a multi-engine screener (fPERG/fEVG/fCFG/fANIG/fFREG/tPERG/totalReturn — all normalized, lower is better), and a world volatility regime signal. The single-page dashboard classifies stocks into Deploy / Wait / Watchlist (including Overpriced) buckets.
 
 ## Commands
 
@@ -34,15 +34,15 @@ A stock research dashboard built with SvelteKit 2 + Svelte 5, deployed via `@sve
 - **`src/routes/+page.server.ts`** — Single page load function. Reads stock JSON via `loadFindingStocks()`, fetches world vol signal, then passes both to `buildDashboardData()`.
 - **`src/lib/server/findings.ts`** — Reads and parses `data/stock-records/*.json` into `FindingStock[]`.
 - **`src/lib/server/world-vol.ts`** — Fetches VIX/VSTOXX composite (70/30 weighted) with URTH options fallback for world implied volatility. Classifies into buy/hold/sell tone.
-- **`src/lib/domain/deployment.ts`** — Pure business logic (no I/O). Enriches stocks with upside, parsed CAGR values, deployment status (DEPLOY/WAIT/REJECT/FAIL/NO_DATA), and deployment ranking. Sorts stocks into topPicks, deployNow, cheapWait, and watchlist arrays.
+- **`src/lib/domain/deployment.ts`** — Pure business logic (no I/O). Enriches stocks with upside, parsed CAGR values, deployment status (DEPLOY/WAIT/REJECT/FAIL/OVERPRICED/NO_DATA), and deployment ranking. Sorts stocks into topPicks, deployNow, cheapWait, and watchlist arrays.
 - **`src/lib/types/dashboard.ts`** — All TypeScript interfaces for the dashboard domain model.
 - **`src/lib/components/dashboard/`** — Svelte 5 components for the single-page dashboard (header, signal cards, deploy/wait/watchlist sections).
 
 ### Key Domain Concepts
 
-- **CAGR Model**: 5-year horizon, exponential growth decay (factor 0.8) toward 6% terminal growth. Bear/base/bull scenarios use different exit P/E multiples. CAGR = price return from terminal EPS * exitPE + dividend yield.
-- **Screener**: Two engines — `fPERG` (forward PEG-ratio based, lower is better) and `totalReturn` (income + growth, higher is better). Each produces a signal: PASS/WAIT/FAIL/REJECTED. Reality checks include 6-month price stabilization and analyst revision trends.
-- **Deployment**: Stocks with screener PASS that clear 14% base CAGR hurdle and positive bear case get DEPLOY. WAIT stocks can upgrade to DEPLOY if they hit a "value floor" (near 3-month low + supportive revisions + deep upside).
+- **CAGR Model**: 5-year horizon, exponential growth decay (factor 0.8) toward 6% terminal growth. Bear/base/bull scenarios use different exit P/E multiples. CAGR = price return from terminal EPS \* exitPE + dividend yield.
+- **Screener**: Multiple engines — growth-based (`fPERG`, `tPERG`, `fEVG`, `fFREG`, `fANIG`, `fCFG`) and income-based (`totalReturn`). All output a normalized score where **lower is better** and **≤ threshold = PASS**. Growth engines use multiple/growth ratio; totalReturn uses threshold/projected-return inversion. Stocks with ≥5% dividend yield are routed to totalReturn regardless of growth rate. Each produces a signal: PASS/WAIT/FAIL/REJECTED. Reality checks include 6-month price stabilization and analyst revision trends.
+- **Deployment**: Stocks with screener PASS that clear 14% base CAGR hurdle and positive bear case get DEPLOY. WAIT stocks can upgrade to DEPLOY if they hit a "value floor" (near 3-month low + supportive revisions + deep upside). High-growth (≥20% EPS) stocks with extreme screener scores (≥1.5) get OVERPRICED instead of FAIL. Stocks with `cyclical: true` get a warning note appended.
 - **World Vol Signal**: Composite implied volatility < 15 = buy leverage, 15-25 = hold, > 25 = sell/reduce.
 
 ## Code Conventions
