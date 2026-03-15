@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { DashboardCounts, FindingStock } from '$lib/types/dashboard';
-	import { screenerLabel, stabilizationReturn, watchSignalClass } from './helpers';
+	import { detailLabel, screenerLabel, stabilizationReturn, watchSignalClass } from './helpers';
 
 	let {
 		watchlist,
@@ -47,8 +47,12 @@
 						<span class="watch-signal {watchSignalClass(stock)}">
 							{stock.deployment?.status ?? 'N/A'}
 						</span>
-						{#if stock.screener?.engine !== 'N/A' && stock.screener?.score != null}
-							<span class="watch-score">{screenerLabel(stock)} · {stock.screener.score}</span>
+						{#if stock.screener?.engine !== 'N/A'}
+							<span class="watch-score">
+								{stock.screener?.score != null ? `${stock.screener.score} · ` : ''}{detailLabel(
+									stock
+								)}
+							</span>
 						{/if}
 						{#if stock.screener?.realityChecks?.stabilization}
 							<span
@@ -61,13 +65,53 @@
 					</div>
 					{#if expandedWatch[stock.ticker]}
 						<div class="watch-detail">
-							<span>{stock.deployment?.reason}</span>
-							<span>
+							<div class="watch-reason">
+								{stock.deployment?.reason}
+							</div>
+							<div class="watch-cagr">
 								CAGR {stock.expectedCAGR} · {stock.currentPrice}
 								{#if stock.upside != null}
 									→ {stock.targetPrice} ({stock.upside > 0 ? '+' : ''}{stock.upside}%)
 								{/if}
-							</span>
+							</div>
+
+							<div
+								class="watch-cases"
+								style="margin-top:0.75rem; display:flex; flex-direction:column; gap:0.5rem; text-align:left;"
+							>
+								{#if stock.bullCase}
+									<div
+										class="case bull"
+										style="border-left: 2px solid #4ade80; padding-left: 0.5rem;"
+									>
+										<div
+											class="case-label"
+											style="font-weight:600; font-size:0.75rem; color:#4ade80; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.1rem;"
+										>
+											Bull
+										</div>
+										<p style="margin:0; font-size:0.875rem; color:#d4d4d8; line-height:1.4;">
+											{stock.bullCase}
+										</p>
+									</div>
+								{/if}
+								{#if stock.bearCase}
+									<div
+										class="case bear"
+										style="border-left: 2px solid #f87171; padding-left: 0.5rem;"
+									>
+										<div
+											class="case-label"
+											style="font-weight:600; font-size:0.75rem; color:#f87171; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.1rem;"
+										>
+											Bear
+										</div>
+										<p style="margin:0; font-size:0.875rem; color:#d4d4d8; line-height:1.4;">
+											{stock.bearCase}
+										</p>
+									</div>
+								{/if}
+							</div>
 						</div>
 					{/if}
 				</button>
