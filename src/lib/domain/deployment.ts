@@ -24,7 +24,19 @@ function deploymentRank(stock: FindingStock): number {
 	// A score of 0.5 → strength 17.5, a score of 1.0 → strength 5.0, a score of 1.2+ → 0.
 	const valuationStrength = Math.max(0, 1.2 - (stock.screener?.score ?? 99)) * 25;
 
-	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1).toFixed(1);
+	// Purely mathematical Momentum Integration (simplified cross-sectional Z-score proxy).
+	// Academic momentum (AQR) compares the asset's 6m return against the market cross-section.
+	// Lacking the full S&P 500 cross-section here, we standardize against a 0% mean with an estimated 20% standard deviation.
+	// This objectively scales the momentum factor without philosophical arbitrary brackets.
+	const return6m = stock.screener?.realityChecks?.stabilization?.return6m ?? 0;
+	// Z = (X - μ) / σ -> (return6m - 0) / 20. Limit the Z-score to +/- 2 standard deviations.
+	const momentumZScore = Math.max(-2, Math.min(2, return6m / 20));
+	
+	// Apply the Z-score with a 5-point weighting factor.
+	// A +2 Z-score (e.g. up 40%) adds 10 points. A -1 Z-score (down 20%) subtracts 5 points.
+	const momentumBonus = momentumZScore * 5;
+
+	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus).toFixed(1);
 }
 
 function hasLikelyValueFloor(stock: FindingStock): boolean {
