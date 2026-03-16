@@ -64,9 +64,15 @@ export interface RevisionsRealityCheck {
 	down30d?: number;
 }
 
+export interface EarningsSurpriseCheck {
+	surprise: number;
+	quarter: string;
+}
+
 export interface ScreenerRealityChecks {
 	stabilization?: StabilizationRealityCheck;
 	revisions?: RevisionsRealityCheck;
+	earningsSurprise?: EarningsSurpriseCheck;
 }
 
 export interface ScreenerData {
@@ -76,15 +82,42 @@ export interface ScreenerData {
 	note?: string;
 	inputs?: ScreenerInputs;
 	realityChecks?: ScreenerRealityChecks;
+	secondaryEngine?: string;
+	secondaryScore?: number;
 }
 
 export interface CagrModel {
 	horizon?: number;
+	ttmEPS?: number;
 	epsGrowth?: string;
 	dividendYield?: string;
 	exitPE?: Partial<Record<ScenarioKey, number>>;
 	scenarios?: Partial<Record<ScenarioKey, string>>;
 	basis?: string;
+	decayFactor?: number;
+}
+
+export interface StockMetrics {
+	roe?: string;
+	fcfMargin?: string;
+	fcfYield?: string;
+	roic?: string | null;
+	netDebtEbitda?: string;
+	ruleOf40?: string;
+	grossMargin?: string;
+	operatingMargin?: string;
+	ebitdaMargin?: string;
+	beta?: string;
+	revenueGrowth?: string;
+}
+
+export interface StockValuation {
+	trailingPE?: number;
+	forwardPE?: number;
+	pegRatio?: number | null;
+	evEbitda?: number | null;
+	evFcf?: number;
+	priceToFRE?: number;
 }
 
 export interface DeploymentInfo {
@@ -112,10 +145,17 @@ export interface FindingStock {
 	cagrModel?: CagrModel;
 	screener?: ScreenerData;
 	intrinsicValue?: IntrinsicValue;
+	metrics?: StockMetrics;
+	valuation?: StockValuation;
+	confidence?: string;
+	sharpeRatio?: number;
+	marketCap?: string;
+	cyclical?: boolean;
 	upside?: number | null;
 	baseCagr?: number | null;
 	bearCagr?: number | null;
 	bullCagr?: number | null;
+	sensitivityCagr?: number | null;
 	deployment?: DeploymentInfo;
 	deploymentRank?: number | null;
 	pickLabel?: string;

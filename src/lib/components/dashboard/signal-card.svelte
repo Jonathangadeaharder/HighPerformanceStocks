@@ -16,6 +16,8 @@
 		upsideColor,
 		isGrowthEngine
 	} from './helpers';
+	import QualityBadges from './quality-badges.svelte';
+	import SensitivityLine from './sensitivity-line.svelte';
 
 	type CardKind = 'deploy' | 'wait';
 
@@ -141,6 +143,12 @@
 					{/if}
 				</div>
 			{/if}
+
+			<SensitivityLine
+				sensitivityCagr={stock.sensitivityCagr}
+				epsGrowth={stock.cagrModel?.epsGrowth}
+			/>
+			<QualityBadges metrics={stock.metrics} />
 
 			{#if stock.bullCase}
 				<div class="case bull">

@@ -1,5 +1,36 @@
 import type { FindingStock, ScenarioKey, WorldVolSignal } from '$lib/types/dashboard';
 
+function parsePercent(value: string | null | undefined): number | null {
+	if (!value) return null;
+	const match = value.match(/-?\d+(?:\.\d+)?/);
+	return match ? Number.parseFloat(match[0]) : null;
+}
+
+export function qualityColor(metricName: string, rawValue: string | null | undefined): string {
+	if (!rawValue) return '#3f3f46';
+	if (metricName === 'netDebtEbitda') {
+		if (/net cash/i.test(rawValue)) return '#22c55e';
+		const v = parsePercent(rawValue);
+		if (v == null) return '#3f3f46';
+		if (v < 2) return '#22c55e';
+		if (v < 3) return '#facc15';
+		return '#f87171';
+	}
+	const v = parsePercent(rawValue);
+	if (v == null) return '#3f3f46';
+	if (metricName === 'roe') return v >= 15 ? '#22c55e' : v >= 10 ? '#facc15' : '#71717a';
+	if (metricName === 'fcfYield') return v >= 3 ? '#22c55e' : v >= 1 ? '#facc15' : '#71717a';
+	if (metricName === 'ruleOf40') return v >= 40 ? '#22c55e' : v >= 20 ? '#facc15' : '#71717a';
+	return '#71717a';
+}
+
+export function sensitivityColor(cagr: number | null | undefined): string {
+	if (cagr == null) return '#71717a';
+	if (cagr >= 14) return '#4ade80';
+	if (cagr >= 10) return '#facc15';
+	return '#f87171';
+}
+
 export const scenarioKeys: ScenarioKey[] = ['bear', 'base', 'bull'];
 
 export function scoreColor(score: number | null | undefined): string {
@@ -40,14 +71,12 @@ export function detailLabel(stock: FindingStock): string {
 }
 
 export function stabilizationReturn(value: number | null | undefined = 0): string {
-	const displayValue = value ?? 0;
-	return `${displayValue > 0 ? '+' : ''}${displayValue}%`;
+	return `${(value ?? 0) > 0 ? '+' : ''}${value ?? 0}%`;
 }
 
 export function returnColor(value: number | null | undefined): string {
-	const v = value ?? 0;
-	if (v >= 0) return '#4ade80';
-	if (v >= -10) return '#facc15';
+	if ((value ?? 0) >= 0) return '#4ade80';
+	if ((value ?? 0) >= -10) return '#facc15';
 	return '#f87171';
 }
 

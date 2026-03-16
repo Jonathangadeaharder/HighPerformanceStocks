@@ -51,7 +51,7 @@
 							<!-- No screener data to display -->
 						{:else}
 							<span class="watch-score">
-								{stock.screener?.score != null ? `${stock.screener.score} · ` : ''}{detailLabel(
+								{stock.screener?.score == null ? '' : `${stock.screener.score} · `}{detailLabel(
 									stock
 								)}
 							</span>

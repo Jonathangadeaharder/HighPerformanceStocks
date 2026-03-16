@@ -203,6 +203,23 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 		result.note = 'Consensus actively collapsing (analyst lag)';
 	}
 
+	const history = summary?.earningsHistory?.history;
+	if (Array.isArray(history) && history.length > 0) {
+		const latest = history.at(-1);
+		const actual = latest?.epsActual;
+		const estimate = latest?.epsEstimate;
+		if (actual != null && estimate != null && Math.abs(estimate) > 0.01) {
+			const surprise = ((actual - estimate) / Math.abs(estimate)) * 100;
+			const quarter = latest.quarter
+				? new Date(latest.quarter).toISOString().slice(0, 7)
+				: 'unknown';
+			checks.earningsSurprise = { surprise: +surprise.toFixed(1), quarter };
+			if (surprise < -10 && result.signal === 'PASS') {
+				result.note = result.note ? result.note + ' (Recent earnings miss)' : 'Recent earnings miss';
+			}
+		}
+	}
+
 	result.realityChecks = checks;
 }
 
@@ -251,6 +268,17 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 
 			if (result.signal === 'PASS') {
 				applyRealityChecks(result, rawPrice, historicalData, summary);
+			}
+
+			// Ensemble cross-check: compute fPERG as secondary reference for specialized engines.
+			// Specialized engine stays primary (no signal override); fPERG is transparency only.
+			if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
+				const fpe = stock.valuation?.forwardPE;
+				if (fpe != null && fpe > 0) {
+					const fPERGCheck = computeGrowthScore('fPERG', 'Forward P/E', fpe, growthPct, cvStock);
+					result.secondaryEngine = 'fPERG';
+					result.secondaryScore = fPERGCheck.score;
+				}
 			}
 
 			if (!dispersion) {

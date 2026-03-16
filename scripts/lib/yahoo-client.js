@@ -35,7 +35,7 @@ export async function fetchAllQuotes(tickers) {
 export async function fetchSummary(ticker) {
 	try {
 		return await yf.quoteSummary(ticker, {
-			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earningsTrend']
+			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earningsTrend', 'earningsHistory']
 		});
 	} catch {
 		return {};

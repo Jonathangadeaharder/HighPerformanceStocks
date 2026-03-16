@@ -95,6 +95,9 @@ function verifyData() {
 			) {
 				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
 			}
+			if (data.screener.secondaryEngine != null && data.screener.secondaryScore == null) {
+				errors.push(`screener.secondaryEngine present but secondaryScore is missing`);
+			}
 		}
 
 		// 5b. Verify screener/CAGR consistency: PASS signal should align with viable base CAGR

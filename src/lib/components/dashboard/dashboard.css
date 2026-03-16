@@ -713,6 +713,255 @@ header h1 {
 	color: #52525b;
 }
 
+/* ─── Tab Navigation ─────────────────────────────────────────────────────── */
+
+.tab-nav {
+	display: flex;
+	gap: 0;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #1e1e22;
+}
+
+.tab-btn {
+	all: unset;
+	cursor: pointer;
+	padding: 0.6rem 1.25rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	color: #52525b;
+	border-bottom: 2px solid transparent;
+	transition: color 0.15s, border-color 0.15s;
+	margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+	color: #a1a1aa;
+}
+
+.tab-btn.active {
+	color: #e4e4e7;
+	border-bottom-color: #22c55e;
+}
+
+/* ─── Quality Badges ─────────────────────────────────────────────────────── */
+
+.quality-badges {
+	display: flex;
+	gap: 0.375rem;
+	flex-wrap: wrap;
+	margin-top: 0.5rem;
+}
+
+.quality-badge {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 0.62rem;
+	padding: 2px 7px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	white-space: nowrap;
+}
+
+/* ─── Sensitivity Line ───────────────────────────────────────────────────── */
+
+.sensitivity-line {
+	font-size: 0.68rem;
+	font-family: 'JetBrains Mono', monospace;
+	padding: 0.3rem 0 0.1rem;
+}
+
+/* ─── Portfolio Section ──────────────────────────────────────────────────── */
+
+.portfolio-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.portfolio-summary-card {
+	background: #111113;
+	border: 1px solid #1e1e22;
+	border-radius: 10px;
+	padding: 1rem 1.25rem;
+}
+
+.ps-row {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.ps-stat {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.ps-label {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #52525b;
+	font-weight: 600;
+}
+
+.ps-value {
+	font-size: 0.88rem;
+	font-weight: 600;
+	color: #e4e4e7;
+}
+
+.ps-value.mono {
+	font-family: 'JetBrains Mono', monospace;
+}
+
+.mode-toggle {
+	all: unset;
+	cursor: pointer;
+	margin-left: auto;
+	font-size: 0.7rem;
+	font-weight: 600;
+	color: #52525b;
+	border: 1px solid #27272a;
+	border-radius: 6px;
+	padding: 0.3rem 0.75rem;
+	transition: color 0.15s, border-color 0.15s;
+}
+
+.mode-toggle:hover {
+	color: #a1a1aa;
+	border-color: #3f3f46;
+}
+
+/* ─── Sector Breakdown ───────────────────────────────────────────────────── */
+
+.sector-breakdown {
+	background: #111113;
+	border: 1px solid #1e1e22;
+	border-radius: 10px;
+	padding: 1rem 1.25rem;
+}
+
+.sector-row {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.4rem 0;
+	border-bottom: 1px solid #141416;
+	font-size: 0.75rem;
+}
+
+.sector-row:last-of-type {
+	border-bottom: none;
+}
+
+.sector-row.concentrated {
+	border-left: 2px solid #f59e0b;
+	padding-left: 0.5rem;
+}
+
+.sector-group {
+	flex: 1;
+	color: #a1a1aa;
+}
+
+.sector-count {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 0.7rem;
+	color: #52525b;
+	min-width: 1.5rem;
+	text-align: right;
+}
+
+.sector-weight {
+	min-width: 3.5rem;
+	text-align: right;
+}
+
+.sector-flag {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #f59e0b;
+}
+
+.concentration-warning {
+	font-size: 0.72rem;
+	color: #f59e0b;
+	padding: 0.5rem 0.75rem;
+	background: rgba(245, 158, 11, 0.05);
+	border: 1px solid rgba(245, 158, 11, 0.12);
+	border-radius: 6px;
+	margin-top: 0.75rem;
+}
+
+/* ─── Portfolio Table ────────────────────────────────────────────────────── */
+
+.portfolio-table-wrap {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	background: #111113;
+	border: 1px solid #1e1e22;
+	border-radius: 10px;
+}
+
+.portfolio-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.72rem;
+}
+
+.portfolio-table th {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #52525b;
+	font-weight: 600;
+	text-align: left;
+	padding: 0.6rem 0.75rem;
+	border-bottom: 1px solid #1e1e22;
+	white-space: nowrap;
+}
+
+.portfolio-table td {
+	padding: 0.5rem 0.75rem;
+	border-bottom: 1px solid #141416;
+	color: #a1a1aa;
+	white-space: nowrap;
+}
+
+.portfolio-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.portfolio-table tbody tr:hover {
+	background: #141416;
+}
+
+.portfolio-table tbody tr.excluded {
+	opacity: 0.4;
+}
+
+.portfolio-table .check-cell {
+	width: 2rem;
+	text-align: center;
+}
+
+.portfolio-table .ticker-cell {
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 700;
+	color: #f4f4f5;
+}
+
+.portfolio-table .group-cell {
+	font-size: 0.68rem;
+	color: #52525b;
+	max-width: 10rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 @media (max-width: 640px) {
 	.page {
 		padding: 1rem;
