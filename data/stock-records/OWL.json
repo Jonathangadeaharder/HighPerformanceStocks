@@ -25,7 +25,7 @@
 		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
 	},
 	"valuation": {
-		"trailingPE": 9.4,
+		"trailingPE": 9.3,
 		"forwardPE": 8,
 		"evEbitda": 10.8
 	},
@@ -41,8 +41,8 @@
 	"consensus": {
 		"yahoo": "$15.93"
 	},
-	"currentPrice": "$8.78",
-	"marketCap": "$13.7B USD",
+	"currentPrice": "$8.68",
+	"marketCap": "$13.5B USD",
 	"expectedCAGR": "15% - 26%",
 	"expectedVolatility": "~49%",
 	"sharpeRatio": 0.33,
@@ -70,5 +70,5 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:17.091Z"
+	"lastUpdated": "2026-03-16T15:10:47.476Z"
 }

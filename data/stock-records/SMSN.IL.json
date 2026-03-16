@@ -24,8 +24,8 @@
 			"bull": "43%"
 		}
 	},
-	"currentPrice": "$3254",
-	"marketCap": "$884.1B USD",
+	"currentPrice": "$3216",
+	"marketCap": "$873.8B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
@@ -41,10 +41,10 @@
 			"earningsYield": 1.9
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:19.839Z",
+	"lastUpdated": "2026-03-16T15:10:49.491Z",
 	"valuation": {
-		"trailingPE": 33.7,
-		"forwardPE": 51.9,
+		"trailingPE": 33.3,
+		"forwardPE": 51.3,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},

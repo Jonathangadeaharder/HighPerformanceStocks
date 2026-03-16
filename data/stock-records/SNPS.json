@@ -4,7 +4,7 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 2.5x.",
-	"marketCap": "$81.7B USD",
+	"marketCap": "$81.6B USD",
 	"sharpeRatio": 0.1,
 	"expectedCAGR": "6% - 15%",
 	"expectedVolatility": "~63%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~2.5x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$426.48",
+	"currentPrice": "$426.20",
 	"consensus": {
 		"tipranks": "$535",
 		"yahoo": "$537.75",
@@ -43,12 +43,12 @@
 		},
 		"scenarios": {
 			"bear": "6%",
-			"base": "10%",
+			"base": "11%",
 			"bull": "15%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-16T14:23:19.911Z",
+	"lastUpdated": "2026-03-16T15:10:49.576Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 4.07,

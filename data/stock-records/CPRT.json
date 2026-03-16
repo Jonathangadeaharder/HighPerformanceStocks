@@ -21,11 +21,11 @@
 			"bull": "12%"
 		}
 	},
-	"currentPrice": "$34.53",
+	"currentPrice": "$34.47",
 	"marketCap": "$33.4B USD",
 	"valuation": {
 		"trailingPE": 21.7,
-		"forwardPE": 20.6,
+		"forwardPE": 20.5,
 		"evEbitda": 14.3
 	},
 	"metrics": {
@@ -42,15 +42,15 @@
 	"expectedCAGR": "1% - 12%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.34,
+		"score": 1.33,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 20.6,
+			"multiple": 20.5,
 			"cvStock": 0.037,
 			"riskMultiplier": 0.974
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:04.596Z"
+	"lastUpdated": "2026-03-16T15:10:35.473Z"
 }

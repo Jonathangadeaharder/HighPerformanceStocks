@@ -4,9 +4,9 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4479.6B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "3% - 12%",
+	"marketCap": "$4475.3B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "14% - 28%",
 	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 37.6,
@@ -25,7 +25,7 @@
 	"targetPrice": "$267.54",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$184.31",
+	"currentPrice": "$184.13",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$267.54",
@@ -33,27 +33,27 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 4.91,
+		"ttmEPS": 4.9,
 		"epsGrowth": "35%",
 		"dividendYield": "0%",
 		"exitPE": {
-			"bear": 24,
-			"base": 30,
-			"bull": 36
+			"bear": 40,
+			"base": 55,
+			"bull": 70
 		},
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
-			"bull": "12%"
+			"bear": "14%",
+			"base": "22%",
+			"bull": "28%"
 		},
 		"decayFactor": 0.75,
-		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
+		"basis": "10yr avg PE (55); no haircut - let data speak"
 	},
-	"lastUpdated": "2026-03-16T14:23:17.096Z",
+	"lastUpdated": "2026-03-16T15:10:47.579Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.5,
-		"signal": "FAIL",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
@@ -61,7 +61,17 @@
 			"cvStock": 0.131,
 			"riskMultiplier": 1.03
 		},
-		"note": "Cheap (0.5) but base CAGR 8% misses the 14% hurdle"
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 26,
+				"down30d": 5
+			},
+			"earningsSurprise": {
+				"surprise": 5.3,
+				"quarter": "2026-01"
+			}
+		}
 	},
 	"intrinsicValue": {
 		"dcf": 234.57,

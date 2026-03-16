@@ -18,14 +18,14 @@
 		"scenarios": {
 			"bear": "-6%",
 			"base": "0%",
-			"bull": "4%"
+			"bull": "5%"
 		}
 	},
-	"currentPrice": "$463.50",
-	"marketCap": "$13.2B USD",
+	"currentPrice": "$456.08",
+	"marketCap": "$12.9B USD",
 	"valuation": {
-		"trailingPE": 30.4,
-		"forwardPE": 24.2,
+		"trailingPE": 29.9,
+		"forwardPE": 23.8,
 		"evEbitda": 22.1
 	},
 	"metrics": {
@@ -39,18 +39,18 @@
 		"yahoo": "$489.69"
 	},
 	"targetPrice": "$489.69",
-	"expectedCAGR": "-6% - 4%",
+	"expectedCAGR": "-6% - 5%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.57,
+		"score": 1.54,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 24.2,
+			"multiple": 23.8,
 			"cvStock": 0.032,
 			"riskMultiplier": 0.971
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:14.157Z"
+	"lastUpdated": "2026-03-16T15:10:44.392Z"
 }

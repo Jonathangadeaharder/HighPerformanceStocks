@@ -25,7 +25,7 @@
 	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1239.68",
+	"currentPrice": "$1239.94",
 	"consensus": {
 		"tipranks": "$1,568",
 		"yahoo": "$1594",
@@ -48,7 +48,7 @@
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-16T14:23:20.712Z",
+	"lastUpdated": "2026-03-16T15:10:50.596Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.12,

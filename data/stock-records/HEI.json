@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
-	"marketCap": "$40.9B USD",
+	"marketCap": "$40.7B USD",
 	"sharpeRatio": 0.07,
 	"expectedCAGR": "2% - 11%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 58,
-		"forwardPE": 46.3,
+		"trailingPE": 57.8,
+		"forwardPE": 46.1,
 		"pegRatio": null,
 		"evEbitda": 34
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$292.94",
+	"currentPrice": "$292",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T14:23:09.846Z",
+	"lastUpdated": "2026-03-16T15:10:40.416Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.85,
@@ -63,6 +63,6 @@
 			"riskMultiplier": 0.981
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.52
+		"secondaryScore": 2.51
 	}
 }

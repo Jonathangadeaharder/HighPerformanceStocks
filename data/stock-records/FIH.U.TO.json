@@ -23,7 +23,7 @@
 	"targetPrice": "$21",
 	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
 	"bearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.",
-	"currentPrice": "$17.92",
+	"currentPrice": "$17.91",
 	"consensus": {
 		"yahoo": "$21"
 	},
@@ -44,7 +44,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-16T14:23:07.881Z",
+	"lastUpdated": "2026-03-16T15:10:38.482Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.42,

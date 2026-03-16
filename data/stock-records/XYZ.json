@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$36.7B USD",
-	"sharpeRatio": 0.28,
-	"expectedCAGR": "15% - 25%",
+	"marketCap": "$36.4B USD",
+	"sharpeRatio": 0.29,
+	"expectedCAGR": "16% - 25%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 16.9,
-		"forwardPE": 12.9,
+		"trailingPE": 16.7,
+		"forwardPE": 12.8,
 		"pegRatio": null,
 		"evEbitda": 18.1
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$85.79",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$60.39",
+	"currentPrice": "$59.90",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$85.79",
@@ -42,21 +42,21 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "15%",
+			"bear": "16%",
 			"base": "21%",
 			"bull": "25%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-16T14:23:24.767Z",
+	"lastUpdated": "2026-03-16T15:10:54.552Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.12,
+		"score": 1.11,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 12.8,
 			"cvStock": 0.145,
 			"riskMultiplier": 1.039
 		}

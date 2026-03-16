@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
-	"marketCap": "$60.5B USD",
+	"marketCap": "$59.8B USD",
 	"sharpeRatio": 0.31,
 	"expectedCAGR": "13% - 23%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 11.3,
-		"forwardPE": 9.6,
+		"trailingPE": 11.1,
+		"forwardPE": 9.5,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$156.59",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$104.27",
+	"currentPrice": "$103.11",
 	"consensus": {
 		"tipranks": "$165",
 		"yahoo": "$156.59",
@@ -45,20 +45,20 @@
 		},
 		"scenarios": {
 			"bear": "13%",
-			"base": "17%",
+			"base": "18%",
 			"bull": "23%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-16T14:23:02.303Z",
+	"lastUpdated": "2026-03-16T15:10:33.408Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.6,
+		"score": 0.59,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
-			"multiple": 12.4,
+			"multiple": 12.3,
 			"cvStock": 0.022,
 			"riskMultiplier": 0.965
 		},

@@ -17,14 +17,14 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-11%",
-			"base": "-5%",
+			"base": "-6%",
 			"bull": "-1%"
 		}
 	},
-	"currentPrice": "$349.13",
-	"marketCap": "$67.9B USD",
+	"currentPrice": "$350.01",
+	"marketCap": "$68.1B USD",
 	"valuation": {
-		"trailingPE": 41.9,
+		"trailingPE": 42,
 		"forwardPE": 17.8,
 		"evEbitda": 15.4
 	},
@@ -52,5 +52,5 @@
 			"riskMultiplier": 0.959
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:04.504Z"
+	"lastUpdated": "2026-03-16T15:10:35.399Z"
 }

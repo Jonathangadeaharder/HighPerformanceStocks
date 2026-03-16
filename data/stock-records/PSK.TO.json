@@ -21,11 +21,11 @@
 			"bull": "4%"
 		}
 	},
-	"currentPrice": "C$31.54",
-	"marketCap": "C$7.3B",
+	"currentPrice": "C$31.66",
+	"marketCap": "C$7.4B",
 	"valuation": {
-		"trailingPE": 36.3,
-		"forwardPE": 33.9
+		"trailingPE": 36.4,
+		"forwardPE": 34
 	},
 	"metrics": {
 		"roe": "7.8%",
@@ -40,15 +40,15 @@
 	"expectedCAGR": "-6% - 4%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.17,
+		"score": 2.18,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 33.9,
+			"multiple": 34,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:18.190Z"
+	"lastUpdated": "2026-03-16T15:10:48.448Z"
 }

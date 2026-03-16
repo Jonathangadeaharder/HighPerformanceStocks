@@ -17,15 +17,15 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-9%",
-			"base": "-3%",
+			"base": "-4%",
 			"bull": "1%"
 		}
 	},
-	"currentPrice": "208 SEK",
-	"marketCap": "42.9B SEK",
+	"currentPrice": "209 SEK",
+	"marketCap": "43.0B SEK",
 	"valuation": {
-		"trailingPE": 37.7,
-		"forwardPE": 38.3,
+		"trailingPE": 37.8,
+		"forwardPE": 38.4,
 		"evEbitda": 23.8
 	},
 	"metrics": {
@@ -42,15 +42,15 @@
 	"expectedCAGR": "-9% - 1%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.49,
+		"score": 2.5,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 38.3,
+			"multiple": 38.4,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:11.919Z"
+	"lastUpdated": "2026-03-16T15:10:42.491Z"
 }

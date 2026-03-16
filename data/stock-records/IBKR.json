@@ -21,10 +21,10 @@
 			"bull": "6%"
 		}
 	},
-	"currentPrice": "$68.69",
-	"marketCap": "$116.8B USD",
+	"currentPrice": "$68.80",
+	"marketCap": "$117.0B USD",
 	"valuation": {
-		"trailingPE": 28.1,
+		"trailingPE": 28.2,
 		"forwardPE": 25.1
 	},
 	"metrics": {
@@ -47,5 +47,5 @@
 			"riskMultiplier": 0.977
 		}
 	},
-	"lastUpdated": "2026-03-16T14:23:09.872Z"
+	"lastUpdated": "2026-03-16T15:10:40.498Z"
 }

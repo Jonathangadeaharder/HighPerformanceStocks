@@ -4,13 +4,13 @@
 	"group": "Energy Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Irreplaceable 880K-acre Permian asset with world-class profitability (39% ROE, 30% ROIC, 62% FCF margin). Data center optionality via Bolt partnership. But 41x P/E after 50% February rally prices in much of the upside.",
-	"marketCap": "$36.1B USD",
+	"marketCap": "$36.0B USD",
 	"sharpeRatio": -0.22,
 	"expectedCAGR": "-13% - 0%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 75.2,
-		"forwardPE": 7.2,
+		"trailingPE": 75.1,
+		"forwardPE": 7.1,
 		"pegRatio": null,
 		"evEbitda": 55.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$444.50",
 	"bullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
 	"bearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot.",
-	"currentPrice": "$523.32",
+	"currentPrice": "$522.50",
 	"consensus": {
 		"tipranks": "$445",
 		"yahoo": "$444.50",
@@ -48,18 +48,18 @@
 		},
 		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
 	},
-	"lastUpdated": "2026-03-16T14:23:20.882Z",
+	"lastUpdated": "2026-03-16T15:10:50.566Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.48,
+		"score": 0.47,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 7.2,
+			"multiple": 7.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (0.48) but base CAGR -7% misses the 14% hurdle (Used benchmark CV)"
+		"note": "Cheap (0.47) but base CAGR -7% misses the 14% hurdle (Used benchmark CV)"
 	}
 }

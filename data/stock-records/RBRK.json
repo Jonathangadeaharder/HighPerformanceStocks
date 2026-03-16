@@ -4,12 +4,12 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
-	"marketCap": "$10.6B USD",
+	"marketCap": "$10.5B USD",
 	"sharpeRatio": null,
 	"expectedCAGR": "N/A (pre-profit)",
 	"expectedVolatility": "~62%",
 	"valuation": {
-		"forwardPE": 89.7,
+		"forwardPE": 88.8,
 		"evEbitda": -33
 	},
 	"metrics": {
@@ -21,7 +21,7 @@
 	"targetPrice": "$87.70",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
 	"bearCase": "Newly public company with limited track record of sustained profitability; highly competitive data protection market.",
-	"currentPrice": "$52.82",
+	"currentPrice": "$52.32",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "0%",
@@ -36,7 +36,7 @@
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-16T14:23:18.194Z",
+	"lastUpdated": "2026-03-16T15:10:48.458Z",
 	"consensus": {
 		"yahoo": "$87.70"
 	},
