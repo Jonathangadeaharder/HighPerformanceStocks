@@ -5,6 +5,7 @@
 		detailLabel,
 		intrinsicValueColor,
 		intrinsicValueLabel,
+		returnColor,
 		revisionsSummary,
 		scenarioKeys,
 		scenarioValue,
@@ -53,20 +54,20 @@
 	{#if stock.screener?.realityChecks}
 		<div class="signal-row3">
 			{#if stock.screener.realityChecks.stabilization}
-				<span class="rc {kind === 'deploy' ? 'pass' : 'wait'}">
+				<span class="rc" style="color:{returnColor(stock.screener.realityChecks.stabilization.return6m)}">
 					{kind === 'deploy' ? '✓ ' : ''}{stabilizationReturn(
 						stock.screener.realityChecks.stabilization.return6m
 					)}
 					6m
 				</span>
-				<span class="rc {kind === 'deploy' ? 'pass' : 'wait'}">
+				<span class="rc" style="color:{returnColor(stock.screener.realityChecks.stabilization.return1m)}">
 					{kind === 'deploy' ? '✓ ' : ''}{stabilizationReturn(
 						stock.screener.realityChecks.stabilization.return1m
 					)}
 					1m
 				</span>
 				{#if kind === 'wait' && stock.screener.realityChecks.stabilization.near3mLow}
-					<span class="rc wait">near 3m low</span>
+					<span class="rc" style="color:#facc15">near 3m low</span>
 				{/if}
 			{/if}
 			{#if kind === 'deploy' && stock.screener.realityChecks.revisions}

@@ -44,6 +44,13 @@ export function stabilizationReturn(value: number | null | undefined = 0): strin
 	return `${displayValue > 0 ? '+' : ''}${displayValue}%`;
 }
 
+export function returnColor(value: number | null | undefined): string {
+	const v = value ?? 0;
+	if (v >= 0) return '#4ade80';
+	if (v >= -10) return '#facc15';
+	return '#f87171';
+}
+
 export function deploymentReason(stock: FindingStock): string {
 	return stock.deployment?.reason ?? 'No deployment rationale available.';
 }
