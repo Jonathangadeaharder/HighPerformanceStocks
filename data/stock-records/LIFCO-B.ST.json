@@ -4,7 +4,7 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "131.9B SEK",
+	"marketCap": "132.0B SEK",
 	"sharpeRatio": 0.16,
 	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~28%",
@@ -26,7 +26,7 @@
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "290 SEK",
+	"currentPrice": "291 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
@@ -48,7 +48,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T08:36:08.261Z",
+	"lastUpdated": "2026-03-16T08:47:04.454Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,

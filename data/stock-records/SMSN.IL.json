@@ -24,36 +24,36 @@
 			"bull": "7%"
 		}
 	},
-	"currentPrice": "$3146",
-	"marketCap": "$854.8B USD",
+	"currentPrice": "$3140",
+	"marketCap": "$853.2B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
 	"expectedVolatility": "~40%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.01,
+		"score": 2,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "Forward P/E",
-			"multiple": 50.2,
+			"multiple": 50.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-16T08:36:13.296Z",
+	"lastUpdated": "2026-03-16T08:47:13.062Z",
 	"valuation": {
 		"trailingPE": 32.6,
-		"forwardPE": 50.2,
+		"forwardPE": 50.1,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},
 	"metrics": {
 		"roe": "10.6%",
 		"fcfMargin": "~-5%",
-		"fcfYield": "~-1575%",
+		"fcfYield": "~-1578%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-27%"
 	},

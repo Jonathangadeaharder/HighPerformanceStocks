@@ -10,7 +10,7 @@
 	"expectedVolatility": "~43%",
 	"valuation": {
 		"trailingPE": 21.7,
-		"forwardPE": 18.4,
+		"forwardPE": 18.5,
 		"pegRatio": null,
 		"evEbitda": 9.1,
 		"evFcf": 15
@@ -48,7 +48,7 @@
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-16T08:36:15.229Z",
+	"lastUpdated": "2026-03-16T08:47:15.000Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.74,

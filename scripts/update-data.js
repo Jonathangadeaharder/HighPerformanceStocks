@@ -78,7 +78,20 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		const pe = quote.trailingPE ?? sd.trailingPE;
 		const fpe = quote.forwardPE ?? sd.forwardPE;
 		const peg = ks.pegRatio;
-		const evEbitda = ks.enterpriseToEbitda;
+		let evEbitda = ks.enterpriseToEbitda;
+
+		const totalDebt = fd.totalDebt;
+		const totalCash = fd.totalCash;
+		const ebitda = fd.ebitda;
+
+		if (ks.enterpriseValue && rawCap && totalDebt != null && totalCash != null && ebitda) {
+			const calcEv = rawCap + totalDebt - totalCash;
+			// Catch Yahoo API stock split corruption (e.g. AVGO 10-for-1 split dropping EV by 10x)
+			if (calcEv / ks.enterpriseValue > 2) {
+				console.log(`  🚨  ${stock.ticker} — Yahoo EV corrupted (Reported: $${Math.round(ks.enterpriseValue/1e9)}B, Calc'd: $${Math.round(calcEv/1e9)}B). Overriding EV/EBITDA.`);
+				evEbitda = calcEv / ebitda;
+			}
+		}
 
 		if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
 		if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
@@ -87,7 +100,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		if (evEbitda != null && stock.valuation.evEbitda !== null) {
 			const isMegaCap = rawCap && rawCap > 50000000000;
 			if (isMegaCap && evEbitda < 5) {
-				console.log(`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA (${evEbitda}) for mega-cap, rejecting`);
+				console.log(`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA (${evEbitda.toFixed(1)}) for mega-cap, rejecting`);
 				stock.valuation.evEbitda = null;
 			} else {
 				stock.valuation.evEbitda = +evEbitda.toFixed(1);
