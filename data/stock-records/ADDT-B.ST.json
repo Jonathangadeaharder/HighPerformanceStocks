@@ -48,7 +48,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T18:42:20.018Z",
+	"lastUpdated": "2026-03-16T20:50:51.248Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,
@@ -59,6 +59,27 @@
 			"multiple": 24.6,
 			"cvStock": 0.053,
 			"riskMultiplier": 0.984
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 306.8,
+				"price6mAgo": 321.4,
+				"price1mAgo": 317,
+				"low3m": 287,
+				"return6m": -4.5,
+				"return1m": -3.2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 4,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": -4.4,
+				"quarter": "2025-12"
+			}
 		},
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 2.56

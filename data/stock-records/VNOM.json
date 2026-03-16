@@ -4,13 +4,13 @@
 	"group": "Energy Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
-	"marketCap": "$16.9B USD",
+	"marketCap": "$16.8B USD",
 	"sharpeRatio": 0.15,
 	"expectedCAGR": "4% - 16%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 29.5,
-		"forwardPE": 24.2,
+		"trailingPE": 29.3,
+		"forwardPE": 24.1,
 		"pegRatio": null,
 		"evEbitda": 12.4
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$52.47",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
-	"currentPrice": "$45.19",
+	"currentPrice": "$44.90",
 	"consensus": {
 		"tipranks": "$51",
 		"yahoo": "$52.47",
@@ -43,12 +43,12 @@
 		},
 		"scenarios": {
 			"bear": "4%",
-			"base": "10%",
+			"base": "11%",
 			"bull": "16%"
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:40.267Z",
+	"lastUpdated": "2026-03-16T20:51:12.045Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": null,
@@ -58,6 +58,27 @@
 			"growth": 8,
 			"dividendYield": 5,
 			"earningsYield": 4.1
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 44.9,
+				"price6mAgo": 37.86,
+				"price1mAgo": 44,
+				"low3m": 35.45,
+				"return6m": 18.6,
+				"return1m": 2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": -1.2,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

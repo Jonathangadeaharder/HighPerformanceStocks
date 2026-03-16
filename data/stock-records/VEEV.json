@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$30.6B USD",
+	"marketCap": "$30.5B USD",
 	"sharpeRatio": 0.57,
 	"expectedCAGR": "20% - 30%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 34.2,
-		"forwardPE": 18.8,
+		"trailingPE": 34.1,
+		"forwardPE": 18.7,
 		"pegRatio": null,
 		"evEbitda": 23.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$186.06",
+	"currentPrice": "$185.28",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -48,19 +48,29 @@
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:40.156Z",
+	"lastUpdated": "2026-03-16T20:51:11.847Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.96,
+		"score": 0.95,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
-			"multiple": 18.8,
+			"multiple": 18.7,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 185.28,
+				"price6mAgo": 274.58,
+				"price1mAgo": 176.82,
+				"low3m": 168.14,
+				"return6m": -32.5,
+				"return1m": 4.8,
+				"near3mLow": false
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 17,

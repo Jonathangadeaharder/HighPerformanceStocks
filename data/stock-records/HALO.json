@@ -5,12 +5,12 @@
 	"confidence": "medium",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
 	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.5,
+	"sharpeRatio": 0.49,
 	"expectedCAGR": "19% - 35%",
-	"expectedVolatility": "~45%",
+	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 25.3,
-		"forwardPE": 6.6,
+		"trailingPE": 25.1,
+		"forwardPE": 6.5,
 		"pegRatio": null,
 		"evEbitda": 10.6
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$84.50",
 	"bullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
 	"bearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility.",
-	"currentPrice": "$64.78",
+	"currentPrice": "$64.29",
 	"consensus": {
 		"tipranks": "$95",
 		"yahoo": "$84.50"
@@ -47,20 +47,30 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
 	},
-	"lastUpdated": "2026-03-16T18:42:27.636Z",
+	"lastUpdated": "2026-03-16T20:50:58.585Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.32,
+		"score": 0.31,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 6.6,
+			"multiple": 6.5,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
 		"note": "Recent earnings miss",
 		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 64.29,
+				"price6mAgo": 75.81,
+				"price1mAgo": 80.48,
+				"low3m": 61.69,
+				"return6m": -15.2,
+				"return1m": -20.1,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 2,

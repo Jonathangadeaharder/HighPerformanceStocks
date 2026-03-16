@@ -4,13 +4,13 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$7.5B USD",
+	"marketCap": "$7.6B USD",
 	"sharpeRatio": 0.08,
 	"expectedCAGR": "3% - 13%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 30.8,
-		"forwardPE": 23,
+		"trailingPE": 31,
+		"forwardPE": 23.1,
 		"pegRatio": 1.02,
 		"evEbitda": 24.8
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$44.25",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
-	"currentPrice": "$36.39",
+	"currentPrice": "$36.58",
 	"consensus": {
 		"tipranks": "C$59",
 		"yahoo": "$44.25",
@@ -48,7 +48,7 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:38.260Z",
+	"lastUpdated": "2026-03-16T20:51:09.824Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,
@@ -59,6 +59,27 @@
 			"debtToEquity": 0,
 			"debtPenalty": false,
 			"rawReturn": 9
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 36.58,
+				"price6mAgo": 27.74,
+				"price1mAgo": 35.57,
+				"low3m": 31.93,
+				"return6m": 31.9,
+				"return1m": 2.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 3
+			},
+			"earningsSurprise": {
+				"surprise": 4.1,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

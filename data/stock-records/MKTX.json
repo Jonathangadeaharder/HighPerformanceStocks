@@ -50,7 +50,30 @@
 			"multiple": 19.9,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.964
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 180.33,
+				"price6mAgo": 183.53,
+				"price1mAgo": 177.75,
+				"low3m": 157.93,
+				"return6m": -1.7,
+				"return1m": 1.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 51.4,
+				"quarter": "2025-12"
+			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:33.424Z"
+	"lastUpdated": "2026-03-16T20:51:04.535Z",
+	"expectedVolatility": "~27%",
+	"sharpeRatio": 0.37
 }

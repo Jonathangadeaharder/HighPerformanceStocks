@@ -48,17 +48,39 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T18:42:31.474Z",
+	"lastUpdated": "2026-03-16T20:51:02.453Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,
-		"signal": "FAIL",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 20,
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
+		},
+		"note": "Consensus actively collapsing (analyst lag)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 291.4,
+				"price6mAgo": 321.8,
+				"price1mAgo": 314,
+				"low3m": 288,
+				"return6m": -9.4,
+				"return1m": -7.2,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 0,
+				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": -7.8,
+				"quarter": "2025-12"
+			}
 		},
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 3.04

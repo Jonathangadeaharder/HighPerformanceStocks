@@ -48,7 +48,7 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-16T18:42:25.106Z",
+	"lastUpdated": "2026-03-16T20:50:56.491Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.23,
@@ -59,6 +59,23 @@
 			"multiple": 20.3,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 5015,
+				"price6mAgo": 5410,
+				"price1mAgo": 5500,
+				"low3m": 5000,
+				"return6m": -7.3,
+				"return1m": -8.8,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 10,
+				"down30d": 0
+			}
 		},
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.46

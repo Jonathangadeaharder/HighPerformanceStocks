@@ -4,7 +4,7 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
-	"marketCap": "C$50.8B",
+	"marketCap": "C$50.4B",
 	"sharpeRatio": 0.61,
 	"expectedCAGR": "11% - 25%",
 	"expectedVolatility": "~22%",
@@ -12,7 +12,7 @@
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 8.1,
-		"forwardPE": 10.9
+		"forwardPE": 10.8
 	},
 	"metrics": {
 		"roe": "17.8%",
@@ -21,10 +21,10 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "15%"
 	},
-	"targetPrice": "C$2721.07",
+	"targetPrice": "C$2723.62",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2366.22",
+	"currentPrice": "C$2348.98",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -42,20 +42,41 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 290.82
 	},
-	"lastUpdated": "2026-03-16T18:42:26.206Z",
+	"lastUpdated": "2026-03-16T20:50:57.516Z",
 	"consensus": {
-		"yahoo": "C$2721.07"
+		"yahoo": "C$2723.62"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
+		"score": 1.05,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 10.9,
+			"multiple": 10.8,
 			"cvStock": 0.041,
 			"riskMultiplier": 0.977
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 2348.98,
+				"price6mAgo": 2385.13,
+				"price1mAgo": 2365,
+				"low3m": 2151.07,
+				"return6m": -1.5,
+				"return1m": -0.7,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": 9.7,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

@@ -4,7 +4,7 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$186.0B USD",
+	"marketCap": "$185.8B USD",
 	"sharpeRatio": 0.37,
 	"expectedCAGR": "11% - 24%",
 	"expectedVolatility": "~35%",
@@ -24,7 +24,7 @@
 	"targetPrice": "$276.33",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$198.54",
+	"currentPrice": "$198.34",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$276.33",
@@ -47,7 +47,7 @@
 		},
 		"basis": "Forward PE (13x) with Rule of 40 premium; no haircut - SaaS monopoly at 79% discount to 10yr median"
 	},
-	"lastUpdated": "2026-03-16T18:42:24.040Z",
+	"lastUpdated": "2026-03-16T20:50:55.512Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.88,
@@ -60,6 +60,16 @@
 			"riskMultiplier": 0.994
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 198.34,
+				"price6mAgo": 242.21,
+				"price1mAgo": 184.29,
+				"low3m": 174.57,
+				"return6m": -18.1,
+				"return1m": 7.6,
+				"near3mLow": false
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 17,

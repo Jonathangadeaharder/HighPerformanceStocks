@@ -4,7 +4,7 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1586.2B USD",
+	"marketCap": "$1587.2B USD",
 	"sharpeRatio": 0.26,
 	"expectedCAGR": "9% - 20%",
 	"expectedVolatility": "~39%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$862.25",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$627.05",
+	"currentPrice": "$627.45",
 	"consensus": {
 		"tipranks": "$836",
 		"yahoo": "$862.25",
@@ -51,7 +51,7 @@
 		"decayFactor": 0.9,
 		"basis": "Forward PE (17.5x) with advertising monopoly premium; no haircut"
 	},
-	"lastUpdated": "2026-03-16T18:42:32.607Z",
+	"lastUpdated": "2026-03-16T20:51:03.684Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.92,
@@ -64,6 +64,16 @@
 			"riskMultiplier": 1.002
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 627.45,
+				"price6mAgo": 775.72,
+				"price1mAgo": 639.29,
+				"low3m": 600,
+				"return6m": -19.1,
+				"return1m": -1.9,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 2,
@@ -76,8 +86,8 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 288.21,
+		"dcf": 287.85,
 		"date": "2026-03-16",
-		"discount": -53
+		"discount": -54
 	}
 }

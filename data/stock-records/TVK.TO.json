@@ -11,8 +11,8 @@
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": 14.6,
-		"trailingPE": 32.9,
-		"forwardPE": 22.2
+		"trailingPE": 32.6,
+		"forwardPE": 22
 	},
 	"metrics": {
 		"roe": "16.9%",
@@ -24,7 +24,7 @@
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$138.40",
+	"currentPrice": "C$137.12",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -42,20 +42,41 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-16T18:42:39.193Z",
+	"lastUpdated": "2026-03-16T20:51:10.775Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.5,
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 22.2,
+			"multiple": 22,
 			"cvStock": 0.107,
 			"riskMultiplier": 1.016
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 137.12,
+				"price6mAgo": 135.47,
+				"price1mAgo": 147.88,
+				"low3m": 132.33,
+				"return6m": 1.2,
+				"return1m": -7.3,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 40.1,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

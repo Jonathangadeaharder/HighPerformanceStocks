@@ -21,8 +21,8 @@
 			"bull": "31%"
 		}
 	},
-	"currentPrice": "$100.39",
-	"marketCap": "$33.2B USD",
+	"currentPrice": "$100.51",
+	"marketCap": "$33.3B USD",
 	"valuation": {
 		"trailingPE": 15.6,
 		"forwardPE": 13,
@@ -53,6 +53,16 @@
 		},
 		"note": "Recent earnings miss",
 		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 100.51,
+				"price6mAgo": 178.89,
+				"price1mAgo": 130.41,
+				"low3m": 95.8,
+				"return6m": -43.8,
+				"return1m": -22.9,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 3,
@@ -64,5 +74,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:21.088Z"
+	"lastUpdated": "2026-03-16T20:50:52.268Z",
+	"expectedVolatility": "~47%",
+	"sharpeRatio": 0.44
 }

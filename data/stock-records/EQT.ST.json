@@ -50,7 +50,7 @@
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-03-16T18:42:25.253Z",
+	"lastUpdated": "2026-03-16T20:50:56.573Z",
 	"screener": {
 		"engine": "fFREG",
 		"score": 1.04,
@@ -61,6 +61,23 @@
 			"multiple": 21,
 			"cvStock": 0.071,
 			"riskMultiplier": 0.994
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 278.9,
+				"price6mAgo": 331.7,
+				"price1mAgo": 294.7,
+				"low3m": 265.9,
+				"return6m": -15.9,
+				"return1m": -5.4,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 2
+			}
 		},
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 0.95

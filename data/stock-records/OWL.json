@@ -25,7 +25,7 @@
 		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
 	},
 	"valuation": {
-		"trailingPE": 9.3,
+		"trailingPE": 9.4,
 		"forwardPE": 8,
 		"evEbitda": 10.8
 	},
@@ -41,8 +41,8 @@
 	"consensus": {
 		"yahoo": "$15.93"
 	},
-	"currentPrice": "$8.73",
-	"marketCap": "$13.6B USD",
+	"currentPrice": "$8.76",
+	"marketCap": "$13.7B USD",
 	"expectedCAGR": "22% - 33%",
 	"expectedVolatility": "~49%",
 	"sharpeRatio": 0.47,
@@ -59,6 +59,16 @@
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 8.76,
+				"price6mAgo": 18.55,
+				"price1mAgo": 12.08,
+				"low3m": 8.55,
+				"return6m": -52.8,
+				"return1m": -27.5,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
@@ -70,5 +80,5 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:35.317Z"
+	"lastUpdated": "2026-03-16T20:51:06.719Z"
 }

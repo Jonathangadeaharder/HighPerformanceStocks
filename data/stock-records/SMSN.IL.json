@@ -29,7 +29,7 @@
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
-	"expectedVolatility": "~40%",
+	"expectedVolatility": "~41%",
 	"screener": {
 		"engine": "totalReturn",
 		"score": null,
@@ -39,9 +39,26 @@
 			"growth": 9,
 			"dividendYield": 47,
 			"earningsYield": 2
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 3202,
+				"price6mAgo": 1421,
+				"price1mAgo": 3074,
+				"low3m": 1728,
+				"return6m": 125.3,
+				"return1m": 4.2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:37.313Z",
+	"lastUpdated": "2026-03-16T20:51:08.876Z",
 	"valuation": {
 		"trailingPE": 33.2,
 		"forwardPE": 51.1,
@@ -56,6 +73,6 @@
 		"ruleOf40": "-27%"
 	},
 	"expectedCAGR": "33% - 45%",
-	"sharpeRatio": 0.86,
+	"sharpeRatio": 0.84,
 	"cyclical": true
 }

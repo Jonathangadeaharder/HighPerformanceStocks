@@ -276,7 +276,7 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 				result.note = `Cheap (${result.score}) but base CAGR ${baseCagr}% misses the ${ETF_HURDLE_CAGR}% hurdle`;
 			}
 
-			if (result.signal === 'PASS') {
+			if (true) {
 				applyRealityChecks(result, rawPrice, historicalData, summary);
 			}
 
@@ -327,7 +327,7 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
 	}
 
-	if (result.signal === 'PASS') {
+	if (true) {
 		applyRealityChecks(result, rawPrice, historicalData, summary);
 	}
 

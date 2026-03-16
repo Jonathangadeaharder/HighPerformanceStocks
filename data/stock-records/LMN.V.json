@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
-	"marketCap": "C$6.4B",
+	"marketCap": "C$6.3B",
 	"sharpeRatio": 0.29,
 	"expectedCAGR": "14% - 23%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 39.5,
-		"forwardPE": 16.7,
+		"trailingPE": 39.2,
+		"forwardPE": 16.6,
 		"pegRatio": null,
 		"evEbitda": 22.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "C$44.25",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$24.88",
+	"currentPrice": "C$24.67",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
@@ -47,19 +47,40 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:31.552Z",
+	"lastUpdated": "2026-03-16T20:51:02.508Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.15,
+		"score": 1.14,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "P/CF",
-			"multiple": 20.6,
+			"multiple": 20.4,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 24.67,
+				"price6mAgo": 45.5,
+				"price1mAgo": 18.1,
+				"low3m": 17.77,
+				"return6m": -45.8,
+				"return1m": 36.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": 57.8,
+				"quarter": "2025-12"
+			}
+		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.94
+		"secondaryScore": 0.93
 	}
 }

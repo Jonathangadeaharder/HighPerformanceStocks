@@ -47,7 +47,7 @@
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
 	},
-	"lastUpdated": "2026-03-16T18:42:19.938Z",
+	"lastUpdated": "2026-03-16T20:50:51.230Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.03,
@@ -58,6 +58,27 @@
 			"multiple": 15.7,
 			"cvStock": 0.054,
 			"riskMultiplier": 0.984
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 558.5,
+				"price6mAgo": 661.5,
+				"price1mAgo": 522,
+				"low3m": 498.8,
+				"return6m": -15.6,
+				"return1m": 7,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 9
+			},
+			"earningsSurprise": {
+				"surprise": 7.7,
+				"quarter": "2025-09"
+			}
 		}
 	}
 }

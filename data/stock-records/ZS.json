@@ -25,7 +25,7 @@
 	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$153.77",
+	"currentPrice": "$153.69",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$234.79"
@@ -47,7 +47,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-16T18:42:42.034Z",
+	"lastUpdated": "2026-03-16T20:51:14.115Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.39,
@@ -58,6 +58,27 @@
 			"multiple": 33.5,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 153.69,
+				"price6mAgo": 279.46,
+				"price1mAgo": 172.59,
+				"low3m": 140.56,
+				"return6m": -45,
+				"return1m": -11,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 36,
+				"down30d": 6
+			},
+			"earningsSurprise": {
+				"surprise": 12.6,
+				"quarter": "2026-01"
+			}
 		}
 	}
 }

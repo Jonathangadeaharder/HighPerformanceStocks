@@ -4,12 +4,12 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$88.1B USD",
+	"marketCap": "$88.0B USD",
 	"sharpeRatio": 0.65,
 	"expectedCAGR": "21% - 32%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 80,
+		"trailingPE": 79.9,
 		"forwardPE": 6.7,
 		"pegRatio": null,
 		"evEbitda": 14.8
@@ -26,7 +26,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39.20",
+	"currentPrice": "$39.14",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -49,7 +49,7 @@
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:22.264Z",
+	"lastUpdated": "2026-03-16T20:50:53.470Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.69,
@@ -57,11 +57,21 @@
 		"inputs": {
 			"growth": 25,
 			"multipleType": "P/ANI",
-			"multiple": 17.3,
+			"multiple": 17.2,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 39.14,
+				"price6mAgo": 46.23,
+				"price1mAgo": 47.78,
+				"low3m": 38.28,
+				"return6m": -15.3,
+				"return1m": -18.1,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,

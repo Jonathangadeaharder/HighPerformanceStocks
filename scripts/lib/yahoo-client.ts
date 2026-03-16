@@ -48,11 +48,12 @@ export async function fetchHistoricalData(ticker) {
 		const start = new Date();
 		start.setFullYear(start.getFullYear() - 1);
 
-		const history = await yf.historical(ticker, {
+		const chartData = await yf.chart(ticker, {
 			period1: start,
 			period2: end,
 			interval: '1d'
 		});
+		const history = chartData.quotes;
 
 		if (!history || history.length < 60) {
 			return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };

@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4484.8B USD",
+	"marketCap": "$4453.2B USD",
 	"sharpeRatio": 0.57,
 	"expectedCAGR": "21% - 35%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 37.7,
-		"forwardPE": 17.1,
+		"trailingPE": 37.4,
+		"forwardPE": 17,
 		"pegRatio": 1.6,
 		"evEbitda": 32.5
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$267.54",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$184.52",
+	"currentPrice": "$183.22",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$267.54",
@@ -49,7 +49,7 @@
 		"decayFactor": 0.75,
 		"basis": "10yr avg PE (55); no haircut - let data speak"
 	},
-	"lastUpdated": "2026-03-16T18:42:35.329Z",
+	"lastUpdated": "2026-03-16T20:51:06.771Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.5,
@@ -57,11 +57,21 @@
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 17.1,
+			"multiple": 17,
 			"cvStock": 0.131,
 			"riskMultiplier": 1.03
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 183.22,
+				"price6mAgo": 170.29,
+				"price1mAgo": 184.97,
+				"low3m": 170.31,
+				"return6m": 7.6,
+				"return1m": -0.9,
+				"near3mLow": false
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 26,
@@ -74,8 +84,8 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 234.57,
+		"dcf": 234.55,
 		"date": "2026-03-16",
-		"discount": 30
+		"discount": 28
 	}
 }

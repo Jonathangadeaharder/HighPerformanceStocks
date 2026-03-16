@@ -9,8 +9,8 @@
 	"expectedCAGR": "11% - 20%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 57.8,
-		"forwardPE": 46.1,
+		"trailingPE": 57.7,
+		"forwardPE": 46,
 		"pegRatio": null,
 		"evEbitda": 34
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$291.98",
+	"currentPrice": "$291.47",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
@@ -50,7 +50,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T18:42:28.442Z",
+	"lastUpdated": "2026-03-16T20:50:59.448Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.85,
@@ -61,6 +61,27 @@
 			"multiple": 34,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 291.47,
+				"price6mAgo": 316.95,
+				"price1mAgo": 337.21,
+				"low3m": 285.52,
+				"return6m": -8,
+				"return1m": -13.6,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 11,
+				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": 4.7,
+				"quarter": "2026-01"
+			}
 		},
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 2.51

@@ -4,13 +4,13 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$502.1B USD",
+	"marketCap": "$497.2B USD",
 	"sharpeRatio": -0.13,
 	"expectedCAGR": "-8% - 0%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 42.4,
-		"forwardPE": 7.9,
+		"trailingPE": 42,
+		"forwardPE": 7.8,
 		"pegRatio": null,
 		"evEbitda": 21.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$426.59",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$446.12",
+	"currentPrice": "$441.80",
 	"consensus": {
 		"tipranks": "$431",
 		"yahoo": "$426.59",
@@ -43,24 +43,45 @@
 		},
 		"scenarios": {
 			"bear": "-8%",
-			"base": "-4%",
+			"base": "-3%",
 			"bull": "0%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-16T18:42:33.554Z",
+	"lastUpdated": "2026-03-16T20:51:04.849Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.74,
+		"score": 0.73,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 7.9,
+			"multiple": 7.8,
 			"cvStock": 0.284,
 			"riskMultiplier": 1.122
 		},
-		"note": "Cheap (0.74) but base CAGR -4% misses the 14% hurdle (CYCLICAL EPS)"
+		"note": "Cheap (0.73) but base CAGR -3% misses the 14% hurdle (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 441.8,
+				"price6mAgo": 159.99,
+				"price1mAgo": 399.78,
+				"low3m": 221.69,
+				"return6m": 176.1,
+				"return1m": 10.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 6,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 20.6,
+				"quarter": "2025-11"
+			}
+		}
 	},
 	"cyclical": true
 }

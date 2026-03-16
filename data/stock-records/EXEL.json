@@ -4,7 +4,7 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "low",
 	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
-	"marketCap": "$11.1B USD",
+	"marketCap": "$11.0B USD",
 	"sharpeRatio": 0.52,
 	"expectedCAGR": "21% - 34%",
 	"expectedVolatility": "~44%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$46.83",
 	"bullCase": "A classic value anomaly. A highly profitable, cash-generating oncology firm trading at deep value multiples. It absorbs macroeconomic volatility shocks that typically devastate high-beta tech holdings.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$41.27",
+	"currentPrice": "$41.07",
 	"consensus": {
 		"tipranks": "$45",
 		"yahoo": "$46.83",
@@ -43,12 +43,12 @@
 		},
 		"scenarios": {
 			"bear": "21%",
-			"base": "28%",
+			"base": "29%",
 			"bull": "34%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-16T18:42:26.326Z",
+	"lastUpdated": "2026-03-16T20:50:57.437Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.52,
@@ -61,6 +61,16 @@
 			"riskMultiplier": 1.033
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 41.07,
+				"price6mAgo": 40.44,
+				"price1mAgo": 44.08,
+				"low3m": 39.71,
+				"return6m": 1.6,
+				"return1m": -6.8,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 4,

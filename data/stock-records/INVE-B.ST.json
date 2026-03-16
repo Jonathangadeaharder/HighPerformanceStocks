@@ -41,7 +41,7 @@
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-16T18:42:29.385Z",
+	"lastUpdated": "2026-03-16T20:51:00.620Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
@@ -55,6 +55,23 @@
 			"multiple": 22.4,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 353.35,
+				"price6mAgo": 282.25,
+				"price1mAgo": 362,
+				"low3m": 317.5,
+				"return6m": 25.2,
+				"return1m": -2.4,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			}
 		}
 	}
 }

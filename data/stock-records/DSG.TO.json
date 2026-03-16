@@ -17,15 +17,15 @@
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "13%",
-			"base": "16%",
+			"base": "17%",
 			"bull": "19%"
 		}
 	},
-	"currentPrice": "C$99.29",
+	"currentPrice": "C$98.71",
 	"marketCap": "C$8.5B",
 	"valuation": {
-		"trailingPE": 41,
-		"forwardPE": 22.3,
+		"trailingPE": 40.8,
+		"forwardPE": 22.2,
 		"evEbitda": 26.7
 	},
 	"metrics": {
@@ -36,21 +36,44 @@
 		"ruleOf40": "48%"
 	},
 	"consensus": {
-		"yahoo": "C$128.66"
+		"yahoo": "C$128.78"
 	},
-	"targetPrice": "C$128.66",
+	"targetPrice": "C$128.78",
 	"expectedCAGR": "13% - 19%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.31,
+		"score": 1.3,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 22.3,
+			"multiple": 22.2,
 			"cvStock": 0.072,
 			"riskMultiplier": 0.995
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 98.71,
+				"price6mAgo": 137.68,
+				"price1mAgo": 89.01,
+				"low3m": 85.26,
+				"return6m": -28.3,
+				"return1m": 10.9,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 4,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": -5.8,
+				"quarter": "2026-01"
+			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:25.131Z"
+	"lastUpdated": "2026-03-16T20:50:56.508Z",
+	"expectedVolatility": "~37%",
+	"sharpeRatio": 0.31
 }

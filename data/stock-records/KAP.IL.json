@@ -29,7 +29,7 @@
 	"consensus": {
 		"yahoo": "$95.00"
 	},
-	"expectedVolatility": "~46%",
+	"expectedVolatility": "~47%",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.82,
@@ -42,6 +42,16 @@
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 76.1,
+				"price6mAgo": 49.95,
+				"price1mAgo": 79.7,
+				"low3m": 47.8,
+				"return6m": 52.4,
+				"return1m": -4.5,
+				"near3mLow": false
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
@@ -50,7 +60,7 @@
 		},
 		"note": "Used benchmark CV (missing dispersion data)"
 	},
-	"lastUpdated": "2026-03-16T18:42:30.543Z",
+	"lastUpdated": "2026-03-16T20:51:01.556Z",
 	"valuation": {
 		"trailingPE": 12.4,
 		"forwardPE": 0,
@@ -65,5 +75,5 @@
 		"ruleOf40": "1%"
 	},
 	"expectedCAGR": "10% - 20%",
-	"sharpeRatio": 0.23
+	"sharpeRatio": 0.22
 }

@@ -4,13 +4,13 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$49.4B USD",
-	"sharpeRatio": 0.06,
-	"expectedCAGR": "2% - 11%",
+	"marketCap": "$49.2B USD",
+	"sharpeRatio": 0.07,
+	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 53.7,
-		"forwardPE": 26.8,
+		"trailingPE": 53.4,
+		"forwardPE": 26.7,
 		"pegRatio": 5,
 		"evEbitda": 29.1
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$295.38",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$255.43",
+	"currentPrice": "$254.13",
 	"consensus": {
 		"tipranks": "$250",
 		"yahoo": "$295.38",
@@ -44,23 +44,44 @@
 		"scenarios": {
 			"bear": "2%",
 			"base": "7%",
-			"bull": "11%"
+			"bull": "12%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:27.227Z",
+	"lastUpdated": "2026-03-16T20:50:58.406Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.2,
+		"score": 3.18,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "P/CF",
-			"multiple": 37.6,
+			"multiple": 37.4,
 			"cvStock": 0.117,
 			"riskMultiplier": 1.022
 		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 254.13,
+				"price6mAgo": 200.88,
+				"price1mAgo": 249.73,
+				"low3m": 202.62,
+				"return6m": 26.5,
+				"return1m": 1.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": 10.9,
+				"quarter": "2025-12"
+			}
+		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.28
+		"secondaryScore": 2.27
 	}
 }

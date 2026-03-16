@@ -122,8 +122,9 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	const upside = Math.min(stock.upside ?? 0, 60);
 
 	// All engines are now normalized (lower is better, 1.0 = threshold).
-	// A score of 0.5 → strength 17.5, a score of 1.0 → strength 5.0, a score of 1.2+ → 0.
-	const valuationStrength = Math.max(0, 1.2 - (stock.screener?.score ?? 99)) * 25;
+	// A score of 0.5 → strength 17.5, a score of 1.0 → strength 5.0, a score of 1.2+ → penalty.
+	const score = stock.screener?.score ?? 1.2;
+	const valuationStrength = Math.max(-25, (1.2 - score) * 25);
 
 	// Cross-sectional momentum with short-term reversal skip (Jegadeesh & Titman 6-1 month).
 	// Uses actual universe mean/stddev computed from all stocks, not fixed constants.
@@ -140,7 +141,13 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	// Quality factor bonus (max +10 points) from ROE, FCF yield, Rule of 40.
 	const qualityBonus = computeQualityBonus(stock);
 
-	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus + qualityBonus).toFixed(1);
+	// Qualitative Confidence Bonus
+	let confidenceBonus = 0;
+	if (stock.confidence === 'high') confidenceBonus = 15;
+	else if (stock.confidence === 'low') confidenceBonus = -15;
+	else if (stock.confidence === 'cut') confidenceBonus = -50;
+
+	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus + qualityBonus + confidenceBonus).toFixed(1);
 }
 
 function hasLikelyValueFloor(stock: FindingStock): boolean {

@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$54.9B",
+	"marketCap": "C$54.3B",
 	"sharpeRatio": 0.14,
 	"expectedCAGR": "5% - 15%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 78.9,
-		"forwardPE": 14.1,
+		"trailingPE": 78.1,
+		"forwardPE": 13.9,
 		"pegRatio": null,
 		"evEbitda": 22.8
 	},
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4192.67",
+	"targetPrice": "C$4196.72",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2589.27",
+	"currentPrice": "C$2562.50",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4192.67"
+		"yahoo": "C$4196.72"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -48,7 +48,7 @@
 		"decayFactor": 0.94,
 		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-16T18:42:24.081Z",
+	"lastUpdated": "2026-03-16T20:50:55.560Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.23,
@@ -60,7 +60,28 @@
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 2562.5,
+				"price6mAgo": 4281.59,
+				"price1mAgo": 2258.18,
+				"low3m": 2196,
+				"return6m": -40.2,
+				"return1m": 13.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": -23.2,
+				"quarter": "2025-12"
+			}
+		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.76
+		"secondaryScore": 0.75
 	}
 }

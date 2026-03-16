@@ -4,13 +4,13 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$171.2B USD",
+	"marketCap": "$171.7B USD",
 	"sharpeRatio": 0.19,
 	"expectedCAGR": "7% - 15%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 61.1,
-		"forwardPE": 42.1,
+		"trailingPE": 61.3,
+		"forwardPE": 42.2,
 		"pegRatio": null,
 		"evEbitda": 45.5
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$607.17",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$482.19",
+	"currentPrice": "$483.46",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$607.17"
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-16T18:42:29.416Z",
+	"lastUpdated": "2026-03-16T20:51:00.476Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.92,
@@ -55,9 +55,30 @@
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 42.1,
+			"multiple": 42.2,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.97
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 483.46,
+				"price6mAgo": 433.66,
+				"price1mAgo": 493.35,
+				"low3m": 458,
+				"return6m": 11.5,
+				"return1m": -2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 5,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 11.6,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

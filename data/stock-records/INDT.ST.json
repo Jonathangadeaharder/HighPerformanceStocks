@@ -43,14 +43,38 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.55,
-		"signal": "FAIL",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
 			"multiple": 23.6,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.983
+		},
+		"note": "Consensus actively collapsing (analyst lag)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 211.2,
+				"price6mAgo": 229.4,
+				"price1mAgo": 223.4,
+				"low3m": 206.4,
+				"return6m": -7.9,
+				"return1m": -5.5,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 0,
+				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": -14.7,
+				"quarter": "2025-12"
+			}
 		}
 	},
-	"lastUpdated": "2026-03-16T18:42:29.370Z"
+	"lastUpdated": "2026-03-16T20:51:00.442Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.07
 }

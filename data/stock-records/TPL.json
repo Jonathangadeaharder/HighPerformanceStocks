@@ -4,13 +4,13 @@
 	"group": "Energy Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Irreplaceable 880K-acre Permian asset with world-class profitability (39% ROE, 30% ROIC, 62% FCF margin). Data center optionality via Bolt partnership. But 41x P/E after 50% February rally prices in much of the upside.",
-	"marketCap": "$36.6B USD",
+	"marketCap": "$36.3B USD",
 	"sharpeRatio": -0.11,
 	"expectedCAGR": "-8% - 6%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 76.3,
-		"forwardPE": 7.3,
+		"trailingPE": 75.7,
+		"forwardPE": 7.2,
 		"pegRatio": null,
 		"evEbitda": 55.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$444.50",
 	"bullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
 	"bearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot.",
-	"currentPrice": "$530.88",
+	"currentPrice": "$526.89",
 	"consensus": {
 		"tipranks": "$445",
 		"yahoo": "$444.50",
@@ -43,23 +43,40 @@
 		},
 		"scenarios": {
 			"bear": "-8%",
-			"base": "-2%",
+			"base": "-1%",
 			"bull": "6%"
 		},
 		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:38.335Z",
+	"lastUpdated": "2026-03-16T20:51:09.916Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.49,
+		"score": 0.48,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 7.3,
+			"multiple": 7.2,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (0.49) but base CAGR -2% misses the 14% hurdle (Used benchmark CV)"
+		"note": "Cheap (0.48) but base CAGR -1% misses the 14% hurdle (Used benchmark CV)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 526.89,
+				"price6mAgo": 304.33,
+				"price1mAgo": 426.42,
+				"low3m": 269.23,
+				"return6m": 73.1,
+				"return1m": 23.6,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		}
 	}
 }

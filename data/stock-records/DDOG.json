@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
-	"marketCap": "$45.2B USD",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "4% - 16%",
+	"marketCap": "$44.8B USD",
+	"sharpeRatio": 0.11,
+	"expectedCAGR": "5% - 16%",
 	"expectedVolatility": "~54%",
 	"valuation": {
-		"trailingPE": 411.7,
-		"forwardPE": 48.3,
+		"trailingPE": 408.3,
+		"forwardPE": 47.9,
 		"evEbitda": 5406.7
 	},
 	"metrics": {
@@ -23,10 +23,10 @@
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$127.62",
+	"currentPrice": "$126.57",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "4%",
+			"bear": "5%",
 			"base": "11%",
 			"bull": "16%"
 		},
@@ -41,20 +41,41 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:24.201Z",
+	"lastUpdated": "2026-03-16T20:50:55.628Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.46,
+		"score": 2.44,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 48.3,
+			"multiple": 47.9,
 			"cvStock": 0.11,
 			"riskMultiplier": 1.018
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 126.57,
+				"price6mAgo": 134.23,
+				"price1mAgo": 122.56,
+				"low3m": 98.01,
+				"return6m": -5.7,
+				"return1m": 3.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 28
+			},
+			"earningsSurprise": {
+				"surprise": 6.3,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

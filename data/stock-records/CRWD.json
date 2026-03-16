@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$108.9B USD",
-	"sharpeRatio": 0.05,
+	"marketCap": "$107.5B USD",
+	"sharpeRatio": 0.04,
 	"expectedCAGR": "1% - 12%",
-	"expectedVolatility": "~44%",
+	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 69.5,
+		"forwardPE": 68.6,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$493.08",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$429.20",
+	"currentPrice": "$423.84",
 	"consensus": {
 		"tipranks": "$550",
 		"yahoo": "$493.08"
@@ -47,17 +47,38 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-16T18:42:24.031Z",
+	"lastUpdated": "2026-03-16T20:50:55.540Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.18,
+		"score": 2.15,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",
-			"multiple": 69.5,
+			"multiple": 68.6,
 			"cvStock": 0.087,
 			"riskMultiplier": 1.004
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 423.84,
+				"price6mAgo": 445.5,
+				"price1mAgo": 414.29,
+				"low3m": 342.72,
+				"return6m": -4.9,
+				"return1m": 2.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 21,
+				"down30d": 7
+			},
+			"earningsSurprise": {
+				"surprise": 1.6,
+				"quarter": "2026-01"
+			}
 		}
 	}
 }

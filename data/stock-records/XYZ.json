@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$36.7B USD",
-	"sharpeRatio": 0.37,
-	"expectedCAGR": "20% - 30%",
+	"marketCap": "$36.4B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "20% - 31%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 16.8,
-		"forwardPE": 12.8,
+		"trailingPE": 16.7,
+		"forwardPE": 12.7,
 		"pegRatio": null,
 		"evEbitda": 18.1
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$85.79",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$60.33",
+	"currentPrice": "$59.85",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$85.79",
@@ -44,21 +44,42 @@
 		"scenarios": {
 			"bear": "20%",
 			"base": "26%",
-			"bull": "30%"
+			"bull": "31%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-16T18:42:42.212Z",
+	"lastUpdated": "2026-03-16T20:51:13.892Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.11,
+		"score": 1.1,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.8,
+			"multiple": 12.7,
 			"cvStock": 0.145,
 			"riskMultiplier": 1.039
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 59.85,
+				"price6mAgo": 75.71,
+				"price1mAgo": 50.81,
+				"low3m": 48.21,
+				"return6m": -20.9,
+				"return1m": 17.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 23,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 0.2,
+				"quarter": "2025-12"
+			}
 		}
 	}
 }

@@ -4,12 +4,12 @@
 	"group": "Ad-Tech",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$153.4B USD",
+	"marketCap": "$153.2B USD",
 	"sharpeRatio": 0.12,
 	"expectedCAGR": "4% - 24%",
 	"expectedVolatility": "~81%",
 	"valuation": {
-		"trailingPE": 45.2,
+		"trailingPE": 45.1,
 		"forwardPE": 22.4,
 		"pegRatio": 0.8,
 		"evEbitda": 36.5
@@ -29,7 +29,7 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$453.80",
+	"currentPrice": "$453.30",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "30%",
@@ -41,13 +41,13 @@
 		},
 		"scenarios": {
 			"bear": "4%",
-			"base": "15%",
+			"base": "16%",
 			"bull": "24%"
 		},
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.04
 	},
-	"lastUpdated": "2026-03-16T18:42:21.056Z",
+	"lastUpdated": "2026-03-16T20:50:52.464Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.75,
@@ -60,6 +60,16 @@
 			"riskMultiplier": 1.011
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 453.3,
+				"price6mAgo": 606.66,
+				"price1mAgo": 376.38,
+				"low3m": 359,
+				"return6m": -25.3,
+				"return1m": 20.4,
+				"near3mLow": false
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 12,

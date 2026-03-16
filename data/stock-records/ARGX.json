@@ -4,13 +4,13 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
-	"marketCap": "$43.6B USD",
+	"marketCap": "$43.5B USD",
 	"sharpeRatio": 0.53,
 	"expectedCAGR": "18% - 26%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 36,
-		"forwardPE": 21.6,
+		"trailingPE": 35.9,
+		"forwardPE": 21.5,
 		"pegRatio": null,
 		"evEbitda": 35.5
 	},
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "87%"
 	},
-	"targetPrice": "$1011.88",
+	"targetPrice": "$1010.49",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$705.09",
+	"currentPrice": "$703.30",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1011.88"
+		"yahoo": "$1010.49"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -42,12 +42,12 @@
 		},
 		"scenarios": {
 			"bear": "18%",
-			"base": "22%",
+			"base": "23%",
 			"bull": "26%"
 		},
 		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
 	},
-	"lastUpdated": "2026-03-16T18:42:21.155Z",
+	"lastUpdated": "2026-03-16T20:50:52.494Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.85,
@@ -55,11 +55,21 @@
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 21.6,
+			"multiple": 21.5,
 			"cvStock": 0.185,
 			"riskMultiplier": 1.063
 		},
 		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 703.3,
+				"price6mAgo": 734.35,
+				"price1mAgo": 843.55,
+				"low3m": 694.14,
+				"return6m": -4.2,
+				"return1m": -16.6,
+				"near3mLow": true
+			},
 			"revisions": {
 				"pass": true,
 				"up30d": 2,
