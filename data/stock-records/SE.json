@@ -19,9 +19,9 @@
 		"dividendYield": "0%",
 		"ttmEPS": 2.52,
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "1%",
+			"base": "6%",
+			"bull": "10%"
 		}
 	},
 	"currentPrice": "$86",
@@ -41,9 +41,9 @@
 			"cvStock": 0.133,
 			"riskMultiplier": 1.032
 		},
-		"note": "Cheap (0.58) but base CAGR 12% misses the 14% hurdle"
+		"note": "Cheap (0.58) but base CAGR 6% misses the 14% hurdle"
 	},
-	"lastUpdated": "2026-03-16T08:47:12.829Z",
+	"lastUpdated": "2026-03-16T12:36:14.373Z",
 	"valuation": {
 		"trailingPE": 34.1,
 		"forwardPE": 16.8,
@@ -56,6 +56,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"expectedCAGR": "7% - 16%",
-	"sharpeRatio": 0.13
+	"expectedCAGR": "1% - 10%",
+	"sharpeRatio": 0.02
 }

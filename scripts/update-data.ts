@@ -218,7 +218,18 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// epsGrowth is kept manual — no reliable per-stock LTG source in Yahoo Finance
 
 		// Recalculate scenarios
-		const epsGrowth = parsePercent(model.epsGrowth);
+		// Regression-to-Mean (RTM) adjustment for absolute CAGR projections.
+		// Chan, Karceski & Lakonishok (2003) prove analyst LTG forecasts are biased upward,
+		// with overestimation scaling proportionally to the forecast level.
+		// Formula: adjusted = GDP_BASELINE + (raw - GDP_BASELINE) * SHRINKAGE
+		// GDP_BASELINE ≈ 6% (long-run nominal earnings growth), SHRINKAGE = 0.5
+		// This preserves low-growth accuracy while halving the excess optimism of high-growth forecasts.
+		const RTM_BASELINE = 6.0;
+		const RTM_SHRINKAGE = 0.5;
+		const rawEpsGrowth = parsePercent(model.epsGrowth);
+		const epsGrowth = rawEpsGrowth != null
+			? +(RTM_BASELINE + (rawEpsGrowth - RTM_BASELINE) * RTM_SHRINKAGE).toFixed(1)
+			: undefined;
 		const dyPct = parsePercent(model.dividendYield) || 0;
 		const decayFactor =
 			typeof model.decayFactor === 'number' ? model.decayFactor : DEFAULT_GROWTH_DECAY;

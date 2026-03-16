@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
 	"marketCap": "$60.6B USD",
-	"sharpeRatio": 0.39,
-	"expectedCAGR": "16% - 27%",
+	"sharpeRatio": 0.31,
+	"expectedCAGR": "13% - 23%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": 18.9,
@@ -44,17 +44,17 @@
 			"bull": 20
 		},
 		"scenarios": {
-			"bear": "16%",
-			"base": "21%",
-			"bull": "27%"
+			"bear": "13%",
+			"base": "17%",
+			"bull": "23%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-16T08:46:57.429Z",
+	"lastUpdated": "2026-03-16T12:36:01.056Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.6,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
@@ -62,7 +62,6 @@
 			"cvStock": 0.022,
 			"riskMultiplier": 0.965
 		},
-		"note": "Cheap, but still stabilizing (downtrend remains active)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
@@ -76,9 +75,15 @@
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 9,
-				"down30d": 1
+				"up30d": 7,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 21.3,
+				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.46
 	}
 }

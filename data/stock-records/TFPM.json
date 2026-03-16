@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$7.4B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "3% - 12%",
+	"sharpeRatio": 0.06,
+	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 30.4,
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "59%"
 	},
-	"targetPrice": "$41.75",
+	"targetPrice": "$44.25",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
 	"currentPrice": "$35.89",
 	"consensus": {
 		"tipranks": "C$59",
-		"yahoo": "$41.75",
+		"yahoo": "$44.25",
 		"stockanalysis": "$35"
 	},
 	"cagrModel": {
@@ -42,13 +42,13 @@
 			"bull": 28
 		},
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
+			"bear": "2%",
+			"base": "7%",
 			"bull": "12%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:13.926Z",
+	"lastUpdated": "2026-03-16T12:36:15.320Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,

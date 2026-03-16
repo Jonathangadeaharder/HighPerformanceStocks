@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
 	"marketCap": "$54.3B USD",
-	"sharpeRatio": 0.2,
-	"expectedCAGR": "5% - 15%",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "6% - 16%",
 	"expectedVolatility": "~28%",
 	"valuation": {
 		"trailingPE": 10.5,
@@ -41,13 +41,13 @@
 			"bull": 16
 		},
 		"scenarios": {
-			"bear": "5%",
+			"bear": "6%",
 			"base": "11%",
-			"bull": "15%"
+			"bull": "16%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-16T08:47:04.580Z",
+	"lastUpdated": "2026-03-16T12:36:08.209Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 3.43,

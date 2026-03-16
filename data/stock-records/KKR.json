@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 at 104%. Market misunderstands recurring permanent capital vehicle revenues.",
 	"marketCap": "$79.6B USD",
-	"sharpeRatio": 0.25,
-	"expectedCAGR": "10% - 22%",
+	"sharpeRatio": 0.16,
+	"expectedCAGR": "6% - 18%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": 36.7,
@@ -43,13 +43,13 @@
 			"bull": 25
 		},
 		"scenarios": {
-			"bear": "10%",
-			"base": "17%",
-			"bull": "22%"
+			"bear": "6%",
+			"base": "13%",
+			"bull": "18%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-16T08:47:03.627Z",
+	"lastUpdated": "2026-03-16T12:36:07.221Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.9,
@@ -60,6 +60,8 @@
 			"multiple": 18.3,
 			"cvStock": 0.047,
 			"riskMultiplier": 0.98
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.53
 	}
 }

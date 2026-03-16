@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
 	"marketCap": "$74.8B USD",
-	"sharpeRatio": -0.05,
-	"expectedCAGR": "-1% - 5%",
+	"sharpeRatio": -0.14,
+	"expectedCAGR": "-6% - 0%",
 	"expectedVolatility": "~52%",
 	"valuation": {
 		"forwardPE": 147,
@@ -25,9 +25,9 @@
 	"currentPrice": "$212.45",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-1%",
-			"base": "2%",
-			"bull": "5%"
+			"bear": "-6%",
+			"base": "-3%",
+			"bull": "0%"
 		},
 		"ttmEPS": 1.12,
 		"horizon": 5,
@@ -40,7 +40,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:09.297Z",
+	"lastUpdated": "2026-03-16T12:36:10.199Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},

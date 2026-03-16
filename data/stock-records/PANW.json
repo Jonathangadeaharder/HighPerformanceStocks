@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
 	"marketCap": "$136.3B USD",
-	"sharpeRatio": 0.06,
-	"expectedCAGR": "1% - 12%",
+	"sharpeRatio": -0.06,
+	"expectedCAGR": "-3% - 8%",
 	"expectedVolatility": "~36%",
 	"valuation": {
 		"trailingPE": 92.8,
@@ -41,13 +41,13 @@
 			"bull": 42
 		},
 		"scenarios": {
-			"bear": "1%",
-			"base": "6%",
-			"bull": "12%"
+			"bear": "-3%",
+			"base": "3%",
+			"bull": "8%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-16T08:47:10.611Z",
+	"lastUpdated": "2026-03-16T12:36:11.214Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.21,

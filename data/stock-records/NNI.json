@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
 	"marketCap": "$4.7B USD",
-	"sharpeRatio": 0.39,
-	"expectedCAGR": "7% - 20%",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "6% - 19%",
 	"expectedVolatility": "~23%",
 	"valuation": {
 		"pegRatio": null,
@@ -24,9 +24,9 @@
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "7%",
-			"base": "14%",
-			"bull": "20%"
+			"bear": "6%",
+			"base": "13%",
+			"bull": "19%"
 		},
 		"epsGrowth": "9%",
 		"exitPE": {
@@ -38,7 +38,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-16T08:47:09.327Z",
+	"lastUpdated": "2026-03-16T12:36:10.238Z",
 	"consensus": {
 		"yahoo": "$140"
 	},

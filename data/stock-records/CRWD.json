@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
 	"marketCap": "$112.0B USD",
-	"sharpeRatio": -0.19,
-	"expectedCAGR": "-9% - 1%",
+	"sharpeRatio": -0.32,
+	"expectedCAGR": "-14% - -5%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": null,
@@ -41,13 +41,13 @@
 			"bull": 50
 		},
 		"scenarios": {
-			"bear": "-9%",
-			"base": "-3%",
-			"bull": "1%"
+			"bear": "-14%",
+			"base": "-9%",
+			"bull": "-5%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-16T08:46:59.404Z",
+	"lastUpdated": "2026-03-16T12:36:03.003Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.24,

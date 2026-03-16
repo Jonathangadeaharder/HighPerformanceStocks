@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
 	"marketCap": "$24.5B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "8% - 20%",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "7% - 19%",
 	"expectedVolatility": "~20%",
 	"valuation": {
 		"pegRatio": null,
@@ -28,9 +28,9 @@
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "8%",
+			"bear": "7%",
 			"base": "14%",
-			"bull": "20%"
+			"bull": "19%"
 		},
 		"epsGrowth": "8%",
 		"exitPE": {
@@ -42,7 +42,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 169.22
 	},
-	"lastUpdated": "2026-03-16T08:47:07.566Z",
+	"lastUpdated": "2026-03-16T12:36:09.261Z",
 	"consensus": {
 		"yahoo": "$2081.75"
 	},

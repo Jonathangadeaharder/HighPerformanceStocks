@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
 	"marketCap": "$11.1B USD",
-	"sharpeRatio": 0.36,
-	"expectedCAGR": "14% - 27%",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "10% - 22%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": 14.8,
@@ -42,13 +42,13 @@
 			"bull": 25
 		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "21%",
-			"bull": "27%"
+			"bear": "10%",
+			"base": "17%",
+			"bull": "22%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-16T08:47:01.531Z",
+	"lastUpdated": "2026-03-16T12:36:04.968Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.52,
@@ -75,6 +75,10 @@
 				"pass": true,
 				"up30d": 4,
 				"down30d": 6
+			},
+			"earningsSurprise": {
+				"surprise": 16.2,
+				"quarter": "2025-12"
 			}
 		}
 	}

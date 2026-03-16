@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
 	"marketCap": "$592.2B USD",
-	"sharpeRatio": 0.54,
-	"expectedCAGR": "13% - 22%",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "10% - 19%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 28.8,
@@ -42,14 +42,14 @@
 			"bull": 42
 		},
 		"scenarios": {
-			"bear": "13%",
-			"base": "18%",
-			"bull": "22%"
+			"bear": "10%",
+			"base": "15%",
+			"bull": "19%"
 		},
 		"decayFactor": 0.93,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T08:47:14.848Z",
+	"lastUpdated": "2026-03-16T12:36:16.538Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.45,

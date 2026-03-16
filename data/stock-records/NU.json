@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
 	"marketCap": "$67.4B USD",
-	"sharpeRatio": 0.35,
-	"expectedCAGR": "14% - 23%",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "8% - 17%",
 	"expectedVolatility": "~40%",
 	"valuation": {
 		"trailingPE": 23.9,
@@ -43,17 +43,17 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "19%",
-			"bull": "23%"
+			"bear": "8%",
+			"base": "13%",
+			"bull": "17%"
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:10.558Z",
+	"lastUpdated": "2026-03-16T12:36:11.068Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.42,
-		"signal": "WAIT",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 28,
 			"multipleType": "Forward P/E",
@@ -61,23 +61,6 @@
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
 		},
-		"note": "Cheap, but still stabilizing (downtrend remains active)",
-		"realityChecks": {
-			"stabilization": {
-				"pass": false,
-				"price": 13.89,
-				"price6mAgo": 15.89,
-				"price1mAgo": 16.82,
-				"low3m": 13.81,
-				"return6m": -12.6,
-				"return1m": -17.4,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 5,
-				"down30d": 2
-			}
-		}
+		"note": "Cheap (0.42) but base CAGR 13% misses the 14% hurdle"
 	}
 }

@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
 	"marketCap": "$35.3B USD",
-	"sharpeRatio": 0.24,
-	"expectedCAGR": "6% - 17%",
+	"sharpeRatio": 0.16,
+	"expectedCAGR": "4% - 14%",
 	"expectedVolatility": "~29%",
 	"valuation": {
 		"trailingPE": 43.8,
@@ -41,14 +41,14 @@
 			"bull": 55
 		},
 		"scenarios": {
-			"bear": "6%",
-			"base": "12%",
-			"bull": "17%"
+			"bear": "4%",
+			"base": "9%",
+			"bull": "14%"
 		},
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-16T08:47:02.681Z",
+	"lastUpdated": "2026-03-16T12:36:06.144Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,
@@ -60,6 +60,8 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 3.21,
 		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

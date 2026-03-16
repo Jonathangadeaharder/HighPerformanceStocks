@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; utility-like stability warrants narrow PE range"
 	},
-	"lastUpdated": "2026-03-16T08:47:00.632Z",
+	"lastUpdated": "2026-03-16T12:36:04.001Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1,
@@ -74,6 +74,10 @@
 				"pass": true,
 				"up30d": 2,
 				"down30d": 3
+			},
+			"earningsSurprise": {
+				"surprise": 8.5,
+				"quarter": "2025-12"
 			}
 		}
 	}

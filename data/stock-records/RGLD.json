@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$22.0B USD",
-	"sharpeRatio": -0.01,
-	"expectedCAGR": "-1% - 9%",
+	"sharpeRatio": -0.04,
+	"expectedCAGR": "-2% - 8%",
 	"expectedVolatility": "~38%",
 	"valuation": {
 		"trailingPE": 38.7,
@@ -42,13 +42,13 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "-1%",
-			"base": "5%",
-			"bull": "9%"
+			"bear": "-2%",
+			"base": "3%",
+			"bull": "8%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:11.954Z",
+	"lastUpdated": "2026-03-16T12:36:12.523Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 2.76,
@@ -59,6 +59,8 @@
 			"multiple": 31,
 			"cvStock": 0.193,
 			"riskMultiplier": 1.068
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.57
 	}
 }

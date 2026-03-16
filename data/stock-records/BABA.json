@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
 	"marketCap": "$322.8B USD",
-	"sharpeRatio": 0.28,
-	"expectedCAGR": "11% - 23%",
+	"sharpeRatio": 0.22,
+	"expectedCAGR": "9% - 20%",
 	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": 17.8,
@@ -21,13 +21,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "0%"
 	},
-	"targetPrice": "$198.82",
+	"targetPrice": "$198.95",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
 	"currentPrice": "$135.21",
 	"consensus": {
 		"tipranks": "$168",
-		"yahoo": "$198.82",
+		"yahoo": "$198.95",
 		"stockanalysis": "$160"
 	},
 	"cagrModel": {
@@ -41,13 +41,13 @@
 			"bull": 25
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "17%",
-			"bull": "23%"
+			"bear": "9%",
+			"base": "15%",
+			"bull": "20%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-16T08:46:58.362Z",
+	"lastUpdated": "2026-03-16T12:36:02.004Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.28,

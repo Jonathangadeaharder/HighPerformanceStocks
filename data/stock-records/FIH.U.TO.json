@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
 	"marketCap": "$2.4B USD",
-	"sharpeRatio": 0.44,
-	"expectedCAGR": "11% - 27%",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "9% - 25%",
 	"expectedVolatility": "~33%",
 	"valuation": {
 		"pegRatio": null,
@@ -30,9 +30,9 @@
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "11%",
-			"base": "20%",
-			"bull": "27%"
+			"bear": "9%",
+			"base": "18%",
+			"bull": "25%"
 		},
 		"epsGrowth": "14%",
 		"exitPE": {
@@ -44,7 +44,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-16T08:47:01.674Z",
+	"lastUpdated": "2026-03-16T12:36:05.143Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.42,
@@ -56,6 +56,7 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
+		"note": "Recent earnings miss (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -71,8 +72,11 @@
 				"pass": true,
 				"up30d": 0,
 				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": -400,
+				"quarter": "2023-03"
 			}
-		},
-		"note": "Used benchmark CV (missing dispersion data)"
+		}
 	}
 }

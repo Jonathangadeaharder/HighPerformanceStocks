@@ -19,7 +19,7 @@ We do not subscribe to restrictive, single-factor dogmas (e.g., "Deep Value only
 3. **Momentum (The Confirmation):** Cheap stocks can stay cheap forever. We use un-neutered, cross-sectional momentum to aggressively scale into stocks that the market is actively re-pricing. Momentum is treated as a co-equal partner to structural value.
 
 ## 4. Academic Rigor and Bias Integration
-We synthesize the best available academic findings with expert opinions (such as analyst estimates), but we never take them at face value. We proactively adjust for known historical biases. For example, if studies show analysts exhibit systematic 15% over-optimism on long-term growth, we mathematically haircut the growth rate. 
+We synthesize the best available academic findings with expert opinions (such as analyst estimates), but we never take them at face value. We proactively adjust for known historical biases using hard empirical data. For example, studies by McKinsey & Company (2010) and Chan, Karceski, & Lakonishok (2003) demonstrate that analyst long-term earnings growth (LTG) forecasts average 10-15%, while actual realized growth averages 6-9%. Therefore, we mathematically haircut consensus growth rates by 33% to 50% to reflect empirical reality rather than Wall Street salesmanship.
 
 Crucially, adjusting for uncertainty is **directionally agnostic**. Uncertainty does not automatically equal "reduce expected returns and play it safe." If the data and mathematical logic indicate the market is systematically *underestimating* an asset class, we adjust the EV *upwards* and increase our aggression.
 

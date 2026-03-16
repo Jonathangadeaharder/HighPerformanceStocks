@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
 	"marketCap": "$1552.4B USD",
-	"sharpeRatio": 0.22,
-	"expectedCAGR": "8% - 18%",
+	"sharpeRatio": 0.1,
+	"expectedCAGR": "4% - 13%",
 	"expectedVolatility": "~39%",
 	"valuation": {
 		"trailingPE": 26.1,
@@ -44,18 +44,18 @@
 			"bull": 29
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "14%",
-			"bull": "18%"
+			"bear": "4%",
+			"base": "9%",
+			"bull": "13%"
 		},
 		"decayFactor": 0.9,
 		"basis": "5yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T08:47:05.398Z",
+	"lastUpdated": "2026-03-16T12:36:09.106Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.9,
-		"signal": "WAIT",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
@@ -63,24 +63,7 @@
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
 		},
-		"note": "Cheap, but still stabilizing (downtrend remains active)",
-		"realityChecks": {
-			"stabilization": {
-				"pass": false,
-				"price": 613.71,
-				"price6mAgo": 779,
-				"price1mAgo": 639.29,
-				"low3m": 600,
-				"return6m": -21.2,
-				"return1m": -4,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 2,
-				"down30d": 2
-			}
-		}
+		"note": "Cheap (0.9) but base CAGR 9% misses the 14% hurdle"
 	},
 	"intrinsicValue": {
 		"dcf": 288.21,

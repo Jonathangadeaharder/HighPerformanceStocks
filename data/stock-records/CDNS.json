@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
 	"marketCap": "$79.2B USD",
-	"sharpeRatio": 0.05,
-	"expectedCAGR": "2% - 11%",
+	"sharpeRatio": -0.04,
+	"expectedCAGR": "-1% - 7%",
 	"expectedVolatility": "~39%",
 	"valuation": {
 		"trailingPE": 70.9,
@@ -42,13 +42,13 @@
 			"bull": 62
 		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "7%",
-			"bull": "11%"
+			"bear": "-1%",
+			"base": "3%",
+			"bull": "7%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T08:46:59.352Z",
+	"lastUpdated": "2026-03-16T12:36:02.971Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.47,

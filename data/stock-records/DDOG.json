@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
 	"marketCap": "$44.1B USD",
-	"sharpeRatio": 0,
-	"expectedCAGR": "-1% - 10%",
+	"sharpeRatio": -0.06,
+	"expectedCAGR": "-4% - 6%",
 	"expectedVolatility": "~54%",
 	"valuation": {
 		"trailingPE": 401.7,
@@ -26,9 +26,9 @@
 	"currentPrice": "$124.52",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-1%",
-			"base": "5%",
-			"bull": "10%"
+			"bear": "-4%",
+			"base": "2%",
+			"bull": "6%"
 		},
 		"ttmEPS": 2.12,
 		"horizon": 5,
@@ -41,7 +41,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T08:46:59.668Z",
+	"lastUpdated": "2026-03-16T12:36:03.150Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},

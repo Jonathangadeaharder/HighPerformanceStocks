@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
 	"marketCap": "$1527.4B USD",
-	"sharpeRatio": 0.25,
-	"expectedCAGR": "12% - 21%",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "6% - 15%",
 	"expectedVolatility": "~48%",
 	"valuation": {
 		"trailingPE": 62.9,
@@ -43,17 +43,17 @@
 			"bull": 48
 		},
 		"scenarios": {
-			"bear": "12%",
-			"base": "17%",
-			"bull": "21%"
+			"bear": "6%",
+			"base": "11%",
+			"bull": "15%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-16T08:46:58.352Z",
+	"lastUpdated": "2026-03-16T12:36:02.024Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.63,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
@@ -61,22 +61,6 @@
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 322.16,
-				"price6mAgo": 360,
-				"price1mAgo": 332.54,
-				"low3m": 295.3,
-				"return6m": -10.5,
-				"return1m": -3.1,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 29,
-				"down30d": 0
-			}
-		}
+		"note": "Cheap (0.63) but base CAGR 11% misses the 14% hurdle"
 	}
 }

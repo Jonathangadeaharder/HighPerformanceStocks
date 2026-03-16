@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
 	"marketCap": "$26.8B USD",
-	"sharpeRatio": 0.06,
-	"expectedCAGR": "1% - 14%",
+	"sharpeRatio": 0.01,
+	"expectedCAGR": "-1% - 11%",
 	"expectedVolatility": "~51%",
 	"valuation": {
 		"trailingPE": 41.8,
@@ -41,14 +41,14 @@
 			"bull": 45
 		},
 		"scenarios": {
-			"bear": "1%",
-			"base": "8%",
-			"bull": "14%"
+			"bear": "-1%",
+			"base": "5%",
+			"bull": "11%"
 		},
 		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
 		"ttmEPS": 27.04
 	},
-	"lastUpdated": "2026-03-16T08:47:01.620Z",
+	"lastUpdated": "2026-03-16T12:36:05.056Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.18,

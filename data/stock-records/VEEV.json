@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
 	"marketCap": "$29.4B USD",
-	"sharpeRatio": 0.43,
-	"expectedCAGR": "15% - 25%",
+	"sharpeRatio": 0.32,
+	"expectedCAGR": "11% - 21%",
 	"expectedVolatility": "~36%",
 	"valuation": {
 		"trailingPE": 32.9,
@@ -42,13 +42,13 @@
 			"bull": 54
 		},
 		"scenarios": {
-			"bear": "15%",
-			"base": "20%",
-			"bull": "25%"
+			"bear": "11%",
+			"base": "17%",
+			"bull": "21%"
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:14.946Z",
+	"lastUpdated": "2026-03-16T12:36:16.542Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.92,
@@ -75,6 +75,10 @@
 				"pass": true,
 				"up30d": 17,
 				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": 6.5,
+				"quarter": "2026-01"
 			}
 		}
 	}

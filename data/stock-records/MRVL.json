@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
 	"marketCap": "$76.7B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "11% - 20%",
+	"sharpeRatio": 0.07,
+	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 28.6,
@@ -42,17 +42,17 @@
 			"bull": 32
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "5%",
+			"base": "9%",
+			"bull": "13%"
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-16T08:47:07.484Z",
+	"lastUpdated": "2026-03-16T12:36:09.220Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.53,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
@@ -60,22 +60,6 @@
 			"cvStock": 0.074,
 			"riskMultiplier": 0.996
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 87.86,
-				"price6mAgo": 68.86,
-				"price1mAgo": 79.01,
-				"low3m": 70.69,
-				"return6m": 27.6,
-				"return1m": 11.2,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 14,
-				"down30d": 1
-			}
-		}
+		"note": "Cheap (0.53) but base CAGR 9% misses the 14% hurdle"
 	}
 }

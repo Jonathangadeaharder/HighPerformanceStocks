@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
 	"marketCap": "$160.5B USD",
-	"sharpeRatio": 0.06,
-	"expectedCAGR": "3% - 13%",
+	"sharpeRatio": -0.02,
+	"expectedCAGR": "-2% - 8%",
 	"expectedVolatility": "~61%",
 	"valuation": {
 		"trailingPE": 132.2,
@@ -26,9 +26,9 @@
 	"currentPrice": "$122.96",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
-			"bull": "13%"
+			"bear": "-2%",
+			"base": "3%",
+			"bull": "8%"
 		},
 		"ttmEPS": 1.89,
 		"horizon": 5,
@@ -41,7 +41,7 @@
 		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:12.881Z",
+	"lastUpdated": "2026-03-16T12:36:14.408Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},

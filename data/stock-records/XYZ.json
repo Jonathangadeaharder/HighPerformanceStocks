@@ -5,8 +5,8 @@
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
 	"marketCap": "$36.3B USD",
-	"sharpeRatio": 0.2,
-	"expectedCAGR": "11% - 20%",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "7% - 16%",
 	"expectedVolatility": "~55%",
 	"valuation": {
 		"trailingPE": 28.5,
@@ -42,17 +42,17 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "7%",
+			"base": "11%",
+			"bull": "16%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:16.143Z",
+	"lastUpdated": "2026-03-16T12:36:17.690Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.6,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
@@ -60,22 +60,6 @@
 			"cvStock": 0.145,
 			"riskMultiplier": 1.039
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 59.79,
-				"price6mAgo": 75.78,
-				"price1mAgo": 50.81,
-				"low3m": 48.21,
-				"return6m": -21.1,
-				"return1m": 17.7,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 23,
-				"down30d": 0
-			}
-		}
+		"note": "Cheap (0.6) but base CAGR 11% misses the 14% hurdle"
 	}
 }

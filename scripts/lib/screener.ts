@@ -195,11 +195,6 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 			return1m: +return1m.toFixed(1),
 			near3mLow
 		};
-
-		if (stillFalling) {
-			result.signal = 'WAIT';
-			result.note = 'Cheap, but still stabilizing (downtrend remains active)';
-		}
 	}
 
 	const entry = summary?.earningsTrend?.trend?.find((trend) => trend.period === '+1y');
@@ -236,6 +231,10 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 
 export function computeScreener(stock, summary, rawPrice, valuationPrice, historicalData) {
 	const model = stock.cagrModel;
+	// PEG screener uses RAW analyst growth estimates (no haircut).
+	// Bordalo et al. (2019) prove analyst forecasts contain a "kernel of truth":
+	// the relative ordering is informative even though absolute levels are biased.
+	// The RTM bias adjustment is applied only in the CAGR scenario calculator (update-data.ts).
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
 

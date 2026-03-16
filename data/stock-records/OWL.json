@@ -4,7 +4,7 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Fee-heavy, permanent capital model with high dividend yield. FRE-based earnings growing 15%+ but GAAP EPS heavily distorted by amortization of acquired intangibles.",
-	"targetPrice": "$16.33",
+	"targetPrice": "$15.93",
 	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
 	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",
 	"cagrModel": {
@@ -18,9 +18,9 @@
 			"bull": 13
 		},
 		"scenarios": {
-			"bear": "-21%",
-			"base": "-18%",
-			"bull": "-14%"
+			"bear": "-23%",
+			"base": "-20%",
+			"bull": "-16%"
 		},
 		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
 	},
@@ -39,13 +39,13 @@
 		"ruleOf40": "67%"
 	},
 	"consensus": {
-		"yahoo": "$16.33"
+		"yahoo": "$15.93"
 	},
 	"currentPrice": "$8.75",
 	"marketCap": "$13.7B USD",
-	"expectedCAGR": "-21% - -14%",
+	"expectedCAGR": "-23% - -16%",
 	"expectedVolatility": "~49%",
-	"sharpeRatio": -0.45,
+	"sharpeRatio": -0.49,
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.48,
@@ -73,8 +73,12 @@
 				"pass": false,
 				"up30d": 0,
 				"down30d": 5
+			},
+			"earningsSurprise": {
+				"surprise": 6.8,
+				"quarter": "2025-12"
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T08:47:10.760Z"
+	"lastUpdated": "2026-03-16T12:36:11.104Z"
 }

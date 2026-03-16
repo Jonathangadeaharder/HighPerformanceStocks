@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
 	"marketCap": "$528.4B USD",
-	"sharpeRatio": 0.06,
-	"expectedCAGR": "3% - 11%",
+	"sharpeRatio": -0.01,
+	"expectedCAGR": "0% - 8%",
 	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 47.2,
@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "38%"
 	},
-	"targetPrice": "$1450.83",
+	"targetPrice": "$1455.99",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
 	"currentPrice": "$1345.69",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1450.83",
+		"yahoo": "$1455.99",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
@@ -42,13 +42,13 @@
 			"bull": 43
 		},
 		"scenarios": {
-			"bear": "3%",
-			"base": "8%",
-			"bull": "11%"
+			"bear": "0%",
+			"base": "4%",
+			"bull": "8%"
 		},
 		"basis": "5yr & 10yr avg PE (~36)"
 	},
-	"lastUpdated": "2026-03-16T08:46:57.534Z",
+	"lastUpdated": "2026-03-16T12:36:01.193Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.76,

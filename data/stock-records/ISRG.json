@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
 	"marketCap": "$167.7B USD",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "4% - 12%",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "2% - 10%",
 	"expectedVolatility": "~34%",
 	"valuation": {
 		"trailingPE": 59.8,
@@ -41,13 +41,13 @@
 			"bull": 65
 		},
 		"scenarios": {
-			"bear": "4%",
-			"base": "8%",
-			"bull": "12%"
+			"bear": "2%",
+			"base": "6%",
+			"bull": "10%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-16T08:47:03.507Z",
+	"lastUpdated": "2026-03-16T12:36:07.167Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.86,

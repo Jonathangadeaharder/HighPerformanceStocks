@@ -5,12 +5,12 @@
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
 	"marketCap": "$119.9B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "7% - 16%",
+	"sharpeRatio": 0.07,
+	"expectedCAGR": "3% - 12%",
 	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 68,
-		"forwardPE": 22.7,
+		"forwardPE": 22.6,
 		"evEbitda": 42
 	},
 	"metrics": {
@@ -26,9 +26,9 @@
 	"currentPrice": "$113.62",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "3%",
+			"base": "8%",
+			"bull": "12%"
 		},
 		"ttmEPS": 2.7,
 		"horizon": 5,
@@ -41,18 +41,18 @@
 		},
 		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:10.406Z",
+	"lastUpdated": "2026-03-16T12:36:11.038Z",
 	"consensus": {
 		"yahoo": "$188.57"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.07,
+		"score": 1.06,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 22.7,
+			"multiple": 22.6,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		}

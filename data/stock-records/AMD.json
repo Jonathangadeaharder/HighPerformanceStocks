@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
 	"marketCap": "$315.3B USD",
-	"sharpeRatio": 0.2,
-	"expectedCAGR": "13% - 21%",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "6% - 13%",
 	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 74.1,
@@ -20,15 +20,15 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "47%"
 	},
-	"targetPrice": "$289.72",
+	"targetPrice": "$290.27",
 	"bullCase": "The only viable merchant silicon alternative to NVIDIA. EPYC server CPUs are taking massive share from Intel, while MI450 offers a strong AI GPU roadmap.",
 	"bearCase": "Highly cyclical end markets (PC, gaming) can drag down data center outperformance. Remains a distant second to NVIDIA in AI software ecosystem (CUDA).",
 	"currentPrice": "$193.39",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "13%",
-			"base": "17%",
-			"bull": "21%"
+			"bear": "6%",
+			"base": "10%",
+			"bull": "13%"
 		},
 		"ttmEPS": 5.43,
 		"horizon": 5,
@@ -41,38 +41,22 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-16T08:46:56.569Z",
+	"lastUpdated": "2026-03-16T12:36:00.209Z",
 	"consensus": {
-		"yahoo": "$289.72"
+		"yahoo": "$290.27"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.56,
-		"signal": "PASS",
+		"score": 0.53,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
 			"multiple": 18,
-			"cvStock": 0.226,
-			"riskMultiplier": 1.087
+			"cvStock": 0.134,
+			"riskMultiplier": 1.033
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 193.39,
-				"price6mAgo": 160.46,
-				"price1mAgo": 203.08,
-				"low3m": 188.22,
-				"return6m": 20.5,
-				"return1m": -4.8,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 10,
-				"down30d": 3
-			}
-		}
+		"note": "Cheap (0.53) but base CAGR 10% misses the 14% hurdle"
 	},
 	"intrinsicValue": {
 		"dcf": 64.41,

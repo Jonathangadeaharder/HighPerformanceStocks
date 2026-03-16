@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
 	"marketCap": "$4381.0B USD",
-	"sharpeRatio": 0.23,
-	"expectedCAGR": "9% - 19%",
+	"sharpeRatio": 0.07,
+	"expectedCAGR": "3% - 12%",
 	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 36.8,
@@ -42,18 +42,18 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "9%",
-			"base": "14%",
-			"bull": "19%"
+			"bear": "3%",
+			"base": "8%",
+			"bull": "12%"
 		},
 		"decayFactor": 0.75,
 		"basis": "Exit PE below 10yr avg (55); adjusted for mega-cap maturation"
 	},
-	"lastUpdated": "2026-03-16T08:47:10.472Z",
+	"lastUpdated": "2026-03-16T12:36:11.074Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.49,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
@@ -61,23 +61,7 @@
 			"cvStock": 0.131,
 			"riskMultiplier": 1.03
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 180.25,
-				"price6mAgo": 174.88,
-				"price1mAgo": 184.97,
-				"low3m": 170.31,
-				"return6m": 3.1,
-				"return1m": -2.6,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 27,
-				"down30d": 5
-			}
-		}
+		"note": "Cheap (0.49) but base CAGR 8% misses the 14% hurdle"
 	},
 	"intrinsicValue": {
 		"dcf": 234.57,

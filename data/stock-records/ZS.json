@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
 	"marketCap": "$24.7B USD",
-	"sharpeRatio": 0.15,
-	"expectedCAGR": "6% - 17%",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": null,
@@ -41,13 +41,13 @@
 			"bull": 40
 		},
 		"scenarios": {
-			"bear": "6%",
-			"base": "11%",
-			"bull": "17%"
+			"bear": "2%",
+			"base": "7%",
+			"bull": "12%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-16T08:47:16.830Z",
+	"lastUpdated": "2026-03-16T12:36:18.379Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.39,

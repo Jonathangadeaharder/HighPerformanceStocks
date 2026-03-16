@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "UK serial acquirer in technical products distribution. ROIC ~15%, ROE ~20%, 14% organic revenue growth in Q1 2026. Unanimous analyst Buy. But CAGR of 12-16% is borderline on the floor.",
-	"marketCap": "£6.7B",
-	"sharpeRatio": 0.27,
-	"expectedCAGR": "7% - 16%",
+	"marketCap": "£6.8B",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 36.7,
-		"forwardPE": 24.2,
+		"trailingPE": 37,
+		"forwardPE": 24.4,
 		"pegRatio": null,
 		"evEbitda": 20.3
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "£60.40",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
 	"bearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E.",
-	"currentPrice": "£50.25",
+	"currentPrice": "£50.70",
 	"consensus": {
 		"tipranks": "5,634p",
 		"yahoo": "£60.40"
@@ -42,13 +42,13 @@
 			"bull": 43
 		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "5%",
+			"base": "9%",
+			"bull": "13%"
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-16T08:47:00.522Z",
+	"lastUpdated": "2026-03-16T12:36:03.976Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.23,
@@ -59,6 +59,8 @@
 			"multiple": 20.3,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.48
 	}
 }

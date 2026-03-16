@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Japan's most profitable manufacturer. 55%+ operating margins in factory automation sensors. Direct sales model creates deep moat. But premium valuation and yen exposure.",
 	"marketCap": "$92.2B USD",
-	"sharpeRatio": 0.05,
-	"expectedCAGR": "3% - 10%",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "3% - 9%",
 	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 35.8,
@@ -42,12 +42,12 @@
 		},
 		"scenarios": {
 			"bear": "3%",
-			"base": "7%",
-			"bull": "10%"
+			"base": "6%",
+			"bull": "9%"
 		},
 		"basis": "Through-cycle normalized growth; current ~5% consensus reflects cyclical trough in factory automation"
 	},
-	"lastUpdated": "2026-03-16T08:47:04.410Z",
+	"lastUpdated": "2026-03-16T12:36:08.041Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,

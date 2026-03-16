@@ -16,37 +16,35 @@
 			"bull": 20
 		},
 		"basis": "GAAP diluted EPS",
-		"dividendYield": "2%",
+		"dividendYield": "47%",
 		"ttmEPS": 96.44,
 		"scenarios": {
-			"bear": "-6%",
-			"base": "1%",
-			"bull": "7%"
+			"bear": "34%",
+			"base": "42%",
+			"bull": "47%"
 		}
 	},
-	"currentPrice": "$3140",
-	"marketCap": "$853.2B USD",
+	"currentPrice": "$3202",
+	"marketCap": "$870.0B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
 	"expectedVolatility": "~40%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2,
+		"engine": "totalReturn",
+		"score": null,
 		"signal": "FAIL",
+		"note": "Dividend exceeds forward earnings (value trap) (CYCLICAL EPS)",
 		"inputs": {
 			"growth": 25,
-			"multipleType": "Forward P/E",
-			"multiple": 50.1,
-			"cvStock": 0.08,
-			"riskMultiplier": 1
-		},
-		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
+			"dividendYield": 47,
+			"earningsYield": 2
+		}
 	},
-	"lastUpdated": "2026-03-16T08:47:13.062Z",
+	"lastUpdated": "2026-03-16T12:36:14.433Z",
 	"valuation": {
-		"trailingPE": 32.6,
-		"forwardPE": 50.1,
+		"trailingPE": 33.2,
+		"forwardPE": 51.1,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},
@@ -57,7 +55,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-27%"
 	},
-	"expectedCAGR": "-6% - 7%",
-	"sharpeRatio": -0.1,
+	"expectedCAGR": "34% - 47%",
+	"sharpeRatio": 0.9,
 	"cyclical": true
 }

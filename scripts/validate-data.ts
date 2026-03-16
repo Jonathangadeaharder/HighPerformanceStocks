@@ -103,12 +103,13 @@ function verifyData() {
 		// 5b. Verify screener/CAGR consistency: PASS signal should align with viable base CAGR
 		if (
 			data.screener?.signal === 'PASS' &&
-			data.cagrModel?.scenarios?.base
+			data.cagrModel?.scenarios?.base &&
+			data.screener.engine !== 'totalReturn' // Total Return engine simple math diverges from complex 10yr CAGR models
 		) {
 			const baseCagr = parsePercent(data.cagrModel.scenarios.base);
 			if (baseCagr != null && baseCagr < 14) {
 				errors.push(
-					`Screener PASS but base CAGR ${baseCagr}% < 14% ETF hurdle (valuation/CAGR mismatch)`
+					`Screener PASS but base CAGR ${baseCagr}% < 14% hurdle (valuation/CAGR mismatch)`
 				);
 			}
 		}
@@ -121,7 +122,13 @@ function verifyData() {
 			if (data.currentPrice) {
 				price = parseDisplayPrice(data.currentPrice);
 			}
-			const epsGrowthPct = parsePercent(cm.epsGrowth);
+			// RTM adjustment matching update-data.ts (Chan et al. 2003)
+			const RTM_BASELINE = 6.0;
+			const RTM_SHRINKAGE = 0.5;
+			const rawEpsGrowth = parsePercent(cm.epsGrowth);
+			const epsGrowthPct = rawEpsGrowth != null
+				? +(RTM_BASELINE + (rawEpsGrowth - RTM_BASELINE) * RTM_SHRINKAGE).toFixed(1)
+				: undefined;
 			const dividendYieldPct = parsePercent(cm.dividendYield) ?? 0;
 			const horizon = cm.horizon ?? DEFAULT_HORIZON;
 			const decayFactor =

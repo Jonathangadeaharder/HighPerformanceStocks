@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
 	"marketCap": "$99.0B USD",
-	"sharpeRatio": 0.15,
-	"expectedCAGR": "9% - 18%",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "3% - 12%",
 	"expectedVolatility": "~62%",
 	"valuation": {
 		"trailingPE": 75.7,
@@ -45,13 +45,13 @@
 			"bull": 42
 		},
 		"scenarios": {
-			"bear": "9%",
-			"base": "14%",
-			"bull": "18%"
+			"bear": "3%",
+			"base": "8%",
+			"bull": "12%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-16T08:47:15.797Z",
+	"lastUpdated": "2026-03-16T12:36:17.512Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.11,

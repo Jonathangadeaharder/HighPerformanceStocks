@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
 	"marketCap": "C$48.6B",
-	"sharpeRatio": 0.57,
-	"expectedCAGR": "10% - 24%",
+	"sharpeRatio": 0.52,
+	"expectedCAGR": "9% - 23%",
 	"expectedVolatility": "~22%",
 	"valuation": {
 		"pegRatio": null,
@@ -21,16 +21,16 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "15%"
 	},
-	"targetPrice": "C$2727.80",
+	"targetPrice": "C$2725.57",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
 	"currentPrice": "C$2266.72",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "10%",
-			"base": "19%",
-			"bull": "24%"
+			"bear": "9%",
+			"base": "18%",
+			"bull": "23%"
 		},
 		"epsGrowth": "10%",
 		"exitPE": {
@@ -42,9 +42,9 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 290.82
 	},
-	"lastUpdated": "2026-03-16T08:47:01.571Z",
+	"lastUpdated": "2026-03-16T12:36:05.037Z",
 	"consensus": {
-		"yahoo": "C$2727.80"
+		"yahoo": "C$2725.57"
 	},
 	"screener": {
 		"engine": "fPERG",

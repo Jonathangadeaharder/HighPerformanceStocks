@@ -5,8 +5,8 @@
 	"confidence": "low",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
 	"marketCap": "$132.5B USD",
-	"sharpeRatio": 0.05,
-	"expectedCAGR": "2% - 10%",
+	"sharpeRatio": 0.02,
+	"expectedCAGR": "1% - 9%",
 	"expectedVolatility": "~32%",
 	"valuation": {
 		"trailingPE": 37.2,
@@ -43,13 +43,13 @@
 			"bull": 38
 		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "6%",
-			"bull": "10%"
+			"bear": "1%",
+			"base": "5%",
+			"bull": "9%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T08:47:00.501Z",
+	"lastUpdated": "2026-03-16T12:36:04.057Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.8,
@@ -60,6 +60,8 @@
 			"multiple": 18.8,
 			"cvStock": 0.012,
 			"riskMultiplier": 0.959
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.98
 	}
 }

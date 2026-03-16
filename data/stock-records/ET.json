@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
 	"marketCap": "$64.5B USD",
-	"sharpeRatio": 0.13,
-	"expectedCAGR": "2% - 13%",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "1% - 12%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 15.5,
@@ -41,13 +41,13 @@
 			"bull": 14
 		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "8%",
-			"bull": "13%"
+			"bear": "1%",
+			"base": "7%",
+			"bull": "12%"
 		},
 		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
 	},
-	"lastUpdated": "2026-03-16T08:47:00.670Z",
+	"lastUpdated": "2026-03-16T12:36:04.157Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.71,
@@ -59,6 +59,7 @@
 			"debtPenalty": false,
 			"rawReturn": 17
 		},
+		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -74,6 +75,10 @@
 				"pass": true,
 				"up30d": 3,
 				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": -30.4,
+				"quarter": "2025-12"
 			}
 		}
 	},

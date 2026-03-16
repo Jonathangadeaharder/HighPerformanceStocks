@@ -19,9 +19,9 @@
 		"dividendYield": "0%",
 		"ttmEPS": 0.63,
 		"scenarios": {
-			"bear": "-17%",
-			"base": "-13%",
-			"bull": "-8%"
+			"bear": "-23%",
+			"base": "-19%",
+			"bull": "-14%"
 		}
 	},
 	"currentPrice": "$150.95",
@@ -42,7 +42,7 @@
 			"riskMultiplier": 1.032
 		}
 	},
-	"lastUpdated": "2026-03-16T08:47:11.837Z",
+	"lastUpdated": "2026-03-16T12:36:12.094Z",
 	"valuation": {
 		"trailingPE": 239.6,
 		"forwardPE": 81.7,
@@ -55,8 +55,8 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "98%"
 	},
-	"expectedCAGR": "-17% - -8%",
-	"sharpeRatio": -0.29,
+	"expectedCAGR": "-23% - -14%",
+	"sharpeRatio": -0.4,
 	"intrinsicValue": {
 		"dcf": 9.72,
 		"date": "2026-03-16",

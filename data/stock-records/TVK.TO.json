@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
 	"marketCap": "C$2.9B",
-	"sharpeRatio": -0.06,
-	"expectedCAGR": "-3% - 7%",
+	"sharpeRatio": -0.13,
+	"expectedCAGR": "-6% - 4%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"pegRatio": null,
@@ -28,9 +28,9 @@
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "-3%",
-			"base": "2%",
-			"bull": "7%"
+			"bear": "-6%",
+			"base": "0%",
+			"bull": "4%"
 		},
 		"epsGrowth": "15%",
 		"exitPE": {
@@ -42,7 +42,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-16T08:47:14.840Z",
+	"lastUpdated": "2026-03-16T12:36:16.535Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},

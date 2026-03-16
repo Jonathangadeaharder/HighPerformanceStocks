@@ -5,8 +5,8 @@
 	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
 	"marketCap": "$68.6B USD",
-	"sharpeRatio": 0.5,
-	"expectedCAGR": "15% - 24%",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "12% - 21%",
 	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 39.1,
@@ -42,13 +42,13 @@
 			"bull": 55
 		},
 		"scenarios": {
-			"bear": "15%",
-			"base": "20%",
-			"bull": "24%"
+			"bear": "12%",
+			"base": "17%",
+			"bull": "21%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-16T08:47:13.866Z",
+	"lastUpdated": "2026-03-16T12:36:15.316Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.12,
@@ -59,6 +59,8 @@
 			"multiple": 20.7,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.43
 	}
 }
