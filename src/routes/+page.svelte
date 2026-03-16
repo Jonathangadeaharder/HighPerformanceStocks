@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import '$lib/components/dashboard/dashboard.css';
 	import CoreAllocation from '$lib/components/dashboard/core-allocation.svelte';
 	import DashboardHeader from '$lib/components/dashboard/dashboard-header.svelte';
 	import DeploySection from '$lib/components/dashboard/deploy-section.svelte';
