@@ -79,3 +79,69 @@
 		</tbody>
 	</table>
 </div>
+
+<style>
+	.portfolio-table-wrap {
+		width: 100%;
+		overflow-x: auto;
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	}
+	.portfolio-table {
+		width: 100%;
+		border-collapse: collapse;
+		text-align: left;
+		white-space: nowrap;
+	}
+	th {
+		background: var(--bg-body);
+		padding: 1rem;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: var(--text-muted);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		border-bottom: 1px solid var(--border-subtle);
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	td {
+		padding: 0.875rem 1rem;
+		font-size: 0.875rem;
+		color: var(--text-primary);
+		border-bottom: 1px solid var(--border-subtle);
+	}
+	tr:last-child td {
+		border-bottom: none;
+	}
+	tr:hover td {
+		background: var(--bg-surface-hover);
+	}
+	tr.excluded td {
+		opacity: 0.4;
+	}
+	.ticker-cell {
+		font-family: var(--font-mono);
+		font-weight: 700;
+		color: var(--text-primary);
+	}
+	.group-cell {
+		color: var(--text-secondary);
+	}
+	.mono {
+		font-family: var(--font-mono);
+	}
+	.check-cell {
+		width: 40px;
+		text-align: center;
+	}
+	input[type="checkbox"] {
+		accent-color: var(--color-success);
+		cursor: pointer;
+		width: 1rem;
+		height: 1rem;
+	}
+</style>

@@ -82,3 +82,128 @@
 		</div>
 	{/if}
 </section>
+
+<style>
+	.section {
+		margin-bottom: 2rem;
+	}
+	.section-label {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		margin-bottom: 0.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.count-badge {
+		font-size: 0.75rem;
+		padding: 0.125rem 0.5rem;
+		border-radius: 1rem;
+		font-weight: 600;
+	}
+	.count-badge.green {
+		background: var(--color-success-bg);
+		color: var(--color-success);
+	}
+	.mini-guide {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+		margin-bottom: 1rem;
+	}
+	.section-note {
+		font-size: 0.875rem;
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+		line-height: 1.5;
+	}
+	
+	.top-picks {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+	.top-pick {
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.75rem;
+		padding: 1.25rem;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		position: relative;
+		overflow: hidden;
+	}
+	.top-pick::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 4px;
+		height: 100%;
+		background: var(--color-success);
+	}
+	.top-pick-label {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-weight: 700;
+		color: var(--color-success);
+		margin-bottom: 0.5rem;
+	}
+	.top-pick-header {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.ticker {
+		font-family: var(--font-mono);
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--text-primary);
+	}
+	.name {
+		font-size: 0.875rem;
+		color: var(--text-secondary);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.top-pick-metrics {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		font-size: 0.875rem;
+		font-family: var(--font-mono);
+		color: var(--text-primary);
+		margin-bottom: 0.75rem;
+	}
+	.top-pick-note {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+		line-height: 1.4;
+	}
+	
+	.signal-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 1rem;
+	}
+	
+	.empty-state {
+		background: var(--bg-surface);
+		border: 1px dashed var(--border-hover);
+		border-radius: 0.75rem;
+		padding: 2rem;
+		text-align: center;
+	}
+	.empty-title {
+		font-weight: 600;
+		color: var(--text-primary);
+		margin-bottom: 0.25rem;
+	}
+	.empty-sub {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+	}
+</style>

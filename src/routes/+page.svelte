@@ -9,13 +9,13 @@
 	import TabNav from '$lib/components/dashboard/tab-nav.svelte';
 	import PortfolioSection from '$lib/components/dashboard/portfolio-section.svelte';
 
-	type TabId = 'signals' | 'portfolio';
+	type TabId = 'signals' | 'wait' | 'watchlist' | 'portfolio';
 
 	let { data }: { data: PageData } = $props();
 	let activeTab = $state<TabId>('signals');
 	let expandedDeploy = $state<string | null>(null);
 	let expandedWait = $state<string | null>(null);
-	let showWatchlist = $state(false);
+	let showWatchlist = $state(false); // No longer used for top-level toggle, might be removable soon
 	let expandedWatch = $state<Record<string, boolean>>({});
 
 	function toggleDeploy(ticker: string): void {
@@ -26,9 +26,6 @@
 		expandedWait = expandedWait === ticker ? null : ticker;
 	}
 
-	function toggleWatchlist(): void {
-		showWatchlist = !showWatchlist;
-	}
 
 	function toggleWatch(ticker: string): void {
 		expandedWatch = {
@@ -40,12 +37,6 @@
 
 <svelte:head>
 	<title>Portfolio Dashboard</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
-		rel="stylesheet"
-	/>
 </svelte:head>
 
 <div class="page">
@@ -62,16 +53,37 @@
 			expandedTicker={expandedDeploy}
 			onToggle={toggleDeploy}
 		/>
+	{:else if activeTab === 'wait'}
 		<WaitSection cheapWait={data.cheapWait} expandedTicker={expandedWait} onToggle={toggleWait} />
+	{:else if activeTab === 'watchlist'}
 		<WatchlistSection
 			watchlist={data.watchlist}
 			counts={data.counts}
-			{showWatchlist}
+			showWatchlist={true}
 			{expandedWatch}
-			onToggleWatchlist={toggleWatchlist}
+			onToggleWatchlist={() => {}}
 			onToggleWatch={toggleWatch}
 		/>
-	{:else}
+	{:else if activeTab === 'portfolio'}
 		<PortfolioSection deployNow={data.deployNow} />
 	{/if}
 </div>
+
+<style>
+	.page {
+		max-width: var(--max-width, 1400px);
+		margin: 0 auto;
+		padding: 2rem 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		min-height: 100vh;
+	}
+
+	@media (min-width: 768px) {
+		.page {
+			padding: 2.5rem 2rem;
+			gap: 2.5rem;
+		}
+	}
+</style>

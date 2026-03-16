@@ -35,19 +35,21 @@
 
 <section class="section">
 	<button class="watchlist-header" onclick={onToggleWatchlist}>
-		<span class="section-label" style="margin:0">Watchlist</span>
+		<span class="section-label">Watchlist</span>
 		<span class="watchlist-counts">
 			{counts.reject} rejected · {counts.overpriced} overpriced · {counts.fail} insufficient edge/return · {counts.noData} no data
 		</span>
-		<span class="chevron" class:open={showWatchlist}>›</span>
+		<div class="chevron-box">
+			<span class="chevron" class:open={showWatchlist}>›</span>
+		</div>
 	</button>
-	<div class="mini-guide" style="margin-top:0.5rem">
+	<div class="mini-guide">
 		Why this is here: these names currently fail on value, return, trend, revisions, or data
 		quality.
 	</div>
 
 	{#if showWatchlist}
-		<div style="display:flex; gap:0.5rem; margin:0.5rem 0;">
+		<div class="toggle-row">
 			<button
 				class="view-toggle"
 				class:active={!groupBySector}
@@ -107,40 +109,17 @@
 									{/if}
 								</div>
 
-								<div
-									class="watch-cases"
-									style="margin-top:0.75rem; display:flex; flex-direction:column; gap:0.5rem; text-align:left;"
-								>
+								<div class="watch-cases">
 									{#if stock.bullCase}
-										<div
-											class="case bull"
-											style="border-left: 2px solid #4ade80; padding-left: 0.5rem;"
-										>
-											<div
-												class="case-label"
-												style="font-weight:600; font-size:0.75rem; color:#4ade80; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.1rem;"
-											>
-												Bull
-											</div>
-											<p style="margin:0; font-size:0.875rem; color:#d4d4d8; line-height:1.4;">
-												{stock.bullCase}
-											</p>
+										<div class="case bull">
+											<div class="case-label">Bull</div>
+											<p>{stock.bullCase}</p>
 										</div>
 									{/if}
 									{#if stock.bearCase}
-										<div
-											class="case bear"
-											style="border-left: 2px solid #f87171; padding-left: 0.5rem;"
-										>
-											<div
-												class="case-label"
-												style="font-weight:600; font-size:0.75rem; color:#f87171; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.1rem;"
-											>
-												Bear
-											</div>
-											<p style="margin:0; font-size:0.875rem; color:#d4d4d8; line-height:1.4;">
-												{stock.bearCase}
-											</p>
+										<div class="case bear">
+											<div class="case-label">Bear</div>
+											<p>{stock.bearCase}</p>
 										</div>
 									{/if}
 								</div>
@@ -187,15 +166,15 @@
 												{/if}
 											</div>
 											{#if stock.bullCase}
-												<div class="case bull" style="border-left: 2px solid #4ade80; padding-left: 0.5rem; margin-top:0.5rem;">
-													<div class="case-label" style="font-weight:600; font-size:0.75rem; color:#4ade80; text-transform:uppercase;">Bull</div>
-													<p style="margin:0; font-size:0.875rem; color:#d4d4d8;">{stock.bullCase}</p>
+												<div class="case bull">
+													<div class="case-label">Bull</div>
+													<p>{stock.bullCase}</p>
 												</div>
 											{/if}
 											{#if stock.bearCase}
-												<div class="case bear" style="border-left: 2px solid #f87171; padding-left: 0.5rem; margin-top:0.5rem;">
-													<div class="case-label" style="font-weight:600; font-size:0.75rem; color:#f87171; text-transform:uppercase;">Bear</div>
-													<p style="margin:0; font-size:0.875rem; color:#d4d4d8;">{stock.bearCase}</p>
+												<div class="case bear">
+													<div class="case-label">Bear</div>
+													<p>{stock.bearCase}</p>
 												</div>
 											{/if}
 										</div>
@@ -213,20 +192,16 @@
 <style>
 	.section {
 		margin-bottom: 2rem;
-		background: #18191c;
-		border: 1px solid #27272a;
-		border-radius: 0.5rem;
-		padding: 1rem;
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
 	}
 
 	.section-label {
-		font-size: 0.875rem;
-		font-weight: 600;
-		color: #a1a1aa;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		margin-bottom: 1rem;
-		display: block;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--text-primary);
 	}
 
 	.watchlist-header {
@@ -236,88 +211,111 @@
 		background: none;
 		border: none;
 		padding: 0;
-		color: inherit;
 		cursor: pointer;
 		text-align: left;
-	}
-
-	.watchlist-header:hover .section-label {
-		color: #e4e4e7;
+		gap: 1rem;
 	}
 
 	.watchlist-counts {
-		margin-left: 0.75rem;
 		font-size: 0.875rem;
-		color: #71717a;
+		color: var(--text-muted);
 		flex-grow: 1;
 	}
 
+	.chevron-box {
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: var(--bg-body);
+		border: 1px solid var(--border-subtle);
+		color: var(--text-secondary);
+		transition: all 0.2s;
+	}
+	.watchlist-header:hover .chevron-box {
+		border-color: var(--border-hover);
+		color: var(--text-primary);
+	}
+
 	.chevron {
-		color: #71717a;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		line-height: 1;
-		transition: transform 0.2s;
+		transition: transform 0.2s ease;
+		margin-top: -4px;
 	}
 
 	.chevron.open {
-		transform: rotate(90deg);
+		transform: rotate(90deg) translate(2px, 2px);
 	}
 
 	.mini-guide {
 		font-size: 0.875rem;
-		color: #71717a;
-		margin-bottom: 1rem;
+		color: var(--text-muted);
+		margin-top: 0.25rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.toggle-row {
+		display: flex;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.view-toggle {
-		background: #27272a;
-		border: 1px solid #3f3f46;
-		color: #a1a1aa;
-		padding: 0.25rem 0.75rem;
-		border-radius: 0.25rem;
+		background: var(--bg-body);
+		border: 1px solid var(--border-subtle);
+		color: var(--text-secondary);
+		padding: 0.375rem 0.875rem;
+		border-radius: 0.5rem;
 		font-size: 0.875rem;
+		font-weight: 500;
 		cursor: pointer;
 		transition: all 0.2s;
 	}
 	.view-toggle:hover {
-		background: #3f3f46;
-		color: #e4e4e7;
+		border-color: var(--border-hover);
+		color: var(--text-primary);
 	}
 	.view-toggle.active {
-		background: #3b82f6;
-		border-color: #3b82f6;
-		color: white;
+		background: var(--bg-surface-hover);
+		border-color: var(--text-muted);
+		color: var(--text-primary);
 	}
 
 	.watchlist, .watchlist-grouped {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 0.75rem;
 	}
 
 	.sector-group {
-		margin-bottom: 1rem;
-		border: 1px solid #27272a;
-		border-radius: 0.25rem;
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.5rem;
 		overflow: hidden;
+		background: var(--bg-body);
 	}
 
 	.sector-header {
-		background: #27272a;
-		padding: 0.5rem 0.75rem;
+		background: var(--bg-surface-hover);
+		padding: 0.75rem 1rem;
 		font-size: 0.875rem;
 		font-weight: 600;
-		color: #e4e4e7;
+		color: var(--text-primary);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border-bottom: 1px solid var(--border-subtle);
 	}
 	.sector-count {
-		color: #71717a;
+		color: var(--text-muted);
 		font-size: 0.75rem;
+		background: var(--bg-body);
+		padding: 0.125rem 0.5rem;
+		border-radius: 1rem;
 	}
 	.sector-stocks {
-		background: #18191c;
 		display: flex;
 		flex-direction: column;
 	}
@@ -325,10 +323,10 @@
 	.watch-row {
 		display: flex;
 		flex-direction: column;
-		padding: 0.75rem;
-		background: #27272a;
-		border: 1px solid #3f3f46;
-		border-radius: 0.25rem;
+		padding: 1rem;
+		background: var(--bg-body);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.5rem;
 		cursor: pointer;
 		transition: all 0.2s;
 		text-align: left;
@@ -336,38 +334,32 @@
 	}
 	.watch-row.compact {
 		border: none;
-		border-bottom: 1px solid #27272a;
+		border-bottom: 1px solid var(--border-subtle);
 		border-radius: 0;
 	}
 	.watch-row.compact:last-child {
 		border-bottom: none;
 	}
 	.watch-row:hover {
-		border-color: #52525b;
-		background: #27272a; /* keep same bg, just border lightens */
+		border-color: var(--border-hover);
+		transform: translateX(4px);
 	}
 
 	.watch-main {
 		display: flex;
-		align-items: baseline;
-		gap: 0.75rem;
+		align-items: center;
+		gap: 1rem;
 	}
 
 	.watch-ticker {
-		font-family:
-			ui-monospace,
-			SFMono-Regular,
-			Menlo,
-			Monaco,
-			Consolas,
-			monospace;
-		font-weight: 600;
-		color: #e4e4e7;
-		min-width: 4.5rem;
+		font-family: var(--font-mono);
+		font-weight: 700;
+		color: var(--text-primary);
+		min-width: 5rem;
 	}
 
 	.watch-name {
-		color: #a1a1aa;
+		color: var(--text-secondary);
 		font-size: 0.875rem;
 		flex-grow: 1;
 		white-space: nowrap;
@@ -376,83 +368,87 @@
 	}
 
 	.watch-signal {
-		font-size: 0.75rem;
-		font-weight: 600;
-		padding: 0.125rem 0.375rem;
+		font-size: 0.625rem;
+		font-weight: 700;
+		padding: 0.125rem 0.5rem;
 		border-radius: 0.25rem;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
-	.watch-signal.pass {
-		background: rgba(74, 222, 128, 0.1);
-		color: #4ade80;
-	}
-	.watch-signal.fail {
-		background: rgba(248, 113, 113, 0.1);
-		color: #f87171;
-	}
-	.watch-signal.hold {
-		background: rgba(250, 204, 21, 0.1);
-		color: #facc15;
-	}
-	.watch-signal.none {
-		background: rgba(161, 161, 170, 0.1);
-		color: #a1a1aa;
-	}
+	.watch-signal.pass { background: var(--color-success-bg); color: var(--color-success); }
+	.watch-signal.fail { background: var(--color-danger-bg); color: var(--color-danger); }
+	.watch-signal.hold { background: var(--color-warning-bg); color: var(--color-warning); }
+	.watch-signal.none { background: var(--bg-surface-hover); color: var(--text-muted); }
 
 	.watch-score {
-		font-family:
-			ui-monospace,
-			SFMono-Regular,
-			Menlo,
-			Monaco,
-			Consolas,
-			monospace;
+		font-family: var(--font-mono);
 		font-size: 0.875rem;
-		color: #e4e4e7;
+		color: var(--text-primary);
 	}
 
 	.watch-mom {
-		font-family:
-			ui-monospace,
-			SFMono-Regular,
-			monospace;
+		font-family: var(--font-mono);
 		font-size: 0.875rem;
-		color: #4ade80;
+		color: var(--color-success);
 	}
 	.watch-mom.neg {
-		color: #f87171;
+		color: var(--color-danger);
 	}
 
 	.watch-cagr-mini {
-		font-family:
-			ui-monospace,
-			SFMono-Regular,
-			monospace;
+		font-family: var(--font-mono);
 		font-size: 0.875rem;
-		color: #a1a1aa;
+		color: var(--text-muted);
 	}
 
 	.watch-detail {
-		margin-top: 0.5rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid #3f3f46;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px dashed var(--border-subtle);
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 	}
 
 	.watch-reason {
 		font-size: 0.875rem;
-		color: #d4d4d8;
-		margin-bottom: 0.25rem;
+		color: var(--text-primary);
+		line-height: 1.4;
 	}
 
 	.watch-cagr {
 		font-size: 0.875rem;
-		color: #a1a1aa;
-		font-family:
-			ui-monospace,
-			SFMono-Regular,
-			Menlo,
-			Monaco,
-			monospace;
+		color: var(--text-secondary);
+		font-family: var(--font-mono);
+	}
+
+	.watch-cases {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.case {
+		padding-left: 0.75rem;
+		border-left: 2px solid;
+	}
+	.case.bull { border-color: var(--color-success); }
+	.case.bear { border-color: var(--color-danger); }
+	
+	.case-label {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		font-weight: 700;
+		margin-bottom: 0.125rem;
+	}
+	.case.bull .case-label { color: var(--color-success); }
+	.case.bear .case-label { color: var(--color-danger); }
+	
+	.case p {
+		font-size: 0.875rem;
+		color: var(--text-secondary);
+		line-height: 1.4;
+		margin: 0;
 	}
 </style>

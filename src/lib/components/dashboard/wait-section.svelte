@@ -47,3 +47,58 @@
 		</div>
 	{/if}
 </section>
+
+<style>
+	.section {
+		margin-bottom: 2rem;
+	}
+	.section-label {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		margin-bottom: 0.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.count-badge {
+		font-size: 0.75rem;
+		padding: 0.125rem 0.5rem;
+		border-radius: 1rem;
+		font-weight: 600;
+	}
+	.count-badge.amber {
+		background: var(--color-warning-bg);
+		color: var(--color-warning);
+	}
+	.mini-guide {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+		margin-bottom: 1rem;
+	}
+	.section-note {
+		font-size: 0.875rem;
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+		line-height: 1.5;
+	}
+	.signal-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 1rem;
+	}
+	.empty-state {
+		background: var(--bg-surface);
+		border: 1px dashed var(--border-hover);
+		border-radius: 0.75rem;
+		padding: 2rem;
+		text-align: center;
+	}
+	.empty-state.compact {
+		padding: 1rem;
+	}
+	.empty-sub {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+	}
+</style>

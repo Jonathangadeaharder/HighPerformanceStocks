@@ -54,3 +54,11 @@
 		onToggle={toggleTicker}
 	/>
 </div>
+
+<style>
+	.portfolio-section {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+</style>

@@ -60,3 +60,79 @@
 		{/if}
 	</div>
 </section>
+
+<style>
+	.section {
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+	.section-label {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--text-primary);
+		margin-bottom: 0.25rem;
+	}
+	.mini-guide {
+		font-size: 0.875rem;
+		color: var(--text-muted);
+		margin-bottom: 1.5rem;
+	}
+	.vol-card {
+		background: var(--bg-body);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+	.vol-card.high { border-left: 4px solid var(--color-danger); }
+	.vol-card.elevated { border-left: 4px solid var(--color-warning); }
+	.vol-card.normal { border-left: 4px solid var(--color-success); }
+	
+	.vol-main {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 0.75rem;
+	}
+	.vol-value {
+		font-family: var(--font-mono);
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--text-primary);
+	}
+	.vol-meta {
+		display: flex;
+		flex-direction: column;
+		gap: 0.125rem;
+	}
+	.vol-action {
+		font-weight: 600;
+		font-size: 0.875rem;
+		color: var(--text-primary);
+	}
+	.vol-detail {
+		font-size: 0.75rem;
+		color: var(--text-secondary);
+	}
+	.vol-components {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-bottom: 0.75rem;
+	}
+	.vol-chip {
+		font-size: 0.75rem;
+		background: var(--bg-surface-hover);
+		color: var(--text-secondary);
+		padding: 0.125rem 0.5rem;
+		border-radius: 1rem;
+	}
+	.vol-note {
+		font-size: 0.75rem;
+		color: var(--text-muted);
+		border-top: 1px solid var(--border-subtle);
+		padding-top: 0.75rem;
+	}
+</style>

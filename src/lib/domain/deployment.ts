@@ -160,15 +160,26 @@ function hasLikelyValueFloor(stock: FindingStock): boolean {
 }
 
 function deploymentForPass(stock: FindingStock): DeploymentInfo {
-	const clearsHurdle =
-		(stock.baseCagr ?? -999) >= ETF_HURDLE_CAGR && (stock.bearCagr ?? -999) > BEAR_FLOOR_CAGR;
+	const base = stock.baseCagr ?? -999;
+	const bear = stock.bearCagr ?? -999;
+	const basePass = base >= ETF_HURDLE_CAGR;
+	const bearPass = bear > BEAR_FLOOR_CAGR;
 
-	return clearsHurdle
-		? { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' }
-		: {
-				status: 'FAIL',
-				reason: `Does not clear the ${ETF_HURDLE_CAGR}% ETF hurdle with a positive bear case.`
-			};
+	if (basePass && bearPass) {
+		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
+	}
+
+	if (!basePass) {
+		return {
+			status: 'FAIL',
+			reason: `Base CAGR (${base}%) is below the ${ETF_HURDLE_CAGR}% ETF hurdle.`
+		};
+	}
+
+	return {
+		status: 'FAIL',
+		reason: `Bear case CAGR (${bear}%) is below the ${BEAR_FLOOR_CAGR}% floor required for deployment.`
+	};
 }
 
 function deploymentForWait(stock: FindingStock): DeploymentInfo {
@@ -183,13 +194,41 @@ function deploymentForWait(stock: FindingStock): DeploymentInfo {
 
 function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const epsGrowth = parsePercent(stock.cagrModel?.epsGrowth) ?? 0;
-	if (epsGrowth >= 20 && (stock.screener?.score ?? 0) >= 1.5) {
+	const score = stock.screener?.score;
+	const note = stock.screener?.note;
+	const base = stock.baseCagr ?? -999;
+	const bear = stock.bearCagr ?? -999;
+
+	if (epsGrowth >= 20 && (score ?? 0) >= 1.5) {
 		return {
 			status: 'OVERPRICED',
-			reason: stock.screener?.note ?? 'High-growth business at an extreme valuation. Wait for significant multiple compression.'
+			reason: note ?? `Hyper-growth (${epsGrowth}%) at extreme valuation (Score ${score}). Wait for compression.`
 		};
 	}
-	return { status: 'FAIL', reason: stock.screener?.note ?? 'No valuation edge.' };
+
+	if (score != null && score > 1.0) {
+		return {
+			status: 'FAIL',
+			reason: note ?? `Valuation score ${score} is above the 1.0 buy threshold (lower is better).`
+		};
+	}
+
+	// If score is technically "cheap" (< 1.0) but still FAIL signal, it's likely a hurdle issue
+	if (base < ETF_HURDLE_CAGR) {
+		return {
+			status: 'FAIL',
+			reason: note ?? `Cheap (Score ${score}) but base CAGR ${base}% misses the ${ETF_HURDLE_CAGR}% hurdle.`
+		};
+	}
+
+	if (bear <= BEAR_FLOOR_CAGR) {
+		return {
+			status: 'FAIL',
+			reason: note ?? `Cheap (Score ${score}) but bear CAGR ${bear}% is below the ${BEAR_FLOOR_CAGR}% safety floor.`
+		};
+	}
+
+	return { status: 'FAIL', reason: note ?? 'No valuation edge.' };
 }
 
 function assignDeployment(stock: FindingStock): void {
