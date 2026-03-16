@@ -32,7 +32,18 @@ function getAnalystDispersion(earningsTrend) {
 	return { avg, low, high };
 }
 
-function computeGrowthScore(engine, multipleType, multiple, growthPct, cvStock) {
+export interface ScreenerResult {
+	engine: string;
+	score?: number | null;
+	signal: string;
+	inputs?: any;
+	note?: string;
+	secondaryEngine?: string;
+	secondaryScore?: number | null;
+	realityChecks?: any;
+}
+
+function computeGrowthScore(engine: string, multipleType: string, multiple: number, growthPct: number, cvStock: number): ScreenerResult {
 	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
 	const score = (multiple / growthPct) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
@@ -115,7 +126,7 @@ function detectGrowthBranch(stock, valuationPrice) {
 	};
 }
 
-function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
+function computeTotalReturn(growthPct: number, divYieldPct: number, forwardPE: number, debtToEquity: number): ScreenerResult {
 	const earningsYield = (1 / forwardPE) * 100;
 	if (earningsYield <= divYieldPct) {
 		return {
@@ -154,7 +165,7 @@ function computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity) {
 }
 
 function applyRealityChecks(result, rawPrice, historicalData, summary) {
-	const checks = {};
+	const checks: Record<string, any> = {};
 	const price6mAgo = historicalData?.price6mAgo;
 	const price1mAgo = historicalData?.price1mAgo;
 	const low3m = historicalData?.low3m;

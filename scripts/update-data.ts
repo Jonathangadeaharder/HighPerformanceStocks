@@ -224,13 +224,13 @@ function applyUpdates(stock, quote, summary, historicalData) {
 			typeof model.decayFactor === 'number' ? model.decayFactor : DEFAULT_GROWTH_DECAY;
 
 		if (epsGrowth != null && model.ttmEPS) {
-			const scenarios = {};
+			const scenarios: Record<string, string> = {};
 			for (const [scenario, exitPE] of Object.entries(model.exitPE)) {
 				const cagr = calcDecayedCagr({
 					price: priceForCalc,
 					ttmEPS: model.ttmEPS,
 					epsGrowthPct: epsGrowth,
-					exitPE,
+					exitPE: exitPE as number,
 					dividendYieldPct: dyPct,
 					horizon: DEFAULT_HORIZON,
 					decayFactor

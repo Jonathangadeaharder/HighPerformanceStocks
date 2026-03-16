@@ -21,8 +21,8 @@
 		"format:check": "prettier --check .",
 		"preview": "node build",
 		"start": "node build",
-		"update-data": "node scripts/update-data.js",
-		"validate-data": "node scripts/validate-data.js"
+		"update-data": "tsx scripts/update-data.ts",
+		"validate-data": "tsx scripts/validate-data.ts"
 	},
 	"dependencies": {
 		"yahoo-finance2": "^3.13.0"
