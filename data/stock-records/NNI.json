@@ -4,15 +4,15 @@
 	"group": "The Capital Compounders",
 	"confidence": "medium",
 	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
-	"marketCap": "$4.7B USD",
-	"sharpeRatio": 0.35,
-	"expectedCAGR": "6% - 19%",
+	"marketCap": "$4.6B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "8% - 21%",
 	"expectedVolatility": "~23%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 11,
-		"forwardPE": 13
+		"forwardPE": 12.9
 	},
 	"metrics": {
 		"roe": "11.6%"
@@ -20,13 +20,13 @@
 	"targetPrice": "$140",
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$130",
+	"currentPrice": "$129.50",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "6%",
-			"base": "13%",
-			"bull": "19%"
+			"bear": "8%",
+			"base": "15%",
+			"bull": "21%"
 		},
 		"epsGrowth": "9%",
 		"exitPE": {
@@ -38,18 +38,18 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-16T15:10:46.488Z",
+	"lastUpdated": "2026-03-16T18:42:34.394Z",
 	"consensus": {
 		"yahoo": "$140"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.38,
+		"score": 1.36,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 13,
+			"multiple": 12.9,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		}

@@ -18,9 +18,9 @@
 			"bull": 13
 		},
 		"scenarios": {
-			"bear": "15%",
-			"base": "20%",
-			"bull": "26%"
+			"bear": "22%",
+			"base": "27%",
+			"bull": "33%"
 		},
 		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
 	},
@@ -41,11 +41,11 @@
 	"consensus": {
 		"yahoo": "$15.93"
 	},
-	"currentPrice": "$8.68",
-	"marketCap": "$13.5B USD",
-	"expectedCAGR": "15% - 26%",
+	"currentPrice": "$8.73",
+	"marketCap": "$13.6B USD",
+	"expectedCAGR": "22% - 33%",
 	"expectedVolatility": "~49%",
-	"sharpeRatio": 0.33,
+	"sharpeRatio": 0.47,
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.48,
@@ -70,5 +70,5 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:47.476Z"
+	"lastUpdated": "2026-03-16T18:42:35.317Z"
 }

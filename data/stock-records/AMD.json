@@ -4,14 +4,14 @@
 	"group": "AI & Semiconductors",
 	"confidence": "medium",
 	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
-	"marketCap": "$323.1B USD",
+	"marketCap": "$322.8B USD",
 	"sharpeRatio": -0.12,
-	"expectedCAGR": "-7% - 1%",
+	"expectedCAGR": "11% - 20%",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-7%",
-			"base": "-3%",
-			"bull": "1%"
+			"bear": "11%",
+			"base": "16%",
+			"bull": "20%"
 		},
 		"ttmEPS": 2.61,
 		"horizon": 5,
@@ -24,32 +24,42 @@
 		},
 		"basis": "Forward PE (18x) with growth premium; no artificial compression"
 	},
-	"lastUpdated": "2026-03-16T15:10:32.473Z",
+	"lastUpdated": "2026-03-16T18:42:20.206Z",
 	"consensus": {
 		"yahoo": "$290.27"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.55,
-		"signal": "FAIL",
+		"score": 0.54,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 18.5,
+			"multiple": 18.4,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.033
 		},
-		"note": "Cheap (0.55) but base CAGR -3% misses the 14% hurdle"
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 11,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 16,
+				"quarter": "2025-12"
+			}
+		}
 	},
 	"intrinsicValue": {
 		"dcf": 64.41,
 		"date": "2026-03-16",
 		"discount": -67
 	},
-	"currentPrice": "$198.20",
+	"currentPrice": "$197.97",
 	"valuation": {
 		"trailingPE": 75.9,
-		"forwardPE": 18.5,
+		"forwardPE": 18.4,
 		"evEbitda": 45.8
 	},
 	"metrics": {

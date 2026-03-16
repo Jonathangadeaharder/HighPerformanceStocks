@@ -5,14 +5,14 @@
 	"confidence": "medium",
 	"confidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
 	"marketCap": "$2.4B USD",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "9% - 25%",
+	"sharpeRatio": 0.55,
+	"expectedCAGR": "14% - 31%",
 	"expectedVolatility": "~33%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 5.9,
-		"forwardPE": -56
+		"forwardPE": -56.1
 	},
 	"metrics": {
 		"roe": "14.3%",
@@ -23,16 +23,16 @@
 	"targetPrice": "$21",
 	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
 	"bearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.",
-	"currentPrice": "$17.91",
+	"currentPrice": "$17.96",
 	"consensus": {
 		"yahoo": "$21"
 	},
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "9%",
-			"base": "18%",
-			"bull": "25%"
+			"bear": "14%",
+			"base": "24%",
+			"bull": "31%"
 		},
 		"epsGrowth": "14%",
 		"exitPE": {
@@ -44,7 +44,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-16T15:10:38.482Z",
+	"lastUpdated": "2026-03-16T18:42:26.284Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.42,

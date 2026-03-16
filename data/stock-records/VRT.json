@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
-	"marketCap": "$102.3B USD",
-	"sharpeRatio": 0.03,
-	"expectedCAGR": "2% - 11%",
+	"marketCap": "$101.9B USD",
+	"sharpeRatio": 0.31,
+	"expectedCAGR": "19% - 29%",
 	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 78.2,
-		"forwardPE": 33.5,
+		"trailingPE": 77.9,
+		"forwardPE": 33.3,
 		"pegRatio": null,
 		"evEbitda": 45.5
 	},
@@ -28,7 +28,7 @@
 	"targetPrice": "$267.83",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$267.30",
+	"currentPrice": "$266.43",
 	"consensus": {
 		"tipranks": "$280",
 		"yahoo": "$267.83",
@@ -45,21 +45,21 @@
 			"bull": 42
 		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "7%",
-			"bull": "11%"
+			"bear": "19%",
+			"base": "24%",
+			"bull": "29%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-16T15:10:53.525Z",
+	"lastUpdated": "2026-03-16T18:42:41.077Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.15,
+		"score": 1.14,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 33.5,
+			"multiple": 33.3,
 			"cvStock": 0.125,
 			"riskMultiplier": 1.027
 		}

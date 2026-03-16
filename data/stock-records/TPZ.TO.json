@@ -16,16 +16,16 @@
 		"ttmEPS": 0.83,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "-6%",
-			"base": "-1%",
-			"bull": "4%"
+			"bear": "-1%",
+			"base": "5%",
+			"bull": "10%"
 		}
 	},
-	"currentPrice": "C$31.40",
+	"currentPrice": "C$31.53",
 	"marketCap": "C$4.9B",
 	"valuation": {
-		"trailingPE": 37.8,
-		"forwardPE": 30.5,
+		"trailingPE": 38,
+		"forwardPE": 30.6,
 		"evEbitda": 16.3
 	},
 	"metrics": {
@@ -39,7 +39,7 @@
 		"yahoo": "C$33.58"
 	},
 	"targetPrice": "C$33.58",
-	"expectedCAGR": "-6% - 4%",
+	"expectedCAGR": "-1% - 10%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.94,
@@ -47,10 +47,10 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 30.5,
+			"multiple": 30.6,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:51.384Z"
+	"lastUpdated": "2026-03-16T18:42:39.128Z"
 }

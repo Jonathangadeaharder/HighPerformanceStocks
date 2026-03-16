@@ -16,12 +16,12 @@
 		"ttmEPS": 34.63,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "2%",
-			"bull": "7%"
+			"bear": "2%",
+			"base": "8%",
+			"bull": "13%"
 		}
 	},
-	"currentPrice": "$946.23",
+	"currentPrice": "$946.12",
 	"marketCap": "$116.8B USD",
 	"valuation": {
 		"trailingPE": 27.3,
@@ -38,7 +38,7 @@
 		"yahoo": "$995.27"
 	},
 	"targetPrice": "$995.27",
-	"expectedCAGR": "-4% - 7%",
+	"expectedCAGR": "2% - 13%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.37,
@@ -51,5 +51,5 @@
 			"riskMultiplier": 0.957
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:44.317Z"
+	"lastUpdated": "2026-03-16T18:42:32.432Z"
 }

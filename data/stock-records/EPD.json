@@ -25,7 +25,7 @@
 	"targetPrice": "$37.40",
 	"bullCase": "Most conservative and best-managed midstream MLP. 25 consecutive years of distribution increases. Investment-grade balance sheet. NGL and petrochemical infrastructure benefits from US shale production growth. 5.8% yield with 3-5% distribution growth.",
 	"bearCase": "Slower growth profile than ET or LNG. MLP tax complexity. Lower upside at current valuation. Energy transition could reduce long-term hydrocarbon volumes.",
-	"currentPrice": "$37.22",
+	"currentPrice": "$37.25",
 	"consensus": {
 		"tipranks": "$40",
 		"yahoo": "$37.40"
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; utility-like stability warrants narrow PE range"
 	},
-	"lastUpdated": "2026-03-16T15:10:37.288Z",
+	"lastUpdated": "2026-03-16T18:42:25.217Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1,

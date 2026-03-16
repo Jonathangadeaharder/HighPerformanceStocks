@@ -4,9 +4,9 @@
 	"group": "Ad-Tech",
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$153.3B USD",
-	"sharpeRatio": -0.07,
-	"expectedCAGR": "-10% - 7%",
+	"marketCap": "$153.4B USD",
+	"sharpeRatio": 0.12,
+	"expectedCAGR": "4% - 24%",
 	"expectedVolatility": "~81%",
 	"valuation": {
 		"trailingPE": 45.2,
@@ -29,7 +29,7 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$453.55",
+	"currentPrice": "$453.80",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "30%",
@@ -40,18 +40,18 @@
 			"bull": 35
 		},
 		"scenarios": {
-			"bear": "-10%",
-			"base": "0%",
-			"bull": "7%"
+			"bear": "4%",
+			"base": "15%",
+			"bull": "24%"
 		},
 		"basis": "AXON 2.0 expansion driving massive FCF conversion",
 		"ttmEPS": 10.04
 	},
-	"lastUpdated": "2026-03-16T15:10:33.352Z",
+	"lastUpdated": "2026-03-16T18:42:21.056Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.75,
-		"signal": "FAIL",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
@@ -59,6 +59,16 @@
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
-		"note": "Cheap (0.75) but base CAGR 0% misses the 14% hurdle"
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 12,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 10.1,
+				"quarter": "2025-12"
+			}
+		}
 	}
 }

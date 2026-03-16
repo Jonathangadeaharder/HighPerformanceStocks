@@ -16,16 +16,16 @@
 		"ttmEPS": 20.36,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "11%",
-			"bull": "16%"
+			"bear": "11%",
+			"base": "18%",
+			"bull": "23%"
 		}
 	},
-	"currentPrice": "$364.20",
+	"currentPrice": "$363.36",
 	"marketCap": "$8.5B USD",
 	"valuation": {
-		"trailingPE": 17.9,
-		"forwardPE": 16.4,
+		"trailingPE": 17.8,
+		"forwardPE": 16.3,
 		"evEbitda": 13
 	},
 	"metrics": {
@@ -39,7 +39,7 @@
 		"yahoo": "$422.40"
 	},
 	"targetPrice": "$422.40",
-	"expectedCAGR": "5% - 16%",
+	"expectedCAGR": "11% - 23%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.07,
@@ -47,10 +47,10 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 16.4,
+			"multiple": 16.3,
 			"cvStock": 0.047,
 			"riskMultiplier": 0.98
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:42.354Z"
+	"lastUpdated": "2026-03-16T18:42:30.581Z"
 }

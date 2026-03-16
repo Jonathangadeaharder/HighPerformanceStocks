@@ -6,26 +6,26 @@
 	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "15%",
+		"epsGrowth": "16%",
 		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
+			"bear": 28,
+			"base": 32,
+			"bull": 36
 		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 1.59,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "7%",
-			"bull": "12%"
+			"bear": "23%",
+			"base": "26%",
+			"bull": "29%"
 		}
 	},
-	"currentPrice": "$34.47",
-	"marketCap": "$33.4B USD",
+	"currentPrice": "$33.82",
+	"marketCap": "$32.7B USD",
 	"valuation": {
-		"trailingPE": 21.7,
-		"forwardPE": 20.5,
+		"trailingPE": 21.3,
+		"forwardPE": 20.1,
 		"evEbitda": 14.3
 	},
 	"metrics": {
@@ -39,18 +39,18 @@
 		"yahoo": "$42.67"
 	},
 	"targetPrice": "$42.67",
-	"expectedCAGR": "1% - 12%",
+	"expectedCAGR": "23% - 29%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.33,
+		"score": 1.22,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 16,
 			"multipleType": "Forward P/E",
-			"multiple": 20.5,
+			"multiple": 20.1,
 			"cvStock": 0.037,
 			"riskMultiplier": 0.974
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:35.473Z"
+	"lastUpdated": "2026-03-16T18:42:23.235Z"
 }

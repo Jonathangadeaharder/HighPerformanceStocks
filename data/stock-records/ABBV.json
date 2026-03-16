@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$390.9B USD",
-	"sharpeRatio": 0.44,
-	"expectedCAGR": "12% - 21%",
+	"marketCap": "$392.3B USD",
+	"sharpeRatio": 0.7,
+	"expectedCAGR": "19% - 28%",
 	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 93.3,
-		"forwardPE": 13.7,
+		"trailingPE": 93.6,
+		"forwardPE": 13.8,
 		"pegRatio": 1.06,
 		"evEbitda": 15.4
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$248.86",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$221.10",
+	"currentPrice": "$221.86",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$248.86",
@@ -44,21 +44,21 @@
 			"bull": 26
 		},
 		"scenarios": {
-			"bear": "12%",
-			"base": "17%",
-			"bull": "21%"
+			"bear": "19%",
+			"base": "24%",
+			"bull": "28%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-16T15:10:32.270Z",
+	"lastUpdated": "2026-03-16T18:42:20.000Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.89,
+		"score": 0.9,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 13.7,
+			"multiple": 13.8,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},

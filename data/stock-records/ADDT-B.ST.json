@@ -5,8 +5,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
 	"marketCap": "82.8B SEK",
-	"sharpeRatio": -0.05,
-	"expectedCAGR": "-1% - 7%",
+	"sharpeRatio": 0.17,
+	"expectedCAGR": "5% - 14%",
 	"expectedVolatility": "~29%",
 	"valuation": {
 		"trailingPE": 40.1,
@@ -42,13 +42,13 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "-1%",
-			"base": "3%",
-			"bull": "7%"
+			"bear": "5%",
+			"base": "10%",
+			"bull": "14%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T15:10:32.288Z",
+	"lastUpdated": "2026-03-16T18:42:20.018Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,

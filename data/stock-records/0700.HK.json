@@ -5,14 +5,14 @@
 	"confidence": "high",
 	"confidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
 	"marketCap": "HK$5038.3B",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "5% - 15%",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "12% - 22%",
 	"expectedVolatility": "~29%",
 	"valuation": {
 		"trailingPE": 22,
 		"forwardPE": 15.7,
 		"pegRatio": null,
-		"evEbitda": 19.6
+		"evEbitda": 19.9
 	},
 	"metrics": {
 		"roe": "19.8%",
@@ -41,13 +41,13 @@
 			"bull": 25
 		},
 		"scenarios": {
-			"bear": "5%",
-			"base": "10%",
-			"bull": "15%"
+			"bear": "12%",
+			"base": "17%",
+			"bull": "22%"
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
 	},
-	"lastUpdated": "2026-03-16T15:10:32.274Z",
+	"lastUpdated": "2026-03-16T18:42:19.938Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.03,

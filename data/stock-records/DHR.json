@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
-	"marketCap": "$133.8B USD",
-	"sharpeRatio": -0.02,
-	"expectedCAGR": "0% - 8%",
+	"marketCap": "$135.3B USD",
+	"sharpeRatio": 0.23,
+	"expectedCAGR": "8% - 16%",
 	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 37.5,
-		"forwardPE": 20.8,
+		"trailingPE": 38,
+		"forwardPE": 21,
 		"pegRatio": null,
 		"evEbitda": 18.8
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$264.91",
 	"bullCase": "Historically elite serial acquirer with proven Danaher Business System (DBS). 450%+ total return over 10 years. Current trough could be a re-entry point. Masimo acquisition adds new capabilities.",
 	"bearCase": "ROIC depressed at ~6.8%. Mid-single-digit growth. Integration risk from $9.9B Masimo acquisition. Recovery timeline uncertain.",
-	"currentPrice": "$189.25",
+	"currentPrice": "$191.34",
 	"consensus": {
 		"tipranks": "$248",
 		"yahoo": "$264.91",
@@ -35,33 +35,33 @@
 	"cagrModel": {
 		"horizon": 5,
 		"ttmEPS": 5.04,
-		"epsGrowth": "10%",
+		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"exitPE": {
-			"bear": 26,
-			"base": 32,
-			"bull": 38
+			"bear": 28,
+			"base": 34,
+			"bull": 40
 		},
 		"scenarios": {
-			"bear": "0%",
-			"base": "5%",
-			"bull": "8%"
+			"bear": "8%",
+			"base": "13%",
+			"bull": "16%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T15:10:36.444Z",
+	"lastUpdated": "2026-03-16T18:42:24.284Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.8,
+		"score": 1.29,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 10,
+			"growth": 14,
 			"multipleType": "EV/EBITDA",
 			"multiple": 18.8,
 			"cvStock": 0.012,
 			"riskMultiplier": 0.959
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2
+		"secondaryScore": 1.44
 	}
 }

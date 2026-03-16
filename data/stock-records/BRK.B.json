@@ -4,15 +4,15 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1064.3B USD",
-	"sharpeRatio": 0.44,
-	"expectedCAGR": "9% - 16%",
+	"marketCap": "$1062.1B USD",
+	"sharpeRatio": 0.67,
+	"expectedCAGR": "13% - 20%",
 	"expectedVolatility": "~18%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 15.9,
-		"forwardPE": 22.7
+		"forwardPE": 22.6
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -24,15 +24,15 @@
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$493.35",
+	"currentPrice": "$492.30",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
-			"bear": "9%",
-			"base": "13%",
-			"bull": "16%"
+			"bear": "13%",
+			"base": "17%",
+			"bull": "20%"
 		},
-		"epsGrowth": "6%",
+		"epsGrowth": "10%",
 		"exitPE": {
 			"bear": 18,
 			"base": 22,
@@ -42,20 +42,20 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 31.02
 	},
-	"lastUpdated": "2026-03-16T15:10:35.305Z",
+	"lastUpdated": "2026-03-16T18:42:23.065Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
-		"engine": "totalReturn",
-		"score": 2,
+		"engine": "fPERG",
+		"score": 2.18,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 6,
-			"dividendYield": 0,
-			"debtToEquity": 19,
-			"debtPenalty": false,
-			"rawReturn": 6
+			"growth": 10,
+			"multipleType": "Forward P/E",
+			"multiple": 22.6,
+			"cvStock": 0.02,
+			"riskMultiplier": 0.964
 		}
 	}
 }

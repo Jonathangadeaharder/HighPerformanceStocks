@@ -4,9 +4,9 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$88.0B USD",
-	"sharpeRatio": 0.25,
-	"expectedCAGR": "8% - 18%",
+	"marketCap": "$88.1B USD",
+	"sharpeRatio": 0.65,
+	"expectedCAGR": "21% - 32%",
 	"expectedVolatility": "~34%",
 	"valuation": {
 		"trailingPE": 80,
@@ -26,7 +26,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39.18",
+	"currentPrice": "$39.20",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -43,17 +43,17 @@
 			"bull": 22
 		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "13%",
-			"bull": "18%"
+			"bear": "21%",
+			"base": "27%",
+			"bull": "32%"
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-16T15:10:34.515Z",
+	"lastUpdated": "2026-03-16T18:42:22.264Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.69,
-		"signal": "FAIL",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "P/ANI",
@@ -61,8 +61,15 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (0.69) but base CAGR 13% misses the 14% hurdle (Used benchmark CV)",
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.27
+		"secondaryScore": 0.27,
+		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

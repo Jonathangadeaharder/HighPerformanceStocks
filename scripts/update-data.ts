@@ -242,7 +242,7 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		// GDP_BASELINE ≈ 6% (long-run nominal earnings growth), SHRINKAGE = 0.5
 		// This preserves low-growth accuracy while halving the excess optimism of high-growth forecasts.
 		const RTM_BASELINE = 6.0;
-		const RTM_SHRINKAGE = 0.5;
+		const RTM_SHRINKAGE = 1.0; // Changed from 0.5 to 1.0 to remove forced conservatism and respect user inputs as realistic baselines
 		const rawEpsGrowth = parsePercent(model.epsGrowth);
 		const epsGrowth = rawEpsGrowth != null
 			? +(RTM_BASELINE + (rawEpsGrowth - RTM_BASELINE) * RTM_SHRINKAGE).toFixed(1)

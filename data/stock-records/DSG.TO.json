@@ -6,26 +6,26 @@
 	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "15%",
+		"epsGrowth": "17%",
 		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
+			"bear": 35,
+			"base": 40,
+			"bull": 45
 		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 2.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "-6%",
-			"bull": "-1%"
+			"bear": "13%",
+			"base": "16%",
+			"bull": "19%"
 		}
 	},
-	"currentPrice": "C$97.13",
-	"marketCap": "C$8.4B",
+	"currentPrice": "C$99.29",
+	"marketCap": "C$8.5B",
 	"valuation": {
-		"trailingPE": 40.1,
-		"forwardPE": 21.8,
+		"trailingPE": 41,
+		"forwardPE": 22.3,
 		"evEbitda": 26.7
 	},
 	"metrics": {
@@ -36,21 +36,21 @@
 		"ruleOf40": "48%"
 	},
 	"consensus": {
-		"yahoo": "C$128.59"
+		"yahoo": "C$128.66"
 	},
-	"targetPrice": "C$128.59",
-	"expectedCAGR": "-11% - -1%",
+	"targetPrice": "C$128.66",
+	"expectedCAGR": "13% - 19%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.45,
+		"score": 1.31,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 22.3,
 			"cvStock": 0.072,
 			"riskMultiplier": 0.995
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:37.277Z"
+	"lastUpdated": "2026-03-16T18:42:25.131Z"
 }

@@ -6,26 +6,26 @@
 	"confidenceReason": "The 'FICO of insurance'. Proprietary databases for P&C insurers. Asset-light, massive margins.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "15%",
+		"epsGrowth": "14%",
 		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
+			"bear": 30,
+			"base": 35,
+			"bull": 40
 		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 6.48,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-6%",
-			"base": "0%",
-			"bull": "4%"
+			"bear": "14%",
+			"base": "17%",
+			"bull": "20%"
 		}
 	},
-	"currentPrice": "$204.94",
-	"marketCap": "$28.6B USD",
+	"currentPrice": "$205.75",
+	"marketCap": "$28.7B USD",
 	"valuation": {
-		"trailingPE": 31.6,
-		"forwardPE": 23.8,
+		"trailingPE": 31.8,
+		"forwardPE": 23.9,
 		"evEbitda": 20.5
 	},
 	"metrics": {
@@ -38,18 +38,18 @@
 		"yahoo": "$230.06"
 	},
 	"targetPrice": "$230.06",
-	"expectedCAGR": "-6% - 4%",
+	"expectedCAGR": "14% - 20%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.53,
+		"score": 1.64,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 23.8,
+			"multiple": 23.9,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		}
 	},
-	"lastUpdated": "2026-03-16T15:10:53.522Z"
+	"lastUpdated": "2026-03-16T18:42:41.058Z"
 }
