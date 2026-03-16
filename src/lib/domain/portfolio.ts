@@ -19,6 +19,7 @@ export interface PortfolioSummary {
 	weightingMode: 'equal' | 'rank';
 	weightedAvgBaseCagr: number;
 	weightedAvgBearCagr: number;
+	weightedAvgBullCagr: number;
 	uniqueSectors: number;
 	maxSingleWeight: number;
 }
@@ -111,12 +112,14 @@ export function computePortfolioSummary(
 ): PortfolioSummary {
 	let weightedBaseCagr = 0;
 	let weightedBearCagr = 0;
+	let weightedBullCagr = 0;
 	let totalWeight = 0;
 
 	for (const s of selected) {
 		const w = weights.get(s.ticker) ?? 0;
 		weightedBaseCagr += (s.baseCagr ?? 0) * w;
 		weightedBearCagr += (s.bearCagr ?? 0) * w;
+		weightedBullCagr += (s.bullCagr ?? 0) * w;
 		totalWeight += w;
 	}
 
@@ -130,6 +133,7 @@ export function computePortfolioSummary(
 		weightingMode,
 		weightedAvgBaseCagr: +(weightedBaseCagr / divisor).toFixed(1),
 		weightedAvgBearCagr: +(weightedBearCagr / divisor).toFixed(1),
+		weightedAvgBullCagr: +(weightedBullCagr / divisor).toFixed(1),
 		uniqueSectors: uniqueGroups,
 		maxSingleWeight: +maxWeight.toFixed(1)
 	};

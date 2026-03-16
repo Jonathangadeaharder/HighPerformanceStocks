@@ -29,6 +29,7 @@
 				<th>Rank</th>
 				<th>Base</th>
 				<th>Bear</th>
+				<th>Bull</th>
 				<th>Vol</th>
 				<th>Score</th>
 				<th>ROE</th>
@@ -56,6 +57,7 @@
 					<td class="mono">{stock.deploymentRank ?? '—'}</td>
 					<td class="mono" style="color:#4ade80">{fmt(stock.baseCagr)}</td>
 					<td class="mono" style="color:#facc15">{fmt(stock.bearCagr)}</td>
+					<td class="mono" style="color:#60a5fa">{fmt(stock.bullCagr)}</td>
 					<td class="mono">{stock.expectedVolatility ?? '—'}</td>
 					<td class="mono">{stock.screener?.score ?? '—'}</td>
 					<td class="mono">{stock.metrics?.roe ?? '—'}</td>

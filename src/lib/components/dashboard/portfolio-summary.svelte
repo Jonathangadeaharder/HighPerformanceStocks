@@ -29,6 +29,10 @@
 			<span class="ps-value mono" style="color:#facc15">{summary.weightedAvgBearCagr}%</span>
 		</div>
 		<div class="ps-stat">
+			<span class="ps-label">Avg Bull CAGR</span>
+			<span class="ps-value mono" style="color:#60a5fa">{summary.weightedAvgBullCagr}%</span>
+		</div>
+		<div class="ps-stat">
 			<span class="ps-label">Max Position</span>
 			<span class="ps-value mono">{summary.maxSingleWeight}%</span>
 		</div>
