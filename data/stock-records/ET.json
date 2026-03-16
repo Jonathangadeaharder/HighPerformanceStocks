@@ -22,13 +22,13 @@
 		"netDebtEbitda": "4.6x",
 		"ruleOf40": "32%"
 	},
-	"targetPrice": "$21.82",
+	"targetPrice": "$21.93",
 	"bullCase": "Largest and most diversified US midstream network (130,000 miles of pipeline). 7%+ distribution yield growing 3-5% annually. AI data center power demand is a secular tailwind for natural gas. Low valuation relative to peers.",
 	"bearCase": "High leverage at 4x net debt/EBITDA. MLP structure adds tax complexity. Management has a mixed capital allocation track record. Commodity price sensitivity on gathering and processing segments.",
 	"currentPrice": "$18.75",
 	"consensus": {
 		"tipranks": "$23",
-		"yahoo": "$21.82"
+		"yahoo": "$21.93"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; midstream peers trade 8-14x; high yield provides floor"
 	},
-	"lastUpdated": "2026-03-15T23:11:17.536Z",
+	"lastUpdated": "2026-03-16T08:36:04.224Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.71,
@@ -73,13 +73,13 @@
 			"revisions": {
 				"pass": true,
 				"up30d": 3,
-				"down30d": 5
+				"down30d": 2
 			}
 		}
 	},
 	"intrinsicValue": {
 		"dcf": 63.69,
-		"date": "2026-03-15",
+		"date": "2026-03-16",
 		"discount": 240
 	}
 }

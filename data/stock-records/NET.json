@@ -10,7 +10,7 @@
 	"expectedVolatility": "~52%",
 	"valuation": {
 		"forwardPE": 147,
-		"evEbitda": -1748.1
+		"evEbitda": null
 	},
 	"metrics": {
 		"roe": "-8.2%",
@@ -40,7 +40,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-15T23:11:23.135Z",
+	"lastUpdated": "2026-03-16T08:36:10.317Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},

@@ -4,7 +4,7 @@
 	"group": "Energy & Infrastructure",
 	"confidence": "high",
 	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
-	"targetPrice": "$125.27",
+	"targetPrice": "$125.38",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
@@ -27,7 +27,7 @@
 	"currentPrice": "$107.92",
 	"marketCap": "$47.0B USD",
 	"consensus": {
-		"yahoo": "$125.27"
+		"yahoo": "$125.38"
 	},
 	"expectedVolatility": "~53%",
 	"screener": {
@@ -43,7 +43,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-15T23:11:15.613Z",
+	"lastUpdated": "2026-03-16T08:36:02.247Z",
 	"valuation": {
 		"trailingPE": 109,
 		"forwardPE": 58.2,

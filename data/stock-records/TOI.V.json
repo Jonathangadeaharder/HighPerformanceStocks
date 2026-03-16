@@ -23,13 +23,13 @@
 		"netDebtEbitda": "1.4x",
 		"ruleOf40": "49%"
 	},
-	"targetPrice": "C$139.18",
+	"targetPrice": "C$140.41",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
 	"currentPrice": "C$97.87",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$139.18"
+		"yahoo": "C$140.41"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -48,7 +48,7 @@
 		},
 		"basis": "Normalized adjusted EPS ex-NRI; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-03-15T23:11:26.967Z",
+	"lastUpdated": "2026-03-16T08:36:14.256Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.11,

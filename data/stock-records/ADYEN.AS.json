@@ -9,7 +9,7 @@
 	"expectedCAGR": "13% - 24%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 27.2,
+		"trailingPE": 27.1,
 		"forwardPE": 19.1,
 		"pegRatio": null,
 		"evEbitda": 15.2
@@ -27,7 +27,7 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€913.60",
+	"currentPrice": "€912",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
@@ -49,7 +49,7 @@
 		},
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-15T23:11:13.664Z",
+	"lastUpdated": "2026-03-16T08:36:00.212Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.07,

@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "low",
 	"confidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
-	"marketCap": "327.5B SEK",
+	"marketCap": "328.0B SEK",
 	"sharpeRatio": 0.29,
 	"expectedCAGR": "12% - 20%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 42,
-		"forwardPE": 19.1,
+		"trailingPE": 42.1,
+		"forwardPE": 19.2,
 		"pegRatio": null,
 		"evEbitda": null,
 		"priceToFRE": "~21.0x"
@@ -25,13 +25,13 @@
 		"realizedExitsLTM": "€19B",
 		"aumGrowth": "~12% YoY"
 	},
-	"targetPrice": "408 SEK",
+	"targetPrice": "407 SEK",
 	"bullCase": "Europe's premier private equity firm. Strong fundraising momentum and a strategic push into Asia and retail wealth management channels provide a long, diversified runway for fee-related earnings growth.",
 	"bearCase": "The European macro stagnation noted across the portfolio is toxic for private equity. If the European IPO and M&A exit windows freeze due to flat industrial output, EQT's carried interest will collapse, trapping capital.",
-	"currentPrice": "279 SEK",
+	"currentPrice": "280 SEK",
 	"consensus": {
 		"tipranks": "403 SEK",
-		"yahoo": "408 SEK"
+		"yahoo": "407 SEK"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -50,7 +50,7 @@
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-03-15T23:11:17.504Z",
+	"lastUpdated": "2026-03-16T08:36:04.281Z",
 	"screener": {
 		"engine": "fFREG",
 		"score": 1.04,

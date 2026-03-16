@@ -22,13 +22,13 @@
 		"netDebtEbitda": "2.4x",
 		"ruleOf40": "26%"
 	},
-	"targetPrice": "$273.55",
+	"targetPrice": "$273.14",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
 	"currentPrice": "$252.27",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$273.55"
+		"yahoo": "$273.14"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-15T23:11:21.357Z",
+	"lastUpdated": "2026-03-16T08:36:08.406Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 3.43,

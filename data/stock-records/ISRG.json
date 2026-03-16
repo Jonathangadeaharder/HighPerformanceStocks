@@ -22,13 +22,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"targetPrice": "$609.82",
+	"targetPrice": "$607.17",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
 	"currentPrice": "$472.16",
 	"consensus": {
 		"tipranks": "$620",
-		"yahoo": "$609.82"
+		"yahoo": "$607.17"
 	},
 	"cagrModel": {
 		"horizon": 5,
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-15T23:11:20.311Z",
+	"lastUpdated": "2026-03-16T08:36:07.239Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.86,

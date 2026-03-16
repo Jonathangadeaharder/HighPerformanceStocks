@@ -24,8 +24,8 @@
 			"bull": "21%"
 		}
 	},
-	"currentPrice": "$77.20",
-	"marketCap": "$20.0B USD",
+	"currentPrice": "$76.10",
+	"marketCap": "$19.7B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
@@ -42,16 +42,6 @@
 			"rawReturn": 21
 		},
 		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 77.2,
-				"price6mAgo": 51.5,
-				"price1mAgo": 82,
-				"low3m": 47.8,
-				"return6m": 49.9,
-				"return1m": -5.9,
-				"near3mLow": false
-			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
@@ -59,9 +49,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-15T23:11:20.346Z",
+	"lastUpdated": "2026-03-16T08:36:07.353Z",
 	"valuation": {
-		"trailingPE": 12.5,
+		"trailingPE": 12.4,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -69,7 +59,7 @@
 	"metrics": {
 		"roe": "43.3%",
 		"fcfMargin": "~22%",
-		"fcfYield": "~1908%",
+		"fcfYield": "~1935%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "1%"
 	},

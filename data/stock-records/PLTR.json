@@ -42,7 +42,7 @@
 			"riskMultiplier": 1.032
 		}
 	},
-	"lastUpdated": "2026-03-15T23:11:25.013Z",
+	"lastUpdated": "2026-03-16T08:36:12.067Z",
 	"valuation": {
 		"trailingPE": 239.6,
 		"forwardPE": 81.7,
@@ -59,7 +59,7 @@
 	"sharpeRatio": -0.29,
 	"intrinsicValue": {
 		"dcf": 9.72,
-		"date": "2026-03-15",
+		"date": "2026-03-16",
 		"discount": -94
 	}
 }

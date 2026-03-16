@@ -20,7 +20,7 @@
 		"netDebtEbitda": "1.3x",
 		"ruleOf40": "36%"
 	},
-	"targetPrice": "$2662.77",
+	"targetPrice": "$2658.92",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
 	"currentPrice": "$1670",
@@ -41,9 +41,9 @@
 		},
 		"basis": "High-growth e-commerce/fintech normalized PE"
 	},
-	"lastUpdated": "2026-03-15T23:11:22.128Z",
+	"lastUpdated": "2026-03-16T08:36:09.197Z",
 	"consensus": {
-		"yahoo": "$2662.77"
+		"yahoo": "$2658.92"
 	},
 	"screener": {
 		"engine": "fPERG",

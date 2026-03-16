@@ -12,7 +12,7 @@
 		"trailingPE": null,
 		"forwardPE": 71.5,
 		"pegRatio": null,
-		"evEbitda": -2307.5
+		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
@@ -47,7 +47,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-15T23:11:16.406Z",
+	"lastUpdated": "2026-03-16T08:36:03.052Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.24,

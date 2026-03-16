@@ -20,7 +20,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "58%"
 	},
-	"targetPrice": "$189.30",
+	"targetPrice": "$188.57",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
 	"currentPrice": "$113.62",
@@ -41,9 +41,9 @@
 		},
 		"basis": "5-for-1 split-adjusted adjusted EPS; mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-15T23:11:24.080Z",
+	"lastUpdated": "2026-03-16T08:36:11.199Z",
 	"consensus": {
-		"yahoo": "$189.30"
+		"yahoo": "$188.57"
 	},
 	"screener": {
 		"engine": "fPERG",

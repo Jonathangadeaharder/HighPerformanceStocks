@@ -10,7 +10,7 @@
 	"expectedVolatility": "~64%",
 	"valuation": {
 		"trailingPE": 40.5,
-		"forwardPE": 7.8,
+		"forwardPE": 7.9,
 		"pegRatio": null,
 		"evEbitda": 21.7
 	},
@@ -48,19 +48,19 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-15T23:11:23.086Z",
+	"lastUpdated": "2026-03-16T08:36:10.218Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.35,
+		"score": 0.36,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "Forward P/E",
-			"multiple": 7.8,
+			"multiple": 7.9,
 			"cvStock": 0.299,
 			"riskMultiplier": 1.131
 		},
-		"note": "Cheap (0.35) but base CAGR 1% misses the 14% hurdle (CYCLICAL EPS)"
+		"note": "Cheap (0.36) but base CAGR 1% misses the 14% hurdle (CYCLICAL EPS)"
 	},
 	"cyclical": true
 }

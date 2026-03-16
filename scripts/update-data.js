@@ -83,9 +83,15 @@ function applyUpdates(stock, quote, summary, historicalData) {
 		if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
 		if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
 		if (peg != null) stock.valuation.pegRatio = +peg.toFixed(2);
-		// Skip EV/EBITDA for alt-asset managers (consolidated insurance/real-estate balance sheets distort it)
+		// Skip EV/EBITDA for alt-asset managers (consolidated balance sheets distort it)
 		if (evEbitda != null && stock.valuation.evEbitda !== null) {
-			stock.valuation.evEbitda = +evEbitda.toFixed(1);
+			const isMegaCap = rawCap && rawCap > 50000000000;
+			if (isMegaCap && evEbitda < 5) {
+				console.log(`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA (${evEbitda}) for mega-cap, rejecting`);
+				stock.valuation.evEbitda = null;
+			} else {
+				stock.valuation.evEbitda = +evEbitda.toFixed(1);
+			}
 		}
 	}
 

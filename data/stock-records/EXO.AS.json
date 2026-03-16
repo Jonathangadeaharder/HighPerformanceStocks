@@ -4,14 +4,14 @@
 	"group": "The Capital Compounders",
 	"confidence": "medium",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€22.4B",
+	"marketCap": "€22.3B",
 	"sharpeRatio": 0.48,
 	"expectedCAGR": "9% - 23%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"forwardPE": -19.6
+		"forwardPE": -19.5
 	},
 	"metrics": {
 		"roe": "-1.7%",
@@ -20,7 +20,7 @@
 	"targetPrice": "€114",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€68.20",
+	"currentPrice": "€67.90",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -38,38 +38,28 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-15T23:11:18.338Z",
+	"lastUpdated": "2026-03-16T08:36:05.079Z",
 	"consensus": {
 		"yahoo": "€114"
 	},
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.87,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Trailing P/E",
-			"multiple": 10.5,
+			"multiple": 10.4,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap, but still stabilizing (downtrend remains active) (Used benchmark CV)",
 		"realityChecks": {
-			"stabilization": {
-				"pass": false,
-				"price": 68.2,
-				"price6mAgo": 83.5,
-				"price1mAgo": 70.25,
-				"low3m": 66.45,
-				"return6m": -18.3,
-				"return1m": -2.9,
-				"near3mLow": true
-			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
 				"down30d": 0
 			}
-		}
+		},
+		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

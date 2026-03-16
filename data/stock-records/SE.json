@@ -4,7 +4,7 @@
 	"group": "Emerging Markets",
 	"confidence": "high",
 	"confidenceReason": "Dominant position in Southeast Asia e-commerce and gaming, re-accelerating profitable growth.",
-	"targetPrice": "$142.92",
+	"targetPrice": "$142.25",
 	"bullCase": "Shopee margins expand massively as competitive intensity fades, while Garena delivers highly profitable gaming cash flows to self-fund growth.",
 	"bearCase": "TikTok Shop resurgence or failure to maintain gaming hit pipeline severely compresses margins.",
 	"cagrModel": {
@@ -27,7 +27,7 @@
 	"currentPrice": "$86",
 	"marketCap": "$50.9B USD",
 	"consensus": {
-		"yahoo": "$142.92"
+		"yahoo": "$142.25"
 	},
 	"expectedVolatility": "~52%",
 	"screener": {
@@ -43,7 +43,7 @@
 		},
 		"note": "Cheap (0.58) but base CAGR 12% misses the 14% hurdle"
 	},
-	"lastUpdated": "2026-03-15T23:11:25.991Z",
+	"lastUpdated": "2026-03-16T08:36:13.087Z",
 	"valuation": {
 		"trailingPE": 34.1,
 		"forwardPE": 16.8,

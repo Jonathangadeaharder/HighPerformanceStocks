@@ -12,7 +12,7 @@
 		"trailingPE": 62.9,
 		"forwardPE": 18.4,
 		"pegRatio": null,
-		"evEbitda": 4.3
+		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": "~37%",
@@ -49,15 +49,15 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-15T23:11:15.450Z",
+	"lastUpdated": "2026-03-16T08:36:02.244Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 0.15,
+		"engine": "fPERG",
+		"score": 0.63,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
-			"multipleType": "EV/EBITDA",
-			"multiple": 4.3,
+			"multipleType": "Forward P/E",
+			"multiple": 18.4,
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},
