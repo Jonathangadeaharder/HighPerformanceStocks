@@ -45,13 +45,24 @@ function computeQualityBonus(stock: FindingStock): number {
 	if (!m) return 0;
 	let bonus = 0;
 
+	let roeBonus = 0;
 	const roe = parsePercent(m.roe);
 	if (roe != null && roe > 0 && roe < 200) {
-		if (roe >= 25) bonus += 4;
-		else if (roe >= 20) bonus += 3;
-		else if (roe >= 15) bonus += 2;
-		else if (roe >= 10) bonus += 1;
+		if (roe >= 25) roeBonus = 4;
+		else if (roe >= 20) roeBonus = 3;
+		else if (roe >= 15) roeBonus = 2;
+		else if (roe >= 10) roeBonus = 1;
 	}
+
+	// Hyper-rational adjustment: De-lever the ROE. High ROE driven by extreme debt is not "Quality".
+	// If Net Debt / EBITDA > 3.0x, penalize the ROE bonus by 50%.
+	if (m.netDebtEbitda && typeof m.netDebtEbitda === 'string') {
+		const debtMultiple = Number.parseFloat(m.netDebtEbitda.replace('x', ''));
+		if (!Number.isNaN(debtMultiple) && debtMultiple > 3.0) {
+			roeBonus *= 0.5;
+		}
+	}
+	bonus += roeBonus;
 
 	const fcfYield = parsePercent(m.fcfYield);
 	if (fcfYield != null) {
@@ -120,7 +131,11 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	const return1m = stock.screener?.realityChecks?.stabilization?.return1m ?? 0;
 	const momentumInput = return6m - return1m;
 	const momentumZScore = Math.max(-2, Math.min(2, (momentumInput - momentum.mean) / momentum.stddev));
-	const momentumBonus = momentumZScore * 5;
+	
+	// Aggressive Factor Weighting: Quantitative literature assigns roughly equal explanatory power to Value and Momentum.
+	// We scale the Z-score by 7.5 to provide a +/- 15 point differential, ensuring highly significant 
+	// price-action confirmation aggressively pulls fundamentally sound stocks to the top of the pile.
+	const momentumBonus = momentumZScore * 7.5;
 
 	// Quality factor bonus (max +10 points) from ROE, FCF yield, Rule of 40.
 	const qualityBonus = computeQualityBonus(stock);
