@@ -27,3 +27,12 @@ Crucially, adjusting for uncertainty is **directionally agnostic**. Uncertainty 
 Models must be structural, un-brittle, and natively resilient to bad inputs. We use Z-scores to handle distribution shifts dynamically. We use decay factors to prevent terminal value hallucinations. We build algorithms that decay gracefully (e.g., substituting VIX for VSTOXX) rather than breaking. 
 
 We write code that is as simple as possible, but exactly as complex as necessary to map the real-world physics of the stock market. Every variable must pull its own weight. If a metric sounds smart but adds no alpha, it is deleted.
+
+## 6. Asymmetric Convexity (The Floor and the Ceiling)
+We seek asymmetric bets. We engineer a hard mathematical floor against permanent capital loss by demanding structural value and a positive bear-case CAGR. Once the floor is secured, we aggressively pursue the maximum possible ceiling via Momentum and Quality. We want to be long convexity: highly protected on the downside, unlimited on the upside.
+
+## 7. Narrative Independence (System over Story)
+Financial markets are driven by compelling stories. We are profoundly agnostic to narratives. If a company has a world-changing narrative but the math indicates zero margin of safety, we reject it. If a company operates in a dying, hated industry (anti-narrative) but the cash flow yield is 20% and institutions are accumulating it (momentum), we deploy capital. The math is the only ground truth.
+
+## 8. Bayesian Updating and Calibration
+We hold no ego and no loyalty to our positions. As new information arrives—be it an earnings miss, a macroeconomic shock, or deteriorating momentum—the algorithms instantly recalculate the expected value. If the facts change, the deployment rank changes, and the capital moves.
