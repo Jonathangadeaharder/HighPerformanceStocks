@@ -1,0 +1,57 @@
+{
+	"ticker": "IT",
+	"name": "Gartner",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 9.65,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "6%",
+			"base": "12%",
+			"bull": "17%"
+		}
+	},
+	"currentPrice": "$163.43",
+	"marketCap": "$11.8B USD",
+	"valuation": {
+		"trailingPE": 16.9,
+		"forwardPE": 11.3,
+		"evEbitda": 10.2
+	},
+	"metrics": {
+		"roe": "86.9%",
+		"fcfMargin": "~14%",
+		"fcfYield": "~8%",
+		"netDebtEbitda": "1.2x",
+		"ruleOf40": "16%"
+	},
+	"consensus": {
+		"yahoo": "$190.46"
+	},
+	"targetPrice": "$190.46",
+	"expectedCAGR": "6% - 17%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.74,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 11.3,
+			"cvStock": 0.051,
+			"riskMultiplier": 0.982
+		},
+		"note": "Cheap (0.74) but base CAGR 12% misses the 14% hurdle"
+	},
+	"lastUpdated": "2026-03-16T14:23:10.891Z"
+}

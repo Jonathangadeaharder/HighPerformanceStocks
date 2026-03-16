@@ -1,0 +1,56 @@
+{
+	"ticker": "INDT.ST",
+	"name": "Indutrade",
+	"group": "Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 7.04,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-5%",
+			"base": "1%",
+			"bull": "6%"
+		}
+	},
+	"currentPrice": "211 SEK",
+	"marketCap": "76.9B SEK",
+	"valuation": {
+		"trailingPE": 30,
+		"forwardPE": 23.6,
+		"evEbitda": 17.3
+	},
+	"metrics": {
+		"roe": "15.2%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "1.5x",
+		"ruleOf40": "9%"
+	},
+	"consensus": {
+		"yahoo": "260 SEK"
+	},
+	"targetPrice": "260 SEK",
+	"expectedCAGR": "-5% - 6%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.55,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 23.6,
+			"cvStock": 0.051,
+			"riskMultiplier": 0.983
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:10.782Z"
+}

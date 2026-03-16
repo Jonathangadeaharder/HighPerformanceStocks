@@ -1,0 +1,56 @@
+{
+	"ticker": "DSG.TO",
+	"name": "Descartes Systems",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 2.42,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-11%",
+			"base": "-6%",
+			"bull": "-2%"
+		}
+	},
+	"currentPrice": "C$98.12",
+	"marketCap": "C$8.4B",
+	"valuation": {
+		"trailingPE": 40.5,
+		"forwardPE": 22.1,
+		"evEbitda": 26.7
+	},
+	"metrics": {
+		"roe": "10.9%",
+		"fcfMargin": "~32%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "48%"
+	},
+	"consensus": {
+		"yahoo": "C$128.52"
+	},
+	"targetPrice": "C$128.52",
+	"expectedCAGR": "-11% - -2%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.47,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 22.1,
+			"cvStock": 0.072,
+			"riskMultiplier": 0.995
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:06.624Z"
+}

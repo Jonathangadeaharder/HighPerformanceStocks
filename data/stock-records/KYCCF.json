@@ -4,12 +4,12 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Japan's most profitable manufacturer. 55%+ operating margins in factory automation sensors. Direct sales model creates deep moat. But premium valuation and yen exposure.",
-	"marketCap": "$92.8B USD",
-	"sharpeRatio": 0.02,
-	"expectedCAGR": "2% - 9%",
+	"marketCap": "$92.2B USD",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "3% - 9%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 36.1,
+		"trailingPE": 35.8,
 		"forwardPE": 32,
 		"pegRatio": null,
 		"evEbitda": null
@@ -25,7 +25,7 @@
 	"targetPrice": "$550",
 	"bullCase": "World leader in factory automation sensors and vision systems. 55%+ operating margins are best-in-class in industrial tech. Direct sales model creates stickiness and competitive moat. Massive net cash position. Secular tailwind from global factory automation and AI-driven manufacturing.",
 	"bearCase": "38x PE is expensive for a hardware company. JPY/USD currency risk for US-listed ADR. Cyclical exposure to manufacturing capex. Growth limited to 10-12% in mature markets.",
-	"currentPrice": "$382.57",
+	"currentPrice": "$380",
 	"consensus": {
 		"tipranks": "$540",
 		"yahoo": "$520"
@@ -41,13 +41,13 @@
 			"bull": 38
 		},
 		"scenarios": {
-			"bear": "2%",
+			"bear": "3%",
 			"base": "6%",
 			"bull": "9%"
 		},
 		"basis": "Through-cycle normalized growth; current ~5% consensus reflects cyclical trough in factory automation"
 	},
-	"lastUpdated": "2026-03-16T13:51:20.829Z",
+	"lastUpdated": "2026-03-16T14:23:12.056Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,

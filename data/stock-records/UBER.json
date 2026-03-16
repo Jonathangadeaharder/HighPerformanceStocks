@@ -1,0 +1,56 @@
+{
+	"ticker": "UBER",
+	"name": "Uber Technologies",
+	"group": "Data & Software Monopolies",
+	"confidence": "medium",
+	"confidenceReason": "Stabilized business yielding massive margin expansion and forward EPS growth projections (20-40%).",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 4.73,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "7%",
+			"base": "14%",
+			"bull": "19%"
+		}
+	},
+	"currentPrice": "$74.90",
+	"marketCap": "$155.6B USD",
+	"valuation": {
+		"trailingPE": 15.8,
+		"forwardPE": 17.5,
+		"evEbitda": 24.8
+	},
+	"metrics": {
+		"roe": "39.9%",
+		"fcfMargin": "~12%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "0.7x",
+		"ruleOf40": "32%"
+	},
+	"consensus": {
+		"yahoo": "$103.81"
+	},
+	"targetPrice": "$103.81",
+	"expectedCAGR": "7% - 19%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.23,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 17.5,
+			"cvStock": 0.165,
+			"riskMultiplier": 1.051
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:21.872Z"
+}

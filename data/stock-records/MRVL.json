@@ -4,12 +4,12 @@
 	"group": "AI & Semiconductors",
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
-	"marketCap": "$79.5B USD",
+	"marketCap": "$79.4B USD",
 	"sharpeRatio": 0.06,
 	"expectedCAGR": "4% - 12%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 29.7,
+		"trailingPE": 29.6,
 		"forwardPE": 16.7,
 		"pegRatio": 1.5,
 		"evEbitda": 30
@@ -25,7 +25,7 @@
 	"targetPrice": "$120.28",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$91.03",
+	"currentPrice": "$90.87",
 	"consensus": {
 		"tipranks": "$122",
 		"yahoo": "$120.28",
@@ -48,7 +48,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS; 10yr median PE excl NRI"
 	},
-	"lastUpdated": "2026-03-16T13:51:22.009Z",
+	"lastUpdated": "2026-03-16T14:23:15.071Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.55,

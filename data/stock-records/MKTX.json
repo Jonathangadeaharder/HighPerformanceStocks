@@ -1,0 +1,56 @@
+{
+	"ticker": "MKTX",
+	"name": "MarketAxess",
+	"group": "Financials & Alt Assets",
+	"confidence": "high",
+	"confidenceReason": "Electronic bond trading taking market share. 15-20% revenue growth, massive leverage.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 8.19,
+		"dividendYield": "2%",
+		"scenarios": {
+			"bear": "2%",
+			"base": "8%",
+			"bull": "13%"
+		}
+	},
+	"currentPrice": "$180.52",
+	"marketCap": "$6.7B USD",
+	"valuation": {
+		"trailingPE": 22,
+		"forwardPE": 19.9,
+		"evEbitda": 14.4
+	},
+	"metrics": {
+		"roe": "19.4%",
+		"fcfMargin": "~27%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "30%"
+	},
+	"consensus": {
+		"yahoo": "$192.50"
+	},
+	"targetPrice": "$192.50",
+	"expectedCAGR": "2% - 13%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.28,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 19.9,
+			"cvStock": 0.019,
+			"riskMultiplier": 0.964
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:15.029Z"
+}

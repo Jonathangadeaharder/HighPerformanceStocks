@@ -1,0 +1,55 @@
+{
+	"ticker": "VRSK",
+	"name": "Verisk Analytics",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "The 'FICO of insurance'. Proprietary databases for P&C insurers. Asset-light, massive margins.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 6.48,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-5%",
+			"base": "0%",
+			"bull": "5%"
+		}
+	},
+	"currentPrice": "$203.44",
+	"marketCap": "$28.4B USD",
+	"valuation": {
+		"trailingPE": 31.4,
+		"forwardPE": 23.7,
+		"evEbitda": 20.5
+	},
+	"metrics": {
+		"roe": "437.9%",
+		"fcfMargin": "~33%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "1.8x"
+	},
+	"consensus": {
+		"yahoo": "$230.06"
+	},
+	"targetPrice": "$230.06",
+	"expectedCAGR": "-5% - 5%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.52,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 23.7,
+			"cvStock": 0.016,
+			"riskMultiplier": 0.962
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:23.796Z"
+}

@@ -27,7 +27,7 @@
 	"targetPrice": "$156.59",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$104.29",
+	"currentPrice": "$104.27",
 	"consensus": {
 		"tipranks": "$165",
 		"yahoo": "$156.59",
@@ -50,7 +50,7 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-16T13:51:13.815Z",
+	"lastUpdated": "2026-03-16T14:23:02.303Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.6,

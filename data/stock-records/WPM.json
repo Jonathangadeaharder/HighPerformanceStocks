@@ -4,12 +4,12 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$64.5B USD",
+	"marketCap": "$64.4B USD",
 	"sharpeRatio": -0.12,
 	"expectedCAGR": "-6% - 5%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 64.2,
+		"trailingPE": 64.1,
 		"forwardPE": 24.5,
 		"pegRatio": 1.41,
 		"evEbitda": 32.9
@@ -25,7 +25,7 @@
 	"targetPrice": "$191.02",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$141.97",
+	"currentPrice": "$141.57",
 	"consensus": {
 		"tipranks": "$140",
 		"yahoo": "$191.02",
@@ -48,15 +48,15 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T13:51:28.968Z",
+	"lastUpdated": "2026-03-16T14:23:23.936Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.19,
+		"score": 3.18,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
-			"multiple": 43.5,
+			"multiple": 43.4,
 			"cvStock": 0.244,
 			"riskMultiplier": 1.098
 		},

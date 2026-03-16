@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "medium",
 	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
-	"marketCap": "$320.6B USD",
+	"marketCap": "$322.7B USD",
 	"sharpeRatio": 0.08,
 	"expectedCAGR": "6% - 13%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 75.3,
-		"forwardPE": 18.3,
+		"trailingPE": 75.8,
+		"forwardPE": 18.4,
 		"evEbitda": 45.8
 	},
 	"metrics": {
@@ -23,11 +23,11 @@
 	"targetPrice": "$290.27",
 	"bullCase": "The only viable merchant silicon alternative to NVIDIA. EPYC server CPUs are taking massive share from Intel, while MI450 offers a strong AI GPU roadmap.",
 	"bearCase": "Highly cyclical end markets (PC, gaming) can drag down data center outperformance. Remains a distant second to NVIDIA in AI software ecosystem (CUDA).",
-	"currentPrice": "$196.64",
+	"currentPrice": "$197.95",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "6%",
-			"base": "10%",
+			"base": "9%",
 			"bull": "13%"
 		},
 		"ttmEPS": 5.43,
@@ -41,7 +41,7 @@
 		},
 		"basis": "2026E non-GAAP adjusted EPS; cyclical semiconductor multiple post-hypergrowth"
 	},
-	"lastUpdated": "2026-03-16T13:51:12.947Z",
+	"lastUpdated": "2026-03-16T14:23:01.494Z",
 	"consensus": {
 		"yahoo": "$290.27"
 	},
@@ -52,11 +52,11 @@
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 18.3,
+			"multiple": 18.4,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.033
 		},
-		"note": "Cheap (0.54) but base CAGR 10% misses the 14% hurdle"
+		"note": "Cheap (0.54) but base CAGR 9% misses the 14% hurdle"
 	},
 	"intrinsicValue": {
 		"dcf": 64.41,

@@ -1,0 +1,57 @@
+{
+	"ticker": "URI",
+	"name": "United Rentals",
+	"group": "Industrial Monopolies",
+	"confidence": "high",
+	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 38.63,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "4%",
+			"base": "10%",
+			"bull": "15%"
+		}
+	},
+	"currentPrice": "$747.77",
+	"marketCap": "$47.6B USD",
+	"valuation": {
+		"trailingPE": 19.4,
+		"forwardPE": 14.1,
+		"evEbitda": 13.8
+	},
+	"metrics": {
+		"roe": "28.4%",
+		"fcfMargin": "~12%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "3.4x",
+		"ruleOf40": "15%"
+	},
+	"consensus": {
+		"yahoo": "$991.39"
+	},
+	"targetPrice": "$991.39",
+	"expectedCAGR": "4% - 15%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.93,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 14.1,
+			"cvStock": 0.068,
+			"riskMultiplier": 0.993
+		},
+		"note": "Cheap (0.93) but base CAGR 10% misses the 14% hurdle"
+	},
+	"lastUpdated": "2026-03-16T14:23:22.666Z"
+}

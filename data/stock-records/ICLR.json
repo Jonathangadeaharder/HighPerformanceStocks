@@ -1,0 +1,67 @@
+{
+	"ticker": "ICLR",
+	"name": "ICON plc",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Massive CRO running trials for big pharma. Consistent 12-16% EPS growth, often very reasonably priced.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 7.42,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "11%",
+			"base": "17%",
+			"bull": "23%"
+		}
+	},
+	"currentPrice": "$99.79",
+	"marketCap": "$7.8B USD",
+	"valuation": {
+		"trailingPE": 13.4,
+		"forwardPE": 7.9,
+		"evEbitda": 7
+	},
+	"metrics": {
+		"roe": "6.3%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~12%",
+		"netDebtEbitda": "2.0x",
+		"ruleOf40": "12%"
+	},
+	"consensus": {
+		"yahoo": "$138.64"
+	},
+	"targetPrice": "$138.64",
+	"expectedCAGR": "11% - 23%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.52,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 7.9,
+			"cvStock": 0.068,
+			"riskMultiplier": 0.993
+		},
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 7
+			},
+			"earningsSurprise": {
+				"surprise": 1,
+				"quarter": "2025-09"
+			}
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:09.972Z"
+}

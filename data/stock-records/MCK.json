@@ -1,0 +1,55 @@
+{
+	"ticker": "MCK",
+	"name": "McKesson",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Consolidated oligopoly drug distributor. Massive share repurchases lead to consistent 12–15% EPS growth floors.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 34.63,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-4%",
+			"base": "2%",
+			"bull": "7%"
+		}
+	},
+	"currentPrice": "$939.39",
+	"marketCap": "$115.9B USD",
+	"valuation": {
+		"trailingPE": 27.1,
+		"forwardPE": 21.2,
+		"evEbitda": 20.6
+	},
+	"metrics": {
+		"fcfMargin": "~2%",
+		"fcfYield": "~8%",
+		"netDebtEbitda": "1.0x",
+		"ruleOf40": "14%"
+	},
+	"consensus": {
+		"yahoo": "$995.27"
+	},
+	"targetPrice": "$995.27",
+	"expectedCAGR": "-4% - 7%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.35,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 21.2,
+			"cvStock": 0.008,
+			"riskMultiplier": 0.957
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:13.966Z"
+}

@@ -1,0 +1,56 @@
+{
+	"ticker": "CPRT",
+	"name": "Copart",
+	"group": "Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 1.59,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "1%",
+			"base": "7%",
+			"bull": "12%"
+		}
+	},
+	"currentPrice": "$34.53",
+	"marketCap": "$33.4B USD",
+	"valuation": {
+		"trailingPE": 21.7,
+		"forwardPE": 20.6,
+		"evEbitda": 14.3
+	},
+	"metrics": {
+		"roe": "17.1%",
+		"fcfMargin": "~22%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "19%"
+	},
+	"consensus": {
+		"yahoo": "$42.67"
+	},
+	"targetPrice": "$42.67",
+	"expectedCAGR": "1% - 12%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.34,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 20.6,
+			"cvStock": 0.037,
+			"riskMultiplier": 0.974
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:04.596Z"
+}

@@ -1,0 +1,56 @@
+{
+	"ticker": "HWM",
+	"name": "Howmet Aerospace",
+	"group": "Industrial Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Heavy IP moats in forged jet engine blades/fasteners. Aerospace super-cycle momentum.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 3.72,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-19%",
+			"base": "-14%",
+			"bull": "-10%"
+		}
+	},
+	"currentPrice": "$241.87",
+	"marketCap": "$97.4B USD",
+	"valuation": {
+		"trailingPE": 65,
+		"forwardPE": 43.9,
+		"evEbitda": 40.8
+	},
+	"metrics": {
+		"roe": "30.4%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "1.0x",
+		"ruleOf40": "26%"
+	},
+	"consensus": {
+		"yahoo": "$280.00"
+	},
+	"targetPrice": "$280.00",
+	"expectedCAGR": "-19% - -10%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.84,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 43.9,
+			"cvStock": 0.031,
+			"riskMultiplier": 0.971
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:09.883Z"
+}

@@ -4,13 +4,13 @@
 	"group": "Emerging Markets",
 	"confidence": "medium",
 	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
-	"marketCap": "$329.5B USD",
+	"marketCap": "$330.4B USD",
 	"sharpeRatio": 0.21,
 	"expectedCAGR": "8% - 20%",
 	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 18.1,
-		"forwardPE": 15.8,
+		"trailingPE": 18.2,
+		"forwardPE": 15.9,
 		"pegRatio": null,
 		"evEbitda": 15.7
 	},
@@ -24,7 +24,7 @@
 	"targetPrice": "$198.95",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
-	"currentPrice": "$138.02",
+	"currentPrice": "$138.39",
 	"consensus": {
 		"tipranks": "$168",
 		"yahoo": "$198.95",
@@ -47,15 +47,15 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-16T13:51:14.957Z",
+	"lastUpdated": "2026-03-16T14:23:03.489Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.3,
+		"score": 1.31,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 15.8,
+			"multiple": 15.9,
 			"cvStock": 0.201,
 			"riskMultiplier": 1.072
 		}

@@ -4,12 +4,12 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$184.2B USD",
+	"marketCap": "$183.8B USD",
 	"sharpeRatio": 0.13,
 	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 25.2,
+		"trailingPE": 25.1,
 		"forwardPE": 13.2,
 		"pegRatio": 0.88,
 		"evEbitda": 14.8
@@ -24,7 +24,7 @@
 	"targetPrice": "$276.33",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$196.57",
+	"currentPrice": "$196.16",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$276.33",
@@ -47,7 +47,7 @@
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-16T13:51:15.823Z",
+	"lastUpdated": "2026-03-16T14:23:05.520Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.87,

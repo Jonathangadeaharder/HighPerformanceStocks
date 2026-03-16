@@ -1,0 +1,56 @@
+{
+	"ticker": "JDG.L",
+	"name": "Judges Scientific",
+	"group": "Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "UK-based buyer of specialized scientific instrument manufacturers. Incredible return on capital.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 1.63,
+		"dividendYield": "3%",
+		"scenarios": {
+			"bear": "2%",
+			"base": "8%",
+			"bull": "12%"
+		}
+	},
+	"currentPrice": "£39.00",
+	"marketCap": "£0.3B",
+	"valuation": {
+		"trailingPE": 23.9,
+		"forwardPE": 19.2,
+		"evEbitda": 10.5
+	},
+	"metrics": {
+		"roe": "12.9%",
+		"fcfMargin": "~16%",
+		"fcfYield": "~9%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "31%"
+	},
+	"consensus": {
+		"yahoo": "£60.63"
+	},
+	"targetPrice": "£60.63",
+	"expectedCAGR": "2% - 12%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.23,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 19.2,
+			"cvStock": 0.016,
+			"riskMultiplier": 0.961
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:10.951Z"
+}

@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
-	"marketCap": "$24.7B USD",
+	"marketCap": "$24.8B USD",
 	"sharpeRatio": 0.05,
 	"expectedCAGR": "2% - 12%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 33.4,
+		"forwardPE": 33.6,
 		"pegRatio": null,
 		"evEbitda": -339.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$153.37",
+	"currentPrice": "$154.12",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$234.79"
@@ -47,15 +47,15 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-16T13:51:29.869Z",
+	"lastUpdated": "2026-03-16T14:23:24.891Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.39,
+		"score": 1.4,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
-			"multiple": 33.4,
+			"multiple": 33.6,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		}

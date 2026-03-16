@@ -1,0 +1,56 @@
+{
+	"ticker": "LAGR-B.ST",
+	"name": "Lagercrantz Group",
+	"group": "Capital Compounders",
+	"confidence": "high",
+	"confidenceReason": "Identical niche-B2B M&A model to Addtech/Lifco. Grows EPS beautifully at 15–20%+.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 5.52,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-9%",
+			"base": "-3%",
+			"bull": "1%"
+		}
+	},
+	"currentPrice": "208 SEK",
+	"marketCap": "42.9B SEK",
+	"valuation": {
+		"trailingPE": 37.7,
+		"forwardPE": 38.3,
+		"evEbitda": 23.8
+	},
+	"metrics": {
+		"roe": "29.4%",
+		"fcfMargin": "~3%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "2.3x",
+		"ruleOf40": "19%"
+	},
+	"consensus": {
+		"yahoo": "250 SEK"
+	},
+	"targetPrice": "250 SEK",
+	"expectedCAGR": "-9% - 1%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.49,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 38.3,
+			"cvStock": 0.038,
+			"riskMultiplier": 0.975
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:11.919Z"
+}

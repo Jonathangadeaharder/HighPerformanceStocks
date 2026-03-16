@@ -1,0 +1,56 @@
+{
+	"ticker": "TPZ.TO",
+	"name": "Topaz Energy",
+	"group": "Energy & Infrastructure",
+	"confidence": "high",
+	"confidenceReason": "Canadian royalty tied to natural gas and LNG buildout. High yield + growth.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 0.83,
+		"dividendYield": "4%",
+		"scenarios": {
+			"bear": "-6%",
+			"base": "-1%",
+			"bull": "4%"
+		}
+	},
+	"currentPrice": "C$31.31",
+	"marketCap": "C$4.8B",
+	"valuation": {
+		"trailingPE": 37.7,
+		"forwardPE": 30.4,
+		"evEbitda": 16.3
+	},
+	"metrics": {
+		"roe": "8.3%",
+		"fcfMargin": "~34%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "1.7x",
+		"ruleOf40": "40%"
+	},
+	"consensus": {
+		"yahoo": "C$33.58"
+	},
+	"targetPrice": "C$33.58",
+	"expectedCAGR": "-6% - 4%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.93,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 30.4,
+			"cvStock": 0,
+			"riskMultiplier": 0.952
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:21.690Z"
+}

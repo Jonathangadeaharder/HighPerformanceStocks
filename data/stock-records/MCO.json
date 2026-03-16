@@ -1,0 +1,56 @@
+{
+	"ticker": "MCO",
+	"name": "Moody's",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 13.67,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-6%",
+			"base": "0%",
+			"bull": "4%"
+		}
+	},
+	"currentPrice": "$437.05",
+	"marketCap": "$77.8B USD",
+	"valuation": {
+		"trailingPE": 32,
+		"forwardPE": 23.3,
+		"evEbitda": 21.8
+	},
+	"metrics": {
+		"roe": "62.1%",
+		"fcfMargin": "~27%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "1.3x",
+		"ruleOf40": "40%"
+	},
+	"consensus": {
+		"yahoo": "$546.70"
+	},
+	"targetPrice": "$546.70",
+	"expectedCAGR": "-6% - 4%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.5,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 23.3,
+			"cvStock": 0.023,
+			"riskMultiplier": 0.966
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:13.928Z"
+}

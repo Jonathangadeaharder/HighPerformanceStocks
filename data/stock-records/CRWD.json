@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$110.4B USD",
+	"marketCap": "$110.1B USD",
 	"sharpeRatio": -0.31,
 	"expectedCAGR": "-14% - -4%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 70.5,
+		"forwardPE": 70.3,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$493.08",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$435.50",
+	"currentPrice": "$433.99",
 	"consensus": {
 		"tipranks": "$550",
 		"yahoo": "$493.08"
@@ -42,12 +42,12 @@
 		},
 		"scenarios": {
 			"bear": "-14%",
-			"base": "-9%",
+			"base": "-8%",
 			"bull": "-4%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-16T13:51:15.919Z",
+	"lastUpdated": "2026-03-16T14:23:05.498Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.21,
@@ -55,7 +55,7 @@
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",
-			"multiple": 70.5,
+			"multiple": 70.3,
 			"cvStock": 0.087,
 			"riskMultiplier": 1.004
 		}

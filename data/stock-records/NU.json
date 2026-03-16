@@ -4,12 +4,12 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
-	"marketCap": "$69.1B USD",
+	"marketCap": "$69.4B USD",
 	"sharpeRatio": 0.41,
 	"expectedCAGR": "16% - 26%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 16.8,
+		"trailingPE": 16.9,
 		"forwardPE": 12.2,
 		"pegRatio": 0.6,
 		"evEbitda": null
@@ -26,7 +26,7 @@
 	"targetPrice": "$20.17",
 	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche.",
-	"currentPrice": "$14.24",
+	"currentPrice": "$14.29",
 	"consensus": {
 		"tipranks": "$18",
 		"yahoo": "$20.17",
@@ -49,7 +49,7 @@
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-16T13:51:23.791Z",
+	"lastUpdated": "2026-03-16T14:23:16.290Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.44,

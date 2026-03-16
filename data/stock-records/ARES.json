@@ -1,0 +1,68 @@
+{
+	"ticker": "ARES",
+	"name": "Ares Management",
+	"group": "Financials & Alt Assets",
+	"confidence": "high",
+	"confidenceReason": "Heavyweight champion of private credit. Relentless FRE growth.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "FRE per share",
+		"ttmEPS": 6.45,
+		"dividendYield": "5%",
+		"scenarios": {
+			"bear": "12%",
+			"base": "19%",
+			"bull": "24%"
+		}
+	},
+	"currentPrice": "$101.27",
+	"marketCap": "$33.5B USD",
+	"valuation": {
+		"trailingPE": 15.7,
+		"forwardPE": 13.1,
+		"evEbitda": 33.4
+	},
+	"metrics": {
+		"roe": "13.5%",
+		"fcfMargin": "~36%",
+		"fcfYield": "~6%",
+		"netDebtEbitda": "10.3x",
+		"ruleOf40": "56%"
+	},
+	"consensus": {
+		"yahoo": "$167.94"
+	},
+	"targetPrice": "$167.94",
+	"expectedCAGR": "12% - 24%",
+	"screener": {
+		"engine": "totalReturn",
+		"score": 0.86,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 15,
+			"dividendYield": 5,
+			"debtToEquity": 163,
+			"debtPenalty": true,
+			"rawReturn": 14
+		},
+		"note": "Recent earnings miss",
+		"realityChecks": {
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 5
+			},
+			"earningsSurprise": {
+				"surprise": -14,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:02.413Z"
+}

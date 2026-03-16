@@ -1,0 +1,56 @@
+{
+	"ticker": "FTNT",
+	"name": "Fortinet",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Hardware+software security cycles at much cheaper P/E than CRWD/PANW. Buy on billing cycle panics.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 2.42,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-9%",
+			"base": "-3%",
+			"bull": "1%"
+		}
+	},
+	"currentPrice": "$85.58",
+	"marketCap": "$63.6B USD",
+	"valuation": {
+		"trailingPE": 35.4,
+		"forwardPE": 25.9,
+		"evEbitda": 26.6
+	},
+	"metrics": {
+		"roe": "135.7%",
+		"fcfMargin": "~26%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "40%"
+	},
+	"consensus": {
+		"yahoo": "$89.06"
+	},
+	"targetPrice": "$89.06",
+	"expectedCAGR": "-9% - 1%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.71,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 25.9,
+			"cvStock": 0.063,
+			"riskMultiplier": 0.99
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:08.861Z"
+}

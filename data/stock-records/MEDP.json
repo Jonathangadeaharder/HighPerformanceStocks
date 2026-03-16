@@ -1,0 +1,56 @@
+{
+	"ticker": "MEDP",
+	"name": "Medpace",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Leading CRO for small-mid biotechs. Excellent compounding (20%+ EPS growth). Buy the biotech funding panic.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 15.27,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-6%",
+			"base": "0%",
+			"bull": "4%"
+		}
+	},
+	"currentPrice": "$463.50",
+	"marketCap": "$13.2B USD",
+	"valuation": {
+		"trailingPE": 30.4,
+		"forwardPE": 24.2,
+		"evEbitda": 22.1
+	},
+	"metrics": {
+		"roe": "70.2%",
+		"fcfMargin": "~19%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "51%"
+	},
+	"consensus": {
+		"yahoo": "$489.69"
+	},
+	"targetPrice": "$489.69",
+	"expectedCAGR": "-6% - 4%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.57,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 24.2,
+			"cvStock": 0.032,
+			"riskMultiplier": 0.971
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:14.157Z"
+}

@@ -24,7 +24,7 @@
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$136.44",
+	"currentPrice": "C$136.56",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -42,7 +42,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-16T13:51:27.832Z",
+	"lastUpdated": "2026-03-16T14:23:21.776Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},

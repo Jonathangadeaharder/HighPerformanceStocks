@@ -1,0 +1,56 @@
+{
+	"ticker": "ZTS",
+	"name": "Zoetis",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Global monopoly in animal health/vaccines. No insurance price caps equals incredible pricing power.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 6.02,
+		"dividendYield": "2%",
+		"scenarios": {
+			"bear": "5%",
+			"base": "11%",
+			"bull": "16%"
+		}
+	},
+	"currentPrice": "$117.47",
+	"marketCap": "$51.8B USD",
+	"valuation": {
+		"trailingPE": 19.5,
+		"forwardPE": 15.6,
+		"evEbitda": 13.7
+	},
+	"metrics": {
+		"roe": "66.0%",
+		"fcfMargin": "~19%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "1.7x",
+		"ruleOf40": "22%"
+	},
+	"consensus": {
+		"yahoo": "$151"
+	},
+	"targetPrice": "$151",
+	"expectedCAGR": "5% - 16%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 15.6,
+			"cvStock": 0.017,
+			"riskMultiplier": 0.962
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:24.861Z"
+}

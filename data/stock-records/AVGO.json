@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
-	"marketCap": "$1537.7B USD",
+	"marketCap": "$1542.0B USD",
 	"sharpeRatio": 0.11,
 	"expectedCAGR": "6% - 14%",
 	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 63.3,
-		"forwardPE": 18.5,
+		"trailingPE": 63.5,
+		"forwardPE": 18.4,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -26,7 +26,7 @@
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$324.33",
+	"currentPrice": "$325.22",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$467.80",
@@ -49,7 +49,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl VMware amortization); post-VMware normalized exit PE"
 	},
-	"lastUpdated": "2026-03-16T13:51:14.786Z",
+	"lastUpdated": "2026-03-16T14:23:03.438Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.63,
@@ -57,7 +57,7 @@
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 18.5,
+			"multiple": 18.4,
 			"cvStock": 0.113,
 			"riskMultiplier": 1.02
 		},

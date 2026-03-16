@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
-	"marketCap": "$35.9B USD",
+	"marketCap": "$35.8B USD",
 	"sharpeRatio": 0.14,
 	"expectedCAGR": "4% - 13%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 44.6,
-		"forwardPE": 52.3,
+		"trailingPE": 44.4,
+		"forwardPE": 52.1,
 		"pegRatio": 3.2,
 		"evEbitda": 26.6
 	},
@@ -30,7 +30,7 @@
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$225.28",
+	"currentPrice": "$224.47",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "16%",
@@ -48,7 +48,7 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-16T13:51:19.024Z",
+	"lastUpdated": "2026-03-16T14:23:09.800Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,
@@ -61,7 +61,7 @@
 			"riskMultiplier": 1
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.27,
+		"secondaryScore": 3.26,
 		"note": "Used benchmark CV (missing dispersion data)"
 	}
 }

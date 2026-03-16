@@ -4,7 +4,7 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1088.2B SEK",
+	"marketCap": "1089.0B SEK",
 	"sharpeRatio": 0.17,
 	"expectedCAGR": "4% - 12%",
 	"expectedVolatility": "~21%",
@@ -23,7 +23,7 @@
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "355 SEK",
+	"currentPrice": "356 SEK",
 	"cagrModel": {
 		"horizon": 5,
 		"scenarios": {
@@ -41,7 +41,7 @@
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-16T13:51:20.029Z",
+	"lastUpdated": "2026-03-16T14:23:10.796Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},

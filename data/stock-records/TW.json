@@ -1,0 +1,51 @@
+{
+	"ticker": "TW",
+	"name": "Tradeweb",
+	"group": "Financials & Alt Assets",
+	"confidence": "high",
+	"confidenceReason": "Electronic bond trading matching traditional voice-brokers. Asset-light, massive operating leverage.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 4.01,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-6%",
+			"base": "-1%",
+			"bull": "4%"
+		}
+	},
+	"currentPrice": "$124.34",
+	"marketCap": "$27.2B USD",
+	"valuation": {
+		"trailingPE": 31,
+		"forwardPE": 27.6
+	},
+	"metrics": {
+		"roe": "13.6%"
+	},
+	"consensus": {
+		"yahoo": "$132.31"
+	},
+	"targetPrice": "$132.31",
+	"expectedCAGR": "-6% - 4%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.8,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 27.6,
+			"cvStock": 0.045,
+			"riskMultiplier": 0.979
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:21.858Z"
+}

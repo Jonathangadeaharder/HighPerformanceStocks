@@ -1,0 +1,56 @@
+{
+	"ticker": "WST",
+	"name": "West Pharmaceutical",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Near-monopoly on specialized rubber stoppers/seals for injectables (GLP-1s). High-margin, high-moat.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 6.78,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-9%",
+			"base": "-3%",
+			"bull": "1%"
+		}
+	},
+	"currentPrice": "$240.99",
+	"marketCap": "$17.4B USD",
+	"valuation": {
+		"trailingPE": 35.5,
+		"forwardPE": 27.2,
+		"evEbitda": 20.4
+	},
+	"metrics": {
+		"roe": "16.9%",
+		"fcfMargin": "~9%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "16%"
+	},
+	"consensus": {
+		"yahoo": "$318.36"
+	},
+	"targetPrice": "$318.36",
+	"expectedCAGR": "-9% - 1%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.76,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 27.2,
+			"cvStock": 0.028,
+			"riskMultiplier": 0.969
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:24.760Z"
+}

@@ -1,0 +1,56 @@
+{
+	"ticker": "COR",
+	"name": "Cencora",
+	"group": "Healthcare Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Consolidated oligopoly drug distributor with immense cash flow and repurchase programs.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 8.33,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-11%",
+			"base": "-5%",
+			"bull": "-1%"
+		}
+	},
+	"currentPrice": "$349.13",
+	"marketCap": "$67.9B USD",
+	"valuation": {
+		"trailingPE": 41.9,
+		"forwardPE": 17.8,
+		"evEbitda": 15.4
+	},
+	"metrics": {
+		"roe": "133.5%",
+		"fcfMargin": "~1%",
+		"fcfYield": "~5%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "7%"
+	},
+	"consensus": {
+		"yahoo": "$410"
+	},
+	"targetPrice": "$410",
+	"expectedCAGR": "-11% - -1%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.14,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 17.8,
+			"cvStock": 0.011,
+			"riskMultiplier": 0.959
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:04.504Z"
+}

@@ -1,0 +1,54 @@
+{
+	"ticker": "PSK.TO",
+	"name": "PrairieSky Royalty",
+	"group": "Energy & Infrastructure",
+	"confidence": "high",
+	"confidenceReason": "Canadian equivalent of TPL. Fee-simple land royalties. Zero capex, pure FCF.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 0.87,
+		"dividendYield": "3%",
+		"scenarios": {
+			"bear": "-6%",
+			"base": "-1%",
+			"bull": "4%"
+		}
+	},
+	"currentPrice": "C$31.54",
+	"marketCap": "C$7.3B",
+	"valuation": {
+		"trailingPE": 36.3,
+		"forwardPE": 33.9
+	},
+	"metrics": {
+		"roe": "7.8%",
+		"fcfMargin": "~46%",
+		"fcfYield": "~3%",
+		"ruleOf40": "36%"
+	},
+	"consensus": {
+		"yahoo": "C$32.59"
+	},
+	"targetPrice": "C$32.59",
+	"expectedCAGR": "-6% - 4%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.17,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 33.9,
+			"cvStock": 0.016,
+			"riskMultiplier": 0.962
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:18.190Z"
+}

@@ -1,0 +1,56 @@
+{
+	"ticker": "SPGI",
+	"name": "S&P Global",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 14.66,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-4%",
+			"base": "2%",
+			"bull": "6%"
+		}
+	},
+	"currentPrice": "$427.67",
+	"marketCap": "$129.5B USD",
+	"valuation": {
+		"trailingPE": 29.2,
+		"forwardPE": 19.4,
+		"evEbitda": 18.7
+	},
+	"metrics": {
+		"roe": "13.1%",
+		"fcfMargin": "~32%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "41%"
+	},
+	"consensus": {
+		"yahoo": "$537.90"
+	},
+	"targetPrice": "$537.90",
+	"expectedCAGR": "-4% - 6%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.24,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 19.4,
+			"cvStock": 0.014,
+			"riskMultiplier": 0.96
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:20.718Z"
+}

@@ -1,0 +1,56 @@
+{
+	"ticker": "BKNG",
+	"name": "Booking Holdings",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Textbook GARP. Shrinking float, increasing margins, stable 15%+ EPS growth.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 165.41,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-2%",
+			"base": "4%",
+			"bull": "8%"
+		}
+	},
+	"currentPrice": "$4316.05",
+	"marketCap": "$139.1B USD",
+	"valuation": {
+		"trailingPE": 26.1,
+		"forwardPE": 13.8,
+		"evEbitda": 13.5
+	},
+	"metrics": {
+		"fcfMargin": "~24%",
+		"fcfYield": "~5%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "40%"
+	},
+	"consensus": {
+		"yahoo": "$5796.51"
+	},
+	"targetPrice": "$5796.51",
+	"expectedCAGR": "-2% - 8%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.89,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 13.8,
+			"cvStock": 0.029,
+			"riskMultiplier": 0.969
+		},
+		"note": "Cheap (0.89) but base CAGR 4% misses the 14% hurdle"
+	},
+	"lastUpdated": "2026-03-16T14:23:03.544Z"
+}

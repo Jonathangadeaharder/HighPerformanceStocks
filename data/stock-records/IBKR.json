@@ -1,0 +1,51 @@
+{
+	"ticker": "IBKR",
+	"name": "Interactive Brokers",
+	"group": "Financials & Alt Assets",
+	"confidence": "high",
+	"confidenceReason": "Highest margin brokerage globally. User base expands ~20% YoY. Deep margin moats.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 2.44,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-4%",
+			"base": "1%",
+			"bull": "6%"
+		}
+	},
+	"currentPrice": "$68.69",
+	"marketCap": "$116.8B USD",
+	"valuation": {
+		"trailingPE": 28.1,
+		"forwardPE": 25.1
+	},
+	"metrics": {
+		"roe": "23.5%"
+	},
+	"consensus": {
+		"yahoo": "$80.56"
+	},
+	"targetPrice": "$80.56",
+	"expectedCAGR": "-4% - 6%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.64,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 25.1,
+			"cvStock": 0.042,
+			"riskMultiplier": 0.977
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:09.872Z"
+}

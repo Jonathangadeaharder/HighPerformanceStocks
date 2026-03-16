@@ -24,8 +24,8 @@
 			"bull": "12%"
 		}
 	},
-	"currentPrice": "$77.10",
-	"marketCap": "$20.0B USD",
+	"currentPrice": "$76.90",
+	"marketCap": "$19.9B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
@@ -43,7 +43,7 @@
 		},
 		"note": "Cheap (0.83) but base CAGR 8% misses the 14% hurdle (Used benchmark CV)"
 	},
-	"lastUpdated": "2026-03-16T13:51:19.925Z",
+	"lastUpdated": "2026-03-16T14:23:11.749Z",
 	"valuation": {
 		"trailingPE": 12.5,
 		"forwardPE": 0,

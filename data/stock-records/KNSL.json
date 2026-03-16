@@ -1,0 +1,56 @@
+{
+	"ticker": "KNSL",
+	"name": "Kinsale Capital",
+	"group": "Financials & Alt Assets",
+	"confidence": "high",
+	"confidenceReason": "E&S insurer using proprietary tech to dominate niche. EPS compounds at 20–30% a year.",
+	"cagrModel": {
+		"horizon": 5,
+		"epsGrowth": "15%",
+		"exitPE": {
+			"bear": 15,
+			"base": 20,
+			"bull": 25
+		},
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 20.36,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "5%",
+			"base": "11%",
+			"bull": "16%"
+		}
+	},
+	"currentPrice": "$366.92",
+	"marketCap": "$8.5B USD",
+	"valuation": {
+		"trailingPE": 18,
+		"forwardPE": 16.5,
+		"evEbitda": 13
+	},
+	"metrics": {
+		"roe": "29.3%",
+		"fcfMargin": "~51%",
+		"fcfYield": "~11%",
+		"netDebtEbitda": "0.1x",
+		"ruleOf40": "69%"
+	},
+	"consensus": {
+		"yahoo": "$422.40"
+	},
+	"targetPrice": "$422.40",
+	"expectedCAGR": "5% - 16%",
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.08,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 16.5,
+			"cvStock": 0.047,
+			"riskMultiplier": 0.98
+		}
+	},
+	"lastUpdated": "2026-03-16T14:23:11.809Z"
+}
