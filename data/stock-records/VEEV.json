@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$29.4B USD",
-	"sharpeRatio": 0.32,
-	"expectedCAGR": "11% - 21%",
+	"marketCap": "$29.9B USD",
+	"sharpeRatio": 0.31,
+	"expectedCAGR": "11% - 20%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 32.9,
-		"forwardPE": 18.1,
+		"trailingPE": 33.5,
+		"forwardPE": 18.4,
 		"pegRatio": null,
 		"evEbitda": 23.3
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$178.88",
+	"currentPrice": "$182",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -43,34 +43,24 @@
 		},
 		"scenarios": {
 			"bear": "11%",
-			"base": "17%",
-			"bull": "21%"
+			"base": "16%",
+			"bull": "20%"
 		},
 		"basis": "Life sciences SaaS monopoly; forward PE reflects accelerating earnings growth; exit PE 45 reflects premium vertical SaaS multiple"
 	},
-	"lastUpdated": "2026-03-16T12:36:16.542Z",
+	"lastUpdated": "2026-03-16T13:51:27.963Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.92,
+		"score": 0.94,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
-			"multiple": 18.1,
+			"multiple": 18.4,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 178.88,
-				"price6mAgo": 273.88,
-				"price1mAgo": 176.82,
-				"low3m": 168.14,
-				"return6m": -34.7,
-				"return1m": 1.2,
-				"near3mLow": false
-			},
 			"revisions": {
 				"pass": true,
 				"up30d": 17,

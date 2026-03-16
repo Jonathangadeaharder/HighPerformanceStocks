@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$86.2B USD",
+	"marketCap": "$87.8B USD",
 	"sharpeRatio": 0.25,
 	"expectedCAGR": "8% - 18%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 78.3,
-		"forwardPE": 6.5,
+		"trailingPE": 79.8,
+		"forwardPE": 6.7,
 		"pegRatio": null,
 		"evEbitda": 14.8
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$38.37",
+	"currentPrice": "$39.08",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -44,42 +44,25 @@
 		},
 		"scenarios": {
 			"bear": "8%",
-			"base": "14%",
+			"base": "13%",
 			"bull": "18%"
 		},
 		"basis": "Alt-asset manager; forward PE depressed by volatile carried interest/fair-value gains; exit PE reflects normalized distributable earnings multiple"
 	},
-	"lastUpdated": "2026-03-16T12:36:02.054Z",
+	"lastUpdated": "2026-03-16T13:51:14.792Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.68,
-		"signal": "PASS",
+		"score": 0.69,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "P/ANI",
-			"multiple": 16.9,
+			"multiple": 17.2,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": false,
-				"price": 38.37,
-				"price6mAgo": 46.51,
-				"price1mAgo": 47.78,
-				"low3m": 38.28,
-				"return6m": -17.5,
-				"return1m": -19.7,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 0
-			}
-		},
+		"note": "Cheap (0.69) but base CAGR 13% misses the 14% hurdle (Used benchmark CV)",
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.26,
-		"note": "Used benchmark CV (missing dispersion data)"
+		"secondaryScore": 0.27
 	}
 }

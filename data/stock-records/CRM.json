@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$180.7B USD",
-	"sharpeRatio": 0.14,
-	"expectedCAGR": "5% - 14%",
+	"marketCap": "$184.2B USD",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "5% - 13%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 24.7,
-		"forwardPE": 12.9,
+		"trailingPE": 25.2,
+		"forwardPE": 13.2,
 		"pegRatio": 0.88,
 		"evEbitda": 14.8
 	},
@@ -24,7 +24,7 @@
 	"targetPrice": "$276.33",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$192.83",
+	"currentPrice": "$196.57",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$276.33",
@@ -42,23 +42,23 @@
 		},
 		"scenarios": {
 			"bear": "5%",
-			"base": "10%",
-			"bull": "14%"
+			"base": "9%",
+			"bull": "13%"
 		},
 		"basis": "GAAP EPS; trading 79% below 10yr median PE; exit PE reflects mature enterprise SaaS platform"
 	},
-	"lastUpdated": "2026-03-16T12:36:02.992Z",
+	"lastUpdated": "2026-03-16T13:51:15.823Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.85,
+		"score": 0.87,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 13.2,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
-		"note": "Cheap (0.85) but base CAGR 10% misses the 14% hurdle"
+		"note": "Cheap (0.87) but base CAGR 9% misses the 14% hurdle"
 	}
 }

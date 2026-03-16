@@ -177,7 +177,24 @@ function applyUpdates(stock, quote, summary, historicalData) {
 	if (model?.exitPE) {
 		// TTM EPS — Yahoo returns EPS in the stock's major currency (£ for GBp stocks, not pence)
 		// Skip for stocks using adjusted/normalized EPS (Yahoo returns GAAP; our model uses adjusted)
-		const ttmEpsRaw = quote.epsTrailingTwelveMonths;
+		let ttmEpsRaw = quote.epsTrailingTwelveMonths;
+
+		// ── Override for Alternative Asset Managers (Use Non-GAAP Consensus) ──
+		// GAAP EPS for Alt Managers is heavily distorted by M&A amortization. 
+		// Analysts model Fee-Related Earnings (FRE/DE) which Yahoo surfaces as the
+		// current year consensus estimate ('0y') in the earningsTrend module.
+		if (stock.group?.includes('Alt Assets') || /FRE|Distributable/i.test(model.basis ?? '')) {
+			const currentYearTrend = summary?.earningsTrend?.trend?.find(t => t.period === '0y');
+			if (currentYearTrend?.earningsEstimate?.avg) {
+				ttmEpsRaw = currentYearTrend.earningsEstimate.avg;
+
+				// Recalculate trailing PE manually since Yahoo trailing PE uses the distorted GAAP EPS
+				if (stock.valuation && rawPrice && ttmEpsRaw > 0) {
+					stock.valuation.trailingPE = +(priceForCalc / ttmEpsRaw).toFixed(1);
+				}
+			}
+		}
+
 		if (ttmEpsRaw != null && ttmEpsRaw > 0) {
 			const basis = model.basis ?? '';
 			const isAdjusted = /adjusted|normalized|distributable|ANI|non-IFRS|CFO|FCFA2S/i.test(basis);

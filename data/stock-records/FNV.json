@@ -4,13 +4,13 @@
 	"group": "Royalties",
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$48.7B USD",
+	"marketCap": "$49.2B USD",
 	"sharpeRatio": -0.06,
 	"expectedCAGR": "-2% - 7%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 52.9,
-		"forwardPE": 26.4,
+		"trailingPE": 53.4,
+		"forwardPE": 26.7,
 		"pegRatio": 5,
 		"evEbitda": 29.1
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$295.38",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$251.87",
+	"currentPrice": "$254.20",
 	"consensus": {
 		"tipranks": "$250",
 		"yahoo": "$295.38",
@@ -48,19 +48,19 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T12:36:05.965Z",
+	"lastUpdated": "2026-03-16T13:51:18.839Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.16,
+		"score": 3.18,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "P/CF",
-			"multiple": 37,
+			"multiple": 37.4,
 			"cvStock": 0.117,
 			"riskMultiplier": 1.022
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.25
+		"secondaryScore": 2.27
 	}
 }

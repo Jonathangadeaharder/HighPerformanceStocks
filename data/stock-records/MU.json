@@ -4,13 +4,13 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$479.6B USD",
-	"sharpeRatio": -0.13,
-	"expectedCAGR": "-8% - 0%",
+	"marketCap": "$508.7B USD",
+	"sharpeRatio": -0.2,
+	"expectedCAGR": "-12% - -4%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 40.5,
-		"forwardPE": 7.6,
+		"trailingPE": 42.9,
+		"forwardPE": 8,
 		"pegRatio": null,
 		"evEbitda": 21.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$426.59",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$426.13",
+	"currentPrice": "$451.95",
 	"consensus": {
 		"tipranks": "$431",
 		"yahoo": "$426.59",
@@ -34,7 +34,7 @@
 	"cagrModel": {
 		"horizon": 5,
 		"ttmEPS": 10.51,
-		"epsGrowth": "25%",
+		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"exitPE": {
 			"bear": 16,
@@ -42,25 +42,25 @@
 			"bull": 24
 		},
 		"scenarios": {
-			"bear": "-8%",
-			"base": "-4%",
-			"bull": "0%"
+			"bear": "-12%",
+			"base": "-8%",
+			"bull": "-4%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-16T12:36:10.116Z",
+	"lastUpdated": "2026-03-16T13:51:22.860Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.34,
+		"score": 0.75,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 25,
+			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 7.6,
+			"multiple": 8,
 			"cvStock": 0.284,
 			"riskMultiplier": 1.122
 		},
-		"note": "Cheap (0.34) but base CAGR -4% misses the 14% hurdle (CYCLICAL EPS)"
+		"note": "Cheap (0.75) but base CAGR -8% misses the 14% hurdle (CYCLICAL EPS)"
 	},
 	"cyclical": true
 }

@@ -4,13 +4,13 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$26.8B USD",
-	"sharpeRatio": 0.01,
-	"expectedCAGR": "-1% - 11%",
+	"marketCap": "$27.7B USD",
+	"sharpeRatio": -0.01,
+	"expectedCAGR": "-2% - 10%",
 	"expectedVolatility": "~51%",
 	"valuation": {
-		"trailingPE": 41.8,
-		"forwardPE": 21.2,
+		"trailingPE": 43.1,
+		"forwardPE": 21.8,
 		"pegRatio": 2.1,
 		"evEbitda": 29.7
 	},
@@ -30,7 +30,7 @@
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1131.22",
+	"currentPrice": "$1165.61",
 	"cagrModel": {
 		"horizon": 5,
 		"epsGrowth": "18%",
@@ -41,22 +41,22 @@
 			"bull": 45
 		},
 		"scenarios": {
-			"bear": "-1%",
+			"bear": "-2%",
 			"base": "5%",
-			"bull": "11%"
+			"bull": "10%"
 		},
 		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
 		"ttmEPS": 27.04
 	},
-	"lastUpdated": "2026-03-16T12:36:05.056Z",
+	"lastUpdated": "2026-03-16T13:51:17.923Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.18,
+		"score": 1.22,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 21.2,
+			"multiple": 21.8,
 			"cvStock": 0.089,
 			"riskMultiplier": 1.005
 		}

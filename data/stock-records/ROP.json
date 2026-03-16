@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
-	"marketCap": "$37.8B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "12% - 22%",
+	"marketCap": "$37.9B USD",
+	"sharpeRatio": 0.46,
+	"expectedCAGR": "12% - 21%",
 	"expectedVolatility": "~26%",
 	"valuation": {
 		"trailingPE": 24.7,
-		"forwardPE": 15,
+		"forwardPE": 15.1,
 		"pegRatio": null,
 		"evEbitda": 14.5
 	},
@@ -26,7 +26,7 @@
 	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
-	"currentPrice": "$351",
+	"currentPrice": "$351.94",
 	"consensus": {
 		"tipranks": "$479",
 		"yahoo": "$462.19",
@@ -45,12 +45,12 @@
 		"scenarios": {
 			"bear": "12%",
 			"base": "17%",
-			"bull": "22%"
+			"bull": "21%"
 		},
 		"decayFactor": 0.92,
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-16T12:36:14.400Z",
+	"lastUpdated": "2026-03-16T13:51:25.794Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.17,

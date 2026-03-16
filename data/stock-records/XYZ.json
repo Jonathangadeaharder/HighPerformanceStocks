@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$36.3B USD",
-	"sharpeRatio": 0.13,
-	"expectedCAGR": "7% - 16%",
+	"marketCap": "$36.7B USD",
+	"sharpeRatio": 0.28,
+	"expectedCAGR": "15% - 25%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 28.5,
-		"forwardPE": 12.7,
+		"trailingPE": 16.9,
+		"forwardPE": 12.9,
 		"pegRatio": null,
 		"evEbitda": 18.1
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$85.79",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$59.79",
+	"currentPrice": "$60.38",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$85.79",
@@ -33,8 +33,8 @@
 	},
 	"cagrModel": {
 		"horizon": 5,
-		"ttmEPS": 2.1,
-		"epsGrowth": "22%",
+		"ttmEPS": 3.58,
+		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"exitPE": {
 			"bear": 24,
@@ -42,24 +42,23 @@
 			"bull": 36
 		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "11%",
-			"bull": "16%"
+			"bear": "15%",
+			"base": "21%",
+			"bull": "25%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-16T12:36:17.690Z",
+	"lastUpdated": "2026-03-16T13:51:29.185Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.6,
+		"score": 1.12,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 22,
+			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.7,
+			"multiple": 12.9,
 			"cvStock": 0.145,
 			"riskMultiplier": 1.039
-		},
-		"note": "Cheap (0.6) but base CAGR 11% misses the 14% hurdle"
+		}
 	}
 }

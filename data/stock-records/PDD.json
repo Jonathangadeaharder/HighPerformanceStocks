@@ -24,8 +24,8 @@
 			"bull": "22%"
 		}
 	},
-	"currentPrice": "$102.65",
-	"marketCap": "$145.7B USD",
+	"currentPrice": "$103.78",
+	"marketCap": "$147.3B USD",
 	"consensus": {
 		"yahoo": "$148.66"
 	},
@@ -37,22 +37,22 @@
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 8.2,
+			"multiple": 8.3,
 			"cvStock": 0.083,
 			"riskMultiplier": 1.002
 		},
 		"note": "Cheap (0.46) but base CAGR 13% misses the 14% hurdle"
 	},
-	"lastUpdated": "2026-03-16T12:36:12.106Z",
+	"lastUpdated": "2026-03-16T13:51:24.746Z",
 	"valuation": {
-		"trailingPE": 10.2,
-		"forwardPE": 8.2,
+		"trailingPE": 10.3,
+		"forwardPE": 8.3,
 		"evEbitda": null
 	},
 	"metrics": {
 		"roe": "30.5%",
 		"fcfMargin": "~21%",
-		"fcfYield": "~60%",
+		"fcfYield": "~59%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "30%"
 	},

@@ -4,19 +4,19 @@
 	"group": "AI & Semiconductors",
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1754.6B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "3% - 11%",
+	"marketCap": "$1776.9B USD",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "2% - 11%",
 	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 32.6,
-		"forwardPE": 18.8,
+		"trailingPE": 33,
+		"forwardPE": 19.1,
 		"pegRatio": 0.57,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": "~17%",
-		"fcfYield": "~37%",
+		"fcfYield": "~36%",
 		"roic": "45% - 49%",
 		"roe": "35.1%",
 		"netDebtEbitda": "Net cash",
@@ -27,7 +27,7 @@
 	"targetPrice": "$430.65",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$338.31",
+	"currentPrice": "$342.60",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$430.65",
@@ -44,25 +44,25 @@
 			"bull": 30
 		},
 		"scenarios": {
-			"bear": "3%",
+			"bear": "2%",
 			"base": "7%",
 			"bull": "11%"
 		},
 		"basis": "10yr avg PE + structural moat premium (2nm monopoly, Intel/Samsung non-competitive)"
 	},
-	"lastUpdated": "2026-03-16T12:36:16.541Z",
+	"lastUpdated": "2026-03-16T13:51:27.840Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.66,
+		"score": 0.67,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 28,
 			"multipleType": "Forward P/E",
-			"multiple": 18.8,
+			"multiple": 19.1,
 			"cvStock": 0.05,
 			"riskMultiplier": 0.982
 		},
-		"note": "Cheap (0.66) but base CAGR 7% misses the 14% hurdle"
+		"note": "Cheap (0.67) but base CAGR 7% misses the 14% hurdle"
 	},
 	"intrinsicValue": {
 		"dcf": 156.18,

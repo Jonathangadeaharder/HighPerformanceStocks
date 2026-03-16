@@ -4,12 +4,12 @@
 	"group": "Energy & Infrastructure",
 	"confidence": "high",
 	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
-	"targetPrice": "$125.46",
+	"targetPrice": "$125.71",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
 		"horizon": 5,
-		"epsGrowth": "40%",
+		"epsGrowth": "15%",
 		"exitPE": {
 			"bear": 15,
 			"base": 20,
@@ -19,34 +19,34 @@
 		"dividendYield": "0%",
 		"ttmEPS": 0.99,
 		"scenarios": {
-			"bear": "-23%",
-			"base": "-18%",
-			"bull": "-14%"
+			"bear": "-27%",
+			"base": "-23%",
+			"bull": "-20%"
 		}
 	},
-	"currentPrice": "$107.92",
-	"marketCap": "$47.0B USD",
+	"currentPrice": "$111.05",
+	"marketCap": "$48.4B USD",
 	"consensus": {
-		"yahoo": "$125.46"
+		"yahoo": "$125.71"
 	},
 	"expectedVolatility": "~53%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
+		"score": 4.05,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 40,
+			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 58.2,
+			"multiple": 59.9,
 			"cvStock": 0.104,
 			"riskMultiplier": 1.015
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-16T12:36:02.194Z",
+	"lastUpdated": "2026-03-16T13:51:14.965Z",
 	"valuation": {
-		"trailingPE": 109,
-		"forwardPE": 58.2,
+		"trailingPE": 112.2,
+		"forwardPE": 59.9,
 		"evEbitda": 51.4
 	},
 	"metrics": {
@@ -56,7 +56,7 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "15%"
 	},
-	"expectedCAGR": "-23% - -14%",
-	"sharpeRatio": -0.43,
+	"expectedCAGR": "-27% - -20%",
+	"sharpeRatio": -0.53,
 	"cyclical": true
 }

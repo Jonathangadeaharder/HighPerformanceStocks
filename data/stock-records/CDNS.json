@@ -4,13 +4,13 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
-	"marketCap": "$79.2B USD",
+	"marketCap": "$80.4B USD",
 	"sharpeRatio": -0.04,
 	"expectedCAGR": "-1% - 7%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 70.9,
-		"forwardPE": 30.5,
+		"trailingPE": 72,
+		"forwardPE": 31,
 		"pegRatio": 3.9,
 		"evEbitda": 40.8
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$371.82",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$287.03",
+	"currentPrice": "$291.58",
 	"consensus": {
 		"tipranks": "$369",
 		"yahoo": "$371.82",
@@ -48,15 +48,15 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T12:36:02.971Z",
+	"lastUpdated": "2026-03-16T13:51:15.777Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.47,
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 30.5,
+			"multiple": 31,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		}

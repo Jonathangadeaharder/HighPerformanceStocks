@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$68.6B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "12% - 21%",
+	"marketCap": "$70.0B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "12% - 20%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 39.1,
-		"forwardPE": 26.5,
+		"trailingPE": 39.9,
+		"forwardPE": 27,
 		"pegRatio": null,
 		"evEbitda": 20.7
 	},
@@ -25,7 +25,7 @@
 	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1214.66",
+	"currentPrice": "$1240.40",
 	"consensus": {
 		"tipranks": "$1,568",
 		"yahoo": "$1594",
@@ -43,12 +43,12 @@
 		},
 		"scenarios": {
 			"bear": "12%",
-			"base": "17%",
-			"bull": "21%"
+			"base": "16%",
+			"bull": "20%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-16T12:36:15.316Z",
+	"lastUpdated": "2026-03-16T13:51:26.854Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.12,
@@ -61,6 +61,6 @@
 			"riskMultiplier": 0.971
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.43
+		"secondaryScore": 1.46
 	}
 }

@@ -21,11 +21,11 @@
 		"scenarios": {
 			"bear": "4%",
 			"base": "8%",
-			"bull": "13%"
+			"bull": "12%"
 		}
 	},
-	"currentPrice": "$76.40",
-	"marketCap": "$19.8B USD",
+	"currentPrice": "$77.10",
+	"marketCap": "$20.0B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
@@ -37,15 +37,15 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Trailing P/E",
-			"multiple": 12.4,
+			"multiple": 12.5,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"note": "Cheap (0.83) but base CAGR 8% misses the 14% hurdle (Used benchmark CV)"
 	},
-	"lastUpdated": "2026-03-16T12:36:07.131Z",
+	"lastUpdated": "2026-03-16T13:51:19.925Z",
 	"valuation": {
-		"trailingPE": 12.4,
+		"trailingPE": 12.5,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -57,6 +57,6 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "1%"
 	},
-	"expectedCAGR": "4% - 13%",
-	"sharpeRatio": 0.09
+	"expectedCAGR": "4% - 12%",
+	"sharpeRatio": 0.08
 }
