@@ -34,12 +34,25 @@
 	} = $props();
 </script>
 
-<button class="signal-card" class:wait={kind === 'wait'} class:expanded onclick={onToggle}>
+<button 
+	class="signal-card" 
+	class:wait={kind === 'wait'} 
+	class:expanded 
+	aria-expanded={expanded}
+	aria-controls="details-{stock.ticker}"
+	onclick={onToggle}
+>
 	<div class="signal-row1">
 		<span class="ticker">{stock.ticker}</span>
 		<span class="name">{stock.name}</span>
 		<span class="group-tag">{stock.group}</span>
 	</div>
+
+	{#if stock.description}
+		<div class="description-brief">
+			{stock.description}
+		</div>
+	{/if}
 
 	<div class="signal-row2">
 		<span
@@ -97,17 +110,20 @@
 		<span class="spacer"></span>
 		<span class="cagr">
 			{#if kind === 'deploy'}Rank {stock.deploymentRank} ·
-			{/if}Bear/Base/Bull
+			{/if}Bear/Base/Bull 1Y
 			{stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} /
 			{stock.cagrModel?.scenarios?.bull}
 		</span>
 	</div>
 
 	{#if expanded}
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<div
+			id="details-{stock.ticker}"
 			class="expanded"
+			role="region"
+			aria-label="Details for {stock.ticker}"
 			onclick={(event) => {
 				event.stopPropagation();
 			}}
@@ -117,7 +133,7 @@
 			</div>
 			{#if kind === 'deploy' && stock.cagrModel?.scenarios}
 				<div class="scenarios-panel">
-					<div class="scenarios-label">CAGR Scenarios ({stock.cagrModel.horizon ?? 5}yr)</div>
+					<div class="scenarios-label">1-Year Forward Returns</div>
 					<div class="scenarios-row">
 						{#each scenarioKeys as scenario (scenario)}
 							{#if scenarioValue(stock, scenario)}
@@ -130,9 +146,8 @@
 					</div>
 					<div class="scenario-params">
 						{#if stock.cagrModel.epsGrowth}EPS growth {stock.cagrModel.epsGrowth}{/if}
-						{#if stock.cagrModel.exitPE?.base}
-							· Exit PE {stock.cagrModel.exitPE.bear}/{stock.cagrModel.exitPE.base}/{stock.cagrModel
-								.exitPE.bull}
+						{#if stock.analystTargets}
+							· Targets ${stock.analystTargets.low} / ${stock.analystTargets.mean} / ${stock.analystTargets.high}
 						{/if}
 						{#if stock.cagrModel.dividendYield && stock.cagrModel.dividendYield !== '0%'}
 							· DY {stock.cagrModel.dividendYield}
@@ -146,7 +161,6 @@
 
 			<SensitivityLine
 				sensitivityCagr={stock.sensitivityCagr}
-				epsGrowth={stock.cagrModel?.epsGrowth}
 			/>
 			<QualityBadges metrics={stock.metrics} />
 
@@ -167,30 +181,35 @@
 </button>
 
 <style>
-	.signal-card {
-		background: var(--bg-surface);
-		border: 1px solid var(--border-subtle);
-		border-radius: 0.5rem;
-		padding: 1rem;
-		text-align: left;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		transition: all 0.2s ease;
-		width: 100%;
-	}
-	.signal-card:hover {
-		border-color: var(--border-hover);
-		transform: translateY(-2px);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-	}
-	.signal-card.expanded {
-		background: var(--bg-body);
-		border-color: var(--border-hover);
-	}
-	.signal-card.wait {
-		opacity: 0.9;
-	}
+.signal-card {
+	background: var(--bg-surface);
+	border: 1px solid var(--border-subtle);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	transition: all 0.2s ease;
+	width: 100%;
+	cursor: pointer;
+}
+.signal-card:hover {
+	border-color: var(--border-hover);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.signal-card:focus-visible {
+	outline: 2px solid var(--color-primary, #3b82f6);
+	outline-offset: 2px;
+}
+.signal-card.expanded {
+	background: var(--bg-body);
+	border-color: var(--border-hover);
+}
+.signal-card.wait {
+	opacity: 0.9;
+}
 
 	.signal-row1 {
 		display: flex;
@@ -218,6 +237,14 @@
 		padding: 0.125rem 0.375rem;
 		border-radius: 0.25rem;
 		color: var(--text-muted);
+	}
+
+	.description-brief {
+		font-size: 0.75rem;
+		color: var(--text-muted);
+		line-height: 1.4;
+		margin-top: -0.25rem;
+		font-style: italic;
 	}
 
 	.signal-row2 {

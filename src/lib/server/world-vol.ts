@@ -75,43 +75,59 @@ function isFreshMarketTime(
 async function fetchVolIndexQuote(
 	symbol: string,
 	label: string,
-	weight: number
+	weight: number,
+	retries = 2
 ): Promise<VolComponent> {
-	try {
-		const quote = await yahooFinance.quote(symbol);
-		const price =
-			typeof quote.regularMarketPrice === 'number' && quote.regularMarketPrice > 0
-				? +quote.regularMarketPrice.toFixed(1)
-				: null;
-		const marketTime = quote.regularMarketTime
-			? new Date(quote.regularMarketTime).toISOString()
-			: null;
-		const fresh = price !== null && isFreshMarketTime(marketTime);
+	for (let attempt = 0; attempt <= retries; attempt++) {
+		try {
+			const quote = await yahooFinance.quote(symbol);
+			const price =
+				typeof quote.regularMarketPrice === 'number' && quote.regularMarketPrice > 0
+					? +quote.regularMarketPrice.toFixed(1)
+					: null;
+			const rawMarketTime: string | number | Date | undefined = quote.regularMarketTime;
+			const marketTime =
+				rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
+			const fresh = price !== null && isFreshMarketTime(marketTime);
 
-		return {
-			label,
-			symbol,
-			weight,
-			value: price,
-			marketTime,
-			fresh,
-			reason: fresh
-				? null
-				: price === null
-					? 'missing price'
-					: `stale quote (${formatDate(marketTime) ?? 'unknown date'})`
-		};
-	} catch (error: unknown) {
-		return {
-			label,
-			symbol,
-			weight,
-			value: null,
-			marketTime: null,
-			fresh: false,
-			reason: error instanceof Error ? error.message : 'quote fetch failed'
-		};
+			return {
+				label,
+				symbol,
+				weight,
+				value: price,
+				marketTime,
+				fresh,
+				reason: fresh
+					? null
+					: price === null
+						? 'missing price'
+						: `stale quote (${formatDate(marketTime) ?? 'unknown date'})`
+			};
+		} catch (error: unknown) {
+			if (attempt < retries) {
+				await new Promise((resolve) => setTimeout(resolve, 2000 * (attempt + 1)));
+				continue;
+			}
+			return {
+				label,
+				symbol,
+				weight,
+				value: null,
+				marketTime: null,
+				fresh: false,
+				reason: error instanceof Error ? error.message : 'quote fetch failed'
+			};
+		}
 	}
+	return {
+		label,
+		symbol,
+		weight,
+		value: null,
+		marketTime: null,
+		fresh: false,
+		reason: 'max retries exceeded'
+	};
 }
 
 function buildCompositeWorldVolSignal(components: VolComponent[]): AvailableWorldVolSignal | null {

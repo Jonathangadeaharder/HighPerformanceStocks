@@ -38,15 +38,142 @@
 	function ink(doc: jsPDF, c: [number,number,number]) { doc.setTextColor(...c); }
 	function stroke(doc: jsPDF, c: [number,number,number]) { doc.setDrawColor(...c); }
 
-	// ── Helper: section pill label ─────────────────────────────────────────────
-	function pill(doc: jsPDF, label: string, x: number, y: number, bg: [number,number,number]) {
-		fill(doc, bg);
-		doc.roundedRect(x, y - 4, doc.getTextWidth(label) + 8, 6.5, 1, 1, 'F');
-		ink(doc, C.white);
-		doc.setFontSize(7.5);
+	function textLines(doc: jsPDF, text: string, maxWidth: number): number {
+		const lines = doc.splitTextToSize(text, maxWidth) as string | string[];
+		return Array.isArray(lines) ? lines.length : 1;
+	}
+
+	function drawTextLines(doc: jsPDF, text: string, maxWidth: number, x: number, y: number): void {
+		const lines = doc.splitTextToSize(text, maxWidth) as string | string[];
+		doc.text(lines, x, y);
+	}
+
+	function drawScenarioBoxes(doc: jsPDF, yPos: number, stock: FindingStock): number {
+		if (stock.bearCagr == null && stock.baseCagr == null && stock.bullCagr == null) return yPos;
+		const scenarios = [
+			{ label: 'Bear', val: stock.bearCagr, color: C.red },
+			{ label: 'Base', val: stock.baseCagr, color: C.green },
+			{ label: 'Bull', val: stock.bullCagr, color: C.blue },
+		];
+		let sx = 14;
+		for (const s of scenarios) {
+			fill(doc, s.color);
+			doc.roundedRect(sx, yPos - 3, 26, 8, 1, 1, 'F');
+			ink(doc, C.white);
+			doc.setFontSize(7);
+			doc.setFont('helvetica', 'bold');
+			doc.text(s.label, sx + 13, yPos, { align: 'center' });
+			doc.setFont('helvetica', 'normal');
+			doc.setFontSize(9);
+			doc.text(s.val == null ? 'N/A' : `${s.val}%`, sx + 13, yPos + 4, { align: 'center' });
+			sx += 29;
+		}
+		ink(doc, C.slate);
+		doc.setFontSize(8);
+		doc.text(`QCS: ${stock.qcs?.totalScore ?? 'N/A'} / 15`, sx + 2, yPos + 2);
+		return yPos + 12;
+	}
+
+	function drawThesis(doc: jsPDF, yPos: number, stock: FindingStock): number {
+		if (!stock.bullCase && !stock.bearCase) return yPos;
+		if (stock.bullCase) {
+			ink(doc, C.green);
+			doc.setFontSize(7.5);
+			doc.setFont('helvetica', 'bold');
+			doc.text('BULL', 14, yPos);
+			doc.setFont('helvetica', 'normal');
+			ink(doc, C.navy);
+			drawTextLines(doc, stock.bullCase, 166, 24, yPos);
+			yPos += textLines(doc, stock.bullCase, 166) * 4.5 + 2;
+		}
+		if (stock.bearCase) {
+			ink(doc, C.red);
+			doc.setFontSize(7.5);
+			doc.setFont('helvetica', 'bold');
+			doc.text('BEAR', 14, yPos);
+			doc.setFont('helvetica', 'normal');
+			ink(doc, C.navy);
+			drawTextLines(doc, stock.bearCase, 166, 24, yPos);
+			yPos += textLines(doc, stock.bearCase, 166) * 4.5;
+		}
+		return yPos;
+	}
+
+	function drawDeployedStock(doc: jsPDF, stock: FindingStock, yPos: number): number {
+		fill(doc, C.slateL);
+		doc.rect(14, yPos, 182, 8, 'F');
+		ink(doc, C.navy);
+		doc.setFontSize(11);
 		doc.setFont('helvetica', 'bold');
-		doc.text(label, x + 4, y);
+		doc.text(stock.ticker, 16, yPos + 5.5);
 		doc.setFont('helvetica', 'normal');
+		doc.setFontSize(9);
+		ink(doc, C.slate);
+		doc.text(`${stock.name ?? ''}  ·  ${stock.group ?? ''}`, 38, yPos + 5.5);
+
+		if (stock.deploymentRank != null) {
+			fill(doc, C.blue);
+			doc.roundedRect(178, yPos + 1, 18, 6, 1, 1, 'F');
+			ink(doc, C.white);
+			doc.setFontSize(7.5);
+			doc.setFont('helvetica', 'bold');
+			doc.text(`Rank ${stock.deploymentRank.toFixed(0)}`, 180, yPos + 5.2);
+			doc.setFont('helvetica', 'normal');
+		}
+
+		yPos += 12;
+		const sc = stock.screener;
+		const model = stock.cagrModel;
+		ink(doc, C.slate);
+		doc.setFontSize(8);
+		doc.text(
+			`Price: ${stock.currentPrice ?? 'N/A'}   Target: ${stock.targetPrice ?? 'N/A'}   Upside: ${stock.upside == null ? 'N/A' : `${stock.upside}%`}   ` +
+			`Score: ${sc?.score ?? 'N/A'} (${sc?.engine ?? 'N/A'})   EPS growth: ${model?.epsGrowth ?? 'N/A'}`,
+			14, yPos
+		);
+		yPos += 6;
+
+		yPos = drawScenarioBoxes(doc, yPos, stock);
+		yPos = drawThesis(doc, yPos, stock);
+
+		stroke(doc, [220, 220, 230]);
+		doc.setLineWidth(0.2);
+		doc.line(14, yPos + 4, 196, yPos + 4);
+		return yPos + 10;
+	}
+
+	function drawNotSelectedStock(doc: jsPDF, stock: FindingStock, yPos: number): number {
+		const status = stock.deployment?.status ?? 'UNKNOWN';
+		const statusColor: Record<string, [number,number,number]> = {
+			WAIT: C.amber, REJECT: C.red, FAIL: C.slate,
+			OVERPRICED: C.red, NO_DATA: C.slate
+		};
+		const sc = stock.screener;
+
+		const sc_ = statusColor[status] ?? C.slate;
+		fill(doc, sc_);
+		doc.roundedRect(14, yPos - 3, 18, 5, 1, 1, 'F');
+		ink(doc, C.white);
+		doc.setFontSize(7);
+		doc.setFont('helvetica', 'bold');
+		doc.text(status, 15, yPos);
+		doc.setFont('helvetica', 'normal');
+
+		ink(doc, C.navy);
+		doc.setFontSize(9);
+		doc.setFont('helvetica', 'bold');
+		doc.text(stock.ticker, 35, yPos);
+		doc.setFont('helvetica', 'normal');
+		ink(doc, C.slate);
+		doc.setFontSize(8);
+		doc.text(`${stock.name ?? ''}  ·  ${sc?.engine ?? 'N/A'}  score ${sc?.score ?? 'N/A'}  ·  Base ${stock.baseCagr == null ? 'N/A' : `${stock.baseCagr}%`}  Bear ${stock.bearCagr == null ? 'N/A' : `${stock.bearCagr}%`}`, 55, yPos);
+		yPos += 5;
+
+		const reason = stock.deployment?.reason ?? sc?.note ?? 'N/A';
+		ink(doc, C.slate);
+		doc.setFontSize(7.5);
+		drawTextLines(doc, reason, 178, 14, yPos);
+		return yPos + textLines(doc, reason, 178) * 4 + 4;
 	}
 
 	// ── Helper: draw a gate box ────────────────────────────────────────────────
@@ -77,22 +204,10 @@
 		}
 	}
 
-	// ── Helper: key-value row ──────────────────────────────────────────────────
-	function kvRow(doc: jsPDF, key: string, value: string, x: number, y: number, valueColor?: [number,number,number]) {
-		ink(doc, C.slate);
-		doc.setFontSize(8.5);
-		doc.setFont('helvetica', 'bold');
-		doc.text(key, x, y);
-		doc.setFont('helvetica', 'normal');
-		ink(doc, valueColor ?? C.navy);
-		doc.text(value, x + 42, y);
-	}
-
 	// ── Page 1: Cover + Pipeline ───────────────────────────────────────────────
 	function drawMethodologyPage(doc: jsPDF) {
-		const pw = 210; // A4 width
+		const pw = 210;
 
-		// ── Header bar ──
 		fill(doc, C.navy);
 		doc.rect(0, 0, pw, 32, 'F');
 
@@ -106,7 +221,6 @@
 		doc.text('Deployment Report  ·  ' + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }), 14, 21);
 		doc.text(`${deployNow.length} stocks deployed  ·  ${deployNow.length + cheapWait.length + watchlist.length} stocks screened`, 14, 27.5);
 
-		// ── "How it works" label ──
 		ink(doc, C.navy);
 		doc.setFontSize(13);
 		doc.setFont('helvetica', 'bold');
@@ -116,9 +230,8 @@
 		ink(doc, C.slate);
 		doc.text('Every stock passes through three sequential gates before being marked for deployment.', 14, 50);
 
-		// ── 3 gate boxes ──
 		const gw = 54, gh = 46, gy = 54, gap = 10;
-		gateBox(doc, 14,        gy, gw, gh, '(1)', 'SCREEN', [
+		gateBox(doc, 14, gy, gw, gh, '(1)', 'SCREEN', [
 			'Compare valuation multiple',
 			'to EPS growth rate.',
 			'Score < 1.0 = cheap.',
@@ -139,7 +252,13 @@
 			'+ Conviction (QCS)',
 		], C.amber, C.amberL);
 
-		// arrows between boxes
+		drawGateArrows(doc, gw, gap, gy, gh);
+		drawScreenerEngines(doc, pw);
+		drawRankingFormula(doc, pw);
+		drawDataSources(doc, pw);
+	}
+
+	function drawGateArrows(doc: jsPDF, gw: number, gap: number, gy: number, gh: number): void {
 		stroke(doc, C.slate);
 		doc.setLineWidth(0.4);
 		const ax1 = 14 + gw + 1, ax2 = 14 + gw + gap - 1;
@@ -152,8 +271,9 @@
 		doc.line(bx2 - 2, ay - 1.5, bx2, ay);
 		doc.line(bx2 - 2, ay + 1.5, bx2, ay);
 		doc.setLineWidth(0.2);
+	}
 
-		// ── Screener engines ──────────────────────────────────────────────────
+	function drawScreenerEngines(doc: jsPDF, pw: number): void {
 		let y = 110;
 		ink(doc, C.navy);
 		doc.setFontSize(11);
@@ -179,6 +299,7 @@
 		];
 
 		for (const [eng, formula, note] of engines) {
+			if (!eng || !formula || !note) continue;
 			fill(doc, C.slateL);
 			doc.roundedRect(14, y - 3.5, 22, 5.5, 1, 1, 'F');
 			ink(doc, C.blue);
@@ -196,16 +317,16 @@
 			y += 11;
 		}
 
-		// Engine footnotes
 		y += 1;
 		ink(doc, C.slate);
 		doc.setFontSize(7);
 		doc.text('Risk = analyst estimate dispersion multiplier: 1 + 0.6 x (CV - 0.08), where CV = (high - low) / 4 / avg estimate. Defaults to 1.0 when dispersion unavailable.', 14, y);
 		y += 4;
 		doc.text('12% = total return hurdle for income stocks (Yield + Growth). Score 1.0 = exactly 12%; below 1.0 = above hurdle (PASS); above 1.0 = below hurdle (FAIL).', 14, y);
-		y += 6;
+	}
 
-		// ── Ranking formula ───────────────────────────────────────────────────
+	function drawRankingFormula(doc: jsPDF, pw: number): void {
+		let y = 197;
 		y += 2;
 		ink(doc, C.navy);
 		doc.setFontSize(11);
@@ -227,7 +348,7 @@
 			{ label: 'QCS',        detail: 'Surprise + Smart Money + Revisions  (max 15)',  color: C.red    },
 		];
 
-		const bw = (pw - 28 - 16) / factors.length; // bar width per factor
+		const bw = (pw - 28 - 16) / factors.length;
 		const barH = 6;
 		let bx = 14;
 		for (const f of factors) {
@@ -252,9 +373,10 @@
 			doc.text(f.detail, 40, y);
 			y += 5.5;
 		}
+	}
 
-		// ── Data sources ─────────────────────────────────────────────────────
-		y += 3;
+	function drawDataSources(doc: jsPDF, pw: number): void {
+		const y = 250;
 		fill(doc, C.slateL);
 		doc.roundedRect(14, y, pw - 28, 20, 2, 2, 'F');
 		ink(doc, C.navy);
@@ -268,7 +390,7 @@
 		doc.text('Financial Modelling Prep - DCF intrinsic value estimates', 18, y + 17);
 	}
 
-	async function downloadPdf() {
+	function downloadPdf() {
 		if (isGenerating) return;
 
 		isGenerating = true;
@@ -297,99 +419,7 @@
 
 			for (const stock of deployNow) {
 				if (yPos > 230) { doc.addPage(); yPos = 14; }
-
-				// Stock title bar
-				fill(doc, C.slateL);
-				doc.rect(14, yPos, 182, 8, 'F');
-				ink(doc, C.navy);
-				doc.setFontSize(11);
-				doc.setFont('helvetica', 'bold');
-				doc.text(`${stock.ticker}`, 16, yPos + 5.5);
-				doc.setFont('helvetica', 'normal');
-				doc.setFontSize(9);
-				ink(doc, C.slate);
-				doc.text(`${stock.name ?? ''}  ·  ${stock.group ?? ''}`, 38, yPos + 5.5);
-
-				// Rank badge
-				if (stock.deploymentRank != null) {
-					fill(doc, C.blue);
-					doc.roundedRect(178, yPos + 1, 18, 6, 1, 1, 'F');
-					ink(doc, C.white);
-					doc.setFontSize(7.5);
-					doc.setFont('helvetica', 'bold');
-					doc.text(`Rank ${stock.deploymentRank.toFixed(0)}`, 180, yPos + 5.2);
-					doc.setFont('helvetica', 'normal');
-				}
-
-				yPos += 12;
-
-				// Price / targets row
-				const sc = stock.screener;
-				const model = stock.cagrModel;
-				ink(doc, C.slate);
-				doc.setFontSize(8);
-				doc.text(
-					`Price: ${stock.currentPrice ?? 'N/A'}   Target: ${stock.targetPrice ?? 'N/A'}   Upside: ${stock.upside != null ? `${stock.upside}%` : 'N/A'}   ` +
-					`Score: ${sc?.score ?? 'N/A'} (${sc?.engine ?? 'N/A'})   EPS growth: ${model?.epsGrowth ?? 'N/A'}`,
-					14, yPos
-				);
-				yPos += 6;
-
-				// Return scenarios
-				if (stock.bearCagr != null || stock.baseCagr != null || stock.bullCagr != null) {
-					const scenarios = [
-						{ label: 'Bear', val: stock.bearCagr, color: C.red   },
-						{ label: 'Base', val: stock.baseCagr, color: C.green },
-						{ label: 'Bull', val: stock.bullCagr, color: C.blue  },
-					];
-					let sx = 14;
-					for (const s of scenarios) {
-						fill(doc, s.color);
-						doc.roundedRect(sx, yPos - 3, 26, 8, 1, 1, 'F');
-						ink(doc, C.white);
-						doc.setFontSize(7);
-						doc.setFont('helvetica', 'bold');
-						doc.text(s.label, sx + 13, yPos, { align: 'center' });
-						doc.setFont('helvetica', 'normal');
-						doc.setFontSize(9);
-						doc.text(s.val != null ? `${s.val}%` : 'N/A', sx + 13, yPos + 4, { align: 'center' });
-						sx += 29;
-					}
-					// QCS
-					ink(doc, C.slate);
-					doc.setFontSize(8);
-					doc.text(`QCS: ${stock.qcs?.totalScore ?? 'N/A'} / 15`, sx + 2, yPos + 2);
-					yPos += 12;
-				}
-
-				// Thesis
-				if (stock.bullCase || stock.bearCase) {
-					ink(doc, C.green);
-					doc.setFontSize(7.5);
-					doc.setFont('helvetica', 'bold');
-					doc.text('BULL', 14, yPos);
-					doc.setFont('helvetica', 'normal');
-					ink(doc, C.navy);
-					const bullLines = doc.splitTextToSize(stock.bullCase ?? '', 166);
-					doc.text(bullLines, 24, yPos);
-					yPos += bullLines.length * 4.5 + 2;
-
-					ink(doc, C.red);
-					doc.setFontSize(7.5);
-					doc.setFont('helvetica', 'bold');
-					doc.text('BEAR', 14, yPos);
-					doc.setFont('helvetica', 'normal');
-					ink(doc, C.navy);
-					const bearLines = doc.splitTextToSize(stock.bearCase ?? '', 166);
-					doc.text(bearLines, 24, yPos);
-					yPos += bearLines.length * 4.5;
-				}
-
-				// Divider
-				stroke(doc, [220, 220, 230]);
-				doc.setLineWidth(0.2);
-				doc.line(14, yPos + 4, 196, yPos + 4);
-				yPos += 10;
+				yPos = drawDeployedStock(doc, stock, yPos);
 			}
 
 			// ── Stocks not selected — audit trail ────────────────────────────
@@ -411,40 +441,7 @@
 
 				for (const stock of notSelected) {
 					if (yPos > 260) { doc.addPage(); yPos = 14; }
-
-					const status = stock.deployment?.status ?? 'UNKNOWN';
-					const statusColor: Record<string, [number,number,number]> = {
-						WAIT: C.amber, REJECT: C.red, FAIL: C.slate,
-						OVERPRICED: C.red, NO_DATA: C.slate
-					};
-					const sc = stock.screener;
-
-					// Status badge + ticker
-					const sc_ = statusColor[status] ?? C.slate;
-					fill(doc, sc_);
-					doc.roundedRect(14, yPos - 3, 18, 5, 1, 1, 'F');
-					ink(doc, C.white);
-					doc.setFontSize(7);
-					doc.setFont('helvetica', 'bold');
-					doc.text(status, 15, yPos);
-					doc.setFont('helvetica', 'normal');
-
-					ink(doc, C.navy);
-					doc.setFontSize(9);
-					doc.setFont('helvetica', 'bold');
-					doc.text(`${stock.ticker}`, 35, yPos);
-					doc.setFont('helvetica', 'normal');
-					ink(doc, C.slate);
-					doc.setFontSize(8);
-					doc.text(`${stock.name ?? ''}  ·  ${sc?.engine ?? 'N/A'}  score ${sc?.score ?? 'N/A'}  ·  Base ${stock.baseCagr != null ? `${stock.baseCagr}%` : 'N/A'}  Bear ${stock.bearCagr != null ? `${stock.bearCagr}%` : 'N/A'}`, 55, yPos);
-					yPos += 5;
-
-					const reason = stock.deployment?.reason ?? sc?.note ?? 'N/A';
-					ink(doc, C.slate);
-					doc.setFontSize(7.5);
-					const reasonLines = doc.splitTextToSize(reason, 178);
-					doc.text(reasonLines, 14, yPos);
-					yPos += reasonLines.length * 4 + 4;
+					yPos = drawNotSelectedStock(doc, stock, yPos);
 				}
 			}
 

@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { sensitivityColor } from './helpers';
 
-	let { sensitivityCagr, epsGrowth }: { sensitivityCagr?: number | null; epsGrowth?: string } =
-		$props();
+	let { sensitivityCagr }: { sensitivityCagr?: number | null } = $props();
 </script>
 
-{#if sensitivityCagr != null && epsGrowth}
+{#if sensitivityCagr != null}
 	<div class="sensitivity-line" style="color:{sensitivityColor(sensitivityCagr)}">
-		If growth −3pp ({epsGrowth} → {(Number.parseFloat(epsGrowth) - 3).toFixed(0)}%): base CAGR ~{sensitivityCagr}%
+		Analyst target spread: {sensitivityCagr}pp (bull − bear)
 	</div>
 {/if}
 

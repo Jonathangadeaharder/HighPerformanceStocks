@@ -15,7 +15,7 @@
 		counts: DashboardCounts;
 		showWatchlist: boolean;
 		expandedWatch: Record<string, boolean>;
-		onToggleWatchlist: () => void;
+		onToggleWatchlist?: () => void;
 		onToggleWatch: (ticker: string) => void;
 	} = $props();
 
@@ -97,13 +97,18 @@
 								</span>
 							{/if}
 						</div>
+						{#if stock.description}
+							<div class="watch-brief">
+								{stock.description}
+							</div>
+						{/if}
 						{#if expandedWatch[stock.ticker]}
 							<div class="watch-detail">
 								<div class="watch-reason">
 									{stock.deployment?.reason}
 								</div>
 								<div class="watch-cagr">
-									CAGR {stock.expectedCAGR} · {stock.currentPrice}
+									1Y Return {stock.expectedCAGR} · {stock.currentPrice}
 									{#if stock.upside != null}
 										→ {stock.targetPrice} ({stock.upside > 0 ? '+' : ''}{stock.upside}%)
 									{/if}
@@ -156,11 +161,16 @@
 											<span class="watch-cagr-mini">{stock.baseCagr}%</span>
 										{/if}
 									</div>
+									{#if stock.description}
+										<div class="watch-brief">
+											{stock.description}
+										</div>
+									{/if}
 									{#if expandedWatch[stock.ticker]}
 										<div class="watch-detail">
 											<div class="watch-reason">{stock.deployment?.reason}</div>
 											<div class="watch-cagr">
-												CAGR {stock.expectedCAGR} · {stock.currentPrice}
+												1Y Return {stock.expectedCAGR} · {stock.currentPrice}
 												{#if stock.upside != null}
 													→ {stock.targetPrice} ({stock.upside > 0 ? '+' : ''}{stock.upside}%)
 												{/if}
@@ -393,6 +403,17 @@
 	}
 	.watch-mom.neg {
 		color: var(--color-danger);
+	}
+
+	.watch-brief {
+		font-size: 0.75rem;
+		color: var(--text-muted);
+		line-height: 1.4;
+		margin-top: 0.25rem;
+		font-style: italic;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.watch-cagr-mini {
