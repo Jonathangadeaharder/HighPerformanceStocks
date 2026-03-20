@@ -5,14 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
-	"marketCap": "$34.0B USD",
+	"marketCap": "$33.4B USD",
 	"sharpeRatio": 0.78,
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 42.2,
-		"forwardPE": 49.5,
+		"trailingPE": 41.4,
+		"forwardPE": 48.6,
 		"pegRatio": 3.2,
-		"evEbitda": 25.8
+		"evEbitda": 25.8,
+		"evFcf": 47.2
 	},
 	"metrics": {
 		"roe": "16.6%",
@@ -30,14 +31,14 @@
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$213.50",
+	"currentPrice": "$209.54",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.06
 	},
-	"lastUpdated": "2026-03-20T09:50:22.703Z",
+	"lastUpdated": "2026-03-20T15:11:44.986Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,
@@ -52,12 +53,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 213.5,
+				"price": 209.54,
 				"price6mAgo": 252.02,
-				"price1mAgo": 261.61,
-				"low3m": 211,
-				"return6m": -15.3,
-				"return1m": -18.4,
+				"price1mAgo": 258.86,
+				"low3m": 209.2,
+				"return6m": -16.9,
+				"return1m": -19.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -67,7 +68,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.09,
+		"secondaryScore": 3.04,
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
 	"qcs": {

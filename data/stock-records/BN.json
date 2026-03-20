@@ -2,18 +2,18 @@
 	"ticker": "BN",
 	"name": "Brookfield Corporation",
 	"group": "Financials & Alt Assets",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$87.9B USD",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "-20% - 54%",
+	"marketCap": "$86.6B USD",
+	"sharpeRatio": 0.41,
+	"expectedCAGR": "-20% - 56%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 79.8,
-		"forwardPE": 6.7,
+		"trailingPE": 78.6,
+		"forwardPE": 6.6,
 		"pegRatio": null,
-		"evEbitda": 15
+		"evEbitda": 15,
+		"evFcf": -100.8
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39.12",
+	"currentPrice": "$38.52",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -39,32 +39,32 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-20%",
-			"base": "39%",
-			"bull": "54%"
+			"base": "40%",
+			"bull": "56%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-20T09:50:01.802Z",
+	"lastUpdated": "2026-03-20T15:11:38.984Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.41,
+		"score": 0.4,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
-			"multiple": 6.7,
+			"multiple": 6.6,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 39.12,
+				"price": 38.52,
 				"price6mAgo": 48.49,
-				"price1mAgo": 45.98,
+				"price1mAgo": 44,
 				"low3m": 38.28,
-				"return6m": -19.3,
-				"return1m": -14.9,
+				"return6m": -20.6,
+				"return1m": -12.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -73,7 +73,7 @@
 				"down30d": 0
 			}
 		},
-		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
+		"note": "Used benchmark CV (missing dispersion data)"
 	},
 	"qcs": {
 		"earningsScore": 0,

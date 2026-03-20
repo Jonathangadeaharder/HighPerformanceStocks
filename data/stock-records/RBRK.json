@@ -4,13 +4,14 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
-	"marketCap": "$10.2B USD",
-	"sharpeRatio": 1.41,
-	"expectedCAGR": "37% - 147%",
+	"marketCap": "$10.0B USD",
+	"sharpeRatio": 1.47,
+	"expectedCAGR": "40% - 151%",
 	"expectedVolatility": "~62%",
 	"valuation": {
-		"forwardPE": 86.4,
-		"evEbitda": -31.4
+		"forwardPE": 85.2,
+		"evEbitda": -31.4,
+		"evFcf": 23.9
 	},
 	"metrics": {
 		"fcfMargin": "~31%",
@@ -21,18 +22,18 @@
 	"targetPrice": "$87.70",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
 	"bearCase": "Rubrik faces intense competition from Cohesity (now merged with Veritas), Commvault, Veeam, and Zerto in data protection. The path to sustained GAAP profitability requires continued ARR growth at high SBC dilution. Microsoft Backup and AWS native backup services could commoditize the lower end of the market.",
-	"currentPrice": "$50.92",
+	"currentPrice": "$50.17",
 	"cagrModel": {
 		"epsGrowth": "0%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "37%",
-			"base": "72%",
-			"bull": "147%"
+			"bear": "40%",
+			"base": "75%",
+			"bull": "151%"
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-20T09:50:31.887Z",
+	"lastUpdated": "2026-03-20T15:11:54.698Z",
 	"consensus": {
 		"yahoo": "$87.70"
 	},
@@ -50,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 50.92,
+				"price": 50.17,
 				"price6mAgo": 80.49,
-				"price1mAgo": 50.2,
+				"price1mAgo": 47.26,
 				"low3m": 46.36,
-				"return6m": -36.7,
-				"return1m": 1.4,
+				"return6m": -37.7,
+				"return1m": 6.2,
 				"near3mLow": false
 			},
 			"revisions": {

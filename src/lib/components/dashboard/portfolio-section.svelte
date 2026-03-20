@@ -47,12 +47,7 @@
 <div class="portfolio-section">
 	<PortfolioSummaryCard {summary} onToggleMode={toggleMode} />
 	<SectorBreakdown {analysis} />
-	<PortfolioTable
-		stocks={deployNow}
-		{weights}
-		{includedTickers}
-		onToggle={toggleTicker}
-	/>
+	<PortfolioTable stocks={deployNow} {weights} {includedTickers} onToggle={toggleTicker} />
 </div>
 
 <style>

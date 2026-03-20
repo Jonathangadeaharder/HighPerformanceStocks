@@ -86,8 +86,7 @@ async function fetchVolIndexQuote(
 					? +quote.regularMarketPrice.toFixed(1)
 					: null;
 			const rawMarketTime: string | number | Date | undefined = quote.regularMarketTime;
-			const marketTime =
-				rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
+			const marketTime = rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
 			const fresh = price !== null && isFreshMarketTime(marketTime);
 
 			return {

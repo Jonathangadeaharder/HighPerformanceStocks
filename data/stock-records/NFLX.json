@@ -11,16 +11,17 @@
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-13%",
-			"base": "23%",
-			"bull": "65%"
+			"base": "24%",
+			"bull": "66%"
 		}
 	},
-	"currentPrice": "$91.74",
-	"marketCap": "$389.2B USD",
+	"currentPrice": "$91.47",
+	"marketCap": "$388.0B USD",
 	"valuation": {
-		"trailingPE": 36.3,
-		"forwardPE": 23.9,
-		"evEbitda": 28.9
+		"trailingPE": 36.2,
+		"forwardPE": 23.8,
+		"evEbitda": 28.9,
+		"evFcf": 15.9
 	},
 	"metrics": {
 		"roe": "42.8%",
@@ -33,9 +34,9 @@
 		"yahoo": "$113.21"
 	},
 	"targetPrice": "$113.21",
-	"expectedCAGR": "-13% - 65%",
+	"expectedCAGR": "-13% - 66%",
 	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.63,
+	"sharpeRatio": 0.65,
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.3,
@@ -43,19 +44,19 @@
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 23.9,
+			"multiple": 23.8,
 			"cvStock": 0.046,
 			"riskMultiplier": 0.98
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 91.74,
+				"price": 91.47,
 				"price6mAgo": 122.74,
-				"price1mAgo": 78.67,
+				"price1mAgo": 76.02,
 				"low3m": 75.01,
-				"return6m": -25.3,
-				"return1m": 16.6,
+				"return6m": -25.5,
+				"return1m": 20.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,7 +72,7 @@
 	},
 	"bullCase": "Netflix won the streaming wars. It is the only pure-play streaming platform with global scale (300M+ subscribers), consistent content investment discipline, and a growing advertising tier that creates a new high-margin revenue stream. Live sports and events (NFL, WWE) are extending the addressable audience. FCF has inflected to $7B+ annually.",
 	"bearCase": "At 24x forward PE for an 18% EPS grower, Netflix is not cheap. Subscriber growth in developed markets is approaching saturation — the next growth leg requires LatAm/Asia penetration at lower ARPU. The advertising tier depends on Netflix building an ad tech stack from scratch. Password sharing re-enforcement tailwind is exhausted in 2025-2026.",
-	"lastUpdated": "2026-03-20T09:50:29.040Z",
+	"lastUpdated": "2026-03-20T15:11:51.611Z",
 	"intrinsicValue": {
 		"dcf": 113.48,
 		"date": "2026-03-20",

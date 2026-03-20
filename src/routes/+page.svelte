@@ -25,7 +25,6 @@
 		expandedWait = expandedWait === ticker ? null : ticker;
 	}
 
-
 	function toggleWatch(ticker: string): void {
 		expandedWatch = {
 			...expandedWatch,
@@ -40,7 +39,12 @@
 
 <div class="page">
 	<DashboardHeader lastUpdated={data.lastUpdated} totalStocks={data.counts.total} />
-	<TabNav {activeTab} onSwitch={(tab: TabId) => { activeTab = tab; }} />
+	<TabNav
+		{activeTab}
+		onSwitch={(tab: TabId) => {
+			activeTab = tab;
+		}}
+	/>
 
 	{#if activeTab === 'signals'}
 		<div id="panel-signals" role="tabpanel" aria-label="Signals tab">

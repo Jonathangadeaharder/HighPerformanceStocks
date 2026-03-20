@@ -9,8 +9,9 @@
 	"expectedCAGR": "-39% - 36%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"forwardPE": 153.2,
-		"evEbitda": null
+		"forwardPE": 153.1,
+		"evEbitda": null,
+		"evFcf": 199.3
 	},
 	"metrics": {
 		"roe": "-8.2%",
@@ -22,7 +23,7 @@
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$221.36",
+	"currentPrice": "$221.19",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "-39%",
@@ -34,7 +35,7 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-20T09:50:28.864Z",
+	"lastUpdated": "2026-03-20T15:11:51.555Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
@@ -45,19 +46,19 @@
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 153.2,
+			"multiple": 153.1,
 			"cvStock": 0.105,
 			"riskMultiplier": 1.015
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 221.36,
+				"price": 221.19,
 				"price6mAgo": 228.28,
-				"price1mAgo": 177.14,
+				"price1mAgo": 160.19,
 				"low3m": 158.83,
-				"return6m": -3,
-				"return1m": 25,
+				"return6m": -3.1,
+				"return1m": 38.1,
 				"near3mLow": false
 			},
 			"revisions": {

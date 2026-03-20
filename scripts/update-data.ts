@@ -21,11 +21,7 @@ import 'dotenv/config';
 import { readFileSync, writeFileSync, readdirSync, renameSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
-import {
-	calcForwardScenarios,
-	parseDisplayPrice,
-	parsePercent
-} from '../lib/finance-core.js';
+import { calcForwardScenarios, parseDisplayPrice, parsePercent } from '../lib/finance-core.js';
 import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
 import {
 	fmtApproxPct,
@@ -51,7 +47,10 @@ const BATCH_DELAY_MS = 500;
 const FORCE = process.argv.includes('--force');
 
 function atomicWriteJson(path: string, data: object): void {
-	const tempPath = join(tmpdir(), `stock-${Date.now()}-${Math.random().toString(36).slice(2)}.tmp.json`);
+	const tempPath = join(
+		tmpdir(),
+		`stock-${Date.now()}-${Math.random().toString(36).slice(2)}.tmp.json`
+	);
 	writeFileSync(tempPath, JSON.stringify(data, null, '\t') + '\n');
 	renameSync(tempPath, path);
 }
@@ -79,8 +78,8 @@ function computeQCS(summary: any, cvStock = 0.08) {
 		const safeCvStock = Math.max(0.01, cvStock); // Prevent division by zero
 
 		// Formula: (Avg Surprise * 50) * (CV Benchmark / CV Stock)
-		earningsScore = (avgSurprise * 50) * (cvBenchmark / safeCvStock);
-		earningsScore = +(Math.max(-5, Math.min(5, earningsScore))).toFixed(2);
+		earningsScore = avgSurprise * 50 * (cvBenchmark / safeCvStock);
+		earningsScore = +Math.max(-5, Math.min(5, earningsScore)).toFixed(2);
 	}
 
 	const netInsiderShares = summary.netSharePurchaseActivity?.netInfoShares || 0;
@@ -108,13 +107,15 @@ function computeQCS(summary: any, cvStock = 0.08) {
 	let upRevisions = 0;
 	let downRevisions = 0;
 	let totalAnalysts = 1;
-	const trend = summary.earningsTrend?.trend?.find((t: any) => t.period === '0y') ||
-				  summary.earningsTrend?.trend?.find((t: any) => t.period === '+1y');
+	const trend =
+		summary.earningsTrend?.trend?.find((t: any) => t.period === '0y') ||
+		summary.earningsTrend?.trend?.find((t: any) => t.period === '+1y');
 
 	if (trend) {
 		upRevisions = trend.epsRevisions?.upLast30days || 0;
 		downRevisions = trend.epsRevisions?.downLast30days || 0;
-		totalAnalysts = trend.earningsEstimate?.numberOfAnalysts || Math.max(1, upRevisions + downRevisions);
+		totalAnalysts =
+			trend.earningsEstimate?.numberOfAnalysts || Math.max(1, upRevisions + downRevisions);
 	}
 
 	const revisionsScore = +(((upRevisions - downRevisions) / totalAnalysts) * 5).toFixed(2);
@@ -129,7 +130,7 @@ function computeQCS(summary: any, cvStock = 0.08) {
 		revisionsScore,
 		totalScore,
 		raw: {
-			avgSurprisePct: validQuarters > 0 ? +(totalSurprise / validQuarters * 100).toFixed(2) : 0,
+			avgSurprisePct: validQuarters > 0 ? +((totalSurprise / validQuarters) * 100).toFixed(2) : 0,
 			netInsiderShares,
 			instFlowTrend,
 			upRevisions,
@@ -173,28 +174,41 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 		const fpe = quote.forwardPE ?? sd.forwardPE;
 		const peg = ks.pegRatio;
 		let evEbitda = ks.enterpriseToEbitda;
+		let evFcf: number | null = null;
 
 		const totalDebt = fd.totalDebt;
 		const totalCash = fd.totalCash;
 		const ebitda = fd.ebitda;
+		const fcf = fd.freeCashflow;
 
 		if (ks.enterpriseValue && rawCap && totalDebt != null && totalCash != null && ebitda) {
 			const calcEv = rawCap + totalDebt - totalCash;
 			// Catch Yahoo API stock split corruption (e.g. AVGO 10-for-1 split dropping EV by 10x)
 			if (calcEv / ks.enterpriseValue > 2) {
-				console.log(`  🚨  ${stock.ticker} — Yahoo EV corrupted (Reported: $${Math.round(ks.enterpriseValue/1e9)}B, Calc'd: $${Math.round(calcEv/1e9)}B). Overriding EV/EBITDA.`);
+				console.log(
+					`  🚨  ${stock.ticker} — Yahoo EV corrupted (Reported: $${Math.round(ks.enterpriseValue / 1e9)}B, Calc'd: $${Math.round(calcEv / 1e9)}B). Overriding EV multiples.`
+				);
 				evEbitda = calcEv / ebitda;
+				if (fcf != null && Math.abs(fcf) > 0) evFcf = calcEv / fcf;
+			} else if (fcf != null && Math.abs(fcf) > 0) {
+				evFcf = ks.enterpriseValue / fcf;
 			}
+		} else if (ks.enterpriseValue && fcf != null && Math.abs(fcf) > 0) {
+			evFcf = ks.enterpriseValue / fcf;
 		}
 
 		if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
 		if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
 		if (peg != null) stock.valuation.pegRatio = +peg.toFixed(2);
+		if (evFcf != null) stock.valuation.evFcf = +evFcf.toFixed(1);
+		
 		// Skip EV/EBITDA for alt-asset managers (consolidated balance sheets distort it)
 		if (evEbitda != null && stock.valuation.evEbitda !== null) {
 			const isMegaCap = rawCap && rawCap > 50_000_000_000;
 			if (isMegaCap && evEbitda < 5) {
-				console.log(`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA (${evEbitda.toFixed(1)}) for mega-cap, rejecting`);
+				console.log(
+					`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA (${evEbitda.toFixed(1)}) for mega-cap, rejecting`
+				);
 				stock.valuation.evEbitda = null;
 			} else {
 				stock.valuation.evEbitda = +evEbitda.toFixed(1);
@@ -258,7 +272,9 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 	if (fd.targetMeanPrice != null) {
 		const isAnomalous = fd.targetMeanPrice > rawPrice * 3 || fd.targetMeanPrice < rawPrice * 0.5;
 		if (isAnomalous) {
-			console.log(`  ⚠️  ${stock.ticker} — anomalous target price (${fd.targetMeanPrice} vs price ${rawPrice}), skipping consensus update (currency bug)`);
+			console.log(
+				`  ⚠️  ${stock.ticker} — anomalous target price (${fd.targetMeanPrice} vs price ${rawPrice}), skipping consensus update (currency bug)`
+			);
 		} else {
 			if (!stock.consensus) stock.consensus = {};
 			stock.consensus.yahoo = fmtPrice(fd.targetMeanPrice, currency);
@@ -271,7 +287,8 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 	// Reject single-analyst targets (low === mean === high) as scenarios are meaningless.
 	if (fd.targetLowPrice != null && fd.targetMeanPrice != null && fd.targetHighPrice != null) {
 		const isAnomalous = fd.targetMeanPrice > rawPrice * 3 || fd.targetMeanPrice < rawPrice * 0.5;
-		const isSingleAnalyst = fd.targetLowPrice === fd.targetMeanPrice && fd.targetMeanPrice === fd.targetHighPrice;
+		const isSingleAnalyst =
+			fd.targetLowPrice === fd.targetMeanPrice && fd.targetMeanPrice === fd.targetHighPrice;
 		if (!isAnomalous && !isSingleAnalyst) {
 			const divisor = isGBp ? 100 : 1;
 			stock.analystTargets = {
@@ -280,7 +297,9 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 				high: +(fd.targetHighPrice / divisor).toFixed(2)
 			};
 		} else if (isSingleAnalyst) {
-			console.log(`  ⚠️  ${stock.ticker} — single analyst target (${fd.targetMeanPrice}), skipping analystTargets`);
+			console.log(
+				`  ⚠️  ${stock.ticker} — single analyst target (${fd.targetMeanPrice}), skipping analystTargets`
+			);
 			delete stock.analystTargets;
 		}
 	}
@@ -299,13 +318,15 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 			if (currentYearTrend?.earningsEstimate?.avg && nextYearTrend?.earningsEstimate?.avg) {
 				const currentEps = currentYearTrend.earningsEstimate.avg;
 				const nextEps = nextYearTrend.earningsEstimate.avg;
-				const impliedGrowth = ((nextEps / currentEps) - 1) * 100;
+				const impliedGrowth = (nextEps / currentEps - 1) * 100;
 
 				// Cap at 35% to avoid analyst optimism bias (Chan, Karceski & Lakonishok 2003)
 				const cappedGrowth = Math.min(35, Math.max(-10, impliedGrowth));
 				model.epsGrowth = `${Math.round(cappedGrowth)}%`;
 				model.epsGrowthSource = 'auto';
-				console.log(`  📊 ${stock.ticker} — auto EPS growth: ${model.epsGrowth} (from analyst estimates)`);
+				console.log(
+					`  📊 ${stock.ticker} — auto EPS growth: ${model.epsGrowth} (from analyst estimates)`
+				);
 			}
 		}
 
@@ -365,7 +386,9 @@ function applyUpdates(stock: any, quote: any, summary: any, historicalData: any)
 			if (rawDy != null) {
 				const dyPct = rawDy * 100;
 				if (dyPct > 25) {
-					console.log(`  ⚠️  ${stock.ticker} — anomalous dividend yield (${dyPct.toFixed(0)}%), skipping (likely currency unit mismatch)`);
+					console.log(
+						`  ⚠️  ${stock.ticker} — anomalous dividend yield (${dyPct.toFixed(0)}%), skipping (likely currency unit mismatch)`
+					);
 				} else {
 					model.dividendYield = fmtRoundPct(dyPct);
 				}
@@ -573,9 +596,8 @@ async function main() {
 			const dcfData = dcfMap[stock.ticker];
 			if (dcfData) {
 				const price = parseDisplayPrice(stock.currentPrice);
-				const discount = price != null && price > 0
-					? +((dcfData.dcf - price) / price * 100).toFixed(0)
-					: null;
+				const discount =
+					price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
 				stock.intrinsicValue = {
 					dcf: dcfData.dcf,
 					date: dcfData.date,

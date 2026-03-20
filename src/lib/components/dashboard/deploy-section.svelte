@@ -40,7 +40,8 @@
 		sitting on a likely value floor.
 	</div>
 	<p class="section-note">
-		Must beat the ETF alternative with base 1Y return at least {hurdles.etfCagr}% and bear return above
+		Must beat the ETF alternative with base 1Y return at least {hurdles.etfCagr}% and bear return
+		above
 		{hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside floor looks
 		unusually strong.
 	</p>
@@ -139,7 +140,7 @@
 		margin-bottom: 1.5rem;
 		line-height: 1.5;
 	}
-	
+
 	.top-picks {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -151,7 +152,9 @@
 		border: 1px solid var(--border-subtle);
 		border-radius: 0.75rem;
 		padding: 1.25rem;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		box-shadow:
+			0 4px 6px -1px rgba(0, 0, 0, 0.1),
+			0 2px 4px -1px rgba(0, 0, 0, 0.06);
 		position: relative;
 		overflow: hidden;
 	}
@@ -212,13 +215,13 @@
 		color: var(--text-muted);
 		line-height: 1.4;
 	}
-	
+
 	.signal-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 		gap: 1rem;
 	}
-	
+
 	.empty-state {
 		background: var(--bg-surface);
 		border: 1px dashed var(--border-hover);

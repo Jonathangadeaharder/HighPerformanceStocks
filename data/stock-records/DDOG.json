@@ -4,14 +4,15 @@
 	"group": "Cloud Infrastructure",
 	"confidence": "low",
 	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
-	"marketCap": "$46.0B USD",
-	"sharpeRatio": 0.78,
-	"expectedCAGR": "-7% - 100%",
+	"marketCap": "$45.0B USD",
+	"sharpeRatio": 0.83,
+	"expectedCAGR": "-5% - 104%",
 	"expectedVolatility": "~54%",
 	"valuation": {
-		"trailingPE": 419.2,
-		"forwardPE": 49.1,
-		"evEbitda": 5660.5
+		"trailingPE": 410.4,
+		"forwardPE": 48.1,
+		"evEbitda": 5660.5,
+		"evFcf": 48.4
 	},
 	"metrics": {
 		"roe": "3.3%",
@@ -23,42 +24,42 @@
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$129.94",
+	"currentPrice": "$127.21",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-7%",
-			"base": "40%",
-			"bull": "100%"
+			"bear": "-5%",
+			"base": "43%",
+			"bull": "104%"
 		},
 		"ttmEPS": 2.12,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-20T09:50:03.876Z",
+	"lastUpdated": "2026-03-20T15:11:41.047Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.5,
+		"score": 2.45,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 49.1,
+			"multiple": 48.1,
 			"cvStock": 0.11,
 			"riskMultiplier": 1.018
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 129.94,
+				"price": 127.21,
 				"price6mAgo": 138.35,
-				"price1mAgo": 115.66,
+				"price1mAgo": 102.61,
 				"low3m": 98.01,
-				"return6m": -6.1,
-				"return1m": 12.3,
+				"return6m": -8.1,
+				"return1m": 24,
 				"near3mLow": false
 			},
 			"revisions": {

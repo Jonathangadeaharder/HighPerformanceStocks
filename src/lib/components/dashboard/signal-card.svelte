@@ -34,10 +34,10 @@
 	} = $props();
 </script>
 
-<button 
-	class="signal-card" 
-	class:wait={kind === 'wait'} 
-	class:expanded 
+<button
+	class="signal-card"
+	class:wait={kind === 'wait'}
+	class:expanded
 	aria-expanded={expanded}
 	aria-controls="details-{stock.ticker}"
 	onclick={onToggle}
@@ -69,13 +69,19 @@
 	{#if stock.screener?.realityChecks}
 		<div class="signal-row3">
 			{#if stock.screener.realityChecks.stabilization}
-				<span class="rc" style="color:{returnColor(stock.screener.realityChecks.stabilization.return6m)}">
+				<span
+					class="rc"
+					style="color:{returnColor(stock.screener.realityChecks.stabilization.return6m)}"
+				>
 					{kind === 'deploy' ? '✓ ' : ''}{stabilizationReturn(
 						stock.screener.realityChecks.stabilization.return6m
 					)}
 					6m
 				</span>
-				<span class="rc" style="color:{returnColor(stock.screener.realityChecks.stabilization.return1m)}">
+				<span
+					class="rc"
+					style="color:{returnColor(stock.screener.realityChecks.stabilization.return1m)}"
+				>
 					{kind === 'deploy' ? '✓ ' : ''}{stabilizationReturn(
 						stock.screener.realityChecks.stabilization.return1m
 					)}
@@ -147,7 +153,8 @@
 					<div class="scenario-params">
 						{#if stock.cagrModel.epsGrowth}EPS growth {stock.cagrModel.epsGrowth}{/if}
 						{#if stock.analystTargets}
-							· Targets ${stock.analystTargets.low} / ${stock.analystTargets.mean} / ${stock.analystTargets.high}
+							· Targets ${stock.analystTargets.low} / ${stock.analystTargets.mean} / ${stock
+								.analystTargets.high}
 						{/if}
 						{#if stock.cagrModel.dividendYield && stock.cagrModel.dividendYield !== '0%'}
 							· DY {stock.cagrModel.dividendYield}
@@ -159,9 +166,7 @@
 				</div>
 			{/if}
 
-			<SensitivityLine
-				sensitivityCagr={stock.sensitivityCagr}
-			/>
+			<SensitivityLine sensitivityCagr={stock.sensitivityCagr} />
 			<QualityBadges metrics={stock.metrics} />
 
 			{#if stock.bullCase}
@@ -181,35 +186,35 @@
 </button>
 
 <style>
-.signal-card {
-	background: var(--bg-surface);
-	border: 1px solid var(--border-subtle);
-	border-radius: 0.5rem;
-	padding: 1rem;
-	text-align: left;
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	transition: all 0.2s ease;
-	width: 100%;
-	cursor: pointer;
-}
-.signal-card:hover {
-	border-color: var(--border-hover);
-	transform: translateY(-2px);
-	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-.signal-card:focus-visible {
-	outline: 2px solid var(--color-primary, #3b82f6);
-	outline-offset: 2px;
-}
-.signal-card.expanded {
-	background: var(--bg-body);
-	border-color: var(--border-hover);
-}
-.signal-card.wait {
-	opacity: 0.9;
-}
+	.signal-card {
+		background: var(--bg-surface);
+		border: 1px solid var(--border-subtle);
+		border-radius: 0.5rem;
+		padding: 1rem;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		transition: all 0.2s ease;
+		width: 100%;
+		cursor: pointer;
+	}
+	.signal-card:hover {
+		border-color: var(--border-hover);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	}
+	.signal-card:focus-visible {
+		outline: 2px solid var(--color-primary, #3b82f6);
+		outline-offset: 2px;
+	}
+	.signal-card.expanded {
+		background: var(--bg-body);
+		border-color: var(--border-hover);
+	}
+	.signal-card.wait {
+		opacity: 0.9;
+	}
 
 	.signal-row1 {
 		display: flex;
@@ -310,13 +315,17 @@
 		gap: 0.75rem;
 		cursor: default;
 	}
-	
+
 	.summary-line {
 		font-size: 0.875rem;
 		line-height: 1.4;
 	}
-	.summary-line.success { color: var(--color-success); }
-	.summary-line.warn { color: var(--color-warning); }
+	.summary-line.success {
+		color: var(--color-success);
+	}
+	.summary-line.warn {
+		color: var(--color-warning);
+	}
 
 	.scenarios-panel {
 		background: var(--bg-surface);
@@ -344,7 +353,9 @@
 		border-radius: 0.25rem;
 		border: 1px solid var(--border-subtle);
 	}
-	.scenario.base { border-color: var(--border-hover); }
+	.scenario.base {
+		border-color: var(--border-hover);
+	}
 	.scenario-label {
 		font-size: 0.625rem;
 		text-transform: uppercase;
@@ -370,9 +381,13 @@
 		padding-left: 0.5rem;
 		border-left: 2px solid;
 	}
-	.case.bull { border-color: var(--color-success); }
-	.case.bear { border-color: var(--color-danger); }
-	
+	.case.bull {
+		border-color: var(--color-success);
+	}
+	.case.bear {
+		border-color: var(--color-danger);
+	}
+
 	.case-label {
 		font-size: 0.75rem;
 		text-transform: uppercase;
@@ -380,9 +395,13 @@
 		font-weight: 700;
 		margin-bottom: 0.125rem;
 	}
-	.case.bull .case-label { color: var(--color-success); }
-	.case.bear .case-label { color: var(--color-danger); }
-	
+	.case.bull .case-label {
+		color: var(--color-success);
+	}
+	.case.bear .case-label {
+		color: var(--color-danger);
+	}
+
 	.case p {
 		font-size: 0.875rem;
 		color: var(--text-secondary);

@@ -6,14 +6,15 @@
 	"confidence": "high",
 	"confidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
 	"marketCap": "HK$4582.8B",
-	"sharpeRatio": 1.17,
-	"expectedCAGR": "-2% - 81%",
+	"sharpeRatio": 1.13,
+	"expectedCAGR": "-3% - 80%",
 	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 20.1,
 		"forwardPE": 13,
 		"pegRatio": null,
-		"evEbitda": 17.1
+		"evEbitda": 17.1,
+		"evFcf": 27.3
 	},
 	"metrics": {
 		"roe": "20.0%",
@@ -22,13 +23,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "36%"
 	},
-	"targetPrice": "HK$755.94",
+	"targetPrice": "HK$755.68",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
 	"bearCase": "Chinese regulatory risk remains — gaming license freezes, antitrust actions, or data privacy rules could resurface. Advertising revenue is cyclically exposed to China's weak consumer economy. International gaming competition from Microsoft/Activision intensifying. VIE structure risk similar to BABA for offshore investors. Heavy investment in AI and cloud could compress margins near-term. HKD-denominated stock adds currency layer for USD-based investors (HKD pegged to USD via 7.75-7.85 band, but peg could theoretically break under extreme stress).",
 	"currentPrice": "HK$508",
 	"consensus": {
 		"tipranks": "HK$590",
-		"yahoo": "HK$755.94",
+		"yahoo": "HK$755.68",
 		"stockanalysis": "HK$575"
 	},
 	"cagrModel": {
@@ -36,24 +37,24 @@
 		"epsGrowth": "16%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "50%",
-			"bull": "81%"
+			"bear": "-3%",
+			"base": "49%",
+			"bull": "80%"
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-20T09:49:58.668Z",
+	"lastUpdated": "2026-03-20T15:11:35.759Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.79,
+		"score": 0.91,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "Forward P/E",
 			"multiple": 13,
 			"cvStock": 0.037,
-			"riskMultiplier": 0.974
+			"riskMultiplier": 1.124
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -94,8 +95,8 @@
 	},
 	"description": "Tencent Holdings Limited, an investment holding company, provides value-added services, marketing services, fintech, and business services in Mainland China and internationally.",
 	"analystTargets": {
-		"low": 492.86,
-		"mean": 755.94,
-		"high": 915.55
+		"low": 492.69,
+		"mean": 755.68,
+		"high": 915.22
 	}
 }

@@ -5,15 +5,16 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
-	"marketCap": "$60.7B USD",
-	"sharpeRatio": -0.31,
-	"expectedCAGR": "-17% - 8%",
+	"marketCap": "$62.0B USD",
+	"sharpeRatio": -0.41,
+	"expectedCAGR": "-19% - 4%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 11.7,
-		"forwardPE": 17.4,
+		"trailingPE": 11.9,
+		"forwardPE": 17.7,
 		"pegRatio": null,
-		"evEbitda": 8.6
+		"evEbitda": 8.6,
+		"evFcf": 33.9
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -26,7 +27,7 @@
 	"targetPrice": "$274.23",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$281.87",
+	"currentPrice": "$288.18",
 	"consensus": {
 		"tipranks": "$280",
 		"yahoo": "$274.23"
@@ -36,13 +37,13 @@
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-17%",
-			"base": "-2%",
-			"bull": "8%"
+			"bear": "-19%",
+			"base": "-5%",
+			"bull": "4%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-20T09:50:25.934Z",
+	"lastUpdated": "2026-03-20T15:11:48.290Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 3.43,
@@ -58,12 +59,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 281.87,
+				"price": 288.18,
 				"price6mAgo": 230.8,
-				"price1mAgo": 226.47,
+				"price1mAgo": 223.35,
 				"low3m": 188.13,
-				"return6m": 22.1,
-				"return1m": 24.5,
+				"return6m": 24.9,
+				"return1m": 29,
 				"near3mLow": false
 			},
 			"revisions": {

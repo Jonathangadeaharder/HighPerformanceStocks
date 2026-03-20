@@ -33,7 +33,9 @@
 		border: 1px solid var(--border-subtle);
 		border-radius: 0.75rem;
 		padding: 1.5rem;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		box-shadow:
+			0 4px 6px -1px rgba(0, 0, 0, 0.1),
+			0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	}
 	.section-label {
 		font-size: 1rem;
@@ -61,10 +63,16 @@
 		flex-direction: column;
 		gap: 0.25rem;
 	}
-	.alloc-box.scv { border-top: 3px solid #3b82f6; }
-	.alloc-box.mom { border-top: 3px solid #8b5cf6; }
-	.alloc-box.em { border-top: 3px solid #ec4899; }
-	
+	.alloc-box.scv {
+		border-top: 3px solid #3b82f6;
+	}
+	.alloc-box.mom {
+		border-top: 3px solid #8b5cf6;
+	}
+	.alloc-box.em {
+		border-top: 3px solid #ec4899;
+	}
+
 	.alloc-pct {
 		font-family: var(--font-mono);
 		font-size: 1.25rem;

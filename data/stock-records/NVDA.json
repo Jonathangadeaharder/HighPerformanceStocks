@@ -5,15 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4339.9B USD",
-	"sharpeRatio": 1,
-	"expectedCAGR": "-22% - 113%",
+	"marketCap": "$4276.0B USD",
+	"sharpeRatio": 1.06,
+	"expectedCAGR": "-20% - 116%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 36.5,
-		"forwardPE": 16.1,
+		"trailingPE": 36,
+		"forwardPE": 15.8,
 		"pegRatio": 1.6,
-		"evEbitda": 32.2
+		"evEbitda": 32.2,
+		"evFcf": 73.8
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -26,7 +27,7 @@
 	"targetPrice": "$268.43",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$178.56",
+	"currentPrice": "$175.93",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$268.43",
@@ -37,33 +38,33 @@
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "50%",
-			"bull": "113%"
+			"bear": "-20%",
+			"base": "53%",
+			"bull": "116%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-20T09:50:29.986Z",
+	"lastUpdated": "2026-03-20T15:11:52.616Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.57,
+		"score": 0.56,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
-			"multiple": 16.1,
+			"multiple": 15.8,
 			"cvStock": 0.128,
 			"riskMultiplier": 1.029
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 178.56,
+				"price": 175.93,
 				"price6mAgo": 183.61,
-				"price1mAgo": 189.82,
+				"price1mAgo": 191.55,
 				"low3m": 171.03,
-				"return6m": -2.8,
-				"return1m": -5.9,
+				"return6m": -4.2,
+				"return1m": -8.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -81,7 +82,7 @@
 	"intrinsicValue": {
 		"dcf": 234.31,
 		"date": "2026-03-20",
-		"discount": 31
+		"discount": 33
 	},
 	"qcs": {
 		"earningsScore": 1.63,

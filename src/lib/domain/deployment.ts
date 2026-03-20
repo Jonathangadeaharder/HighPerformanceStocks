@@ -37,7 +37,10 @@ function computeMomentumStats(stocks: FindingStock[]): MomentumStats {
 	}
 	const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
 	const variance = values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1);
-	return { mean: +mean.toFixed(2), stddev: +Math.max(MOMENTUM_MIN_STDDEV, Math.sqrt(variance)).toFixed(2) };
+	return {
+		mean: +mean.toFixed(2),
+		stddev: +Math.max(MOMENTUM_MIN_STDDEV, Math.sqrt(variance)).toFixed(2)
+	};
 }
 
 function computeQualityBonus(stock: FindingStock): number {
@@ -54,8 +57,10 @@ function computeQualityBonus(stock: FindingStock): number {
 
 	// Hyper-rational adjustment: De-lever the ROE. High ROE driven by extreme debt is not "Quality".
 	// If Net Debt / EBITDA > 3.0x, penalize the ROE bonus by 50%.
-	if (m.netDebtEbitda && typeof m.netDebtEbitda === 'string') {
-		const debtMultiple = Number.parseFloat(m.netDebtEbitda.replace('x', ''));
+	const netDebt = m.netDebtEbitda;
+	if (netDebt != null) {
+		const debtStr = typeof netDebt === 'string' ? netDebt : String(netDebt);
+		const debtMultiple = Number.parseFloat(debtStr.replace(/[^\d.-]/g, ''));
 		// eslint-disable-next-line unicorn/no-zero-fractions
 		if (!Number.isNaN(debtMultiple) && debtMultiple > 3.0) {
 			roeBonus *= 0.5;
@@ -70,7 +75,7 @@ function computeQualityBonus(stock: FindingStock): number {
 		bonus += fcfBonus;
 	}
 
-	return +(bonus).toFixed(2);
+	return +bonus.toFixed(2);
 }
 
 function computeSensitivity(stock: FindingStock): number | null {
@@ -83,7 +88,11 @@ function computeSensitivity(stock: FindingStock): number | null {
 	return +(bullReturn - bearReturn).toFixed(1);
 }
 
-function selectDiverseTopPicks(deployNow: FindingStock[], maxPicks: number, maxPerGroup: number): FindingStock[] {
+function selectDiverseTopPicks(
+	deployNow: FindingStock[],
+	maxPicks: number,
+	maxPerGroup: number
+): FindingStock[] {
 	const picks: FindingStock[] = [];
 	const groupCounts: Record<string, number> = {};
 	const labels = ['Top Pick', 'Second Pick', 'Third Pick'];
@@ -113,11 +122,17 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	const return6m = stock.screener?.realityChecks?.stabilization?.return6m ?? 0;
 	const return1m = stock.screener?.realityChecks?.stabilization?.return1m ?? 0;
 	const momentumInput = return6m - return1m;
-	const momentumZScore = momentum.stddev > 0 ? (momentumInput - momentum.mean) / momentum.stddev : 0;
+	const momentumZScore =
+		momentum.stddev > 0 ? (momentumInput - momentum.mean) / momentum.stddev : 0;
 
 	// Aggressive Factor Weighting: Quantitative literature assigns roughly equal explanatory power to Value and Momentum.
 	// We scale the Z-score by 7.5 and cap at +/- 15 points.
-	const momentumBonus = Math.max(-15, Math.min(15, momentumZScore * 7.5));
+	let momentumBonus = Math.max(-15, Math.min(15, momentumZScore * 7.5));
+
+	// Remove momentum penalty if we're buying a deep value floor
+	if (momentumBonus < 0 && hasLikelyValueFloor(stock)) {
+		momentumBonus = 0;
+	}
 
 	// Quality factor bonus (max +10 points) from ROE, FCF yield, Rule of 40.
 	const qualityBonus = computeQualityBonus(stock);
@@ -125,10 +140,22 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	// Quantitative Conviction Score (QCS)
 	const qcsBonus = stock.qcs?.totalScore ?? 0;
 
-	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus + qualityBonus + qcsBonus).toFixed(1);
+	return +(
+		valuationStrength +
+		base * 1.2 +
+		bear * 0.8 +
+		upside * 0.1 +
+		momentumBonus +
+		qualityBonus +
+		qcsBonus
+	).toFixed(1);
 }
 
 function hasLikelyValueFloor(stock: FindingStock): boolean {
+	// Deep Cyclicals do not establish linear 'value floors'. A cyclical hitting a 3-month low
+	// with a 'cheap' score is the exact definition of a cyclical value trap rolling over.
+	if (stock.cyclical) return false;
+
 	const stabilization = stock.screener?.realityChecks?.stabilization;
 	const revisions = stock.screener?.realityChecks?.revisions;
 
@@ -149,9 +176,17 @@ function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	const bear = stock.bearCagr ?? -999;
 	const basePass = base >= ETF_HURDLE_RETURN;
 	const bearPass = bear > BEAR_FLOOR_RETURN;
+	const stabPass = stock.screener?.realityChecks?.stabilization?.pass !== false;
 
-	if (basePass && bearPass) {
+	if (basePass && bearPass && stabPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
+	}
+
+	if (!stabPass) {
+		return {
+			status: 'WAIT',
+			reason: 'Falling knife (stabilization failed) \u2013 likely lagging analyst targets.'
+		};
 	}
 
 	if (!basePass) {
@@ -178,16 +213,15 @@ function deploymentForWait(stock: FindingStock): DeploymentInfo {
 }
 
 function deploymentForFail(stock: FindingStock): DeploymentInfo {
-	const epsGrowth = parsePercent(stock.cagrModel?.epsGrowth) ?? 0;
 	const score = stock.screener?.score;
 	const note = stock.screener?.note;
 	const base = stock.baseCagr ?? -999;
 	const bear = stock.bearCagr ?? -999;
 
-	if (epsGrowth >= 20 && (score ?? 0) >= 1.5) {
+	if ((score ?? 0) >= 1.5) {
 		return {
 			status: 'OVERPRICED',
-			reason: note ?? `Hyper-growth (${epsGrowth}%) at extreme valuation (Score ${score}). Wait for compression.`
+			reason: note ?? `Extreme valuation (Score ${score}). Wait for compression.`
 		};
 	}
 
@@ -203,14 +237,18 @@ function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	if (base < ETF_HURDLE_RETURN) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
+			reason:
+				note ??
+				`Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
 		};
 	}
 
 	if (bear <= BEAR_FLOOR_RETURN) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Cheap (Score ${score}) but bear return ${bear}% is below the ${BEAR_FLOOR_RETURN}% safety floor.`
+			reason:
+				note ??
+				`Cheap (Score ${score}) but bear return ${bear}% is below the ${BEAR_FLOOR_RETURN}% safety floor.`
 		};
 	}
 
@@ -223,29 +261,29 @@ function assignDeployment(stock: FindingStock): void {
 	switch (signal) {
 		case 'PASS': {
 			stock.deployment = deploymentForPass(stock);
-			return;
+			break;
 		}
 		case 'WAIT': {
 			stock.deployment = deploymentForWait(stock);
-			return;
+			break;
 		}
 		case 'REJECTED': {
 			stock.deployment = {
 				status: 'REJECT',
 				reason: stock.screener?.note ?? 'Consensus is deteriorating.'
 			};
-			return;
+			break;
 		}
 		case 'FAIL': {
 			stock.deployment = deploymentForFail(stock);
-			return;
+			break;
 		}
 		case 'NO_DATA': {
 			stock.deployment = {
 				status: 'NO_DATA',
 				reason: stock.screener?.note ?? 'Insufficient data.'
 			};
-			return;
+			break;
 		}
 		default: {
 			const _exhaustiveCheck: never = signal;
@@ -255,6 +293,11 @@ function assignDeployment(stock: FindingStock): void {
 				reason: `Unknown signal: ${_exhaustiveCheck}`
 			};
 		}
+	}
+
+	// Append cyclical warning universally
+	if (stock.cyclical && stock.deployment.status !== 'NO_DATA') {
+		stock.deployment.reason += ' (CYCLICAL EPS)';
 	}
 }
 

@@ -4,15 +4,16 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 5.4x.",
-	"marketCap": "$82.0B USD",
-	"sharpeRatio": 0.33,
-	"expectedCAGR": "-1% - 52%",
+	"marketCap": "$81.4B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "0% - 53%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 65.8,
-		"forwardPE": 25.1,
+		"trailingPE": 65.3,
+		"forwardPE": 24.9,
 		"pegRatio": null,
-		"evEbitda": 56.2
+		"evEbitda": 56.2,
+		"evFcf": 29.3
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
@@ -25,7 +26,7 @@
 	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~5.4x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$428.25",
+	"currentPrice": "$424.91",
 	"consensus": {
 		"tipranks": "$535",
 		"yahoo": "$537.75",
@@ -36,33 +37,33 @@
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "26%",
-			"bull": "52%"
+			"bear": "0%",
+			"base": "27%",
+			"bull": "53%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-20T09:50:33.056Z",
+	"lastUpdated": "2026-03-20T15:11:55.999Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.88,
+		"score": 1.87,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 25.1,
+			"multiple": 24.9,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 428.25,
+				"price": 424.91,
 				"price6mAgo": 514.79,
-				"price1mAgo": 439.94,
+				"price1mAgo": 420.82,
 				"low3m": 404.53,
-				"return6m": -16.8,
-				"return1m": -2.7,
+				"return6m": -17.5,
+				"return1m": 1,
 				"near3mLow": false
 			},
 			"revisions": {

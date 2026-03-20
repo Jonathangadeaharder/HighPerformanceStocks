@@ -10,18 +10,19 @@
 		"ttmEPS": 7.17,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-16%",
-			"base": "34%",
-			"bull": "72%"
+			"bear": "-15%",
+			"base": "36%",
+			"bull": "74%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$208.76",
-	"marketCap": "$2241.0B USD",
+	"currentPrice": "$206.69",
+	"marketCap": "$2218.8B USD",
 	"valuation": {
-		"trailingPE": 29.2,
-		"forwardPE": 22.3,
-		"evEbitda": 15.8
+		"trailingPE": 28.9,
+		"forwardPE": 22.1,
+		"evEbitda": 15.8,
+		"evFcf": 96.5
 	},
 	"metrics": {
 		"roe": "22.3%",
@@ -34,29 +35,29 @@
 		"yahoo": "$280.55"
 	},
 	"targetPrice": "$280.55",
-	"expectedCAGR": "-16% - 72%",
+	"expectedCAGR": "-15% - 74%",
 	"expectedVolatility": "~35%",
-	"sharpeRatio": 0.67,
+	"sharpeRatio": 0.71,
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.07,
+		"score": 1.06,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 22.3,
+			"multiple": 22.1,
 			"cvStock": 0.173,
 			"riskMultiplier": 1.056
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 208.76,
+				"price": 206.69,
 				"price6mAgo": 227.63,
-				"price1mAgo": 210.11,
+				"price1mAgo": 205.27,
 				"low3m": 196,
-				"return6m": -8.3,
-				"return1m": -0.6,
+				"return6m": -9.2,
+				"return1m": 0.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -72,10 +73,10 @@
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-20T09:49:59.880Z",
+	"lastUpdated": "2026-03-20T15:11:36.854Z",
 	"intrinsicValue": {
-		"dcf": 164.81,
-		"date": "2026-03-19",
+		"dcf": 162.67,
+		"date": "2026-03-20",
 		"discount": -21
 	},
 	"qcs": {

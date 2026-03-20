@@ -5,7 +5,11 @@ const yf = new YahooFinance({
 	suppressNotices: ['yahooSurvey', 'ripHistorical']
 });
 
-const YAHOO_TICKER_MAP: Record<string, string> = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
+const YAHOO_TICKER_MAP: Record<string, string> = {
+	'BRK.B': 'BRK-B',
+	'HEI.A': 'HEI-A',
+	'FIH.U.TO': 'FIH-U.TO'
+};
 
 export function yahooTicker(ticker: string): string {
 	return YAHOO_TICKER_MAP[ticker] ?? ticker;
@@ -89,7 +93,9 @@ export async function fetchHistoricalData(ticker: string): Promise<HistoricalRes
 		const low3m =
 			trailing3m.length > 0
 				? Math.min(
-						...trailing3m.map((point) => point.low ?? point.close).filter((value): value is number => value != null && value > 0)
+						...trailing3m
+							.map((point) => point.low ?? point.close)
+							.filter((value): value is number => value != null && value > 0)
 					)
 				: null;
 
@@ -103,12 +109,12 @@ export async function fetchHistoricalData(ticker: string): Promise<HistoricalRes
 		}
 
 		if (logReturns.length < 50) {
-		return {
-			vol: null,
-			price6mAgo: entry6m?.close ?? null,
-			price1mAgo: entry1m?.close ?? null,
-			low3m: low3m ?? null
-		};
+			return {
+				vol: null,
+				price6mAgo: entry6m?.close ?? null,
+				price1mAgo: entry1m?.close ?? null,
+				low3m: low3m ?? null
+			};
 		}
 
 		const mean = logReturns.reduce((sum, value) => sum + value, 0) / logReturns.length;

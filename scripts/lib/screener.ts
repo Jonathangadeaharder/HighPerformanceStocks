@@ -5,7 +5,6 @@ import type {
 	GrowthBranch,
 	HistoricalData,
 	RealityChecks,
-	
 	ScreenerResult,
 	ScreenerStock,
 	YahooSummary
@@ -24,7 +23,9 @@ const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
 
-function getAnalystDispersion(earningsTrend: EarningsTrend | undefined): { avg: number; low: number; high: number } | null {
+function getAnalystDispersion(
+	earningsTrend: EarningsTrend | undefined
+): { avg: number; low: number; high: number } | null {
 	if (!earningsTrend?.trend) return null;
 
 	const entry = earningsTrend.trend.find((trend) => trend.period === '+1y');
@@ -35,9 +36,30 @@ function getAnalystDispersion(earningsTrend: EarningsTrend | undefined): { avg: 
 	return { avg, low, high };
 }
 
-function computeGrowthScore(engine: keyof typeof ENGINE_THRESHOLDS, multipleType: string, multiple: number, growthPct: number, cvStock: number): ScreenerResult {
-	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
-	const score = (multiple / growthPct) * riskMultiplier;
+function computeGrowthScore(
+	engine: keyof typeof ENGINE_THRESHOLDS,
+	multipleType: string,
+	multiple: number,
+	growthPct: number,
+	cvStock: number,
+	isCyclical = false
+): ScreenerResult {
+	// Structural constraint for hyper-growth: diminishing returns above 30% (secular AI/semi adjustment)
+	// Prevents valuation collapse scaling purely linear growth forever, but allows initial hyper-scaling
+	let effectiveGrowth = growthPct;
+	if (effectiveGrowth > 30) {
+		effectiveGrowth = 30 + (effectiveGrowth - 30) * 0.5;
+	}
+
+	let riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
+
+	// Deep Cyclical constraint: If peak earnings are unsustainably fat (compressing P/E artificially low),
+	// penalize the score proportionally to break the 'value trap' illusion.
+	if (isCyclical && multiple > 0 && multiple < 15) {
+		riskMultiplier *= 15 / multiple;
+	}
+
+	const score = (multiple / effectiveGrowth) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
@@ -63,24 +85,16 @@ function computeGrowthScore(engine: keyof typeof ENGINE_THRESHOLDS, multipleType
 	};
 }
 
-function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null | undefined): GrowthBranch {
+function detectGrowthBranch(
+	stock: ScreenerStock,
+	valuationPrice: number | null | undefined
+): GrowthBranch {
 	const basis = stock.cagrModel?.basis ?? '';
 	const lowerBasis = basis.toLowerCase();
 	const valuation = stock.valuation ?? {};
 	const ttmBasis = stock.cagrModel?.ttmEPS;
-	const priceToBasis = valuationPrice != null && ttmBasis != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
-
-	if (
-		(lowerBasis.includes('serial acquirer') || stock.group === 'Serial Acquirers') &&
-		valuation.evEbitda != null &&
-		valuation.evEbitda > 0
-	) {
-		return {
-			engine: 'fEVG',
-			multipleType: 'EV/EBITDA',
-			multiple: valuation.evEbitda
-		};
-	}
+	const priceToBasis =
+		valuationPrice != null && ttmBasis != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
 
 	if (/fee-related earnings|\bfre\b/.test(lowerBasis)) {
 		return {
@@ -99,7 +113,7 @@ function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null 
 	}
 
 	if (
-		/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|cash flow/.test(
+		/price-to-fcf|price-to-cf|price-to-dcf|operating cfo|distributable cf|fcfa2s|fcf yield|cash flow|fcfbs/.test(
 			lowerBasis
 		)
 	) {
@@ -111,13 +125,41 @@ function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null 
 		};
 	}
 
-	if ((!valuation.forwardPE || valuation.forwardPE <= 0) && priceToBasis != null && priceToBasis > 0) {
+	if (
+		(lowerBasis.includes('serial acquirer') || stock.group === 'Serial Acquirers') &&
+		valuation.evEbitda != null &&
+		valuation.evEbitda > 0
+	) {
+		return {
+			engine: 'fEVG',
+			multipleType: 'EV/EBITDA',
+			multiple: valuation.evEbitda
+		};
+	}
+
+	if (
+		(!valuation.forwardPE || valuation.forwardPE <= 0) &&
+		priceToBasis != null &&
+		priceToBasis > 0
+	) {
+		return {
+			engine: 'tPERG',
+			multipleType: 'Trailing P/E',
+			multiple: priceToBasis
+		};
+	}
+
+	if (stock.cyclical && priceToBasis != null && valuation.forwardPE != null && priceToBasis > 0) {
+		// Cyclicals look cheap when trailing EPS is fat, but even worse if forward estimates
+		// remain oblivious while the cycle peaks. Enforce peak-adjusted conservative multiple.
+		if (priceToBasis < valuation.forwardPE) {
 			return {
 				engine: 'tPERG',
-				multipleType: 'Trailing P/E',
+				multipleType: 'Peak-Adjusted P/E',
 				multiple: priceToBasis
 			};
 		}
+	}
 
 	return {
 		engine: 'fPERG',
@@ -126,7 +168,12 @@ function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null 
 	};
 }
 
-function computeTotalReturn(growthPct: number, divYieldPct: number, forwardPE: number, debtToEquity: number): ScreenerResult {
+function computeTotalReturn(
+	growthPct: number,
+	divYieldPct: number,
+	forwardPE: number,
+	debtToEquity: number
+): ScreenerResult {
 	const earningsYield = (1 / forwardPE) * 100;
 	if (earningsYield <= divYieldPct) {
 		return {
@@ -162,7 +209,13 @@ function computeTotalReturn(growthPct: number, divYieldPct: number, forwardPE: n
 	};
 }
 
-function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | undefined, historicalData: HistoricalData | undefined, summary: YahooSummary | undefined): void {
+function applyRealityChecks(
+	result: ScreenerResult,
+	rawPrice: number | null | undefined,
+	historicalData: HistoricalData | undefined,
+	summary: YahooSummary | undefined,
+	stock: ScreenerStock
+): void {
 	const checks: RealityChecks = {};
 	const price6mAgo = historicalData?.price6mAgo;
 	const price1mAgo = historicalData?.price1mAgo;
@@ -199,8 +252,14 @@ function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | un
 	const revisions = entry?.epsRevisions;
 	const up30d = revisions?.upLast30days ?? 0;
 	const down30d = revisions?.downLast30days ?? 0;
-	// Require >= 3 downgrades with 0 upgrades to reject (avoid false positives from single analyst moves)
-	const consensusCollapsing = down30d >= 3 && up30d === 0;
+	
+	// Alt Asset Managers and PE firms get downgraded as a herd due to GAAP MTM volatility during selloffs.
+	// Require a much higher threshold to consider consensus completely collapsing.
+	const isAltAsset = stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(stock.cagrModel?.basis ?? '');
+	const downgradeThreshold = isAltAsset ? 7 : 3;
+
+	// Require >= threshold downgrades with 0 upgrades to reject (avoid false positives from single analyst moves)
+	const consensusCollapsing = down30d >= downgradeThreshold && up30d === 0;
 	checks.revisions = { pass: !consensusCollapsing, up30d, down30d };
 
 	if (consensusCollapsing) {
@@ -220,7 +279,9 @@ function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | un
 				: 'unknown';
 			checks.earningsSurprise = { surprise: +surprise.toFixed(1), quarter };
 			if (surprise < -10 && result.signal === 'PASS') {
-				result.note = result.note ? result.note + ' (Recent earnings miss)' : 'Recent earnings miss';
+				result.note = result.note
+					? result.note + ' (Recent earnings miss)'
+					: 'Recent earnings miss';
 			}
 		}
 	}
@@ -228,7 +289,13 @@ function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | un
 	result.realityChecks = checks;
 }
 
-export function computeScreener(stock: ScreenerStock, summary: YahooSummary | undefined, rawPrice: number | null | undefined, valuationPrice: number | null | undefined, historicalData: HistoricalData | undefined): ScreenerResult {
+export function computeScreener(
+	stock: ScreenerStock,
+	summary: YahooSummary | undefined,
+	rawPrice: number | null | undefined,
+	valuationPrice: number | null | undefined,
+	historicalData: HistoricalData | undefined
+): ScreenerResult {
 	const model = stock.cagrModel;
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
@@ -240,7 +307,9 @@ export function computeScreener(stock: ScreenerStock, summary: YahooSummary | un
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
 		const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
-		if (divYieldPct < 5.0) {
+		const isAltAsset = stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(model?.basis ?? '');
+		
+		if (divYieldPct < 5.0 || isAltAsset) {
 			const branch = detectGrowthBranch(stock, valuationPrice);
 			if (!branch.multiple || branch.multiple <= 0) {
 				return {
@@ -261,7 +330,8 @@ export function computeScreener(stock: ScreenerStock, summary: YahooSummary | un
 				branch.multipleType,
 				branch.multiple,
 				growthPct,
-				cvStock
+				cvStock,
+				stock.cyclical
 			);
 
 			const baseCagr = parsePercent(model?.scenarios?.base);
@@ -270,12 +340,19 @@ export function computeScreener(stock: ScreenerStock, summary: YahooSummary | un
 				result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${ETF_HURDLE_RETURN}% hurdle`;
 			}
 
-			applyRealityChecks(result, rawPrice, historicalData, summary);
+			applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 
 			if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
 				const fpe = stock.valuation?.forwardPE;
 				if (fpe != null && fpe > 0) {
-					const fPERGCheck = computeGrowthScore('fPERG', 'Forward P/E', fpe, growthPct, cvStock);
+					const fPERGCheck = computeGrowthScore(
+						'fPERG',
+						'Forward P/E',
+						fpe,
+						growthPct,
+						cvStock,
+						stock.cyclical
+					);
 					result.secondaryEngine = 'fPERG';
 					result.secondaryScore = fPERGCheck.score;
 				}
@@ -317,11 +394,9 @@ export function computeScreener(stock: ScreenerStock, summary: YahooSummary | un
 		result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
 	}
 
-	applyRealityChecks(result, rawPrice, historicalData, summary);
+	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 
 	return result;
 }
 
-
-
-export {type ScreenerInputs, type ScreenerResult, type RealityChecks} from './screener-types.js';
+export { type ScreenerInputs, type ScreenerResult, type RealityChecks } from './screener-types.js';

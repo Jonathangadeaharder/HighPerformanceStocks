@@ -67,7 +67,9 @@
 		border: 1px solid var(--border-subtle);
 		border-radius: 0.75rem;
 		padding: 1.5rem;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		box-shadow:
+			0 4px 6px -1px rgba(0, 0, 0, 0.1),
+			0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	}
 	.section-label {
 		font-size: 1rem;
@@ -86,10 +88,16 @@
 		border-radius: 0.5rem;
 		padding: 1rem;
 	}
-	.vol-card.high { border-left: 4px solid var(--color-danger); }
-	.vol-card.elevated { border-left: 4px solid var(--color-warning); }
-	.vol-card.normal { border-left: 4px solid var(--color-success); }
-	
+	.vol-card.high {
+		border-left: 4px solid var(--color-danger);
+	}
+	.vol-card.elevated {
+		border-left: 4px solid var(--color-warning);
+	}
+	.vol-card.normal {
+		border-left: 4px solid var(--color-success);
+	}
+
 	.vol-main {
 		display: flex;
 		align-items: center;

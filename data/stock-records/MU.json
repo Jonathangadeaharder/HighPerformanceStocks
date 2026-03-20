@@ -4,15 +4,16 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$500.0B USD",
-	"sharpeRatio": -0.15,
-	"expectedCAGR": "-56% - 46%",
+	"marketCap": "$482.3B USD",
+	"sharpeRatio": -0.09,
+	"expectedCAGR": "-54% - 52%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 42.2,
-		"forwardPE": 4.7,
+		"trailingPE": 40.7,
+		"forwardPE": 4.5,
 		"pegRatio": null,
-		"evEbitda": 13.5
+		"evEbitda": 13.5,
+		"evFcf": 171.6
 	},
 	"metrics": {
 		"fcfMargin": "~5%",
@@ -25,7 +26,7 @@
 	"targetPrice": "$432.49",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$444.27",
+	"currentPrice": "$428.53",
 	"consensus": {
 		"tipranks": "$431",
 		"yahoo": "$432.49",
@@ -36,34 +37,33 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-56%",
-			"base": "-3%",
-			"bull": "46%"
+			"bear": "-54%",
+			"base": "1%",
+			"bull": "52%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-20T09:50:28.796Z",
+	"lastUpdated": "2026-03-20T15:11:51.428Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.44,
+		"score": 1.39,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 4.7,
+			"multiple": 4.5,
 			"cvStock": 0.27,
-			"riskMultiplier": 1.114
+			"riskMultiplier": 3.713
 		},
-		"note": "Cheap (0.44) but base return -3% misses the 15% hurdle (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 444.27,
+				"price": 428.53,
 				"price6mAgo": 164.62,
-				"price1mAgo": 428.17,
-				"low3m": 245,
-				"return6m": 169.9,
-				"return1m": 3.8,
+				"price1mAgo": 420.97,
+				"low3m": 251.75,
+				"return6m": 160.3,
+				"return1m": 1.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,7 +75,8 @@
 				"surprise": 20.6,
 				"quarter": "2025-11"
 			}
-		}
+		},
+		"note": "(CYCLICAL EPS)"
 	},
 	"cyclical": true,
 	"qcs": {

@@ -5,15 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$171.6B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "3% - 61%",
+	"marketCap": "$166.0B USD",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "6% - 67%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 49.5,
-		"forwardPE": 32,
+		"trailingPE": 47.9,
+		"forwardPE": 30.9,
 		"pegRatio": 1.44,
-		"evEbitda": 40.9
+		"evEbitda": 40.9,
+		"evFcf": 47.4
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
@@ -27,7 +28,7 @@
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$136.26",
+	"currentPrice": "$131.84",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$177.74",
@@ -38,34 +39,34 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "30%",
-			"bull": "61%"
+			"bear": "6%",
+			"base": "35%",
+			"bull": "67%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-20T09:49:59.918Z",
+	"lastUpdated": "2026-03-20T15:11:37.021Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.53,
+		"score": 1.47,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 32,
+			"multiple": 30.9,
 			"cvStock": 0.082,
 			"riskMultiplier": 1.001
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 136.26,
+				"price": 131.84,
 				"price6mAgo": 145.4,
-				"price1mAgo": 132.79,
+				"price1mAgo": 127.43,
 				"low3m": 120,
-				"return6m": -6.3,
-				"return1m": 2.6,
+				"return6m": -9.3,
+				"return1m": 3.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -87,7 +88,7 @@
 		"totalScore": 14.13,
 		"raw": {
 			"avgSurprisePct": 8.88,
-			"netInsiderShares": 1166634,
+			"netInsiderShares": 1139239,
 			"instFlowTrend": "positive",
 			"upRevisions": 24,
 			"downRevisions": 0,

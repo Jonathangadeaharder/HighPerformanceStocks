@@ -10,7 +10,10 @@
 		<div class="sector-row" class:concentrated={sector.isConcentrated}>
 			<span class="sector-group">{sector.group}</span>
 			<span class="sector-count">{sector.count}</span>
-			<span class="sector-weight mono" style="color:{sector.isConcentrated ? '#f59e0b' : '#a1a1aa'}">
+			<span
+				class="sector-weight mono"
+				style="color:{sector.isConcentrated ? '#f59e0b' : '#a1a1aa'}"
+			>
 				{sector.weightPct}%
 			</span>
 			{#if sector.isConcentrated}

@@ -4,14 +4,15 @@
 	"group": "Emerging Markets",
 	"confidence": "high",
 	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
-	"marketCap": "$84.5B USD",
+	"marketCap": "$84.3B USD",
 	"sharpeRatio": 1.63,
 	"expectedCAGR": "26% - 110%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 42.4,
-		"forwardPE": 21.8,
-		"evEbitda": 22.3
+		"trailingPE": 42.3,
+		"forwardPE": 21.9,
+		"evEbitda": 22.3,
+		"evFcf": -36.5
 	},
 	"metrics": {
 		"roe": "36.0%",
@@ -23,11 +24,11 @@
 	"targetPrice": "$2639.69",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1666.93",
+	"currentPrice": "$1663.54",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "26%",
-			"base": "58%",
+			"base": "59%",
 			"bull": "110%"
 		},
 		"ttmEPS": 39.34,
@@ -35,7 +36,7 @@
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-03-20T09:50:26.948Z",
+	"lastUpdated": "2026-03-20T15:11:49.563Z",
 	"consensus": {
 		"yahoo": "$2639.69"
 	},
@@ -46,19 +47,19 @@
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 21.9,
 			"cvStock": 0.163,
 			"riskMultiplier": 1.05
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 1666.93,
+				"price": 1663.54,
 				"price6mAgo": 2460.66,
-				"price1mAgo": 1996.87,
+				"price1mAgo": 1864.46,
 				"low3m": 1631.18,
-				"return6m": -32.3,
-				"return1m": -16.5,
+				"return6m": -32.4,
+				"return1m": -10.8,
 				"near3mLow": true
 			},
 			"revisions": {

@@ -2,19 +2,19 @@
 	"ticker": "EQT.ST",
 	"name": "EQT AB",
 	"group": "Financials & Alt Assets",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
-	"marketCap": "324.6B SEK",
-	"sharpeRatio": 1.06,
-	"expectedCAGR": "16% - 78%",
+	"marketCap": "319.0B SEK",
+	"sharpeRatio": 1.1,
+	"expectedCAGR": "17% - 80%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 203.9,
-		"forwardPE": 19,
+		"trailingPE": 200.3,
+		"forwardPE": 18.6,
 		"pegRatio": null,
 		"evEbitda": null,
-		"priceToFRE": "~21.0x"
+		"priceToFRE": "~21.0x",
+		"evFcf": 262.5
 	},
 	"metrics": {
 		"fcfMargin": "~46%",
@@ -26,26 +26,26 @@
 		"realizedExitsLTM": "€19B",
 		"aumGrowth": "~12% YoY"
 	},
-	"targetPrice": "405 SEK",
+	"targetPrice": "407 SEK",
 	"bullCase": "Europe's premier private equity firm. Strong fundraising momentum and a strategic push into Asia and retail wealth management channels provide a long, diversified runway for fee-related earnings growth.",
 	"bearCase": "The European macro stagnation noted across the portfolio is toxic for private equity. If the European IPO and M&A exit windows freeze due to flat industrial output, EQT's carried interest will collapse, trapping capital.",
-	"currentPrice": "277 SEK",
+	"currentPrice": "272 SEK",
 	"consensus": {
 		"tipranks": "403 SEK",
-		"yahoo": "405 SEK"
+		"yahoo": "407 SEK"
 	},
 	"cagrModel": {
 		"ttmEPS": 13,
 		"epsGrowth": "20%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "48%",
-			"bull": "78%"
+			"bear": "17%",
+			"base": "50%",
+			"bull": "80%"
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-03-20T09:50:04.837Z",
+	"lastUpdated": "2026-03-20T15:11:42.185Z",
 	"screener": {
 		"engine": "fFREG",
 		"score": 1.04,
@@ -60,12 +60,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 276.9,
+				"price": 272.1,
 				"price6mAgo": 337.6,
 				"price1mAgo": 269.7,
 				"low3m": 265.9,
-				"return6m": -18,
-				"return1m": 2.7,
+				"return6m": -19.4,
+				"return1m": 0.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -75,8 +75,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.94,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 0.92
 	},
 	"qcs": {
 		"earningsScore": 0,
@@ -94,8 +93,8 @@
 	},
 	"description": "EQT AB (publ) is a global private equity & venture capital firm specializing in private capital and real asset segments.",
 	"analystTargets": {
-		"low": 316.86,
-		"mean": 405.27,
-		"high": 486.53
+		"low": 318.52,
+		"mean": 407.38,
+		"high": 489.07
 	}
 }

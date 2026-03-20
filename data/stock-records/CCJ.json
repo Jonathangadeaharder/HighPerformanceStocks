@@ -4,7 +4,7 @@
 	"group": "Energy & Infrastructure",
 	"confidence": "high",
 	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
-	"targetPrice": "$125.26",
+	"targetPrice": "$125.08",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
@@ -13,37 +13,37 @@
 		"dividendYield": "0%",
 		"ttmEPS": 0.98,
 		"scenarios": {
-			"bear": "-23%",
-			"base": "18%",
-			"bull": "50%"
+			"bear": "-20%",
+			"base": "22%",
+			"bull": "55%"
 		}
 	},
-	"currentPrice": "$106.60",
-	"marketCap": "$46.5B USD",
+	"currentPrice": "$102.90",
+	"marketCap": "$44.8B USD",
 	"consensus": {
-		"yahoo": "$125.26"
+		"yahoo": "$125.08"
 	},
 	"expectedVolatility": "~53%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 3.87,
+		"score": 3.73,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 57.2,
+			"multiple": 55.2,
 			"cvStock": 0.104,
 			"riskMultiplier": 1.015
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 106.6,
+				"price": 102.9,
 				"price6mAgo": 86.31,
-				"price1mAgo": 121.35,
-				"low3m": 86.13,
-				"return6m": 23.5,
-				"return1m": -12.2,
+				"price1mAgo": 118.75,
+				"low3m": 87.94,
+				"return6m": 19.2,
+				"return1m": -13.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -58,11 +58,12 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-20T09:50:02.779Z",
+	"lastUpdated": "2026-03-20T15:11:39.992Z",
 	"valuation": {
-		"trailingPE": 108.8,
-		"forwardPE": 57.2,
-		"evEbitda": 50.7
+		"trailingPE": 105,
+		"forwardPE": 55.2,
+		"evEbitda": 50.7,
+		"evFcf": 96.3
 	},
 	"metrics": {
 		"roe": "8.9%",
@@ -71,8 +72,8 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "15%"
 	},
-	"expectedCAGR": "-23% - 50%",
-	"sharpeRatio": 0.17,
+	"expectedCAGR": "-20% - 55%",
+	"sharpeRatio": 0.25,
 	"cyclical": true,
 	"qcs": {
 		"earningsScore": -3.99,
@@ -90,8 +91,8 @@
 	},
 	"description": "Cameco Corporation provides uranium for the generation of electricity in the Americas, Europe, and Asia.",
 	"analystTargets": {
-		"low": 82.23,
-		"mean": 125.26,
-		"high": 159.45
+		"low": 82.12,
+		"mean": 125.08,
+		"high": 159.23
 	}
 }

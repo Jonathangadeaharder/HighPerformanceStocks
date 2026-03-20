@@ -5,14 +5,15 @@
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
 	"marketCap": "$364.6B USD",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "-8% - 48%",
+	"sharpeRatio": 0.45,
+	"expectedCAGR": "-11% - 45%",
 	"expectedVolatility": "~28%",
 	"valuation": {
 		"trailingPE": 87,
 		"forwardPE": 12.8,
 		"pegRatio": 1.06,
-		"evEbitda": 14.6
+		"evEbitda": 14.6,
+		"evFcf": 23.3
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -38,13 +39,13 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "24%",
-			"bull": "48%"
+			"bear": "-11%",
+			"base": "21%",
+			"bull": "45%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-20T09:49:58.741Z",
+	"lastUpdated": "2026-03-20T15:11:35.858Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.83,
@@ -61,10 +62,10 @@
 				"pass": true,
 				"price": 206.23,
 				"price6mAgo": 222.59,
-				"price1mAgo": 224.81,
+				"price1mAgo": 229.48,
 				"low3m": 204.27,
 				"return6m": -7.3,
-				"return1m": -8.3,
+				"return1m": -10.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,9 +80,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 165.88,
-		"date": "2026-03-19",
-		"discount": -20
+		"dcf": 165.67,
+		"date": "2026-03-20",
+		"discount": -19
 	},
 	"qcs": {
 		"earningsScore": 2.93,

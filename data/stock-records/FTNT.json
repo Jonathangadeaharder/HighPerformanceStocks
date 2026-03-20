@@ -10,17 +10,18 @@
 		"ttmEPS": 2.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-23%",
-			"base": "7%",
-			"bull": "44%"
+			"bear": "-22%",
+			"base": "9%",
+			"bull": "47%"
 		}
 	},
-	"currentPrice": "$83.12",
-	"marketCap": "$61.8B USD",
+	"currentPrice": "$81.61",
+	"marketCap": "$60.7B USD",
 	"valuation": {
-		"trailingPE": 34.3,
-		"forwardPE": 25.1,
-		"evEbitda": 26.5
+		"trailingPE": 33.7,
+		"forwardPE": 24.7,
+		"evEbitda": 26.5,
+		"evFcf": 33.8
 	},
 	"metrics": {
 		"roe": "135.7%",
@@ -33,27 +34,27 @@
 		"yahoo": "$89.06"
 	},
 	"targetPrice": "$89.06",
-	"expectedCAGR": "-23% - 44%",
+	"expectedCAGR": "-22% - 47%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.66,
+		"score": 1.63,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 25.1,
+			"multiple": 24.7,
 			"cvStock": 0.063,
 			"riskMultiplier": 0.99
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 83.12,
+				"price": 81.61,
 				"price6mAgo": 85.01,
-				"price1mAgo": 80,
+				"price1mAgo": 75.6,
 				"low3m": 73.55,
-				"return6m": -2.2,
-				"return1m": 3.9,
+				"return6m": -4,
+				"return1m": 8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,9 +70,9 @@
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-03-20T09:50:21.750Z",
+	"lastUpdated": "2026-03-20T15:11:44.133Z",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": 0.14,
+	"sharpeRatio": 0.18,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

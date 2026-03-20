@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { calcForwardReturn, calcForwardScenarios, parseDisplayPrice, parsePercent } from '../lib/finance-core.js';
+import {
+	calcForwardReturn,
+	calcForwardScenarios,
+	parseDisplayPrice,
+	parsePercent
+} from '../lib/finance-core.js';
 
 describe('parsePercent', () => {
 	it('extracts number from percentage string', () => {
@@ -26,7 +31,7 @@ describe('parsePercent', () => {
 
 describe('parseDisplayPrice', () => {
 	it('parses plain price string', () => {
-		expect(parseDisplayPrice('100.50')).toBe(100.50);
+		expect(parseDisplayPrice('100.50')).toBe(100.5);
 		expect(parseDisplayPrice('$45.25')).toBe(45.25);
 	});
 
@@ -52,9 +57,9 @@ describe('calcForwardReturn', () => {
 		expect(result).toBe(20);
 	});
 
-	it('includes dividend yield', () => {
+	it('ignores dividend yield', () => {
 		const result = calcForwardReturn({ currentPrice: 100, targetPrice: 110, dividendYieldPct: 3 });
-		expect(result).toBe(13);
+		expect(result).toBe(10);
 	});
 
 	it('handles negative price return', () => {
@@ -78,9 +83,9 @@ describe('calcForwardScenarios', () => {
 			dividendYieldPct: 2
 		});
 
-		expect(result.bear).toBe(-18);
-		expect(result.base).toBe(12);
-		expect(result.bull).toBe(42);
+		expect(result.bear).toBe(-20);
+		expect(result.base).toBe(10);
+		expect(result.bull).toBe(40);
 	});
 
 	it('handles zero dividend yield', () => {
@@ -97,11 +102,13 @@ describe('calcForwardScenarios', () => {
 	});
 
 	it('throws for invalid current price', () => {
-		expect(() => calcForwardScenarios({
-			currentPrice: 0,
-			targetLow: 80,
-			targetMean: 100,
-			targetHigh: 120
-		})).toThrow();
+		expect(() =>
+			calcForwardScenarios({
+				currentPrice: 0,
+				targetLow: 80,
+				targetMean: 100,
+				targetHigh: 120
+			})
+		).toThrow();
 	});
 });

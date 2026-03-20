@@ -5,7 +5,7 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1038.7B USD",
+	"marketCap": "$1038.2B USD",
 	"sharpeRatio": 0.29,
 	"expectedCAGR": "0% - 20%",
 	"expectedVolatility": "~19%",
@@ -13,7 +13,8 @@
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 15.5,
-		"forwardPE": 22.1
+		"forwardPE": 22.1,
+		"evFcf": -6.4
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -25,7 +26,7 @@
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$481.48",
+	"currentPrice": "$481.24",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "0%",
@@ -37,30 +38,30 @@
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-20T09:50:01.883Z",
+	"lastUpdated": "2026-03-20T15:11:39.082Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.13,
+		"engine": "tPERG",
+		"score": 1.5,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 22.1,
+			"multipleType": "Peak-Adjusted P/E",
+			"multiple": 15.5,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 481.48,
+				"price": 481.24,
 				"price6mAgo": 493.71,
-				"price1mAgo": 498.2,
+				"price1mAgo": 494.09,
 				"low3m": 471.91,
 				"return6m": -2.5,
-				"return1m": -3.4,
+				"return1m": -2.6,
 				"near3mLow": true
 			},
 			"revisions": {

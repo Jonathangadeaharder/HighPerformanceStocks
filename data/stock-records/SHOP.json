@@ -4,14 +4,15 @@
 	"group": "High-Growth Tech",
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$159.7B USD",
-	"sharpeRatio": 0.36,
-	"expectedCAGR": "-10% - 63%",
-	"expectedVolatility": "~61%",
+	"marketCap": "$155.6B USD",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "-8% - 68%",
+	"expectedVolatility": "~60%",
 	"valuation": {
-		"trailingPE": 130.2,
-		"forwardPE": 53.2,
-		"evEbitda": 79.8
+		"trailingPE": 126.8,
+		"forwardPE": 51.8,
+		"evEbitda": 79.8,
+		"evFcf": 119.7
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -23,42 +24,42 @@
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$122.37",
+	"currentPrice": "$119.22",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-10%",
-			"base": "31%",
-			"bull": "63%"
+			"bear": "-8%",
+			"base": "34%",
+			"bull": "68%"
 		},
 		"ttmEPS": 1.89,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-20T09:50:32.886Z",
+	"lastUpdated": "2026-03-20T15:11:55.875Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.14,
+		"score": 2.08,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "Forward P/E",
-			"multiple": 53.2,
+			"multiple": 51.8,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 122.37,
+				"price": 119.22,
 				"price6mAgo": 157.12,
-				"price1mAgo": 126.2,
+				"price1mAgo": 117.28,
 				"low3m": 104.92,
-				"return6m": -22.1,
-				"return1m": -3,
+				"return6m": -24.1,
+				"return1m": 1.7,
 				"near3mLow": false
 			},
 			"revisions": {

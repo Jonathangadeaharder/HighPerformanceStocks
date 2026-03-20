@@ -5,15 +5,16 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
-	"marketCap": "$65.2B USD",
-	"sharpeRatio": 0.73,
-	"expectedCAGR": "5% - 39%",
+	"marketCap": "$65.4B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "-3% - 31%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 12.2,
 		"forwardPE": 12,
 		"pegRatio": null,
-		"evEbitda": 10.2
+		"evEbitda": 10.2,
+		"evFcf": 69
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
@@ -26,7 +27,7 @@
 	"targetPrice": "$21.93",
 	"bullCase": "Energy Transfer has the most diversified midstream footprint in the US, with exposure to crude, natural gas, NGLs, and LNG exports. The $0.32/unit quarterly distribution yields 7-8% and is covered 1.9x. Permian Basin volume growth provides organic throughput growth without new capital commitments.",
 	"bearCase": "At 4.6x Net Debt/EBITDA, ET has the highest leverage among major midstream peers. A deterioration in credit markets, distribution cut risk, or volume decline from customer bankruptcies could trigger significant unit price declines.",
-	"currentPrice": "$18.96",
+	"currentPrice": "$19.02",
 	"consensus": {
 		"tipranks": "$23",
 		"yahoo": "$21.93"
@@ -36,34 +37,33 @@
 		"epsGrowth": "10%",
 		"dividendYield": "7%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "23%",
-			"bull": "39%"
+			"bear": "-3%",
+			"base": "15%",
+			"bull": "31%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-20T09:50:04.931Z",
+	"lastUpdated": "2026-03-20T15:11:42.190Z",
 	"screener": {
-		"engine": "totalReturn",
-		"score": 0.71,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 7.34,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"dividendYield": 7,
-			"debtToEquity": 142,
-			"debtPenalty": false,
-			"rawReturn": 17
+			"multipleType": "EV/FCF",
+			"multiple": 69,
+			"cvStock": 0.185,
+			"riskMultiplier": 1.063
 		},
-		"note": "(CYCLICAL EPS) (Recent earnings miss)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 18.96,
+				"price": 19.02,
 				"price6mAgo": 17.13,
-				"price1mAgo": 18.98,
+				"price1mAgo": 18.82,
 				"low3m": 16.18,
-				"return6m": 10.7,
-				"return1m": -0.1,
+				"return6m": 11,
+				"return1m": 1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,18 +75,21 @@
 				"surprise": -30.4,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.59,
+		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 63.8,
-		"date": "2026-03-19",
-		"discount": 242
+		"dcf": 63.3,
+		"date": "2026-03-20",
+		"discount": 234
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": -2.55,
 		"flowScore": 0,
 		"revisionsScore": 1,
-		"totalScore": -4,
+		"totalScore": -1.55,
 		"raw": {
 			"avgSurprisePct": -11.8,
 			"netInsiderShares": 0,

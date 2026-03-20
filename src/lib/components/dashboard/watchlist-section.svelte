@@ -37,7 +37,8 @@
 	<button class="watchlist-header" onclick={onToggleWatchlist}>
 		<span class="section-label">Watchlist</span>
 		<span class="watchlist-counts">
-			{counts.reject} rejected · {counts.overpriced} overpriced · {counts.fail} insufficient edge/return · {counts.noData} no data
+			{counts.reject} rejected · {counts.overpriced} overpriced · {counts.fail} insufficient edge/return
+			· {counts.noData} no data
 		</span>
 		<div class="chevron-box">
 			<span class="chevron" class:open={showWatchlist}>›</span>
@@ -53,14 +54,18 @@
 			<button
 				class="view-toggle"
 				class:active={!groupBySector}
-				onclick={() => { groupBySector = false; }}
+				onclick={() => {
+					groupBySector = false;
+				}}
 			>
 				By Status
 			</button>
 			<button
 				class="view-toggle"
 				class:active={groupBySector}
-				onclick={() => { groupBySector = true; }}
+				onclick={() => {
+					groupBySector = true;
+				}}
 			>
 				By Sector
 			</button>
@@ -78,16 +83,16 @@
 						<div class="watch-main">
 							<span class="watch-ticker">{stock.ticker}</span>
 							<span class="watch-name">{stock.name}</span>
-						<span class="watch-signal {watchSignalClass(stock)}">
-							{stock.deployment?.status ?? 'N/A'}
-						</span>
-						{#if stock.screener?.engine !== 'N/A'}
-							<span class="watch-score">
-								{stock.screener?.score == null ? '' : `${stock.screener.score} · `}{detailLabel(
-									stock
-								)}
+							<span class="watch-signal {watchSignalClass(stock)}">
+								{stock.deployment?.status ?? 'N/A'}
 							</span>
-						{/if}
+							{#if stock.screener?.engine !== 'N/A'}
+								<span class="watch-score">
+									{stock.screener?.score == null ? '' : `${stock.screener.score} · `}{detailLabel(
+										stock
+									)}
+								</span>
+							{/if}
 							{#if stock.screener?.realityChecks?.stabilization}
 								<span
 									class="watch-mom"
@@ -294,7 +299,8 @@
 		color: var(--text-primary);
 	}
 
-	.watchlist, .watchlist-grouped {
+	.watchlist,
+	.watchlist-grouped {
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
@@ -385,10 +391,22 @@
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
-	.watch-signal.pass { background: var(--color-success-bg); color: var(--color-success); }
-	.watch-signal.fail { background: var(--color-danger-bg); color: var(--color-danger); }
-	.watch-signal.hold { background: var(--color-warning-bg); color: var(--color-warning); }
-	.watch-signal.none { background: var(--bg-surface-hover); color: var(--text-muted); }
+	.watch-signal.pass {
+		background: var(--color-success-bg);
+		color: var(--color-success);
+	}
+	.watch-signal.fail {
+		background: var(--color-danger-bg);
+		color: var(--color-danger);
+	}
+	.watch-signal.hold {
+		background: var(--color-warning-bg);
+		color: var(--color-warning);
+	}
+	.watch-signal.none {
+		background: var(--bg-surface-hover);
+		color: var(--text-muted);
+	}
 
 	.watch-score {
 		font-family: var(--font-mono);
@@ -453,9 +471,13 @@
 		padding-left: 0.75rem;
 		border-left: 2px solid;
 	}
-	.case.bull { border-color: var(--color-success); }
-	.case.bear { border-color: var(--color-danger); }
-	
+	.case.bull {
+		border-color: var(--color-success);
+	}
+	.case.bear {
+		border-color: var(--color-danger);
+	}
+
 	.case-label {
 		font-size: 0.75rem;
 		text-transform: uppercase;
@@ -463,9 +485,13 @@
 		font-weight: 700;
 		margin-bottom: 0.125rem;
 	}
-	.case.bull .case-label { color: var(--color-success); }
-	.case.bear .case-label { color: var(--color-danger); }
-	
+	.case.bull .case-label {
+		color: var(--color-success);
+	}
+	.case.bear .case-label {
+		color: var(--color-danger);
+	}
+
 	.case p {
 		font-size: 0.875rem;
 		color: var(--text-secondary);

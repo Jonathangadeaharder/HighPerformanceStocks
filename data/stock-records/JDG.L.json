@@ -12,17 +12,18 @@
 		"ttmEPS": 1.63,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "70%",
-			"bull": "102%"
+			"bear": "6%",
+			"base": "61%",
+			"bull": "91%"
 		}
 	},
-	"currentPrice": "£36.20",
-	"marketCap": "£0.2B",
+	"currentPrice": "£37.70",
+	"marketCap": "£0.3B",
 	"valuation": {
-		"trailingPE": 22.2,
-		"forwardPE": 17.8,
-		"evEbitda": 9.5
+		"trailingPE": 23.1,
+		"forwardPE": 18.5,
+		"evEbitda": 9.5,
+		"evFcf": 13.2
 	},
 	"metrics": {
 		"roe": "12.9%",
@@ -35,28 +36,28 @@
 		"yahoo": "£60.63"
 	},
 	"targetPrice": "£60.63",
-	"expectedCAGR": "14% - 102%",
+	"expectedCAGR": "6% - 91%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.14,
+		"score": 1.19,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 17.8,
+			"multiple": 18.5,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 3620,
+				"pass": true,
+				"price": 3770,
 				"price6mAgo": 6320,
 				"price1mAgo": 4980,
 				"low3m": 3500,
-				"return6m": -42.7,
-				"return1m": -27.3,
-				"near3mLow": true
+				"return6m": -40.3,
+				"return1m": -24.3,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -65,9 +66,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T09:50:23.895Z",
+	"lastUpdated": "2026-03-20T15:11:46.146Z",
 	"expectedVolatility": "~43%",
-	"sharpeRatio": 1.24,
+	"sharpeRatio": 1.02,
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,

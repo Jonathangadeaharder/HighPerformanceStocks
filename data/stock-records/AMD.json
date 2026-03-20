@@ -5,14 +5,14 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Targeting >35% data center revenue CAGR through 2028 with MI450 ramp and data center expansion.",
-	"marketCap": "$334.7B USD",
-	"sharpeRatio": 0.6,
-	"expectedCAGR": "7% - 78%",
+	"marketCap": "$328.7B USD",
+	"sharpeRatio": 0.64,
+	"expectedCAGR": "9% - 81%",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "7%",
-			"base": "41%",
-			"bull": "78%"
+			"bear": "9%",
+			"base": "44%",
+			"bull": "81%"
 		},
 		"ttmEPS": 2.61,
 		"epsGrowth": "35%",
@@ -20,30 +20,30 @@
 		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-20T09:49:59.794Z",
+	"lastUpdated": "2026-03-20T15:11:36.767Z",
 	"consensus": {
 		"yahoo": "$289.61"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.56,
+		"score": 0.6,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 19.1,
+			"multiple": 18.8,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.033
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 205.27,
+				"price": 201.6,
 				"price6mAgo": 159.79,
-				"price1mAgo": 200.15,
+				"price1mAgo": 196.6,
 				"low3m": 188.22,
-				"return6m": 28.5,
-				"return1m": 2.6,
+				"return6m": 26.2,
+				"return1m": 2.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -59,15 +59,16 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 64.38,
-		"date": "2026-03-19",
+		"dcf": 64.27,
+		"date": "2026-03-20",
 		"discount": -68
 	},
-	"currentPrice": "$205.27",
+	"currentPrice": "$201.60",
 	"valuation": {
-		"trailingPE": 78.6,
-		"forwardPE": 19.1,
-		"evEbitda": 48.6
+		"trailingPE": 77.2,
+		"forwardPE": 18.8,
+		"evEbitda": 48.6,
+		"evFcf": 71.5
 	},
 	"metrics": {
 		"roe": "7.1%",

@@ -4,14 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$119.5B USD",
-	"sharpeRatio": 1.54,
-	"expectedCAGR": "8% - 130%",
+	"marketCap": "$117.6B USD",
+	"sharpeRatio": 1.6,
+	"expectedCAGR": "10% - 133%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 67.8,
-		"forwardPE": 22.6,
-		"evEbitda": 41.9
+		"trailingPE": 66.7,
+		"forwardPE": 22.2,
+		"evEbitda": 41.9,
+		"evFcf": 23.1
 	},
 	"metrics": {
 		"roe": "15.5%",
@@ -23,42 +24,42 @@
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$113.27",
+	"currentPrice": "$111.47",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "8%",
-			"base": "67%",
-			"bull": "130%"
+			"bear": "10%",
+			"base": "69%",
+			"bull": "133%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-20T09:50:29.853Z",
+	"lastUpdated": "2026-03-20T15:11:52.536Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
+		"score": 1.05,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 22.6,
+			"multiple": 22.2,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 113.27,
+				"price": 111.47,
 				"price6mAgo": 189.56,
-				"price1mAgo": 104.27,
+				"price1mAgo": 100.8,
 				"low3m": 98,
-				"return6m": -40.2,
-				"return1m": 8.6,
+				"return6m": -41.2,
+				"return1m": 10.6,
 				"near3mLow": false
 			},
 			"revisions": {

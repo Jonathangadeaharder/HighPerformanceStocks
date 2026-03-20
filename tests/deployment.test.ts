@@ -70,29 +70,82 @@ describe('deploymentRank formula', () => {
 	const computeRank = (inputs: RankInputs): number => {
 		const { score, baseCagr, bearCagr, upside, momentumBonus, qualityBonus, qcsBonus } = inputs;
 		const valuationStrength = Math.max(-25, (1.2 - score) * 25);
-		return Number((valuationStrength + baseCagr * 1.2 + bearCagr * 0.8 + upside * 0.1 + momentumBonus + qualityBonus + qcsBonus).toFixed(1));
+		return Number(
+			(
+				valuationStrength +
+				baseCagr * 1.2 +
+				bearCagr * 0.8 +
+				upside * 0.1 +
+				momentumBonus +
+				qualityBonus +
+				qcsBonus
+			).toFixed(1)
+		);
 	};
 
 	it('rewards low screener score (cheap valuation)', () => {
-		const cheap = computeRank({ score: 0.5, baseCagr: 20, bearCagr: 5, upside: 30, momentumBonus: 0, qualityBonus: 5, qcsBonus: 8 });
-		const expensive = computeRank({ score: 1.5, baseCagr: 20, bearCagr: 5, upside: 30, momentumBonus: 0, qualityBonus: 5, qcsBonus: 8 });
+		const cheap = computeRank({
+			score: 0.5,
+			baseCagr: 20,
+			bearCagr: 5,
+			upside: 30,
+			momentumBonus: 0,
+			qualityBonus: 5,
+			qcsBonus: 8
+		});
+		const expensive = computeRank({
+			score: 1.5,
+			baseCagr: 20,
+			bearCagr: 5,
+			upside: 30,
+			momentumBonus: 0,
+			qualityBonus: 5,
+			qcsBonus: 8
+		});
 		expect(cheap).toBeGreaterThan(expensive);
 	});
 
 	it('values base return more than bear return', () => {
-		const highBase = computeRank({ score: 1.0, baseCagr: 30, bearCagr: 5, upside: 30, momentumBonus: 0, qualityBonus: 0, qcsBonus: 0 });
-		const highBear = computeRank({ score: 1.0, baseCagr: 5, bearCagr: 30, upside: 30, momentumBonus: 0, qualityBonus: 0, qcsBonus: 0 });
+		const highBase = computeRank({
+			score: 1.0,
+			baseCagr: 30,
+			bearCagr: 5,
+			upside: 30,
+			momentumBonus: 0,
+			qualityBonus: 0,
+			qcsBonus: 0
+		});
+		const highBear = computeRank({
+			score: 1.0,
+			baseCagr: 5,
+			bearCagr: 30,
+			upside: 30,
+			momentumBonus: 0,
+			qualityBonus: 0,
+			qcsBonus: 0
+		});
 		expect(highBase).toBeGreaterThan(highBear);
 	});
 
 	it('caps valuation penalty at -25', () => {
-		const extremelyExpensive = computeRank({ score: 3.0, baseCagr: 0, bearCagr: 0, upside: 0, momentumBonus: 0, qualityBonus: 0, qcsBonus: 0 });
+		const extremelyExpensive = computeRank({
+			score: 3.0,
+			baseCagr: 0,
+			bearCagr: 0,
+			upside: 0,
+			momentumBonus: 0,
+			qualityBonus: 0,
+			qcsBonus: 0
+		});
 		expect(extremelyExpensive).toBe(-25);
 	});
 });
 
 describe('computeSensitivity', () => {
-	const computeSensitivity = (currentPrice: number, targets: { low: number; high: number }): number => {
+	const computeSensitivity = (
+		currentPrice: number,
+		targets: { low: number; high: number }
+	): number => {
 		const bearReturn = ((targets.low - currentPrice) / currentPrice) * 100;
 		const bullReturn = ((targets.high - currentPrice) / currentPrice) * 100;
 		return Number((bullReturn - bearReturn).toFixed(1));
@@ -145,11 +198,21 @@ describe('weightedAverage', () => {
 	};
 
 	it('computes weighted average correctly', () => {
-		expect(weightedAverage([{ value: 10, weight: 1 }, { value: 20, weight: 1 }])).toBe(15);
+		expect(
+			weightedAverage([
+				{ value: 10, weight: 1 },
+				{ value: 20, weight: 1 }
+			])
+		).toBe(15);
 	});
 
 	it('applies weights correctly', () => {
-		expect(weightedAverage([{ value: 10, weight: 0.7 }, { value: 20, weight: 0.3 }])).toBe(13);
+		expect(
+			weightedAverage([
+				{ value: 10, weight: 0.7 },
+				{ value: 20, weight: 0.3 }
+			])
+		).toBe(13);
 	});
 
 	it('returns null for empty input', () => {

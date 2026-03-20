@@ -12,22 +12,23 @@
 		"ttmEPS": 6.02,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "32%",
-			"bull": "66%"
+			"bear": "11%",
+			"base": "29%",
+			"bull": "62%"
 		}
 	},
-	"currentPrice": "$115.99",
-	"marketCap": "$51.1B USD",
+	"currentPrice": "$117.09",
+	"marketCap": "$51.6B USD",
 	"valuation": {
-		"trailingPE": 19.3,
-		"forwardPE": 15.4,
-		"evEbitda": 13.8
+		"trailingPE": 19.5,
+		"forwardPE": 15.5,
+		"evEbitda": 13.8,
+		"evFcf": 31.2
 	},
 	"metrics": {
 		"roe": "66.0%",
 		"fcfMargin": "~19%",
-		"fcfYield": "~4%",
+		"fcfYield": "~3%",
 		"netDebtEbitda": "1.7x",
 		"ruleOf40": "22%"
 	},
@@ -35,27 +36,27 @@
 		"yahoo": "$151"
 	},
 	"targetPrice": "$151",
-	"expectedCAGR": "14% - 66%",
+	"expectedCAGR": "11% - 62%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
+		"score": 1.07,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 15.4,
+			"multiple": 15.5,
 			"cvStock": 0.017,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 115.99,
+				"price": 117.09,
 				"price6mAgo": 144.65,
-				"price1mAgo": 128.78,
+				"price1mAgo": 125.79,
 				"low3m": 114.47,
-				"return6m": -19.8,
-				"return1m": -9.9,
+				"return6m": -19.1,
+				"return1m": -6.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -69,9 +70,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T09:50:38.094Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.18,
+	"lastUpdated": "2026-03-20T15:12:01.340Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 1.1,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,

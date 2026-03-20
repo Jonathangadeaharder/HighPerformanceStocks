@@ -4,15 +4,16 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
-	"marketCap": "$138.5B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "-33% - 56%",
+	"marketCap": "$134.4B USD",
+	"sharpeRatio": 0.29,
+	"expectedCAGR": "-31% - 61%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 94.3,
-		"forwardPE": 42.7,
+		"trailingPE": 91.5,
+		"forwardPE": 41.5,
 		"pegRatio": null,
-		"evEbitda": 92.7
+		"evEbitda": 92.7,
+		"evFcf": 47.9
 	},
 	"metrics": {
 		"fcfMargin": "~28%",
@@ -25,7 +26,7 @@
 	"targetPrice": "$207.75",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
-	"currentPrice": "$169.74",
+	"currentPrice": "$164.72",
 	"consensus": {
 		"tipranks": "$220",
 		"yahoo": "$207.75"
@@ -35,33 +36,33 @@
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-33%",
-			"base": "22%",
-			"bull": "56%"
+			"bear": "-31%",
+			"base": "26%",
+			"bull": "61%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-20T09:50:30.822Z",
+	"lastUpdated": "2026-03-20T15:11:53.655Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.24,
+		"score": 2.18,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 42.7,
+			"multiple": 41.5,
 			"cvStock": 0.164,
 			"riskMultiplier": 1.05
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 169.74,
+				"price": 164.72,
 				"price6mAgo": 208.18,
-				"price1mAgo": 148.7,
+				"price1mAgo": 144.14,
 				"low3m": 139.57,
-				"return6m": -18.5,
-				"return1m": 14.1,
+				"return6m": -20.9,
+				"return1m": 14.3,
 				"near3mLow": false
 			},
 			"revisions": {

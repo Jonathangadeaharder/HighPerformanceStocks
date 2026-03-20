@@ -48,7 +48,9 @@
 						<input
 							type="checkbox"
 							checked={included}
-							onchange={() => { onToggle(stock.ticker); }}
+							onchange={() => {
+								onToggle(stock.ticker);
+							}}
 							aria-label="Include {stock.ticker}"
 						/>
 					</td>
@@ -138,7 +140,7 @@
 		width: 40px;
 		text-align: center;
 	}
-	input[type="checkbox"] {
+	input[type='checkbox'] {
 		accent-color: var(--color-success);
 		cursor: pointer;
 		width: 1rem;

@@ -1,9 +1,6 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import {
-	parseDisplayPrice,
-	parsePercent
-} from '../lib/finance-core.js';
+import { parseDisplayPrice, parsePercent } from '../lib/finance-core.js';
 import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
@@ -78,7 +75,9 @@ function verifyData() {
 				(Date.now() - new Date(updatedDate).getTime()) / (1000 * 60 * 60 * 24)
 			);
 			if (daysSinceUpdate > 1) {
-				warnings.push(`${data.ticker || f}: Cache stale (${daysSinceUpdate} days old, lastUpdated: ${updatedDate})`);
+				warnings.push(
+					`${data.ticker || f}: Cache stale (${daysSinceUpdate} days old, lastUpdated: ${updatedDate})`
+				);
 			}
 		} else {
 			errors.push(`Missing 'lastUpdated' timestamp`);
@@ -86,7 +85,16 @@ function verifyData() {
 
 		// 5. Verify screener object
 		if (data.screener) {
-			const validEngines = ['fPERG', 'tPERG', 'fEVG', 'fCFG', 'fANIG', 'fFREG', 'totalReturn', 'N/A'];
+			const validEngines = [
+				'fPERG',
+				'tPERG',
+				'fEVG',
+				'fCFG',
+				'fANIG',
+				'fFREG',
+				'totalReturn',
+				'N/A'
+			];
 			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
@@ -151,14 +159,18 @@ function verifyData() {
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);
-			errors.forEach((e) => { console.log(`   - ${e}`); });
+			errors.forEach((e) => {
+				console.log(`   - ${e}`);
+			});
 			hasErrors = true;
 		}
 	}
 
 	if (warnings.length > 0) {
 		console.log(`\n⚠️  Warnings (${warnings.length}):`);
-		warnings.forEach((w) => { console.log(`   - ${w}`); });
+		warnings.forEach((w) => {
+			console.log(`   - ${w}`);
+		});
 	}
 
 	if (hasErrors) {

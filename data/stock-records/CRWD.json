@@ -4,19 +4,20 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$108.6B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "-14% - 65%",
+	"marketCap": "$104.9B USD",
+	"sharpeRatio": 0.57,
+	"expectedCAGR": "-11% - 71%",
 	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 69.3,
+		"forwardPE": 66.9,
 		"pegRatio": null,
-		"evEbitda": null
+		"evEbitda": null,
+		"evFcf": 65
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
-		"fcfYield": "~1%",
+		"fcfYield": "~2%",
 		"roic": null,
 		"roe": "-4.1%",
 		"netDebtEbitda": "Net cash",
@@ -25,7 +26,7 @@
 	"targetPrice": "$490.48",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$428.18",
+	"currentPrice": "$413.43",
 	"consensus": {
 		"tipranks": "$550",
 		"yahoo": "$490.48"
@@ -35,13 +36,13 @@
 		"epsGrowth": "32%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "15%",
-			"bull": "65%"
+			"bear": "-11%",
+			"base": "19%",
+			"bull": "71%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-20T09:50:03.749Z",
+	"lastUpdated": "2026-03-20T15:11:40.938Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.17,
@@ -49,19 +50,19 @@
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",
-			"multiple": 69.3,
+			"multiple": 66.9,
 			"cvStock": 0.087,
 			"riskMultiplier": 1.004
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 428.18,
+				"price": 413.43,
 				"price6mAgo": 493.14,
-				"price1mAgo": 388.6,
+				"price1mAgo": 350.33,
 				"low3m": 342.72,
-				"return6m": -13.2,
-				"return1m": 10.2,
+				"return6m": -16.2,
+				"return1m": 18,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -82,7 +83,7 @@
 		"totalScore": 5.09,
 		"raw": {
 			"avgSurprisePct": 6.55,
-			"netInsiderShares": 114653,
+			"netInsiderShares": 119653,
 			"instFlowTrend": "negative",
 			"upRevisions": 33,
 			"downRevisions": 11,

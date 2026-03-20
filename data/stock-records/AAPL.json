@@ -10,18 +10,19 @@
 		"ttmEPS": 7.89,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-18%",
+			"bear": "-17%",
 			"base": "19%",
 			"bull": "41%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$248.96",
-	"marketCap": "$3659.2B USD",
+	"currentPrice": "$248.13",
+	"marketCap": "$3647.0B USD",
 	"valuation": {
-		"trailingPE": 31.6,
-		"forwardPE": 26.7,
-		"evEbitda": 24.1
+		"trailingPE": 31.4,
+		"forwardPE": 26.6,
+		"evEbitda": 24.1,
+		"evFcf": 34.6
 	},
 	"metrics": {
 		"roe": "152.0%",
@@ -34,29 +35,29 @@
 		"yahoo": "$295.44"
 	},
 	"targetPrice": "$295.44",
-	"expectedCAGR": "-18% - 41%",
-	"expectedVolatility": "~32%",
-	"sharpeRatio": 0.22,
+	"expectedCAGR": "-17% - 41%",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": 0.24,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.63,
+		"score": 2.62,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 26.7,
+			"multiple": 26.6,
 			"cvStock": 0.054,
 			"riskMultiplier": 0.984
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 248.96,
+				"price": 248.13,
 				"price6mAgo": 256.08,
-				"price1mAgo": 264.58,
+				"price1mAgo": 266.18,
 				"low3m": 243.42,
-				"return6m": -2.8,
-				"return1m": -5.9,
+				"return6m": -3.1,
+				"return1m": -6.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -72,11 +73,11 @@
 	},
 	"bullCase": "Apple's Services segment (App Store, iCloud, Apple TV+, Apple Pay) is growing 15%+ annually and now represents ~40% of gross profit at 70%+ margins. Apple Intelligence AI features are the catalyst for an iPhone 17 upgrade supercycle in 2025-2026. The $100B+ annual buyback program reduces float by ~3% per year, compounding EPS mechanically.",
 	"bearCase": "Apple is expensive at 27x forward PE for a 10% EPS grower. China revenue (~18% of total) faces escalating geopolitical and regulatory pressure. Antitrust actions targeting the App Store 30% commission could remove $5-8B of annual high-margin revenue. Hardware replacement cycles are extending as smartphones mature.",
-	"lastUpdated": "2026-03-20T09:49:58.748Z",
+	"lastUpdated": "2026-03-20T15:11:35.769Z",
 	"intrinsicValue": {
-		"dcf": 161.13,
-		"date": "2026-03-19",
-		"discount": -36
+		"dcf": 160.82,
+		"date": "2026-03-20",
+		"discount": -35
 	},
 	"qcs": {
 		"earningsScore": 4.2,

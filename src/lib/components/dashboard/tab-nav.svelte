@@ -26,7 +26,9 @@
 				role="tab"
 				aria-selected={activeTab === tab.id}
 				aria-controls="panel-{tab.id}"
-				onclick={() => { onSwitch(tab.id); }}
+				onclick={() => {
+					onSwitch(tab.id);
+				}}
 			>
 				{tab.label}
 			</button>
@@ -42,12 +44,12 @@
 		border-radius: 0.5rem;
 		border: 1px solid var(--border-subtle);
 	}
-	
-	.tab-nav [role="tablist"] {
+
+	.tab-nav [role='tablist'] {
 		display: inline-flex;
 		gap: 0.25rem;
 	}
-	
+
 	.tab-btn {
 		padding: 0.5rem 1.5rem;
 		border-radius: 0.375rem;
@@ -57,20 +59,20 @@
 		transition: all 0.2s ease;
 		cursor: pointer;
 	}
-	
+
 	.tab-btn:hover {
 		color: var(--text-primary);
 	}
-	
+
 	.tab-btn:focus-visible {
 		outline: 2px solid var(--color-primary, #3b82f6);
 		outline-offset: 2px;
 	}
-	
+
 	.tab-btn.active {
 		background: var(--bg-body);
 		color: var(--text-primary);
 		border: 1px solid var(--border-hover);
-		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 	}
 </style>
