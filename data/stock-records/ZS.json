@@ -4,15 +4,15 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
-	"marketCap": "$24.7B USD",
-	"sharpeRatio": 0.33,
-	"expectedCAGR": "14% - 25%",
+	"marketCap": "$25.1B USD",
+	"sharpeRatio": 1.22,
+	"expectedCAGR": "6% - 115%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 33.5,
+		"forwardPE": 34,
 		"pegRatio": null,
-		"evEbitda": -339.3
+		"evEbitda": -344.5
 	},
 	"metrics": {
 		"fcfMargin": "~34%",
@@ -25,49 +25,43 @@
 	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$153.69",
+	"currentPrice": "$155.99",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$234.79"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 4,
 		"epsGrowth": "24%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 25,
-			"base": 32,
-			"bull": 40
-		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "20%",
-			"bull": "25%"
+			"bear": "6%",
+			"base": "51%",
+			"bull": "115%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-16T20:51:14.115Z",
+	"lastUpdated": "2026-03-19T13:06:50.114Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.39,
+		"score": 1.41,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
-			"multiple": 33.5,
+			"multiple": 34,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 153.69,
-				"price6mAgo": 279.46,
-				"price1mAgo": 172.59,
+				"price": 155.99,
+				"price6mAgo": 294.27,
+				"price1mAgo": 168.99,
 				"low3m": 140.56,
-				"return6m": -45,
-				"return1m": -11,
+				"return6m": -47,
+				"return1m": -7.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,5 +74,25 @@
 				"quarter": "2026-01"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": 4.77,
+		"totalScore": 14.77,
+		"raw": {
+			"avgSurprisePct": 11.45,
+			"netInsiderShares": 12034,
+			"instFlowTrend": "positive",
+			"upRevisions": 41,
+			"downRevisions": 0,
+			"totalAnalysts": 43
+		}
+	},
+	"description": "Zscaler, Inc. operates as a cloud security company worldwide.",
+	"analystTargets": {
+		"low": 165,
+		"mean": 234.79,
+		"high": 335
 	}
 }

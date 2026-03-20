@@ -4,13 +4,12 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
-	"marketCap": "€28.2B",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "19% - 31%",
+	"marketCap": "€27.2B",
+	"sharpeRatio": 0.1,
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 26.6,
-		"forwardPE": 18.7,
+		"trailingPE": 25.7,
+		"forwardPE": 18.1,
 		"pegRatio": null,
 		"evEbitda": 15.2
 	},
@@ -27,49 +26,38 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€894.20",
+	"currentPrice": "€864",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 33.62,
+		"ttmEPS": 33.65,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 45
-		},
-		"scenarios": {
-			"bear": "19%",
-			"base": "25%",
-			"bull": "31%"
-		},
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-16T20:50:51.317Z",
+	"lastUpdated": "2026-03-19T13:06:25.501Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.04,
+		"score": 1.01,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 18.7,
+			"multiple": 18.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 894.2,
-				"price6mAgo": 1377,
-				"price1mAgo": 956.9,
-				"low3m": 890.7,
-				"return6m": -35.1,
-				"return1m": -6.6,
+				"price": 864,
+				"price6mAgo": 1379.2,
+				"price1mAgo": 1001.6,
+				"low3m": 857.3,
+				"return6m": -37.4,
+				"return1m": -13.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,5 +67,19 @@
 			}
 		},
 		"note": "Used benchmark CV (missing dispersion data)"
+	},
+	"qcs": {
+		"earningsScore": 0,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": 0,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
 	}
 }

@@ -8,48 +8,42 @@
 	"bullCase": "Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.",
 	"bearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 26
-		},
+		"epsGrowth": "11%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 3.58,
 		"scenarios": {
-			"bear": "-2%",
-			"base": "2%",
-			"bull": "5%"
+			"bear": "20%",
+			"base": "26%",
+			"bull": "31%"
 		}
 	},
-	"currentPrice": "$144.08",
-	"marketCap": "$3.0B USD",
+	"currentPrice": "$141.39",
+	"marketCap": "$2.9B USD",
 	"consensus": {
 		"yahoo": "$178.33"
 	},
-	"expectedVolatility": "~42%",
+	"expectedVolatility": "~43%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.27,
+		"score": 1.7,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 11,
 			"multipleType": "Forward P/E",
-			"multiple": 19.6,
+			"multiple": 19.2,
 			"cvStock": 0.035,
 			"riskMultiplier": 0.973
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 144.08,
-				"price6mAgo": 117.32,
-				"price1mAgo": 153.31,
+				"price": 141.39,
+				"price6mAgo": 120.49,
+				"price1mAgo": 150.85,
 				"low3m": 121.06,
-				"return6m": 22.8,
-				"return1m": -6,
+				"return6m": 17.3,
+				"return1m": -6.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -63,11 +57,11 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:04.663Z",
+	"lastUpdated": "2026-03-19T13:06:40.821Z",
 	"valuation": {
-		"trailingPE": 40.2,
-		"forwardPE": 19.6,
-		"evEbitda": 18.1
+		"trailingPE": 39.5,
+		"forwardPE": 19.2,
+		"evEbitda": 18.7
 	},
 	"metrics": {
 		"roe": "8.3%",
@@ -76,6 +70,26 @@
 		"netDebtEbitda": "2.8x",
 		"ruleOf40": "13%"
 	},
-	"expectedCAGR": "-2% - 5%",
-	"sharpeRatio": -0.07
+	"expectedCAGR": "20% - 31%",
+	"sharpeRatio": 0.49,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 5,
+		"raw": {
+			"avgSurprisePct": 7.75,
+			"netInsiderShares": 42469,
+			"instFlowTrend": "neutral",
+			"upRevisions": 2,
+			"downRevisions": 2,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Materion Corporation, together with its subsidiaries, produces advanced engineered materials in the United States, Asia, Europe, and internationally.",
+	"analystTargets": {
+		"low": 170,
+		"mean": 178.33,
+		"high": 185
+	}
 }

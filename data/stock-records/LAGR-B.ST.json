@@ -5,27 +5,21 @@
 	"confidence": "high",
 	"confidenceReason": "Identical niche-B2B M&A model to Addtech/Lifco. Grows EPS beautifully at 15–20%+.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 5.52,
+		"ttmEPS": 5.53,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "2%",
-			"bull": "7%"
+			"bear": "12%",
+			"base": "26%",
+			"bull": "38%"
 		}
 	},
-	"currentPrice": "208 SEK",
-	"marketCap": "42.8B SEK",
+	"currentPrice": "200 SEK",
+	"marketCap": "41.3B SEK",
 	"valuation": {
-		"trailingPE": 37.6,
-		"forwardPE": 38.2,
+		"trailingPE": 36.2,
+		"forwardPE": 36.9,
 		"evEbitda": 23.8
 	},
 	"metrics": {
@@ -39,27 +33,27 @@
 		"yahoo": "250 SEK"
 	},
 	"targetPrice": "250 SEK",
-	"expectedCAGR": "-3% - 7%",
+	"expectedCAGR": "12% - 38%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.48,
+		"score": 2.4,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 38.2,
+			"multiple": 36.9,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 207.6,
-				"price6mAgo": 223.4,
-				"price1mAgo": 208.8,
+				"price": 200.2,
+				"price6mAgo": 218.4,
+				"price1mAgo": 214.4,
 				"low3m": 189.8,
-				"return6m": -7.1,
-				"return1m": -0.6,
+				"return6m": -8.3,
+				"return1m": -6.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +67,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:01.664Z",
+	"lastUpdated": "2026-03-19T13:06:36.740Z",
 	"expectedVolatility": "~33%",
-	"sharpeRatio": -0.08
+	"sharpeRatio": 0.62,
+	"qcs": {
+		"earningsScore": -1.57,
+		"flowScore": 0,
+		"revisionsScore": 1.67,
+		"totalScore": 0.1,
+		"raw": {
+			"avgSurprisePct": -1.49,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 3,
+			"downRevisions": 1,
+			"totalAnalysts": 6
+		}
+	},
+	"bullCase": "Lagercrantz follows the same capital-light serial acquisition model as Lifco and Indutrade — acquiring niche industrial product companies with high switching costs and 15%+ EBIT margins. As one of Sweden's most disciplined compounders, it has delivered 20%+ annual returns over the past decade with minimal leverage.",
+	"bearCase": "Multiple expansion from 38x current P/E to any reasonable terminal value implies substantial compression risk. A European industrial recession would simultaneously reduce organic growth and acquisition targets' earnings, compressing the portfolio value.",
+	"description": "Lagercrantz Group AB (publ), together with its subsidiaries, operates as a technology company in Sweden, Denmark, Norway, Finland, Germany, the United Kingdom, Benelux, Poland, rest of Europe, Nort...",
+	"analystTargets": {
+		"low": 222,
+		"mean": 249.86,
+		"high": 275
+	}
 }

@@ -2,31 +2,26 @@
 	"ticker": "URI",
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.63,
+		"ttmEPS": 38.59,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "17%",
-			"bull": "22%"
+			"bear": "-16%",
+			"base": "38%",
+			"bull": "115%"
 		}
 	},
-	"currentPrice": "$743.13",
-	"marketCap": "$47.3B USD",
+	"currentPrice": "$725.30",
+	"marketCap": "$46.2B USD",
 	"valuation": {
-		"trailingPE": 19.2,
-		"forwardPE": 14,
-		"evEbitda": 13.8
+		"trailingPE": 18.8,
+		"forwardPE": 13.7,
+		"evEbitda": 13.7
 	},
 	"metrics": {
 		"roe": "28.4%",
@@ -39,41 +34,64 @@
 		"yahoo": "$991.39"
 	},
 	"targetPrice": "$991.39",
-	"expectedCAGR": "10% - 22%",
+	"expectedCAGR": "-16% - 115%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.93,
-		"signal": "PASS",
+		"score": 1.51,
+		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 14,
+			"multiple": 13.7,
 			"cvStock": 0.068,
 			"riskMultiplier": 0.993
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 743.13,
-				"price6mAgo": 931.01,
-				"price1mAgo": 863.28,
-				"low3m": 727.4,
-				"return6m": -20.2,
-				"return1m": -13.9,
+				"price": 725.3,
+				"price6mAgo": 941.52,
+				"price1mAgo": 888.98,
+				"low3m": 724.67,
+				"return6m": -23,
+				"return1m": -18.4,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 10
+				"up30d": 1,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": -6.1,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:47.096Z",
+	"expectedVolatility": "~39%",
+	"sharpeRatio": 1.15,
+	"qcs": {
+		"earningsScore": -1.61,
+		"flowScore": 0,
+		"revisionsScore": -0.24,
+		"totalScore": -1.85,
+		"raw": {
+			"avgSurprisePct": -2.73,
+			"netInsiderShares": 29928,
+			"instFlowTrend": "negative",
+			"upRevisions": 1,
+			"downRevisions": 2,
+			"totalAnalysts": 21
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:11.781Z",
-	"expectedVolatility": "~39%",
-	"sharpeRatio": 0.29
+	"bullCase": "United Rentals has a structural advantage in the equipment rental market — the secular shift from ownership to rental is still early (rental penetration ~55% in North America vs 80%+ in mature markets). URI generates 20%+ ROIC and has a long runway of consolidation targets in the fragmented regional rental market. Infrastructure legislation provides multi-year volume floor.",
+	"bearCase": "Equipment rental is deeply cyclical — a construction recession cuts utilization rates sharply while fixed depreciation costs remain. The current softness in commercial construction and 15 analyst down-revisions in 30 days signal a potential cyclical peak. URI's leverage (2.5x net debt) amplifies earnings downside.",
+	"description": "United Rentals, Inc., through its subsidiaries, operates as an equipment rental company in the United States, Canada, Europe, Australia, and New Zealand.",
+	"analystTargets": {
+		"low": 600,
+		"mean": 991.39,
+		"high": 1550
+	}
 }

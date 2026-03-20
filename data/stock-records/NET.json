@@ -4,66 +4,60 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
-	"marketCap": "$73.0B USD",
-	"sharpeRatio": -0.06,
-	"expectedCAGR": "-2% - 5%",
+	"marketCap": "$79.4B USD",
+	"sharpeRatio": -0.15,
+	"expectedCAGR": "-40% - 33%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"forwardPE": 143.5,
+		"forwardPE": 156.1,
 		"evEbitda": null
 	},
 	"metrics": {
 		"roe": "-8.2%",
 		"fcfMargin": "~18%",
-		"fcfYield": "~1%",
+		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "51%"
 	},
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$207.33",
+	"currentPrice": "$225.48",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-2%",
-			"base": "1%",
-			"bull": "5%"
+			"bear": "-40%",
+			"base": "3%",
+			"bull": "33%"
 		},
 		"ttmEPS": 1.12,
-		"horizon": 5,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 50,
-			"base": 60,
-			"bull": 70
-		},
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:05.724Z",
+	"lastUpdated": "2026-03-19T13:06:40.965Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.4,
+		"score": 5.87,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 143.5,
+			"multiple": 156.1,
 			"cvStock": 0.105,
 			"riskMultiplier": 1.015
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 207.33,
-				"price6mAgo": 213.88,
-				"price1mAgo": 193.68,
+				"price": 225.48,
+				"price6mAgo": 225.94,
+				"price1mAgo": 192.64,
 				"low3m": 158.83,
-				"return6m": -3.1,
-				"return1m": 7,
+				"return6m": -0.2,
+				"return1m": 17,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -76,5 +70,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 3.1,
+		"flowScore": 0,
+		"revisionsScore": -2.34,
+		"totalScore": 0.76,
+		"raw": {
+			"avgSurprisePct": 8.13,
+			"netInsiderShares": 176342,
+			"instFlowTrend": "negative",
+			"upRevisions": 7,
+			"downRevisions": 22,
+			"totalAnalysts": 32
+		}
+	},
+	"description": "Cloudflare, Inc. operates as a cloud services provider that delivers a range of services to businesses worldwide.",
+	"analystTargets": {
+		"low": 135,
+		"mean": 232.43,
+		"high": 300
 	}
 }

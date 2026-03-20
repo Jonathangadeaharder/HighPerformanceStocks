@@ -1,0 +1,98 @@
+{
+	"ticker": "ALAB",
+	"name": "Astera Labs",
+	"group": "AI & Semiconductors",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "Pure-play on AI connectivity, PCIe/CXL retimers critical for AI server clusters.",
+	"cagrModel": {
+		"epsGrowth": "35%",
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 1.23,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "23%",
+			"base": "64%",
+			"bull": "98%"
+		},
+		"epsGrowthSource": "auto"
+	},
+	"currentPrice": "$126.34",
+	"marketCap": "$21.5B USD",
+	"valuation": {
+		"trailingPE": 102.7,
+		"forwardPE": 35.9,
+		"evEbitda": 112.9
+	},
+	"metrics": {
+		"roe": "18.8%",
+		"fcfMargin": "~24%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "116%"
+	},
+	"consensus": {
+		"yahoo": "$206.75"
+	},
+	"targetPrice": "$206.75",
+	"expectedCAGR": "23% - 98%",
+	"expectedVolatility": "~90%",
+	"sharpeRatio": 0.62,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.05,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 35,
+			"multipleType": "Forward P/E",
+			"multiple": 35.9,
+			"cvStock": 0.123,
+			"riskMultiplier": 1.026
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 126.34,
+				"price6mAgo": 245.2,
+				"price1mAgo": 132.62,
+				"low3m": 107.08,
+				"return6m": -48.5,
+				"return1m": -4.7,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 11,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 12.6,
+				"quarter": "2025-12"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:26.305Z",
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": 2.14,
+		"totalScore": 12.14,
+		"raw": {
+			"avgSurprisePct": 22.57,
+			"netInsiderShares": 167714,
+			"instFlowTrend": "positive",
+			"upRevisions": 13,
+			"downRevisions": 4,
+			"totalAnalysts": 21
+		}
+	},
+	"bullCase": "Astera Labs makes PCIe and CXL retimers — the signal conditioning chips that enable high-speed connectivity in AI server clusters. As the only major standalone retimer vendor, it has design wins at Microsoft, Google, and AWS. The transition to CXL 3.0 memory pooling opens a new $5B+ TAM beyond the current retimer market.",
+	"bearCase": "Astera is an early-stage company with limited revenue visibility. Marvell and Broadcom are developing competing connectivity solutions that could displace standalone retimers. Hyperscaler capex pauses would immediately compress Astera's revenue. Customer concentration at 2-3 hyperscalers creates binary revenue risk.",
+	"description": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure.",
+	"analystTargets": {
+		"low": 155,
+		"mean": 206.75,
+		"high": 250
+	}
+}

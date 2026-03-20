@@ -1,32 +1,29 @@
 {
 	"ticker": "KNSL",
 	"name": "Kinsale Capital",
-	"group": "Financials & Alt Assets",
+	"group": "Insurance Compounders",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "E&S insurer using proprietary tech to dominate niche. EPS compounds at 20–30% a year.",
+	"bullCase": "Kinsale dominates E&S insurance through technology-driven underwriting that prices and binds risks faster than incumbents. ROE of 29% and combined ratio consistently below 85% give it a structural cost advantage. In a hard market, Kinsale's premium growth accelerates above 20%.",
+	"bearCase": "A shift to a soft insurance market — driven by new capital entering E&S or a benign catastrophe cycle — compresses premiums and margins. At 16x forward PE, any slowdown below 15% EPS growth re-rates the stock. Competitors are investing heavily in E&S technology.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "20%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 20.36,
+		"ttmEPS": 21.66,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "18%",
-			"bull": "23%"
+			"bear": "0%",
+			"base": "21%",
+			"bull": "37%"
 		}
 	},
-	"currentPrice": "$358.65",
-	"marketCap": "$8.3B USD",
+	"currentPrice": "$348.30",
+	"marketCap": "$8.1B USD",
 	"valuation": {
-		"trailingPE": 17.6,
-		"forwardPE": 16.1,
-		"evEbitda": 13
+		"trailingPE": 16.1,
+		"forwardPE": 15.7,
+		"evEbitda": 12.5
 	},
 	"metrics": {
 		"roe": "29.3%",
@@ -39,34 +36,34 @@
 		"yahoo": "$422.40"
 	},
 	"targetPrice": "$422.40",
-	"expectedCAGR": "11% - 23%",
+	"expectedCAGR": "0% - 37%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
+		"score": 0.77,
 		"signal": "REJECTED",
 		"inputs": {
-			"growth": 15,
+			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 16.1,
+			"multiple": 15.7,
 			"cvStock": 0.047,
 			"riskMultiplier": 0.98
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 358.65,
-				"price6mAgo": 430.66,
-				"price1mAgo": 376.65,
+				"pass": false,
+				"price": 348.3,
+				"price6mAgo": 428.71,
+				"price1mAgo": 374,
 				"low3m": 341.06,
-				"return6m": -16.7,
-				"return1m": -4.8,
-				"near3mLow": false
+				"return6m": -18.8,
+				"return1m": -6.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 6
+				"down30d": 7
 			},
 			"earningsSurprise": {
 				"surprise": 9.5,
@@ -74,7 +71,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:01.575Z",
+	"lastUpdated": "2026-03-19T13:06:36.570Z",
 	"expectedVolatility": "~38%",
-	"sharpeRatio": 0.33
+	"sharpeRatio": 0.37,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": -1.54,
+		"totalScore": 8.46,
+		"raw": {
+			"avgSurprisePct": 9.8,
+			"netInsiderShares": 23374,
+			"instFlowTrend": "positive",
+			"upRevisions": 3,
+			"downRevisions": 7,
+			"totalAnalysts": 13
+		}
+	},
+	"description": "Kinsale Capital Group, Inc. engages in the provision of property and casualty insurance products in the United States.",
+	"analystTargets": {
+		"low": 348,
+		"mean": 422.4,
+		"high": 478
+	}
 }

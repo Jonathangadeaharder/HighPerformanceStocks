@@ -2,15 +2,16 @@
 	"ticker": "APO",
 	"name": "Apollo Global Management",
 	"group": "Financials & Alt Assets",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
-	"marketCap": "$60.0B USD",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "23% - 34%",
+	"marketCap": "$64.5B USD",
+	"sharpeRatio": 0.86,
+	"expectedCAGR": "20% - 65%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 11.2,
-		"forwardPE": 9.5,
+		"trailingPE": 12,
+		"forwardPE": 10.2,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -27,51 +28,46 @@
 	"targetPrice": "$156.59",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$103.45",
+	"currentPrice": "$111.20",
 	"consensus": {
 		"tipranks": "$165",
 		"yahoo": "$156.59",
 		"stockanalysis": "$156"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 8.38,
-		"epsGrowth": "20%",
+		"epsGrowth": "18%",
 		"dividendYield": "2%",
-		"exitPE": {
-			"bear": 13,
-			"base": 16,
-			"bull": 20
-		},
 		"scenarios": {
-			"bear": "23%",
-			"base": "28%",
-			"bull": "34%"
+			"bear": "20%",
+			"base": "43%",
+			"bull": "65%"
 		},
-		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
+		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:52.245Z",
+	"lastUpdated": "2026-03-19T13:06:27.380Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.6,
+		"score": 0.71,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 20,
+			"growth": 18,
 			"multipleType": "P/ANI",
-			"multiple": 12.3,
+			"multiple": 13.3,
 			"cvStock": 0.022,
 			"riskMultiplier": 0.965
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 103.45,
-				"price6mAgo": 138.82,
-				"price1mAgo": 125.15,
+				"pass": true,
+				"price": 111.2,
+				"price6mAgo": 144.75,
+				"price1mAgo": 118.34,
 				"low3m": 99.56,
-				"return6m": -25.5,
-				"return1m": -17.3,
-				"near3mLow": true
+				"return6m": -23.2,
+				"return1m": -6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -84,6 +80,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.46
+		"secondaryScore": 0.55,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0.53,
+		"totalScore": 5.53,
+		"raw": {
+			"avgSurprisePct": 9.59,
+			"netInsiderShares": 807947,
+			"instFlowTrend": "neutral",
+			"upRevisions": 5,
+			"downRevisions": 3,
+			"totalAnalysts": 19
+		}
+	},
+	"description": "Apollo Global Management, Inc. is a private equity firm specializing in investments in credit, private equity, infrastructure, secondaries and real estate markets.",
+	"analystTargets": {
+		"low": 131,
+		"mean": 156.59,
+		"high": 181
 	}
 }

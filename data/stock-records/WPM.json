@@ -2,17 +2,18 @@
 	"ticker": "WPM",
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
+	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$63.3B USD",
-	"sharpeRatio": 0.03,
-	"expectedCAGR": "0% - 12%",
-	"expectedVolatility": "~43%",
+	"marketCap": "$58.5B USD",
+	"sharpeRatio": 1.36,
+	"expectedCAGR": "25% - 104%",
+	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 63,
-		"forwardPE": 24.1,
+		"trailingPE": 39.9,
+		"forwardPE": 21,
 		"pegRatio": 1.41,
-		"evEbitda": 32.9
+		"evEbitda": 30.2
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
@@ -22,58 +23,52 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "130%"
 	},
-	"targetPrice": "$191.02",
+	"targetPrice": "$191.59",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$139.19",
+	"currentPrice": "$128.75",
 	"consensus": {
 		"tipranks": "$140",
-		"yahoo": "$191.02",
+		"yahoo": "$191.59",
 		"stockanalysis": "$133"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 3.26,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 20,
-			"base": 27,
-			"bull": 35
-		},
 		"scenarios": {
-			"bear": "0%",
-			"base": "6%",
-			"bull": "12%"
+			"bear": "25%",
+			"base": "50%",
+			"bull": "104%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:13.014Z",
+	"lastUpdated": "2026-03-19T13:06:49.189Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.13,
+		"score": 2.91,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
-			"multiple": 42.7,
-			"cvStock": 0.244,
-			"riskMultiplier": 1.098
+			"multiple": 39.5,
+			"cvStock": 0.255,
+			"riskMultiplier": 1.105
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 139.19,
-				"price6mAgo": 105.11,
-				"price1mAgo": 142.33,
+				"price": 128.75,
+				"price6mAgo": 107.65,
+				"price1mAgo": 145.34,
 				"low3m": 113.07,
-				"return6m": 32.4,
-				"return1m": -2.2,
+				"return6m": 19.6,
+				"return1m": -11.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
+				"up30d": 6,
 				"down30d": 1
 			},
 			"earningsSurprise": {
@@ -82,6 +77,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.76
+		"secondaryScore": 1.55,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 1.25,
+		"flowScore": 2.5,
+		"revisionsScore": 2.5,
+		"totalScore": 6.25,
+		"raw": {
+			"avgSurprisePct": 7.96,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 7,
+			"downRevisions": 1,
+			"totalAnalysts": 12
+		}
+	},
+	"description": "Wheaton Precious Metals Corp. operates as a precious metal streaming company.",
+	"analystTargets": {
+		"low": 160,
+		"mean": 191.59,
+		"high": 260.97
 	}
 }

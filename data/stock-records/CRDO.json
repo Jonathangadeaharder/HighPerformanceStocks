@@ -1,0 +1,97 @@
+{
+	"ticker": "CRDO",
+	"name": "Credo Technology Group",
+	"group": "AI & Semiconductors",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "High-speed connectivity solutions for data centers, AEC cables taking share in AI networks.",
+	"cagrModel": {
+		"epsGrowth": "28%",
+		"basis": "Adjusted for semiconductor cyclicality and customer concentration risk.",
+		"ttmEPS": 1.82,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "23%",
+			"base": "96%",
+			"bull": "156%"
+		}
+	},
+	"currentPrice": "$101.72",
+	"marketCap": "$18.8B USD",
+	"valuation": {
+		"trailingPE": 55.9,
+		"forwardPE": 21.5,
+		"evEbitda": 49.9
+	},
+	"metrics": {
+		"roe": "27.5%",
+		"fcfMargin": "~16%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "218%"
+	},
+	"consensus": {
+		"yahoo": "$199.38"
+	},
+	"targetPrice": "$199.38",
+	"expectedCAGR": "23% - 156%",
+	"expectedVolatility": "~84%",
+	"sharpeRatio": 1.01,
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.75,
+		"signal": "PASS",
+		"inputs": {
+			"growth": 28,
+			"multipleType": "Forward P/E",
+			"multiple": 21.5,
+			"cvStock": 0.034,
+			"riskMultiplier": 0.972
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 101.72,
+				"price6mAgo": 169.56,
+				"price1mAgo": 130.66,
+				"low3m": 92.6,
+				"return6m": -40,
+				"return1m": -22.1,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 14,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 13.7,
+				"quarter": "2026-01"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:29.766Z",
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 2.5,
+		"revisionsScore": 4.06,
+		"totalScore": 11.56,
+		"raw": {
+			"avgSurprisePct": 30.27,
+			"netInsiderShares": -1784175,
+			"instFlowTrend": "positive",
+			"upRevisions": 13,
+			"downRevisions": 0,
+			"totalAnalysts": 16
+		}
+	},
+	"bullCase": "Credo's Active Electrical Cables (AECs) are displacing DACs (direct attach cables) in AI clusters for runs up to 7 meters — a massive addressable market as AI racks pack denser. Design wins at Microsoft (a major hyperscaler) validate the technology. Optical DSP chips for longer runs represent the next growth layer as data centers scale.",
+	"bearCase": "Credo is heavily concentrated in 1-2 hyperscaler customers. Any account loss or product substitution (Marvell or NVIDIA developing competing AEC solutions) would devastate revenue. At 22x forward PE, the stock is not cheap for a company with single-customer concentration risk. AI capex cycles would directly impact order volumes.",
+	"description": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong K...",
+	"analystTargets": {
+		"low": 125,
+		"mean": 199.38,
+		"high": 260
+	}
+}

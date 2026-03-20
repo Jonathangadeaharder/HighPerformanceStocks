@@ -2,11 +2,12 @@
 	"ticker": "TSM",
 	"name": "TSMC",
 	"group": "AI & Semiconductors",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1764.6B USD",
-	"sharpeRatio": 0.54,
-	"expectedCAGR": "19% - 31%",
+	"marketCap": "$1761.2B USD",
+	"sharpeRatio": 0.64,
+	"expectedCAGR": "4% - 54%",
 	"scenarios": {
 		"bear": "5%",
 		"base": "11%",
@@ -14,7 +15,7 @@
 	},
 	"metrics": {
 		"fcfMargin": "~17%",
-		"fcfYield": "~36%",
+		"fcfYield": "~37%",
 		"roic": "45% - 49%",
 		"roe": "35.1%",
 		"netDebtEbitda": "Net cash",
@@ -25,36 +26,30 @@
 	"targetPrice": "$430.65",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$340.23",
+	"currentPrice": "$339.57",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$430.65",
 		"stockanalysis": "$402"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 10.39,
-		"epsGrowth": "28%",
+		"ttmEPS": 10.38,
+		"epsGrowth": "18%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 22,
-			"base": 28,
-			"bull": 35
-		},
 		"scenarios": {
-			"bear": "19%",
-			"base": "25%",
-			"bull": "31%"
+			"bear": "4%",
+			"base": "28%",
+			"bull": "54%"
 		},
-		"basis": "Forward PE (19x) with foundry monopoly premium; 2nm pricing power justifies expansion"
+		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-03-16T20:51:10.754Z",
+	"lastUpdated": "2026-03-19T13:06:46.909Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.66,
-		"signal": "PASS",
+		"score": 1.03,
+		"signal": "FAIL",
 		"inputs": {
-			"growth": 28,
+			"growth": 18,
 			"multipleType": "Forward P/E",
 			"multiple": 18.9,
 			"cvStock": 0.05,
@@ -63,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 340.23,
-				"price6mAgo": 262.79,
-				"price1mAgo": 364.2,
+				"price": 339.57,
+				"price6mAgo": 264.87,
+				"price1mAgo": 360.39,
 				"low3m": 275.08,
-				"return6m": 29.5,
-				"return1m": -6.6,
+				"return6m": 28.2,
+				"return1m": -5.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,17 +75,38 @@
 				"surprise": 5.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 156.16,
-		"date": "2026-03-16",
+		"dcf": 157.09,
+		"date": "2026-03-19",
 		"discount": -54
 	},
 	"valuation": {
-		"trailingPE": 32.7,
+		"trailingPE": 32.8,
 		"forwardPE": 18.9,
 		"evEbitda": null
 	},
-	"expectedVolatility": "~38%"
+	"expectedVolatility": "~38%",
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 5,
+		"raw": {
+			"avgSurprisePct": 6.69,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 9
+		}
+	},
+	"description": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and other semiconductor devices in Taiwan, China, Eu...",
+	"analystTargets": {
+		"low": 351,
+		"mean": 430.65,
+		"high": 520
+	}
 }

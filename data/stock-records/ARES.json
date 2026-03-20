@@ -2,31 +2,29 @@
 	"ticker": "ARES",
 	"name": "Ares Management",
 	"group": "Financials & Alt Assets",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Heavyweight champion of private credit. Relentless FRE growth.",
+	"bullCase": "Ares is the largest pure-play private credit manager with $450B+ AUM, growing 20%+ annually in the direct lending boom. Its permanent capital vehicles (ARCC, ACRE) provide structural FRE visibility. Credit spreads remaining elevated extends the private credit wave. Growing insurance channel (via Aspida Life) adds recurring fee flow.",
+	"bearCase": "A sharp credit cycle downturn with default rates spiking would impair Ares' direct lending book and compress marks on private equity. The 5% dividend yield is funded by distributable earnings — any payout cut would crater the stock. Regulatory scrutiny of private credit opacity is an emerging risk.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "20%",
 		"basis": "FRE per share",
-		"ttmEPS": 6.45,
+		"ttmEPS": 6.42,
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "19%",
-			"base": "26%",
-			"bull": "31%"
-		}
+			"bear": "32%",
+			"base": "61%",
+			"bull": "108%"
+		},
+		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$100.51",
-	"marketCap": "$33.3B USD",
+	"currentPrice": "$105.97",
+	"marketCap": "$35.1B USD",
 	"valuation": {
-		"trailingPE": 15.6,
-		"forwardPE": 13,
-		"evEbitda": 33.4
+		"trailingPE": 16.5,
+		"forwardPE": 13.8,
+		"evEbitda": 34.2
 	},
 	"metrics": {
 		"roe": "13.5%",
@@ -36,36 +34,36 @@
 		"ruleOf40": "56%"
 	},
 	"consensus": {
-		"yahoo": "$167.94"
+		"yahoo": "$165.29"
 	},
-	"targetPrice": "$167.94",
-	"expectedCAGR": "19% - 31%",
+	"targetPrice": "$165.29",
+	"expectedCAGR": "32% - 108%",
 	"screener": {
 		"engine": "totalReturn",
-		"score": 0.86,
-		"signal": "PASS",
+		"score": 0.69,
+		"signal": "REJECTED",
 		"inputs": {
-			"growth": 15,
+			"growth": 20,
 			"dividendYield": 5,
 			"debtToEquity": 163,
 			"debtPenalty": true,
-			"rawReturn": 14
+			"rawReturn": 17.5
 		},
-		"note": "Recent earnings miss",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 100.51,
-				"price6mAgo": 178.89,
-				"price1mAgo": 130.41,
+				"pass": true,
+				"price": 105.97,
+				"price6mAgo": 183,
+				"price1mAgo": 129.85,
 				"low3m": 95.8,
-				"return6m": -43.8,
-				"return1m": -22.9,
-				"near3mLow": true
+				"return6m": -42.1,
+				"return1m": -18.4,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 3,
+				"pass": false,
+				"up30d": 0,
 				"down30d": 5
 			},
 			"earningsSurprise": {
@@ -74,7 +72,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:52.268Z",
+	"lastUpdated": "2026-03-19T13:06:27.373Z",
 	"expectedVolatility": "~47%",
-	"sharpeRatio": 0.44
+	"sharpeRatio": 1.39,
+	"qcs": {
+		"earningsScore": 0.02,
+		"flowScore": 5,
+		"revisionsScore": -1.56,
+		"totalScore": 3.46,
+		"raw": {
+			"avgSurprisePct": 0.03,
+			"netInsiderShares": 944634,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 6,
+			"totalAnalysts": 16
+		}
+	},
+	"description": "Ares Management Corporation operates as an alternative asset manager.",
+	"analystTargets": {
+		"low": 135,
+		"mean": 165.29,
+		"high": 215
+	}
 }

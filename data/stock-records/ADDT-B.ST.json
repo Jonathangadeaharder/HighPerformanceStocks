@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "82.8B SEK",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "5% - 14%",
+	"marketCap": "80.7B SEK",
+	"sharpeRatio": 0.66,
+	"expectedCAGR": "11% - 36%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 40.1,
-		"forwardPE": 39.1,
+		"trailingPE": 39.1,
+		"forwardPE": 38.1,
 		"pegRatio": null,
-		"evEbitda": 24.6
+		"evEbitda": 24.7
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
@@ -26,50 +26,45 @@
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "307 SEK",
+	"currentPrice": "299 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 7.66,
-		"epsGrowth": "15%",
+		"ttmEPS": 7.64,
+		"epsGrowth": "17%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 24,
-			"base": 30,
-			"bull": 36
-		},
 		"scenarios": {
-			"bear": "5%",
-			"base": "10%",
-			"bull": "14%"
+			"bear": "11%",
+			"base": "28%",
+			"bull": "36%"
 		},
-		"basis": "10yr avg PE"
+		"basis": "10yr avg PE",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:51.248Z",
+	"lastUpdated": "2026-03-19T13:06:25.363Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.61,
+		"score": 1.43,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 17,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.6,
+			"multiple": 24.7,
 			"cvStock": 0.053,
 			"riskMultiplier": 0.984
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 306.8,
-				"price6mAgo": 321.4,
-				"price1mAgo": 317,
+				"price": 298.8,
+				"price6mAgo": 321.6,
+				"price1mAgo": 326.2,
 				"low3m": 287,
-				"return6m": -4.5,
-				"return1m": -3.2,
-				"near3mLow": false
+				"return6m": -7.1,
+				"return1m": -8.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -82,6 +77,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.56
+		"secondaryScore": 2.2
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 0,
+		"revisionsScore": 1,
+		"totalScore": -4,
+		"raw": {
+			"avgSurprisePct": -15.26,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 3,
+			"downRevisions": 2,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Addtech AB (publ.) provides high-tech products and solutions in Sweden, Denmark, Finland, Norway, Germany, the United Kingdom, rest of Europe, and internationally.",
+	"analystTargets": {
+		"low": 330,
+		"mean": 380.83,
+		"high": 402
 	}
 }

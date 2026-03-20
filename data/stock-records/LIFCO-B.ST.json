@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "132.4B SEK",
-	"sharpeRatio": 0.25,
-	"expectedCAGR": "7% - 16%",
-	"expectedVolatility": "~28%",
+	"marketCap": "128.3B SEK",
+	"sharpeRatio": 0.89,
+	"expectedCAGR": "20% - 37%",
+	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 36.4,
-		"forwardPE": 36.5,
+		"trailingPE": 35.3,
+		"forwardPE": 35.4,
 		"pegRatio": null,
-		"evEbitda": 20,
+		"evEbitda": 19.9,
 		"evFcf": 29
 	},
 	"metrics": {
@@ -26,29 +26,23 @@
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "291 SEK",
+	"currentPrice": "282 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 8.01,
+		"ttmEPS": 8,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
-		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "20%",
+			"base": "27%",
+			"bull": "37%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T20:51:02.453Z",
+	"lastUpdated": "2026-03-19T13:06:37.572Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,
@@ -56,20 +50,20 @@
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20,
+			"multiple": 19.9,
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 291.4,
-				"price6mAgo": 321.8,
-				"price1mAgo": 314,
-				"low3m": 288,
-				"return6m": -9.4,
-				"return1m": -7.2,
+				"pass": false,
+				"price": 282.4,
+				"price6mAgo": 324.6,
+				"price1mAgo": 321,
+				"low3m": 280.4,
+				"return6m": -13,
+				"return1m": -12,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -83,6 +77,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.04
+		"secondaryScore": 2.95
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 0,
+		"revisionsScore": -3.33,
+		"totalScore": -8.33,
+		"raw": {
+			"avgSurprisePct": -14.28,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 4,
+			"totalAnalysts": 6
+		}
+	},
+	"description": "Lifco AB (publ) engages in the dental, demolition and tools, and systems solutions businesses in Sweden, Norway, Germany, rest of Europe, the United Kingdom, Asia, Australia, Italy, North America, ...",
+	"analystTargets": {
+		"low": 335,
+		"mean": 356,
+		"high": 385
 	}
 }

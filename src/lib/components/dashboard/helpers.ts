@@ -24,10 +24,10 @@ export function qualityColor(metricName: string, rawValue: string | null | undef
 	return '#71717a';
 }
 
-export function sensitivityColor(cagr: number | null | undefined): string {
-	if (cagr == null) return '#71717a';
-	if (cagr >= 14) return '#4ade80';
-	if (cagr >= 10) return '#facc15';
+export function sensitivityColor(spread: number | null | undefined): string {
+	if (spread == null) return '#71717a';
+	if (spread <= 40) return '#4ade80';
+	if (spread <= 70) return '#facc15';
 	return '#f87171';
 }
 

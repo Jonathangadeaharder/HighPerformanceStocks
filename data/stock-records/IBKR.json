@@ -1,31 +1,28 @@
 {
 	"ticker": "IBKR",
 	"name": "Interactive Brokers",
-	"group": "Financials & Alt Assets",
+	"group": "Financial Services",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Highest margin brokerage globally. User base expands ~20% YoY. Deep margin moats.",
+	"bullCase": "Interactive Brokers serves sophisticated traders with the lowest margin rates and most global market access. Client account growth of 20%+ annually drives structural NNA (net new assets). As a technology-first broker, IBKR has near-zero marginal cost per additional client. Margin interest income at elevated rates provides exceptional NII.",
+	"bearCase": "IBKR's NII — nearly 50% of revenues — compresses sharply when rates fall. Its holding company structure (Thomas Peterffy controls ~75% via IBG LLC) means public shareholders capture only 25% economics. Market volume slowdowns directly reduce commission revenue.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
-		"basis": "Non-GAAP EPS",
-		"ttmEPS": 2.44,
+		"basis": "Non-GAAP EPS; minority interest structure: public share represents ~25% economic interest in IBG LLC",
+		"ttmEPS": 2.22,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "8%",
-			"bull": "12%"
+			"bear": "-18%",
+			"base": "18%",
+			"bull": "33%"
 		}
 	},
-	"currentPrice": "$68.28",
-	"marketCap": "$116.1B USD",
+	"currentPrice": "$68.45",
+	"marketCap": "$116.4B USD",
 	"valuation": {
-		"trailingPE": 27.9,
-		"forwardPE": 24.9
+		"trailingPE": 30.8,
+		"forwardPE": 25
 	},
 	"metrics": {
 		"roe": "23.5%"
@@ -34,28 +31,28 @@
 		"yahoo": "$80.56"
 	},
 	"targetPrice": "$80.56",
-	"expectedCAGR": "2% - 12%",
+	"expectedCAGR": "-18% - 33%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.62,
+		"score": 1.63,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 24.9,
+			"multiple": 25,
 			"cvStock": 0.042,
 			"riskMultiplier": 0.977
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 68.28,
-				"price6mAgo": 62.34,
-				"price1mAgo": 73.29,
+				"price": 68.45,
+				"price6mAgo": 65.03,
+				"price1mAgo": 73.99,
 				"low3m": 62.1,
-				"return6m": 9.5,
-				"return1m": -6.8,
+				"return6m": 5.3,
+				"return1m": -7.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,7 +66,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:59.509Z",
+	"lastUpdated": "2026-03-19T13:06:34.748Z",
 	"expectedVolatility": "~42%",
-	"sharpeRatio": 0.06
+	"sharpeRatio": 0.07,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -1.11,
+		"totalScore": 3.89,
+		"raw": {
+			"avgSurprisePct": 5.8,
+			"netInsiderShares": -501936,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 9
+		}
+	},
+	"description": "Interactive Brokers Group, Inc. operates as an automated electronic broker in the United States and internationally.",
+	"analystTargets": {
+		"low": 56,
+		"mean": 80.56,
+		"high": 91
+	}
 }

@@ -5,33 +5,27 @@
 	"confidence": "high",
 	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 7.04,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "7%",
-			"bull": "12%"
+			"bear": "13%",
+			"base": "27%",
+			"bull": "56%"
 		}
 	},
-	"currentPrice": "211 SEK",
-	"marketCap": "76.9B SEK",
+	"currentPrice": "206 SEK",
+	"marketCap": "75.1B SEK",
 	"valuation": {
-		"trailingPE": 30,
-		"forwardPE": 23.6,
+		"trailingPE": 29.3,
+		"forwardPE": 23,
 		"evEbitda": 17.3
 	},
 	"metrics": {
 		"roe": "15.2%",
 		"fcfMargin": "~11%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"netDebtEbitda": "1.5x",
 		"ruleOf40": "9%"
 	},
@@ -39,15 +33,15 @@
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "1% - 12%",
+	"expectedCAGR": "13% - 56%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.55,
+		"score": 1.51,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 23.6,
+			"multiple": 23,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.983
 		},
@@ -55,12 +49,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.2,
-				"price6mAgo": 229.4,
-				"price1mAgo": 223.4,
-				"low3m": 206.4,
-				"return6m": -7.9,
-				"return1m": -5.5,
+				"price": 206,
+				"price6mAgo": 227.8,
+				"price1mAgo": 230.4,
+				"low3m": 205.8,
+				"return6m": -9.6,
+				"return1m": -10.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,7 +68,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:00.442Z",
+	"lastUpdated": "2026-03-19T13:06:35.580Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.07
+	"sharpeRatio": 1,
+	"qcs": {
+		"earningsScore": 0.14,
+		"flowScore": 0,
+		"revisionsScore": -4,
+		"totalScore": -3.86,
+		"raw": {
+			"avgSurprisePct": 0.17,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 4,
+			"totalAnalysts": 5
+		}
+	},
+	"bullCase": "Indutrade is Sweden's premier niche industrial serial acquirer, compounding book value at 15%+ for 25 years. Its decentralized model acquires mission-critical technical components and industrial equipment companies at 6-8x EBIT, with organic growth layered on top. The 18x bear exit P/E reflects continued premium to Nordic peers.",
+	"bearCase": "The Swedish and European industrial economy is exposed to the macro slowdown — automotive and heavy industry clients have been reducing capex. Currency risk from SEK exposure and acquisition integration missteps represent the primary execution risks.",
+	"description": "Indutrade AB (publ) manufactures, develops, and sells components, systems, and services to various industries worldwide.",
+	"analystTargets": {
+		"low": 230,
+		"mean": 260.43,
+		"high": 320
+	}
 }

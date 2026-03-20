@@ -2,15 +2,16 @@
 	"ticker": "MRVL",
 	"name": "Marvell Technology",
 	"group": "AI & Semiconductors",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
-	"marketCap": "$80.0B USD",
-	"sharpeRatio": 0.42,
-	"expectedCAGR": "24% - 38%",
+	"marketCap": "$76.6B USD",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "-3% - 87%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 29.8,
-		"forwardPE": 16.8,
+		"trailingPE": 28.5,
+		"forwardPE": 16.1,
 		"pegRatio": 1.5,
 		"evEbitda": 30
 	},
@@ -22,53 +23,47 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "$120.28",
+	"targetPrice": "$120.50",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$91.58",
+	"currentPrice": "$87.62",
 	"consensus": {
 		"tipranks": "$122",
-		"yahoo": "$120.28",
+		"yahoo": "$120.50",
 		"stockanalysis": "$116"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 3.07,
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 24,
-			"base": 32,
-			"bull": 40
-		},
 		"scenarios": {
-			"bear": "24%",
-			"base": "32%",
-			"bull": "38%"
+			"bear": "-3%",
+			"base": "38%",
+			"bull": "87%"
 		},
-		"basis": "Forward PE (17x) with AI networking premium; no haircut"
+		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-03-16T20:51:04.559Z",
+	"lastUpdated": "2026-03-19T13:06:39.967Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.56,
+		"score": 0.53,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 16.8,
+			"multiple": 16.1,
 			"cvStock": 0.074,
 			"riskMultiplier": 0.996
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 91.58,
-				"price6mAgo": 70.98,
-				"price1mAgo": 79.01,
+				"price": 87.62,
+				"price6mAgo": 74.26,
+				"price1mAgo": 79.61,
 				"low3m": 70.69,
-				"return6m": 29,
-				"return1m": 15.9,
+				"return6m": 18,
+				"return1m": 10.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,6 +75,27 @@
 				"surprise": 1.1,
 				"quarter": "2026-01"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 0.63,
+		"flowScore": 5,
+		"revisionsScore": 4.34,
+		"totalScore": 9.97,
+		"raw": {
+			"avgSurprisePct": 1.17,
+			"netInsiderShares": 530071,
+			"instFlowTrend": "positive",
+			"upRevisions": 35,
+			"downRevisions": 2,
+			"totalAnalysts": 38
 		}
+	},
+	"description": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, Chi...",
+	"analystTargets": {
+		"low": 85,
+		"mean": 120.5,
+		"high": 164
 	}
 }

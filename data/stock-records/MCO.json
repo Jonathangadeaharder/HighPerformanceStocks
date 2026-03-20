@@ -2,31 +2,28 @@
 	"ticker": "MCO",
 	"name": "Moody's",
 	"group": "Data & Software Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
+	"bullCase": "Moody's Analytics (MA) subscription segment now represents ~60% of revenue and grows 10%+ regardless of issuance cycles, providing a structural recurring revenue floor. The MIS ratings segment benefits from the refinancing wave as $8T in corporate debt comes due by 2026. Fee-based pricing power with no regulatory cap.",
+	"bearCase": "If investment-grade issuance dries up in a recession or credit freeze, MIS revenue collapses rapidly (2022: -18% MIS revenue). At 23x forward PE, Moody's trades at a premium that requires sustained mid-teens EPS growth; any miss compresses the multiple sharply.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 13.67,
+		"ttmEPS": 13.69,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "6%",
-			"bull": "11%"
+			"bear": "6%",
+			"base": "26%",
+			"bull": "51%"
 		}
 	},
-	"currentPrice": "$432.69",
-	"marketCap": "$77.0B USD",
+	"currentPrice": "$438.67",
+	"marketCap": "$78.1B USD",
 	"valuation": {
-		"trailingPE": 31.7,
-		"forwardPE": 23.1,
-		"evEbitda": 21.8
+		"trailingPE": 32,
+		"forwardPE": 23.4,
+		"evEbitda": 22.2
 	},
 	"metrics": {
 		"roe": "62.1%",
@@ -39,27 +36,27 @@
 		"yahoo": "$546.70"
 	},
 	"targetPrice": "$546.70",
-	"expectedCAGR": "0% - 11%",
+	"expectedCAGR": "6% - 51%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.49,
+		"score": 1.51,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 23.1,
-			"cvStock": 0.023,
-			"riskMultiplier": 0.966
+			"multiple": 23.4,
+			"cvStock": 0.021,
+			"riskMultiplier": 0.965
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 432.69,
-				"price6mAgo": 511.77,
-				"price1mAgo": 423.22,
+				"price": 438.67,
+				"price6mAgo": 480.74,
+				"price1mAgo": 449.29,
 				"low3m": 402.28,
-				"return6m": -15.5,
-				"return1m": 2.2,
+				"return6m": -8.8,
+				"return1m": -2.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +68,30 @@
 				"surprise": 6,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:38.635Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.8,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 3.64,
+		"totalScore": 8.64,
+		"raw": {
+			"avgSurprisePct": 6.41,
+			"netInsiderShares": 51411,
+			"instFlowTrend": "neutral",
+			"upRevisions": 18,
+			"downRevisions": 2,
+			"totalAnalysts": 22
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:03.509Z",
-	"expectedVolatility": "~31%",
-	"sharpeRatio": 0.03
+	"description": "Moody's Corporation, together with its subsidiaries, operates as an integrated risk assessment firm in the United States, the rest of the Americas, Europe, the Middle East, Africa, and the Asia Pac...",
+	"analystTargets": {
+		"low": 460,
+		"mean": 546.7,
+		"high": 660
+	}
 }

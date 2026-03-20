@@ -1,18 +1,19 @@
 {
 	"ticker": "ANET",
 	"name": "Arista Networks",
-	"group": "AI & Semiconductors",
+	"group": "Network Infrastructure",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$170.4B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "9% - 18%",
+	"marketCap": "$171.4B USD",
+	"sharpeRatio": 0.53,
+	"expectedCAGR": "3% - 62%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 49.2,
-		"forwardPE": 31.7,
+		"trailingPE": 49.5,
+		"forwardPE": 31.9,
 		"pegRatio": 1.44,
-		"evEbitda": 40
+		"evEbitda": 40.8
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
@@ -26,50 +27,45 @@
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$135.35",
+	"currentPrice": "$136.07",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$177.74",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 2.75,
-		"epsGrowth": "20%",
+		"epsGrowth": "21%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 30,
-			"base": 38,
-			"bull": 46
-		},
 		"scenarios": {
-			"bear": "9%",
-			"base": "14%",
-			"bull": "18%"
+			"bear": "3%",
+			"base": "31%",
+			"bull": "62%"
 		},
-		"basis": "10yr avg PE"
+		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:52.217Z",
+	"lastUpdated": "2026-03-19T13:06:26.486Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.59,
+		"score": 1.52,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 20,
+			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 31.7,
+			"multiple": 31.9,
 			"cvStock": 0.082,
 			"riskMultiplier": 1.001
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 135.35,
-				"price6mAgo": 142.84,
-				"price1mAgo": 142.58,
+				"price": 136.07,
+				"price6mAgo": 149.61,
+				"price1mAgo": 137.23,
 				"low3m": 120,
-				"return6m": -5.2,
-				"return1m": -5.1,
+				"return6m": -9.1,
+				"return1m": -0.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -81,6 +77,27 @@
 				"surprise": 8.2,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 4.33,
+		"flowScore": 5,
+		"revisionsScore": 4.8,
+		"totalScore": 14.13,
+		"raw": {
+			"avgSurprisePct": 8.88,
+			"netInsiderShares": 1140634,
+			"instFlowTrend": "positive",
+			"upRevisions": 24,
+			"downRevisions": 0,
+			"totalAnalysts": 25
 		}
+	},
+	"description": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Eur...",
+	"analystTargets": {
+		"low": 140,
+		"mean": 177.74,
+		"high": 220
 	}
 }

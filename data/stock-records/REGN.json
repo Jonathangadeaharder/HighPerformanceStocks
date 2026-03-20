@@ -4,13 +4,13 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
-	"marketCap": "$80.0B USD",
-	"sharpeRatio": 0.18,
-	"expectedCAGR": "7% - 17%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$78.7B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "-1% - 43%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 18.3,
-		"forwardPE": 14.3,
+		"trailingPE": 18,
+		"forwardPE": 14.1,
 		"pegRatio": null,
 		"evEbitda": 16.7,
 		"evFcf": 15
@@ -28,51 +28,45 @@
 	"targetPrice": "$872.85",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$756.91",
+	"currentPrice": "$744.12",
 	"consensus": {
 		"tipranks": "$813",
 		"yahoo": "$872.85",
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 41.46,
+		"ttmEPS": 41.45,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 14,
-			"base": 18,
-			"bull": 22
-		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "13%",
-			"bull": "17%"
+			"bear": "-1%",
+			"base": "18%",
+			"bull": "43%"
 		},
-		"basis": "5yr avg PE"
+		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-16T20:51:07.874Z",
+	"lastUpdated": "2026-03-19T13:06:43.915Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.22,
+		"score": 1.2,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 14.3,
+			"multiple": 14.1,
 			"cvStock": 0.114,
 			"riskMultiplier": 1.02
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 756.91,
-				"price6mAgo": 585.5,
-				"price1mAgo": 793.53,
+				"price": 744.12,
+				"price6mAgo": 591.99,
+				"price1mAgo": 782.38,
 				"low3m": 718.38,
-				"return6m": 29.3,
-				"return1m": -4.6,
-				"near3mLow": false
+				"return6m": 25.7,
+				"return1m": -4.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -84,5 +78,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": -0.56,
+		"totalScore": 9.44,
+		"raw": {
+			"avgSurprisePct": 19.68,
+			"netInsiderShares": 457101,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 4,
+			"totalAnalysts": 27
+		}
+	},
+	"description": "Regeneron Pharmaceuticals, Inc. discovers, invents, develops, manufactures, and commercializes medicines to treat various diseases worldwide.",
+	"analystTargets": {
+		"low": 730,
+		"mean": 872.85,
+		"high": 1057
 	}
 }

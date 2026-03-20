@@ -2,11 +2,12 @@
 	"ticker": "AVGO",
 	"name": "Broadcom",
 	"group": "AI & Semiconductors",
+	"cyclical": true,
 	"confidence": "high",
-	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.50. Superior scale vs MRVL.",
-	"marketCap": "$1540.5B USD",
-	"sharpeRatio": 0.35,
-	"expectedCAGR": "16% - 27%",
+	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
+	"marketCap": "$1497.9B USD",
+	"sharpeRatio": 1.1,
+	"expectedCAGR": "15% - 100%",
 	"ttmEPS": 7.07,
 	"scenarios": {
 		"bear": "8%",
@@ -21,71 +22,87 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "54%"
 	},
-	"targetPrice": "$467.80",
+	"targetPrice": "$472.01",
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$324.92",
+	"currentPrice": "$315.93",
 	"consensus": {
 		"tipranks": "$460",
-		"yahoo": "$467.80",
+		"yahoo": "$472.01",
 		"stockanalysis": "$431"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 5.12,
-		"epsGrowth": "30%",
+		"epsGrowth": "35%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 35,
-			"base": 45,
-			"bull": 55
-		},
 		"scenarios": {
-			"bear": "16%",
-			"base": "22%",
-			"bull": "27%"
+			"bear": "15%",
+			"base": "50%",
+			"bull": "100%"
 		},
-		"basis": "Forward PE (18x) with dual-engine premium (AI ASICs + VMware recurring); no haircut"
+		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:53.339Z",
+	"lastUpdated": "2026-03-19T13:06:28.477Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.63,
+		"score": 0.52,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 30,
+			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 18.4,
-			"cvStock": 0.113,
-			"riskMultiplier": 1.02
+			"multiple": 17.9,
+			"cvStock": 0.11,
+			"riskMultiplier": 1.018
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 324.92,
-				"price6mAgo": 346.17,
-				"price1mAgo": 332.54,
+				"price": 315.93,
+				"price6mAgo": 344.94,
+				"price1mAgo": 333.99,
 				"low3m": 295.3,
-				"return6m": -6.1,
-				"return1m": -2.3,
+				"return6m": -8.4,
+				"return1m": -5.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 29,
+				"up30d": 34,
 				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 1.3,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"note": "(CYCLICAL EPS)"
 	},
 	"valuation": {
-		"trailingPE": 63.5,
-		"forwardPE": 18.4,
-		"evEbitda": 42.2
+		"trailingPE": 61.7,
+		"forwardPE": 17.9,
+		"evEbitda": 41
 	},
-	"expectedVolatility": "~48%"
+	"expectedVolatility": "~48%",
+	"qcs": {
+		"earningsScore": 0.72,
+		"flowScore": -5,
+		"revisionsScore": 4.09,
+		"totalScore": -0.19,
+		"raw": {
+			"avgSurprisePct": 1.97,
+			"netInsiderShares": -766862,
+			"instFlowTrend": "negative",
+			"upRevisions": 36,
+			"downRevisions": 0,
+			"totalAnalysts": 44
+		}
+	},
+	"description": "Broadcom Inc. designs, develops, and supplies various semiconductor devices and infrastructure software solutions internationally.",
+	"analystTargets": {
+		"low": 360,
+		"mean": 472.01,
+		"high": 630
+	}
 }

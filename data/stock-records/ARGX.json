@@ -4,15 +4,15 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
-	"marketCap": "$43.5B USD",
-	"sharpeRatio": 0.53,
-	"expectedCAGR": "18% - 26%",
+	"marketCap": "$42.4B USD",
+	"sharpeRatio": 1.05,
+	"expectedCAGR": "1% - 77%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 35.9,
-		"forwardPE": 21.5,
+		"trailingPE": 35,
+		"forwardPE": 20.8,
 		"pegRatio": null,
-		"evEbitda": 35.5
+		"evEbitda": 34.6
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
@@ -22,52 +22,47 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "87%"
 	},
-	"targetPrice": "$1010.49",
+	"targetPrice": "$1011.10",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
-	"bearCase": "Premium valuation (38x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$703.30",
+	"bearCase": "Premium valuation (36x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
+	"currentPrice": "$684.77",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1010.49"
+		"yahoo": "$1011.10"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 19.6,
-		"epsGrowth": "27%",
+		"ttmEPS": 19.57,
+		"epsGrowth": "33%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 25,
-			"base": 30,
-			"bull": 35
-		},
 		"scenarios": {
-			"bear": "18%",
-			"base": "23%",
-			"bull": "26%"
+			"bear": "1%",
+			"base": "48%",
+			"bull": "77%"
 		},
-		"basis": "GAAP EPS; high-growth biotech; bear assumes PE compression on deceleration"
+		"basis": "Reflects biotech terminal multiple compression and competitive encroachment risk.",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:52.494Z",
+	"lastUpdated": "2026-03-19T13:06:27.461Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.85,
+		"score": 0.67,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 27,
+			"growth": 33,
 			"multipleType": "Forward P/E",
-			"multiple": 21.5,
-			"cvStock": 0.185,
+			"multiple": 20.8,
+			"cvStock": 0.184,
 			"riskMultiplier": 1.063
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 703.3,
-				"price6mAgo": 734.35,
-				"price1mAgo": 843.55,
-				"low3m": 694.14,
-				"return6m": -4.2,
-				"return1m": -16.6,
+				"price": 684.77,
+				"price6mAgo": 736.76,
+				"price1mAgo": 847.26,
+				"low3m": 683.13,
+				"return6m": -7.1,
+				"return1m": -19.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -80,5 +75,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 4.89,
+		"flowScore": 0,
+		"revisionsScore": -3.13,
+		"totalScore": 1.76,
+		"raw": {
+			"avgSurprisePct": 22.5,
+			"netInsiderShares": 0,
+			"instFlowTrend": "negative",
+			"upRevisions": 3,
+			"downRevisions": 13,
+			"totalAnalysts": 16
+		}
+	},
+	"description": "argenx SE, a commercial-stage biopharma company, develops various therapies for the treatment of autoimmune diseases in the United States, Japan, China, the Netherlands, and internationally.",
+	"analystTargets": {
+		"low": 689.06,
+		"mean": 1011.1,
+		"high": 1215.46
 	}
 }

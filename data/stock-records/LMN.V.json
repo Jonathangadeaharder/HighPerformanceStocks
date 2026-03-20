@@ -5,14 +5,14 @@
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
 	"marketCap": "C$6.3B",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "14% - 23%",
+	"sharpeRatio": 1.89,
+	"expectedCAGR": "60% - 134%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 39.2,
-		"forwardPE": 16.6,
+		"trailingPE": 38.7,
+		"forwardPE": 16.4,
 		"pegRatio": null,
-		"evEbitda": 22.3
+		"evEbitda": 21.7
 	},
 	"metrics": {
 		"fcfMargin": "~28%",
@@ -25,49 +25,43 @@
 	"targetPrice": "C$44.25",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$24.67",
+	"currentPrice": "C$24.40",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 1.21,
 		"epsGrowth": "17%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 26
-		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "19%",
-			"bull": "23%"
+			"bear": "60%",
+			"base": "81%",
+			"bull": "134%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:02.508Z",
+	"lastUpdated": "2026-03-19T13:06:37.682Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.14,
+		"score": 1.13,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "P/CF",
-			"multiple": 20.4,
+			"multiple": 20.2,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 24.67,
-				"price6mAgo": 45.5,
-				"price1mAgo": 18.1,
+				"price": 24.4,
+				"price6mAgo": 45.8,
+				"price1mAgo": 18.64,
 				"low3m": 17.77,
-				"return6m": -45.8,
-				"return1m": 36.3,
+				"return6m": -46.7,
+				"return1m": 30.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -81,6 +75,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.93
+		"secondaryScore": 0.92
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 5,
+		"totalScore": 10,
+		"raw": {
+			"avgSurprisePct": 17.29,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 2,
+			"downRevisions": 0,
+			"totalAnalysts": 2
+		}
+	},
+	"description": "Lumine Group Inc. develops, installs, and customizes software, and related professional and support services worldwide.",
+	"analystTargets": {
+		"low": 39,
+		"mean": 44.25,
+		"high": 57
 	}
 }

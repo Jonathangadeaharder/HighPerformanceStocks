@@ -1,4 +1,4 @@
-import { calcDecayedCagr, parseDisplayPrice, parsePercent } from '../../../lib/finance-core.js';
+import { parseDisplayPrice, parsePercent } from '../../../lib/finance-core.js';
 import type {
 	DashboardCounts,
 	DashboardData,
@@ -8,10 +8,10 @@ import type {
 	WorldVolSignal
 } from '$lib/types/dashboard';
 
-const ETF_HURDLE_CAGR = 14;
-const BEAR_FLOOR_CAGR = 0;
-const VALUE_FLOOR_BEAR_CAGR = 12;
-const VALUE_FLOOR_BASE_CAGR = 18;
+const ETF_HURDLE_RETURN = 15;
+const BEAR_FLOOR_RETURN = -10;
+const VALUE_FLOOR_BEAR_RETURN = 5;
+const VALUE_FLOOR_BASE_RETURN = 25;
 const VALUE_FLOOR_UPSIDE = 25;
 const VALUE_FLOOR_MAX_SCORE = 0.65;
 const MOMENTUM_MIN_UNIVERSE = 5;
@@ -32,7 +32,7 @@ function computeMomentumStats(stocks: FindingStock[]): MomentumStats {
 			values.push(stab.return6m - stab.return1m);
 		}
 	}
-	if (values.length < MOMENTUM_MIN_UNIVERSE) {
+	if (values.length < MOMENTUM_MIN_UNIVERSE || values.length <= 1) {
 		return { mean: MOMENTUM_FALLBACK_MEAN, stddev: MOMENTUM_FALLBACK_STDDEV };
 	}
 	const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
@@ -45,60 +45,42 @@ function computeQualityBonus(stock: FindingStock): number {
 	if (!m) return 0;
 	let bonus = 0;
 
+	// Part B: Return on Equity (Max 5 Points)
 	let roeBonus = 0;
 	const roe = parsePercent(m.roe);
 	if (roe != null && roe > 0 && roe < 200) {
-		if (roe >= 25) roeBonus = 4;
-		else if (roe >= 20) roeBonus = 3;
-		else if (roe >= 15) roeBonus = 2;
-		else if (roe >= 10) roeBonus = 1;
+		roeBonus = Math.max(0, Math.min(5, (roe / 25) * 5));
 	}
 
 	// Hyper-rational adjustment: De-lever the ROE. High ROE driven by extreme debt is not "Quality".
 	// If Net Debt / EBITDA > 3.0x, penalize the ROE bonus by 50%.
 	if (m.netDebtEbitda && typeof m.netDebtEbitda === 'string') {
 		const debtMultiple = Number.parseFloat(m.netDebtEbitda.replace('x', ''));
+		// eslint-disable-next-line unicorn/no-zero-fractions
 		if (!Number.isNaN(debtMultiple) && debtMultiple > 3.0) {
 			roeBonus *= 0.5;
 		}
 	}
 	bonus += roeBonus;
 
+	// Part A: FCF Yield (Max 5 Points)
 	const fcfYield = parsePercent(m.fcfYield);
-	if (fcfYield != null) {
-		if (fcfYield >= 6) bonus += 3;
-		else if (fcfYield >= 4) bonus += 2;
-		else if (fcfYield >= 3) bonus += 1;
+	if (fcfYield != null && fcfYield > 0) {
+		const fcfBonus = Math.max(0, Math.min(5, (fcfYield / 5) * 5));
+		bonus += fcfBonus;
 	}
 
-	const r40 = parsePercent(m.ruleOf40);
-	if (r40 != null) {
-		if (r40 >= 60) bonus += 3;
-		else if (r40 >= 50) bonus += 2;
-		else if (r40 >= 40) bonus += 1;
-	}
-
-	return bonus;
+	return +(bonus).toFixed(2);
 }
 
-function computeSensitivityCagr(stock: FindingStock): number | null {
-	const model = stock.cagrModel;
-	if (!model?.exitPE?.base || !model.epsGrowth || !model.ttmEPS) return null;
+function computeSensitivity(stock: FindingStock): number | null {
+	const targets = stock.analystTargets;
 	const currentPrice = parseDisplayPrice(stock.currentPrice);
-	if (currentPrice == null || currentPrice <= 0) return null;
-	const epsGrowth = parsePercent(model.epsGrowth);
-	if (epsGrowth == null) return null;
-	const dyPct = parsePercent(model.dividendYield) ?? 0;
-	const decayFactor = typeof model.decayFactor === 'number' ? model.decayFactor : undefined;
-	const cagr = calcDecayedCagr({
-		price: currentPrice,
-		ttmEPS: model.ttmEPS,
-		epsGrowthPct: epsGrowth - 3,
-		exitPE: model.exitPE.base,
-		dividendYieldPct: dyPct,
-		...(decayFactor !== undefined && { decayFactor })
-	});
-	return +cagr.toFixed(1);
+	if (!targets || currentPrice == null || currentPrice <= 0) return null;
+
+	const bearReturn = ((targets.low - currentPrice) / currentPrice) * 100;
+	const bullReturn = ((targets.high - currentPrice) / currentPrice) * 100;
+	return +(bullReturn - bearReturn).toFixed(1);
 }
 
 function selectDiverseTopPicks(deployNow: FindingStock[], maxPicks: number, maxPerGroup: number): FindingStock[] {
@@ -131,23 +113,19 @@ function deploymentRank(stock: FindingStock, momentum: MomentumStats): number {
 	const return6m = stock.screener?.realityChecks?.stabilization?.return6m ?? 0;
 	const return1m = stock.screener?.realityChecks?.stabilization?.return1m ?? 0;
 	const momentumInput = return6m - return1m;
-	const momentumZScore = Math.max(-2, Math.min(2, (momentumInput - momentum.mean) / momentum.stddev));
-	
+	const momentumZScore = momentum.stddev > 0 ? (momentumInput - momentum.mean) / momentum.stddev : 0;
+
 	// Aggressive Factor Weighting: Quantitative literature assigns roughly equal explanatory power to Value and Momentum.
-	// We scale the Z-score by 7.5 to provide a +/- 15 point differential, ensuring highly significant 
-	// price-action confirmation aggressively pulls fundamentally sound stocks to the top of the pile.
-	const momentumBonus = momentumZScore * 7.5;
+	// We scale the Z-score by 7.5 and cap at +/- 15 points.
+	const momentumBonus = Math.max(-15, Math.min(15, momentumZScore * 7.5));
 
 	// Quality factor bonus (max +10 points) from ROE, FCF yield, Rule of 40.
 	const qualityBonus = computeQualityBonus(stock);
 
-	// Qualitative Confidence Bonus
-	let confidenceBonus = 0;
-	if (stock.confidence === 'high') confidenceBonus = 15;
-	else if (stock.confidence === 'low') confidenceBonus = -15;
-	else if (stock.confidence === 'cut') confidenceBonus = -50;
+	// Quantitative Conviction Score (QCS)
+	const qcsBonus = stock.qcs?.totalScore ?? 0;
 
-	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus + qualityBonus + confidenceBonus).toFixed(1);
+	return +(valuationStrength + base * 1.2 + bear * 0.8 + upside * 0.1 + momentumBonus + qualityBonus + qcsBonus).toFixed(1);
 }
 
 function hasLikelyValueFloor(stock: FindingStock): boolean {
@@ -161,16 +139,16 @@ function hasLikelyValueFloor(stock: FindingStock): boolean {
 	if ((stock.upside ?? 0) < VALUE_FLOOR_UPSIDE) return false;
 
 	return (
-		(stock.bearCagr ?? -999) >= VALUE_FLOOR_BEAR_CAGR &&
-		(stock.baseCagr ?? -999) >= VALUE_FLOOR_BASE_CAGR
+		(stock.bearCagr ?? -999) >= VALUE_FLOOR_BEAR_RETURN &&
+		(stock.baseCagr ?? -999) >= VALUE_FLOOR_BASE_RETURN
 	);
 }
 
 function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	const base = stock.baseCagr ?? -999;
 	const bear = stock.bearCagr ?? -999;
-	const basePass = base >= ETF_HURDLE_CAGR;
-	const bearPass = bear > BEAR_FLOOR_CAGR;
+	const basePass = base >= ETF_HURDLE_RETURN;
+	const bearPass = bear > BEAR_FLOOR_RETURN;
 
 	if (basePass && bearPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
@@ -179,13 +157,13 @@ function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	if (!basePass) {
 		return {
 			status: 'FAIL',
-			reason: `Base CAGR (${base}%) is below the ${ETF_HURDLE_CAGR}% ETF hurdle.`
+			reason: `Base forward return (${base}%) is below the ${ETF_HURDLE_RETURN}% hurdle.`
 		};
 	}
 
 	return {
 		status: 'FAIL',
-		reason: `Bear case CAGR (${bear}%) is below the ${BEAR_FLOOR_CAGR}% floor required for deployment.`
+		reason: `Bear case return (${bear}%) is below the ${BEAR_FLOOR_RETURN}% floor required for deployment.`
 	};
 }
 
@@ -213,6 +191,7 @@ function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
+	// eslint-disable-next-line unicorn/no-zero-fractions
 	if (score != null && score > 1.0) {
 		return {
 			status: 'FAIL',
@@ -221,17 +200,17 @@ function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	}
 
 	// If score is technically "cheap" (< 1.0) but still FAIL signal, it's likely a hurdle issue
-	if (base < ETF_HURDLE_CAGR) {
+	if (base < ETF_HURDLE_RETURN) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Cheap (Score ${score}) but base CAGR ${base}% misses the ${ETF_HURDLE_CAGR}% hurdle.`
+			reason: note ?? `Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
 		};
 	}
 
-	if (bear <= BEAR_FLOOR_CAGR) {
+	if (bear <= BEAR_FLOOR_RETURN) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Cheap (Score ${score}) but bear CAGR ${bear}% is below the ${BEAR_FLOOR_CAGR}% safety floor.`
+			reason: note ?? `Cheap (Score ${score}) but bear return ${bear}% is below the ${BEAR_FLOOR_RETURN}% safety floor.`
 		};
 	}
 
@@ -268,6 +247,14 @@ function assignDeployment(stock: FindingStock): void {
 			};
 			return;
 		}
+		default: {
+			const _exhaustiveCheck: never = signal;
+			stock.deployment = {
+				status: 'NO_DATA',
+				// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+				reason: `Unknown signal: ${_exhaustiveCheck}`
+			};
+		}
 	}
 }
 
@@ -283,7 +270,7 @@ function enrichStock(stock: FindingStock, momentum: MomentumStats): FindingStock
 	enrichedStock.baseCagr = parsePercent(enrichedStock.cagrModel?.scenarios?.base);
 	enrichedStock.bearCagr = parsePercent(enrichedStock.cagrModel?.scenarios?.bear);
 	enrichedStock.bullCagr = parsePercent(enrichedStock.cagrModel?.scenarios?.bull);
-	enrichedStock.sensitivityCagr = computeSensitivityCagr(enrichedStock);
+	enrichedStock.sensitivityCagr = computeSensitivity(enrichedStock);
 
 	assignDeployment(enrichedStock);
 	enrichedStock.deploymentRank =
@@ -367,8 +354,8 @@ export function buildDashboardData(
 		watchlist,
 		lastUpdated: latestUpdatedDate(enrichedStocks),
 		hurdles: {
-			etfCagr: ETF_HURDLE_CAGR,
-			bearFloor: BEAR_FLOOR_CAGR
+			etfCagr: ETF_HURDLE_RETURN,
+			bearFloor: BEAR_FLOOR_RETURN
 		},
 		counts: buildCounts(enrichedStocks, deployNow, cheapWait, watchlist)
 	};

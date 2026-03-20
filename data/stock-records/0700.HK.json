@@ -2,83 +2,100 @@
 	"ticker": "0700.HK",
 	"name": "Tencent",
 	"group": "Emerging Markets",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
-	"marketCap": "HK$5038.3B",
-	"sharpeRatio": 0.43,
-	"expectedCAGR": "12% - 22%",
+	"marketCap": "HK$4627.9B",
+	"sharpeRatio": 1.16,
+	"expectedCAGR": "-3% - 79%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 22,
-		"forwardPE": 15.7,
+		"trailingPE": 20.5,
+		"forwardPE": 13,
 		"pegRatio": null,
-		"evEbitda": 19.9
+		"evEbitda": 18.8
 	},
 	"metrics": {
-		"roe": "19.8%",
-		"fcfMargin": "~18%",
+		"roe": "20.0%",
+		"fcfMargin": "~19%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "33%"
+		"ruleOf40": "32%"
 	},
-	"targetPrice": "HK$756.35",
+	"targetPrice": "HK$753.75",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
 	"bearCase": "Chinese regulatory risk remains — gaming license freezes, antitrust actions, or data privacy rules could resurface. Advertising revenue is cyclically exposed to China's weak consumer economy. International gaming competition from Microsoft/Activision intensifying. VIE structure risk similar to BABA for offshore investors. Heavy investment in AI and cloud could compress margins near-term. HKD-denominated stock adds currency layer for USD-based investors (HKD pegged to USD via 7.75-7.85 band, but peg could theoretically break under extreme stress).",
-	"currentPrice": "HK$558.50",
+	"currentPrice": "HK$513",
 	"consensus": {
 		"tipranks": "HK$590",
-		"yahoo": "HK$756.35",
+		"yahoo": "HK$753.75",
 		"stockanalysis": "HK$575"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 29,
-		"epsGrowth": "15%",
+		"epsGrowth": "16%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 16,
-			"base": 20,
-			"bull": 25
-		},
 		"scenarios": {
-			"bear": "12%",
-			"base": "17%",
-			"bull": "22%"
+			"bear": "-3%",
+			"base": "48%",
+			"bull": "79%"
 		},
-		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis"
+		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:51.230Z",
+	"lastUpdated": "2026-03-19T13:06:25.328Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.03,
-		"signal": "FAIL",
+		"score": 0.79,
+		"signal": "REJECTED",
 		"inputs": {
-			"growth": 15,
+			"growth": 16,
 			"multipleType": "Forward P/E",
-			"multiple": 15.7,
-			"cvStock": 0.054,
-			"riskMultiplier": 0.984
+			"multiple": 13,
+			"cvStock": 0.037,
+			"riskMultiplier": 0.974
 		},
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 558.5,
-				"price6mAgo": 661.5,
+				"pass": false,
+				"price": 513,
+				"price6mAgo": 641,
 				"price1mAgo": 522,
 				"low3m": 498.8,
-				"return6m": -15.6,
-				"return1m": 7,
-				"near3mLow": false
+				"return6m": -20,
+				"return1m": -1.7,
+				"near3mLow": true
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 3,
-				"down30d": 9
+				"pass": false,
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 7.7,
-				"quarter": "2025-09"
+				"surprise": 1.5,
+				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 4.77,
+		"flowScore": 0,
+		"revisionsScore": -5,
+		"totalScore": -0.23,
+		"raw": {
+			"avgSurprisePct": 4.42,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 2
+		}
+	},
+	"description": "Tencent Holdings Limited, an investment holding company, provides value-added services, marketing services, fintech, and business services in Mainland China and internationally.",
+	"analystTargets": {
+		"low": 491.43,
+		"mean": 753.75,
+		"high": 912.89
 	}
 }

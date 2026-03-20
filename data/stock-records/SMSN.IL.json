@@ -8,47 +8,37 @@
 	"bullCase": "Memory cycle upswing and HBM catch-up drive massive earnings leverage.",
 	"bearCase": "Intense competition in foundry and smartphone markets.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "9%",
-		"exitPE": {
-			"bear": 10,
-			"base": 15,
-			"bull": 20
-		},
 		"basis": "GAAP diluted EPS",
-		"dividendYield": "47%",
-		"ttmEPS": 96.44,
-		"scenarios": {
-			"bear": "33%",
-			"base": "40%",
-			"bull": "45%"
-		}
+		"dividendYield": "2%",
+		"ttmEPS": 96.44
 	},
-	"currentPrice": "$3202",
-	"marketCap": "$870.0B USD",
+	"currentPrice": "$3214",
+	"marketCap": "$873.3B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
 	"expectedVolatility": "~41%",
 	"screener": {
-		"engine": "totalReturn",
-		"score": null,
+		"engine": "fPERG",
+		"score": 5.69,
 		"signal": "FAIL",
-		"note": "Dividend exceeds forward earnings (value trap) (CYCLICAL EPS)",
 		"inputs": {
 			"growth": 9,
-			"dividendYield": 47,
-			"earningsYield": 2
+			"multipleType": "Forward P/E",
+			"multiple": 51.2,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 3202,
-				"price6mAgo": 1421,
-				"price1mAgo": 3074,
-				"low3m": 1728,
-				"return6m": 125.3,
-				"return1m": 4.2,
+				"price": 3214,
+				"price6mAgo": 1500,
+				"price1mAgo": 3340,
+				"low3m": 1792,
+				"return6m": 114.3,
+				"return1m": -3.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -56,12 +46,13 @@
 				"up30d": 0,
 				"down30d": 0
 			}
-		}
+		},
+		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-16T20:51:08.876Z",
+	"lastUpdated": "2026-03-19T13:06:44.908Z",
 	"valuation": {
-		"trailingPE": 33.2,
-		"forwardPE": 51.1,
+		"trailingPE": 33.3,
+		"forwardPE": 51.2,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},
@@ -72,7 +63,20 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-27%"
 	},
-	"expectedCAGR": "33% - 45%",
-	"sharpeRatio": 0.84,
-	"cyclical": true
+	"sharpeRatio": -0.28,
+	"cyclical": true,
+	"qcs": {
+		"earningsScore": 0,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": 0,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
+	}
 }

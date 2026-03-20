@@ -1,17 +1,17 @@
 {
 	"ticker": "SHOP",
 	"name": "Shopify",
-	"group": "Defensive Monopolies",
+	"group": "High-Growth Tech",
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$165.2B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "11% - 21%",
-	"expectedVolatility": "~61%",
+	"marketCap": "$161.5B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "-11% - 62%",
+	"expectedVolatility": "~60%",
 	"valuation": {
-		"trailingPE": 136.1,
-		"forwardPE": 55,
-		"evEbitda": 80.2
+		"trailingPE": 131.6,
+		"forwardPE": 53.8,
+		"evEbitda": 80.7
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -23,48 +23,42 @@
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$126.58",
+	"currentPrice": "$123.75",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "21%"
+			"bear": "-11%",
+			"base": "29%",
+			"bull": "62%"
 		},
 		"ttmEPS": 1.89,
-		"horizon": 5,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 35,
-			"base": 45,
-			"bull": 55
-		},
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:08.840Z",
+	"lastUpdated": "2026-03-19T13:06:44.878Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.21,
+		"score": 2.16,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "Forward P/E",
-			"multiple": 55,
+			"multiple": 53.8,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 126.58,
-				"price6mAgo": 147.87,
-				"price1mAgo": 113.54,
+				"price": 123.75,
+				"price6mAgo": 153.3,
+				"price1mAgo": 123.8,
 				"low3m": 104.92,
-				"return6m": -14.4,
-				"return1m": 11.5,
+				"return6m": -19.3,
+				"return1m": 0,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,7 +74,27 @@
 	},
 	"intrinsicValue": {
 		"dcf": 18.24,
-		"date": "2026-03-16",
-		"discount": -86
+		"date": "2026-03-19",
+		"discount": -85
+	},
+	"qcs": {
+		"earningsScore": 0.82,
+		"flowScore": 0,
+		"revisionsScore": 0.23,
+		"totalScore": 1.05,
+		"raw": {
+			"avgSurprisePct": 3.15,
+			"netInsiderShares": 0,
+			"instFlowTrend": "negative",
+			"upRevisions": 19,
+			"downRevisions": 17,
+			"totalAnalysts": 43
+		}
+	},
+	"description": "Shopify Inc., a commerce technology company, provides tools to start, scale, market, and run a business of various sizes in Canada, the United States, Europe, the Middle East, Africa, the Asia Paci...",
+	"analystTargets": {
+		"low": 110,
+		"mean": 160.15,
+		"high": 200
 	}
 }

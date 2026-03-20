@@ -2,54 +2,45 @@
 	"ticker": "KAP.IL",
 	"name": "Kazatomprom",
 	"group": "Energy & Infrastructure",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "World's largest uranium producer but carries geopolitical risk.",
 	"targetPrice": "$95.00",
 	"bullCase": "Lowest cost producer benefiting from structural uranium deficits.",
 	"bearCase": "Geopolitical risks and potential export route disruptions.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 10,
-			"base": 12,
-			"bull": 15
-		},
-		"basis": "GAAP diluted EPS",
+		"epsGrowth": "8%",
+		"basis": "Reflects structural commodity cyclicality and production constraints.",
 		"dividendYield": "0%",
-		"ttmEPS": 6.16,
-		"scenarios": {
-			"bear": "10%",
-			"base": "14%",
-			"bull": "20%"
-		}
+		"ttmEPS": 6.16
 	},
-	"currentPrice": "$76.10",
-	"marketCap": "$19.7B USD",
+	"currentPrice": "$71.10",
+	"marketCap": "$18.4B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
 	"expectedVolatility": "~47%",
 	"screener": {
-		"engine": "tPERG",
-		"score": 0.82,
-		"signal": "PASS",
+		"engine": "totalReturn",
+		"score": 1.5,
+		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
-			"multipleType": "Trailing P/E",
-			"multiple": 12.4,
-			"cvStock": 0.08,
-			"riskMultiplier": 1
+			"growth": 8,
+			"dividendYield": 0,
+			"debtToEquity": 0,
+			"debtPenalty": false,
+			"rawReturn": 8
 		},
+		"note": "(CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 76.1,
-				"price6mAgo": 49.95,
-				"price1mAgo": 79.7,
-				"low3m": 47.8,
-				"return6m": 52.4,
-				"return1m": -4.5,
+				"price": 71.1,
+				"price6mAgo": 51.5,
+				"price1mAgo": 82.8,
+				"low3m": 50.1,
+				"return6m": 38.1,
+				"return1m": -14.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -57,12 +48,11 @@
 				"up30d": 0,
 				"down30d": 0
 			}
-		},
-		"note": "Used benchmark CV (missing dispersion data)"
+		}
 	},
-	"lastUpdated": "2026-03-16T20:51:01.556Z",
+	"lastUpdated": "2026-03-19T13:06:36.558Z",
 	"valuation": {
-		"trailingPE": 12.4,
+		"trailingPE": 11.5,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -74,6 +64,19 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "1%"
 	},
-	"expectedCAGR": "10% - 20%",
-	"sharpeRatio": 0.22
+	"sharpeRatio": 0.06,
+	"qcs": {
+		"earningsScore": 0,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": 0,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
+	}
 }

@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$391.6B USD",
-	"sharpeRatio": 0.7,
-	"expectedCAGR": "19% - 28%",
-	"expectedVolatility": "~27%",
+	"marketCap": "$368.4B USD",
+	"sharpeRatio": 0.52,
+	"expectedCAGR": "-9% - 47%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 93.4,
-		"forwardPE": 13.7,
+		"trailingPE": 87.5,
+		"forwardPE": 12.9,
 		"pegRatio": 1.06,
-		"evEbitda": 15.4
+		"evEbitda": 14.8
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -24,58 +24,52 @@
 		"grossMargin": "71.62%",
 		"operatingMargin": "~34%"
 	},
-	"targetPrice": "$248.86",
+	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$221.45",
+	"currentPrice": "$208.34",
 	"consensus": {
 		"tipranks": "$253",
-		"yahoo": "$248.86",
+		"yahoo": "$249.14",
 		"stockanalysis": "$247"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 12.76,
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
-		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 26
-		},
 		"scenarios": {
-			"bear": "19%",
-			"base": "24%",
-			"bull": "28%"
+			"bear": "-9%",
+			"base": "23%",
+			"bull": "47%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-16T20:50:51.292Z",
+	"lastUpdated": "2026-03-19T13:06:25.316Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.89,
+		"score": 0.84,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 13.7,
+			"multiple": 12.9,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 221.45,
-				"price6mAgo": 220.81,
-				"price1mAgo": 232.86,
+				"price": 208.34,
+				"price6mAgo": 222.47,
+				"price1mAgo": 224.35,
 				"low3m": 204.27,
-				"return6m": 0.3,
-				"return1m": -4.9,
-				"near3mLow": false
+				"return6m": -6.4,
+				"return1m": -7.1,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 9,
+				"up30d": 6,
 				"down30d": 3
 			},
 			"earningsSurprise": {
@@ -85,8 +79,28 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 165.32,
-		"date": "2026-03-16",
-		"discount": -25
+		"dcf": 165.88,
+		"date": "2026-03-19",
+		"discount": -20
+	},
+	"qcs": {
+		"earningsScore": 2.93,
+		"flowScore": 0,
+		"revisionsScore": 0.48,
+		"totalScore": 3.41,
+		"raw": {
+			"avgSurprisePct": 2.79,
+			"netInsiderShares": 287182,
+			"instFlowTrend": "negative",
+			"upRevisions": 4,
+			"downRevisions": 1,
+			"totalAnalysts": 31
+		}
+	},
+	"description": "AbbVie Inc., a research-based biopharmaceutical company, engages in the research and development, manufacturing, commercializing, and sale of medicines and therapies worldwide.",
+	"analystTargets": {
+		"low": 184,
+		"mean": 249.14,
+		"high": 299
 	}
 }

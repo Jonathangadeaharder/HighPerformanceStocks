@@ -5,28 +5,22 @@
 	"confidence": "high",
 	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "16%",
-		"exitPE": {
-			"bear": 28,
-			"base": 32,
-			"bull": 36
-		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 1.59,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "23%",
-			"base": "26%",
-			"bull": "29%"
+			"bear": "-3%",
+			"base": "29%",
+			"bull": "67%"
 		}
 	},
-	"currentPrice": "$33.88",
-	"marketCap": "$32.8B USD",
+	"currentPrice": "$33",
+	"marketCap": "$31.9B USD",
 	"valuation": {
-		"trailingPE": 21.3,
-		"forwardPE": 20.2,
-		"evEbitda": 14.3
+		"trailingPE": 20.8,
+		"forwardPE": 19.6,
+		"evEbitda": 13.8
 	},
 	"metrics": {
 		"roe": "17.1%",
@@ -39,15 +33,15 @@
 		"yahoo": "$42.67"
 	},
 	"targetPrice": "$42.67",
-	"expectedCAGR": "23% - 29%",
+	"expectedCAGR": "-3% - 67%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.23,
+		"score": 1.19,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "Forward P/E",
-			"multiple": 20.2,
+			"multiple": 19.6,
 			"cvStock": 0.037,
 			"riskMultiplier": 0.974
 		},
@@ -55,12 +49,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 33.88,
-				"price6mAgo": 46.62,
-				"price1mAgo": 37.52,
-				"low3m": 33.53,
-				"return6m": -27.3,
-				"return1m": -9.7,
+				"price": 33,
+				"price6mAgo": 45.85,
+				"price1mAgo": 37.65,
+				"low3m": 32.97,
+				"return6m": -28,
+				"return1m": -12.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,7 +68,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:54.727Z",
+	"lastUpdated": "2026-03-19T13:06:29.701Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.8
+	"sharpeRatio": 1.02,
+	"qcs": {
+		"earningsScore": 2.98,
+		"flowScore": 5,
+		"revisionsScore": -4.17,
+		"totalScore": 3.81,
+		"raw": {
+			"avgSurprisePct": 2.76,
+			"netInsiderShares": 275901,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 10,
+			"totalAnalysts": 12
+		}
+	},
+	"bullCase": "Copart operates the most defensible marketplace in the salvage vehicle industry — a two-sided network of insurance companies and vehicle dismantlers/exporters, with 50+ years of physical land accumulation that is essentially irreplicable. Total-loss rates are structurally rising as repair costs exceed vehicle values, providing multi-decade volume tailwind.",
+	"bearCase": "Copart's growth is sensitive to used vehicle values — a used-car price collapse reduces salvage vehicle prices and volume simultaneously. Any regulatory or insurance industry change in total-loss thresholds could structurally reduce supply volume.",
+	"description": "Copart, Inc. provides online auctions and vehicle remarketing services in the United States, the United Kingdom, Germany, Brazil, Canada, the United Arab Emirates, Spain, Finland, Oman, the Republi...",
+	"analystTargets": {
+		"low": 32,
+		"mean": 42.67,
+		"high": 55
+	}
 }

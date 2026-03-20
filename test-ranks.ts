@@ -1,33 +1,26 @@
-import fs from 'fs';
-import path from 'path';
-import { buildDashboardData } from './src/lib/domain/deployment';
+import { readFileSync, readdirSync } from 'fs';
+import { resolve } from 'path';
+import { STOCK_RECORDS_DIR } from './lib/project-paths.js';
+import { buildDashboardData } from './src/lib/domain/deployment.ts';
+import type { FindingStock } from './src/lib/types/dashboard';
 
-const DATA_DIR = 'data/stock-records';
+const DATA_DIR = STOCK_RECORDS_DIR;
 
-function main() {
-    const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
-    const stocks = files.map(f => {
-        const fullPath = path.resolve(DATA_DIR, f);
-        return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+async function main() {
+    const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
+    const stocks: FindingStock[] = files.map((f) => {
+        const path = resolve(DATA_DIR, f);
+        return JSON.parse(readFileSync(path, 'utf-8'));
     });
 
-    const dashboard = buildDashboardData(stocks, { source: 'VIX', signal: 'WAIT', score: 25, value: 25, fallbackActive: false });
+    // We need a dummy vol signal
+    const data = buildDashboardData(stocks, 'LOW');
 
-    console.log('\n--- NEW TOP PICKS (DIVERSIFIED) ---');
-    dashboard.topPicks.forEach(s => {
-        console.log(`[${s.pickLabel}] ${s.ticker} (${s.group}) | Rank: ${s.deploymentRank}`);
+    console.log('\n--- TOP 10 DEPLOYMENT RANKS (NEW STANDARDIZED ENGINE) ---\n');
+    data.deployNow.slice(0, 10).forEach((s, i) => {
+        console.log(`${i + 1}. ${s.ticker.padEnd(8)} | Rank: ${String(s.deploymentRank?.toFixed(1)).padEnd(5)} | Base CAGR: ${String(s.baseCagr).padEnd(4)}% | QCS: ${String(s.qcs?.totalScore).padEnd(4)} | Quality: ${String(s.metrics?.roe)} ROE / ${s.metrics?.fcfYield} FCFY`);
     });
-
-    console.log('\n--- NEW DEPLOY RANKINGS (w/ Quality & Dynamic Momentum) ---');
-    dashboard.deployNow.forEach((s, idx) => {
-        const return6m = s.screener?.realityChecks?.stabilization?.return6m ?? 0;
-        const return1m = s.screener?.realityChecks?.stabilization?.return1m ?? 0;
-        const roe = s.metrics?.roe ?? 'N/A';
-        const fcfYield = s.metrics?.fcfYield ?? 'N/A';
-        const r40 = s.metrics?.ruleOf40 ?? 'N/A';
-
-        console.log(`${idx + 1}. ${s.ticker} | Rank: ${s.deploymentRank} | Mom(6m-1m): ${(return6m - return1m).toFixed(1)}% | Q(ROE:${roe}, FCF:${fcfYield}, R40:${r40})`);
-    });
+    console.log('\n--------------------------------------------------------\n');
 }
 
-main();
+main().catch(console.error);

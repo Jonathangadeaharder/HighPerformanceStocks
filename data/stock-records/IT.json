@@ -2,31 +2,28 @@
 	"ticker": "IT",
 	"name": "Gartner",
 	"group": "Data & Software Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
+	"bullCase": "Gartner's enterprise IT research is the most defensible subscription moat in B2B services — Fortune 500 clients renew at 90%+ rates because Gartner's Magic Quadrant dictates vendor selection. Aggressive buybacks (~6% float reduction annually) compound EPS well above organic growth. After a 36% selloff, the stock trades at an anomalously low 11x forward PE.",
+	"bearCase": "Enterprise IT budgets are among the first to be cut in a downturn. If new contract volumes slow in a recession, Gartner's double-digit growth engine stalls. The buyback program — funded by FCF — is the primary EPS driver; any FCF pressure creates a compounding miss.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
-		"basis": "Non-GAAP EPS",
+		"epsGrowth": "12%",
+		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
 		"ttmEPS": 9.65,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "13%",
-			"base": "19%",
-			"bull": "25%"
+			"bear": "-5%",
+			"base": "20%",
+			"bull": "61%"
 		}
 	},
-	"currentPrice": "$160.25",
-	"marketCap": "$11.6B USD",
+	"currentPrice": "$158.12",
+	"marketCap": "$11.4B USD",
 	"valuation": {
-		"trailingPE": 16.6,
-		"forwardPE": 11,
-		"evEbitda": 10.2
+		"trailingPE": 16.4,
+		"forwardPE": 10.9,
+		"evEbitda": 9.7
 	},
 	"metrics": {
 		"roe": "86.9%",
@@ -39,27 +36,27 @@
 		"yahoo": "$190.46"
 	},
 	"targetPrice": "$190.46",
-	"expectedCAGR": "13% - 25%",
+	"expectedCAGR": "-5% - 61%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.72,
+		"score": 0.89,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 15,
+			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 11,
+			"multiple": 10.9,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.982
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 160.25,
-				"price6mAgo": 253.92,
-				"price1mAgo": 156.3,
+				"price": 158.12,
+				"price6mAgo": 256.39,
+				"price1mAgo": 156.94,
 				"low3m": 139.18,
-				"return6m": -36.9,
-				"return1m": 2.5,
+				"return6m": -38.3,
+				"return1m": 0.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +68,30 @@
 				"surprise": 12.2,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:35.758Z",
+	"expectedVolatility": "~53%",
+	"sharpeRatio": 0.44,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": -1.33,
+		"totalScore": 8.67,
+		"raw": {
+			"avgSurprisePct": 10.61,
+			"netInsiderShares": 114253,
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 8,
+			"totalAnalysts": 15
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:00.559Z",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.27
+	"description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
+	"analystTargets": {
+		"low": 150,
+		"mean": 190.46,
+		"high": 255
+	}
 }

@@ -1,18 +1,19 @@
 {
 	"ticker": "INVE-B.ST",
 	"name": "Investor AB",
-	"group": "The Capital Compounders",
+	"group": "Capital Compounders",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1082.4B SEK",
-	"sharpeRatio": 0.31,
-	"expectedCAGR": "7% - 15%",
+	"marketCap": "1048.9B SEK",
+	"sharpeRatio": 0,
+	"expectedCAGR": "-7% - 16%",
 	"expectedVolatility": "~21%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 6.9,
-		"forwardPE": 22.4
+		"trailingPE": 6.7,
+		"forwardPE": 21.7
 	},
 	"metrics": {
 		"roe": "17.7%",
@@ -23,48 +24,42 @@
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "353 SEK",
+	"currentPrice": "342 SEK",
 	"cagrModel": {
-		"horizon": 5,
 		"scenarios": {
-			"bear": "7%",
-			"base": "12%",
-			"bull": "15%"
+			"bear": "-7%",
+			"base": "8%",
+			"bull": "16%"
 		},
 		"epsGrowth": "10%",
-		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 26
-		},
 		"dividendYield": "2%",
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-16T20:51:00.620Z",
+	"lastUpdated": "2026-03-19T13:06:35.592Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
+		"score": 2.07,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 22.4,
+			"multiple": 21.7,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 353.35,
-				"price6mAgo": 282.25,
-				"price1mAgo": 362,
+				"price": 342.4,
+				"price6mAgo": 286.7,
+				"price1mAgo": 368,
 				"low3m": 317.5,
-				"return6m": 25.2,
-				"return1m": -2.4,
+				"return6m": 19.4,
+				"return1m": -7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -72,6 +67,27 @@
 				"up30d": 1,
 				"down30d": 0
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 0,
+		"flowScore": 0,
+		"revisionsScore": -5,
+		"totalScore": -5,
+		"raw": {
+			"avgSurprisePct": 0,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 1,
+			"totalAnalysts": 1
 		}
+	},
+	"description": "Investor AB (publ) is a private equity firm specializing in mature, middle market, buyouts and growth capital investments.",
+	"analystTargets": {
+		"low": 310,
+		"mean": 362.4,
+		"high": 392
 	}
 }

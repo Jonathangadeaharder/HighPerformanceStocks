@@ -2,82 +2,97 @@
 	"ticker": "BRK.B",
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1061.9B USD",
-	"sharpeRatio": 0.63,
-	"expectedCAGR": "13% - 20%",
+	"marketCap": "$1045.2B USD",
+	"sharpeRatio": 0.24,
+	"expectedCAGR": "-1% - 19%",
 	"expectedVolatility": "~19%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 15.9,
-		"forwardPE": 22.6
+		"trailingPE": 15.6,
+		"forwardPE": 22.2
 	},
 	"metrics": {
 		"roe": "9.8%",
 		"fcfMargin": "~10%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "9%"
 	},
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$492.21",
+	"currentPrice": "$484.47",
 	"cagrModel": {
-		"horizon": 5,
 		"scenarios": {
-			"bear": "13%",
-			"base": "17%",
-			"bull": "20%"
+			"bear": "-1%",
+			"base": "8%",
+			"bull": "19%"
 		},
 		"epsGrowth": "10%",
-		"exitPE": {
-			"bear": 18,
-			"base": 22,
-			"bull": 25
-		},
 		"dividendYield": "0%",
-		"basis": "Estimated compounder baseline",
-		"ttmEPS": 31.02
+		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
+		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-16T20:50:54.372Z",
+	"lastUpdated": "2026-03-19T13:06:28.668Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.18,
+		"score": 2.14,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 22.6,
+			"multiple": 22.2,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 492.21,
-				"price6mAgo": 492.33,
-				"price1mAgo": 503.41,
+				"price": 484.47,
+				"price6mAgo": 492.85,
+				"price1mAgo": 496.94,
 				"low3m": 471.91,
-				"return6m": 0,
-				"return1m": -2.2,
+				"return6m": -1.7,
+				"return1m": -2.5,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 1
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -8.5,
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": -1.07,
+		"flowScore": 0,
+		"revisionsScore": -3.33,
+		"totalScore": -4.4,
+		"raw": {
+			"avgSurprisePct": -0.54,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 3
+		}
+	},
+	"description": "Berkshire Hathaway Inc., together with its subsidiaries, engages in the insurance, freight rail transportation, and utility businesses.",
+	"analystTargets": {
+		"low": 481,
+		"mean": 523,
+		"high": 578
 	}
 }

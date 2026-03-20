@@ -1,31 +1,25 @@
 {
 	"ticker": "FTNT",
 	"name": "Fortinet",
-	"group": "Data & Software Monopolies",
+	"group": "Cybersecurity",
 	"confidence": "high",
 	"confidenceReason": "Hardware+software security cycles at much cheaper P/E than CRWD/PANW. Buy on billing cycle panics.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 2.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "3%",
-			"bull": "8%"
+			"bear": "-23%",
+			"base": "7%",
+			"bull": "44%"
 		}
 	},
-	"currentPrice": "$84.49",
-	"marketCap": "$62.8B USD",
+	"currentPrice": "$83.39",
+	"marketCap": "$62.0B USD",
 	"valuation": {
-		"trailingPE": 34.9,
-		"forwardPE": 25.5,
+		"trailingPE": 34.5,
+		"forwardPE": 25.2,
 		"evEbitda": 26.6
 	},
 	"metrics": {
@@ -39,27 +33,27 @@
 		"yahoo": "$89.06"
 	},
 	"targetPrice": "$89.06",
-	"expectedCAGR": "-3% - 8%",
+	"expectedCAGR": "-23% - 44%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.68,
+		"score": 1.66,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 25.5,
+			"multiple": 25.2,
 			"cvStock": 0.063,
 			"riskMultiplier": 0.99
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 84.49,
-				"price6mAgo": 80.29,
-				"price1mAgo": 81.69,
+				"price": 83.39,
+				"price6mAgo": 84.21,
+				"price1mAgo": 81.67,
 				"low3m": 73.55,
-				"return6m": 5.2,
-				"return1m": 3.4,
+				"return6m": -1,
+				"return1m": 2.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +67,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:58.425Z",
+	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
+	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
+	"lastUpdated": "2026-03-19T13:06:33.583Z",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": -0.05
+	"sharpeRatio": 0.14,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -0.24,
+		"totalScore": 4.76,
+		"raw": {
+			"avgSurprisePct": 10.79,
+			"netInsiderShares": 411204,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 42
+		}
+	},
+	"description": "Fortinet, Inc. provides cybersecurity and convergence of networking and security solutions worldwide.",
+	"analystTargets": {
+		"low": 64,
+		"mean": 89.06,
+		"high": 120
+	}
 }

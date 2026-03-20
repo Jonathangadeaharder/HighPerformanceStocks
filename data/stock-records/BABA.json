@@ -2,17 +2,18 @@
 	"ticker": "BABA",
 	"name": "Alibaba",
 	"group": "Emerging Markets",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
-	"marketCap": "$326.4B USD",
-	"sharpeRatio": 0.34,
-	"expectedCAGR": "14% - 26%",
+	"marketCap": "$320.9B USD",
+	"sharpeRatio": 0.87,
+	"expectedCAGR": "-5% - 92%",
 	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 18,
-		"forwardPE": 15.7,
+		"trailingPE": 17.9,
+		"forwardPE": 15.4,
 		"pegRatio": null,
-		"evEbitda": 15.7
+		"evEbitda": 15.6
 	},
 	"metrics": {
 		"roe": "11.2%",
@@ -21,55 +22,49 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "0%"
 	},
-	"targetPrice": "$198.95",
+	"targetPrice": "$198.58",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
-	"currentPrice": "$136.71",
+	"currentPrice": "$134.43",
 	"consensus": {
 		"tipranks": "$168",
-		"yahoo": "$198.95",
+		"yahoo": "$198.58",
 		"stockanalysis": "$160"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 9.01,
 		"epsGrowth": "13%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"scenarios": {
-			"bear": "14%",
-			"base": "20%",
-			"bull": "26%"
+			"bear": "-5%",
+			"base": "49%",
+			"bull": "92%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-16T20:50:53.387Z",
+	"lastUpdated": "2026-03-19T13:06:28.502Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.3,
+		"score": 1.27,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 15.7,
+			"multiple": 15.4,
 			"cvStock": 0.201,
 			"riskMultiplier": 1.072
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 136.71,
-				"price6mAgo": 166.17,
-				"price1mAgo": 155.43,
+				"pass": false,
+				"price": 134.43,
+				"price6mAgo": 162.81,
+				"price1mAgo": 154.27,
 				"low3m": 128.55,
-				"return6m": -17.7,
-				"return1m": -12,
-				"near3mLow": false
+				"return6m": -17.4,
+				"return1m": -12.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
@@ -77,14 +72,34 @@
 				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": -24.5,
-				"quarter": "2025-09"
+				"surprise": -35.2,
+				"quarter": "2025-12"
 			}
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 245.06,
-		"date": "2026-03-16",
-		"discount": 79
+		"dcf": 245.21,
+		"date": "2026-03-19",
+		"discount": 82
+	},
+	"qcs": {
+		"earningsScore": -3.32,
+		"flowScore": 0,
+		"revisionsScore": -0.76,
+		"totalScore": -4.08,
+		"raw": {
+			"avgSurprisePct": -16.67,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 5,
+			"totalAnalysts": 33
+		}
+	},
+	"description": "Alibaba Group Holding Limited, through its subsidiaries, provides technology infrastructure and marketing reach to help merchants, brands, retailers, and other businesses to engage with their users...",
+	"analystTargets": {
+		"low": 126.3,
+		"mean": 198.58,
+		"high": 256.8
 	}
 }

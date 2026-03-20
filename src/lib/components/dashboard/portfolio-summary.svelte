@@ -21,15 +21,15 @@
 			<span class="ps-value">{summary.uniqueSectors}</span>
 		</div>
 		<div class="ps-stat">
-			<span class="ps-label">Avg Base CAGR</span>
+			<span class="ps-label">Avg Base 1Y</span>
 			<span class="ps-value mono" style="color:#4ade80">{summary.weightedAvgBaseCagr}%</span>
 		</div>
 		<div class="ps-stat">
-			<span class="ps-label">Avg Bear CAGR</span>
+			<span class="ps-label">Avg Bear 1Y</span>
 			<span class="ps-value mono" style="color:#facc15">{summary.weightedAvgBearCagr}%</span>
 		</div>
 		<div class="ps-stat">
-			<span class="ps-label">Avg Bull CAGR</span>
+			<span class="ps-label">Avg Bull 1Y</span>
 			<span class="ps-value mono" style="color:#60a5fa">{summary.weightedAvgBullCagr}%</span>
 		</div>
 		<div class="ps-stat">

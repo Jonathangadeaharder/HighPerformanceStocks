@@ -2,17 +2,18 @@
 	"ticker": "APP",
 	"name": "AppLovin",
 	"group": "Ad-Tech",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$153.2B USD",
-	"sharpeRatio": 0.12,
-	"expectedCAGR": "4% - 24%",
-	"expectedVolatility": "~81%",
+	"marketCap": "$149.6B USD",
+	"sharpeRatio": 0.39,
+	"expectedCAGR": "-23% - 94%",
+	"expectedVolatility": "~80%",
 	"valuation": {
-		"trailingPE": 45.1,
-		"forwardPE": 22.4,
+		"trailingPE": 44,
+		"forwardPE": 21.8,
 		"pegRatio": 0.8,
-		"evEbitda": 36.5
+		"evEbitda": 35.2
 	},
 	"metrics": {
 		"roe": "212.9%",
@@ -28,46 +29,41 @@
 		"yahoo": "$648.57"
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
-	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$453.30",
+	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
+	"currentPrice": "$442.57",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 15,
-			"base": 25,
-			"bull": 35
-		},
 		"scenarios": {
-			"bear": "4%",
-			"base": "16%",
-			"bull": "24%"
+			"bear": "-23%",
+			"base": "47%",
+			"bull": "94%"
 		},
-		"basis": "AXON 2.0 expansion driving massive FCF conversion",
-		"ttmEPS": 10.04
+		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
+		"ttmEPS": 10.05,
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:52.464Z",
+	"lastUpdated": "2026-03-19T13:06:27.305Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.75,
+		"score": 0.73,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 22.4,
+			"multiple": 21.8,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 453.3,
-				"price6mAgo": 606.66,
-				"price1mAgo": 376.38,
+				"price": 442.57,
+				"price6mAgo": 649.59,
+				"price1mAgo": 412,
 				"low3m": 359,
-				"return6m": -25.3,
-				"return1m": 20.4,
+				"return6m": -31.9,
+				"return1m": 7.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,6 +75,27 @@
 				"surprise": 10.1,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 4.99,
+		"flowScore": -5,
+		"revisionsScore": 4.29,
+		"totalScore": 4.28,
+		"raw": {
+			"avgSurprisePct": 12.21,
+			"netInsiderShares": -268837,
+			"instFlowTrend": "negative",
+			"upRevisions": 19,
+			"downRevisions": 1,
+			"totalAnalysts": 21
 		}
+	},
+	"description": "AppLovin Corporation provides end-to-end artificial intelligence-powered advertising solutions for businesses in the United States and internationally.",
+	"analystTargets": {
+		"low": 340,
+		"mean": 648.57,
+		"high": 860
 	}
 }

@@ -1,0 +1,96 @@
+{
+	"ticker": "NVO",
+	"name": "Novo Nordisk",
+	"group": "Large-Cap Pharma",
+	"confidence": "high",
+	"confidenceReason": "Leading GLP-1 manufacturer with Ozempic/Wegovy infrastructure advantage, though LLY is now a genuine competitor. Thesis rests on manufacturing scale, oral semaglutide, and CagriSema combination pipeline.",
+	"bullCase": "Novo Nordisk retains the world's most powerful GLP-1 commercial infrastructure — Ozempic and Wegovy have 70%+ market share in established markets. Oral semaglutide (Rybelsus and oral once-weekly formulations) open a new 10x larger addressable market. Manufacturing capacity expansion through 2027 will restore supply constraints. The CagriSema combination, despite a Phase 3 miss vs. expectations, still showed 22.7% weight loss — superior to any non-GLP-1 obesity drug.",
+	"bearCase": "Increasing competition from Eli Lilly's Zepbound and emerging oral challengers. Potential for Medicare pricing negotiations and political pressure on obesity drug pricing in the US.",
+	"cagrModel": {
+		"epsGrowth": "13%",
+		"basis": "Non-GAAP EPS; reflects maturing GLP-1 market share and pipeline resilience",
+		"ttmEPS": 3.54,
+		"dividendYield": "5%",
+		"scenarios": {
+			"bear": "11%",
+			"base": "31%",
+			"bull": "74%"
+		}
+	},
+	"currentPrice": "$37.45",
+	"marketCap": "$166.9B USD",
+	"valuation": {
+		"trailingPE": 10.6,
+		"forwardPE": 11.2,
+		"evEbitda": null
+	},
+	"metrics": {
+		"roe": "60.7%",
+		"fcfMargin": "~0%",
+		"fcfYield": "~0%",
+		"netDebtEbitda": "0.7x",
+		"ruleOf40": "-7%"
+	},
+	"consensus": {
+		"yahoo": "$47.04"
+	},
+	"targetPrice": "$47.04",
+	"expectedCAGR": "11% - 74%",
+	"expectedVolatility": "~56%",
+	"sharpeRatio": 0.68,
+	"screener": {
+		"engine": "totalReturn",
+		"score": 0.67,
+		"signal": "REJECTED",
+		"inputs": {
+			"growth": 13,
+			"dividendYield": 5,
+			"debtToEquity": 67,
+			"debtPenalty": false,
+			"rawReturn": 18
+		},
+		"note": "Consensus actively collapsing (analyst lag)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 37.45,
+				"price6mAgo": 61.4,
+				"price1mAgo": 48.45,
+				"low3m": 35.85,
+				"return6m": -39,
+				"return1m": -22.7,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 0,
+				"down30d": 5
+			},
+			"earningsSurprise": {
+				"surprise": 2.3,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": 1.9,
+		"flowScore": 0,
+		"revisionsScore": -1,
+		"totalScore": 0.9,
+		"raw": {
+			"avgSurprisePct": 3.79,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 2,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
+	"lastUpdated": "2026-03-19T13:06:42.038Z",
+	"analystTargets": {
+		"low": 39.67,
+		"mean": 47.04,
+		"high": 63.32
+	}
+}

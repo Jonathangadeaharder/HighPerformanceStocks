@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
-	"marketCap": "$597.9B USD",
-	"sharpeRatio": 0.54,
-	"expectedCAGR": "13% - 22%",
+	"marketCap": "$576.5B USD",
+	"sharpeRatio": 1.06,
+	"expectedCAGR": "9% - 51%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 29.1,
-		"forwardPE": 21.3,
+		"trailingPE": 28.1,
+		"forwardPE": 20.6,
 		"pegRatio": null,
-		"evEbitda": 20.4
+		"evEbitda": 19.8
 	},
 	"metrics": {
 		"fcfMargin": "~53%",
@@ -25,51 +25,44 @@
 	"targetPrice": "$400.20",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$310.11",
+	"currentPrice": "$299.02",
 	"consensus": {
 		"tipranks": "$400",
 		"yahoo": "$400.20",
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 10.66,
+		"ttmEPS": 10.65,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
-		},
 		"scenarios": {
-			"bear": "13%",
-			"base": "18%",
-			"bull": "22%"
+			"bear": "9%",
+			"base": "35%",
+			"bull": "51%"
 		},
-		"decayFactor": 0.93,
-		"basis": "5yr avg PE"
+		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-16T20:51:11.802Z",
+	"lastUpdated": "2026-03-19T13:06:48.080Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.46,
+		"score": 1.42,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 21.3,
+			"multiple": 20.6,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 310.11,
-				"price6mAgo": 346.2,
-				"price1mAgo": 319.5,
-				"low3m": 303.08,
-				"return6m": -10.4,
-				"return1m": -2.9,
+				"price": 299.02,
+				"price6mAgo": 341.61,
+				"price1mAgo": 318.93,
+				"low3m": 298.5,
+				"return6m": -12.5,
+				"return1m": -6.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -84,8 +77,28 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 236.15,
-		"date": "2026-03-16",
-		"discount": -24
+		"dcf": 236.4,
+		"date": "2026-03-19",
+		"discount": -21
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0.14,
+		"totalScore": 5.14,
+		"raw": {
+			"avgSurprisePct": 2.21,
+			"netInsiderShares": 284580,
+			"instFlowTrend": "neutral",
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 36
+		}
+	},
+	"description": "Visa Inc. operates as a payment technology company in the United States and internationally.",
+	"analystTargets": {
+		"low": 323,
+		"mean": 400.2,
+		"high": 450
 	}
 }

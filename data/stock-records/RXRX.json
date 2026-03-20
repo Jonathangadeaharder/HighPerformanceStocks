@@ -5,13 +5,13 @@
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
 	"marketCap": "$1.8B USD",
-	"sharpeRatio": null,
+	"sharpeRatio": 1.28,
 	"sharpeNote": "Negative",
-	"expectedCAGR": "N/A (pre-profit)",
+	"expectedCAGR": "-10% - 231%",
 	"expectedVolatility": "~83%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": -4,
+		"forwardPE": -3.9,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -26,7 +26,7 @@
 	"targetPrice": "$6.71",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
 	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
-	"currentPrice": "$3.39",
+	"currentPrice": "$3.32",
 	"consensus": {
 		"tipranks": "$7.00",
 		"yahoo": "$6.71",
@@ -35,21 +35,38 @@
 	"cagrModel": {
 		"note": "Pre-profit biotech; PE-based model not applicable",
 		"scenarios": {
-			"base": "0%"
+			"bear": "-10%",
+			"base": "102%",
+			"bull": "231%"
 		},
 		"epsGrowth": "0%",
-		"exitPE": {
-			"bear": 0,
-			"base": 0,
-			"bull": 0
-		},
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-16T20:51:08.763Z",
+	"lastUpdated": "2026-03-19T13:06:44.079Z",
 	"screener": {
-		"engine": "N/A",
+		"engine": "totalReturn",
 		"signal": "NO_DATA",
-		"note": "Pre-profit; screener not applicable"
+		"note": "Missing/negative forward PE and no trailing EPS fallback"
+	},
+	"qcs": {
+		"earningsScore": 3.26,
+		"flowScore": 5,
+		"revisionsScore": 3.13,
+		"totalScore": 11.39,
+		"raw": {
+			"avgSurprisePct": 6.52,
+			"netInsiderShares": 2001402,
+			"instFlowTrend": "positive",
+			"upRevisions": 6,
+			"downRevisions": 1,
+			"totalAnalysts": 8
+		}
+	},
+	"description": "Recursion Pharmaceuticals, Inc., a clinical-stage biotechnology company, engages in the decoding biology and chemistry by integrating technological innovations across biology, chemistry, automation...",
+	"analystTargets": {
+		"low": 3,
+		"mean": 6.71,
+		"high": 11
 	}
 }

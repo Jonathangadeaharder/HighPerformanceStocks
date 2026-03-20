@@ -2,17 +2,18 @@
 	"ticker": "DHR",
 	"name": "Danaher Corporation",
 	"group": "Serial Acquirers",
+	"cyclical": true,
 	"confidence": "low",
-	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Masimo acquisition. Could be a re-entry point for patient investors.",
-	"marketCap": "$135.3B USD",
-	"sharpeRatio": 0.23,
-	"expectedCAGR": "8% - 16%",
+	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Abcam acquisition. Could be a re-entry point for patient investors.",
+	"marketCap": "$135.4B USD",
+	"sharpeRatio": 1.09,
+	"expectedCAGR": "16% - 63%",
 	"expectedVolatility": "~32%",
 	"valuation": {
 		"trailingPE": 38,
 		"forwardPE": 21,
 		"pegRatio": null,
-		"evEbitda": 18.8
+		"evEbitda": 19.2
 	},
 	"metrics": {
 		"fcfMargin": "~19%",
@@ -24,52 +25,46 @@
 		"historicalTotalReturn": "450%+ over 10 years"
 	},
 	"targetPrice": "$264.91",
-	"bullCase": "Historically elite serial acquirer with proven Danaher Business System (DBS). 450%+ total return over 10 years. Current trough could be a re-entry point. Masimo acquisition adds new capabilities.",
-	"bearCase": "ROIC depressed at ~6.8%. Mid-single-digit growth. Integration risk from $9.9B Masimo acquisition. Recovery timeline uncertain.",
-	"currentPrice": "$191.39",
+	"bullCase": "Danaher's life sciences tools and bioprocessing businesses (Cytiva) are recovering from the deepest post-COVID inventory destocking in decades. Abcam acquisition ($5.7B, 2023) adds genomic reagents and antibodies to the portfolio. When bioprocessing (bioreactors, filtration) volumes normalize, Danaher's ROIC should recover from trough levels toward 20%+.",
+	"bearCase": "Danaher's bioprocessing recovery has been slower than expected — large pharma customers are still burning through COVID-era inventory builds. The Abcam integration ($9.9B combined with premium paid) creates 3-5 years of amortization drag. If ROIC stays below WACC through 2026, the compounding thesis is impaired.",
+	"currentPrice": "$191.50",
 	"consensus": {
 		"tipranks": "$248",
 		"yahoo": "$264.91",
 		"stockanalysis": "$251"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 5.04,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 28,
-			"base": 34,
-			"bull": 40
-		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "13%",
-			"bull": "16%"
+			"bear": "16%",
+			"base": "39%",
+			"bull": "63%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T20:50:55.688Z",
+	"lastUpdated": "2026-03-19T13:06:30.753Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.29,
+		"score": 1.32,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 18.8,
+			"multiple": 19.2,
 			"cvStock": 0.012,
 			"riskMultiplier": 0.959
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 191.39,
-				"price6mAgo": 192.94,
-				"price1mAgo": 206.36,
+				"price": 191.5,
+				"price6mAgo": 193.29,
+				"price1mAgo": 211.25,
 				"low3m": 185.24,
-				"return6m": -0.8,
-				"return1m": -7.3,
+				"return6m": -0.9,
+				"return1m": -9.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -83,6 +78,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.44
+		"secondaryScore": 1.44,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -0.2,
+		"totalScore": 4.8,
+		"raw": {
+			"avgSurprisePct": 8.91,
+			"netInsiderShares": -894269,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 2,
+			"totalAnalysts": 25
+		}
+	},
+	"description": "Danaher Corporation designs, manufactures, and markets professional, medical, research, and industrial products and services in the United States, China, and internationally.",
+	"analystTargets": {
+		"low": 220,
+		"mean": 264.91,
+		"high": 310
 	}
 }

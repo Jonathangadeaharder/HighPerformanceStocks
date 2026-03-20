@@ -4,12 +4,12 @@
 	"group": "Energy",
 	"confidence": "medium",
 	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
-	"marketCap": "$80.7B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "7% - 13%",
+	"marketCap": "$80.1B USD",
+	"sharpeRatio": 0,
+	"expectedCAGR": "-8% - 17%",
 	"expectedVolatility": "~19%",
 	"valuation": {
-		"trailingPE": 14,
+		"trailingPE": 13.3,
 		"forwardPE": 11.9,
 		"pegRatio": null,
 		"evEbitda": 12
@@ -22,32 +22,26 @@
 		"netDebtEbitda": "3.5x",
 		"ruleOf40": "-3%"
 	},
-	"targetPrice": "$37.40",
-	"bullCase": "Most conservative and best-managed midstream MLP. 25 consecutive years of distribution increases. Investment-grade balance sheet. NGL and petrochemical infrastructure benefits from US shale production growth. 5.8% yield with 3-5% distribution growth.",
-	"bearCase": "Slower growth profile than ET or LNG. MLP tax complexity. Lower upside at current valuation. Energy transition could reduce long-term hydrocarbon volumes.",
-	"currentPrice": "$37.32",
+	"targetPrice": "$37.70",
+	"bullCase": "Enterprise Products Partners is one of the most financially disciplined MLPs in North America, with a 1.7x+ distribution coverage ratio, AA-/Baa1 credit rating, and a 22-year track record of consecutive distribution increases. The ~7% yield alone provides equity-like total returns, and organic growth from new natural gas infrastructure projects adds upside.",
+	"bearCase": "Midstream infrastructure is a terminal-value business as the energy transition progresses. Volume risk increases if US LNG export permitting slows or if industrial natural gas demand peaks. The 4.0x+ leverage is manageable but constrains financial flexibility.",
+	"currentPrice": "$37.04",
 	"consensus": {
 		"tipranks": "$40",
-		"yahoo": "$37.40"
+		"yahoo": "$37.70"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 2.66,
 		"epsGrowth": "6%",
 		"dividendYield": "6%",
-		"exitPE": {
-			"bear": 11,
-			"base": 13,
-			"bull": 15
-		},
 		"scenarios": {
-			"bear": "7%",
-			"base": "10%",
-			"bull": "13%"
+			"bear": "-8%",
+			"base": "8%",
+			"bull": "17%"
 		},
-		"basis": "GAAP EPS; utility-like stability warrants narrow PE range"
+		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-16T20:50:56.521Z",
+	"lastUpdated": "2026-03-19T13:06:31.608Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1,
@@ -62,23 +56,43 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 37.32,
-				"price6mAgo": 32.07,
-				"price1mAgo": 36.75,
+				"price": 37.04,
+				"price6mAgo": 31.69,
+				"price1mAgo": 36.18,
 				"low3m": 31.55,
-				"return6m": 16.4,
-				"return1m": 1.6,
+				"return6m": 16.9,
+				"return1m": 2.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 3
+				"up30d": 1,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 8.5,
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": -0.08,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": -0.08,
+		"raw": {
+			"avgSurprisePct": -0.16,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 7
+		}
+	},
+	"description": "Enterprise Products Partners L.P. provides midstream energy services to producers and consumers of natural gas, natural gas liquids (NGLs), crude oil, petrochemicals, and refined products.",
+	"analystTargets": {
+		"low": 32,
+		"mean": 37.7,
+		"high": 41
 	}
 }

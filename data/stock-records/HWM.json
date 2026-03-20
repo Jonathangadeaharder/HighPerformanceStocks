@@ -2,31 +2,28 @@
 	"ticker": "HWM",
 	"name": "Howmet Aerospace",
 	"group": "Industrial Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Heavy IP moats in forged jet engine blades/fasteners. Aerospace super-cycle momentum.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.72,
+		"ttmEPS": 3.7,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "-9%",
-			"bull": "-5%"
+			"bear": "-11%",
+			"base": "16%",
+			"bull": "30%"
 		}
 	},
-	"currentPrice": "$240.73",
-	"marketCap": "$96.9B USD",
+	"bullCase": "Howmet Aerospace is the sole approved supplier for titanium fan blades and aluminum structural castings on every major western jetliner. This FAA certification barrier means Boeing and Airbus cannot multi-source critical airframe components. With aviation at record passenger levels and a 10-year production backlog, Howmet is compounding earnings at 15%+ with no margin ceiling.",
+	"bearCase": "Defense/commercial aerospace spending is a long-cycle business. Any Boeing production halt, supply chain disruption, or airline capacity rationalization has multi-year revenue implications. The 5.7x leverage from prior private equity era constrains financial flexibility.",
+	"currentPrice": "$241.93",
+	"marketCap": "$97.4B USD",
 	"valuation": {
-		"trailingPE": 64.7,
-		"forwardPE": 43.7,
-		"evEbitda": 40.8
+		"trailingPE": 65.4,
+		"forwardPE": 43.9,
+		"evEbitda": 41.7
 	},
 	"metrics": {
 		"roe": "30.4%",
@@ -39,27 +36,27 @@
 		"yahoo": "$280.00"
 	},
 	"targetPrice": "$280.00",
-	"expectedCAGR": "-14% - -5%",
+	"expectedCAGR": "-11% - 30%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.83,
+		"score": 2.84,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 43.7,
+			"multiple": 43.9,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 240.73,
-				"price6mAgo": 185.39,
-				"price1mAgo": 252.55,
+				"price": 241.93,
+				"price6mAgo": 190.23,
+				"price1mAgo": 251.3,
 				"low3m": 191.05,
-				"return6m": 29.9,
-				"return1m": -4.7,
+				"return6m": 27.2,
+				"return1m": -3.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +68,30 @@
 				"surprise": 8.7,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:34.607Z",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.15,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 3.57,
+		"totalScore": 8.57,
+		"raw": {
+			"avgSurprisePct": 7.03,
+			"netInsiderShares": 58230,
+			"instFlowTrend": "negative",
+			"upRevisions": 17,
+			"downRevisions": 2,
+			"totalAnalysts": 21
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:59.470Z",
-	"expectedVolatility": "~33%",
-	"sharpeRatio": -0.42
+	"description": "Howmet Aerospace Inc. provides advanced engineered solutions for the aerospace and transportation industries in the United States, Japan, France, Germany, the United Kingdom, Mexico, Italy, Canada,...",
+	"analystTargets": {
+		"low": 214.92,
+		"mean": 280,
+		"high": 315
+	}
 }

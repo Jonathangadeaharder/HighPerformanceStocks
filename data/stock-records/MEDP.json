@@ -1,32 +1,29 @@
 {
 	"ticker": "MEDP",
 	"name": "Medpace",
-	"group": "Healthcare Monopolies",
+	"group": "Healthcare Services",
+	"cyclical": true,
 	"confidence": "high",
-	"confidenceReason": "Leading CRO for small-mid biotechs. Excellent compounding (20%+ EPS growth). Buy the biotech funding panic.",
+	"confidenceReason": "Leading CRO for small-mid biotech companies with differentiated full-service model. Biotech funding headwinds have compressed near-term growth expectations from 20%+ to ~12%. At 24x forward PE, the stock is pricing in a sustained recovery — which is not guaranteed given NIH budget pressures.",
+	"bullCase": "Medpace's focused CRO model (only biotech/specialty pharma clients) enables superior therapeutic expertise. When biotech funding recovers, Medpace benefits from its reputation as the premium small-biotech CRO. Clean balance sheet with significant cash enables opportunistic buybacks. Historically delivered industry-leading EBITDA margins (~30%).",
+	"bearCase": "CRO revenues are directly tied to biotech clinical trial activity — when funding freezes (2022-2025), cancellations and deferrals cascade through revenue pipelines 6-12 months later. NIH budget cuts under DOGE are removing a key source of academic grants that feed into Phase II commercial trials. IQVIA and ICON are competing aggressively for Medpace's specialty clients.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "12%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 15.27,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "6%",
-			"bull": "11%"
+			"bear": "-28%",
+			"base": "8%",
+			"bull": "28%"
 		}
 	},
-	"currentPrice": "$453.64",
+	"currentPrice": "$454.80",
 	"marketCap": "$12.9B USD",
 	"valuation": {
-		"trailingPE": 29.7,
+		"trailingPE": 29.8,
 		"forwardPE": 23.7,
-		"evEbitda": 22.1
+		"evEbitda": 22.3
 	},
 	"metrics": {
 		"roe": "70.2%",
@@ -39,13 +36,13 @@
 		"yahoo": "$489.69"
 	},
 	"targetPrice": "$489.69",
-	"expectedCAGR": "0% - 11%",
+	"expectedCAGR": "-28% - 28%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.53,
+		"score": 1.92,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 12,
 			"multipleType": "Forward P/E",
 			"multiple": 23.7,
 			"cvStock": 0.032,
@@ -54,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 453.64,
-				"price6mAgo": 497.83,
-				"price1mAgo": 428.18,
+				"price": 454.8,
+				"price6mAgo": 498.6,
+				"price1mAgo": 446.44,
 				"low3m": 392.35,
-				"return6m": -8.9,
-				"return1m": 5.9,
+				"return6m": -8.8,
+				"return1m": 1.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +68,30 @@
 				"surprise": 10.5,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:39.026Z",
+	"expectedVolatility": "~60%",
+	"sharpeRatio": -0.07,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 4.44,
+		"totalScore": 9.44,
+		"raw": {
+			"avgSurprisePct": 10.43,
+			"netInsiderShares": -284960,
+			"instFlowTrend": "neutral",
+			"upRevisions": 8,
+			"downRevisions": 0,
+			"totalAnalysts": 9
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:03.561Z",
-	"expectedVolatility": "~60%",
-	"sharpeRatio": 0.02
+	"description": "Medpace Holdings, Inc. provides clinical research-based drug and medical device development services in North America, Europe, Asia, South America, Africa, and Australia.",
+	"analystTargets": {
+		"low": 329,
+		"mean": 489.69,
+		"high": 582
+	}
 }

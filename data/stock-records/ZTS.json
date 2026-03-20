@@ -4,29 +4,25 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Global monopoly in animal health/vaccines. No insurance price caps equals incredible pricing power.",
+	"bullCase": "Zoetis is the global leader in animal health medicines and vaccines — a $70B market growing 6-7% annually with no generic substitution risk in veterinary biologics. Librela (monoclonal antibody for osteoarthritis pain in dogs) is the fastest-growing product launch in animal health history. The pet humanization trend drives premiumization of veterinary care globally.",
+	"bearCase": "Zoetis has de-rated from 35-40x to 16x forward PE as growth slowed from 15% to 12-14% EPS. Competition in the monoclonal antibody space (Elanco's Credelio, others) could pressure Librela margins. Livestock segment is directly exposed to agricultural commodity cycles and is structurally less attractive than companion animal.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "14%",
-		"exitPE": {
-			"bear": 30,
-			"base": 35,
-			"bull": 40
-		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 6.02,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "26%",
-			"base": "30%",
-			"bull": "33%"
+			"bear": "13%",
+			"base": "31%",
+			"bull": "64%"
 		}
 	},
-	"currentPrice": "$118.15",
-	"marketCap": "$52.1B USD",
+	"currentPrice": "$117.35",
+	"marketCap": "$51.7B USD",
 	"valuation": {
-		"trailingPE": 19.6,
+		"trailingPE": 19.5,
 		"forwardPE": 15.6,
-		"evEbitda": 13.7
+		"evEbitda": 13.9
 	},
 	"metrics": {
 		"roe": "66.0%",
@@ -39,7 +35,7 @@
 		"yahoo": "$151"
 	},
 	"targetPrice": "$151",
-	"expectedCAGR": "26% - 33%",
+	"expectedCAGR": "13% - 64%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.07,
@@ -54,12 +50,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 118.15,
-				"price6mAgo": 146.93,
-				"price1mAgo": 125.56,
+				"price": 117.35,
+				"price6mAgo": 145.88,
+				"price1mAgo": 127.28,
 				"low3m": 114.47,
 				"return6m": -19.6,
-				"return1m": -5.9,
+				"return1m": -7.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -73,7 +69,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:13.929Z",
+	"lastUpdated": "2026-03-19T13:06:50.135Z",
 	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.86
+	"sharpeRatio": 1.17,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": 5,
+		"totalScore": 15,
+		"raw": {
+			"avgSurprisePct": 6.31,
+			"netInsiderShares": 48831,
+			"instFlowTrend": "positive",
+			"upRevisions": 15,
+			"downRevisions": 0,
+			"totalAnalysts": 15
+		}
+	},
+	"description": "Zoetis Inc. engages in the discovery, development, manufacture, and commercialization of medicines, vaccines, diagnostic products and services, biodevices, genetic tests, and precision animal healt...",
+	"analystTargets": {
+		"low": 130,
+		"mean": 151,
+		"high": 190
+	}
 }

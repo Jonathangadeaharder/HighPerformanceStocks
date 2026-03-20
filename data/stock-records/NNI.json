@@ -2,17 +2,17 @@
 	"ticker": "NNI",
 	"name": "Nelnet",
 	"group": "The Capital Compounders",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
-	"marketCap": "$4.6B USD",
-	"sharpeRatio": 0.43,
-	"expectedCAGR": "8% - 21%",
+	"marketCap": "$4.5B USD",
+	"sharpeRatio": 0.28,
 	"expectedVolatility": "~23%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 10.9,
-		"forwardPE": 12.9
+		"trailingPE": 10.8,
+		"forwardPE": 12.7
 	},
 	"metrics": {
 		"roe": "11.6%"
@@ -20,49 +20,38 @@
 	"targetPrice": "$140",
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$128.53",
+	"currentPrice": "$126.75",
 	"cagrModel": {
-		"horizon": 5,
-		"scenarios": {
-			"bear": "8%",
-			"base": "16%",
-			"bull": "21%"
-		},
 		"epsGrowth": "9%",
-		"exitPE": {
-			"bear": 10,
-			"base": 14,
-			"bull": 18
-		},
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-16T20:51:05.792Z",
+	"lastUpdated": "2026-03-19T13:06:41.847Z",
 	"consensus": {
 		"yahoo": "$140"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.36,
+		"score": 1.34,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 12.7,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 128.53,
-				"price6mAgo": 125.19,
-				"price1mAgo": 130.86,
+				"price": 126.75,
+				"price6mAgo": 127.09,
+				"price1mAgo": 131.15,
 				"low3m": 122.36,
-				"return6m": 2.7,
-				"return1m": -1.8,
-				"near3mLow": false
+				"return6m": -0.3,
+				"return1m": -3.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -73,6 +62,22 @@
 				"surprise": -4.3,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 5,
+		"totalScore": 10,
+		"raw": {
+			"avgSurprisePct": 69.67,
+			"netInsiderShares": 107802,
+			"instFlowTrend": "negative",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 1
 		}
-	}
+	},
+	"description": "Nelnet, Inc. engages in loan servicing, education technology services, and payment businesses worldwide."
 }

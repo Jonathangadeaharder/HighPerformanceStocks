@@ -5,28 +5,22 @@
 	"confidence": "high",
 	"confidenceReason": "HVAC distribution serial acquirer. Massive dividend growth, zero debt, ruthless efficiency.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.27,
+		"ttmEPS": 12.25,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "9%",
-			"bull": "14%"
+			"bear": "-2%",
+			"base": "13%",
+			"bull": "29%"
 		}
 	},
-	"currentPrice": "$374.45",
-	"marketCap": "$15.2B USD",
+	"currentPrice": "$377.96",
+	"marketCap": "$15.4B USD",
 	"valuation": {
-		"trailingPE": 30.5,
-		"forwardPE": 26.5,
-		"evEbitda": 19.2
+		"trailingPE": 30.9,
+		"forwardPE": 26.9,
+		"evEbitda": 19.7
 	},
 	"metrics": {
 		"roe": "18.7%",
@@ -39,27 +33,27 @@
 		"yahoo": "$415.17"
 	},
 	"targetPrice": "$415.17",
-	"expectedCAGR": "3% - 14%",
+	"expectedCAGR": "-2% - 29%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.78,
+		"score": 2.72,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 26.5,
+			"multiple": 26.9,
 			"cvStock": 0.096,
 			"riskMultiplier": 1.01
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 374.45,
-				"price6mAgo": 387.53,
-				"price1mAgo": 422.83,
+				"price": 377.96,
+				"price6mAgo": 389.85,
+				"price1mAgo": 409.56,
 				"low3m": 336.82,
-				"return6m": -3.4,
-				"return1m": -11.4,
+				"return6m": -3,
+				"return1m": -7.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +67,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:13.115Z",
+	"lastUpdated": "2026-03-19T13:06:49.338Z",
 	"expectedVolatility": "~32%",
-	"sharpeRatio": 0.13
+	"sharpeRatio": 0.28,
+	"qcs": {
+		"earningsScore": -3.92,
+		"flowScore": 2.5,
+		"revisionsScore": -1.92,
+		"totalScore": -3.34,
+		"raw": {
+			"avgSurprisePct": -9.4,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 2,
+			"downRevisions": 7,
+			"totalAnalysts": 13
+		}
+	},
+	"bullCase": "Watsco is the dominant HVAC equipment distributor with a captive network of ~700 locations and a fragmented, 100,000-contractor customer base that has high switching costs. The mandated refrigerant transition (R-410A to R-454B by 2025) creates a multi-year equipment replacement super-cycle as contractors upgrade installed base.",
+	"bearCase": "HVAC equipment spending is tied to new construction and replacement cycles. A housing market slowdown reduces new construction volume. The refrigerant transition cycle may normalize by 2026, and gross margins could compress as new-format competitors (Carrier, Lennox direct distribution) expand.",
+	"description": "Watsco, Inc., together with its subsidiaries, engages in the distribution of air conditioning, heating, and refrigeration equipment, and related parts and supplies in the United States, Canada, Lat...",
+	"analystTargets": {
+		"low": 359,
+		"mean": 415.17,
+		"high": 475
+	}
 }

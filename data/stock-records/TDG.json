@@ -2,17 +2,18 @@
 	"ticker": "TDG",
 	"name": "TransDigm Group",
 	"group": "Serial Acquirers",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$70.5B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "20% - 30%",
+	"marketCap": "$67.8B USD",
+	"sharpeRatio": 1.12,
+	"expectedCAGR": "14% - 62%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 40.1,
-		"forwardPE": 27.2,
+		"trailingPE": 38.6,
+		"forwardPE": 26.1,
 		"pegRatio": null,
-		"evEbitda": 20.7
+		"evEbitda": 20.5
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -25,50 +26,44 @@
 	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1247.82",
+	"currentPrice": "$1199.94",
 	"consensus": {
 		"tipranks": "$1,568",
 		"yahoo": "$1594",
 		"stockanalysis": "$1,590"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 31.07,
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
-		"exitPE": {
-			"bear": 37,
-			"base": 46,
-			"bull": 55
-		},
 		"scenarios": {
-			"bear": "20%",
-			"base": "25%",
-			"bull": "30%"
+			"bear": "14%",
+			"base": "37%",
+			"bull": "62%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-16T20:51:09.784Z",
+	"lastUpdated": "2026-03-19T13:06:45.890Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.12,
+		"score": 1.11,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20.7,
+			"multiple": 20.5,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1247.82,
-				"price6mAgo": 1275.96,
-				"price1mAgo": 1302.11,
-				"low3m": 1208.49,
-				"return6m": -2.2,
-				"return1m": -4.2,
+				"price": 1199.94,
+				"price6mAgo": 1282.46,
+				"price1mAgo": 1330.13,
+				"low3m": 1198.24,
+				"return6m": -6.4,
+				"return1m": -9.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -82,6 +77,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.47
+		"secondaryScore": 1.41,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 2.83,
+		"flowScore": -5,
+		"revisionsScore": 2.78,
+		"totalScore": 0.61,
+		"raw": {
+			"avgSurprisePct": 2.19,
+			"netInsiderShares": -84507,
+			"instFlowTrend": "negative",
+			"upRevisions": 14,
+			"downRevisions": 4,
+			"totalAnalysts": 18
+		}
+	},
+	"description": "TransDigm Group Incorporated designs, produces, and supplies aircraft components in the United States and internationally.",
+	"analystTargets": {
+		"low": 1317,
+		"mean": 1594,
+		"high": 1900
 	}
 }

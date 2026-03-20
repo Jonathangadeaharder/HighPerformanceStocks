@@ -1,15 +1,15 @@
 {
 	"ticker": "HALO",
 	"name": "Halozyme Therapeutics",
-	"group": "Biotech",
+	"group": "Healthcare Technology",
 	"confidence": "medium",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
-	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.49,
-	"expectedCAGR": "19% - 35%",
-	"expectedVolatility": "~46%",
+	"marketCap": "$7.5B USD",
+	"sharpeRatio": 0.33,
+	"expectedCAGR": "-12% - 51%",
+	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 25.1,
+		"trailingPE": 24.9,
 		"forwardPE": 6.5,
 		"pegRatio": null,
 		"evEbitda": 10.6
@@ -23,31 +23,25 @@
 		"ruleOf40": "65%"
 	},
 	"targetPrice": "$84.50",
-	"bullCase": "ENHANZE platform generates royalties from 10+ partnered drugs with minimal R&D spend. 70%+ gross margins. Massive FCF yield (~12%) funds aggressive buybacks. Pipeline of new ENHANZE partnerships extends royalty runway. Non-GAAP EPS growing 20%+ annually.",
-	"bearCase": "Concentrated royalty stream (Darzalex/Phesgo are majority of revenue). Patent cliff risk on core ENHANZE IP. Limited pipeline visibility beyond current partnerships. Small cap with higher volatility.",
-	"currentPrice": "$64.29",
+	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
+	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
+	"currentPrice": "$63.65",
 	"consensus": {
 		"tipranks": "$95",
 		"yahoo": "$84.50"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 7.75,
+		"ttmEPS": 2.56,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 8,
-			"base": 12,
-			"bull": 15
-		},
 		"scenarios": {
-			"bear": "19%",
-			"base": "29%",
-			"bull": "35%"
+			"bear": "-12%",
+			"base": "33%",
+			"bull": "51%"
 		},
-		"basis": "2026E non-GAAP adjusted EPS; low current PE reflects royalty uncertainty; base assumes modest rerating"
+		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-03-16T20:50:58.585Z",
+	"lastUpdated": "2026-03-19T13:06:33.651Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.31,
@@ -63,12 +57,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 64.29,
-				"price6mAgo": 75.81,
-				"price1mAgo": 80.48,
-				"low3m": 61.69,
-				"return6m": -15.2,
-				"return1m": -20.1,
+				"price": 63.65,
+				"price6mAgo": 77.81,
+				"price1mAgo": 72.04,
+				"low3m": 63.22,
+				"return6m": -18.2,
+				"return1m": -11.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -81,5 +75,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 5,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": -16.7,
+			"netInsiderShares": 217169,
+			"instFlowTrend": "positive",
+			"upRevisions": 2,
+			"downRevisions": 2,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Halozyme Therapeutics, Inc., a biopharmaceutical company, researches, develops, and commercializes of proprietary enzymes and devices in the United States, Switzerland, Belgium, Japan, and internat...",
+	"analystTargets": {
+		"low": 56,
+		"mean": 84.5,
+		"high": 96
 	}
 }

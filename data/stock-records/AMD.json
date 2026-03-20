@@ -2,53 +2,49 @@
 	"ticker": "AMD",
 	"name": "Advanced Micro Devices",
 	"group": "AI & Semiconductors",
+	"cyclical": true,
 	"confidence": "medium",
-	"confidenceReason": "Targeting >35% CAGR through 2028 with MI450 ramp and data center expansion.",
-	"marketCap": "$320.5B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "11% - 20%",
+	"confidenceReason": "Targeting >35% data center revenue CAGR through 2028 with MI450 ramp and data center expansion.",
+	"marketCap": "$325.2B USD",
+	"sharpeRatio": 0.67,
+	"expectedCAGR": "10% - 83%",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "10%",
+			"base": "45%",
+			"bull": "83%"
 		},
 		"ttmEPS": 2.61,
-		"horizon": 5,
 		"epsGrowth": "35%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
-		},
-		"basis": "Forward PE (18x) with growth premium; no artificial compression"
+		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:51.402Z",
+	"lastUpdated": "2026-03-19T13:06:26.361Z",
 	"consensus": {
-		"yahoo": "$290.27"
+		"yahoo": "$289.61"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.54,
+		"score": 0.55,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 18.3,
+			"multiple": 18.6,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.033
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 196.58,
-				"price6mAgo": 159.16,
-				"price1mAgo": 203.08,
+				"price": 199.46,
+				"price6mAgo": 157.39,
+				"price1mAgo": 203.37,
 				"low3m": 188.22,
-				"return6m": 23.5,
-				"return1m": -3.2,
-				"near3mLow": true
+				"return6m": 26.7,
+				"return1m": -1.9,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -59,18 +55,19 @@
 				"surprise": 16,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
 		"dcf": 64.38,
-		"date": "2026-03-16",
-		"discount": -67
+		"date": "2026-03-19",
+		"discount": -68
 	},
-	"currentPrice": "$196.58",
+	"currentPrice": "$199.46",
 	"valuation": {
-		"trailingPE": 75.3,
-		"forwardPE": 18.3,
-		"evEbitda": 45.8
+		"trailingPE": 76.4,
+		"forwardPE": 18.6,
+		"evEbitda": 47.2
 	},
 	"metrics": {
 		"roe": "7.1%",
@@ -79,6 +76,28 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "47%"
 	},
-	"targetPrice": "$290.27",
-	"expectedVolatility": "~63%"
+	"targetPrice": "$289.61",
+	"expectedVolatility": "~63%",
+	"qcs": {
+		"earningsScore": 1.55,
+		"flowScore": 0,
+		"revisionsScore": 0.23,
+		"totalScore": 1.78,
+		"raw": {
+			"avgSurprisePct": 5.18,
+			"netInsiderShares": 484604,
+			"instFlowTrend": "neutral",
+			"upRevisions": 7,
+			"downRevisions": 5,
+			"totalAnalysts": 43
+		}
+	},
+	"bullCase": "AMD's MI300X/MI350 GPU is the only viable alternative to NVIDIA's H-series in AI training and inference workloads. At ~35-40% the price of comparable NVIDIA hardware, AMD is winning budget-conscious hyperscaler allocations. Gaining CPU server share in x86 via EPYC Turin is a durable structural shift away from Intel.",
+	"bearCase": "NVIDIA's CUDA software moat is extraordinarily deep — switching costs for AI developers are immense. AMD's ROCm software ecosystem lags by 3-5 years. If NVIDIA's Blackwell/Vera Rubin delivers as promised, AMD's MI-series performance gap widens. Consumer GPU (RDNA) faces structural margin pressure from discrete GPU market contraction.",
+	"description": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally.",
+	"analystTargets": {
+		"low": 220,
+		"mean": 289.61,
+		"high": 365
+	}
 }

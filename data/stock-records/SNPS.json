@@ -3,16 +3,16 @@
 	"name": "Synopsys",
 	"group": "AI & Semiconductors",
 	"confidence": "low",
-	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 2.5x.",
-	"marketCap": "$81.6B USD",
-	"sharpeRatio": 0.17,
-	"expectedCAGR": "11% - 20%",
+	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 5.4x.",
+	"marketCap": "$82.1B USD",
+	"sharpeRatio": 0.33,
+	"expectedCAGR": "-1% - 52%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 65.3,
-		"forwardPE": 25,
+		"trailingPE": 65.7,
+		"forwardPE": 25.1,
 		"pegRatio": null,
-		"evEbitda": 54.3
+		"evEbitda": 56.2
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
@@ -24,51 +24,45 @@
 	},
 	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
-	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~2.5x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$425.88",
+	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~5.4x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
+	"currentPrice": "$428.67",
 	"consensus": {
 		"tipranks": "$535",
 		"yahoo": "$537.75",
 		"stockanalysis": "$541"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 13.73,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
-		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "-1%",
+			"base": "25%",
+			"bull": "52%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-16T20:51:08.941Z",
+	"lastUpdated": "2026-03-19T13:06:45.008Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 4.07,
+		"engine": "fPERG",
+		"score": 1.88,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
-			"multipleType": "EV/EBITDA",
-			"multiple": 54.3,
+			"multipleType": "Forward P/E",
+			"multiple": 25.1,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 425.88,
-				"price6mAgo": 425.4,
-				"price1mAgo": 421.95,
+				"price": 428.67,
+				"price6mAgo": 495.5,
+				"price1mAgo": 442.44,
 				"low3m": 404.53,
-				"return6m": 0.1,
-				"return1m": 0.9,
+				"return6m": -13.5,
+				"return1m": -3.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,8 +74,26 @@
 				"surprise": 6,
 				"quarter": "2026-01"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.87
+		}
+	},
+	"qcs": {
+		"earningsScore": 1.37,
+		"flowScore": 5,
+		"revisionsScore": 4.58,
+		"totalScore": 10.95,
+		"raw": {
+			"avgSurprisePct": 1.31,
+			"netInsiderShares": 30392,
+			"instFlowTrend": "positive",
+			"upRevisions": 22,
+			"downRevisions": 0,
+			"totalAnalysts": 24
+		}
+	},
+	"description": "Synopsys, Inc. provides design IP solutions in the semiconductor and electronics industries.",
+	"analystTargets": {
+		"low": 425,
+		"mean": 537.75,
+		"high": 650
 	}
 }

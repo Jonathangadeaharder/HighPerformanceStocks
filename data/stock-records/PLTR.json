@@ -2,54 +2,48 @@
 	"ticker": "PLTR",
 	"name": "Palantir",
 	"group": "Enterprise Software",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "AIP platform gaining massive traction in commercial sector.",
-	"targetPrice": "$186.41",
-	"bullCase": "Unmatched data integration OS becomes the de facto standard for enterprise AI.",
-	"bearCase": "High valuation and potential lumpiness in government contracts.",
+	"targetPrice": "$186.60",
+	"bullCase": "Palantir's AIP platform is becoming the enterprise AI operating system — AIP bootcamps are converting Fortune 500 trials to paid contracts at an accelerating pace. US commercial revenue grew 55%+ in 2025. The US government remains a structural buyer (DoD, CIA, NHS equivalent) regardless of political cycles. AIP's value proposition strengthens as AI adoption deepens.",
+	"bearCase": "At 83x forward PE and $370B market cap, Palantir is priced for decades of compounding. Government contract cancellations under DOGE budget cuts pose direct revenue risk. European data sovereignty laws restrict PLTR's commercial expansion on the continent. The AIP e-commerce expansion is early-stage and unproven at scale.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "35%",
-		"exitPE": {
-			"bear": 35,
-			"base": 45,
-			"bull": 60
-		},
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
 		"ttmEPS": 0.63,
 		"scenarios": {
-			"bear": "-8%",
-			"base": "-4%",
-			"bull": "2%"
+			"bear": "-54%",
+			"base": "22%",
+			"bull": "70%"
 		}
 	},
-	"currentPrice": "$152.72",
-	"marketCap": "$365.3B USD",
+	"currentPrice": "$152.77",
+	"marketCap": "$365.4B USD",
 	"consensus": {
-		"yahoo": "$186.41"
+		"yahoo": "$186.60"
 	},
-	"expectedVolatility": "~58%",
+	"expectedVolatility": "~57%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.41,
+		"score": 2.4,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
 			"multiple": 81.8,
-			"cvStock": 0.134,
-			"riskMultiplier": 1.032
+			"cvStock": 0.122,
+			"riskMultiplier": 1.025
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 152.72,
-				"price6mAgo": 168.33,
-				"price1mAgo": 133.02,
+				"price": 152.77,
+				"price6mAgo": 182.39,
+				"price1mAgo": 134.89,
 				"low3m": 126.23,
-				"return6m": -9.3,
-				"return1m": 14.8,
+				"return6m": -16.2,
+				"return1m": 13.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -63,11 +57,11 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:06.888Z",
+	"lastUpdated": "2026-03-19T13:06:42.996Z",
 	"valuation": {
-		"trailingPE": 242.4,
+		"trailingPE": 242.5,
 		"forwardPE": 81.8,
-		"evEbitda": 245.9
+		"evEbitda": 249
 	},
 	"metrics": {
 		"roe": "26.0%",
@@ -76,11 +70,31 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "98%"
 	},
-	"expectedCAGR": "-8% - 2%",
-	"sharpeRatio": -0.13,
+	"expectedCAGR": "-54% - 70%",
+	"sharpeRatio": 0.06,
 	"intrinsicValue": {
 		"dcf": 9.72,
-		"date": "2026-03-16",
+		"date": "2026-03-19",
 		"discount": -94
+	},
+	"qcs": {
+		"earningsScore": 4.16,
+		"flowScore": 0,
+		"revisionsScore": 4.44,
+		"totalScore": 8.6,
+		"raw": {
+			"avgSurprisePct": 12.68,
+			"netInsiderShares": -2233639,
+			"instFlowTrend": "neutral",
+			"upRevisions": 24,
+			"downRevisions": 0,
+			"totalAnalysts": 27
+		}
+	},
+	"description": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom,...",
+	"analystTargets": {
+		"low": 70,
+		"mean": 186.6,
+		"high": 260
 	}
 }

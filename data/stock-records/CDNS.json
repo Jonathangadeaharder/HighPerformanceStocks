@@ -4,15 +4,15 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
-	"marketCap": "$80.8B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "8% - 16%",
+	"marketCap": "$79.9B USD",
+	"sharpeRatio": 0.36,
+	"expectedCAGR": "-5% - 42%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 72.3,
-		"forwardPE": 31.1,
+		"trailingPE": 71.5,
+		"forwardPE": 30.8,
 		"pegRatio": 3.9,
-		"evEbitda": 40.8
+		"evEbitda": 41.1
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
@@ -25,50 +25,44 @@
 	"targetPrice": "$371.82",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$292.72",
+	"currentPrice": "$289.64",
 	"consensus": {
 		"tipranks": "$369",
 		"yahoo": "$371.82",
 		"stockanalysis": "$369"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 4.05,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 42,
-			"base": 52,
-			"bull": 62
-		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "-5%",
+			"base": "28%",
+			"bull": "42%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T20:50:54.411Z",
+	"lastUpdated": "2026-03-19T13:06:29.616Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.49,
+		"score": 1.48,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 31.1,
+			"multiple": 30.8,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 292.72,
-				"price6mAgo": 347.27,
-				"price1mAgo": 283.46,
+				"price": 289.64,
+				"price6mAgo": 373.35,
+				"price1mAgo": 296.59,
 				"low3m": 262.75,
-				"return6m": -15.7,
-				"return1m": 3.3,
+				"return6m": -22.4,
+				"return1m": -2.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -81,5 +75,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": -5,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": 5.67,
+			"netInsiderShares": -34415,
+			"instFlowTrend": "negative",
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 1
+		}
+	},
+	"description": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions.",
+	"analystTargets": {
+		"low": 275,
+		"mean": 371.82,
+		"high": 410
 	}
 }

@@ -1,0 +1,97 @@
+{
+	"ticker": "LRCX",
+	"name": "Lam Research",
+	"group": "AI & Semiconductors",
+	"cyclical": true,
+	"confidence": "high",
+	"confidenceReason": "Oligopoly in etch and deposition equipment (alongside AMAT and KLA). Memory capex recovery from the deepest trough in a decade is the primary catalyst. High-margin services book provides earnings floor.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 4.88,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-11%",
+			"base": "22%",
+			"bull": "45%"
+		}
+	},
+	"currentPrice": "$224.71",
+	"marketCap": "$282.2B USD",
+	"valuation": {
+		"trailingPE": 46,
+		"forwardPE": 32.6,
+		"evEbitda": 38
+	},
+	"metrics": {
+		"roe": "65.6%",
+		"fcfMargin": "~23%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "46%"
+	},
+	"consensus": {
+		"yahoo": "$274.90"
+	},
+	"targetPrice": "$274.90",
+	"expectedCAGR": "-11% - 45%",
+	"expectedVolatility": "~52%",
+	"sharpeRatio": 0.24,
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.25,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "Forward P/E",
+			"multiple": 32.6,
+			"cvStock": 0.136,
+			"riskMultiplier": 1.034
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 224.71,
+				"price6mAgo": 126.92,
+				"price1mAgo": 237.39,
+				"low3m": 153.6,
+				"return6m": 77,
+				"return1m": -5.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 4,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 8.7,
+				"quarter": "2025-12"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:37.786Z",
+	"qcs": {
+		"earningsScore": 1.94,
+		"flowScore": 0,
+		"revisionsScore": 0.15,
+		"totalScore": 2.09,
+		"raw": {
+			"avgSurprisePct": 6.6,
+			"netInsiderShares": 563134,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 34
+		}
+	},
+	"bullCase": "Lam Research dominates etch and deposition equipment — the two most critical process steps in advanced semiconductor manufacturing. As NAND recovers from its trough and advanced foundry (3D-stacking, gate-all-around) accelerates, Lam's wafer-fab equipment revenue is positioned for a major upcycle. Its high-margin Customer Support Business Group provides a ~$4B recurring revenue floor.",
+	"bearCase": "Lam's NAND exposure (~40% of revenue) makes it one of the most cyclically volatile names in semiconductor equipment. Memory capex cycles can compress revenue 30-40% within 12 months. US export controls on advanced equipment to China removed ~$1.5B of annual revenue. Any delay in the NAND recovery or GAA adoption pushes out the earnings inflection.",
+	"description": "Lam Research Corporation designs, manufactures, markets, refurbishes, and services semiconductor processing equipment used in the fabrication of integrated circuits in the United States, China, Kor...",
+	"analystTargets": {
+		"low": 200,
+		"mean": 274.9,
+		"high": 325
+	}
+}

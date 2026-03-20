@@ -5,28 +5,22 @@
 	"confidence": "high",
 	"confidenceReason": "Canadian royalty tied to natural gas and LNG buildout. High yield + growth.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 0.83,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "5%",
-			"bull": "10%"
+			"bear": "-5%",
+			"base": "10%",
+			"bull": "17%"
 		}
 	},
-	"currentPrice": "C$31.72",
+	"currentPrice": "C$31.80",
 	"marketCap": "C$4.9B",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 30.8,
-		"evEbitda": 16.3
+		"trailingPE": 38.3,
+		"forwardPE": 30.9,
+		"evEbitda": 16.5
 	},
 	"metrics": {
 		"roe": "8.3%",
@@ -36,30 +30,30 @@
 		"ruleOf40": "40%"
 	},
 	"consensus": {
-		"yahoo": "C$33.58"
+		"yahoo": "C$33.77"
 	},
-	"targetPrice": "C$33.58",
-	"expectedCAGR": "-1% - 10%",
+	"targetPrice": "C$33.77",
+	"expectedCAGR": "-5% - 17%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.95,
+		"score": 2.94,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 30.8,
+			"multiple": 30.9,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 31.72,
-				"price6mAgo": 25.66,
-				"price1mAgo": 28.7,
+				"price": 31.8,
+				"price6mAgo": 25.37,
+				"price1mAgo": 29.61,
 				"low3m": 26,
-				"return6m": 23.6,
-				"return1m": 10.5,
+				"return6m": 25.3,
+				"return1m": 7.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +67,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:10.730Z",
+	"lastUpdated": "2026-03-19T13:06:46.081Z",
 	"expectedVolatility": "~23%",
-	"sharpeRatio": 0
+	"sharpeRatio": 0.07,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 1.67,
+		"totalScore": 6.67,
+		"raw": {
+			"avgSurprisePct": 31.34,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 3
+		}
+	},
+	"bullCase": "Topaz Energy is a pure-play royalty company with zero capital commitment — it receives net royalty payments on ~3.4 million BOE/d of production across Canada. The 5%+ royalty yield provides a floor return, and Tourmaline Oil's continued development activity drives organic royalty growth. The royalty model provides inflation protection.",
+	"bearCase": "Topaz's revenue is directly exposed to natural gas price cycles. The Montney formation concentration creates single-basin risk, and a prolonged gas price weakness (as seen 2023-2024) directly compresses distributable cash flow and dividend coverage.",
+	"description": "Topaz Energy Corp. operates as a royalty and infrastructure energy company in Canada.",
+	"analystTargets": {
+		"low": 29,
+		"mean": 33.77,
+		"high": 36
+	}
 }

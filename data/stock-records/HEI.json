@@ -2,15 +2,16 @@
 	"ticker": "HEI",
 	"name": "HEICO Corporation",
 	"group": "Serial Acquirers",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
-	"marketCap": "$40.7B USD",
-	"sharpeRatio": 0.37,
-	"expectedCAGR": "11% - 20%",
+	"marketCap": "$40.2B USD",
+	"sharpeRatio": 0.57,
+	"expectedCAGR": "-2% - 45%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 57.7,
-		"forwardPE": 46,
+		"trailingPE": 57.1,
+		"forwardPE": 45.6,
 		"pegRatio": null,
 		"evEbitda": 34
 	},
@@ -27,30 +28,24 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$291.47",
+	"currentPrice": "$288.33",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
 		"stockanalysis": "$366"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 5.05,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 42,
-			"base": 52,
-			"bull": 62
-		},
 		"scenarios": {
-			"bear": "11%",
-			"base": "16%",
-			"bull": "20%"
+			"bear": "-2%",
+			"base": "29%",
+			"bull": "45%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-16T20:50:59.448Z",
+	"lastUpdated": "2026-03-19T13:06:34.591Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.85,
@@ -65,12 +60,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 291.47,
-				"price6mAgo": 316.95,
-				"price1mAgo": 337.21,
+				"price": 288.33,
+				"price6mAgo": 318.75,
+				"price1mAgo": 345.99,
 				"low3m": 285.52,
-				"return6m": -8,
-				"return1m": -13.6,
+				"return6m": -9.5,
+				"return1m": -16.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -84,6 +79,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.51
+		"secondaryScore": 2.48,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 2.5,
+		"revisionsScore": 2.37,
+		"totalScore": 9.87,
+		"raw": {
+			"avgSurprisePct": 8.28,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 13,
+			"downRevisions": 4,
+			"totalAnalysts": 19
+		}
+	},
+	"description": "HEICO Corporation provides aerospace, defense, and electronic related products and services in the United States and internationally.",
+	"analystTargets": {
+		"low": 282,
+		"mean": 371.5,
+		"high": 417
 	}
 }

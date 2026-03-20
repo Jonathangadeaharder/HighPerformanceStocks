@@ -2,15 +2,20 @@
 	import type { DashboardHurdles, FindingStock } from '$lib/types/dashboard';
 	import { scoreLabel, screenerLabel, upsideColor } from './helpers';
 	import SignalCard from './signal-card.svelte';
+	import DownloadReportButton from './download-report-button.svelte';
 
 	let {
 		deployNow,
+		cheapWait,
+		watchlist,
 		topPicks,
 		hurdles,
 		expandedTicker,
 		onToggle
 	}: {
 		deployNow: FindingStock[];
+		cheapWait: FindingStock[];
+		watchlist: FindingStock[];
 		topPicks: FindingStock[];
 		hurdles: DashboardHurdles;
 		expandedTicker: string | null;
@@ -19,10 +24,15 @@
 </script>
 
 <section class="section">
-	<div class="section-label">
-		Deploy Now
+	<div class="section-header-row">
+		<div class="section-label">
+			Deploy Now
+			{#if deployNow.length > 0}
+				<span class="count-badge green">{deployNow.length}</span>
+			{/if}
+		</div>
 		{#if deployNow.length > 0}
-			<span class="count-badge green">{deployNow.length}</span>
+			<DownloadReportButton {deployNow} {cheapWait} {watchlist} {hurdles} />
 		{/if}
 	</div>
 	<div class="mini-guide">
@@ -30,7 +40,7 @@
 		sitting on a likely value floor.
 	</div>
 	<p class="section-note">
-		Must beat the ETF alternative with base CAGR at least {hurdles.etfCagr}% and bear CAGR above
+		Must beat the ETF alternative with base 1Y return at least {hurdles.etfCagr}% and bear return above
 		{hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside floor looks
 		unusually strong.
 	</p>
@@ -47,13 +57,18 @@
 					<div class="top-pick-metrics">
 						<span>{scoreLabel(stock)}</span>
 						<span>{screenerLabel(stock)}</span>
-						<span>Base {stock.cagrModel?.scenarios?.base}</span>
+						<span>1Y Base {stock.cagrModel?.scenarios?.base}</span>
 						{#if stock.upside != null}
 							<span style="color:{upsideColor(stock.upside)}">
 								Upside {stock.upside > 0 ? '+' : ''}{stock.upside}%
 							</span>
 						{/if}
 					</div>
+					{#if stock.description}
+						<div class="top-pick-brief">
+							{stock.description}
+						</div>
+					{/if}
 					<div class="top-pick-note">
 						Strong mix of valuation, expected return, and resilience right now.
 					</div>
@@ -87,11 +102,18 @@
 	.section {
 		margin-bottom: 2rem;
 	}
+	.section-header-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0.25rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
 	.section-label {
 		font-size: 1.25rem;
 		font-weight: 700;
 		color: var(--text-primary);
-		margin-bottom: 0.25rem;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -177,6 +199,13 @@
 		font-family: var(--font-mono);
 		color: var(--text-primary);
 		margin-bottom: 0.75rem;
+	}
+	.top-pick-brief {
+		font-size: 0.8125rem;
+		color: var(--text-secondary);
+		line-height: 1.4;
+		margin-bottom: 0.75rem;
+		font-style: italic;
 	}
 	.top-pick-note {
 		font-size: 0.875rem;

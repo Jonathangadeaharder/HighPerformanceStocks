@@ -2,17 +2,18 @@
 	"ticker": "TVK.TO",
 	"name": "TerraVest Industries",
 	"group": "The Capital Compounders",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
 	"marketCap": "C$3.0B",
-	"sharpeRatio": 0,
-	"expectedCAGR": "-1% - 10%",
+	"sharpeRatio": 0.66,
+	"expectedCAGR": "23% - 44%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"pegRatio": null,
-		"evEbitda": 14.6,
-		"trailingPE": 32.6,
-		"forwardPE": 22
+		"evEbitda": 15.2,
+		"trailingPE": 33.2,
+		"forwardPE": 22.4
 	},
 	"metrics": {
 		"roe": "16.9%",
@@ -24,49 +25,43 @@
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$137.12",
+	"currentPrice": "C$139.83",
 	"cagrModel": {
-		"horizon": 5,
 		"scenarios": {
-			"bear": "-1%",
-			"base": "5%",
-			"bull": "10%"
+			"bear": "23%",
+			"base": "32%",
+			"bull": "44%"
 		},
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-16T20:51:10.775Z",
+	"lastUpdated": "2026-03-19T13:06:46.945Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.49,
+		"score": 1.52,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 22,
+			"multiple": 22.4,
 			"cvStock": 0.107,
 			"riskMultiplier": 1.016
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 137.12,
-				"price6mAgo": 135.47,
-				"price1mAgo": 147.88,
+				"price": 139.83,
+				"price6mAgo": 138,
+				"price1mAgo": 156.7,
 				"low3m": 132.33,
-				"return6m": 1.2,
-				"return1m": -7.3,
-				"near3mLow": true
+				"return6m": 1.3,
+				"return1m": -10.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -77,6 +72,27 @@
 				"surprise": 40.1,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 2.53,
+		"flowScore": 0,
+		"revisionsScore": 1.67,
+		"totalScore": 4.2,
+		"raw": {
+			"avgSurprisePct": 6.77,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 3
 		}
+	},
+	"description": "TerraVest Industries Inc., together with its subsidiaries, manufactures and sells goods and services in Canada, the United States, and internationally.",
+	"analystTargets": {
+		"low": 170,
+		"mean": 182.83,
+		"high": 200
 	}
 }

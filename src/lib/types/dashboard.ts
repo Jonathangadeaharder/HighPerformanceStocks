@@ -45,6 +45,15 @@ export interface ScreenerInputs {
 	growth?: number;
 	dividendYield?: number;
 	debtPenalty?: boolean;
+	cvStock?: number;
+	riskMultiplier?: number;
+	forwardPE?: number;
+	trailingPE?: number;
+	evEbitda?: number;
+	fcfYield?: number;
+	freYield?: number;
+	aniYield?: number;
+	priceToBook?: number;
 }
 
 export interface StabilizationRealityCheck {
@@ -86,15 +95,19 @@ export interface ScreenerData {
 	secondaryScore?: number;
 }
 
+export interface AnalystTargets {
+	low: number;
+	mean: number;
+	high: number;
+}
+
 export interface CagrModel {
-	horizon?: number;
 	ttmEPS?: number;
 	epsGrowth?: string;
+	epsGrowthSource?: 'auto' | 'manual';
 	dividendYield?: string;
-	exitPE?: Partial<Record<ScenarioKey, number>>;
 	scenarios?: Partial<Record<ScenarioKey, string>>;
 	basis?: string;
-	decayFactor?: number;
 }
 
 export interface StockMetrics {
@@ -131,9 +144,31 @@ export interface IntrinsicValue {
 	discount: number | null;
 }
 
+export interface QuantitativeConviction {
+	earningsScore: number;
+	flowScore: number;
+	revisionsScore: number;
+	totalScore: number;
+	raw: {
+		avgSurprisePct: number;
+		netInsiderShares: number;
+		instFlowTrend: string;
+		upRevisions: number;
+		downRevisions: number;
+		totalAnalysts: number;
+	};
+}
+
+export interface StockConsensus {
+	tipranks?: string;
+	yahoo?: string;
+	stockanalysis?: string;
+}
+
 export interface FindingStock {
 	ticker: string;
 	name?: string;
+	description?: string;
 	group?: string;
 	currentPrice?: string;
 	targetPrice?: string;
@@ -142,12 +177,16 @@ export interface FindingStock {
 	expectedVolatility?: string;
 	bullCase?: string;
 	bearCase?: string;
+	analystTargets?: AnalystTargets;
 	cagrModel?: CagrModel;
 	screener?: ScreenerData;
 	intrinsicValue?: IntrinsicValue;
 	metrics?: StockMetrics;
 	valuation?: StockValuation;
 	confidence?: string;
+	confidenceReason?: string;
+	consensus?: StockConsensus;
+	qcs?: QuantitativeConviction;
 	sharpeRatio?: number;
 	marketCap?: string;
 	cyclical?: boolean;

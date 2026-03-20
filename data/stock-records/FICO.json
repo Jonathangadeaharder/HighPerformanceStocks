@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$27.6B USD",
-	"sharpeRatio": 0.15,
-	"expectedCAGR": "6% - 19%",
-	"expectedVolatility": "~52%",
+	"marketCap": "$28.6B USD",
+	"sharpeRatio": 0.75,
+	"expectedCAGR": "-14% - 99%",
+	"expectedVolatility": "~51%",
 	"valuation": {
-		"trailingPE": 43,
-		"forwardPE": 21.8,
+		"trailingPE": 44.6,
+		"forwardPE": 22.6,
 		"pegRatio": 2.1,
-		"evEbitda": 29.7
+		"evEbitda": 31.4
 	},
 	"metrics": {
 		"roe": "45.0%",
@@ -23,52 +23,46 @@
 		"fcfYield": "~2%",
 		"ruleOf40": "44%"
 	},
-	"targetPrice": "$1947.86",
+	"targetPrice": "$1920.23",
 	"consensus": {
 		"tipranks": "$1986",
-		"yahoo": "$1947.86"
+		"yahoo": "$1920.23"
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1161.53",
+	"currentPrice": "$1203.70",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 25,
-			"base": 35,
-			"bull": 45
-		},
 		"scenarios": {
-			"bear": "6%",
-			"base": "13%",
-			"bull": "19%"
+			"bear": "-14%",
+			"base": "60%",
+			"bull": "99%"
 		},
-		"basis": "Driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 27.04
+		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
+		"ttmEPS": 26.96
 	},
-	"lastUpdated": "2026-03-16T20:50:57.550Z",
+	"lastUpdated": "2026-03-19T13:06:32.643Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.22,
+		"score": 1.26,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 22.6,
 			"cvStock": 0.089,
 			"riskMultiplier": 1.005
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1161.53,
-				"price6mAgo": 1551.83,
-				"price1mAgo": 1351.6,
+				"price": 1203.7,
+				"price6mAgo": 1477.21,
+				"price1mAgo": 1352.73,
 				"low3m": 1068.67,
-				"return6m": -25.2,
-				"return1m": -14.1,
+				"return6m": -18.5,
+				"return1m": -11,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -81,5 +75,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 2.79,
+		"flowScore": 0,
+		"revisionsScore": 3.5,
+		"totalScore": 6.29,
+		"raw": {
+			"avgSurprisePct": 6.22,
+			"netInsiderShares": 89328,
+			"instFlowTrend": "negative",
+			"upRevisions": 15,
+			"downRevisions": 1,
+			"totalAnalysts": 20
+		}
+	},
+	"description": "Fair Isaac Corporation provides analytics software in the Americas, Europe, the Middle East, Africa, and the Asia Pacific.",
+	"analystTargets": {
+		"low": 1032,
+		"mean": 1920.23,
+		"high": 2400
 	}
 }

@@ -5,54 +5,42 @@
 	"confidence": "medium",
 	"confidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
 	"marketCap": "$2.4B USD",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "14% - 31%",
+	"sharpeRatio": 0.97,
 	"expectedVolatility": "~33%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 6,
-		"forwardPE": -56.9
+		"trailingPE": 5.7,
+		"forwardPE": -54.8
 	},
 	"metrics": {
 		"roe": "14.3%",
 		"fcfMargin": "~67%",
-		"fcfYield": "~17%",
+		"fcfYield": "~18%",
 		"ruleOf40": "3384%"
 	},
 	"targetPrice": "$21",
-	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport) is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
+	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport), now expected in September 2026, is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
 	"bearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.",
-	"currentPrice": "$18.20",
+	"currentPrice": "$17.52",
 	"consensus": {
 		"yahoo": "$21"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"scenarios": {
-			"bear": "14%",
-			"base": "24%",
-			"bull": "31%"
-		},
-		"epsGrowth": "14%",
-		"exitPE": {
-			"bear": 6,
-			"base": 9,
-			"bull": 12
-		},
+		"epsGrowth": "17%",
 		"dividendYield": "0%",
-		"basis": "Estimated compounder baseline",
+		"basis": "Captures Bangalore Airport IPO catalyst and narrowing NAV discount.",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-16T20:50:57.611Z",
+	"lastUpdated": "2026-03-19T13:06:32.747Z",
 	"screener": {
 		"engine": "tPERG",
-		"score": 0.43,
+		"score": 0.34,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 14,
+			"growth": 17,
 			"multipleType": "Trailing P/E",
-			"multiple": 6,
+			"multiple": 5.7,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -60,12 +48,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 18.2,
-				"price6mAgo": 18.05,
-				"price1mAgo": 17.64,
+				"price": 17.52,
+				"price6mAgo": 18.36,
+				"price1mAgo": 17.67,
 				"low3m": 16.56,
-				"return6m": 0.8,
-				"return1m": 3.2,
+				"return6m": -4.6,
+				"return1m": -0.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,5 +66,20 @@
 				"quarter": "2023-03"
 			}
 		}
-	}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 5,
+		"raw": {
+			"avgSurprisePct": 562,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
+	},
+	"description": "Fairfax India Holdings Corporation, together with its subsidiaries, operates as an investment holding company in India."
 }

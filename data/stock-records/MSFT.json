@@ -1,0 +1,100 @@
+{
+	"ticker": "MSFT",
+	"name": "Microsoft",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Enterprise software and cloud computing monopoly. Unparalleled B2B distribution network and AI infrastructure leadership via Azure/OpenAI.",
+	"cagrModel": {
+		"epsGrowth": "14%",
+		"basis": "Non-GAAP EPS (CapEx depreciation adjusted)",
+		"ttmEPS": 16,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "1%",
+			"base": "53%",
+			"bull": "87%"
+		}
+	},
+	"currentPrice": "$391.79",
+	"marketCap": "$2911.9B USD",
+	"valuation": {
+		"trailingPE": 24.5,
+		"forwardPE": 20.8,
+		"evEbitda": 16.8
+	},
+	"metrics": {
+		"roe": "34.4%",
+		"fcfMargin": "~18%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "34%"
+	},
+	"consensus": {
+		"yahoo": "$594.62"
+	},
+	"targetPrice": "$594.62",
+	"expectedCAGR": "1% - 87%",
+	"expectedVolatility": "~26%",
+	"sharpeRatio": 1.52,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.5,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 14,
+			"multipleType": "Forward P/E",
+			"multiple": 20.8,
+			"cvStock": 0.101,
+			"riskMultiplier": 1.013
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 391.79,
+				"price6mAgo": 517.93,
+				"price1mAgo": 398.46,
+				"low3m": 381.71,
+				"return6m": -24.4,
+				"return1m": -1.7,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 34.1,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
+	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
+	"lastUpdated": "2026-03-19T13:06:40.027Z",
+	"intrinsicValue": {
+		"dcf": 326.49,
+		"date": "2026-03-19",
+		"discount": -17
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": -5,
+		"revisionsScore": 0.33,
+		"totalScore": 0.33,
+		"raw": {
+			"avgSurprisePct": 12.82,
+			"netInsiderShares": -38372,
+			"instFlowTrend": "negative",
+			"upRevisions": 2,
+			"downRevisions": 0,
+			"totalAnalysts": 30
+		}
+	},
+	"description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide.",
+	"analystTargets": {
+		"low": 392,
+		"mean": 594.62,
+		"high": 730
+	}
+}

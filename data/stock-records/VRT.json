@@ -1,18 +1,19 @@
 {
 	"ticker": "VRT",
 	"name": "Vertiv Holdings",
-	"group": "AI & Semiconductors",
+	"group": "Industrial Monopolies",
+	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
 	"marketCap": "$101.3B USD",
-	"sharpeRatio": 0.31,
-	"expectedCAGR": "19% - 29%",
-	"expectedVolatility": "~63%",
+	"sharpeRatio": -0.23,
+	"expectedCAGR": "-41% - 21%",
+	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 77.4,
+		"trailingPE": 77.6,
 		"forwardPE": 33.1,
 		"pegRatio": null,
-		"evEbitda": 45.5
+		"evEbitda": 46.5
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -28,30 +29,24 @@
 	"targetPrice": "$267.83",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$264.74",
+	"currentPrice": "$264.71",
 	"consensus": {
 		"tipranks": "$280",
 		"yahoo": "$267.83",
 		"stockanalysis": "$217"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 6.01,
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 28,
-			"base": 35,
-			"bull": 42
-		},
 		"scenarios": {
-			"bear": "19%",
-			"base": "24%",
-			"bull": "29%"
+			"bear": "-41%",
+			"base": "1%",
+			"bull": "21%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:12.901Z",
+	"lastUpdated": "2026-03-19T13:06:49.131Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.13,
@@ -66,12 +61,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 264.74,
-				"price6mAgo": 136.83,
-				"price1mAgo": 243.53,
+				"price": 264.71,
+				"price6mAgo": 143.6,
+				"price1mAgo": 243.06,
 				"low3m": 147.82,
-				"return6m": 93.5,
-				"return1m": 8.7,
+				"return6m": 84.3,
+				"return1m": 8.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -83,6 +78,27 @@
 				"surprise": 4.9,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 3.86,
+		"flowScore": -5,
+		"revisionsScore": 5,
+		"totalScore": 3.86,
+		"raw": {
+			"avgSurprisePct": 12.05,
+			"netInsiderShares": -158418,
+			"instFlowTrend": "negative",
+			"upRevisions": 22,
+			"downRevisions": 0,
+			"totalAnalysts": 22
 		}
+	},
+	"description": "Vertiv Holdings Co designs, manufactures, and services critical digital infrastructure technologies and life cycle services for data centers, communication networks, and commercial and industrial e...",
+	"analystTargets": {
+		"low": 155,
+		"mean": 267.83,
+		"high": 320
 	}
 }

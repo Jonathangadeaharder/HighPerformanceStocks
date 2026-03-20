@@ -4,13 +4,13 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$107.5B USD",
-	"sharpeRatio": 0.04,
-	"expectedCAGR": "1% - 12%",
+	"marketCap": "$110.5B USD",
+	"sharpeRatio": 0.41,
+	"expectedCAGR": "-16% - 62%",
 	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 68.6,
+		"forwardPE": 70.6,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -22,63 +22,77 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "57%"
 	},
-	"targetPrice": "$493.08",
+	"targetPrice": "$490.48",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$423.84",
+	"currentPrice": "$435.81",
 	"consensus": {
 		"tipranks": "$550",
-		"yahoo": "$493.08"
+		"yahoo": "$490.48"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 3.79,
 		"epsGrowth": "32%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 30,
-			"base": 40,
-			"bull": 50
-		},
 		"scenarios": {
-			"bear": "1%",
-			"base": "7%",
-			"bull": "12%"
+			"bear": "-16%",
+			"base": "13%",
+			"bull": "62%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-16T20:50:55.540Z",
+	"lastUpdated": "2026-03-19T13:06:30.589Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.15,
+		"score": 2.22,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",
-			"multiple": 68.6,
+			"multiple": 70.6,
 			"cvStock": 0.087,
 			"riskMultiplier": 1.004
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 423.84,
-				"price6mAgo": 445.5,
-				"price1mAgo": 414.29,
+				"price": 435.81,
+				"price6mAgo": 502.55,
+				"price1mAgo": 422.14,
 				"low3m": 342.72,
-				"return6m": -4.9,
-				"return1m": 2.3,
+				"return6m": -13.3,
+				"return1m": 3.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 21,
-				"down30d": 7
+				"up30d": 22,
+				"down30d": 6
 			},
 			"earningsSurprise": {
 				"surprise": 1.6,
 				"quarter": "2026-01"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": 3.01,
+		"flowScore": 0,
+		"revisionsScore": 2.08,
+		"totalScore": 5.09,
+		"raw": {
+			"avgSurprisePct": 6.55,
+			"netInsiderShares": 114653,
+			"instFlowTrend": "negative",
+			"upRevisions": 33,
+			"downRevisions": 11,
+			"totalAnalysts": 53
+		}
+	},
+	"description": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally.",
+	"analystTargets": {
+		"low": 368,
+		"mean": 490.48,
+		"high": 706
 	}
 }

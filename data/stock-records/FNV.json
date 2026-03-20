@@ -2,17 +2,18 @@
 	"ticker": "FNV",
 	"name": "Franco-Nevada",
 	"group": "Royalties",
+	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$49.2B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "2% - 12%",
+	"marketCap": "$47.0B USD",
+	"sharpeRatio": 0.69,
+	"expectedCAGR": "12% - 47%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 53.4,
-		"forwardPE": 26.7,
+		"trailingPE": 42.2,
+		"forwardPE": 25.5,
 		"pegRatio": 5,
-		"evEbitda": 29.1
+		"evEbitda": 28.1
 	},
 	"metrics": {
 		"fcfMargin": "~-59%",
@@ -22,53 +23,47 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "27%"
 	},
-	"targetPrice": "$295.38",
+	"targetPrice": "$302.45",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$254.13",
+	"currentPrice": "$243.33",
 	"consensus": {
 		"tipranks": "$250",
-		"yahoo": "$295.38",
+		"yahoo": "$302.45",
 		"stockanalysis": "$236"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 6.8,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 22,
-			"base": 28,
-			"bull": 35
-		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "7%",
-			"bull": "12%"
+			"bear": "12%",
+			"base": "25%",
+			"bull": "47%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T20:50:58.406Z",
+	"lastUpdated": "2026-03-19T13:06:33.635Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.18,
+		"score": 3.05,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "P/CF",
-			"multiple": 37.4,
+			"multiple": 35.8,
 			"cvStock": 0.117,
 			"riskMultiplier": 1.022
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 254.13,
-				"price6mAgo": 200.88,
-				"price1mAgo": 249.73,
+				"price": 243.33,
+				"price6mAgo": 213.93,
+				"price1mAgo": 254.96,
 				"low3m": 202.62,
-				"return6m": 26.5,
-				"return1m": 1.8,
+				"return6m": 13.7,
+				"return1m": -4.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -82,6 +77,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.27
+		"secondaryScore": 2.17,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 2.81,
+		"flowScore": 2.5,
+		"revisionsScore": 1,
+		"totalScore": 6.31,
+		"raw": {
+			"avgSurprisePct": 8.21,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 5,
+			"downRevisions": 3,
+			"totalAnalysts": 10
+		}
+	},
+	"description": "Franco-Nevada Corporation operates as a royalty and stream company focused on precious metals in South America, Central America, Mexico, the United States, Canada, Australia, Europe, and Africa.",
+	"analystTargets": {
+		"low": 269,
+		"mean": 302.45,
+		"high": 356.09
 	}
 }

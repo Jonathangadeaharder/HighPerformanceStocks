@@ -1,31 +1,28 @@
 {
 	"ticker": "TW",
 	"name": "Tradeweb",
-	"group": "Financials & Alt Assets",
+	"group": "Data & Software Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Electronic bond trading matching traditional voice-brokers. Asset-light, massive operating leverage.",
+	"bullCase": "Tradeweb is systematically replacing voice-brokered bond trading with electronic protocols, growing market share in US Treasuries, IG credit, and rates derivatives. Commission-per-ticket is rising as automation reduces headcount costs for clients. At 30%+ revenue CAGR, it is taking share from both MKTX and legacy dealers simultaneously.",
+	"bearCase": "At 28x forward PE, TW is priced for continued share gains in fixed income e-trading. If bond market volumes collapse (credit freeze, rate stability), revenue growth stalls. MKTX is fighting back in US credit and dealer internalization poses a long-term structural risk.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.01,
+		"ttmEPS": 3.78,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "5%",
-			"bull": "10%"
+			"bear": "-10%",
+			"base": "7%",
+			"bull": "64%"
 		}
 	},
-	"currentPrice": "$124.01",
-	"marketCap": "$27.1B USD",
+	"currentPrice": "$123.44",
+	"marketCap": "$27.0B USD",
 	"valuation": {
-		"trailingPE": 30.9,
-		"forwardPE": 27.6
+		"trailingPE": 32.7,
+		"forwardPE": 27.4
 	},
 	"metrics": {
 		"roe": "13.6%"
@@ -34,41 +31,62 @@
 		"yahoo": "$132.31"
 	},
 	"targetPrice": "$132.31",
-	"expectedCAGR": "0% - 10%",
+	"expectedCAGR": "-10% - 64%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.8,
+		"score": 1.79,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 27.6,
+			"multiple": 27.4,
 			"cvStock": 0.045,
 			"riskMultiplier": 0.979
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 124.01,
-				"price6mAgo": 117.21,
-				"price1mAgo": 114.32,
+				"price": 123.44,
+				"price6mAgo": 112.08,
+				"price1mAgo": 118.95,
 				"low3m": 97.06,
-				"return6m": 5.8,
-				"return1m": 8.5,
+				"return6m": 10.1,
+				"return1m": 3.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 6,
-				"down30d": 0
+				"up30d": 1,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 3,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:46.954Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.75,
+	"qcs": {
+		"earningsScore": 2.14,
+		"flowScore": 5,
+		"revisionsScore": 0,
+		"totalScore": 7.14,
+		"raw": {
+			"avgSurprisePct": 2.41,
+			"netInsiderShares": 347137,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 13
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:10.808Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.02
+	"description": "Tradeweb Markets Inc. builds and operates electronic marketplaces in the United States and internationally.",
+	"analystTargets": {
+		"low": 111,
+		"mean": 132.31,
+		"high": 203
+	}
 }

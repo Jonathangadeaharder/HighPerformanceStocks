@@ -3,16 +3,16 @@
 	"name": "Vitec Software Group",
 	"group": "Serial Acquirers",
 	"confidence": "medium",
-	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%).",
-	"marketCap": "9.5B SEK",
-	"sharpeRatio": 0.3,
-	"expectedCAGR": "12% - 23%",
+	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
+	"marketCap": "9.2B SEK",
+	"sharpeRatio": 2.55,
+	"expectedCAGR": "75% - 153%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 21.8,
-		"forwardPE": 18.6,
+		"trailingPE": 21.1,
+		"forwardPE": 18,
 		"pegRatio": null,
-		"evEbitda": 9.1,
+		"evEbitda": 8.9,
 		"evFcf": 15
 	},
 	"metrics": {
@@ -26,50 +26,44 @@
 	"targetPrice": "456 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "239 SEK",
+	"currentPrice": "231 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
 		"yahoo": "456 SEK"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 10.97,
+		"ttmEPS": 10.95,
 		"epsGrowth": "12%",
 		"dividendYield": "2%",
-		"exitPE": {
-			"bear": 20,
-			"base": 25,
-			"bull": 32
-		},
 		"scenarios": {
-			"bear": "12%",
-			"base": "17%",
-			"bull": "23%"
+			"bear": "75%",
+			"base": "99%",
+			"bull": "153%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-16T20:51:12.094Z",
+	"lastUpdated": "2026-03-19T13:06:48.067Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.74,
+		"score": 0.73,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 9.1,
+			"multiple": 8.9,
 			"cvStock": 0.045,
 			"riskMultiplier": 0.979
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 239,
-				"price6mAgo": 333.6,
-				"price1mAgo": 230.8,
+				"pass": false,
+				"price": 231.2,
+				"price6mAgo": 341,
+				"price1mAgo": 243.2,
 				"low3m": 221.8,
-				"return6m": -28.4,
-				"return1m": 3.6,
-				"near3mLow": false
+				"return6m": -32.2,
+				"return1m": -4.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -82,6 +76,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.52
+		"secondaryScore": 1.47
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -0.83,
+		"totalScore": 4.17,
+		"raw": {
+			"avgSurprisePct": 67.6,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 2,
+			"downRevisions": 3,
+			"totalAnalysts": 6
+		}
+	},
+	"description": "Vitec Software Group AB (publ) develops and delivers vertical market software solutions in Sweden, Denmark, Finland, Norway, the Netherlands, the United States, and internationally.",
+	"analystTargets": {
+		"low": 400,
+		"mean": 455.71,
+		"high": 580
 	}
 }

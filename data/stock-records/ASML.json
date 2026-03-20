@@ -2,17 +2,18 @@
 	"ticker": "ASML",
 	"name": "ASML Holding",
 	"group": "AI & Semiconductors",
+	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
-	"marketCap": "$540.1B USD",
-	"sharpeRatio": 0.18,
-	"expectedCAGR": "8% - 16%",
+	"marketCap": "$532.1B USD",
+	"sharpeRatio": 0,
+	"expectedCAGR": "-33% - 42%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 48.2,
-		"forwardPE": 32,
+		"trailingPE": 47.6,
+		"forwardPE": 31.3,
 		"pegRatio": null,
-		"evEbitda": 41.6
+		"evEbitda": 41.9
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
@@ -22,64 +23,80 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "38%"
 	},
-	"targetPrice": "$1459.01",
+	"targetPrice": "$1460.64",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
-	"currentPrice": "$1375.56",
+	"currentPrice": "$1355.17",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1459.01",
+		"yahoo": "$1460.64",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 28.53,
-		"epsGrowth": "18%",
+		"ttmEPS": 28.46,
+		"epsGrowth": "26%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 29,
-			"base": 36,
-			"bull": 43
-		},
 		"scenarios": {
-			"bear": "8%",
-			"base": "12%",
-			"bull": "16%"
+			"bear": "-33%",
+			"base": "9%",
+			"bull": "42%"
 		},
-		"basis": "5yr & 10yr avg PE (~36)"
+		"basis": "5yr & 10yr avg PE (~36) (USD-equivalent ADR basis; underlying financials reported in EUR)",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-16T20:50:53.298Z",
+	"lastUpdated": "2026-03-19T13:06:27.658Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.8,
+		"score": 1.22,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 18,
+			"growth": 26,
 			"multipleType": "Forward P/E",
-			"multiple": 32,
+			"multiple": 31.3,
 			"cvStock": 0.099,
 			"riskMultiplier": 1.011
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1375.56,
-				"price6mAgo": 872.27,
-				"price1mAgo": 1419.78,
+				"price": 1355.17,
+				"price6mAgo": 932.15,
+				"price1mAgo": 1458.93,
 				"low3m": 1010.01,
-				"return6m": 57.7,
-				"return1m": -3.1,
+				"return6m": 45.4,
+				"return1m": -7.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
+				"up30d": 4,
 				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": -2.7,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 1.56,
+		"flowScore": 0,
+		"revisionsScore": 0.43,
+		"totalScore": 1.99,
+		"raw": {
+			"avgSurprisePct": 3.87,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 3,
+			"downRevisions": 0,
+			"totalAnalysts": 35
 		}
+	},
+	"description": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems.",
+	"analystTargets": {
+		"low": 889.45,
+		"mean": 1460.64,
+		"high": 1913.64
 	}
 }

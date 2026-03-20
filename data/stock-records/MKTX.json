@@ -1,32 +1,28 @@
 {
 	"ticker": "MKTX",
 	"name": "MarketAxess",
-	"group": "Financials & Alt Assets",
+	"group": "Data & Software Monopolies",
 	"confidence": "high",
-	"confidenceReason": "Electronic bond trading taking market share. 15-20% revenue growth, massive leverage.",
+	"confidenceReason": "MarketAxess pioneered electronic credit trading and still leads in high-yield and EM bonds. However, Tradeweb has been taking significant market share in investment-grade credit. The recovery thesis rests on defending its HY/EM moat and rebuilding IG share — execution risk is high.",
+	"bullCase": "MarketAxess retains dominant share in high-yield and emerging market bond trading where Tradeweb has less penetration. Portfolio trading volumes are growing rapidly. At 20x forward PE — a historic low — the market is pricing in permanent share loss that may be overstated.",
+	"bearCase": "Tradeweb continues taking IG credit market share and now offers better price discovery through its dealer network. MKTX revenue was essentially flat in 2023-2024. At a current forward PE of 20x on 9% EPS growth, there is limited upside if share losses continue.",
 	"cagrModel": {
-		"horizon": 5,
-		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
+		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 8.19,
+		"ttmEPS": 6.63,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "15%",
-			"bull": "20%"
+			"bear": "-1%",
+			"base": "13%",
+			"bull": "45%"
 		}
 	},
-	"currentPrice": "$180.33",
-	"marketCap": "$6.7B USD",
+	"currentPrice": "$174.63",
+	"marketCap": "$6.5B USD",
 	"valuation": {
-		"trailingPE": 22,
-		"forwardPE": 19.9,
-		"evEbitda": 14.4
+		"trailingPE": 26.3,
+		"forwardPE": 19.2,
+		"evEbitda": 13.9
 	},
 	"metrics": {
 		"roe": "19.4%",
@@ -36,30 +32,30 @@
 		"ruleOf40": "30%"
 	},
 	"consensus": {
-		"yahoo": "$192.50"
+		"yahoo": "$193.70"
 	},
-	"targetPrice": "$192.50",
-	"expectedCAGR": "9% - 20%",
+	"targetPrice": "$193.70",
+	"expectedCAGR": "-1% - 45%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.28,
+		"score": 2.06,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 19.9,
+			"multiple": 19.2,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.964
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 180.33,
-				"price6mAgo": 183.53,
-				"price1mAgo": 177.75,
+				"price": 174.63,
+				"price6mAgo": 178.32,
+				"price1mAgo": 180.7,
 				"low3m": 157.93,
-				"return6m": -1.7,
-				"return1m": 1.5,
+				"return6m": -2.1,
+				"return1m": -3.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +69,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:04.535Z",
+	"lastUpdated": "2026-03-19T13:06:39.986Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.37
+	"sharpeRatio": 0.65,
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 5,
+		"revisionsScore": 0.63,
+		"totalScore": 0.63,
+		"raw": {
+			"avgSurprisePct": -4.9,
+			"netInsiderShares": 61324,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 8
+		}
+	},
+	"description": "MarketAxess Holdings Inc., together with its subsidiaries, operates an electronic trading platform for institutional investor and broker-dealer firms in the United States, the United Kingdom, and i...",
+	"analystTargets": {
+		"low": 169,
+		"mean": 193.7,
+		"high": 250
+	}
 }

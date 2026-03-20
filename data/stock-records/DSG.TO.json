@@ -4,29 +4,20 @@
 	"group": "Data & Software Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
+	"bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
+	"bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "17%",
-		"exitPE": {
-			"bear": 35,
-			"base": 40,
-			"bull": 45
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 2.42,
-		"dividendYield": "0%",
-		"scenarios": {
-			"bear": "13%",
-			"base": "17%",
-			"bull": "19%"
-		}
+		"ttmEPS": 2.56,
+		"dividendYield": "0%"
 	},
-	"currentPrice": "C$98.71",
-	"marketCap": "C$8.5B",
+	"currentPrice": "C$97.67",
+	"marketCap": "C$8.4B",
 	"valuation": {
-		"trailingPE": 40.8,
+		"trailingPE": 38.2,
 		"forwardPE": 22.2,
-		"evEbitda": 26.7
+		"evEbitda": 26.2
 	},
 	"metrics": {
 		"roe": "10.9%",
@@ -36,10 +27,9 @@
 		"ruleOf40": "48%"
 	},
 	"consensus": {
-		"yahoo": "C$128.78"
+		"yahoo": "C$129.15"
 	},
-	"targetPrice": "C$128.78",
-	"expectedCAGR": "13% - 19%",
+	"targetPrice": "C$129.15",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.3,
@@ -54,12 +44,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 98.71,
-				"price6mAgo": 137.68,
-				"price1mAgo": 89.01,
+				"price": 97.67,
+				"price6mAgo": 140.27,
+				"price1mAgo": 90.44,
 				"low3m": 85.26,
-				"return6m": -28.3,
-				"return1m": 10.9,
+				"return6m": -30.4,
+				"return1m": 8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +63,22 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:50:56.508Z",
+	"lastUpdated": "2026-03-19T13:06:31.599Z",
 	"expectedVolatility": "~37%",
-	"sharpeRatio": 0.31
+	"sharpeRatio": 0.74,
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 2.5,
+		"revisionsScore": 2.86,
+		"totalScore": 0.36,
+		"raw": {
+			"avgSurprisePct": -13.74,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 0,
+			"totalAnalysts": 7
+		}
+	},
+	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific."
 }

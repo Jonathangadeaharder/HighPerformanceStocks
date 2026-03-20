@@ -5,28 +5,22 @@
 	"confidence": "high",
 	"confidenceReason": "Near-monopoly on specialized rubber stoppers/seals for injectables (GLP-1s). High-margin, high-moat.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "16%",
-		"exitPE": {
-			"bear": 35,
-			"base": 40,
-			"bull": 45
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.78,
+		"ttmEPS": 6.79,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "19%",
-			"bull": "22%"
+			"bear": "11%",
+			"base": "33%",
+			"bull": "57%"
 		}
 	},
-	"currentPrice": "$240.31",
-	"marketCap": "$17.3B USD",
+	"currentPrice": "$239",
+	"marketCap": "$17.2B USD",
 	"valuation": {
-		"trailingPE": 35.4,
-		"forwardPE": 27.2,
-		"evEbitda": 20.4
+		"trailingPE": 35.2,
+		"forwardPE": 27,
+		"evEbitda": 20.7
 	},
 	"metrics": {
 		"roe": "16.9%",
@@ -39,27 +33,27 @@
 		"yahoo": "$318.36"
 	},
 	"targetPrice": "$318.36",
-	"expectedCAGR": "16% - 22%",
+	"expectedCAGR": "11% - 57%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.65,
+		"score": 1.63,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "Forward P/E",
-			"multiple": 27.2,
+			"multiple": 27,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 240.31,
-				"price6mAgo": 256.64,
-				"price1mAgo": 243.19,
+				"price": 239,
+				"price6mAgo": 254.85,
+				"price1mAgo": 243.83,
 				"low3m": 223.83,
-				"return6m": -6.4,
-				"return1m": -1.2,
+				"return6m": -6.2,
+				"return1m": -2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,7 +67,29 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:13.951Z",
+	"lastUpdated": "2026-03-19T13:06:49.293Z",
 	"expectedVolatility": "~40%",
-	"sharpeRatio": 0.36
+	"sharpeRatio": 0.74,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 3.75,
+		"totalScore": 8.75,
+		"raw": {
+			"avgSurprisePct": 15.27,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 14,
+			"downRevisions": 2,
+			"totalAnalysts": 16
+		}
+	},
+	"bullCase": "West Pharmaceutical is the near-monopoly supplier of drug containment components (stoppers, seals, closures) for injectable pharmaceuticals. Every pre-filled syringe and vial of injectable drug uses West components — this embedded position provides pricing power and secular volume growth from biologics and GLP-1 manufacturing ramp.",
+	"bearCase": "The pandemic-era demand surge (COVID vaccines required 2x normal closure volume) created a massive revenue pull-forward. The post-COVID inventory destocking cycle has been severe, with volumes declining 15-20% from peak. Recovery timeline remains uncertain.",
+	"description": "West Pharmaceutical Services, Inc. designs, manufactures, and sells containment and delivery systems for injectable drugs and healthcare products in the Americas, Europe, the Middle East, Africa, a...",
+	"analystTargets": {
+		"low": 265,
+		"mean": 318.36,
+		"high": 375
+	}
 }

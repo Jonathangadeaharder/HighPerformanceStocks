@@ -2,31 +2,28 @@
 	"ticker": "SPGI",
 	"name": "S&P Global",
 	"group": "Data & Software Monopolies",
+	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
+	"bullCase": "S&P Global's Ratings segment benefits from surging debt issuance volumes at still-elevated rates. Market Intelligence and Mobility segments are growing 10%+ organically on subscription revenue. After absorbing the IHS Markit integration, operating margins are expanding toward 50%+, driving compounding non-GAAP EPS.",
+	"bearCase": "Ratings revenue is highly sensitive to debt issuance cycles — a credit freeze or prolonged rate inversion collapses new issuance and cuts Ratings revenue materially (as seen in 2022). At 19x forward PE, any deceleration below 12% EPS growth would re-rate the stock.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 14.66,
+		"ttmEPS": 14.68,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "8%",
-			"bull": "13%"
+			"bear": "14%",
+			"base": "27%",
+			"bull": "47%"
 		}
 	},
-	"currentPrice": "$426.59",
+	"currentPrice": "$426.64",
 	"marketCap": "$129.2B USD",
 	"valuation": {
 		"trailingPE": 29.1,
 		"forwardPE": 19.3,
-		"evEbitda": 18.7
+		"evEbitda": 18.9
 	},
 	"metrics": {
 		"roe": "13.1%",
@@ -36,10 +33,10 @@
 		"ruleOf40": "41%"
 	},
 	"consensus": {
-		"yahoo": "$537.90"
+		"yahoo": "$538.52"
 	},
-	"targetPrice": "$537.90",
-	"expectedCAGR": "2% - 13%",
+	"targetPrice": "$538.52",
+	"expectedCAGR": "14% - 47%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.24,
@@ -54,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 426.59,
-				"price6mAgo": 544.1,
-				"price1mAgo": 410.45,
+				"price": 426.64,
+				"price6mAgo": 507.16,
+				"price1mAgo": 416.67,
 				"low3m": 381.61,
-				"return6m": -21.6,
-				"return1m": 3.9,
+				"return6m": -15.9,
+				"return1m": 2.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +68,30 @@
 				"surprise": -0.8,
 				"quarter": "2025-12"
 			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-19T13:06:45.054Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.87,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -4.38,
+		"totalScore": 0.62,
+		"raw": {
+			"avgSurprisePct": 3.81,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 21,
+			"totalAnalysts": 24
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:09.752Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.1
+	"description": "S&P Global Inc., together with its subsidiaries, provides benchmarks, data, analytics, and workflow solutions in the global capital, energy and commodity, and automotive markets.",
+	"analystTargets": {
+		"low": 480,
+		"mean": 538.52,
+		"high": 625
+	}
 }

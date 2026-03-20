@@ -10,7 +10,13 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 function isFindingStock(value: unknown): value is FindingStock {
-	return isRecord(value) && typeof value.ticker === 'string';
+	return (
+		isRecord(value) &&
+		typeof value.ticker === 'string' &&
+		(value.cagrModel === undefined || isRecord(value.cagrModel)) &&
+		(value.screener === undefined || isRecord(value.screener)) &&
+		(value.valuation === undefined || isRecord(value.valuation))
+	);
 }
 
 function parseFindingStock(contents: string): FindingStock | null {
@@ -25,7 +31,8 @@ export function loadFindingStocks(dataDir = FINDINGS_DIR): FindingStock[] {
 		try {
 			const parsedStock = parseFindingStock(readFileSync(resolve(dataDir, fileName), 'utf8'));
 			return parsedStock ? [parsedStock] : [];
-		} catch {
+		} catch (error) {
+			console.error(`Failed to load stock from ${fileName}:`, error);
 			return [];
 		}
 	});

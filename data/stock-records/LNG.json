@@ -2,17 +2,18 @@
 	"ticker": "LNG",
 	"name": "Cheniere Energy",
 	"group": "Energy",
+	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
-	"marketCap": "$54.1B USD",
-	"sharpeRatio": 0.16,
-	"expectedCAGR": "4% - 14%",
-	"expectedVolatility": "~28%",
+	"marketCap": "$57.3B USD",
+	"sharpeRatio": -0.12,
+	"expectedCAGR": "-12% - 14%",
+	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 10.4,
-		"forwardPE": 16.4,
+		"trailingPE": 11,
+		"forwardPE": 17.4,
 		"pegRatio": null,
-		"evEbitda": 8
+		"evEbitda": 8.2
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -22,32 +23,26 @@
 		"netDebtEbitda": "2.4x",
 		"ruleOf40": "26%"
 	},
-	"targetPrice": "$273.14",
+	"targetPrice": "$274.23",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$251.29",
+	"currentPrice": "$266.22",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$273.14"
+		"yahoo": "$274.23"
 	},
 	"cagrModel": {
-		"horizon": 5,
-		"ttmEPS": 24.14,
+		"ttmEPS": 24.12,
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 10,
-			"base": 13,
-			"bull": 16
-		},
 		"scenarios": {
-			"bear": "4%",
-			"base": "10%",
+			"bear": "-12%",
+			"base": "4%",
 			"bull": "14%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-16T20:51:02.568Z",
+	"lastUpdated": "2026-03-19T13:06:37.719Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 3.43,
@@ -59,15 +54,16 @@
 			"debtPenalty": true,
 			"rawReturn": 3.5
 		},
+		"note": "(CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 251.29,
-				"price6mAgo": 235.32,
-				"price1mAgo": 219.01,
-				"low3m": 186.2,
-				"return6m": 6.8,
-				"return1m": 14.7,
+				"price": 266.22,
+				"price6mAgo": 231.5,
+				"price1mAgo": 226.19,
+				"low3m": 188.13,
+				"return6m": 15,
+				"return1m": 17.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,5 +76,25 @@
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 2.5,
+		"revisionsScore": 0,
+		"totalScore": -2.5,
+		"raw": {
+			"avgSurprisePct": -10.93,
+			"netInsiderShares": -17534092,
+			"instFlowTrend": "positive",
+			"upRevisions": 2,
+			"downRevisions": 2,
+			"totalAnalysts": 6
+		}
+	},
+	"description": "Cheniere Energy, Inc., an energy infrastructure company, primarily engages in the liquefied natural gas (LNG) related businesses in the United States.",
+	"analystTargets": {
+		"low": 232,
+		"mean": 274.23,
+		"high": 301
 	}
 }

@@ -1,0 +1,101 @@
+{
+	"ticker": "AMZN",
+	"name": "Amazon",
+	"group": "Data & Software Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Dual monopolies in e-commerce logistics and cloud computing (AWS). Currently undergoing massive FCF margin inflection.",
+	"cagrModel": {
+		"epsGrowth": "22%",
+		"basis": "Non-GAAP Operating EPS (GAAP EPS adjusted for stock-based compensation and depreciation normalization; AWS FCF inflection is primary driver)",
+		"ttmEPS": 7.17,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-17%",
+			"base": "34%",
+			"bull": "72%"
+		},
+		"epsGrowthSource": "auto"
+	},
+	"currentPrice": "$209.87",
+	"marketCap": "$2252.9B USD",
+	"valuation": {
+		"trailingPE": 29.2,
+		"forwardPE": 22.5,
+		"evEbitda": 15.8
+	},
+	"metrics": {
+		"roe": "22.3%",
+		"fcfMargin": "~3%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "0.4x",
+		"ruleOf40": "17%"
+	},
+	"consensus": {
+		"yahoo": "$280.55"
+	},
+	"targetPrice": "$280.55",
+	"expectedCAGR": "-17% - 72%",
+	"expectedVolatility": "~35%",
+	"sharpeRatio": 0.66,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.08,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 22,
+			"multipleType": "Forward P/E",
+			"multiple": 22.5,
+			"cvStock": 0.173,
+			"riskMultiplier": 1.056
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 209.87,
+				"price6mAgo": 231.48,
+				"price1mAgo": 204.86,
+				"low3m": 196,
+				"return6m": -9.3,
+				"return1m": 2.4,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 4,
+				"down30d": 7
+			},
+			"earningsSurprise": {
+				"surprise": -0.5,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
+	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
+	"lastUpdated": "2026-03-19T13:06:26.396Z",
+	"intrinsicValue": {
+		"dcf": 164.81,
+		"date": "2026-03-19",
+		"discount": -21
+	},
+	"qcs": {
+		"earningsScore": 3.93,
+		"flowScore": 0,
+		"revisionsScore": -1.29,
+		"totalScore": 2.64,
+		"raw": {
+			"avgSurprisePct": 16.98,
+			"netInsiderShares": 1173452,
+			"instFlowTrend": "negative",
+			"upRevisions": 17,
+			"downRevisions": 32,
+			"totalAnalysts": 58
+		}
+	},
+	"description": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally.",
+	"analystTargets": {
+		"low": 175,
+		"mean": 280.55,
+		"high": 360
+	}
+}

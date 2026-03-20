@@ -4,34 +4,30 @@
 	"group": "Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "UK-based buyer of specialized scientific instrument manufacturers. Incredible return on capital.",
+	"bullCase": "Judges Scientific is a UK niche scientific instrument serial acquirer with 20%+ historical ROE and a proven capital allocation model. A 24x exit P/E represents fair value for an asset-light compounder with recurring aftermarket revenue and a deep pipeline of sub-£50M acquisition targets.",
+	"bearCase": "UK domicile adds currency risk (GBP/USD) and limits the acquisition pipeline vs. North American peers. Multiple compression from current 35x levels to 24x base would produce modest returns unless EPS growth exceeds 16%.",
 	"cagrModel": {
-		"horizon": 5,
 		"epsGrowth": "15%",
-		"exitPE": {
-			"bear": 15,
-			"base": 20,
-			"bull": 25
-		},
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 1.63,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "13%",
-			"bull": "18%"
+			"bear": "12%",
+			"base": "68%",
+			"bull": "99%"
 		}
 	},
-	"currentPrice": "£40.30",
-	"marketCap": "£0.3B",
+	"currentPrice": "£36.75",
+	"marketCap": "£0.2B",
 	"valuation": {
-		"trailingPE": 24.7,
-		"forwardPE": 19.8,
-		"evEbitda": 10.5
+		"trailingPE": 22.5,
+		"forwardPE": 18.1,
+		"evEbitda": 9.7
 	},
 	"metrics": {
 		"roe": "12.9%",
 		"fcfMargin": "~16%",
-		"fcfYield": "~8%",
+		"fcfYield": "~9%",
 		"netDebtEbitda": "1.6x",
 		"ruleOf40": "31%"
 	},
@@ -39,15 +35,15 @@
 		"yahoo": "£60.63"
 	},
 	"targetPrice": "£60.63",
-	"expectedCAGR": "7% - 18%",
+	"expectedCAGR": "12% - 99%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.27,
+		"score": 1.16,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 19.8,
+			"multiple": 18.1,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.961
 		},
@@ -55,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 4030,
-				"price6mAgo": 6280,
-				"price1mAgo": 5000,
-				"low3m": 3842,
-				"return6m": -35.8,
-				"return1m": -19.4,
+				"price": 3675,
+				"price6mAgo": 6320,
+				"price1mAgo": 4960,
+				"low3m": 3600,
+				"return6m": -41.9,
+				"return1m": -25.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -70,7 +66,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-16T20:51:00.687Z",
+	"lastUpdated": "2026-03-19T13:06:35.776Z",
 	"expectedVolatility": "~43%",
-	"sharpeRatio": 0.19
+	"sharpeRatio": 1.19,
+	"qcs": {
+		"earningsScore": 0,
+		"flowScore": 0,
+		"revisionsScore": -1,
+		"totalScore": -1,
+		"raw": {
+			"avgSurprisePct": 0,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 1,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Judges Scientific plc designs, manufactures, and sells scientific instruments and services.",
+	"analystTargets": {
+		"low": 40.15,
+		"mean": 60.63,
+		"high": 72
+	}
 }

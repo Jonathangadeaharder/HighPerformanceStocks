@@ -15,7 +15,6 @@
 	let activeTab = $state<TabId>('signals');
 	let expandedDeploy = $state<string | null>(null);
 	let expandedWait = $state<string | null>(null);
-	let showWatchlist = $state(false); // No longer used for top-level toggle, might be removable soon
 	let expandedWatch = $state<Record<string, boolean>>({});
 
 	function toggleDeploy(ticker: string): void {
@@ -44,28 +43,38 @@
 	<TabNav {activeTab} onSwitch={(tab: TabId) => { activeTab = tab; }} />
 
 	{#if activeTab === 'signals'}
-		<WorldVolCard worldVolSignal={data.worldVolSignal} />
-		<CoreAllocation />
-		<DeploySection
-			deployNow={data.deployNow}
-			topPicks={data.topPicks}
-			hurdles={data.hurdles}
-			expandedTicker={expandedDeploy}
-			onToggle={toggleDeploy}
-		/>
+		<div id="panel-signals" role="tabpanel" aria-label="Signals tab">
+			<WorldVolCard worldVolSignal={data.worldVolSignal} />
+			<CoreAllocation />
+			<DeploySection
+				deployNow={data.deployNow}
+				cheapWait={data.cheapWait}
+				watchlist={data.watchlist}
+				topPicks={data.topPicks}
+				hurdles={data.hurdles}
+				expandedTicker={expandedDeploy}
+				onToggle={toggleDeploy}
+			/>
+		</div>
 	{:else if activeTab === 'wait'}
-		<WaitSection cheapWait={data.cheapWait} expandedTicker={expandedWait} onToggle={toggleWait} />
+		<div id="panel-wait" role="tabpanel" aria-label="Wait tab">
+			<WaitSection cheapWait={data.cheapWait} expandedTicker={expandedWait} onToggle={toggleWait} />
+		</div>
 	{:else if activeTab === 'watchlist'}
-		<WatchlistSection
-			watchlist={data.watchlist}
-			counts={data.counts}
-			showWatchlist={true}
-			{expandedWatch}
-			onToggleWatchlist={() => {}}
-			onToggleWatch={toggleWatch}
-		/>
+		<div id="panel-watchlist" role="tabpanel" aria-label="Watchlist tab">
+			<WatchlistSection
+				watchlist={data.watchlist}
+				counts={data.counts}
+				showWatchlist={true}
+				{expandedWatch}
+				onToggleWatchlist={undefined}
+				onToggleWatch={toggleWatch}
+			/>
+		</div>
 	{:else if activeTab === 'portfolio'}
-		<PortfolioSection deployNow={data.deployNow} />
+		<div id="panel-portfolio" role="tabpanel" aria-label="Portfolio tab">
+			<PortfolioSection deployNow={data.deployNow} />
+		</div>
 	{/if}
 </div>
 

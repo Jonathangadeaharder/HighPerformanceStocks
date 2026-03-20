@@ -1,0 +1,101 @@
+{
+	"ticker": "AAPL",
+	"name": "Apple",
+	"group": "Consumer Monopolies",
+	"confidence": "high",
+	"confidenceReason": "Unmatched consumer hardware ecosystem and services revenue moat. Massive, relentless share repurchases support EPS floor.",
+	"cagrModel": {
+		"epsGrowth": "10%",
+		"basis": "Non-GAAP EPS (adjusted for buyback skew)",
+		"ttmEPS": 7.89,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-18%",
+			"base": "18%",
+			"bull": "40%"
+		},
+		"epsGrowthSource": "auto"
+	},
+	"currentPrice": "$249.94",
+	"marketCap": "$3673.6B USD",
+	"valuation": {
+		"trailingPE": 31.6,
+		"forwardPE": 26.8,
+		"evEbitda": 24.2
+	},
+	"metrics": {
+		"roe": "152.0%",
+		"fcfMargin": "~24%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "40%"
+	},
+	"consensus": {
+		"yahoo": "$295.44"
+	},
+	"targetPrice": "$295.44",
+	"expectedCAGR": "-18% - 40%",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": 0.21,
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.64,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 10,
+			"multipleType": "Forward P/E",
+			"multiple": 26.8,
+			"cvStock": 0.054,
+			"riskMultiplier": 0.984
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 249.94,
+				"price6mAgo": 245.5,
+				"price1mAgo": 260.58,
+				"low3m": 243.42,
+				"return6m": 1.8,
+				"return1m": -4.1,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 5,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 6.3,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"bullCase": "Apple's Services segment (App Store, iCloud, Apple TV+, Apple Pay) is growing 15%+ annually and now represents ~40% of gross profit at 70%+ margins. Apple Intelligence AI features are the catalyst for an iPhone 17 upgrade supercycle in 2025-2026. The $100B+ annual buyback program reduces float by ~3% per year, compounding EPS mechanically.",
+	"bearCase": "Apple is expensive at 27x forward PE for a 10% EPS grower. China revenue (~18% of total) faces escalating geopolitical and regulatory pressure. Antitrust actions targeting the App Store 30% commission could remove $5-8B of annual high-margin revenue. Hardware replacement cycles are extending as smartphones mature.",
+	"lastUpdated": "2026-03-19T13:06:25.353Z",
+	"intrinsicValue": {
+		"dcf": 161.13,
+		"date": "2026-03-19",
+		"discount": -36
+	},
+	"qcs": {
+		"earningsScore": 4.2,
+		"flowScore": 0,
+		"revisionsScore": 0.37,
+		"totalScore": 4.57,
+		"raw": {
+			"avgSurprisePct": 5.67,
+			"netInsiderShares": 423905,
+			"instFlowTrend": "negative",
+			"upRevisions": 5,
+			"downRevisions": 2,
+			"totalAnalysts": 41
+		}
+	},
+	"description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.",
+	"analystTargets": {
+		"low": 205,
+		"mean": 295.44,
+		"high": 350
+	}
+}

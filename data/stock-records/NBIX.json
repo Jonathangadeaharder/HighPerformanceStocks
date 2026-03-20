@@ -4,15 +4,15 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
-	"marketCap": "$13.0B USD",
-	"sharpeRatio": 0.28,
-	"expectedCAGR": "10% - 18%",
+	"marketCap": "$13.1B USD",
+	"sharpeRatio": 0.94,
+	"expectedCAGR": "7% - 66%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 27.8,
+		"trailingPE": 28,
 		"forwardPE": 13.4,
 		"pegRatio": null,
-		"evEbitda": 18
+		"evEbitda": 18.2
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -25,61 +25,74 @@
 	"targetPrice": "$178.04",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
-	"currentPrice": "$129.85",
+	"currentPrice": "$130.71",
 	"consensus": {
 		"tipranks": "$180",
 		"yahoo": "$178.04"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 4.67,
-		"epsGrowth": "18%",
+		"epsGrowth": "14%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 20,
-			"base": 25,
-			"bull": 28
-		},
 		"scenarios": {
-			"bear": "10%",
-			"base": "16%",
-			"bull": "18%"
+			"bear": "7%",
+			"base": "36%",
+			"bull": "66%"
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-16T20:51:05.640Z",
+	"lastUpdated": "2026-03-19T13:06:40.862Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.81,
-		"signal": "PASS",
+		"score": 1.04,
+		"signal": "FAIL",
 		"inputs": {
-			"growth": 18,
+			"growth": 14,
 			"multipleType": "Forward P/E",
 			"multiple": 13.4,
 			"cvStock": 0.223,
 			"riskMultiplier": 1.086
 		},
-		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 129.85,
-				"price6mAgo": 142.73,
-				"price1mAgo": 127.76,
+				"price": 130.71,
+				"price6mAgo": 145.23,
+				"price1mAgo": 130.1,
 				"low3m": 122.14,
-				"return6m": -9,
-				"return1m": 1.6,
+				"return6m": -10,
+				"return1m": 0.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 1,
-				"down30d": 11
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": -18.1,
 				"quarter": "2025-12"
 			}
 		}
+	},
+	"qcs": {
+		"earningsScore": -1.78,
+		"flowScore": 0,
+		"revisionsScore": -1.18,
+		"totalScore": -2.96,
+		"raw": {
+			"avgSurprisePct": -9.91,
+			"netInsiderShares": 281701,
+			"instFlowTrend": "negative",
+			"upRevisions": 0,
+			"downRevisions": 4,
+			"totalAnalysts": 17
+		}
+	},
+	"description": "Neurocrine Biosciences, Inc. discovers, develops, and commercialize pharmaceuticals for neurological, psychiatric, endocrine, and immunological disorders in the United States and internationally.",
+	"analystTargets": {
+		"low": 140,
+		"mean": 178.04,
+		"high": 217.15
 	}
 }

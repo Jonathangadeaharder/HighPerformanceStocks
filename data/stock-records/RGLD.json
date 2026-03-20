@@ -2,17 +2,18 @@
 	"ticker": "RGLD",
 	"name": "Royal Gold",
 	"group": "Royalties",
+	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$21.2B USD",
-	"sharpeRatio": 0.08,
-	"expectedCAGR": "2% - 13%",
+	"marketCap": "$20.6B USD",
+	"sharpeRatio": 0.82,
+	"expectedCAGR": "15% - 56%",
 	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 37.4,
-		"forwardPE": 17,
+		"trailingPE": 36.3,
+		"forwardPE": 16.5,
 		"pegRatio": 1.69,
-		"evEbitda": 32.6
+		"evEbitda": 30.5
 	},
 	"metrics": {
 		"fcfMargin": "~0%",
@@ -25,50 +26,44 @@
 	"targetPrice": "$336.91",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
 	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
-	"currentPrice": "$250.27",
+	"currentPrice": "$242.52",
 	"consensus": {
 		"tipranks": "$249",
 		"yahoo": "$336.91",
 		"stockanalysis": "$231"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 8.35,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
-		"exitPE": {
-			"bear": 18,
-			"base": 24,
-			"bull": 30
-		},
 		"scenarios": {
-			"bear": "2%",
-			"base": "8%",
-			"bull": "13%"
+			"bear": "15%",
+			"base": "40%",
+			"bull": "56%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-16T20:51:07.933Z",
+	"lastUpdated": "2026-03-19T13:06:43.965Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.67,
+		"score": 2.59,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "P/CF",
-			"multiple": 30,
+			"multiple": 29,
 			"cvStock": 0.193,
 			"riskMultiplier": 1.068
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 250.27,
-				"price6mAgo": 188.1,
-				"price1mAgo": 279.07,
-				"low3m": 214.72,
-				"return6m": 33.1,
-				"return1m": -10.3,
+				"price": 242.52,
+				"price6mAgo": 191.67,
+				"price1mAgo": 271.78,
+				"low3m": 216.53,
+				"return6m": 26.5,
+				"return1m": -10.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -82,6 +77,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.51
+		"secondaryScore": 1.47,
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": -0.79,
+		"flowScore": 5,
+		"revisionsScore": 0.91,
+		"totalScore": 5.12,
+		"raw": {
+			"avgSurprisePct": -3.8,
+			"netInsiderShares": 3731,
+			"instFlowTrend": "positive",
+			"upRevisions": 6,
+			"downRevisions": 4,
+			"totalAnalysts": 11
+		}
+	},
+	"description": "Royal Gold, Inc., together with its subsidiaries, acquires and manages precious metal streams, royalties, and related interests in North America, South and Central America, Europe, the Middle East,...",
+	"analystTargets": {
+		"low": 277,
+		"mean": 336.91,
+		"high": 375
 	}
 }

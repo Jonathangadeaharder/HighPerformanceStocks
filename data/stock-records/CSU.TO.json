@@ -3,16 +3,16 @@
 	"name": "Constellation Software",
 	"group": "Serial Acquirers",
 	"confidence": "high",
-	"confidenceReason": "Elite Sharpe (0.85), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$54.3B",
-	"sharpeRatio": 0.14,
-	"expectedCAGR": "5% - 15%",
+	"confidenceReason": "Sharpe (0.13), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
+	"marketCap": "C$54.4B",
+	"sharpeRatio": 1.82,
+	"expectedCAGR": "34% - 117%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 78.1,
-		"forwardPE": 13.9,
+		"trailingPE": 77.5,
+		"forwardPE": 14.1,
 		"pegRatio": null,
-		"evEbitda": 22.8
+		"evEbitda": 23.1
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -22,58 +22,51 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4196.72",
+	"targetPrice": "C$4208.62",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2562.50",
+	"currentPrice": "C$2567.93",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4196.72"
+		"yahoo": "C$4208.62"
 	},
 	"cagrModel": {
-		"horizon": 5,
 		"ttmEPS": 44.2,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
-		"exitPE": {
-			"bear": 35,
-			"base": 45,
-			"bull": 55
-		},
 		"scenarios": {
-			"bear": "5%",
-			"base": "10%",
-			"bull": "15%"
+			"bear": "34%",
+			"base": "64%",
+			"bull": "117%"
 		},
-		"decayFactor": 0.94,
-		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE 68 represents de-rating from peak as growth normalizes"
+		"basis": "Adjusted EPS; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-16T20:50:55.560Z",
+	"lastUpdated": "2026-03-19T13:06:30.578Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.23,
+		"score": 1.24,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 22.8,
+			"multiple": 23.1,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2562.5,
-				"price6mAgo": 4281.59,
-				"price1mAgo": 2258.18,
+				"price": 2567.93,
+				"price6mAgo": 4417.32,
+				"price1mAgo": 2415.33,
 				"low3m": 2196,
-				"return6m": -40.2,
-				"return1m": 13.5,
+				"return6m": -41.9,
+				"return1m": 6.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -82,6 +75,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.75
+		"secondaryScore": 0.76
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 0,
+		"revisionsScore": 3,
+		"totalScore": -2,
+		"raw": {
+			"avgSurprisePct": -18.87,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 4,
+			"downRevisions": 1,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Constellation Software Inc., together with its subsidiaries, acquires, builds, and manages vertical market software businesses to develop mission-critical software solutions for public and private ...",
+	"analystTargets": {
+		"low": 3436.95,
+		"mean": 4208.62,
+		"high": 5562.31
 	}
 }
