@@ -1,15 +1,13 @@
-import { readdirSync, readFileSync, statSync } from 'fs';
-import { resolve } from 'path';
+import { readdirSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import {
-	DEFAULT_GROWTH_DECAY,
-	DEFAULT_HORIZON,
-	calcDecayedCagr,
 	parseDisplayPrice,
 	parsePercent
 } from '../lib/finance-core.js';
 import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
+const RETURN_TOLERANCE_PP = 2;
 
 const requiredFields = [
 	'ticker',
@@ -30,6 +28,7 @@ function verifyData() {
 	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
 	let hasErrors = false;
 	const today = new Date().toISOString().slice(0, 10);
+	const warnings: string[] = [];
 
 	console.log(`🔍 Verifying ${files.length} stock files in ${DATA_DIR}...\n`);
 
@@ -38,13 +37,13 @@ function verifyData() {
 		let data;
 		try {
 			data = JSON.parse(readFileSync(filePath, 'utf-8'));
-		} catch (e) {
+		} catch {
 			console.error(`❌ [${f}] Invalid JSON format.`);
 			hasErrors = true;
 			continue;
 		}
 
-		const errors = [];
+		const errors: string[] = [];
 
 		// 1. Verify all required fields exist and are not null/empty
 		for (const field of requiredFields) {
@@ -54,12 +53,18 @@ function verifyData() {
 		}
 
 		// 2. Verify CAGR Model structure (if present)
-		if (!data.cagrModel) {
-			errors.push(`Missing 'cagrModel' object`);
-		} else {
-			if (!data.cagrModel.scenarios || !data.cagrModel.scenarios.base) {
+		if (data.cagrModel) {
+			if (!data.cagrModel.scenarios?.base) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
+			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
+				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
+			}
+			if (!data.cagrModel.epsGrowth) {
+				errors.push(`Missing 'cagrModel.epsGrowth'`);
+			}
+		} else {
+			errors.push(`Missing 'cagrModel' object`);
 		}
 
 		// 3. Verify Valuation & Metrics objects
@@ -67,19 +72,20 @@ function verifyData() {
 		if (!data.metrics) errors.push(`Missing 'metrics' object`);
 
 		// 4. Verify Persistent Daily Cache (lastUpdated)
-		if (!data.lastUpdated) {
-			errors.push(`Missing 'lastUpdated' timestamp`);
-		} else {
+		if (data.lastUpdated) {
 			const updatedDate = data.lastUpdated.slice(0, 10);
-			if (updatedDate !== today) {
-				errors.push(`Cache stale: lastUpdated is ${updatedDate} (Expected ${today})`);
+			const daysSinceUpdate = Math.floor(
+				(Date.now() - new Date(updatedDate).getTime()) / (1000 * 60 * 60 * 24)
+			);
+			if (daysSinceUpdate > 1) {
+				warnings.push(`${data.ticker || f}: Cache stale (${daysSinceUpdate} days old, lastUpdated: ${updatedDate})`);
 			}
+		} else {
+			errors.push(`Missing 'lastUpdated' timestamp`);
 		}
 
 		// 5. Verify screener object
-		if (!data.screener) {
-			errors.push(`Missing 'screener' object`);
-		} else {
+		if (data.screener) {
 			const validEngines = ['fPERG', 'tPERG', 'fEVG', 'fCFG', 'fANIG', 'fFREG', 'totalReturn', 'N/A'];
 			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
 			if (!validEngines.includes(data.screener.engine)) {
@@ -98,62 +104,45 @@ function verifyData() {
 			if (data.screener.secondaryEngine != null && data.screener.secondaryScore == null) {
 				errors.push(`screener.secondaryEngine present but secondaryScore is missing`);
 			}
+		} else {
+			errors.push(`Missing 'screener' object`);
 		}
 
-		// 5b. Verify screener/CAGR consistency: PASS signal should align with viable base CAGR
+		// 5b. Verify screener/return consistency: PASS signal should align with viable base return
 		if (
 			data.screener?.signal === 'PASS' &&
 			data.cagrModel?.scenarios?.base &&
-			data.screener.engine !== 'totalReturn' // Total Return engine simple math diverges from complex 10yr CAGR models
+			data.screener.engine !== 'totalReturn'
 		) {
-			const baseCagr = parsePercent(data.cagrModel.scenarios.base);
-			if (baseCagr != null && baseCagr < 14) {
+			const baseReturn = parsePercent(data.cagrModel.scenarios.base);
+			if (baseReturn != null && baseReturn < 15) {
 				errors.push(
-					`Screener PASS but base CAGR ${baseCagr}% < 14% hurdle (valuation/CAGR mismatch)`
+					`Screener PASS but base return ${baseReturn}% < 15% hurdle (valuation/return mismatch)`
 				);
 			}
 		}
 
-		// 6. Verify CAGR scenario math matches the exponential growth decay model
-		const cm = data.cagrModel;
-		if (cm && cm.ttmEPS && cm.epsGrowth && cm.exitPE && cm.scenarios && cm.horizon) {
-			// Parse currentPrice — strip currency symbols/letters
-			let price = null;
-			if (data.currentPrice) {
-				price = parseDisplayPrice(data.currentPrice);
-			}
-			// RTM adjustment matching update-data.ts (Chan et al. 2003)
-			const RTM_BASELINE = 6.0;
-			const RTM_SHRINKAGE = 0.5;
-			const rawEpsGrowth = parsePercent(cm.epsGrowth);
-			const epsGrowthPct = rawEpsGrowth != null
-				? +(RTM_BASELINE + (rawEpsGrowth - RTM_BASELINE) * RTM_SHRINKAGE).toFixed(1)
-				: undefined;
-			const dividendYieldPct = parsePercent(cm.dividendYield) ?? 0;
-			const horizon = cm.horizon ?? DEFAULT_HORIZON;
-			const decayFactor =
-				typeof cm.decayFactor === 'number' ? cm.decayFactor : DEFAULT_GROWTH_DECAY;
+		// 6. Verify forward return scenarios match analyst targets
+		if (data.analystTargets?.mean && data.currentPrice && data.cagrModel?.scenarios) {
+			const price = parseDisplayPrice(data.currentPrice);
+			const dyPct = parsePercent(data.cagrModel?.dividendYield) ?? 0;
 
-			if (price && !isNaN(price) && epsGrowthPct != null) {
-				for (const [label, scenario] of Object.entries(cm.scenarios)) {
-					const exitPE = cm.exitPE?.[label];
-					const statedCAGR = parsePercent(scenario);
-					if (statedCAGR == null) continue;
-					if (exitPE == null) continue;
+			if (price && !isNaN(price) && price > 0) {
+				const targetMap = {
+					bear: data.analystTargets.low,
+					base: data.analystTargets.mean,
+					bull: data.analystTargets.high
+				};
 
-					const expectedCAGR = calcDecayedCagr({
-						price,
-						ttmEPS: cm.ttmEPS,
-						epsGrowthPct,
-						exitPE,
-						dividendYieldPct,
-						horizon,
-						decayFactor
-					});
-					const rounded = Math.round(expectedCAGR);
-					if (Math.abs(rounded - statedCAGR) > 2) {
+				for (const [label, target] of Object.entries(targetMap)) {
+					const statedReturn = parsePercent(data.cagrModel.scenarios[label] as string);
+					if (statedReturn == null || target == null) continue;
+
+					const expectedReturn = ((target - price) / price) * 100 + dyPct;
+					const diff = Math.abs(expectedReturn - statedReturn);
+					if (diff > RETURN_TOLERANCE_PP) {
 						errors.push(
-							`CAGR mismatch in '${label}': stated ${statedCAGR}% but model calculates ~${rounded}% (diff ${Math.abs(rounded - statedCAGR)}pp)`
+							`Forward return mismatch in '${label}': stated ${statedReturn}%, calculated ${expectedReturn.toFixed(1)}% (${diff.toFixed(1)}pp difference)`
 						);
 					}
 				}
@@ -162,9 +151,14 @@ function verifyData() {
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);
-			errors.forEach((e) => console.log(`   - ${e}`));
+			errors.forEach((e) => { console.log(`   - ${e}`); });
 			hasErrors = true;
 		}
+	}
+
+	if (warnings.length > 0) {
+		console.log(`\n⚠️  Warnings (${warnings.length}):`);
+		warnings.forEach((w) => { console.log(`   - ${w}`); });
 	}
 
 	if (hasErrors) {

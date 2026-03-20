@@ -1,5 +1,5 @@
-import { writeFileSync } from 'fs';
-import { resolve } from 'path';
+import { writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 const stocks = [
   // Capital Compounders
@@ -55,10 +55,9 @@ for (const s of stocks) {
     confidence: s.confidence,
     confidenceReason: s.reason,
     cagrModel: {
-      horizon: 5,
-      epsGrowth: "15%", // placeholder, user can manually override later
-      exitPE: { bear: 15, base: 20, bull: 25 },
-      basis: s.basis || "Non-GAAP EPS"
+      epsGrowth: "15%",
+      epsGrowthSource: "auto",
+      basis: s.basis ?? "Non-GAAP EPS"
     }
   };
   

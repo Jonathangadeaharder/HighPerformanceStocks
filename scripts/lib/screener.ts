@@ -1,5 +1,16 @@
 import { parsePercent } from '../../lib/finance-core.js';
 import { parseNumber } from './display-formatters.js';
+import type {
+	EarningsTrend,
+	GrowthBranch,
+	HistoricalData,
+	RealityChecks,
+	
+	ScreenerResult,
+	ScreenerStock,
+	YahooSummary
+} from './screener-types.js';
+import { ENGINE_THRESHOLDS } from './screener-types.js';
 
 const GROWTH_ROUTING_THRESHOLD = 8;
 const CV_BENCHMARK = 0.08;
@@ -10,18 +21,9 @@ const DEBT_PENALTY_FACTOR = 0.3;
 const STABILIZATION_6M_THRESHOLD = -10;
 const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
-const ETF_HURDLE_CAGR = 14;
+const ETF_HURDLE_RETURN = 15;
 
-const ENGINE_THRESHOLDS = {
-	fPERG: 1.0,
-	tPERG: 1.0,
-	fEVG: 0.6,
-	fFREG: 0.6,
-	fANIG: 0.8,
-	fCFG: 0.8
-};
-
-function getAnalystDispersion(earningsTrend) {
+function getAnalystDispersion(earningsTrend: EarningsTrend | undefined): { avg: number; low: number; high: number } | null {
 	if (!earningsTrend?.trend) return null;
 
 	const entry = earningsTrend.trend.find((trend) => trend.period === '+1y');
@@ -32,18 +34,7 @@ function getAnalystDispersion(earningsTrend) {
 	return { avg, low, high };
 }
 
-export interface ScreenerResult {
-	engine: string;
-	score?: number | null;
-	signal: string;
-	inputs?: any;
-	note?: string;
-	secondaryEngine?: string;
-	secondaryScore?: number | null;
-	realityChecks?: any;
-}
-
-function computeGrowthScore(engine: string, multipleType: string, multiple: number, growthPct: number, cvStock: number): ScreenerResult {
+function computeGrowthScore(engine: keyof typeof ENGINE_THRESHOLDS, multipleType: string, multiple: number, growthPct: number, cvStock: number): ScreenerResult {
 	const riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
 	const score = (multiple / growthPct) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
@@ -62,12 +53,12 @@ function computeGrowthScore(engine: string, multipleType: string, multiple: numb
 	};
 }
 
-function detectGrowthBranch(stock, valuationPrice) {
+function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null | undefined): GrowthBranch {
 	const basis = stock.cagrModel?.basis ?? '';
 	const lowerBasis = basis.toLowerCase();
 	const valuation = stock.valuation ?? {};
 	const ttmBasis = stock.cagrModel?.ttmEPS;
-	const priceToBasis = valuationPrice != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
+	const priceToBasis = valuationPrice != null && ttmBasis != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
 
 	if (/fee-related earnings|\bfre\b/.test(lowerBasis)) {
 		return {
@@ -90,15 +81,16 @@ function detectGrowthBranch(stock, valuationPrice) {
 			lowerBasis
 		)
 	) {
+		const hasEvFcf = valuation.evFcf != null;
 		return {
 			engine: 'fCFG',
-			multipleType: valuation.evFcf != null ? 'EV/FCF' : 'P/CF',
-			multiple: parseNumber(valuation.evFcf) ?? priceToBasis
+			multipleType: hasEvFcf ? 'EV/FCF' : 'P/CF',
+			multiple: hasEvFcf ? valuation.evFcf : priceToBasis
 		};
 	}
 
 	if (
-		(/serial acquirer|amortization/.test(lowerBasis) || stock.group === 'Serial Acquirers') &&
+		(lowerBasis.includes('serial acquirer') || stock.group === 'Serial Acquirers') &&
 		valuation.evEbitda != null &&
 		valuation.evEbitda > 0
 	) {
@@ -109,15 +101,13 @@ function detectGrowthBranch(stock, valuationPrice) {
 		};
 	}
 
-	if (!valuation.forwardPE || valuation.forwardPE <= 0) {
-		if (priceToBasis != null && priceToBasis > 0) {
+	if ((!valuation.forwardPE || valuation.forwardPE <= 0) && priceToBasis != null && priceToBasis > 0) {
 			return {
 				engine: 'tPERG',
 				multipleType: 'Trailing P/E',
 				multiple: priceToBasis
 			};
 		}
-	}
 
 	return {
 		engine: 'fPERG',
@@ -146,8 +136,6 @@ function computeTotalReturn(growthPct: number, divYieldPct: number, forwardPE: n
 	const baseReturn = divYieldPct + growthPct;
 	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
 
-	// Normalize score: Price / Expected Return. Lower is better. 1.0 is the hurdle rate.
-	// We want 12% to be 1.0. 24% to be 0.5. 8% to be 1.5.
 	const normalizedScore = TOTAL_RETURN_THRESHOLD / riskAdjReturn;
 
 	return {
@@ -164,8 +152,8 @@ function computeTotalReturn(growthPct: number, divYieldPct: number, forwardPE: n
 	};
 }
 
-function applyRealityChecks(result, rawPrice, historicalData, summary) {
-	const checks: Record<string, any> = {};
+function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | undefined, historicalData: HistoricalData | undefined, summary: YahooSummary | undefined): void {
+	const checks: RealityChecks = {};
 	const price6mAgo = historicalData?.price6mAgo;
 	const price1mAgo = historicalData?.price1mAgo;
 	const low3m = historicalData?.low3m;
@@ -216,7 +204,7 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 		const estimate = latest?.epsEstimate;
 		if (actual != null && estimate != null && Math.abs(estimate) > 0.01) {
 			const surprise = ((actual - estimate) / Math.abs(estimate)) * 100;
-			const quarter = latest.quarter
+			const quarter = latest?.quarter
 				? new Date(latest.quarter).toISOString().slice(0, 7)
 				: 'unknown';
 			checks.earningsSurprise = { surprise: +surprise.toFixed(1), quarter };
@@ -229,22 +217,18 @@ function applyRealityChecks(result, rawPrice, historicalData, summary) {
 	result.realityChecks = checks;
 }
 
-export function computeScreener(stock, summary, rawPrice, valuationPrice, historicalData) {
+export function computeScreener(stock: ScreenerStock, summary: YahooSummary | undefined, rawPrice: number | null | undefined, valuationPrice: number | null | undefined, historicalData: HistoricalData | undefined): ScreenerResult {
 	const model = stock.cagrModel;
-	// PEG screener uses RAW analyst growth estimates (no haircut).
-	// Bordalo et al. (2019) prove analyst forecasts contain a "kernel of truth":
-	// the relative ordering is informative even though absolute levels are biased.
-	// The RTM bias adjustment is applied only in the CAGR scenario calculator (update-data.ts).
 	const growthPct = parsePercent(model?.epsGrowth);
 	if (growthPct == null) return { engine: 'N/A', signal: 'NO_DATA', note: 'Missing growth data' };
 
-	const isPreProfit = model.exitPE && Object.values(model.exitPE).every((value) => value === 0);
+	const isPreProfit = model?.ttmEPS != null && model.ttmEPS <= 0;
 	if (isPreProfit) {
 		return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
 	}
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
-		const divYieldPct = parsePercent(model.dividendYield) || 0;
+		const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
 		if (divYieldPct < 5.0) {
 			const branch = detectGrowthBranch(stock, valuationPrice);
 			if (!branch.multiple || branch.multiple <= 0) {
@@ -262,26 +246,21 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 			}
 
 			const result = computeGrowthScore(
-				branch.engine,
+				branch.engine as keyof typeof ENGINE_THRESHOLDS,
 				branch.multipleType,
 				branch.multiple,
 				growthPct,
 				cvStock
 			);
 
-			// CAGR sanity gate: cheap valuation is meaningless if forward returns are poor
 			const baseCagr = parsePercent(model?.scenarios?.base);
-			if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_CAGR) {
+			if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
 				result.signal = 'FAIL';
-				result.note = `Cheap (${result.score}) but base CAGR ${baseCagr}% misses the ${ETF_HURDLE_CAGR}% hurdle`;
+				result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${ETF_HURDLE_RETURN}% hurdle`;
 			}
 
-			if (true) {
-				applyRealityChecks(result, rawPrice, historicalData, summary);
-			}
+			applyRealityChecks(result, rawPrice, historicalData, summary);
 
-			// Ensemble cross-check: compute fPERG as secondary reference for specialized engines.
-			// Specialized engine stays primary (no signal override); fPERG is transparency only.
 			if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
 				const fpe = stock.valuation?.forwardPE;
 				if (fpe != null && fpe > 0) {
@@ -308,7 +287,7 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 	let forwardPE = stock.valuation?.forwardPE;
 	if (!forwardPE || forwardPE <= 0) {
 		const ttmBasis = stock.cagrModel?.ttmEPS;
-		if (valuationPrice != null && ttmBasis > 0) {
+		if (valuationPrice != null && ttmBasis != null && ttmBasis > 0) {
 			forwardPE = valuationPrice / ttmBasis;
 		} else {
 			return {
@@ -319,7 +298,7 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		}
 	}
 
-	const divYieldPct = parsePercent(model.dividendYield) || 0;
+	const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
 	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
 	const result = computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
 
@@ -327,9 +306,11 @@ export function computeScreener(stock, summary, rawPrice, valuationPrice, histor
 		result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
 	}
 
-	if (true) {
-		applyRealityChecks(result, rawPrice, historicalData, summary);
-	}
+	applyRealityChecks(result, rawPrice, historicalData, summary);
 
 	return result;
 }
+
+
+
+export {type ScreenerInputs, type ScreenerResult, type RealityChecks} from './screener-types.js';

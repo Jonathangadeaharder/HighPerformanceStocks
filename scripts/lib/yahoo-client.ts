@@ -5,14 +5,14 @@ const yf = new YahooFinance({
 	suppressNotices: ['yahooSurvey', 'ripHistorical']
 });
 
-const YAHOO_TICKER_MAP = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
+const YAHOO_TICKER_MAP: Record<string, string> = { 'BRK.B': 'BRK-B', 'HEI.A': 'HEI-A', 'FIH.U.TO': 'FIH-U.TO' };
 
-export function yahooTicker(ticker) {
-	return YAHOO_TICKER_MAP[ticker] || ticker;
+export function yahooTicker(ticker: string): string {
+	return YAHOO_TICKER_MAP[ticker] ?? ticker;
 }
 
-export async function fetchAllQuotes(tickers) {
-	const result = {};
+export async function fetchAllQuotes(tickers: string[]): Promise<Record<string, unknown>> {
+	const result: Record<string, unknown> = {};
 	const chunkSize = 20;
 
 	for (let index = 0; index < tickers.length; index += chunkSize) {
@@ -21,28 +21,47 @@ export async function fetchAllQuotes(tickers) {
 			const response = await yf.quote(chunk, { return: 'object' });
 			Object.assign(result, response);
 		} catch (error) {
-			console.error(`Chunk quote failed: ${error.message}`);
+			const message = error instanceof Error ? error.message : 'Unknown error';
+			console.error(`Chunk quote failed: ${message}`);
 		}
 
 		if (index + chunkSize < tickers.length) {
-			await new Promise((resolve) => setTimeout(resolve, 1000));
+			await new Promise((resolve) => {
+				setTimeout(resolve, 1000);
+			});
 		}
 	}
 
 	return result;
 }
 
-export async function fetchSummary(ticker) {
+export async function fetchSummary(ticker: string): Promise<Record<string, unknown>> {
 	try {
-		return await yf.quoteSummary(ticker, {
-			modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earningsTrend', 'earningsHistory']
-		});
+		return (await yf.quoteSummary(ticker, {
+			modules: [
+				'summaryDetail',
+				'defaultKeyStatistics',
+				'financialData',
+				'earningsTrend',
+				'earningsHistory',
+				'institutionOwnership',
+				'netSharePurchaseActivity',
+				'assetProfile'
+			]
+		})) as Record<string, unknown>;
 	} catch {
 		return {};
 	}
 }
 
-export async function fetchHistoricalData(ticker) {
+interface HistoricalResult {
+	vol: number | null;
+	price6mAgo: number | null;
+	price1mAgo: number | null;
+	low3m: number | null;
+}
+
+export async function fetchHistoricalData(ticker: string): Promise<HistoricalResult> {
 	try {
 		const end = new Date();
 		const start = new Date();
@@ -70,26 +89,26 @@ export async function fetchHistoricalData(ticker) {
 		const low3m =
 			trailing3m.length > 0
 				? Math.min(
-						...trailing3m.map((point) => point.low ?? point.close).filter((value) => value > 0)
+						...trailing3m.map((point) => point.low ?? point.close).filter((value): value is number => value != null && value > 0)
 					)
 				: null;
 
-		const logReturns = [];
+		const logReturns: number[] = [];
 		for (let index = 1; index < history.length; index += 1) {
-			const previousClose = history[index - 1].close;
-			const currentClose = history[index].close;
-			if (previousClose > 0 && currentClose > 0) {
-				logReturns.push(Math.log(currentClose / previousClose));
-			}
+			const prevPoint = history[index - 1];
+			const currPoint = history[index];
+			if (prevPoint?.close == null || prevPoint.close <= 0) continue;
+			if (currPoint?.close == null || currPoint.close <= 0) continue;
+			logReturns.push(Math.log(currPoint.close / prevPoint.close));
 		}
 
 		if (logReturns.length < 50) {
-			return {
-				vol: null,
-				price6mAgo: entry6m?.close ?? null,
-				price1mAgo: entry1m?.close ?? null,
-				low3m
-			};
+		return {
+			vol: null,
+			price6mAgo: entry6m?.close ?? null,
+			price1mAgo: entry1m?.close ?? null,
+			low3m: low3m ?? null
+		};
 		}
 
 		const mean = logReturns.reduce((sum, value) => sum + value, 0) / logReturns.length;

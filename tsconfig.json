@@ -9,6 +9,6 @@
 		"moduleResolution": "bundler",
 		"types": ["node"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.svelte", "src/**/*.d.ts"],
-	"exclude": ["scripts/**", "node_modules/**", "data/**"]
+	"include": ["src/**/*.ts", "src/**/*.svelte", "src/**/*.d.ts", "scripts/**/*.ts", "lib/**/*.js"],
+	"exclude": ["node_modules/**", "data/**"]
 }
