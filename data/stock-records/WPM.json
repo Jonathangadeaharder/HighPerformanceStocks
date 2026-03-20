@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$58.5B USD",
-	"sharpeRatio": 1.36,
-	"expectedCAGR": "25% - 104%",
+	"marketCap": "$55.2B USD",
+	"sharpeRatio": 1.59,
+	"expectedCAGR": "33% - 116%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 39.9,
-		"forwardPE": 21,
+		"trailingPE": 37.4,
+		"forwardPE": 19.8,
 		"pegRatio": 1.41,
-		"evEbitda": 30.2
+		"evEbitda": 28.4
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$191.59",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$128.75",
+	"currentPrice": "$121.25",
 	"consensus": {
 		"tipranks": "$140",
 		"yahoo": "$191.59",
@@ -37,33 +37,33 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "25%",
-			"base": "50%",
-			"bull": "104%"
+			"bear": "33%",
+			"base": "59%",
+			"bull": "116%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:49.189Z",
+	"lastUpdated": "2026-03-20T09:50:37.114Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.91,
+		"score": 2.74,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
-			"multiple": 39.5,
+			"multiple": 37.2,
 			"cvStock": 0.255,
 			"riskMultiplier": 1.105
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 128.75,
-				"price6mAgo": 107.65,
-				"price1mAgo": 145.34,
-				"low3m": 113.07,
-				"return6m": 19.6,
-				"return1m": -11.4,
+				"price": 121.25,
+				"price6mAgo": 107.67,
+				"price1mAgo": 150.38,
+				"low3m": 113.72,
+				"return6m": 12.6,
+				"return1m": -19.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.55,
+		"secondaryScore": 1.46,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {

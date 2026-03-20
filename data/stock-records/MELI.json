@@ -4,14 +4,14 @@
 	"group": "Emerging Markets",
 	"confidence": "high",
 	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
-	"marketCap": "$85.7B USD",
-	"sharpeRatio": 1.56,
-	"expectedCAGR": "24% - 107%",
+	"marketCap": "$84.5B USD",
+	"sharpeRatio": 1.63,
+	"expectedCAGR": "26% - 110%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 42.9,
-		"forwardPE": 22.1,
-		"evEbitda": 22.6
+		"trailingPE": 42.4,
+		"forwardPE": 21.8,
+		"evEbitda": 22.3
 	},
 	"metrics": {
 		"roe": "36.0%",
@@ -23,42 +23,42 @@
 	"targetPrice": "$2639.69",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1690.26",
+	"currentPrice": "$1666.93",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "24%",
-			"base": "56%",
-			"bull": "107%"
+			"bear": "26%",
+			"base": "58%",
+			"bull": "110%"
 		},
-		"ttmEPS": 39.38,
+		"ttmEPS": 39.34,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-03-19T13:06:38.797Z",
+	"lastUpdated": "2026-03-20T09:50:26.948Z",
 	"consensus": {
 		"yahoo": "$2639.69"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.1,
-		"signal": "FAIL",
+		"score": 1.09,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 22.1,
+			"multiple": 21.8,
 			"cvStock": 0.163,
 			"riskMultiplier": 1.05
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 1690.26,
-				"price6mAgo": 2452.34,
-				"price1mAgo": 1996.55,
+				"price": 1666.93,
+				"price6mAgo": 2460.66,
+				"price1mAgo": 1996.87,
 				"low3m": 1631.18,
-				"return6m": -31.1,
-				"return1m": -15.3,
+				"return6m": -32.3,
+				"return1m": -16.5,
 				"near3mLow": true
 			},
 			"revisions": {

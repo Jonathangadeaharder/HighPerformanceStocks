@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
-	"marketCap": "C$6.3B",
-	"sharpeRatio": 1.89,
-	"expectedCAGR": "60% - 134%",
+	"marketCap": "C$6.2B",
+	"sharpeRatio": 1.96,
+	"expectedCAGR": "63% - 138%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 38.7,
-		"forwardPE": 16.4,
+		"trailingPE": 38.1,
+		"forwardPE": 16.1,
 		"pegRatio": null,
-		"evEbitda": 21.7
+		"evEbitda": 21.3
 	},
 	"metrics": {
 		"fcfMargin": "~28%",
@@ -25,7 +25,7 @@
 	"targetPrice": "C$44.25",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$24.40",
+	"currentPrice": "C$24",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
@@ -35,33 +35,33 @@
 		"epsGrowth": "17%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "60%",
-			"base": "81%",
-			"bull": "134%"
+			"bear": "63%",
+			"base": "84%",
+			"bull": "138%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:37.682Z",
+	"lastUpdated": "2026-03-20T09:50:25.792Z",
 	"screener": {
-		"engine": "fCFG",
-		"score": 1.13,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 1.19,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
-			"multipleType": "P/CF",
-			"multiple": 20.2,
+			"multipleType": "EV/EBITDA",
+			"multiple": 21.3,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 24.4,
-				"price6mAgo": 45.8,
-				"price1mAgo": 18.64,
+				"price": 24,
+				"price6mAgo": 44.63,
+				"price1mAgo": 19.49,
 				"low3m": 17.77,
-				"return6m": -46.7,
-				"return1m": 30.9,
+				"return6m": -46.2,
+				"return1m": 23.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,7 +75,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.92
+		"secondaryScore": 0.9
 	},
 	"qcs": {
 		"earningsScore": 5,

@@ -5,9 +5,9 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1761.2B USD",
-	"sharpeRatio": 0.64,
-	"expectedCAGR": "4% - 54%",
+	"marketCap": "$1757.1B USD",
+	"sharpeRatio": 0.66,
+	"expectedCAGR": "5% - 54%",
 	"scenarios": {
 		"bear": "5%",
 		"base": "11%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$430.65",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$339.57",
+	"currentPrice": "$338.79",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$430.65",
@@ -37,17 +37,17 @@
 		"epsGrowth": "18%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "4%",
+			"bear": "5%",
 			"base": "28%",
 			"bull": "54%"
 		},
 		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-03-19T13:06:46.909Z",
+	"lastUpdated": "2026-03-20T09:50:34.861Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.03,
-		"signal": "FAIL",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 339.57,
-				"price6mAgo": 264.87,
-				"price1mAgo": 360.39,
-				"low3m": 275.08,
-				"return6m": 28.2,
-				"return1m": -5.8,
+				"price": 338.79,
+				"price6mAgo": 272.63,
+				"price1mAgo": 370.54,
+				"low3m": 281.75,
+				"return6m": 24.3,
+				"return1m": -8.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,12 +79,12 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 157.09,
-		"date": "2026-03-19",
+		"dcf": 156.91,
+		"date": "2026-03-20",
 		"discount": -54
 	},
 	"valuation": {
-		"trailingPE": 32.8,
+		"trailingPE": 32.7,
 		"forwardPE": 18.9,
 		"evEbitda": null
 	},

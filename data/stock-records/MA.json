@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$435.9B USD",
-	"sharpeRatio": 1.19,
-	"expectedCAGR": "14% - 52%",
+	"marketCap": "$438.3B USD",
+	"sharpeRatio": 1.15,
+	"expectedCAGR": "13% - 51%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 29.6,
-		"forwardPE": 21.6,
+		"trailingPE": 29.8,
+		"forwardPE": 21.7,
 		"pegRatio": null,
-		"evEbitda": 21.6
+		"evEbitda": 21.8
 	},
 	"metrics": {
 		"fcfMargin": "~50%",
@@ -25,24 +25,24 @@
 	"targetPrice": "$662.59",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$488.47",
+	"currentPrice": "$491.14",
 	"consensus": {
 		"tipranks": "$659",
 		"yahoo": "$662.59",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.51,
+		"ttmEPS": 16.5,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "37%",
-			"bull": "52%"
+			"bear": "13%",
+			"base": "36%",
+			"bull": "51%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-19T13:06:38.618Z",
+	"lastUpdated": "2026-03-20T09:50:26.780Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.39,
@@ -50,19 +50,19 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 21.6,
+			"multiple": 21.7,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.963
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 488.47,
-				"price6mAgo": 584.16,
-				"price1mAgo": 520.26,
-				"low3m": 487.92,
-				"return6m": -16.4,
-				"return1m": -6.1,
+				"price": 491.14,
+				"price6mAgo": 584.49,
+				"price1mAgo": 526.41,
+				"low3m": 487.31,
+				"return6m": -16,
+				"return1m": -6.7,
 				"near3mLow": true
 			},
 			"revisions": {

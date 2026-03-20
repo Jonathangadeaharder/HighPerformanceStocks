@@ -5,14 +5,14 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
-	"marketCap": "$35.2B USD",
+	"marketCap": "$34.0B USD",
 	"sharpeRatio": 0.78,
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 43.7,
-		"forwardPE": 51.3,
+		"trailingPE": 42.2,
+		"forwardPE": 49.5,
 		"pegRatio": 3.2,
-		"evEbitda": 26.6
+		"evEbitda": 25.8
 	},
 	"metrics": {
 		"roe": "16.6%",
@@ -30,34 +30,34 @@
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$221",
+	"currentPrice": "$213.50",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.06
 	},
-	"lastUpdated": "2026-03-19T13:06:34.574Z",
+	"lastUpdated": "2026-03-20T09:50:22.703Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.66,
+		"score": 1.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 26.6,
+			"multiple": 25.8,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 221,
-				"price6mAgo": 249.13,
-				"price1mAgo": 260.2,
-				"low3m": 219.38,
-				"return6m": -11.3,
-				"return1m": -15.1,
+				"price": 213.5,
+				"price6mAgo": 252.02,
+				"price1mAgo": 261.61,
+				"low3m": 211,
+				"return6m": -15.3,
+				"return1m": -18.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -67,7 +67,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.21,
+		"secondaryScore": 3.09,
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
 	"qcs": {

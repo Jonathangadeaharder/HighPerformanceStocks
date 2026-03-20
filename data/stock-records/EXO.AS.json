@@ -4,14 +4,14 @@
 	"group": "The Capital Compounders",
 	"confidence": "medium",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€21.6B",
-	"sharpeRatio": 2.66,
-	"expectedCAGR": "54% - 88%",
+	"marketCap": "€21.2B",
+	"sharpeRatio": 2.78,
+	"expectedCAGR": "57% - 91%",
 	"expectedVolatility": "~25%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"forwardPE": -18.9
+		"forwardPE": -18.5
 	},
 	"metrics": {
 		"roe": "-1.7%",
@@ -20,42 +20,42 @@
 	"targetPrice": "€114",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€65.95",
+	"currentPrice": "€64.65",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "54%",
-			"base": "74%",
-			"bull": "88%"
+			"bear": "57%",
+			"base": "77%",
+			"bull": "91%"
 		},
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-19T13:06:32.594Z",
+	"lastUpdated": "2026-03-20T09:50:20.587Z",
 	"consensus": {
 		"yahoo": "€114"
 	},
 	"screener": {
 		"engine": "tPERG",
-		"score": 0.85,
+		"score": 0.83,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Trailing P/E",
-			"multiple": 10.1,
+			"multiple": 9.9,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 65.95,
+				"price": 64.65,
 				"price6mAgo": 83.2,
-				"price1mAgo": 73.25,
-				"low3m": 65.9,
-				"return6m": -20.7,
-				"return1m": -10,
+				"price1mAgo": 72.95,
+				"low3m": 64.5,
+				"return6m": -22.3,
+				"return1m": -11.4,
 				"near3mLow": true
 			},
 			"revisions": {

@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$88.2B USD",
+	"marketCap": "$87.9B USD",
 	"sharpeRatio": 0.38,
 	"expectedCAGR": "-20% - 54%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 80.1,
+		"trailingPE": 79.8,
 		"forwardPE": 6.7,
 		"pegRatio": null,
-		"evEbitda": 15.1
+		"evEbitda": 15
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39.25",
+	"currentPrice": "$39.12",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -39,12 +39,12 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-20%",
-			"base": "38%",
+			"base": "39%",
 			"bull": "54%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-19T13:06:28.636Z",
+	"lastUpdated": "2026-03-20T09:50:01.802Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.41,
@@ -59,12 +59,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 39.25,
-				"price6mAgo": 47.87,
-				"price1mAgo": 46.18,
+				"price": 39.12,
+				"price6mAgo": 48.49,
+				"price1mAgo": 45.98,
 				"low3m": 38.28,
-				"return6m": -18,
-				"return1m": -15,
+				"return6m": -19.3,
+				"return1m": -14.9,
 				"near3mLow": true
 			},
 			"revisions": {

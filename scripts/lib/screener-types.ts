@@ -89,7 +89,7 @@ export interface RealityChecks {
 export interface ScreenerResult {
 	engine: string;
 	score?: number | null;
-	signal: 'PASS' | 'FAIL' | 'REJECTED' | 'NO_DATA';
+	signal: 'PASS' | 'FAIL' | 'WAIT' | 'REJECTED' | 'NO_DATA';
 	inputs?: ScreenerInputs;
 	note?: string;
 	secondaryEngine?: string;
@@ -122,8 +122,8 @@ type EngineKey = 'fPERG' | 'tPERG' | 'fEVG' | 'fFREG' | 'fANIG' | 'fCFG';
 export const ENGINE_THRESHOLDS: Record<EngineKey, number> = {
 	fPERG: 1.0,
 	tPERG: 1.0,
-	fEVG: 0.6,
-	fFREG: 0.6,
+	fEVG: 0.8,
+	fFREG: 0.8,
 	fANIG: 0.8,
 	fCFG: 0.8
 };

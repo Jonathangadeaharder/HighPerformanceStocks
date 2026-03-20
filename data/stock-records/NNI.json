@@ -5,14 +5,14 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
-	"marketCap": "$4.5B USD",
+	"marketCap": "$4.6B USD",
 	"sharpeRatio": 0.28,
 	"expectedVolatility": "~23%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 10.8,
-		"forwardPE": 12.7
+		"forwardPE": 12.8
 	},
 	"metrics": {
 		"roe": "11.6%"
@@ -20,37 +20,37 @@
 	"targetPrice": "$140",
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$126.75",
+	"currentPrice": "$127.69",
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-19T13:06:41.847Z",
+	"lastUpdated": "2026-03-20T09:50:29.837Z",
 	"consensus": {
 		"yahoo": "$140"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.34,
+		"score": 1.35,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 12.7,
+			"multiple": 12.8,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 126.75,
-				"price6mAgo": 127.09,
-				"price1mAgo": 131.15,
+				"price": 127.69,
+				"price6mAgo": 127.58,
+				"price1mAgo": 130.42,
 				"low3m": 122.36,
-				"return6m": -0.3,
-				"return1m": -3.4,
+				"return6m": 0.1,
+				"return1m": -2.1,
 				"near3mLow": true
 			},
 			"revisions": {

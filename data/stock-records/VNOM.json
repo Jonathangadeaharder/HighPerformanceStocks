@@ -10,10 +10,10 @@
 	"expectedCAGR": "-4% - 49%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 28.9,
-		"forwardPE": 25.3,
+		"trailingPE": 29,
+		"forwardPE": 25.4,
 		"pegRatio": null,
-		"evEbitda": 12.8
+		"evEbitda": 12.9
 	},
 	"metrics": {
 		"fcfMargin": "~-120%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$53",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
-	"currentPrice": "$47.14",
+	"currentPrice": "$47.32",
 	"consensus": {
 		"tipranks": "$51",
 		"yahoo": "$53",
@@ -43,7 +43,7 @@
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:48.250Z",
+	"lastUpdated": "2026-03-20T09:50:36.071Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": null,
@@ -52,17 +52,17 @@
 		"inputs": {
 			"growth": 8,
 			"dividendYield": 5,
-			"earningsYield": 4
+			"earningsYield": 3.9
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 47.14,
-				"price6mAgo": 37.4,
-				"price1mAgo": 45.09,
+				"price": 47.32,
+				"price6mAgo": 37.34,
+				"price1mAgo": 45.64,
 				"low3m": 35.45,
-				"return6m": 26,
-				"return1m": 4.5,
+				"return6m": 26.7,
+				"return1m": 3.7,
 				"near3mLow": false
 			},
 			"revisions": {

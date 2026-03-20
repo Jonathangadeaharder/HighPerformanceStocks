@@ -4,15 +4,15 @@
 	"group": "Biotech",
 	"confidence": "medium",
 	"confidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
-	"marketCap": "$13.1B USD",
-	"sharpeRatio": 0.94,
-	"expectedCAGR": "7% - 66%",
+	"marketCap": "$13.0B USD",
+	"sharpeRatio": 0.97,
+	"expectedCAGR": "8% - 67%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 28,
-		"forwardPE": 13.4,
+		"trailingPE": 27.8,
+		"forwardPE": 13.3,
 		"pegRatio": null,
-		"evEbitda": 18.2
+		"evEbitda": 18
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$178.04",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
-	"currentPrice": "$130.71",
+	"currentPrice": "$129.70",
 	"consensus": {
 		"tipranks": "$180",
 		"yahoo": "$178.04"
@@ -35,33 +35,33 @@
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "36%",
-			"bull": "66%"
+			"bear": "8%",
+			"base": "37%",
+			"bull": "67%"
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-19T13:06:40.862Z",
+	"lastUpdated": "2026-03-20T09:50:28.818Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.04,
-		"signal": "FAIL",
+		"score": 1.03,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 13.4,
+			"multiple": 13.3,
 			"cvStock": 0.223,
 			"riskMultiplier": 1.086
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 130.71,
-				"price6mAgo": 145.23,
-				"price1mAgo": 130.1,
+				"price": 129.7,
+				"price6mAgo": 146.62,
+				"price1mAgo": 128.63,
 				"low3m": 122.14,
-				"return6m": -10,
-				"return1m": 0.5,
+				"return6m": -11.5,
+				"return1m": 0.8,
 				"near3mLow": false
 			},
 			"revisions": {

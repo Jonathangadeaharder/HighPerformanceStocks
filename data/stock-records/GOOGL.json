@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
-	"marketCap": "$3722.1B USD",
+	"marketCap": "$3715.4B USD",
 	"sharpeRatio": -0.08,
 	"expectedCAGR": "-40% - 44%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 28.5,
+		"trailingPE": 28.4,
 		"forwardPE": 22.9,
 		"pegRatio": 2.3,
-		"evEbitda": 24.4
+		"evEbitda": 24.3
 	},
 	"metrics": {
 		"fcfMargin": "~9%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$376.75",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$307.69",
+	"currentPrice": "$307.13",
 	"consensus": {
 		"tipranks": "$352",
 		"yahoo": "$376.75",
@@ -38,12 +38,12 @@
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-40%",
-			"base": "22%",
+			"base": "23%",
 			"bull": "44%"
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-03-19T13:06:33.572Z",
+	"lastUpdated": "2026-03-20T09:50:21.780Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.9,
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 307.69,
-				"price6mAgo": 254.72,
-				"price1mAgo": 302.85,
+				"price": 307.13,
+				"price6mAgo": 252.53,
+				"price1mAgo": 314.98,
 				"low3m": 294.08,
-				"return6m": 20.8,
-				"return1m": 1.6,
+				"return6m": 21.6,
+				"return1m": -2.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,8 +79,8 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 157.14,
-		"date": "2026-03-19",
+		"dcf": 156.82,
+		"date": "2026-03-20",
 		"discount": -49
 	},
 	"qcs": {

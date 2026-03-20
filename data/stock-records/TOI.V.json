@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Strong Sharpe (0.46), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
-	"marketCap": "C$8.1B",
-	"sharpeRatio": 1.04,
-	"expectedCAGR": "41% - 51%",
-	"expectedVolatility": "~40%",
+	"marketCap": "C$8.0B",
+	"sharpeRatio": 1.05,
+	"expectedCAGR": "42% - 53%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 122.9,
+		"trailingPE": 122.2,
 		"forwardPE": 22,
 		"pegRatio": null,
-		"evEbitda": 27,
+		"evEbitda": 26.9,
 		"evFcf": 31
 	},
 	"metrics": {
@@ -23,51 +23,50 @@
 		"netDebtEbitda": "1.4x",
 		"ruleOf40": "49%"
 	},
-	"targetPrice": "C$141.22",
+	"targetPrice": "C$141.94",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
-	"currentPrice": "C$97.08",
+	"currentPrice": "C$96.54",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$141.22"
+		"yahoo": "C$141.94"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.69,
 		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "41%",
-			"base": "45%",
-			"bull": "51%"
+			"bear": "42%",
+			"base": "47%",
+			"bull": "53%"
 		},
 		"basis": "Normalized adjusted EPS ex-NRI; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:45.945Z",
+	"lastUpdated": "2026-03-20T09:50:33.920Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.1,
-		"signal": "REJECTED",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/EBITDA",
-			"multiple": 27,
+			"multiple": 26.9,
 			"cvStock": 0.115,
 			"riskMultiplier": 1.021
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 97.08,
-				"price6mAgo": 163,
-				"price1mAgo": 88.39,
+				"price": 96.54,
+				"price6mAgo": 161.95,
+				"price1mAgo": 90,
 				"low3m": 82.67,
 				"return6m": -40.4,
-				"return1m": 9.8,
+				"return1m": 7.3,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
 				"down30d": 1
 			},
@@ -95,8 +94,8 @@
 	},
 	"description": "Topicus.com Inc. provides vertical market software and vertical market platforms in the Netherlands and internationally.",
 	"analystTargets": {
-		"low": 136.7,
-		"mean": 141.22,
-		"high": 146.54
+		"low": 137.41,
+		"mean": 141.94,
+		"high": 147.29
 	}
 }

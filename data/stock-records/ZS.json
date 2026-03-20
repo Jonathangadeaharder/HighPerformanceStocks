@@ -4,15 +4,15 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
-	"marketCap": "$25.1B USD",
-	"sharpeRatio": 1.22,
-	"expectedCAGR": "6% - 115%",
+	"marketCap": "$25.0B USD",
+	"sharpeRatio": 1.23,
+	"expectedCAGR": "6% - 116%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 34,
+		"forwardPE": 33.9,
 		"pegRatio": null,
-		"evEbitda": -344.5
+		"evEbitda": -343.2
 	},
 	"metrics": {
 		"fcfMargin": "~34%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$155.99",
+	"currentPrice": "$155.40",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$234.79"
@@ -37,11 +37,11 @@
 		"scenarios": {
 			"bear": "6%",
 			"base": "51%",
-			"bull": "115%"
+			"bull": "116%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-19T13:06:50.114Z",
+	"lastUpdated": "2026-03-20T09:50:38.085Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.41,
@@ -49,19 +49,19 @@
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
-			"multiple": 34,
+			"multiple": 33.9,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 155.99,
-				"price6mAgo": 294.27,
-				"price1mAgo": 168.99,
+				"price": 155.4,
+				"price6mAgo": 291.57,
+				"price1mAgo": 159.75,
 				"low3m": 140.56,
-				"return6m": -47,
-				"return1m": -7.7,
+				"return6m": -46.7,
+				"return1m": -2.7,
 				"near3mLow": false
 			},
 			"revisions": {

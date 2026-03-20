@@ -4,14 +4,14 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$120.0B USD",
-	"sharpeRatio": 1.52,
-	"expectedCAGR": "8% - 129%",
+	"marketCap": "$119.5B USD",
+	"sharpeRatio": 1.54,
+	"expectedCAGR": "8% - 130%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 68.1,
+		"trailingPE": 67.8,
 		"forwardPE": 22.6,
-		"evEbitda": 42
+		"evEbitda": 41.9
 	},
 	"metrics": {
 		"roe": "15.5%",
@@ -23,26 +23,26 @@
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$113.71",
+	"currentPrice": "$113.27",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "8%",
-			"base": "66%",
-			"bull": "129%"
+			"base": "67%",
+			"bull": "130%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:41.867Z",
+	"lastUpdated": "2026-03-20T09:50:29.853Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.06,
-		"signal": "REJECTED",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
@@ -50,20 +50,19 @@
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 113.71,
-				"price6mAgo": 192.23,
-				"price1mAgo": 107.37,
+				"price": 113.27,
+				"price6mAgo": 189.56,
+				"price1mAgo": 104.27,
 				"low3m": 98,
-				"return6m": -40.8,
-				"return1m": 5.9,
+				"return6m": -40.2,
+				"return1m": 8.6,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
 				"down30d": 2
 			},

@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "80.7B SEK",
-	"sharpeRatio": 0.66,
-	"expectedCAGR": "11% - 36%",
+	"marketCap": "80.2B SEK",
+	"sharpeRatio": 0.67,
+	"expectedCAGR": "12% - 36%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 39.1,
-		"forwardPE": 38.1,
+		"trailingPE": 38.8,
+		"forwardPE": 37.9,
 		"pegRatio": null,
-		"evEbitda": 24.7
+		"evEbitda": 23.8
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
@@ -26,44 +26,44 @@
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "299 SEK",
+	"currentPrice": "297 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.64,
+		"ttmEPS": 7.66,
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "28%",
+			"bear": "12%",
+			"base": "29%",
 			"bull": "36%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-19T13:06:25.363Z",
+	"lastUpdated": "2026-03-20T09:49:58.907Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.43,
+		"score": 1.38,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.7,
+			"multiple": 23.8,
 			"cvStock": 0.053,
 			"riskMultiplier": 0.984
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 298.8,
+				"price": 297.2,
 				"price6mAgo": 321.6,
-				"price1mAgo": 326.2,
+				"price1mAgo": 318.4,
 				"low3m": 287,
-				"return6m": -7.1,
-				"return1m": -8.4,
+				"return6m": -7.6,
+				"return1m": -6.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.2
+		"secondaryScore": 2.19
 	},
 	"qcs": {
 		"earningsScore": -5,

@@ -4,15 +4,15 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
-	"marketCap": "$79.9B USD",
-	"sharpeRatio": 0.36,
-	"expectedCAGR": "-5% - 42%",
+	"marketCap": "$79.3B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "-4% - 43%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 71.5,
-		"forwardPE": 30.8,
+		"trailingPE": 71,
+		"forwardPE": 30.6,
 		"pegRatio": 3.9,
-		"evEbitda": 41.1
+		"evEbitda": 40.8
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$371.82",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$289.64",
+	"currentPrice": "$287.40",
 	"consensus": {
 		"tipranks": "$369",
 		"yahoo": "$371.82",
@@ -36,33 +36,33 @@
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "28%",
-			"bull": "42%"
+			"bear": "-4%",
+			"base": "29%",
+			"bull": "43%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-19T13:06:29.616Z",
+	"lastUpdated": "2026-03-20T09:50:02.796Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
+		"score": 1.47,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 30.8,
+			"multiple": 30.6,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 289.64,
-				"price6mAgo": 373.35,
-				"price1mAgo": 296.59,
+				"price": 287.4,
+				"price6mAgo": 373.37,
+				"price1mAgo": 296.28,
 				"low3m": 262.75,
-				"return6m": -22.4,
-				"return1m": -2.3,
+				"return6m": -23,
+				"return1m": -3,
 				"near3mLow": false
 			},
 			"revisions": {

@@ -4,15 +4,15 @@
 	"group": "Fintech",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$35.1B USD",
-	"sharpeRatio": 0.77,
-	"expectedCAGR": "-12% - 106%",
+	"marketCap": "$35.8B USD",
+	"sharpeRatio": 0.72,
+	"expectedCAGR": "-14% - 102%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 27.5,
-		"forwardPE": 12.2,
+		"trailingPE": 28.1,
+		"forwardPE": 12.5,
 		"pegRatio": null,
-		"evEbitda": 17.6
+		"evEbitda": 17.9
 	},
 	"metrics": {
 		"fcfMargin": "~-4%",
@@ -25,7 +25,7 @@
 	"targetPrice": "$86.40",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$57.84",
+	"currentPrice": "$58.99",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$86.40",
@@ -36,33 +36,33 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-12%",
-			"base": "49%",
-			"bull": "106%"
+			"bear": "-14%",
+			"base": "46%",
+			"bull": "102%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:50.030Z",
+	"lastUpdated": "2026-03-20T09:50:38.016Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
-		"signal": "FAIL",
+		"score": 1.08,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.2,
+			"multiple": 12.5,
 			"cvStock": 0.144,
 			"riskMultiplier": 1.039
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 57.84,
-				"price6mAgo": 77.03,
-				"price1mAgo": 52.89,
+				"price": 58.99,
+				"price6mAgo": 77.41,
+				"price1mAgo": 53.22,
 				"low3m": 48.21,
-				"return6m": -24.9,
-				"return1m": 9.4,
+				"return6m": -23.8,
+				"return1m": 10.8,
 				"near3mLow": false
 			},
 			"revisions": {

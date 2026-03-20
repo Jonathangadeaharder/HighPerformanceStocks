@@ -10,16 +10,16 @@
 		"ttmEPS": 0.87,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-10%",
+			"bear": "-11%",
 			"base": "4%",
 			"bull": "11%"
 		}
 	},
-	"currentPrice": "C$32.30",
+	"currentPrice": "C$32.40",
 	"marketCap": "C$7.5B",
 	"valuation": {
-		"trailingPE": 37.1,
-		"forwardPE": 34.7
+		"trailingPE": 37.2,
+		"forwardPE": 34.8
 	},
 	"metrics": {
 		"roe": "7.8%",
@@ -31,27 +31,27 @@
 		"yahoo": "C$32.59"
 	},
 	"targetPrice": "C$32.59",
-	"expectedCAGR": "-10% - 11%",
+	"expectedCAGR": "-11% - 11%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 3.34,
+		"score": 3.35,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 34.7,
+			"multiple": 34.8,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.3,
-				"price6mAgo": 25.04,
-				"price1mAgo": 30.56,
+				"price": 32.4,
+				"price6mAgo": 25.11,
+				"price1mAgo": 30.42,
 				"low3m": 25.83,
 				"return6m": 29,
-				"return1m": 5.7,
+				"return1m": 6.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -65,9 +65,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-19T13:06:43.007Z",
-	"expectedVolatility": "~24%",
-	"sharpeRatio": -0.17,
+	"lastUpdated": "2026-03-20T09:50:30.977Z",
+	"expectedVolatility": "~25%",
+	"sharpeRatio": -0.18,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

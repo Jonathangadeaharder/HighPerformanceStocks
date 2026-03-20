@@ -14,13 +14,13 @@
 		"dividendYield": "10%",
 		"scenarios": {
 			"bear": "20%",
-			"base": "83%",
+			"base": "82%",
 			"bull": "162%"
 		},
 		"basis": "FRE per share; permanent capital model with fee-heavy earnings"
 	},
 	"valuation": {
-		"trailingPE": 9.7,
+		"trailingPE": 9.8,
 		"forwardPE": 8.4,
 		"evEbitda": 11
 	},
@@ -36,7 +36,7 @@
 	"consensus": {
 		"yahoo": "$15.73"
 	},
-	"currentPrice": "$9.11",
+	"currentPrice": "$9.12",
 	"marketCap": "$14.2B USD",
 	"expectedCAGR": "20% - 162%",
 	"expectedVolatility": "~48%",
@@ -56,12 +56,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 9.11,
-				"price6mAgo": 18.9,
-				"price1mAgo": 11.58,
+				"price": 9.12,
+				"price6mAgo": 18.52,
+				"price1mAgo": 10.81,
 				"low3m": 8.55,
-				"return6m": -51.8,
-				"return1m": -21.3,
+				"return6m": -50.8,
+				"return1m": -15.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,7 +75,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-19T13:06:42.832Z",
+	"lastUpdated": "2026-03-20T09:50:30.814Z",
 	"qcs": {
 		"earningsScore": 0.1,
 		"flowScore": 2.5,

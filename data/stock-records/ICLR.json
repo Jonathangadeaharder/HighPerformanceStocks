@@ -13,17 +13,17 @@
 		"ttmEPS": 7.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-23%",
-			"base": "43%",
-			"bull": "126%"
+			"bear": "-24%",
+			"base": "41%",
+			"bull": "124%"
 		}
 	},
-	"currentPrice": "$97.14",
+	"currentPrice": "$98.05",
 	"marketCap": "$7.6B USD",
 	"valuation": {
-		"trailingPE": 13.1,
+		"trailingPE": 13.2,
 		"forwardPE": 7.7,
-		"evEbitda": 6.9
+		"evEbitda": 7
 	},
 	"metrics": {
 		"roe": "6.3%",
@@ -36,7 +36,7 @@
 		"yahoo": "$138.64"
 	},
 	"targetPrice": "$138.64",
-	"expectedCAGR": "-23% - 126%",
+	"expectedCAGR": "-24% - 124%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.55,
@@ -51,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 97.14,
-				"price6mAgo": 174,
-				"price1mAgo": 98.41,
+				"price": 98.05,
+				"price6mAgo": 170.8,
+				"price1mAgo": 99.7,
 				"low3m": 66.57,
-				"return6m": -44.2,
-				"return1m": -1.3,
+				"return6m": -42.6,
+				"return1m": -1.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +71,9 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-19T13:06:34.762Z",
+	"lastUpdated": "2026-03-20T09:50:22.877Z",
 	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.64,
+	"sharpeRatio": 0.61,
 	"qcs": {
 		"earningsScore": 0.99,
 		"flowScore": 0,

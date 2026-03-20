@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
-	"marketCap": "$114.7B USD",
-	"sharpeRatio": 0.08,
-	"expectedCAGR": "-27% - 42%",
+	"marketCap": "$116.4B USD",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "-28% - 40%",
 	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 29.5,
-		"forwardPE": 20.6,
+		"trailingPE": 29.9,
+		"forwardPE": 20.9,
 		"pegRatio": null,
-		"evEbitda": 22.6,
+		"evEbitda": 23,
 		"evFcf": 24
 	},
 	"metrics": {
@@ -26,44 +26,44 @@
 	"targetPrice": "$546.52",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$451.59",
+	"currentPrice": "$458.05",
 	"consensus": {
 		"tipranks": "$542",
 		"yahoo": "$546.52",
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
-		"ttmEPS": 15.31,
+		"ttmEPS": 15.3,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-27%",
-			"base": "21%",
-			"bull": "42%"
+			"bear": "-28%",
+			"base": "19%",
+			"bull": "40%"
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-19T13:06:49.118Z",
+	"lastUpdated": "2026-03-20T09:50:37.101Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.58,
+		"score": 1.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 20.6,
+			"multiple": 20.9,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 451.59,
-				"price6mAgo": 383.12,
-				"price1mAgo": 469.27,
+				"price": 458.05,
+				"price6mAgo": 383.13,
+				"price1mAgo": 476.9,
 				"low3m": 429,
-				"return6m": 17.9,
-				"return1m": -3.8,
+				"return6m": 19.6,
+				"return1m": -4,
 				"near3mLow": false
 			},
 			"revisions": {

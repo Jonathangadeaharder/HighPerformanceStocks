@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Abcam acquisition. Could be a re-entry point for patient investors.",
-	"marketCap": "$135.4B USD",
-	"sharpeRatio": 1.09,
-	"expectedCAGR": "16% - 63%",
+	"marketCap": "$134.4B USD",
+	"sharpeRatio": 1.13,
+	"expectedCAGR": "17% - 64%",
 	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 38,
-		"forwardPE": 21,
+		"trailingPE": 37.7,
+		"forwardPE": 20.9,
 		"pegRatio": null,
-		"evEbitda": 19.2
+		"evEbitda": 19.1
 	},
 	"metrics": {
 		"fcfMargin": "~19%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$264.91",
 	"bullCase": "Danaher's life sciences tools and bioprocessing businesses (Cytiva) are recovering from the deepest post-COVID inventory destocking in decades. Abcam acquisition ($5.7B, 2023) adds genomic reagents and antibodies to the portfolio. When bioprocessing (bioreactors, filtration) volumes normalize, Danaher's ROIC should recover from trough levels toward 20%+.",
 	"bearCase": "Danaher's bioprocessing recovery has been slower than expected — large pharma customers are still burning through COVID-era inventory builds. The Abcam integration ($9.9B combined with premium paid) creates 3-5 years of amortization drag. If ROIC stays below WACC through 2026, the compounding thesis is impaired.",
-	"currentPrice": "$191.50",
+	"currentPrice": "$190.11",
 	"consensus": {
 		"tipranks": "$248",
 		"yahoo": "$264.91",
@@ -38,32 +38,32 @@
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "39%",
-			"bull": "63%"
+			"bear": "17%",
+			"base": "40%",
+			"bull": "64%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-19T13:06:30.753Z",
+	"lastUpdated": "2026-03-20T09:50:03.925Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.32,
+		"score": 1.31,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.2,
+			"multiple": 19.1,
 			"cvStock": 0.012,
 			"riskMultiplier": 0.959
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 191.5,
-				"price6mAgo": 193.29,
-				"price1mAgo": 211.25,
+				"price": 190.11,
+				"price6mAgo": 190.46,
+				"price1mAgo": 209.5,
 				"low3m": 185.24,
-				"return6m": -0.9,
+				"return6m": -0.2,
 				"return1m": -9.3,
 				"near3mLow": true
 			},
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.44,
+		"secondaryScore": 1.43,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {

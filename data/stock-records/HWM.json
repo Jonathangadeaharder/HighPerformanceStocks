@@ -11,19 +11,19 @@
 		"ttmEPS": 3.7,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "16%",
-			"bull": "30%"
+			"bear": "-8%",
+			"base": "20%",
+			"bull": "35%"
 		}
 	},
 	"bullCase": "Howmet Aerospace is the sole approved supplier for titanium fan blades and aluminum structural castings on every major western jetliner. This FAA certification barrier means Boeing and Airbus cannot multi-source critical airframe components. With aviation at record passenger levels and a 10-year production backlog, Howmet is compounding earnings at 15%+ with no margin ceiling.",
 	"bearCase": "Defense/commercial aerospace spending is a long-cycle business. Any Boeing production halt, supply chain disruption, or airline capacity rationalization has multi-year revenue implications. The 5.7x leverage from prior private equity era constrains financial flexibility.",
-	"currentPrice": "$241.93",
-	"marketCap": "$97.4B USD",
+	"currentPrice": "$232.94",
+	"marketCap": "$93.8B USD",
 	"valuation": {
-		"trailingPE": 65.4,
-		"forwardPE": 43.9,
-		"evEbitda": 41.7
+		"trailingPE": 63,
+		"forwardPE": 42.3,
+		"evEbitda": 40.1
 	},
 	"metrics": {
 		"roe": "30.4%",
@@ -36,27 +36,27 @@
 		"yahoo": "$280.00"
 	},
 	"targetPrice": "$280.00",
-	"expectedCAGR": "-11% - 30%",
+	"expectedCAGR": "-8% - 35%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.84,
+		"score": 2.74,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 43.9,
+			"multiple": 42.3,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 241.93,
-				"price6mAgo": 190.23,
-				"price1mAgo": 251.3,
-				"low3m": 191.05,
-				"return6m": 27.2,
-				"return1m": -3.7,
+				"price": 232.94,
+				"price6mAgo": 192.15,
+				"price1mAgo": 258.1,
+				"low3m": 193.58,
+				"return6m": 21.2,
+				"return1m": -9.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +71,9 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-19T13:06:34.607Z",
+	"lastUpdated": "2026-03-20T09:50:22.753Z",
 	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.15,
+	"sharpeRatio": 0.27,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

@@ -4,12 +4,12 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
-	"marketCap": "$79.4B USD",
-	"sharpeRatio": -0.15,
-	"expectedCAGR": "-40% - 33%",
+	"marketCap": "$77.9B USD",
+	"sharpeRatio": -0.12,
+	"expectedCAGR": "-39% - 36%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"forwardPE": 156.1,
+		"forwardPE": 153.2,
 		"evEbitda": null
 	},
 	"metrics": {
@@ -22,42 +22,42 @@
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$225.48",
+	"currentPrice": "$221.36",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-40%",
-			"base": "3%",
-			"bull": "33%"
+			"bear": "-39%",
+			"base": "5%",
+			"bull": "36%"
 		},
 		"ttmEPS": 1.12,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:40.965Z",
+	"lastUpdated": "2026-03-20T09:50:28.864Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.87,
+		"score": 5.76,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 156.1,
+			"multiple": 153.2,
 			"cvStock": 0.105,
 			"riskMultiplier": 1.015
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 225.48,
-				"price6mAgo": 225.94,
-				"price1mAgo": 192.64,
+				"price": 221.36,
+				"price6mAgo": 228.28,
+				"price1mAgo": 177.14,
 				"low3m": 158.83,
-				"return6m": -0.2,
-				"return1m": 17,
+				"return6m": -3,
+				"return1m": 25,
 				"near3mLow": false
 			},
 			"revisions": {

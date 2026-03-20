@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
-	"marketCap": "$40.2B USD",
-	"sharpeRatio": 0.57,
-	"expectedCAGR": "-2% - 45%",
+	"marketCap": "$38.7B USD",
+	"sharpeRatio": 0.72,
+	"expectedCAGR": "2% - 50%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 57.1,
-		"forwardPE": 45.6,
+		"trailingPE": 55,
+		"forwardPE": 43.8,
 		"pegRatio": null,
-		"evEbitda": 34
+		"evEbitda": 32.8
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -28,44 +28,44 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$288.33",
+	"currentPrice": "$277.16",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
 		"stockanalysis": "$366"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.05,
+		"ttmEPS": 5.04,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "29%",
-			"bull": "45%"
+			"bear": "2%",
+			"base": "34%",
+			"bull": "50%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-19T13:06:34.591Z",
+	"lastUpdated": "2026-03-20T09:50:22.739Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.85,
+		"score": 1.79,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 34,
+			"multiple": 32.8,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 288.33,
-				"price6mAgo": 318.75,
-				"price1mAgo": 345.99,
-				"low3m": 285.52,
-				"return6m": -9.5,
-				"return1m": -16.7,
+				"pass": false,
+				"price": 277.16,
+				"price6mAgo": 320.21,
+				"price1mAgo": 351.66,
+				"low3m": 274.15,
+				"return6m": -13.4,
+				"return1m": -21.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.48,
+		"secondaryScore": 2.39,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {

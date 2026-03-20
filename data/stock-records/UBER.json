@@ -11,17 +11,17 @@
 		"ttmEPS": 4.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "35%",
-			"bull": "96%"
+			"bear": "-7%",
+			"base": "38%",
+			"bull": "99%"
 		}
 	},
-	"currentPrice": "$76.66",
-	"marketCap": "$159.3B USD",
+	"currentPrice": "$75.34",
+	"marketCap": "$156.5B USD",
 	"valuation": {
-		"trailingPE": 16.2,
-		"forwardPE": 17.9,
-		"evEbitda": 25.9
+		"trailingPE": 15.9,
+		"forwardPE": 17.6,
+		"evEbitda": 25.5
 	},
 	"metrics": {
 		"roe": "39.9%",
@@ -34,27 +34,27 @@
 		"yahoo": "$103.81"
 	},
 	"targetPrice": "$103.81",
-	"expectedCAGR": "-9% - 96%",
+	"expectedCAGR": "-7% - 99%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
-		"signal": "FAIL",
+		"score": 1.03,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 17.9,
+			"multiple": 17.6,
 			"cvStock": 0.165,
 			"riskMultiplier": 1.051
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 76.66,
-				"price6mAgo": 98.51,
-				"price1mAgo": 72.94,
+				"price": 75.34,
+				"price6mAgo": 99.39,
+				"price1mAgo": 73.86,
 				"low3m": 69.02,
-				"return6m": -22.2,
-				"return1m": 5.1,
+				"return6m": -24.2,
+				"return1m": 2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,14 +71,14 @@
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-19T13:06:46.977Z",
+	"lastUpdated": "2026-03-20T09:50:35.154Z",
 	"intrinsicValue": {
-		"dcf": 143.69,
-		"date": "2026-03-19",
-		"discount": 87
+		"dcf": 143.62,
+		"date": "2026-03-20",
+		"discount": 91
 	},
 	"expectedVolatility": "~36%",
-	"sharpeRatio": 1.08,
+	"sharpeRatio": 1.15,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

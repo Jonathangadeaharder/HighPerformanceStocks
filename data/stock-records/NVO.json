@@ -9,18 +9,18 @@
 	"cagrModel": {
 		"epsGrowth": "13%",
 		"basis": "Non-GAAP EPS; reflects maturing GLP-1 market share and pipeline resilience",
-		"ttmEPS": 3.54,
+		"ttmEPS": 3.56,
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "31%",
-			"bull": "74%"
+			"bear": "13%",
+			"base": "33%",
+			"bull": "77%"
 		}
 	},
-	"currentPrice": "$37.45",
-	"marketCap": "$166.9B USD",
+	"currentPrice": "$37.08",
+	"marketCap": "$165.3B USD",
 	"valuation": {
-		"trailingPE": 10.6,
+		"trailingPE": 10.4,
 		"forwardPE": 11.2,
 		"evEbitda": null
 	},
@@ -32,12 +32,12 @@
 		"ruleOf40": "-7%"
 	},
 	"consensus": {
-		"yahoo": "$47.04"
+		"yahoo": "$47.31"
 	},
-	"targetPrice": "$47.04",
-	"expectedCAGR": "11% - 74%",
+	"targetPrice": "$47.31",
+	"expectedCAGR": "13% - 77%",
 	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.72,
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.67,
@@ -53,12 +53,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 37.45,
-				"price6mAgo": 61.4,
-				"price1mAgo": 48.45,
+				"price": 37.08,
+				"price6mAgo": 60.71,
+				"price1mAgo": 47.42,
 				"low3m": 35.85,
-				"return6m": -39,
-				"return1m": -22.7,
+				"return6m": -38.9,
+				"return1m": -21.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -87,10 +87,10 @@
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-03-19T13:06:42.038Z",
+	"lastUpdated": "2026-03-20T09:50:30.019Z",
 	"analystTargets": {
-		"low": 39.67,
-		"mean": 47.04,
-		"high": 63.32
+		"low": 39.9,
+		"mean": 47.31,
+		"high": 63.67
 	}
 }

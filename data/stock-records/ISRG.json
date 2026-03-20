@@ -4,15 +4,15 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$169.7B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "-21% - 57%",
+	"marketCap": "$170.5B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "-21% - 56%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 60.6,
-		"forwardPE": 41.7,
+		"trailingPE": 61,
+		"forwardPE": 41.9,
 		"pegRatio": null,
-		"evEbitda": 46.1
+		"evEbitda": 46.3
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -25,43 +25,43 @@
 	"targetPrice": "$606.53",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$477.73",
+	"currentPrice": "$479.93",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$606.53"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.88,
+		"ttmEPS": 7.87,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-21%",
-			"base": "27%",
-			"bull": "57%"
+			"base": "26%",
+			"bull": "56%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-19T13:06:35.627Z",
+	"lastUpdated": "2026-03-20T09:50:23.719Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.89,
+		"score": 2.9,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 41.7,
+			"multiple": 41.9,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 477.73,
-				"price6mAgo": 438.72,
-				"price1mAgo": 499.53,
+				"price": 479.93,
+				"price6mAgo": 444.55,
+				"price1mAgo": 504.05,
 				"low3m": 458,
-				"return6m": 8.9,
-				"return1m": -4.4,
+				"return6m": 8,
+				"return1m": -4.8,
 				"near3mLow": true
 			},
 			"revisions": {

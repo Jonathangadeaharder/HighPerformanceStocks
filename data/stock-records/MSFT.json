@@ -10,17 +10,17 @@
 		"ttmEPS": 16,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "53%",
-			"bull": "87%"
+			"bear": "2%",
+			"base": "54%",
+			"bull": "89%"
 		}
 	},
-	"currentPrice": "$391.79",
-	"marketCap": "$2911.9B USD",
+	"currentPrice": "$389.02",
+	"marketCap": "$2891.3B USD",
 	"valuation": {
-		"trailingPE": 24.5,
-		"forwardPE": 20.8,
-		"evEbitda": 16.8
+		"trailingPE": 24.3,
+		"forwardPE": 20.6,
+		"evEbitda": 16.7
 	},
 	"metrics": {
 		"roe": "34.4%",
@@ -33,29 +33,29 @@
 		"yahoo": "$594.62"
 	},
 	"targetPrice": "$594.62",
-	"expectedCAGR": "1% - 87%",
+	"expectedCAGR": "2% - 89%",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 1.52,
+	"sharpeRatio": 1.58,
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.5,
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.8,
+			"multiple": 20.6,
 			"cvStock": 0.101,
 			"riskMultiplier": 1.013
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 391.79,
-				"price6mAgo": 517.93,
-				"price1mAgo": 398.46,
+				"price": 389.02,
+				"price6mAgo": 514.45,
+				"price1mAgo": 397.23,
 				"low3m": 381.71,
 				"return6m": -24.4,
-				"return1m": -1.7,
+				"return1m": -2.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -71,11 +71,11 @@
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-03-19T13:06:40.027Z",
+	"lastUpdated": "2026-03-20T09:50:27.947Z",
 	"intrinsicValue": {
-		"dcf": 326.49,
-		"date": "2026-03-19",
-		"discount": -17
+		"dcf": 325.88,
+		"date": "2026-03-20",
+		"discount": -16
 	},
 	"qcs": {
 		"earningsScore": 5,

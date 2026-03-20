@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1557.4B USD",
-	"sharpeRatio": 1.14,
-	"expectedCAGR": "10% - 86%",
-	"expectedVolatility": "~38%",
+	"marketCap": "$1534.7B USD",
+	"sharpeRatio": 1.17,
+	"expectedCAGR": "11% - 89%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 26.2,
-		"forwardPE": 17.2,
+		"trailingPE": 25.8,
+		"forwardPE": 16.9,
 		"pegRatio": 1.05,
-		"evEbitda": 15.3
+		"evEbitda": 15.1
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
@@ -28,44 +28,44 @@
 	"targetPrice": "$863.63",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$615.68",
+	"currentPrice": "$606.70",
 	"consensus": {
 		"tipranks": "$836",
 		"yahoo": "$863.63",
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
-		"ttmEPS": 23.52,
+		"ttmEPS": 23.48,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "40%",
-			"bull": "86%"
+			"bear": "11%",
+			"base": "42%",
+			"bull": "89%"
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-19T13:06:39.840Z",
+	"lastUpdated": "2026-03-20T09:50:27.767Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.15,
-		"signal": "FAIL",
+		"score": 1.13,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 17.2,
+			"multiple": 16.9,
 			"cvStock": 0.084,
 			"riskMultiplier": 1.002
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 615.68,
-				"price6mAgo": 778.38,
-				"price1mAgo": 644.78,
+				"price": 606.7,
+				"price6mAgo": 765.16,
+				"price1mAgo": 655.66,
 				"low3m": 600,
-				"return6m": -20.9,
-				"return1m": -4.5,
+				"return6m": -20.7,
+				"return1m": -7.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -81,8 +81,8 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 288.15,
-		"date": "2026-03-19",
+		"dcf": 287.85,
+		"date": "2026-03-20",
 		"discount": -53
 	},
 	"qcs": {

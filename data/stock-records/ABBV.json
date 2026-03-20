@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$368.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-9% - 47%",
+	"marketCap": "$364.6B USD",
+	"sharpeRatio": 0.55,
+	"expectedCAGR": "-8% - 48%",
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 87.5,
-		"forwardPE": 12.9,
+		"trailingPE": 87,
+		"forwardPE": 12.8,
 		"pegRatio": 1.06,
-		"evEbitda": 14.8
+		"evEbitda": 14.6
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$208.34",
+	"currentPrice": "$206.23",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$249.14",
@@ -38,33 +38,33 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "23%",
-			"bull": "47%"
+			"bear": "-8%",
+			"base": "24%",
+			"bull": "48%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-19T13:06:25.316Z",
+	"lastUpdated": "2026-03-20T09:49:58.741Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.84,
+		"score": 0.83,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 12.8,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 208.34,
-				"price6mAgo": 222.47,
-				"price1mAgo": 224.35,
+				"price": 206.23,
+				"price6mAgo": 222.59,
+				"price1mAgo": 224.81,
 				"low3m": 204.27,
-				"return6m": -6.4,
-				"return1m": -7.1,
+				"return6m": -7.3,
+				"return1m": -8.3,
 				"near3mLow": true
 			},
 			"revisions": {

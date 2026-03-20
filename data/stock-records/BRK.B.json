@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1045.2B USD",
-	"sharpeRatio": 0.24,
-	"expectedCAGR": "-1% - 19%",
+	"marketCap": "$1038.7B USD",
+	"sharpeRatio": 0.29,
+	"expectedCAGR": "0% - 20%",
 	"expectedVolatility": "~19%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 15.6,
-		"forwardPE": 22.2
+		"trailingPE": 15.5,
+		"forwardPE": 22.1
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -25,47 +25,46 @@
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$484.47",
+	"currentPrice": "$481.48",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-1%",
-			"base": "8%",
-			"bull": "19%"
+			"bear": "0%",
+			"base": "9%",
+			"bull": "20%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-19T13:06:28.668Z",
+	"lastUpdated": "2026-03-20T09:50:01.883Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.14,
-		"signal": "REJECTED",
+		"score": 2.13,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 22.2,
+			"multiple": 22.1,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
-		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 484.47,
-				"price6mAgo": 492.85,
-				"price1mAgo": 496.94,
+				"price": 481.48,
+				"price6mAgo": 493.71,
+				"price1mAgo": 498.2,
 				"low3m": 471.91,
-				"return6m": -1.7,
-				"return1m": -2.5,
+				"return6m": -2.5,
+				"return1m": -3.4,
 				"near3mLow": true
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
 				"down30d": 2
 			},
@@ -73,7 +72,8 @@
 				"surprise": -8.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
 		"earningsScore": -1.07,

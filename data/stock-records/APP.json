@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$149.6B USD",
+	"marketCap": "$148.7B USD",
 	"sharpeRatio": 0.39,
-	"expectedCAGR": "-23% - 94%",
+	"expectedCAGR": "-23% - 95%",
 	"expectedVolatility": "~80%",
 	"valuation": {
-		"trailingPE": 44,
-		"forwardPE": 21.8,
+		"trailingPE": 43.9,
+		"forwardPE": 21.7,
 		"pegRatio": 0.8,
-		"evEbitda": 35.2
+		"evEbitda": 35
 	},
 	"metrics": {
 		"roe": "212.9%",
@@ -30,20 +30,20 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$442.57",
+	"currentPrice": "$439.92",
 	"cagrModel": {
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-23%",
 			"base": "47%",
-			"bull": "94%"
+			"bull": "95%"
 		},
 		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-19T13:06:27.305Z",
+	"lastUpdated": "2026-03-20T09:50:00.722Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.73,
@@ -51,19 +51,19 @@
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 21.7,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 442.57,
-				"price6mAgo": 649.59,
-				"price1mAgo": 412,
+				"price": 439.92,
+				"price6mAgo": 643.5,
+				"price1mAgo": 418.68,
 				"low3m": 359,
-				"return6m": -31.9,
-				"return1m": 7.4,
+				"return6m": -31.6,
+				"return1m": 5.1,
 				"near3mLow": false
 			},
 			"revisions": {

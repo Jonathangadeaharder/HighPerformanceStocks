@@ -22,6 +22,7 @@ const STABILIZATION_6M_THRESHOLD = -10;
 const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
+const BORDERLINE_WAIT_THRESHOLD = 1.2;
 
 function getAnalystDispersion(earningsTrend: EarningsTrend | undefined): { avg: number; low: number; high: number } | null {
 	if (!earningsTrend?.trend) return null;
@@ -39,10 +40,19 @@ function computeGrowthScore(engine: keyof typeof ENGINE_THRESHOLDS, multipleType
 	const score = (multiple / growthPct) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
 
+	let signal: 'PASS' | 'FAIL' | 'WAIT';
+	if (score <= threshold) {
+		signal = 'PASS';
+	} else if (score <= BORDERLINE_WAIT_THRESHOLD) {
+		signal = 'WAIT';
+	} else {
+		signal = 'FAIL';
+	}
+
 	return {
 		engine,
 		score: +score.toFixed(2),
-		signal: score <= threshold ? 'PASS' : 'FAIL',
+		signal,
 		inputs: {
 			growth: growthPct,
 			multipleType,
@@ -59,6 +69,18 @@ function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null 
 	const valuation = stock.valuation ?? {};
 	const ttmBasis = stock.cagrModel?.ttmEPS;
 	const priceToBasis = valuationPrice != null && ttmBasis != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
+
+	if (
+		(lowerBasis.includes('serial acquirer') || stock.group === 'Serial Acquirers') &&
+		valuation.evEbitda != null &&
+		valuation.evEbitda > 0
+	) {
+		return {
+			engine: 'fEVG',
+			multipleType: 'EV/EBITDA',
+			multiple: valuation.evEbitda
+		};
+	}
 
 	if (/fee-related earnings|\bfre\b/.test(lowerBasis)) {
 		return {
@@ -86,18 +108,6 @@ function detectGrowthBranch(stock: ScreenerStock, valuationPrice: number | null 
 			engine: 'fCFG',
 			multipleType: hasEvFcf ? 'EV/FCF' : 'P/CF',
 			multiple: hasEvFcf ? valuation.evFcf : priceToBasis
-		};
-	}
-
-	if (
-		(lowerBasis.includes('serial acquirer') || stock.group === 'Serial Acquirers') &&
-		valuation.evEbitda != null &&
-		valuation.evEbitda > 0
-	) {
-		return {
-			engine: 'fEVG',
-			multipleType: 'EV/EBITDA',
-			multiple: valuation.evEbitda
 		};
 	}
 
@@ -189,10 +199,11 @@ function applyRealityChecks(result: ScreenerResult, rawPrice: number | null | un
 	const revisions = entry?.epsRevisions;
 	const up30d = revisions?.upLast30days ?? 0;
 	const down30d = revisions?.downLast30days ?? 0;
-	const passed = !(down30d > 0 && up30d === 0);
-	checks.revisions = { pass: passed, up30d, down30d };
+	// Require >= 3 downgrades with 0 upgrades to reject (avoid false positives from single analyst moves)
+	const consensusCollapsing = down30d >= 3 && up30d === 0;
+	checks.revisions = { pass: !consensusCollapsing, up30d, down30d };
 
-	if (!passed) {
+	if (consensusCollapsing) {
 		result.signal = 'REJECTED';
 		result.note = 'Consensus actively collapsing (analyst lag)';
 	}

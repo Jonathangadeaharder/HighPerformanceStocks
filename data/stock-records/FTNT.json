@@ -15,12 +15,12 @@
 			"bull": "44%"
 		}
 	},
-	"currentPrice": "$83.39",
-	"marketCap": "$62.0B USD",
+	"currentPrice": "$83.12",
+	"marketCap": "$61.8B USD",
 	"valuation": {
-		"trailingPE": 34.5,
-		"forwardPE": 25.2,
-		"evEbitda": 26.6
+		"trailingPE": 34.3,
+		"forwardPE": 25.1,
+		"evEbitda": 26.5
 	},
 	"metrics": {
 		"roe": "135.7%",
@@ -41,19 +41,19 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 25.2,
+			"multiple": 25.1,
 			"cvStock": 0.063,
 			"riskMultiplier": 0.99
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 83.39,
-				"price6mAgo": 84.21,
-				"price1mAgo": 81.67,
+				"price": 83.12,
+				"price6mAgo": 85.01,
+				"price1mAgo": 80,
 				"low3m": 73.55,
-				"return6m": -1,
-				"return1m": 2.1,
+				"return6m": -2.2,
+				"return1m": 3.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,7 +69,7 @@
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-03-19T13:06:33.583Z",
+	"lastUpdated": "2026-03-20T09:50:21.750Z",
 	"expectedVolatility": "~44%",
 	"sharpeRatio": 0.14,
 	"qcs": {

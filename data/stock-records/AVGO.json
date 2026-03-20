@@ -5,9 +5,9 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
-	"marketCap": "$1497.9B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "15% - 100%",
+	"marketCap": "$1516.4B USD",
+	"sharpeRatio": 1.07,
+	"expectedCAGR": "14% - 98%",
 	"ttmEPS": 7.07,
 	"scenarios": {
 		"bear": "8%",
@@ -26,7 +26,7 @@
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$315.93",
+	"currentPrice": "$319.84",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$472.01",
@@ -37,34 +37,34 @@
 		"epsGrowth": "35%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "15%",
-			"base": "50%",
-			"bull": "100%"
+			"bear": "14%",
+			"base": "49%",
+			"bull": "98%"
 		},
 		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-19T13:06:28.477Z",
+	"lastUpdated": "2026-03-20T09:50:01.708Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.52,
+		"score": 0.53,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 17.9,
+			"multiple": 18.1,
 			"cvStock": 0.11,
 			"riskMultiplier": 1.018
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 315.93,
-				"price6mAgo": 344.94,
-				"price1mAgo": 333.99,
+				"price": 319.84,
+				"price6mAgo": 338.79,
+				"price1mAgo": 332.65,
 				"low3m": 295.3,
-				"return6m": -8.4,
-				"return1m": -5.4,
+				"return6m": -5.6,
+				"return1m": -3.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,9 +80,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"valuation": {
-		"trailingPE": 61.7,
-		"forwardPE": 17.9,
-		"evEbitda": 41
+		"trailingPE": 62.5,
+		"forwardPE": 18.1,
+		"evEbitda": 41.5
 	},
 	"expectedVolatility": "~48%",
 	"qcs": {
@@ -92,7 +92,7 @@
 		"totalScore": -0.19,
 		"raw": {
 			"avgSurprisePct": 1.97,
-			"netInsiderShares": -766862,
+			"netInsiderShares": -739658,
 			"instFlowTrend": "negative",
 			"upRevisions": 36,
 			"downRevisions": 0,

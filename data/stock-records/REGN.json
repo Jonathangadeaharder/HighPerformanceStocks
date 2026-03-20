@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
-	"marketCap": "$78.7B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "-1% - 43%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$78.0B USD",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "0% - 44%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 18,
-		"forwardPE": 14.1,
+		"trailingPE": 17.8,
+		"forwardPE": 14,
 		"pegRatio": null,
-		"evEbitda": 16.7,
+		"evEbitda": 16.5,
 		"evFcf": 15
 	},
 	"metrics": {
@@ -28,44 +28,44 @@
 	"targetPrice": "$872.85",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$744.12",
+	"currentPrice": "$737.45",
 	"consensus": {
 		"tipranks": "$813",
 		"yahoo": "$872.85",
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
-		"ttmEPS": 41.45,
+		"ttmEPS": 41.44,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "18%",
-			"bull": "43%"
+			"bear": "0%",
+			"base": "19%",
+			"bull": "44%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-19T13:06:43.915Z",
+	"lastUpdated": "2026-03-20T09:50:31.908Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.2,
-		"signal": "FAIL",
+		"score": 1.19,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 14.1,
+			"multiple": 14,
 			"cvStock": 0.114,
 			"riskMultiplier": 1.02
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 744.12,
-				"price6mAgo": 591.99,
-				"price1mAgo": 782.38,
+				"price": 737.45,
+				"price6mAgo": 595.68,
+				"price1mAgo": 779.67,
 				"low3m": 718.38,
-				"return6m": 25.7,
-				"return1m": -4.9,
+				"return6m": 23.8,
+				"return1m": -5.4,
 				"near3mLow": true
 			},
 			"revisions": {

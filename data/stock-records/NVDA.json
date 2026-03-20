@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4384.6B USD",
-	"sharpeRatio": 0.98,
-	"expectedCAGR": "-22% - 111%",
+	"marketCap": "$4339.9B USD",
+	"sharpeRatio": 1,
+	"expectedCAGR": "-22% - 113%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 36.7,
-		"forwardPE": 16.2,
+		"trailingPE": 36.5,
+		"forwardPE": 16.1,
 		"pegRatio": 1.6,
-		"evEbitda": 32.5
+		"evEbitda": 32.2
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -26,24 +26,24 @@
 	"targetPrice": "$268.43",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$180.40",
+	"currentPrice": "$178.56",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$268.43",
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.91,
+		"ttmEPS": 4.89,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-22%",
-			"base": "49%",
-			"bull": "111%"
+			"base": "50%",
+			"bull": "113%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-19T13:06:41.976Z",
+	"lastUpdated": "2026-03-20T09:50:29.986Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.57,
@@ -51,20 +51,20 @@
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
-			"multiple": 16.2,
+			"multiple": 16.1,
 			"cvStock": 0.128,
 			"riskMultiplier": 1.029
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 180.4,
-				"price6mAgo": 176.67,
-				"price1mAgo": 187.9,
-				"low3m": 170.31,
-				"return6m": 2.1,
-				"return1m": -4,
-				"near3mLow": false
+				"price": 178.56,
+				"price6mAgo": 183.61,
+				"price1mAgo": 189.82,
+				"low3m": 171.03,
+				"return6m": -2.8,
+				"return1m": -5.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -79,9 +79,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 234.57,
-		"date": "2026-03-19",
-		"discount": 30
+		"dcf": 234.31,
+		"date": "2026-03-20",
+		"discount": 31
 	},
 	"qcs": {
 		"earningsScore": 1.63,
@@ -90,7 +90,7 @@
 		"totalScore": -0.28,
 		"raw": {
 			"avgSurprisePct": 5.22,
-			"netInsiderShares": -2498471,
+			"netInsiderShares": -2219471,
 			"instFlowTrend": "negative",
 			"upRevisions": 36,
 			"downRevisions": 7,

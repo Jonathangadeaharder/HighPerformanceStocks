@@ -4,15 +4,15 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "128.3B SEK",
-	"sharpeRatio": 0.89,
-	"expectedCAGR": "20% - 37%",
-	"expectedVolatility": "~27%",
+	"marketCap": "127.1B SEK",
+	"sharpeRatio": 0.91,
+	"expectedCAGR": "21% - 39%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 35.3,
-		"forwardPE": 35.4,
+		"trailingPE": 35,
+		"forwardPE": 35.1,
 		"pegRatio": null,
-		"evEbitda": 19.9,
+		"evEbitda": 19.3,
 		"evFcf": 29
 	},
 	"metrics": {
@@ -26,7 +26,7 @@
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "282 SEK",
+	"currentPrice": "280 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
@@ -36,21 +36,21 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "20%",
-			"base": "27%",
-			"bull": "37%"
+			"bear": "21%",
+			"base": "28%",
+			"bull": "39%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-19T13:06:37.572Z",
+	"lastUpdated": "2026-03-20T09:50:25.689Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.66,
+		"score": 1.61,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.9,
+			"multiple": 19.3,
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
 		},
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 282.4,
+				"price": 279.8,
 				"price6mAgo": 324.6,
-				"price1mAgo": 321,
-				"low3m": 280.4,
-				"return6m": -13,
-				"return1m": -12,
+				"price1mAgo": 314.2,
+				"low3m": 279.8,
+				"return6m": -13.8,
+				"return1m": -10.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.95
+		"secondaryScore": 2.92
 	},
 	"qcs": {
 		"earningsScore": -5,

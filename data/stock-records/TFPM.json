@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$7.1B USD",
-	"sharpeRatio": 0.64,
-	"expectedCAGR": "27% - 36%",
+	"marketCap": "$6.6B USD",
+	"sharpeRatio": 0.87,
+	"expectedCAGR": "36% - 46%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 28.9,
-		"forwardPE": 21.5,
+		"trailingPE": 26.9,
+		"forwardPE": 20.1,
 		"pegRatio": 1.02,
-		"evEbitda": 23.5
+		"evEbitda": 21.9
 	},
 	"metrics": {
 		"fcfMargin": "~-1%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$44.25",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
-	"currentPrice": "$34.07",
+	"currentPrice": "$31.80",
 	"consensus": {
 		"tipranks": "C$59",
 		"yahoo": "$44.25",
@@ -37,13 +37,13 @@
 		"epsGrowth": "8%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "27%",
-			"base": "31%",
-			"bull": "36%"
+			"bear": "36%",
+			"base": "40%",
+			"bull": "46%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-19T13:06:45.925Z",
+	"lastUpdated": "2026-03-20T09:50:33.902Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,
@@ -59,13 +59,13 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 34.07,
-				"price6mAgo": 28.33,
-				"price1mAgo": 36.71,
-				"low3m": 31.93,
-				"return6m": 20.3,
-				"return1m": -7.2,
-				"near3mLow": false
+				"price": 31.8,
+				"price6mAgo": 28.48,
+				"price1mAgo": 37.71,
+				"low3m": 30.88,
+				"return6m": 11.7,
+				"return1m": -15.7,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
