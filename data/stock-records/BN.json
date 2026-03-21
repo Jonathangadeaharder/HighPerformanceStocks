@@ -4,16 +4,16 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$86.6B USD",
-	"sharpeRatio": 0.41,
-	"expectedCAGR": "-20% - 56%",
+	"marketCap": "$86.5B USD",
+	"sharpeRatio": 0.44,
+	"expectedCAGR": "-19% - 57%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 78.6,
-		"forwardPE": 6.6,
+		"trailingPE": 79.7,
+		"forwardPE": 6.5,
 		"pegRatio": null,
 		"evEbitda": 15,
-		"evFcf": -100.8
+		"evFcf": -100.4
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$53.95",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$38.52",
+	"currentPrice": "$38.26",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.95",
@@ -38,33 +38,33 @@
 		"epsGrowth": "16.5%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-20%",
-			"base": "40%",
-			"bull": "56%"
+			"bear": "-19%",
+			"base": "41%",
+			"bull": "57%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-20T15:11:38.984Z",
+	"lastUpdated": "2026-03-21T00:31:37.737Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.4,
+		"score": 0.39,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
-			"multiple": 6.6,
+			"multiple": 6.5,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 38.52,
+				"price": 38.26,
 				"price6mAgo": 48.49,
 				"price1mAgo": 44,
-				"low3m": 38.28,
-				"return6m": -20.6,
-				"return1m": -12.5,
+				"low3m": 37.93,
+				"return6m": -21.1,
+				"return1m": -13,
 				"near3mLow": true
 			},
 			"revisions": {

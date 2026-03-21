@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$26.3B USD",
-	"sharpeRatio": 0.97,
-	"expectedCAGR": "-7% - 117%",
+	"marketCap": "$26.7B USD",
+	"sharpeRatio": 0.92,
+	"expectedCAGR": "-8% - 113%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"trailingPE": 40.9,
-		"forwardPE": 20.7,
+		"trailingPE": 41.2,
+		"forwardPE": 21.1,
 		"pegRatio": 2.1,
-		"evEbitda": 29.3,
-		"evFcf": 51.4
+		"evEbitda": 29.6,
+		"evFcf": 52
 	},
 	"metrics": {
 		"roe": "45.0%",
@@ -31,40 +31,40 @@
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1107.04",
+	"currentPrice": "$1127.62",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-7%",
-			"base": "73%",
-			"bull": "117%"
+			"bear": "-8%",
+			"base": "70%",
+			"bull": "113%"
 		},
 		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 27.05
+		"ttmEPS": 27.4
 	},
-	"lastUpdated": "2026-03-20T15:11:43.082Z",
+	"lastUpdated": "2026-03-21T00:31:40.588Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.16,
+		"score": 1.18,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 20.7,
+			"multiple": 21.1,
 			"cvStock": 0.089,
 			"riskMultiplier": 1.005
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 1107.04,
+				"pass": true,
+				"price": 1127.62,
 				"price6mAgo": 1538.95,
 				"price1mAgo": 1281.64,
 				"low3m": 1068.67,
-				"return6m": -28.1,
-				"return1m": -13.6,
-				"near3mLow": true
+				"return6m": -26.7,
+				"return1m": -12,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

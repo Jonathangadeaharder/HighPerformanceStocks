@@ -4,15 +4,15 @@
 	"group": "Emerging Markets",
 	"confidence": "high",
 	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
-	"marketCap": "$84.3B USD",
-	"sharpeRatio": 1.63,
-	"expectedCAGR": "26% - 110%",
+	"marketCap": "$82.9B USD",
+	"sharpeRatio": 1.71,
+	"expectedCAGR": "28% - 114%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 42.3,
-		"forwardPE": 21.9,
-		"evEbitda": 22.3,
-		"evFcf": -36.5
+		"trailingPE": 42.4,
+		"forwardPE": 21.6,
+		"evEbitda": 21.9,
+		"evFcf": -35.9
 	},
 	"metrics": {
 		"roe": "36.0%",
@@ -21,45 +21,45 @@
 		"netDebtEbitda": "1.3x",
 		"ruleOf40": "36%"
 	},
-	"targetPrice": "$2639.69",
+	"targetPrice": "$2610.85",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1663.54",
+	"currentPrice": "$1635.76",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "26%",
-			"base": "59%",
-			"bull": "110%"
+			"bear": "28%",
+			"base": "60%",
+			"bull": "114%"
 		},
-		"ttmEPS": 39.34,
+		"ttmEPS": 38.6,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-03-20T15:11:49.563Z",
+	"lastUpdated": "2026-03-21T00:31:44.933Z",
 	"consensus": {
-		"yahoo": "$2639.69"
+		"yahoo": "$2610.85"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.09,
+		"score": 1.08,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 21.9,
-			"cvStock": 0.163,
+			"multiple": 21.6,
+			"cvStock": 0.164,
 			"riskMultiplier": 1.05
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 1663.54,
+				"price": 1635.76,
 				"price6mAgo": 2460.66,
 				"price1mAgo": 1864.46,
 				"low3m": 1631.18,
-				"return6m": -32.4,
-				"return1m": -10.8,
+				"return6m": -33.5,
+				"return1m": -12.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,10 +74,10 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": -0.59,
+		"earningsScore": -0.58,
 		"flowScore": -5,
 		"revisionsScore": -2.75,
-		"totalScore": -8.34,
+		"totalScore": -8.33,
 		"raw": {
 			"avgSurprisePct": -2.4,
 			"netInsiderShares": -1079,
@@ -90,7 +90,7 @@
 	"description": "MercadoLibre, Inc. operates online commerce platforms in Brazil, Mexico, Argentina, and internationally.",
 	"analystTargets": {
 		"low": 2100,
-		"mean": 2639.69,
+		"mean": 2610.85,
 		"high": 3500
 	}
 }

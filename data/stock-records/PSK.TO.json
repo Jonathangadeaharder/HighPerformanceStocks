@@ -7,19 +7,19 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 0.87,
+		"ttmEPS": 0.89,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "0%",
-			"bull": "7%"
+			"bear": "-15%",
+			"base": "-1%",
+			"bull": "6%"
 		}
 	},
-	"currentPrice": "C$32.59",
-	"marketCap": "C$7.6B",
+	"currentPrice": "C$33.02",
+	"marketCap": "C$7.7B",
 	"valuation": {
-		"trailingPE": 37.5,
-		"forwardPE": 35
+		"trailingPE": 37.1,
+		"forwardPE": 35.5
 	},
 	"metrics": {
 		"roe": "7.8%",
@@ -28,30 +28,30 @@
 		"ruleOf40": "36%"
 	},
 	"consensus": {
-		"yahoo": "C$32.59"
+		"yahoo": "C$32.68"
 	},
-	"targetPrice": "C$32.59",
-	"expectedCAGR": "-14% - 7%",
+	"targetPrice": "C$32.68",
+	"expectedCAGR": "-15% - 6%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 3.37,
+		"score": 3.41,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 35,
+			"multiple": 35.5,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.59,
+				"price": 33.02,
 				"price6mAgo": 25.11,
 				"price1mAgo": 30.39,
 				"low3m": 25.83,
-				"return6m": 29.8,
-				"return1m": 7.2,
+				"return6m": 31.5,
+				"return1m": 8.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -65,9 +65,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T15:11:53.842Z",
-	"expectedVolatility": "~24%",
-	"sharpeRatio": -0.33,
+	"lastUpdated": "2026-03-21T00:31:47.797Z",
+	"expectedVolatility": "~25%",
+	"sharpeRatio": -0.36,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -87,7 +87,7 @@
 	"description": "PrairieSky Royalty Ltd. holds crude oil and natural gas royalty interests in Canada.",
 	"analystTargets": {
 		"low": 28,
-		"mean": 32.59,
+		"mean": 32.68,
 		"high": 35
 	}
 }

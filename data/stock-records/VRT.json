@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
-	"marketCap": "$100.6B USD",
-	"sharpeRatio": -0.23,
-	"expectedCAGR": "-41% - 22%",
+	"marketCap": "$97.9B USD",
+	"sharpeRatio": -0.19,
+	"expectedCAGR": "-39% - 25%",
 	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 76.9,
-		"forwardPE": 32.9,
+		"trailingPE": 74.8,
+		"forwardPE": 32,
 		"pegRatio": null,
-		"evEbitda": 47.3,
-		"evFcf": 73
+		"evEbitda": 45,
+		"evFcf": 69.5
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -30,7 +30,7 @@
 	"targetPrice": "$267.83",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$262.97",
+	"currentPrice": "$255.88",
 	"consensus": {
 		"tipranks": "$280",
 		"yahoo": "$267.83",
@@ -41,33 +41,33 @@
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-41%",
-			"base": "2%",
-			"bull": "22%"
+			"bear": "-39%",
+			"base": "5%",
+			"bull": "25%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-20T15:12:00.092Z",
+	"lastUpdated": "2026-03-21T00:31:52.009Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.13,
+		"score": 1.1,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 32.9,
+			"multiple": 32,
 			"cvStock": 0.125,
 			"riskMultiplier": 1.027
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 262.97,
+				"price": 255.88,
 				"price6mAgo": 151.96,
 				"price1mAgo": 245.42,
 				"low3m": 155.27,
-				"return6m": 73.1,
-				"return1m": 7.2,
+				"return6m": 68.4,
+				"return1m": 4.3,
 				"near3mLow": false
 			},
 			"revisions": {

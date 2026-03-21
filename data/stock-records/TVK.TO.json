@@ -6,15 +6,15 @@
 	"confidence": "medium",
 	"confidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
 	"marketCap": "C$3.0B",
-	"sharpeRatio": 0.67,
-	"expectedCAGR": "23% - 45%",
+	"sharpeRatio": 0.69,
+	"expectedCAGR": "24% - 46%",
 	"expectedVolatility": "~44%",
 	"valuation": {
 		"pegRatio": null,
-		"evEbitda": 15,
-		"trailingPE": 32.9,
-		"forwardPE": 22.1,
-		"evFcf": 58.5
+		"evEbitda": 14.9,
+		"trailingPE": 32.6,
+		"forwardPE": 21.9,
+		"evFcf": 58.2
 	},
 	"metrics": {
 		"roe": "16.9%",
@@ -26,42 +26,42 @@
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$138.17",
+	"currentPrice": "C$136.78",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "23%",
-			"base": "32%",
-			"bull": "45%"
+			"bear": "24%",
+			"base": "34%",
+			"bull": "46%"
 		},
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.2
 	},
-	"lastUpdated": "2026-03-20T15:11:57.968Z",
+	"lastUpdated": "2026-03-21T00:31:50.586Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.5,
+		"score": 1.48,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 22.1,
+			"multiple": 21.9,
 			"cvStock": 0.107,
 			"riskMultiplier": 1.016
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 138.17,
+				"price": 136.78,
 				"price6mAgo": 137.51,
 				"price1mAgo": 157.51,
 				"low3m": 132.33,
-				"return6m": 0.5,
-				"return1m": -12.3,
+				"return6m": -0.5,
+				"return1m": -13.2,
 				"near3mLow": true
 			},
 			"revisions": {

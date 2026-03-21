@@ -8,7 +8,7 @@
 	"sharpeRatio": 0.06,
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 35.5,
+		"trailingPE": 36.3,
 		"forwardPE": 32,
 		"pegRatio": null,
 		"evEbitda": null
@@ -35,7 +35,7 @@
 		"dividendYield": "1%",
 		"basis": "Through-cycle normalized growth; current ~5% consensus reflects cyclical trough in factory automation"
 	},
-	"lastUpdated": "2026-03-20T15:11:47.335Z",
+	"lastUpdated": "2026-03-21T00:31:43.484Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,

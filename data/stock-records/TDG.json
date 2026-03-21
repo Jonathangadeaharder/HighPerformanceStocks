@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$67.1B USD",
-	"sharpeRatio": 1.03,
-	"expectedCAGR": "11% - 60%",
+	"marketCap": "$66.5B USD",
+	"sharpeRatio": 1.07,
+	"expectedCAGR": "12% - 61%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 25.9,
+		"trailingPE": 38.3,
+		"forwardPE": 25.7,
 		"pegRatio": null,
-		"evEbitda": 20.4,
-		"evFcf": 71.5
+		"evEbitda": 20.2,
+		"evFcf": 70.9
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1187.30",
+	"currentPrice": "$1177.39",
 	"consensus": {
 		"tipranks": "$1,568",
 		"yahoo": "$1594",
@@ -38,33 +38,33 @@
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "34%",
-			"bull": "60%"
+			"bear": "12%",
+			"base": "35%",
+			"bull": "61%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-20T15:11:56.888Z",
+	"lastUpdated": "2026-03-21T00:31:49.854Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.1,
+		"score": 1.09,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20.4,
+			"multiple": 20.2,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1187.3,
+				"price": 1177.39,
 				"price6mAgo": 1295.29,
 				"price1mAgo": 1296.15,
-				"low3m": 1177.02,
-				"return6m": -8.3,
-				"return1m": -8.4,
+				"low3m": 1169.36,
+				"return6m": -9.1,
+				"return1m": -9.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.4,
+		"secondaryScore": 1.39,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {

@@ -4,16 +4,16 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "126.2B SEK",
+	"marketCap": "125.4B SEK",
 	"sharpeRatio": 0.91,
 	"expectedCAGR": "21% - 39%",
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 34.7,
-		"forwardPE": 34.8,
+		"trailingPE": 34.5,
+		"forwardPE": 34.6,
 		"pegRatio": null,
-		"evEbitda": 19.3,
-		"evFcf": 29.4
+		"evEbitda": 19,
+		"evFcf": 29
 	},
 	"metrics": {
 		"fcfMargin": "~16%",
@@ -26,7 +26,7 @@
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "278 SEK",
+	"currentPrice": "276 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
@@ -37,20 +37,20 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "21%",
-			"base": "28%",
+			"base": "29%",
 			"bull": "39%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-20T15:11:48.212Z",
+	"lastUpdated": "2026-03-21T00:31:44.122Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.61,
+		"score": 1.58,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.3,
+			"multiple": 19,
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
 		},
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 277.8,
+				"price": 276,
 				"price6mAgo": 324.6,
 				"price1mAgo": 314.2,
-				"low3m": 276.8,
-				"return6m": -14.4,
-				"return1m": -11.6,
+				"low3m": 275.8,
+				"return6m": -15,
+				"return1m": -12.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.9
+		"secondaryScore": 2.88
 	},
 	"qcs": {
 		"earningsScore": -5,

@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$117.6B USD",
-	"sharpeRatio": 1.6,
-	"expectedCAGR": "10% - 133%",
+	"marketCap": "$116.5B USD",
+	"sharpeRatio": 1.64,
+	"expectedCAGR": "11% - 136%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 66.7,
-		"forwardPE": 22.2,
-		"evEbitda": 41.9,
-		"evFcf": 23.1
+		"trailingPE": 68.1,
+		"forwardPE": 22,
+		"evEbitda": 40.8,
+		"evFcf": 22.5
 	},
 	"metrics": {
 		"roe": "15.5%",
@@ -24,42 +24,42 @@
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$111.47",
+	"currentPrice": "$110.38",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "10%",
-			"base": "69%",
-			"bull": "133%"
+			"bear": "11%",
+			"base": "71%",
+			"bull": "136%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-20T15:11:52.536Z",
+	"lastUpdated": "2026-03-21T00:31:47.072Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
+		"score": 1.04,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 22.2,
+			"multiple": 22,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 111.47,
+				"price": 110.38,
 				"price6mAgo": 189.56,
 				"price1mAgo": 100.8,
 				"low3m": 98,
-				"return6m": -41.2,
-				"return1m": 10.6,
+				"return6m": -41.8,
+				"return1m": 9.5,
 				"near3mLow": false
 			},
 			"revisions": {

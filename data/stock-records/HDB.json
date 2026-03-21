@@ -4,13 +4,13 @@
 	"group": "Emerging Markets",
 	"confidence": "medium",
 	"confidenceReason": "India's largest private bank by market cap. Consistent ~15% loan growth post-merger with HDFC Ltd. Low NPAs (~1.3%) and strong ROA (~1.9%). ADR trades at slight premium to local shares.",
-	"marketCap": "$131.4B USD",
-	"sharpeRatio": 2.43,
-	"expectedCAGR": "38% - 83%",
+	"marketCap": "$130.3B USD",
+	"sharpeRatio": 2.5,
+	"expectedCAGR": "39% - 85%",
 	"expectedVolatility": "~23%",
 	"valuation": {
-		"trailingPE": 17.8,
-		"forwardPE": 18.8,
+		"trailingPE": 18.1,
+		"forwardPE": 18.7,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -21,44 +21,44 @@
 	"targetPrice": "$42.95",
 	"bullCase": "India's banking sector is under-penetrated with credit-to-GDP at ~55% vs 150%+ in developed markets, giving HDFC Bank a multi-decade growth runway. The HDFC Ltd merger creates the largest private-sector balance sheet in India with cross-selling opportunities across mortgages, insurance, and asset management. Net interest margins remain best-in-class at ~3.5%. Digital adoption (PayZapp, SmartBUY) is accelerating fee income. Post-merger cost synergies are still being unlocked.",
 	"bearCase": "Post-merger integration is diluting ROE from ~17% to ~15% as the lower-yielding mortgage book gets absorbed. The RBI's tightening cycle has compressed NIMs. Intense competition from Jio Financial and other fintechs could pressure market share in unsecured lending. ADR investors face INR depreciation risk (~3-4% annual drag historically). Regulatory risk from RBI's increasing scrutiny of digital lending practices.",
-	"currentPrice": "$25.62",
+	"currentPrice": "$25.39",
 	"consensus": {
 		"tipranks": "$38",
 		"yahoo": "$42.95",
 		"stockanalysis": "$38"
 	},
 	"cagrModel": {
-		"ttmEPS": 1.44,
+		"ttmEPS": 1.4,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "38%",
-			"base": "68%",
-			"bull": "83%"
+			"bear": "39%",
+			"base": "69%",
+			"bull": "85%"
 		},
 		"basis": "GAAP diluted EPS (ADR); post 2:1 split Sep 2025"
 	},
-	"lastUpdated": "2026-03-20T15:11:44.126Z",
+	"lastUpdated": "2026-03-21T00:31:41.270Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.4,
+		"score": 1.39,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 18.8,
+			"multiple": 18.7,
 			"cvStock": 0.152,
 			"riskMultiplier": 1.043
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 25.62,
+				"price": 25.39,
 				"price6mAgo": 35.06,
 				"price1mAgo": 32.69,
-				"low3m": 25.48,
-				"return6m": -26.9,
-				"return1m": -21.6,
+				"low3m": 25.39,
+				"return6m": -27.6,
+				"return1m": -22.3,
 				"near3mLow": true
 			},
 			"revisions": {

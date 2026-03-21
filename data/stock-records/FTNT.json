@@ -7,21 +7,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 2.42,
+		"ttmEPS": 2.37,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
+			"bear": "-21%",
 			"base": "9%",
 			"bull": "47%"
 		}
 	},
-	"currentPrice": "$81.61",
-	"marketCap": "$60.7B USD",
+	"currentPrice": "$81.40",
+	"marketCap": "$60.5B USD",
 	"valuation": {
-		"trailingPE": 33.7,
-		"forwardPE": 24.7,
-		"evEbitda": 26.5,
-		"evFcf": 33.8
+		"trailingPE": 34.3,
+		"forwardPE": 24.6,
+		"evEbitda": 25.9,
+		"evFcf": 33
 	},
 	"metrics": {
 		"roe": "135.7%",
@@ -34,27 +34,27 @@
 		"yahoo": "$89.06"
 	},
 	"targetPrice": "$89.06",
-	"expectedCAGR": "-22% - 47%",
+	"expectedCAGR": "-21% - 47%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.63,
+		"score": 1.62,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 24.7,
+			"multiple": 24.6,
 			"cvStock": 0.063,
 			"riskMultiplier": 0.99
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 81.61,
+				"price": 81.4,
 				"price6mAgo": 85.01,
 				"price1mAgo": 75.6,
 				"low3m": 73.55,
-				"return6m": -4,
-				"return1m": 8,
+				"return6m": -4.2,
+				"return1m": 7.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,9 +70,9 @@
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-03-20T15:11:44.133Z",
+	"lastUpdated": "2026-03-21T00:31:41.236Z",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": 0.18,
+	"sharpeRatio": 0.19,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

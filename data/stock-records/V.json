@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
-	"marketCap": "$578.3B USD",
-	"sharpeRatio": 1.02,
-	"expectedCAGR": "8% - 50%",
+	"marketCap": "$581.5B USD",
+	"sharpeRatio": 0.98,
+	"expectedCAGR": "7% - 49%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 28.2,
-		"forwardPE": 20.6,
+		"forwardPE": 20.7,
 		"pegRatio": null,
-		"evEbitda": 19.9,
-		"evFcf": 26.2
+		"evEbitda": 20,
+		"evFcf": 26.3
 	},
 	"metrics": {
 		"fcfMargin": "~53%",
@@ -26,24 +26,24 @@
 	"targetPrice": "$400.20",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$299.96",
+	"currentPrice": "$301.62",
 	"consensus": {
 		"tipranks": "$400",
 		"yahoo": "$400.20",
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.64,
+		"ttmEPS": 10.71,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
+			"bear": "7%",
 			"base": "33%",
-			"bull": "50%"
+			"bull": "49%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-20T15:11:59.185Z",
+	"lastUpdated": "2026-03-21T00:31:51.297Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.42,
@@ -51,19 +51,19 @@
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.6,
-			"cvStock": 0.016,
-			"riskMultiplier": 0.962
+			"multiple": 20.7,
+			"cvStock": 0.015,
+			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 299.96,
+				"price": 301.62,
 				"price6mAgo": 344.36,
 				"price1mAgo": 306.52,
 				"low3m": 297.03,
-				"return6m": -12.9,
-				"return1m": -2.1,
+				"return6m": -12.4,
+				"return1m": -1.6,
 				"near3mLow": true
 			},
 			"revisions": {

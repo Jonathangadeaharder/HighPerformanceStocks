@@ -4,16 +4,16 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$30.1B USD",
-	"sharpeRatio": 1.19,
-	"expectedCAGR": "4% - 91%",
+	"marketCap": "$30.3B USD",
+	"sharpeRatio": 1.17,
+	"expectedCAGR": "3% - 90%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 33.6,
-		"forwardPE": 18.5,
+		"trailingPE": 34.2,
+		"forwardPE": 18.6,
 		"pegRatio": null,
-		"evEbitda": 24.4,
-		"evFcf": 22.9
+		"evEbitda": 24.1,
+		"evFcf": 22.7
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$182.97",
+	"currentPrice": "$184.07",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -37,33 +37,33 @@
 		"epsGrowth": "19%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "48%",
-			"bull": "91%"
+			"bear": "3%",
+			"base": "47%",
+			"bull": "90%"
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-03-20T15:11:59.112Z",
+	"lastUpdated": "2026-03-21T00:31:51.282Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.94,
+		"score": 0.95,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "Forward P/E",
-			"multiple": 18.5,
+			"multiple": 18.6,
 			"cvStock": 0.03,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 182.97,
+				"price": 184.07,
 				"price6mAgo": 281.12,
 				"price1mAgo": 172.17,
 				"low3m": 168.14,
-				"return6m": -34.9,
-				"return1m": 6.3,
+				"return6m": -34.5,
+				"return1m": 6.9,
 				"near3mLow": false
 			},
 			"revisions": {

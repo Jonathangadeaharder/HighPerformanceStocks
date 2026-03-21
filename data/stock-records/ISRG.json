@@ -4,16 +4,16 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$171.7B USD",
-	"sharpeRatio": 0.35,
-	"expectedCAGR": "-22% - 55%",
+	"marketCap": "$169.8B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "-21% - 57%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 61.4,
-		"forwardPE": 42.2,
+		"trailingPE": 61,
+		"forwardPE": 41.8,
 		"pegRatio": null,
-		"evEbitda": 46.3,
-		"evFcf": 72.4
+		"evEbitda": 46.1,
+		"evFcf": 72.1
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -26,44 +26,44 @@
 	"targetPrice": "$606.53",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$483.36",
+	"currentPrice": "$477.97",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$606.53"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.87,
+		"ttmEPS": 7.84,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "25%",
-			"bull": "55%"
+			"bear": "-21%",
+			"base": "27%",
+			"bull": "57%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-20T15:11:46.068Z",
+	"lastUpdated": "2026-03-21T00:31:42.778Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.92,
+		"score": 2.9,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 42.2,
+			"multiple": 41.8,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 483.36,
+				"price": 477.97,
 				"price6mAgo": 444.55,
 				"price1mAgo": 492.1,
 				"low3m": 458,
-				"return6m": 8.7,
-				"return1m": -1.8,
-				"near3mLow": false
+				"return6m": 7.5,
+				"return1m": -2.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,

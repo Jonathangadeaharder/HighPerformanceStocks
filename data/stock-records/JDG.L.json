@@ -22,8 +22,8 @@
 	"valuation": {
 		"trailingPE": 23.1,
 		"forwardPE": 18.5,
-		"evEbitda": 9.5,
-		"evFcf": 13.2
+		"evEbitda": 9.7,
+		"evFcf": 13.5
 	},
 	"metrics": {
 		"roe": "12.9%",
@@ -66,7 +66,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T15:11:46.146Z",
+	"lastUpdated": "2026-03-21T00:31:42.792Z",
 	"expectedVolatility": "~43%",
 	"sharpeRatio": 1.02,
 	"qcs": {

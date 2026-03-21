@@ -4,13 +4,13 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "high",
 	"confidenceReason": "FRE margin ~69% on $638B AUM with permanent capital vehicle flywheel. Market misunderstands recurring permanent capital vehicle revenues.",
-	"marketCap": "$82.8B USD",
-	"sharpeRatio": 1.36,
-	"expectedCAGR": "25% - 109%",
+	"marketCap": "$83.4B USD",
+	"sharpeRatio": 1.32,
+	"expectedCAGR": "22% - 108%",
 	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 13.7,
-		"forwardPE": 11.3,
+		"trailingPE": 13.9,
+		"forwardPE": 11.4,
 		"pegRatio": null,
 		"evEbitda": null
 	},
@@ -23,13 +23,13 @@
 		"ruleOf40": "104%",
 		"bessemerRuleOfX": "158%"
 	},
-	"targetPrice": "$140.24",
+	"targetPrice": "$136.77",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
-	"currentPrice": "$89.44",
+	"currentPrice": "$90",
 	"consensus": {
 		"tipranks": "$149",
-		"yahoo": "$140.24",
+		"yahoo": "$136.77",
 		"stockanalysis": "$149"
 	},
 	"cagrModel": {
@@ -37,33 +37,33 @@
 		"epsGrowth": "20%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "25%",
-			"base": "57%",
-			"bull": "109%"
+			"bear": "22%",
+			"base": "52%",
+			"bull": "108%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-20T15:11:47.121Z",
+	"lastUpdated": "2026-03-21T00:31:43.440Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.93,
+		"score": 0.94,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
-			"multiple": 19,
-			"cvStock": 0.047,
-			"riskMultiplier": 0.98
+			"multiple": 19.1,
+			"cvStock": 0.048,
+			"riskMultiplier": 0.981
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 89.44,
+				"price": 90,
 				"price6mAgo": 146.95,
 				"price1mAgo": 92.19,
 				"low3m": 82.67,
-				"return6m": -39.1,
-				"return1m": -3,
+				"return6m": -38.8,
+				"return1m": -2.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -77,26 +77,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.55
+		"secondaryScore": 0.56
 	},
 	"qcs": {
-		"earningsScore": 2.62,
+		"earningsScore": 2.56,
 		"flowScore": 2.5,
-		"revisionsScore": -1.58,
-		"totalScore": 3.54,
+		"revisionsScore": -1.67,
+		"totalScore": 3.39,
 		"raw": {
 			"avgSurprisePct": 3.08,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
 			"downRevisions": 6,
-			"totalAnalysts": 19
+			"totalAnalysts": 18
 		}
 	},
 	"description": "KKR & Co. Inc.",
 	"analystTargets": {
-		"low": 112,
-		"mean": 140.24,
+		"low": 110,
+		"mean": 136.77,
 		"high": 187
 	}
 }

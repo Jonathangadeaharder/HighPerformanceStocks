@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$166.0B USD",
-	"sharpeRatio": 0.6,
-	"expectedCAGR": "6% - 67%",
+	"marketCap": "$165.2B USD",
+	"sharpeRatio": 0.62,
+	"expectedCAGR": "7% - 68%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 47.9,
-		"forwardPE": 30.9,
+		"trailingPE": 49.5,
+		"forwardPE": 30.8,
 		"pegRatio": 1.44,
-		"evEbitda": 40.9,
-		"evFcf": 47.4
+		"evEbitda": 39.2,
+		"evFcf": 45.5
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
@@ -28,25 +28,25 @@
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$131.84",
+	"currentPrice": "$131.22",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$177.74",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.75,
+		"ttmEPS": 2.65,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "6%",
+			"bear": "7%",
 			"base": "35%",
-			"bull": "67%"
+			"bull": "68%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-20T15:11:37.021Z",
+	"lastUpdated": "2026-03-21T00:31:36.327Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.47,
@@ -54,19 +54,19 @@
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 30.9,
+			"multiple": 30.8,
 			"cvStock": 0.082,
 			"riskMultiplier": 1.001
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 131.84,
+				"price": 131.22,
 				"price6mAgo": 145.4,
 				"price1mAgo": 127.43,
 				"low3m": 120,
-				"return6m": -9.3,
-				"return1m": 3.5,
+				"return6m": -9.8,
+				"return1m": 3,
 				"near3mLow": false
 			},
 			"revisions": {

@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1499.7B USD",
-	"sharpeRatio": 1.29,
+	"marketCap": "$1501.7B USD",
+	"sharpeRatio": 1.26,
 	"expectedCAGR": "14% - 93%",
-	"expectedVolatility": "~38%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 25.2,
+		"trailingPE": 25.8,
 		"forwardPE": 16.5,
 		"pegRatio": 1.05,
-		"evEbitda": 15.1,
-		"evFcf": 65.6
+		"evEbitda": 14.8,
+		"evFcf": 64.2
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
@@ -29,24 +29,24 @@
 	"targetPrice": "$863.63",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$592.86",
+	"currentPrice": "$593.66",
 	"consensus": {
 		"tipranks": "$836",
 		"yahoo": "$863.63",
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
-		"ttmEPS": 23.48,
+		"ttmEPS": 22.97,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "14%",
-			"base": "46%",
+			"base": "45%",
 			"bull": "93%"
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-20T15:11:50.374Z",
+	"lastUpdated": "2026-03-21T00:31:45.545Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.1,
@@ -61,12 +61,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 592.86,
+				"price": 593.66,
 				"price6mAgo": 765.16,
 				"price1mAgo": 637.25,
-				"low3m": 592.05,
-				"return6m": -22.5,
-				"return1m": -7,
+				"low3m": 587.27,
+				"return6m": -22.4,
+				"return1m": -6.8,
 				"near3mLow": true
 			},
 			"revisions": {

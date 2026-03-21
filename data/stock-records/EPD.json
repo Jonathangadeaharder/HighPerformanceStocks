@@ -5,15 +5,15 @@
 	"confidence": "medium",
 	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
 	"marketCap": "$81.2B USD",
-	"sharpeRatio": -0.39,
-	"expectedCAGR": "-15% - 9%",
+	"sharpeRatio": -0.11,
+	"expectedCAGR": "-15% - 20%",
 	"expectedVolatility": "~19%",
 	"valuation": {
 		"trailingPE": 13.4,
 		"forwardPE": 12,
 		"pegRatio": null,
 		"evEbitda": 12.1,
-		"evFcf": 5202.1
+		"evFcf": 5212.8
 	},
 	"metrics": {
 		"fcfMargin": "~0%",
@@ -23,13 +23,13 @@
 		"netDebtEbitda": "3.5x",
 		"ruleOf40": "-3%"
 	},
-	"targetPrice": "$37.70",
+	"targetPrice": "$38.20",
 	"bullCase": "Enterprise Products Partners is one of the most financially disciplined MLPs in North America, with a 1.7x+ distribution coverage ratio, AA-/Baa1 credit rating, and a 22-year track record of consecutive distribution increases. The ~7% yield alone provides equity-like total returns, and organic growth from new natural gas infrastructure projects adds upside.",
 	"bearCase": "Midstream infrastructure is a terminal-value business as the energy transition progresses. Volume risk increases if US LNG export permitting slows or if industrial natural gas demand peaks. The 4.0x+ leverage is manageable but constrains financial flexibility.",
 	"currentPrice": "$37.56",
 	"consensus": {
 		"tipranks": "$40",
-		"yahoo": "$37.70"
+		"yahoo": "$38.20"
 	},
 	"cagrModel": {
 		"ttmEPS": 2.66,
@@ -37,12 +37,12 @@
 		"dividendYield": "6%",
 		"scenarios": {
 			"bear": "-15%",
-			"base": "0%",
-			"bull": "9%"
+			"base": "2%",
+			"bull": "20%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-20T15:11:41.967Z",
+	"lastUpdated": "2026-03-21T00:31:39.824Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1,
@@ -93,7 +93,7 @@
 	"description": "Enterprise Products Partners L.P. provides midstream energy services to producers and consumers of natural gas, natural gas liquids (NGLs), crude oil, petrochemicals, and refined products.",
 	"analystTargets": {
 		"low": 32,
-		"mean": 37.7,
-		"high": 41
+		"mean": 38.2,
+		"high": 45
 	}
 }

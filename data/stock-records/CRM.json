@@ -4,13 +4,13 @@
 	"group": "Data & Software Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$182.0B USD",
-	"sharpeRatio": 1.9,
-	"expectedCAGR": "-2% - 144%",
+	"marketCap": "$183.1B USD",
+	"sharpeRatio": 1.87,
+	"expectedCAGR": "-3% - 143%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 24.9,
-		"forwardPE": 13,
+		"trailingPE": 25,
+		"forwardPE": 13.1,
 		"pegRatio": 0.88,
 		"evEbitda": 15,
 		"evFcf": 11.5
@@ -25,44 +25,44 @@
 	"targetPrice": "$273.66",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$194.28",
+	"currentPrice": "$195.38",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$273.66",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.8,
+		"ttmEPS": 7.82,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "41%",
-			"bull": "144%"
+			"bear": "-3%",
+			"base": "40%",
+			"bull": "143%"
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-20T15:11:40.923Z",
+	"lastUpdated": "2026-03-21T00:31:39.096Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.86,
+		"score": 0.87,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 13,
+			"multiple": 13.1,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 194.28,
+				"price": 195.38,
 				"price6mAgo": 249.69,
 				"price1mAgo": 178.16,
 				"low3m": 174.57,
-				"return6m": -22.2,
-				"return1m": 9,
+				"return6m": -21.8,
+				"return1m": 9.7,
 				"near3mLow": false
 			},
 			"revisions": {

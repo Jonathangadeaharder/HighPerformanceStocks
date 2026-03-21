@@ -4,16 +4,16 @@
 	"group": "The Capital Compounders",
 	"confidence": "medium",
 	"confidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
-	"marketCap": "$23.8B USD",
+	"marketCap": "$23.6B USD",
 	"sharpeRatio": 0.25,
 	"expectedCAGR": "0% - 19%",
 	"expectedVolatility": "~20%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 11.2,
-		"forwardPE": 15.1,
-		"evFcf": -36.9
+		"trailingPE": 11.1,
+		"forwardPE": 14.9,
+		"evFcf": -36.8
 	},
 	"metrics": {
 		"roe": "11.8%",
@@ -25,19 +25,19 @@
 	"targetPrice": "$2081.75",
 	"bullCase": "Markel's ongoing restructuring is bearing fruit as it exits lower-margin reinsurance to focus on highly profitable specialty lines. The 'Markel Ventures' private equity arm provides a robust, non-correlated earnings floor, driving margin expansion.",
 	"bearCase": "Restructuring execution risk remains. If the combined ratio slips above 95%, the compounding math breaks down and the historical premium multiple will face permanent compression.",
-	"currentPrice": "$1888.98",
+	"currentPrice": "$1875.35",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "0%",
-			"base": "10%",
+			"base": "11%",
 			"bull": "19%"
 		},
 		"epsGrowth": "8%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline NOTE: screener engine should be fPERG/tPERG as dividend yield is 0%; totalReturn routing appears to be a data pipeline error — re-run update-data to recalculate.",
-		"ttmEPS": 169.15
+		"ttmEPS": 168.59
 	},
-	"lastUpdated": "2026-03-20T15:11:50.386Z",
+	"lastUpdated": "2026-03-21T00:31:45.595Z",
 	"consensus": {
 		"yahoo": "$2081.75"
 	},
@@ -55,12 +55,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1888.98,
+				"price": 1875.35,
 				"price6mAgo": 1923.06,
 				"price1mAgo": 2066.61,
-				"low3m": 1874.86,
-				"return6m": -1.8,
-				"return1m": -8.6,
+				"low3m": 1866,
+				"return6m": -2.5,
+				"return1m": -9.3,
 				"near3mLow": true
 			},
 			"revisions": {

@@ -9,21 +9,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 34.61,
+		"ttmEPS": 34.1,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "11%",
-			"bull": "24%"
+			"bear": "-3%",
+			"base": "13%",
+			"bull": "25%"
 		}
 	},
-	"currentPrice": "$893.47",
-	"marketCap": "$110.3B USD",
+	"currentPrice": "$885.84",
+	"marketCap": "$109.3B USD",
 	"valuation": {
-		"trailingPE": 25.8,
-		"forwardPE": 20.2,
-		"evEbitda": 19.8,
-		"evFcf": 12.8
+		"trailingPE": 26,
+		"forwardPE": 20,
+		"evEbitda": 19.5,
+		"evFcf": 12.6
 	},
 	"metrics": {
 		"fcfMargin": "~2%",
@@ -32,30 +32,30 @@
 		"ruleOf40": "14%"
 	},
 	"consensus": {
-		"yahoo": "$995.27"
+		"yahoo": "$997.67"
 	},
-	"targetPrice": "$995.27",
-	"expectedCAGR": "-4% - 24%",
+	"targetPrice": "$997.67",
+	"expectedCAGR": "-3% - 25%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.29,
+		"score": 1.28,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 20.2,
-			"cvStock": 0.008,
-			"riskMultiplier": 0.957
+			"multiple": 20,
+			"cvStock": 0.01,
+			"riskMultiplier": 0.958
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 893.47,
+				"price": 885.84,
 				"price6mAgo": 697,
 				"price1mAgo": 949.25,
 				"low3m": 794.59,
-				"return6m": 28.2,
-				"return1m": -5.9,
+				"return6m": 27.1,
+				"return1m": -6.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,9 +69,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T15:11:49.269Z",
+	"lastUpdated": "2026-03-21T00:31:44.845Z",
 	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.2,
+	"sharpeRatio": 0.23,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -89,7 +89,7 @@
 	"description": "McKesson Corporation provides healthcare services in the United States and internationally.",
 	"analystTargets": {
 		"low": 860,
-		"mean": 995.27,
+		"mean": 997.67,
 		"high": 1107
 	}
 }

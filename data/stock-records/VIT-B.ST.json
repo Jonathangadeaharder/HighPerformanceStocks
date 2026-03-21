@@ -4,16 +4,16 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
-	"marketCap": "9.0B SEK",
-	"sharpeRatio": 2.6,
-	"expectedCAGR": "77% - 156%",
-	"expectedVolatility": "~43%",
+	"marketCap": "8.8B SEK",
+	"sharpeRatio": 2.64,
+	"expectedCAGR": "80% - 161%",
+	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 20.6,
-		"forwardPE": 17.6,
+		"trailingPE": 20.3,
+		"forwardPE": 17.3,
 		"pegRatio": null,
-		"evEbitda": 8.8,
-		"evFcf": 20.9
+		"evEbitda": 8.6,
+		"evFcf": 20.4
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -26,7 +26,7 @@
 	"targetPrice": "456 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "226 SEK",
+	"currentPrice": "222 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
 		"yahoo": "456 SEK"
@@ -36,33 +36,33 @@
 		"epsGrowth": "12%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "77%",
-			"base": "101%",
-			"bull": "156%"
+			"bear": "80%",
+			"base": "105%",
+			"bull": "161%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-20T15:11:59.100Z",
+	"lastUpdated": "2026-03-21T00:31:51.271Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.72,
+		"score": 0.7,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 8.8,
+			"multiple": 8.6,
 			"cvStock": 0.045,
 			"riskMultiplier": 0.979
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 226.4,
+				"price": 222.4,
 				"price6mAgo": 341,
 				"price1mAgo": 237,
 				"low3m": 221.8,
-				"return6m": -33.6,
-				"return1m": -4.5,
+				"return6m": -34.8,
+				"return1m": -6.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -76,7 +76,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.44
+		"secondaryScore": 1.41
 	},
 	"qcs": {
 		"earningsScore": 5,

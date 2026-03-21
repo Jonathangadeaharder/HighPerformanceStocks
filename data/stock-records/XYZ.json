@@ -4,16 +4,16 @@
 	"group": "Fintech",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$36.0B USD",
+	"marketCap": "$36.1B USD",
 	"sharpeRatio": 0.71,
 	"expectedCAGR": "-14% - 101%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 28.2,
-		"forwardPE": 12.5,
+		"trailingPE": 28.1,
+		"forwardPE": 12.6,
 		"pegRatio": null,
-		"evEbitda": 17.9,
-		"evFcf": -35.9
+		"evEbitda": 18,
+		"evFcf": -36.1
 	},
 	"metrics": {
 		"fcfMargin": "~-4%",
@@ -23,17 +23,17 @@
 		"netDebtEbitda": "0.9x",
 		"ruleOf40": "-1%"
 	},
-	"targetPrice": "$86.40",
+	"targetPrice": "$86.43",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$59.23",
+	"currentPrice": "$59.37",
 	"consensus": {
 		"tipranks": "$81",
-		"yahoo": "$86.40",
+		"yahoo": "$86.43",
 		"stockanalysis": "$81"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.1,
+		"ttmEPS": 2.11,
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -43,27 +43,27 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-20T15:12:01.106Z",
+	"lastUpdated": "2026-03-21T00:31:52.686Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.08,
+		"score": 1.09,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.5,
-			"cvStock": 0.144,
+			"multiple": 12.6,
+			"cvStock": 0.145,
 			"riskMultiplier": 1.039
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 59.23,
+				"price": 59.37,
 				"price6mAgo": 77.41,
 				"price1mAgo": 50.75,
 				"low3m": 48.21,
-				"return6m": -23.5,
-				"return1m": 16.7,
+				"return6m": -23.3,
+				"return1m": 17,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,23 +78,23 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": -4.36,
+		"earningsScore": -4.33,
 		"flowScore": 0,
-		"revisionsScore": 3.82,
-		"totalScore": -0.54,
+		"revisionsScore": 3.92,
+		"totalScore": -0.41,
 		"raw": {
 			"avgSurprisePct": -15.68,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 29,
 			"downRevisions": 0,
-			"totalAnalysts": 38
+			"totalAnalysts": 37
 		}
 	},
 	"description": "Block, Inc., together with its subsidiaries, builds ecosystems focused on commerce and financial products and services in the United States and internationally.",
 	"analystTargets": {
 		"low": 51,
-		"mean": 86.4,
+		"mean": 86.43,
 		"high": 119.16
 	}
 }

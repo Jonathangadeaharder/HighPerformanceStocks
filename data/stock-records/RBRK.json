@@ -4,14 +4,14 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
-	"marketCap": "$10.0B USD",
-	"sharpeRatio": 1.47,
-	"expectedCAGR": "40% - 151%",
+	"marketCap": "$9.9B USD",
+	"sharpeRatio": 1.43,
+	"expectedCAGR": "30% - 156%",
 	"expectedVolatility": "~62%",
 	"valuation": {
-		"forwardPE": 85.2,
-		"evEbitda": -31.4,
-		"evFcf": 23.9
+		"forwardPE": 84,
+		"evEbitda": -30.3,
+		"evFcf": 23.1
 	},
 	"metrics": {
 		"fcfMargin": "~31%",
@@ -19,23 +19,23 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "77%"
 	},
-	"targetPrice": "$87.70",
+	"targetPrice": "$86.71",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
 	"bearCase": "Rubrik faces intense competition from Cohesity (now merged with Veritas), Commvault, Veeam, and Zerto in data protection. The path to sustained GAAP profitability requires continued ARR growth at high SBC dilution. Microsoft Backup and AWS native backup services could commoditize the lower end of the market.",
-	"currentPrice": "$50.17",
+	"currentPrice": "$49.28",
 	"cagrModel": {
 		"epsGrowth": "0%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "40%",
-			"base": "75%",
-			"bull": "151%"
+			"bear": "30%",
+			"base": "76%",
+			"bull": "156%"
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-20T15:11:54.698Z",
+	"lastUpdated": "2026-03-21T00:31:48.407Z",
 	"consensus": {
-		"yahoo": "$87.70"
+		"yahoo": "$86.71"
 	},
 	"screener": {
 		"engine": "totalReturn",
@@ -51,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 50.17,
+				"price": 49.28,
 				"price6mAgo": 80.49,
 				"price1mAgo": 47.26,
 				"low3m": 46.36,
-				"return6m": -37.7,
-				"return1m": 6.2,
+				"return6m": -38.8,
+				"return1m": 4.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,21 +73,21 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 3.04,
-		"totalScore": 13.04,
+		"revisionsScore": 2.92,
+		"totalScore": 12.92,
 		"raw": {
 			"avgSurprisePct": 109.78,
 			"netInsiderShares": 3841265,
 			"instFlowTrend": "positive",
 			"upRevisions": 17,
 			"downRevisions": 3,
-			"totalAnalysts": 23
+			"totalAnalysts": 24
 		}
 	},
 	"description": "Rubrik, Inc. provides data security solutions to individuals and businesses worldwide.",
 	"analystTargets": {
-		"low": 70,
-		"mean": 87.7,
+		"low": 64,
+		"mean": 86.71,
 		"high": 126
 	}
 }

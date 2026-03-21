@@ -4,16 +4,16 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$104.9B USD",
-	"sharpeRatio": 0.57,
-	"expectedCAGR": "-11% - 71%",
+	"marketCap": "$103.7B USD",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "-10% - 73%",
 	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 66.9,
+		"forwardPE": 66.2,
 		"pegRatio": null,
 		"evEbitda": null,
-		"evFcf": 65
+		"evFcf": 61.9
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$490.48",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$413.43",
+	"currentPrice": "$409",
 	"consensus": {
 		"tipranks": "$550",
 		"yahoo": "$490.48"
@@ -36,33 +36,33 @@
 		"epsGrowth": "32%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "19%",
-			"bull": "71%"
+			"bear": "-10%",
+			"base": "20%",
+			"bull": "73%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-20T15:11:40.938Z",
+	"lastUpdated": "2026-03-21T00:31:39.095Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.17,
+		"score": 2.14,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",
-			"multiple": 66.9,
+			"multiple": 66.2,
 			"cvStock": 0.087,
 			"riskMultiplier": 1.004
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 413.43,
+				"price": 409,
 				"price6mAgo": 493.14,
 				"price1mAgo": 350.33,
 				"low3m": 342.72,
-				"return6m": -16.2,
-				"return1m": 18,
+				"return6m": -17.1,
+				"return1m": 16.7,
 				"near3mLow": false
 			},
 			"revisions": {

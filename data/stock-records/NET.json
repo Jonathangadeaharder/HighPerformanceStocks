@@ -4,61 +4,61 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
-	"marketCap": "$77.9B USD",
-	"sharpeRatio": -0.12,
-	"expectedCAGR": "-39% - 36%",
+	"marketCap": "$75.8B USD",
+	"sharpeRatio": -0.07,
+	"expectedCAGR": "-37% - 39%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"forwardPE": 153.1,
+		"forwardPE": 149.1,
 		"evEbitda": null,
-		"evFcf": 199.3
+		"evFcf": 193.9
 	},
 	"metrics": {
 		"roe": "-8.2%",
 		"fcfMargin": "~18%",
-		"fcfYield": "~0%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "51%"
 	},
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$221.19",
+	"currentPrice": "$215.42",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-39%",
-			"base": "5%",
-			"bull": "36%"
+			"bear": "-37%",
+			"base": "8%",
+			"bull": "39%"
 		},
 		"ttmEPS": 1.12,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-20T15:11:51.555Z",
+	"lastUpdated": "2026-03-21T00:31:46.366Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.76,
+		"score": 5.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 153.1,
+			"multiple": 149.1,
 			"cvStock": 0.105,
 			"riskMultiplier": 1.015
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 221.19,
+				"price": 215.42,
 				"price6mAgo": 228.28,
 				"price1mAgo": 160.19,
 				"low3m": 158.83,
-				"return6m": -3.1,
-				"return1m": 38.1,
+				"return6m": -5.6,
+				"return1m": 34.5,
 				"near3mLow": false
 			},
 			"revisions": {

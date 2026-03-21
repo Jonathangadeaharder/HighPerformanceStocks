@@ -6,8 +6,8 @@
 	"confidence": "medium",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
 	"marketCap": "$65.4B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "-3% - 31%",
+	"sharpeRatio": 0.42,
+	"expectedCAGR": "-3% - 32%",
 	"expectedVolatility": "~24%",
 	"valuation": {
 		"trailingPE": 12.2,
@@ -27,7 +27,7 @@
 	"targetPrice": "$21.93",
 	"bullCase": "Energy Transfer has the most diversified midstream footprint in the US, with exposure to crude, natural gas, NGLs, and LNG exports. The $0.32/unit quarterly distribution yields 7-8% and is covered 1.9x. Permian Basin volume growth provides organic throughput growth without new capital commitments.",
 	"bearCase": "At 4.6x Net Debt/EBITDA, ET has the highest leverage among major midstream peers. A deterioration in credit markets, distribution cut risk, or volume decline from customer bankruptcies could trigger significant unit price declines.",
-	"currentPrice": "$19.02",
+	"currentPrice": "$19.01",
 	"consensus": {
 		"tipranks": "$23",
 		"yahoo": "$21.93"
@@ -39,11 +39,11 @@
 		"scenarios": {
 			"bear": "-3%",
 			"base": "15%",
-			"bull": "31%"
+			"bull": "32%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-20T15:11:42.190Z",
+	"lastUpdated": "2026-03-21T00:31:39.866Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 7.34,
@@ -58,7 +58,7 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 19.02,
+				"price": 19.01,
 				"price6mAgo": 17.13,
 				"price1mAgo": 18.82,
 				"low3m": 16.18,

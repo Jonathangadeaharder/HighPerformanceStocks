@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
-	"marketCap": "$3641.4B USD",
+	"marketCap": "$3641.2B USD",
 	"sharpeRatio": -0.02,
 	"expectedCAGR": "-39% - 47%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 27.8,
+		"trailingPE": 28.4,
 		"forwardPE": 22.4,
 		"pegRatio": 2.3,
-		"evEbitda": 24.3,
-		"evFcf": 96
+		"evEbitda": 23.8,
+		"evFcf": 94
 	},
 	"metrics": {
 		"fcfMargin": "~9%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$376.75",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$301.02",
+	"currentPrice": "$301",
 	"consensus": {
 		"tipranks": "$352",
 		"yahoo": "$376.75",
@@ -44,7 +44,7 @@
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-03-20T15:11:44.038Z",
+	"lastUpdated": "2026-03-21T00:31:41.294Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.86,
@@ -59,7 +59,7 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 301.02,
+				"price": 301,
 				"price6mAgo": 252.53,
 				"price1mAgo": 311.49,
 				"low3m": 294.08,

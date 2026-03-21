@@ -5,7 +5,7 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1705.5B USD",
+	"marketCap": "$1707.6B USD",
 	"sharpeRatio": 0.74,
 	"expectedCAGR": "7% - 58%",
 	"scenarios": {
@@ -26,7 +26,7 @@
 	"targetPrice": "$430.65",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$328.83",
+	"currentPrice": "$329.24",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$430.65",
@@ -43,7 +43,7 @@
 		},
 		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-03-20T15:11:57.974Z",
+	"lastUpdated": "2026-03-21T00:31:50.531Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1,
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 328.83,
+				"price": 329.24,
 				"price6mAgo": 272.63,
 				"price1mAgo": 370.04,
 				"low3m": 286.38,
-				"return6m": 20.6,
-				"return1m": -11.1,
+				"return6m": 20.8,
+				"return1m": -11,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -84,10 +84,10 @@
 		"discount": -52
 	},
 	"valuation": {
-		"trailingPE": 31.7,
+		"trailingPE": 32.7,
 		"forwardPE": 18.3,
 		"evEbitda": null,
-		"evFcf": 10.6
+		"evFcf": 10.2
 	},
 	"expectedVolatility": "~38%",
 	"qcs": {

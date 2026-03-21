@@ -11,18 +11,18 @@
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-15%",
-			"base": "36%",
-			"bull": "74%"
+			"base": "37%",
+			"bull": "75%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$206.69",
-	"marketCap": "$2218.8B USD",
+	"currentPrice": "$205.37",
+	"marketCap": "$2204.6B USD",
 	"valuation": {
-		"trailingPE": 28.9,
-		"forwardPE": 22.1,
-		"evEbitda": 15.8,
-		"evFcf": 96.5
+		"trailingPE": 29.2,
+		"forwardPE": 22,
+		"evEbitda": 15.5,
+		"evFcf": 95
 	},
 	"metrics": {
 		"roe": "22.3%",
@@ -32,12 +32,12 @@
 		"ruleOf40": "17%"
 	},
 	"consensus": {
-		"yahoo": "$280.55"
+		"yahoo": "$280.47"
 	},
-	"targetPrice": "$280.55",
-	"expectedCAGR": "-15% - 74%",
+	"targetPrice": "$280.47",
+	"expectedCAGR": "-15% - 75%",
 	"expectedVolatility": "~35%",
-	"sharpeRatio": 0.71,
+	"sharpeRatio": 0.73,
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.06,
@@ -45,20 +45,20 @@
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 22.1,
+			"multiple": 22,
 			"cvStock": 0.173,
 			"riskMultiplier": 1.056
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 206.69,
+				"price": 205.37,
 				"price6mAgo": 227.63,
 				"price1mAgo": 205.27,
 				"low3m": 196,
-				"return6m": -9.2,
-				"return1m": 0.7,
-				"near3mLow": false
+				"return6m": -9.8,
+				"return1m": 0,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -73,7 +73,7 @@
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-20T15:11:36.854Z",
+	"lastUpdated": "2026-03-21T00:31:36.305Z",
 	"intrinsicValue": {
 		"dcf": 162.67,
 		"date": "2026-03-20",
@@ -96,7 +96,7 @@
 	"description": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally.",
 	"analystTargets": {
 		"low": 175,
-		"mean": 280.55,
+		"mean": 280.47,
 		"high": 360
 	}
 }

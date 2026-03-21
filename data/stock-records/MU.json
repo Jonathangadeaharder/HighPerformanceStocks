@@ -4,16 +4,16 @@
 	"group": "Disqualified",
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$482.3B USD",
-	"sharpeRatio": -0.09,
-	"expectedCAGR": "-54% - 52%",
-	"expectedVolatility": "~64%",
+	"marketCap": "$476.9B USD",
+	"sharpeRatio": 0.11,
+	"expectedCAGR": "-54% - 77%",
+	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 40.7,
-		"forwardPE": 4.5,
+		"trailingPE": 20,
+		"forwardPE": 4.4,
 		"pegRatio": null,
-		"evEbitda": 13.5,
-		"evFcf": 171.6
+		"evEbitda": 12.8,
+		"evFcf": 163.3
 	},
 	"metrics": {
 		"fcfMargin": "~5%",
@@ -23,13 +23,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "201%"
 	},
-	"targetPrice": "$432.49",
+	"targetPrice": "$512.67",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$428.53",
+	"currentPrice": "$422.90",
 	"consensus": {
 		"tipranks": "$431",
-		"yahoo": "$432.49",
+		"yahoo": "$512.67",
 		"stockanalysis": "$359"
 	},
 	"cagrModel": {
@@ -38,12 +38,12 @@
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-54%",
-			"base": "1%",
-			"bull": "52%"
+			"base": "21%",
+			"bull": "77%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-20T15:11:51.428Z",
+	"lastUpdated": "2026-03-21T00:31:46.303Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.39,
@@ -51,19 +51,19 @@
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 4.5,
-			"cvStock": 0.27,
-			"riskMultiplier": 3.713
+			"multiple": 4.4,
+			"cvStock": 0.268,
+			"riskMultiplier": 3.793
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 428.53,
+				"price": 422.9,
 				"price6mAgo": 164.62,
 				"price1mAgo": 420.97,
 				"low3m": 251.75,
-				"return6m": 160.3,
-				"return1m": 1.8,
+				"return6m": 156.9,
+				"return1m": 0.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -72,31 +72,31 @@
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 20.6,
-				"quarter": "2025-11"
+				"surprise": 36,
+				"quarter": "2026-02"
 			}
 		},
 		"note": "(CYCLICAL EPS)"
 	},
 	"cyclical": true,
 	"qcs": {
-		"earningsScore": 2.07,
+		"earningsScore": 3.07,
 		"flowScore": 5,
-		"revisionsScore": 1.79,
-		"totalScore": 8.86,
+		"revisionsScore": 1.85,
+		"totalScore": 9.92,
 		"raw": {
-			"avgSurprisePct": 13.94,
+			"avgSurprisePct": 20.57,
 			"netInsiderShares": 867560,
 			"instFlowTrend": "positive",
 			"upRevisions": 10,
 			"downRevisions": 0,
-			"totalAnalysts": 28
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Micron Technology, Inc. designs, develops, manufactures, and sells memory and storage products in the United States, Taiwan, Japan, Mainland China, Hong Kong, Europe, and internationally.",
 	"analystTargets": {
 		"low": 196,
-		"mean": 432.49,
-		"high": 650
+		"mean": 512.67,
+		"high": 750
 	}
 }

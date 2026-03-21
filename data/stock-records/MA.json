@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$439.9B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "12% - 50%",
+	"marketCap": "$442.9B USD",
+	"sharpeRatio": 1.06,
+	"expectedCAGR": "11% - 49%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 29.9,
-		"forwardPE": 21.8,
+		"trailingPE": 29.8,
+		"forwardPE": 21.9,
 		"pegRatio": null,
-		"evEbitda": 21.8,
-		"evFcf": 27.5
+		"evEbitda": 22,
+		"evFcf": 27.8
 	},
 	"metrics": {
 		"fcfMargin": "~50%",
@@ -26,44 +26,44 @@
 	"targetPrice": "$662.59",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$492.95",
+	"currentPrice": "$496.32",
 	"consensus": {
 		"tipranks": "$659",
 		"yahoo": "$662.59",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.5,
+		"ttmEPS": 16.68,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "12%",
+			"bear": "11%",
 			"base": "34%",
-			"bull": "50%"
+			"bull": "49%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-20T15:11:49.319Z",
+	"lastUpdated": "2026-03-21T00:31:44.841Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.4,
+		"score": 1.41,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 21.9,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.963
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 492.95,
+				"pass": true,
+				"price": 496.32,
 				"price6mAgo": 584.49,
 				"price1mAgo": 496.03,
 				"low3m": 487.31,
-				"return6m": -15.7,
-				"return1m": -0.6,
+				"return6m": -15.1,
+				"return1m": 0.1,
 				"near3mLow": true
 			},
 			"revisions": {

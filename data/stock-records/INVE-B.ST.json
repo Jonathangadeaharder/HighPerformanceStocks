@@ -5,7 +5,7 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1036.3B SEK",
+	"marketCap": "1035.2B SEK",
 	"sharpeRatio": -0.02,
 	"expectedCAGR": "-8% - 16%",
 	"expectedVolatility": "~21%",
@@ -14,7 +14,7 @@
 		"evEbitda": null,
 		"trailingPE": 6.6,
 		"forwardPE": 21.5,
-		"evFcf": 11.9
+		"evFcf": 11.7
 	},
 	"metrics": {
 		"roe": "17.7%",
@@ -37,7 +37,7 @@
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-20T15:11:46.063Z",
+	"lastUpdated": "2026-03-21T00:31:42.787Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
@@ -55,12 +55,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 338.3,
+				"price": 337.95,
 				"price6mAgo": 286.7,
 				"price1mAgo": 368.05,
 				"low3m": 317.5,
-				"return6m": 18,
-				"return1m": -8.1,
+				"return6m": 17.9,
+				"return1m": -8.2,
 				"near3mLow": false
 			},
 			"revisions": {

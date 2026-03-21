@@ -9,21 +9,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS; ttmEPS reflects GAAP; non-GAAP EPS is significantly higher (~$18-20); CAGR model uses GAAP basis",
-		"ttmEPS": 8.33,
+		"ttmEPS": 8.21,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "24%",
-			"bull": "35%"
+			"bear": "4%",
+			"base": "26%",
+			"bull": "37%"
 		}
 	},
-	"currentPrice": "$330.67",
-	"marketCap": "$64.3B USD",
+	"currentPrice": "$326.91",
+	"marketCap": "$63.6B USD",
 	"valuation": {
-		"trailingPE": 39.7,
-		"forwardPE": 16.8,
-		"evEbitda": 14.7,
-		"evFcf": 21
+		"trailingPE": 39.8,
+		"forwardPE": 16.6,
+		"evEbitda": 14.5,
+		"evFcf": 20.8
 	},
 	"metrics": {
 		"roe": "133.5%",
@@ -33,30 +33,30 @@
 		"ruleOf40": "7%"
 	},
 	"consensus": {
-		"yahoo": "$410"
+		"yahoo": "$410.38"
 	},
-	"targetPrice": "$410",
-	"expectedCAGR": "3% - 35%",
+	"targetPrice": "$410.38",
+	"expectedCAGR": "4% - 37%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.07,
+		"score": 1.06,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 16.8,
-			"cvStock": 0.011,
+			"multiple": 16.6,
+			"cvStock": 0.012,
 			"riskMultiplier": 0.959
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 330.67,
+				"price": 326.91,
 				"price6mAgo": 288.79,
 				"price1mAgo": 366.03,
 				"low3m": 318.12,
-				"return6m": 14.5,
-				"return1m": -9.7,
+				"return6m": 13.2,
+				"return1m": -10.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -70,9 +70,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T15:11:39.915Z",
-	"expectedVolatility": "~25%",
-	"sharpeRatio": 0.58,
+	"lastUpdated": "2026-03-21T00:31:38.415Z",
+	"expectedVolatility": "~26%",
+	"sharpeRatio": 0.62,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -90,7 +90,7 @@
 	"description": "Cencora, Inc. sources and distributes pharmaceutical products in the United States and internationally.",
 	"analystTargets": {
 		"low": 340,
-		"mean": 410,
+		"mean": 410.38,
 		"high": 447
 	}
 }

@@ -4,16 +4,16 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Sharpe (0.13), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$53.9B",
-	"sharpeRatio": 1.86,
-	"expectedCAGR": "35% - 119%",
+	"marketCap": "C$53.0B",
+	"sharpeRatio": 1.95,
+	"expectedCAGR": "38% - 123%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 77,
-		"forwardPE": 13.9,
+		"trailingPE": 75.7,
+		"forwardPE": 13.6,
 		"pegRatio": null,
-		"evEbitda": 22.7,
-		"evFcf": 21.5
+		"evEbitda": 22.6,
+		"evFcf": 21.3
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -23,46 +23,46 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4211.25",
+	"targetPrice": "C$4209.11",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2542.04",
+	"currentPrice": "C$2499.22",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4211.25"
+		"yahoo": "C$4209.11"
 	},
 	"cagrModel": {
 		"ttmEPS": 33,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "35%",
-			"base": "66%",
-			"bull": "119%"
+			"bear": "38%",
+			"base": "68%",
+			"bull": "123%"
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-20T15:11:40.949Z",
+	"lastUpdated": "2026-03-21T00:31:39.100Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.16,
+		"score": 1.15,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/FCF",
-			"multiple": 21.5,
+			"multiple": 21.3,
 			"cvStock": 0.028,
 			"riskMultiplier": 0.969
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2542.04,
+				"price": 2499.22,
 				"price6mAgo": 4200.28,
 				"price1mAgo": 2406.97,
 				"low3m": 2196,
-				"return6m": -39.5,
-				"return1m": 5.6,
+				"return6m": -40.5,
+				"return1m": 3.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -76,7 +76,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.75
+		"secondaryScore": 0.73
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -94,8 +94,8 @@
 	},
 	"description": "Constellation Software Inc., together with its subsidiaries, acquires, builds, and manages vertical market software businesses to develop mission-critical software solutions for public and private ...",
 	"analystTargets": {
-		"low": 3439.1,
-		"mean": 4211.25,
-		"high": 5565.79
+		"low": 3437.35,
+		"mean": 4209.11,
+		"high": 5562.95
 	}
 }

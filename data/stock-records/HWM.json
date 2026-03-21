@@ -8,23 +8,23 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.7,
+		"ttmEPS": 3.68,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-7%",
-			"base": "22%",
-			"bull": "37%"
+			"base": "21%",
+			"bull": "36%"
 		}
 	},
 	"bullCase": "Howmet Aerospace is the sole approved supplier for titanium fan blades and aluminum structural castings on every major western jetliner. This FAA certification barrier means Boeing and Airbus cannot multi-source critical airframe components. With aviation at record passenger levels and a 10-year production backlog, Howmet is compounding earnings at 15%+ with no margin ceiling.",
 	"bearCase": "Defense/commercial aerospace spending is a long-cycle business. Any Boeing production halt, supply chain disruption, or airline capacity rationalization has multi-year revenue implications. The 5.7x leverage from prior private equity era constrains financial flexibility.",
-	"currentPrice": "$230.23",
-	"marketCap": "$92.7B USD",
+	"currentPrice": "$231.21",
+	"marketCap": "$93.1B USD",
 	"valuation": {
-		"trailingPE": 62.2,
-		"forwardPE": 41.8,
-		"evEbitda": 40.1,
-		"evFcf": 104.5
+		"trailingPE": 62.8,
+		"forwardPE": 42,
+		"evEbitda": 39.9,
+		"evFcf": 103.8
 	},
 	"metrics": {
 		"roe": "30.4%",
@@ -37,27 +37,27 @@
 		"yahoo": "$280.00"
 	},
 	"targetPrice": "$280.00",
-	"expectedCAGR": "-7% - 37%",
+	"expectedCAGR": "-7% - 36%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.71,
+		"score": 2.72,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 41.8,
+			"multiple": 42,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 230.23,
+				"price": 231.21,
 				"price6mAgo": 192.15,
 				"price1mAgo": 257.04,
 				"low3m": 198.5,
-				"return6m": 19.8,
-				"return1m": -10.4,
+				"return6m": 20.3,
+				"return1m": -10,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -72,9 +72,9 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-20T15:11:45.030Z",
+	"lastUpdated": "2026-03-21T00:31:41.990Z",
 	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.31,
+	"sharpeRatio": 0.29,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

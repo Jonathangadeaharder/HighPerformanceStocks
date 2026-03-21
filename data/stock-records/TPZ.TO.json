@@ -15,13 +15,13 @@
 			"bull": "12%"
 		}
 	},
-	"currentPrice": "C$32.13",
+	"currentPrice": "C$32.18",
 	"marketCap": "C$5.0B",
 	"valuation": {
-		"trailingPE": 38.7,
+		"trailingPE": 38.8,
 		"forwardPE": 31.2,
 		"evEbitda": 16.6,
-		"evFcf": 47.8
+		"evFcf": 47.9
 	},
 	"metrics": {
 		"roe": "8.3%",
@@ -31,9 +31,9 @@
 		"ruleOf40": "40%"
 	},
 	"consensus": {
-		"yahoo": "C$33.77"
+		"yahoo": "C$33.67"
 	},
-	"targetPrice": "C$33.77",
+	"targetPrice": "C$33.67",
 	"expectedCAGR": "-10% - 12%",
 	"screener": {
 		"engine": "fPERG",
@@ -49,12 +49,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.13,
+				"price": 32.18,
 				"price6mAgo": 25.66,
 				"price1mAgo": 30.21,
 				"low3m": 26,
-				"return6m": 25.2,
-				"return1m": 6.4,
+				"return6m": 25.4,
+				"return1m": 6.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -68,7 +68,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-20T15:11:57.096Z",
+	"lastUpdated": "2026-03-21T00:31:49.925Z",
 	"expectedVolatility": "~23%",
 	"sharpeRatio": -0.15,
 	"qcs": {
@@ -90,7 +90,7 @@
 	"description": "Topaz Energy Corp. operates as a royalty and infrastructure energy company in Canada.",
 	"analystTargets": {
 		"low": 29,
-		"mean": 33.77,
+		"mean": 33.67,
 		"high": 36
 	}
 }

@@ -8,21 +8,21 @@
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.59,
+		"ttmEPS": 38.08,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-16%",
 			"base": "39%",
-			"bull": "117%"
+			"bull": "118%"
 		}
 	},
-	"currentPrice": "$714.73",
-	"marketCap": "$45.5B USD",
+	"currentPrice": "$710.47",
+	"marketCap": "$45.2B USD",
 	"valuation": {
-		"trailingPE": 18.5,
-		"forwardPE": 13.5,
-		"evEbitda": 13.6,
-		"evFcf": 31.4
+		"trailingPE": 18.7,
+		"forwardPE": 13.4,
+		"evEbitda": 13.5,
+		"evFcf": 31.1
 	},
 	"metrics": {
 		"roe": "28.4%",
@@ -32,30 +32,30 @@
 		"ruleOf40": "15%"
 	},
 	"consensus": {
-		"yahoo": "$991.39"
+		"yahoo": "$985.89"
 	},
-	"targetPrice": "$991.39",
-	"expectedCAGR": "-16% - 117%",
+	"targetPrice": "$985.89",
+	"expectedCAGR": "-16% - 118%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.65,
+		"score": 1.63,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 13.5,
-			"cvStock": 0.068,
-			"riskMultiplier": 1.103
+			"multiple": 13.4,
+			"cvStock": 0.04,
+			"riskMultiplier": 1.093
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 714.73,
+				"price": 710.47,
 				"price6mAgo": 943.42,
 				"price1mAgo": 882.7,
 				"low3m": 701.59,
-				"return6m": -24.2,
-				"return1m": -19,
+				"return6m": -24.7,
+				"return1m": -19.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -70,21 +70,21 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-20T15:11:58.268Z",
+	"lastUpdated": "2026-03-21T00:31:50.624Z",
 	"expectedVolatility": "~39%",
-	"sharpeRatio": 1.18,
+	"sharpeRatio": 1.19,
 	"qcs": {
-		"earningsScore": -1.61,
+		"earningsScore": -2.73,
 		"flowScore": 0,
-		"revisionsScore": -0.24,
-		"totalScore": -1.85,
+		"revisionsScore": -0.23,
+		"totalScore": -2.96,
 		"raw": {
 			"avgSurprisePct": -2.73,
 			"netInsiderShares": 29928,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
 			"downRevisions": 2,
-			"totalAnalysts": 21
+			"totalAnalysts": 22
 		}
 	},
 	"bullCase": "United Rentals has a structural advantage in the equipment rental market — the secular shift from ownership to rental is still early (rental penetration ~55% in North America vs 80%+ in mature markets). URI generates 20%+ ROIC and has a long runway of consolidation targets in the fragmented regional rental market. Infrastructure legislation provides multi-year volume floor.",
@@ -92,7 +92,7 @@
 	"description": "United Rentals, Inc., through its subsidiaries, operates as an equipment rental company in the United States, Canada, Europe, Australia, and New Zealand.",
 	"analystTargets": {
 		"low": 600,
-		"mean": 991.39,
+		"mean": 985.89,
 		"high": 1550
 	}
 }

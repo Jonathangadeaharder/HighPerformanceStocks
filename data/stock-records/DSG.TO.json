@@ -12,7 +12,7 @@
 		"ttmEPS": 2.56,
 		"dividendYield": "0%"
 	},
-	"currentPrice": "C$99.52",
+	"currentPrice": "C$99.63",
 	"marketCap": "C$8.6B",
 	"valuation": {
 		"trailingPE": 38.9,
@@ -28,9 +28,9 @@
 		"ruleOf40": "48%"
 	},
 	"consensus": {
-		"yahoo": "C$129.25"
+		"yahoo": "C$129.16"
 	},
-	"targetPrice": "C$129.25",
+	"targetPrice": "C$129.16",
 	"screener": {
 		"engine": "fCFG",
 		"score": 2.04,
@@ -45,12 +45,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 99.52,
+				"price": 99.63,
 				"price6mAgo": 142.72,
 				"price1mAgo": 86.02,
 				"low3m": 85.26,
-				"return6m": -30.3,
-				"return1m": 15.7,
+				"return6m": -30.2,
+				"return1m": 15.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -66,7 +66,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.32
 	},
-	"lastUpdated": "2026-03-20T15:11:41.957Z",
+	"lastUpdated": "2026-03-21T00:31:39.810Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {

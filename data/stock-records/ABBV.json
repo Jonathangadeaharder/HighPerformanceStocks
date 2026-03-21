@@ -4,16 +4,16 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$364.6B USD",
-	"sharpeRatio": 0.45,
-	"expectedCAGR": "-11% - 45%",
+	"marketCap": "$362.6B USD",
+	"sharpeRatio": 0.48,
+	"expectedCAGR": "-10% - 46%",
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 87,
-		"forwardPE": 12.8,
+		"trailingPE": 86.9,
+		"forwardPE": 12.7,
 		"pegRatio": 1.06,
 		"evEbitda": 14.6,
-		"evFcf": 23.3
+		"evFcf": 23.2
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -28,7 +28,7 @@
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$206.23",
+	"currentPrice": "$205.07",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$249.14",
@@ -39,13 +39,13 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-11%",
+			"bear": "-10%",
 			"base": "21%",
-			"bull": "45%"
+			"bull": "46%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-20T15:11:35.858Z",
+	"lastUpdated": "2026-03-21T00:31:35.620Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.83,
@@ -53,19 +53,19 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 12.8,
+			"multiple": 12.7,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 206.23,
+				"price": 205.07,
 				"price6mAgo": 222.59,
 				"price1mAgo": 229.48,
-				"low3m": 204.27,
-				"return6m": -7.3,
-				"return1m": -10.1,
+				"low3m": 203.06,
+				"return6m": -7.9,
+				"return1m": -10.6,
 				"near3mLow": true
 			},
 			"revisions": {
