@@ -41,7 +41,7 @@ jobs:
       - name: Update Data
         run: pnpm run update-data
 
-      - name: Create Pull Request and Auto-Merge
+      - name: Commit and Push updated data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -50,9 +50,6 @@ jobs:
           git add data/
           
           if ! git diff --staged --quiet; then
-            BRANCH_NAME="update-data-$(date +%Y%m%d)"
-            git checkout -b $BRANCH_NAME
-            
             # Check if the last commit was a data update
             LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
             
@@ -64,13 +61,9 @@ jobs:
               git commit -m "chore: update daily stock data"
             fi
             
-            # Force push because we might have amended the history
-            git push -u origin $BRANCH_NAME --force
-            
-            PR_URL=$(gh pr create --title "chore: update daily stock data" --body "Automated daily stock data update." --base main --head $BRANCH_NAME)
-            
-            # Since we're amending, squash won't matter as much, but use squash for safety if there are multiple commits somehow.
-            gh pr merge $PR_URL --admin --squash --delete-branch
+            # Since we are using an amend, we need to force push. 
+            # Note: A personal access token (PAT) must be passed as a secret if branch protection is strictly enforced.
+            git push origin main --force
           fi
 
   build-and-deploy:
