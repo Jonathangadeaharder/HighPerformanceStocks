@@ -1,5 +1,5 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 
 interface StockData {
     ticker: string;
@@ -22,14 +22,10 @@ for (const file of files) {
     const raw = fs.readFileSync(path.join(STOCK_DIR, file), 'utf-8');
     try {
         stocks.push(JSON.parse(raw));
-    } catch(e) {}
+    } catch{}
 }
 
-const mdLines: string[] = [];
-mdLines.push('# In-Depth Stock Methodology Evaluation');
-mdLines.push('');
-mdLines.push('This document goes stock-for-stock through the data to analyze how our quantitative methodology values each asset, acknowledging where it is highly accurate and where it may introduce flawed heuristics or systemic biases.');
-mdLines.push('');
+const mdLines: string[] = [ '# In-Depth Stock Methodology Evaluation', '', 'This document goes stock-for-stock through the data to analyze how our quantitative methodology values each asset, acknowledging where it is highly accurate and where it may introduce flawed heuristics or systemic biases.', ''];
 
 // Grouping definitions
 const cyclicals = stocks.filter(s => s.cyclical);
@@ -61,32 +57,25 @@ const general = stocks.filter(s => !categorizedTicks.has(s.ticker));
 // Helper to generate section
 function generateSection(title: string, group: StockData[], commentary: string, howProper: string) {
     if (group.length === 0) return;
-    mdLines.push(`## ${title}`);
-    mdLines.push('');
-    mdLines.push(`**Methodology Context:** ${commentary}`);
-    mdLines.push('');
-    mdLines.push(`**How Proper is the Valuation Baseline?** ${howProper}`);
-    mdLines.push('');
+    mdLines.push(`## ${title}`, '', `**Methodology Context:** ${commentary}`, '', `**How Proper is the Valuation Baseline?** ${howProper}`, '');
     for (const s of group) {
         const engine = s.screener?.engine || 'N/A';
         const score = s.screener?.score || 'N/A';
         const signal = s.screener?.signal || 'N/A';
-        let dy = s.metrics?.dividendYield || 0;
-        let gr = s.cagrModel?.epsGrowth || 0;
-        let priceParam = s.currentPrice || 0;
-        let targetParam = s.analystTargets?.mean || 0;
+        const dy = s.metrics?.dividendYield || 0;
+        const gr = s.cagrModel?.epsGrowth || 0;
+        const priceParam = s.currentPrice || 0;
+        const targetParam = s.analystTargets?.mean || 0;
         
-        let price = typeof priceParam === 'string' ? parseFloat(String(priceParam).replace(/[^0-9.]/g, '')) : priceParam;
-        let target = typeof targetParam === 'string' ? parseFloat(String(targetParam).replace(/[^0-9.]/g, '')) : targetParam;
+        const price = typeof priceParam === 'string' ? parseFloat(String(priceParam).replaceAll(/[^0-9.]/g, '')) : priceParam;
+        const target = typeof targetParam === 'string' ? parseFloat(String(targetParam).replaceAll(/[^0-9.]/g, '')) : targetParam;
 
         let upside = 0;
         if (Number(price) > 0 && Number(target) > 0) {
             upside = Math.round(((Number(target) - Number(price)) / Number(price)) * 100);
         }
 
-        mdLines.push(`### ${s.ticker} (${s.name || 'Unknown'})`);
-        mdLines.push(`- **Screener:** ${engine} (Score: ${score}) | **Signal:** ${signal} | **Implied Upside:** ${upside}%`);
-        mdLines.push(`- **Metrics:** Div Yield ${dy}, EPS Growth ${gr}`);
+        mdLines.push(`### ${s.ticker} (${s.name || 'Unknown'})`, `- **Screener:** ${engine} (Score: ${score}) | **Signal:** ${signal} | **Implied Upside:** ${upside}%`, `- **Metrics:** Div Yield ${dy}, EPS Growth ${gr}`);
         
         if (title.includes('Cyclical')) {
              mdLines.push(`- *Properly Valued?* **No/Risk.** ${s.ticker} is evaluated using \`${engine}\` with ${gr}% EPS Growth. Forward PE inherently misprices cyclicals because they look cheapest at peak earnings. A score of ${score} with ${upside}% upside to consensus targets might be a bull trap if the cycle is cresting. The '(CYCLICAL EPS)' warning partially mitigates this by enforcing human review.`);

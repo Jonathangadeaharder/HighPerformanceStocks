@@ -1,5 +1,4 @@
-import { parsePercent } from '../../lib/finance-core.js';
-import { parseNumber } from './display-formatters.js';
+import { parsePercent } from '../finance/core';
 import type {
 	EarningsTrend,
 	GrowthBranch,
@@ -8,8 +7,8 @@ import type {
 	ScreenerResult,
 	ScreenerStock,
 	YahooSummary
-} from './screener-types.js';
-import { ENGINE_THRESHOLDS } from './screener-types.js';
+} from './types';
+import { ENGINE_THRESHOLDS } from './types';
 
 const GROWTH_ROUTING_THRESHOLD = 8;
 const CV_BENCHMARK = 0.08;
@@ -22,6 +21,17 @@ const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
+
+/**
+ * Parses numeric values from various formats.
+ */
+function parseNumber(value: string | number | null | undefined): number | null {
+	if (value == null) return null;
+	if (typeof value === 'number') return value;
+	const cleaned = value.replace(/[^\d.-]/g, '');
+	const num = Number.parseFloat(cleaned);
+	return Number.isNaN(num) ? null : num;
+}
 
 function getAnalystDispersion(
 	earningsTrend: EarningsTrend | undefined
@@ -44,8 +54,7 @@ function computeGrowthScore(
 	cvStock: number,
 	isCyclical = false
 ): ScreenerResult {
-	// Structural constraint for hyper-growth: diminishing returns above 30% (secular AI/semi adjustment)
-	// Prevents valuation collapse scaling purely linear growth forever, but allows initial hyper-scaling
+	// Structural constraint for hyper-growth: diminishing returns above 30%
 	let effectiveGrowth = growthPct;
 	if (effectiveGrowth > 30) {
 		effectiveGrowth = 30 + (effectiveGrowth - 30) * 0.5;
@@ -53,8 +62,7 @@ function computeGrowthScore(
 
 	let riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
 
-	// Deep Cyclical constraint: If peak earnings are unsustainably fat (compressing P/E artificially low),
-	// penalize the score proportionally to break the 'value trap' illusion.
+	// Deep Cyclical constraint
 	if (isCyclical && multiple > 0 && multiple < 15) {
 		riskMultiplier *= 15 / multiple;
 	}
@@ -85,7 +93,7 @@ function computeGrowthScore(
 	};
 }
 
-function detectGrowthBranch(
+export function detectGrowthBranch(
 	stock: ScreenerStock,
 	valuationPrice: number | null | undefined
 ): GrowthBranch {
@@ -121,7 +129,7 @@ function detectGrowthBranch(
 		return {
 			engine: 'fCFG',
 			multipleType: hasEvFcf ? 'EV/FCF' : 'P/CF',
-			multiple: hasEvFcf ? valuation.evFcf : priceToBasis
+			multiple: hasEvFcf ? (valuation.evFcf as number) : priceToBasis
 		};
 	}
 
@@ -149,8 +157,7 @@ function detectGrowthBranch(
 		};
 	}
 
-	if (stock.cyclical && priceToBasis != null && valuation.forwardPE != null && priceToBasis > 0 && // Cyclicals look cheap when trailing EPS is fat, but even worse if forward estimates
-		// remain oblivious while the cycle peaks. Enforce peak-adjusted conservative multiple.
+	if (stock.cyclical && priceToBasis != null && valuation.forwardPE != null && priceToBasis > 0 && 
 		priceToBasis < valuation.forwardPE) {
 			return {
 				engine: 'tPERG',
@@ -162,7 +169,7 @@ function detectGrowthBranch(
 	return {
 		engine: 'fPERG',
 		multipleType: 'Forward P/E',
-		multiple: valuation.forwardPE
+		multiple: valuation.forwardPE ?? null
 	};
 }
 
@@ -251,12 +258,9 @@ function applyRealityChecks(
 	const up30d = revisions?.upLast30days ?? 0;
 	const down30d = revisions?.downLast30days ?? 0;
 	
-	// Alt Asset Managers and PE firms get downgraded as a herd due to GAAP MTM volatility during selloffs.
-	// Require a much higher threshold to consider consensus completely collapsing.
 	const isAltAsset = stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(stock.cagrModel?.basis ?? '');
 	const downgradeThreshold = isAltAsset ? 7 : 3;
 
-	// Require >= threshold downgrades with 0 upgrades to reject (avoid false positives from single analyst moves)
 	const consensusCollapsing = down30d >= downgradeThreshold && up30d === 0;
 	checks.revisions = { pass: !consensusCollapsing, up30d, down30d };
 
@@ -396,5 +400,3 @@ export function computeScreener(
 
 	return result;
 }
-
-export { type ScreenerInputs, type ScreenerResult, type RealityChecks } from './screener-types.js';
