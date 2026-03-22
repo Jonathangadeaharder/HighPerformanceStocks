@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # Needed for committing back data
+  contents: write
   pages: write
   id-token: write
 
@@ -17,15 +17,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  update-data:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+  sync-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout deploy branch
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: deploy
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebase deploy onto main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -40,50 +47,34 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Update Data
+      - name: Update stock data
         run: pnpm run update-data
 
-      - name: Commit and Push updated data
+      - name: Commit updated data (if changed)
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-
           if ! git diff --staged --quiet; then
             git commit -m "chore: update daily stock data"
-            for attempt in 1 2 3; do
-              if git pull --rebase origin main; then
-                if git push origin main; then
-                  echo "Push succeeded on attempt $attempt"
-                  exit 0
-                fi
-              else
-                echo "git pull --rebase failed on attempt $attempt, aborting rebase..."
-                git rebase --abort || true
-              fi
-              if [ "$attempt" -eq 3 ]; then
-                echo "Failed to push after 3 attempts"
-                exit 1
-              fi
-              echo "Push attempt $attempt failed, retrying in 5s..."
-              sleep 5
-            done
+            echo "DATA_CHANGED=true" >> $GITHUB_ENV
           else
-            echo "No data changes to commit"
+            echo "No data changes"
+            echo "DATA_CHANGED=false" >> $GITHUB_ENV
           fi
 
+      - name: Push deploy branch
+        run: git push origin deploy --force-with-lease
+
   build-and-deploy:
-    # Only run on push events (including the data-update commit pushed above).
-    # The schedule/workflow_dispatch run's update-data job pushes a new commit,
-    # which triggers its own push-event workflow run that handles the deploy.
-    if: github.event_name == 'push'
+    needs: sync-and-update
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout deploy branch
         uses: actions/checkout@v4
+        with:
+          ref: deploy
 
       - name: Install Node.js
         uses: actions/setup-node@v4
