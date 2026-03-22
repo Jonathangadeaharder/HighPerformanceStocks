@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # Needed for committing back data
+  contents: write
   pages: write
   id-token: write
 
@@ -17,14 +17,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  update-data:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+  sync-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout deploy branch
         uses: actions/checkout@v4
         with:
+          ref: deploy
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebase deploy onto main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -39,68 +47,34 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Update Data
+      - name: Update stock data
         run: pnpm run update-data
 
-      - name: Commit and merge updated data
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { execSync } = require('child_process');
+      - name: Commit updated data (if changed)
+        run: |
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update daily stock data"
+            echo "DATA_CHANGED=true" >> $GITHUB_ENV
+          else
+            echo "No data changes"
+            echo "DATA_CHANGED=false" >> $GITHUB_ENV
+          fi
 
-            // Configure git
-            execSync('git config user.name "github-actions[bot]"');
-            execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
-            execSync('git add data/');
-
-            // Check if there are staged changes
-            const status = execSync('git diff --staged --stat').toString().trim();
-            if (!status) {
-              console.log('No data changes to commit');
-              return;
-            }
-
-            // Commit to a temp branch and merge via API (bypasses ruleset push restriction)
-            const branch = `data/auto-update-${Date.now()}`;
-            execSync(`git checkout -b ${branch}`);
-            execSync('git commit -m "chore: update daily stock data"');
-            execSync(`git push origin ${branch}`);
-
-            // Get the SHA of the commit we just pushed
-            const sha = execSync('git rev-parse HEAD').toString().trim();
-
-            // Merge via GitHub API — this respects contents:write and bypasses
-            // the "require PR" ruleset rule for automated workflows
-            await github.rest.repos.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              base: 'main',
-              head: branch,
-              commit_message: 'chore: update daily stock data'
-            });
-            console.log(`Merged ${branch} into main`);
-
-            // Clean up the temp branch
-            await github.rest.git.deleteRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: `heads/${branch}`
-            });
-            console.log(`Deleted temp branch ${branch}`);
+      - name: Push deploy branch
+        run: git push origin deploy --force-with-lease
 
   build-and-deploy:
-    # Only run on push events (including the data-update merge triggered above).
-    # The schedule/workflow_dispatch run's update-data job merges a new commit,
-    # which triggers its own push-event workflow run that handles the deploy.
-    if: github.event_name == 'push'
+    needs: sync-and-update
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout deploy branch
         uses: actions/checkout@v4
+        with:
+          ref: deploy
 
       - name: Install Node.js
         uses: actions/setup-node@v4
