@@ -106,11 +106,35 @@ interface ChartBar {
 	close?: number | null;
 }
 
+function parseChartBar(entry: unknown): ChartBar | null {
+	if (typeof entry !== 'object' || entry === null) return null;
+
+	const candidate = entry as Record<string, unknown>;
+	const date =
+		candidate.date instanceof Date || typeof candidate.date === 'string' ? candidate.date : null;
+	const close = typeof candidate.close === 'number' ? candidate.close : null;
+	return { date, close };
+}
+
+function toEpoch(marketTime: string | null): number | null {
+	if (marketTime === null) return null;
+	const parsed = new Date(marketTime).getTime();
+	return Number.isNaN(parsed) ? null : parsed;
+}
+
+function toIsoString(value: unknown): string | null {
+	if (!(value instanceof Date) && typeof value !== 'number' && typeof value !== 'string') {
+		return null;
+	}
+
+	const parsed = new Date(value);
+	return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
 async function tryChartFallback(
 	symbol: string,
 	label: string,
-	weight: number,
-	quotePriceAsDefault: number
+	weight: number
 ): Promise<VolComponent | null> {
 	const now = new Date();
 	const tenDaysAgo = new Date(now.getTime() - 10 * 86400000);
@@ -119,15 +143,21 @@ async function tryChartFallback(
 		period2: now,
 		interval: '1d'
 	});
-	// yahoo-finance2's chart() return type is unresolvable in this ESLint config (SvelteKit $lib
-	// path aliases). We cast to ChartBar[] and suppress the resulting any-access warnings.
-	/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/prefer-optional-chain, unicorn/no-negated-condition */
-	const bars: ChartBar[] = Array.isArray(chart.quotes) ? (chart.quotes as unknown as ChartBar[]) : [];
+	const quotes =
+		'quotes' in chart &&
+		Array.isArray((chart as { quotes?: unknown }).quotes)
+			? (chart as { quotes: unknown[] }).quotes
+			: [];
+	const bars = quotes
+		.map((entry) => parseChartBar(entry))
+		.filter((bar): bar is ChartBar => bar !== null);
 	const lastBar = bars.findLast((q) => q.close != null);
-	if (lastBar == null || lastBar.date == null) return null;
-	const chartTime = new Date(lastBar.date as Date | string).toISOString();
-	const chartPrice: number = lastBar.close != null ? +(lastBar.close as number).toFixed(1) : quotePriceAsDefault;
-	/* eslint-enable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/prefer-optional-chain, unicorn/no-negated-condition */
+	if (lastBar?.date == null || lastBar.close == null) return null;
+
+	const parsedDate = new Date(lastBar.date);
+	if (Number.isNaN(parsedDate.getTime())) return null;
+	const chartTime = parsedDate.toISOString();
+	const chartPrice = +lastBar.close.toFixed(1);
 	const fresh = isFreshMarketTime(chartTime);
 	return {
 		label,
@@ -165,8 +195,7 @@ async function fetchVolIndexQuote(
 				break;
 			}
 
-			const rawMarketTime = quote.regularMarketTime;
-			const quoteTime = rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
+			const quoteTime = toIsoString(quote.regularMarketTime);
 
 			// Quote time is fresh — done
 			if (isFreshMarketTime(quoteTime)) {
@@ -175,7 +204,7 @@ async function fetchVolIndexQuote(
 
 			// Quote time is stale/missing — try chart() for a reliable last-close date
 			try {
-				const chartResult = await tryChartFallback(symbol, label, weight, price);
+				const chartResult = await tryChartFallback(symbol, label, weight);
 				if (chartResult) return chartResult;
 			} catch {
 				// chart() failed — fall through with what we have from quote
@@ -204,22 +233,43 @@ async function fetchVolIndexQuote(
 
 /**
  * Try multiple symbols for the same index (e.g. ^V2TX then V2TX.DE).
- * Returns the first result that has a fresh price, or the best non-null result.
+ * Returns the first result that has a fresh price, or the best non-null result
+ * (prefers candidates with newer marketTime when available).
  */
 async function fetchVolIndexWithFallback(
 	symbols: readonly string[],
 	label: string,
 	weight: number
 ): Promise<VolComponent> {
+	const fallbackSymbol = symbols[0] ?? '';
+
+	const chooseBetter = (
+		candidate: VolComponent,
+		currentBest: VolComponent | null
+	): VolComponent => {
+		if (currentBest === null) return candidate;
+		if (currentBest.value === null && candidate.value !== null) return candidate;
+		if (currentBest.value !== null && candidate.value === null) return currentBest;
+
+		const candidateTime = toEpoch(candidate.marketTime);
+		const currentBestTime = toEpoch(currentBest.marketTime);
+		if (candidateTime !== null && currentBestTime === null) return candidate;
+		if (candidateTime !== null && currentBestTime !== null && candidateTime > currentBestTime) {
+			return candidate;
+		}
+
+		return currentBest;
+	};
+
 	let best: VolComponent | null = null;
 	for (const symbol of symbols) {
 		const result = await fetchVolIndexQuote(symbol, label, weight);
 		if (result.fresh) return result;
-		if (result.value !== null && best === null) best = result;
+		best = chooseBetter(result, best);
 	}
 	return best ?? {
 		label,
-		symbol: symbols[0],
+		symbol: fallbackSymbol,
 		weight,
 		value: null,
 		marketTime: null,
