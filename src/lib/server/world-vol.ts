@@ -2,7 +2,10 @@ import YahooFinance from 'yahoo-finance2';
 import type { AvailableWorldVolSignal, VolComponent, WorldVolSignal } from '$lib/types/dashboard';
 
 const VIX_SYMBOL = '^VIX';
-const VSTOXX_SYMBOL = '^V2TX'; // Trying the main ticker instead of .DE
+// Yahoo Finance serves ^V2TX with a frozen regularMarketTime (known issue with European indices).
+// We try the quote first, then fall back to chart() which has reliable dates.
+// V2TX.DE is an alias that sometimes returns a fresher timestamp.
+const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE'];
 const WORLD_VOL_PRIMARY_MAX_AGE_DAYS = 7;
 const WORLD_VOL_WEIGHTS = {
 	vix: 0.7,
@@ -72,12 +75,79 @@ function isFreshMarketTime(
 	return ageMs >= 0 && ageMs <= maxAgeDays * 86400000;
 }
 
+function staleResult(
+	label: string,
+	symbol: string,
+	weight: number,
+	price: number,
+	marketTime: string | null
+): VolComponent {
+	return {
+		label,
+		symbol,
+		weight,
+		value: price,
+		marketTime,
+		fresh: false,
+		reason: `stale quote (${formatDate(marketTime) ?? 'unknown date'})`
+	};
+}
+
+/**
+ * Try chart() to get a reliable last-close date for a symbol.
+ *
+ * Yahoo Finance has a known bug where ^V2TX (and some other European indices) returns a
+ * frozen/stale `regularMarketTime` in the quote endpoint even when the price is current.
+ * The chart endpoint returns OHLCV bars with proper dates, so we use the last bar's
+ * date as the definitive freshness timestamp when the quote time looks stale.
+ */
+interface ChartBar {
+	date?: Date | string | null;
+	close?: number | null;
+}
+
+async function tryChartFallback(
+	symbol: string,
+	label: string,
+	weight: number,
+	quotePriceAsDefault: number
+): Promise<VolComponent | null> {
+	const now = new Date();
+	const tenDaysAgo = new Date(now.getTime() - 10 * 86400000);
+	const chart = await yahooFinance.chart(symbol, {
+		period1: tenDaysAgo,
+		period2: now,
+		interval: '1d'
+	});
+	// yahoo-finance2's chart() return type is unresolvable in this ESLint config (SvelteKit $lib
+	// path aliases). We cast to ChartBar[] and suppress the resulting any-access warnings.
+	/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/prefer-optional-chain, unicorn/no-negated-condition */
+	const bars: ChartBar[] = Array.isArray(chart.quotes) ? (chart.quotes as unknown as ChartBar[]) : [];
+	const lastBar = bars.findLast((q) => q.close != null);
+	if (lastBar == null || lastBar.date == null) return null;
+	const chartTime = new Date(lastBar.date as Date | string).toISOString();
+	const chartPrice: number = lastBar.close != null ? +(lastBar.close as number).toFixed(1) : quotePriceAsDefault;
+	/* eslint-enable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/prefer-optional-chain, unicorn/no-negated-condition */
+	const fresh = isFreshMarketTime(chartTime);
+	return {
+		label,
+		symbol,
+		weight,
+		value: chartPrice,
+		marketTime: chartTime,
+		fresh,
+		reason: fresh ? null : `stale (last close ${formatDate(chartTime) ?? 'unknown date'})`
+	};
+}
+
 async function fetchVolIndexQuote(
 	symbol: string,
 	label: string,
 	weight: number,
 	retries = 2
 ): Promise<VolComponent> {
+	let lastError: string | null = null;
+
 	for (let attempt = 0; attempt <= retries; attempt++) {
 		try {
 			const quote = await yahooFinance.quote(symbol);
@@ -85,39 +155,42 @@ async function fetchVolIndexQuote(
 				typeof quote.regularMarketPrice === 'number' && quote.regularMarketPrice > 0
 					? +quote.regularMarketPrice.toFixed(1)
 					: null;
-			const rawMarketTime: string | number | Date | undefined = quote.regularMarketTime;
-			const marketTime = rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
-			const fresh = price !== null && isFreshMarketTime(marketTime);
 
-			return {
-				label,
-				symbol,
-				weight,
-				value: price,
-				marketTime,
-				fresh,
-				reason: fresh
-					? null
-					: price === null
-						? 'missing price'
-						: `stale quote (${formatDate(marketTime) ?? 'unknown date'})`
-			};
+			if (price === null) {
+				lastError = 'missing price';
+				if (attempt < retries) {
+					await new Promise((resolve) => setTimeout(resolve, 2000 * (attempt + 1)));
+					continue;
+				}
+				break;
+			}
+
+			const rawMarketTime = quote.regularMarketTime;
+			const quoteTime = rawMarketTime == null ? null : new Date(rawMarketTime).toISOString();
+
+			// Quote time is fresh — done
+			if (isFreshMarketTime(quoteTime)) {
+				return { label, symbol, weight, value: price, marketTime: quoteTime, fresh: true, reason: null };
+			}
+
+			// Quote time is stale/missing — try chart() for a reliable last-close date
+			try {
+				const chartResult = await tryChartFallback(symbol, label, weight, price);
+				if (chartResult) return chartResult;
+			} catch {
+				// chart() failed — fall through with what we have from quote
+			}
+
+			return staleResult(label, symbol, weight, price, quoteTime);
 		} catch (error: unknown) {
+			lastError = error instanceof Error ? error.message : 'quote fetch failed';
 			if (attempt < retries) {
 				await new Promise((resolve) => setTimeout(resolve, 2000 * (attempt + 1)));
 				continue;
 			}
-			return {
-				label,
-				symbol,
-				weight,
-				value: null,
-				marketTime: null,
-				fresh: false,
-				reason: error instanceof Error ? error.message : 'quote fetch failed'
-			};
 		}
 	}
+
 	return {
 		label,
 		symbol,
@@ -125,7 +198,33 @@ async function fetchVolIndexQuote(
 		value: null,
 		marketTime: null,
 		fresh: false,
-		reason: 'max retries exceeded'
+		reason: lastError ?? 'max retries exceeded'
+	};
+}
+
+/**
+ * Try multiple symbols for the same index (e.g. ^V2TX then V2TX.DE).
+ * Returns the first result that has a fresh price, or the best non-null result.
+ */
+async function fetchVolIndexWithFallback(
+	symbols: readonly string[],
+	label: string,
+	weight: number
+): Promise<VolComponent> {
+	let best: VolComponent | null = null;
+	for (const symbol of symbols) {
+		const result = await fetchVolIndexQuote(symbol, label, weight);
+		if (result.fresh) return result;
+		if (result.value !== null && best === null) best = result;
+	}
+	return best ?? {
+		label,
+		symbol: symbols[0],
+		weight,
+		value: null,
+		marketTime: null,
+		fresh: false,
+		reason: 'all symbols failed'
 	};
 }
 
@@ -177,7 +276,7 @@ function buildCompositeWorldVolSignal(components: VolComponent[]): AvailableWorl
 export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	const [vix, vstoxx] = await Promise.all([
 		fetchVolIndexQuote(VIX_SYMBOL, 'VIX', WORLD_VOL_WEIGHTS.vix),
-		fetchVolIndexQuote(VSTOXX_SYMBOL, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
+		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
 	]);
 
 	// As long as VIX is fresh, we can build a valid signal (degrades gracefully)
