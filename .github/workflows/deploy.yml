@@ -11,11 +11,10 @@ permissions:
   contents: write # Needed for committing back data
   pages: write
   id-token: write
-  pull-requests: write # Needed to create and merge PRs
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update-data:
@@ -25,9 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-        
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
@@ -39,7 +38,7 @@ jobs:
           version: 10
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Update Data
         run: pnpm run update-data
@@ -49,33 +48,35 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          
+
           if ! git diff --staged --quiet; then
             git commit -m "chore: update daily stock data"
             for attempt in 1 2 3; do
               if git pull --rebase origin main; then
                 if git push origin main; then
-                  break
+                  echo "Push succeeded on attempt $attempt"
+                  exit 0
                 fi
               else
-                echo "git pull --rebase failed on attempt $attempt, aborting rebase and retrying..."
+                echo "git pull --rebase failed on attempt $attempt, aborting rebase..."
                 git rebase --abort || true
               fi
               if [ "$attempt" -eq 3 ]; then
                 echo "Failed to push after 3 attempts"
                 exit 1
               fi
-              echo "Push attempt $attempt failed, retrying..."
+              echo "Push attempt $attempt failed, retrying in 5s..."
               sleep 5
             done
+          else
+            echo "No data changes to commit"
           fi
 
   build-and-deploy:
-    needs: update-data
-    # Run if update-data was skipped (push event) OR if it ran successfully
-    if: |
-      always() && 
-      (needs.update-data.result == 'success' || needs.update-data.result == 'skipped')
+    # Only run on push events (including the data-update commit pushed above).
+    # The schedule/workflow_dispatch run's update-data job pushes a new commit,
+    # which triggers its own push-event workflow run that handles the deploy.
+    if: github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -83,9 +84,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          ref: main # Ensure we pull the latest main with the merged PR data
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -98,7 +96,7 @@ jobs:
           version: 10
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Build SvelteKit App
         env:
