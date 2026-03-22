@@ -52,9 +52,13 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -m "chore: update daily stock data"
             for attempt in 1 2 3; do
-              git pull --rebase origin main
-              if git push origin main; then
-                break
+              if git pull --rebase origin main; then
+                if git push origin main; then
+                  break
+                fi
+              else
+                echo "git pull --rebase failed on attempt $attempt, aborting rebase and retrying..."
+                git rebase --abort || true
               fi
               if [ "$attempt" -eq 3 ]; then
                 echo "Failed to push after 3 attempts"
