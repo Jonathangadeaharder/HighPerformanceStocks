@@ -1,0 +1,48 @@
+name: CI — Build & Dependency Verification
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    name: Install, Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.31.0
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+        env:
+          BASE_PATH: ''
+
+      - name: Verify build output
+        run: |
+          if [ ! -f build/index.html ]; then
+            echo "ERROR: build/index.html not found — build may have failed silently"
+            exit 1
+          fi
+          echo "Build output verified: build/index.html exists"
+
+      - name: Run tests
+        run: pnpm test
