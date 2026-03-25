@@ -40,10 +40,9 @@
 		sitting on a likely value floor.
 	</div>
 	<p class="section-note">
-		Must beat the ETF alternative with base 1Y return at least {hurdles.etfCagr}% and bear return
-		above
-		{hurdles.bearFloor}%. Near 3-month-low names can still qualify when the downside floor looks
-		unusually strong.
+		Must beat the ETF alternative with base 1Y return at least {hurdles.etfCagr}%. Near
+		3-month-low names can still qualify when the downside floor looks unusually strong or
+		stabilization passes.
 	</p>
 
 	{#if topPicks.length > 0}

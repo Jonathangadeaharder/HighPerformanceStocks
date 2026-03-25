@@ -9,7 +9,6 @@ import type {
 } from '$lib/types/dashboard';
 
 const ETF_HURDLE_RETURN = 15;
-const BEAR_FLOOR_RETURN = -10;
 const VALUE_FLOOR_BEAR_RETURN = 5;
 const VALUE_FLOOR_BASE_RETURN = 25;
 const VALUE_FLOOR_UPSIDE = 25;
@@ -173,12 +172,10 @@ function hasLikelyValueFloor(stock: FindingStock): boolean {
 
 function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	const base = stock.baseCagr ?? -999;
-	const bear = stock.bearCagr ?? -999;
 	const basePass = base >= ETF_HURDLE_RETURN;
-	const bearPass = bear > BEAR_FLOOR_RETURN;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass !== false;
 
-	if (basePass && bearPass && stabPass) {
+	if (basePass && stabPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
 	}
 
@@ -196,10 +193,7 @@ function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	return {
-		status: 'FAIL',
-		reason: `Bear case return (${bear}%) is below the ${BEAR_FLOOR_RETURN}% floor required for deployment.`
-	};
+	return { status: 'FAIL', reason: 'Needs more conviction before deployment.' };
 }
 
 function deploymentForWait(stock: FindingStock): DeploymentInfo {
@@ -216,7 +210,6 @@ function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const score = stock.screener?.score;
 	const note = stock.screener?.note;
 	const base = stock.baseCagr ?? -999;
-	const bear = stock.bearCagr ?? -999;
 
 	if ((score ?? 0) >= 1.5) {
 		return {
@@ -240,15 +233,6 @@ function deploymentForFail(stock: FindingStock): DeploymentInfo {
 			reason:
 				note ??
 				`Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
-		};
-	}
-
-	if (bear <= BEAR_FLOOR_RETURN) {
-		return {
-			status: 'FAIL',
-			reason:
-				note ??
-				`Cheap (Score ${score}) but bear return ${bear}% is below the ${BEAR_FLOOR_RETURN}% safety floor.`
 		};
 	}
 
@@ -397,8 +381,7 @@ export function buildDashboardData(
 		watchlist,
 		lastUpdated: latestUpdatedDate(enrichedStocks),
 		hurdles: {
-			etfCagr: ETF_HURDLE_RETURN,
-			bearFloor: BEAR_FLOOR_RETURN
+			etfCagr: ETF_HURDLE_RETURN
 		},
 		counts: buildCounts(enrichedStocks, deployNow, cheapWait, watchlist)
 	};
