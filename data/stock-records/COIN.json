@@ -1,0 +1,102 @@
+{
+	"ticker": "COIN",
+	"name": "Coinbase Global, Inc.",
+	"group": "Financials & Alt Assets",
+	"cyclical": true,
+	"confidence": "high",
+	"confidenceReason": "Dominant US cryptocurrency exchange platform. Massively exposed to crypto volume cycles, but acting as the 'picks and shovels' monopoly of the US crypto market. Huge operating leverage upside during bull regimes.",
+	"cagrModel": {
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"epsGrowth": "35%",
+		"ttmEPS": 3.79,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-34%",
+			"base": "39%",
+			"bull": "143%"
+		}
+	},
+	"currentPrice": "$181.10",
+	"marketCap": "$48.8B USD",
+	"valuation": {
+		"trailingPE": 47.8,
+		"forwardPE": 30.8,
+		"evFcf": 33.9,
+		"evEbitda": 26.4
+	},
+	"metrics": {
+		"roe": "10.1%",
+		"fcfMargin": "~19%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "-3%"
+	},
+	"consensus": {
+		"yahoo": "$252.24"
+	},
+	"targetPrice": "$252.24",
+	"analystTargets": {
+		"low": 120,
+		"mean": 252.24,
+		"high": 440
+	},
+	"expectedCAGR": "-34% - 143%",
+	"expectedVolatility": "~74%",
+	"sharpeRatio": 0.68,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.04,
+		"signal": "REJECTED",
+		"inputs": {
+			"growth": 35,
+			"multipleType": "Forward P/E",
+			"multiple": 30.8,
+			"cvStock": 0.244,
+			"riskMultiplier": 1.099
+		},
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 181.1,
+				"price6mAgo": 312.59,
+				"price1mAgo": 181.06,
+				"low3m": 139.36,
+				"return6m": -42.1,
+				"return1m": 0,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 0,
+				"down30d": 8
+			},
+			"earningsSurprise": {
+				"surprise": -364.9,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 5,
+		"revisionsScore": -4.69,
+		"totalScore": -4.69,
+		"raw": {
+			"avgSurprisePct": -43.43,
+			"netInsiderShares": 1005684,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 15,
+			"totalAnalysts": 16
+		}
+	},
+	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
+	"lastUpdated": "2026-03-25T23:03:47.499Z",
+	"intrinsicValue": {
+		"dcf": 20.66,
+		"date": "2026-03-25",
+		"discount": -89
+	}
+}

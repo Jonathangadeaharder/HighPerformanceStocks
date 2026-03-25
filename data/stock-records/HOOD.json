@@ -1,0 +1,91 @@
+{
+	"ticker": "HOOD",
+	"name": "Robinhood Markets, Inc.",
+	"group": "Financials & Alt Assets",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "Commission-free stock and crypto trading app aggressively taking market share among gen-z and millennials. Diversifying revenue streams with subscriptions (Gold) and retirement accounts. Sensitive to retail engagement cycles.",
+	"cagrModel": {
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"epsGrowth": "19%",
+		"ttmEPS": 2.27,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "24%",
+			"base": "71%",
+			"bull": "148%"
+		}
+	},
+	"currentPrice": "$72.54",
+	"marketCap": "$65.3B USD",
+	"valuation": {
+		"trailingPE": 31.9,
+		"forwardPE": 26.4
+	},
+	"metrics": {
+		"roe": "22.0%"
+	},
+	"consensus": {
+		"yahoo": "$124.39"
+	},
+	"targetPrice": "$124.39",
+	"analystTargets": {
+		"low": 90,
+		"mean": 124.39,
+		"high": 180
+	},
+	"expectedCAGR": "24% - 148%",
+	"expectedVolatility": "~70%",
+	"sharpeRatio": 1.16,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.5,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 19,
+			"multipleType": "Forward P/E",
+			"multiple": 26.4,
+			"cvStock": 0.213,
+			"riskMultiplier": 1.08
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 72.54,
+				"price6mAgo": 121.78,
+				"price1mAgo": 79.45,
+				"low3m": 68.58,
+				"return6m": -40.4,
+				"return1m": -8.7,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": 3.8,
+				"quarter": "2025-12"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": 3.07,
+		"flowScore": 0,
+		"revisionsScore": -0.33,
+		"totalScore": 2.74,
+		"raw": {
+			"avgSurprisePct": 16.34,
+			"netInsiderShares": 216758,
+			"instFlowTrend": "negative",
+			"upRevisions": 0,
+			"downRevisions": 1,
+			"totalAnalysts": 15
+		}
+	},
+	"description": "Robinhood Markets, Inc. operates financial services platform in the United States.",
+	"lastUpdated": "2026-03-25T23:03:47.497Z"
+}

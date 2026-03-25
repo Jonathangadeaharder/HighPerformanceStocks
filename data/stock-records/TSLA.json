@@ -1,0 +1,102 @@
+{
+	"ticker": "TSLA",
+	"name": "Tesla, Inc.",
+	"group": "Data & Software Monopolies",
+	"cyclical": true,
+	"confidence": "high",
+	"confidenceReason": "Leader in electric vehicles, battery energy storage, and AI software/robotics. Unprecedented scale and brand power, though exposed to auto-cycle cyclicality and massive continuous capital requirements. High premium commands a flawless execution trajectory.",
+	"cagrModel": {
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"epsGrowth": "35%",
+		"ttmEPS": 1.07,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-69%",
+			"base": "9%",
+			"bull": "55%"
+		}
+	},
+	"currentPrice": "$385.95",
+	"marketCap": "$1448.3B USD",
+	"valuation": {
+		"trailingPE": 360.7,
+		"forwardPE": 137.3,
+		"evFcf": 380.3,
+		"evEbitda": 135.2
+	},
+	"metrics": {
+		"roe": "4.9%",
+		"fcfMargin": "~4%",
+		"fcfYield": "~0%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "1%"
+	},
+	"consensus": {
+		"yahoo": "$421.27"
+	},
+	"targetPrice": "$421.27",
+	"analystTargets": {
+		"low": 119,
+		"mean": 421.27,
+		"high": 600
+	},
+	"expectedCAGR": "-69% - 55%",
+	"expectedVolatility": "~55%",
+	"sharpeRatio": -0.21,
+	"screener": {
+		"engine": "fPERG",
+		"score": 5.04,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 35,
+			"multipleType": "Forward P/E",
+			"multiple": 137.3,
+			"cvStock": 0.403,
+			"riskMultiplier": 1.194
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 385.95,
+				"price6mAgo": 440.4,
+				"price1mAgo": 408.58,
+				"low3m": 364.46,
+				"return6m": -12.4,
+				"return1m": -5.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 3
+			},
+			"earningsSurprise": {
+				"surprise": 11,
+				"quarter": "2025-12"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"qcs": {
+		"earningsScore": -0.88,
+		"flowScore": 0,
+		"revisionsScore": -0.15,
+		"totalScore": -1.03,
+		"raw": {
+			"avgSurprisePct": -8.86,
+			"netInsiderShares": 146350,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 2,
+			"totalAnalysts": 34
+		}
+	},
+	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
+	"lastUpdated": "2026-03-25T23:03:47.495Z",
+	"intrinsicValue": {
+		"dcf": 17.95,
+		"date": "2026-03-25",
+		"discount": -95
+	}
+}
