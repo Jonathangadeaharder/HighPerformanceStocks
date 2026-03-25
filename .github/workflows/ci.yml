@@ -36,6 +36,9 @@ jobs:
         env:
           BASE_PATH: ''
 
+      - name: Svelte check
+        run: pnpm run check
+
       - name: Verify build output
         run: |
           if [ ! -f build/index.html ]; then
