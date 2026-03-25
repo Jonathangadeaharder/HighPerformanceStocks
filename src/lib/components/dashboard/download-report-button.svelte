@@ -295,9 +295,10 @@
 			'RETURN CHECK',
 			[
 				`Base 1Y return >= ${hurdles.etfCagr}%`,
-				`Bear floor > ${hurdles.bearFloor}%`,
-				'Derived from analyst',
-				'low / mean / high targets.'
+				'Requires stabilization or',
+				'a strong value floor signal.',
+				'Analyst targets drive the',
+				'bear/base/bull scenarios.'
 			],
 			C.green,
 			C.greenL
@@ -522,7 +523,7 @@
 				ink(doc, C.slate);
 				doc.setFontSize(8);
 				doc.text(
-					`Hurdles: Base >= ${hurdles.etfCagr}%  ·  Bear > ${hurdles.bearFloor}%  ·  Screener score < 1.0 (lower = better)`,
+					`Hurdles: Base >= ${hurdles.etfCagr}%  ·  Screener score < 1.0 (lower = better)`,
 					14,
 					yPos
 				);
