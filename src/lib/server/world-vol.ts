@@ -295,7 +295,6 @@ async function fetchCrossVerifiedVolIndex(
 
 	return finalResult;
 }
-
 export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	if (cachedSignal && Date.now() - cachedSignal.timestamp < CACHE_TTL_MS) {
 		return cachedSignal.signal;
