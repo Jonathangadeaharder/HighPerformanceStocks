@@ -4,7 +4,7 @@ import {
 	calcForwardScenarios,
 	parseDisplayPrice,
 	parsePercent
-} from '../lib/finance-core.js';
+} from '../src/lib/domain/finance/core.js';
 
 describe('parsePercent', () => {
 	it('extracts number from percentage string', () => {
@@ -57,9 +57,9 @@ describe('calcForwardReturn', () => {
 		expect(result).toBe(20);
 	});
 
-	it('ignores dividend yield', () => {
+	it('includes dividend yield', () => {
 		const result = calcForwardReturn({ currentPrice: 100, targetPrice: 110, dividendYieldPct: 3 });
-		expect(result).toBe(10);
+		expect(result).toBe(13);
 	});
 
 	it('handles negative price return', () => {
@@ -83,9 +83,9 @@ describe('calcForwardScenarios', () => {
 			dividendYieldPct: 2
 		});
 
-		expect(result.bear).toBe(-20);
-		expect(result.base).toBe(10);
-		expect(result.bull).toBe(40);
+		expect(result.bear).toBe(-18);
+		expect(result.base).toBe(12);
+		expect(result.bull).toBe(42);
 	});
 
 	it('handles zero dividend yield', () => {

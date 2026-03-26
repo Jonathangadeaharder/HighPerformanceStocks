@@ -11,7 +11,7 @@
 export function parsePercent(value: string | number | null | undefined): number | null {
 	if (value == null) return null;
 
-	const re = /-?\\d+(?:\\.\\d+)?/;
+	const re = /-?\d+(?:\.\d+)?/;
 	const match = re.exec(String(value));
 	return match ? Number.parseFloat(match[0]) : null;
 }
@@ -20,17 +20,19 @@ export function parsePercent(value: string | number | null | undefined): number 
  * Extracts a numeric price from a string (e.g., "$1,200.50" -> 1200.5)
  */
 export function parseDisplayPrice(value: string | number | null | undefined): number | null {
-	if (value == null || typeof value !== 'string') return null;
+	if (value == null) return null;
+	if (typeof value === 'number') return value;
+	if (typeof value !== 'string') return null;
 
 	const cleaned = value.replaceAll(/[^0-9.]/g, '');
-	const dotsMatch = cleaned.match(/\\./g);
+	const dotsMatch = cleaned.match(/\./g);
 	if (!cleaned || (dotsMatch && dotsMatch.length > 1)) return null;
 
 	const parsedNumber = Number.parseFloat(cleaned);
 	if (Number.isNaN(parsedNumber)) return null;
 
 	// Handle pence (p) if detected at end of string without space needed
-	if (/\\d\\s*p$/i.test(value.trim())) return parsedNumber / 100;
+	if (/\d\s*p$/i.test(value.trim())) return parsedNumber / 100;
 
 	return parsedNumber;
 }
