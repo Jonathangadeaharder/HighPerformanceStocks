@@ -223,7 +223,7 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
 	]);
 
-	if (vix.fresh && vstoxx.fresh) {
+	if (vix.fresh || vstoxx.fresh) {
 		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
 		if (compositeSignal) return compositeSignal;
 	}
