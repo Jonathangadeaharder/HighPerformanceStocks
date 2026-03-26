@@ -52,12 +52,12 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Rebase deploy onto main
+      - name: Reset deploy to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          git rebase origin/main
+          git reset --hard origin/main
 
       - name: Install Node.js
         uses: actions/setup-node@v6
