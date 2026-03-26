@@ -6,7 +6,7 @@
 	"confidence": "high",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
 	"marketCap": "$1803.6B USD",
-	"sharpeRatio": 0.58,
+	"sharpeRatio": 0.59,
 	"expectedCAGR": "2% - 51%",
 	"scenarios": {
 		"bear": "5%",
@@ -43,7 +43,7 @@
 		},
 		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-03-26T00:03:00.973Z",
+	"lastUpdated": "2026-03-26T08:26:32.072Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.06,
@@ -79,17 +79,17 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 153.97,
-		"date": "2026-03-25",
-		"discount": -56
+		"dcf": 155.35,
+		"date": "2026-03-26",
+		"discount": -55
 	},
 	"valuation": {
-		"trailingPE": 33.7,
+		"trailingPE": 33.6,
 		"forwardPE": 19.4,
 		"evEbitda": null,
 		"evFcf": 11
 	},
-	"expectedVolatility": "~38%",
+	"expectedVolatility": "~37%",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -109,5 +109,14 @@
 		"low": 351,
 		"mean": 430.65,
 		"high": 520
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TSM",
+		"strongBuy": 11,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

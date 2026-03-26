@@ -9,7 +9,7 @@
 	"bullCase": "Only US-licensed uranium enrichment facility — irreplaceable national security infrastructure. HALEU production is essential for next-gen advanced reactors (Oklo, TerraPower, etc.) with no domestic alternative. DOE contracts provide long-term revenue visibility. Nuclear renaissance accelerating globally as clean baseload demand surges. $1.96B cash fortress with net cash position. 12 analysts see 23%+ upside to $238 consensus target.",
 	"bearCase": "Earnings are wildly lumpy — recent quarters saw both +1,468% beats and -51% misses depending on contract timing. Forward P/E of ~67x is hard to justify even with monopoly pricing. Highly dependent on government funding and single-facility execution risk. 23.6% short interest signals significant skepticism. Revenue growth is ~3-4% annually with lumpiness making any P/E-based valuation extremely uncertain.",
 	"cagrModel": {
-		"ttmEPS": 3.85,
+		"ttmEPS": 3.9,
 		"epsGrowthSource": "auto",
 		"dividendYield": "0%",
 		"basis": "GAAP diluted EPS; lumpy contract revenue; cyclical earnings pattern",
@@ -26,11 +26,11 @@
 		"yahoo": "$279.58",
 		"stockanalysis": "$238.83"
 	},
-	"expectedVolatility": "~94%",
+	"expectedVolatility": "~93%",
 	"expectedCAGR": "-29% - 102%",
 	"sharpeRatio": 0.34,
 	"valuation": {
-		"trailingPE": 50.2,
+		"trailingPE": 49.6,
 		"forwardPE": 36.5,
 		"evEbitda": 57.4,
 		"evFcf": 80.4
@@ -78,7 +78,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:51.899Z",
+	"lastUpdated": "2026-03-26T08:26:22.425Z",
 	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
 	"analystTargets": {
 		"low": 137,
@@ -98,5 +98,14 @@
 			"downRevisions": 2,
 			"totalAnalysts": 3
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "LEU",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

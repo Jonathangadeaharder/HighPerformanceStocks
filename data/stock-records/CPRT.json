@@ -69,7 +69,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:45.340Z",
+	"lastUpdated": "2026-03-26T08:26:15.648Z",
 	"expectedVolatility": "~27%",
 	"sharpeRatio": 1,
 	"qcs": {
@@ -93,5 +93,15 @@
 		"low": 32,
 		"mean": 42.67,
 		"high": 55
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CPRT",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$44.40",
+	"consensusRating": "Hold"
 }

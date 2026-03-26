@@ -8,7 +8,7 @@
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.61,
+		"ttmEPS": 38.58,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-19%",
@@ -70,7 +70,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:03:02.111Z",
+	"lastUpdated": "2026-03-26T08:26:33.201Z",
 	"expectedVolatility": "~39%",
 	"sharpeRatio": 1.03,
 	"qcs": {
@@ -94,5 +94,14 @@
 		"low": 600,
 		"mean": 985.89,
 		"high": 1550
-	}
+	},
+	"analystConsensus": {
+		"ticker": "URI",
+		"strongBuy": 12,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

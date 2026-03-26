@@ -10,7 +10,7 @@
 	"expectedCAGR": "13% - 62%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 34.9,
+		"trailingPE": 34.8,
 		"forwardPE": 15.4,
 		"pegRatio": 1.69,
 		"evEbitda": 29.3,
@@ -44,7 +44,7 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:58.310Z",
+	"lastUpdated": "2026-03-26T08:26:29.174Z",
 	"screener": {
 		"engine": "fCFG",
 		"signal": "NO_DATA",
@@ -69,5 +69,15 @@
 		"low": 260,
 		"mean": 329.64,
 		"high": 375
-	}
+	},
+	"analystConsensus": {
+		"ticker": "RGLD",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$251.50",
+	"consensusRating": "Moderate Buy"
 }

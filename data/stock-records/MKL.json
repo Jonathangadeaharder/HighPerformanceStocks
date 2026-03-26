@@ -35,9 +35,9 @@
 		"epsGrowth": "8%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline NOTE: screener engine should be fPERG/tPERG as dividend yield is 0%; totalReturn routing appears to be a data pipeline error — re-run update-data to recalculate.",
-		"ttmEPS": 169.16
+		"ttmEPS": 169.22
 	},
-	"lastUpdated": "2026-03-26T00:02:54.524Z",
+	"lastUpdated": "2026-03-26T08:26:25.288Z",
 	"consensus": {
 		"yahoo": "$2085.40"
 	},
@@ -93,5 +93,14 @@
 		"low": 1880,
 		"mean": 2085.4,
 		"high": 2240
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MKL",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

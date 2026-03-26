@@ -43,7 +43,7 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-26T00:02:55.500Z",
+	"lastUpdated": "2026-03-26T08:26:26.499Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.38,
@@ -98,5 +98,15 @@
 		"low": 249,
 		"mean": 524.73,
 		"high": 750
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MU",
+		"strongBuy": 31,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$466.75",
+	"consensusRating": "Unknown"
 }

@@ -43,7 +43,7 @@
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-26T00:02:47.149Z",
+	"lastUpdated": "2026-03-26T08:26:17.516Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.71,
@@ -79,9 +79,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 61.12,
-		"date": "2026-03-25",
-		"discount": 219
+		"dcf": 62.06,
+		"date": "2026-03-26",
+		"discount": 224
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -102,5 +102,14 @@
 		"low": 18.5,
 		"mean": 22.02,
 		"high": 25
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ET",
+		"strongBuy": 12,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

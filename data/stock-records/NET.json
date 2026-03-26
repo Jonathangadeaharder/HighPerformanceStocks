@@ -35,7 +35,7 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:55.496Z",
+	"lastUpdated": "2026-03-26T08:26:26.366Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
@@ -91,5 +91,14 @@
 		"low": 135,
 		"mean": 232.43,
 		"high": 300
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NET",
+		"strongBuy": 16,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

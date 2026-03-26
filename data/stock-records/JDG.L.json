@@ -12,16 +12,16 @@
 		"ttmEPS": 1.63,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "46%",
-			"bull": "73%"
+			"bear": "1%",
+			"base": "50%",
+			"bull": "78%"
 		}
 	},
-	"currentPrice": "£42.40",
+	"currentPrice": "£41.13",
 	"marketCap": "£0.3B",
 	"valuation": {
-		"trailingPE": 26,
-		"forwardPE": 20.8,
+		"trailingPE": 25.2,
+		"forwardPE": 20.2,
 		"evEbitda": 10.7,
 		"evFcf": 15
 	},
@@ -36,27 +36,27 @@
 		"yahoo": "£60.63"
 	},
 	"targetPrice": "£60.63",
-	"expectedCAGR": "-2% - 73%",
+	"expectedCAGR": "1% - 78%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.33,
+		"score": 1.29,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 20.8,
+			"multiple": 20.2,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4240,
-				"price6mAgo": 6280,
+				"price": 4112.5,
+				"price6mAgo": 6300,
 				"price1mAgo": 4820,
 				"low3m": 3480,
-				"return6m": -32.5,
-				"return1m": -12,
+				"return6m": -34.7,
+				"return1m": -14.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -66,9 +66,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:50.882Z",
+	"lastUpdated": "2026-03-26T08:26:21.311Z",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": 0.7,
+	"sharpeRatio": 0.8,
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,
@@ -88,5 +88,14 @@
 		"low": 40.15,
 		"mean": 60.63,
 		"high": 72
-	}
+	},
+	"analystConsensus": {
+		"ticker": "JDG.L",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

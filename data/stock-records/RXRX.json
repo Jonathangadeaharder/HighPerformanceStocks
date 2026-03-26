@@ -5,10 +5,10 @@
 	"confidence": "cut",
 	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
 	"marketCap": "$1.7B USD",
-	"sharpeRatio": 1.4,
+	"sharpeRatio": 1.42,
 	"sharpeNote": "Negative",
 	"expectedCAGR": "-5% - 247%",
-	"expectedVolatility": "~83%",
+	"expectedVolatility": "~82%",
 	"valuation": {
 		"trailingPE": null,
 		"forwardPE": -3.7,
@@ -44,7 +44,7 @@
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-26T00:02:59.128Z",
+	"lastUpdated": "2026-03-26T08:26:30.061Z",
 	"screener": {
 		"engine": "totalReturn",
 		"signal": "NO_DATA",
@@ -69,5 +69,15 @@
 		"low": 3,
 		"mean": 6.71,
 		"high": 11
-	}
+	},
+	"analystConsensus": {
+		"ticker": "RXRX",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$9.40",
+	"consensusRating": "Hold"
 }

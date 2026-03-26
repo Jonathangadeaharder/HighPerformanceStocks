@@ -9,7 +9,7 @@
 	"expectedCAGR": "7% - 49%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 28.6,
+		"trailingPE": 28.7,
 		"forwardPE": 21,
 		"pegRatio": null,
 		"evEbitda": 20.2,
@@ -33,7 +33,7 @@
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.66,
+		"ttmEPS": 10.64,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-26T00:03:02.068Z",
+	"lastUpdated": "2026-03-26T08:26:32.971Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.44,
@@ -78,9 +78,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 229.33,
-		"date": "2026-03-25",
-		"discount": -25
+		"dcf": 232.32,
+		"date": "2026-03-26",
+		"discount": -24
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -101,5 +101,14 @@
 		"low": 323,
 		"mean": 400.2,
 		"high": 450
-	}
+	},
+	"analystConsensus": {
+		"ticker": "V",
+		"strongBuy": 26,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

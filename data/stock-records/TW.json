@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.67,
+		"ttmEPS": 3.78,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-7%",
@@ -21,7 +21,7 @@
 	"currentPrice": "$119.95",
 	"marketCap": "$26.2B USD",
 	"valuation": {
-		"trailingPE": 32.7,
+		"trailingPE": 31.7,
 		"forwardPE": 26.7
 	},
 	"metrics": {
@@ -66,7 +66,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:03:01.295Z",
+	"lastUpdated": "2026-03-26T08:26:32.114Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 0.88,
 	"qcs": {
@@ -88,5 +88,15 @@
 		"low": 111,
 		"mean": 132.31,
 		"high": 203
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TW",
+		"strongBuy": 7,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$140.36",
+	"consensusRating": "Moderate Buy"
 }

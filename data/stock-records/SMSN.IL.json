@@ -13,32 +13,32 @@
 		"dividendYield": "2%",
 		"ttmEPS": 96.44
 	},
-	"currentPrice": "$3098",
-	"marketCap": "$841.7B USD",
+	"currentPrice": "$2982",
+	"marketCap": "$810.2B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
 	"expectedVolatility": "~41%",
 	"screener": {
 		"engine": "tPERG",
-		"score": 3.57,
+		"score": 3.44,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 32.1,
+			"multiple": 30.9,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 3098,
-				"price6mAgo": 1473,
-				"price1mAgo": 3636,
-				"low3m": 1957,
-				"return6m": 110.3,
-				"return1m": -14.8,
+				"price": 2982,
+				"price6mAgo": 1496,
+				"price1mAgo": 3642,
+				"low3m": 2028,
+				"return6m": 99.3,
+				"return1m": -18.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -49,10 +49,10 @@
 		},
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:59.247Z",
+	"lastUpdated": "2026-03-26T08:26:30.180Z",
 	"valuation": {
-		"trailingPE": 32.1,
-		"forwardPE": 49.4,
+		"trailingPE": 30.9,
+		"forwardPE": 47.5,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},
@@ -78,5 +78,14 @@
 			"downRevisions": 0,
 			"totalAnalysts": 1
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "SMSN.IL",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

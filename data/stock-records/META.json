@@ -14,7 +14,7 @@
 		"forwardPE": 16.6,
 		"pegRatio": 1.05,
 		"evEbitda": 14.8,
-		"evFcf": 64.3
+		"evFcf": 64.4
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
@@ -36,7 +36,7 @@
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
-		"ttmEPS": 23.48,
+		"ttmEPS": 23.5,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -46,7 +46,7 @@
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-26T00:02:54.507Z",
+	"lastUpdated": "2026-03-26T08:26:25.303Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.11,
@@ -82,9 +82,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 279.81,
-		"date": "2026-03-25",
-		"discount": -53
+		"dcf": 283.74,
+		"date": "2026-03-26",
+		"discount": -52
 	},
 	"qcs": {
 		"earningsScore": -3.84,
@@ -105,5 +105,15 @@
 		"low": 676,
 		"mean": 863.63,
 		"high": 1144
-	}
+	},
+	"analystConsensus": {
+		"ticker": "META",
+		"strongBuy": 45,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$846.63",
+	"consensusRating": "Moderate Buy"
 }

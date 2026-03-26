@@ -46,7 +46,11 @@ interface ForwardReturnParams {
 /**
  * Calculate 1-year forward expected return.
  */
-export function calcForwardReturn({ currentPrice, targetPrice, dividendYieldPct = 0 }: ForwardReturnParams): number {
+export function calcForwardReturn({
+	currentPrice,
+	targetPrice,
+	dividendYieldPct = 0
+}: ForwardReturnParams): number {
 	if (currentPrice <= 0) {
 		throw new Error('calcForwardReturn: currentPrice must be positive');
 	}

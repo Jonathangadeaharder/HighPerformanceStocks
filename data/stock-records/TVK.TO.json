@@ -12,7 +12,7 @@
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": 15.2,
-		"trailingPE": 33,
+		"trailingPE": 33.4,
 		"forwardPE": 22.5,
 		"evFcf": 59.4
 	},
@@ -36,9 +36,9 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 4.26
+		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-26T00:03:01.063Z",
+	"lastUpdated": "2026-03-26T08:26:32.021Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
@@ -95,5 +95,14 @@
 		"low": 170,
 		"mean": 182.83,
 		"high": 200
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TVK.TO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

@@ -42,7 +42,7 @@
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-26T00:02:46.388Z",
+	"lastUpdated": "2026-03-26T08:26:16.731Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1,
@@ -95,5 +95,14 @@
 		"low": 32,
 		"mean": 38.24,
 		"high": 45
-	}
+	},
+	"analystConsensus": {
+		"ticker": "EPD",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

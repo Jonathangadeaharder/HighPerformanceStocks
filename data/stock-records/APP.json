@@ -44,7 +44,7 @@
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:42.630Z",
+	"lastUpdated": "2026-03-26T08:26:12.760Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.73,
@@ -98,5 +98,15 @@
 		"low": 340,
 		"mean": 648.57,
 		"high": 860
-	}
+	},
+	"analystConsensus": {
+		"ticker": "APP",
+		"strongBuy": 20,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$654.50",
+	"consensusRating": "Moderate Buy"
 }

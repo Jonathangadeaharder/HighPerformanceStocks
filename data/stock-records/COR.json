@@ -9,7 +9,7 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS; ttmEPS reflects GAAP; non-GAAP EPS is significantly higher (~$18-20); CAGR model uses GAAP basis",
-		"ttmEPS": 8.35,
+		"ttmEPS": 8.32,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "6%",
@@ -20,7 +20,7 @@
 	"currentPrice": "$325.08",
 	"marketCap": "$63.2B USD",
 	"valuation": {
-		"trailingPE": 38.9,
+		"trailingPE": 39.1,
 		"forwardPE": 16.6,
 		"evEbitda": 14.4,
 		"evFcf": 20.7
@@ -70,7 +70,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:44.576Z",
+	"lastUpdated": "2026-03-26T08:26:14.796Z",
 	"expectedVolatility": "~26%",
 	"sharpeRatio": 0.69,
 	"qcs": {
@@ -92,5 +92,14 @@
 		"low": 340,
 		"mean": 407.92,
 		"high": 447
-	}
+	},
+	"analystConsensus": {
+		"ticker": "COR",
+		"strongBuy": 12,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

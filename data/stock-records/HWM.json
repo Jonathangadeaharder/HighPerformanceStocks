@@ -8,7 +8,7 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.71,
+		"ttmEPS": 3.72,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-11%",
@@ -21,7 +21,7 @@
 	"currentPrice": "$241.62",
 	"marketCap": "$97.3B USD",
 	"valuation": {
-		"trailingPE": 65.1,
+		"trailingPE": 65,
 		"forwardPE": 43.9,
 		"evEbitda": 41.6,
 		"evFcf": 108.3
@@ -72,7 +72,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:49.897Z",
+	"lastUpdated": "2026-03-26T08:26:20.354Z",
 	"expectedVolatility": "~33%",
 	"sharpeRatio": 0.15,
 	"qcs": {
@@ -94,5 +94,14 @@
 		"low": 214.92,
 		"mean": 280,
 		"high": 315
-	}
+	},
+	"analystConsensus": {
+		"ticker": "HWM",
+		"strongBuy": 19,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

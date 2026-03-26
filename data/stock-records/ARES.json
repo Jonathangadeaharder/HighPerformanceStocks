@@ -72,7 +72,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:42.638Z",
+	"lastUpdated": "2026-03-26T08:26:12.829Z",
 	"expectedVolatility": "~47%",
 	"sharpeRatio": 1.15,
 	"qcs": {
@@ -94,5 +94,14 @@
 		"low": 112,
 		"mean": 163.65,
 		"high": 215
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ARES",
+		"strongBuy": 9,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

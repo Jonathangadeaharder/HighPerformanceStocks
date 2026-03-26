@@ -44,7 +44,7 @@
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-26T00:03:00.047Z",
+	"lastUpdated": "2026-03-26T08:26:31.021Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.08,
@@ -100,5 +100,14 @@
 		"low": 1317,
 		"mean": 1594,
 		"high": 1900
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TDG",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

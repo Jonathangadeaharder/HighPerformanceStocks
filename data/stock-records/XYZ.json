@@ -5,9 +5,9 @@
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
 	"marketCap": "$36.5B USD",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.69,
 	"expectedCAGR": "-15% - 99%",
-	"expectedVolatility": "~55%",
+	"expectedVolatility": "~54%",
 	"valuation": {
 		"trailingPE": 28.6,
 		"forwardPE": 12.7,
@@ -43,7 +43,7 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:03.963Z",
+	"lastUpdated": "2026-03-26T08:26:35.023Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.1,
@@ -96,5 +96,14 @@
 		"low": 51,
 		"mean": 86.43,
 		"high": 119.16
-	}
+	},
+	"analystConsensus": {
+		"ticker": "XYZ",
+		"strongBuy": 24,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

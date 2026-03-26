@@ -8,7 +8,7 @@
 	"marketCap": "$61.2B USD",
 	"sharpeRatio": -0.12,
 	"expectedCAGR": "-17% - 19%",
-	"expectedVolatility": "~29%",
+	"expectedVolatility": "~30%",
 	"valuation": {
 		"trailingPE": 11.8,
 		"forwardPE": 17,
@@ -33,7 +33,7 @@
 		"yahoo": "$286.64"
 	},
 	"cagrModel": {
-		"ttmEPS": 24.13,
+		"ttmEPS": 24.12,
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-26T00:02:52.730Z",
+	"lastUpdated": "2026-03-26T08:26:23.276Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 3.43,
@@ -97,5 +97,14 @@
 		"low": 232,
 		"mean": 286.64,
 		"high": 336
-	}
+	},
+	"analystConsensus": {
+		"ticker": "LNG",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

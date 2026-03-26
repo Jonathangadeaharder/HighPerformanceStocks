@@ -10,7 +10,7 @@
 	"expectedCAGR": "19% - 67%",
 	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 37.1,
+		"trailingPE": 37.2,
 		"forwardPE": 20.6,
 		"pegRatio": null,
 		"evEbitda": 18.8,
@@ -35,7 +35,7 @@
 		"stockanalysis": "$251"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.04,
+		"ttmEPS": 5.03,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -45,7 +45,7 @@
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T00:02:46.286Z",
+	"lastUpdated": "2026-03-26T08:26:16.602Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.29,
@@ -101,5 +101,14 @@
 		"low": 220,
 		"mean": 264.91,
 		"high": 310
-	}
+	},
+	"analystConsensus": {
+		"ticker": "DHR",
+		"strongBuy": 18,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

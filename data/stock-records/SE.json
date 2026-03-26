@@ -59,7 +59,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:59.151Z",
+	"lastUpdated": "2026-03-26T08:26:30.104Z",
 	"valuation": {
 		"trailingPE": 32.7,
 		"forwardPE": 16.1,
@@ -94,5 +94,14 @@
 		"low": 100,
 		"mean": 140.71,
 		"high": 195
-	}
+	},
+	"analystConsensus": {
+		"ticker": "SE",
+		"strongBuy": 16,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

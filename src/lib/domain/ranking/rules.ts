@@ -105,7 +105,6 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-
 	return { status: 'FAIL', reason: note ?? 'No valuation edge.' };
 }
 

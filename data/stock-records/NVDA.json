@@ -10,7 +10,7 @@
 	"expectedCAGR": "-22% - 113%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 36.4,
+		"trailingPE": 36.5,
 		"forwardPE": 16.1,
 		"pegRatio": 1.6,
 		"evEbitda": 32.2,
@@ -34,7 +34,7 @@
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.91,
+		"ttmEPS": 4.9,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -44,7 +44,7 @@
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-26T00:02:56.526Z",
+	"lastUpdated": "2026-03-26T08:26:27.422Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.57,
@@ -80,9 +80,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 230.47,
-		"date": "2026-03-25",
-		"discount": 29
+		"dcf": 232.25,
+		"date": "2026-03-26",
+		"discount": 30
 	},
 	"qcs": {
 		"earningsScore": 1.65,
@@ -103,5 +103,15 @@
 		"low": 140,
 		"mean": 268.22,
 		"high": 380
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NVDA",
+		"strongBuy": 45,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$275.95",
+	"consensusRating": "Unknown"
 }

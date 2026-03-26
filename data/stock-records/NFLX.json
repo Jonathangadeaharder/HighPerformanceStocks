@@ -72,11 +72,11 @@
 	},
 	"bullCase": "Netflix won the streaming wars. It is the only pure-play streaming platform with global scale (300M+ subscribers), consistent content investment discipline, and a growing advertising tier that creates a new high-margin revenue stream. Live sports and events (NFL, WWE) are extending the addressable audience. FCF has inflected to $7B+ annually.",
 	"bearCase": "At 24x forward PE for an 18% EPS grower, Netflix is not cheap. Subscriber growth in developed markets is approaching saturation — the next growth leg requires LatAm/Asia penetration at lower ARPU. The advertising tier depends on Netflix building an ad tech stack from scratch. Password sharing re-enforcement tailwind is exhausted in 2025-2026.",
-	"lastUpdated": "2026-03-26T00:02:55.658Z",
+	"lastUpdated": "2026-03-26T08:26:26.434Z",
 	"intrinsicValue": {
-		"dcf": 111.27,
-		"date": "2026-03-25",
-		"discount": 21
+		"dcf": 112.28,
+		"date": "2026-03-26",
+		"discount": 22
 	},
 	"qcs": {
 		"earningsScore": 1.02,
@@ -97,5 +97,15 @@
 		"low": 80,
 		"mean": 113.21,
 		"high": 151.4
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NFLX",
+		"strongBuy": 24,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$114.35",
+	"consensusRating": "Moderate Buy"
 }

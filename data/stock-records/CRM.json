@@ -32,7 +32,7 @@
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.8,
+		"ttmEPS": 7.81,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -42,7 +42,7 @@
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-26T00:02:45.358Z",
+	"lastUpdated": "2026-03-26T08:26:15.617Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.81,
@@ -95,5 +95,14 @@
 		"low": 190,
 		"mean": 273.66,
 		"high": 475
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CRM",
+		"strongBuy": 37,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

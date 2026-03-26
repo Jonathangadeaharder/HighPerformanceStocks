@@ -44,7 +44,7 @@
 		"high": 440
 	},
 	"expectedCAGR": "-34% - 143%",
-	"expectedVolatility": "~74%",
+	"expectedVolatility": "~73%",
 	"sharpeRatio": 0.68,
 	"screener": {
 		"engine": "fPERG",
@@ -95,10 +95,20 @@
 		}
 	},
 	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
-	"lastUpdated": "2026-03-26T00:02:44.526Z",
+	"lastUpdated": "2026-03-26T08:26:14.729Z",
 	"intrinsicValue": {
-		"dcf": 20.66,
-		"date": "2026-03-25",
+		"dcf": 20.7,
+		"date": "2026-03-26",
 		"discount": -89
-	}
+	},
+	"analystConsensus": {
+		"ticker": "COIN",
+		"strongBuy": 18,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$272.31",
+	"consensusRating": "Hold"
 }

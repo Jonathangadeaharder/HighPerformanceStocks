@@ -9,7 +9,7 @@
 	"expectedCAGR": "7% - 97%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 32.7,
+		"trailingPE": 32.8,
 		"forwardPE": 18,
 		"pegRatio": null,
 		"evEbitda": 23,
@@ -43,7 +43,7 @@
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-03-26T00:03:02.178Z",
+	"lastUpdated": "2026-03-26T08:26:32.994Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.92,
@@ -96,5 +96,14 @@
 		"low": 190,
 		"mean": 270.93,
 		"high": 350
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VEEV",
+		"strongBuy": 15,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

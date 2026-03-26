@@ -44,7 +44,7 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:48.076Z",
+	"lastUpdated": "2026-03-26T08:26:18.491Z",
 	"screener": {
 		"engine": "fCFG",
 		"signal": "NO_DATA",
@@ -69,5 +69,14 @@
 		"low": 269,
 		"mean": 305.9,
 		"high": 356.09
-	}
+	},
+	"analystConsensus": {
+		"ticker": "FNV",
+		"strongBuy": 6,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

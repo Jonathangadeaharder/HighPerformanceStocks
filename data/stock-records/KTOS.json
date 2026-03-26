@@ -94,5 +94,15 @@
 		}
 	},
 	"description": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the Unit...",
-	"lastUpdated": "2026-03-26T00:02:51.881Z"
+	"lastUpdated": "2026-03-26T08:26:22.268Z",
+	"analystConsensus": {
+		"ticker": "KTOS",
+		"strongBuy": 13,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$98.28",
+	"consensusRating": "Moderate Buy"
 }

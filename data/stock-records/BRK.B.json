@@ -38,7 +38,7 @@
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-26T00:02:44.412Z",
+	"lastUpdated": "2026-03-26T08:26:14.638Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
@@ -95,5 +95,14 @@
 		"low": 481,
 		"mean": 523,
 		"high": 578
-	}
+	},
+	"analystConsensus": {
+		"ticker": "BRK.B",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

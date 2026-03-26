@@ -33,7 +33,7 @@
 		"basis": "Captures Bangalore Airport IPO catalyst and narrowing NAV discount.",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-26T00:02:48.069Z",
+	"lastUpdated": "2026-03-26T08:26:18.470Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 0.32,
@@ -82,5 +82,14 @@
 			"totalAnalysts": 1
 		}
 	},
-	"description": "Fairfax India Holdings Corporation, together with its subsidiaries, operates as an investment holding company in India."
+	"description": "Fairfax India Holdings Corporation, together with its subsidiaries, operates as an investment holding company in India.",
+	"analystConsensus": {
+		"ticker": "FIH.U.TO",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

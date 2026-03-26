@@ -42,7 +42,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-26T00:02:57.347Z",
+	"lastUpdated": "2026-03-26T08:26:28.264Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.03,
@@ -95,5 +95,15 @@
 		"low": 114,
 		"mean": 207.75,
 		"high": 265
-	}
+	},
+	"analystConsensus": {
+		"ticker": "PANW",
+		"strongBuy": 35,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$210.19",
+	"consensusRating": "Moderate Buy"
 }

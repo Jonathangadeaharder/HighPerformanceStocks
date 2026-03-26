@@ -44,7 +44,7 @@
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:02.980Z",
+	"lastUpdated": "2026-03-26T08:26:34.009Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": null,
@@ -96,5 +96,15 @@
 		"low": 43,
 		"mean": 53.5,
 		"high": 68
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VNOM",
+		"strongBuy": 15,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$51.93",
+	"consensusRating": "Moderate Buy"
 }

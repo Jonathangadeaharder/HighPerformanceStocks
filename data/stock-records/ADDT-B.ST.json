@@ -4,13 +4,13 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "82.1B SEK",
-	"sharpeRatio": 0.59,
-	"expectedCAGR": "10% - 33%",
+	"marketCap": "81.9B SEK",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "10% - 34%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 39.7,
-		"forwardPE": 38.8,
+		"trailingPE": 39.6,
+		"forwardPE": 38.7,
 		"pegRatio": null,
 		"evEbitda": 24.4,
 		"evFcf": 35.1
@@ -27,24 +27,24 @@
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "304 SEK",
+	"currentPrice": "303 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.65,
+		"ttmEPS": 7.66,
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "10%",
-			"base": "26%",
-			"bull": "33%"
+			"base": "27%",
+			"bull": "34%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:40.614Z",
+	"lastUpdated": "2026-03-26T08:26:10.972Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.41,
@@ -59,12 +59,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 304,
-				"price6mAgo": 312,
-				"price1mAgo": 330,
+				"price": 303.2,
+				"price6mAgo": 309.8,
+				"price1mAgo": 334.6,
 				"low3m": 283.2,
-				"return6m": -2.6,
-				"return1m": -7.9,
+				"return6m": -2.1,
+				"return1m": -9.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.25
+		"secondaryScore": 2.24
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -99,5 +99,14 @@
 		"low": 330,
 		"mean": 380.83,
 		"high": 402
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ADDT-B.ST",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

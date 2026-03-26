@@ -37,8 +37,8 @@
 	},
 	"targetPrice": "$206.75",
 	"expectedCAGR": "29% - 108%",
-	"expectedVolatility": "~91%",
-	"sharpeRatio": 0.7,
+	"expectedVolatility": "~90%",
+	"sharpeRatio": 0.71,
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.08,
@@ -73,7 +73,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:41.669Z",
+	"lastUpdated": "2026-03-26T08:26:11.825Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -95,5 +95,15 @@
 		"low": 155,
 		"mean": 206.75,
 		"high": 250
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ALAB",
+		"strongBuy": 12,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$202.22",
+	"consensusRating": "Moderate Buy"
 }

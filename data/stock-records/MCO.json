@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 13.67,
+		"ttmEPS": 13.65,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "8%",
@@ -21,7 +21,7 @@
 	"currentPrice": "$428.05",
 	"marketCap": "$76.2B USD",
 	"valuation": {
-		"trailingPE": 31.3,
+		"trailingPE": 31.4,
 		"forwardPE": 22.9,
 		"evEbitda": 21.7,
 		"evFcf": 39.4
@@ -72,9 +72,9 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:53.602Z",
-	"expectedVolatility": "~31%",
-	"sharpeRatio": 0.87,
+	"lastUpdated": "2026-03-26T08:26:24.210Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.9,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -94,5 +94,14 @@
 		"low": 460,
 		"mean": 546.7,
 		"high": 660
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MCO",
+		"strongBuy": 13,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

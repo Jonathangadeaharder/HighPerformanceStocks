@@ -14,8 +14,8 @@
 		"dividendYield": "0%",
 		"ttmEPS": 6.16
 	},
-	"currentPrice": "$80.50",
-	"marketCap": "$20.9B USD",
+	"currentPrice": "$80.20",
+	"marketCap": "$20.8B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
@@ -35,12 +35,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 80.5,
-				"price6mAgo": 50.7,
-				"price1mAgo": 81.3,
-				"low3m": 53.1,
-				"return6m": 58.8,
-				"return1m": -1,
+				"price": 80.2,
+				"price6mAgo": 52.2,
+				"price1mAgo": 82,
+				"low3m": 54,
+				"return6m": 53.6,
+				"return1m": -2.2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -50,9 +50,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:50.876Z",
+	"lastUpdated": "2026-03-26T08:26:21.380Z",
 	"valuation": {
-		"trailingPE": 13.1,
+		"trailingPE": 13,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -78,5 +78,14 @@
 			"downRevisions": 0,
 			"totalAnalysts": 1
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "KAP.IL",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

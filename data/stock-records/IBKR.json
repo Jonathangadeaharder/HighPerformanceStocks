@@ -66,7 +66,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:49.927Z",
+	"lastUpdated": "2026-03-26T08:26:20.369Z",
 	"expectedVolatility": "~42%",
 	"sharpeRatio": 0.06,
 	"qcs": {
@@ -88,5 +88,15 @@
 		"low": 56,
 		"mean": 80.56,
 		"high": 91
-	}
+	},
+	"analystConsensus": {
+		"ticker": "IBKR",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$76.39",
+	"consensusRating": "Moderate Buy"
 }

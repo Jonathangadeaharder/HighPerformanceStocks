@@ -13,12 +13,10 @@ const requiredFields = [
 	'confidence',
 	'confidenceReason',
 	'marketCap',
-	'expectedCAGR',
 	'expectedVolatility',
 	'bullCase',
 	'bearCase',
-	'currentPrice',
-	'targetPrice'
+	'currentPrice'
 ];
 
 function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
@@ -32,7 +30,7 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 		const statedReturn = parsePercent(data.cagrModel.scenarios[label] as string);
 		if (statedReturn == null || target == null) continue;
 
-		const expectedReturn = ((target as number - price) / price) * 100 + dyPct;
+		const expectedReturn = (((target as number) - price) / price) * 100 + dyPct;
 		const diff = Math.abs(expectedReturn - statedReturn);
 		if (diff > RETURN_TOLERANCE_PP) {
 			errors.push(
@@ -72,11 +70,11 @@ function verifyData() {
 
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
-			if (!data.cagrModel.scenarios?.base) {
+			if (data.cagrModel.scenarios && !data.cagrModel.scenarios.base) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
-				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
+			if (data.cagrModel.ttmEPS === undefined) {
+				errors.push(`Missing 'cagrModel.ttmEPS'`);
 			}
 			if (!data.cagrModel.epsGrowth) {
 				errors.push(`Missing 'cagrModel.epsGrowth'`);

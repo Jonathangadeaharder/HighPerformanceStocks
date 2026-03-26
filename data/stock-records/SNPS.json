@@ -9,7 +9,7 @@
 	"expectedCAGR": "4% - 58%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 62.8,
+		"trailingPE": 62.9,
 		"forwardPE": 24,
 		"pegRatio": null,
 		"evEbitda": 54,
@@ -43,7 +43,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-26T00:02:59.289Z",
+	"lastUpdated": "2026-03-26T08:26:30.231Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.8,
@@ -96,5 +96,15 @@
 		"low": 425,
 		"mean": 537.75,
 		"high": 650
-	}
+	},
+	"analystConsensus": {
+		"ticker": "SNPS",
+		"strongBuy": 16,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$531.00",
+	"consensusRating": "Hold"
 }

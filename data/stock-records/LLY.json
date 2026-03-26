@@ -5,11 +5,11 @@
 	"confidence": "high",
 	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
 	"marketCap": "$820.1B USD",
-	"sharpeRatio": 0.58,
+	"sharpeRatio": 0.6,
 	"expectedCAGR": "-6% - 65%",
-	"expectedVolatility": "~43%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 39.9,
+		"trailingPE": 40,
 		"forwardPE": 21.8,
 		"evEbitda": 27,
 		"evFcf": 438.4
@@ -31,12 +31,12 @@
 			"base": "33%",
 			"bull": "65%"
 		},
-		"ttmEPS": 22.94,
+		"ttmEPS": 22.91,
 		"epsGrowth": "24%",
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-26T00:02:52.665Z",
+	"lastUpdated": "2026-03-26T08:26:23.228Z",
 	"consensus": {
 		"yahoo": "$1209.34"
 	},
@@ -92,5 +92,14 @@
 		"low": 850,
 		"mean": 1209.34,
 		"high": 1500
-	}
+	},
+	"analystConsensus": {
+		"ticker": "LLY",
+		"strongBuy": 21,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

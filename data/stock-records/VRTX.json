@@ -33,7 +33,7 @@
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
-		"ttmEPS": 15.3,
+		"ttmEPS": 15.33,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-26T00:03:03.065Z",
+	"lastUpdated": "2026-03-26T08:26:34.091Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.59,
@@ -96,5 +96,15 @@
 		"low": 330,
 		"mean": 547.72,
 		"high": 641
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VRTX",
+		"strongBuy": 18,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$554.30",
+	"consensusRating": "Moderate Buy"
 }

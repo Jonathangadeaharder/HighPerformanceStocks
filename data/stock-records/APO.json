@@ -45,7 +45,7 @@
 		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:42.622Z",
+	"lastUpdated": "2026-03-26T08:26:12.820Z",
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.75,
@@ -100,5 +100,14 @@
 		"low": 116,
 		"mean": 154.29,
 		"high": 181
-	}
+	},
+	"analystConsensus": {
+		"ticker": "APO",
+		"strongBuy": 14,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

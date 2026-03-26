@@ -8,7 +8,7 @@
 	"cagrModel": {
 		"epsGrowth": "25%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 9.76,
+		"ttmEPS": 9.75,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-25%",
@@ -20,7 +20,7 @@
 	"currentPrice": "$369.34",
 	"marketCap": "$293.1B USD",
 	"valuation": {
-		"trailingPE": 37.8,
+		"trailingPE": 37.9,
 		"forwardPE": 26.7,
 		"evEbitda": 32.8,
 		"evFcf": 67.2
@@ -73,7 +73,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:41.622Z",
+	"lastUpdated": "2026-03-26T08:26:11.855Z",
 	"qcs": {
 		"earningsScore": 2.03,
 		"flowScore": 5,
@@ -95,5 +95,15 @@
 		"low": 275,
 		"mean": 410.63,
 		"high": 470
-	}
+	},
+	"analystConsensus": {
+		"ticker": "AMAT",
+		"strongBuy": 19,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$363.46",
+	"consensusRating": "Moderate Buy"
 }

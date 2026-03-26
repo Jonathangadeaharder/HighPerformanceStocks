@@ -9,7 +9,7 @@
 	"sharpeRatio": 0.78,
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 42.3,
+		"trailingPE": 42.2,
 		"forwardPE": 49.4,
 		"pegRatio": 3.2,
 		"evEbitda": 25.7,
@@ -34,9 +34,9 @@
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
-		"ttmEPS": 5.04
+		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-26T00:02:49.033Z",
+	"lastUpdated": "2026-03-26T08:26:19.429Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,
@@ -83,5 +83,14 @@
 			"totalAnalysts": 1
 		}
 	},
-	"description": "HEICO Corporation provides aerospace, defense, and electronic related products and services in the United States and internationally."
+	"description": "HEICO Corporation provides aerospace, defense, and electronic related products and services in the United States and internationally.",
+	"analystConsensus": {
+		"ticker": "HEI.A",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

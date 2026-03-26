@@ -42,7 +42,7 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:52.698Z",
+	"lastUpdated": "2026-03-26T08:26:23.259Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.44,
@@ -97,5 +97,14 @@
 		"low": 39,
 		"mean": 44.25,
 		"high": 57
-	}
+	},
+	"analystConsensus": {
+		"ticker": "LMN.V",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

@@ -70,7 +70,7 @@
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-03-26T00:02:48.121Z",
+	"lastUpdated": "2026-03-26T08:26:18.522Z",
 	"expectedVolatility": "~44%",
 	"sharpeRatio": 0.27,
 	"qcs": {
@@ -92,5 +92,15 @@
 		"low": 64,
 		"mean": 89.06,
 		"high": 120
-	}
+	},
+	"analystConsensus": {
+		"ticker": "FTNT",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$88.62",
+	"consensusRating": "Hold"
 }

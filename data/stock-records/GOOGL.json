@@ -44,7 +44,7 @@
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-03-26T00:02:48.222Z",
+	"lastUpdated": "2026-03-26T08:26:18.600Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.8,
@@ -80,9 +80,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 152.25,
-		"date": "2026-03-25",
-		"discount": -48
+		"dcf": 154.44,
+		"date": "2026-03-26",
+		"discount": -47
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -103,5 +103,15 @@
 		"low": 185,
 		"mean": 376.75,
 		"high": 443
-	}
+	},
+	"analystConsensus": {
+		"ticker": "GOOGL",
+		"strongBuy": 44,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$367.18",
+	"consensusRating": "Moderate Buy"
 }

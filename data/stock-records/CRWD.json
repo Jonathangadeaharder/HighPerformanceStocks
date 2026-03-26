@@ -42,7 +42,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-26T00:02:45.426Z",
+	"lastUpdated": "2026-03-26T08:26:15.654Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.02,
@@ -95,5 +95,15 @@
 		"low": 368,
 		"mean": 490.48,
 		"high": 706
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CRWD",
+		"strongBuy": 27,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$506.26",
+	"consensusRating": "Moderate Buy"
 }

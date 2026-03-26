@@ -68,7 +68,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:03.937Z",
+	"lastUpdated": "2026-03-26T08:26:34.987Z",
 	"expectedVolatility": "~40%",
 	"sharpeRatio": 0.63,
 	"qcs": {
@@ -92,5 +92,14 @@
 		"low": 265,
 		"mean": 318.36,
 		"high": 375
-	}
+	},
+	"analystConsensus": {
+		"ticker": "WST",
+		"strongBuy": 12,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

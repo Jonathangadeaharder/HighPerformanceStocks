@@ -18,7 +18,11 @@ function computeEarningsScore(summary: any, cvStock: number) {
 		earningsScore = avgSurprise * 50 * (cvBenchmark / safeCvStock);
 		earningsScore = +Math.max(-5, Math.min(5, earningsScore)).toFixed(2);
 	}
-	return { earningsScore, avgSurprisePct: validQuarters > 0 ? +((totalSurprise / validQuarters) * 100).toFixed(2) : 0, validQuarters };
+	return {
+		earningsScore,
+		avgSurprisePct: validQuarters > 0 ? +((totalSurprise / validQuarters) * 100).toFixed(2) : 0,
+		validQuarters
+	};
 }
 
 function computeFlowScore(summary: any) {
@@ -72,7 +76,8 @@ export function computeQCS(summary: any, cvStock = 0.08) {
 
 	const { earningsScore, avgSurprisePct, validQuarters } = computeEarningsScore(summary, cvStock);
 	const { flowScore, netInsiderShares, instFlowTrend } = computeFlowScore(summary);
-	const { revisionsScore, upRevisions, downRevisions, totalAnalysts } = computeRevisionsScore(summary);
+	const { revisionsScore, upRevisions, downRevisions, totalAnalysts } =
+		computeRevisionsScore(summary);
 
 	let totalScore = +(earningsScore + flowScore + revisionsScore).toFixed(2);
 	totalScore = Math.max(-15, Math.min(15, totalScore));

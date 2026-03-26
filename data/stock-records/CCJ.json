@@ -4,7 +4,7 @@
 	"group": "Energy & Infrastructure",
 	"confidence": "high",
 	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
-	"targetPrice": "$124.34",
+	"targetPrice": "$124.18",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
@@ -21,7 +21,7 @@
 	"currentPrice": "$109.02",
 	"marketCap": "$47.5B USD",
 	"consensus": {
-		"yahoo": "$124.34"
+		"yahoo": "$124.18"
 	},
 	"expectedVolatility": "~53%",
 	"screener": {
@@ -58,7 +58,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:44.420Z",
+	"lastUpdated": "2026-03-26T08:26:14.683Z",
 	"valuation": {
 		"trailingPE": 111.2,
 		"forwardPE": 58.5,
@@ -91,8 +91,17 @@
 	},
 	"description": "Cameco Corporation provides uranium for the generation of electricity in the Americas, Europe, and Asia.",
 	"analystTargets": {
-		"low": 81.63,
-		"mean": 124.34,
-		"high": 158.28
-	}
+		"low": 81.52,
+		"mean": 124.18,
+		"high": 158.08
+	},
+	"analystConsensus": {
+		"ticker": "CCJ",
+		"strongBuy": 11,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

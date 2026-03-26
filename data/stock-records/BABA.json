@@ -23,13 +23,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-1%"
 	},
-	"targetPrice": "$189.34",
+	"targetPrice": "$189.29",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
 	"currentPrice": "$129.87",
 	"consensus": {
 		"tipranks": "$168",
-		"yahoo": "$189.34",
+		"yahoo": "$189.29",
 		"stockanalysis": "$160"
 	},
 	"cagrModel": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-26T00:02:43.568Z",
+	"lastUpdated": "2026-03-26T08:26:13.741Z",
 	"screener": {
 		"engine": "tPERG",
 		"score": 1.23,
@@ -79,9 +79,9 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 235.23,
-		"date": "2026-03-25",
-		"discount": 81
+		"dcf": 239.73,
+		"date": "2026-03-26",
+		"discount": 85
 	},
 	"qcs": {
 		"earningsScore": -3.47,
@@ -99,8 +99,17 @@
 	},
 	"description": "Alibaba Group Holding Limited, through its subsidiaries, provides technology infrastructure and marketing reach to help merchants, brands, retailers, and other businesses to engage with their users...",
 	"analystTargets": {
-		"low": 111.77,
-		"mean": 189.34,
-		"high": 257.47
-	}
+		"low": 111.74,
+		"mean": 189.29,
+		"high": 257.41
+	},
+	"analystConsensus": {
+		"ticker": "BABA",
+		"strongBuy": 21,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

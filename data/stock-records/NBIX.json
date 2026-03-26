@@ -42,7 +42,7 @@
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-26T00:02:55.491Z",
+	"lastUpdated": "2026-03-26T08:26:26.327Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.05,
@@ -95,5 +95,15 @@
 		"low": 140,
 		"mean": 178.04,
 		"high": 217.15
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NBIX",
+		"strongBuy": 23,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$175.10",
+	"consensusRating": "Moderate Buy"
 }

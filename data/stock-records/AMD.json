@@ -14,13 +14,13 @@
 			"base": "31%",
 			"bull": "66%"
 		},
-		"ttmEPS": 2.61,
+		"ttmEPS": 2.6,
 		"epsGrowth": "35%",
 		"dividendYield": "0%",
 		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:41.649Z",
+	"lastUpdated": "2026-03-26T08:26:11.978Z",
 	"consensus": {
 		"yahoo": "$289.61"
 	},
@@ -59,13 +59,13 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 63.13,
-		"date": "2026-03-25",
+		"dcf": 63.62,
+		"date": "2026-03-26",
 		"discount": -71
 	},
 	"currentPrice": "$220.27",
 	"valuation": {
-		"trailingPE": 84.4,
+		"trailingPE": 84.7,
 		"forwardPE": 20.5,
 		"evEbitda": 52.3,
 		"evFcf": 76.9
@@ -100,5 +100,15 @@
 		"low": 220,
 		"mean": 289.61,
 		"high": 365
-	}
+	},
+	"analystConsensus": {
+		"ticker": "AMD",
+		"strongBuy": 29,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$290.53",
+	"consensusRating": "Moderate Buy"
 }

@@ -23,16 +23,16 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "85%"
 	},
-	"targetPrice": "$1017.18",
+	"targetPrice": "$1016.83",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (36x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
 	"currentPrice": "$697.05",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1017.18"
+		"yahoo": "$1016.83"
 	},
 	"cagrModel": {
-		"ttmEPS": 19.58,
+		"ttmEPS": 19.59,
 		"epsGrowth": "33%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		"basis": "Reflects biotech terminal multiple compression and competitive encroachment risk.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:42.700Z",
+	"lastUpdated": "2026-03-26T08:26:12.856Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.71,
@@ -93,8 +93,18 @@
 	},
 	"description": "argenx SE, a commercial-stage biopharma company, develops various therapies for the treatment of autoimmune diseases in the United States, Japan, China, the Netherlands, and internationally.",
 	"analystTargets": {
-		"low": 693.2,
-		"mean": 1017.18,
-		"high": 1222.77
-	}
+		"low": 692.96,
+		"mean": 1016.83,
+		"high": 1222.35
+	},
+	"analystConsensus": {
+		"ticker": "ARGX",
+		"strongBuy": 24,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$999.22",
+	"consensusRating": "Moderate Buy"
 }

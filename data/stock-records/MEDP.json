@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 15.3,
+		"ttmEPS": 15.26,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-30%",
@@ -21,7 +21,7 @@
 	"currentPrice": "$466.80",
 	"marketCap": "$13.2B USD",
 	"valuation": {
-		"trailingPE": 30.5,
+		"trailingPE": 30.6,
 		"forwardPE": 24.4,
 		"evEbitda": 22.9,
 		"evFcf": 27.3
@@ -72,7 +72,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:53.637Z",
+	"lastUpdated": "2026-03-26T08:26:24.237Z",
 	"expectedVolatility": "~60%",
 	"sharpeRatio": -0.12,
 	"qcs": {
@@ -94,5 +94,15 @@
 		"low": 329,
 		"mean": 489.69,
 		"high": 582
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MEDP",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$486.67",
+	"consensusRating": "Hold"
 }

@@ -26,7 +26,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-26T00:02:56.401Z",
+	"lastUpdated": "2026-03-26T08:26:27.249Z",
 	"consensus": {},
 	"screener": {
 		"engine": "tPERG",
@@ -76,5 +76,14 @@
 			"totalAnalysts": 1
 		}
 	},
-	"description": "Nelnet, Inc. engages in loan servicing, education technology services, and payment businesses worldwide."
+	"description": "Nelnet, Inc. engages in loan servicing, education technology services, and payment businesses worldwide.",
+	"analystConsensus": {
+		"ticker": "NNI",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

@@ -23,7 +23,7 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "15%"
 	},
-	"targetPrice": "C$2749.67",
+	"targetPrice": "C$2753.58",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
 	"currentPrice": "C$2336.96",
@@ -36,11 +36,11 @@
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
-		"ttmEPS": 293.11
+		"ttmEPS": 293.52
 	},
-	"lastUpdated": "2026-03-26T00:02:47.297Z",
+	"lastUpdated": "2026-03-26T08:26:17.675Z",
 	"consensus": {
-		"yahoo": "C$2749.67"
+		"yahoo": "C$2753.58"
 	},
 	"screener": {
 		"engine": "tPERG",
@@ -51,7 +51,7 @@
 			"multipleType": "Peak-Adjusted P/E",
 			"multiple": 8,
 			"cvStock": 0.041,
-			"riskMultiplier": 1.837
+			"riskMultiplier": 1.84
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -92,8 +92,17 @@
 	},
 	"description": "Fairfax Financial Holdings Limited, through its subsidiaries, provides property and casualty insurance and reinsurance, and investment management services in Canada, the United States, the Middle E...",
 	"analystTargets": {
-		"low": 1859.8,
-		"mean": 2749.67,
-		"high": 3238.81
-	}
+		"low": 1862.44,
+		"mean": 2753.58,
+		"high": 3243.4
+	},
+	"analystConsensus": {
+		"ticker": "FFH.TO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }
