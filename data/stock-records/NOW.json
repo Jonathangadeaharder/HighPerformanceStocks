@@ -4,67 +4,67 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$116.5B USD",
-	"sharpeRatio": 1.64,
-	"expectedCAGR": "11% - 136%",
+	"marketCap": "$108.7B USD",
+	"sharpeRatio": 1.93,
+	"expectedCAGR": "19% - 152%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 68.1,
-		"forwardPE": 22,
-		"evEbitda": 40.8,
-		"evFcf": 22.5
+		"trailingPE": 61.7,
+		"forwardPE": 20.5,
+		"evEbitda": 38,
+		"evFcf": 21
 	},
 	"metrics": {
 		"roe": "15.5%",
 		"fcfMargin": "~37%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "58%"
 	},
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$110.38",
+	"currentPrice": "$103.06",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "11%",
-			"base": "71%",
-			"bull": "136%"
+			"bear": "19%",
+			"base": "83%",
+			"bull": "152%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-21T00:31:47.072Z",
+	"lastUpdated": "2026-03-26T00:02:56.437Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.04,
-		"signal": "WAIT",
+		"score": 0.97,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 22,
+			"multiple": 20.5,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 110.38,
-				"price6mAgo": 189.56,
-				"price1mAgo": 100.8,
+				"price": 103.06,
+				"price6mAgo": 187.2,
+				"price1mAgo": 109.3,
 				"low3m": 98,
-				"return6m": -41.8,
-				"return1m": 9.5,
+				"return6m": -44.9,
+				"return1m": -5.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 2,
 				"down30d": 2
 			},
 			"earningsSurprise": {
@@ -76,13 +76,13 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"revisionsScore": 0.23,
+		"totalScore": 5.23,
 		"raw": {
 			"avgSurprisePct": 9.24,
 			"netInsiderShares": 435053,
 			"instFlowTrend": "negative",
-			"upRevisions": 1,
+			"upRevisions": 3,
 			"downRevisions": 1,
 			"totalAnalysts": 43
 		}

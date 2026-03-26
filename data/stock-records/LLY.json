@@ -4,15 +4,15 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
-	"marketCap": "$811.5B USD",
+	"marketCap": "$820.1B USD",
 	"sharpeRatio": 0.58,
 	"expectedCAGR": "-6% - 65%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 39.5,
-		"forwardPE": 21.5,
-		"evEbitda": 26.7,
-		"evFcf": 434
+		"trailingPE": 39.9,
+		"forwardPE": 21.8,
+		"evEbitda": 27,
+		"evFcf": 438.4
 	},
 	"metrics": {
 		"roe": "101.2%",
@@ -24,7 +24,7 @@
 	"targetPrice": "$1209.34",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$906.70",
+	"currentPrice": "$916.31",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "-6%",
@@ -36,30 +36,30 @@
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-21T00:31:44.109Z",
+	"lastUpdated": "2026-03-26T00:02:52.665Z",
 	"consensus": {
 		"yahoo": "$1209.34"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.88,
+		"score": 0.89,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
-			"multiple": 21.5,
+			"multiple": 21.8,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 906.7,
-				"price6mAgo": 754.95,
-				"price1mAgo": 1058.56,
-				"low3m": 899.29,
-				"return6m": 20.1,
-				"return1m": -14.3,
+				"price": 916.31,
+				"price6mAgo": 724.54,
+				"price1mAgo": 1022.02,
+				"low3m": 895.61,
+				"return6m": 26.5,
+				"return1m": -10.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -80,7 +80,7 @@
 		"totalScore": 6.96,
 		"raw": {
 			"avgSurprisePct": 8.86,
-			"netInsiderShares": -3535118,
+			"netInsiderShares": -3511453,
 			"instFlowTrend": "neutral",
 			"upRevisions": 17,
 			"downRevisions": 6,

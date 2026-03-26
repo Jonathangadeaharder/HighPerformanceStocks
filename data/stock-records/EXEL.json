@@ -4,16 +4,16 @@
 	"group": "Biotech",
 	"confidence": "low",
 	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
-	"marketCap": "$11.1B USD",
-	"sharpeRatio": 0.24,
-	"expectedCAGR": "-15% - 45%",
+	"marketCap": "$11.5B USD",
+	"sharpeRatio": 0.15,
+	"expectedCAGR": "-18% - 40%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 14.8,
-		"forwardPE": 10.5,
+		"trailingPE": 15.4,
+		"forwardPE": 10.9,
 		"pegRatio": 0.8,
-		"evEbitda": 10.7,
-		"evFcf": 15.6
+		"evEbitda": 11.1,
+		"evFcf": 16.2
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$46.83",
 	"bullCase": "Exelixis' Cabometyx has label expansions pending in front-line RCC combinations (with nivolumab) and additional tumor types. The pipeline assets XL092 (next-gen cabozantinib) and XB002 (ADC) represent the next growth phase. Massive cash balance ($2B+) with no debt funds buybacks and internal pipeline without equity dilution.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$41.27",
+	"currentPrice": "$42.78",
 	"consensus": {
 		"tipranks": "$45",
 		"yahoo": "$46.83",
@@ -37,35 +37,35 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-15%",
-			"base": "13%",
-			"bull": "45%"
+			"bear": "-18%",
+			"base": "9%",
+			"bull": "40%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-21T00:31:40.532Z",
+	"lastUpdated": "2026-03-26T00:02:47.156Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.52,
+		"score": 0.54,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 10.5,
+			"multiple": 10.9,
 			"cvStock": 0.135,
 			"riskMultiplier": 1.033
 		},
-		"note": "Cheap (0.52) but base return 13% misses the 15% hurdle",
+		"note": "Cheap (0.54) but base return 9% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 41.27,
-				"price6mAgo": 39.58,
-				"price1mAgo": 44.01,
+				"price": 42.78,
+				"price6mAgo": 39.04,
+				"price1mAgo": 44.28,
 				"low3m": 39.71,
-				"return6m": 4.3,
-				"return1m": -6.2,
-				"near3mLow": true
+				"return6m": 9.6,
+				"return1m": -3.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

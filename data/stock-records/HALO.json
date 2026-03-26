@@ -5,15 +5,15 @@
 	"confidence": "medium",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
 	"marketCap": "$7.5B USD",
-	"sharpeRatio": 0.33,
-	"expectedCAGR": "-12% - 51%",
-	"expectedVolatility": "~46%",
+	"sharpeRatio": 0.36,
+	"expectedCAGR": "-11% - 52%",
+	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": 24.7,
 		"forwardPE": 6.4,
 		"pegRatio": null,
 		"evEbitda": 10.6,
-		"evFcf": 51.5
+		"evFcf": 51.4
 	},
 	"metrics": {
 		"fcfMargin": "~13%",
@@ -26,23 +26,23 @@
 	"targetPrice": "$84.50",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
 	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
-	"currentPrice": "$63.43",
+	"currentPrice": "$63.24",
 	"consensus": {
 		"tipranks": "$95",
 		"yahoo": "$84.50"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.57,
+		"ttmEPS": 2.56,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-12%",
-			"base": "33%",
-			"bull": "51%"
+			"bear": "-11%",
+			"base": "34%",
+			"bull": "52%"
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-03-21T00:31:41.260Z",
+	"lastUpdated": "2026-03-26T00:02:48.987Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.31,
@@ -58,12 +58,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 63.43,
-				"price6mAgo": 78.28,
-				"price1mAgo": 70.64,
-				"low3m": 62.51,
-				"return6m": -19,
-				"return1m": -10.2,
+				"price": 63.24,
+				"price6mAgo": 73.75,
+				"price1mAgo": 69.22,
+				"low3m": 61.49,
+				"return6m": -14.3,
+				"return1m": -8.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -84,7 +84,7 @@
 		"totalScore": 0,
 		"raw": {
 			"avgSurprisePct": -16.7,
-			"netInsiderShares": 217169,
+			"netInsiderShares": 219396,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
 			"downRevisions": 2,

@@ -10,21 +10,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 14.6,
+		"ttmEPS": 14.68,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "13%",
-			"base": "27%",
-			"bull": "47%"
+			"bear": "19%",
+			"base": "33%",
+			"bull": "54%"
 		}
 	},
-	"currentPrice": "$424.43",
-	"marketCap": "$128.5B USD",
+	"currentPrice": "$408.48",
+	"marketCap": "$123.7B USD",
 	"valuation": {
-		"trailingPE": 29.1,
-		"forwardPE": 19.2,
-		"evEbitda": 18.8,
-		"evFcf": 29.5
+		"trailingPE": 27.8,
+		"forwardPE": 18.5,
+		"evEbitda": 18.2,
+		"evFcf": 28.5
 	},
 	"metrics": {
 		"roe": "13.1%",
@@ -37,33 +37,33 @@
 		"yahoo": "$538.52"
 	},
 	"targetPrice": "$538.52",
-	"expectedCAGR": "13% - 47%",
+	"expectedCAGR": "19% - 54%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.23,
-		"signal": "FAIL",
+		"score": 1.18,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 19.2,
+			"multiple": 18.5,
 			"cvStock": 0.014,
 			"riskMultiplier": 0.96
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 424.43,
-				"price6mAgo": 505.57,
-				"price1mAgo": 404.78,
+				"price": 408.48,
+				"price6mAgo": 487.18,
+				"price1mAgo": 437.49,
 				"low3m": 381.61,
-				"return6m": -16,
-				"return1m": 4.9,
+				"return6m": -16.2,
+				"return1m": -6.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 1,
-				"down30d": 17
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -0.8,
@@ -72,20 +72,20 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-21T00:31:49.232Z",
+	"lastUpdated": "2026-03-26T00:03:00.083Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.85,
+	"sharpeRatio": 1.07,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -4.38,
-		"totalScore": 0.62,
+		"revisionsScore": 0,
+		"totalScore": 5,
 		"raw": {
 			"avgSurprisePct": 3.81,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 21,
+			"upRevisions": 1,
+			"downRevisions": 1,
 			"totalAnalysts": 24
 		}
 	},

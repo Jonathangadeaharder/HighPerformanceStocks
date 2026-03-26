@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
-	"marketCap": "$33.4B USD",
+	"marketCap": "$34.0B USD",
 	"sharpeRatio": 0.78,
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 42.2,
-		"forwardPE": 48.6,
+		"trailingPE": 42.3,
+		"forwardPE": 49.4,
 		"pegRatio": 3.2,
-		"evEbitda": 25.3,
-		"evFcf": 46.3
+		"evEbitda": 25.7,
+		"evFcf": 47.1
 	},
 	"metrics": {
 		"roe": "16.6%",
@@ -24,41 +24,39 @@
 		"fcfYield": "~2%",
 		"ruleOf40": "29%"
 	},
-	"targetPrice": "$280",
 	"consensus": {
-		"stockanalysis": "$366",
-		"yahoo": "$280"
+		"stockanalysis": "$366"
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$209.42",
+	"currentPrice": "$213.05",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
-		"ttmEPS": 4.96
+		"ttmEPS": 5.04
 	},
-	"lastUpdated": "2026-03-21T00:31:41.976Z",
+	"lastUpdated": "2026-03-26T00:02:49.033Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.58,
+		"score": 1.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 25.3,
+			"multiple": 25.7,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 209.42,
-				"price6mAgo": 252.02,
-				"price1mAgo": 258.86,
+				"price": 213.05,
+				"price6mAgo": 251.98,
+				"price1mAgo": 237.87,
 				"low3m": 208.18,
-				"return6m": -16.9,
-				"return1m": -19.1,
+				"return6m": -15.4,
+				"return1m": -10.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -68,7 +66,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.04,
+		"secondaryScore": 3.09,
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
 	"qcs": {

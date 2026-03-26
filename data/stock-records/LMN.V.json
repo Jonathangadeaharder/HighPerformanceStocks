@@ -4,20 +4,20 @@
 	"group": "Serial Acquirers",
 	"confidence": "medium",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
-	"marketCap": "C$6.2B",
-	"sharpeRatio": 1.96,
-	"expectedCAGR": "63% - 138%",
+	"marketCap": "C$5.6B",
+	"sharpeRatio": 2.32,
+	"expectedCAGR": "77% - 159%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 38,
-		"forwardPE": 16.1,
+		"trailingPE": 34.9,
+		"forwardPE": 14.8,
 		"pegRatio": null,
-		"evEbitda": 21.3,
-		"evFcf": 28.2
+		"evEbitda": 19.5,
+		"evFcf": 25.8
 	},
 	"metrics": {
 		"fcfMargin": "~28%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"roic": "~19.1%",
 		"roe": "15.9%",
 		"netDebtEbitda": "Net cash",
@@ -26,7 +26,7 @@
 	"targetPrice": "C$44.25",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$23.97",
+	"currentPrice": "C$22",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
@@ -36,33 +36,33 @@
 		"epsGrowth": "17%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "63%",
-			"base": "85%",
-			"bull": "138%"
+			"bear": "77%",
+			"base": "101%",
+			"bull": "159%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-21T00:31:44.169Z",
+	"lastUpdated": "2026-03-26T00:02:52.698Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.58,
+		"score": 1.44,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 28.2,
+			"multiple": 25.8,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 23.97,
-				"price6mAgo": 44.63,
-				"price1mAgo": 19.3,
+				"price": 22,
+				"price6mAgo": 39.5,
+				"price1mAgo": 22.25,
 				"low3m": 17.77,
-				"return6m": -46.3,
-				"return1m": 24.2,
+				"return6m": -44.3,
+				"return1m": -1.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -76,7 +76,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.9
+		"secondaryScore": 0.83
 	},
 	"qcs": {
 		"earningsScore": 5,

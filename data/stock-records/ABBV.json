@@ -4,16 +4,16 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$362.6B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "-10% - 46%",
-	"expectedVolatility": "~28%",
+	"marketCap": "$366.3B USD",
+	"sharpeRatio": 0.56,
+	"expectedCAGR": "-8% - 47%",
+	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 86.9,
-		"forwardPE": 12.7,
+		"trailingPE": 87.8,
+		"forwardPE": 12.9,
 		"pegRatio": 1.06,
-		"evEbitda": 14.6,
-		"evFcf": 23.2
+		"evEbitda": 14.7,
+		"evFcf": 23.4
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -28,7 +28,7 @@
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$205.07",
+	"currentPrice": "$207.18",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$249.14",
@@ -39,39 +39,39 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-10%",
-			"base": "21%",
-			"bull": "46%"
+			"bear": "-8%",
+			"base": "23%",
+			"bull": "47%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-21T00:31:35.620Z",
+	"lastUpdated": "2026-03-26T00:02:40.625Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.83,
+		"score": 0.84,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 12.7,
+			"multiple": 12.9,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 205.07,
-				"price6mAgo": 222.59,
-				"price1mAgo": 229.48,
-				"low3m": 203.06,
-				"return6m": -7.9,
-				"return1m": -10.6,
+				"price": 207.18,
+				"price6mAgo": 220.61,
+				"price1mAgo": 224.69,
+				"low3m": 201.8,
+				"return6m": -6.1,
+				"return1m": -7.8,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 6,
-				"down30d": 3
+				"up30d": 4,
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": 2.2,
@@ -80,9 +80,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 165.67,
-		"date": "2026-03-20",
-		"discount": -19
+		"dcf": 161.05,
+		"date": "2026-03-25",
+		"discount": -22
 	},
 	"qcs": {
 		"earningsScore": 2.93,
@@ -93,8 +93,8 @@
 			"avgSurprisePct": 2.79,
 			"netInsiderShares": 287182,
 			"instFlowTrend": "negative",
-			"upRevisions": 4,
-			"downRevisions": 1,
+			"upRevisions": 5,
+			"downRevisions": 2,
 			"totalAnalysts": 31
 		}
 	},

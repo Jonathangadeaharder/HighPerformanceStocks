@@ -1,4 +1,6 @@
 import { writeFileSync } from 'node:fs';
+/* eslint-disable sonarjs/no-duplicate-string */
+import 'dotenv/config';
 import { resolve } from 'node:path';
 
 const stocks = [

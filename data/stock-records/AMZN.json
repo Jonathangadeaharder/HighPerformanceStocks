@@ -10,19 +10,19 @@
 		"ttmEPS": 7.17,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-15%",
-			"base": "37%",
-			"bull": "75%"
+			"bear": "-17%",
+			"base": "32%",
+			"bull": "70%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$205.37",
-	"marketCap": "$2204.6B USD",
+	"currentPrice": "$211.71",
+	"marketCap": "$2272.7B USD",
 	"valuation": {
-		"trailingPE": 29.2,
-		"forwardPE": 22,
-		"evEbitda": 15.5,
-		"evFcf": 95
+		"trailingPE": 29.5,
+		"forwardPE": 22.6,
+		"evEbitda": 16,
+		"evFcf": 97.9
 	},
 	"metrics": {
 		"roe": "22.3%",
@@ -35,35 +35,35 @@
 		"yahoo": "$280.47"
 	},
 	"targetPrice": "$280.47",
-	"expectedCAGR": "-15% - 75%",
+	"expectedCAGR": "-17% - 70%",
 	"expectedVolatility": "~35%",
-	"sharpeRatio": 0.73,
+	"sharpeRatio": 0.63,
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
+		"score": 1.08,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 22,
+			"multiple": 22.6,
 			"cvStock": 0.173,
 			"riskMultiplier": 1.056
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 205.37,
-				"price6mAgo": 227.63,
-				"price1mAgo": 205.27,
+				"price": 211.71,
+				"price6mAgo": 219.78,
+				"price1mAgo": 207.92,
 				"low3m": 196,
-				"return6m": -9.8,
-				"return1m": 0,
-				"near3mLow": true
+				"return6m": -3.7,
+				"return1m": 1.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 4,
-				"down30d": 7
+				"down30d": 5
 			},
 			"earningsSurprise": {
 				"surprise": -0.5,
@@ -73,23 +73,23 @@
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-21T00:31:36.305Z",
+	"lastUpdated": "2026-03-26T00:02:41.658Z",
 	"intrinsicValue": {
-		"dcf": 162.67,
-		"date": "2026-03-20",
-		"discount": -21
+		"dcf": 127.9,
+		"date": "2026-03-25",
+		"discount": -40
 	},
 	"qcs": {
 		"earningsScore": 3.93,
 		"flowScore": 0,
-		"revisionsScore": -1.29,
-		"totalScore": 2.64,
+		"revisionsScore": -0.34,
+		"totalScore": 3.59,
 		"raw": {
 			"avgSurprisePct": 16.98,
 			"netInsiderShares": 1173452,
 			"instFlowTrend": "negative",
-			"upRevisions": 17,
-			"downRevisions": 32,
+			"upRevisions": 2,
+			"downRevisions": 6,
 			"totalAnalysts": 58
 		}
 	},

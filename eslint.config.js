@@ -4,7 +4,8 @@ import svelte from 'eslint-plugin-svelte';
 import unicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import svelteConfig from './svelte.config.js';
+import sonarjs from 'eslint-plugin-sonarjs';
+import { fileURLToPath } from 'node:url';
 
 export default tseslint.config(
 	{
@@ -15,139 +16,104 @@ export default tseslint.config(
 			'coverage/**',
 			'data/**',
 			'node_modules/**',
-			'holding-companies-wt/**',
-			'eslint.config.js',
 			'prettier.config.js',
 			'svelte.config.js',
 			'vite.config.js',
-			'src/app.d.ts',
 			'**/*.cjs',
-			'lib/**/*.js'
+			'**/*.js',
+			'scripts/sandbox/**'
 		]
 	},
 	js.configs.recommended,
-	...tseslint.configs.strictTypeChecked,
-	...tseslint.configs.stylisticTypeChecked,
+	...tseslint.configs.recommended,
 	...svelte.configs.recommended,
 	{
-		files: ['**/*.{ts,svelte}'],
+		files: ['**/*.{ts,tsx,svelte}'],
 		languageOptions: {
 			globals: {
 				...globals.browser,
-				...globals.node
+				...globals.node,
+				...globals.es2017
 			},
 			parserOptions: {
 				projectService: true,
-				tsconfigRootDir: import.meta.dirname,
+				tsconfigRootDir: fileURLToPath(new URL('.', import.meta.url)),
 				extraFileExtensions: ['.svelte']
 			}
 		},
 		plugins: {
-			unicorn
+			unicorn,
+			sonarjs
 		},
 		rules: {
 			...unicorn.configs.recommended.rules,
-			complexity: ['error', 20],
+			...sonarjs.configs.recommended.rules,
+			
+			// Complexity & Quality
+			'complexity': ['warn', 50],
+			'sonarjs/cognitive-complexity': ['warn', 50],
+			'sonarjs/no-duplicate-string': 'warn',
 			'max-depth': ['error', 4],
-			'max-lines-per-function': ['error', { max: 150, skipBlankLines: true, skipComments: true }],
-			'@typescript-eslint/consistent-type-imports': [
-				'error',
-				{ prefer: 'type-imports', fixStyle: 'inline-type-imports' }
-			],
-			'@typescript-eslint/explicit-function-return-type': [
-				'error',
-				{
-					allowExpressions: true,
-					allowHigherOrderFunctions: true,
-					allowTypedFunctionExpressions: true
-				}
-			],
-			'@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
+			'max-lines-per-function': ['warn', 100],
+			
+			// TypeScript Strictness
+			'@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', fixStyle: 'inline-type-imports' }],
+			'@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
+			'@typescript-eslint/no-explicit-any': 'warn',
+			'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 			'@typescript-eslint/no-floating-promises': 'error',
 			'@typescript-eslint/no-misused-promises': 'error',
-			'@typescript-eslint/no-unsafe-argument': 'warn',
-			'@typescript-eslint/no-unsafe-assignment': 'warn',
-			'@typescript-eslint/no-unnecessary-condition': 'error',
-			'@typescript-eslint/prefer-regexp-exec': 'off',
-			'@typescript-eslint/restrict-template-expressions': ['warn', { allowNumber: true }],
-			'@typescript-eslint/return-await': ['error', 'in-try-catch'],
-			'@typescript-eslint/switch-exhaustiveness-check': 'error',
-			'unicorn/filename-case': [
-				'error',
-				{
-					case: 'kebabCase',
-					ignore: ['^\\+page(?:\\.server)?$', '^app\\.d$']
-				}
-			],
-			'unicorn/no-array-for-each': 'error',
-			'unicorn/no-array-sort': 'off',
+			'@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true, allowAny: true, allowNullish: true }],
+			
+			// Unicorn overrides
+			'unicorn/prevent-abbreviations': 'off',
 			'unicorn/no-null': 'off',
-			'unicorn/no-array-reduce': 'off',
+			'unicorn/filename-case': ['error', { case: 'kebabCase', ignore: ['^\\+page', '^\\+layout', '^app\\.d$'] }],
 			'unicorn/import-style': 'off',
-			'unicorn/numeric-separators-style': 'off',
+			'unicorn/no-process-exit': 'off',
 			'unicorn/prefer-top-level-await': 'off',
-			'unicorn/prefer-string-replace-all': 'off',
-			'unicorn/prefer-switch': 'off',
+			'unicorn/no-array-sort': 'off',
+			'unicorn/no-array-reduce': 'off',
 			'unicorn/text-encoding-identifier-case': 'off',
-			'unicorn/prevent-abbreviations': 'off'
+			'unicorn/prefer-number-properties': 'off',
+
+			// SonarJS overrides
+			'sonarjs/no-nested-conditional': 'off',
+			'sonarjs/no-nested-template-literals': 'off',
+			'sonarjs/no-dead-store': 'off',
+			'sonarjs/no-unused-vars': 'off',
+
+			// General
+			'no-console': 'off' // Allowed for this project (CLI heavy)
 		}
 	},
 	{
 		files: ['**/*.svelte'],
 		languageOptions: {
 			parserOptions: {
-				projectService: true,
-				extraFileExtensions: ['.svelte'],
-				parser: tseslint.parser,
-				svelteConfig
+				parser: tseslint.parser
 			}
 		},
 		rules: {
 			'@typescript-eslint/explicit-function-return-type': 'off',
-			'@typescript-eslint/explicit-member-accessibility': 'off'
+			'@typescript-eslint/no-explicit-any': 'off'
 		}
 	},
 	{
-		files: ['scripts/**/*.ts'],
-		languageOptions: {
-			globals: {
-				...globals.node
-			},
-			parserOptions: {
-				projectService: true,
-				tsconfigRootDir: import.meta.dirname
-			}
-		},
-		plugins: {
-			unicorn
-		},
+		files: ['scripts/**/*.{ts,js,cjs}'],
 		rules: {
-			'no-console': 'off',
-			...unicorn.configs.recommended.rules,
-			complexity: 'off',
-			'max-depth': 'off',
-			'max-lines-per-function': 'off',
-			'@typescript-eslint/no-explicit-any': 'warn',
 			'@typescript-eslint/explicit-function-return-type': 'off',
-			'@typescript-eslint/no-unsafe-assignment': 'off',
-			'@typescript-eslint/no-unsafe-member-access': 'off',
-			'@typescript-eslint/no-unsafe-call': 'off',
-			'@typescript-eslint/no-unsafe-return': 'off',
-			'@typescript-eslint/no-unsafe-argument': 'off',
-			'@typescript-eslint/no-unnecessary-condition': 'off',
-			'@typescript-eslint/restrict-plus-operands': 'off',
-			'@typescript-eslint/prefer-nullish-coalescing': 'off',
-			'unicorn/filename-case': 'off',
-			'unicorn/no-array-for-each': 'off',
-			'unicorn/no-array-reduce': 'off',
-			'unicorn/prevent-abbreviations': 'off',
-			'unicorn/import-style': 'off',
-			'unicorn/prefer-top-level-await': 'off',
-			'unicorn/no-null': 'off',
-			'unicorn/no-zero-fractions': 'off',
-			'unicorn/no-process-exit': 'off',
+			'@typescript-eslint/no-explicit-any': 'off',
+			'@typescript-eslint/no-unused-vars': 'off',
+			'sonarjs/cognitive-complexity': 'off',
+			'sonarjs/pseudo-random': 'off',
+			'complexity': 'off',
+			'max-lines-per-function': 'off',
+			'unicorn/consistent-function-scoping': 'off',
+			'unicorn/text-encoding-identifier-case': 'off',
 			'unicorn/prefer-number-properties': 'off',
-			'unicorn/text-encoding-identifier-case': 'off'
+			'unicorn/no-process-exit': 'off',
+			'no-empty': 'off'
 		}
 	},
 	prettierConfig

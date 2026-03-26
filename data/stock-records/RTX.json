@@ -1,0 +1,98 @@
+{
+	"ticker": "RTX",
+	"name": "RTX Corporation",
+	"group": "Industrial Monopolies",
+	"cyclical": false,
+	"confidence": "high",
+	"bullCase": "Commercial aerospace rebounds strongly while defense budgets globally swell, driving long-term revenue backlogs.",
+	"bearCase": "Supply chain disruptions or engine manufacturing defects lead to costly recalls and lower margins.",
+	"confidenceReason": "Major defense contractor and aerospace manufacturer with massive backlog, benefiting from global defense spending cycles and commercial aerospace recovery. EPS growth modeled to be auto-derived from analyst consensus.",
+	"cagrModel": {
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"epsGrowth": "10%",
+		"ttmEPS": 4.97,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "-7%",
+			"base": "12%",
+			"bull": "24%"
+		}
+	},
+	"currentPrice": "$195",
+	"marketCap": "$262.5B USD",
+	"valuation": {
+		"trailingPE": 39.2,
+		"forwardPE": 26,
+		"evFcf": 45.9,
+		"evEbitda": 20.1
+	},
+	"metrics": {
+		"roe": "11.0%",
+		"fcfMargin": "~7%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "2.2x",
+		"ruleOf40": "19%"
+	},
+	"consensus": {
+		"yahoo": "$217.16"
+	},
+	"targetPrice": "$217.16",
+	"analystTargets": {
+		"low": 179,
+		"mean": 217.16,
+		"high": 240
+	},
+	"expectedCAGR": "-7% - 24%",
+	"expectedVolatility": "~28%",
+	"sharpeRatio": 0.14,
+	"screener": {
+		"engine": "fPERG",
+		"score": 2.52,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 10,
+			"multipleType": "Forward P/E",
+			"multiple": 26,
+			"cvStock": 0.027,
+			"riskMultiplier": 0.968
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 195,
+				"price6mAgo": 163.35,
+				"price1mAgo": 197.63,
+				"low3m": 182.17,
+				"return6m": 19.4,
+				"return1m": -1.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": 5.3,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0.24,
+		"totalScore": 5.24,
+		"raw": {
+			"avgSurprisePct": 10.74,
+			"netInsiderShares": 154645,
+			"instFlowTrend": "negative",
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 21
+		}
+	},
+	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
+	"lastUpdated": "2026-03-26T00:02:58.387Z"
+}

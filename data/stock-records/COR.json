@@ -9,21 +9,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS; ttmEPS reflects GAAP; non-GAAP EPS is significantly higher (~$18-20); CAGR model uses GAAP basis",
-		"ttmEPS": 8.21,
+		"ttmEPS": 8.35,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "4%",
+			"bear": "6%",
 			"base": "26%",
-			"bull": "37%"
+			"bull": "39%"
 		}
 	},
-	"currentPrice": "$326.91",
-	"marketCap": "$63.6B USD",
+	"currentPrice": "$325.08",
+	"marketCap": "$63.2B USD",
 	"valuation": {
-		"trailingPE": 39.8,
+		"trailingPE": 38.9,
 		"forwardPE": 16.6,
-		"evEbitda": 14.5,
-		"evFcf": 20.8
+		"evEbitda": 14.4,
+		"evFcf": 20.7
 	},
 	"metrics": {
 		"roe": "133.5%",
@@ -33,10 +33,10 @@
 		"ruleOf40": "7%"
 	},
 	"consensus": {
-		"yahoo": "$410.38"
+		"yahoo": "$407.92"
 	},
-	"targetPrice": "$410.38",
-	"expectedCAGR": "4% - 37%",
+	"targetPrice": "$407.92",
+	"expectedCAGR": "6% - 39%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.06,
@@ -51,18 +51,18 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 326.91,
-				"price6mAgo": 288.79,
-				"price1mAgo": 366.03,
-				"low3m": 318.12,
-				"return6m": 13.2,
-				"return1m": -10.7,
+				"price": 325.08,
+				"price6mAgo": 307,
+				"price1mAgo": 366.65,
+				"low3m": 317.19,
+				"return6m": 5.9,
+				"return1m": -11.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 10,
-				"down30d": 1
+				"up30d": 1,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 1,
@@ -70,9 +70,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:38.415Z",
+	"lastUpdated": "2026-03-26T00:02:44.576Z",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 0.62,
+	"sharpeRatio": 0.69,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -80,7 +80,7 @@
 		"totalScore": 9.67,
 		"raw": {
 			"avgSurprisePct": 3.65,
-			"netInsiderShares": 223820,
+			"netInsiderShares": 225154,
 			"instFlowTrend": "positive",
 			"upRevisions": 6,
 			"downRevisions": 7,
@@ -90,7 +90,7 @@
 	"description": "Cencora, Inc. sources and distributes pharmaceutical products in the United States and internationally.",
 	"analystTargets": {
 		"low": 340,
-		"mean": 410.38,
+		"mean": 407.92,
 		"high": 447
 	}
 }

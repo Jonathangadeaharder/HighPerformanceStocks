@@ -8,21 +8,21 @@
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "Factored in Waymo/Tesla disruption risk and terminal value uncertainty.",
-		"ttmEPS": 4.64,
+		"ttmEPS": 4.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "40%",
-			"bull": "103%"
+			"bear": "-4%",
+			"base": "42%",
+			"bull": "105%"
 		}
 	},
-	"currentPrice": "$73.89",
-	"marketCap": "$153.5B USD",
+	"currentPrice": "$73.08",
+	"marketCap": "$151.8B USD",
 	"valuation": {
-		"trailingPE": 15.9,
-		"forwardPE": 17.2,
-		"evEbitda": 25,
-		"evFcf": 24.9
+		"trailingPE": 15.5,
+		"forwardPE": 17,
+		"evEbitda": 24.7,
+		"evFcf": 24.6
 	},
 	"metrics": {
 		"roe": "39.9%",
@@ -35,15 +35,15 @@
 		"yahoo": "$103.68"
 	},
 	"targetPrice": "$103.68",
-	"expectedCAGR": "-5% - 103%",
+	"expectedCAGR": "-4% - 105%",
 	"screener": {
 		"engine": "tPERG",
-		"score": 0.93,
+		"score": 0.9,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 15.9,
+			"multiple": 15.5,
 			"cvStock": 0.165,
 			"riskMultiplier": 1.051
 		},
@@ -51,18 +51,18 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 73.89,
-				"price6mAgo": 99.39,
-				"price1mAgo": 70.72,
+				"price": 73.08,
+				"price6mAgo": 98.45,
+				"price1mAgo": 74.8,
 				"low3m": 69.02,
-				"return6m": -25.7,
-				"return1m": 4.5,
+				"return6m": -25.8,
+				"return1m": -2.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 1,
-				"down30d": 5
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -81.9,
@@ -72,25 +72,25 @@
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-21T00:31:50.584Z",
+	"lastUpdated": "2026-03-26T00:03:02.050Z",
 	"intrinsicValue": {
-		"dcf": 143.62,
-		"date": "2026-03-20",
-		"discount": 95
+		"dcf": 139.55,
+		"date": "2026-03-25",
+		"discount": 91
 	},
 	"expectedVolatility": "~36%",
-	"sharpeRatio": 1.24,
+	"sharpeRatio": 1.28,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.37,
-		"totalScore": 4.63,
+		"revisionsScore": 0,
+		"totalScore": 5,
 		"raw": {
 			"avgSurprisePct": 84.33,
-			"netInsiderShares": 1109120,
+			"netInsiderShares": 1259120,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
-			"downRevisions": 3,
+			"downRevisions": 0,
 			"totalAnalysts": 41
 		}
 	},

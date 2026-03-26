@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$66.5B USD",
-	"sharpeRatio": 1.07,
-	"expectedCAGR": "12% - 61%",
+	"marketCap": "$65.3B USD",
+	"sharpeRatio": 1.28,
+	"expectedCAGR": "18% - 68%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 38.3,
-		"forwardPE": 25.7,
+		"trailingPE": 37.2,
+		"forwardPE": 25.2,
 		"pegRatio": null,
-		"evEbitda": 20.2,
-		"evFcf": 70.9
+		"evEbitda": 20,
+		"evFcf": 70
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$1594",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1177.39",
+	"currentPrice": "$1156.49",
 	"consensus": {
 		"tipranks": "$1,568",
 		"yahoo": "$1594",
@@ -38,33 +38,33 @@
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "12%",
-			"base": "35%",
-			"bull": "61%"
+			"bear": "18%",
+			"base": "42%",
+			"bull": "68%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-21T00:31:49.854Z",
+	"lastUpdated": "2026-03-26T00:03:00.047Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.09,
+		"score": 1.08,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20.2,
+			"multiple": 20,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 1177.39,
-				"price6mAgo": 1295.29,
-				"price1mAgo": 1296.15,
-				"low3m": 1169.36,
-				"return6m": -9.1,
-				"return1m": -9.2,
+				"pass": false,
+				"price": 1156.49,
+				"price6mAgo": 1295.72,
+				"price1mAgo": 1314.26,
+				"low3m": 1137.06,
+				"return6m": -10.7,
+				"return1m": -12,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -78,20 +78,20 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39,
+		"secondaryScore": 1.36,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
 		"earningsScore": 2.83,
 		"flowScore": -5,
-		"revisionsScore": 2.78,
-		"totalScore": 0.61,
+		"revisionsScore": 0,
+		"totalScore": -2.17,
 		"raw": {
 			"avgSurprisePct": 2.19,
-			"netInsiderShares": -84507,
+			"netInsiderShares": -84402,
 			"instFlowTrend": "negative",
-			"upRevisions": 14,
-			"downRevisions": 4,
+			"upRevisions": 1,
+			"downRevisions": 1,
 			"totalAnalysts": 18
 		}
 	},

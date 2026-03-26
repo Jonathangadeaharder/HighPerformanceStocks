@@ -12,19 +12,19 @@
 		"ttmEPS": 6.42,
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "28%",
-			"base": "56%",
-			"bull": "103%"
+			"bear": "10%",
+			"base": "59%",
+			"bull": "107%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$105.87",
-	"marketCap": "$35.0B USD",
+	"currentPrice": "$106.50",
+	"marketCap": "$35.2B USD",
 	"valuation": {
-		"trailingPE": 16.5,
-		"forwardPE": 13.8,
-		"evEbitda": 34.2,
-		"evFcf": 21
+		"trailingPE": 16.6,
+		"forwardPE": 14,
+		"evEbitda": 34.3,
+		"evFcf": 21.1
 	},
 	"metrics": {
 		"roe": "13.5%",
@@ -34,31 +34,31 @@
 		"ruleOf40": "56%"
 	},
 	"consensus": {
-		"yahoo": "$165.29"
+		"yahoo": "$163.65"
 	},
-	"targetPrice": "$165.29",
-	"expectedCAGR": "28% - 103%",
+	"targetPrice": "$163.65",
+	"expectedCAGR": "10% - 107%",
 	"screener": {
-		"engine": "fFREG",
-		"score": 0.8,
+		"engine": "totalReturn",
+		"score": 0.69,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
-			"multipleType": "P/FRE",
-			"multiple": 16.5,
-			"cvStock": 0.029,
-			"riskMultiplier": 0.97
+			"dividendYield": 5,
+			"debtToEquity": 163,
+			"debtPenalty": true,
+			"rawReturn": 17.5
 		},
 		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 105.87,
-				"price6mAgo": 181.99,
-				"price1mAgo": 114.57,
+				"price": 106.5,
+				"price6mAgo": 163.05,
+				"price1mAgo": 118.08,
 				"low3m": 95.8,
-				"return6m": -41.8,
-				"return1m": -7.6,
+				"return6m": -34.7,
+				"return1m": -9.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,31 +70,29 @@
 				"surprise": -14,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.67
+		}
 	},
-	"lastUpdated": "2026-03-21T00:31:36.990Z",
+	"lastUpdated": "2026-03-26T00:02:42.638Z",
 	"expectedVolatility": "~47%",
-	"sharpeRatio": 1.3,
+	"sharpeRatio": 1.15,
 	"qcs": {
-		"earningsScore": 0.05,
+		"earningsScore": 0.02,
 		"flowScore": 5,
 		"revisionsScore": -1.56,
-		"totalScore": 3.49,
+		"totalScore": 3.46,
 		"raw": {
 			"avgSurprisePct": 0.03,
 			"netInsiderShares": 944634,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 6,
+			"upRevisions": 0,
+			"downRevisions": 5,
 			"totalAnalysts": 16
 		}
 	},
 	"description": "Ares Management Corporation operates as an alternative asset manager.",
 	"analystTargets": {
-		"low": 135,
-		"mean": 165.29,
+		"low": 112,
+		"mean": 163.65,
 		"high": 215
 	}
 }

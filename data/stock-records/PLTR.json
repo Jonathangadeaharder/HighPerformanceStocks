@@ -11,44 +11,44 @@
 		"epsGrowth": "35%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 0.6,
+		"ttmEPS": 0.63,
 		"scenarios": {
-			"bear": "-54%",
-			"base": "24%",
-			"bull": "73%"
+			"bear": "-55%",
+			"base": "20%",
+			"bull": "68%"
 		}
 	},
-	"currentPrice": "$150.68",
-	"marketCap": "$360.4B USD",
+	"currentPrice": "$154.96",
+	"marketCap": "$370.6B USD",
 	"consensus": {
 		"yahoo": "$186.60"
 	},
 	"expectedVolatility": "~57%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.55,
+		"score": 2.62,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 80.7,
+			"multiple": 83,
 			"cvStock": 0.122,
 			"riskMultiplier": 1.025
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 150.68,
-				"price6mAgo": 179.33,
-				"price1mAgo": 130.6,
+				"price": 154.96,
+				"price6mAgo": 177.57,
+				"price1mAgo": 135.94,
 				"low3m": 126.23,
-				"return6m": -16,
-				"return1m": 15.4,
+				"return6m": -12.7,
+				"return1m": 14,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
+				"up30d": 1,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -57,12 +57,12 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:47.789Z",
+	"lastUpdated": "2026-03-26T00:02:57.403Z",
 	"valuation": {
-		"trailingPE": 251.1,
-		"forwardPE": 80.7,
-		"evEbitda": 245.5,
-		"evFcf": 280.4
+		"trailingPE": 246,
+		"forwardPE": 83,
+		"evEbitda": 252.5,
+		"evFcf": 288.4
 	},
 	"metrics": {
 		"roe": "26.0%",
@@ -71,23 +71,23 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "98%"
 	},
-	"expectedCAGR": "-54% - 73%",
-	"sharpeRatio": 0.09,
+	"expectedCAGR": "-55% - 68%",
+	"sharpeRatio": 0.04,
 	"intrinsicValue": {
-		"dcf": 9.71,
-		"date": "2026-03-20",
+		"dcf": 9.56,
+		"date": "2026-03-25",
 		"discount": -94
 	},
 	"qcs": {
 		"earningsScore": 4.16,
 		"flowScore": 0,
-		"revisionsScore": 4.44,
-		"totalScore": 8.6,
+		"revisionsScore": 0,
+		"totalScore": 4.16,
 		"raw": {
 			"avgSurprisePct": 12.68,
-			"netInsiderShares": -2249639,
+			"netInsiderShares": -2240639,
 			"instFlowTrend": "neutral",
-			"upRevisions": 24,
+			"upRevisions": 0,
 			"downRevisions": 0,
 			"totalAnalysts": 27
 		}

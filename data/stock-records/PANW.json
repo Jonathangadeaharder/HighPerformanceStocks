@@ -4,29 +4,29 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
-	"marketCap": "$133.0B USD",
-	"sharpeRatio": 0.33,
-	"expectedCAGR": "-30% - 63%",
+	"marketCap": "$125.0B USD",
+	"sharpeRatio": 0.53,
+	"expectedCAGR": "-26% - 73%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 94.2,
-		"forwardPE": 41,
+		"trailingPE": 85.6,
+		"forwardPE": 38.6,
 		"pegRatio": null,
-		"evEbitda": 88.9,
-		"evFcf": 45.9
+		"evEbitda": 78.7,
+		"evFcf": 42.3
 	},
 	"metrics": {
-		"fcfMargin": "~28%",
+		"fcfMargin": "~29%",
 		"fcfYield": "~2%",
 		"roic": null,
 		"roe": "16.3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "43%"
+		"ruleOf40": "44%"
 	},
 	"targetPrice": "$207.75",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
-	"currentPrice": "$162.95",
+	"currentPrice": "$153.22",
 	"consensus": {
 		"tipranks": "$220",
 		"yahoo": "$207.75"
@@ -36,33 +36,33 @@
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-30%",
-			"base": "27%",
-			"bull": "63%"
+			"bear": "-26%",
+			"base": "36%",
+			"bull": "73%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-21T00:31:47.733Z",
+	"lastUpdated": "2026-03-26T00:02:57.347Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.15,
+		"score": 2.03,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 41,
+			"multiple": 38.6,
 			"cvStock": 0.164,
 			"riskMultiplier": 1.05
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 162.95,
-				"price6mAgo": 208.18,
-				"price1mAgo": 144.14,
+				"price": 153.22,
+				"price6mAgo": 202.37,
+				"price1mAgo": 149.4,
 				"low3m": 139.57,
-				"return6m": -21.7,
-				"return1m": 13,
+				"return6m": -24.3,
+				"return1m": 2.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -83,7 +83,7 @@
 		"totalScore": 2.27,
 		"raw": {
 			"avgSurprisePct": 6.3,
-			"netInsiderShares": 2206786,
+			"netInsiderShares": 2211786,
 			"instFlowTrend": "positive",
 			"upRevisions": 3,
 			"downRevisions": 44,

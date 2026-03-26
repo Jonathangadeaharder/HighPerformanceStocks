@@ -1,68 +1,22 @@
-import YahooFinance from 'yahoo-finance2';
-import type { AvailableWorldVolSignal, VolComponent, WorldVolSignal } from '$lib/types/dashboard';
+import { yahooFinance } from './infrastructure/yahoo';
+import type { VolComponent, WorldVolSignal } from '$lib/types/dashboard';
+import {
+	buildCompositeWorldVolSignal,
+	WORLD_VOL_PRIMARY_MAX_AGE_DAYS,
+	WORLD_VOL_WEIGHTS
+} from '$lib/domain/volatility/logic';
 
 const VIX_SYMBOL = '^VIX';
 // Yahoo Finance serves ^V2TX with a frozen regularMarketTime (known issue with European indices).
 // We try the quote first, then fall back to chart() which has reliable dates.
 // V2TX.DE is an alias that sometimes returns a fresher timestamp.
 const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE'];
-const WORLD_VOL_PRIMARY_MAX_AGE_DAYS = 7;
-const WORLD_VOL_WEIGHTS = {
-	vix: 0.7,
-	vstoxx: 0.3
-} as const;
-
-interface WeightedValue {
-	value: number;
-	weight: number;
-}
-
-const yahooFinance = new YahooFinance({
-	validation: { logErrors: false },
-	suppressNotices: ['yahooSurvey', 'ripHistorical']
-});
-
-function weightedAverage(values: WeightedValue[]): number | null {
-	if (values.length === 0) return null;
-
-	const totalWeight = values.reduce((sum, item) => sum + item.weight, 0);
-	if (totalWeight === 0) return null;
-
-	return values.reduce((sum, item) => sum + item.value * item.weight, 0) / totalWeight;
-}
 
 function formatDate(dateValue: Date | string | null | undefined): string | null {
 	if (!dateValue) return null;
-
 	const date = new Date(dateValue);
 	if (Number.isNaN(date.getTime())) return null;
 	return date.toISOString().slice(0, 10);
-}
-
-function classifyWorldVol(
-	impliedVol: number
-): Pick<AvailableWorldVolSignal, 'action' | 'band' | 'tone'> {
-	if (impliedVol < 15) {
-		return {
-			action: 'Buy 2x daily leverage',
-			band: '< 15',
-			tone: 'buy'
-		};
-	}
-
-	if (impliedVol <= 25) {
-		return {
-			action: 'Hold / do not add 2x',
-			band: '15-25',
-			tone: 'hold'
-		};
-	}
-
-	return {
-		action: 'Sell / reduce 2x',
-		band: '> 25',
-		tone: 'sell'
-	};
 }
 
 function isFreshMarketTime(
@@ -70,9 +24,8 @@ function isFreshMarketTime(
 	maxAgeDays = WORLD_VOL_PRIMARY_MAX_AGE_DAYS
 ): boolean {
 	if (!timeValue) return false;
-
 	const ageMs = Date.now() - new Date(timeValue).getTime();
-	return ageMs >= 0 && ageMs <= maxAgeDays * 86400000;
+	return ageMs >= 0 && ageMs <= maxAgeDays * 86_400_000;
 }
 
 function staleResult(
@@ -95,11 +48,6 @@ function staleResult(
 
 /**
  * Try chart() to get a reliable last-close date for a symbol.
- *
- * Yahoo Finance has a known bug where ^V2TX (and some other European indices) returns a
- * frozen/stale `regularMarketTime` in the quote endpoint even when the price is current.
- * The chart endpoint returns OHLCV bars with proper dates, so we use the last bar's
- * date as the definitive freshness timestamp when the quote time looks stale.
  */
 interface ChartBar {
 	date?: Date | string | null;
@@ -114,12 +62,6 @@ function parseChartBar(entry: unknown): ChartBar | null {
 		candidate.date instanceof Date || typeof candidate.date === 'string' ? candidate.date : null;
 	const close = typeof candidate.close === 'number' ? candidate.close : null;
 	return { date, close };
-}
-
-function toEpoch(marketTime: string | null): number | null {
-	if (marketTime === null) return null;
-	const parsed = new Date(marketTime).getTime();
-	return Number.isNaN(parsed) ? null : parsed;
 }
 
 function toIsoString(value: unknown): string | null {
@@ -137,7 +79,7 @@ async function tryChartFallback(
 	weight: number
 ): Promise<VolComponent | null> {
 	const now = new Date();
-	const tenDaysAgo = new Date(now.getTime() - 10 * 86400000);
+	const tenDaysAgo = new Date(now.getTime() - 10 * 86_400_000);
 	const chart = await yahooFinance.chart(symbol, {
 		period1: tenDaysAgo,
 		period2: now,
@@ -231,11 +173,6 @@ async function fetchVolIndexQuote(
 	};
 }
 
-/**
- * Try multiple symbols for the same index (e.g. ^V2TX then V2TX.DE).
- * Returns the first result that has a fresh price, or the best non-null result
- * (prefers candidates with newer marketTime when available).
- */
 async function fetchVolIndexWithFallback(
 	symbols: readonly string[],
 	label: string,
@@ -251,10 +188,10 @@ async function fetchVolIndexWithFallback(
 		if (currentBest.value === null && candidate.value !== null) return candidate;
 		if (currentBest.value !== null && candidate.value === null) return currentBest;
 
-		const candidateTime = toEpoch(candidate.marketTime);
-		const currentBestTime = toEpoch(currentBest.marketTime);
-		if (candidateTime !== null && currentBestTime === null) return candidate;
-		if (candidateTime !== null && currentBestTime !== null && candidateTime > currentBestTime) {
+		const candidateTime = candidate.marketTime ? new Date(candidate.marketTime).getTime() : 0;
+		const currentBestTime = currentBest.marketTime ? new Date(currentBest.marketTime).getTime() : 0;
+		
+		if (candidateTime > currentBestTime) {
 			return candidate;
 		}
 
@@ -278,49 +215,48 @@ async function fetchVolIndexWithFallback(
 	};
 }
 
-function buildCompositeWorldVolSignal(components: VolComponent[]): AvailableWorldVolSignal | null {
-	const weightedValues = components.flatMap((component) => {
-		return component.value === null || !component.fresh
-			? []
-			: [{ value: component.value, weight: component.weight }];
-	});
-	const impliedVol = weightedAverage(weightedValues);
-	if (impliedVol === null) return null;
-
-	const classification = classifyWorldVol(impliedVol);
-
-	// If only VIX is fresh, we're basically doing 100% VIX
-	const freshCount = weightedValues.length;
-	const sourceLabel =
-		freshCount === components.length
-			? '70% VIX + 30% VSTOXX'
-			: components
-					.filter((c) => c.fresh)
-					.map((c) => `100% ${c.label}`)
-					.join(', ');
-
-	return {
-		available: true,
-		method: 'composite',
-		source: sourceLabel,
-		impliedVol: +impliedVol.toFixed(1),
-		action: classification.action,
-		band: classification.band,
-		tone: classification.tone,
-		components: components.map((component) => ({
-			label: component.label,
-			symbol: component.symbol,
-			value: component.value,
-			weight: component.weight,
-			marketTime: component.marketTime,
-			reason: component.reason,
-			fresh: component.fresh
-		})),
-		note:
-			freshCount === components.length
-				? 'Weighted US/Europe volatility blend for developed markets.'
-				: `Degraded fallback to ${sourceLabel} due to stale components. Recommended minimum viable signal for global volatility.`
-	};
+export async function fetchUrthOptionsFallback(): Promise<WorldVolSignal | null> {
+	try {
+		const result = await yahooFinance.options('URTH');
+		const optionsData = result.options?.[0];
+		const calls = optionsData?.calls;
+		const puts = optionsData?.puts;
+		const underlyingPrice = result.quote.regularMarketPrice ?? 0;
+		
+		if (calls && puts && underlyingPrice > 0 && calls.length > 0 && puts.length > 0) {
+			interface OptionContract { strike?: number, impliedVolatility?: number }
+			const closestCall = calls.reduce((prev: OptionContract, curr: OptionContract) => 
+				Math.abs((curr.strike || 0) - underlyingPrice) < Math.abs((prev.strike || 0) - underlyingPrice) ? curr : prev
+			, calls[0] as OptionContract);
+			const closestPut = puts.reduce((prev: OptionContract, curr: OptionContract) => 
+				Math.abs((curr.strike || 0) - underlyingPrice) < Math.abs((prev.strike || 0) - underlyingPrice) ? curr : prev
+			, puts[0] as OptionContract);
+			
+			const callIv = closestCall.impliedVolatility || 0;
+			const putIv = closestPut.impliedVolatility || 0;
+			const ivPct = ((callIv + putIv) / 2) * 100;
+			
+			if (ivPct > 0) {
+				return {
+					available: true,
+					method: 'urth_fallback',
+					source: 'URTH options implied volatility (near ATM)',
+					impliedVol: +ivPct.toFixed(1),
+					action: ivPct < 15 ? 'Buy 2x daily leverage' : (ivPct <= 25 ? 'Hold / do not add 2x' : 'Sell / reduce 2x'),
+					band: ivPct < 15 ? '< 15' : (ivPct <= 25 ? '15-25' : '> 25'),
+					tone: ivPct < 15 ? 'buy' : (ivPct <= 25 ? 'hold' : 'sell'),
+					components: [
+						{ label: 'URTH Call ATM IV', symbol: 'URTH', value: +(callIv * 100).toFixed(1), weight: 0.5, marketTime: null, fresh: true, reason: null },
+						{ label: 'URTH Put ATM IV', symbol: 'URTH', value: +(putIv * 100).toFixed(1), weight: 0.5, marketTime: null, fresh: true, reason: null }
+					],
+					note: 'Degraded fallback using MSCI World ETF options due to unavailable or stale index data.'
+				};
+			}
+		}
+	} catch (error) {
+		console.warn('URTH options fallback fetch failed:', error instanceof Error ? error.message : String(error));
+	}
+	return null;
 }
 
 export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
@@ -329,11 +265,13 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
 	]);
 
-	// As long as VIX is fresh, we can build a valid signal (degrades gracefully)
-	if (vix.fresh) {
+	if (vix.fresh && vstoxx.fresh) {
 		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
 		if (compositeSignal) return compositeSignal;
 	}
+
+	const fallback = await fetchUrthOptionsFallback();
+	if (fallback) return fallback;
 
 	const primaryIssues = [vix, vstoxx]
 		.filter((component) => !component.fresh)
@@ -342,6 +280,6 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	return {
 		available: false,
 		source: 'Global developed volatility proxies',
-		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
+		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}). URTH fallback also failed.`
 	};
 }

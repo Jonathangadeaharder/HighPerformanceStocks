@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { parseDisplayPrice, parsePercent } from '../lib/finance-core.js';
-import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
+import { parseDisplayPrice, parsePercent } from '../src/lib/domain/finance/core.js';
+import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
@@ -20,6 +20,27 @@ const requiredFields = [
 	'currentPrice',
 	'targetPrice'
 ];
+
+function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
+	const targetMap = {
+		bear: data.analystTargets.low,
+		base: data.analystTargets.mean,
+		bull: data.analystTargets.high
+	};
+
+	for (const [label, target] of Object.entries(targetMap)) {
+		const statedReturn = parsePercent(data.cagrModel.scenarios[label] as string);
+		if (statedReturn == null || target == null) continue;
+
+		const expectedReturn = ((target as number - price) / price) * 100 + dyPct;
+		const diff = Math.abs(expectedReturn - statedReturn);
+		if (diff > RETURN_TOLERANCE_PP) {
+			errors.push(
+				`Forward return mismatch in '${label}': stated ${statedReturn}%, calculated ${expectedReturn.toFixed(1)}% (${diff.toFixed(1)}pp difference)`
+			);
+		}
+	}
+}
 
 function verifyData() {
 	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
@@ -136,41 +157,24 @@ function verifyData() {
 			const dyPct = parsePercent(data.cagrModel?.dividendYield) ?? 0;
 
 			if (price && !isNaN(price) && price > 0) {
-				const targetMap = {
-					bear: data.analystTargets.low,
-					base: data.analystTargets.mean,
-					bull: data.analystTargets.high
-				};
-
-				for (const [label, target] of Object.entries(targetMap)) {
-					const statedReturn = parsePercent(data.cagrModel.scenarios[label] as string);
-					if (statedReturn == null || target == null) continue;
-
-					const expectedReturn = ((target - price) / price) * 100 + dyPct;
-					const diff = Math.abs(expectedReturn - statedReturn);
-					if (diff > RETURN_TOLERANCE_PP) {
-						errors.push(
-							`Forward return mismatch in '${label}': stated ${statedReturn}%, calculated ${expectedReturn.toFixed(1)}% (${diff.toFixed(1)}pp difference)`
-						);
-					}
-				}
+				validateForwardReturns(data, price, dyPct, errors);
 			}
 		}
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);
-			errors.forEach((e) => {
+			for (const e of errors) {
 				console.log(`   - ${e}`);
-			});
+			}
 			hasErrors = true;
 		}
 	}
 
 	if (warnings.length > 0) {
 		console.log(`\n⚠️  Warnings (${warnings.length}):`);
-		warnings.forEach((w) => {
+		for (const w of warnings) {
 			console.log(`   - ${w}`);
-		});
+		}
 	}
 
 	if (hasErrors) {

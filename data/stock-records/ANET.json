@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$165.2B USD",
-	"sharpeRatio": 0.62,
-	"expectedCAGR": "7% - 68%",
+	"marketCap": "$170.0B USD",
+	"sharpeRatio": 0.55,
+	"expectedCAGR": "4% - 63%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 49.5,
-		"forwardPE": 30.8,
+		"trailingPE": 49.1,
+		"forwardPE": 31.7,
 		"pegRatio": 1.44,
-		"evEbitda": 39.2,
-		"evFcf": 45.5
+		"evEbitda": 40.5,
+		"evFcf": 46.9
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
@@ -28,51 +28,51 @@
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$131.22",
+	"currentPrice": "$135.01",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$177.74",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.65,
+		"ttmEPS": 2.75,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "35%",
-			"bull": "68%"
+			"bear": "4%",
+			"base": "32%",
+			"bull": "63%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-21T00:31:36.327Z",
+	"lastUpdated": "2026-03-26T00:02:41.859Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.47,
+		"score": 1.51,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 30.8,
+			"multiple": 31.7,
 			"cvStock": 0.082,
 			"riskMultiplier": 1.001
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 131.22,
-				"price6mAgo": 145.4,
-				"price1mAgo": 127.43,
+				"price": 135.01,
+				"price6mAgo": 142.5,
+				"price1mAgo": 130.25,
 				"low3m": 120,
-				"return6m": -9.8,
-				"return1m": 3,
+				"return6m": -5.3,
+				"return1m": 3.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 17,
-				"down30d": 1
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 8.2,
@@ -84,14 +84,14 @@
 	"qcs": {
 		"earningsScore": 4.33,
 		"flowScore": 5,
-		"revisionsScore": 4.8,
-		"totalScore": 14.13,
+		"revisionsScore": -0.2,
+		"totalScore": 9.13,
 		"raw": {
 			"avgSurprisePct": 8.88,
-			"netInsiderShares": 1139239,
+			"netInsiderShares": 1197239,
 			"instFlowTrend": "positive",
-			"upRevisions": 24,
-			"downRevisions": 0,
+			"upRevisions": 1,
+			"downRevisions": 2,
 			"totalAnalysts": 25
 		}
 	},

@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1035.2B SEK",
-	"sharpeRatio": -0.02,
-	"expectedCAGR": "-8% - 16%",
+	"marketCap": "1072.5B SEK",
+	"sharpeRatio": -0.1,
+	"expectedCAGR": "-9% - 14%",
 	"expectedVolatility": "~21%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 6.6,
-		"forwardPE": 21.5,
-		"evFcf": 11.7
+		"trailingPE": 6.8,
+		"forwardPE": 22.2,
+		"evFcf": 12.1
 	},
 	"metrics": {
 		"roe": "17.7%",
@@ -25,42 +25,42 @@
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "338 SEK",
+	"currentPrice": "350 SEK",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-8%",
-			"base": "7%",
-			"bull": "16%"
+			"bear": "-9%",
+			"base": "6%",
+			"bull": "14%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "2%",
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-21T00:31:42.787Z",
+	"lastUpdated": "2026-03-26T00:02:50.059Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.05,
+		"score": 2.11,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 21.5,
+			"multiple": 22.2,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 337.95,
-				"price6mAgo": 286.7,
-				"price1mAgo": 368.05,
-				"low3m": 317.5,
-				"return6m": 17.9,
-				"return1m": -8.2,
+				"price": 350.1,
+				"price6mAgo": 288.1,
+				"price1mAgo": 374.9,
+				"low3m": 322.05,
+				"return6m": 21.5,
+				"return1m": -6.6,
 				"near3mLow": false
 			},
 			"revisions": {

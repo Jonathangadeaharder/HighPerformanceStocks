@@ -1,0 +1,102 @@
+{
+	"ticker": "LEU",
+	"name": "Centrus Energy Corp.",
+	"group": "Energy & Infrastructure",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "Only US-licensed uranium enrichment company with strategic HALEU monopoly. Forward P/E ~67x is extremely expensive for lumpy contract revenue. Earnings are highly volatile quarter-to-quarter. Strong nuclear renaissance thesis but DOE-contract dependent. EPS growth to be auto-derived from analyst consensus.",
+	"targetPrice": "$279.58",
+	"bullCase": "Only US-licensed uranium enrichment facility — irreplaceable national security infrastructure. HALEU production is essential for next-gen advanced reactors (Oklo, TerraPower, etc.) with no domestic alternative. DOE contracts provide long-term revenue visibility. Nuclear renaissance accelerating globally as clean baseload demand surges. $1.96B cash fortress with net cash position. 12 analysts see 23%+ upside to $238 consensus target.",
+	"bearCase": "Earnings are wildly lumpy — recent quarters saw both +1,468% beats and -51% misses depending on contract timing. Forward P/E of ~67x is hard to justify even with monopoly pricing. Highly dependent on government funding and single-facility execution risk. 23.6% short interest signals significant skepticism. Revenue growth is ~3-4% annually with lumpiness making any P/E-based valuation extremely uncertain.",
+	"cagrModel": {
+		"ttmEPS": 3.85,
+		"epsGrowthSource": "auto",
+		"dividendYield": "0%",
+		"basis": "GAAP diluted EPS; lumpy contract revenue; cyclical earnings pattern",
+		"scenarios": {
+			"bear": "-29%",
+			"base": "45%",
+			"bull": "102%"
+		},
+		"epsGrowth": "35%"
+	},
+	"currentPrice": "$193.26",
+	"marketCap": "$3.8B USD",
+	"consensus": {
+		"yahoo": "$279.58",
+		"stockanalysis": "$238.83"
+	},
+	"expectedVolatility": "~94%",
+	"expectedCAGR": "-29% - 102%",
+	"sharpeRatio": 0.34,
+	"valuation": {
+		"trailingPE": 50.2,
+		"forwardPE": 36.5,
+		"evEbitda": 57.4,
+		"evFcf": 80.4
+	},
+	"metrics": {
+		"roe": "16.8%",
+		"fcfMargin": "~8%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash",
+		"grossMargin": "26.19%",
+		"operatingMargin": "~6%",
+		"ruleOf40": "5%"
+	},
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.27,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 35,
+			"multipleType": "Forward P/E",
+			"multiple": 36.5,
+			"cvStock": 0.292,
+			"riskMultiplier": 1.127
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 193.26,
+				"price6mAgo": 305.35,
+				"price1mAgo": 210.96,
+				"low3m": 182.1,
+				"return6m": -36.7,
+				"return1m": -8.4,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": -51.4,
+				"quarter": "2025-12"
+			}
+		},
+		"note": "(CYCLICAL EPS)"
+	},
+	"lastUpdated": "2026-03-26T00:02:51.899Z",
+	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
+	"analystTargets": {
+		"low": 137,
+		"mean": 279.58,
+		"high": 390
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 2.5,
+		"revisionsScore": -3.33,
+		"totalScore": 4.17,
+		"raw": {
+			"avgSurprisePct": 386.66,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 3
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"ticker": "AVAV",
+	"name": "AeroVironment, Inc.",
+	"group": "Industrial Monopolies",
+	"cyclical": false,
+	"confidence": "medium",
+	"bullCase": "AeroVironment expands market share in drone defense as autonomous systems become critical to modern military strategy.",
+	"bearCase": "Defense spending cuts or increased competition in the UAS market could squeeze margins and slow revenue growth.",
+	"confidenceReason": "Leading manufacturer of unmanned aircraft systems (UAS) and tactical missile systems for defense. Strong backlog due to global defense spending super-cycle, but heavily reliant on US government contracts. EPS growth modeled to be auto-derived from analyst consensus.",
+	"cagrModel": {
+		"ttmEPS": 3.01,
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"epsGrowth": "35%",
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "18%",
+			"base": "57%",
+			"bull": "126%"
+		}
+	},
+	"currentPrice": "$199.02",
+	"marketCap": "$10.1B USD",
+	"valuation": {
+		"forwardPE": 49.1,
+		"evFcf": -33.3,
+		"evEbitda": 67
+	},
+	"metrics": {
+		"roe": "-8.7%",
+		"fcfMargin": "~-19%",
+		"fcfYield": "~-3%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "125%"
+	},
+	"consensus": {
+		"yahoo": "$311.47"
+	},
+	"targetPrice": "$311.47",
+	"analystTargets": {
+		"low": 235,
+		"mean": 311.47,
+		"high": 450
+	},
+	"expectedCAGR": "18% - 126%",
+	"expectedVolatility": "~70%",
+	"sharpeRatio": 0.96,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.57,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 35,
+			"multipleType": "Forward P/E",
+			"multiple": 49.1,
+			"cvStock": 0.149,
+			"riskMultiplier": 1.042
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": false,
+				"price": 199.02,
+				"price6mAgo": 301.2,
+				"price1mAgo": 259.62,
+				"low3m": 193.52,
+				"return6m": -33.9,
+				"return1m": -23.3,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 12
+			},
+			"earningsSurprise": {
+				"surprise": -7.4,
+				"quarter": "2026-01"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": -2.86,
+		"flowScore": 2.5,
+		"revisionsScore": -4.06,
+		"totalScore": -4.42,
+		"raw": {
+			"avgSurprisePct": -10.66,
+			"netInsiderShares": -7046,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 13,
+			"totalAnalysts": 16
+		}
+	},
+	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
+	"lastUpdated": "2026-03-26T00:02:43.518Z"
+}

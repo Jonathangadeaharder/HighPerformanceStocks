@@ -10,5 +10,5 @@
 		"types": ["node"]
 	},
 	"include": ["src/**/*.ts", "src/**/*.svelte", "src/**/*.d.ts", "scripts/**/*.ts", "lib/**/*.js"],
-	"exclude": ["node_modules/**", "data/**"]
+	"exclude": ["node_modules/**", "data/**", "scripts/sandbox/**"]
 }

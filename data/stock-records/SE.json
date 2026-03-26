@@ -12,41 +12,41 @@
 		"epsGrowth": "22%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 2.45,
+		"ttmEPS": 2.52,
 		"scenarios": {
-			"bear": "27%",
-			"base": "78%",
-			"bull": "147%"
+			"bear": "21%",
+			"base": "71%",
+			"bull": "136%"
 		}
 	},
-	"currentPrice": "$78.85",
-	"marketCap": "$46.7B USD",
+	"currentPrice": "$82.47",
+	"marketCap": "$48.8B USD",
 	"consensus": {
 		"yahoo": "$140.71"
 	},
 	"expectedVolatility": "~52%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.72,
+		"score": 0.76,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 15.4,
+			"multiple": 16.1,
 			"cvStock": 0.133,
 			"riskMultiplier": 1.032
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 78.85,
-				"price6mAgo": 192.96,
-				"price1mAgo": 111.24,
+				"pass": true,
+				"price": 82.47,
+				"price6mAgo": 184.58,
+				"price1mAgo": 110.9,
 				"low3m": 77.05,
-				"return6m": -59.1,
-				"return1m": -29.1,
-				"near3mLow": true
+				"return6m": -55.3,
+				"return1m": -25.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
@@ -59,12 +59,12 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:49.126Z",
+	"lastUpdated": "2026-03-26T00:02:59.151Z",
 	"valuation": {
-		"trailingPE": 32.2,
-		"forwardPE": 15.4,
-		"evEbitda": 17.1,
-		"evFcf": 76.3
+		"trailingPE": 32.7,
+		"forwardPE": 16.1,
+		"evEbitda": 18,
+		"evFcf": 80.4
 	},
 	"metrics": {
 		"roe": "15.3%",
@@ -73,8 +73,8 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"expectedCAGR": "27% - 147%",
-	"sharpeRatio": 1.59,
+	"expectedCAGR": "21% - 136%",
+	"sharpeRatio": 1.42,
 	"qcs": {
 		"earningsScore": -2.87,
 		"flowScore": 2.5,

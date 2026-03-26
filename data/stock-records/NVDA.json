@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4197.5B USD",
-	"sharpeRatio": 1.12,
-	"expectedCAGR": "-19% - 120%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$4342.8B USD",
+	"sharpeRatio": 1.02,
+	"expectedCAGR": "-22% - 113%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 35.2,
-		"forwardPE": 15.5,
+		"trailingPE": 36.4,
+		"forwardPE": 16.1,
 		"pegRatio": 1.6,
-		"evEbitda": 31.2,
-		"evFcf": 71.4
+		"evEbitda": 32.2,
+		"evFcf": 73.8
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -24,53 +24,53 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "100%"
 	},
-	"targetPrice": "$269.23",
+	"targetPrice": "$268.22",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$172.70",
+	"currentPrice": "$178.68",
 	"consensus": {
 		"tipranks": "$272",
-		"yahoo": "$269.23",
+		"yahoo": "$268.22",
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.9,
+		"ttmEPS": 4.91,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "56%",
-			"bull": "120%"
+			"bear": "-22%",
+			"base": "50%",
+			"bull": "113%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-21T00:31:47.101Z",
+	"lastUpdated": "2026-03-26T00:02:56.526Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.55,
+		"score": 0.57,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
-			"multiple": 15.5,
+			"multiple": 16.1,
 			"cvStock": 0.127,
 			"riskMultiplier": 1.028
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 172.7,
-				"price6mAgo": 183.61,
-				"price1mAgo": 191.55,
+				"price": 178.68,
+				"price6mAgo": 178.19,
+				"price1mAgo": 184.89,
 				"low3m": 171.03,
-				"return6m": -5.9,
-				"return1m": -9.8,
+				"return6m": 0.3,
+				"return1m": -3.4,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 26,
-				"down30d": 5
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": 5.3,
@@ -80,28 +80,28 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 234.31,
-		"date": "2026-03-20",
-		"discount": 33
+		"dcf": 230.47,
+		"date": "2026-03-25",
+		"discount": 29
 	},
 	"qcs": {
 		"earningsScore": 1.65,
-		"flowScore": -5,
-		"revisionsScore": 3.09,
-		"totalScore": -0.26,
+		"flowScore": 0,
+		"revisionsScore": 3.51,
+		"totalScore": 5.16,
 		"raw": {
 			"avgSurprisePct": 5.22,
-			"netInsiderShares": -2219471,
+			"netInsiderShares": 56959933,
 			"instFlowTrend": "negative",
-			"upRevisions": 36,
-			"downRevisions": 7,
+			"upRevisions": 38,
+			"downRevisions": 5,
 			"totalAnalysts": 47
 		}
 	},
 	"description": "NVIDIA Corporation operates as a data center scale AI infrastructure company.",
 	"analystTargets": {
 		"low": 140,
-		"mean": 269.23,
+		"mean": 268.22,
 		"high": 380
 	}
 }

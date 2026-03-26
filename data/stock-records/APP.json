@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$149.5B USD",
-	"sharpeRatio": 0.39,
-	"expectedCAGR": "-23% - 94%",
+	"marketCap": "$147.6B USD",
+	"sharpeRatio": 0.41,
+	"expectedCAGR": "-22% - 97%",
 	"expectedVolatility": "~80%",
 	"valuation": {
-		"trailingPE": 43.8,
-		"forwardPE": 21.8,
+		"trailingPE": 43.5,
+		"forwardPE": 21.6,
 		"pegRatio": 0.8,
-		"evEbitda": 35.2,
-		"evFcf": 55.7
+		"evEbitda": 34.7,
+		"evFcf": 55
 	},
 	"metrics": {
 		"roe": "212.9%",
@@ -31,20 +31,20 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$442.39",
+	"currentPrice": "$436.69",
 	"cagrModel": {
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-23%",
-			"base": "47%",
-			"bull": "94%"
+			"bear": "-22%",
+			"base": "49%",
+			"bull": "97%"
 		},
 		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-21T00:31:36.963Z",
+	"lastUpdated": "2026-03-26T00:02:42.630Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.73,
@@ -52,19 +52,19 @@
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multiple": 21.6,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 442.39,
-				"price6mAgo": 643.5,
-				"price1mAgo": 380.62,
+				"price": 436.69,
+				"price6mAgo": 669.86,
+				"price1mAgo": 444.93,
 				"low3m": 359,
-				"return6m": -31.3,
-				"return1m": 16.2,
+				"return6m": -34.8,
+				"return1m": -1.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -86,7 +86,7 @@
 		"totalScore": 4.28,
 		"raw": {
 			"avgSurprisePct": 12.21,
-			"netInsiderShares": -268837,
+			"netInsiderShares": -289747,
 			"instFlowTrend": "negative",
 			"upRevisions": 19,
 			"downRevisions": 1,

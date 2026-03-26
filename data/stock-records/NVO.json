@@ -9,21 +9,21 @@
 	"cagrModel": {
 		"epsGrowth": "13%",
 		"basis": "Non-GAAP EPS; reflects maturing GLP-1 market share and pipeline resilience",
-		"ttmEPS": 3.53,
+		"ttmEPS": 3.56,
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "30%",
-			"bull": "75%"
+			"bear": "15%",
+			"base": "34%",
+			"bull": "80%"
 		}
 	},
-	"currentPrice": "$36.53",
-	"marketCap": "$162.8B USD",
+	"currentPrice": "$36.33",
+	"marketCap": "$162.5B USD",
 	"valuation": {
-		"trailingPE": 10.3,
-		"forwardPE": 10.9,
+		"trailingPE": 10.2,
+		"forwardPE": 10.7,
 		"evEbitda": null,
-		"evFcf": 706.7
+		"evFcf": 704.3
 	},
 	"metrics": {
 		"roe": "60.7%",
@@ -33,12 +33,12 @@
 		"ruleOf40": "-7%"
 	},
 	"consensus": {
-		"yahoo": "$47.38"
+		"yahoo": "$46.99"
 	},
-	"targetPrice": "$47.38",
-	"expectedCAGR": "9% - 75%",
+	"targetPrice": "$46.99",
+	"expectedCAGR": "15% - 80%",
 	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.67,
+	"sharpeRatio": 0.77,
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.67,
@@ -54,12 +54,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 36.53,
-				"price6mAgo": 60.71,
-				"price1mAgo": 39.63,
+				"price": 36.33,
+				"price6mAgo": 55.61,
+				"price1mAgo": 37.62,
 				"low3m": 35.85,
-				"return6m": -39.8,
-				"return1m": -7.8,
+				"return6m": -34.7,
+				"return1m": -3.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -76,22 +76,22 @@
 	"qcs": {
 		"earningsScore": 1.9,
 		"flowScore": 0,
-		"revisionsScore": -1,
-		"totalScore": 0.9,
+		"revisionsScore": 1,
+		"totalScore": 2.9,
 		"raw": {
 			"avgSurprisePct": 3.79,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 1,
-			"downRevisions": 2,
+			"downRevisions": 0,
 			"totalAnalysts": 5
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-03-21T00:31:47.135Z",
+	"lastUpdated": "2026-03-26T00:02:56.568Z",
 	"analystTargets": {
-		"low": 39.96,
-		"mean": 47.38,
-		"high": 63.77
+		"low": 39.91,
+		"mean": 46.99,
+		"high": 63.7
 	}
 }

@@ -9,26 +9,26 @@
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6,
+		"ttmEPS": 6.02,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "12%",
+			"bear": "13%",
 			"base": "31%",
-			"bull": "64%"
+			"bull": "65%"
 		}
 	},
-	"currentPrice": "$115.67",
-	"marketCap": "$51.0B USD",
+	"currentPrice": "$116.71",
+	"marketCap": "$51.4B USD",
 	"valuation": {
-		"trailingPE": 19.3,
-		"forwardPE": 15.3,
-		"evEbitda": 13.7,
-		"evFcf": 31.2
+		"trailingPE": 19.4,
+		"forwardPE": 15.5,
+		"evEbitda": 13.8,
+		"evFcf": 31.4
 	},
 	"metrics": {
 		"roe": "66.0%",
 		"fcfMargin": "~19%",
-		"fcfYield": "~4%",
+		"fcfYield": "~3%",
 		"netDebtEbitda": "1.7x",
 		"ruleOf40": "22%"
 	},
@@ -36,32 +36,32 @@
 		"yahoo": "$151"
 	},
 	"targetPrice": "$151",
-	"expectedCAGR": "12% - 64%",
+	"expectedCAGR": "13% - 65%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
+		"score": 1.07,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 15.3,
+			"multiple": 15.5,
 			"cvStock": 0.017,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 115.67,
-				"price6mAgo": 144.65,
-				"price1mAgo": 125.79,
-				"low3m": 114.36,
-				"return6m": -20,
-				"return1m": -8,
+				"price": 116.71,
+				"price6mAgo": 143.5,
+				"price1mAgo": 129.76,
+				"low3m": 113.3,
+				"return6m": -18.7,
+				"return1m": -10.1,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 10,
+				"up30d": 3,
 				"down30d": 3
 			},
 			"earningsSurprise": {
@@ -70,20 +70,20 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:52.780Z",
+	"lastUpdated": "2026-03-26T00:03:04.029Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.12,
+	"sharpeRatio": 1.15,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 5,
-		"totalScore": 15,
+		"revisionsScore": -0.33,
+		"totalScore": 9.67,
 		"raw": {
 			"avgSurprisePct": 6.31,
 			"netInsiderShares": 48831,
 			"instFlowTrend": "positive",
-			"upRevisions": 15,
-			"downRevisions": 0,
+			"upRevisions": 1,
+			"downRevisions": 2,
 			"totalAnalysts": 15
 		}
 	},

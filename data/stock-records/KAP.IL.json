@@ -14,8 +14,8 @@
 		"dividendYield": "0%",
 		"ttmEPS": 6.16
 	},
-	"currentPrice": "$73.90",
-	"marketCap": "$19.2B USD",
+	"currentPrice": "$80.50",
+	"marketCap": "$20.9B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
@@ -35,12 +35,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 73.9,
-				"price6mAgo": 51.5,
-				"price1mAgo": 83,
-				"low3m": 50.5,
-				"return6m": 43.5,
-				"return1m": -11,
+				"price": 80.5,
+				"price6mAgo": 50.7,
+				"price1mAgo": 81.3,
+				"low3m": 53.1,
+				"return6m": 58.8,
+				"return1m": -1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -50,9 +50,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:43.392Z",
+	"lastUpdated": "2026-03-26T00:02:50.876Z",
 	"valuation": {
-		"trailingPE": 12,
+		"trailingPE": 13.1,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3

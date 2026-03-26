@@ -4,16 +4,16 @@
 	"group": "Fintech",
 	"confidence": "cut",
 	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
-	"marketCap": "$36.1B USD",
-	"sharpeRatio": 0.71,
-	"expectedCAGR": "-14% - 101%",
+	"marketCap": "$36.5B USD",
+	"sharpeRatio": 0.68,
+	"expectedCAGR": "-15% - 99%",
 	"expectedVolatility": "~55%",
 	"valuation": {
-		"trailingPE": 28.1,
-		"forwardPE": 12.6,
+		"trailingPE": 28.6,
+		"forwardPE": 12.7,
 		"pegRatio": null,
-		"evEbitda": 18,
-		"evFcf": -36.1
+		"evEbitda": 18.2,
+		"evFcf": -36.4
 	},
 	"metrics": {
 		"fcfMargin": "~-4%",
@@ -26,50 +26,50 @@
 	"targetPrice": "$86.43",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
 	"bearCase": "A razor-thin 5.40% net margin leaves no room for macro error. Management is executing a desperate 40% headcount cut just to artificially engineer a 44% Rule of 40 target by late 2026. This is defensive bloat-cutting, not an offensive compounding engine.",
-	"currentPrice": "$59.37",
+	"currentPrice": "$60.01",
 	"consensus": {
 		"tipranks": "$81",
 		"yahoo": "$86.43",
 		"stockanalysis": "$81"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.11,
+		"ttmEPS": 2.1,
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "46%",
-			"bull": "101%"
+			"bear": "-15%",
+			"base": "44%",
+			"bull": "99%"
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-21T00:31:52.686Z",
+	"lastUpdated": "2026-03-26T00:03:03.963Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.09,
+		"score": 1.1,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 12.6,
+			"multiple": 12.7,
 			"cvStock": 0.145,
 			"riskMultiplier": 1.039
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 59.37,
-				"price6mAgo": 77.41,
-				"price1mAgo": 50.75,
+				"price": 60.01,
+				"price6mAgo": 73.67,
+				"price1mAgo": 54.53,
 				"low3m": 48.21,
-				"return6m": -23.3,
-				"return1m": 17,
+				"return6m": -18.5,
+				"return1m": 10,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 23,
-				"down30d": 0
+				"up30d": 25,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 0.2,
@@ -80,13 +80,13 @@
 	"qcs": {
 		"earningsScore": -4.33,
 		"flowScore": 0,
-		"revisionsScore": 3.92,
-		"totalScore": -0.41,
+		"revisionsScore": 4.19,
+		"totalScore": -0.14,
 		"raw": {
 			"avgSurprisePct": -15.68,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 29,
+			"upRevisions": 31,
 			"downRevisions": 0,
 			"totalAnalysts": 37
 		}

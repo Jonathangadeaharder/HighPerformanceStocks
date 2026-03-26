@@ -1,3 +1,6 @@
+// eslint-disable-next-line unicorn/require-module-specifiers
+export {};
+
 declare global {
 	namespace App {
 		// interface Error {}
@@ -7,11 +10,6 @@ declare global {
 	}
 }
 
-declare module '*.svelte' {
-	import type { Component } from 'svelte';
+// Svelte 5 types are handled automatically, no need to declare module '*.svelte'
 
-	const component: Component;
-	export default component;
-}
 
-export {};

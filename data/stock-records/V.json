@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
-	"marketCap": "$581.5B USD",
+	"marketCap": "$587.9B USD",
 	"sharpeRatio": 0.98,
 	"expectedCAGR": "7% - 49%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 28.2,
-		"forwardPE": 20.7,
+		"trailingPE": 28.6,
+		"forwardPE": 21,
 		"pegRatio": null,
-		"evEbitda": 20,
-		"evFcf": 26.3
+		"evEbitda": 20.2,
+		"evFcf": 26.6
 	},
 	"metrics": {
 		"fcfMargin": "~53%",
@@ -26,50 +26,50 @@
 	"targetPrice": "$400.20",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$301.62",
+	"currentPrice": "$304.91",
 	"consensus": {
 		"tipranks": "$400",
 		"yahoo": "$400.20",
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.71,
+		"ttmEPS": 10.66,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "7%",
-			"base": "33%",
+			"base": "32%",
 			"bull": "49%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-21T00:31:51.297Z",
+	"lastUpdated": "2026-03-26T00:03:02.068Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.42,
+		"score": 1.44,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.7,
+			"multiple": 21,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 301.62,
-				"price6mAgo": 344.36,
-				"price1mAgo": 306.52,
+				"pass": true,
+				"price": 304.91,
+				"price6mAgo": 337.37,
+				"price1mAgo": 316.7,
 				"low3m": 297.03,
-				"return6m": -12.4,
-				"return1m": -1.6,
+				"return6m": -9.6,
+				"return1m": -3.7,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 25,
-				"down30d": 6
+				"up30d": 3,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 0.9,
@@ -78,9 +78,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 235.94,
-		"date": "2026-03-20",
-		"discount": -21
+		"dcf": 229.33,
+		"date": "2026-03-25",
+		"discount": -25
 	},
 	"qcs": {
 		"earningsScore": 5,

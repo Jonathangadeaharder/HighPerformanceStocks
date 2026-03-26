@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$442.9B USD",
-	"sharpeRatio": 1.06,
-	"expectedCAGR": "11% - 49%",
+	"marketCap": "$448.7B USD",
+	"sharpeRatio": 1.02,
+	"expectedCAGR": "10% - 48%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 29.8,
-		"forwardPE": 21.9,
+		"trailingPE": 30.5,
+		"forwardPE": 22.2,
 		"pegRatio": null,
-		"evEbitda": 22,
-		"evFcf": 27.8
+		"evEbitda": 22.3,
+		"evFcf": 28.1
 	},
 	"metrics": {
 		"fcfMargin": "~50%",
@@ -26,49 +26,49 @@
 	"targetPrice": "$662.59",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$496.32",
+	"currentPrice": "$502.76",
 	"consensus": {
 		"tipranks": "$659",
 		"yahoo": "$662.59",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.68,
+		"ttmEPS": 16.51,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "34%",
-			"bull": "49%"
+			"bear": "10%",
+			"base": "33%",
+			"bull": "48%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-21T00:31:44.841Z",
+	"lastUpdated": "2026-03-26T00:02:53.586Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.41,
+		"score": 1.43,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 21.9,
+			"multiple": 22.2,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.963
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 496.32,
-				"price6mAgo": 584.49,
-				"price1mAgo": 496.03,
+				"pass": false,
+				"price": 502.76,
+				"price6mAgo": 565.13,
+				"price1mAgo": 514.77,
 				"low3m": 487.31,
-				"return6m": -15.1,
-				"return1m": 0.1,
+				"return6m": -11,
+				"return1m": -2.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 28,
+				"up30d": 3,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -80,13 +80,13 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 5,
-		"totalScore": 10,
+		"revisionsScore": 0.44,
+		"totalScore": 5.44,
 		"raw": {
 			"avgSurprisePct": 5.43,
 			"netInsiderShares": 178595,
 			"instFlowTrend": "negative",
-			"upRevisions": 34,
+			"upRevisions": 3,
 			"downRevisions": 0,
 			"totalAnalysts": 34
 		}

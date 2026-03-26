@@ -4,15 +4,15 @@
 	"group": "High-Growth Tech",
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$152.4B USD",
-	"sharpeRatio": 0.46,
-	"expectedCAGR": "-6% - 71%",
+	"marketCap": "$154.5B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "-7% - 69%",
 	"expectedVolatility": "~61%",
 	"valuation": {
-		"trailingPE": 129.8,
-		"forwardPE": 50.8,
-		"evEbitda": 76,
-		"evFcf": 114
+		"trailingPE": 126,
+		"forwardPE": 51.5,
+		"evEbitda": 77.1,
+		"evFcf": 115.7
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -24,42 +24,42 @@
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$116.78",
+	"currentPrice": "$118.42",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-6%",
-			"base": "37%",
-			"bull": "71%"
+			"bear": "-7%",
+			"base": "35%",
+			"bull": "69%"
 		},
 		"ttmEPS": 1.89,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-21T00:31:49.162Z",
+	"lastUpdated": "2026-03-26T00:02:59.159Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.04,
+		"score": 2.07,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "Forward P/E",
-			"multiple": 50.8,
+			"multiple": 51.5,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.044
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 116.78,
-				"price6mAgo": 157.12,
-				"price1mAgo": 117.28,
+				"price": 118.42,
+				"price6mAgo": 140.25,
+				"price1mAgo": 125.94,
 				"low3m": 104.92,
-				"return6m": -25.7,
-				"return1m": -0.4,
+				"return6m": -15.6,
+				"return1m": -6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -74,8 +74,8 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 18.23,
-		"date": "2026-03-20",
+		"dcf": 18.04,
+		"date": "2026-03-25",
 		"discount": -85
 	},
 	"qcs": {

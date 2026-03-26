@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1037.3B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "0% - 20%",
-	"expectedVolatility": "~19%",
+	"marketCap": "$1027.1B USD",
+	"sharpeRatio": 0.36,
+	"expectedCAGR": "1% - 21%",
+	"expectedVolatility": "~18%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 15.5,
-		"forwardPE": 22.1,
+		"trailingPE": 15.3,
+		"forwardPE": 21.9,
 		"evFcf": -6.4
 	},
 	"metrics": {
@@ -26,42 +26,42 @@
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$480.94",
+	"currentPrice": "$476.19",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "0%",
-			"base": "9%",
-			"bull": "20%"
+			"bear": "1%",
+			"base": "10%",
+			"bull": "21%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-21T00:31:37.728Z",
+	"lastUpdated": "2026-03-26T00:02:44.412Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
 		"engine": "tPERG",
-		"score": 1.49,
+		"score": 1.48,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 15.5,
+			"multiple": 15.3,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 480.94,
-				"price6mAgo": 493.71,
-				"price1mAgo": 494.09,
+				"price": 476.19,
+				"price6mAgo": 500.03,
+				"price1mAgo": 502.67,
 				"low3m": 471.91,
-				"return6m": -2.6,
-				"return1m": -2.7,
+				"return6m": -4.8,
+				"return1m": -5.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,14 +79,14 @@
 	"qcs": {
 		"earningsScore": -1.07,
 		"flowScore": 0,
-		"revisionsScore": -3.33,
-		"totalScore": -4.4,
+		"revisionsScore": -5,
+		"totalScore": -6.07,
 		"raw": {
 			"avgSurprisePct": -0.54,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
-			"downRevisions": 2,
+			"downRevisions": 3,
 			"totalAnalysts": 3
 		}
 	},

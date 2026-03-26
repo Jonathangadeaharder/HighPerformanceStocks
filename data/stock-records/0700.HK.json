@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
-	"marketCap": "HK$4582.8B",
+	"marketCap": "HK$4568.9B",
 	"sharpeRatio": 1,
-	"expectedCAGR": "-6% - 73%",
-	"expectedVolatility": "~29%",
+	"expectedCAGR": "-5% - 74%",
+	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 20,
-		"forwardPE": 13.1,
+		"trailingPE": 18.4,
+		"forwardPE": 13,
 		"pegRatio": null,
-		"evEbitda": 17,
-		"evFcf": 27.1
+		"evEbitda": 16.9,
+		"evFcf": 26.9
 	},
 	"metrics": {
 		"roe": "20.0%",
@@ -23,13 +23,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "36%"
 	},
-	"targetPrice": "HK$719.06",
+	"targetPrice": "HK$713.58",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
 	"bearCase": "Chinese regulatory risk remains — gaming license freezes, antitrust actions, or data privacy rules could resurface. Advertising revenue is cyclically exposed to China's weak consumer economy. International gaming competition from Microsoft/Activision intensifying. VIE structure risk similar to BABA for offshore investors. Heavy investment in AI and cloud could compress margins near-term. HKD-denominated stock adds currency layer for USD-based investors (HKD pegged to USD via 7.75-7.85 band, but peg could theoretically break under extreme stress).",
-	"currentPrice": "HK$508",
+	"currentPrice": "HK$505.50",
 	"consensus": {
 		"tipranks": "HK$590",
-		"yahoo": "HK$719.06",
+		"yahoo": "HK$713.58",
 		"stockanalysis": "HK$575"
 	},
 	"cagrModel": {
@@ -37,14 +37,14 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-6%",
+			"bear": "-5%",
 			"base": "42%",
-			"bull": "73%"
+			"bull": "74%"
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-21T00:31:35.567Z",
+	"lastUpdated": "2026-03-26T00:02:40.596Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.23,
@@ -52,25 +52,25 @@
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 13.1,
-			"cvStock": 0.056,
-			"riskMultiplier": 1.129
+			"multiple": 13,
+			"cvStock": 0.054,
+			"riskMultiplier": 1.136
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 508,
-				"price6mAgo": 641,
-				"price1mAgo": 538,
-				"low3m": 498.8,
-				"return6m": -20.7,
-				"return1m": -5.6,
+				"price": 505.5,
+				"price6mAgo": 644,
+				"price1mAgo": 512,
+				"low3m": 495.2,
+				"return6m": -21.5,
+				"return1m": -1.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 4,
+				"down30d": 19
 			},
 			"earningsSurprise": {
 				"surprise": 1.5,
@@ -80,23 +80,23 @@
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
-		"earningsScore": 3.15,
+		"earningsScore": 3.27,
 		"flowScore": 0,
-		"revisionsScore": -0.32,
-		"totalScore": 2.83,
+		"revisionsScore": -3.28,
+		"totalScore": -0.01,
 		"raw": {
 			"avgSurprisePct": 4.42,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 31
+			"upRevisions": 3,
+			"downRevisions": 24,
+			"totalAnalysts": 32
 		}
 	},
 	"description": "Tencent Holdings Limited, an investment holding company, provides value-added services, marketing services, fintech, and business services in Mainland China and internationally.",
 	"analystTargets": {
-		"low": 478.63,
-		"mean": 719.06,
-		"high": 878.49
+		"low": 476.78,
+		"mean": 713.58,
+		"high": 875.09
 	}
 }

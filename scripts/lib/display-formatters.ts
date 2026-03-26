@@ -17,7 +17,7 @@ export function parseNumber(value: unknown): number | null {
 	if (typeof value === 'number') return Number.isFinite(value) ? value : null;
 	if (typeof value !== 'string' && typeof value !== 'number') return null;
 
-	const match = String(value).match(/-?\d+(?:\.\d+)?/);
+	const match = /-?\d+(?:\.\d+)?/.exec(String(value));
 	return match ? Number.parseFloat(match[0]) : null;
 }
 

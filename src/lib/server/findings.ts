@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { STOCK_RECORDS_DIR } from '../../../lib/project-paths.js';
+import { STOCK_RECORDS_DIR } from './infrastructure/paths';
 import type { FindingStock } from '$lib/types/dashboard';
 
 const FINDINGS_DIR = STOCK_RECORDS_DIR;

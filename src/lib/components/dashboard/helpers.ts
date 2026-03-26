@@ -2,7 +2,7 @@ import type { FindingStock, ScenarioKey, WorldVolSignal } from '$lib/types/dashb
 
 function parsePercent(value: string | null | undefined): number | null {
 	if (!value) return null;
-	const match = value.match(/-?\d+(?:\.\d+)?/);
+	const match = /-?\d+(?:\.\d+)?/.exec(value);
 	return match ? Number.parseFloat(match[0]) : null;
 }
 
