@@ -15,7 +15,7 @@ export interface VolComponent {
 
 export interface AvailableWorldVolSignal {
 	available: true;
-	method: 'composite' | 'urth_fallback';
+	method: 'composite';
 	source: string;
 	impliedVol: number;
 	action: string;
