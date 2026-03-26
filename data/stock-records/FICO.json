@@ -9,7 +9,7 @@
 	"expectedCAGR": "-1% - 130%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 38.7,
+		"trailingPE": 38.6,
 		"forwardPE": 19.6,
 		"pegRatio": 2.1,
 		"evEbitda": 27.6,
@@ -41,9 +41,9 @@
 			"bull": "130%"
 		},
 		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 26.96
+		"ttmEPS": 27.02
 	},
-	"lastUpdated": "2026-03-26T00:02:48.057Z",
+	"lastUpdated": "2026-03-26T08:26:18.435Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.09,
@@ -96,5 +96,14 @@
 		"low": 1032,
 		"mean": 1872.18,
 		"high": 2400
-	}
+	},
+	"analystConsensus": {
+		"ticker": "FICO",
+		"strongBuy": 10,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

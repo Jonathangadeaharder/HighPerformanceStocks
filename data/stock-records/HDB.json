@@ -5,11 +5,11 @@
 	"confidence": "medium",
 	"confidenceReason": "India's largest private bank by market cap. Consistent ~15% loan growth post-merger with HDFC Ltd. Low NPAs (~1.3%) and strong ROA (~1.9%). ADR trades at slight premium to local shares.",
 	"marketCap": "$132.4B USD",
-	"sharpeRatio": 2.2,
-	"expectedCAGR": "26% - 84%",
+	"sharpeRatio": 2.15,
+	"expectedCAGR": "25% - 83%",
 	"expectedVolatility": "~23%",
 	"valuation": {
-		"trailingPE": 18,
+		"trailingPE": 18.2,
 		"forwardPE": 19,
 		"pegRatio": null,
 		"evEbitda": null
@@ -28,17 +28,17 @@
 		"stockanalysis": "$38"
 	},
 	"cagrModel": {
-		"ttmEPS": 1.43,
+		"ttmEPS": 1.42,
 		"epsGrowth": "14%",
-		"dividendYield": "2%",
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "26%",
-			"base": "65%",
-			"bull": "84%"
+			"bear": "25%",
+			"base": "64%",
+			"bull": "83%"
 		},
 		"basis": "GAAP diluted EPS (ADR); post 2:1 split Sep 2025"
 	},
-	"lastUpdated": "2026-03-26T00:02:48.992Z",
+	"lastUpdated": "2026-03-26T08:26:19.408Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.42,
@@ -91,5 +91,14 @@
 		"low": 32.1,
 		"mean": 42.15,
 		"high": 47
-	}
+	},
+	"analystConsensus": {
+		"ticker": "HDB",
+		"strongBuy": 7,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

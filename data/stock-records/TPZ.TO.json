@@ -68,7 +68,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:00.945Z",
+	"lastUpdated": "2026-03-26T08:26:31.948Z",
 	"expectedVolatility": "~23%",
 	"sharpeRatio": 0.17,
 	"qcs": {
@@ -92,5 +92,14 @@
 		"low": 29,
 		"mean": 33.67,
 		"high": 36
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TPZ.TO",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

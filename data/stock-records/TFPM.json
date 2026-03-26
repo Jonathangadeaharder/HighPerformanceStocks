@@ -10,7 +10,7 @@
 	"expectedCAGR": "33% - 52%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 27.1,
+		"trailingPE": 27.5,
 		"forwardPE": 19.7,
 		"pegRatio": 1.02,
 		"evEbitda": 22.4,
@@ -44,7 +44,7 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:00.077Z",
+	"lastUpdated": "2026-03-26T08:26:31.035Z",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 1.33,
@@ -98,5 +98,14 @@
 		"low": 43,
 		"mean": 45,
 		"high": 49
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TFPM",
+		"strongBuy": 6,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

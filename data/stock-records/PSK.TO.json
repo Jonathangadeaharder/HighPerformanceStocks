@@ -65,7 +65,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:57.477Z",
+	"lastUpdated": "2026-03-26T08:26:28.351Z",
 	"expectedVolatility": "~25%",
 	"sharpeRatio": -0.18,
 	"qcs": {
@@ -89,5 +89,14 @@
 		"low": 28,
 		"mean": 32.68,
 		"high": 35
-	}
+	},
+	"analystConsensus": {
+		"ticker": "PSK.TO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

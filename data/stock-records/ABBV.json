@@ -45,7 +45,7 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-26T00:02:40.625Z",
+	"lastUpdated": "2026-03-26T08:26:10.961Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.84,
@@ -80,9 +80,9 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 161.05,
-		"date": "2026-03-25",
-		"discount": -22
+		"dcf": 163.17,
+		"date": "2026-03-26",
+		"discount": -21
 	},
 	"qcs": {
 		"earningsScore": 2.93,
@@ -103,5 +103,14 @@
 		"low": 184,
 		"mean": 249.14,
 		"high": 299
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ABBV",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

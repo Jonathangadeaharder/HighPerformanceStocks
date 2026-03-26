@@ -9,7 +9,7 @@
 	"expectedCAGR": "-20% - 60%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 59.6,
+		"trailingPE": 59.9,
 		"forwardPE": 41.1,
 		"pegRatio": null,
 		"evEbitda": 45.3,
@@ -32,7 +32,7 @@
 		"yahoo": "$605.08"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.88,
+		"ttmEPS": 7.85,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -42,7 +42,7 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-26T00:02:50.809Z",
+	"lastUpdated": "2026-03-26T08:26:21.297Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.85,
@@ -95,5 +95,15 @@
 		"low": 378,
 		"mean": 605.08,
 		"high": 750
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ISRG",
+		"strongBuy": 18,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$614.95",
+	"consensusRating": "Moderate Buy"
 }

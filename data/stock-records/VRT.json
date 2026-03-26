@@ -10,7 +10,7 @@
 	"expectedCAGR": "-44% - 16%",
 	"expectedVolatility": "~61%",
 	"valuation": {
-		"trailingPE": 81,
+		"trailingPE": 81.2,
 		"forwardPE": 34.5,
 		"pegRatio": null,
 		"evEbitda": 48.5,
@@ -47,7 +47,7 @@
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:03.053Z",
+	"lastUpdated": "2026-03-26T08:26:34.135Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.18,
@@ -101,5 +101,14 @@
 		"low": 155,
 		"mean": 267.83,
 		"high": 320
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VRT",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

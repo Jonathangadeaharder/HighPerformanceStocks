@@ -69,9 +69,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:53.592Z",
-	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.26,
+	"lastUpdated": "2026-03-26T08:26:24.218Z",
+	"expectedVolatility": "~28%",
+	"sharpeRatio": 0.27,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -91,5 +91,14 @@
 		"low": 860,
 		"mean": 997.67,
 		"high": 1107
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MCK",
+		"strongBuy": 13,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

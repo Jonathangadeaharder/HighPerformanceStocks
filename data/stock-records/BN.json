@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
 	"marketCap": "$90.3B USD",
-	"sharpeRatio": 0.31,
+	"sharpeRatio": 0.32,
 	"expectedCAGR": "-21% - 51%",
-	"expectedVolatility": "~34%",
+	"expectedVolatility": "~33%",
 	"valuation": {
 		"trailingPE": 81.4,
 		"forwardPE": 6.8,
@@ -44,7 +44,7 @@
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-26T00:02:43.672Z",
+	"lastUpdated": "2026-03-26T08:26:13.868Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.41,
@@ -94,5 +94,14 @@
 		"low": 31,
 		"mean": 53.95,
 		"high": 60
-	}
+	},
+	"analystConsensus": {
+		"ticker": "BN",
+		"strongBuy": 7,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

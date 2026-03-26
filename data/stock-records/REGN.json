@@ -35,7 +35,7 @@
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
-		"ttmEPS": 41.46,
+		"ttmEPS": 41.45,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -45,7 +45,7 @@
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-26T00:02:58.253Z",
+	"lastUpdated": "2026-03-26T08:26:29.163Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.21,
@@ -98,5 +98,15 @@
 		"low": 730,
 		"mean": 873.78,
 		"high": 1057
-	}
+	},
+	"analystConsensus": {
+		"ticker": "REGN",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$802.27",
+	"consensusRating": "Moderate Buy"
 }

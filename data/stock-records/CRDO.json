@@ -72,7 +72,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:45.346Z",
+	"lastUpdated": "2026-03-26T08:26:15.598Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
@@ -94,5 +94,15 @@
 		"low": 125,
 		"mean": 199.38,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CRDO",
+		"strongBuy": 13,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$206.33",
+	"consensusRating": "Unknown"
 }

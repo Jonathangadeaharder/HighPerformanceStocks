@@ -69,7 +69,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:02.986Z",
+	"lastUpdated": "2026-03-26T08:26:34.068Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 0.68,
 	"qcs": {
@@ -91,5 +91,15 @@
 		"low": 183,
 		"mean": 230,
 		"high": 275
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VRSK",
+		"strongBuy": 8,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$237.20",
+	"consensusRating": "Moderate Buy"
 }

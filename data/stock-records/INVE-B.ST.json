@@ -5,15 +5,15 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1072.5B SEK",
-	"sharpeRatio": -0.1,
-	"expectedCAGR": "-9% - 14%",
+	"marketCap": "1064.8B SEK",
+	"sharpeRatio": -0.07,
+	"expectedCAGR": "-9% - 15%",
 	"expectedVolatility": "~21%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 6.8,
-		"forwardPE": 22.2,
+		"forwardPE": 22.1,
 		"evFcf": 12.1
 	},
 	"metrics": {
@@ -25,42 +25,42 @@
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "350 SEK",
+	"currentPrice": "348 SEK",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "-9%",
 			"base": "6%",
-			"bull": "14%"
+			"bull": "15%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "2%",
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-26T00:02:50.059Z",
+	"lastUpdated": "2026-03-26T08:26:20.516Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.11,
+		"score": 2.1,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 22.2,
+			"multiple": 22.1,
 			"cvStock": 0,
 			"riskMultiplier": 0.952
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 350.1,
-				"price6mAgo": 288.1,
-				"price1mAgo": 374.9,
-				"low3m": 322.05,
-				"return6m": 21.5,
-				"return1m": -6.6,
+				"price": 347.6,
+				"price6mAgo": 291,
+				"price1mAgo": 377.75,
+				"low3m": 323.65,
+				"return6m": 19.5,
+				"return1m": -8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -90,5 +90,14 @@
 		"low": 310,
 		"mean": 362.4,
 		"high": 392
-	}
+	},
+	"analystConsensus": {
+		"ticker": "INVE-B.ST",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

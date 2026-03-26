@@ -8,7 +8,7 @@
 	"marketCap": "$86.1B USD",
 	"sharpeRatio": 0.35,
 	"expectedCAGR": "-14% - 67%",
-	"expectedVolatility": "~62%",
+	"expectedVolatility": "~63%",
 	"valuation": {
 		"trailingPE": 32.1,
 		"forwardPE": 18.1,
@@ -44,7 +44,7 @@
 		},
 		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-03-26T00:02:54.607Z",
+	"lastUpdated": "2026-03-26T08:26:25.381Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.6,
@@ -98,5 +98,15 @@
 		"low": 85,
 		"mean": 120.5,
 		"high": 164
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MRVL",
+		"strongBuy": 24,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$117.24",
+	"consensusRating": "Moderate Buy"
 }

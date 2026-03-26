@@ -93,5 +93,15 @@
 		}
 	},
 	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-03-26T00:02:43.518Z"
+	"lastUpdated": "2026-03-26T08:26:13.709Z",
+	"analystConsensus": {
+		"ticker": "AVAV",
+		"strongBuy": 15,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$318.78",
+	"consensusRating": "Moderate Buy"
 }

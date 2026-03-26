@@ -33,7 +33,7 @@
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-26T00:02:58.224Z",
+	"lastUpdated": "2026-03-26T08:26:29.126Z",
 	"consensus": {
 		"yahoo": "$86.71"
 	},
@@ -89,5 +89,14 @@
 		"low": 64,
 		"mean": 86.71,
 		"high": 126
-	}
+	},
+	"analystConsensus": {
+		"ticker": "RBRK",
+		"strongBuy": 21,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

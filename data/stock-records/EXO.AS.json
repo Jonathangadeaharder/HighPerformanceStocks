@@ -33,7 +33,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-26T00:02:47.222Z",
+	"lastUpdated": "2026-03-26T08:26:17.587Z",
 	"consensus": {
 		"yahoo": "€113.13"
 	},
@@ -52,11 +52,11 @@
 			"stabilization": {
 				"pass": true,
 				"price": 65.2,
-				"price6mAgo": 82.4,
-				"price1mAgo": 74.9,
+				"price6mAgo": 83,
+				"price1mAgo": 74.35,
 				"low3m": 59.75,
-				"return6m": -20.9,
-				"return1m": -13,
+				"return6m": -21.4,
+				"return1m": -12.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -85,5 +85,14 @@
 		"low": 101,
 		"mean": 113.13,
 		"high": 123
-	}
+	},
+	"analystConsensus": {
+		"ticker": "EXO.AS",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

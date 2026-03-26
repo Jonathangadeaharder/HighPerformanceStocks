@@ -9,7 +9,7 @@
 	"sharpeRatio": -0.11,
 	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 76.2,
+		"trailingPE": 76.3,
 		"forwardPE": 7.3,
 		"pegRatio": null,
 		"evEbitda": 55.7
@@ -32,12 +32,12 @@
 		"stockanalysis": "$445"
 	},
 	"cagrModel": {
-		"ttmEPS": 6.96,
+		"ttmEPS": 6.95,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:00.199Z",
+	"lastUpdated": "2026-03-26T08:26:31.177Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1,
@@ -81,5 +81,14 @@
 			"downRevisions": 0,
 			"totalAnalysts": 1
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TPL",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

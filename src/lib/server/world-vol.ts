@@ -86,8 +86,7 @@ async function tryChartFallback(
 		interval: '1d'
 	});
 	const quotes =
-		'quotes' in chart &&
-		Array.isArray((chart as { quotes?: unknown }).quotes)
+		'quotes' in chart && Array.isArray((chart as { quotes?: unknown }).quotes)
 			? (chart as { quotes: unknown[] }).quotes
 			: [];
 	const bars = quotes
@@ -141,7 +140,15 @@ async function fetchVolIndexQuote(
 
 			// Quote time is fresh — done
 			if (isFreshMarketTime(quoteTime)) {
-				return { label, symbol, weight, value: price, marketTime: quoteTime, fresh: true, reason: null };
+				return {
+					label,
+					symbol,
+					weight,
+					value: price,
+					marketTime: quoteTime,
+					fresh: true,
+					reason: null
+				};
 			}
 
 			// Quote time is stale/missing — try chart() for a reliable last-close date
@@ -190,7 +197,7 @@ async function fetchVolIndexWithFallback(
 
 		const candidateTime = candidate.marketTime ? new Date(candidate.marketTime).getTime() : 0;
 		const currentBestTime = currentBest.marketTime ? new Date(currentBest.marketTime).getTime() : 0;
-		
+
 		if (candidateTime > currentBestTime) {
 			return candidate;
 		}
@@ -204,37 +211,134 @@ async function fetchVolIndexWithFallback(
 		if (result.fresh) return result;
 		best = chooseBetter(result, best);
 	}
-	return best ?? {
-		label,
-		symbol: fallbackSymbol,
-		weight,
-		value: null,
-		marketTime: null,
-		fresh: false,
-		reason: 'all symbols failed'
-	};
+	return (
+		best ?? {
+			label,
+			symbol: fallbackSymbol,
+			weight,
+			value: null,
+			marketTime: null,
+			fresh: false,
+			reason: 'all symbols failed'
+		}
+	);
 }
 
+import { fetchMarketWatchIndex } from './infrastructure/crawlers/marketwatch';
 
+// In-memory cache to prevent blocking the dashboard render loop with a 5-10s Puppeteer scrapers on every refresh
+let cachedSignal: { signal: WorldVolSignal; timestamp: number } | null = null;
+const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes
 
-export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
-	const [vix, vstoxx] = await Promise.all([
-		fetchVolIndexQuote(VIX_SYMBOL, 'VIX', WORLD_VOL_WEIGHTS.vix),
-		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
+async function fetchCrossVerifiedVolIndex(
+	yfSymbols: readonly string[],
+	mwPath: string,
+	label: string,
+	weight: number
+): Promise<VolComponent> {
+	// Let's run both concurrently to robustly verify
+	const [yfPromise, mwPromise] = await Promise.allSettled([
+		fetchVolIndexWithFallback(yfSymbols, label, weight),
+		fetchMarketWatchIndex(label, mwPath)
 	]);
 
-	if (vix.fresh || vstoxx.fresh) {
-		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
-		if (compositeSignal) return compositeSignal;
+	const yfResult = yfPromise.status === 'fulfilled' ? yfPromise.value : null;
+	const mwResult = mwPromise.status === 'fulfilled' ? mwPromise.value : null;
+
+	if (!yfResult) {
+		// Fallback entirely to MW if YF crashed completely
+		return {
+			label,
+			symbol: label,
+			weight,
+			value: mwResult?.price || null,
+			marketTime: mwResult?.marketTime ?? null,
+			fresh: isFreshMarketTime(mwResult?.marketTime ?? null),
+			reason: yfPromise.status === 'rejected' ? yfPromise.reason?.message : 'YF Fetch Failed'
+		};
 	}
 
-	const primaryIssues = [vix, vstoxx]
-		.filter((component) => !component.fresh)
-		.map((component) => `${component.label}: ${component.reason ?? 'unavailable'}`);
+	let finalResult = yfResult;
 
-	return {
-		available: false,
-		source: 'Global developed volatility proxies',
-		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
-	};
+	const mwPrice = mwResult?.price ?? null;
+	const mwTime = mwResult?.marketTime ?? null;
+	const mwIsFresh = isFreshMarketTime(mwTime);
+
+	if (yfResult.fresh && mwIsFresh && yfResult.value && mwPrice) {
+		// Both are fresh. Cross-verify price discrepancy (tolerating ~2% intraday/closing differences)
+		const diffPercent = Math.abs(yfResult.value - mwPrice) / yfResult.value;
+		if (diffPercent > 0.05) {
+			console.warn(`🚨 [VOL] ${label} YF/MW mismatch: YF=${yfResult.value}, MW=${mwPrice}`);
+		} else {
+			console.log(
+				`✅ [VOL] ${label} successfully cross-verified. Difference ${diffPercent.toFixed(2)}%`
+			);
+		}
+		// Prefer YF as the standard truth if it's fresh and verified
+	} else if (!yfResult.fresh && mwIsFresh && mwPrice) {
+		// YF failed or is stale (e.g. VSTOXX is chronically stale on YF). Use MW!
+		console.log(
+			`📡 [VOL] ${label} YF is stale/missing. Successfully routing fallback to stealth crawler: ${mwPrice}`
+		);
+		finalResult = {
+			label,
+			symbol: label,
+			weight,
+			value: mwPrice,
+			marketTime: mwTime,
+			fresh: true,
+			reason: null
+		};
+	} else if (!yfResult.fresh && !mwIsFresh) {
+		console.log(`⚠️ [VOL] ${label} both YF and MW are reporting stale data.`);
+	}
+
+	return finalResult;
+}
+
+export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
+	if (cachedSignal && Date.now() - cachedSignal.timestamp < CACHE_TTL_MS) {
+		return cachedSignal.signal;
+	}
+
+	const [vix, vstoxx] = await Promise.all([
+		fetchCrossVerifiedVolIndex([VIX_SYMBOL], 'vix', 'VIX', WORLD_VOL_WEIGHTS.vix),
+		fetchCrossVerifiedVolIndex(
+			VSTOXX_SYMBOLS,
+			'v2tx?countrycode=xx',
+			'VSTOXX',
+			WORLD_VOL_WEIGHTS.vstoxx
+		)
+	]);
+
+	// Ensure we shut the browser down if it was started
+	const { closeBrowser } = await import('./infrastructure/crawlers/browser');
+	await closeBrowser();
+
+	let result: WorldVolSignal;
+	if (vix.fresh || vstoxx.fresh) {
+		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
+		if (compositeSignal) {
+			result = compositeSignal;
+		} else {
+			result = {
+				available: false,
+				source: 'Global developed volatility proxies',
+				reason: 'Failed to build composite signal despite freshness.'
+			};
+		}
+	} else {
+		const primaryIssues = [vix, vstoxx]
+			.filter((component) => !component.fresh)
+			.map((component) => `${component.label}: ${component.reason ?? 'unavailable'}`);
+
+		result = {
+			available: false,
+			source: 'Global developed volatility proxies',
+			reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
+		};
+	}
+
+	cachedSignal = { signal: result, timestamp: Date.now() };
+	return result;
 }

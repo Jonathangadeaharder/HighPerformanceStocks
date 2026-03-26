@@ -44,7 +44,7 @@
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:56.446Z",
+	"lastUpdated": "2026-03-26T08:26:27.329Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.53,
@@ -98,5 +98,14 @@
 		"low": 17,
 		"mean": 20.25,
 		"high": 22
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NU",
+		"strongBuy": 9,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

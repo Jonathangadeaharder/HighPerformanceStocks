@@ -11,7 +11,7 @@
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
 		"epsGrowth": "35%",
-		"ttmEPS": 1.07,
+		"ttmEPS": 1.08,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-69%",
@@ -22,7 +22,7 @@
 	"currentPrice": "$385.95",
 	"marketCap": "$1448.3B USD",
 	"valuation": {
-		"trailingPE": 360.7,
+		"trailingPE": 357.4,
 		"forwardPE": 137.3,
 		"evFcf": 380.3,
 		"evEbitda": 135.2
@@ -95,10 +95,20 @@
 		}
 	},
 	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
-	"lastUpdated": "2026-03-26T00:03:00.968Z",
+	"lastUpdated": "2026-03-26T08:26:31.979Z",
 	"intrinsicValue": {
-		"dcf": 17.95,
-		"date": "2026-03-25",
+		"dcf": 18.06,
+		"date": "2026-03-26",
 		"discount": -95
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TSLA",
+		"strongBuy": 14,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$406.84",
+	"consensusRating": "Hold"
 }

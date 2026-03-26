@@ -36,7 +36,7 @@
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:56.437Z",
+	"lastUpdated": "2026-03-26T08:26:27.269Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
@@ -92,5 +92,14 @@
 		"low": 122.78,
 		"mean": 188.67,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "NOW",
+		"strongBuy": 33,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

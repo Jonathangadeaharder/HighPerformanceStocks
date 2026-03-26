@@ -63,7 +63,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.28
 	},
-	"lastUpdated": "2026-03-26T00:02:46.333Z",
+	"lastUpdated": "2026-03-26T08:26:16.676Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {
@@ -80,5 +80,14 @@
 			"totalAnalysts": 7
 		}
 	},
-	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific."
+	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
+	"analystConsensus": {
+		"ticker": "DSG.TO",
+		"strongBuy": 7,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

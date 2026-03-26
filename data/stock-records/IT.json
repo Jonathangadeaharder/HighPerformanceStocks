@@ -72,9 +72,9 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:50.819Z",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.56,
+	"lastUpdated": "2026-03-26T08:26:21.352Z",
+	"expectedVolatility": "~53%",
+	"sharpeRatio": 0.58,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -94,5 +94,14 @@
 		"low": 150,
 		"mean": 190.46,
 		"high": 255
-	}
+	},
+	"analystConsensus": {
+		"ticker": "IT",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

@@ -7,26 +7,26 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 7.03,
+		"ttmEPS": 7.02,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "13%",
+			"bear": "14%",
 			"base": "28%",
 			"bull": "57%"
 		}
 	},
-	"currentPrice": "207 SEK",
-	"marketCap": "75.3B SEK",
+	"currentPrice": "206 SEK",
+	"marketCap": "75.1B SEK",
 	"valuation": {
-		"trailingPE": 29.4,
-		"forwardPE": 23.1,
+		"trailingPE": 29.3,
+		"forwardPE": 23,
 		"evEbitda": 16.9,
 		"evFcf": 24.4
 	},
 	"metrics": {
 		"roe": "15.2%",
 		"fcfMargin": "~11%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"netDebtEbitda": "1.5x",
 		"ruleOf40": "9%"
 	},
@@ -34,7 +34,7 @@
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "13% - 57%",
+	"expectedCAGR": "14% - 57%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.51,
@@ -42,7 +42,7 @@
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 23.1,
+			"multiple": 23,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.983
 		},
@@ -50,12 +50,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 206.6,
-				"price6mAgo": 221,
-				"price1mAgo": 233.4,
+				"price": 206,
+				"price6mAgo": 216.8,
+				"price1mAgo": 234.8,
 				"low3m": 194,
-				"return6m": -6.5,
-				"return1m": -11.5,
+				"return6m": -5,
+				"return1m": -12.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,9 +69,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:50.014Z",
+	"lastUpdated": "2026-03-26T08:26:20.451Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.02,
+	"sharpeRatio": 1.03,
 	"qcs": {
 		"earningsScore": 0.14,
 		"flowScore": 0,
@@ -93,5 +93,14 @@
 		"low": 230,
 		"mean": 260.43,
 		"high": 320
-	}
+	},
+	"analystConsensus": {
+		"ticker": "INDT.ST",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

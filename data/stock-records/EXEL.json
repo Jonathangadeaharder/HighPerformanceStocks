@@ -43,7 +43,7 @@
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-26T00:02:47.156Z",
+	"lastUpdated": "2026-03-26T08:26:17.548Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.54,
@@ -97,5 +97,15 @@
 		"low": 35,
 		"mean": 46.83,
 		"high": 60
-	}
+	},
+	"analystConsensus": {
+		"ticker": "EXEL",
+		"strongBuy": 11,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$46.94",
+	"consensusRating": "Hold"
 }

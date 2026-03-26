@@ -11,7 +11,7 @@
 		"epsGrowth": "35%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 0.63,
+		"ttmEPS": 0.64,
 		"scenarios": {
 			"bear": "-55%",
 			"base": "20%",
@@ -57,12 +57,12 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:57.403Z",
+	"lastUpdated": "2026-03-26T08:26:28.273Z",
 	"valuation": {
-		"trailingPE": 246,
+		"trailingPE": 242.1,
 		"forwardPE": 83,
-		"evEbitda": 252.5,
-		"evFcf": 288.4
+		"evEbitda": 252.6,
+		"evFcf": 288.5
 	},
 	"metrics": {
 		"roe": "26.0%",
@@ -74,8 +74,8 @@
 	"expectedCAGR": "-55% - 68%",
 	"sharpeRatio": 0.04,
 	"intrinsicValue": {
-		"dcf": 9.56,
-		"date": "2026-03-25",
+		"dcf": 9.63,
+		"date": "2026-03-26",
 		"discount": -94
 	},
 	"qcs": {
@@ -97,5 +97,15 @@
 		"low": 70,
 		"mean": 186.6,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "PLTR",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$198.59",
+	"consensusRating": "Moderate Buy"
 }

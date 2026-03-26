@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
 	"marketCap": "$154.5B USD",
-	"sharpeRatio": 0.43,
+	"sharpeRatio": 0.44,
 	"expectedCAGR": "-7% - 69%",
-	"expectedVolatility": "~61%",
+	"expectedVolatility": "~60%",
 	"valuation": {
 		"trailingPE": 126,
 		"forwardPE": 51.5,
@@ -36,7 +36,7 @@
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:59.159Z",
+	"lastUpdated": "2026-03-26T08:26:30.113Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
@@ -74,8 +74,8 @@
 		}
 	},
 	"intrinsicValue": {
-		"dcf": 18.04,
-		"date": "2026-03-25",
+		"dcf": 18.13,
+		"date": "2026-03-26",
 		"discount": -85
 	},
 	"qcs": {
@@ -97,5 +97,15 @@
 		"low": 110,
 		"mean": 160.15,
 		"high": 200
-	}
+	},
+	"analystConsensus": {
+		"ticker": "SHOP",
+		"strongBuy": 25,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$163.38",
+	"consensusRating": "Moderate Buy"
 }

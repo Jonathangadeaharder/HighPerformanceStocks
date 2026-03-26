@@ -99,12 +99,16 @@ async function main() {
 					atomicWriteJson(path, stock);
 					updatedTickers.add(ticker);
 					const s = stock.cagrModel?.scenarios;
-					const scenarios = s?.bear && s?.base && s?.bull
+					const scenarios =
+						s?.bear && s?.base && s?.bull
 							? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
 							: 'no scenarios';
 					const sc = stock.screener;
-					const screenerTag = sc?.score == null
-							? sc?.note ? ` | ${sc.note}` : ''
+					const screenerTag =
+						sc?.score == null
+							? sc?.note
+								? ` | ${sc.note}`
+								: ''
 							: ` | ${sc.engine}: ${sc.score} ${sc.signal}`;
 					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}${screenerTag}`);
 				} else {
@@ -125,22 +129,66 @@ async function main() {
 	const tickersForDcf = [...updatedTickers];
 	if (tickersForDcf.length > 0) {
 		const { fetchAllDcf } = await import('./lib/fmp-client.js');
+		const { fetchBarchartConsensus } =
+			await import('../src/lib/server/infrastructure/crawlers/barchart.js');
+		const { fetchMarketBeatTarget } =
+			await import('../src/lib/server/infrastructure/crawlers/marketbeat.js');
+		const { getBrowser, closeBrowser } =
+			await import('../src/lib/server/infrastructure/crawlers/browser.js');
+
+		console.log(`📡 Fetching DCF and analyst data for ${tickersForDcf.length} tickers...`);
+
+		// Initialize the browser once for all crawler work
+		await getBrowser();
+
 		const dcfMap = await fetchAllDcf(tickersForDcf);
 
-		for (const { stock, path } of allStocks) {
+		for (let i = 0; i < allStocks.length; i++) {
+			const entry = allStocks[i];
+			if (!entry) continue;
+			const { stock, path } = entry;
 			if (!updatedTickers.has(stock.ticker)) continue;
+
 			const dcfData = dcfMap[stock.ticker];
 			if (dcfData) {
 				const price = parseDisplayPrice(stock.currentPrice);
-				const discount = price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
+				const discount =
+					price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
 				stock.intrinsicValue = {
 					dcf: dcfData.dcf,
 					date: dcfData.date,
 					discount
 				};
-				atomicWriteJson(path, stock);
 			}
+
+			// Add polite delays so we don't get IP banned
+			console.log(`  🕸️  Crawling alternative analyst data for ${stock.ticker}...`);
+			try {
+				const [barchartData, marketBeatData] = await Promise.all([
+					fetchBarchartConsensus(stock.ticker),
+					fetchMarketBeatTarget('NASDAQ', stock.ticker) // TODO: map exchange correctly or remove exchange dependency
+				]);
+
+				if (barchartData) {
+					stock.analystConsensus = barchartData;
+				}
+
+				if (marketBeatData) {
+					if (marketBeatData.consensusTarget) {
+						stock.targetPriceAlternative = `$${marketBeatData.consensusTarget.toFixed(2)}`;
+					}
+					if (marketBeatData.consensusRating) {
+						stock.consensusRating = marketBeatData.consensusRating;
+					}
+				}
+			} catch (err: any) {
+				console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${err.message}`);
+			}
+
+			atomicWriteJson(path, stock);
 		}
+
+		await closeBrowser();
 	}
 
 	console.log(`\n✅ Done: ${updatedCount} updated, ${failedCount} failed.`);

@@ -9,7 +9,7 @@
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.65,
+		"ttmEPS": 6.64,
 		"dividendYield": "2%",
 		"scenarios": {
 			"bear": "4%",
@@ -70,7 +70,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:54.634Z",
+	"lastUpdated": "2026-03-26T08:26:25.386Z",
 	"expectedVolatility": "~27%",
 	"sharpeRatio": 0.89,
 	"qcs": {
@@ -92,5 +92,15 @@
 		"low": 169,
 		"mean": 193.7,
 		"high": 250
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MKTX",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$200.40",
+	"consensusRating": "Hold"
 }

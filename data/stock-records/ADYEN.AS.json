@@ -4,12 +4,12 @@
 	"group": "Financials & Alt Assets",
 	"confidence": "medium",
 	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
-	"marketCap": "€28.6B",
+	"marketCap": "€27.9B",
 	"sharpeRatio": 0.1,
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 27,
-		"forwardPE": 19,
+		"trailingPE": 26.3,
+		"forwardPE": 18.5,
 		"pegRatio": null,
 		"evEbitda": 15.2
 	},
@@ -26,39 +26,39 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€906.50",
+	"currentPrice": "€883.90",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.59,
+		"ttmEPS": 33.63,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-26T00:02:40.829Z",
+	"lastUpdated": "2026-03-26T08:26:11.064Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.06,
+		"score": 1.03,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 19,
+			"multiple": 18.5,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 906.5,
-				"price6mAgo": 1353,
-				"price1mAgo": 992.3,
+				"pass": false,
+				"price": 883.9,
+				"price6mAgo": 1367.6,
+				"price1mAgo": 994.8,
 				"low3m": 843.2,
-				"return6m": -33,
-				"return1m": -8.6,
-				"near3mLow": false
+				"return6m": -35.4,
+				"return1m": -11.1,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -81,5 +81,14 @@
 			"downRevisions": 0,
 			"totalAnalysts": 1
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ADYEN.AS",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

@@ -9,7 +9,7 @@
 	"expectedCAGR": "6% - 60%",
 	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 24.5,
+		"trailingPE": 24.4,
 		"forwardPE": 14.9,
 		"pegRatio": null,
 		"evEbitda": 14.3,
@@ -34,7 +34,7 @@
 		"stockanalysis": "$495"
 	},
 	"cagrModel": {
-		"ttmEPS": 14.18,
+		"ttmEPS": 14.22,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
@@ -44,7 +44,7 @@
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-26T00:02:58.355Z",
+	"lastUpdated": "2026-03-26T08:26:29.311Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.15,
@@ -99,5 +99,15 @@
 		"low": 365,
 		"mean": 462.19,
 		"high": 550
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ROP",
+		"strongBuy": 11,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$478.53",
+	"consensusRating": "Hold"
 }

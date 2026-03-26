@@ -8,7 +8,7 @@
 	"cagrModel": {
 		"epsGrowth": "17%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 165.62,
+		"ttmEPS": 165.7,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "7%",
@@ -72,7 +72,7 @@
 	},
 	"bullCase": "Booking Holdings operates the global OTA duopoly (with Expedia) and is the near-monopoly in European accommodation. Its asset-light model generates 40%+ operating margins. The shift to connected trip — flights, hotels, rental cars, attractions in a single booking — is expanding wallet share per customer. Aggressive share buybacks at 7%+ annually provide EPS floor.",
 	"bearCase": "Travel spending is among the most discretionary consumer categories — Booking's revenue fell 90%+ in COVID and is sensitive to recession and geopolitical disruption. At 14x forward PE, valuation is attractive but the stock has historically compressed to 10-11x in downturns. Airbnb is taking share in leisure accommodation, particularly in major European cities.",
-	"lastUpdated": "2026-03-26T00:02:43.638Z",
+	"lastUpdated": "2026-03-26T08:26:13.826Z",
 	"expectedVolatility": "~32%",
 	"sharpeRatio": 1.28,
 	"qcs": {
@@ -94,5 +94,15 @@
 		"low": 4495,
 		"mean": 5802.23,
 		"high": 7746
-	}
+	},
+	"analystConsensus": {
+		"ticker": "BKNG",
+		"strongBuy": 23,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$5845.61",
+	"consensusRating": "Moderate Buy"
 }

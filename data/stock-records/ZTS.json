@@ -70,9 +70,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:04.029Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.15,
+	"lastUpdated": "2026-03-26T08:26:35.141Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 1.19,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -92,5 +92,14 @@
 		"low": 130,
 		"mean": 151,
 		"high": 190
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ZTS",
+		"strongBuy": 9,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

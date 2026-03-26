@@ -7,7 +7,7 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.25,
+		"ttmEPS": 12.26,
 		"dividendYield": "3%",
 		"scenarios": {
 			"bear": "1%",
@@ -18,7 +18,7 @@
 	"currentPrice": "$367.15",
 	"marketCap": "$14.9B USD",
 	"valuation": {
-		"trailingPE": 30,
+		"trailingPE": 29.9,
 		"forwardPE": 26.1,
 		"evEbitda": 19.1,
 		"evFcf": 48.5
@@ -68,7 +68,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:03.871Z",
+	"lastUpdated": "2026-03-26T08:26:34.975Z",
 	"expectedVolatility": "~33%",
 	"sharpeRatio": 0.36,
 	"qcs": {
@@ -92,5 +92,14 @@
 		"low": 359,
 		"mean": 415.17,
 		"high": 475
-	}
+	},
+	"analystConsensus": {
+		"ticker": "WSO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

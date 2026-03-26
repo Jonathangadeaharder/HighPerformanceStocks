@@ -11,7 +11,7 @@
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
 		"epsGrowth": "10%",
-		"ttmEPS": 4.97,
+		"ttmEPS": 4.95,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-7%",
@@ -22,7 +22,7 @@
 	"currentPrice": "$195",
 	"marketCap": "$262.5B USD",
 	"valuation": {
-		"trailingPE": 39.2,
+		"trailingPE": 39.4,
 		"forwardPE": 26,
 		"evFcf": 45.9,
 		"evEbitda": 20.1
@@ -94,5 +94,14 @@
 		}
 	},
 	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
-	"lastUpdated": "2026-03-26T00:02:58.387Z"
+	"lastUpdated": "2026-03-26T08:26:29.287Z",
+	"analystConsensus": {
+		"ticker": "RTX",
+		"strongBuy": 14,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 14.68,
+		"ttmEPS": 14.66,
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "19%",
@@ -21,7 +21,7 @@
 	"currentPrice": "$408.48",
 	"marketCap": "$123.7B USD",
 	"valuation": {
-		"trailingPE": 27.8,
+		"trailingPE": 27.9,
 		"forwardPE": 18.5,
 		"evEbitda": 18.2,
 		"evFcf": 28.5
@@ -72,7 +72,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:03:00.083Z",
+	"lastUpdated": "2026-03-26T08:26:31.013Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 1.07,
 	"qcs": {
@@ -94,5 +94,14 @@
 		"low": 480,
 		"mean": 538.52,
 		"high": 625
-	}
+	},
+	"analystConsensus": {
+		"ticker": "SPGI",
+		"strongBuy": 19,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

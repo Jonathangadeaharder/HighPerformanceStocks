@@ -46,7 +46,7 @@
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:41.859Z",
+	"lastUpdated": "2026-03-26T08:26:11.990Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.51,
@@ -100,5 +100,14 @@
 		"low": 140,
 		"mean": 177.74,
 		"high": 220
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ANET",
+		"strongBuy": 16,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

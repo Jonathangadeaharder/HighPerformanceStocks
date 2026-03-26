@@ -130,7 +130,7 @@ export function detectGrowthBranch(
 		return {
 			engine: 'fCFG',
 			multipleType: hasEvFcf ? 'EV/FCF' : 'P/CF',
-			multiple: hasEvFcf ? (valuation.evFcf!) : priceToBasis
+			multiple: hasEvFcf ? valuation.evFcf! : priceToBasis
 		};
 	}
 
@@ -158,14 +158,19 @@ export function detectGrowthBranch(
 		};
 	}
 
-	if (stock.cyclical && priceToBasis != null && valuation.forwardPE != null && priceToBasis > 0 && 
-		priceToBasis < valuation.forwardPE) {
-			return {
-				engine: 'tPERG',
-				multipleType: 'Peak-Adjusted P/E',
-				multiple: priceToBasis
-			};
-		}
+	if (
+		stock.cyclical &&
+		priceToBasis != null &&
+		valuation.forwardPE != null &&
+		priceToBasis > 0 &&
+		priceToBasis < valuation.forwardPE
+	) {
+		return {
+			engine: 'tPERG',
+			multipleType: 'Peak-Adjusted P/E',
+			multiple: priceToBasis
+		};
+	}
 
 	return {
 		engine: 'fPERG',
@@ -258,8 +263,10 @@ function applyRealityChecks(
 	const revisions = entry?.epsRevisions;
 	const up30d = revisions?.upLast30days ?? 0;
 	const down30d = revisions?.downLast30days ?? 0;
-	
-	const isAltAsset = stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(stock.cagrModel?.basis ?? '');
+
+	const isAltAsset =
+		stock.group === 'Financials & Alt Assets' ||
+		/fre|ani|fee-related|distributable/i.test(stock.cagrModel?.basis ?? '');
 	const downgradeThreshold = isAltAsset ? 7 : 3;
 
 	const consensusCollapsing = down30d >= downgradeThreshold && up30d === 0;
@@ -379,9 +386,16 @@ export function computeScreener(
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
 		const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
-		
+
 		if (divYieldPct < 5) {
-			return evaluateHyperGrowth(stock, valuationPrice, summary, growthPct, rawPrice, historicalData);
+			return evaluateHyperGrowth(
+				stock,
+				valuationPrice,
+				summary,
+				growthPct,
+				rawPrice,
+				historicalData
+			);
 		}
 	}
 

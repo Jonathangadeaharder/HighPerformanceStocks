@@ -23,16 +23,16 @@
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%"
 	},
-	"targetPrice": "C$4237.48",
+	"targetPrice": "C$4242.75",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
 	"currentPrice": "C$2406.75",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4237.48"
+		"yahoo": "C$4242.75"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.2,
+		"ttmEPS": 33.21,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -42,7 +42,7 @@
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-26T00:02:45.489Z",
+	"lastUpdated": "2026-03-26T08:26:15.800Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.11,
@@ -94,8 +94,17 @@
 	},
 	"description": "Constellation Software Inc., together with its subsidiaries, acquires, builds, and manages vertical market software businesses to develop mission-critical software solutions for public and private ...",
 	"analystTargets": {
-		"low": 3460.52,
-		"mean": 4237.48,
-		"high": 5600.45
-	}
+		"low": 3464.82,
+		"mean": 4242.75,
+		"high": 5607.42
+	},
+	"analystConsensus": {
+		"ticker": "CSU.TO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

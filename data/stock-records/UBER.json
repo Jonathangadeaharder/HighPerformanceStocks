@@ -72,11 +72,11 @@
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-26T00:03:02.050Z",
+	"lastUpdated": "2026-03-26T08:26:32.910Z",
 	"intrinsicValue": {
-		"dcf": 139.55,
-		"date": "2026-03-25",
-		"discount": 91
+		"dcf": 141.64,
+		"date": "2026-03-26",
+		"discount": 94
 	},
 	"expectedVolatility": "~36%",
 	"sharpeRatio": 1.28,
@@ -99,5 +99,14 @@
 		"low": 70,
 		"mean": 103.68,
 		"high": 150
-	}
+	},
+	"analystConsensus": {
+		"ticker": "UBER",
+		"strongBuy": 35,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

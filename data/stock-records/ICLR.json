@@ -22,7 +22,7 @@
 	"marketCap": "$7.8B USD",
 	"valuation": {
 		"trailingPE": 13.5,
-		"forwardPE": 7.9,
+		"forwardPE": 8,
 		"evEbitda": 7.1,
 		"evFcf": 11.6
 	},
@@ -45,9 +45,9 @@
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 7.9,
+			"multiple": 8,
 			"cvStock": 0.068,
-			"riskMultiplier": 1.885
+			"riskMultiplier": 1.861
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -72,7 +72,7 @@
 		},
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:50.003Z",
+	"lastUpdated": "2026-03-26T08:26:20.460Z",
 	"expectedVolatility": "~74%",
 	"sharpeRatio": 0.58,
 	"qcs": {
@@ -94,5 +94,15 @@
 		"low": 75,
 		"mean": 138.64,
 		"high": 220
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ICLR",
+		"strongBuy": 9,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$146.80",
+	"consensusRating": "Hold"
 }

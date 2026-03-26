@@ -9,7 +9,7 @@
 	"expectedCAGR": "-2% - 46%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 69.1,
+		"trailingPE": 69.5,
 		"forwardPE": 29.9,
 		"pegRatio": 3.9,
 		"evEbitda": 40,
@@ -33,7 +33,7 @@
 		"stockanalysis": "$369"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.07,
+		"ttmEPS": 4.05,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T00:02:44.454Z",
+	"lastUpdated": "2026-03-26T08:26:14.700Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.44,
@@ -96,5 +96,15 @@
 		"low": 275,
 		"mean": 371.68,
 		"high": 410
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CDNS",
+		"strongBuy": 17,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$376.50",
+	"consensusRating": "Moderate Buy"
 }

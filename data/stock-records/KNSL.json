@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowth": "20%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 21.65,
+		"ttmEPS": 21.66,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-5%",
@@ -72,7 +72,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:02:51.738Z",
+	"lastUpdated": "2026-03-26T08:26:22.291Z",
 	"expectedVolatility": "~38%",
 	"sharpeRatio": 0.32,
 	"qcs": {
@@ -94,5 +94,14 @@
 		"low": 312,
 		"mean": 407.33,
 		"high": 450
-	}
+	},
+	"analystConsensus": {
+		"ticker": "KNSL",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

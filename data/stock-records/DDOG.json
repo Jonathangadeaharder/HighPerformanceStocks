@@ -36,7 +36,7 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:46.233Z",
+	"lastUpdated": "2026-03-26T08:26:16.583Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
@@ -92,5 +92,15 @@
 		"low": 121,
 		"mean": 182.43,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "DDOG",
+		"strongBuy": 34,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$179.62",
+	"consensusRating": "Moderate Buy"
 }
