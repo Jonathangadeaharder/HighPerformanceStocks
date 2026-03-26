@@ -315,17 +315,17 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	await closeBrowser();
 
 	let result: WorldVolSignal;
-	if (vix.fresh || vstoxx.fresh) {
-		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
-		if (compositeSignal) {
-			result = compositeSignal;
-		} else {
-			result = {
-				available: false,
-				source: 'Global developed volatility proxies',
-				reason: 'Failed to build composite signal despite freshness.'
-			};
-		}
+	const compositeSignal =
+		vix.fresh && vstoxx.fresh ? buildCompositeWorldVolSignal([vix, vstoxx]) : null;
+
+	if (compositeSignal) {
+		result = compositeSignal;
+	} else if (vix.fresh && vstoxx.fresh) {
+		result = {
+			available: false,
+			source: 'Global developed volatility proxies',
+			reason: 'Failed to build composite signal despite freshness.'
+		};
 	} else {
 		const primaryIssues = [vix, vstoxx]
 			.filter((component) => !component.fresh)

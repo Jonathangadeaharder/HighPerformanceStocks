@@ -1,4 +1,4 @@
-import { Page } from 'puppeteer';
+import { type Page } from 'puppeteer';
 import { getBrowser, randomDelay } from './browser';
 
 export interface BarchartConsensus {
@@ -22,7 +22,7 @@ export async function fetchBarchartConsensus(ticker: string): Promise<BarchartCo
 		await page.setViewport({ width: 1366, height: 768 });
 
 		// Barchart can take a moment to pass Incapsula
-		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45_000 });
 		await randomDelay(2000, 4000);
 
 		// Hide the cookie banner if it obscures elements
@@ -55,8 +55,8 @@ export async function fetchBarchartConsensus(ticker: string): Promise<BarchartCo
 
 			for (const key of Object.keys(ratings)) {
 				// Try to match "XX Strong Buy" or "Strong Buy = XX"
-				const match1 = allText.match(new RegExp(`([0-9]+)\\s*${key}`, 'i'));
-				const match2 = allText.match(new RegExp(`${key}\\s*(?:=|:)\\s*([0-9]+)`, 'i'));
+				const match1 = new RegExp(String.raw`([0-9]+)\s*${key}`, 'i').exec(allText);
+				const match2 = new RegExp(String.raw`${key}\s*(?:=|:)\s*([0-9]+)`, 'i').exec(allText);
 
 				// Grab the largest number found for that label (since Barchart lists multiple timeframes,
 				// the current/1 month ago are usually the most prominent blocks)

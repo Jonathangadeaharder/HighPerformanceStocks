@@ -1,4 +1,4 @@
-import { Page } from 'puppeteer';
+import { type Page } from 'puppeteer';
 import { getBrowser, randomDelay } from './browser';
 
 export interface MarketBeatStockTarget {
@@ -23,7 +23,7 @@ export async function fetchMarketBeatTarget(
 	try {
 		// Mimic realistic browsing behavior
 		await page.setViewport({ width: 1366, height: 768 });
-		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 });
 
 		// Wait randomly to prevent instant parsing detection
 		await randomDelay(1000, 3000);
@@ -48,28 +48,22 @@ export async function fetchMarketBeatTarget(
 			const allText = textNodes.join(' ');
 
 			// 1. Target Price ("Consensus Price Target $297.58")
-			const targetMatch = allText.match(/Consensus Price Target\s*\$?([0-9,\.]+)/i);
+			const targetMatch = /Consensus Price Target\s*\$?([0-9,.]+)/i.exec(allText);
 			if (targetMatch && targetMatch[1]) {
-				data.consensusTarget = parseFloat(targetMatch[1].replace(/,/g, ''));
+				data.consensusTarget = parseFloat(targetMatch[1].replaceAll(',', ''));
 			}
 
 			// 2. Upside ("Forecasted Upside 17.80% Upside")
 			const upsideMatch =
-				allText.match(/Forecasted Upside\s*[\u2191\u2193]?([0-9\.]+)%\s*Upside/i) ||
-				allText.match(/Forecasted Upside\s*[\u2191\u2193]?([0-9\.]+)%\s*Downside/i);
+				/Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Upside/i.exec(allText) ||
+				/Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Downside/i.exec(allText);
 			if (upsideMatch && upsideMatch[1]) {
 				const val = parseFloat(upsideMatch[1]);
-				if (allText.match(/Forecasted Upside\s*[\u2191\u2193]?([0-9\.]+)%\s*Downside/i)) {
-					data.upside = -val;
-				} else {
-					data.upside = val;
-				}
+				data.upside = /Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Downside/i.test(allText) ? -val : val;
 			}
 
 			// 3. Consensus Rating ("Consensus Rating Moderate Buy")
-			const ratingMatch = allText.match(
-				/Consensus Rating\s*(Moderate Buy|Strong Buy|Hold|Moderate Sell|Strong Sell)/i
-			);
+			const ratingMatch = /Consensus Rating\s*(Moderate Buy|Strong Buy|Hold|Moderate Sell|Strong Sell)/i.exec(allText);
 			if (ratingMatch && ratingMatch[1]) {
 				data.consensusRating = ratingMatch[1].trim();
 			}

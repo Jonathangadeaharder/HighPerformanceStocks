@@ -1,4 +1,4 @@
-import { writeFileSync, renameSync } from 'node:fs';
+import { writeFileSync, renameSync, unlinkSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 /**
@@ -9,6 +9,15 @@ export function atomicWriteJson(path: string, data: object): void {
 		dirname(path),
 		`stock-${Date.now()}-${Math.random().toString(36).slice(2)}.tmp.json`
 	);
-	writeFileSync(tempPath, JSON.stringify(data, null, '\t') + '\n');
-	renameSync(tempPath, path);
+	try {
+		writeFileSync(tempPath, JSON.stringify(data, null, '\t') + '\n');
+		renameSync(tempPath, path);
+	} catch (error) {
+		try {
+			// Clean up temp file on failure
+			unlinkSync(tempPath);
+			 
+		} catch {}
+		throw error;
+	}
 }

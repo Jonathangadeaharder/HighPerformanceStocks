@@ -1,4 +1,4 @@
-import { Page } from 'puppeteer';
+import { type Page } from 'puppeteer';
 import { getBrowser, randomDelay } from './browser';
 
 export interface MarketWatchIndex {
@@ -23,7 +23,7 @@ export async function fetchMarketWatchIndex(
 		await page.setViewport({ width: 1366, height: 768 });
 
 		// MarketWatch can be slow; use domcontentloaded to get the critical HTML as fast as possible
-		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 });
 		await randomDelay(1000, 2000);
 
 		const result = await page.evaluate(() => {
@@ -34,7 +34,7 @@ export async function fetchMarketWatchIndex(
 			let time: string | null = null;
 
 			if (priceEl && priceEl.textContent) {
-				const priceStr = priceEl.textContent.trim().replace(/,/g, '');
+				const priceStr = priceEl.textContent.trim().replaceAll(',', '');
 				const parsed = parseFloat(priceStr);
 				if (!isNaN(parsed)) price = parsed;
 			}
@@ -53,7 +53,7 @@ export async function fetchMarketWatchIndex(
 		let isoTime: string | null = null;
 		if (result.time) {
 			// Very rough extraction of just the date part, e.g. "Mar 25, 2026"
-			const dateMatch = result.time.match(/([a-zA-Z]{3} \d{1,2}, \d{4})/i);
+			const dateMatch = /([a-z]{3} \d{1,2}, \d{4})/i.exec(result.time);
 			if (dateMatch && dateMatch[1]) {
 				const d = new Date(dateMatch[1]);
 				if (!isNaN(d.getTime())) {
@@ -67,8 +67,9 @@ export async function fetchMarketWatchIndex(
 			price: result.price,
 			marketTime: isoTime
 		};
-	} catch (e: any) {
-		console.error(`MarketWatch crawler failed for ${symbol}: ${e.message}`);
+	} catch (error: unknown) {
+		const errorMessage = error instanceof Error ? error.message : String(error);
+		console.error(`MarketWatch crawler failed for ${symbol}: ${errorMessage}`);
 		return {
 			symbol,
 			price: null,

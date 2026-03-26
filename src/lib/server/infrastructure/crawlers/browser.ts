@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-import { Browser, Page } from 'puppeteer';
+import { type Browser } from 'puppeteer';
 
 // Apply stealth plugin to evade detection
 puppeteer.use(StealthPlugin());
@@ -42,6 +42,7 @@ export async function closeBrowser(): Promise<void> {
  * Helper to random delay to evade simple rate limits.
  */
 export async function randomDelay(minMs: number, maxMs: number): Promise<void> {
+	// eslint-disable-next-line sonarjs/pseudo-random
 	const delay = Math.random() * (maxMs - minMs) + minMs;
 	return new Promise((resolve) => setTimeout(resolve, delay));
 }

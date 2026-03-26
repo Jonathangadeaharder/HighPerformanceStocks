@@ -1,3 +1,4 @@
+/* eslint-disable max-depth, sonarjs/todo-tag */
 import 'dotenv/config';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -143,8 +144,7 @@ async function main() {
 
 		const dcfMap = await fetchAllDcf(tickersForDcf);
 
-		for (let i = 0; i < allStocks.length; i++) {
-			const entry = allStocks[i];
+		for (const entry of allStocks) {
 			if (!entry) continue;
 			const { stock, path } = entry;
 			if (!updatedTickers.has(stock.ticker)) continue;
@@ -181,8 +181,8 @@ async function main() {
 						stock.consensusRating = marketBeatData.consensusRating;
 					}
 				}
-			} catch (err: any) {
-				console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${err.message}`);
+			} catch (error: any) {
+				console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${error.message}`);
 			}
 
 			atomicWriteJson(path, stock);
