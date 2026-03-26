@@ -4,16 +4,16 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
-	"marketCap": "$38.1B USD",
-	"sharpeRatio": 0.96,
-	"expectedCAGR": "3% - 56%",
+	"marketCap": "$37.3B USD",
+	"sharpeRatio": 1.1,
+	"expectedCAGR": "6% - 60%",
 	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 24.9,
-		"forwardPE": 15.2,
+		"trailingPE": 24.5,
+		"forwardPE": 14.9,
 		"pegRatio": null,
-		"evEbitda": 14.6,
-		"evFcf": 21.5
+		"evEbitda": 14.3,
+		"evFcf": 21.2
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -27,44 +27,44 @@
 	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
-	"currentPrice": "$353.68",
+	"currentPrice": "$346.72",
 	"consensus": {
 		"tipranks": "$479",
 		"yahoo": "$462.19",
 		"stockanalysis": "$495"
 	},
 	"cagrModel": {
-		"ttmEPS": 14.22,
+		"ttmEPS": 14.18,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "31%",
-			"bull": "56%"
+			"bear": "6%",
+			"base": "34%",
+			"bull": "60%"
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-21T00:31:48.497Z",
+	"lastUpdated": "2026-03-26T00:02:58.355Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.17,
+		"score": 1.15,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14.6,
+			"multiple": 14.3,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 353.68,
-				"price6mAgo": 509.63,
-				"price1mAgo": 335.7,
+				"price": 346.72,
+				"price6mAgo": 499.31,
+				"price1mAgo": 352.15,
 				"low3m": 313.07,
 				"return6m": -30.6,
-				"return1m": 5.4,
+				"return1m": -1.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.22
+		"secondaryScore": 1.2
 	},
 	"qcs": {
 		"earningsScore": 1.73,

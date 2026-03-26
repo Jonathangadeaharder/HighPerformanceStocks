@@ -4,16 +4,16 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$169.8B USD",
-	"sharpeRatio": 0.4,
-	"expectedCAGR": "-21% - 57%",
-	"expectedVolatility": "~34%",
+	"marketCap": "$166.9B USD",
+	"sharpeRatio": 0.47,
+	"expectedCAGR": "-20% - 60%",
+	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 61,
-		"forwardPE": 41.8,
+		"trailingPE": 59.6,
+		"forwardPE": 41.1,
 		"pegRatio": null,
-		"evEbitda": 46.1,
-		"evFcf": 72.1
+		"evEbitda": 45.3,
+		"evFcf": 70.9
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -23,51 +23,51 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"targetPrice": "$606.53",
+	"targetPrice": "$605.08",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$477.97",
+	"currentPrice": "$469.98",
 	"consensus": {
 		"tipranks": "$620",
-		"yahoo": "$606.53"
+		"yahoo": "$605.08"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.84,
+		"ttmEPS": 7.88,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-21%",
-			"base": "27%",
-			"bull": "57%"
+			"bear": "-20%",
+			"base": "29%",
+			"bull": "60%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-21T00:31:42.778Z",
+	"lastUpdated": "2026-03-26T00:02:50.809Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.9,
+		"score": 2.85,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 41.8,
+			"multiple": 41.1,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.97
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 477.97,
-				"price6mAgo": 444.55,
-				"price1mAgo": 492.1,
+				"price": 469.98,
+				"price6mAgo": 441.12,
+				"price1mAgo": 506.88,
 				"low3m": 458,
-				"return6m": 7.5,
-				"return1m": -2.9,
+				"return6m": 6.5,
+				"return1m": -7.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
+				"up30d": 3,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -79,21 +79,21 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.67,
-		"totalScore": 5.67,
+		"revisionsScore": 0.52,
+		"totalScore": 5.52,
 		"raw": {
 			"avgSurprisePct": 12.69,
 			"netInsiderShares": 150564,
 			"instFlowTrend": "neutral",
-			"upRevisions": 4,
+			"upRevisions": 3,
 			"downRevisions": 0,
-			"totalAnalysts": 30
+			"totalAnalysts": 29
 		}
 	},
 	"description": "Intuitive Surgical, Inc. develops, manufactures, and markets products that enable physicians and healthcare providers to enhance the quality of and access to minimally invasive care in the United S...",
 	"analystTargets": {
 		"low": 378,
-		"mean": 606.53,
+		"mean": 605.08,
 		"high": 750
 	}
 }

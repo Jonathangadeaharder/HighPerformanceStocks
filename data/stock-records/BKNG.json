@@ -8,22 +8,22 @@
 	"cagrModel": {
 		"epsGrowth": "17%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 166.91,
+		"ttmEPS": 165.62,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "34%",
-			"bull": "79%"
+			"bear": "7%",
+			"base": "38%",
+			"bull": "84%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$4324.04",
-	"marketCap": "$139.4B USD",
+	"currentPrice": "$4237.75",
+	"marketCap": "$136.6B USD",
 	"valuation": {
-		"trailingPE": 25.9,
-		"forwardPE": 13.8,
-		"evEbitda": 13.8,
-		"evFcf": 21.2
+		"trailingPE": 25.6,
+		"forwardPE": 13.5,
+		"evEbitda": 13.5,
+		"evFcf": 20.8
 	},
 	"metrics": {
 		"fcfMargin": "~24%",
@@ -35,7 +35,7 @@
 		"yahoo": "$5802.23"
 	},
 	"targetPrice": "$5802.23",
-	"expectedCAGR": "4% - 79%",
+	"expectedCAGR": "7% - 84%",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.86,
@@ -43,25 +43,25 @@
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 13.8,
+			"multiple": 13.5,
 			"cvStock": 0.029,
-			"riskMultiplier": 1.054
+			"riskMultiplier": 1.077
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4324.04,
-				"price6mAgo": 5457.13,
-				"price1mAgo": 3870.83,
+				"price": 4237.75,
+				"price6mAgo": 5548,
+				"price1mAgo": 4250.26,
 				"low3m": 3765.45,
-				"return6m": -20.8,
-				"return1m": 11.7,
+				"return6m": -23.6,
+				"return1m": -0.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 12,
-				"down30d": 6
+				"up30d": 11,
+				"down30d": 8
 			},
 			"earningsSurprise": {
 				"surprise": 0.3,
@@ -72,20 +72,20 @@
 	},
 	"bullCase": "Booking Holdings operates the global OTA duopoly (with Expedia) and is the near-monopoly in European accommodation. Its asset-light model generates 40%+ operating margins. The shift to connected trip — flights, hotels, rental cars, attractions in a single booking — is expanding wallet share per customer. Aggressive share buybacks at 7%+ annually provide EPS floor.",
 	"bearCase": "Travel spending is among the most discretionary consumer categories — Booking's revenue fell 90%+ in COVID and is sensitive to recession and geopolitical disruption. At 14x forward PE, valuation is attractive but the stock has historically compressed to 10-11x in downturns. Airbnb is taking share in leisure accommodation, particularly in major European cities.",
-	"lastUpdated": "2026-03-21T00:31:37.704Z",
+	"lastUpdated": "2026-03-26T00:02:43.638Z",
 	"expectedVolatility": "~32%",
-	"sharpeRatio": 1.16,
+	"sharpeRatio": 1.28,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.17,
-		"totalScore": 4.83,
+		"revisionsScore": -0.5,
+		"totalScore": 4.5,
 		"raw": {
 			"avgSurprisePct": 13.79,
 			"netInsiderShares": 21284,
 			"instFlowTrend": "negative",
 			"upRevisions": 12,
-			"downRevisions": 13,
+			"downRevisions": 15,
 			"totalAnalysts": 30
 		}
 	},

@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { calcForwardScenarios, parsePercent, parseDisplayPrice } from '../../../src/lib/domain/finance/core';
+
+import { calcForwardScenarios, parsePercent } from '../../../src/lib/domain/finance/core';
 import {
 	fmtApproxPct,
 	fmtMarketCap,
@@ -35,97 +35,96 @@ export function applyUpdates(stock: any, quote: any, summary: any, historicalDat
 	const rawCap = quote.marketCap ?? sd.marketCap;
 	if (rawCap) stock.marketCap = fmtMarketCap(rawCap, currency);
 
+	computeValuation(stock, quote, sd, ks, fd, rawCap);
+	updateMetrics(stock, fd, rawCap, sd, ks);
+
+function computeValuation(stock: any, quote: any, sd: any, ks: any, fd: any, rawCap: number | undefined) {
 	if (!stock.valuation) stock.valuation = {};
-	if (stock.valuation) {
-		const pe = quote.trailingPE ?? sd.trailingPE;
-		const fpe = quote.forwardPE ?? sd.forwardPE;
-		const peg = ks.pegRatio;
-		let evEbitda = ks.enterpriseToEbitda;
-		let evFcf: number | null = null;
+	const pe = quote.trailingPE ?? sd.trailingPE;
+	const fpe = quote.forwardPE ?? sd.forwardPE;
+	const peg = ks.pegRatio;
+	let evEbitda = ks.enterpriseToEbitda;
+	let evFcf: number | null = null;
 
-		const totalDebt = fd.totalDebt;
-		const totalCash = fd.totalCash;
-		const ebitda = fd.ebitda;
-		const fcf = fd.freeCashflow;
+	const totalDebt = fd.totalDebt;
+	const totalCash = fd.totalCash;
+	const ebitda = fd.ebitda;
+	const fcf = fd.freeCashflow;
 
-		if (ks.enterpriseValue && rawCap && totalDebt != null && totalCash != null && ebitda) {
-			const calcEv = rawCap + totalDebt - totalCash;
-			if (calcEv / ks.enterpriseValue > 2) {
-				console.log(
-					`  🚨  ${stock.ticker} — Yahoo EV corrupted. Overriding EV multiples.`
-				);
-				evEbitda = calcEv / ebitda;
-				if (fcf != null && Math.abs(fcf) > 0) evFcf = calcEv / fcf;
-			} else if (fcf != null && Math.abs(fcf) > 0) {
-				evFcf = ks.enterpriseValue / fcf;
-			}
-		} else if (ks.enterpriseValue && fcf != null && Math.abs(fcf) > 0) {
+	if (ks.enterpriseValue && rawCap && totalDebt != null && totalCash != null && ebitda) {
+		const calcEv = rawCap + totalDebt - totalCash;
+		if (calcEv / ks.enterpriseValue > 2) {
+			console.log(`  🚨  ${stock.ticker} — Yahoo EV corrupted. Overriding EV multiples.`);
+			evEbitda = calcEv / ebitda;
+			if (fcf != null && Math.abs(fcf) > 0) evFcf = calcEv / fcf;
+		} else if (fcf != null && Math.abs(fcf) > 0) {
 			evFcf = ks.enterpriseValue / fcf;
 		}
-
-		if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
-		if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
-		if (peg != null) stock.valuation.pegRatio = +peg.toFixed(2);
-		if (evFcf != null) stock.valuation.evFcf = +evFcf.toFixed(1);
-		
-		if (evEbitda != null && stock.valuation.evEbitda !== null) {
-			const isMegaCap = rawCap && rawCap > 50_000_000_000;
-			if (isMegaCap && evEbitda < 5) {
-				console.log(
-					`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA mega-cap rejection`
-				);
-				stock.valuation.evEbitda = null;
-			} else {
-				stock.valuation.evEbitda = +evEbitda.toFixed(1);
-			}
-		}
+	} else if (ks.enterpriseValue && fcf != null && Math.abs(fcf) > 0) {
+		evFcf = ks.enterpriseValue / fcf;
 	}
 
+	if (pe != null) stock.valuation.trailingPE = +pe.toFixed(1);
+	if (fpe != null) stock.valuation.forwardPE = +fpe.toFixed(1);
+	if (peg != null) stock.valuation.pegRatio = +peg.toFixed(2);
+	if (evFcf != null) stock.valuation.evFcf = +evFcf.toFixed(1);
+	
+	if (evEbitda != null && stock.valuation.evEbitda !== null) {
+		const isMegaCap = rawCap && rawCap > 50_000_000_000;
+		if (isMegaCap && evEbitda < 5) {
+			console.log(`  ⚠️  ${stock.ticker} — anomalous EV/EBITDA mega-cap rejection`);
+			stock.valuation.evEbitda = null;
+		} else {
+			stock.valuation.evEbitda = +evEbitda.toFixed(1);
+		}
+	}
+}
+
+function updateMetrics(stock: any, fd: any, rawCap: number | undefined, sd: any, ks: any) {
 	if (!stock.metrics) stock.metrics = {};
-	if (stock.metrics) {
-		const roe = fd.returnOnEquity;
-		if (roe != null) stock.metrics.roe = fmtPct(roe * 100, 1);
+	const roe = fd.returnOnEquity;
+	if (roe != null) stock.metrics.roe = fmtPct(roe * 100, 1);
 
-		const fcf = fd.freeCashflow;
-		const rev = fd.totalRevenue;
-		const fcfMarginPct = fcf != null && rev != null && rev > 0 ? (fcf / rev) * 100 : null;
-		if (fcfMarginPct != null) stock.metrics.fcfMargin = fmtApproxPct(fcfMarginPct);
+	const fcf = fd.freeCashflow;
+	const rev = fd.totalRevenue;
+	const fcfMarginPct = fcf != null && rev != null && rev > 0 ? (fcf / rev) * 100 : null;
+	if (fcfMarginPct != null) stock.metrics.fcfMargin = fmtApproxPct(fcfMarginPct);
 
-		if (fcf != null && rawCap != null && rawCap > 0) {
-			const fcfYieldPct = (fcf / rawCap) * 100;
-			stock.metrics.fcfYield = `~${Math.round(fcfYieldPct)}%`;
-		}
-
-		const totalDebt = fd.totalDebt;
-		const totalCash = fd.totalCash;
-		const ebitda = fd.ebitda;
-		const isNM = /^N\/M/i.test(stock.metrics.netDebtEbitda ?? '');
-		if (!isNM && totalDebt != null && totalCash != null && ebitda != null && Math.abs(ebitda) > 0) {
-			const netDebt = totalDebt - totalCash;
-			stock.metrics.netDebtEbitda = netDebt < 0 ? 'Net cash' : fmtMultiple(netDebt / ebitda);
-		}
-
-		const revGrowth = fd.revenueGrowth;
-		if (revGrowth != null && fcfMarginPct != null) {
-			stock.metrics.ruleOf40 = fmtRoundPct(revGrowth * 100 + fcfMarginPct);
-		}
-
-		if (stock.metrics.grossMargin !== undefined && fd.grossMargins != null) {
-			stock.metrics.grossMargin = fmtPct(fd.grossMargins * 100, 2);
-		}
-		if (stock.metrics.operatingMargin !== undefined && fd.operatingMargins != null) {
-			stock.metrics.operatingMargin = fmtApproxPct(fd.operatingMargins * 100);
-		}
-		if (stock.metrics.ebitdaMargin !== undefined && fd.ebitdaMargins != null) {
-			stock.metrics.ebitdaMargin = fmtApproxPct(fd.ebitdaMargins * 100);
-		}
-		if (stock.metrics.beta !== undefined && (sd.beta ?? ks.beta) != null) {
-			stock.metrics.beta = String(+(sd.beta ?? ks.beta).toFixed(2));
-		}
-		if (stock.metrics.revenueGrowth !== undefined && revGrowth != null) {
-			stock.metrics.revenueGrowth = fmtPct(revGrowth * 100, 1);
-		}
+	if (fcf != null && rawCap != null && rawCap > 0) {
+		const fcfYieldPct = (fcf / rawCap) * 100;
+		stock.metrics.fcfYield = `~${Math.round(fcfYieldPct)}%`;
 	}
+
+	const totalDebt = fd.totalDebt;
+	const totalCash = fd.totalCash;
+	const ebitda = fd.ebitda;
+	const isNM = /^N\/M/i.test(stock.metrics.netDebtEbitda ?? '');
+	if (!isNM && totalDebt != null && totalCash != null && ebitda != null && Math.abs(ebitda) > 0) {
+		const netDebt = totalDebt - totalCash;
+		stock.metrics.netDebtEbitda = netDebt < 0 ? 'Net cash' : fmtMultiple(netDebt / ebitda);
+	}
+
+	const revGrowth = fd.revenueGrowth;
+	if (revGrowth != null && fcfMarginPct != null) {
+		stock.metrics.ruleOf40 = fmtRoundPct(revGrowth * 100 + fcfMarginPct);
+	}
+
+	if (stock.metrics.grossMargin !== undefined && fd.grossMargins != null) {
+		stock.metrics.grossMargin = fmtPct(fd.grossMargins * 100, 2);
+	}
+	if (stock.metrics.operatingMargin !== undefined && fd.operatingMargins != null) {
+		stock.metrics.operatingMargin = fmtApproxPct(fd.operatingMargins * 100);
+	}
+	if (stock.metrics.ebitdaMargin !== undefined && fd.ebitdaMargins != null) {
+		stock.metrics.ebitdaMargin = fmtApproxPct(fd.ebitdaMargins * 100);
+	}
+	if (stock.metrics.beta !== undefined && (sd.beta ?? ks.beta) != null) {
+		stock.metrics.beta = String(+(sd.beta ?? ks.beta).toFixed(2));
+	}
+	if (stock.metrics.revenueGrowth !== undefined && revGrowth != null) {
+		stock.metrics.revenueGrowth = fmtPct(revGrowth * 100, 1);
+	}
+}
 
 	if (fd.targetMeanPrice != null) {
 		const isAnomalous = fd.targetMeanPrice > rawPrice * 3 || fd.targetMeanPrice < rawPrice * 0.5;
@@ -148,6 +147,8 @@ export function applyUpdates(stock: any, quote: any, summary: any, historicalDat
 			};
 		} else if (isSingleAnalyst) {
 			delete stock.analystTargets;
+			if (stock.consensus) delete stock.consensus.yahoo;
+			delete stock.targetPrice;
 		}
 	}
 

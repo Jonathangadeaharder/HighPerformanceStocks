@@ -13,32 +13,32 @@
 		"dividendYield": "2%",
 		"ttmEPS": 96.44
 	},
-	"currentPrice": "$3180",
-	"marketCap": "$864.0B USD",
+	"currentPrice": "$3098",
+	"marketCap": "$841.7B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
 	"expectedVolatility": "~41%",
 	"screener": {
 		"engine": "tPERG",
-		"score": 3.66,
+		"score": 3.57,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 33,
+			"multiple": 32.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 3180,
-				"price6mAgo": 1500,
-				"price1mAgo": 3318,
-				"low3m": 1851,
-				"return6m": 112,
-				"return1m": -4.2,
+				"price": 3098,
+				"price6mAgo": 1473,
+				"price1mAgo": 3636,
+				"low3m": 1957,
+				"return6m": 110.3,
+				"return1m": -14.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -49,10 +49,10 @@
 		},
 		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-21T00:31:49.162Z",
+	"lastUpdated": "2026-03-26T00:02:59.247Z",
 	"valuation": {
-		"trailingPE": 33,
-		"forwardPE": 50.7,
+		"trailingPE": 32.1,
+		"forwardPE": 49.4,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},

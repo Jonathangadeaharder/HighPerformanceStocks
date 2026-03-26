@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { STOCK_RECORDS_DIR } from '../lib/project-paths.js';
+import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
 import { isUpToDate, sleep } from './lib/display-formatters.js';
 import {
 	fetchAllQuotes,
@@ -9,9 +9,9 @@ import {
 	fetchSummary,
 	yahooTicker
 } from './lib/yahoo-client.js';
-import { parseDisplayPrice } from '../src/lib/domain/finance/core';
-import { atomicWriteJson } from './lib/update/fs';
-import { applyUpdates } from './lib/update/apply';
+import { parseDisplayPrice } from '../src/lib/domain/finance/core.js';
+import { atomicWriteJson } from './lib/update/fs.js';
+import { applyUpdates } from './lib/update/apply.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const CONCURRENCY = 5;

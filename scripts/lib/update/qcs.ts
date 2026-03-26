@@ -1,11 +1,4 @@
-/**
- * Computes the Quantitative Conviction Score (QCS).
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function computeQCS(summary: any, cvStock = 0.08) {
-	if (!summary) return;
-
-	// 1. Forecast Credibility Score (Standardized Surprise)
+function computeEarningsScore(summary: any, cvStock: number) {
 	let totalSurprise = 0;
 	let validQuarters = 0;
 	const history = summary.earningsHistory?.history || [];
@@ -22,12 +15,13 @@ export function computeQCS(summary: any, cvStock = 0.08) {
 		avgSurprise = totalSurprise / validQuarters;
 		const cvBenchmark = 0.08;
 		const safeCvStock = Math.max(0.01, cvStock);
-
-		// Formula: (Avg Surprise * 50) * (CV Benchmark / CV Stock)
 		earningsScore = avgSurprise * 50 * (cvBenchmark / safeCvStock);
 		earningsScore = +Math.max(-5, Math.min(5, earningsScore)).toFixed(2);
 	}
+	return { earningsScore, avgSurprisePct: validQuarters > 0 ? +((totalSurprise / validQuarters) * 100).toFixed(2) : 0, validQuarters };
+}
 
+function computeFlowScore(summary: any) {
 	const netInsiderShares = summary.netSharePurchaseActivity?.netInfoShares || 0;
 	let instDelta = 0;
 	const instList = summary.institutionOwnership?.ownershipList || [];
@@ -49,14 +43,15 @@ export function computeQCS(summary: any, cvStock = 0.08) {
 	} else if (netInsiderShares < -1000 && instFlowTrend === 'negative') {
 		flowScore = -5;
 	}
+	return { flowScore, netInsiderShares, instFlowTrend };
+}
 
+function computeRevisionsScore(summary: any) {
 	let upRevisions = 0;
 	let downRevisions = 0;
 	let totalAnalysts = 1;
 	const trend =
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		summary.earningsTrend?.trend?.find((t: any) => t.period === '0y') ||
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		summary.earningsTrend?.trend?.find((t: any) => t.period === '+1y');
 
 	if (trend) {
@@ -65,10 +60,20 @@ export function computeQCS(summary: any, cvStock = 0.08) {
 		totalAnalysts =
 			trend.earningsEstimate?.numberOfAnalysts || Math.max(1, upRevisions + downRevisions);
 	}
-
 	const revisionsScore = +(((upRevisions - downRevisions) / totalAnalysts) * 5).toFixed(2);
+	return { revisionsScore, upRevisions, downRevisions, totalAnalysts };
+}
 
-	// Cap total score to +/- 15
+/**
+ * Computes the Quantitative Conviction Score (QCS).
+ */
+export function computeQCS(summary: any, cvStock = 0.08) {
+	if (!summary) return;
+
+	const { earningsScore, avgSurprisePct, validQuarters } = computeEarningsScore(summary, cvStock);
+	const { flowScore, netInsiderShares, instFlowTrend } = computeFlowScore(summary);
+	const { revisionsScore, upRevisions, downRevisions, totalAnalysts } = computeRevisionsScore(summary);
+
 	let totalScore = +(earningsScore + flowScore + revisionsScore).toFixed(2);
 	totalScore = Math.max(-15, Math.min(15, totalScore));
 
@@ -78,7 +83,7 @@ export function computeQCS(summary: any, cvStock = 0.08) {
 		revisionsScore,
 		totalScore,
 		raw: {
-			avgSurprisePct: validQuarters > 0 ? +((totalSurprise / validQuarters) * 100).toFixed(2) : 0,
+			avgSurprisePct,
 			netInsiderShares,
 			instFlowTrend,
 			upRevisions,

@@ -4,6 +4,8 @@
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
 	"confidence": "high",
+	"bullCase": "Tesla achieves full autonomy and ramps up energy storage, maintaining extreme dominance in the clean energy sector.",
+	"bearCase": "Increased EV competition, price wars, and leadership distractions cause margin compression and slowing growth.",
 	"confidenceReason": "Leader in electric vehicles, battery energy storage, and AI software/robotics. Unprecedented scale and brand power, though exposed to auto-cycle cyclicality and massive continuous capital requirements. High premium commands a flawless execution trajectory.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
@@ -93,7 +95,7 @@
 		}
 	},
 	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
-	"lastUpdated": "2026-03-25T23:03:47.495Z",
+	"lastUpdated": "2026-03-26T00:03:00.968Z",
 	"intrinsicValue": {
 		"dcf": 17.95,
 		"date": "2026-03-25",

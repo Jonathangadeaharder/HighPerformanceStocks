@@ -4,15 +4,15 @@
 	"group": "Cloud Infrastructure",
 	"confidence": "low",
 	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
-	"marketCap": "$44.3B USD",
-	"sharpeRatio": 0.89,
-	"expectedCAGR": "-3% - 108%",
+	"marketCap": "$43.6B USD",
+	"sharpeRatio": 0.93,
+	"expectedCAGR": "-2% - 111%",
 	"expectedVolatility": "~54%",
 	"valuation": {
-		"trailingPE": 416.9,
-		"forwardPE": 47.3,
-		"evEbitda": 5432.9,
-		"evFcf": 46.5
+		"trailingPE": 397.7,
+		"forwardPE": 46.6,
+		"evEbitda": 5349.1,
+		"evFcf": 45.8
 	},
 	"metrics": {
 		"roe": "3.3%",
@@ -24,42 +24,42 @@
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$125.08",
+	"currentPrice": "$123.29",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-3%",
-			"base": "46%",
-			"bull": "108%"
+			"bear": "-2%",
+			"base": "48%",
+			"bull": "111%"
 		},
 		"ttmEPS": 2.12,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-21T00:31:39.156Z",
+	"lastUpdated": "2026-03-26T00:02:46.233Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.41,
+		"score": 2.37,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 47.3,
+			"multiple": 46.6,
 			"cvStock": 0.11,
 			"riskMultiplier": 1.018
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 125.08,
-				"price6mAgo": 138.35,
-				"price1mAgo": 102.61,
+				"price": 123.29,
+				"price6mAgo": 139.07,
+				"price1mAgo": 116.46,
 				"low3m": 98.01,
-				"return6m": -9.6,
-				"return1m": 21.9,
+				"return6m": -11.3,
+				"return1m": 5.9,
 				"near3mLow": false
 			},
 			"revisions": {

@@ -5,94 +5,94 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
-	"targetPrice": "$148.46",
+	"targetPrice": "$147.98",
 	"bullCase": "PDD Holdings runs the most efficient e-commerce operation in China (50%+ EBIT margin) while Temu is executing aggressive global expansion. If Temu captures 5% of global cross-border e-commerce, incremental revenue could be $40-60B by 2030. The trailing P/E of 9x prices in a permanent growth halt that fundamentals don't support.",
 	"bearCase": "Temu faces existential tariff risk: US de minimis exemption elimination and 145% tariffs make the sub-$15 product model unprofitable. Pinduoduo's domestic dominance may also erode as JD and Alibaba match its price-discovery algorithm.",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 9.88,
+		"ttmEPS": 10.01,
 		"scenarios": {
-			"bear": "24%",
-			"base": "54%",
-			"bull": "113%"
+			"bear": "16%",
+			"base": "44%",
+			"bull": "99%"
 		}
 	},
-	"currentPrice": "$96.19",
-	"marketCap": "$136.6B USD",
+	"currentPrice": "$102.61",
+	"marketCap": "$145.7B USD",
 	"consensus": {
-		"yahoo": "$148.46"
+		"yahoo": "$147.98"
 	},
 	"expectedVolatility": "~36%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.83,
-		"signal": "REJECTED",
+		"score": 0.85,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 7.7,
-			"cvStock": 0.083,
-			"riskMultiplier": 1.952
+			"multiple": 7.1,
+			"cvStock": 0.112,
+			"riskMultiplier": 2.154
 		},
-		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
+		"note": "Recent earnings miss (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 96.19,
-				"price6mAgo": 128.57,
-				"price1mAgo": 105.76,
-				"low3m": 96.05,
-				"return6m": -25.2,
-				"return1m": -9,
-				"near3mLow": true
+				"pass": true,
+				"price": 102.61,
+				"price6mAgo": 129.99,
+				"price1mAgo": 105.39,
+				"low3m": 95.37,
+				"return6m": -21.1,
+				"return1m": -2.6,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
-				"down30d": 3
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 27.2,
-				"quarter": "2025-09"
+				"surprise": -15.8,
+				"quarter": "2025-12"
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:47.788Z",
+	"lastUpdated": "2026-03-26T00:02:57.363Z",
 	"valuation": {
-		"trailingPE": 9.7,
-		"forwardPE": 7.7,
+		"trailingPE": 10.3,
+		"forwardPE": 7.1,
 		"evEbitda": null,
-		"evFcf": 1.4
+		"evFcf": 1.6
 	},
 	"metrics": {
 		"roe": "30.5%",
 		"fcfMargin": "~21%",
-		"fcfYield": "~64%",
+		"fcfYield": "~60%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "30%"
 	},
-	"expectedCAGR": "24% - 113%",
-	"sharpeRatio": 1.78,
+	"expectedCAGR": "16% - 99%",
+	"sharpeRatio": 1.47,
 	"qcs": {
-		"earningsScore": 4.69,
+		"earningsScore": 1.85,
 		"flowScore": 2.5,
-		"revisionsScore": -0.17,
-		"totalScore": 7.02,
+		"revisionsScore": -0.16,
+		"totalScore": 4.19,
 		"raw": {
-			"avgSurprisePct": 9.74,
+			"avgSurprisePct": 5.17,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
-			"totalAnalysts": 29
+			"upRevisions": 0,
+			"downRevisions": 1,
+			"totalAnalysts": 32
 		}
 	},
 	"description": "PDD Holdings Inc., a multinational commerce group that owns and operates a portfolio of businesses.",
 	"analystTargets": {
-		"low": 119.28,
-		"mean": 148.46,
-		"high": 204.72
+		"low": 119.01,
+		"mean": 147.98,
+		"high": 204.27
 	}
 }

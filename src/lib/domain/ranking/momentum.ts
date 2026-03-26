@@ -42,8 +42,10 @@ export function calculateMomentumBonus(
 	scale = 7.5,
 	cap = 15
 ): number {
-	const return6m = stock.screener?.realityChecks?.stabilization?.return6m ?? 0;
-	const return1m = stock.screener?.realityChecks?.stabilization?.return1m ?? 0;
+	const return6m = stock.screener?.realityChecks?.stabilization?.return6m;
+	const return1m = stock.screener?.realityChecks?.stabilization?.return1m;
+	if (return6m == null || return1m == null) return 0;
+
 	const momentumInput = return6m - return1m;
 	const momentumZScore =
 		momentum.stddev > 0 ? (momentumInput - momentum.mean) / momentum.stddev : 0;

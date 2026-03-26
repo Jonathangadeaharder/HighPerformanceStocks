@@ -4,95 +4,95 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "UK serial acquirer in technical products distribution. ROIC ~15%, ROE ~20%, 14% organic revenue growth in Q1 2026. Unanimous analyst Buy. But CAGR of 12-16% is borderline on the floor.",
-	"marketCap": "£7.7B",
-	"sharpeRatio": 0.18,
-	"expectedCAGR": "-11% - 31%",
+	"marketCap": "£8.0B",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "-13% - 27%",
 	"expectedVolatility": "~31%",
 	"valuation": {
-		"trailingPE": 41.8,
-		"forwardPE": 25.3,
+		"trailingPE": 43.4,
+		"forwardPE": 26.1,
 		"pegRatio": null,
-		"evEbitda": 22.9,
-		"evFcf": 29.7
+		"evEbitda": 23.7,
+		"evFcf": 30.8
 	},
 	"metrics": {
 		"fcfMargin": "~18%",
-		"fcfYield": "~4%",
+		"fcfYield": "~3%",
 		"roic": "~15%",
 		"roe": "19.6%",
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "28%",
 		"organicRevenueGrowth": "14% (Q1 2026)"
 	},
-	"targetPrice": "£64.60",
+	"targetPrice": "£65.73",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
 	"bearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E.",
-	"currentPrice": "£57.25",
+	"currentPrice": "£59.50",
 	"consensus": {
 		"tipranks": "5,634p",
-		"yahoo": "£64.60"
+		"yahoo": "£65.73"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.37,
 		"epsGrowth": "16%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "13%",
-			"bull": "31%"
+			"bear": "-13%",
+			"base": "11%",
+			"bull": "27%"
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-21T00:31:39.805Z",
+	"lastUpdated": "2026-03-26T00:02:46.280Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.41,
+		"score": 1.46,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 22.9,
+			"multiple": 23.7,
 			"cvStock": 0.057,
 			"riskMultiplier": 0.986
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 5725,
-				"price6mAgo": 5445,
-				"price1mAgo": 5575,
+				"price": 5950,
+				"price6mAgo": 5270,
+				"price1mAgo": 5650,
 				"low3m": 4970,
-				"return6m": 5.1,
-				"return1m": 2.7,
+				"return6m": 12.9,
+				"return1m": 5.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 10,
+				"up30d": 11,
 				"down30d": 0
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.56
+		"secondaryScore": 1.61
 	},
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,
-		"revisionsScore": 3.21,
-		"totalScore": 3.21,
+		"revisionsScore": 3.67,
+		"totalScore": 3.67,
 		"raw": {
 			"avgSurprisePct": 0,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 10,
-			"downRevisions": 1,
-			"totalAnalysts": 14
+			"upRevisions": 11,
+			"downRevisions": 0,
+			"totalAnalysts": 15
 		}
 	},
 	"description": "Diploma PLC, together with its subsidiaries, supplies specialized technical products and services in the United Kingdom, Europe, North America, and internationally.",
 	"analystTargets": {
 		"low": 51.2,
-		"mean": 64.6,
+		"mean": 65.73,
 		"high": 75
 	}
 }

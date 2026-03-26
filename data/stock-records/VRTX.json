@@ -4,12 +4,12 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
-	"marketCap": "$115.3B USD",
+	"marketCap": "$115.6B USD",
 	"sharpeRatio": 0.07,
 	"expectedCAGR": "-27% - 41%",
 	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 29.9,
+		"trailingPE": 29.7,
 		"forwardPE": 20.7,
 		"pegRatio": null,
 		"evEbitda": 22.8,
@@ -23,17 +23,17 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "31%"
 	},
-	"targetPrice": "$546.52",
+	"targetPrice": "$547.72",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$454",
+	"currentPrice": "$454.97",
 	"consensus": {
 		"tipranks": "$542",
-		"yahoo": "$546.52",
+		"yahoo": "$547.72",
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
-		"ttmEPS": 15.16,
+		"ttmEPS": 15.3,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -43,7 +43,7 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-21T00:31:52.036Z",
+	"lastUpdated": "2026-03-26T00:03:03.065Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.59,
@@ -58,18 +58,18 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 454,
-				"price6mAgo": 383.13,
-				"price1mAgo": 481.01,
+				"price": 454.97,
+				"price6mAgo": 385.74,
+				"price1mAgo": 480.13,
 				"low3m": 429,
-				"return6m": 18.5,
-				"return1m": -5.6,
+				"return6m": 17.9,
+				"return1m": -5.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 13
+				"up30d": 7,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -2.3,
@@ -80,21 +80,21 @@
 	"qcs": {
 		"earningsScore": 0.43,
 		"flowScore": 0,
-		"revisionsScore": -2.78,
-		"totalScore": -2.35,
+		"revisionsScore": -0.19,
+		"totalScore": 0.24,
 		"raw": {
 			"avgSurprisePct": 0.86,
 			"netInsiderShares": 82845,
 			"instFlowTrend": "negative",
-			"upRevisions": 4,
-			"downRevisions": 19,
+			"upRevisions": 2,
+			"downRevisions": 3,
 			"totalAnalysts": 27
 		}
 	},
 	"description": "Vertex Pharmaceuticals Incorporated operates as a biotechnology company in the United States, Europe, and internationally.",
 	"analystTargets": {
 		"low": 330,
-		"mean": 546.52,
+		"mean": 547.72,
 		"high": 641
 	}
 }

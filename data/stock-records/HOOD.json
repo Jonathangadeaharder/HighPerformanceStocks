@@ -4,6 +4,8 @@
 	"group": "Financials & Alt Assets",
 	"cyclical": true,
 	"confidence": "medium",
+	"bullCase": "Robinhood successfully captures a broader retail market, expands its financial services ecosystem, and drives recurring revenue.",
+	"bearCase": "Retail engagement drops significantly or payment for order flow is heavily restricted by regulators.",
 	"confidenceReason": "Commission-free stock and crypto trading app aggressively taking market share among gen-z and millennials. Diversifying revenue streams with subscriptions (Gold) and retirement accounts. Sensitive to retail engagement cycles.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
@@ -87,5 +89,5 @@
 		}
 	},
 	"description": "Robinhood Markets, Inc. operates financial services platform in the United States.",
-	"lastUpdated": "2026-03-25T23:03:47.497Z"
+	"lastUpdated": "2026-03-26T00:02:49.145Z"
 }

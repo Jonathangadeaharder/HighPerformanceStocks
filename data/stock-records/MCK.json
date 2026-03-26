@@ -9,21 +9,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 34.1,
+		"ttmEPS": 34.66,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
+			"bear": "-2%",
 			"base": "13%",
-			"bull": "25%"
+			"bull": "26%"
 		}
 	},
-	"currentPrice": "$885.84",
-	"marketCap": "$109.3B USD",
+	"currentPrice": "$879.75",
+	"marketCap": "$108.6B USD",
 	"valuation": {
-		"trailingPE": 26,
-		"forwardPE": 20,
-		"evEbitda": 19.5,
-		"evFcf": 12.6
+		"trailingPE": 25.4,
+		"forwardPE": 19.9,
+		"evEbitda": 19.4,
+		"evFcf": 12.5
 	},
 	"metrics": {
 		"fcfMargin": "~2%",
@@ -35,32 +35,32 @@
 		"yahoo": "$997.67"
 	},
 	"targetPrice": "$997.67",
-	"expectedCAGR": "-3% - 25%",
+	"expectedCAGR": "-2% - 26%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.28,
+		"score": 1.27,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 20,
+			"multiple": 19.9,
 			"cvStock": 0.01,
 			"riskMultiplier": 0.958
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 885.84,
-				"price6mAgo": 697,
-				"price1mAgo": 949.25,
+				"price": 879.75,
+				"price6mAgo": 760.55,
+				"price1mAgo": 974.45,
 				"low3m": 794.59,
-				"return6m": 27.1,
-				"return1m": -6.7,
+				"return6m": 15.7,
+				"return1m": -9.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 15,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -69,19 +69,19 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:44.845Z",
-	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.23,
+	"lastUpdated": "2026-03-26T00:02:53.592Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 0.26,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 4.38,
-		"totalScore": 9.38,
+		"revisionsScore": 0.31,
+		"totalScore": 5.31,
 		"raw": {
 			"avgSurprisePct": 3.5,
 			"netInsiderShares": 756,
 			"instFlowTrend": "negative",
-			"upRevisions": 14,
+			"upRevisions": 1,
 			"downRevisions": 0,
 			"totalAnalysts": 16
 		}

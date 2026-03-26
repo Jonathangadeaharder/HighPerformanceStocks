@@ -4,6 +4,8 @@
 	"group": "Industrial Monopolies",
 	"cyclical": false,
 	"confidence": "high",
+	"bullCase": "Commercial aerospace rebounds strongly while defense budgets globally swell, driving long-term revenue backlogs.",
+	"bearCase": "Supply chain disruptions or engine manufacturing defects lead to costly recalls and lower margins.",
 	"confidenceReason": "Major defense contractor and aerospace manufacturer with massive backlog, benefiting from global defense spending cycles and commercial aerospace recovery. EPS growth modeled to be auto-derived from analyst consensus.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
@@ -12,9 +14,9 @@
 		"ttmEPS": 4.97,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "11%",
-			"bull": "23%"
+			"bear": "-7%",
+			"base": "12%",
+			"bull": "24%"
 		}
 	},
 	"currentPrice": "$195",
@@ -22,8 +24,8 @@
 	"valuation": {
 		"trailingPE": 39.2,
 		"forwardPE": 26,
-		"evFcf": 45.7,
-		"evEbitda": 20
+		"evFcf": 45.9,
+		"evEbitda": 20.1
 	},
 	"metrics": {
 		"roe": "11.0%",
@@ -41,9 +43,9 @@
 		"mean": 217.16,
 		"high": 240
 	},
-	"expectedCAGR": "-8% - 23%",
+	"expectedCAGR": "-7% - 24%",
 	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.11,
+	"sharpeRatio": 0.14,
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.52,
@@ -92,5 +94,5 @@
 		}
 	},
 	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
-	"lastUpdated": "2026-03-25T23:00:08.250Z"
+	"lastUpdated": "2026-03-26T00:02:58.387Z"
 }

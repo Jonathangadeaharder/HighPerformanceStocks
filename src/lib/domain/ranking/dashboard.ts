@@ -111,10 +111,15 @@ function compareWatchlistStocks(left: FindingStock, right: FindingStock): number
 		order[left.deployment?.status ?? 'NO_DATA'] - order[right.deployment?.status ?? 'NO_DATA'];
 	if (deploymentDiff !== 0) return deploymentDiff;
 	if (left.screener?.engine === right.screener?.engine) {
-		return (left.screener?.score ?? 999) - (right.screener?.score ?? 999);
+		const scoreDiff = (left.screener?.score ?? 999) - (right.screener?.score ?? 999);
+		if (scoreDiff !== 0) return scoreDiff;
+		return (left.ticker ?? '').localeCompare(right.ticker ?? '');
 	}
 
-	return left.screener?.engine === 'fPERG' ? -1 : 1;
+	if (left.screener?.engine === 'fPERG') return -1;
+	if (right.screener?.engine === 'fPERG') return 1;
+
+	return (left.screener?.engine ?? '').localeCompare(right.screener?.engine ?? '');
 }
 
 function buildCounts(

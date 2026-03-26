@@ -4,8 +4,11 @@
 	"group": "Industrial Monopolies",
 	"cyclical": false,
 	"confidence": "medium",
+	"bullCase": "AeroVironment expands market share in drone defense as autonomous systems become critical to modern military strategy.",
+	"bearCase": "Defense spending cuts or increased competition in the UAS market could squeeze margins and slow revenue growth.",
 	"confidenceReason": "Leading manufacturer of unmanned aircraft systems (UAS) and tactical missile systems for defense. Strong backlog due to global defense spending super-cycle, but heavily reliant on US government contracts. EPS growth modeled to be auto-derived from analyst consensus.",
 	"cagrModel": {
+		"ttmEPS": 3.01,
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
 		"epsGrowth": "35%",
@@ -90,5 +93,5 @@
 		}
 	},
 	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-03-25T22:52:14.065Z"
+	"lastUpdated": "2026-03-26T00:02:43.518Z"
 }

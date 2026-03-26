@@ -13,7 +13,7 @@ import { ENGINE_THRESHOLDS } from './types';
 const GROWTH_ROUTING_THRESHOLD = 8;
 const CV_BENCHMARK = 0.08;
 const R2_NOISE = 0.6;
-const TOTAL_RETURN_THRESHOLD = 12.0;
+const TOTAL_RETURN_THRESHOLD = 12;
 const DEBT_PENALTY_THRESHOLD = 150;
 const DEBT_PENALTY_FACTOR = 0.3;
 const STABILIZATION_6M_THRESHOLD = -10;
@@ -21,6 +21,7 @@ const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
+const CYCLICAL_NOTE = '(CYCLICAL EPS)';
 
 /**
  * Parses numeric values from various formats.
@@ -28,7 +29,7 @@ const BORDERLINE_WAIT_THRESHOLD = 1.2;
 function parseNumber(value: string | number | null | undefined): number | null {
 	if (value == null) return null;
 	if (typeof value === 'number') return value;
-	const cleaned = value.replace(/[^\d.-]/g, '');
+	const cleaned = value.replaceAll(/[^\d.-]/g, '');
 	const num = Number.parseFloat(cleaned);
 	return Number.isNaN(num) ? null : num;
 }
@@ -68,7 +69,7 @@ function computeGrowthScore(
 	}
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
 	if (score <= threshold) {
@@ -129,7 +130,7 @@ export function detectGrowthBranch(
 		return {
 			engine: 'fCFG',
 			multipleType: hasEvFcf ? 'EV/FCF' : 'P/CF',
-			multiple: hasEvFcf ? (valuation.evFcf as number) : priceToBasis
+			multiple: hasEvFcf ? (valuation.evFcf!) : priceToBasis
 		};
 	}
 
@@ -198,7 +199,7 @@ function computeTotalReturn(
 	const baseReturn = divYieldPct + growthPct;
 	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
 
-	const normalizedScore = TOTAL_RETURN_THRESHOLD / riskAdjReturn;
+	const normalizedScore = riskAdjReturn > 0 ? TOTAL_RETURN_THRESHOLD / riskAdjReturn : 999;
 
 	return {
 		engine: 'totalReturn',
@@ -291,6 +292,75 @@ function applyRealityChecks(
 	result.realityChecks = checks;
 }
 
+function evaluateHyperGrowth(
+	stock: ScreenerStock,
+	valuationPrice: number | null | undefined,
+	summary: YahooSummary | undefined,
+	growthPct: number,
+	rawPrice: number | null | undefined,
+	historicalData: HistoricalData | undefined
+): ScreenerResult {
+	const branch = detectGrowthBranch(stock, valuationPrice);
+	if (!branch.multiple || branch.multiple <= 0) {
+		return {
+			engine: branch.engine,
+			signal: 'NO_DATA',
+			note: `Missing/negative ${branch.multipleType}`
+		};
+	}
+
+	const dispersion = getAnalystDispersion(summary?.earningsTrend);
+	let cvStock = CV_BENCHMARK;
+	if (dispersion) {
+		cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
+	}
+
+	const result = computeGrowthScore(
+		branch.engine as keyof typeof ENGINE_THRESHOLDS,
+		branch.multipleType,
+		branch.multiple,
+		growthPct,
+		cvStock,
+		stock.cyclical
+	);
+
+	const baseCagr = parsePercent(stock.cagrModel?.scenarios?.base);
+	if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
+		result.signal = 'FAIL';
+		result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${ETF_HURDLE_RETURN}% hurdle`;
+	}
+
+	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
+
+	if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
+		const fpe = stock.valuation?.forwardPE;
+		if (fpe != null && fpe > 0) {
+			const fPERGCheck = computeGrowthScore(
+				'fPERG',
+				'Forward P/E',
+				fpe,
+				growthPct,
+				cvStock,
+				stock.cyclical
+			);
+			result.secondaryEngine = 'fPERG';
+			result.secondaryScore = fPERGCheck.score;
+		}
+	}
+
+	if (!dispersion) {
+		result.note = result.note
+			? result.note + ' (Used benchmark CV)'
+			: 'Used benchmark CV (missing dispersion data)';
+	}
+
+	if (stock.cyclical) {
+		result.note = result.note ? result.note + ` ${CYCLICAL_NOTE}` : CYCLICAL_NOTE;
+	}
+
+	return result;
+}
+
 export function computeScreener(
 	stock: ScreenerStock,
 	summary: YahooSummary | undefined,
@@ -309,68 +379,9 @@ export function computeScreener(
 
 	if (growthPct > GROWTH_ROUTING_THRESHOLD) {
 		const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
-		const isAltAsset = stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(model?.basis ?? '');
 		
-		if (divYieldPct < 5.0 || isAltAsset) {
-			const branch = detectGrowthBranch(stock, valuationPrice);
-			if (!branch.multiple || branch.multiple <= 0) {
-				return {
-					engine: branch.engine,
-					signal: 'NO_DATA',
-					note: `Missing/negative ${branch.multipleType}`
-				};
-			}
-
-			const dispersion = getAnalystDispersion(summary?.earningsTrend);
-			let cvStock = CV_BENCHMARK;
-			if (dispersion) {
-				cvStock = (dispersion.high - dispersion.low) / 4 / dispersion.avg;
-			}
-
-			const result = computeGrowthScore(
-				branch.engine as keyof typeof ENGINE_THRESHOLDS,
-				branch.multipleType,
-				branch.multiple,
-				growthPct,
-				cvStock,
-				stock.cyclical
-			);
-
-			const baseCagr = parsePercent(model?.scenarios?.base);
-			if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
-				result.signal = 'FAIL';
-				result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${ETF_HURDLE_RETURN}% hurdle`;
-			}
-
-			applyRealityChecks(result, rawPrice, historicalData, summary, stock);
-
-			if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
-				const fpe = stock.valuation?.forwardPE;
-				if (fpe != null && fpe > 0) {
-					const fPERGCheck = computeGrowthScore(
-						'fPERG',
-						'Forward P/E',
-						fpe,
-						growthPct,
-						cvStock,
-						stock.cyclical
-					);
-					result.secondaryEngine = 'fPERG';
-					result.secondaryScore = fPERGCheck.score;
-				}
-			}
-
-			if (!dispersion) {
-				result.note = result.note
-					? result.note + ' (Used benchmark CV)'
-					: 'Used benchmark CV (missing dispersion data)';
-			}
-
-			if (stock.cyclical) {
-				result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
-			}
-
-			return result;
+		if (divYieldPct < 5) {
+			return evaluateHyperGrowth(stock, valuationPrice, summary, growthPct, rawPrice, historicalData);
 		}
 	}
 
@@ -393,7 +404,7 @@ export function computeScreener(
 	const result = computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity);
 
 	if (stock.cyclical) {
-		result.note = result.note ? result.note + ' (CYCLICAL EPS)' : '(CYCLICAL EPS)';
+		result.note = result.note ? result.note + ` ${CYCLICAL_NOTE}` : CYCLICAL_NOTE;
 	}
 
 	applyRealityChecks(result, rawPrice, historicalData, summary, stock);

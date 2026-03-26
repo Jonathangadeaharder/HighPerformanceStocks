@@ -5,42 +5,42 @@
 	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
-	"marketCap": "C$51.1B",
-	"sharpeRatio": 0.09,
-	"expectedCAGR": "-22% - 35%",
+	"marketCap": "C$50.1B",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "-19% - 40%",
 	"expectedVolatility": "~23%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 8.1,
-		"forwardPE": 11,
-		"evFcf": 27
+		"trailingPE": 8,
+		"forwardPE": 10.8,
+		"evFcf": 26.6
 	},
 	"metrics": {
 		"roe": "17.8%",
 		"fcfMargin": "~6%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "15%"
 	},
-	"targetPrice": "C$2731.76",
+	"targetPrice": "C$2749.67",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2383.93",
+	"currentPrice": "C$2336.96",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-22%",
-			"base": "15%",
-			"bull": "35%"
+			"bear": "-19%",
+			"base": "19%",
+			"bull": "40%"
 		},
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
-		"ttmEPS": 294.42
+		"ttmEPS": 293.11
 	},
-	"lastUpdated": "2026-03-21T00:31:40.560Z",
+	"lastUpdated": "2026-03-26T00:02:47.297Z",
 	"consensus": {
-		"yahoo": "C$2731.76"
+		"yahoo": "C$2749.67"
 	},
 	"screener": {
 		"engine": "tPERG",
@@ -49,19 +49,19 @@
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 8.1,
+			"multiple": 8,
 			"cvStock": 0.041,
-			"riskMultiplier": 1.809
+			"riskMultiplier": 1.837
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2383.93,
-				"price6mAgo": 2455.24,
-				"price1mAgo": 2336.59,
+				"price": 2336.96,
+				"price6mAgo": 2398.42,
+				"price1mAgo": 2337.66,
 				"low3m": 2151.07,
-				"return6m": -2.9,
-				"return1m": 2,
+				"return6m": -2.6,
+				"return1m": 0,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -92,8 +92,8 @@
 	},
 	"description": "Fairfax Financial Holdings Limited, through its subsidiaries, provides property and casualty insurance and reinsurance, and investment management services in Canada, the United States, the Middle E...",
 	"analystTargets": {
-		"low": 1847.68,
-		"mean": 2731.76,
-		"high": 3217.7
+		"low": 1859.8,
+		"mean": 2749.67,
+		"high": 3238.81
 	}
 }

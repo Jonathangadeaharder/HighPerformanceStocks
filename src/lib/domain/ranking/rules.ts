@@ -1,7 +1,7 @@
 import type { DeploymentInfo, FindingStock } from '$lib/types/dashboard';
 
 export const ETF_HURDLE_RETURN = 15;
-export const ETF_HURDLE_RETURN = 15;
+export const BEAR_FLOOR_RETURN = 0;
 export const VALUE_FLOOR_BEAR_RETURN = 5;
 export const VALUE_FLOOR_BASE_RETURN = 25;
 export const VALUE_FLOOR_UPSIDE = 25;
@@ -35,7 +35,12 @@ export function hasLikelyValueFloor(stock: FindingStock): boolean {
  */
 export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	const base = stock.baseCagr ?? -999;
-	if (basePass && stabPass) {
+	const bear = stock.bearCagr ?? -999;
+	const basePass = base >= ETF_HURDLE_RETURN;
+	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
+	const bearPass = bear >= BEAR_FLOOR_RETURN;
+
+	if (basePass && stabPass && bearPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
 	}
 
@@ -46,10 +51,10 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (!basePass) {
+	if (!basePass || !bearPass) {
 		return {
 			status: 'FAIL',
-			reason: `Base forward return (${base}%) is below the ${ETF_HURDLE_RETURN}% hurdle.`
+			reason: `Forward return (Base ${base}%, Bear ${bear}%) misses hurdle.`
 		};
 	}
 
@@ -77,14 +82,14 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const note = stock.screener?.note;
 	const base = stock.baseCagr ?? -999;
 
-	if ((score ?? 0) >= 1.5) {
+	if ((score ?? 0) >= 1.5 && base >= 20) {
 		return {
 			status: 'OVERPRICED',
 			reason: note ?? `Extreme valuation (Score ${score}). Wait for compression.`
 		};
 	}
 
-	if (score != null && score > 1.0) {
+	if (score != null && score > 1) {
 		return {
 			status: 'FAIL',
 			reason: note ?? `Valuation score ${score} is above the 1.0 buy threshold (lower is better).`
@@ -141,7 +146,7 @@ export function assignDeployment(stock: FindingStock): void {
 			const _exhaustiveCheck: never = signal;
 			stock.deployment = {
 				status: 'NO_DATA',
-				reason: `Unknown signal: ${_exhaustiveCheck}`
+				reason: `Unknown signal: ${String(_exhaustiveCheck)}`
 			};
 		}
 	}

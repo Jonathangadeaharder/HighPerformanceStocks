@@ -10,18 +10,18 @@
 		"ttmEPS": 16,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "56%",
-			"bull": "91%"
+			"bear": "7%",
+			"base": "60%",
+			"bull": "98%"
 		}
 	},
-	"currentPrice": "$381.87",
-	"marketCap": "$2838.2B USD",
+	"currentPrice": "$371.04",
+	"marketCap": "$2757.7B USD",
 	"valuation": {
-		"trailingPE": 24.3,
-		"forwardPE": 20.3,
-		"evEbitda": 16.4,
-		"evFcf": 53.5
+		"trailingPE": 23.2,
+		"forwardPE": 19.7,
+		"evEbitda": 15.9,
+		"evFcf": 52
 	},
 	"metrics": {
 		"roe": "34.4%",
@@ -31,32 +31,32 @@
 		"ruleOf40": "34%"
 	},
 	"consensus": {
-		"yahoo": "$594.62"
+		"yahoo": "$591.60"
 	},
-	"targetPrice": "$594.62",
-	"expectedCAGR": "3% - 91%",
+	"targetPrice": "$591.60",
+	"expectedCAGR": "7% - 98%",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 1.63,
+	"sharpeRatio": 1.85,
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.47,
+		"score": 1.43,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.3,
+			"multiple": 19.7,
 			"cvStock": 0.101,
 			"riskMultiplier": 1.013
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 381.87,
-				"price6mAgo": 514.45,
-				"price1mAgo": 384.47,
-				"low3m": 380.12,
-				"return6m": -25.8,
-				"return1m": -0.7,
+				"price": 371.04,
+				"price6mAgo": 511.46,
+				"price1mAgo": 401.72,
+				"low3m": 369.63,
+				"return6m": -27.5,
+				"return1m": -7.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -72,30 +72,30 @@
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-03-21T00:31:45.645Z",
+	"lastUpdated": "2026-03-26T00:02:54.676Z",
 	"intrinsicValue": {
-		"dcf": 325.88,
-		"date": "2026-03-20",
+		"dcf": 316.3,
+		"date": "2026-03-25",
 		"discount": -15
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": -5,
-		"revisionsScore": 0.33,
-		"totalScore": 0.33,
+		"revisionsScore": 0.32,
+		"totalScore": 0.32,
 		"raw": {
 			"avgSurprisePct": 12.82,
 			"netInsiderShares": -38372,
 			"instFlowTrend": "negative",
 			"upRevisions": 2,
 			"downRevisions": 0,
-			"totalAnalysts": 30
+			"totalAnalysts": 31
 		}
 	},
 	"description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide.",
 	"analystTargets": {
 		"low": 392,
-		"mean": 594.62,
+		"mean": 591.6,
 		"high": 730
 	}
 }

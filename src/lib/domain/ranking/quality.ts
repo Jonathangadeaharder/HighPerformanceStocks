@@ -20,8 +20,8 @@ export function computeQualityBonus(stock: FindingStock): number {
 	const netDebt = m.netDebtEbitda;
 	if (netDebt != null) {
 		const debtStr = typeof netDebt === 'string' ? netDebt : String(netDebt);
-		const debtMultiple = Number.parseFloat(debtStr.replace(/[^\d.-]/g, ''));
-		if (!Number.isNaN(debtMultiple) && debtMultiple > 3.0) {
+		const debtMultiple = Number.parseFloat(debtStr.replaceAll(/[^\d.-]/g, ''));
+		if (!Number.isNaN(debtMultiple) && debtMultiple > 3) {
 			roeBonus *= 0.5;
 		}
 	}

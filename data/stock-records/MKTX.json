@@ -9,26 +9,26 @@
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.62,
+		"ttmEPS": 6.65,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "11%",
-			"bull": "44%"
+			"bear": "4%",
+			"base": "19%",
+			"bull": "53%"
 		}
 	},
-	"currentPrice": "$174.01",
-	"marketCap": "$6.5B USD",
+	"currentPrice": "$166.11",
+	"marketCap": "$6.2B USD",
 	"valuation": {
-		"trailingPE": 26.3,
-		"forwardPE": 19.2,
-		"evEbitda": 13.8,
-		"evFcf": 26.1
+		"trailingPE": 25,
+		"forwardPE": 18.3,
+		"evEbitda": 13.2,
+		"evFcf": 24.9
 	},
 	"metrics": {
 		"roe": "19.4%",
 		"fcfMargin": "~27%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "30%"
 	},
@@ -36,27 +36,27 @@
 		"yahoo": "$193.70"
 	},
 	"targetPrice": "$193.70",
-	"expectedCAGR": "-3% - 44%",
+	"expectedCAGR": "4% - 53%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.06,
+		"score": 1.96,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 19.2,
+			"multiple": 18.3,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.964
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 174.01,
-				"price6mAgo": 178.42,
-				"price1mAgo": 181.65,
+				"price": 166.11,
+				"price6mAgo": 180.14,
+				"price1mAgo": 184.87,
 				"low3m": 157.93,
-				"return6m": -2.5,
-				"return1m": -4.2,
+				"return6m": -7.8,
+				"return1m": -10.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,20 +70,20 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-21T00:31:45.621Z",
+	"lastUpdated": "2026-03-26T00:02:54.634Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.59,
+	"sharpeRatio": 0.89,
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
-		"revisionsScore": 0.63,
-		"totalScore": 0.63,
+		"revisionsScore": -0.63,
+		"totalScore": -0.63,
 		"raw": {
 			"avgSurprisePct": -4.9,
 			"netInsiderShares": 61324,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
-			"downRevisions": 0,
+			"downRevisions": 2,
 			"totalAnalysts": 8
 		}
 	},

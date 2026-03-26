@@ -4,20 +4,20 @@
 	"group": "Data & Software Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$183.1B USD",
-	"sharpeRatio": 1.87,
-	"expectedCAGR": "-3% - 143%",
+	"marketCap": "$170.5B USD",
+	"sharpeRatio": 2.26,
+	"expectedCAGR": "5% - 162%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 25,
-		"forwardPE": 13.1,
+		"trailingPE": 23.3,
+		"forwardPE": 12.2,
 		"pegRatio": 0.88,
-		"evEbitda": 15,
-		"evFcf": 11.5
+		"evEbitda": 14,
+		"evFcf": 10.8
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
-		"fcfYield": "~9%",
+		"fcfYield": "~10%",
 		"roe": "12.4%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "52%"
@@ -25,45 +25,45 @@
 	"targetPrice": "$273.66",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$195.38",
+	"currentPrice": "$181.96",
 	"consensus": {
 		"tipranks": "$268",
 		"yahoo": "$273.66",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.82,
+		"ttmEPS": 7.8,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "40%",
-			"bull": "143%"
+			"bear": "5%",
+			"base": "51%",
+			"bull": "162%"
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-21T00:31:39.096Z",
+	"lastUpdated": "2026-03-26T00:02:45.358Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.87,
+		"score": 0.81,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 13.1,
+			"multiple": 12.2,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 195.38,
-				"price6mAgo": 249.69,
-				"price1mAgo": 178.16,
+				"pass": false,
+				"price": 181.96,
+				"price6mAgo": 243.43,
+				"price1mAgo": 199.47,
 				"low3m": 174.57,
-				"return6m": -21.8,
-				"return1m": 9.7,
-				"near3mLow": false
+				"return6m": -25.3,
+				"return1m": -8.8,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -79,13 +79,13 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 1.11,
-		"totalScore": 11.11,
+		"revisionsScore": 1.2,
+		"totalScore": 11.2,
 		"raw": {
 			"avgSurprisePct": 11.12,
-			"netInsiderShares": 136639,
+			"netInsiderShares": 129236,
 			"instFlowTrend": "positive",
-			"upRevisions": 30,
+			"upRevisions": 31,
 			"downRevisions": 18,
 			"totalAnalysts": 54
 		}

@@ -120,8 +120,8 @@ export interface ScreenerStock {
 type EngineKey = 'fPERG' | 'tPERG' | 'fEVG' | 'fFREG' | 'fANIG' | 'fCFG';
 
 export const ENGINE_THRESHOLDS: Record<EngineKey, number> = {
-	fPERG: 1.0,
-	tPERG: 1.0,
+	fPERG: 1,
+	tPERG: 1,
 	fEVG: 0.8,
 	fFREG: 0.8,
 	fANIG: 0.8,

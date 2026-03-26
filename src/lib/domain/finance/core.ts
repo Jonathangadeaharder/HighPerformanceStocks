@@ -11,7 +11,8 @@
 export function parsePercent(value: string | number | null | undefined): number | null {
 	if (value == null) return null;
 
-	const match = String(value).match(/-?\d+(?:\.\d+)?/);
+	const re = /-?\\d+(?:\\.\\d+)?/;
+	const match = re.exec(String(value));
 	return match ? Number.parseFloat(match[0]) : null;
 }
 
@@ -19,16 +20,17 @@ export function parsePercent(value: string | number | null | undefined): number 
  * Extracts a numeric price from a string (e.g., "$1,200.50" -> 1200.5)
  */
 export function parseDisplayPrice(value: string | number | null | undefined): number | null {
-	if (value == null) return null;
+	if (value == null || typeof value !== 'string') return null;
 
-	const cleaned = String(value).replace(/[^0-9.]/g, '');
-	if ((cleaned.match(/\./g) || []).length > 1) return null;
+	const cleaned = value.replaceAll(/[^0-9.]/g, '');
+	const dotsMatch = cleaned.match(/\\./g);
+	if (!cleaned || (dotsMatch && dotsMatch.length > 1)) return null;
 
 	const parsedNumber = Number.parseFloat(cleaned);
 	if (Number.isNaN(parsedNumber)) return null;
 
-	// Handle pence (p) if detected at end of string
-	if (/\d\s*p$/i.test(String(value))) return parsedNumber / 100;
+	// Handle pence (p) if detected at end of string without space needed
+	if (/\\d\\s*p$/i.test(value.trim())) return parsedNumber / 100;
 
 	return parsedNumber;
 }
@@ -42,7 +44,7 @@ interface ForwardReturnParams {
 /**
  * Calculate 1-year forward expected return.
  */
-export function calcForwardReturn({ currentPrice, targetPrice }: ForwardReturnParams): number {
+export function calcForwardReturn({ currentPrice, targetPrice, dividendYieldPct = 0 }: ForwardReturnParams): number {
 	if (currentPrice <= 0) {
 		throw new Error('calcForwardReturn: currentPrice must be positive');
 	}
@@ -50,7 +52,7 @@ export function calcForwardReturn({ currentPrice, targetPrice }: ForwardReturnPa
 		throw new Error('calcForwardReturn: targetPrice must be positive');
 	}
 
-	return ((targetPrice - currentPrice) / currentPrice) * 100;
+	return ((targetPrice - currentPrice) / currentPrice) * 100 + dividendYieldPct;
 }
 
 interface ForwardScenariosParams {

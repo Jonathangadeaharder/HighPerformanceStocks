@@ -4,6 +4,8 @@
 	"group": "Financials & Alt Assets",
 	"cyclical": true,
 	"confidence": "high",
+	"bullCase": "Crypto adoption goes mainstream, launching Coinbase’s trading volume and institutional custody revenue to new highs.",
+	"bearCase": "Regulatory crackdowns or a prolonged crypto winter could severely hit transaction revenues and user engagement.",
 	"confidenceReason": "Dominant US cryptocurrency exchange platform. Massively exposed to crypto volume cycles, but acting as the 'picks and shovels' monopoly of the US crypto market. Huge operating leverage upside during bull regimes.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
@@ -22,7 +24,7 @@
 	"valuation": {
 		"trailingPE": 47.8,
 		"forwardPE": 30.8,
-		"evFcf": 33.9,
+		"evFcf": 34,
 		"evEbitda": 26.4
 	},
 	"metrics": {
@@ -93,7 +95,7 @@
 		}
 	},
 	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
-	"lastUpdated": "2026-03-25T23:03:47.499Z",
+	"lastUpdated": "2026-03-26T00:02:44.526Z",
 	"intrinsicValue": {
 		"dcf": 20.66,
 		"date": "2026-03-25",

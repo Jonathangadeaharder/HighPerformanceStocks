@@ -212,6 +212,7 @@ export interface DashboardCounts {
 
 export interface DashboardHurdles {
 	etfCagr: number;
+	bearFloor: number;
 }
 
 export interface DashboardData {

@@ -4,20 +4,20 @@
 	"group": "Cybersecurity",
 	"confidence": "medium",
 	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
-	"marketCap": "$24.4B USD",
-	"sharpeRatio": 1.32,
-	"expectedCAGR": "9% - 121%",
+	"marketCap": "$22.4B USD",
+	"sharpeRatio": 1.62,
+	"expectedCAGR": "18% - 140%",
 	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 33,
+		"forwardPE": 30.4,
 		"pegRatio": null,
-		"evEbitda": -334.1,
-		"evFcf": 22.3
+		"evEbitda": -305.4,
+		"evFcf": 20.3
 	},
 	"metrics": {
 		"fcfMargin": "~34%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"roic": null,
 		"roe": "-3.6%",
 		"netDebtEbitda": "Net cash",
@@ -26,7 +26,7 @@
 	"targetPrice": "$234.79",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$151.47",
+	"currentPrice": "$139.44",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$234.79"
@@ -36,34 +36,34 @@
 		"epsGrowth": "24%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "55%",
-			"bull": "121%"
+			"bear": "18%",
+			"base": "68%",
+			"bull": "140%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-21T00:31:52.730Z",
+	"lastUpdated": "2026-03-26T00:03:03.958Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.37,
+		"score": 1.26,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "Forward P/E",
-			"multiple": 33,
+			"multiple": 30.4,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 151.47,
-				"price6mAgo": 291.57,
-				"price1mAgo": 143.28,
-				"low3m": 140.56,
-				"return6m": -48.1,
-				"return1m": 5.7,
-				"near3mLow": false
+				"pass": false,
+				"price": 139.44,
+				"price6mAgo": 294.65,
+				"price1mAgo": 167.36,
+				"low3m": 138.85,
+				"return6m": -52.7,
+				"return1m": -16.7,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -83,7 +83,7 @@
 		"totalScore": 14.77,
 		"raw": {
 			"avgSurprisePct": 11.45,
-			"netInsiderShares": 4251,
+			"netInsiderShares": 4074,
 			"instFlowTrend": "positive",
 			"upRevisions": 41,
 			"downRevisions": 0,

@@ -25,7 +25,7 @@ function isFreshMarketTime(
 ): boolean {
 	if (!timeValue) return false;
 	const ageMs = Date.now() - new Date(timeValue).getTime();
-	return ageMs >= 0 && ageMs <= maxAgeDays * 86400000;
+	return ageMs >= 0 && ageMs <= maxAgeDays * 86_400_000;
 }
 
 function staleResult(
@@ -79,7 +79,7 @@ async function tryChartFallback(
 	weight: number
 ): Promise<VolComponent | null> {
 	const now = new Date();
-	const tenDaysAgo = new Date(now.getTime() - 10 * 86400000);
+	const tenDaysAgo = new Date(now.getTime() - 10 * 86_400_000);
 	const chart = await yahooFinance.chart(symbol, {
 		period1: tenDaysAgo,
 		period2: now,
@@ -215,16 +215,63 @@ async function fetchVolIndexWithFallback(
 	};
 }
 
+export async function fetchUrthOptionsFallback(): Promise<WorldVolSignal | null> {
+	try {
+		const result = await yahooFinance.options('URTH');
+		const optionsData = result.options?.[0];
+		const calls = optionsData?.calls;
+		const puts = optionsData?.puts;
+		const underlyingPrice = result.quote.regularMarketPrice ?? 0;
+		
+		if (calls && puts && underlyingPrice > 0 && calls.length > 0 && puts.length > 0) {
+			interface OptionContract { strike?: number, impliedVolatility?: number }
+			const closestCall = calls.reduce((prev: OptionContract, curr: OptionContract) => 
+				Math.abs((curr.strike || 0) - underlyingPrice) < Math.abs((prev.strike || 0) - underlyingPrice) ? curr : prev
+			, calls[0] as OptionContract);
+			const closestPut = puts.reduce((prev: OptionContract, curr: OptionContract) => 
+				Math.abs((curr.strike || 0) - underlyingPrice) < Math.abs((prev.strike || 0) - underlyingPrice) ? curr : prev
+			, puts[0] as OptionContract);
+			
+			const callIv = closestCall.impliedVolatility || 0;
+			const putIv = closestPut.impliedVolatility || 0;
+			const ivPct = ((callIv + putIv) / 2) * 100;
+			
+			if (ivPct > 0) {
+				return {
+					available: true,
+					method: 'urth_fallback',
+					source: 'URTH options implied volatility (near ATM)',
+					impliedVol: +ivPct.toFixed(1),
+					action: ivPct < 15 ? 'Buy 2x daily leverage' : (ivPct <= 25 ? 'Hold / do not add 2x' : 'Sell / reduce 2x'),
+					band: ivPct < 15 ? '< 15' : (ivPct <= 25 ? '15-25' : '> 25'),
+					tone: ivPct < 15 ? 'buy' : (ivPct <= 25 ? 'hold' : 'sell'),
+					components: [
+						{ label: 'URTH Call ATM IV', symbol: 'URTH', value: +(callIv * 100).toFixed(1), weight: 0.5, marketTime: null, fresh: true, reason: null },
+						{ label: 'URTH Put ATM IV', symbol: 'URTH', value: +(putIv * 100).toFixed(1), weight: 0.5, marketTime: null, fresh: true, reason: null }
+					],
+					note: 'Degraded fallback using MSCI World ETF options due to unavailable or stale index data.'
+				};
+			}
+		}
+	} catch (error) {
+		console.warn('URTH options fallback fetch failed:', error instanceof Error ? error.message : String(error));
+	}
+	return null;
+}
+
 export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	const [vix, vstoxx] = await Promise.all([
 		fetchVolIndexQuote(VIX_SYMBOL, 'VIX', WORLD_VOL_WEIGHTS.vix),
 		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
 	]);
 
-	if (vix.fresh) {
+	if (vix.fresh && vstoxx.fresh) {
 		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
 		if (compositeSignal) return compositeSignal;
 	}
+
+	const fallback = await fetchUrthOptionsFallback();
+	if (fallback) return fallback;
 
 	const primaryIssues = [vix, vstoxx]
 		.filter((component) => !component.fresh)
@@ -233,6 +280,6 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	return {
 		available: false,
 		source: 'Global developed volatility proxies',
-		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
+		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}). URTH fallback also failed.`
 	};
 }

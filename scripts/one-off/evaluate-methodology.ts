@@ -1,5 +1,5 @@
 import * as fs from 'node:fs';
-import * as path from 'node:path';
+import path from 'node:path';
 
 interface StockData {
     ticker: string;
@@ -19,10 +19,13 @@ const files = fs.readdirSync(STOCK_DIR).filter(f => f.endsWith('.json'));
 const stocks: StockData[] = [];
 
 for (const file of files) {
-    const raw = fs.readFileSync(path.join(STOCK_DIR, file), 'utf-8');
+    const raw = fs.readFileSync(path.join(STOCK_DIR, file), 'utf8');
     try {
         stocks.push(JSON.parse(raw));
-    } catch{}
+    } catch (error) {
+        console.error(`Failed to parse JSON file: ${file}`, error);
+        throw error;
+    }
 }
 
 const mdLines: string[] = [ '# In-Depth Stock Methodology Evaluation', '', 'This document goes stock-for-stock through the data to analyze how our quantitative methodology values each asset, acknowledging where it is highly accurate and where it may introduce flawed heuristics or systemic biases.', ''];
@@ -32,13 +35,13 @@ const cyclicals = stocks.filter(s => s.cyclical);
 const highYield = stocks.filter(s => {
     let dy = 0;
     if (s.metrics?.dividendYield) {
-        dy = parseFloat(String(s.metrics.dividendYield).replace('%',''));
+        dy = Number.parseFloat(String(s.metrics.dividendYield).replace('%',''));
     }
     return dy >= 5 || s.screener?.engine === 'totalReturn';
 });
 const fastGrowth = stocks.filter(s => {
     let gr = 0;
-    if (s.cagrModel?.epsGrowth) gr = parseFloat(String(s.cagrModel.epsGrowth).replace('%',''));
+    if (s.cagrModel?.epsGrowth) gr = Number.parseFloat(String(s.cagrModel.epsGrowth).replace('%',''));
     return gr >= 20 && !s.cyclical;
 });
 const serialAcquirers = stocks.filter(s => s.cagrModel?.basis?.toLowerCase().includes('ebitda') || s.cagrModel?.basis?.toLowerCase().includes('fcf'));
@@ -67,8 +70,8 @@ function generateSection(title: string, group: StockData[], commentary: string, 
         const priceParam = s.currentPrice || 0;
         const targetParam = s.analystTargets?.mean || 0;
         
-        const price = typeof priceParam === 'string' ? parseFloat(String(priceParam).replaceAll(/[^0-9.]/g, '')) : priceParam;
-        const target = typeof targetParam === 'string' ? parseFloat(String(targetParam).replaceAll(/[^0-9.]/g, '')) : targetParam;
+        const price = typeof priceParam === 'string' ? Number.parseFloat(String(priceParam).replaceAll(/[^0-9.]/g, '')) : priceParam;
+        const target = typeof targetParam === 'string' ? Number.parseFloat(String(targetParam).replaceAll(/[^0-9.]/g, '')) : targetParam;
 
         let upside = 0;
         if (Number(price) > 0 && Number(target) > 0) {
