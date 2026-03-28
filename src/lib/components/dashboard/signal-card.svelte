@@ -114,12 +114,17 @@
 			</span>
 		{/if}
 		<span class="spacer"></span>
-		<span class="cagr">
-			{#if kind === 'deploy'}Rank {stock.deploymentRank} ·
-			{/if}Bear/Base/Bull 1Y
-			{stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} /
-			{stock.cagrModel?.scenarios?.bull}
-		</span>
+		<div class="metrics-right">
+			{#if kind === 'deploy'}
+				<div class="rank">Rank {stock.deploymentRank}</div>
+			{/if}
+			<div class="cagr-scenarios">
+				<span class="cagr-label">Bear / Base / Bull 1Y</span>
+				<span class="cagr-values">
+					{stock.cagrModel?.scenarios?.bear} / {stock.cagrModel?.scenarios?.base} / {stock.cagrModel?.scenarios?.bull}
+				</span>
+			</div>
+		</div>
 	</div>
 
 	{#if expanded}
@@ -292,9 +297,33 @@
 	.arrow {
 		color: var(--text-muted);
 	}
-	.cagr {
+	.metrics-right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 0.25rem;
+		text-align: right;
+	}
+	.rank {
 		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--text-primary);
+	}
+	.cagr-scenarios {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		line-height: 1.2;
+	}
+	.cagr-label {
+		font-size: 0.625rem;
+		text-transform: uppercase;
 		color: var(--text-muted);
+	}
+	.cagr-values {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--text-secondary);
 	}
 	.spacer {
 		flex-grow: 1;
