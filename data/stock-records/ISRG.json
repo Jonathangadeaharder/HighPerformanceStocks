@@ -4,29 +4,32 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$166.9B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "-20% - 60%",
+	"marketCap": "$160.8B USD",
+	"sharpeRatio": 0.62,
+	"expectedCAGR": "-16% - 66%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 59.6,
-		"forwardPE": 41.1,
+		"trailingPE": 57.4,
+		"forwardPE": 39.6,
 		"pegRatio": null,
-		"evEbitda": 45.3,
-		"evFcf": 70.9
+		"evEbitda": 43.6,
+		"evFcf": 68.2
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
 		"fcfYield": "~1%",
-		"roic": "~20%",
+		"roic": "2.0%",
 		"roe": "16.7%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%"
+		"ruleOf40": "41%",
+		"beta": "1.68",
+		"revenueGrowth": "18.8%",
+		"interestCoverage": "378.5x"
 	},
 	"targetPrice": "$605.08",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$469.98",
+	"currentPrice": "$452.66",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$605.08"
@@ -36,33 +39,34 @@
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-20%",
-			"base": "29%",
-			"bull": "60%"
+			"bear": "-16%",
+			"base": "34%",
+			"bull": "66%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-26T00:02:50.809Z",
+	"lastUpdated": "2026-03-28T23:02:54.301Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.85,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 3.11,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
-			"multipleType": "Forward P/E",
-			"multiple": 41.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 43.6,
 			"cvStock": 0.031,
-			"riskMultiplier": 0.97
+			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 33.7% (DEPLOY override: base CAGR 34% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 469.98,
-				"price6mAgo": 441.12,
-				"price1mAgo": 506.88,
-				"low3m": 458,
-				"return6m": 6.5,
-				"return1m": -7.3,
+				"price": 452.66,
+				"price6mAgo": 439.22,
+				"price1mAgo": 496.25,
+				"low3m": 451.56,
+				"return6m": 3.1,
+				"return1m": -8.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,7 +78,9 @@
 				"surprise": 11.6,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.83
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -95,5 +101,15 @@
 		"low": 378,
 		"mean": 605.08,
 		"high": 750
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ISRG",
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$614.95",
+	"consensusRating": "Moderate Buy"
 }

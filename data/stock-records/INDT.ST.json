@@ -2,7 +2,7 @@
 	"ticker": "INDT.ST",
 	"name": "Indutrade",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
 	"cagrModel": {
 		"epsGrowth": "15%",
@@ -10,52 +10,56 @@
 		"ttmEPS": 7.03,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "13%",
-			"base": "28%",
-			"bull": "57%"
+			"bear": "14%",
+			"base": "29%",
+			"bull": "58%"
 		}
 	},
-	"currentPrice": "207 SEK",
-	"marketCap": "75.3B SEK",
+	"currentPrice": "206 SEK",
+	"marketCap": "74.9B SEK",
 	"valuation": {
-		"trailingPE": 29.4,
-		"forwardPE": 23.1,
-		"evEbitda": 16.9,
-		"evFcf": 24.4
+		"trailingPE": 29.2,
+		"forwardPE": 22.9,
+		"evEbitda": 16.8,
+		"evFcf": 24.3
 	},
 	"metrics": {
 		"roe": "15.2%",
 		"fcfMargin": "~11%",
-		"fcfYield": "~4%",
+		"fcfYield": "~5%",
 		"netDebtEbitda": "1.5x",
-		"ruleOf40": "9%"
+		"ruleOf40": "9%",
+		"beta": "1.34",
+		"revenueGrowth": "-1.3%",
+		"roic": "4.9%",
+		"interestCoverage": "9.2x"
 	},
 	"consensus": {
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "13% - 57%",
+	"expectedCAGR": "14% - 58%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.51,
+		"engine": "fEVG",
+		"score": 1.12,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 23.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 16.8,
 			"cvStock": 0.051,
-			"riskMultiplier": 0.983
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 206.6,
-				"price6mAgo": 221,
-				"price1mAgo": 233.4,
+				"price": 205.6,
+				"price6mAgo": 216.8,
+				"price1mAgo": 226.2,
 				"low3m": 194,
-				"return6m": -6.5,
-				"return1m": -11.5,
+				"return6m": -5.2,
+				"return1m": -9.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -67,11 +71,13 @@
 				"surprise": -14.7,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.53
 	},
-	"lastUpdated": "2026-03-26T00:02:50.014Z",
+	"lastUpdated": "2026-03-28T23:02:53.062Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.02,
+	"sharpeRatio": 1.05,
 	"qcs": {
 		"earningsScore": 0.14,
 		"flowScore": 0,
@@ -93,5 +99,14 @@
 		"low": 230,
 		"mean": 260.43,
 		"high": 320
-	}
+	},
+	"analystConsensus": {
+		"ticker": "INDT.ST",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

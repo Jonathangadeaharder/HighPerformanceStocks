@@ -5,67 +5,70 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
-	"marketCap": "$547.3B USD",
-	"sharpeRatio": -0.06,
-	"expectedCAGR": "-35% - 39%",
+	"marketCap": "$511.4B USD",
+	"sharpeRatio": 0.15,
+	"expectedCAGR": "-31% - 52%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 48.8,
-		"forwardPE": 31.9,
+		"trailingPE": 45.7,
+		"forwardPE": 30,
 		"pegRatio": null,
-		"evEbitda": 43.1,
-		"evFcf": 48.7
+		"evEbitda": 40.2,
+		"evFcf": 45.5
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "2.5%",
 		"roe": "50.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "38%"
+		"ruleOf40": "38%",
+		"beta": "1.43",
+		"revenueGrowth": "4.9%",
+		"interestCoverage": "47.5x"
 	},
-	"targetPrice": "$1469.86",
+	"targetPrice": "$1466.57",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
-	"currentPrice": "$1393.89",
+	"currentPrice": "$1302.47",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1469.86",
+		"yahoo": "$1466.57",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
-		"ttmEPS": 28.55,
-		"epsGrowth": "26%",
+		"ttmEPS": 28.52,
+		"epsGrowth": "27%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-35%",
-			"base": "6%",
-			"bull": "39%"
+			"bear": "-31%",
+			"base": "14%",
+			"bull": "52%"
 		},
 		"basis": "5yr & 10yr avg PE (~36) (USD-equivalent ADR basis; underlying financials reported in EUR)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:42.779Z",
+	"lastUpdated": "2026-03-28T23:02:45.117Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.24,
+		"engine": "fEVG",
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 26,
-			"multipleType": "Forward P/E",
-			"multiple": 31.9,
+			"growth": 27,
+			"multipleType": "EV/EBITDA",
+			"multiple": 40.2,
 			"cvStock": 0.099,
-			"riskMultiplier": 1.011
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1393.89,
-				"price6mAgo": 951.52,
-				"price1mAgo": 1463.8,
-				"low3m": 1057.44,
-				"return6m": 46.5,
-				"return1m": -4.8,
+				"price": 1302.47,
+				"price6mAgo": 962.61,
+				"price1mAgo": 1423.54,
+				"low3m": 1061.07,
+				"return6m": 35.3,
+				"return1m": -8.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,6 +81,8 @@
 				"quarter": "2025-12"
 			}
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.11,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
@@ -96,8 +101,18 @@
 	},
 	"description": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems.",
 	"analystTargets": {
-		"low": 894.8,
-		"mean": 1469.86,
-		"high": 1925.15
-	}
+		"low": 890.47,
+		"mean": 1466.57,
+		"high": 1960.56
+	},
+	"analystConsensus": {
+		"ticker": "ASML",
+		"strongBuy": 5,
+		"moderateBuy": 7,
+		"hold": 7,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$1482.50",
+	"consensusRating": "Moderate Buy"
 }

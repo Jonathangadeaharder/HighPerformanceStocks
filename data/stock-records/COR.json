@@ -2,61 +2,66 @@
 	"ticker": "COR",
 	"name": "Cencora",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Consolidated oligopoly drug distributor with immense cash flow and repurchase programs.",
 	"bullCase": "Cencora (formerly AmerisourceBergen) has the strongest specialty pharma distribution franchise in the US through its World Courier, ASD Healthcare, and Lash Group subsidiaries. GLP-1 drug distribution volumes provide a new growth vector as obesity drug prescriptions compound. Systematic buybacks reduce float 5-7% annually, driving EPS well above revenue growth.",
 	"bearCase": "Like McKesson, Cencora operates on <1% net margins in a business where drug pricing policy is set by regulators and PBMs. If Medicare Part D restructuring compresses specialty drug reimbursement or GLP-1 list prices fall sharply, Cencora's revenue base shrinks. The business has minimal organic growth levers beyond M&A.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS; ttmEPS reflects GAAP; non-GAAP EPS is significantly higher (~$18-20); CAGR model uses GAAP basis",
-		"ttmEPS": 8.35,
+		"ttmEPS": 8.34,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "6%",
-			"base": "26%",
-			"bull": "39%"
+			"bear": "10%",
+			"base": "32%",
+			"bull": "44%"
 		}
 	},
-	"currentPrice": "$325.08",
-	"marketCap": "$63.2B USD",
+	"currentPrice": "$312.45",
+	"marketCap": "$60.8B USD",
 	"valuation": {
-		"trailingPE": 38.9,
-		"forwardPE": 16.6,
-		"evEbitda": 14.4,
-		"evFcf": 20.7
+		"trailingPE": 37.5,
+		"forwardPE": 15.9,
+		"evEbitda": 13.9,
+		"evFcf": 20
 	},
 	"metrics": {
 		"roe": "133.5%",
 		"fcfMargin": "~1%",
-		"fcfYield": "~5%",
+		"fcfYield": "~6%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "7%"
+		"ruleOf40": "7%",
+		"beta": "0.65",
+		"revenueGrowth": "5.5%",
+		"roic": "6.2%",
+		"interestCoverage": "9.1x"
 	},
 	"consensus": {
 		"yahoo": "$407.92"
 	},
 	"targetPrice": "$407.92",
-	"expectedCAGR": "6% - 39%",
+	"expectedCAGR": "10% - 44%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.06,
-		"signal": "WAIT",
+		"engine": "fEVG",
+		"score": 0.93,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 16.6,
+			"multipleType": "EV/EBITDA",
+			"multiple": 13.9,
 			"cvStock": 0.012,
-			"riskMultiplier": 0.959
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 32% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 325.08,
-				"price6mAgo": 307,
-				"price1mAgo": 366.65,
-				"low3m": 317.19,
-				"return6m": 5.9,
-				"return1m": -11.3,
+				"price": 312.45,
+				"price6mAgo": 308.07,
+				"price1mAgo": 372.65,
+				"low3m": 310.23,
+				"return6m": 1.4,
+				"return1m": -16.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -68,11 +73,13 @@
 				"surprise": 1,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.06
 	},
-	"lastUpdated": "2026-03-26T00:02:44.576Z",
+	"lastUpdated": "2026-03-28T23:02:46.997Z",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 0.69,
+	"sharpeRatio": 0.87,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -92,5 +99,15 @@
 		"low": 340,
 		"mean": 407.92,
 		"high": 447
-	}
+	},
+	"analystConsensus": {
+		"ticker": "COR",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 4,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$403.17"
 }

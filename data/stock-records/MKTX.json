@@ -2,7 +2,7 @@
 	"ticker": "MKTX",
 	"name": "MarketAxess",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "MarketAxess pioneered electronic credit trading and still leads in high-yield and EM bonds. However, Tradeweb has been taking significant market share in investment-grade credit. The recovery thesis rests on defending its HY/EM moat and rebuilding IG share — execution risk is high.",
 	"bullCase": "MarketAxess retains dominant share in high-yield and emerging market bond trading where Tradeweb has less penetration. Portfolio trading volumes are growing rapidly. At 20x forward PE — a historic low — the market is pricing in permanent share loss that may be overstated.",
 	"bearCase": "Tradeweb continues taking IG credit market share and now offers better price discovery through its dealer network. MKTX revenue was essentially flat in 2023-2024. At a current forward PE of 20x on 9% EPS growth, there is limited upside if share losses continue.",
@@ -12,52 +12,56 @@
 		"ttmEPS": 6.65,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "19%",
-			"bull": "53%"
+			"bear": "5%",
+			"base": "20%",
+			"bull": "54%"
 		}
 	},
-	"currentPrice": "$166.11",
-	"marketCap": "$6.2B USD",
+	"currentPrice": "$164.12",
+	"marketCap": "$6.1B USD",
 	"valuation": {
-		"trailingPE": 25,
-		"forwardPE": 18.3,
-		"evEbitda": 13.2,
-		"evFcf": 24.9
+		"trailingPE": 24.7,
+		"forwardPE": 18.1,
+		"evEbitda": 13,
+		"evFcf": 24.6
 	},
 	"metrics": {
 		"roe": "19.4%",
 		"fcfMargin": "~27%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "30%"
+		"ruleOf40": "30%",
+		"beta": "0.97",
+		"revenueGrowth": "3.5%",
+		"roic": "6.6%",
+		"interestCoverage": "27.0x"
 	},
 	"consensus": {
 		"yahoo": "$193.70"
 	},
 	"targetPrice": "$193.70",
-	"expectedCAGR": "4% - 53%",
+	"expectedCAGR": "5% - 54%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.96,
+		"engine": "fCFG",
+		"score": 2.73,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
-			"multipleType": "Forward P/E",
-			"multiple": 18.3,
+			"multipleType": "EV/FCF",
+			"multiple": 24.6,
 			"cvStock": 0.019,
-			"riskMultiplier": 0.964
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 166.11,
-				"price6mAgo": 180.14,
-				"price1mAgo": 184.87,
+				"pass": false,
+				"price": 164.12,
+				"price6mAgo": 177.63,
+				"price1mAgo": 192.05,
 				"low3m": 157.93,
-				"return6m": -7.8,
-				"return1m": -10.1,
-				"near3mLow": false
+				"return6m": -7.6,
+				"return1m": -14.5,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -68,11 +72,13 @@
 				"surprise": 51.4,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.01
 	},
-	"lastUpdated": "2026-03-26T00:02:54.634Z",
+	"lastUpdated": "2026-03-28T23:02:58.862Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.89,
+	"sharpeRatio": 0.93,
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
@@ -92,5 +98,15 @@
 		"low": 169,
 		"mean": 193.7,
 		"high": 250
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MKTX",
+		"strongBuy": 10,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$200.40",
+	"consensusRating": "Hold"
 }

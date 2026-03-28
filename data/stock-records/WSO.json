@@ -2,63 +2,68 @@
 	"ticker": "WSO",
 	"name": "Watsco",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "HVAC distribution serial acquirer. Massive dividend growth, zero debt, ruthless efficiency.",
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.25,
+		"ttmEPS": 12.26,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "16%",
-			"bull": "32%"
+			"bear": "6%",
+			"base": "23%",
+			"bull": "40%"
 		}
 	},
-	"currentPrice": "$367.15",
-	"marketCap": "$14.9B USD",
+	"currentPrice": "$347.20",
+	"marketCap": "$14.1B USD",
 	"valuation": {
-		"trailingPE": 30,
-		"forwardPE": 26.1,
-		"evEbitda": 19.1,
-		"evFcf": 48.5
+		"trailingPE": 28.3,
+		"forwardPE": 24.7,
+		"evEbitda": 18.1,
+		"evFcf": 45.9
 	},
 	"metrics": {
 		"roe": "18.7%",
 		"fcfMargin": "~4%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-6%"
+		"ruleOf40": "-6%",
+		"beta": "1.01",
+		"revenueGrowth": "-10.0%",
+		"roic": "4.1%",
+		"interestCoverage": "28.0x"
 	},
 	"consensus": {
 		"yahoo": "$415.17"
 	},
 	"targetPrice": "$415.17",
-	"expectedCAGR": "1% - 32%",
+	"expectedCAGR": "6% - 40%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.64,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 1.81,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 26.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 18.1,
 			"cvStock": 0.096,
-			"riskMultiplier": 1.01
+			"riskMultiplier": 1
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 367.15,
-				"price6mAgo": 398.01,
-				"price1mAgo": 410.69,
+				"price": 347.2,
+				"price6mAgo": 399.57,
+				"price1mAgo": 410.87,
 				"low3m": 336.82,
-				"return6m": -7.8,
-				"return1m": -10.6,
-				"near3mLow": false
+				"return6m": -13.1,
+				"return1m": -15.5,
+				"near3mLow": true
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 1,
 				"down30d": 5
 			},
@@ -66,11 +71,13 @@
 				"surprise": -11,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.47
 	},
-	"lastUpdated": "2026-03-26T00:03:03.871Z",
+	"lastUpdated": "2026-03-28T23:03:11.594Z",
 	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.36,
+	"sharpeRatio": 0.56,
 	"qcs": {
 		"earningsScore": -3.92,
 		"flowScore": 2.5,
@@ -92,5 +99,15 @@
 		"low": 359,
 		"mean": 415.17,
 		"high": 475
-	}
+	},
+	"analystConsensus": {
+		"ticker": "WSO",
+		"strongBuy": 12,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold",
+	"targetPriceAlternative": "$409.00"
 }

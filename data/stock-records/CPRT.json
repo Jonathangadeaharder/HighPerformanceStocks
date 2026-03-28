@@ -2,7 +2,7 @@
 	"ticker": "CPRT",
 	"name": "Copart",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
 	"cagrModel": {
 		"epsGrowth": "16%",
@@ -10,52 +10,56 @@
 		"ttmEPS": 1.59,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "29%",
-			"bull": "66%"
+			"bear": "-1%",
+			"base": "32%",
+			"bull": "70%"
 		}
 	},
-	"currentPrice": "$33.08",
-	"marketCap": "$32.0B USD",
+	"currentPrice": "$32.43",
+	"marketCap": "$31.4B USD",
 	"valuation": {
-		"trailingPE": 20.8,
-		"forwardPE": 19.7,
-		"evEbitda": 13.8,
-		"evFcf": 26
+		"trailingPE": 20.4,
+		"forwardPE": 19.3,
+		"evEbitda": 13.5,
+		"evFcf": 25.4
 	},
 	"metrics": {
 		"roe": "17.1%",
 		"fcfMargin": "~22%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "19%"
+		"ruleOf40": "19%",
+		"beta": "1.11",
+		"revenueGrowth": "-3.6%",
+		"roic": "6.8%",
+		"interestCoverage": "367.7x"
 	},
 	"consensus": {
 		"yahoo": "$42.67"
 	},
 	"targetPrice": "$42.67",
-	"expectedCAGR": "-3% - 66%",
+	"expectedCAGR": "-1% - 70%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.2,
+		"engine": "fEVG",
+		"score": 0.84,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 16,
-			"multipleType": "Forward P/E",
-			"multiple": 19.7,
+			"multipleType": "EV/EBITDA",
+			"multiple": 13.5,
 			"cvStock": 0.037,
-			"riskMultiplier": 0.974
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 33.08,
-				"price6mAgo": 44.87,
-				"price1mAgo": 37.15,
+				"price": 32.43,
+				"price6mAgo": 44.6,
+				"price1mAgo": 38.31,
 				"low3m": 32.2,
-				"return6m": -26.3,
-				"return1m": -11,
+				"return6m": -27.3,
+				"return1m": -15.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -67,11 +71,13 @@
 				"surprise": -8.1,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.21
 	},
-	"lastUpdated": "2026-03-26T00:02:45.340Z",
+	"lastUpdated": "2026-03-28T23:02:47.757Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 1,
+	"sharpeRatio": 1.11,
 	"qcs": {
 		"earningsScore": 2.98,
 		"flowScore": 5,
@@ -93,5 +99,15 @@
 		"low": 32,
 		"mean": 42.67,
 		"high": 55
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CPRT",
+		"strongBuy": 6,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$44.40",
+	"consensusRating": "Hold"
 }

@@ -5,29 +5,32 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
-	"marketCap": "$86.1B USD",
-	"sharpeRatio": 0.35,
-	"expectedCAGR": "-14% - 67%",
-	"expectedVolatility": "~62%",
+	"marketCap": "$83.0B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "-10% - 73%",
+	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 32.1,
-		"forwardPE": 18.1,
+		"trailingPE": 30.9,
+		"forwardPE": 17.4,
 		"pegRatio": 1.5,
-		"evEbitda": 33.6,
-		"evFcf": 61.1
+		"evEbitda": 32.4,
+		"evFcf": 59
 	},
 	"metrics": {
 		"fcfMargin": "~18%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "2.1%",
 		"roe": "19.3%",
 		"netDebtEbitda": "0.8x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "1.99",
+		"revenueGrowth": "22.1%",
+		"interestCoverage": "10.0x"
 	},
 	"targetPrice": "$120.50",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$98.45",
+	"currentPrice": "$94.88",
 	"consensus": {
 		"tipranks": "$122",
 		"yahoo": "$120.50",
@@ -38,33 +41,34 @@
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "22%",
-			"bull": "67%"
+			"bear": "-10%",
+			"base": "27%",
+			"bull": "73%"
 		},
 		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-03-26T00:02:54.607Z",
+	"lastUpdated": "2026-03-28T23:02:59.008Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.6,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.08,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 30,
-			"multipleType": "Forward P/E",
-			"multiple": 18.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 32.4,
 			"cvStock": 0.074,
-			"riskMultiplier": 0.996
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 27% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 98.45,
-				"price6mAgo": 83.17,
-				"price1mAgo": 79.29,
+				"price": 94.88,
+				"price6mAgo": 82.39,
+				"price1mAgo": 80.86,
 				"low3m": 70.69,
-				"return6m": 18.4,
-				"return1m": 24.2,
+				"return6m": 15.2,
+				"return1m": 17.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -77,7 +81,8 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.58
 	},
 	"qcs": {
 		"earningsScore": 0.63,
@@ -86,7 +91,7 @@
 		"totalScore": 6.95,
 		"raw": {
 			"avgSurprisePct": 1.17,
-			"netInsiderShares": 519871,
+			"netInsiderShares": 472871,
 			"instFlowTrend": "positive",
 			"upRevisions": 10,
 			"downRevisions": 0,
@@ -98,5 +103,15 @@
 		"low": 85,
 		"mean": 120.5,
 		"high": 164
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MRVL",
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$117.24",
+	"consensusRating": "Moderate Buy"
 }

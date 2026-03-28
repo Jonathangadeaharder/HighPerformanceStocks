@@ -3,7 +3,7 @@
 	"name": "Kazatomprom",
 	"group": "Energy & Infrastructure",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "World's largest uranium producer but carries geopolitical risk.",
 	"targetPrice": "$95.00",
 	"bullCase": "Lowest cost producer benefiting from structural uranium deficits.",
@@ -14,33 +14,32 @@
 		"dividendYield": "0%",
 		"ttmEPS": 6.16
 	},
-	"currentPrice": "$80.50",
-	"marketCap": "$20.9B USD",
+	"currentPrice": "$80",
+	"marketCap": "$20.7B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
-	"expectedVolatility": "~47%",
+	"expectedVolatility": "~46%",
 	"screener": {
-		"engine": "totalReturn",
-		"score": 1.5,
+		"engine": "fEVG",
+		"score": 1.88,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 8,
-			"dividendYield": 0,
-			"debtToEquity": 0,
-			"debtPenalty": false,
-			"rawReturn": 8
+			"multipleType": "EV/EBITDA",
+			"multiple": 0.3,
+			"cvStock": 0.08,
+			"riskMultiplier": 50
 		},
-		"note": "(CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 80.5,
-				"price6mAgo": 50.7,
-				"price1mAgo": 81.3,
-				"low3m": 53.1,
-				"return6m": 58.8,
-				"return1m": -1,
+				"price": 80,
+				"price6mAgo": 52.2,
+				"price1mAgo": 85.9,
+				"low3m": 54,
+				"return6m": 53.3,
+				"return1m": -6.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -48,11 +47,12 @@
 				"up30d": 0,
 				"down30d": 0
 			}
-		}
+		},
+		"note": "Used benchmark CV (CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T00:02:50.876Z",
+	"lastUpdated": "2026-03-28T23:02:54.467Z",
 	"valuation": {
-		"trailingPE": 13.1,
+		"trailingPE": 13,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -78,5 +78,14 @@
 			"downRevisions": 0,
 			"totalAnalysts": 1
 		}
-	}
+	},
+	"analystConsensus": {
+		"ticker": "KAP.IL",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

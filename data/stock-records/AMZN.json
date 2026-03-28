@@ -2,7 +2,7 @@
 	"ticker": "AMZN",
 	"name": "Amazon",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Dual monopolies in e-commerce logistics and cloud computing (AWS). Currently undergoing massive FCF margin inflection.",
 	"cagrModel": {
 		"epsGrowth": "22%",
@@ -10,55 +10,60 @@
 		"ttmEPS": 7.17,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-17%",
-			"base": "32%",
-			"bull": "70%"
+			"bear": "-12%",
+			"base": "41%",
+			"bull": "81%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$211.71",
-	"marketCap": "$2272.7B USD",
+	"currentPrice": "$199.34",
+	"marketCap": "$2139.9B USD",
 	"valuation": {
-		"trailingPE": 29.5,
-		"forwardPE": 22.6,
-		"evEbitda": 16,
-		"evFcf": 97.9
+		"trailingPE": 27.8,
+		"forwardPE": 21.2,
+		"evEbitda": 15.1,
+		"evFcf": 92.3
 	},
 	"metrics": {
 		"roe": "22.3%",
 		"fcfMargin": "~3%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "0.4x",
-		"ruleOf40": "17%"
+		"ruleOf40": "17%",
+		"beta": "1.42",
+		"revenueGrowth": "13.6%",
+		"roic": "6.4%",
+		"interestCoverage": "14.8x"
 	},
 	"consensus": {
-		"yahoo": "$280.47"
+		"yahoo": "$281.34"
 	},
-	"targetPrice": "$280.47",
-	"expectedCAGR": "-17% - 70%",
+	"targetPrice": "$281.34",
+	"expectedCAGR": "-12% - 81%",
 	"expectedVolatility": "~35%",
-	"sharpeRatio": 0.63,
+	"sharpeRatio": 0.86,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.08,
-		"signal": "WAIT",
+		"engine": "fCFG",
+		"score": 4.52,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 22,
-			"multipleType": "Forward P/E",
-			"multiple": 22.6,
-			"cvStock": 0.173,
-			"riskMultiplier": 1.056
+			"multipleType": "EV/FCF",
+			"multiple": 92.3,
+			"cvStock": 0.172,
+			"riskMultiplier": 1.078
 		},
+		"note": "hasLikelyValueFloor: analyst upside 41.1% (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.71,
-				"price6mAgo": 219.78,
-				"price1mAgo": 207.92,
+				"price": 199.34,
+				"price6mAgo": 222.17,
+				"price1mAgo": 208.39,
 				"low3m": 196,
-				"return6m": -3.7,
-				"return1m": 1.8,
-				"near3mLow": false
+				"return6m": -10.3,
+				"return1m": -4.3,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -69,34 +74,46 @@
 				"surprise": -0.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.04
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-26T00:02:41.658Z",
+	"lastUpdated": "2026-03-28T23:02:44.066Z",
 	"intrinsicValue": {
-		"dcf": 127.9,
-		"date": "2026-03-25",
-		"discount": -40
+		"dcf": 127.68,
+		"date": "2026-03-28",
+		"discount": -36
 	},
 	"qcs": {
-		"earningsScore": 3.93,
+		"earningsScore": 3.95,
 		"flowScore": 0,
-		"revisionsScore": -0.34,
-		"totalScore": 3.59,
+		"revisionsScore": -0.33,
+		"totalScore": 3.62,
 		"raw": {
 			"avgSurprisePct": 16.98,
 			"netInsiderShares": 1173452,
 			"instFlowTrend": "negative",
 			"upRevisions": 2,
 			"downRevisions": 6,
-			"totalAnalysts": 58
+			"totalAnalysts": 60
 		}
 	},
 	"description": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally.",
 	"analystTargets": {
 		"low": 175,
-		"mean": 280.47,
+		"mean": 281.34,
 		"high": 360
-	}
+	},
+	"analystConsensus": {
+		"ticker": "AMZN",
+		"strongBuy": 6,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$286.66",
+	"consensusRating": "Moderate Buy"
 }

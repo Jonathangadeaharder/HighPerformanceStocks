@@ -3,7 +3,7 @@
 	"name": "Credo Technology Group",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "High-speed connectivity solutions for data centers, AEC cables taking share in AI networks.",
 	"cagrModel": {
 		"epsGrowth": "28%",
@@ -11,54 +11,59 @@
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "20%",
-			"base": "92%",
-			"bull": "150%"
+			"bear": "31%",
+			"base": "109%",
+			"bull": "173%"
 		}
 	},
-	"currentPrice": "$103.91",
-	"marketCap": "$19.2B USD",
+	"currentPrice": "$95.24",
+	"marketCap": "$17.6B USD",
 	"valuation": {
-		"trailingPE": 57.1,
-		"forwardPE": 22,
-		"evEbitda": 51.1,
-		"evFcf": 103.8
+		"trailingPE": 52.3,
+		"forwardPE": 20.2,
+		"evEbitda": 46.5,
+		"evFcf": 94.5
 	},
 	"metrics": {
 		"roe": "27.5%",
 		"fcfMargin": "~16%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "218%"
+		"ruleOf40": "218%",
+		"beta": "2.68",
+		"revenueGrowth": "201.5%",
+		"roic": "2.1%",
+		"interestCoverage": "391.3x"
 	},
 	"consensus": {
 		"yahoo": "$199.38"
 	},
 	"targetPrice": "$199.38",
-	"expectedCAGR": "20% - 150%",
+	"expectedCAGR": "31% - 173%",
 	"expectedVolatility": "~83%",
-	"sharpeRatio": 0.97,
+	"sharpeRatio": 1.17,
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.76,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.66,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 28,
-			"multipleType": "Forward P/E",
-			"multiple": 22,
+			"multipleType": "EV/EBITDA",
+			"multiple": 46.5,
 			"cvStock": 0.034,
-			"riskMultiplier": 0.972
+			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 109.3% + QCS 11.56 (DEPLOY override: base CAGR 109% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 103.91,
-				"price6mAgo": 142.93,
-				"price1mAgo": 114.48,
+				"price": 95.24,
+				"price6mAgo": 146.01,
+				"price1mAgo": 114.22,
 				"low3m": 92.6,
-				"return6m": -27.3,
-				"return1m": -9.2,
-				"near3mLow": false
+				"return6m": -34.8,
+				"return1m": -16.6,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -70,9 +75,10 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.72
 	},
-	"lastUpdated": "2026-03-26T00:02:45.346Z",
+	"lastUpdated": "2026-03-28T23:02:47.765Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
@@ -94,5 +100,15 @@
 		"low": 125,
 		"mean": 199.38,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CRDO",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$206.33",
+	"consensusRating": "Hold"
 }

@@ -2,32 +2,34 @@
 	"ticker": "APO",
 	"name": "Apollo Global Management",
 	"group": "Financials & Alt Assets",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
-	"marketCap": "$63.7B USD",
-	"sharpeRatio": 0.75,
-	"expectedCAGR": "8% - 67%",
+	"marketCap": "$62.9B USD",
+	"sharpeRatio": 0.78,
+	"expectedCAGR": "9% - 69%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 11.9,
-		"forwardPE": 10.2,
+		"trailingPE": 11.8,
+		"forwardPE": 10,
 		"pegRatio": null,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "6.57%",
+		"roic": "10.8%",
 		"roe": "14.7%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
 		"aum": "$938B",
-		"aumGrowth": "25% YoY"
+		"aumGrowth": "25% YoY",
+		"beta": "1.64",
+		"revenueGrowth": "87.7%"
 	},
 	"targetPrice": "$154.29",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$109.80",
+	"currentPrice": "$108.42",
 	"consensus": {
 		"tipranks": "$165",
 		"yahoo": "$154.29",
@@ -38,34 +40,35 @@
 		"epsGrowth": "17%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "43%",
-			"bull": "67%"
+			"bear": "9%",
+			"base": "44%",
+			"bull": "69%"
 		},
 		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:42.622Z",
+	"lastUpdated": "2026-03-28T23:02:44.955Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.75,
-		"signal": "PASS",
+		"score": 0.76,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "P/ANI",
-			"multiple": 13.1,
+			"multiple": 12.9,
 			"cvStock": 0.035,
-			"riskMultiplier": 0.973
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 44% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 109.8,
-				"price6mAgo": 137.63,
-				"price1mAgo": 114.4,
+				"price": 108.42,
+				"price6mAgo": 138.44,
+				"price1mAgo": 106.45,
 				"low3m": 99.56,
-				"return6m": -20.2,
-				"return1m": -4,
+				"return6m": -21.7,
+				"return1m": 1.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.58
+		"secondaryScore": 0.59
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -100,5 +103,15 @@
 		"low": 116,
 		"mean": 154.29,
 		"high": 181
-	}
+	},
+	"analystConsensus": {
+		"ticker": "APO",
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$158.13"
 }

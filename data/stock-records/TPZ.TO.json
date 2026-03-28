@@ -2,7 +2,7 @@
 	"ticker": "TPZ.TO",
 	"name": "Topaz Energy",
 	"group": "Energy & Infrastructure",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Canadian royalty tied to natural gas and LNG buildout. High yield + growth.",
 	"cagrModel": {
 		"epsGrowth": "10%",
@@ -10,51 +10,55 @@
 		"ttmEPS": 0.83,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "12%",
-			"bull": "20%"
+			"bear": "-4%",
+			"base": "10%",
+			"bull": "18%"
 		}
 	},
-	"currentPrice": "C$31.05",
-	"marketCap": "C$4.8B",
+	"currentPrice": "C$31.67",
+	"marketCap": "C$4.9B",
 	"valuation": {
-		"trailingPE": 37.4,
-		"forwardPE": 30.1,
-		"evEbitda": 16.1,
-		"evFcf": 46.4
+		"trailingPE": 38.2,
+		"forwardPE": 30.7,
+		"evEbitda": 16.4,
+		"evFcf": 47.2
 	},
 	"metrics": {
 		"roe": "8.3%",
 		"fcfMargin": "~34%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "1.7x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "0.53",
+		"revenueGrowth": "5.5%",
+		"roic": "5.6%",
+		"interestCoverage": "10.6x"
 	},
 	"consensus": {
 		"yahoo": "C$33.67"
 	},
 	"targetPrice": "C$33.67",
-	"expectedCAGR": "-3% - 20%",
+	"expectedCAGR": "-4% - 18%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.87,
-		"signal": "FAIL",
+		"engine": "totalReturn",
+		"score": 0.87,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 30.1,
-			"cvStock": 0,
-			"riskMultiplier": 0.952
+			"dividendYield": 4,
+			"debtToEquity": 38,
+			"debtPenalty": true,
+			"rawReturn": 13.8
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 31.05,
-				"price6mAgo": 26.76,
-				"price1mAgo": 31.05,
+				"price": 31.67,
+				"price6mAgo": 26.58,
+				"price1mAgo": 31.81,
 				"low3m": 26,
-				"return6m": 16,
-				"return1m": 0,
+				"return6m": 19.1,
+				"return1m": -0.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -68,9 +72,9 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T00:03:00.945Z",
+	"lastUpdated": "2026-03-28T23:03:07.973Z",
 	"expectedVolatility": "~23%",
-	"sharpeRatio": 0.17,
+	"sharpeRatio": 0.11,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -92,5 +96,14 @@
 		"low": 29,
 		"mean": 33.67,
 		"high": 36
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TPZ.TO",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Unknown"
 }

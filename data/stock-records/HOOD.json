@@ -3,91 +3,75 @@
 	"name": "Robinhood Markets, Inc.",
 	"group": "Financials & Alt Assets",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "low",
 	"bullCase": "Robinhood successfully captures a broader retail market, expands its financial services ecosystem, and drives recurring revenue.",
 	"bearCase": "Retail engagement drops significantly or payment for order flow is heavily restricted by regulators.",
 	"confidenceReason": "Commission-free stock and crypto trading app aggressively taking market share among gen-z and millennials. Diversifying revenue streams with subscriptions (Gold) and retirement accounts. Sensitive to retail engagement cycles.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "19%",
-		"ttmEPS": 2.27,
+		"epsGrowth": "18%",
+		"ttmEPS": 2.26,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "24%",
-			"base": "71%",
-			"bull": "148%"
+			"bear": "-24%",
+			"base": "80%",
+			"bull": "173%"
 		}
 	},
-	"currentPrice": "$72.54",
-	"marketCap": "$65.3B USD",
+	"currentPrice": "$66.02",
+	"marketCap": "$59.4B USD",
 	"valuation": {
-		"trailingPE": 31.9,
-		"forwardPE": 26.4
+		"trailingPE": 29.2,
+		"forwardPE": 23.9
 	},
 	"metrics": {
-		"roe": "22.0%"
+		"roe": "22.0%",
+		"beta": "2.48",
+		"revenueGrowth": "26.5%",
+		"roic": "2.8%"
 	},
 	"consensus": {
-		"yahoo": "$124.39"
+		"yahoo": "$119.09"
 	},
-	"targetPrice": "$124.39",
+	"targetPrice": "$119.09",
 	"analystTargets": {
-		"low": 90,
-		"mean": 124.39,
+		"low": 50,
+		"mean": 119.09,
 		"high": 180
 	},
-	"expectedCAGR": "24% - 148%",
+	"expectedCAGR": "-24% - 173%",
 	"expectedVolatility": "~70%",
-	"sharpeRatio": 1.16,
+	"sharpeRatio": 1,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.5,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 19,
-			"multipleType": "Forward P/E",
-			"multiple": 26.4,
-			"cvStock": 0.213,
-			"riskMultiplier": 1.08
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 72.54,
-				"price6mAgo": 121.78,
-				"price1mAgo": 79.45,
-				"low3m": 68.58,
-				"return6m": -40.4,
-				"return1m": -8.7,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 1
-			},
-			"earningsSurprise": {
-				"surprise": 3.8,
-				"quarter": "2025-12"
-			}
-		},
-		"note": "(CYCLICAL EPS)"
+		"engine": "fEVG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative EV/EBITDA"
 	},
 	"qcs": {
-		"earningsScore": 3.07,
+		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.33,
-		"totalScore": 2.74,
+		"revisionsScore": -0.29,
+		"totalScore": 4.71,
 		"raw": {
 			"avgSurprisePct": 16.34,
 			"netInsiderShares": 216758,
 			"instFlowTrend": "negative",
 			"upRevisions": 0,
 			"downRevisions": 1,
-			"totalAnalysts": 15
+			"totalAnalysts": 17
 		}
 	},
 	"description": "Robinhood Markets, Inc. operates financial services platform in the United States.",
-	"lastUpdated": "2026-03-26T00:02:49.145Z"
+	"lastUpdated": "2026-03-28T23:02:52.192Z",
+	"analystConsensus": {
+		"ticker": "HOOD",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$117.49",
+	"consensusRating": "Moderate Buy"
 }

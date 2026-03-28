@@ -30,13 +30,16 @@ export interface YahooSummary {
 	earningsHistory?: EarningsHistory;
 	financialData?: {
 		debtToEquity?: number;
+		targetMeanPrice?: number;
 	};
 }
 
 export interface HistoricalData {
 	price6mAgo?: number;
+	price3mAgo?: number;
 	price1mAgo?: number;
 	low3m?: number;
+	exAnteVol?: number;
 }
 
 export interface GrowthBranch {
@@ -89,7 +92,8 @@ export interface RealityChecks {
 export interface ScreenerResult {
 	engine: string;
 	score?: number | null;
-	signal: 'PASS' | 'FAIL' | 'WAIT' | 'REJECTED' | 'NO_DATA';
+	// DEPLOY is a manual override stronger than PASS: QCS ≥ 8 + bear CAGR ≥ 20% triggers mandatory deployment.
+	signal: 'DEPLOY' | 'FLAG FOR MANUAL REVIEW' | 'PASS' | 'FAIL' | 'WAIT' | 'REJECTED' | 'NO_DATA';
 	inputs?: ScreenerInputs;
 	note?: string;
 	secondaryEngine?: string;
@@ -99,25 +103,52 @@ export interface ScreenerResult {
 
 export interface ScreenerStock {
 	cagrModel?: {
-		ttmEPS?: number;
+		ttmEPS?: number | null;
 		epsGrowth?: string;
 		dividendYield?: string;
 		scenarios?: {
 			base?: string;
+			bear?: string;
 		};
 		basis?: string;
 	};
 	valuation?: {
 		forwardPE?: number;
+		/** Used by the P/E divergence guard in applyRealityChecks */
+		trailingPE?: number;
 		evEbitda?: number | null;
 		evFcf?: number | null;
 		priceToFRE?: number;
 	};
+	/**
+	 * Operational metrics used by detectGrowthBranch for automatic engine routing.
+	 * - netDebtEbitda: parsed to detect leveraged industrials (→ fEVG when > 1.5x)
+	 * - fcfMargin: parsed to detect high-FCF SBC-distorted platforms (→ fCFG when ≥ 25%)
+	 */
+	metrics?: {
+		netDebtEbitda?: string;
+		fcfMargin?: string;
+		roic?: string | null;
+		roe?: string;
+		beta?: string;
+		interestCoverage?: string;
+	};
 	group?: string;
 	cyclical?: boolean;
+	bearCase?: string;
+	qcs?: {
+		totalScore?: number;
+	};
+	analystTargets?: {
+		mean?: number;
+	};
+	targetPrice?: string;
 }
 
-type EngineKey = 'fPERG' | 'tPERG' | 'fEVG' | 'fFREG' | 'fANIG' | 'fCFG';
+// EngineKey covers quantitative engines + manual valuation frameworks:
+// NAV = Net Asset Value (holding companies, conglomerates like INVE-B.ST)
+// P/B = Price-to-Book (financials, insurance with book-value-driven returns)
+type EngineKey = 'fPERG' | 'tPERG' | 'fEVG' | 'fFREG' | 'fANIG' | 'fCFG' | 'NAV' | 'P/B' | 'DISQUALIFIED';
 
 export const ENGINE_THRESHOLDS: Record<EngineKey, number> = {
 	fPERG: 1,
@@ -125,5 +156,8 @@ export const ENGINE_THRESHOLDS: Record<EngineKey, number> = {
 	fEVG: 0.8,
 	fFREG: 0.8,
 	fANIG: 0.8,
-	fCFG: 0.8
+	fCFG: 0.8,
+	NAV: 1, // NAV-based: score = Price/NAV; pass if at or below NAV
+	'P/B': 1, // P/B-based: score = P/B relative to growth-normalized threshold
+	DISQUALIFIED: 0
 };

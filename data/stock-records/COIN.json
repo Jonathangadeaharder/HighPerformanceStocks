@@ -3,7 +3,7 @@
 	"name": "Coinbase Global, Inc.",
 	"group": "Financials & Alt Assets",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "cut",
 	"bullCase": "Crypto adoption goes mainstream, launching Coinbase’s trading volume and institutional custody revenue to new highs.",
 	"bearCase": "Regulatory crackdowns or a prolonged crypto winter could severely hit transaction revenues and user engagement.",
 	"confidenceReason": "Dominant US cryptocurrency exchange platform. Massively exposed to crypto volume cycles, but acting as the 'picks and shovels' monopoly of the US crypto market. Huge operating leverage upside during bull regimes.",
@@ -14,59 +14,63 @@
 		"ttmEPS": 3.79,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-34%",
-			"base": "39%",
-			"bull": "143%"
+			"bear": "-26%",
+			"base": "56%",
+			"bull": "173%"
 		}
 	},
-	"currentPrice": "$181.10",
-	"marketCap": "$48.8B USD",
+	"currentPrice": "$161.14",
+	"marketCap": "$43.5B USD",
 	"valuation": {
-		"trailingPE": 47.8,
-		"forwardPE": 30.8,
-		"evFcf": 34,
-		"evEbitda": 26.4
+		"trailingPE": 42.5,
+		"forwardPE": 27.4,
+		"evFcf": 29.9,
+		"evEbitda": 23.2
 	},
 	"metrics": {
 		"roe": "10.1%",
 		"fcfMargin": "~19%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-3%"
+		"ruleOf40": "-3%",
+		"beta": "3.71",
+		"revenueGrowth": "-22.2%",
+		"roic": "6.1%",
+		"interestCoverage": "3.9x"
 	},
 	"consensus": {
-		"yahoo": "$252.24"
+		"yahoo": "$251.04"
 	},
-	"targetPrice": "$252.24",
+	"targetPrice": "$251.04",
 	"analystTargets": {
 		"low": 120,
-		"mean": 252.24,
+		"mean": 251.04,
 		"high": 440
 	},
-	"expectedCAGR": "-34% - 143%",
+	"expectedCAGR": "-26% - 173%",
 	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.93,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.04,
+		"engine": "fEVG",
+		"score": 0.9,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 30.8,
+			"multipleType": "EV/EBITDA",
+			"multiple": 23.2,
 			"cvStock": 0.244,
-			"riskMultiplier": 1.099
+			"riskMultiplier": 1.312
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 181.1,
-				"price6mAgo": 312.59,
-				"price1mAgo": 181.06,
+				"price": 161.14,
+				"price6mAgo": 333.99,
+				"price1mAgo": 185.24,
 				"low3m": 139.36,
-				"return6m": -42.1,
-				"return1m": 0,
+				"return6m": -51.8,
+				"return1m": -13,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +82,9 @@
 				"surprise": -364.9,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.06
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -95,10 +101,20 @@
 		}
 	},
 	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
-	"lastUpdated": "2026-03-26T00:02:44.526Z",
+	"lastUpdated": "2026-03-28T23:02:46.958Z",
 	"intrinsicValue": {
-		"dcf": 20.66,
-		"date": "2026-03-25",
-		"discount": -89
-	}
+		"dcf": 20.77,
+		"date": "2026-03-28",
+		"discount": -87
+	},
+	"analystConsensus": {
+		"ticker": "COIN",
+		"strongBuy": 5,
+		"moderateBuy": 13,
+		"hold": 4,
+		"moderateSell": 2,
+		"strongSell": 4
+	},
+	"targetPriceAlternative": "$271.15",
+	"consensusRating": "Hold"
 }

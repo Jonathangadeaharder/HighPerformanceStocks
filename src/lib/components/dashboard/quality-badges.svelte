@@ -30,6 +30,19 @@
 				ND/EBITDA {metrics.netDebtEbitda}
 			</span>
 		{/if}
+		{#if metrics.interestCoverage}
+			<span
+				class="quality-badge"
+				style="color:{qualityColor('interestCoverage', metrics.interestCoverage)}"
+			>
+				ICR {metrics.interestCoverage}
+			</span>
+		{/if}
+		{#if metrics.beta}
+			<span class="quality-badge" style="color:{qualityColor('beta', metrics.beta)}">
+				β {metrics.beta}
+			</span>
+		{/if}
 	</div>
 {/if}
 

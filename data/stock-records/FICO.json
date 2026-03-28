@@ -2,27 +2,30 @@
 	"ticker": "FICO",
 	"name": "Fair Isaac Corp",
 	"group": "Defensive Monopolies",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$24.7B USD",
-	"sharpeRatio": 1.13,
-	"expectedCAGR": "-1% - 130%",
+	"marketCap": "$24.0B USD",
+	"sharpeRatio": 1.23,
+	"expectedCAGR": "2% - 137%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 38.7,
-		"forwardPE": 19.6,
+		"trailingPE": 37.4,
+		"forwardPE": 19,
 		"pegRatio": 2.1,
-		"evEbitda": 27.6,
-		"evFcf": 48.5
+		"evEbitda": 26.9,
+		"evFcf": 47.2
 	},
 	"metrics": {
 		"roe": "45.0%",
-		"roic": "42.1%",
+		"roic": "2.8%",
 		"operatingMargin": "~46%",
 		"netDebtEbitda": "3.0x",
 		"fcfMargin": "~28%",
 		"fcfYield": "~2%",
-		"ruleOf40": "44%"
+		"ruleOf40": "44%",
+		"beta": "1.28",
+		"revenueGrowth": "16.4%",
+		"interestCoverage": "5.7x"
 	},
 	"targetPrice": "$1872.18",
 	"consensus": {
@@ -31,40 +34,41 @@
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1043.10",
+	"currentPrice": "$1011.06",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "79%",
-			"bull": "130%"
+			"bear": "2%",
+			"base": "85%",
+			"bull": "137%"
 		},
 		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 26.96
+		"ttmEPS": 27
 	},
-	"lastUpdated": "2026-03-26T00:02:48.057Z",
+	"lastUpdated": "2026-03-28T23:02:50.925Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.09,
-		"signal": "WAIT",
+		"engine": "fEVG",
+		"score": 1.49,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
-			"multipleType": "Forward P/E",
-			"multiple": 19.6,
+			"multipleType": "EV/EBITDA",
+			"multiple": 26.9,
 			"cvStock": 0.089,
-			"riskMultiplier": 1.005
+			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 85.2% (DEPLOY override: base CAGR 85% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1043.1,
-				"price6mAgo": 1518.78,
-				"price1mAgo": 1388.44,
+				"price": 1011.06,
+				"price6mAgo": 1525.44,
+				"price1mAgo": 1407.54,
 				"low3m": 969.32,
-				"return6m": -31.3,
-				"return1m": -24.9,
-				"near3mLow": false
+				"return6m": -33.7,
+				"return1m": -28.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -75,7 +79,9 @@
 				"surprise": 3.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.06
 	},
 	"qcs": {
 		"earningsScore": 2.79,
@@ -96,5 +102,14 @@
 		"low": 1032,
 		"mean": 1872.18,
 		"high": 2400
-	}
+	},
+	"analystConsensus": {
+		"ticker": "FICO",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

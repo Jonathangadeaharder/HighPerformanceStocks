@@ -3,31 +3,34 @@
 	"name": "Royal Gold",
 	"group": "Royalties",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$19.8B USD",
-	"sharpeRatio": 0.85,
-	"expectedCAGR": "13% - 62%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$20.1B USD",
+	"sharpeRatio": 0.75,
+	"expectedCAGR": "10% - 59%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 34.9,
-		"forwardPE": 15.4,
+		"trailingPE": 35.5,
+		"forwardPE": 15.7,
 		"pegRatio": 1.69,
-		"evEbitda": 29.3,
-		"evFcf": -25502.1
+		"evEbitda": 29.9,
+		"evFcf": -26004.2
 	},
 	"metrics": {
 		"fcfMargin": "~0%",
 		"fcfYield": "~0%",
-		"roic": "~9.9%",
+		"roic": "2.3%",
 		"roe": "11.0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "6%"
+		"ruleOf40": "6%",
+		"beta": "0.65",
+		"revenueGrowth": "5.9%",
+		"interestCoverage": "1406.6x"
 	},
 	"targetPrice": "$329.64",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
 	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
-	"currentPrice": "$232.99",
+	"currentPrice": "$237.54",
 	"consensus": {
 		"tipranks": "$249",
 		"yahoo": "$329.64",
@@ -38,23 +41,54 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "13%",
-			"base": "42%",
-			"bull": "62%"
+			"bear": "10%",
+			"base": "40%",
+			"bull": "59%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:58.310Z",
+	"lastUpdated": "2026-03-28T23:03:04.890Z",
 	"screener": {
-		"engine": "fCFG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/FCF"
+		"engine": "fEVG",
+		"score": 2.72,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 12,
+			"multipleType": "EV/EBITDA",
+			"multiple": 29.9,
+			"cvStock": 0.178,
+			"riskMultiplier": 1.091
+		},
+		"note": "hasLikelyValueFloor: analyst upside 38.8% (DEPLOY override: base CAGR 40% ≥ 20% and stabilized) (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 237.54,
+				"price6mAgo": 198.5,
+				"price1mAgo": 304.29,
+				"low3m": 213.76,
+				"return6m": 19.7,
+				"return1m": -21.9,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 3,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": -27.4,
+				"quarter": "2025-12"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.43
 	},
 	"qcs": {
-		"earningsScore": -1.9,
+		"earningsScore": -0.85,
 		"flowScore": 5,
 		"revisionsScore": 0.91,
-		"totalScore": 4.01,
+		"totalScore": 5.06,
 		"raw": {
 			"avgSurprisePct": -3.8,
 			"netInsiderShares": 3731,
@@ -69,5 +103,15 @@
 		"low": 260,
 		"mean": 329.64,
 		"high": 375
-	}
+	},
+	"analystConsensus": {
+		"ticker": "RGLD",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$251.50",
+	"consensusRating": "Moderate Buy"
 }

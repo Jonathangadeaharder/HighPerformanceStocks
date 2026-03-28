@@ -3,31 +3,34 @@
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$55.9B USD",
-	"sharpeRatio": 1.51,
-	"expectedCAGR": "31% - 114%",
+	"marketCap": "$56.8B USD",
+	"sharpeRatio": 1.44,
+	"expectedCAGR": "29% - 110%",
 	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 38,
-		"forwardPE": 20,
+		"trailingPE": 38.5,
+		"forwardPE": 20.4,
 		"pegRatio": 1.41,
-		"evEbitda": 28.7,
-		"evFcf": 722.6
+		"evEbitda": 29.2,
+		"evFcf": 735
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
 		"fcfYield": "~0%",
-		"roic": "~15%",
+		"roic": "3.4%",
 		"roe": "18.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "130%"
+		"ruleOf40": "130%",
+		"beta": "1.11",
+		"revenueGrowth": "127.2%",
+		"interestCoverage": "4364.4x"
 	},
 	"targetPrice": "$191.59",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$122.64",
+	"currentPrice": "$124.70",
 	"consensus": {
 		"tipranks": "$140",
 		"yahoo": "$191.59",
@@ -38,33 +41,34 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "31%",
-			"base": "57%",
-			"bull": "114%"
+			"bear": "29%",
+			"base": "55%",
+			"bull": "110%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:03.135Z",
+	"lastUpdated": "2026-03-28T23:03:10.821Z",
 	"screener": {
-		"engine": "fCFG",
-		"score": 53.22,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 2.64,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "EV/FCF",
-			"multiple": 722.6,
+			"multipleType": "EV/EBITDA",
+			"multiple": 29.2,
 			"cvStock": 0.255,
-			"riskMultiplier": 1.105
+			"riskMultiplier": 1.359
 		},
+		"note": "hasLikelyValueFloor: analyst upside 53.6% (DEPLOY override: base CAGR 55% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 122.64,
-				"price6mAgo": 109.04,
-				"price1mAgo": 161.02,
+				"price": 124.7,
+				"price6mAgo": 110.49,
+				"price1mAgo": 165.72,
 				"low3m": 113.39,
-				"return6m": 12.5,
-				"return1m": -23.8,
+				"return6m": 12.9,
+				"return1m": -24.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,8 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.47,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 1.85
 	},
 	"qcs": {
 		"earningsScore": 1.25,
@@ -100,5 +103,15 @@
 		"low": 160,
 		"mean": 191.59,
 		"high": 260.97
-	}
+	},
+	"analystConsensus": {
+		"ticker": "WPM",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$145.36"
 }

@@ -2,69 +2,72 @@
 	"ticker": "VRTX",
 	"name": "Vertex Pharmaceuticals",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
-	"marketCap": "$115.6B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "-27% - 41%",
+	"marketCap": "$110.0B USD",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "-24% - 48%",
 	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 29.7,
-		"forwardPE": 20.7,
+		"trailingPE": 28.2,
+		"forwardPE": 19.7,
 		"pegRatio": null,
-		"evEbitda": 22.8,
-		"evFcf": 43.1
+		"evEbitda": 21.7,
+		"evFcf": 41
 	},
 	"metrics": {
 		"fcfMargin": "~21%",
 		"fcfYield": "~2%",
-		"roic": "15.5% - 29.0%",
+		"roic": "3.4%",
 		"roe": "22.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "31%"
+		"ruleOf40": "31%",
+		"beta": "0.32",
+		"revenueGrowth": "9.5%",
+		"interestCoverage": "43.5x"
 	},
 	"targetPrice": "$547.72",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$454.97",
+	"currentPrice": "$433.07",
 	"consensus": {
 		"tipranks": "$542",
 		"yahoo": "$547.72",
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
-		"ttmEPS": 15.3,
+		"ttmEPS": 15.33,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-27%",
-			"base": "20%",
-			"bull": "41%"
+			"bear": "-24%",
+			"base": "26%",
+			"bull": "48%"
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-26T00:03:03.065Z",
+	"lastUpdated": "2026-03-28T23:03:10.747Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.59,
+		"engine": "fCFG",
+		"score": 3.15,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
-			"multipleType": "Forward P/E",
-			"multiple": 20.7,
+			"multipleType": "EV/FCF",
+			"multiple": 41,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 454.97,
-				"price6mAgo": 385.74,
-				"price1mAgo": 480.13,
+				"price": 433.07,
+				"price6mAgo": 395.31,
+				"price1mAgo": 486.03,
 				"low3m": 429,
-				"return6m": 17.9,
-				"return1m": -5.2,
-				"near3mLow": false
+				"return6m": 9.6,
+				"return1m": -10.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -75,7 +78,9 @@
 				"surprise": -2.3,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.52
 	},
 	"qcs": {
 		"earningsScore": 0.43,
@@ -96,5 +101,15 @@
 		"low": 330,
 		"mean": 547.72,
 		"high": 641
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VRTX",
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"targetPriceAlternative": "$554.30",
+	"consensusRating": "Moderate Buy"
 }

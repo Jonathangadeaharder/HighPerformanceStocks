@@ -3,22 +3,22 @@
 	"name": "Kinsale Capital",
 	"group": "Insurance Compounders",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "E&S insurer using proprietary tech to dominate niche. EPS compounds at 20–30% a year.",
 	"bullCase": "Kinsale dominates E&S insurance through technology-driven underwriting that prices and binds risks faster than incumbents. ROE of 29% and combined ratio consistently below 85% give it a structural cost advantage. In a hard market, Kinsale's premium growth accelerates above 20%.",
 	"bearCase": "A shift to a soft insurance market — driven by new capital entering E&S or a benign catastrophe cycle — compresses premiums and margins. At 16x forward PE, any slowdown below 15% EPS growth re-rates the stock. Competitors are investing heavily in E&S technology.",
 	"cagrModel": {
 		"epsGrowth": "20%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 21.65,
+		"ttmEPS": 21.63,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-5%",
 			"base": "24%",
-			"bull": "38%"
+			"bull": "37%"
 		}
 	},
-	"currentPrice": "$327.22",
+	"currentPrice": "$327.29",
 	"marketCap": "$7.6B USD",
 	"valuation": {
 		"trailingPE": 15.1,
@@ -31,34 +31,38 @@
 		"fcfMargin": "~51%",
 		"fcfYield": "~13%",
 		"netDebtEbitda": "0.1x",
-		"ruleOf40": "69%"
+		"ruleOf40": "69%",
+		"beta": "1.04",
+		"revenueGrowth": "17.3%",
+		"roic": "13.6%",
+		"interestCoverage": "52.7x"
 	},
 	"consensus": {
 		"yahoo": "$407.33"
 	},
 	"targetPrice": "$407.33",
-	"expectedCAGR": "-5% - 38%",
+	"expectedCAGR": "-5% - 37%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.74,
+		"engine": "fEVG",
+		"score": 0.75,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
-			"multipleType": "Forward P/E",
-			"multiple": 14.7,
+			"multipleType": "EV/EBITDA",
+			"multiple": 11.7,
 			"cvStock": 0.047,
-			"riskMultiplier": 1
+			"riskMultiplier": 1.282
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 327.22,
-				"price6mAgo": 419.33,
-				"price1mAgo": 382.46,
+				"price": 327.29,
+				"price6mAgo": 416.74,
+				"price1mAgo": 396.18,
 				"low3m": 321.97,
-				"return6m": -22,
-				"return1m": -14.4,
+				"return6m": -21.5,
+				"return1m": -17.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -70,11 +74,13 @@
 				"surprise": 9.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.75
 	},
-	"lastUpdated": "2026-03-26T00:02:51.738Z",
+	"lastUpdated": "2026-03-28T23:02:55.316Z",
 	"expectedVolatility": "~38%",
-	"sharpeRatio": 0.32,
+	"sharpeRatio": 0.3,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -94,5 +100,14 @@
 		"low": 312,
 		"mean": 407.33,
 		"high": 450
-	}
+	},
+	"analystConsensus": {
+		"ticker": "KNSL",
+		"strongBuy": 12,
+		"moderateBuy": 4,
+		"hold": 12,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Hold"
 }

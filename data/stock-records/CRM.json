@@ -2,33 +2,37 @@
 	"ticker": "CRM",
 	"name": "Salesforce",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$170.5B USD",
-	"sharpeRatio": 2.26,
-	"expectedCAGR": "5% - 162%",
+	"marketCap": "$168.0B USD",
+	"sharpeRatio": 2.34,
+	"expectedCAGR": "7% - 166%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 23.3,
-		"forwardPE": 12.2,
+		"trailingPE": 23,
+		"forwardPE": 12,
 		"pegRatio": 0.88,
-		"evEbitda": 14,
-		"evFcf": 10.8
+		"evEbitda": 13.8,
+		"evFcf": 10.6
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
 		"fcfYield": "~10%",
 		"roe": "12.4%",
 		"netDebtEbitda": "0.6x",
-		"ruleOf40": "52%"
+		"ruleOf40": "52%",
+		"beta": "1.31",
+		"revenueGrowth": "12.1%",
+		"roic": "8.5%",
+		"interestCoverage": "12.9x"
 	},
-	"targetPrice": "$273.66",
+	"targetPrice": "$273.85",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$181.96",
+	"currentPrice": "$179.31",
 	"consensus": {
 		"tipranks": "$268",
-		"yahoo": "$273.66",
+		"yahoo": "$273.85",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
@@ -36,33 +40,34 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "51%",
-			"bull": "162%"
+			"bear": "7%",
+			"base": "54%",
+			"bull": "166%"
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-26T00:02:45.358Z",
+	"lastUpdated": "2026-03-28T23:02:47.771Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.81,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 0.71,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 12.2,
+			"multipleType": "EV/FCF",
+			"multiple": 10.6,
 			"cvStock": 0.07,
-			"riskMultiplier": 0.994
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 54% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 181.96,
-				"price6mAgo": 243.43,
-				"price1mAgo": 199.47,
+				"pass": true,
+				"price": 179.31,
+				"price6mAgo": 245.1,
+				"price1mAgo": 192.95,
 				"low3m": 174.57,
-				"return6m": -25.3,
-				"return1m": -8.8,
+				"return6m": -26.8,
+				"return1m": -7.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,7 +79,9 @@
 				"surprise": 24.9,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.8
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -83,7 +90,7 @@
 		"totalScore": 11.2,
 		"raw": {
 			"avgSurprisePct": 11.12,
-			"netInsiderShares": 129236,
+			"netInsiderShares": 299190,
 			"instFlowTrend": "positive",
 			"upRevisions": 31,
 			"downRevisions": 18,
@@ -93,7 +100,17 @@
 	"description": "Salesforce, Inc. provides customer relationship management technology services that connect companies and customers together in the United States, Europe, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 190,
-		"mean": 273.66,
+		"mean": 273.85,
 		"high": 475
-	}
+	},
+	"analystConsensus": {
+		"ticker": "CRM",
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$280.22"
 }

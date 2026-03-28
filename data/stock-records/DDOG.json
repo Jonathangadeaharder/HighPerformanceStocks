@@ -2,68 +2,73 @@
 	"ticker": "DDOG",
 	"name": "Datadog",
 	"group": "Cloud Infrastructure",
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
-	"marketCap": "$43.6B USD",
-	"sharpeRatio": 0.93,
-	"expectedCAGR": "-2% - 111%",
+	"marketCap": "$40.5B USD",
+	"sharpeRatio": 1.15,
+	"expectedCAGR": "6% - 127%",
 	"expectedVolatility": "~54%",
 	"valuation": {
-		"trailingPE": 397.7,
-		"forwardPE": 46.6,
-		"evEbitda": 5349.1,
-		"evFcf": 45.8
+		"trailingPE": 369.3,
+		"forwardPE": 43.3,
+		"evEbitda": 4936.5,
+		"evFcf": 42.3
 	},
 	"metrics": {
 		"roe": "3.3%",
 		"fcfMargin": "~26%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "55%"
+		"ruleOf40": "55%",
+		"beta": "1.36",
+		"revenueGrowth": "29.2%",
+		"roic": "2.8%",
+		"interestCoverage": "0.1x"
 	},
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$123.29",
+	"currentPrice": "$114.48",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-2%",
-			"base": "48%",
-			"bull": "111%"
+			"bear": "6%",
+			"base": "59%",
+			"bull": "127%"
 		},
 		"ttmEPS": 2.12,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-26T00:02:46.233Z",
+	"lastUpdated": "2026-03-28T23:02:49.031Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.37,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 2.12,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
-			"multipleType": "Forward P/E",
-			"multiple": 46.6,
+			"multipleType": "EV/FCF",
+			"multiple": 42.3,
 			"cvStock": 0.11,
-			"riskMultiplier": 1.018
+			"riskMultiplier": 1.001
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 123.29,
-				"price6mAgo": 139.07,
-				"price1mAgo": 116.46,
+				"price": 114.48,
+				"price6mAgo": 145.26,
+				"price1mAgo": 111.11,
 				"low3m": 98.01,
-				"return6m": -11.3,
-				"return1m": 5.9,
+				"return6m": -21.2,
+				"return1m": 3,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 3,
 				"down30d": 28
 			},
@@ -71,7 +76,9 @@
 				"surprise": 6.3,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.17
 	},
 	"qcs": {
 		"earningsScore": 4.36,
@@ -92,5 +99,15 @@
 		"low": 121,
 		"mean": 182.43,
 		"high": 260
-	}
+	},
+	"analystConsensus": {
+		"ticker": "DDOG",
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$179.63",
+	"consensusRating": "Moderate Buy"
 }

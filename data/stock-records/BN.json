@@ -2,35 +2,38 @@
 	"ticker": "BN",
 	"name": "Brookfield Corporation",
 	"group": "Financials & Alt Assets",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$90.3B USD",
-	"sharpeRatio": 0.31,
-	"expectedCAGR": "-21% - 51%",
-	"expectedVolatility": "~34%",
+	"marketCap": "$88.2B USD",
+	"sharpeRatio": 0.39,
+	"expectedCAGR": "-20% - 55%",
+	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 81.4,
-		"forwardPE": 6.8,
+		"trailingPE": 79.6,
+		"forwardPE": 6.6,
 		"pegRatio": null,
-		"evEbitda": 15.1,
-		"evFcf": -101.2
+		"evEbitda": 15,
+		"evFcf": -100.8
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
 		"fcfYield": "~-5%",
-		"roic": "15%+ economic (~3% reported, distorted)",
+		"roic": "3.2%",
 		"roe": "2.0%",
 		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": "-2%",
-		"aum": "$1T+"
+		"aum": "$1T+",
+		"beta": "1.86",
+		"revenueGrowth": "3.5%",
+		"interestCoverage": "2.1x"
 	},
-	"targetPrice": "$53.95",
+	"targetPrice": "$53.60",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39.91",
+	"currentPrice": "$39",
 	"consensus": {
 		"tipranks": "$55",
-		"yahoo": "$53.95",
+		"yahoo": "$53.60",
 		"stockanalysis": "$46"
 	},
 	"cagrModel": {
@@ -38,42 +41,42 @@
 		"epsGrowth": "16.5%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-21%",
-			"base": "36%",
-			"bull": "51%"
+			"bear": "-20%",
+			"base": "38%",
+			"bull": "55%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-26T00:02:43.672Z",
+	"lastUpdated": "2026-03-28T23:02:46.047Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.41,
-		"signal": "PASS",
+		"score": 4.14,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
-			"multiple": 6.8,
+			"multiple": 68.3,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~68.3x (hasLikelyValueFloor: analyst upside 37.4%) (DEPLOY override: base CAGR 38% ≥ 20% and stabilized) (Massive P/E divergence (>300%); potential data hallucination) (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 39.91,
-				"price6mAgo": 45.61,
-				"price1mAgo": 45.45,
+				"price": 39,
+				"price6mAgo": 46.09,
+				"price1mAgo": 43.96,
 				"low3m": 37.93,
-				"return6m": -12.5,
-				"return1m": -12.2,
-				"near3mLow": false
+				"return6m": -15.4,
+				"return1m": -11.3,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
 				"down30d": 0
 			}
-		},
-		"note": "Used benchmark CV (missing dispersion data)"
+		}
 	},
 	"qcs": {
 		"earningsScore": 0,
@@ -92,7 +95,17 @@
 	"description": "Brookfield Corporation is a multi-asset manager focused on real estate, credit, renewable power and transition, infrastructure, venture capital, and private equity including growth capital and emer...",
 	"analystTargets": {
 		"low": 31,
-		"mean": 53.95,
+		"mean": 53.6,
 		"high": 60
-	}
+	},
+	"analystConsensus": {
+		"ticker": "BN",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$54.20"
 }

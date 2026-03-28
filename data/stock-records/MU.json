@@ -2,34 +2,37 @@
 	"ticker": "MU",
 	"name": "Micron Technology",
 	"group": "Disqualified",
-	"confidence": "cut",
+	"confidence": "high",
 	"confidenceReason": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy.",
-	"marketCap": "$430.9B USD",
-	"sharpeRatio": 0.41,
-	"expectedCAGR": "-35% - 96%",
+	"marketCap": "$402.8B USD",
+	"sharpeRatio": 0.55,
+	"expectedCAGR": "-30% - 110%",
 	"expectedVolatility": "~64%",
 	"valuation": {
-		"trailingPE": 18,
-		"forwardPE": 3.9,
+		"trailingPE": 16.9,
+		"forwardPE": 3.6,
 		"pegRatio": null,
-		"evEbitda": 11.6,
-		"evFcf": 147.6
+		"evEbitda": 10.8,
+		"evFcf": 137.9
 	},
 	"metrics": {
 		"fcfMargin": "~5%",
 		"fcfYield": "~1%",
-		"roic": null,
+		"roic": "7.7%",
 		"roe": "39.8%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "201%"
+		"ruleOf40": "201%",
+		"beta": "1.54",
+		"revenueGrowth": "196.3%",
+		"interestCoverage": "62.0x"
 	},
-	"targetPrice": "$524.73",
+	"targetPrice": "$527.60",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
 	"bearCase": "DISQUALIFIED: Memory semis are hyper-cyclical commodities. The boom/bust cycle destroys long-term CAGR compounding, making it incompatible with a buy-and-hold momentum strategy. Traditional memory is a notoriously cyclical commodity. Requires strict monitoring of global memory supply dynamics to avoid the devastating downside of the hardware cycle.",
-	"currentPrice": "$382.09",
+	"currentPrice": "$357.22",
 	"consensus": {
 		"tipranks": "$431",
-		"yahoo": "$524.73",
+		"yahoo": "$527.60",
 		"stockanalysis": "$359"
 	},
 	"cagrModel": {
@@ -37,55 +40,26 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-35%",
-			"base": "37%",
-			"bull": "96%"
+			"bear": "-30%",
+			"base": "48%",
+			"bull": "110%"
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-26T00:02:55.500Z",
+	"lastUpdated": "2026-03-28T23:03:00.036Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.38,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 12,
-			"multipleType": "Forward P/E",
-			"multiple": 3.9,
-			"cvStock": 0.248,
-			"riskMultiplier": 4.233
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 382.09,
-				"price6mAgo": 157.27,
-				"price1mAgo": 415.56,
-				"low3m": 277.25,
-				"return6m": 143,
-				"return1m": -8.1,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 25,
-				"down30d": 0
-			},
-			"earningsSurprise": {
-				"surprise": 35.7,
-				"quarter": "2026-02"
-			}
-		},
-		"note": "(CYCLICAL EPS)"
+		"engine": "DISQUALIFIED",
+		"signal": "REJECTED",
+		"note": "Binary-outcome biotech breaking EPS compounding rules."
 	},
 	"cyclical": true,
 	"qcs": {
-		"earningsScore": 3.3,
+		"earningsScore": 5,
 		"flowScore": 5,
 		"revisionsScore": 4.48,
-		"totalScore": 12.78,
+		"totalScore": 14.48,
 		"raw": {
-			"avgSurprisePct": 20.49,
+			"avgSurprisePct": 19.87,
 			"netInsiderShares": 882560,
 			"instFlowTrend": "positive",
 			"upRevisions": 26,
@@ -96,7 +70,17 @@
 	"description": "Micron Technology, Inc. designs, develops, manufactures, and sells memory and storage products in the United States, Taiwan, Japan, Mainland China, Hong Kong, Europe, and internationally.",
 	"analystTargets": {
 		"low": 249,
-		"mean": 524.73,
+		"mean": 527.6,
 		"high": 750
-	}
+	},
+	"analystConsensus": {
+		"ticker": "MU",
+		"strongBuy": 6,
+		"moderateBuy": 4,
+		"hold": 4,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$466.75",
+	"consensusRating": "strong buy"
 }

@@ -2,52 +2,53 @@
 	"ticker": "CCJ",
 	"name": "Cameco",
 	"group": "Energy & Infrastructure",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
-	"targetPrice": "$124.34",
+	"targetPrice": "$123.65",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
 		"epsGrowth": "15%",
-		"basis": "GAAP diluted EPS",
+		"basis": "EV/EBITDA exit multiple",
 		"dividendYield": "0%",
 		"ttmEPS": 0.98,
 		"scenarios": {
-			"bear": "-25%",
-			"base": "14%",
-			"bull": "45%"
+			"bear": "-22%",
+			"base": "19%",
+			"bull": "51%"
 		}
 	},
-	"currentPrice": "$109.02",
-	"marketCap": "$47.5B USD",
+	"currentPrice": "$103.92",
+	"marketCap": "$45.3B USD",
 	"consensus": {
-		"yahoo": "$124.34"
+		"yahoo": "$123.65"
 	},
 	"expectedVolatility": "~53%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 3.96,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 3.29,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 58.5,
-			"cvStock": 0.104,
-			"riskMultiplier": 1.015
+			"multipleType": "EV/EBITDA",
+			"multiple": 49.4,
+			"cvStock": 0.089,
+			"riskMultiplier": 1
 		},
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 109.02,
-				"price6mAgo": 85.58,
-				"price1mAgo": 118.18,
+				"price": 103.92,
+				"price6mAgo": 84.46,
+				"price1mAgo": 125.74,
 				"low3m": 90.89,
-				"return6m": 27.4,
-				"return1m": -7.8,
+				"return6m": 23,
+				"return1m": -17.4,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 2,
 				"down30d": 5
 			},
@@ -56,30 +57,35 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 3.79
 	},
-	"lastUpdated": "2026-03-26T00:02:44.420Z",
+	"lastUpdated": "2026-03-28T23:02:46.803Z",
 	"valuation": {
-		"trailingPE": 111.2,
-		"forwardPE": 58.5,
-		"evEbitda": 51.9,
-		"evFcf": 98.5
+		"trailingPE": 106,
+		"forwardPE": 56.9,
+		"evEbitda": 49.4,
+		"evFcf": 93.9
 	},
 	"metrics": {
 		"roe": "8.9%",
 		"fcfMargin": "~14%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "15%"
+		"ruleOf40": "15%",
+		"beta": "0.97",
+		"revenueGrowth": "1.5%",
+		"roic": "3.1%",
+		"interestCoverage": "16.4x"
 	},
-	"expectedCAGR": "-25% - 45%",
-	"sharpeRatio": 0.1,
+	"expectedCAGR": "-22% - 51%",
+	"sharpeRatio": 0.19,
 	"cyclical": true,
 	"qcs": {
-		"earningsScore": -3.99,
+		"earningsScore": -4.67,
 		"flowScore": 0,
 		"revisionsScore": -0.29,
-		"totalScore": -4.28,
+		"totalScore": -4.96,
 		"raw": {
 			"avgSurprisePct": -10.38,
 			"netInsiderShares": 0,
@@ -91,8 +97,18 @@
 	},
 	"description": "Cameco Corporation provides uranium for the generation of electricity in the Americas, Europe, and Asia.",
 	"analystTargets": {
-		"low": 81.63,
-		"mean": 124.34,
-		"high": 158.28
-	}
+		"low": 81.18,
+		"mean": 123.65,
+		"high": 157.4
+	},
+	"analystConsensus": {
+		"ticker": "CCJ",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$150.40"
 }

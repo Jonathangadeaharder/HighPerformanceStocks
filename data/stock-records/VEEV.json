@@ -4,29 +4,32 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$29.3B USD",
-	"sharpeRatio": 1.32,
-	"expectedCAGR": "7% - 97%",
+	"marketCap": "$28.4B USD",
+	"sharpeRatio": 1.44,
+	"expectedCAGR": "10% - 103%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 18,
+		"trailingPE": 31.7,
+		"forwardPE": 17.5,
 		"pegRatio": null,
-		"evEbitda": 23,
-		"evFcf": 21.6
+		"evEbitda": 22.1,
+		"evFcf": 20.7
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
-		"roic": null,
+		"roic": "6.5%",
 		"roe": "13.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "49%"
+		"ruleOf40": "49%",
+		"beta": "1.12",
+		"revenueGrowth": "16.0%",
+		"interestCoverage": "186.8x"
 	},
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$178.11",
+	"currentPrice": "$172.59",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -37,34 +40,35 @@
 		"epsGrowth": "19%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "52%",
-			"bull": "97%"
+			"bear": "10%",
+			"base": "57%",
+			"bull": "103%"
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-03-26T00:03:02.178Z",
+	"lastUpdated": "2026-03-28T23:03:09.898Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.92,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 1.09,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 19,
-			"multipleType": "Forward P/E",
-			"multiple": 18,
+			"multipleType": "EV/FCF",
+			"multiple": 20.7,
 			"cvStock": 0.03,
-			"riskMultiplier": 0.97
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 57% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 178.11,
-				"price6mAgo": 290.27,
-				"price1mAgo": 182.86,
+				"price": 172.59,
+				"price6mAgo": 293,
+				"price1mAgo": 181.45,
 				"low3m": 168.14,
-				"return6m": -38.6,
-				"return1m": -2.6,
-				"near3mLow": false
+				"return6m": -41.1,
+				"return1m": -4.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -75,7 +79,9 @@
 				"surprise": 6.5,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.92
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -96,5 +102,14 @@
 		"low": 190,
 		"mean": 270.93,
 		"high": 350
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VEEV",
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy"
 }

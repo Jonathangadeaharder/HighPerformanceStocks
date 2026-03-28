@@ -3,59 +3,64 @@
 	"name": "Booking Holdings",
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Textbook GARP. Shrinking float, increasing margins, stable 15%+ EPS growth.",
 	"cagrModel": {
 		"epsGrowth": "17%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 165.62,
+		"ttmEPS": 165.74,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "38%",
-			"bull": "84%"
+			"bear": "12%",
+			"base": "44%",
+			"bull": "92%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$4237.75",
-	"marketCap": "$136.6B USD",
+	"currentPrice": "$4062.14",
+	"marketCap": "$130.9B USD",
 	"valuation": {
-		"trailingPE": 25.6,
-		"forwardPE": 13.5,
-		"evEbitda": 13.5,
-		"evFcf": 20.8
+		"trailingPE": 24.5,
+		"forwardPE": 13,
+		"evEbitda": 12.9,
+		"evFcf": 20
 	},
 	"metrics": {
 		"fcfMargin": "~24%",
 		"fcfYield": "~5%",
 		"netDebtEbitda": "0.2x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "1.23",
+		"revenueGrowth": "16.0%",
+		"roic": "7.1%",
+		"interestCoverage": "9.5x"
 	},
 	"consensus": {
 		"yahoo": "$5802.23"
 	},
 	"targetPrice": "$5802.23",
-	"expectedCAGR": "7% - 84%",
+	"expectedCAGR": "12% - 92%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.86,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 1.18,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
-			"multipleType": "Forward P/E",
-			"multiple": 13.5,
+			"multipleType": "EV/FCF",
+			"multiple": 20,
 			"cvStock": 0.029,
-			"riskMultiplier": 1.077
+			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 44% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4237.75,
-				"price6mAgo": 5548,
-				"price1mAgo": 4250.26,
+				"price": 4062.14,
+				"price6mAgo": 5454.81,
+				"price1mAgo": 4179.78,
 				"low3m": 3765.45,
-				"return6m": -23.6,
-				"return1m": -0.3,
+				"return6m": -25.5,
+				"return1m": -2.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -68,13 +73,14 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.88
 	},
 	"bullCase": "Booking Holdings operates the global OTA duopoly (with Expedia) and is the near-monopoly in European accommodation. Its asset-light model generates 40%+ operating margins. The shift to connected trip — flights, hotels, rental cars, attractions in a single booking — is expanding wallet share per customer. Aggressive share buybacks at 7%+ annually provide EPS floor.",
 	"bearCase": "Travel spending is among the most discretionary consumer categories — Booking's revenue fell 90%+ in COVID and is sensitive to recession and geopolitical disruption. At 14x forward PE, valuation is attractive but the stock has historically compressed to 10-11x in downturns. Airbnb is taking share in leisure accommodation, particularly in major European cities.",
-	"lastUpdated": "2026-03-26T00:02:43.638Z",
+	"lastUpdated": "2026-03-28T23:02:46.051Z",
 	"expectedVolatility": "~32%",
-	"sharpeRatio": 1.28,
+	"sharpeRatio": 1.48,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -94,5 +100,15 @@
 		"low": 4495,
 		"mean": 5802.23,
 		"high": 7746
-	}
+	},
+	"analystConsensus": {
+		"ticker": "BKNG",
+		"strongBuy": 5,
+		"moderateBuy": 11,
+		"hold": 11,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$5845.61",
+	"consensusRating": "Moderate Buy"
 }

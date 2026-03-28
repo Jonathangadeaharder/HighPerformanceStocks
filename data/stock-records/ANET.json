@@ -3,32 +3,35 @@
 	"name": "Arista Networks",
 	"group": "Network Infrastructure",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$170.0B USD",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "4% - 63%",
+	"marketCap": "$152.1B USD",
+	"sharpeRatio": 0.84,
+	"expectedCAGR": "16% - 82%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 49.1,
-		"forwardPE": 31.7,
+		"trailingPE": 43.9,
+		"forwardPE": 28.3,
 		"pegRatio": 1.44,
-		"evEbitda": 40.5,
-		"evFcf": 46.9
+		"evEbitda": 35.9,
+		"evFcf": 41.6
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
 		"fcfYield": "~2%",
-		"roic": "~192%",
+		"roic": "3.1%",
 		"roe": "31.4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "67%",
-		"grossMargin": "64.06%"
+		"grossMargin": "64.06%",
+		"beta": "1.46",
+		"revenueGrowth": "28.9%",
+		"interestCoverage": "789.3x"
 	},
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$135.01",
+	"currentPrice": "$120.77",
 	"consensus": {
 		"tipranks": "$182",
 		"yahoo": "$177.74",
@@ -39,35 +42,36 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "32%",
-			"bull": "63%"
+			"bear": "16%",
+			"base": "47%",
+			"bull": "82%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T00:02:41.859Z",
+	"lastUpdated": "2026-03-28T23:02:44.160Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.51,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 1.71,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 21,
-			"multipleType": "Forward P/E",
-			"multiple": 31.7,
+			"multipleType": "EV/EBITDA",
+			"multiple": 35.9,
 			"cvStock": 0.082,
-			"riskMultiplier": 1.001
+			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 47.2% + QCS 9.13 (DEPLOY override: base CAGR 47% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 135.01,
-				"price6mAgo": 142.5,
-				"price1mAgo": 130.25,
+				"price": 120.77,
+				"price6mAgo": 143.37,
+				"price1mAgo": 129.3,
 				"low3m": 120,
-				"return6m": -5.3,
-				"return1m": 3.7,
-				"near3mLow": false
+				"return6m": -15.8,
+				"return1m": -6.6,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -79,7 +83,8 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.35
 	},
 	"qcs": {
 		"earningsScore": 4.33,
@@ -100,5 +105,14 @@
 		"low": 140,
 		"mean": 177.74,
 		"high": 220
-	}
+	},
+	"analystConsensus": {
+		"ticker": "ANET",
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"consensusRating": "Moderate Buy"
 }

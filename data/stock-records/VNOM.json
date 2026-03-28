@@ -5,13 +5,13 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
-	"marketCap": "$17.8B USD",
-	"sharpeRatio": 0.49,
-	"expectedCAGR": "-4% - 48%",
+	"marketCap": "$17.9B USD",
+	"sharpeRatio": 0.46,
+	"expectedCAGR": "-5% - 47%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 23.6,
-		"forwardPE": 22.1,
+		"trailingPE": 22.2,
+		"forwardPE": 21.8,
 		"pegRatio": null,
 		"evEbitda": 12.9,
 		"evFcf": -10.4
@@ -19,18 +19,21 @@
 	"metrics": {
 		"fcfMargin": "~-120%",
 		"fcfYield": "~-9%",
-		"roic": "~4%",
+		"roic": "5.2%",
 		"roe": "-2.9%",
 		"netDebtEbitda": "1.7x",
-		"ruleOf40": "-30%"
+		"ruleOf40": "-30%",
+		"beta": "0.33",
+		"revenueGrowth": "89.4%",
+		"interestCoverage": "10.6x"
 	},
-	"targetPrice": "$53.50",
+	"targetPrice": "$54.06",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
-	"currentPrice": "$47.46",
+	"currentPrice": "$47.85",
 	"consensus": {
 		"tipranks": "$51",
-		"yahoo": "$53.50",
+		"yahoo": "$54.06",
 		"stockanalysis": "$53"
 	},
 	"cagrModel": {
@@ -38,32 +41,33 @@
 		"epsGrowth": "8%",
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "-4%",
+			"bear": "-5%",
 			"base": "18%",
-			"bull": "48%"
+			"bull": "47%"
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T00:03:02.980Z",
+	"lastUpdated": "2026-03-28T23:03:10.659Z",
 	"screener": {
-		"engine": "totalReturn",
-		"score": null,
+		"engine": "fEVG",
+		"score": 4.24,
 		"signal": "FAIL",
-		"note": "Dividend exceeds forward earnings (value trap) (CYCLICAL EPS)",
 		"inputs": {
 			"growth": 8,
-			"dividendYield": 5,
-			"earningsYield": 4.5
+			"multipleType": "EV/EBITDA",
+			"multiple": 12.9,
+			"cvStock": 0.39,
+			"riskMultiplier": 2.628
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 47.46,
-				"price6mAgo": 39.71,
-				"price1mAgo": 46.45,
+				"price": 47.85,
+				"price6mAgo": 38.48,
+				"price1mAgo": 47.59,
 				"low3m": 35.45,
-				"return6m": 19.5,
-				"return1m": 2.2,
+				"return6m": 24.4,
+				"return1m": 0.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,26 +79,39 @@
 				"surprise": -1.2,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 6.16,
+		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
-		"earningsScore": 2.57,
+		"earningsScore": 0.53,
 		"flowScore": 5,
-		"revisionsScore": 1.79,
-		"totalScore": 9.36,
+		"revisionsScore": 1.92,
+		"totalScore": 7.45,
 		"raw": {
 			"avgSurprisePct": 5.13,
 			"netInsiderShares": 21089,
 			"instFlowTrend": "positive",
 			"upRevisions": 7,
 			"downRevisions": 2,
-			"totalAnalysts": 14
+			"totalAnalysts": 13
 		}
 	},
 	"description": "Viper Energy, Inc. owns, acquires, and exploits oil and natural gas properties in North America.",
 	"analystTargets": {
 		"low": 43,
-		"mean": 53.5,
+		"mean": 54.06,
 		"high": 68
-	}
+	},
+	"analystConsensus": {
+		"ticker": "VNOM",
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
+	},
+	"targetPriceAlternative": "$52.28",
+	"consensusRating": "Moderate Buy"
 }

@@ -3,7 +3,7 @@
 	"name": "Tesla, Inc.",
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "cut",
 	"bullCase": "Tesla achieves full autonomy and ramps up energy storage, maintaining extreme dominance in the clean energy sector.",
 	"bearCase": "Increased EV competition, price wars, and leadership distractions cause margin compression and slowing growth.",
 	"confidenceReason": "Leader in electric vehicles, battery energy storage, and AI software/robotics. Unprecedented scale and brand power, though exposed to auto-cycle cyclicality and massive continuous capital requirements. High premium commands a flawless execution trajectory.",
@@ -11,28 +11,32 @@
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
 		"epsGrowth": "35%",
-		"ttmEPS": 1.07,
+		"ttmEPS": 1.09,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-69%",
-			"base": "9%",
-			"bull": "55%"
+			"bear": "-67%",
+			"base": "16%",
+			"bull": "66%"
 		}
 	},
-	"currentPrice": "$385.95",
-	"marketCap": "$1448.3B USD",
+	"currentPrice": "$361.83",
+	"marketCap": "$1357.7B USD",
 	"valuation": {
-		"trailingPE": 360.7,
-		"forwardPE": 137.3,
-		"evFcf": 380.3,
-		"evEbitda": 135.2
+		"trailingPE": 332,
+		"forwardPE": 128.7,
+		"evFcf": 356.1,
+		"evEbitda": 126.5
 	},
 	"metrics": {
 		"roe": "4.9%",
 		"fcfMargin": "~4%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "1%"
+		"ruleOf40": "1%",
+		"beta": "1.93",
+		"revenueGrowth": "-3.1%",
+		"roic": "1.1%",
+		"interestCoverage": "13.0x"
 	},
 	"consensus": {
 		"yahoo": "$421.27"
@@ -43,30 +47,30 @@
 		"mean": 421.27,
 		"high": 600
 	},
-	"expectedCAGR": "-69% - 55%",
+	"expectedCAGR": "-67% - 66%",
 	"expectedVolatility": "~55%",
-	"sharpeRatio": -0.21,
+	"sharpeRatio": -0.09,
 	"screener": {
-		"engine": "fPERG",
-		"score": 5.04,
+		"engine": "fCFG",
+		"score": 24.92,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 137.3,
+			"multipleType": "EV/FCF",
+			"multiple": 356.1,
 			"cvStock": 0.403,
-			"riskMultiplier": 1.194
+			"riskMultiplier": 2.375
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 385.95,
-				"price6mAgo": 440.4,
-				"price1mAgo": 408.58,
-				"low3m": 364.46,
-				"return6m": -12.4,
-				"return1m": -5.5,
-				"near3mLow": false
+				"price": 361.83,
+				"price6mAgo": 443.21,
+				"price1mAgo": 403.32,
+				"low3m": 359.47,
+				"return6m": -18.4,
+				"return1m": -10.3,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -78,6 +82,8 @@
 				"quarter": "2025-12"
 			}
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 9.01,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
@@ -95,10 +101,20 @@
 		}
 	},
 	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
-	"lastUpdated": "2026-03-26T00:03:00.968Z",
+	"lastUpdated": "2026-03-28T23:03:07.986Z",
 	"intrinsicValue": {
-		"dcf": 17.95,
-		"date": "2026-03-25",
+		"dcf": 17.9,
+		"date": "2026-03-28",
 		"discount": -95
-	}
+	},
+	"analystConsensus": {
+		"ticker": "TSLA",
+		"strongBuy": 5,
+		"moderateBuy": 17,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 9
+	},
+	"targetPriceAlternative": "$406.84",
+	"consensusRating": "Hold"
 }

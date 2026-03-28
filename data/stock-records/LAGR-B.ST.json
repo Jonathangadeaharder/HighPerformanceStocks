@@ -2,60 +2,64 @@
 	"ticker": "LAGR-B.ST",
 	"name": "Lagercrantz Group",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Identical niche-B2B M&A model to Addtech/Lifco. Grows EPS beautifully at 15–20%+.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 5.54,
+		"ttmEPS": 5.53,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "13%",
-			"base": "28%",
-			"bull": "40%"
+			"bear": "16%",
+			"base": "31%",
+			"bull": "44%"
 		}
 	},
-	"currentPrice": "198 SEK",
-	"marketCap": "40.7B SEK",
+	"currentPrice": "193 SEK",
+	"marketCap": "39.7B SEK",
 	"valuation": {
-		"trailingPE": 35.6,
-		"forwardPE": 36.4,
-		"evEbitda": 23,
-		"evFcf": 137.4
+		"trailingPE": 34.8,
+		"forwardPE": 35.5,
+		"evEbitda": 22.5,
+		"evFcf": 134.4
 	},
 	"metrics": {
 		"roe": "29.4%",
 		"fcfMargin": "~3%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "2.3x",
-		"ruleOf40": "19%"
+		"ruleOf40": "19%",
+		"beta": "1.17",
+		"revenueGrowth": "15.9%",
+		"roic": "3.2%",
+		"interestCoverage": "7.2x"
 	},
 	"consensus": {
 		"yahoo": "250 SEK"
 	},
 	"targetPrice": "250 SEK",
-	"expectedCAGR": "13% - 40%",
+	"expectedCAGR": "16% - 44%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.37,
+		"engine": "fEVG",
+		"score": 1.5,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 36.4,
+			"multipleType": "EV/EBITDA",
+			"multiple": 22.5,
 			"cvStock": 0.038,
-			"riskMultiplier": 0.975
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 197.5,
+				"price": 192.7,
 				"price6mAgo": 203.2,
-				"price1mAgo": 219.2,
+				"price1mAgo": 214.2,
 				"low3m": 185.2,
-				"return6m": -2.8,
-				"return1m": -9.9,
-				"near3mLow": false
+				"return6m": -5.2,
+				"return1m": -10,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -66,11 +70,13 @@
 				"surprise": 3.3,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.37
 	},
-	"lastUpdated": "2026-03-26T00:02:51.853Z",
-	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.65,
+	"lastUpdated": "2026-03-28T23:02:55.476Z",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.77,
 	"qcs": {
 		"earningsScore": -1.57,
 		"flowScore": 0,
@@ -92,5 +98,14 @@
 		"low": 222,
 		"mean": 249.86,
 		"high": 275
-	}
+	},
+	"analystConsensus": {
+		"ticker": "LAGR-B.ST",
+		"strongBuy": 0,
+		"moderateBuy": 0,
+		"hold": 0,
+		"moderateSell": 0,
+		"strongSell": 0
+	},
+	"consensusRating": "Unknown"
 }

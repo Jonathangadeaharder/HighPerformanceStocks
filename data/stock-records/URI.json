@@ -3,60 +3,65 @@
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {
-		"epsGrowth": "9%",
+		"epsGrowth": "5%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.61,
+		"ttmEPS": 38.62,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "33%",
-			"bull": "108%"
+			"bear": "-17%",
+			"base": "35%",
+			"bull": "112%"
 		}
 	},
-	"currentPrice": "$747.59",
-	"marketCap": "$47.6B USD",
+	"currentPrice": "$734.30",
+	"marketCap": "$46.3B USD",
 	"valuation": {
-		"trailingPE": 19.4,
-		"forwardPE": 14.1,
-		"evEbitda": 14,
-		"evFcf": 32.3
+		"trailingPE": 19,
+		"forwardPE": 13.9,
+		"evEbitda": 13.8,
+		"evFcf": 31.8
 	},
 	"metrics": {
 		"roe": "28.4%",
 		"fcfMargin": "~12%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "3.4x",
-		"ruleOf40": "15%"
+		"ruleOf40": "15%",
+		"beta": "1.65",
+		"revenueGrowth": "2.8%",
+		"roic": "8.4%",
+		"interestCoverage": "5.2x"
 	},
 	"consensus": {
 		"yahoo": "$985.89"
 	},
 	"targetPrice": "$985.89",
-	"expectedCAGR": "-19% - 108%",
+	"expectedCAGR": "-17% - 112%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.63,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 3,
+		"signal": "DEPLOY",
 		"inputs": {
-			"growth": 9,
-			"multipleType": "Forward P/E",
-			"multiple": 14.1,
+			"growth": 5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 13.8,
 			"cvStock": 0.04,
-			"riskMultiplier": 1.039
+			"riskMultiplier": 1.087
 		},
+		"note": "hasLikelyValueFloor: analyst upside 34.3% (DEPLOY override: base CAGR 35% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 747.59,
-				"price6mAgo": 947.27,
-				"price1mAgo": 858.09,
+				"price": 734.3,
+				"price6mAgo": 943.89,
+				"price1mAgo": 820.58,
 				"low3m": 701.59,
-				"return6m": -21.1,
-				"return1m": -12.9,
-				"near3mLow": false
+				"return6m": -22.2,
+				"return1m": -10.5,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -68,11 +73,12 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 3
 	},
-	"lastUpdated": "2026-03-26T00:03:02.111Z",
+	"lastUpdated": "2026-03-28T23:03:09.594Z",
 	"expectedVolatility": "~39%",
-	"sharpeRatio": 1.03,
+	"sharpeRatio": 1.1,
 	"qcs": {
 		"earningsScore": -2.73,
 		"flowScore": 0,
@@ -94,5 +100,15 @@
 		"low": 600,
 		"mean": 985.89,
 		"high": 1550
-	}
+	},
+	"analystConsensus": {
+		"ticker": "URI",
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 2
+	},
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$925.59"
 }
