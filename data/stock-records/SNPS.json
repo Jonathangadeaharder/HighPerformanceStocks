@@ -2,18 +2,18 @@
 	"ticker": "SNPS",
 	"name": "Synopsys",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
+	"confidence": "high",
 	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 5.4x.",
-	"marketCap": "$78.6B USD",
-	"sharpeRatio": 0.42,
-	"expectedCAGR": "4% - 58%",
+	"marketCap": "$72.9B USD",
+	"sharpeRatio": 0.59,
+	"expectedCAGR": "12% - 71%",
 	"expectedVolatility": "~63%",
 	"valuation": {
-		"trailingPE": 62.9,
-		"forwardPE": 24,
+		"trailingPE": 58.4,
+		"forwardPE": 22.3,
 		"pegRatio": null,
-		"evEbitda": 54,
-		"evFcf": 28.2
+		"evEbitda": 50.5,
+		"evFcf": 26.3
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~5.4x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$410.13",
+	"currentPrice": "$380.47",
 	"consensus": {
 		"tipranks": "$535",
 		"yahoo": "$537.75",
@@ -37,33 +37,34 @@
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "31%",
-			"bull": "58%"
+			"bear": "12%",
+			"base": "41%",
+			"bull": "71%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-26T08:26:30.231Z",
+	"lastUpdated": "2026-03-28T18:01:03.722Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.8,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 3.79,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 13,
-			"multipleType": "Forward P/E",
-			"multiple": 24,
+			"multipleType": "EV/EBITDA",
+			"multiple": 50.5,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
+		"note": "hasLikelyValueFloor: analyst upside 41.3% + QCS 10.95 (WAIT override (stalled by stabilization): base CAGR 41% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 410.13,
-				"price6mAgo": 487.76,
-				"price1mAgo": 426,
-				"low3m": 403.33,
-				"return6m": -15.9,
-				"return1m": -3.7,
+				"price": 380.47,
+				"price6mAgo": 481.61,
+				"price1mAgo": 424.66,
+				"low3m": 379.5,
+				"return6m": -21,
+				"return1m": -10.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -75,7 +76,9 @@
 				"surprise": 6,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.67
 	},
 	"qcs": {
 		"earningsScore": 1.37,

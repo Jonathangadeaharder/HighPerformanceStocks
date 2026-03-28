@@ -2,24 +2,24 @@
 	"ticker": "PSK.TO",
 	"name": "PrairieSky Royalty",
 	"group": "Energy & Infrastructure",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Canadian equivalent of TPL. Fee-simple land royalties. Zero capex, pure FCF.",
 	"cagrModel": {
 		"epsGrowth": "10%",
-		"basis": "Non-GAAP EPS",
+		"basis": "Price-to-FCF",
 		"ttmEPS": 0.87,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "4%",
-			"bull": "11%"
+			"bear": "-13%",
+			"base": "1%",
+			"bull": "8%"
 		}
 	},
-	"currentPrice": "C$32.43",
-	"marketCap": "C$7.5B",
+	"currentPrice": "C$33.21",
+	"marketCap": "C$7.7B",
 	"valuation": {
-		"trailingPE": 37.3,
-		"forwardPE": 34.9
+		"trailingPE": 38.2,
+		"forwardPE": 35.7
 	},
 	"metrics": {
 		"roe": "7.8%",
@@ -31,27 +31,27 @@
 		"yahoo": "C$32.68"
 	},
 	"targetPrice": "C$32.68",
-	"expectedCAGR": "-11% - 11%",
+	"expectedCAGR": "-13% - 8%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 3.36,
+		"engine": "fCFG",
+		"score": 3.67,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 34.9,
+			"multipleType": "P/CF",
+			"multiple": 38.2,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.43,
-				"price6mAgo": 26.51,
-				"price1mAgo": 30.78,
+				"price": 33.21,
+				"price6mAgo": 25.72,
+				"price1mAgo": 31.79,
 				"low3m": 25.83,
-				"return6m": 22.3,
-				"return1m": 5.4,
+				"return6m": 29.1,
+				"return1m": 4.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -63,11 +63,13 @@
 				"surprise": 52.9,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 3.43
 	},
-	"lastUpdated": "2026-03-26T08:26:28.351Z",
+	"lastUpdated": "2026-03-28T18:01:01.581Z",
 	"expectedVolatility": "~25%",
-	"sharpeRatio": -0.18,
+	"sharpeRatio": -0.28,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

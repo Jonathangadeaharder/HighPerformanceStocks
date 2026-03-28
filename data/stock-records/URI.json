@@ -3,26 +3,26 @@
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {
-		"epsGrowth": "9%",
+		"epsGrowth": "5%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.58,
+		"ttmEPS": 38.62,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "33%",
-			"bull": "108%"
+			"bear": "-17%",
+			"base": "35%",
+			"bull": "112%"
 		}
 	},
-	"currentPrice": "$747.59",
-	"marketCap": "$47.6B USD",
+	"currentPrice": "$734.30",
+	"marketCap": "$46.3B USD",
 	"valuation": {
-		"trailingPE": 19.4,
-		"forwardPE": 14.1,
-		"evEbitda": 14,
-		"evFcf": 32.3
+		"trailingPE": 19,
+		"forwardPE": 13.9,
+		"evEbitda": 13.8,
+		"evFcf": 31.8
 	},
 	"metrics": {
 		"roe": "28.4%",
@@ -35,28 +35,29 @@
 		"yahoo": "$985.89"
 	},
 	"targetPrice": "$985.89",
-	"expectedCAGR": "-19% - 108%",
+	"expectedCAGR": "-17% - 112%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.63,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 2.93,
+		"signal": "WAIT",
 		"inputs": {
-			"growth": 9,
-			"multipleType": "Forward P/E",
-			"multiple": 14.1,
+			"growth": 5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 13.8,
 			"cvStock": 0.04,
-			"riskMultiplier": 1.039
+			"riskMultiplier": 1.061
 		},
+		"note": "hasLikelyValueFloor: analyst upside 34.3% (WAIT override (stalled by stabilization): base CAGR 35% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 747.59,
-				"price6mAgo": 947.27,
-				"price1mAgo": 858.09,
+				"pass": false,
+				"price": 734.3,
+				"price6mAgo": 943.89,
+				"price1mAgo": 820.58,
 				"low3m": 701.59,
-				"return6m": -21.1,
-				"return1m": -12.9,
-				"near3mLow": false
+				"return6m": -22.2,
+				"return1m": -10.5,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -68,11 +69,12 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.93
 	},
-	"lastUpdated": "2026-03-26T08:26:33.201Z",
+	"lastUpdated": "2026-03-28T18:01:06.497Z",
 	"expectedVolatility": "~39%",
-	"sharpeRatio": 1.03,
+	"sharpeRatio": 1.1,
 	"qcs": {
 		"earningsScore": -2.73,
 		"flowScore": 0,

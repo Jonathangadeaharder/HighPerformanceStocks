@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
-	"marketCap": "$3519.4B USD",
-	"sharpeRatio": 0.12,
-	"expectedCAGR": "-36% - 52%",
+	"marketCap": "$3318.7B USD",
+	"sharpeRatio": 0.32,
+	"expectedCAGR": "-33% - 61%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 26.9,
-		"forwardPE": 21.7,
+		"trailingPE": 25.4,
+		"forwardPE": 20.4,
 		"pegRatio": 2.3,
-		"evEbitda": 23,
-		"evFcf": 90.8
+		"evEbitda": 21.7,
+		"evFcf": 85.6
 	},
 	"metrics": {
 		"fcfMargin": "~9%",
@@ -24,13 +24,13 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "27%"
 	},
-	"targetPrice": "$376.75",
+	"targetPrice": "$376.93",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$290.93",
+	"currentPrice": "$274.34",
 	"consensus": {
 		"tipranks": "$352",
-		"yahoo": "$376.75",
+		"yahoo": "$376.93",
 		"stockanalysis": "$352"
 	},
 	"cagrModel": {
@@ -38,33 +38,34 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-36%",
-			"base": "29%",
-			"bull": "52%"
+			"bear": "-33%",
+			"base": "37%",
+			"bull": "61%"
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-03-26T08:26:18.600Z",
+	"lastUpdated": "2026-03-28T18:00:50.089Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.8,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 7.11,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
-			"multipleType": "Forward P/E",
-			"multiple": 21.7,
+			"multipleType": "EV/FCF",
+			"multiple": 85.6,
 			"cvStock": 0.074,
 			"riskMultiplier": 0.997
 		},
+		"note": "hasLikelyValueFloor: analyst upside 37.4% (DEPLOY override: base CAGR 37% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 290.93,
-				"price6mAgo": 246.54,
-				"price1mAgo": 307.38,
-				"low3m": 289.24,
-				"return6m": 18,
-				"return1m": -5.4,
+				"price": 274.34,
+				"price6mAgo": 244.05,
+				"price1mAgo": 306.52,
+				"low3m": 273.95,
+				"return6m": 12.4,
+				"return1m": -10.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,7 +78,8 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.69
 	},
 	"intrinsicValue": {
 		"dcf": 154.44,
@@ -101,7 +103,7 @@
 	"description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
 	"analystTargets": {
 		"low": 185,
-		"mean": 376.75,
+		"mean": 376.93,
 		"high": 443
 	},
 	"analystConsensus": {

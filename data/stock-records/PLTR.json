@@ -2,7 +2,7 @@
 	"ticker": "PLTR",
 	"name": "Palantir",
 	"group": "Enterprise Software",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "AIP platform gaining massive traction in commercial sector.",
 	"targetPrice": "$186.60",
 	"bullCase": "Palantir's AIP platform is becoming the enterprise AI operating system — AIP bootcamps are converting Fortune 500 trials to paid contracts at an accelerating pace. US commercial revenue grew 55%+ in 2025. The US government remains a structural buyer (DoD, CIA, NHS equivalent) regardless of political cycles. AIP's value proposition strengthens as AI adoption deepens.",
@@ -11,39 +11,40 @@
 		"epsGrowth": "35%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 0.64,
+		"ttmEPS": 0.63,
 		"scenarios": {
-			"bear": "-55%",
-			"base": "20%",
-			"bull": "68%"
+			"bear": "-51%",
+			"base": "30%",
+			"bull": "82%"
 		}
 	},
-	"currentPrice": "$154.96",
-	"marketCap": "$370.6B USD",
+	"currentPrice": "$143.06",
+	"marketCap": "$342.2B USD",
 	"consensus": {
 		"yahoo": "$186.60"
 	},
 	"expectedVolatility": "~57%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.62,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 8.39,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 83,
+			"multipleType": "EV/FCF",
+			"multiple": 265.9,
 			"cvStock": 0.122,
 			"riskMultiplier": 1.025
 		},
+		"note": "hasLikelyValueFloor: analyst upside 30.4% (DEPLOY override: base CAGR 30% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 154.96,
-				"price6mAgo": 177.57,
-				"price1mAgo": 135.94,
+				"price": 143.06,
+				"price6mAgo": 178.86,
+				"price1mAgo": 145.17,
 				"low3m": 126.23,
-				"return6m": -12.7,
-				"return1m": 14,
+				"return6m": -20,
+				"return1m": -1.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -55,14 +56,16 @@
 				"surprise": 8.6,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.42
 	},
-	"lastUpdated": "2026-03-26T08:26:28.273Z",
+	"lastUpdated": "2026-03-28T18:01:01.688Z",
 	"valuation": {
-		"trailingPE": 242.1,
-		"forwardPE": 83,
-		"evEbitda": 252.6,
-		"evFcf": 288.5
+		"trailingPE": 227.1,
+		"forwardPE": 76.6,
+		"evEbitda": 232.8,
+		"evFcf": 265.9
 	},
 	"metrics": {
 		"roe": "26.0%",
@@ -71,8 +74,8 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "98%"
 	},
-	"expectedCAGR": "-55% - 68%",
-	"sharpeRatio": 0.04,
+	"expectedCAGR": "-51% - 82%",
+	"sharpeRatio": 0.19,
 	"intrinsicValue": {
 		"dcf": 9.63,
 		"date": "2026-03-26",

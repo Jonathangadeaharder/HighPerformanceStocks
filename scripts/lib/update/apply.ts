@@ -260,6 +260,12 @@ export function applyUpdates(
 	const qcsData = computeQCS(summary, cvStock);
 	if (qcsData) {
 		stock.qcs = qcsData;
+		
+		const qcsScore = qcsData.totalScore;
+		if (qcsScore >= 10) stock.confidence = 'high';
+		else if (qcsScore >= 5) stock.confidence = 'medium';
+		else if (qcsScore >= 0) stock.confidence = 'low';
+		else stock.confidence = 'cut';
 	}
 
 	if (summary?.assetProfile?.longBusinessSummary) {

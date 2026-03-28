@@ -3,7 +3,7 @@
 	"name": "ICON plc",
 	"group": "Healthcare Services",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "Massive CRO running trials for big pharma. Consistent 12-16% EPS growth, often very reasonably priced.",
 	"bullCase": "ICON is the world's second-largest CRO with deep therapeutic expertise in oncology and rare disease. After a severe biotech funding correction drove a -44% selloff, the stock trades at 8x forward PE — an extreme valuation compression. When biotech funding recovers, ICON benefits from pent-up demand for Phase II-III outsourcing. FSP (Functional Service Provider) model provides flexible capacity to large pharma clients.",
 	"bearCase": "NIH budget cuts under DOGE are directly reducing academic research contracts. The biotech funding freeze of 2022-2025 caused trial cancellations that are still clearing backlogs. ICON faces pricing pressure from IQVIA and Syneos competing for large pharma FSP contracts. High fixed costs from headcount make it operationally leveraged in both directions.",
@@ -13,18 +13,18 @@
 		"ttmEPS": 7.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-25%",
-			"base": "39%",
-			"bull": "120%"
+			"bear": "-27%",
+			"base": "32%",
+			"bull": "112%"
 		}
 	},
-	"currentPrice": "$99.99",
-	"marketCap": "$7.8B USD",
+	"currentPrice": "$102.08",
+	"marketCap": "$7.9B USD",
 	"valuation": {
-		"trailingPE": 13.5,
-		"forwardPE": 8,
-		"evEbitda": 7.1,
-		"evFcf": 11.6
+		"trailingPE": 13.8,
+		"forwardPE": 8.2,
+		"evEbitda": 7.2,
+		"evFcf": 11.8
 	},
 	"metrics": {
 		"roe": "6.3%",
@@ -34,34 +34,35 @@
 		"ruleOf40": "12%"
 	},
 	"consensus": {
-		"yahoo": "$138.64"
+		"yahoo": "$134.69"
 	},
-	"targetPrice": "$138.64",
-	"expectedCAGR": "-25% - 120%",
+	"targetPrice": "$134.69",
+	"expectedCAGR": "-27% - 112%",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 1.06,
-		"signal": "WAIT",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 14,
-			"multipleType": "Forward P/E",
-			"multiple": 8,
-			"cvStock": 0.068,
-			"riskMultiplier": 1.861
+			"multipleType": "EV/EBITDA",
+			"multiple": 7.2,
+			"cvStock": 0.069,
+			"riskMultiplier": 2.069
 		},
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 99.99,
-				"price6mAgo": 163.79,
-				"price1mAgo": 106.13,
+				"price": 102.08,
+				"price6mAgo": 163.44,
+				"price1mAgo": 108.27,
 				"low3m": 66.57,
-				"return6m": -39,
-				"return1m": -5.8,
+				"return6m": -37.5,
+				"return1m": -5.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 1,
 				"down30d": 7
 			},
@@ -70,30 +71,31 @@
 				"quarter": "2025-09"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.06
 	},
-	"lastUpdated": "2026-03-26T08:26:20.460Z",
+	"lastUpdated": "2026-03-28T18:00:52.045Z",
 	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.58,
+	"sharpeRatio": 0.51,
 	"qcs": {
-		"earningsScore": 0.99,
+		"earningsScore": 0.97,
 		"flowScore": 0,
-		"revisionsScore": -1.47,
-		"totalScore": -0.48,
+		"revisionsScore": -1.56,
+		"totalScore": -0.59,
 		"raw": {
 			"avgSurprisePct": 1.68,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
 			"downRevisions": 5,
-			"totalAnalysts": 17
+			"totalAnalysts": 16
 		}
 	},
 	"description": "ICON Public Limited Company, a clinical research organization, provides outsourced development and commercialization services in Ireland, rest of Europe, the United States, and internationally.",
 	"analystTargets": {
 		"low": 75,
-		"mean": 138.64,
-		"high": 220
+		"mean": 134.69,
+		"high": 216
 	},
 	"analystConsensus": {
 		"ticker": "ICLR",

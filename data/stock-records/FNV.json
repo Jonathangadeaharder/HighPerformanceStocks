@@ -3,18 +3,18 @@
 	"name": "Franco-Nevada",
 	"group": "Royalties",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$45.1B USD",
 	"sharpeRatio": 0.81,
 	"expectedCAGR": "16% - 53%",
 	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 40.5,
-		"forwardPE": 23.6,
+		"trailingPE": 40.6,
+		"forwardPE": 23.7,
 		"pegRatio": 5,
-		"evEbitda": 26.9,
-		"evFcf": -41.6
+		"evEbitda": 27,
+		"evFcf": -41.7
 	},
 	"metrics": {
 		"fcfMargin": "~-59%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$305.90",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$233.67",
+	"currentPrice": "$233.95",
 	"consensus": {
 		"tipranks": "$250",
 		"yahoo": "$305.90",
@@ -44,17 +44,48 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-26T08:26:18.491Z",
+	"lastUpdated": "2026-03-28T18:00:49.754Z",
 	"screener": {
-		"engine": "fCFG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/FCF"
+		"engine": "fEVG",
+		"score": 2.3,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 12,
+			"multipleType": "EV/EBITDA",
+			"multiple": 27,
+			"cvStock": 0.114,
+			"riskMultiplier": 1.02
+		},
+		"note": "hasLikelyValueFloor: analyst upside 30.8% (DEPLOY override: base CAGR 32% ≥ 20%) (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 233.95,
+				"price6mAgo": 219.09,
+				"price1mAgo": 277.92,
+				"low3m": 202.62,
+				"return6m": 6.8,
+				"return1m": -15.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 4
+			},
+			"earningsSurprise": {
+				"surprise": 10.9,
+				"quarter": "2025-12"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.02
 	},
 	"qcs": {
-		"earningsScore": 4.11,
+		"earningsScore": 2.88,
 		"flowScore": 2.5,
 		"revisionsScore": 0.5,
-		"totalScore": 7.11,
+		"totalScore": 5.88,
 		"raw": {
 			"avgSurprisePct": 8.21,
 			"netInsiderShares": 0,

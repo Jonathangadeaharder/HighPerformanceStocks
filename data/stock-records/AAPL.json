@@ -2,7 +2,7 @@
 	"ticker": "AAPL",
 	"name": "Apple",
 	"group": "Consumer Monopolies",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Unmatched consumer hardware ecosystem and services revenue moat. Massive, relentless share repurchases support EPS floor.",
 	"cagrModel": {
 		"epsGrowth": "10%",
@@ -10,19 +10,19 @@
 		"ttmEPS": 7.89,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "17%",
-			"bull": "39%"
+			"bear": "-18%",
+			"base": "19%",
+			"bull": "41%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$252.62",
-	"marketCap": "$3713.0B USD",
+	"currentPrice": "$248.80",
+	"marketCap": "$3656.8B USD",
 	"valuation": {
-		"trailingPE": 31.9,
-		"forwardPE": 27.1,
-		"evEbitda": 24.4,
-		"evFcf": 35.1
+		"trailingPE": 31.5,
+		"forwardPE": 26.7,
+		"evEbitda": 24,
+		"evFcf": 34.6
 	},
 	"metrics": {
 		"roe": "152.0%",
@@ -35,29 +35,29 @@
 		"yahoo": "$295.31"
 	},
 	"targetPrice": "$295.31",
-	"expectedCAGR": "-19% - 39%",
+	"expectedCAGR": "-18% - 41%",
 	"expectedVolatility": "~31%",
-	"sharpeRatio": 0.18,
+	"sharpeRatio": 0.23,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.67,
+		"score": 2.63,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 27.1,
+			"multiple": 26.7,
 			"cvStock": 0.054,
 			"riskMultiplier": 0.984
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 252.62,
-				"price6mAgo": 255.46,
-				"price1mAgo": 272.95,
+				"price": 248.8,
+				"price6mAgo": 254.43,
+				"price1mAgo": 264.72,
 				"low3m": 243.42,
-				"return6m": -1.1,
-				"return1m": -7.4,
+				"return6m": -2.2,
+				"return1m": -6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -73,11 +73,11 @@
 	},
 	"bullCase": "Apple's Services segment (App Store, iCloud, Apple TV+, Apple Pay) is growing 15%+ annually and now represents ~40% of gross profit at 70%+ margins. Apple Intelligence AI features are the catalyst for an iPhone 17 upgrade supercycle in 2025-2026. The $100B+ annual buyback program reduces float by ~3% per year, compounding EPS mechanically.",
 	"bearCase": "Apple is expensive at 27x forward PE for a 10% EPS grower. China revenue (~18% of total) faces escalating geopolitical and regulatory pressure. Antitrust actions targeting the App Store 30% commission could remove $5-8B of annual high-margin revenue. Hardware replacement cycles are extending as smartphones mature.",
-	"lastUpdated": "2026-03-26T08:26:10.990Z",
+	"lastUpdated": "2026-03-28T18:00:35.543Z",
 	"intrinsicValue": {
-		"dcf": 158.11,
-		"date": "2026-03-26",
-		"discount": -37
+		"dcf": 155.02,
+		"date": "2026-03-28",
+		"discount": -38
 	},
 	"qcs": {
 		"earningsScore": 4.2,

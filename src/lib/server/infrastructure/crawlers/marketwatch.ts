@@ -29,9 +29,11 @@ export async function fetchMarketWatchIndex(
 		const result = await page.evaluate(() => {
 			const priceEl = document.querySelector('.intraday__price bg-quote, h2.intraday__price');
 			const timeEl = document.querySelector('.intraday__timestamp span.timestamp__time');
+			const timeMeta = document.querySelector('time[datetime], mw-time[data-timestamp], [data-est]') as HTMLElement | null;
 
 			let price: number | null = null;
 			let time: string | null = null;
+			let isoTimeRaw: string | null = null;
 
 			if (priceEl && priceEl.textContent) {
 				const priceStr = priceEl.textContent.trim().replaceAll(',', '');
@@ -39,20 +41,33 @@ export async function fetchMarketWatchIndex(
 				if (!isNaN(parsed)) price = parsed;
 			}
 
+			if (timeMeta) {
+				isoTimeRaw = timeMeta.getAttribute('datetime') || timeMeta.dataset.timestamp || timeMeta.dataset.est || null;
+			}
+
 			if (timeEl && timeEl.textContent) {
 				time = timeEl.textContent.trim();
 			}
 
-			return { price, time };
+			return { price, time, isoTimeRaw };
 		});
 
-		// Parse the MarketWatch timestamp (e.g., "Last Updated: Mar 25, 2026 3:15 p.m.  CDT")
-		// Note: The time parsing here is tricky because it has a timezone code.
-		// For our volatility index purposes, if the day is from the current or previous day, it's fresh enough.
-		// We'll return the raw string to let the caller handle freshness, or try to parse it to ISO.
 		let isoTime: string | null = null;
-		if (result.time) {
-			// Very rough extraction of just the date part, e.g. "Mar 25, 2026"
+
+		// 1. Prioritize machine-readable metadata if available
+		if (result.isoTimeRaw) {
+			const unix = parseInt(result.isoTimeRaw, 10);
+			if (!isNaN(unix) && unix > 1_000_000_000) {
+				// Convert seconds to ms if necessary
+				isoTime = new Date(unix * (unix < 1_000_000_000_000 ? 1000 : 1)).toISOString();
+			} else {
+				const d = new Date(result.isoTimeRaw);
+				if (!isNaN(d.getTime())) isoTime = d.toISOString();
+			}
+		}
+
+		// 2. Fallback to rough regex extraction if machine-readable attribute was missing
+		if (!isoTime && result.time) {
 			const dateMatch = /([a-z]{3} \d{1,2}, \d{4})/i.exec(result.time);
 			if (dateMatch && dateMatch[1]) {
 				const d = new Date(dateMatch[1]);

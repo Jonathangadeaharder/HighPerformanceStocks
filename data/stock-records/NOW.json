@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$108.7B USD",
-	"sharpeRatio": 1.93,
-	"expectedCAGR": "19% - 152%",
+	"marketCap": "$104.9B USD",
+	"sharpeRatio": 2.11,
+	"expectedCAGR": "24% - 162%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 61.7,
-		"forwardPE": 20.5,
-		"evEbitda": 38,
-		"evFcf": 21
+		"trailingPE": 59.5,
+		"forwardPE": 19.8,
+		"evEbitda": 36.6,
+		"evFcf": 20.2
 	},
 	"metrics": {
 		"roe": "15.5%",
@@ -24,43 +24,44 @@
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$103.06",
+	"currentPrice": "$99.41",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "19%",
-			"base": "83%",
-			"bull": "152%"
+			"bear": "24%",
+			"base": "90%",
+			"bull": "162%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-26T08:26:27.269Z",
+	"lastUpdated": "2026-03-28T18:01:00.196Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.97,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 0.95,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
-			"multipleType": "Forward P/E",
-			"multiple": 20.5,
+			"multipleType": "EV/FCF",
+			"multiple": 20.2,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},
+		"note": "WAIT override (stalled by stabilization): base CAGR 90% ≥ 20%",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 103.06,
-				"price6mAgo": 187.2,
-				"price1mAgo": 109.3,
+				"pass": false,
+				"price": 99.41,
+				"price6mAgo": 188.17,
+				"price1mAgo": 109.42,
 				"low3m": 98,
-				"return6m": -44.9,
-				"return1m": -5.7,
-				"near3mLow": false
+				"return6m": -47.2,
+				"return1m": -9.1,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -71,7 +72,9 @@
 				"surprise": 3.9,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.93
 	},
 	"qcs": {
 		"earningsScore": 5,

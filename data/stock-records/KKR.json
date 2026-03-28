@@ -2,14 +2,14 @@
 	"ticker": "KKR",
 	"name": "KKR & Co.",
 	"group": "Financials & Alt Assets",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "FRE margin ~69% on $638B AUM with permanent capital vehicle flywheel. Market misunderstands recurring permanent capital vehicle revenues.",
-	"marketCap": "$82.3B USD",
-	"sharpeRatio": 1.33,
-	"expectedCAGR": "20% - 111%",
+	"marketCap": "$82.0B USD",
+	"sharpeRatio": 1.35,
+	"expectedCAGR": "21% - 112%",
 	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 13.7,
+		"trailingPE": 13.8,
 		"forwardPE": 11.3,
 		"pegRatio": null,
 		"evEbitda": null
@@ -26,7 +26,7 @@
 	"targetPrice": "$135.77",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
-	"currentPrice": "$88.91",
+	"currentPrice": "$88.50",
 	"consensus": {
 		"tipranks": "$149",
 		"yahoo": "$135.77",
@@ -37,37 +37,38 @@
 		"epsGrowth": "20%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "20%",
+			"bear": "21%",
 			"base": "54%",
-			"bull": "111%"
+			"bull": "112%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-26T08:26:21.463Z",
+	"lastUpdated": "2026-03-28T18:00:53.100Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.93,
-		"signal": "WAIT",
+		"score": 0.92,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
-			"multiple": 18.9,
+			"multiple": 18.8,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 88.91,
-				"price6mAgo": 134.01,
-				"price1mAgo": 93.62,
+				"price": 88.5,
+				"price6mAgo": 134.48,
+				"price1mAgo": 90.61,
 				"low3m": 82.67,
-				"return6m": -33.7,
-				"return1m": -5,
+				"return6m": -34.2,
+				"return1m": -2.3,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 0,
 				"down30d": 6
 			},

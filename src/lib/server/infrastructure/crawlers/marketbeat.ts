@@ -29,43 +29,43 @@ export async function fetchMarketBeatTarget(
 		await randomDelay(1000, 3000);
 
 		const result = await page.evaluate(() => {
-			const data = {
-				consensusRating: '',
-				consensusTarget: 0,
-				upside: 0
+			const data: { consensusRating: string | null; consensusTarget: number | null; upside: number | null } = {
+				consensusRating: null,
+				consensusTarget: null,
+				upside: null
 			};
 
-			// Easiest reliable path: search all text nodes for the string "Consensus Price Target"
-			// and then grab the number immediately following it.
-			const textNodes: string[] = [];
-			const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
-			let n;
-			while ((n = walk.nextNode())) {
-				if (n.textContent) textNodes.push(n.textContent.trim());
-			}
+			// Query specific semantic structural containers to avoid full-page text parsing
+			const elements = [...document.querySelectorAll('td, th, span, div, p, strong')];
+			for (const el of elements) {
+				const text = el.textContent?.trim() || '';
+				if (!text) continue;
 
-			// We need to find the index where it says "Consensus Price Target"
-			const allText = textNodes.join(' ');
+				if (data.consensusTarget === null && text.includes('Consensus Price Target')) {
+					// Check the element itself or its nextElementSibling
+					const match = /^\$?([0-9,.]+)$/.exec(el.nextElementSibling?.textContent?.trim() || '') 
+						|| /Consensus Price Target\s*\$?([0-9,.]+)/i.exec(text);
+					if (match && match[1]) {
+						const parsed = parseFloat(match[1].replace(',', ''));
+						if (Number.isFinite(parsed)) data.consensusTarget = parsed;
+					}
+				}
 
-			// 1. Target Price ("Consensus Price Target $297.58")
-			const targetMatch = /Consensus Price Target\s*\$?([0-9,.]+)/i.exec(allText);
-			if (targetMatch && targetMatch[1]) {
-				data.consensusTarget = parseFloat(targetMatch[1].replaceAll(',', ''));
-			}
+				if (data.upside === null && text.includes('Forecasted Upside')) {
+					const nodeStr = text + ' ' + (el.nextElementSibling?.textContent ?? '');
+					const upMatch = /[\u2191\u2193]?(\d{1,10}(?:\.\d{1,4})?)%\s{0,10}Upside/i.exec(nodeStr);
+					const dnMatch = /[\u2191\u2193]?(\d{1,10}(?:\.\d{1,4})?)%\s{0,10}Downside/i.exec(nodeStr);
+					if (upMatch && upMatch[1]) data.upside = parseFloat(upMatch[1]);
+					if (dnMatch && dnMatch[1]) data.upside = -parseFloat(dnMatch[1]);
+				}
 
-			// 2. Upside ("Forecasted Upside 17.80% Upside")
-			const upsideMatch =
-				/Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Upside/i.exec(allText) ||
-				/Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Downside/i.exec(allText);
-			if (upsideMatch && upsideMatch[1]) {
-				const val = parseFloat(upsideMatch[1]);
-				data.upside = /Forecasted Upside\s*[\u2191\u2193]?([0-9.]+)%\s*Downside/i.test(allText) ? -val : val;
-			}
-
-			// 3. Consensus Rating ("Consensus Rating Moderate Buy")
-			const ratingMatch = /Consensus Rating\s*(Moderate Buy|Strong Buy|Hold|Moderate Sell|Strong Sell)/i.exec(allText);
-			if (ratingMatch && ratingMatch[1]) {
-				data.consensusRating = ratingMatch[1].trim();
+				if (data.consensusRating === null && text.includes('Consensus Rating')) {
+					const nodeStr = text + ' ' + (el.nextElementSibling?.textContent ?? '');
+					const match = /(Moderate Buy|Strong Buy|Hold|Moderate Sell|Strong Sell)/i.exec(nodeStr);
+					if (match && match[1]) {
+						data.consensusRating = match[1].trim();
+					}
+				}
 			}
 
 			return data;
@@ -76,7 +76,7 @@ export async function fetchMarketBeatTarget(
 			currentPrice: null, // Removed currentPrice since we don't strictly need it and we don't have it in the new extraction method
 			consensusRating: result.consensusRating || 'Unknown',
 			consensusTarget: result.consensusTarget,
-			upside: result.upside ? +result.upside.toFixed(2) : null
+			upside: result.upside === null ? null : +result.upside.toFixed(2)
 		};
 	} finally {
 		await page.close();

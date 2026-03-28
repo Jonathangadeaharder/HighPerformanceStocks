@@ -3,22 +3,22 @@
 	"name": "Danaher Corporation",
 	"group": "Serial Acquirers",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Abcam acquisition. Could be a re-entry point for patient investors.",
-	"marketCap": "$132.3B USD",
-	"sharpeRatio": 1.2,
-	"expectedCAGR": "19% - 67%",
+	"marketCap": "$128.5B USD",
+	"sharpeRatio": 1.33,
+	"expectedCAGR": "22% - 72%",
 	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 37.2,
-		"forwardPE": 20.6,
+		"trailingPE": 36.1,
+		"forwardPE": 19.9,
 		"pegRatio": null,
-		"evEbitda": 18.8,
-		"evFcf": 32.4
+		"evEbitda": 18.3,
+		"evFcf": 31.5
 	},
 	"metrics": {
 		"fcfMargin": "~19%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"roic": "~6.8% (trough)",
 		"roe": "7.1%",
 		"netDebtEbitda": "1.9x",
@@ -28,7 +28,7 @@
 	"targetPrice": "$264.91",
 	"bullCase": "Danaher's life sciences tools and bioprocessing businesses (Cytiva) are recovering from the deepest post-COVID inventory destocking in decades. Abcam acquisition ($5.7B, 2023) adds genomic reagents and antibodies to the portfolio. When bioprocessing (bioreactors, filtration) volumes normalize, Danaher's ROIC should recover from trough levels toward 20%+.",
 	"bearCase": "Danaher's bioprocessing recovery has been slower than expected — large pharma customers are still burning through COVID-era inventory builds. The Abcam integration ($9.9B combined with premium paid) creates 3-5 years of amortization drag. If ROIC stays below WACC through 2026, the compounding thesis is impaired.",
-	"currentPrice": "$187.15",
+	"currentPrice": "$181.52",
 	"consensus": {
 		"tipranks": "$248",
 		"yahoo": "$264.91",
@@ -39,33 +39,34 @@
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "19%",
-			"base": "43%",
-			"bull": "67%"
+			"bear": "22%",
+			"base": "47%",
+			"bull": "72%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T08:26:16.602Z",
+	"lastUpdated": "2026-03-28T18:00:46.243Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.29,
-		"signal": "FAIL",
+		"score": 1.25,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 18.8,
+			"multiple": 18.3,
 			"cvStock": 0.012,
 			"riskMultiplier": 0.959
 		},
+		"note": "hasLikelyValueFloor: analyst upside 45.9% (DEPLOY override: base CAGR 47% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 187.15,
-				"price6mAgo": 184.84,
-				"price1mAgo": 209.36,
-				"low3m": 184.99,
-				"return6m": 1.2,
-				"return1m": -10.6,
+				"price": 181.52,
+				"price6mAgo": 186.06,
+				"price1mAgo": 206,
+				"low3m": 181.01,
+				"return6m": -2.4,
+				"return1m": -11.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -79,8 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 1.36
 	},
 	"qcs": {
 		"earningsScore": 5,

@@ -2,28 +2,28 @@
 	"ticker": "NVO",
 	"name": "Novo Nordisk",
 	"group": "Large-Cap Pharma",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Leading GLP-1 manufacturer with Ozempic/Wegovy infrastructure advantage, though LLY is now a genuine competitor. Thesis rests on manufacturing scale, oral semaglutide, and CagriSema combination pipeline.",
 	"bullCase": "Novo Nordisk retains the world's most powerful GLP-1 commercial infrastructure — Ozempic and Wegovy have 70%+ market share in established markets. Oral semaglutide (Rybelsus and oral once-weekly formulations) open a new 10x larger addressable market. Manufacturing capacity expansion through 2027 will restore supply constraints. The CagriSema combination, despite a Phase 3 miss vs. expectations, still showed 22.7% weight loss — superior to any non-GLP-1 obesity drug.",
 	"bearCase": "Increasing competition from Eli Lilly's Zepbound and emerging oral challengers. Potential for Medicare pricing negotiations and political pressure on obesity drug pricing in the US.",
 	"cagrModel": {
 		"epsGrowth": "13%",
 		"basis": "Non-GAAP EPS; reflects maturing GLP-1 market share and pipeline resilience",
-		"ttmEPS": 3.58,
+		"ttmEPS": 3.56,
 		"dividendYield": "5%",
 		"scenarios": {
 			"bear": "15%",
-			"base": "34%",
-			"bull": "80%"
+			"base": "35%",
+			"bull": "81%"
 		}
 	},
-	"currentPrice": "$36.33",
-	"marketCap": "$162.5B USD",
+	"currentPrice": "$36.04",
+	"marketCap": "$161.2B USD",
 	"valuation": {
 		"trailingPE": 10.1,
-		"forwardPE": 10.7,
+		"forwardPE": 10.6,
 		"evEbitda": null,
-		"evFcf": 704.3
+		"evFcf": 700.9
 	},
 	"metrics": {
 		"roe": "60.7%",
@@ -33,33 +33,33 @@
 		"ruleOf40": "-7%"
 	},
 	"consensus": {
-		"yahoo": "$46.98"
+		"yahoo": "$46.89"
 	},
-	"targetPrice": "$46.98",
-	"expectedCAGR": "15% - 80%",
+	"targetPrice": "$46.89",
+	"expectedCAGR": "15% - 81%",
 	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.77,
+	"sharpeRatio": 0.78,
 	"screener": {
-		"engine": "totalReturn",
-		"score": 0.67,
+		"engine": "fPERG",
+		"score": 0.8,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 13,
-			"dividendYield": 5,
-			"debtToEquity": 67,
-			"debtPenalty": false,
-			"rawReturn": 18
+			"multipleType": "Forward P/E",
+			"multiple": 10.6,
+			"cvStock": 0.041,
+			"riskMultiplier": 0.977
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 36.33,
-				"price6mAgo": 55.61,
-				"price1mAgo": 37.62,
+				"price": 36.04,
+				"price6mAgo": 55.5,
+				"price1mAgo": 37.76,
 				"low3m": 35.85,
-				"return6m": -34.7,
-				"return1m": -3.4,
+				"return6m": -35.1,
+				"return1m": -4.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -74,10 +74,10 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": 1.9,
+		"earningsScore": 3.7,
 		"flowScore": 0,
 		"revisionsScore": 1,
-		"totalScore": 2.9,
+		"totalScore": 4.7,
 		"raw": {
 			"avgSurprisePct": 3.79,
 			"netInsiderShares": 0,
@@ -88,11 +88,11 @@
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-03-26T08:26:27.431Z",
+	"lastUpdated": "2026-03-28T18:01:00.362Z",
 	"analystTargets": {
-		"low": 39.91,
-		"mean": 46.98,
-		"high": 63.69
+		"low": 39.74,
+		"mean": 46.89,
+		"high": 63.43
 	},
 	"analystConsensus": {
 		"ticker": "NVO",

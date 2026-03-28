@@ -3,15 +3,15 @@
 	"name": "Nu Holdings",
 	"group": "Financials & Alt Assets",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
-	"marketCap": "$69.5B USD",
-	"sharpeRatio": 0.8,
-	"expectedCAGR": "19% - 54%",
+	"marketCap": "$66.0B USD",
+	"sharpeRatio": 0.97,
+	"expectedCAGR": "25% - 62%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 16.9,
-		"forwardPE": 12.3,
+		"trailingPE": 16.1,
+		"forwardPE": 11.7,
 		"pegRatio": 0.6,
 		"evEbitda": null
 	},
@@ -27,7 +27,7 @@
 	"targetPrice": "$20.25",
 	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche.",
-	"currentPrice": "$14.32",
+	"currentPrice": "$13.60",
 	"consensus": {
 		"tipranks": "$18",
 		"yahoo": "$20.25",
@@ -38,52 +38,23 @@
 		"epsGrowth": "28%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "19%",
-			"base": "41%",
-			"bull": "54%"
+			"bear": "25%",
+			"base": "49%",
+			"bull": "62%"
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-26T08:26:27.329Z",
+	"lastUpdated": "2026-03-28T18:01:00.203Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.53,
-		"signal": "PASS",
-		"inputs": {
-			"growth": 28,
-			"multipleType": "Forward P/E",
-			"multiple": 12.3,
-			"cvStock": 0.077,
-			"riskMultiplier": 1.218
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 14.32,
-				"price6mAgo": 15.78,
-				"price1mAgo": 15.06,
-				"low3m": 13.53,
-				"return6m": -9.3,
-				"return1m": -4.9,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 5,
-				"down30d": 2
-			},
-			"earningsSurprise": {
-				"surprise": -1.6,
-				"quarter": "2025-12"
-			}
-		},
-		"note": "(CYCLICAL EPS)"
+		"engine": "fEVG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative EV/EBITDA"
 	},
 	"qcs": {
-		"earningsScore": 0.45,
+		"earningsScore": 0.43,
 		"flowScore": 0,
 		"revisionsScore": 0.77,
-		"totalScore": 1.22,
+		"totalScore": 1.2,
 		"raw": {
 			"avgSurprisePct": 0.86,
 			"netInsiderShares": 0,

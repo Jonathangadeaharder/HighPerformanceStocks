@@ -8,27 +8,27 @@
 	"cagrModel": {
 		"epsGrowth": "25%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 9.75,
+		"ttmEPS": 9.74,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-25%",
-			"base": "12%",
-			"bull": "28%"
+			"bear": "-17%",
+			"base": "23%",
+			"bull": "40%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$369.34",
-	"marketCap": "$293.1B USD",
+	"currentPrice": "$337.17",
+	"marketCap": "$267.6B USD",
 	"valuation": {
-		"trailingPE": 37.9,
-		"forwardPE": 26.7,
-		"evEbitda": 32.8,
-		"evFcf": 67.2
+		"trailingPE": 34.6,
+		"forwardPE": 24.4,
+		"evEbitda": 30,
+		"evFcf": 61.3
 	},
 	"metrics": {
 		"roe": "38.9%",
 		"fcfMargin": "~15%",
-		"fcfYield": "~1%",
+		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "13%"
 	},
@@ -36,29 +36,30 @@
 		"yahoo": "$410.63"
 	},
 	"targetPrice": "$410.63",
-	"expectedCAGR": "-25% - 28%",
-	"expectedVolatility": "~48%",
-	"sharpeRatio": -0.06,
+	"expectedCAGR": "-17% - 40%",
+	"expectedVolatility": "~49%",
+	"sharpeRatio": 0.14,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.08,
-		"signal": "WAIT",
+		"engine": "fEVG",
+		"score": 1.21,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 25,
-			"multipleType": "Forward P/E",
-			"multiple": 26.7,
+			"multipleType": "EV/EBITDA",
+			"multiple": 30,
 			"cvStock": 0.099,
 			"riskMultiplier": 1.011
 		},
+		"note": "hasLikelyValueFloor: QCS 12.03 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 23% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 369.34,
-				"price6mAgo": 203.92,
-				"price1mAgo": 375.72,
+				"price": 337.17,
+				"price6mAgo": 204.95,
+				"price1mAgo": 372.18,
 				"low3m": 255.96,
-				"return6m": 81.1,
-				"return1m": -1.7,
+				"return6m": 64.5,
+				"return1m": -9.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +72,10 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.99
 	},
-	"lastUpdated": "2026-03-26T08:26:11.855Z",
+	"lastUpdated": "2026-03-28T18:00:36.618Z",
 	"qcs": {
 		"earningsScore": 2.03,
 		"flowScore": 5,

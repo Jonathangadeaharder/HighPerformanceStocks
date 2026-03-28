@@ -3,47 +3,48 @@
 	"name": "Advanced Micro Devices",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Targeting >35% data center revenue CAGR through 2028 with MI450 ramp and data center expansion.",
-	"marketCap": "$359.1B USD",
-	"sharpeRatio": 0.45,
-	"expectedCAGR": "0% - 66%",
+	"marketCap": "$329.3B USD",
+	"sharpeRatio": 0.64,
+	"expectedCAGR": "9% - 81%",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "0%",
-			"base": "31%",
-			"bull": "66%"
+			"bear": "9%",
+			"base": "43%",
+			"bull": "81%"
 		},
-		"ttmEPS": 2.6,
+		"ttmEPS": 2.61,
 		"epsGrowth": "35%",
 		"dividendYield": "0%",
 		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T08:26:11.978Z",
+	"lastUpdated": "2026-03-28T18:00:36.592Z",
 	"consensus": {
 		"yahoo": "$289.61"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.65,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.52,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 20.5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 47.9,
 			"cvStock": 0.134,
 			"riskMultiplier": 1.033
 		},
+		"note": "hasLikelyValueFloor: analyst upside 43.4% (DEPLOY override: base CAGR 43% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 220.27,
-				"price6mAgo": 159.46,
-				"price1mAgo": 203.68,
+				"price": 201.99,
+				"price6mAgo": 161.36,
+				"price1mAgo": 198.62,
 				"low3m": 188.22,
-				"return6m": 38.1,
-				"return1m": 8.1,
+				"return6m": 25.2,
+				"return1m": 1.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -56,19 +57,20 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.6
 	},
 	"intrinsicValue": {
-		"dcf": 63.62,
-		"date": "2026-03-26",
-		"discount": -71
+		"dcf": 62.98,
+		"date": "2026-03-28",
+		"discount": -69
 	},
-	"currentPrice": "$220.27",
+	"currentPrice": "$201.99",
 	"valuation": {
-		"trailingPE": 84.7,
-		"forwardPE": 20.5,
-		"evEbitda": 52.3,
-		"evFcf": 76.9
+		"trailingPE": 77.4,
+		"forwardPE": 18.8,
+		"evEbitda": 47.9,
+		"evFcf": 70.4
 	},
 	"metrics": {
 		"roe": "7.1%",
@@ -86,7 +88,7 @@
 		"totalScore": 1.78,
 		"raw": {
 			"avgSurprisePct": 5.18,
-			"netInsiderShares": 484604,
+			"netInsiderShares": 486854,
 			"instFlowTrend": "neutral",
 			"upRevisions": 7,
 			"downRevisions": 5,

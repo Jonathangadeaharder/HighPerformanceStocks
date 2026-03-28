@@ -11,18 +11,18 @@
 		"ttmEPS": 4.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "42%",
-			"bull": "105%"
+			"bear": "1%",
+			"base": "50%",
+			"bull": "117%"
 		}
 	},
-	"currentPrice": "$73.08",
-	"marketCap": "$151.8B USD",
+	"currentPrice": "$69.18",
+	"marketCap": "$142.4B USD",
 	"valuation": {
-		"trailingPE": 15.5,
-		"forwardPE": 17,
-		"evEbitda": 24.7,
-		"evFcf": 24.6
+		"trailingPE": 14.6,
+		"forwardPE": 16.1,
+		"evEbitda": 23.5,
+		"evFcf": 23.3
 	},
 	"metrics": {
 		"roe": "39.9%",
@@ -35,29 +35,29 @@
 		"yahoo": "$103.68"
 	},
 	"targetPrice": "$103.68",
-	"expectedCAGR": "-4% - 105%",
+	"expectedCAGR": "1% - 117%",
 	"screener": {
-		"engine": "tPERG",
-		"score": 0.9,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.37,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 15.5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 23.5,
 			"cvStock": 0.165,
 			"riskMultiplier": 1.051
 		},
-		"note": "Recent earnings miss (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 49.9% (WAIT override (stalled by stabilization): base CAGR 50% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 73.08,
-				"price6mAgo": 98.45,
-				"price1mAgo": 74.8,
-				"low3m": 69.02,
-				"return6m": -25.8,
-				"return1m": -2.3,
-				"near3mLow": false
+				"pass": false,
+				"price": 69.18,
+				"price6mAgo": 99.57,
+				"price1mAgo": 75.95,
+				"low3m": 68.46,
+				"return6m": -30.5,
+				"return1m": -8.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -68,18 +68,20 @@
 				"surprise": -81.9,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.94
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-26T08:26:32.910Z",
+	"lastUpdated": "2026-03-28T18:01:06.502Z",
 	"intrinsicValue": {
 		"dcf": 141.64,
 		"date": "2026-03-26",
 		"discount": 94
 	},
 	"expectedVolatility": "~36%",
-	"sharpeRatio": 1.28,
+	"sharpeRatio": 1.51,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

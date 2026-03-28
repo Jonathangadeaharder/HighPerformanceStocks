@@ -2,7 +2,7 @@
 	"ticker": "MSFT",
 	"name": "Microsoft",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Enterprise software and cloud computing monopoly. Unparalleled B2B distribution network and AI infrastructure leadership via Azure/OpenAI.",
 	"cagrModel": {
 		"epsGrowth": "14%",
@@ -10,18 +10,18 @@
 		"ttmEPS": 16,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "60%",
-			"bull": "98%"
+			"bear": "11%",
+			"base": "66%",
+			"bull": "106%"
 		}
 	},
-	"currentPrice": "$371.04",
-	"marketCap": "$2757.7B USD",
+	"currentPrice": "$356.77",
+	"marketCap": "$2651.6B USD",
 	"valuation": {
-		"trailingPE": 23.2,
-		"forwardPE": 19.7,
-		"evEbitda": 15.9,
-		"evFcf": 52
+		"trailingPE": 22.3,
+		"forwardPE": 18.9,
+		"evEbitda": 15.3,
+		"evFcf": 50
 	},
 	"metrics": {
 		"roe": "34.4%",
@@ -31,32 +31,33 @@
 		"ruleOf40": "34%"
 	},
 	"consensus": {
-		"yahoo": "$591.60"
+		"yahoo": "$589.90"
 	},
-	"targetPrice": "$591.60",
-	"expectedCAGR": "7% - 98%",
+	"targetPrice": "$589.90",
+	"expectedCAGR": "11% - 106%",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 1.85,
+	"sharpeRatio": 2.08,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.43,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 3.62,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
-			"multipleType": "Forward P/E",
-			"multiple": 19.7,
+			"multipleType": "EV/FCF",
+			"multiple": 50,
 			"cvStock": 0.101,
 			"riskMultiplier": 1.013
 		},
+		"note": "hasLikelyValueFloor: analyst upside 65.3% (WAIT override (stalled by stabilization): base CAGR 66% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 371.04,
-				"price6mAgo": 511.46,
-				"price1mAgo": 401.72,
-				"low3m": 369.63,
-				"return6m": -27.5,
-				"return1m": -7.6,
+				"price": 356.77,
+				"price6mAgo": 514.6,
+				"price1mAgo": 398.55,
+				"low3m": 356.51,
+				"return6m": -30.7,
+				"return1m": -10.5,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -68,11 +69,13 @@
 				"surprise": 34.1,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.37
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-03-26T08:26:25.463Z",
+	"lastUpdated": "2026-03-28T18:00:57.692Z",
 	"intrinsicValue": {
 		"dcf": 321.03,
 		"date": "2026-03-26",
@@ -95,7 +98,7 @@
 	"description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide.",
 	"analystTargets": {
 		"low": 392,
-		"mean": 591.6,
+		"mean": 589.9,
 		"high": 730
 	},
 	"analystConsensus": {

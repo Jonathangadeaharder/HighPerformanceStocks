@@ -2,14 +2,14 @@
 	"ticker": "ARES",
 	"name": "Ares Management",
 	"group": "Financials & Alt Assets",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Heavyweight champion of private credit. Relentless FRE growth.",
 	"bullCase": "Ares is the largest pure-play private credit manager with $450B+ AUM, growing 20%+ annually in the direct lending boom. Its permanent capital vehicles (ARCC, ACRE) provide structural FRE visibility. Credit spreads remaining elevated extends the private credit wave. Growing insurance channel (via Aspida Life) adds recurring fee flow.",
 	"bearCase": "A sharp credit cycle downturn with default rates spiking would impair Ares' direct lending book and compress marks on private equity. The 5% dividend yield is funded by distributable earnings — any payout cut would crater the stock. Regulatory scrutiny of private credit opacity is an emerging risk.",
 	"cagrModel": {
-		"epsGrowth": "20%",
+		"epsGrowth": "19%",
 		"basis": "FRE per share",
-		"ttmEPS": 6.42,
+		"ttmEPS": 6.39,
 		"dividendYield": "5%",
 		"scenarios": {
 			"bear": "10%",
@@ -18,7 +18,7 @@
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$106.50",
+	"currentPrice": "$106.28",
 	"marketCap": "$35.2B USD",
 	"valuation": {
 		"trailingPE": 16.6,
@@ -39,30 +39,30 @@
 	"targetPrice": "$163.65",
 	"expectedCAGR": "10% - 107%",
 	"screener": {
-		"engine": "totalReturn",
-		"score": 0.69,
-		"signal": "PASS",
+		"engine": "fFREG",
+		"score": 0.85,
+		"signal": "REJECTED",
 		"inputs": {
-			"growth": 20,
-			"dividendYield": 5,
-			"debtToEquity": 163,
-			"debtPenalty": true,
-			"rawReturn": 17.5
+			"growth": 19,
+			"multipleType": "P/FRE",
+			"multiple": 16.6,
+			"cvStock": 0.038,
+			"riskMultiplier": 0.975
 		},
-		"note": "Recent earnings miss",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 106.5,
-				"price6mAgo": 163.05,
-				"price1mAgo": 118.08,
+				"price": 106.28,
+				"price6mAgo": 163.42,
+				"price1mAgo": 113.36,
 				"low3m": 95.8,
-				"return6m": -34.7,
-				"return1m": -9.8,
+				"return6m": -35,
+				"return1m": -6.2,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 0,
 				"down30d": 5
 			},
@@ -70,16 +70,18 @@
 				"surprise": -14,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.72
 	},
-	"lastUpdated": "2026-03-26T08:26:12.829Z",
+	"lastUpdated": "2026-03-28T18:00:37.566Z",
 	"expectedVolatility": "~47%",
 	"sharpeRatio": 1.15,
 	"qcs": {
-		"earningsScore": 0.02,
+		"earningsScore": 0.04,
 		"flowScore": 5,
 		"revisionsScore": -1.56,
-		"totalScore": 3.46,
+		"totalScore": 3.48,
 		"raw": {
 			"avgSurprisePct": 0.03,
 			"netInsiderShares": 944634,

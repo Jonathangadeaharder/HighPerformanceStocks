@@ -2,7 +2,7 @@
 	"ticker": "SMSN.IL",
 	"name": "Samsung Electronics",
 	"group": "AI & Semiconductors",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Global leader in memory but cyclical exposure.",
 	"targetPrice": "$4500.00",
 	"bullCase": "Memory cycle upswing and HBM catch-up drive massive earnings leverage.",
@@ -13,46 +13,21 @@
 		"dividendYield": "2%",
 		"ttmEPS": 96.44
 	},
-	"currentPrice": "$2982",
-	"marketCap": "$810.2B USD",
+	"currentPrice": "$2900",
+	"marketCap": "$788.0B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
-	"expectedVolatility": "~41%",
+	"expectedVolatility": "~42%",
 	"screener": {
-		"engine": "tPERG",
-		"score": 3.44,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 9,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 30.9,
-			"cvStock": 0.08,
-			"riskMultiplier": 1
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 2982,
-				"price6mAgo": 1496,
-				"price1mAgo": 3642,
-				"low3m": 2028,
-				"return6m": 99.3,
-				"return1m": -18.1,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 0
-			}
-		},
-		"note": "Used benchmark CV (missing dispersion data) (CYCLICAL EPS)"
+		"engine": "fEVG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative EV/EBITDA"
 	},
-	"lastUpdated": "2026-03-26T08:26:30.180Z",
+	"lastUpdated": "2026-03-28T18:01:03.679Z",
 	"valuation": {
-		"trailingPE": 30.9,
-		"forwardPE": 47.5,
+		"trailingPE": 30.1,
+		"forwardPE": 46.2,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},

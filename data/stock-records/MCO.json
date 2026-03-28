@@ -3,28 +3,28 @@
 	"name": "Moody's",
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
 	"bullCase": "Moody's Analytics (MA) subscription segment now represents ~60% of revenue and grows 10%+ regardless of issuance cycles, providing a structural recurring revenue floor. The MIS ratings segment benefits from the refinancing wave as $8T in corporate debt comes due by 2026. Fee-based pricing power with no regulatory cap.",
 	"bearCase": "If investment-grade issuance dries up in a recession or credit freeze, MIS revenue collapses rapidly (2022: -18% MIS revenue). At 23x forward PE, Moody's trades at a premium that requires sustained mid-teens EPS growth; any miss compresses the multiple sharply.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 13.65,
+		"ttmEPS": 13.68,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "29%",
-			"bull": "55%"
+			"bear": "9%",
+			"base": "30%",
+			"bull": "56%"
 		}
 	},
-	"currentPrice": "$428.05",
-	"marketCap": "$76.2B USD",
+	"currentPrice": "$424.84",
+	"marketCap": "$75.6B USD",
 	"valuation": {
-		"trailingPE": 31.4,
-		"forwardPE": 22.9,
-		"evEbitda": 21.7,
-		"evFcf": 39.4
+		"trailingPE": 31.1,
+		"forwardPE": 22.7,
+		"evEbitda": 21.5,
+		"evFcf": 39.1
 	},
 	"metrics": {
 		"roe": "62.1%",
@@ -37,27 +37,27 @@
 		"yahoo": "$546.70"
 	},
 	"targetPrice": "$546.70",
-	"expectedCAGR": "8% - 55%",
+	"expectedCAGR": "9% - 56%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.47,
+		"engine": "fCFG",
+		"score": 2.52,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 22.9,
+			"multipleType": "EV/FCF",
+			"multiple": 39.1,
 			"cvStock": 0.021,
 			"riskMultiplier": 0.965
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 428.05,
-				"price6mAgo": 476.74,
-				"price1mAgo": 479.47,
+				"price": 424.84,
+				"price6mAgo": 480.82,
+				"price1mAgo": 466.1,
 				"low3m": 402.28,
-				"return6m": -10.2,
-				"return1m": -10.7,
+				"return6m": -11.6,
+				"return1m": -8.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,11 +70,13 @@
 				"quarter": "2025-12"
 			}
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.46,
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T08:26:24.210Z",
+	"lastUpdated": "2026-03-28T18:00:56.055Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.9,
+	"sharpeRatio": 0.93,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

@@ -2,26 +2,26 @@
 	"ticker": "INDT.ST",
 	"name": "Indutrade",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 7.02,
+		"ttmEPS": 7.03,
 		"dividendYield": "2%",
 		"scenarios": {
 			"bear": "14%",
-			"base": "28%",
-			"bull": "57%"
+			"base": "29%",
+			"bull": "58%"
 		}
 	},
 	"currentPrice": "206 SEK",
-	"marketCap": "75.1B SEK",
+	"marketCap": "74.9B SEK",
 	"valuation": {
-		"trailingPE": 29.3,
-		"forwardPE": 23,
-		"evEbitda": 16.9,
-		"evFcf": 24.4
+		"trailingPE": 29.2,
+		"forwardPE": 22.9,
+		"evEbitda": 16.8,
+		"evFcf": 24.3
 	},
 	"metrics": {
 		"roe": "15.2%",
@@ -34,15 +34,15 @@
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "14% - 57%",
+	"expectedCAGR": "14% - 58%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.51,
+		"engine": "fEVG",
+		"score": 1.1,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 23,
+			"multipleType": "EV/EBITDA",
+			"multiple": 16.8,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.983
 		},
@@ -50,12 +50,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 206,
+				"price": 205.6,
 				"price6mAgo": 216.8,
-				"price1mAgo": 234.8,
+				"price1mAgo": 226.2,
 				"low3m": 194,
-				"return6m": -5,
-				"return1m": -12.3,
+				"return6m": -5.2,
+				"return1m": -9.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -67,11 +67,13 @@
 				"surprise": -14.7,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.5
 	},
-	"lastUpdated": "2026-03-26T08:26:20.451Z",
+	"lastUpdated": "2026-03-28T18:00:52.038Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.03,
+	"sharpeRatio": 1.05,
 	"qcs": {
 		"earningsScore": 0.14,
 		"flowScore": 0,

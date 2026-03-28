@@ -3,18 +3,18 @@
 	"name": "NVIDIA",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4342.8B USD",
-	"sharpeRatio": 1.02,
-	"expectedCAGR": "-22% - 113%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$4071.6B USD",
+	"sharpeRatio": 1.24,
+	"expectedCAGR": "-16% - 127%",
+	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 36.5,
-		"forwardPE": 16.1,
+		"trailingPE": 34.1,
+		"forwardPE": 15.1,
 		"pegRatio": 1.6,
-		"evEbitda": 32.2,
-		"evFcf": 73.8
+		"evEbitda": 30.2,
+		"evFcf": 69.1
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -27,44 +27,45 @@
 	"targetPrice": "$268.22",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$178.68",
+	"currentPrice": "$167.52",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$268.22",
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.9,
+		"ttmEPS": 4.91,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "50%",
-			"bull": "113%"
+			"bear": "-16%",
+			"base": "60%",
+			"bull": "127%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-26T08:26:27.422Z",
+	"lastUpdated": "2026-03-28T18:01:00.333Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.57,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.07,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 29,
-			"multipleType": "Forward P/E",
-			"multiple": 16.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 30.2,
 			"cvStock": 0.127,
 			"riskMultiplier": 1.028
 		},
+		"note": "DEPLOY override: base CAGR 60% ≥ 20% (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 178.68,
-				"price6mAgo": 178.19,
-				"price1mAgo": 184.89,
-				"low3m": 171.03,
-				"return6m": 0.3,
-				"return1m": -3.4,
+				"price": 167.52,
+				"price6mAgo": 181.85,
+				"price1mAgo": 182.48,
+				"low3m": 167.01,
+				"return6m": -7.9,
+				"return1m": -8.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,7 +78,8 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.54
 	},
 	"intrinsicValue": {
 		"dcf": 232.25,

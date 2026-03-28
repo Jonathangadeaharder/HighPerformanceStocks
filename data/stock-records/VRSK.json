@@ -2,28 +2,28 @@
 	"ticker": "VRSK",
 	"name": "Verisk Analytics",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "The 'FICO of insurance'. Proprietary databases for P&C insurers. Asset-light, massive margins.",
 	"bullCase": "Verisk is the FICO of insurance — the essential data and analytics infrastructure for P&C underwriting. After divesting Energy and Financial Services, it is a pure-play insurance analytics monopoly with 92%+ recurring revenue. ISO/AIR catastrophe modeling is non-substitutable for carrier pricing and reinsurance.",
 	"bearCase": "Verisk's 14x forward PE and 14% EPS growth trajectory are attractive but execution risk exists as the company refocuses post-divestitures. If the P&C insurance market softens significantly, data licensing volumes plateau. Data breach risk for a company holding underwriting data on nearly every US property.",
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.48,
+		"ttmEPS": 6.49,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "25%",
-			"bull": "50%"
+			"bear": "1%",
+			"base": "27%",
+			"bull": "51%"
 		}
 	},
-	"currentPrice": "$185.05",
-	"marketCap": "$25.8B USD",
+	"currentPrice": "$182.75",
+	"marketCap": "$25.5B USD",
 	"valuation": {
-		"trailingPE": 28.6,
-		"forwardPE": 21.5,
-		"evEbitda": 19,
-		"evFcf": 27.9
+		"trailingPE": 28.2,
+		"forwardPE": 21.3,
+		"evEbitda": 18.8,
+		"evFcf": 27.6
 	},
 	"metrics": {
 		"roe": "437.9%",
@@ -32,30 +32,31 @@
 		"netDebtEbitda": "1.8x"
 	},
 	"consensus": {
-		"yahoo": "$230"
+		"yahoo": "$229.53"
 	},
-	"targetPrice": "$230",
-	"expectedCAGR": "0% - 50%",
+	"targetPrice": "$229.53",
+	"expectedCAGR": "1% - 51%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 1.9,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
-			"multipleType": "Forward P/E",
-			"multiple": 21.5,
+			"multipleType": "EV/FCF",
+			"multiple": 27.6,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.962
 		},
+		"note": "hasLikelyValueFloor: QCS 9.17 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 27% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 185.05,
-				"price6mAgo": 247.07,
-				"price1mAgo": 202.64,
+				"price": 182.75,
+				"price6mAgo": 248.78,
+				"price1mAgo": 214.79,
 				"low3m": 164.6,
-				"return6m": -25.1,
-				"return1m": -8.7,
+				"return6m": -26.5,
+				"return1m": -14.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -67,11 +68,13 @@
 				"surprise": 12.9,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.46
 	},
-	"lastUpdated": "2026-03-26T08:26:34.068Z",
+	"lastUpdated": "2026-03-28T18:01:07.472Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.72,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -89,7 +92,7 @@
 	"description": "Verisk Analytics, Inc. engages in the provision of data analytics and technology solutions to the insurance industry in the United States and internationally.",
 	"analystTargets": {
 		"low": 183,
-		"mean": 230,
+		"mean": 229.53,
 		"high": 275
 	},
 	"analystConsensus": {

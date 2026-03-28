@@ -2,18 +2,18 @@
 	"ticker": "EXEL",
 	"name": "Exelixis",
 	"group": "Biotech",
-	"confidence": "low",
+	"confidence": "high",
 	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
-	"marketCap": "$11.5B USD",
-	"sharpeRatio": 0.15,
-	"expectedCAGR": "-18% - 40%",
+	"marketCap": "$11.1B USD",
+	"sharpeRatio": 0.22,
+	"expectedCAGR": "-16% - 44%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 15.4,
-		"forwardPE": 10.9,
+		"trailingPE": 14.9,
+		"forwardPE": 10.6,
 		"pegRatio": 0.8,
-		"evEbitda": 11.1,
-		"evFcf": 16.2
+		"evEbitda": 10.8,
+		"evFcf": 15.7
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$46.83",
 	"bullCase": "Exelixis' Cabometyx has label expansions pending in front-line RCC combinations (with nivolumab) and additional tumor types. The pipeline assets XL092 (next-gen cabozantinib) and XB002 (ADC) represent the next growth phase. Massive cash balance ($2B+) with no debt funds buybacks and internal pipeline without equity dilution.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$42.78",
+	"currentPrice": "$41.53",
 	"consensus": {
 		"tipranks": "$45",
 		"yahoo": "$46.83",
@@ -37,35 +37,35 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-18%",
-			"base": "9%",
-			"bull": "40%"
+			"bear": "-16%",
+			"base": "13%",
+			"bull": "44%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-26T08:26:17.548Z",
+	"lastUpdated": "2026-03-28T18:00:47.378Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.54,
-		"signal": "FAIL",
+		"engine": "fCFG",
+		"score": 0.77,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 21,
-			"multipleType": "Forward P/E",
-			"multiple": 10.9,
+			"multipleType": "EV/FCF",
+			"multiple": 15.7,
 			"cvStock": 0.135,
 			"riskMultiplier": 1.033
 		},
-		"note": "Cheap (0.54) but base return 9% misses the 15% hurdle",
+		"note": "Cheap (0.77) but base return 13% misses the 15% hurdle (hasLikelyValueFloor: QCS 10.77 ≥ 8 (elite quality floor)) (REJECT: Stalled at WAIT with base CAGR 13% < 15%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 42.78,
-				"price6mAgo": 39.04,
-				"price1mAgo": 44.28,
+				"price": 41.53,
+				"price6mAgo": 40.57,
+				"price1mAgo": 41.03,
 				"low3m": 39.71,
-				"return6m": 9.6,
-				"return1m": -3.4,
-				"near3mLow": false
+				"return6m": 2.4,
+				"return1m": 1.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -76,7 +76,9 @@
 				"surprise": 16.2,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.52
 	},
 	"qcs": {
 		"earningsScore": 5,

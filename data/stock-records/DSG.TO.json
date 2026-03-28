@@ -2,7 +2,7 @@
 	"ticker": "DSG.TO",
 	"name": "Descartes Systems",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
 	"bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
 	"bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
@@ -12,13 +12,13 @@
 		"ttmEPS": 2.56,
 		"dividendYield": "0%"
 	},
-	"currentPrice": "C$96.76",
+	"currentPrice": "C$96.72",
 	"marketCap": "C$8.3B",
 	"valuation": {
-		"trailingPE": 37.8,
-		"forwardPE": 21.8,
+		"trailingPE": 37.5,
+		"forwardPE": 21.7,
 		"evEbitda": 25.9,
-		"evFcf": 33.8
+		"evFcf": 33.7
 	},
 	"metrics": {
 		"roe": "10.9%",
@@ -30,24 +30,25 @@
 	"consensus": {},
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.98,
-		"signal": "FAIL",
+		"score": 1.97,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 33.8,
+			"multiple": 33.7,
 			"cvStock": 0.072,
 			"riskMultiplier": 0.995
 		},
+		"note": "hasLikelyValueFloor: analyst upside 35.2%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 96.76,
-				"price6mAgo": 132.32,
-				"price1mAgo": 92.84,
+				"price": 96.72,
+				"price6mAgo": 132.77,
+				"price1mAgo": 92.14,
 				"low3m": 85.26,
-				"return6m": -26.9,
-				"return1m": 4.2,
+				"return6m": -27.2,
+				"return1m": 5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -61,9 +62,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.28
+		"secondaryScore": 1.27
 	},
-	"lastUpdated": "2026-03-26T08:26:16.676Z",
+	"lastUpdated": "2026-03-28T18:00:46.355Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {
