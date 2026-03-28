@@ -5,16 +5,16 @@
 	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
-	"marketCap": "$105.7B USD",
-	"sharpeRatio": -0.3,
-	"expectedCAGR": "-44% - 16%",
+	"marketCap": "$96.1B USD",
+	"sharpeRatio": -0.15,
+	"expectedCAGR": "-38% - 29%",
 	"expectedVolatility": "~61%",
 	"valuation": {
-		"trailingPE": 81.2,
-		"forwardPE": 34.5,
+		"trailingPE": 73.6,
+		"forwardPE": 31.3,
 		"pegRatio": null,
-		"evEbitda": 48.5,
-		"evFcf": 74.9
+		"evEbitda": 44.1,
+		"evFcf": 68.2
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -27,13 +27,13 @@
 		"backlog": "$15B",
 		"orderGrowth": "252% YoY"
 	},
-	"targetPrice": "$267.83",
+	"targetPrice": "$270.21",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$276.16",
+	"currentPrice": "$251.07",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$267.83",
+		"yahoo": "$270.21",
 		"stockanalysis": "$217"
 	},
 	"cagrModel": {
@@ -41,33 +41,33 @@
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-44%",
-			"base": "-3%",
-			"bull": "16%"
+			"bear": "-38%",
+			"base": "8%",
+			"bull": "29%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-26T08:26:34.135Z",
+	"lastUpdated": "2026-03-28T18:01:07.464Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.18,
-		"signal": "REJECTED",
+		"engine": "fEVG",
+		"score": 1.51,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
-			"multipleType": "Forward P/E",
-			"multiple": 34.5,
-			"cvStock": 0.125,
+			"multipleType": "EV/EBITDA",
+			"multiple": 44.1,
+			"cvStock": 0.124,
 			"riskMultiplier": 1.027
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 276.16,
-				"price6mAgo": 138.62,
-				"price1mAgo": 259.23,
+				"price": 251.07,
+				"price6mAgo": 143.31,
+				"price1mAgo": 257.75,
 				"low3m": 158.77,
-				"return6m": 99.2,
-				"return1m": 6.5,
+				"return6m": 75.2,
+				"return1m": -2.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,27 +80,29 @@
 				"quarter": "2025-12"
 			}
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.07,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
-		"earningsScore": 3.86,
+		"earningsScore": 3.89,
 		"flowScore": -5,
-		"revisionsScore": 5,
-		"totalScore": 3.86,
+		"revisionsScore": 4.78,
+		"totalScore": 3.67,
 		"raw": {
 			"avgSurprisePct": 12.05,
-			"netInsiderShares": -158418,
+			"netInsiderShares": -158434,
 			"instFlowTrend": "negative",
 			"upRevisions": 22,
 			"downRevisions": 0,
-			"totalAnalysts": 22
+			"totalAnalysts": 23
 		}
 	},
 	"description": "Vertiv Holdings Co designs, manufactures, and services critical digital infrastructure technologies and life cycle services for data centers, communication networks, and commercial and industrial e...",
 	"analystTargets": {
 		"low": 155,
-		"mean": 267.83,
-		"high": 320
+		"mean": 270.21,
+		"high": 325
 	},
 	"analystConsensus": {
 		"ticker": "VRT",

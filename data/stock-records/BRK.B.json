@@ -3,17 +3,17 @@
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1027.1B USD",
-	"sharpeRatio": 0.36,
-	"expectedCAGR": "1% - 21%",
+	"marketCap": "$1010.5B USD",
+	"sharpeRatio": 0.47,
+	"expectedCAGR": "3% - 23%",
 	"expectedVolatility": "~18%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 15.3,
-		"forwardPE": 21.9,
+		"trailingPE": 15.1,
+		"forwardPE": 21.5,
 		"evFcf": -6.4
 	},
 	"metrics": {
@@ -26,61 +26,32 @@
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$476.19",
+	"currentPrice": "$468.49",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "10%",
-			"bull": "21%"
+			"bear": "3%",
+			"base": "12%",
+			"bull": "23%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-28T15:39:21.687Z",
+	"lastUpdated": "2026-03-28T18:00:43.377Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.19,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 10,
-			"multipleType": "Forward P/E (Operating Earnings)",
-			"multiple": 21.9,
-			"cvStock": 0.02,
-			"riskMultiplier": 0.964
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 476.19,
-				"price6mAgo": 500.03,
-				"price1mAgo": 502.67,
-				"low3m": 471.91,
-				"return6m": -4.8,
-				"return1m": -5.3,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 2
-			},
-			"earningsSurprise": {
-				"surprise": -8.5,
-				"quarter": "2025-12"
-			}
-		},
-		"note": "Engine corrected tPERG → fPERG (Operating Earnings basis). GAAP tPE captures volatile mark-to-market investment swings. Operating forwardPE 21.9x / 10% growth = 2.19 — correctly fails 15% hurdle. QCS -6.07 driven by GAAP noise, not structural deterioration."
+		"engine": "fEVG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative EV/EBITDA"
 	},
 	"qcs": {
-		"earningsScore": -1.07,
+		"earningsScore": -0.27,
 		"flowScore": 0,
 		"revisionsScore": -5,
-		"totalScore": -6.07,
+		"totalScore": -5.27,
 		"raw": {
 			"avgSurprisePct": -0.54,
 			"netInsiderShares": 0,

@@ -2,7 +2,7 @@
 	"ticker": "MCK",
 	"name": "McKesson",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Consolidated oligopoly drug distributor. Massive share repurchases lead to consistent 12–15% EPS growth floors.",
 	"bullCase": "McKesson is a pharmaceutical distribution monopoly (with Cencora and Cardinal Health) distributing over 30% of US drug supply. The business is structurally non-disruptable — drug distribution requires regulatory compliance, cold chain, and scale economics that no new entrant can replicate. Systematic share buybacks (8%+ annual float reduction) drive 15%+ EPS growth on 5-7% revenue growth.",
 	"bearCase": "Drug distribution is a razor-thin margin business — McKesson earns <1% net margin on $300B+ of drug revenue. Any repricing of generic drug contracts, specialty drug exclusivity losses, or government reimbursement rate cuts flows directly through to EPS. PBM consolidation increases buyer bargaining power against distributors.",
@@ -12,22 +12,22 @@
 		"ttmEPS": 34.66,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "13%",
-			"bull": "26%"
+			"bear": "0%",
+			"base": "16%",
+			"bull": "29%"
 		}
 	},
-	"currentPrice": "$879.75",
-	"marketCap": "$108.6B USD",
+	"currentPrice": "$860.16",
+	"marketCap": "$106.2B USD",
 	"valuation": {
-		"trailingPE": 25.4,
-		"forwardPE": 19.9,
-		"evEbitda": 19.4,
-		"evFcf": 12.5
+		"trailingPE": 24.8,
+		"forwardPE": 19.4,
+		"evEbitda": 18.9,
+		"evFcf": 12.3
 	},
 	"metrics": {
 		"fcfMargin": "~2%",
-		"fcfYield": "~8%",
+		"fcfYield": "~9%",
 		"netDebtEbitda": "1.0x",
 		"ruleOf40": "14%"
 	},
@@ -35,28 +35,28 @@
 		"yahoo": "$997.67"
 	},
 	"targetPrice": "$997.67",
-	"expectedCAGR": "-2% - 26%",
+	"expectedCAGR": "0% - 29%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.83,
-		"signal": "FAIL",
-		"note": "Cheap (0.83) but base return 13% misses the 15% hurdle",
+		"score": 0.79,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 12.5,
+			"multiple": 12.3,
 			"cvStock": 0.01,
 			"riskMultiplier": 0.958
 		},
+		"note": "DEPLOY override: base CAGR 16% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 879.75,
-				"price6mAgo": 760.55,
-				"price1mAgo": 974.45,
+				"price": 860.16,
+				"price6mAgo": 761.82,
+				"price1mAgo": 990.95,
 				"low3m": 794.59,
-				"return6m": 15.7,
-				"return1m": -9.7,
+				"return6m": 12.9,
+				"return1m": -13.2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -68,11 +68,13 @@
 				"surprise": 0.7,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.24
 	},
-	"lastUpdated": "2026-03-26T08:26:24.218Z",
-	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.27,
+	"lastUpdated": "2026-03-28T18:00:55.985Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 0.34,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

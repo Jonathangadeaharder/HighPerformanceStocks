@@ -4,14 +4,14 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
-	"marketCap": "$76.7B USD",
-	"sharpeRatio": -0.09,
-	"expectedCAGR": "-38% - 38%",
+	"marketCap": "$71.5B USD",
+	"sharpeRatio": 0.05,
+	"expectedCAGR": "-34% - 48%",
 	"expectedVolatility": "~52%",
 	"valuation": {
-		"forwardPE": 150.9,
+		"forwardPE": 140.8,
 		"evEbitda": null,
-		"evFcf": 196.2
+		"evFcf": 182.7
 	},
 	"metrics": {
 		"roe": "-8.2%",
@@ -23,47 +23,47 @@
 	"targetPrice": "$232.43",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$218",
+	"currentPrice": "$203.02",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-38%",
-			"base": "7%",
-			"bull": "38%"
+			"bear": "-34%",
+			"base": "14%",
+			"bull": "48%"
 		},
 		"ttmEPS": 1.12,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-26T08:26:26.366Z",
+	"lastUpdated": "2026-03-28T18:00:58.571Z",
 	"consensus": {
 		"yahoo": "$232.43"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.67,
-		"signal": "FAIL",
-		"note": "Reality Check → REJECTED: consensus actively collapsing (down30d=13 ≥ 2×up30d=5 AND down30d ≥ 5). 7% Base CAGR and negative asymmetry mathematically annihilate NET. CORRECTLY AGGRESSIVE.",
+		"score": 5.29,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 150.9,
+			"multiple": 140.8,
 			"cvStock": 0.105,
 			"riskMultiplier": 1.015
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 218,
-				"price6mAgo": 216.34,
-				"price1mAgo": 174.66,
+				"price": 203.02,
+				"price6mAgo": 218.58,
+				"price1mAgo": 181.02,
 				"low3m": 158.83,
-				"return6m": 0.8,
-				"return1m": 24.8,
+				"return6m": -7.1,
+				"return1m": 12.2,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 5,
 				"down30d": 13
 			},

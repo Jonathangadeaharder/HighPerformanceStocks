@@ -2,18 +2,18 @@
 	"ticker": "ADDT-B.ST",
 	"name": "Addtech AB",
 	"group": "Serial Acquirers",
-	"confidence": "medium",
+	"confidence": "cut",
 	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "81.9B SEK",
-	"sharpeRatio": 0.6,
-	"expectedCAGR": "10% - 34%",
+	"marketCap": "83.4B SEK",
+	"sharpeRatio": 0.52,
+	"expectedCAGR": "8% - 31%",
 	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 39.6,
-		"forwardPE": 38.7,
+		"trailingPE": 40.3,
+		"forwardPE": 39.4,
 		"pegRatio": null,
-		"evEbitda": 24.4,
-		"evFcf": 35.1
+		"evEbitda": 24.7,
+		"evFcf": 35.6
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
@@ -27,7 +27,7 @@
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "303 SEK",
+	"currentPrice": "309 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
@@ -37,34 +37,34 @@
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "27%",
-			"bull": "34%"
+			"bear": "8%",
+			"base": "24%",
+			"bull": "31%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T08:26:10.972Z",
+	"lastUpdated": "2026-03-28T18:00:35.521Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.41,
+		"score": 1.43,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.4,
+			"multiple": 24.7,
 			"cvStock": 0.053,
 			"riskMultiplier": 0.984
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 303.2,
+				"price": 308.8,
 				"price6mAgo": 309.8,
-				"price1mAgo": 334.6,
+				"price1mAgo": 324.8,
 				"low3m": 283.2,
-				"return6m": -2.1,
-				"return1m": -9.4,
+				"return6m": -0.3,
+				"return1m": -4.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.24
+		"secondaryScore": 2.28
 	},
 	"qcs": {
 		"earningsScore": -5,

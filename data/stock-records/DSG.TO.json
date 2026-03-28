@@ -1,98 +1,94 @@
 {
-  "ticker": "DSG.TO",
-  "name": "Descartes Systems",
-  "group": "Data & Software Monopolies",
-  "confidence": "high",
-  "confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
-  "bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
-  "bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
-  "cagrModel": {
-    "epsGrowth": "17%",
-    "basis": "Price-to-FCF; Non-GAAP EPS originally, transitioned to FCF due to serial acquirer mechanics",
-    "ttmEPS": 2.56,
-    "dividendYield": "0%",
-    "scenarios": {
-      "bear": "0%",
-      "base": "17%",
-      "bull": "25%"
-    }
-  },
-  "currentPrice": "C$96.76",
-  "marketCap": "C$8.3B",
-  "valuation": {
-    "trailingPE": 37.8,
-    "forwardPE": 21.8,
-    "evEbitda": 25.9,
-    "evFcf": 33.8
-  },
-  "metrics": {
-    "roe": "10.9%",
-    "fcfMargin": "~32%",
-    "fcfYield": "~3%",
-    "netDebtEbitda": "Net cash",
-    "ruleOf40": "48%"
-  },
-  "consensus": {},
-  "screener": {
-    "engine": "fCFG",
-    "score": 1.98,
-    "signal": "FAIL",
-    "inputs": {
-      "growth": 17,
-      "multipleType": "EV/FCF",
-      "multiple": 33.8,
-      "cvStock": 0.072,
-      "riskMultiplier": 0.995
-    },
-    "realityChecks": {
-      "stabilization": {
-        "pass": true,
-        "price": 96.76,
-        "price6mAgo": 132.32,
-        "price1mAgo": 92.84,
-        "low3m": 85.26,
-        "return6m": -26.9,
-        "return1m": 4.2,
-        "near3mLow": false
-      },
-      "revisions": {
-        "pass": true,
-        "up30d": 4,
-        "down30d": 0
-      },
-      "earningsSurprise": {
-        "surprise": -5.8,
-        "quarter": "2026-01"
-      }
-    },
-    "secondaryEngine": "fPERG",
-    "secondaryScore": 1.28
-  },
-  "lastUpdated": "2026-03-26T08:26:16.676Z",
-  "expectedVolatility": "~37%",
-  "sharpeRatio": 0.74,
-  "qcs": {
-    "earningsScore": -5,
-    "flowScore": 2.5,
-    "revisionsScore": 2.86,
-    "totalScore": 0.36,
-    "raw": {
-      "avgSurprisePct": -13.74,
-      "netInsiderShares": 0,
-      "instFlowTrend": "positive",
-      "upRevisions": 4,
-      "downRevisions": 0,
-      "totalAnalysts": 7
-    }
-  },
-  "description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
-  "analystConsensus": {
-    "ticker": "DSG.TO",
-    "strongBuy": 7,
-    "moderateBuy": 5,
-    "hold": 4,
-    "moderateSell": 3,
-    "strongSell": 2
-  },
-  "consensusRating": "Unknown"
+	"ticker": "DSG.TO",
+	"name": "Descartes Systems",
+	"group": "Data & Software Monopolies",
+	"confidence": "low",
+	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
+	"bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
+	"bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
+	"cagrModel": {
+		"epsGrowth": "17%",
+		"basis": "Price-to-FCF; Non-GAAP EPS originally, transitioned to FCF due to serial acquirer mechanics",
+		"ttmEPS": 2.56,
+		"dividendYield": "0%"
+	},
+	"currentPrice": "C$96.72",
+	"marketCap": "C$8.3B",
+	"valuation": {
+		"trailingPE": 37.5,
+		"forwardPE": 21.7,
+		"evEbitda": 25.9,
+		"evFcf": 33.7
+	},
+	"metrics": {
+		"roe": "10.9%",
+		"fcfMargin": "~32%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "48%"
+	},
+	"consensus": {},
+	"screener": {
+		"engine": "fCFG",
+		"score": 1.97,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 17,
+			"multipleType": "EV/FCF",
+			"multiple": 33.7,
+			"cvStock": 0.072,
+			"riskMultiplier": 0.995
+		},
+		"note": "hasLikelyValueFloor: analyst upside 35.2%",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 96.72,
+				"price6mAgo": 132.77,
+				"price1mAgo": 92.14,
+				"low3m": 85.26,
+				"return6m": -27.2,
+				"return1m": 5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 4,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": -5.8,
+				"quarter": "2026-01"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.27
+	},
+	"lastUpdated": "2026-03-28T18:00:46.355Z",
+	"expectedVolatility": "~37%",
+	"sharpeRatio": 0.74,
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 2.5,
+		"revisionsScore": 2.86,
+		"totalScore": 0.36,
+		"raw": {
+			"avgSurprisePct": -13.74,
+			"netInsiderShares": 0,
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 0,
+			"totalAnalysts": 7
+		}
+	},
+	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
+	"analystConsensus": {
+		"ticker": "DSG.TO",
+		"strongBuy": 7,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

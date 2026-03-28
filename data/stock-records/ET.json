@@ -3,18 +3,18 @@
 	"name": "Energy Transfer",
 	"group": "Energy",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "cut",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
-	"marketCap": "$65.8B USD",
-	"sharpeRatio": 0.69,
-	"expectedCAGR": "4% - 38%",
+	"marketCap": "$67.7B USD",
+	"sharpeRatio": 0.54,
+	"expectedCAGR": "1% - 34%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 12.6,
-		"forwardPE": 11,
+		"trailingPE": 12.9,
+		"forwardPE": 12.4,
 		"pegRatio": null,
-		"evEbitda": 10.2,
-		"evFcf": 69.2
+		"evEbitda": 10.3,
+		"evFcf": 70.1
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
@@ -24,47 +24,46 @@
 		"netDebtEbitda": "4.6x",
 		"ruleOf40": "32%"
 	},
-	"targetPrice": "$22.02",
+	"targetPrice": "$22.07",
 	"bullCase": "Energy Transfer has the most diversified midstream footprint in the US, with exposure to crude, natural gas, NGLs, and LNG exports. The $0.32/unit quarterly distribution yields 7-8% and is covered 1.9x. Permian Basin volume growth provides organic throughput growth without new capital commitments.",
 	"bearCase": "At 4.6x Net Debt/EBITDA, ET has the highest leverage among major midstream peers. A deterioration in credit markets, distribution cut risk, or volume decline from customer bankruptcies could trigger significant unit price declines.",
-	"currentPrice": "$19.14",
+	"currentPrice": "$19.67",
 	"consensus": {
 		"tipranks": "$23",
-		"yahoo": "$22.02"
+		"yahoo": "$22.07"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.21,
 		"epsGrowth": "10%",
 		"dividendYield": "7%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "22%",
-			"bull": "38%"
+			"bear": "1%",
+			"base": "19%",
+			"bull": "34%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-26T08:26:17.516Z",
+	"lastUpdated": "2026-03-28T18:00:47.393Z",
 	"screener": {
-		"engine": "totalReturn",
-		"score": 0.71,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.6,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"dividendYield": 7,
-			"debtToEquity": 142,
-			"debtPenalty": false,
-			"rawReturn": 17
+			"multipleType": "EV/EBITDA",
+			"multiple": 10.3,
+			"cvStock": 0.189,
+			"riskMultiplier": 1.552
 		},
-		"note": "(CYCLICAL EPS) (Recent earnings miss)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 19.14,
-				"price6mAgo": 17.46,
-				"price1mAgo": 18.69,
+				"price": 19.67,
+				"price6mAgo": 17.2,
+				"price1mAgo": 19.1,
 				"low3m": 16.23,
-				"return6m": 9.6,
-				"return1m": 2.4,
+				"return6m": 14.4,
+				"return1m": 3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -76,18 +75,21 @@
 				"surprise": -30.4,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.6,
+		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
-		"dcf": 62.06,
-		"date": "2026-03-26",
-		"discount": 224
+		"dcf": 60.21,
+		"date": "2026-03-28",
+		"discount": 206
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": -2.5,
 		"flowScore": 0,
 		"revisionsScore": 0.91,
-		"totalScore": -4.09,
+		"totalScore": -1.59,
 		"raw": {
 			"avgSurprisePct": -11.8,
 			"netInsiderShares": 0,
@@ -100,7 +102,7 @@
 	"description": "Energy Transfer LP, together with its subsidiaries, provides energy-related services in the United States.",
 	"analystTargets": {
 		"low": 18.5,
-		"mean": 22.02,
+		"mean": 22.07,
 		"high": 25
 	},
 	"analystConsensus": {

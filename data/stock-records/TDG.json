@@ -3,18 +3,18 @@
 	"name": "TransDigm Group",
 	"group": "Serial Acquirers",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$65.3B USD",
-	"sharpeRatio": 1.28,
-	"expectedCAGR": "18% - 68%",
+	"marketCap": "$64.4B USD",
+	"sharpeRatio": 1.37,
+	"expectedCAGR": "20% - 71%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 37.2,
-		"forwardPE": 25.2,
+		"trailingPE": 36.6,
+		"forwardPE": 24.9,
 		"pegRatio": null,
-		"evEbitda": 20,
-		"evFcf": 70
+		"evEbitda": 19.8,
+		"evFcf": 69.3
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -24,13 +24,13 @@
 		"netDebtEbitda": "5.9x",
 		"ruleOf40": "28%"
 	},
-	"targetPrice": "$1594",
+	"targetPrice": "$1591.25",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1156.49",
+	"currentPrice": "$1140.03",
 	"consensus": {
 		"tipranks": "$1,568",
-		"yahoo": "$1594",
+		"yahoo": "$1591.25",
 		"stockanalysis": "$1,590"
 	},
 	"cagrModel": {
@@ -38,33 +38,34 @@
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "18%",
-			"base": "42%",
-			"bull": "68%"
+			"bear": "20%",
+			"base": "44%",
+			"bull": "71%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-26T08:26:31.021Z",
+	"lastUpdated": "2026-03-28T18:01:04.494Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.08,
+		"score": 1.07,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20,
-			"cvStock": 0.031,
-			"riskMultiplier": 0.971
+			"multiple": 19.8,
+			"cvStock": 0.028,
+			"riskMultiplier": 0.969
 		},
+		"note": "Existential liquidity risk: 5.9x leverage on cyclical asset (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 1156.49,
-				"price6mAgo": 1295.72,
-				"price1mAgo": 1314.26,
+				"price": 1140.03,
+				"price6mAgo": 1289.29,
+				"price1mAgo": 1316.26,
 				"low3m": 1137.06,
-				"return6m": -10.7,
-				"return1m": -12,
+				"return6m": -11.6,
+				"return1m": -13.4,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -78,14 +79,13 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.36,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 1.34
 	},
 	"qcs": {
-		"earningsScore": 2.83,
+		"earningsScore": 3.13,
 		"flowScore": -5,
 		"revisionsScore": 0,
-		"totalScore": -2.17,
+		"totalScore": -1.87,
 		"raw": {
 			"avgSurprisePct": 2.19,
 			"netInsiderShares": -84402,
@@ -98,7 +98,7 @@
 	"description": "TransDigm Group Incorporated designs, produces, and supplies aircraft components in the United States and internationally.",
 	"analystTargets": {
 		"low": 1317,
-		"mean": 1594,
+		"mean": 1591.25,
 		"high": 1900
 	},
 	"analystConsensus": {

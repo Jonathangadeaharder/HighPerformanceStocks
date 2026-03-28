@@ -3,26 +3,26 @@
 	"name": "Tradeweb",
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Electronic bond trading matching traditional voice-brokers. Asset-light, massive operating leverage.",
 	"bullCase": "Tradeweb is systematically replacing voice-brokered bond trading with electronic protocols, growing market share in US Treasuries, IG credit, and rates derivatives. Commission-per-ticket is rising as automation reduces headcount costs for clients. At 30%+ revenue CAGR, it is taking share from both MKTX and legacy dealers simultaneously.",
 	"bearCase": "At 28x forward PE, TW is priced for continued share gains in fixed income e-trading. If bond market volumes collapse (credit freeze, rate stability), revenue growth stalls. MKTX is fighting back in US credit and dealer internalization poses a long-term structural risk.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.78,
+		"ttmEPS": 3.79,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-7%",
-			"base": "10%",
-			"bull": "69%"
+			"bear": "-5%",
+			"base": "14%",
+			"bull": "74%"
 		}
 	},
-	"currentPrice": "$119.95",
-	"marketCap": "$26.2B USD",
+	"currentPrice": "$116.57",
+	"marketCap": "$25.4B USD",
 	"valuation": {
-		"trailingPE": 31.7,
-		"forwardPE": 26.7
+		"trailingPE": 30.8,
+		"forwardPE": 25.9
 	},
 	"metrics": {
 		"roe": "13.6%"
@@ -31,27 +31,27 @@
 		"yahoo": "$132.31"
 	},
 	"targetPrice": "$132.31",
-	"expectedCAGR": "-7% - 69%",
+	"expectedCAGR": "-5% - 74%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.74,
+		"engine": "fCFG",
+		"score": 2.01,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 26.7,
+			"multipleType": "P/CF",
+			"multiple": 30.8,
 			"cvStock": 0.045,
 			"riskMultiplier": 0.979
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 119.95,
-				"price6mAgo": 110.98,
-				"price1mAgo": 121.96,
+				"price": 116.57,
+				"price6mAgo": 111.37,
+				"price1mAgo": 122.99,
 				"low3m": 97.06,
-				"return6m": 8.1,
-				"return1m": -1.6,
+				"return6m": 4.7,
+				"return1m": -5.2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -64,11 +64,13 @@
 				"quarter": "2025-12"
 			}
 		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.69,
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-26T08:26:32.114Z",
+	"lastUpdated": "2026-03-28T18:01:05.689Z",
 	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.88,
+	"sharpeRatio": 1,
 	"qcs": {
 		"earningsScore": 2.14,
 		"flowScore": 5,
@@ -76,7 +78,7 @@
 		"totalScore": 7.52,
 		"raw": {
 			"avgSurprisePct": 2.41,
-			"netInsiderShares": 342956,
+			"netInsiderShares": 330765,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
 			"downRevisions": 1,

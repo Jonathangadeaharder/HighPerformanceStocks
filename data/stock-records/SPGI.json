@@ -1,107 +1,109 @@
 {
-  "ticker": "SPGI",
-  "name": "S&P Global",
-  "group": "Data & Software Monopolies",
-  "cyclical": false,
-  "confidence": "high",
-  "confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
-  "bullCase": "S&P Global's Ratings segment benefits from surging debt issuance volumes at still-elevated rates. Market Intelligence and Mobility segments are growing 10%+ organically on subscription revenue. After absorbing the IHS Markit integration, operating margins are expanding toward 50%+, driving compounding non-GAAP EPS.",
-  "bearCase": "Ratings revenue is highly sensitive to debt issuance cycles — a credit freeze or prolonged rate inversion collapses new issuance and cuts Ratings revenue materially (as seen in 2022). At 19x forward PE, any deceleration below 12% EPS growth would re-rate the stock.",
-  "cagrModel": {
-    "epsGrowth": "15%",
-    "basis": "Non-GAAP EPS",
-    "ttmEPS": 14.66,
-    "dividendYield": "1%",
-    "scenarios": {
-      "bear": "19%",
-      "base": "33%",
-      "bull": "54%"
-    }
-  },
-  "currentPrice": "$408.48",
-  "marketCap": "$123.7B USD",
-  "valuation": {
-    "trailingPE": 27.9,
-    "forwardPE": 18.5,
-    "evEbitda": 18.2,
-    "evFcf": 28.5
-  },
-  "metrics": {
-    "roe": "13.1%",
-    "fcfMargin": "~32%",
-    "fcfYield": "~4%",
-    "netDebtEbitda": "1.6x",
-    "ruleOf40": "41%"
-  },
-  "consensus": {
-    "yahoo": "$538.52"
-  },
-  "targetPrice": "$538.52",
-  "expectedCAGR": "19% - 54%",
-  "screener": {
-    "engine": "fPERG",
-    "score": 1.18,
-    "signal": "WAIT",
-    "inputs": {
-      "growth": 15,
-      "multipleType": "Forward P/E",
-      "multiple": 18.5,
-      "cvStock": 0.014,
-      "riskMultiplier": 0.96
-    },
-    "realityChecks": {
-      "stabilization": {
-        "pass": true,
-        "price": 408.48,
-        "price6mAgo": 487.18,
-        "price1mAgo": 437.49,
-        "low3m": 381.61,
-        "return6m": -16.2,
-        "return1m": -6.6,
-        "near3mLow": false
-      },
-      "revisions": {
-        "pass": true,
-        "up30d": 1,
-        "down30d": 2
-      },
-      "earningsSurprise": {
-        "surprise": -0.8,
-        "quarter": "2025-12"
-      }
-    },
-    "note": ""
-  },
-  "lastUpdated": "2026-03-26T08:26:31.013Z",
-  "expectedVolatility": "~30%",
-  "sharpeRatio": 1.07,
-  "qcs": {
-    "earningsScore": 5,
-    "flowScore": 0,
-    "revisionsScore": 0,
-    "totalScore": 5,
-    "raw": {
-      "avgSurprisePct": 3.81,
-      "netInsiderShares": 0,
-      "instFlowTrend": "neutral",
-      "upRevisions": 1,
-      "downRevisions": 1,
-      "totalAnalysts": 24
-    }
-  },
-  "description": "S&P Global Inc., together with its subsidiaries, provides benchmarks, data, analytics, and workflow solutions in the global capital, energy and commodity, and automotive markets.",
-  "analystTargets": {
-    "low": 480,
-    "mean": 538.52,
-    "high": 625
-  },
-  "analystConsensus": {
-    "ticker": "SPGI",
-    "strongBuy": 19,
-    "moderateBuy": 5,
-    "hold": 4,
-    "moderateSell": 3,
-    "strongSell": 2
-  },
-  "consensusRating": "Unknown"
+	"ticker": "SPGI",
+	"name": "S&P Global",
+	"group": "Data & Software Monopolies",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
+	"bullCase": "S&P Global's Ratings segment benefits from surging debt issuance volumes at still-elevated rates. Market Intelligence and Mobility segments are growing 10%+ organically on subscription revenue. After absorbing the IHS Markit integration, operating margins are expanding toward 50%+, driving compounding non-GAAP EPS.",
+	"bearCase": "Ratings revenue is highly sensitive to debt issuance cycles — a credit freeze or prolonged rate inversion collapses new issuance and cuts Ratings revenue materially (as seen in 2022). At 19x forward PE, any deceleration below 12% EPS growth would re-rate the stock.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 14.67,
+		"dividendYield": "1%",
+		"scenarios": {
+			"bear": "19%",
+			"base": "34%",
+			"bull": "55%"
+		}
+	},
+	"currentPrice": "$406.24",
+	"marketCap": "$123.0B USD",
+	"valuation": {
+		"trailingPE": 27.7,
+		"forwardPE": 18.4,
+		"evEbitda": 18.1,
+		"evFcf": 28.4
+	},
+	"metrics": {
+		"roe": "13.1%",
+		"fcfMargin": "~32%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "41%"
+	},
+	"consensus": {
+		"yahoo": "$538.52"
+	},
+	"targetPrice": "$538.52",
+	"expectedCAGR": "19% - 55%",
+	"screener": {
+		"engine": "fCFG",
+		"score": 1.82,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 15,
+			"multipleType": "EV/FCF",
+			"multiple": 28.4,
+			"cvStock": 0.014,
+			"riskMultiplier": 0.96
+		},
+		"note": "hasLikelyValueFloor: analyst upside 32.6% (DEPLOY override: base CAGR 34% ≥ 20%) (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 406.24,
+				"price6mAgo": 491.34,
+				"price1mAgo": 443.08,
+				"low3m": 381.61,
+				"return6m": -17.3,
+				"return1m": -8.3,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": -0.8,
+				"quarter": "2025-12"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.18
+	},
+	"lastUpdated": "2026-03-28T18:01:04.498Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 1.08,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 5,
+		"raw": {
+			"avgSurprisePct": 3.81,
+			"netInsiderShares": 0,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 24
+		}
+	},
+	"description": "S&P Global Inc., together with its subsidiaries, provides benchmarks, data, analytics, and workflow solutions in the global capital, energy and commodity, and automotive markets.",
+	"analystTargets": {
+		"low": 480,
+		"mean": 538.52,
+		"high": 625
+	},
+	"analystConsensus": {
+		"ticker": "SPGI",
+		"strongBuy": 19,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Unknown"
 }

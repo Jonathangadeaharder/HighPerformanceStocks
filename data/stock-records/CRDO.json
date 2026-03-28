@@ -3,7 +3,7 @@
 	"name": "Credo Technology Group",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "High-speed connectivity solutions for data centers, AEC cables taking share in AI networks.",
 	"cagrModel": {
 		"epsGrowth": "28%",
@@ -11,18 +11,18 @@
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-40%",
-			"base": "92%",
-			"bull": "150%"
+			"bear": "31%",
+			"base": "109%",
+			"bull": "173%"
 		}
 	},
-	"currentPrice": "$103.91",
-	"marketCap": "$19.2B USD",
+	"currentPrice": "$95.24",
+	"marketCap": "$17.6B USD",
 	"valuation": {
-		"trailingPE": 57.1,
-		"forwardPE": 22,
-		"evEbitda": 51.1,
-		"evFcf": 103.8
+		"trailingPE": 52.3,
+		"forwardPE": 20.2,
+		"evEbitda": 46.5,
+		"evFcf": 94.5
 	},
 	"metrics": {
 		"roe": "27.5%",
@@ -35,30 +35,31 @@
 		"yahoo": "$199.38"
 	},
 	"targetPrice": "$199.38",
-	"expectedCAGR": "-40% - 150%",
+	"expectedCAGR": "31% - 173%",
 	"expectedVolatility": "~83%",
-	"sharpeRatio": 0.97,
+	"sharpeRatio": 1.17,
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.76,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.61,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 28,
-			"multipleType": "Forward P/E",
-			"multiple": 22,
+			"multipleType": "EV/EBITDA",
+			"multiple": 46.5,
 			"cvStock": 0.034,
 			"riskMultiplier": 0.972
 		},
+		"note": "hasLikelyValueFloor: analyst upside 109.3% + QCS 11.56 (DEPLOY override: base CAGR 109% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 103.91,
-				"price6mAgo": 142.93,
-				"price1mAgo": 114.48,
+				"pass": false,
+				"price": 95.24,
+				"price6mAgo": 146.01,
+				"price1mAgo": 114.22,
 				"low3m": 92.6,
-				"return6m": -27.3,
-				"return1m": -9.2,
-				"near3mLow": false
+				"return6m": -34.8,
+				"return1m": -16.6,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -70,9 +71,10 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.7
 	},
-	"lastUpdated": "2026-03-26T08:26:15.598Z",
+	"lastUpdated": "2026-03-28T18:00:45.391Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
@@ -91,7 +93,7 @@
 	"bearCase": "Credo is heavily concentrated in 1-2 hyperscaler customers. Any account loss or product substitution (Marvell or NVIDIA developing competing AEC solutions) would devastate revenue. At 22x forward PE, the stock is not cheap for a company with single-customer concentration risk. AI capex cycles would directly impact order volumes.",
 	"description": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong K...",
 	"analystTargets": {
-		"low": 62.35,
+		"low": 125,
 		"mean": 199.38,
 		"high": 260
 	},

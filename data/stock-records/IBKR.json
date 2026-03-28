@@ -3,7 +3,7 @@
 	"name": "Interactive Brokers",
 	"group": "Financial Services",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Highest margin brokerage globally. User base expands ~20% YoY. Deep margin moats.",
 	"bullCase": "Interactive Brokers serves sophisticated traders with the lowest margin rates and most global market access. Client account growth of 20%+ annually drives structural NNA (net new assets). As a technology-first broker, IBKR has near-zero marginal cost per additional client. Margin interest income at elevated rates provides exceptional NII.",
 	"bearCase": "IBKR's NII — nearly 50% of revenues — compresses sharply when rates fall. Its holding company structure (Thomas Peterffy controls ~75% via IBG LLC) means public shareholders capture only 25% economics. Market volume slowdowns directly reduce commission revenue.",
@@ -11,18 +11,18 @@
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS; minority interest structure: public share represents ~25% economic interest in IBG LLC",
 		"ttmEPS": 2.22,
-		"dividendYield": "0%",
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-18%",
-			"base": "17%",
-			"bull": "32%"
+			"bear": "-12%",
+			"base": "26%",
+			"bull": "43%"
 		}
 	},
-	"currentPrice": "$68.68",
-	"marketCap": "$116.8B USD",
+	"currentPrice": "$64.20",
+	"marketCap": "$109.2B USD",
 	"valuation": {
-		"trailingPE": 30.9,
-		"forwardPE": 25.1
+		"trailingPE": 28.9,
+		"forwardPE": 23.4
 	},
 	"metrics": {
 		"roe": "23.5%"
@@ -31,52 +31,23 @@
 		"yahoo": "$80.56"
 	},
 	"targetPrice": "$80.56",
-	"expectedCAGR": "-18% - 32%",
+	"expectedCAGR": "-12% - 43%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.64,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 25.1,
-			"cvStock": 0.042,
-			"riskMultiplier": 0.977
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 68.68,
-				"price6mAgo": 66.12,
-				"price1mAgo": 74.56,
-				"low3m": 63.49,
-				"return6m": 3.9,
-				"return1m": -7.9,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 2
-			},
-			"earningsSurprise": {
-				"surprise": 11,
-				"quarter": "2025-12"
-			}
-		},
-		"note": "(CYCLICAL EPS)"
+		"engine": "fEVG",
+		"signal": "NO_DATA",
+		"note": "Missing/negative EV/EBITDA"
 	},
-	"lastUpdated": "2026-03-26T08:26:20.369Z",
-	"expectedVolatility": "~42%",
-	"sharpeRatio": 0.06,
+	"lastUpdated": "2026-03-28T18:00:51.909Z",
+	"expectedVolatility": "~43%",
+	"sharpeRatio": 0.26,
 	"qcs": {
-		"earningsScore": 5,
+		"earningsScore": 2.9,
 		"flowScore": 0,
 		"revisionsScore": -1.11,
-		"totalScore": 3.89,
+		"totalScore": 1.79,
 		"raw": {
 			"avgSurprisePct": 5.8,
-			"netInsiderShares": -278554,
+			"netInsiderShares": -245138,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
 			"downRevisions": 2,

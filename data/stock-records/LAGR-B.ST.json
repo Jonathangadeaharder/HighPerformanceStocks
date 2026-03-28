@@ -2,7 +2,7 @@
 	"ticker": "LAGR-B.ST",
 	"name": "Lagercrantz Group",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Identical niche-B2B M&A model to Addtech/Lifco. Grows EPS beautifully at 15–20%+.",
 	"cagrModel": {
 		"epsGrowth": "15%",
@@ -10,18 +10,18 @@
 		"ttmEPS": 5.53,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "29%",
-			"bull": "41%"
+			"bear": "16%",
+			"base": "31%",
+			"bull": "44%"
 		}
 	},
-	"currentPrice": "196 SEK",
-	"marketCap": "40.4B SEK",
+	"currentPrice": "193 SEK",
+	"marketCap": "39.7B SEK",
 	"valuation": {
-		"trailingPE": 35.4,
-		"forwardPE": 36.1,
-		"evEbitda": 23,
-		"evFcf": 137.4
+		"trailingPE": 34.8,
+		"forwardPE": 35.5,
+		"evEbitda": 22.5,
+		"evFcf": 134.4
 	},
 	"metrics": {
 		"roe": "29.4%",
@@ -34,28 +34,28 @@
 		"yahoo": "250 SEK"
 	},
 	"targetPrice": "250 SEK",
-	"expectedCAGR": "14% - 41%",
+	"expectedCAGR": "16% - 44%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.53,
+		"score": 1.46,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 23,
+			"multiple": 22.5,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 195.8,
+				"price": 192.7,
 				"price6mAgo": 203.2,
-				"price1mAgo": 220.8,
+				"price1mAgo": 214.2,
 				"low3m": 185.2,
-				"return6m": -3.6,
-				"return1m": -11.3,
-				"near3mLow": false
+				"return6m": -5.2,
+				"return1m": -10,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -67,11 +67,12 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). fEVG score: 23.0 / 15 = 1.53 — violently fails strict ≤ 0.60 threshold. FAIL signal preserved: correctly protects capital from paying 23x EV/EBITDA for 15% growth. Mean-reversion from stretched multiples is the primary structural risk."
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.31
 	},
-	"lastUpdated": "2026-03-28T15:39:21.687Z",
+	"lastUpdated": "2026-03-28T18:00:54.049Z",
 	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.75,
 	"qcs": {
 		"earningsScore": -1.57,
 		"flowScore": 0,

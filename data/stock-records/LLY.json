@@ -2,17 +2,17 @@
 	"ticker": "LLY",
 	"name": "Eli Lilly",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
-	"marketCap": "$820.1B USD",
-	"sharpeRatio": 0.6,
-	"expectedCAGR": "-6% - 65%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$786.0B USD",
+	"sharpeRatio": 0.71,
+	"expectedCAGR": "-2% - 72%",
+	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 40,
-		"forwardPE": 21.8,
-		"evEbitda": 27,
-		"evFcf": 438.4
+		"trailingPE": 38.3,
+		"forwardPE": 20.9,
+		"evEbitda": 25.9,
+		"evFcf": 420.9
 	},
 	"metrics": {
 		"roe": "101.2%",
@@ -24,42 +24,43 @@
 	"targetPrice": "$1209.34",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$916.31",
+	"currentPrice": "$878.24",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-6%",
-			"base": "33%",
-			"bull": "65%"
+			"bear": "-2%",
+			"base": "39%",
+			"bull": "72%"
 		},
-		"ttmEPS": 22.91,
+		"ttmEPS": 22.92,
 		"epsGrowth": "24%",
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-26T08:26:23.228Z",
+	"lastUpdated": "2026-03-28T18:00:54.890Z",
 	"consensus": {
 		"yahoo": "$1209.34"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.89,
+		"engine": "fCFG",
+		"score": 17.2,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 24,
-			"multipleType": "Forward P/E",
-			"multiple": 21.8,
+			"multipleType": "EV/FCF",
+			"multiple": 420.9,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		},
+		"note": "hasLikelyValueFloor: analyst upside 37.7% (DEPLOY override: base CAGR 39% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 916.31,
-				"price6mAgo": 724.54,
-				"price1mAgo": 1022.02,
-				"low3m": 895.61,
-				"return6m": 26.5,
-				"return1m": -10.3,
+				"price": 878.24,
+				"price6mAgo": 726.51,
+				"price1mAgo": 1017.97,
+				"low3m": 877.11,
+				"return6m": 20.9,
+				"return1m": -13.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -71,7 +72,9 @@
 				"surprise": 9.1,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.85
 	},
 	"qcs": {
 		"earningsScore": 5,

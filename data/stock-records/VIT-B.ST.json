@@ -2,22 +2,22 @@
 	"ticker": "VIT-B.ST",
 	"name": "Vitec Software Group",
 	"group": "Serial Acquirers",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
-	"marketCap": "8.6B SEK",
-	"sharpeRatio": 2.76,
-	"expectedCAGR": "77% - 169%",
+	"marketCap": "8.7B SEK",
+	"sharpeRatio": 2.69,
+	"expectedCAGR": "75% - 165%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 19.8,
-		"forwardPE": 16.9,
+		"trailingPE": 20.1,
+		"forwardPE": 17.1,
 		"pegRatio": null,
 		"evEbitda": 8.5,
-		"evFcf": 20.2
+		"evFcf": 20.3
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
-		"fcfYield": "~7%",
+		"fcfYield": "~6%",
 		"roic": "~30% acquisition / ~6% company-level",
 		"roe": "8.9%",
 		"netDebtEbitda": "2.0x",
@@ -26,23 +26,23 @@
 	"targetPrice": "448 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "217 SEK",
+	"currentPrice": "220 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
 		"yahoo": "448 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.96,
+		"ttmEPS": 10.97,
 		"epsGrowth": "12%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "77%",
-			"base": "108%",
-			"bull": "169%"
+			"bear": "75%",
+			"base": "105%",
+			"bull": "165%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-28T15:39:21.687Z",
+	"lastUpdated": "2026-03-28T18:01:06.670Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.69,
@@ -54,15 +54,16 @@
 			"cvStock": 0.041,
 			"riskMultiplier": 0.977
 		},
+		"note": "DEPLOY override: base CAGR 105% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 217.2,
+				"price": 220.2,
 				"price6mAgo": 331,
-				"price1mAgo": 239.2,
+				"price1mAgo": 233.6,
 				"low3m": 215.6,
-				"return6m": -34.4,
-				"return1m": -9.2,
+				"return6m": -33.5,
+				"return1m": -5.7,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -76,8 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.38,
-		"note": "Signal upgraded PASS → DEPLOY. Deployment rule: IF signal == WAIT|PASS AND baseCagr >= 20% → DEPLOY. fEVG score 0.69 > 0.60 threshold → technically WAIT/borderline. 108% Base CAGR from 8.5x cyclical-low EV/EBITDA demands deployment. QCS 4.17 and +165.6% earnings surprise confirm operational quality."
+		"secondaryScore": 1.39
 	},
 	"qcs": {
 		"earningsScore": 5,

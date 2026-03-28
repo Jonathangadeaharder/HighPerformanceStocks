@@ -2,18 +2,18 @@
 	"ticker": "NBIX",
 	"name": "Neurocrine Biosciences",
 	"group": "Biotech",
-	"confidence": "medium",
+	"confidence": "cut",
 	"confidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
-	"marketCap": "$13.2B USD",
-	"sharpeRatio": 0.94,
-	"expectedCAGR": "7% - 66%",
+	"marketCap": "$12.9B USD",
+	"sharpeRatio": 1.01,
+	"expectedCAGR": "9% - 69%",
 	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 28.1,
-		"forwardPE": 13.5,
+		"trailingPE": 27.5,
+		"forwardPE": 13.2,
 		"pegRatio": null,
-		"evEbitda": 18.2,
-		"evFcf": 30.5
+		"evEbitda": 17.8,
+		"evFcf": 29.8
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$178.04",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
-	"currentPrice": "$131.13",
+	"currentPrice": "$128.32",
 	"consensus": {
 		"tipranks": "$180",
 		"yahoo": "$178.04"
@@ -36,33 +36,34 @@
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "36%",
-			"bull": "66%"
+			"bear": "9%",
+			"base": "39%",
+			"bull": "69%"
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-26T08:26:26.327Z",
+	"lastUpdated": "2026-03-28T18:00:58.517Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
+		"score": 1.87,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 13.5,
+			"multiple": 24.1,
 			"cvStock": 0.223,
 			"riskMultiplier": 1.086
 		},
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~24.1x (hasLikelyValueFloor: analyst upside 38.7%) (DEPLOY override: base CAGR 39% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 131.13,
-				"price6mAgo": 142,
-				"price1mAgo": 130.64,
+				"price": 128.32,
+				"price6mAgo": 140.27,
+				"price1mAgo": 132.38,
 				"low3m": 122.14,
-				"return6m": -7.7,
-				"return1m": 0.4,
+				"return6m": -8.5,
+				"return1m": -3.1,
 				"near3mLow": false
 			},
 			"revisions": {

@@ -2,18 +2,18 @@
 	"ticker": "ABBV",
 	"name": "AbbVie Inc.",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$366.3B USD",
-	"sharpeRatio": 0.56,
-	"expectedCAGR": "-8% - 47%",
+	"marketCap": "$370.4B USD",
+	"sharpeRatio": 0.52,
+	"expectedCAGR": "-9% - 46%",
 	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 87.8,
-		"forwardPE": 12.9,
+		"trailingPE": 88.4,
+		"forwardPE": 13,
 		"pegRatio": 1.06,
-		"evEbitda": 14.7,
-		"evFcf": 23.4
+		"evEbitda": 14.8,
+		"evFcf": 23.6
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -28,7 +28,7 @@
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$207.18",
+	"currentPrice": "$209.40",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$249.14",
@@ -39,33 +39,34 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "23%",
-			"bull": "47%"
+			"bear": "-9%",
+			"base": "22%",
+			"bull": "46%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-26T08:26:10.961Z",
+	"lastUpdated": "2026-03-28T18:00:35.651Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.84,
+		"engine": "fEVG",
+		"score": 0.96,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multipleType": "EV/EBITDA",
+			"multiple": 14.8,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
+		"note": "DEPLOY override: base CAGR 22% ≥ 20%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 207.18,
-				"price6mAgo": 220.61,
-				"price1mAgo": 224.69,
+				"price": 209.4,
+				"price6mAgo": 223.16,
+				"price1mAgo": 234.26,
 				"low3m": 201.8,
-				"return6m": -6.1,
-				"return1m": -7.8,
+				"return6m": -6.2,
+				"return1m": -10.6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,12 +78,14 @@
 				"surprise": 2.2,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.85
 	},
 	"intrinsicValue": {
-		"dcf": 163.17,
-		"date": "2026-03-26",
-		"discount": -21
+		"dcf": 160.09,
+		"date": "2026-03-28",
+		"discount": -24
 	},
 	"qcs": {
 		"earningsScore": 2.93,

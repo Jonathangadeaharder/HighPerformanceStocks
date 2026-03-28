@@ -3,18 +3,18 @@
 	"name": "HEICO Corporation",
 	"group": "Serial Acquirers",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
-	"marketCap": "$38.9B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "1% - 49%",
+	"marketCap": "$38.1B USD",
+	"sharpeRatio": 0.78,
+	"expectedCAGR": "3% - 53%",
 	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 55.3,
-		"forwardPE": 44.1,
+		"trailingPE": 54,
+		"forwardPE": 43.2,
 		"pegRatio": null,
-		"evEbitda": 33,
-		"evFcf": 60.4
+		"evEbitda": 32.4,
+		"evFcf": 59.3
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -29,44 +29,45 @@
 	"targetPrice": "$371.50",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$279.09",
+	"currentPrice": "$273.39",
 	"consensus": {
 		"tipranks": "$366",
 		"yahoo": "$371.50",
 		"stockanalysis": "$366"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.05,
+		"ttmEPS": 5.06,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "33%",
-			"bull": "49%"
+			"bear": "3%",
+			"base": "36%",
+			"bull": "53%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T08:26:19.490Z",
+	"lastUpdated": "2026-03-28T18:00:50.975Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.8,
-		"signal": "FAIL",
+		"score": 1.77,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 33,
+			"multiple": 32.4,
 			"cvStock": 0.048,
 			"riskMultiplier": 0.981
 		},
+		"note": "hasLikelyValueFloor: analyst upside 35.9% + QCS 9.87 (DEPLOY override: base CAGR 36% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 279.09,
-				"price6mAgo": 320.31,
-				"price1mAgo": 312.98,
-				"low3m": 270.71,
-				"return6m": -12.9,
-				"return1m": -10.8,
+				"price": 273.39,
+				"price6mAgo": 317.83,
+				"price1mAgo": 329.25,
+				"low3m": 270.15,
+				"return6m": -14,
+				"return1m": -17,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -80,8 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.4,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 2.35
 	},
 	"qcs": {
 		"earningsScore": 5,

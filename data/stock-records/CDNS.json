@@ -2,18 +2,18 @@
 	"ticker": "CDNS",
 	"name": "Cadence Design Systems",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
-	"marketCap": "$77.6B USD",
-	"sharpeRatio": 0.45,
-	"expectedCAGR": "-2% - 46%",
+	"marketCap": "$75.0B USD",
+	"sharpeRatio": 0.55,
+	"expectedCAGR": "1% - 51%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 69.5,
-		"forwardPE": 29.9,
+		"trailingPE": 67.1,
+		"forwardPE": 28.9,
 		"pegRatio": 3.9,
-		"evEbitda": 40,
-		"evFcf": 50.5
+		"evEbitda": 38.6,
+		"evFcf": 48.7
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
@@ -26,7 +26,7 @@
 	"targetPrice": "$371.68",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$281.39",
+	"currentPrice": "$271.77",
 	"consensus": {
 		"tipranks": "$369",
 		"yahoo": "$371.68",
@@ -37,34 +37,35 @@
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "32%",
-			"bull": "46%"
+			"bear": "1%",
+			"base": "37%",
+			"bull": "51%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T08:26:14.700Z",
+	"lastUpdated": "2026-03-28T18:00:43.481Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.44,
-		"signal": "FAIL",
+		"score": 2.69,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 29.9,
+			"multiple": 55.9,
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (DEPLOY override: base CAGR 37% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 281.39,
-				"price6mAgo": 350.11,
-				"price1mAgo": 297.6,
+				"pass": false,
+				"price": 271.77,
+				"price6mAgo": 348.52,
+				"price1mAgo": 303.36,
 				"low3m": 262.75,
-				"return6m": -19.6,
-				"return1m": -5.4,
-				"near3mLow": false
+				"return6m": -22,
+				"return1m": -10.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,

@@ -299,6 +299,20 @@ export function detectGrowthBranch(
 		};
 	}
 
+	if (
+		stock.cyclical &&
+		priceToBasis != null &&
+		valuation.forwardPE != null &&
+		priceToBasis > 0 &&
+		priceToBasis < valuation.forwardPE
+	) {
+		return {
+			engine: 'tPERG',
+			multipleType: 'Peak-Adjusted P/E',
+			multiple: priceToBasis
+		};
+	}
+
 	return {
 		engine: 'fPERG',
 		multipleType: FORWARD_PE_LABEL,
@@ -407,10 +421,14 @@ function applyRealityChecks(
 	const revisions = entry?.epsRevisions;
 	const up30d = revisions?.upLast30days ?? 0;
 	const down30d = revisions?.downLast30days ?? 0;
+	const isAltAsset =
+		stock.group === 'Financials & Alt Assets' ||
+		/fre|ani|fee-related|distributable/i.test(stock.cagrModel?.basis ?? '');
+	const downgradeThreshold = isAltAsset ? 7 : 3;
 
 	// Two-pronged consensus-collapse rule:
 	// Rule A (legacy): overwhelmingly one-sided with zero upgrades
-	const collapseRuleA = down30d >= 3 && up30d === 0;
+	const collapseRuleA = down30d >= downgradeThreshold && up30d === 0;
 	// Rule B (ratio): down revisions dominate by 2:1+ AND there are at least COLLAPSE_MIN_ABS downgrades.
 	//   This catches cases like 0700.HK (4 up / 19 down) and MELI (1 up / 11 down)
 	//   that Rule A misses because up30d > 0.

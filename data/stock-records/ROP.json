@@ -2,18 +2,18 @@
 	"ticker": "ROP",
 	"name": "Roper Technologies",
 	"group": "Serial Acquirers",
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
-	"marketCap": "$37.3B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "6% - 60%",
+	"marketCap": "$37.1B USD",
+	"sharpeRatio": 1.13,
+	"expectedCAGR": "7% - 61%",
 	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 24.4,
-		"forwardPE": 14.9,
+		"trailingPE": 24.3,
+		"forwardPE": 14.8,
 		"pegRatio": null,
 		"evEbitda": 14.3,
-		"evFcf": 21.2
+		"evFcf": 21.1
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
@@ -27,48 +27,49 @@
 	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
-	"currentPrice": "$346.72",
+	"currentPrice": "$344.42",
 	"consensus": {
 		"tipranks": "$479",
 		"yahoo": "$462.19",
 		"stockanalysis": "$495"
 	},
 	"cagrModel": {
-		"ttmEPS": 14.22,
+		"ttmEPS": 14.19,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "6%",
-			"base": "34%",
-			"bull": "60%"
+			"bear": "7%",
+			"base": "35%",
+			"bull": "61%"
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-26T08:26:29.311Z",
+	"lastUpdated": "2026-03-28T18:01:02.779Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.15,
-		"signal": "PASS",
+		"score": 1.7,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
-			"multipleType": "EV/EBITDA",
-			"multiple": 14.3,
+			"multipleType": "EV/FCF",
+			"multiple": 21.1,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 346.72,
-				"price6mAgo": 499.31,
-				"price1mAgo": 352.15,
+				"price": 344.42,
+				"price6mAgo": 500.96,
+				"price1mAgo": 353.93,
 				"low3m": 313.07,
-				"return6m": -30.6,
-				"return1m": -1.5,
+				"return6m": -31.2,
+				"return1m": -2.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 2,
 				"down30d": 6
 			},
@@ -78,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.2
+		"secondaryScore": 1.19
 	},
 	"qcs": {
 		"earningsScore": 1.73,

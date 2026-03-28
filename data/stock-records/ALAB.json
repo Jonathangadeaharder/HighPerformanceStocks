@@ -3,27 +3,27 @@
 	"name": "Astera Labs",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "Pure-play on AI connectivity, PCIe/CXL retimers critical for AI server clusters.",
 	"cagrModel": {
 		"epsGrowth": "35%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 1.22,
+		"ttmEPS": 1.21,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-35%",
-			"base": "72%",
-			"bull": "108%"
+			"bear": "38%",
+			"base": "84%",
+			"bull": "122%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$120.33",
-	"marketCap": "$20.5B USD",
+	"currentPrice": "$112.47",
+	"marketCap": "$19.1B USD",
 	"valuation": {
-		"trailingPE": 98.6,
-		"forwardPE": 34.2,
-		"evEbitda": 107.2,
-		"evFcf": 93.4
+		"trailingPE": 93,
+		"forwardPE": 31.9,
+		"evEbitda": 99.8,
+		"evFcf": 87
 	},
 	"metrics": {
 		"roe": "18.8%",
@@ -36,29 +36,30 @@
 		"yahoo": "$206.75"
 	},
 	"targetPrice": "$206.75",
-	"expectedCAGR": "-35% - 108%",
+	"expectedCAGR": "38% - 122%",
 	"expectedVolatility": "~90%",
-	"sharpeRatio": 0.71,
+	"sharpeRatio": 0.84,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.08,
-		"signal": "WAIT",
+		"engine": "fEVG",
+		"score": 3.15,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 34.2,
+			"multipleType": "EV/EBITDA",
+			"multiple": 99.8,
 			"cvStock": 0.123,
 			"riskMultiplier": 1.026
 		},
+		"note": "hasLikelyValueFloor: analyst upside 83.8% + QCS 12.14 (DEPLOY override: base CAGR 84% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 120.33,
-				"price6mAgo": 197.78,
-				"price1mAgo": 124.67,
+				"price": 112.47,
+				"price6mAgo": 198.8,
+				"price1mAgo": 120.55,
 				"low3m": 107.08,
-				"return6m": -39.2,
-				"return1m": -3.5,
+				"return6m": -43.4,
+				"return1m": -6.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -71,9 +72,10 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.01
 	},
-	"lastUpdated": "2026-03-26T08:26:11.825Z",
+	"lastUpdated": "2026-03-28T18:00:36.662Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -92,7 +94,7 @@
 	"bearCase": "Astera is an early-stage company with limited revenue visibility. Marvell and Broadcom are developing competing connectivity solutions that could displace standalone retimers. Hyperscaler capex pauses would immediately compress Astera's revenue. Customer concentration at 2-3 hyperscalers creates binary revenue risk.",
 	"description": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure.",
 	"analystTargets": {
-		"low": 78.21,
+		"low": 155,
 		"mean": 206.75,
 		"high": 250
 	},

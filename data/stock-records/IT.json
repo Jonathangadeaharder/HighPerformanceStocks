@@ -1,107 +1,109 @@
 {
-  "ticker": "IT",
-  "name": "Gartner",
-  "group": "Data & Software Monopolies",
-  "cyclical": false,
-  "confidence": "high",
-  "confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
-  "bullCase": "Gartner's enterprise IT research is the most defensible subscription moat in B2B services — Fortune 500 clients renew at 90%+ rates because Gartner's Magic Quadrant dictates vendor selection. Aggressive buybacks (~6% float reduction annually) compound EPS well above organic growth. After a 36% selloff, the stock trades at an anomalously low 11x forward PE.",
-  "bearCase": "Enterprise IT budgets are among the first to be cut in a downturn. If new contract volumes slow in a recession, Gartner's double-digit growth engine stalls. The buyback program — funded by FCF — is the primary EPS driver; any FCF pressure creates a compounding miss.",
-  "cagrModel": {
-    "epsGrowth": "12%",
-    "basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
-    "ttmEPS": 9.64,
-    "dividendYield": "0%",
-    "scenarios": {
-      "bear": "0%",
-      "base": "27%",
-      "bull": "70%"
-    }
-  },
-  "currentPrice": "$150.23",
-  "marketCap": "$10.8B USD",
-  "valuation": {
-    "trailingPE": 15.6,
-    "forwardPE": 10.4,
-    "evEbitda": 9.3,
-    "evFcf": 13.2
-  },
-  "metrics": {
-    "roe": "86.9%",
-    "fcfMargin": "~14%",
-    "fcfYield": "~9%",
-    "netDebtEbitda": "1.2x",
-    "ruleOf40": "16%"
-  },
-  "consensus": {
-    "yahoo": "$190.46"
-  },
-  "targetPrice": "$190.46",
-  "expectedCAGR": "0% - 70%",
-  "screener": {
-    "engine": "fPERG",
-    "score": 1.23,
-    "signal": "FAIL",
-    "inputs": {
-      "growth": 12,
-      "multipleType": "Forward P/E",
-      "multiple": 10.4,
-      "cvStock": 0.051,
-      "riskMultiplier": 1.417
-    },
-    "realityChecks": {
-      "stabilization": {
-        "pass": true,
-        "price": 150.23,
-        "price6mAgo": 264.09,
-        "price1mAgo": 155.8,
-        "low3m": 139.18,
-        "return6m": -43.1,
-        "return1m": -3.6,
-        "near3mLow": false
-      },
-      "revisions": {
-        "pass": true,
-        "up30d": 3,
-        "down30d": 6
-      },
-      "earningsSurprise": {
-        "surprise": 12.2,
-        "quarter": "2025-12"
-      }
-    },
-    "note": ""
-  },
-  "lastUpdated": "2026-03-26T08:26:21.352Z",
-  "expectedVolatility": "~53%",
-  "sharpeRatio": 0.58,
-  "qcs": {
-    "earningsScore": 5,
-    "flowScore": 5,
-    "revisionsScore": -1.33,
-    "totalScore": 8.67,
-    "raw": {
-      "avgSurprisePct": 10.61,
-      "netInsiderShares": 114253,
-      "instFlowTrend": "positive",
-      "upRevisions": 4,
-      "downRevisions": 8,
-      "totalAnalysts": 15
-    }
-  },
-  "description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
-  "analystTargets": {
-    "low": 150,
-    "mean": 190.46,
-    "high": 255
-  },
-  "analystConsensus": {
-    "ticker": "IT",
-    "strongBuy": 5,
-    "moderateBuy": 5,
-    "hold": 4,
-    "moderateSell": 3,
-    "strongSell": 2
-  },
-  "consensusRating": "Hold"
+	"ticker": "IT",
+	"name": "Gartner",
+	"group": "Data & Software Monopolies",
+	"cyclical": true,
+	"confidence": "medium",
+	"confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
+	"bullCase": "Gartner's enterprise IT research is the most defensible subscription moat in B2B services — Fortune 500 clients renew at 90%+ rates because Gartner's Magic Quadrant dictates vendor selection. Aggressive buybacks (~6% float reduction annually) compound EPS well above organic growth. After a 36% selloff, the stock trades at an anomalously low 11x forward PE.",
+	"bearCase": "Enterprise IT budgets are among the first to be cut in a downturn. If new contract volumes slow in a recession, Gartner's double-digit growth engine stalls. The buyback program — funded by FCF — is the primary EPS driver; any FCF pressure creates a compounding miss.",
+	"cagrModel": {
+		"epsGrowth": "12%",
+		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
+		"ttmEPS": 9.65,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-10%",
+			"base": "21%",
+			"bull": "64%"
+		}
+	},
+	"currentPrice": "$155.42",
+	"marketCap": "$11.2B USD",
+	"valuation": {
+		"trailingPE": 16.1,
+		"forwardPE": 10.7,
+		"evEbitda": 9.6,
+		"evFcf": 13.6
+	},
+	"metrics": {
+		"roe": "86.9%",
+		"fcfMargin": "~14%",
+		"fcfYield": "~8%",
+		"netDebtEbitda": "1.2x",
+		"ruleOf40": "16%"
+	},
+	"consensus": {
+		"yahoo": "$188.62"
+	},
+	"targetPrice": "$188.62",
+	"expectedCAGR": "-10% - 64%",
+	"screener": {
+		"engine": "fCFG",
+		"score": 1.23,
+		"signal": "REJECTED",
+		"inputs": {
+			"growth": 12,
+			"multipleType": "EV/FCF",
+			"multiple": 13.6,
+			"cvStock": 0.051,
+			"riskMultiplier": 1.084
+		},
+		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 155.42,
+				"price6mAgo": 261.19,
+				"price1mAgo": 159.27,
+				"low3m": 139.18,
+				"return6m": -40.5,
+				"return1m": -2.4,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": false,
+				"up30d": 3,
+				"down30d": 6
+			},
+			"earningsSurprise": {
+				"surprise": 12.2,
+				"quarter": "2025-12"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.23
+	},
+	"lastUpdated": "2026-03-28T18:00:52.937Z",
+	"expectedVolatility": "~54%",
+	"sharpeRatio": 0.42,
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": -1.33,
+		"totalScore": 8.67,
+		"raw": {
+			"avgSurprisePct": 10.61,
+			"netInsiderShares": 114253,
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 8,
+			"totalAnalysts": 15
+		}
+	},
+	"description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
+	"analystTargets": {
+		"low": 140,
+		"mean": 188.62,
+		"high": 255
+	},
+	"analystConsensus": {
+		"ticker": "IT",
+		"strongBuy": 5,
+		"moderateBuy": 5,
+		"hold": 4,
+		"moderateSell": 3,
+		"strongSell": 2
+	},
+	"consensusRating": "Hold"
 }

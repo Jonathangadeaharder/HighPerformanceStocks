@@ -3,28 +3,28 @@
 	"name": "Howmet Aerospace",
 	"group": "Industrial Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "medium",
 	"confidenceReason": "Heavy IP moats in forged jet engine blades/fasteners. Aerospace super-cycle momentum.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.72,
+		"ttmEPS": 3.71,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "16%",
-			"bull": "30%"
+			"bear": "-6%",
+			"base": "23%",
+			"bull": "38%"
 		}
 	},
 	"bullCase": "Howmet Aerospace is the sole approved supplier for titanium fan blades and aluminum structural castings on every major western jetliner. This FAA certification barrier means Boeing and Airbus cannot multi-source critical airframe components. With aviation at record passenger levels and a 10-year production backlog, Howmet is compounding earnings at 15%+ with no margin ceiling.",
 	"bearCase": "Defense/commercial aerospace spending is a long-cycle business. Any Boeing production halt, supply chain disruption, or airline capacity rationalization has multi-year revenue implications. The 5.7x leverage from prior private equity era constrains financial flexibility.",
-	"currentPrice": "$241.62",
-	"marketCap": "$97.3B USD",
+	"currentPrice": "$227.90",
+	"marketCap": "$91.7B USD",
 	"valuation": {
-		"trailingPE": 65,
-		"forwardPE": 43.9,
-		"evEbitda": 41.6,
-		"evFcf": 108.3
+		"trailingPE": 61.4,
+		"forwardPE": 41.5,
+		"evEbitda": 39.3,
+		"evFcf": 102.3
 	},
 	"metrics": {
 		"roe": "30.4%",
@@ -37,27 +37,28 @@
 		"yahoo": "$280.00"
 	},
 	"targetPrice": "$280.00",
-	"expectedCAGR": "-11% - 30%",
+	"expectedCAGR": "-6% - 38%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.84,
-		"signal": "FAIL",
+		"score": 2.54,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 43.9,
+			"multipleType": "EV/EBITDA",
+			"multiple": 39.3,
 			"cvStock": 0.031,
 			"riskMultiplier": 0.971
 		},
+		"note": "hasLikelyValueFloor: QCS 8.57 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 23% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 241.62,
-				"price6mAgo": 193.15,
-				"price1mAgo": 260.31,
+				"price": 227.9,
+				"price6mAgo": 191.92,
+				"price1mAgo": 265.11,
 				"low3m": 204.15,
-				"return6m": 25.1,
-				"return1m": -7.2,
+				"return6m": 18.7,
+				"return1m": -14,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,11 +71,12 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 2.69
 	},
-	"lastUpdated": "2026-03-26T08:26:20.354Z",
-	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.15,
+	"lastUpdated": "2026-03-28T18:00:51.895Z",
+	"expectedVolatility": "~34%",
+	"sharpeRatio": 0.34,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

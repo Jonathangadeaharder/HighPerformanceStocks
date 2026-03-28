@@ -3,7 +3,7 @@
 	"name": "Sea Limited",
 	"group": "Emerging Markets",
 	"cyclical": true,
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "Dominant position in Southeast Asia e-commerce and gaming, re-accelerating profitable growth.",
 	"targetPrice": "$140.71",
 	"bullCase": "Sea Limited holds dominant positions across Southeast Asia in e-commerce (Shopee), digital financial services (SeaMoney), and gaming (Garena). SeaMoney's fintech penetration into underbanked EM populations mirrors the Nu Holdings playbook at scale. If Shopee achieves 15%+ EBIT margins at maturity — already visible in select markets — intrinsic value dramatically exceeds current pricing. The 22x exit P/E represents a modest premium for a dominant EM platform.",
@@ -14,39 +14,39 @@
 		"dividendYield": "0%",
 		"ttmEPS": 2.52,
 		"scenarios": {
-			"bear": "21%",
-			"base": "71%",
-			"bull": "136%"
+			"bear": "28%",
+			"base": "80%",
+			"bull": "149%"
 		}
 	},
-	"currentPrice": "$82.47",
-	"marketCap": "$48.8B USD",
+	"currentPrice": "$78.16",
+	"marketCap": "$46.3B USD",
 	"consensus": {
 		"yahoo": "$140.71"
 	},
 	"expectedVolatility": "~52%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.76,
+		"engine": "fEVG",
+		"score": 0.79,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 22,
-			"multipleType": "Forward P/E",
-			"multiple": 16.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 16.9,
 			"cvStock": 0.133,
 			"riskMultiplier": 1.032
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 82.47,
-				"price6mAgo": 184.58,
-				"price1mAgo": 110.9,
+				"pass": false,
+				"price": 78.16,
+				"price6mAgo": 181.45,
+				"price1mAgo": 105.21,
 				"low3m": 77.05,
-				"return6m": -55.3,
-				"return1m": -25.6,
-				"near3mLow": false
+				"return6m": -56.9,
+				"return1m": -25.7,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
@@ -57,14 +57,16 @@
 				"surprise": -5.5,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.72
 	},
-	"lastUpdated": "2026-03-26T08:26:30.104Z",
+	"lastUpdated": "2026-03-28T18:01:03.604Z",
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 16.1,
-		"evEbitda": 18,
-		"evFcf": 80.4
+		"trailingPE": 31,
+		"forwardPE": 15.3,
+		"evEbitda": 16.9,
+		"evFcf": 75.5
 	},
 	"metrics": {
 		"roe": "15.3%",
@@ -73,8 +75,8 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "41%"
 	},
-	"expectedCAGR": "21% - 136%",
-	"sharpeRatio": 1.42,
+	"expectedCAGR": "28% - 149%",
+	"sharpeRatio": 1.62,
 	"qcs": {
 		"earningsScore": -2.87,
 		"flowScore": 2.5,

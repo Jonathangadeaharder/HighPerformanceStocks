@@ -4,16 +4,16 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$448.7B USD",
-	"sharpeRatio": 1.02,
-	"expectedCAGR": "10% - 48%",
+	"marketCap": "$432.2B USD",
+	"sharpeRatio": 1.25,
+	"expectedCAGR": "15% - 54%",
 	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 30.4,
-		"forwardPE": 22.2,
+		"trailingPE": 29.3,
+		"forwardPE": 21.4,
 		"pegRatio": null,
-		"evEbitda": 22.3,
-		"evFcf": 28.1
+		"evEbitda": 21.5,
+		"evFcf": 27.1
 	},
 	"metrics": {
 		"fcfMargin": "~50%",
@@ -23,47 +23,48 @@
 		"netDebtEbitda": "0.4x",
 		"ruleOf40": "67%"
 	},
-	"targetPrice": "$662.59",
+	"targetPrice": "$661.12",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$502.76",
+	"currentPrice": "$484.24",
 	"consensus": {
 		"tipranks": "$659",
-		"yahoo": "$662.59",
+		"yahoo": "$661.12",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.54,
+		"ttmEPS": 16.51,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "33%",
-			"bull": "48%"
+			"bear": "15%",
+			"base": "38%",
+			"bull": "54%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-26T08:26:24.174Z",
+	"lastUpdated": "2026-03-28T18:00:55.968Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.43,
+		"engine": "fCFG",
+		"score": 1.74,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 22.2,
+			"multipleType": "EV/FCF",
+			"multiple": 27.1,
 			"cvStock": 0.019,
 			"riskMultiplier": 0.963
 		},
+		"note": "hasLikelyValueFloor: analyst upside 36.5% (DEPLOY override: base CAGR 38% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 502.76,
-				"price6mAgo": 565.13,
-				"price1mAgo": 514.77,
-				"low3m": 487.31,
-				"return6m": -11,
-				"return1m": -2.3,
+				"price": 484.24,
+				"price6mAgo": 568.14,
+				"price1mAgo": 521,
+				"low3m": 480.5,
+				"return6m": -14.8,
+				"return1m": -7.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -75,7 +76,9 @@
 				"surprise": 12.3,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.37
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -94,7 +97,7 @@
 	"description": "Mastercard Incorporated, a technology company, provides transaction processing and other payment-related products and services in the United States and internationally.",
 	"analystTargets": {
 		"low": 550,
-		"mean": 662.59,
+		"mean": 661.12,
 		"high": 739
 	},
 	"analystConsensus": {

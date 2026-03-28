@@ -2,61 +2,62 @@
 	"ticker": "EXO.AS",
 	"name": "Exor N.V.",
 	"group": "The Capital Compounders",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€21.4B",
-	"sharpeRatio": 2.74,
-	"expectedCAGR": "56% - 90%",
+	"marketCap": "€21.0B",
+	"sharpeRatio": 2.88,
+	"expectedCAGR": "59% - 94%",
 	"expectedVolatility": "~25%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"forwardPE": 26.9,
-		"evFcf": -7.6
+		"forwardPE": 26.3,
+		"evFcf": -7.3
 	},
 	"metrics": {
 		"roe": "-10.6%",
-		"fcfYield": "~-9%"
+		"fcfYield": "~-10%"
 	},
-	"targetPrice": "€113.13",
+	"targetPrice": "€111.88",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€65.20",
+	"currentPrice": "€63.75",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "56%",
-			"base": "75%",
-			"bull": "90%"
+			"bear": "59%",
+			"base": "76%",
+			"bull": "94%"
 		},
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-28T15:39:21.687Z",
+	"lastUpdated": "2026-03-28T18:00:48.958Z",
 	"consensus": {
-		"yahoo": "€113.13"
+		"yahoo": "€111.88"
 	},
 	"screener": {
-		"engine": "NAV",
-		"score": 2.23,
-		"signal": "FAIL",
+		"engine": "fPERG",
+		"score": 2.18,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 26.9,
+			"multiple": 26.3,
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
+		"note": "hasLikelyValueFloor: analyst upside 75.5% (DEPLOY override: base CAGR 76% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 65.2,
+				"price": 63.75,
 				"price6mAgo": 83,
-				"price1mAgo": 74.35,
+				"price1mAgo": 72.3,
 				"low3m": 59.75,
-				"return6m": -21.4,
-				"return1m": -12.3,
+				"return6m": -23.2,
+				"return1m": -11.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -64,8 +65,7 @@
 				"up30d": 0,
 				"down30d": 1
 			}
-		},
-		"note": "Engine corrected fPERG → NAV Discount Model. EPS is structurally irrelevant for a European family holding company. Returns must be driven by NAV per share compounding + 40-45% NAV discount closure. Prior fPERG score (2.23) was a mathematically meaningless artefact."
+		}
 	},
 	"qcs": {
 		"earningsScore": 0,
@@ -84,7 +84,7 @@
 	"description": "Exor N.V. engages in the automotive, agriculture and construction, sports car, commercial vehicle, health technology, football and powertrain businesses in the Netherlands and internationally.",
 	"analystTargets": {
 		"low": 101,
-		"mean": 113.13,
+		"mean": 111.88,
 		"high": 123
 	},
 	"analystConsensus": {

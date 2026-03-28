@@ -3,18 +3,18 @@
 	"name": "AppLovin",
 	"group": "Ad-Tech",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
-	"marketCap": "$147.6B USD",
-	"sharpeRatio": 0.41,
-	"expectedCAGR": "-22% - 97%",
-	"expectedVolatility": "~80%",
+	"marketCap": "$128.8B USD",
+	"sharpeRatio": 0.69,
+	"expectedCAGR": "-11% - 126%",
+	"expectedVolatility": "~77%",
 	"valuation": {
-		"trailingPE": 43.5,
-		"forwardPE": 21.6,
+		"trailingPE": 38,
+		"forwardPE": 18.8,
 		"pegRatio": 0.8,
-		"evEbitda": 34.7,
-		"evFcf": 55
+		"evEbitda": 30.4,
+		"evFcf": 48.1
 	},
 	"metrics": {
 		"roe": "212.9%",
@@ -31,40 +31,41 @@
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$436.69",
+	"currentPrice": "$381.20",
 	"cagrModel": {
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "49%",
-			"bull": "97%"
+			"bear": "-11%",
+			"base": "70%",
+			"bull": "126%"
 		},
 		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T08:26:12.760Z",
+	"lastUpdated": "2026-03-28T18:00:37.556Z",
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.73,
-		"signal": "PASS",
+		"engine": "fEVG",
+		"score": 1.02,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 30,
-			"multipleType": "Forward P/E",
-			"multiple": 21.6,
+			"multipleType": "EV/EBITDA",
+			"multiple": 30.4,
 			"cvStock": 0.098,
 			"riskMultiplier": 1.011
 		},
+		"note": "DEPLOY override: base CAGR 70% ≥ 20% (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 436.69,
-				"price6mAgo": 669.86,
-				"price1mAgo": 444.93,
+				"price": 381.2,
+				"price6mAgo": 712.36,
+				"price1mAgo": 432.98,
 				"low3m": 359,
-				"return6m": -34.8,
-				"return1m": -1.9,
+				"return6m": -46.5,
+				"return1m": -12,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -77,7 +78,8 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.63
 	},
 	"qcs": {
 		"earningsScore": 4.99,
@@ -107,6 +109,6 @@
 		"moderateSell": 3,
 		"strongSell": 2
 	},
-	"targetPriceAlternative": "$654.50",
+	"targetPriceAlternative": "$668.20",
 	"consensusRating": "Moderate Buy"
 }

@@ -2,18 +2,18 @@
 	"ticker": "LIFCO-B.ST",
 	"name": "Lifco AB",
 	"group": "Serial Acquirers",
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "128.2B SEK",
-	"sharpeRatio": 0.86,
-	"expectedCAGR": "20% - 37%",
+	"marketCap": "127.5B SEK",
+	"sharpeRatio": 0.88,
+	"expectedCAGR": "20% - 38%",
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 35.3,
-		"forwardPE": 35.4,
+		"trailingPE": 35.1,
+		"forwardPE": 35.2,
 		"pegRatio": null,
-		"evEbitda": 19.5,
-		"evFcf": 29.7
+		"evEbitda": 19.3,
+		"evFcf": 29.5
 	},
 	"metrics": {
 		"fcfMargin": "~16%",
@@ -26,7 +26,7 @@
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "282 SEK",
+	"currentPrice": "281 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
@@ -37,34 +37,34 @@
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "20%",
-			"base": "27%",
-			"bull": "37%"
+			"base": "28%",
+			"bull": "38%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-26T08:26:23.267Z",
+	"lastUpdated": "2026-03-28T18:00:54.847Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.62,
+		"score": 1.61,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.5,
+			"multiple": 19.3,
 			"cvStock": 0.078,
 			"riskMultiplier": 0.999
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 282.2,
+				"pass": false,
+				"price": 280.8,
 				"price6mAgo": 319,
-				"price1mAgo": 321.8,
+				"price1mAgo": 312.8,
 				"low3m": 268.2,
-				"return6m": -11.5,
-				"return1m": -12.3,
-				"near3mLow": false
+				"return6m": -12,
+				"return1m": -10.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.95
+		"secondaryScore": 2.93
 	},
 	"qcs": {
 		"earningsScore": -5,

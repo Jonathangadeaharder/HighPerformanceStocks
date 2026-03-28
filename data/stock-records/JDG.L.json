@@ -2,7 +2,7 @@
 	"ticker": "JDG.L",
 	"name": "Judges Scientific",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "UK-based buyer of specialized scientific instrument manufacturers. Incredible return on capital.",
 	"bullCase": "Judges Scientific is a UK niche scientific instrument serial acquirer with 20%+ historical ROE and a proven capital allocation model. A 24x exit P/E represents fair value for an asset-light compounder with recurring aftermarket revenue and a deep pipeline of sub-£50M acquisition targets.",
 	"bearCase": "UK domicile adds currency risk (GBP/USD) and limits the acquisition pipeline vs. North American peers. Multiple compression from current 35x levels to 24x base would produce modest returns unless EPS growth exceeds 16%.",
@@ -12,18 +12,18 @@
 		"ttmEPS": 1.63,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "1%",
+			"bear": "0%",
 			"base": "50%",
 			"bull": "78%"
 		}
 	},
-	"currentPrice": "£41.13",
+	"currentPrice": "£41.20",
 	"marketCap": "£0.3B",
 	"valuation": {
-		"trailingPE": 25.2,
+		"trailingPE": 25.3,
 		"forwardPE": 20.2,
-		"evEbitda": 10.7,
-		"evFcf": 15
+		"evEbitda": 10.5,
+		"evFcf": 14.6
 	},
 	"metrics": {
 		"roe": "12.9%",
@@ -36,27 +36,28 @@
 		"yahoo": "£60.63"
 	},
 	"targetPrice": "£60.63",
-	"expectedCAGR": "1% - 78%",
+	"expectedCAGR": "0% - 78%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.71,
+		"score": 0.67,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.7,
+			"multiple": 10.5,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.961
 		},
+		"note": "DEPLOY override: base CAGR 50% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4112.5,
+				"price": 4120,
 				"price6mAgo": 6300,
-				"price1mAgo": 4820,
+				"price1mAgo": 4660,
 				"low3m": 3480,
-				"return6m": -34.7,
-				"return1m": -14.7,
+				"return6m": -34.6,
+				"return1m": -11.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -65,11 +66,12 @@
 				"down30d": 1
 			}
 		},
-		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). fEVG score: 10.7 / 15 = 0.71. Signal upgraded to DEPLOY: 50% Base CAGR ≥ 20% override threshold. High-ROE asset-light UK serial acquirer at a rare cyclical -34.7% drawdown discount. EV/EBITDA 10.7 is strikingly cheap for a proven compounder."
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.29
 	},
-	"lastUpdated": "2026-03-28T15:39:21.687Z",
+	"lastUpdated": "2026-03-28T18:00:53.096Z",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": 0.8,
+	"sharpeRatio": 0.78,
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,

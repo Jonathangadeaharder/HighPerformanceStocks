@@ -3,11 +3,11 @@
 	"name": "Broadcom",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
-	"marketCap": "$1511.6B USD",
-	"sharpeRatio": 1.11,
-	"expectedCAGR": "14% - 99%",
+	"marketCap": "$1425.6B USD",
+	"sharpeRatio": 1.31,
+	"expectedCAGR": "21% - 111%",
 	"ttmEPS": 7.07,
 	"scenarios": {
 		"bear": "8%",
@@ -22,50 +22,51 @@
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "54%"
 	},
-	"targetPrice": "$472.01",
+	"targetPrice": "$471.55",
 	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$318.81",
+	"currentPrice": "$300.68",
 	"consensus": {
 		"tipranks": "$460",
-		"yahoo": "$472.01",
+		"yahoo": "$471.55",
 		"stockanalysis": "$431"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.13,
+		"ttmEPS": 5.14,
 		"epsGrowth": "35%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "49%",
-			"bull": "99%"
+			"bear": "21%",
+			"base": "58%",
+			"bull": "111%"
 		},
 		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T08:26:13.725Z",
+	"lastUpdated": "2026-03-28T18:00:42.059Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.56,
-		"signal": "PASS",
+		"score": 1.22,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
-			"multipleType": "Forward P/E",
-			"multiple": 17.9,
-			"cvStock": 0.11,
-			"riskMultiplier": 1.018
+			"multipleType": "EV/EBITDA",
+			"multiple": 39.1,
+			"cvStock": 0.109,
+			"riskMultiplier": 1.017
 		},
+		"note": "hasLikelyValueFloor: analyst upside 56.8% (DEPLOY override: base CAGR 58% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 318.81,
-				"price6mAgo": 334.53,
-				"price1mAgo": 321.7,
+				"price": 300.68,
+				"price6mAgo": 327.9,
+				"price1mAgo": 318.82,
 				"low3m": 295.3,
-				"return6m": -4.7,
-				"return1m": -0.9,
-				"near3mLow": false
+				"return6m": -8.3,
+				"return1m": -5.7,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -77,13 +78,14 @@
 				"quarter": "2026-01"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.53
 	},
 	"valuation": {
-		"trailingPE": 62.1,
-		"forwardPE": 17.9,
-		"evEbitda": 41.4,
-		"evFcf": 60.4
+		"trailingPE": 58.5,
+		"forwardPE": 16.9,
+		"evEbitda": 39.1,
+		"evFcf": 57
 	},
 	"expectedVolatility": "~47%",
 	"qcs": {
@@ -93,7 +95,7 @@
 		"totalScore": 0.27,
 		"raw": {
 			"avgSurprisePct": 1.97,
-			"netInsiderShares": -764646,
+			"netInsiderShares": -471527,
 			"instFlowTrend": "negative",
 			"upRevisions": 40,
 			"downRevisions": 0,
@@ -103,7 +105,7 @@
 	"description": "Broadcom Inc. designs, develops, and supplies various semiconductor devices and infrastructure software solutions internationally.",
 	"analystTargets": {
 		"low": 360,
-		"mean": 472.01,
+		"mean": 471.55,
 		"high": 630
 	},
 	"analystConsensus": {
