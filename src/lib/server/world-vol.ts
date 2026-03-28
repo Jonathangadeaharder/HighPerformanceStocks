@@ -6,11 +6,11 @@ import {
 	WORLD_VOL_WEIGHTS
 } from '$lib/domain/volatility/logic';
 
-const VIX_SYMBOL = '^VIX';
+const VIX_SYMBOLS = ['^VIX', 'VIX'];
 // Yahoo Finance serves ^V2TX with a frozen regularMarketTime (known issue with European indices).
 // We try the quote first, then fall back to chart() which has reliable dates.
 // V2TX.DE is an alias that sometimes returns a fresher timestamp.
-const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE'];
+const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE', 'V2TX.SW', 'V2TX.F'];
 
 function formatDate(dateValue: Date | string | null | undefined): string | null {
 	if (!dateValue) return null;
@@ -301,7 +301,7 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 	}
 
 	const [vix, vstoxx] = await Promise.all([
-		fetchCrossVerifiedVolIndex([VIX_SYMBOL], 'vix', 'VIX', WORLD_VOL_WEIGHTS.vix),
+		fetchCrossVerifiedVolIndex(VIX_SYMBOLS, 'vix', 'VIX', WORLD_VOL_WEIGHTS.vix),
 		fetchCrossVerifiedVolIndex(
 			VSTOXX_SYMBOLS,
 			'v2tx?countrycode=xx',
@@ -316,11 +316,11 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 
 	let result: WorldVolSignal;
 	const compositeSignal =
-		vix.fresh && vstoxx.fresh ? buildCompositeWorldVolSignal([vix, vstoxx]) : null;
+		vix.fresh || vstoxx.fresh ? buildCompositeWorldVolSignal([vix, vstoxx]) : null;
 
 	if (compositeSignal) {
 		result = compositeSignal;
-	} else if (vix.fresh && vstoxx.fresh) {
+	} else if (vix.fresh || vstoxx.fresh) {
 		result = {
 			available: false,
 			source: 'Global developed volatility proxies',
