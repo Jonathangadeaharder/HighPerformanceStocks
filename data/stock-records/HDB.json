@@ -42,7 +42,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.33,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
@@ -50,7 +50,7 @@
 			"cvStock": 0.152,
 			"riskMultiplier": 1.043
 		},
-		"note": "hasLikelyValueFloor: analyst upside 73.1% (DEPLOY override: base CAGR 75% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 73.1% (WAIT override (stalled by stabilization): base CAGR 75% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

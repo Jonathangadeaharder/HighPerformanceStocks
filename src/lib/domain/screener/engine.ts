@@ -554,18 +554,20 @@ function applyDeployRejectOverrides(
 	// Mandatory DEPLOY override & Rejection Floors:
 	if (baseCagr == null || result.signal === 'REJECTED') return;
 
+	const stabPass = result.realityChecks?.stabilization?.pass !== false;
+
 	if (baseCagr < 0) {
 		result.signal = 'REJECTED';
 		appendNote(result, `Absolute REJECT: Base CAGR ${baseCagr}% is negative`);
 	} else if (result.signal === 'WAIT' && baseCagr < 15) {
 		result.signal = 'REJECTED';
 		appendNote(result, `REJECT: Stalled at WAIT with base CAGR ${baseCagr}% < 15%`);
-	} else if (result.signal === 'PASS' && baseCagr >= 15) {
+	} else if (result.signal === 'PASS' && baseCagr >= 15 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 15%`);
-	} else if (result.signal === 'WAIT' && baseCagr >= 20) {
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 15% and stabilized`);
+	} else if (result.signal === 'WAIT' && baseCagr >= 20 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 20%`);
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 20% and stabilized`);
 	}
 }
 

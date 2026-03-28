@@ -47,7 +47,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.69,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
@@ -55,7 +55,7 @@
 			"cvStock": 0.015,
 			"riskMultiplier": 0.961
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (DEPLOY override: base CAGR 37% ≥ 20%)",
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (WAIT override (stalled by stabilization): base CAGR 37% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

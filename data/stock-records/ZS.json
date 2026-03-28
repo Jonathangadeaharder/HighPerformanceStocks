@@ -46,7 +46,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.77,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
@@ -54,7 +54,7 @@
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		},
-		"note": "Signal capped at WAIT due to customer concentration risk (DEPLOY override: base CAGR 76% ≥ 20%)",
+		"note": "Signal capped at WAIT due to customer concentration risk (WAIT override (stalled by stabilization): base CAGR 76% ≥ 20%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

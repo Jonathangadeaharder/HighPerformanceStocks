@@ -46,7 +46,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.69,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
@@ -54,7 +54,7 @@
 			"cvStock": 0.041,
 			"riskMultiplier": 0.977
 		},
-		"note": "DEPLOY override: base CAGR 105% ≥ 15%",
+		"note": "WAIT override (stalled by stabilization): base CAGR 105% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

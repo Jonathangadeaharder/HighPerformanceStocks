@@ -46,7 +46,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.7,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
@@ -54,7 +54,7 @@
 			"cvStock": 0.07,
 			"riskMultiplier": 0.994
 		},
-		"note": "DEPLOY override: base CAGR 54% ≥ 15%",
+		"note": "WAIT override (stalled by stabilization): base CAGR 54% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

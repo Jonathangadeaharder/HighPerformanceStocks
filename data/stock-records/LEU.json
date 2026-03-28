@@ -47,7 +47,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.86,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
@@ -55,7 +55,7 @@
 			"cvStock": 0.292,
 			"riskMultiplier": 1.127
 		},
-		"note": "hasLikelyValueFloor: analyst upside 52.9% (DEPLOY override: base CAGR 53% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 52.9% (WAIT override (stalled by stabilization): base CAGR 53% ≥ 20%) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
