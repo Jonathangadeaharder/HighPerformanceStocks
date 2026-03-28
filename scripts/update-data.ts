@@ -1,4 +1,4 @@
-/* eslint-disable max-depth, sonarjs/todo-tag */
+/* eslint-disable max-depth */
 import 'dotenv/config';
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -139,56 +139,75 @@ async function main() {
 
 		console.log(`📡 Fetching DCF and analyst data for ${tickersForDcf.length} tickers...`);
 
+		function getMarketBeatExchange(ticker: string): string {
+			const parts = ticker.split('.');
+			if (parts.length > 1) {
+				const suffix = parts[1];
+				if (suffix === 'TO') return 'TSE';
+				if (suffix === 'L') return 'LSE';
+				if (suffix === 'ST') return 'STO';
+				if (suffix === 'AS') return 'AMS';
+				if (suffix === 'IL') return 'LSE';
+				if (suffix === 'HK') return 'HKG';
+				if (suffix === 'V') return 'CVE';
+				return 'OTCMKTS';
+			}
+			return ticker.length <= 3 ? 'NYSE' : 'NASDAQ';
+		}
+
 		// Initialize the browser once for all crawler work
 		await getBrowser();
 
-		const dcfMap = await fetchAllDcf(tickersForDcf);
+		try {
+			const dcfMap = await fetchAllDcf(tickersForDcf);
 
-		for (const entry of allStocks) {
-			if (!entry) continue;
-			const { stock, path } = entry;
-			if (!updatedTickers.has(stock.ticker)) continue;
+			for (const entry of allStocks) {
+				if (!entry) continue;
+				const { stock, path } = entry;
+				if (!updatedTickers.has(stock.ticker)) continue;
 
-			const dcfData = dcfMap[stock.ticker];
-			if (dcfData) {
-				const price = parseDisplayPrice(stock.currentPrice);
-				const discount =
-					price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
-				stock.intrinsicValue = {
-					dcf: dcfData.dcf,
-					date: dcfData.date,
-					discount
-				};
-			}
-
-			// Add polite delays so we don't get IP banned
-			console.log(`  🕸️  Crawling alternative analyst data for ${stock.ticker}...`);
-			try {
-				const [barchartData, marketBeatData] = await Promise.all([
-					fetchBarchartConsensus(stock.ticker),
-					fetchMarketBeatTarget('NASDAQ', stock.ticker) // TODO: map exchange correctly or remove exchange dependency
-				]);
-
-				if (barchartData) {
-					stock.analystConsensus = barchartData;
+				const dcfData = dcfMap[stock.ticker];
+				if (dcfData) {
+					const price = parseDisplayPrice(stock.currentPrice);
+					const discount =
+						price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
+					stock.intrinsicValue = {
+						dcf: dcfData.dcf,
+						date: dcfData.date,
+						discount
+					};
 				}
 
-				if (marketBeatData) {
-					if (marketBeatData.consensusTarget) {
-						stock.targetPriceAlternative = `$${marketBeatData.consensusTarget.toFixed(2)}`;
-					}
-					if (marketBeatData.consensusRating) {
-						stock.consensusRating = marketBeatData.consensusRating;
-					}
-				}
-			} catch (error: any) {
-				console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${error.message}`);
-			}
+				// Add polite delays so we don't get IP banned
+				console.log(`  🕸️  Crawling alternative analyst data for ${stock.ticker}...`);
+				try {
+					const exchange = getMarketBeatExchange(stock.ticker);
+					const [barchartData, marketBeatData] = await Promise.all([
+						fetchBarchartConsensus(stock.ticker),
+						fetchMarketBeatTarget(exchange, stock.ticker)
+					]);
 
-			atomicWriteJson(path, stock);
+					if (barchartData) {
+						stock.analystConsensus = barchartData;
+					}
+
+					if (marketBeatData) {
+						if (marketBeatData.consensusTarget !== null) {
+							stock.targetPriceAlternative = `$${marketBeatData.consensusTarget.toFixed(2)}`;
+						}
+						if (marketBeatData.consensusRating) {
+							stock.consensusRating = marketBeatData.consensusRating;
+						}
+					}
+				} catch (error: any) {
+					console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${error.message}`);
+				}
+
+				atomicWriteJson(path, stock);
+			}
+		} finally {
+			await closeBrowser();
 		}
-
-		await closeBrowser();
 	}
 
 	console.log(`\n✅ Done: ${updatedCount} updated, ${failedCount} failed.`);

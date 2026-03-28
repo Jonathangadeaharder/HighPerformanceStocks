@@ -40,38 +40,33 @@ export async function fetchBarchartConsensus(ticker: string): Promise<BarchartCo
 				'Strong Sell': 0
 			};
 
-			// Easiest reliable path: search all text nodes for numbers
-			// that appear right next to the labels
-			const textNodes: string[] = [];
-			const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
-			let n;
-			while ((n = walk.nextNode())) {
-				if (n.textContent) textNodes.push(n.textContent.trim());
-			}
+			// Query specific semantic structural containers to avoid full-page text parsing
+			const elements = [...document.querySelectorAll('div, span, td, li, p, strong, h3')];
+			for (const el of elements) {
+				const text = el.textContent?.trim() || '';
+				if (!text) continue;
 
-			// We need to find the text "Based on XX analysts" and look at the breakdown underneath
-			// For now, let's just grep the text for e.g. "21 Strong Buy", or "Strong Buy = 5"
-			const allText = textNodes.join(' ');
+				for (const key of Object.keys(ratings)) {
+					// Try to match within this specific element or its immediate sibling
+					const nodeStr = text + ' ' + (el.nextElementSibling?.textContent?.trim() ?? '');
+					
+					const match1 = new RegExp(String.raw`([0-9]+)\s*${key}`, 'i').exec(nodeStr);
+					const match2 = new RegExp(String.raw`${key}\s*(?:=|:|-)?\s*([0-9]+)`, 'i').exec(nodeStr);
 
-			for (const key of Object.keys(ratings)) {
-				// Try to match "XX Strong Buy" or "Strong Buy = XX"
-				const match1 = new RegExp(String.raw`([0-9]+)\s*${key}`, 'i').exec(allText);
-				const match2 = new RegExp(String.raw`${key}\s*(?:=|:)\s*([0-9]+)`, 'i').exec(allText);
+					let foundVal = 0;
+					if (match1 && match1[1]) {
+						const parsed = parseInt(match1[1], 10);
+						if (!isNaN(parsed)) foundVal = parsed;
+					}
+					if (match2 && match2[1]) {
+						const parsed = parseInt(match2[1], 10);
+						if (!isNaN(parsed)) foundVal = parsed;
+					}
 
-				// Grab the largest number found for that label (since Barchart lists multiple timeframes,
-				// the current/1 month ago are usually the most prominent blocks)
-				let finalVal = 0;
-
-				if (match1 && match1[1]) {
-					const parsed = parseInt(match1[1], 10);
-					if (!isNaN(parsed) && parsed > finalVal) finalVal = parsed;
+					if (ratings[key] === undefined || foundVal > ratings[key]) {
+						ratings[key] = foundVal;
+					}
 				}
-				if (match2 && match2[1]) {
-					const parsed = parseInt(match2[1], 10);
-					if (!isNaN(parsed) && parsed > finalVal) finalVal = parsed;
-				}
-
-				ratings[key] = finalVal;
 			}
 
 			return ratings;
