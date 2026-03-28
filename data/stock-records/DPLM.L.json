@@ -18,11 +18,14 @@
 	"metrics": {
 		"fcfMargin": "~18%",
 		"fcfYield": "~3%",
-		"roic": "~15%",
+		"roic": "3.3%",
 		"roe": "19.6%",
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "28%",
-		"organicRevenueGrowth": "14% (Q1 2026)"
+		"organicRevenueGrowth": "14% (Q1 2026)",
+		"beta": "1.03",
+		"revenueGrowth": "9.8%",
+		"interestCoverage": "13.8x"
 	},
 	"targetPrice": "£66.16",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
@@ -43,17 +46,17 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-03-28T18:00:46.273Z",
+	"lastUpdated": "2026-03-28T23:02:49.096Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.42,
+		"score": 1.46,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
 			"multiple": 23.3,
 			"cvStock": 0.043,
-			"riskMultiplier": 0.978
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -73,7 +76,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.55
+		"secondaryScore": 1.59
 	},
 	"qcs": {
 		"earningsScore": 0,

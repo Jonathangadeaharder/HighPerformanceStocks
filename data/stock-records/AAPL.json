@@ -29,7 +29,11 @@
 		"fcfMargin": "~24%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "0.2x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "1.12",
+		"revenueGrowth": "15.7%",
+		"roic": "3.7%",
+		"interestCoverage": "30.7x"
 	},
 	"consensus": {
 		"yahoo": "$295.31"
@@ -40,14 +44,14 @@
 	"sharpeRatio": 0.23,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.63,
+		"score": 2.67,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
 			"multiple": 26.7,
 			"cvStock": 0.054,
-			"riskMultiplier": 0.984
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -73,7 +77,7 @@
 	},
 	"bullCase": "Apple's Services segment (App Store, iCloud, Apple TV+, Apple Pay) is growing 15%+ annually and now represents ~40% of gross profit at 70%+ margins. Apple Intelligence AI features are the catalyst for an iPhone 17 upgrade supercycle in 2025-2026. The $100B+ annual buyback program reduces float by ~3% per year, compounding EPS mechanically.",
 	"bearCase": "Apple is expensive at 27x forward PE for a 10% EPS grower. China revenue (~18% of total) faces escalating geopolitical and regulatory pressure. Antitrust actions targeting the App Store 30% commission could remove $5-8B of annual high-margin revenue. Hardware replacement cycles are extending as smartphones mature.",
-	"lastUpdated": "2026-03-28T18:00:35.543Z",
+	"lastUpdated": "2026-03-28T23:02:42.636Z",
 	"intrinsicValue": {
 		"dcf": 155.02,
 		"date": "2026-03-28",
@@ -101,10 +105,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "AAPL",
-		"strongBuy": 21,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 16,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$297.58",

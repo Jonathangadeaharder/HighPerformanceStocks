@@ -30,7 +30,11 @@
 		"fcfMargin": "~0%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "0.7x",
-		"ruleOf40": "-7%"
+		"ruleOf40": "-7%",
+		"beta": "0.27",
+		"revenueGrowth": "-7.6%",
+		"roic": "44.9%",
+		"interestCoverage": "21.3x"
 	},
 	"consensus": {
 		"yahoo": "$46.89"
@@ -41,19 +45,19 @@
 	"sharpeRatio": 0.78,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.8,
+		"score": 0.82,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
 			"multiple": 10.6,
 			"cvStock": 0.041,
-			"riskMultiplier": 0.977
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 36.04,
 				"price6mAgo": 55.5,
 				"price1mAgo": 37.76,
@@ -76,19 +80,19 @@
 	"qcs": {
 		"earningsScore": 3.7,
 		"flowScore": 0,
-		"revisionsScore": 1,
-		"totalScore": 4.7,
+		"revisionsScore": 1.25,
+		"totalScore": 4.95,
 		"raw": {
 			"avgSurprisePct": 3.79,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 5
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-03-28T18:01:00.362Z",
+	"lastUpdated": "2026-03-28T23:03:03.155Z",
 	"analystTargets": {
 		"low": 39.74,
 		"mean": 46.89,
@@ -96,11 +100,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "NVO",
-		"strongBuy": 8,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 20,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"targetPriceAlternative": "$65.57"
 }

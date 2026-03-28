@@ -31,7 +31,11 @@
 		"fcfMargin": "~-19%",
 		"fcfYield": "~-3%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "125%"
+		"ruleOf40": "125%",
+		"beta": "1.26",
+		"revenueGrowth": "143.4%",
+		"roic": "-1.8%",
+		"interestCoverage": "3.3x"
 	},
 	"consensus": {
 		"yahoo": "$311.47"
@@ -47,19 +51,19 @@
 	"sharpeRatio": 1.16,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.99,
+		"score": 1.9,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
 			"multiple": 62.2,
 			"cvStock": 0.149,
-			"riskMultiplier": 1.042
+			"riskMultiplier": 1.036
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 184.43,
 				"price6mAgo": 308.69,
 				"price1mAgo": 208.32,
@@ -79,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.46
+		"secondaryScore": 1.39
 	},
 	"qcs": {
 		"earningsScore": -2.86,
@@ -96,15 +100,15 @@
 		}
 	},
 	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-03-28T18:00:42.007Z",
+	"lastUpdated": "2026-03-28T23:02:45.886Z",
 	"analystConsensus": {
 		"ticker": "AVAV",
-		"strongBuy": 15,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$318.78",
+	"targetPriceAlternative": "$318.79",
 	"consensusRating": "Moderate Buy"
 }

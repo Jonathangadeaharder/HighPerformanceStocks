@@ -19,7 +19,11 @@
 		"fcfMargin": "~37%",
 		"fcfYield": "~5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "58%"
+		"ruleOf40": "58%",
+		"beta": "1.02",
+		"revenueGrowth": "20.7%",
+		"roic": "5.4%",
+		"interestCoverage": "20.7x"
 	},
 	"targetPrice": "$188.67",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
@@ -36,25 +40,25 @@
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:00.196Z",
+	"lastUpdated": "2026-03-28T23:03:02.820Z",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.95,
-		"signal": "WAIT",
+		"score": 0.96,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
 			"multiple": 20.2,
 			"cvStock": 0.061,
-			"riskMultiplier": 0.989
+			"riskMultiplier": 1
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 90% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 90% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 99.41,
 				"price6mAgo": 188.17,
 				"price1mAgo": 109.42,
@@ -74,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.93
+		"secondaryScore": 0.94
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -98,11 +102,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "NOW",
-		"strongBuy": 33,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$192.62"
 }

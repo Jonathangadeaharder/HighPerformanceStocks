@@ -130,11 +130,50 @@ export function applyUpdates(
 		if (stock.metrics.ebitdaMargin !== undefined && fd.ebitdaMargins != null) {
 			stock.metrics.ebitdaMargin = fmtApproxPct(fd.ebitdaMargins * 100);
 		}
-		if (stock.metrics.beta !== undefined && (sd.beta ?? ks.beta) != null) {
-			stock.metrics.beta = String(+(sd.beta ?? ks.beta).toFixed(2));
+
+		// --- Phase 2: Always populate beta (required by Component 5: beta-adaptive momentum) ---
+		const betaRaw = sd.beta ?? ks.beta;
+		if (betaRaw != null) {
+			stock.metrics.beta = String(+betaRaw.toFixed(2));
 		}
-		if (stock.metrics.revenueGrowth !== undefined && revGrowth != null) {
+
+		// --- Phase 2: Always populate revenueGrowth ---
+		if (revGrowth != null) {
 			stock.metrics.revenueGrowth = fmtPct(revGrowth * 100, 1);
+		}
+
+		// --- Phase 2: Compute ROIC (required by Component 3: ROIC-adjusted PEG ceilings) ---
+		// ROIC ≈ NOPAT / Invested Capital
+		// NOPAT ≈ operatingCashflow (as proxy since net income + interest is not directly available)
+		// Invested Capital ≈ totalDebt + marketCap - totalCash (total capital deployed)
+		// More precisely: ROIC = Operating Income * (1 - tax rate) / (Total Equity + Total Debt - Cash)
+		// We approximate using: operatingCashflow / (marketCap + totalDebt - totalCash)
+		const opCashflow = fd.operatingCashflow;
+		if (opCashflow != null && rawCap != null && rawCap > 0 && totalDebt != null && totalCash != null) {
+			const investedCapital = rawCap + totalDebt - totalCash;
+			if (investedCapital > 0) {
+				const roicPct = (opCashflow / investedCapital) * 100;
+				stock.metrics.roic = fmtPct(roicPct, 1);
+			}
+		}
+
+		// --- Phase 2: Compute Interest Coverage Ratio (future upgrade for Component 4 leverage sigmoid) ---
+		// ICR = EBITDA / Interest Expense
+		// Yahoo's financialData doesn't provide interestExpense directly,
+		// but we can derive it from: debtToEquity and totalDebt patterns.
+		// For now: if EBITDA and totalDebt are available, approximate:
+		// interestExpense ≈ totalDebt * assumed_rate (5.5% blended corp rate)
+		// This is imperfect but directionally correct and self-consistent.
+		if (ebitda != null && ebitda > 0 && totalDebt != null && totalDebt > 0) {
+			const assumedRate = 0.055;
+			const estInterest = totalDebt * assumedRate;
+			if (estInterest > 0) {
+				const icr = ebitda / estInterest;
+				stock.metrics.interestCoverage = fmtMultiple(icr);
+			}
+		} else if (ebitda != null && ebitda > 0 && (totalDebt == null || totalDebt <= 0)) {
+			// No debt → infinite coverage, represented as high value
+			stock.metrics.interestCoverage = '>50x';
 		}
 	}
 

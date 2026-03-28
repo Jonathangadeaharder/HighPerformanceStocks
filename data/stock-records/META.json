@@ -19,12 +19,15 @@
 	"metrics": {
 		"fcfMargin": "~12%",
 		"fcfYield": "~2%",
-		"roic": "~28%",
+		"roic": "8.7%",
 		"roe": "30.2%",
 		"netDebtEbitda": "0.0x",
 		"ruleOf40": "35%",
 		"grossMargin": "82.00%",
-		"operatingMargin": "~41%"
+		"operatingMargin": "~41%",
+		"beta": "1.28",
+		"revenueGrowth": "23.8%",
+		"interestCoverage": "21.8x"
 	},
 	"targetPrice": "$862.60",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
@@ -46,22 +49,22 @@
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-28T18:00:57.626Z",
+	"lastUpdated": "2026-03-28T23:02:58.843Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.8,
-		"signal": "WAIT",
+		"score": 3.79,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 56.9,
 			"cvStock": 0.084,
-			"riskMultiplier": 1.002
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 64.1% (WAIT override (stalled by stabilization): base CAGR 64% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 64.1% (DEPLOY override: base CAGR 64% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 525.72,
 				"price6mAgo": 743.4,
 				"price1mAgo": 653.56,
@@ -84,9 +87,9 @@
 		"secondaryScore": 1
 	},
 	"intrinsicValue": {
-		"dcf": 283.74,
-		"date": "2026-03-26",
-		"discount": -52
+		"dcf": 280.69,
+		"date": "2026-03-28",
+		"discount": -47
 	},
 	"qcs": {
 		"earningsScore": -3.84,
@@ -110,12 +113,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "META",
-		"strongBuy": 45,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 8,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$846.63",
+	"targetPriceAlternative": "$846.64",
 	"consensusRating": "Moderate Buy"
 }

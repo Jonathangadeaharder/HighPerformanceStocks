@@ -18,12 +18,15 @@
 	"metrics": {
 		"fcfMargin": "~30%",
 		"fcfYield": "~5%",
-		"roic": "19% - 34%",
+		"roic": "4.4%",
 		"roe": "6225.0%",
 		"netDebtEbitda": "2.2x",
 		"ruleOf40": "40%",
 		"grossMargin": "71.62%",
-		"operatingMargin": "~34%"
+		"operatingMargin": "~34%",
+		"beta": "0.33",
+		"revenueGrowth": "10.0%",
+		"interestCoverage": "7.8x"
 	},
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
@@ -45,19 +48,19 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-28T18:00:35.651Z",
+	"lastUpdated": "2026-03-28T23:02:43.228Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.96,
+		"score": 0.99,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 14.8,
 			"cvStock": 0.038,
-			"riskMultiplier": 0.975
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 22% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 22% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -80,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.85
+		"secondaryScore": 0.87
 	},
 	"intrinsicValue": {
 		"dcf": 160.09,
@@ -109,11 +112,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ABBV",
-		"strongBuy": 17,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 12,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy"
 }

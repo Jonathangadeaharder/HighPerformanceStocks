@@ -16,7 +16,7 @@
 	"marketCap": "C$8.3B",
 	"valuation": {
 		"trailingPE": 37.5,
-		"forwardPE": 21.7,
+		"forwardPE": 21.6,
 		"evEbitda": 25.9,
 		"evFcf": 33.7
 	},
@@ -25,19 +25,23 @@
 		"fcfMargin": "~32%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "48%"
+		"ruleOf40": "48%",
+		"beta": "0.27",
+		"revenueGrowth": "15.1%",
+		"roic": "3.3%",
+		"interestCoverage": "668.6x"
 	},
 	"consensus": {},
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.97,
+		"score": 1.98,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
 			"multiple": 33.7,
 			"cvStock": 0.072,
-			"riskMultiplier": 0.995
+			"riskMultiplier": 1
 		},
 		"note": "hasLikelyValueFloor: analyst upside 35.2%",
 		"realityChecks": {
@@ -64,7 +68,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.27
 	},
-	"lastUpdated": "2026-03-28T18:00:46.355Z",
+	"lastUpdated": "2026-03-28T23:02:49.199Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {
@@ -84,11 +88,11 @@
 	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
 	"analystConsensus": {
 		"ticker": "DSG.TO",
-		"strongBuy": 7,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Unknown"
 }

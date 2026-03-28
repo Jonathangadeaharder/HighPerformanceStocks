@@ -10,7 +10,7 @@
 	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 113.5,
-		"forwardPE": 20.4,
+		"forwardPE": 20.3,
 		"pegRatio": null,
 		"evEbitda": 25.4,
 		"evFcf": 18.3
@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~29%",
 		"fcfYield": "~6%",
-		"roic": "17.03%",
+		"roic": "5.1%",
 		"roe": "10.7%",
 		"netDebtEbitda": "1.4x",
-		"ruleOf40": "49%"
+		"ruleOf40": "49%",
+		"beta": "0.23",
+		"revenueGrowth": "19.7%",
+		"interestCoverage": "7.5x"
 	},
 	"targetPrice": "C$143.15",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
@@ -42,19 +45,19 @@
 		},
 		"basis": "Price-to-FCF; Normalized FCF/FCFA2S; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:04.666Z",
+	"lastUpdated": "2026-03-28T23:03:06.893Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.75,
+		"score": 0.73,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
 			"multiple": 18.3,
 			"cvStock": 0.115,
-			"riskMultiplier": 1.021
+			"riskMultiplier": 1.003
 		},
-		"note": "DEPLOY override: base CAGR 58% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 58% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.83
+		"secondaryScore": 0.81
 	},
 	"qcs": {
 		"earningsScore": 5,

@@ -21,7 +21,11 @@
 		"fcfMargin": "~10%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "9%"
+		"ruleOf40": "9%",
+		"beta": "0.69",
+		"revenueGrowth": "-0.7%",
+		"roic": "6.0%",
+		"interestCoverage": "14.9x"
 	},
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
@@ -38,7 +42,7 @@
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-28T18:00:43.377Z",
+	"lastUpdated": "2026-03-28T23:02:46.879Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
@@ -70,10 +74,10 @@
 	"analystConsensus": {
 		"ticker": "BRK.B",
 		"strongBuy": 5,
-		"moderateBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Unknown"
 }

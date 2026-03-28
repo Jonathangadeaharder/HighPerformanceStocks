@@ -19,7 +19,11 @@
 		"fcfMargin": "~3%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "1.2x",
-		"ruleOf40": "46%"
+		"ruleOf40": "46%",
+		"beta": "0.43",
+		"revenueGrowth": "42.6%",
+		"roic": "2.0%",
+		"interestCoverage": "13.1x"
 	},
 	"targetPrice": "$1209.34",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
@@ -36,22 +40,22 @@
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-03-28T18:00:54.890Z",
+	"lastUpdated": "2026-03-28T23:02:57.003Z",
 	"consensus": {
 		"yahoo": "$1209.34"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 17.2,
+		"score": 17.54,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "EV/FCF",
 			"multiple": 420.9,
 			"cvStock": 0.048,
-			"riskMultiplier": 0.981
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 37.7% (DEPLOY override: base CAGR 39% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 37.7% (DEPLOY override: base CAGR 39% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -74,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.85
+		"secondaryScore": 0.87
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -98,11 +102,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "LLY",
-		"strongBuy": 21,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"hold": 5,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$1221.44"
 }

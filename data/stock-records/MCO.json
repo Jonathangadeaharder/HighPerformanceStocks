@@ -31,7 +31,11 @@
 		"fcfMargin": "~27%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "1.3x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "1.44",
+		"revenueGrowth": "13.0%",
+		"roic": "3.6%",
+		"interestCoverage": "9.1x"
 	},
 	"consensus": {
 		"yahoo": "$546.70"
@@ -40,14 +44,14 @@
 	"expectedCAGR": "9% - 56%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.52,
+		"score": 2.61,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 39.1,
 			"cvStock": 0.021,
-			"riskMultiplier": 0.965
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -71,10 +75,10 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.46,
+		"secondaryScore": 1.51,
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-28T18:00:56.055Z",
+	"lastUpdated": "2026-03-28T23:02:57.961Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 0.93,
 	"qcs": {
@@ -99,11 +103,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MCO",
-		"strongBuy": 13,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 10,
+		"hold": 10,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$550.25"
 }

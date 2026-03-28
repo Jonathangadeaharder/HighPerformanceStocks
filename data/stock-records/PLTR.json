@@ -26,16 +26,16 @@
 	"expectedVolatility": "~57%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 8.39,
+		"score": 7.89,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/FCF",
 			"multiple": 265.9,
 			"cvStock": 0.122,
-			"riskMultiplier": 1.025
+			"riskMultiplier": 1.007
 		},
-		"note": "hasLikelyValueFloor: analyst upside 30.4% (DEPLOY override: base CAGR 30% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 30.4% (DEPLOY override: base CAGR 30% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -58,9 +58,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.42
+		"secondaryScore": 2.27
 	},
-	"lastUpdated": "2026-03-28T18:01:01.688Z",
+	"lastUpdated": "2026-03-28T23:03:04.071Z",
 	"valuation": {
 		"trailingPE": 227.1,
 		"forwardPE": 76.6,
@@ -72,14 +72,18 @@
 		"fcfMargin": "~28%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "98%"
+		"ruleOf40": "98%",
+		"beta": "1.74",
+		"revenueGrowth": "70.0%",
+		"roic": "0.6%",
+		"interestCoverage": "114.2x"
 	},
 	"expectedCAGR": "-51% - 82%",
 	"sharpeRatio": 0.19,
 	"intrinsicValue": {
-		"dcf": 9.63,
-		"date": "2026-03-26",
-		"discount": -94
+		"dcf": 9.53,
+		"date": "2026-03-28",
+		"discount": -93
 	},
 	"qcs": {
 		"earningsScore": 4.16,
@@ -103,11 +107,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "PLTR",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
+		"strongBuy": 14,
+		"moderateBuy": 4,
+		"hold": 3,
 		"moderateSell": 3,
-		"strongSell": 2
+		"strongSell": 3
 	},
 	"targetPriceAlternative": "$198.59",
 	"consensusRating": "Moderate Buy"

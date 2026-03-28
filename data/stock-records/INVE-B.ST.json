@@ -20,7 +20,10 @@
 		"roe": "17.7%",
 		"fcfMargin": "~44%",
 		"fcfYield": "~9%",
-		"netDebtEbitda": "0.6x"
+		"netDebtEbitda": "0.6x",
+		"beta": "0.81",
+		"roic": "1.9%",
+		"interestCoverage": "26.2x"
 	},
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
@@ -37,7 +40,7 @@
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-28T18:00:52.157Z",
+	"lastUpdated": "2026-03-28T23:02:53.526Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},

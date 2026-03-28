@@ -18,12 +18,14 @@
 	"metrics": {
 		"fcfMargin": "~23%",
 		"fcfYield": "~4%",
-		"roic": "28% (5yr avg)",
+		"roic": "6.9%",
 		"roe": "14.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "25%",
 		"operatingMargin": "~23%",
-		"beta": "0.4"
+		"beta": "0.4",
+		"revenueGrowth": "2.5%",
+		"interestCoverage": "26.0x"
 	},
 	"targetPrice": "$873.24",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
@@ -45,17 +47,17 @@
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-28T18:01:02.584Z",
+	"lastUpdated": "2026-03-28T23:03:04.867Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.83,
+		"score": 1.8,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
 			"multiple": 21.5,
 			"cvStock": 0.113,
-			"riskMultiplier": 1.02
+			"riskMultiplier": 1.002
 		},
 		"note": "hasLikelyValueFloor: QCS 9.44 ≥ 8 (elite quality floor)",
 		"realityChecks": {
@@ -80,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.19
+		"secondaryScore": 1.17
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -104,12 +106,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "REGN",
-		"strongBuy": 17,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 7,
+		"hold": 7,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$802.27",
+	"targetPriceAlternative": "$802.28",
 	"consensusRating": "Moderate Buy"
 }

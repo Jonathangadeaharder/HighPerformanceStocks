@@ -17,10 +17,13 @@
 	"metrics": {
 		"fcfMargin": "~37%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "2.0%",
 		"roe": "33.4%",
 		"netDebtEbitda": "0.8x",
-		"ruleOf40": "54%"
+		"ruleOf40": "54%",
+		"beta": "1.26",
+		"revenueGrowth": "16.4%",
+		"interestCoverage": "16.7x"
 	},
 	"targetPrice": "$471.55",
 	"dcfFairValue": "$340.27 (Current $330.48)",
@@ -44,19 +47,19 @@
 		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:42.059Z",
+	"lastUpdated": "2026-03-28T23:02:45.891Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.22,
+		"score": 1.15,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
 			"multiple": 39.1,
 			"cvStock": 0.109,
-			"riskMultiplier": 1.017
+			"riskMultiplier": 1.001
 		},
-		"note": "hasLikelyValueFloor: analyst upside 56.8% (DEPLOY override: base CAGR 58% ≥ 20%) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 58% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.53
+		"secondaryScore": 0.5
 	},
 	"valuation": {
 		"trailingPE": 58.5,
@@ -110,11 +113,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "AVGO",
-		"strongBuy": 35,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$435.30",
 	"consensusRating": "Moderate Buy"

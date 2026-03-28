@@ -42,23 +42,27 @@
 		"netDebtEbitda": "Net cash",
 		"grossMargin": "26.19%",
 		"operatingMargin": "~6%",
-		"ruleOf40": "5%"
+		"ruleOf40": "5%",
+		"beta": "1.29",
+		"revenueGrowth": "-3.6%",
+		"roic": "1.8%",
+		"interestCoverage": "0.8x"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.86,
-		"signal": "WAIT",
+		"score": 2.45,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
 			"multiple": 53.6,
 			"cvStock": 0.292,
-			"riskMultiplier": 1.127
+			"riskMultiplier": 1.551
 		},
-		"note": "hasLikelyValueFloor: analyst upside 52.9% (WAIT override (stalled by stabilization): base CAGR 53% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 52.9% (DEPLOY override: base CAGR 53% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 182.9,
 				"price6mAgo": 315.62,
 				"price1mAgo": 207.99,
@@ -78,9 +82,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.2
+		"secondaryScore": 1.58
 	},
-	"lastUpdated": "2026-03-28T18:00:54.042Z",
+	"lastUpdated": "2026-03-28T23:02:56.176Z",
 	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
 	"analystTargets": {
 		"low": 137,
@@ -103,11 +107,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "LEU",
-		"strongBuy": 8,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$258.83"
 }

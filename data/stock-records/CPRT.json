@@ -28,7 +28,11 @@
 		"fcfMargin": "~22%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "19%"
+		"ruleOf40": "19%",
+		"beta": "1.11",
+		"revenueGrowth": "-3.6%",
+		"roic": "6.8%",
+		"interestCoverage": "367.7x"
 	},
 	"consensus": {
 		"yahoo": "$42.67"
@@ -37,14 +41,14 @@
 	"expectedCAGR": "-1% - 70%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.82,
+		"score": 0.84,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
 			"multiple": 13.5,
 			"cvStock": 0.037,
-			"riskMultiplier": 0.974
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -69,9 +73,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.18
+		"secondaryScore": 1.21
 	},
-	"lastUpdated": "2026-03-28T18:00:45.106Z",
+	"lastUpdated": "2026-03-28T23:02:47.757Z",
 	"expectedVolatility": "~27%",
 	"sharpeRatio": 1.11,
 	"qcs": {
@@ -98,10 +102,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "CPRT",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 6,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$44.40",

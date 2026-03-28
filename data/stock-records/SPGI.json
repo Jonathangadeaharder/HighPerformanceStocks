@@ -31,7 +31,11 @@
 		"fcfMargin": "~32%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "41%"
+		"ruleOf40": "41%",
+		"beta": "1.22",
+		"revenueGrowth": "9.0%",
+		"roic": "4.2%",
+		"interestCoverage": "10.1x"
 	},
 	"consensus": {
 		"yahoo": "$538.52"
@@ -40,16 +44,16 @@
 	"expectedCAGR": "19% - 55%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.82,
+		"score": 1.89,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 28.4,
 			"cvStock": 0.014,
-			"riskMultiplier": 0.96
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 32.6% (DEPLOY override: base CAGR 34% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 32.6% (DEPLOY override: base CAGR 34% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.18
+		"secondaryScore": 1.23
 	},
-	"lastUpdated": "2026-03-28T18:01:04.498Z",
+	"lastUpdated": "2026-03-28T23:03:06.765Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 1.08,
 	"qcs": {
@@ -99,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "SPGI",
-		"strongBuy": 19,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "strong buy"
 }

@@ -29,7 +29,11 @@
 		"fcfMargin": "~2%",
 		"fcfYield": "~9%",
 		"netDebtEbitda": "1.0x",
-		"ruleOf40": "14%"
+		"ruleOf40": "14%",
+		"beta": "0.35",
+		"revenueGrowth": "11.4%",
+		"roic": "9.4%",
+		"interestCoverage": "12.3x"
 	},
 	"consensus": {
 		"yahoo": "$997.67"
@@ -38,14 +42,14 @@
 	"expectedCAGR": "0% - 29%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.79,
-		"signal": "DEPLOY",
+		"score": 0.82,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 12.3,
 			"cvStock": 0.01,
-			"riskMultiplier": 0.958
+			"riskMultiplier": 1
 		},
 		"note": "DEPLOY override: base CAGR 16% ≥ 15%",
 		"realityChecks": {
@@ -70,9 +74,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.24
+		"secondaryScore": 1.29
 	},
-	"lastUpdated": "2026-03-28T18:00:55.985Z",
+	"lastUpdated": "2026-03-28T23:02:57.927Z",
 	"expectedVolatility": "~29%",
 	"sharpeRatio": 0.34,
 	"qcs": {
@@ -97,11 +101,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MCK",
-		"strongBuy": 13,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$960.93"
 }

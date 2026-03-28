@@ -124,6 +124,7 @@ export interface StockMetrics {
 	ebitdaMargin?: string;
 	beta?: string;
 	revenueGrowth?: string;
+	interestCoverage?: string;
 }
 
 export interface StockValuation {

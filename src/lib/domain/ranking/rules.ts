@@ -105,6 +105,7 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
+
 	return { status: 'FAIL', reason: note ?? 'No valuation edge.' };
 }
 
@@ -141,20 +142,6 @@ export function assignDeployment(stock: FindingStock): void {
 			};
 			break;
 		}
-		case 'DEPLOY': {
-			stock.deployment = {
-				status: 'DEPLOY',
-				reason: stock.screener?.note ?? 'Engine-level DEPLOY signal.'
-			};
-			break;
-		}
-		case 'FLAG FOR MANUAL REVIEW': {
-			stock.deployment = {
-				status: 'FLAG FOR MANUAL REVIEW',
-				reason: stock.screener?.note ?? 'Requires manual review before deployment.'
-			};
-			break;
-		}
 		default: {
 			const _exhaustiveCheck: never = signal;
 			stock.deployment = {
@@ -164,7 +151,7 @@ export function assignDeployment(stock: FindingStock): void {
 		}
 	}
 
-	if (stock.cyclical && stock.deployment && stock.deployment.status !== 'NO_DATA') {
+	if (stock.cyclical && stock.deployment.status !== 'NO_DATA') {
 		stock.deployment.reason += ' (CYCLICAL EPS)';
 	}
 }

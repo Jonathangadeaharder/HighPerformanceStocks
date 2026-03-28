@@ -17,12 +17,15 @@
 	},
 	"metrics": {
 		"roe": "16.6%",
-		"roic": "12.5%",
+		"roic": "2.6%",
 		"operatingMargin": "~22%",
 		"netDebtEbitda": "1.8x",
 		"fcfMargin": "~15%",
 		"fcfYield": "~2%",
-		"ruleOf40": "29%"
+		"ruleOf40": "29%",
+		"beta": "1.02",
+		"revenueGrowth": "14.4%",
+		"interestCoverage": "9.2x"
 	},
 	"consensus": {
 		"stockanalysis": "$366"
@@ -36,7 +39,7 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.05
 	},
-	"lastUpdated": "2026-03-28T18:00:50.952Z",
+	"lastUpdated": "2026-03-28T23:02:51.972Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.57,
@@ -87,10 +90,10 @@
 	"analystConsensus": {
 		"ticker": "HEI.A",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "strong buy"
 }

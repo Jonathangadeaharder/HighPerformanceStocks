@@ -11,7 +11,7 @@
 	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 45.7,
-		"forwardPE": 30.1,
+		"forwardPE": 30,
 		"pegRatio": null,
 		"evEbitda": 40.2,
 		"evFcf": 45.5
@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "2.5%",
 		"roe": "50.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "38%"
+		"ruleOf40": "38%",
+		"beta": "1.43",
+		"revenueGrowth": "4.9%",
+		"interestCoverage": "47.5x"
 	},
 	"targetPrice": "$1466.57",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
@@ -45,17 +48,17 @@
 		"basis": "5yr & 10yr avg PE (~36) (USD-equivalent ADR basis; underlying financials reported in EUR)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:41.202Z",
+	"lastUpdated": "2026-03-28T23:02:45.117Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.51,
+		"score": 1.49,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "EV/EBITDA",
 			"multiple": 40.2,
 			"cvStock": 0.099,
-			"riskMultiplier": 1.011
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.13,
+		"secondaryScore": 1.11,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
@@ -104,11 +107,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ASML",
-		"strongBuy": 19,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 7,
+		"hold": 7,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$1482.50",
 	"consensusRating": "Moderate Buy"

@@ -29,7 +29,11 @@
 		"fcfMargin": "~3%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "0.4x",
-		"ruleOf40": "17%"
+		"ruleOf40": "17%",
+		"beta": "1.42",
+		"revenueGrowth": "13.6%",
+		"roic": "6.4%",
+		"interestCoverage": "14.8x"
 	},
 	"consensus": {
 		"yahoo": "$281.34"
@@ -40,19 +44,19 @@
 	"sharpeRatio": 0.86,
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.43,
-		"signal": "WAIT",
+		"score": 4.52,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "EV/FCF",
 			"multiple": 92.3,
 			"cvStock": 0.172,
-			"riskMultiplier": 1.055
+			"riskMultiplier": 1.078
 		},
-		"note": "hasLikelyValueFloor: analyst upside 41.1% (WAIT override (stalled by stabilization): base CAGR 41% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 41.1% (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 199.34,
 				"price6mAgo": 222.17,
 				"price1mAgo": 208.39,
@@ -72,11 +76,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.02
+		"secondaryScore": 1.04
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-28T18:00:36.772Z",
+	"lastUpdated": "2026-03-28T23:02:44.066Z",
 	"intrinsicValue": {
 		"dcf": 127.68,
 		"date": "2026-03-28",
@@ -104,11 +108,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "AMZN",
-		"strongBuy": 50,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 6,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$286.66",
 	"consensusRating": "Moderate Buy"

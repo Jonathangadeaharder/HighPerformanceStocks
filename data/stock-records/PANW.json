@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~29%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "3.4%",
 		"roe": "16.3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "44%"
+		"ruleOf40": "44%",
+		"beta": "0.82",
+		"revenueGrowth": "14.9%",
+		"interestCoverage": "60.9x"
 	},
 	"targetPrice": "$206.97",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
@@ -42,19 +45,19 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-28T18:01:01.198Z",
+	"lastUpdated": "2026-03-28T23:03:03.992Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.13,
+		"score": 2.15,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
 			"multiple": 40.5,
 			"cvStock": 0.164,
-			"riskMultiplier": 1.05
+			"riskMultiplier": 1.061
 		},
-		"note": "hasLikelyValueFloor: analyst upside 40.8% (DEPLOY override: base CAGR 41% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 40.8% (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.94
+		"secondaryScore": 1.96
 	},
 	"qcs": {
 		"earningsScore": 1.54,
@@ -101,10 +104,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "PANW",
-		"strongBuy": 35,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 11,
+		"hold": 11,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$210.19",

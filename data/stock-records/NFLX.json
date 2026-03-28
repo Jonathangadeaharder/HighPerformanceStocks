@@ -28,7 +28,11 @@
 		"fcfMargin": "~55%",
 		"fcfYield": "~6%",
 		"netDebtEbitda": "0.6x",
-		"ruleOf40": "73%"
+		"ruleOf40": "73%",
+		"beta": "1.71",
+		"revenueGrowth": "17.6%",
+		"roic": "2.5%",
+		"interestCoverage": "14.6x"
 	},
 	"consensus": {
 		"yahoo": "$113.43"
@@ -39,16 +43,16 @@
 	"sharpeRatio": 0.57,
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.89,
+		"score": 0.9,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/FCF",
 			"multiple": 16.2,
 			"cvStock": 0.07,
-			"riskMultiplier": 0.994
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 21% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 21% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -75,11 +79,11 @@
 	},
 	"bullCase": "Netflix won the streaming wars. It is the only pure-play streaming platform with global scale (300M+ subscribers), consistent content investment discipline, and a growing advertising tier that creates a new high-margin revenue stream. Live sports and events (NFL, WWE) are extending the addressable audience. FCF has inflected to $7B+ annually.",
 	"bearCase": "At 24x forward PE for an 18% EPS grower, Netflix is not cheap. Subscriber growth in developed markets is approaching saturation — the next growth leg requires LatAm/Asia penetration at lower ARPU. The advertising tier depends on Netflix building an ad tech stack from scratch. Password sharing re-enforcement tailwind is exhausted in 2025-2026.",
-	"lastUpdated": "2026-03-28T18:00:59.396Z",
+	"lastUpdated": "2026-03-28T23:03:02.037Z",
 	"intrinsicValue": {
-		"dcf": 112.28,
-		"date": "2026-03-26",
-		"discount": 22
+		"dcf": 110.8,
+		"date": "2026-03-28",
+		"discount": 19
 	},
 	"qcs": {
 		"earningsScore": 0.67,
@@ -103,12 +107,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "NFLX",
-		"strongBuy": 24,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 14,
+		"hold": 12,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"targetPriceAlternative": "$114.35",
+	"targetPriceAlternative": "$114.55",
 	"consensusRating": "Moderate Buy"
 }

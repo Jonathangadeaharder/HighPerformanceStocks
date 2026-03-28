@@ -37,7 +37,7 @@
 		"dividendYield": "0%",
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-28T18:00:35.691Z",
+	"lastUpdated": "2026-03-28T23:02:42.755Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.99,
@@ -51,7 +51,7 @@
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 855.5,
 				"price6mAgo": 1367.6,
 				"price1mAgo": 965.7,

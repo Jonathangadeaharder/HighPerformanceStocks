@@ -31,7 +31,11 @@
 		"fcfMargin": "~19%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "51%"
+		"ruleOf40": "51%",
+		"beta": "1.46",
+		"revenueGrowth": "32.0%",
+		"roic": "5.7%",
+		"interestCoverage": "74.8x"
 	},
 	"consensus": {
 		"yahoo": "$496.75"
@@ -40,14 +44,14 @@
 	"expectedCAGR": "-27% - 29%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.79,
+		"score": 1.84,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 22.1,
 			"cvStock": 0.032,
-			"riskMultiplier": 0.971
+			"riskMultiplier": 1
 		},
 		"note": "hasLikelyValueFloor: QCS 9.44 ≥ 8 (elite quality floor) (REJECT: Stalled at WAIT with base CAGR 10% < 15%) (CYCLICAL EPS)",
 		"realityChecks": {
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.9
+		"secondaryScore": 1.96
 	},
-	"lastUpdated": "2026-03-28T18:00:56.735Z",
+	"lastUpdated": "2026-03-28T23:02:57.954Z",
 	"expectedVolatility": "~60%",
 	"sharpeRatio": -0.06,
 	"qcs": {
@@ -99,12 +103,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MEDP",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 9,
+		"moderateBuy": 9,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 3
 	},
-	"targetPriceAlternative": "$486.67",
+	"targetPriceAlternative": "$486.68",
 	"consensusRating": "Hold"
 }

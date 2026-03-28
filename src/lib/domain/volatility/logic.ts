@@ -46,9 +46,7 @@ export function classifyWorldVol(
 	};
 }
 
-export function buildCompositeWorldVolSignal(
-	components: VolComponent[]
-): AvailableWorldVolSignal | null {
+export function buildCompositeWorldVolSignal(components: VolComponent[]): AvailableWorldVolSignal | null {
 	const weightedValues = components.flatMap((component) => {
 		return component.value === null || !component.fresh
 			? []

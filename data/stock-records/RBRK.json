@@ -17,7 +17,9 @@
 		"fcfMargin": "~30%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "76%"
+		"ruleOf40": "76%",
+		"revenueGrowth": "46.3%",
+		"roic": "3.2%"
 	},
 	"targetPrice": "$86.71",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
@@ -34,25 +36,25 @@
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-28T18:01:02.536Z",
+	"lastUpdated": "2026-03-28T23:03:04.902Z",
 	"consensus": {
 		"yahoo": "$86.71"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.64,
-		"signal": "WAIT",
+		"score": 0.87,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 48,
 			"multipleType": "EV/FCF",
 			"multiple": 22.3,
 			"cvStock": 0.281,
-			"riskMultiplier": 1.121
+			"riskMultiplier": 1.492
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 90% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 90% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 45.73,
 				"price6mAgo": 83.34,
 				"price1mAgo": 53.69,
@@ -72,7 +74,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.24
+		"secondaryScore": 3.03
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -96,11 +98,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "RBRK",
-		"strongBuy": 21,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy"
 }

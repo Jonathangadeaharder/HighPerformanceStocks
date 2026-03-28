@@ -19,12 +19,15 @@
 	"metrics": {
 		"fcfMargin": "~46%",
 		"fcfYield": "~0%",
-		"roic": null,
+		"roic": "0.1%",
 		"roe": "9.3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "42%",
 		"realizedExitsLTM": "€19B",
-		"aumGrowth": "~12% YoY"
+		"aumGrowth": "~12% YoY",
+		"beta": "1.6",
+		"revenueGrowth": "-4.3%",
+		"interestCoverage": "9.7x"
 	},
 	"targetPrice": "404 SEK",
 	"bullCase": "Europe's premier private equity firm. Strong fundraising momentum and a strategic push into Asia and retail wealth management channels provide a long, diversified runway for fee-related earnings growth.",
@@ -45,19 +48,19 @@
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-03-28T18:00:47.328Z",
+	"lastUpdated": "2026-03-28T23:02:49.968Z",
 	"screener": {
 		"engine": "fFREG",
-		"score": 1.04,
+		"score": 1.05,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/FRE",
 			"multiple": 21,
 			"cvStock": 0.07,
-			"riskMultiplier": 0.994
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 48% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 48% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -76,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.94
+		"secondaryScore": 0.95
 	},
 	"qcs": {
 		"earningsScore": 0,

@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~3%",
 		"fcfYield": "~3%",
-		"roic": "~8%",
+		"roic": "7.4%",
 		"roe": "11.9%",
 		"netDebtEbitda": "4.6x",
-		"ruleOf40": "32%"
+		"ruleOf40": "32%",
+		"beta": "0.65",
+		"revenueGrowth": "29.6%",
+		"interestCoverage": "3.9x"
 	},
 	"targetPrice": "$22.07",
 	"bullCase": "Energy Transfer has the most diversified midstream footprint in the US, with exposure to crude, natural gas, NGLs, and LNG exports. The $0.32/unit quarterly distribution yields 7-8% and is covered 1.9x. Permian Basin volume growth provides organic throughput growth without new capital commitments.",
@@ -43,17 +46,17 @@
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-28T18:00:47.393Z",
+	"lastUpdated": "2026-03-28T23:02:49.974Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.6,
+		"score": 1.68,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "EV/EBITDA",
 			"multiple": 10.3,
 			"cvStock": 0.189,
-			"riskMultiplier": 1.552
+			"riskMultiplier": 1.629
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.6,
+		"secondaryScore": 1.68,
 		"note": "(CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
@@ -107,11 +110,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "ET",
-		"strongBuy": 12,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$21.61"
 }

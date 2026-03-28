@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~-59%",
 		"fcfYield": "~-2%",
-		"roic": "~11%",
+		"roic": "3.4%",
 		"roe": "16.3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "27%"
+		"ruleOf40": "27%",
+		"beta": "0.9",
+		"revenueGrowth": "85.8%",
+		"interestCoverage": ">50x"
 	},
 	"targetPrice": "$305.90",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
@@ -44,19 +47,19 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T18:00:49.754Z",
+	"lastUpdated": "2026-03-28T23:02:51.184Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.3,
+		"score": 2.26,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 27,
 			"cvStock": 0.114,
-			"riskMultiplier": 1.02
+			"riskMultiplier": 1.003
 		},
-		"note": "hasLikelyValueFloor: analyst upside 30.8% (DEPLOY override: base CAGR 32% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 30.8% (DEPLOY override: base CAGR 32% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.02
+		"secondaryScore": 1.98
 	},
 	"qcs": {
 		"earningsScore": 2.88,
@@ -103,11 +106,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "FNV",
-		"strongBuy": 6,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 7,
+		"hold": 7,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$257.25"
 }

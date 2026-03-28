@@ -18,11 +18,14 @@
 	},
 	"metrics": {
 		"roe": "212.9%",
-		"roic": "114.6%",
+		"roic": "3.1%",
 		"fcfMargin": "~49%",
 		"ruleOf40": "115%",
 		"fcfYield": "~2%",
-		"netDebtEbitda": "0.3x"
+		"netDebtEbitda": "0.3x",
+		"beta": "2.5",
+		"revenueGrowth": "65.9%",
+		"interestCoverage": "21.2x"
 	},
 	"targetPrice": "$648.57",
 	"consensus": {
@@ -44,19 +47,19 @@
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:37.556Z",
+	"lastUpdated": "2026-03-28T23:02:44.960Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.02,
+		"score": 1.01,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/EBITDA",
 			"multiple": 30.4,
 			"cvStock": 0.098,
-			"riskMultiplier": 1.011
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 70% ≥ 20% (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 70% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -103,10 +106,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "APP",
-		"strongBuy": 20,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$668.20",

@@ -19,13 +19,15 @@
 	"metrics": {
 		"fcfMargin": "~14%",
 		"fcfYield": "~1%",
-		"roic": "~25%",
+		"roic": "2.2%",
 		"roe": "41.8%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "37%",
 		"revenueGrowth": "22.7%",
 		"backlog": "$15B",
-		"orderGrowth": "252% YoY"
+		"orderGrowth": "252% YoY",
+		"beta": "2.08",
+		"interestCoverage": "12.4x"
 	},
 	"targetPrice": "$270.21",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
@@ -47,17 +49,17 @@
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:07.464Z",
+	"lastUpdated": "2026-03-28T23:03:10.667Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.51,
+		"score": 1.48,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/EBITDA",
 			"multiple": 44.1,
 			"cvStock": 0.124,
-			"riskMultiplier": 1.027
+			"riskMultiplier": 1.009
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -81,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.07,
+		"secondaryScore": 1.05,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
@@ -106,11 +108,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "VRT",
-		"strongBuy": 17,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$235.26"
 }

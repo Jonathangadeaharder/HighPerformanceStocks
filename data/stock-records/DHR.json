@@ -19,11 +19,14 @@
 	"metrics": {
 		"fcfMargin": "~19%",
 		"fcfYield": "~4%",
-		"roic": "~6.8% (trough)",
+		"roic": "4.5%",
 		"roe": "7.1%",
 		"netDebtEbitda": "1.9x",
 		"ruleOf40": "23%",
-		"historicalTotalReturn": "450%+ over 10 years"
+		"historicalTotalReturn": "450%+ over 10 years",
+		"beta": "0.96",
+		"revenueGrowth": "4.6%",
+		"interestCoverage": "7.2x"
 	},
 	"targetPrice": "$264.91",
 	"bullCase": "Danaher's life sciences tools and bioprocessing businesses (Cytiva) are recovering from the deepest post-COVID inventory destocking in decades. Abcam acquisition ($5.7B, 2023) adds genomic reagents and antibodies to the portfolio. When bioprocessing (bioreactors, filtration) volumes normalize, Danaher's ROIC should recover from trough levels toward 20%+.",
@@ -45,19 +48,19 @@
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-03-28T18:00:46.243Z",
+	"lastUpdated": "2026-03-28T23:02:49.071Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.25,
+		"score": 1.31,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
 			"multiple": 18.3,
 			"cvStock": 0.012,
-			"riskMultiplier": 0.959
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 45.9% (DEPLOY override: base CAGR 47% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 45.9% (DEPLOY override: base CAGR 47% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -80,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.36
+		"secondaryScore": 1.42
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -104,11 +107,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "DHR",
-		"strongBuy": 18,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$253.55"
 }

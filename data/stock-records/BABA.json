@@ -21,7 +21,11 @@
 		"fcfMargin": "~-3%",
 		"fcfYield": "~-9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-1%"
+		"ruleOf40": "-1%",
+		"beta": "0.43",
+		"revenueGrowth": "1.7%",
+		"roic": "39.1%",
+		"interestCoverage": "8.8x"
 	},
 	"targetPrice": "$188.47",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
@@ -43,22 +47,22 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-28T18:00:42.615Z",
+	"lastUpdated": "2026-03-28T23:02:45.895Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.35,
+		"score": 1.4,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/EBITDA",
 			"multiple": 16.5,
 			"cvStock": 0.184,
-			"riskMultiplier": 1.063
+			"riskMultiplier": 1.107
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 122.69,
 				"price6mAgo": 179.9,
 				"price1mAgo": 142.56,
@@ -78,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.3
+		"secondaryScore": 1.35
 	},
 	"intrinsicValue": {
 		"dcf": 233.88,
@@ -107,10 +111,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "BABA",
-		"strongBuy": 21,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"hold": 5,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy"

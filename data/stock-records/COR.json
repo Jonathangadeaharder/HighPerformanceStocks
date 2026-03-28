@@ -30,7 +30,11 @@
 		"fcfMargin": "~1%",
 		"fcfYield": "~6%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "7%"
+		"ruleOf40": "7%",
+		"beta": "0.65",
+		"revenueGrowth": "5.5%",
+		"roic": "6.2%",
+		"interestCoverage": "9.1x"
 	},
 	"consensus": {
 		"yahoo": "$407.92"
@@ -39,16 +43,16 @@
 	"expectedCAGR": "10% - 44%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.89,
+		"score": 0.93,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 13.9,
 			"cvStock": 0.012,
-			"riskMultiplier": 0.959
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 32% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 32% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -71,9 +75,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.02
+		"secondaryScore": 1.06
 	},
-	"lastUpdated": "2026-03-28T18:00:43.562Z",
+	"lastUpdated": "2026-03-28T23:02:46.997Z",
 	"expectedVolatility": "~26%",
 	"sharpeRatio": 0.87,
 	"qcs": {
@@ -98,11 +102,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "COR",
-		"strongBuy": 12,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$403.17"
 }

@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~0%",
 		"fcfYield": "~0%",
-		"roic": "~9.9%",
+		"roic": "2.3%",
 		"roe": "11.0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "6%"
+		"ruleOf40": "6%",
+		"beta": "0.65",
+		"revenueGrowth": "5.9%",
+		"interestCoverage": "1406.6x"
 	},
 	"targetPrice": "$329.64",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
@@ -44,19 +47,19 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:02.597Z",
+	"lastUpdated": "2026-03-28T23:03:04.890Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.64,
+		"score": 2.72,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 29.9,
 			"cvStock": 0.178,
-			"riskMultiplier": 1.059
+			"riskMultiplier": 1.091
 		},
-		"note": "hasLikelyValueFloor: analyst upside 38.8% (DEPLOY override: base CAGR 40% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 38.8% (DEPLOY override: base CAGR 40% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": 1.43
 	},
 	"qcs": {
 		"earningsScore": -0.85,
@@ -104,10 +107,10 @@
 	"analystConsensus": {
 		"ticker": "RGLD",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$251.50",
 	"consensusRating": "Moderate Buy"

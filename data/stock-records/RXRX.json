@@ -19,10 +19,12 @@
 	"metrics": {
 		"fcfMargin": "~-279%",
 		"fcfYield": "~-13%",
-		"roic": null,
+		"roic": "-41.9%",
 		"roe": "-59.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "402%"
+		"ruleOf40": "402%",
+		"beta": "0.96",
+		"revenueGrowth": "681.7%"
 	},
 	"targetPrice": "$6.71",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
@@ -45,7 +47,7 @@
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-28T18:01:03.545Z",
+	"lastUpdated": "2026-03-28T23:03:05.838Z",
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "REJECTED",
@@ -74,10 +76,10 @@
 	"analystConsensus": {
 		"ticker": "RXRX",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$9.40",
 	"consensusRating": "Hold"

@@ -30,7 +30,11 @@
 		"fcfMargin": "~16%",
 		"fcfYield": "~8%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "31%"
+		"ruleOf40": "31%",
+		"beta": "0.66",
+		"revenueGrowth": "15.5%",
+		"roic": "10.7%",
+		"interestCoverage": "8.1x"
 	},
 	"consensus": {
 		"yahoo": "£60.63"
@@ -39,16 +43,16 @@
 	"expectedCAGR": "0% - 78%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.67,
+		"score": 0.7,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 10.5,
 			"cvStock": 0.016,
-			"riskMultiplier": 0.961
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 50% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 50% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -67,9 +71,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.29
+		"secondaryScore": 1.35
 	},
-	"lastUpdated": "2026-03-28T18:00:53.096Z",
+	"lastUpdated": "2026-03-28T23:02:54.399Z",
 	"expectedVolatility": "~44%",
 	"sharpeRatio": 0.78,
 	"qcs": {

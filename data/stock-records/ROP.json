@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~27%",
 		"fcfYield": "~6%",
-		"roic": null,
+		"roic": "5.5%",
 		"roe": "7.9%",
 		"netDebtEbitda": "2.9x",
-		"ruleOf40": "37%"
+		"ruleOf40": "37%",
+		"beta": "0.93",
+		"revenueGrowth": "9.7%",
+		"interestCoverage": "6.0x"
 	},
 	"targetPrice": "$462.19",
 	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
@@ -44,17 +47,17 @@
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-28T18:01:02.779Z",
+	"lastUpdated": "2026-03-28T23:03:04.975Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.7,
+		"score": 1.76,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
 			"multiple": 21.1,
 			"cvStock": 0.02,
-			"riskMultiplier": 0.964
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -79,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.19
+		"secondaryScore": 1.23
 	},
 	"qcs": {
 		"earningsScore": 1.73,
@@ -103,11 +106,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ROP",
-		"strongBuy": 11,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 7,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 3
 	},
 	"targetPriceAlternative": "$478.53",
 	"consensusRating": "Hold"

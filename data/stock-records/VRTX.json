@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~21%",
 		"fcfYield": "~2%",
-		"roic": "15.5% - 29.0%",
+		"roic": "3.4%",
 		"roe": "22.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "31%"
+		"ruleOf40": "31%",
+		"beta": "0.32",
+		"revenueGrowth": "9.5%",
+		"interestCoverage": "43.5x"
 	},
 	"targetPrice": "$547.72",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
@@ -43,7 +46,7 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-03-28T18:01:07.537Z",
+	"lastUpdated": "2026-03-28T23:03:10.747Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 3.15,
@@ -101,10 +104,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "VRTX",
-		"strongBuy": 18,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$554.30",

@@ -13,7 +13,7 @@
 		"pegRatio": null,
 		"evEbitda": null,
 		"trailingPE": 7.8,
-		"forwardPE": 10.6,
+		"forwardPE": 10.5,
 		"evFcf": 26.3
 	},
 	"metrics": {
@@ -21,7 +21,11 @@
 		"fcfMargin": "~6%",
 		"fcfYield": "~5%",
 		"netDebtEbitda": "0.8x",
-		"ruleOf40": "15%"
+		"ruleOf40": "15%",
+		"beta": "0.48",
+		"revenueGrowth": "9.6%",
+		"roic": "4.3%",
+		"interestCoverage": "9.6x"
 	},
 	"targetPrice": "C$2765.40",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
@@ -38,7 +42,7 @@
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
 		"ttmEPS": 295.32
 	},
-	"lastUpdated": "2026-03-28T18:00:47.502Z",
+	"lastUpdated": "2026-03-28T23:02:50.174Z",
 	"consensus": {
 		"yahoo": "C$2765.40"
 	},
@@ -70,10 +74,10 @@
 	"analystConsensus": {
 		"ticker": "FFH.TO",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Unknown"
 }

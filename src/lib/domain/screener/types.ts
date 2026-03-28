@@ -36,8 +36,10 @@ export interface YahooSummary {
 
 export interface HistoricalData {
 	price6mAgo?: number;
+	price3mAgo?: number;
 	price1mAgo?: number;
 	low3m?: number;
+	exAnteVol?: number;
 }
 
 export interface GrowthBranch {
@@ -126,6 +128,10 @@ export interface ScreenerStock {
 	metrics?: {
 		netDebtEbitda?: string;
 		fcfMargin?: string;
+		roic?: string | null;
+		roe?: string;
+		beta?: string;
+		interestCoverage?: string;
 	};
 	group?: string;
 	cyclical?: boolean;

@@ -30,7 +30,11 @@
 		"fcfMargin": "~27%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "30%"
+		"ruleOf40": "30%",
+		"beta": "0.97",
+		"revenueGrowth": "3.5%",
+		"roic": "6.6%",
+		"interestCoverage": "27.0x"
 	},
 	"consensus": {
 		"yahoo": "$193.70"
@@ -39,18 +43,18 @@
 	"expectedCAGR": "5% - 54%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.63,
+		"score": 2.73,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "EV/FCF",
 			"multiple": 24.6,
 			"cvStock": 0.019,
-			"riskMultiplier": 0.964
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
+				"pass": false,
 				"price": 164.12,
 				"price6mAgo": 177.63,
 				"price1mAgo": 192.05,
@@ -70,9 +74,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.94
+		"secondaryScore": 2.01
 	},
-	"lastUpdated": "2026-03-28T18:00:57.560Z",
+	"lastUpdated": "2026-03-28T23:02:58.862Z",
 	"expectedVolatility": "~27%",
 	"sharpeRatio": 0.93,
 	"qcs": {
@@ -97,11 +101,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "MKTX",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 10,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$200.40",
 	"consensusRating": "Hold"

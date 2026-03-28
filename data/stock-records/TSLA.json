@@ -32,7 +32,11 @@
 		"fcfMargin": "~4%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "1%"
+		"ruleOf40": "1%",
+		"beta": "1.93",
+		"revenueGrowth": "-3.1%",
+		"roic": "1.1%",
+		"interestCoverage": "13.0x"
 	},
 	"consensus": {
 		"yahoo": "$421.27"
@@ -48,18 +52,18 @@
 	"sharpeRatio": -0.09,
 	"screener": {
 		"engine": "fCFG",
-		"score": 13.08,
+		"score": 24.92,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/FCF",
 			"multiple": 356.1,
 			"cvStock": 0.403,
-			"riskMultiplier": 1.194
+			"riskMultiplier": 2.375
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 361.83,
 				"price6mAgo": 443.21,
 				"price1mAgo": 403.32,
@@ -79,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 4.73,
+		"secondaryScore": 9.01,
 		"note": "(CYCLICAL EPS)"
 	},
 	"qcs": {
@@ -97,19 +101,19 @@
 		}
 	},
 	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
-	"lastUpdated": "2026-03-28T18:01:05.540Z",
+	"lastUpdated": "2026-03-28T23:03:07.986Z",
 	"intrinsicValue": {
-		"dcf": 18.06,
-		"date": "2026-03-26",
+		"dcf": 17.9,
+		"date": "2026-03-28",
 		"discount": -95
 	},
 	"analystConsensus": {
 		"ticker": "TSLA",
-		"strongBuy": 14,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 17,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 9
 	},
 	"targetPriceAlternative": "$406.84",
 	"consensusRating": "Hold"

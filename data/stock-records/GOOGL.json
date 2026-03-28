@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~9%",
 		"fcfYield": "~1%",
-		"roic": null,
+		"roic": "5.1%",
 		"roe": "35.7%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "27%"
+		"ruleOf40": "27%",
+		"beta": "1.11",
+		"revenueGrowth": "18.0%",
+		"interestCoverage": "40.8x"
 	},
 	"targetPrice": "$376.93",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
@@ -44,19 +47,19 @@
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-03-28T18:00:50.089Z",
+	"lastUpdated": "2026-03-28T23:02:51.137Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 7.11,
+		"score": 7.13,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
 			"multiple": 85.6,
 			"cvStock": 0.074,
-			"riskMultiplier": 0.997
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 37.4% (DEPLOY override: base CAGR 37% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 37.4% (DEPLOY override: base CAGR 37% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -79,12 +82,12 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.69
+		"secondaryScore": 1.7
 	},
 	"intrinsicValue": {
-		"dcf": 154.44,
-		"date": "2026-03-26",
-		"discount": -47
+		"dcf": 151.54,
+		"date": "2026-03-28",
+		"discount": -45
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -108,12 +111,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "GOOGL",
-		"strongBuy": 44,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 7,
+		"hold": 7,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$367.18",
+	"targetPriceAlternative": "$368.06",
 	"consensusRating": "Moderate Buy"
 }

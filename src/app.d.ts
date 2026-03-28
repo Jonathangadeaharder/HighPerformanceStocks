@@ -11,3 +11,5 @@ declare global {
 }
 
 // Svelte 5 types are handled automatically, no need to declare module '*.svelte'
+
+

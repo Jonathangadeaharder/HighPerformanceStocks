@@ -28,7 +28,11 @@
 		"fcfMargin": "~4%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-6%"
+		"ruleOf40": "-6%",
+		"beta": "1.01",
+		"revenueGrowth": "-10.0%",
+		"roic": "4.1%",
+		"interestCoverage": "28.0x"
 	},
 	"consensus": {
 		"yahoo": "$415.17"
@@ -37,19 +41,19 @@
 	"expectedCAGR": "6% - 40%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.83,
+		"score": 1.81,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "EV/EBITDA",
 			"multiple": 18.1,
 			"cvStock": 0.096,
-			"riskMultiplier": 1.01
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 347.2,
 				"price6mAgo": 399.57,
 				"price1mAgo": 410.87,
@@ -69,9 +73,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.49
+		"secondaryScore": 2.47
 	},
-	"lastUpdated": "2026-03-28T18:01:08.998Z",
+	"lastUpdated": "2026-03-28T23:03:11.594Z",
 	"expectedVolatility": "~33%",
 	"sharpeRatio": 0.56,
 	"qcs": {
@@ -98,11 +102,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "WSO",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 12,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"targetPriceAlternative": "$409.00"
 }

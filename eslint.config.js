@@ -48,36 +48,27 @@ export default tseslint.config(
 		rules: {
 			...unicorn.configs.recommended.rules,
 			...sonarjs.configs.recommended.rules,
-
+			
 			// Complexity & Quality
-			complexity: ['warn', 50],
+			'complexity': ['warn', 50],
 			'sonarjs/cognitive-complexity': ['warn', 50],
 			'sonarjs/no-duplicate-string': 'warn',
 			'max-depth': ['error', 4],
 			'max-lines-per-function': ['warn', 100],
-
+			
 			// TypeScript Strictness
-			'@typescript-eslint/consistent-type-imports': [
-				'error',
-				{ prefer: 'type-imports', fixStyle: 'inline-type-imports' }
-			],
+			'@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', fixStyle: 'inline-type-imports' }],
 			'@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
 			'@typescript-eslint/no-explicit-any': 'warn',
 			'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 			'@typescript-eslint/no-floating-promises': 'error',
 			'@typescript-eslint/no-misused-promises': 'error',
-			'@typescript-eslint/restrict-template-expressions': [
-				'error',
-				{ allowNumber: true, allowBoolean: true, allowAny: true, allowNullish: true }
-			],
-
+			'@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBoolean: true, allowAny: true, allowNullish: true }],
+			
 			// Unicorn overrides
 			'unicorn/prevent-abbreviations': 'off',
 			'unicorn/no-null': 'off',
-			'unicorn/filename-case': [
-				'error',
-				{ case: 'kebabCase', ignore: ['^\\+page', '^\\+layout', '^app\\.d$'] }
-			],
+			'unicorn/filename-case': ['error', { case: 'kebabCase', ignore: ['^\\+page', '^\\+layout', '^app\\.d$'] }],
 			'unicorn/import-style': 'off',
 			'unicorn/no-process-exit': 'off',
 			'unicorn/prefer-top-level-await': 'off',
@@ -116,7 +107,7 @@ export default tseslint.config(
 			'@typescript-eslint/no-unused-vars': 'off',
 			'sonarjs/cognitive-complexity': 'off',
 			'sonarjs/pseudo-random': 'off',
-			complexity: 'off',
+			'complexity': 'off',
 			'max-lines-per-function': 'off',
 			'unicorn/consistent-function-scoping': 'off',
 			'unicorn/text-encoding-identifier-case': 'off',

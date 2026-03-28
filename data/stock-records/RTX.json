@@ -32,7 +32,11 @@
 		"fcfMargin": "~7%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "2.2x",
-		"ruleOf40": "19%"
+		"ruleOf40": "19%",
+		"beta": "0.41",
+		"revenueGrowth": "12.1%",
+		"roic": "3.7%",
+		"interestCoverage": "6.7x"
 	},
 	"consensus": {
 		"yahoo": "$217.21"
@@ -48,14 +52,14 @@
 	"sharpeRatio": 0.25,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.9,
+		"score": 1.96,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "EV/EBITDA",
 			"multiple": 19.6,
 			"cvStock": 0.027,
-			"riskMultiplier": 0.968
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -79,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.45
+		"secondaryScore": 2.53
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -96,14 +100,15 @@
 		}
 	},
 	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
-	"lastUpdated": "2026-03-28T18:01:02.753Z",
+	"lastUpdated": "2026-03-28T23:03:05.035Z",
 	"analystConsensus": {
 		"ticker": "RTX",
-		"strongBuy": 14,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 8,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$202.01"
 }

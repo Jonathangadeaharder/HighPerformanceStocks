@@ -30,7 +30,11 @@
 		"fcfMargin": "~15%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "13%"
+		"ruleOf40": "13%",
+		"beta": "1.63",
+		"revenueGrowth": "-2.1%",
+		"roic": "3.3%",
+		"interestCoverage": "22.5x"
 	},
 	"consensus": {
 		"yahoo": "$410.63"
@@ -41,16 +45,16 @@
 	"sharpeRatio": 0.14,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.21,
+		"score": 1.2,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/EBITDA",
 			"multiple": 30,
 			"cvStock": 0.099,
-			"riskMultiplier": 1.011
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 12.03 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 23% ≥ 20%) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 23% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -73,9 +77,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.99
+		"secondaryScore": 0.98
 	},
-	"lastUpdated": "2026-03-28T18:00:36.618Z",
+	"lastUpdated": "2026-03-28T23:02:44.003Z",
 	"qcs": {
 		"earningsScore": 2.03,
 		"flowScore": 5,
@@ -100,12 +104,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "AMAT",
-		"strongBuy": 19,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 13,
+		"hold": 13,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$363.46",
+	"targetPriceAlternative": "$363.47",
 	"consensusRating": "Moderate Buy"
 }

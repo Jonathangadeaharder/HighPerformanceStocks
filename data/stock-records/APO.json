@@ -17,12 +17,14 @@
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "6.57%",
+		"roic": "10.8%",
 		"roe": "14.7%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
 		"aum": "$938B",
-		"aumGrowth": "25% YoY"
+		"aumGrowth": "25% YoY",
+		"beta": "1.64",
+		"revenueGrowth": "87.7%"
 	},
 	"targetPrice": "$154.29",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
@@ -45,19 +47,19 @@
 		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:37.561Z",
+	"lastUpdated": "2026-03-28T23:02:44.955Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.74,
+		"score": 0.76,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "P/ANI",
 			"multiple": 12.9,
 			"cvStock": 0.035,
-			"riskMultiplier": 0.973
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 44% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 44% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -104,11 +106,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "APO",
-		"strongBuy": 14,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$158.13"
 }
