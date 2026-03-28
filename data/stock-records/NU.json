@@ -18,11 +18,13 @@
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": null,
+		"roic": "-17.0%",
 		"roe": "30.3%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
-		"efficiencyRatio": "~34%"
+		"efficiencyRatio": "~34%",
+		"beta": "1.11",
+		"revenueGrowth": "43.9%"
 	},
 	"targetPrice": "$20.25",
 	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
@@ -44,7 +46,7 @@
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:00.203Z",
+	"lastUpdated": "2026-03-28T23:03:02.832Z",
 	"screener": {
 		"engine": "fEVG",
 		"signal": "NO_DATA",
@@ -72,11 +74,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "NU",
-		"strongBuy": 9,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$18.26"
 }

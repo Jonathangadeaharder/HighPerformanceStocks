@@ -32,7 +32,11 @@
 		"fcfMargin": "~19%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-3%"
+		"ruleOf40": "-3%",
+		"beta": "3.71",
+		"revenueGrowth": "-22.2%",
+		"roic": "6.1%",
+		"interestCoverage": "3.9x"
 	},
 	"consensus": {
 		"yahoo": "$251.04"
@@ -48,14 +52,14 @@
 	"sharpeRatio": 0.93,
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.78,
+		"score": 0.9,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
 			"multiple": 23.2,
 			"cvStock": 0.244,
-			"riskMultiplier": 1.099
+			"riskMultiplier": 1.312
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
@@ -80,7 +84,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.93
+		"secondaryScore": 1.06
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -97,7 +101,7 @@
 		}
 	},
 	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
-	"lastUpdated": "2026-03-28T18:00:44.312Z",
+	"lastUpdated": "2026-03-28T23:02:46.958Z",
 	"intrinsicValue": {
 		"dcf": 20.77,
 		"date": "2026-03-28",
@@ -105,12 +109,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "COIN",
-		"strongBuy": 18,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 13,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 4
 	},
-	"targetPriceAlternative": "$271.14",
+	"targetPriceAlternative": "$271.15",
 	"consensusRating": "Hold"
 }

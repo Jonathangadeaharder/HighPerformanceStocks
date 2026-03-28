@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~23%",
 		"fcfYield": "~1%",
-		"roic": "~20%",
+		"roic": "2.0%",
 		"roe": "16.7%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%"
+		"ruleOf40": "41%",
+		"beta": "1.68",
+		"revenueGrowth": "18.8%",
+		"interestCoverage": "378.5x"
 	},
 	"targetPrice": "$605.08",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
@@ -42,19 +45,19 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-28T18:00:52.929Z",
+	"lastUpdated": "2026-03-28T23:02:54.301Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 3.02,
+		"score": 3.11,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
 			"multiple": 43.6,
 			"cvStock": 0.031,
-			"riskMultiplier": 0.97
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.7% (DEPLOY override: base CAGR 34% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 33.7% (DEPLOY override: base CAGR 34% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.74
+		"secondaryScore": 2.83
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -101,10 +104,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "ISRG",
-		"strongBuy": 18,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$614.95",

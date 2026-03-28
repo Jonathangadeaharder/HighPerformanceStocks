@@ -35,8 +35,10 @@ export interface YahooSummary {
 
 export interface HistoricalData {
 	price6mAgo?: number;
+	price3mAgo?: number;
 	price1mAgo?: number;
 	low3m?: number;
+	exAnteVol?: number;
 }
 
 export interface GrowthBranch {

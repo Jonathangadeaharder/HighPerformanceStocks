@@ -100,16 +100,12 @@ async function main() {
 					atomicWriteJson(path, stock);
 					updatedTickers.add(ticker);
 					const s = stock.cagrModel?.scenarios;
-					const scenarios =
-						s?.bear && s?.base && s?.bull
+					const scenarios = s?.bear && s?.base && s?.bull
 							? `bear ${s.bear}, base ${s.base}, bull ${s.bull}`
 							: 'no scenarios';
 					const sc = stock.screener;
-					const screenerTag =
-						sc?.score == null
-							? sc?.note
-								? ` | ${sc.note}`
-								: ''
+					const screenerTag = sc?.score == null
+							? sc?.note ? ` | ${sc.note}` : ''
 							: ` | ${sc.engine}: ${sc.score} ${sc.signal}`;
 					console.log(`  ✅ ${ticker}: ${stock.currentPrice} → ${scenarios}${screenerTag}`);
 				} else {
@@ -203,6 +199,17 @@ async function main() {
 					console.log(`  ⚠️  Crawler failed for ${stock.ticker}: ${error.message}`);
 				}
 
+		for (const { stock, path } of allStocks) {
+			if (!updatedTickers.has(stock.ticker)) continue;
+			const dcfData = dcfMap[stock.ticker];
+			if (dcfData) {
+				const price = parseDisplayPrice(stock.currentPrice);
+				const discount = price != null && price > 0 ? +(((dcfData.dcf - price) / price) * 100).toFixed(0) : null;
+				stock.intrinsicValue = {
+					dcf: dcfData.dcf,
+					date: dcfData.date,
+					discount
+				};
 				atomicWriteJson(path, stock);
 			}
 		} finally {

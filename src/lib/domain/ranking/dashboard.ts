@@ -104,7 +104,6 @@ function compareWatchlistStocks(left: FindingStock, right: FindingStock): number
 		FAIL: 1,
 		OVERPRICED: 2,
 		NO_DATA: 3,
-		'FLAG FOR MANUAL REVIEW': 3,
 		DEPLOY: 4,
 		WAIT: 5
 	};

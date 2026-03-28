@@ -19,7 +19,11 @@
 		"fcfMargin": "~26%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "55%"
+		"ruleOf40": "55%",
+		"beta": "1.36",
+		"revenueGrowth": "29.2%",
+		"roic": "2.8%",
+		"interestCoverage": "0.1x"
 	},
 	"targetPrice": "$182.43",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
@@ -36,20 +40,20 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-03-28T18:00:46.174Z",
+	"lastUpdated": "2026-03-28T23:02:49.031Z",
 	"consensus": {
 		"yahoo": "$182.43"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.15,
+		"score": 2.12,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
 			"multiple": 42.3,
 			"cvStock": 0.11,
-			"riskMultiplier": 1.018
+			"riskMultiplier": 1.001
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -74,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.2
+		"secondaryScore": 2.17
 	},
 	"qcs": {
 		"earningsScore": 4.36,
@@ -98,12 +102,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "DDOG",
-		"strongBuy": 34,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$179.62",
+	"targetPriceAlternative": "$179.63",
 	"consensusRating": "Moderate Buy"
 }

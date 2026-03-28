@@ -29,7 +29,11 @@
 		"fcfMargin": "~12%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "0.7x",
-		"ruleOf40": "32%"
+		"ruleOf40": "32%",
+		"beta": "1.22",
+		"revenueGrowth": "20.1%",
+		"roic": "6.9%",
+		"interestCoverage": "9.3x"
 	},
 	"consensus": {
 		"yahoo": "$103.68"
@@ -38,19 +42,19 @@
 	"expectedCAGR": "1% - 117%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.37,
-		"signal": "WAIT",
+		"score": 1.39,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
 			"multiple": 23.5,
 			"cvStock": 0.165,
-			"riskMultiplier": 1.051
+			"riskMultiplier": 1.062
 		},
-		"note": "hasLikelyValueFloor: analyst upside 49.9% (WAIT override (stalled by stabilization): base CAGR 50% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 49.9% (DEPLOY override: base CAGR 50% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 69.18,
 				"price6mAgo": 99.57,
 				"price1mAgo": 75.95,
@@ -70,15 +74,15 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.94
+		"secondaryScore": 0.95
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-28T18:01:06.502Z",
+	"lastUpdated": "2026-03-28T23:03:09.587Z",
 	"intrinsicValue": {
-		"dcf": 141.64,
-		"date": "2026-03-26",
-		"discount": 94
+		"dcf": 139.48,
+		"date": "2026-03-28",
+		"discount": 102
 	},
 	"expectedVolatility": "~36%",
 	"sharpeRatio": 1.51,
@@ -104,11 +108,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "UBER",
-		"strongBuy": 35,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 11,
+		"hold": 11,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy"
 }

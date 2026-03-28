@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~14%",
 		"fcfYield": "~3%",
-		"roic": "~20%",
+		"roic": "6.6%",
 		"roe": "16.4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "42%"
+		"ruleOf40": "42%",
+		"beta": "0.36",
+		"revenueGrowth": "28.3%",
+		"interestCoverage": "25.7x"
 	},
 	"targetPrice": "$178.04",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
@@ -42,19 +45,19 @@
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-03-28T18:00:58.517Z",
+	"lastUpdated": "2026-03-28T23:03:00.052Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.87,
+		"score": 2.12,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
 			"multiple": 24.1,
 			"cvStock": 0.223,
-			"riskMultiplier": 1.086
+			"riskMultiplier": 1.229
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~24.1x (hasLikelyValueFloor: analyst upside 38.7%) (DEPLOY override: base CAGR 39% ≥ 20%)",
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~24.1x (hasLikelyValueFloor: analyst upside 38.7%) (DEPLOY override: base CAGR 39% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -99,11 +102,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "NBIX",
-		"strongBuy": 23,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"hold": 5,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$175.10",
 	"consensusRating": "Moderate Buy"

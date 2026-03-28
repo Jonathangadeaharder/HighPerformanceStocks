@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~-4%",
 		"fcfYield": "~-3%",
-		"roic": null,
+		"roic": "7.2%",
 		"roe": "6.0%",
 		"netDebtEbitda": "0.9x",
-		"ruleOf40": "-1%"
+		"ruleOf40": "-1%",
+		"beta": "2.67",
+		"revenueGrowth": "3.6%",
+		"interestCoverage": "4.2x"
 	},
 	"targetPrice": "$86.29",
 	"bullCase": "23.93% expected EPS growth from aggressive cost restructuring. If the 40% headcount cut succeeds, could reach 44% Rule of 40 by late 2026.",
@@ -43,19 +46,19 @@
 		},
 		"basis": "Fintech ecosystem (Cash App + Square); forward PE reflects current margin expansion; exit PE 30 reflects mature payments platform multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:09.074Z",
+	"lastUpdated": "2026-03-28T23:03:11.635Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.06,
+		"score": 2.05,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
 			"multiple": 23.8,
 			"cvStock": 0.145,
-			"riskMultiplier": 1.039
+			"riskMultiplier": 1.03
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~23.8x (hasLikelyValueFloor: analyst upside 54.2%) (DEPLOY override: base CAGR 54% ≥ 20%)",
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~23.8x (hasLikelyValueFloor: analyst upside 54.2%) (DEPLOY override: base CAGR 54% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -100,11 +103,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "XYZ",
-		"strongBuy": 24,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$81.91"
 }

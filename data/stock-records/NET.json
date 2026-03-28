@@ -18,16 +18,19 @@
 		"fcfMargin": "~18%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "51%"
+		"ruleOf40": "51%",
+		"beta": "2.03",
+		"revenueGrowth": "33.6%",
+		"roic": "0.9%"
 	},
-	"targetPrice": "$232.43",
+	"targetPrice": "$233.47",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
 	"currentPrice": "$203.02",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "-34%",
-			"base": "14%",
+			"base": "15%",
 			"bull": "48%"
 		},
 		"ttmEPS": 1.12,
@@ -35,20 +38,20 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-28T18:00:58.571Z",
+	"lastUpdated": "2026-03-28T23:03:00.175Z",
 	"consensus": {
-		"yahoo": "$232.43"
+		"yahoo": "$233.47"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.29,
+		"score": 5.22,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
 			"multiple": 140.8,
 			"cvStock": 0.105,
-			"riskMultiplier": 1.015
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -76,30 +79,31 @@
 	"qcs": {
 		"earningsScore": 3.1,
 		"flowScore": 0,
-		"revisionsScore": -2.34,
-		"totalScore": 0.76,
+		"revisionsScore": -2.42,
+		"totalScore": 0.68,
 		"raw": {
 			"avgSurprisePct": 8.13,
 			"netInsiderShares": 176342,
 			"instFlowTrend": "negative",
 			"upRevisions": 7,
 			"downRevisions": 22,
-			"totalAnalysts": 32
+			"totalAnalysts": 31
 		}
 	},
 	"description": "Cloudflare, Inc. operates as a cloud services provider that delivers a range of services to businesses worldwide.",
 	"analystTargets": {
 		"low": 135,
-		"mean": 232.43,
+		"mean": 233.47,
 		"high": 300
 	},
 	"analystConsensus": {
 		"ticker": "NET",
-		"strongBuy": 16,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 13,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 3
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$233.38"
 }

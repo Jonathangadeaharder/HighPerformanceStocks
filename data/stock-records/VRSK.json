@@ -29,7 +29,10 @@
 		"roe": "437.9%",
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
-		"netDebtEbitda": "1.8x"
+		"netDebtEbitda": "1.8x",
+		"beta": "0.8",
+		"roic": "5.1%",
+		"interestCoverage": "5.5x"
 	},
 	"consensus": {
 		"yahoo": "$229.53"
@@ -38,16 +41,16 @@
 	"expectedCAGR": "1% - 51%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.9,
+		"score": 1.97,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
 			"multiple": 27.6,
 			"cvStock": 0.016,
-			"riskMultiplier": 0.962
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.17 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 27% ≥ 20%)",
+		"note": "hasLikelyValueFloor: QCS 9.17 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 27% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -70,9 +73,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.46
+		"secondaryScore": 1.52
 	},
-	"lastUpdated": "2026-03-28T18:01:07.472Z",
+	"lastUpdated": "2026-03-28T23:03:10.727Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 0.72,
 	"qcs": {
@@ -97,10 +100,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "VRSK",
-		"strongBuy": 8,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$237.20",

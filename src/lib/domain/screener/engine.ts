@@ -11,16 +11,55 @@ import type {
 import { ENGINE_THRESHOLDS } from './types';
 
 const CV_BENCHMARK = 0.08;
-const R2_NOISE = 0.6;
 const TOTAL_RETURN_THRESHOLD = 12;
-const DEBT_PENALTY_THRESHOLD = 150;
-const DEBT_PENALTY_FACTOR = 0.3;
-const STABILIZATION_6M_THRESHOLD = -10;
-const STABILIZATION_1M_THRESHOLD = 0;
 const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
 const CYCLICAL_NOTE = '(CYCLICAL EPS)';
+
+// --- Component 1: Hyper-Growth Exponential Decay ---
+// Replaces the linear cap with a bounded exponential fade.
+// Mauboussin base-rate data: sustained >30% CAGR is a multi-sigma anomaly.
+const HYPERGROWTH_THRESHOLD = 30;
+const HYPERGROWTH_CEILING = 10; // max effective excess above threshold → caps at 40%
+
+// --- Component 2: Analyst Dispersion Convex Penalty ---
+// Replaces the linear R2_NOISE scaling with a power-law convex penalty.
+// AFD literature: top-quintile dispersion causes -7.7% to -14.0% annualized alpha drag.
+const CV_SAFE_THRESHOLD = 0.1;
+const CV_POWER_EXPONENT = 2;
+const CV_LAMBDA = 15;
+
+// --- Component 3: ROIC-Adjusted Dynamic PEG Ceilings ---
+// Replaces static 1.5x/2.0x sector caps with dynamic ROIC/WACC-driven ceiling.
+const PEG_BASE = 1.25;
+const PEG_GAMMA = 0.65;
+const PEG_MAX_CAP = 3;
+const WACC_PROXY = 9; // long-run US equity cost of capital proxy (%)
+
+// --- Component 4: Continuous Leverage Sigmoid ---
+// Replaces the binary -30% D/E cliff with a continuous logistic penalty.
+// Phase 2: Prefers ICR (Interest Coverage Ratio) when available for higher fidelity.
+const LEVERAGE_P_MAX = 0.35;
+const LEVERAGE_DE_MID = 200;
+const LEVERAGE_K = 0.02;
+// ICR-based sigmoid parameters (Altman Z-score calibrated)
+const ICR_MID = 3; // inflection at 3x coverage
+const ICR_K = 1.5; // steepness
+
+// --- Component 5: Beta-Adaptive Momentum Buffer ---
+// Replaces static -10%/0% thresholds with beta-scaled dynamic thresholds.
+const STAB_6M_BASE = -10;
+const STAB_1M_BASE = -3;
+const BETA_MIN_CLAMP = 0.5;
+const BETA_MAX_CLAMP = 2;
+const BETA_DEFAULT = 1;
+
+// Phase 2: Full VAMS (Volatility-Adjusted Momentum Score) rejection threshold.
+// Blended multi-horizon z-score below this triggers falling-knife rejection.
+// -1.25σ balances sensitivity: catches genuine structural breakdowns while
+// allowing normal rotational noise on high-volatility assets.
+const VAMS_REJECT_THRESHOLD = -1.25;
 const FORWARD_PE_LABEL = 'Forward P/E';
 // DEPLOY CAGRs are hardcoded (15 for PASS, 20 for WAIT)
 /**
@@ -63,6 +102,67 @@ function getAnalystDispersion(
 	return { avg, low, high };
 }
 
+/**
+ * Component 1: Bounded exponential decay for hyper-growth.
+ * Below HYPERGROWTH_THRESHOLD, growth passes through unchanged.
+ * Above it, excess growth is compressed via 1 - e^(-x/C_max),
+ * asymptotically approaching threshold + HYPERGROWTH_CEILING.
+ */
+export function computeEffectiveGrowth(growthPct: number): number {
+	if (growthPct <= HYPERGROWTH_THRESHOLD) return growthPct;
+	const excess = growthPct - HYPERGROWTH_THRESHOLD;
+	return HYPERGROWTH_THRESHOLD + HYPERGROWTH_CEILING * (1 - Math.exp(-excess / HYPERGROWTH_CEILING));
+}
+
+/**
+ * Component 2: Convex power-law penalty for analyst dispersion.
+ * Returns a risk multiplier ≥ 1.0.
+ * Below CV_SAFE_THRESHOLD, no penalty (multiplier = 1.0).
+ * Above it, penalty scales as λ * (CV - τ)^κ.
+ */
+export function computeDispersionMultiplier(cvStock: number): number {
+	const excess = Math.max(0, cvStock - CV_SAFE_THRESHOLD);
+	return 1 + CV_LAMBDA * Math.pow(excess, CV_POWER_EXPONENT);
+}
+
+/**
+ * Component 4: Continuous logistic leverage penalty (D/E-based).
+ * Returns a penalty fraction in [0, LEVERAGE_P_MAX] (~0–35%).
+ * Replaces the binary -30% cliff at D/E > 150%.
+ */
+export function computeLeveragePenalty(debtToEquity: number): number {
+	return LEVERAGE_P_MAX / (1 + Math.exp(LEVERAGE_K * (LEVERAGE_DE_MID - debtToEquity)));
+}
+
+/**
+ * Component 4 Phase 2: ICR-based leverage penalty (higher fidelity).
+ * Uses Interest Coverage Ratio when available.
+ * Low ICR (< 1.5x) → high penalty; High ICR (> 8x) → near-zero penalty.
+ * The sigmoid is inverted compared to D/E: higher ICR = lower risk.
+ */
+export function computeLeveragePenaltyICR(icr: number): number {
+	// Inverted sigmoid: penalty decreases as ICR increases
+	return LEVERAGE_P_MAX / (1 + Math.exp(ICR_K * (icr - ICR_MID)));
+}
+
+/**
+ * Component 3: Dynamic ROIC-adjusted PEG ceiling.
+ * Returns the maximum allowable implied PEG for a given capital efficiency.
+ * Falls back to ROE if ROIC is unavailable, or to static caps if both are null.
+ */
+export function computeDynamicPegCeiling(
+	roicPct: number | null,
+	roePct: number | null
+): number | null {
+	// Use ROIC, falling back to ROE, falling back to null (triggers static caps)
+	const capitalReturn = roicPct ?? roePct;
+	if (capitalReturn == null || capitalReturn <= 0) return null;
+
+	const ratio = Math.max(1, capitalReturn / WACC_PROXY);
+	const ceiling = PEG_BASE + PEG_GAMMA * Math.log(ratio);
+	return Math.min(PEG_MAX_CAP, ceiling);
+}
+
 function computeGrowthScore(
 	engine: keyof typeof ENGINE_THRESHOLDS,
 	multipleType: string,
@@ -71,15 +171,13 @@ function computeGrowthScore(
 	cvStock: number,
 	isCyclical = false
 ): ScreenerResult {
-	// Structural constraint for hyper-growth: diminishing returns above 30%
-	let effectiveGrowth = growthPct;
-	if (effectiveGrowth > 30) {
-		effectiveGrowth = 30 + (effectiveGrowth - 30) * 0.5;
-	}
+	// Component 1: Exponential fade for hyper-growth
+	const effectiveGrowth = computeEffectiveGrowth(growthPct);
 
-	let riskMultiplier = 1 + R2_NOISE * (cvStock - CV_BENCHMARK);
+	// Component 2: Convex dispersion penalty
+	let riskMultiplier = computeDispersionMultiplier(cvStock);
 
-	// Deep Cyclical constraint
+	// Deep Cyclical constraint (retained as separate multiplicative layer)
 	if (isCyclical && multiple > 0 && multiple < 15) {
 		riskMultiplier *= 15 / multiple;
 	}
@@ -358,9 +456,14 @@ function computeTotalReturn(
 		};
 	}
 
-	const hasPenalty = debtToEquity > DEBT_PENALTY_THRESHOLD;
+	// Component 4: Continuous leverage sigmoid — prefer ICR when available
+	const icrStr = stock.metrics?.interestCoverage;
+	const icrParsed = icrStr ? parseNumber(icrStr) : null;
+	const leveragePenalty = icrParsed != null && icrParsed > 0
+		? computeLeveragePenaltyICR(icrParsed)
+		: computeLeveragePenalty(debtToEquity);
 	const baseReturn = divYieldPct + growthPct;
-	const riskAdjReturn = hasPenalty ? baseReturn * (1 - DEBT_PENALTY_FACTOR) : baseReturn;
+	const riskAdjReturn = baseReturn * (1 - leveragePenalty);
 
 	const normalizedScore = riskAdjReturn > 0 ? TOTAL_RETURN_THRESHOLD / riskAdjReturn : 999;
 
@@ -372,7 +475,7 @@ function computeTotalReturn(
 			growth: growthPct,
 			dividendYield: divYieldPct,
 			debtToEquity: +(debtToEquity ?? 0).toFixed(0),
-			debtPenalty: hasPenalty,
+			debtPenalty: leveragePenalty > 0.01,
 			rawReturn: +riskAdjReturn.toFixed(1)
 		}
 	};
@@ -402,8 +505,40 @@ function applyRealityChecks(
 		const return6m = (rawPrice / price6mAgo - 1) * 100;
 		const return1m = (rawPrice / price1mAgo - 1) * 100;
 		const near3mLow = rawPrice <= low3m * STABILIZATION_LOW_BUFFER;
-		const stillFalling =
-			return6m < STABILIZATION_6M_THRESHOLD && return1m < STABILIZATION_1M_THRESHOLD && near3mLow;
+
+		// Phase 2: Full VAMS (Volatility-Adjusted Momentum Score) when ex-ante vol available
+		const price3mAgo = historicalData?.price3mAgo;
+		const exAnteVol = historicalData?.exAnteVol;
+		let stillFalling: boolean;
+
+		if (exAnteVol != null && exAnteVol > 0 && price3mAgo != null && price3mAgo > 0) {
+			// Full VAMS: multi-horizon volatility-normalized momentum z-score
+			const return3m = (rawPrice / price3mAgo - 1) * 100;
+			const annualizedVol = exAnteVol; // already annualized %
+
+			// Compute individual VAMS per horizon: return / (vol * sqrt(h/12))
+			const vams1 = return1m / (annualizedVol * Math.sqrt(1 / 12));
+			const vams3 = return3m / (annualizedVol * Math.sqrt(3 / 12));
+			const vams6 = return6m / (annualizedVol * Math.sqrt(6 / 12));
+
+			// Blended score: 50% short-term, 30% mid-term, 20% long-term
+			const blendedVams = 0.5 * vams1 + 0.3 * vams3 + 0.2 * vams6;
+
+			// Reject if blended score breaches -1.25σ AND near 3-month low
+			stillFalling = blendedVams < VAMS_REJECT_THRESHOLD && near3mLow;
+		} else {
+			// Fallback: Phase 1 beta-adaptive momentum buffer
+			const betaStr = stock.metrics?.beta ?? '';
+			const betaRaw = parseNumber(betaStr);
+			const beta = betaRaw != null && betaRaw > 0
+				? Math.max(BETA_MIN_CLAMP, Math.min(BETA_MAX_CLAMP, betaRaw))
+				: BETA_DEFAULT;
+			const adjustedThreshold6m = STAB_6M_BASE * beta;
+			const adjustedThreshold1m = STAB_1M_BASE * beta;
+
+			stillFalling =
+				return6m < adjustedThreshold6m && return1m < adjustedThreshold1m && near3mLow;
+		}
 
 		checks.stabilization = {
 			pass: !stillFalling,
@@ -475,27 +610,44 @@ function applyRealityChecks(
 }
 
 /**
- * PEG bounds check: prevents multiple-expansion traps.
- * Hardware/industrials use a tighter 1.5x PEG cap; all others use 2.0x.
+ * Component 3: Dynamic ROIC-adjusted PEG bounds check.
+ * Replaces static 1.5x/2.0x sector caps with a ceiling derived from the
+ * firm's specific capital efficiency (ROIC/WACC spread).
+ * Falls back to ROE proxy, then to static caps when data is unavailable.
  */
 function applyPegBoundsCheck(
 	result: ScreenerResult,
 	actualMultiple: number,
 	growthPct: number,
 	multipleType: string,
-	group: string
+	stock: ScreenerStock
 ): void {
 	if ((result.signal !== 'PASS' && result.signal !== 'WAIT') || growthPct <= 0) return;
 	if (!multipleType.includes('P/E')) return;
 
 	const impliedPeg = actualMultiple / growthPct;
-	const isHardware = /hardware|semicon|industrial|equipment/i.test(group);
-	if (isHardware && impliedPeg > 1.5) {
+
+	// Parse ROIC and ROE from stock metrics
+	const roicPct = parseNumber(stock.metrics?.roic?.replace('%', ''));
+	const roePct = parseNumber(stock.metrics?.roe?.replace('%', ''));
+	const dynamicCeiling = computeDynamicPegCeiling(roicPct, roePct);
+
+	let pegMax: number;
+	if (dynamicCeiling == null) {
+		// Static fallback when no capital efficiency data is available
+		const group = stock.group ?? '';
+		const isHardware = /hardware|semicon|industrial|equipment/i.test(group);
+		pegMax = isHardware ? 1.5 : 2;
+	} else {
+		pegMax = dynamicCeiling;
+	}
+
+	if (impliedPeg > pegMax) {
 		result.signal = 'FAIL';
-		appendNote(result, `Multiple-expansion trap: Hardware PEG ${impliedPeg.toFixed(1)} > 1.5`);
-	} else if (impliedPeg > 2) {
-		result.signal = 'FAIL';
-		appendNote(result, `Multiple-expansion trap: Extreme PEG ${impliedPeg.toFixed(1)} > 2.0`);
+		appendNote(
+			result,
+			`Multiple-expansion trap: PEG ${impliedPeg.toFixed(1)} > ${pegMax.toFixed(1)} ceiling`
+		);
 	}
 }
 
@@ -630,7 +782,7 @@ function evaluateHyperGrowth(
 		appendNote(result, hallucinationNote);
 	}
 
-	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock.group ?? '');
+	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 
 	// Extreme Structural Risk Penalty
 	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();

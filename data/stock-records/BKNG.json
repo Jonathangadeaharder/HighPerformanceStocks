@@ -29,7 +29,11 @@
 		"fcfMargin": "~24%",
 		"fcfYield": "~5%",
 		"netDebtEbitda": "0.2x",
-		"ruleOf40": "40%"
+		"ruleOf40": "40%",
+		"beta": "1.23",
+		"revenueGrowth": "16.0%",
+		"roic": "7.1%",
+		"interestCoverage": "9.5x"
 	},
 	"consensus": {
 		"yahoo": "$5802.23"
@@ -38,16 +42,16 @@
 	"expectedCAGR": "12% - 92%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.14,
+		"score": 1.18,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
 			"multiple": 20,
 			"cvStock": 0.029,
-			"riskMultiplier": 0.969
+			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 44% ≥ 20% (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 44% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -70,11 +74,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.86
+		"secondaryScore": 0.88
 	},
 	"bullCase": "Booking Holdings operates the global OTA duopoly (with Expedia) and is the near-monopoly in European accommodation. Its asset-light model generates 40%+ operating margins. The shift to connected trip — flights, hotels, rental cars, attractions in a single booking — is expanding wallet share per customer. Aggressive share buybacks at 7%+ annually provide EPS floor.",
 	"bearCase": "Travel spending is among the most discretionary consumer categories — Booking's revenue fell 90%+ in COVID and is sensitive to recession and geopolitical disruption. At 14x forward PE, valuation is attractive but the stock has historically compressed to 10-11x in downturns. Airbnb is taking share in leisure accommodation, particularly in major European cities.",
-	"lastUpdated": "2026-03-28T18:00:42.175Z",
+	"lastUpdated": "2026-03-28T23:02:46.051Z",
 	"expectedVolatility": "~32%",
 	"sharpeRatio": 1.48,
 	"qcs": {
@@ -99,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "BKNG",
-		"strongBuy": 23,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 11,
+		"hold": 11,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$5845.61",
 	"consensusRating": "Moderate Buy"

@@ -28,7 +28,11 @@
 		"fcfMargin": "~3%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "2.3x",
-		"ruleOf40": "19%"
+		"ruleOf40": "19%",
+		"beta": "1.17",
+		"revenueGrowth": "15.9%",
+		"roic": "3.2%",
+		"interestCoverage": "7.2x"
 	},
 	"consensus": {
 		"yahoo": "250 SEK"
@@ -37,14 +41,14 @@
 	"expectedCAGR": "16% - 44%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.46,
+		"score": 1.5,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 22.5,
 			"cvStock": 0.038,
-			"riskMultiplier": 0.975
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -68,11 +72,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.31
+		"secondaryScore": 2.37
 	},
-	"lastUpdated": "2026-03-28T18:00:54.049Z",
-	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.75,
+	"lastUpdated": "2026-03-28T23:02:55.476Z",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.77,
 	"qcs": {
 		"earningsScore": -1.57,
 		"flowScore": 0,

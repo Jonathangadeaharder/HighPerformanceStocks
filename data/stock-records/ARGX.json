@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~12%",
 		"fcfYield": "~1%",
-		"roic": null,
+		"roic": "1.8%",
 		"roe": "20.2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "85%"
+		"ruleOf40": "85%",
+		"beta": "-0.18",
+		"revenueGrowth": "73.0%",
+		"interestCoverage": "409.4x"
 	},
 	"targetPrice": "$1012.26",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
@@ -43,7 +46,7 @@
 		"basis": "Reflects biotech terminal multiple compression and competitive encroachment risk.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:37.730Z",
+	"lastUpdated": "2026-03-28T23:02:45.018Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.9,
@@ -53,7 +56,7 @@
 			"multipleType": "Forward P/E",
 			"multiple": 26.5,
 			"cvStock": 0.184,
-			"riskMultiplier": 1.063
+			"riskMultiplier": 1.106
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -100,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ARGX",
-		"strongBuy": 24,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"hold": 5,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$999.22",
 	"consensusRating": "Moderate Buy"

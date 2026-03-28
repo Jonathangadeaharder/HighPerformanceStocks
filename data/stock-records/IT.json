@@ -31,7 +31,11 @@
 		"fcfMargin": "~14%",
 		"fcfYield": "~8%",
 		"netDebtEbitda": "1.2x",
-		"ruleOf40": "16%"
+		"ruleOf40": "16%",
+		"beta": "1.08",
+		"revenueGrowth": "2.2%",
+		"roic": "10.1%",
+		"interestCoverage": "7.1x"
 	},
 	"consensus": {
 		"yahoo": "$188.62"
@@ -40,14 +44,14 @@
 	"expectedCAGR": "-10% - 64%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.23,
+		"score": 1.25,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
 			"multiple": 13.6,
 			"cvStock": 0.051,
-			"riskMultiplier": 1.084
+			"riskMultiplier": 1.103
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.23
+		"secondaryScore": 1.25
 	},
-	"lastUpdated": "2026-03-28T18:00:52.937Z",
+	"lastUpdated": "2026-03-28T23:02:54.307Z",
 	"expectedVolatility": "~54%",
 	"sharpeRatio": 0.42,
 	"qcs": {
@@ -99,11 +103,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "IT",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 9,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"targetPriceAlternative": "$188.30"
 }

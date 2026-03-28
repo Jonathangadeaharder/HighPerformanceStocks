@@ -32,7 +32,11 @@
 		"fcfMargin": "~-9%",
 		"fcfYield": "~-1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "12%"
+		"ruleOf40": "12%",
+		"beta": "1.15",
+		"revenueGrowth": "21.9%",
+		"roic": "-0.3%",
+		"interestCoverage": "9.3x"
 	},
 	"consensus": {
 		"yahoo": "$118.35"
@@ -66,14 +70,14 @@
 		}
 	},
 	"description": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the Unit...",
-	"lastUpdated": "2026-03-28T18:00:53.885Z",
+	"lastUpdated": "2026-03-28T23:02:55.312Z",
 	"analystConsensus": {
 		"ticker": "KTOS",
-		"strongBuy": 13,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$98.28",
 	"consensusRating": "Moderate Buy"

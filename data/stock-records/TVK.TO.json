@@ -21,7 +21,11 @@
 		"fcfMargin": "~4%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "3.5x",
-		"ruleOf40": "78%"
+		"ruleOf40": "78%",
+		"beta": "0.47",
+		"revenueGrowth": "74.1%",
+		"roic": "4.3%",
+		"interestCoverage": "5.2x"
 	},
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
@@ -38,22 +42,22 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-28T18:01:05.684Z",
+	"lastUpdated": "2026-03-28T23:03:08.824Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.04,
+		"score": 1.02,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 15.3,
 			"cvStock": 0.107,
-			"riskMultiplier": 1.016
+			"riskMultiplier": 1.001
 		},
-		"note": "DEPLOY override: base CAGR 30% ≥ 20% (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 30% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -76,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.54
+		"secondaryScore": 1.51
 	},
 	"qcs": {
 		"earningsScore": 2.53,
@@ -101,10 +105,10 @@
 	"analystConsensus": {
 		"ticker": "TVK.TO",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Unknown"
 }

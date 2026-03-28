@@ -25,7 +25,10 @@
 		"roe": "7.8%",
 		"fcfMargin": "~46%",
 		"fcfYield": "~3%",
-		"ruleOf40": "36%"
+		"ruleOf40": "36%",
+		"beta": "0.91",
+		"revenueGrowth": "-10.2%",
+		"interestCoverage": "32.8x"
 	},
 	"consensus": {
 		"yahoo": "C$32.68"
@@ -34,14 +37,14 @@
 	"expectedCAGR": "-13% - 8%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.67,
+		"score": 3.82,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "P/CF",
 			"multiple": 38.2,
 			"cvStock": 0.016,
-			"riskMultiplier": 0.962
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -65,9 +68,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.43
+		"secondaryScore": 3.57
 	},
-	"lastUpdated": "2026-03-28T18:01:01.581Z",
+	"lastUpdated": "2026-03-28T23:03:04.080Z",
 	"expectedVolatility": "~25%",
 	"sharpeRatio": -0.28,
 	"qcs": {
@@ -95,10 +98,10 @@
 	"analystConsensus": {
 		"ticker": "PSK.TO",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Unknown"
 }

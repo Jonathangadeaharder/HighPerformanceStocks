@@ -18,11 +18,14 @@
 	"metrics": {
 		"fcfMargin": "~11%",
 		"fcfYield": "~3%",
-		"roic": "~18%",
+		"roic": "3.4%",
 		"roe": "29.3%",
 		"netDebtEbitda": "1.3x",
 		"ruleOf40": "12%",
-		"roce": "~22%"
+		"roce": "~22%",
+		"beta": "1.23",
+		"revenueGrowth": "1.4%",
+		"interestCoverage": "11.0x"
 	},
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
@@ -44,17 +47,17 @@
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:35.521Z",
+	"lastUpdated": "2026-03-28T23:02:42.614Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.43,
+		"score": 1.45,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/EBITDA",
 			"multiple": 24.7,
 			"cvStock": 0.053,
-			"riskMultiplier": 0.984
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -78,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.28
+		"secondaryScore": 2.32
 	},
 	"qcs": {
 		"earningsScore": -5,

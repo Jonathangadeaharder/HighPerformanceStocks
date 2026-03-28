@@ -30,7 +30,7 @@
 		"signal": "NO_DATA",
 		"note": "Missing/negative EV/EBITDA"
 	},
-	"lastUpdated": "2026-03-28T18:01:01.194Z",
+	"lastUpdated": "2026-03-28T23:03:03.953Z",
 	"valuation": {
 		"trailingPE": 10.3,
 		"forwardPE": 7,
@@ -42,7 +42,10 @@
 		"fcfMargin": "~19%",
 		"fcfYield": "~59%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "31%"
+		"ruleOf40": "31%",
+		"beta": "0.05",
+		"revenueGrowth": "12.0%",
+		"interestCoverage": "322.3x"
 	},
 	"expectedCAGR": "10% - 104%",
 	"sharpeRatio": 1.46,
@@ -69,10 +72,10 @@
 	"analystConsensus": {
 		"ticker": "PDD",
 		"strongBuy": 10,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 10,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$140.57",
 	"consensusRating": "Hold"

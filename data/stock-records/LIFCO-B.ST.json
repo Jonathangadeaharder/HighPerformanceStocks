@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~16%",
 		"fcfYield": "~4%",
-		"roic": "15.0% - 20.0%",
+		"roic": "3.8%",
 		"roe": "19.5%",
 		"netDebtEbitda": "1.3x",
-		"ruleOf40": "22%"
+		"ruleOf40": "22%",
+		"beta": "1.2",
+		"revenueGrowth": "5.8%",
+		"interestCoverage": "11.7x"
 	},
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
@@ -42,7 +45,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-28T18:00:54.847Z",
+	"lastUpdated": "2026-03-28T23:02:56.940Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,
@@ -52,7 +55,7 @@
 			"multipleType": "EV/EBITDA",
 			"multiple": 19.3,
 			"cvStock": 0.078,
-			"riskMultiplier": 0.999
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {

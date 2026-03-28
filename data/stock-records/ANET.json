@@ -19,11 +19,14 @@
 	"metrics": {
 		"fcfMargin": "~38%",
 		"fcfYield": "~2%",
-		"roic": "~192%",
+		"roic": "3.1%",
 		"roe": "31.4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "67%",
-		"grossMargin": "64.06%"
+		"grossMargin": "64.06%",
+		"beta": "1.46",
+		"revenueGrowth": "28.9%",
+		"interestCoverage": "789.3x"
 	},
 	"targetPrice": "$177.74",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
@@ -46,22 +49,22 @@
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:36.764Z",
+	"lastUpdated": "2026-03-28T23:02:44.160Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.71,
-		"signal": "WAIT",
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/EBITDA",
 			"multiple": 35.9,
 			"cvStock": 0.082,
-			"riskMultiplier": 1.001
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 47.2% + QCS 9.13 (WAIT override (stalled by stabilization): base CAGR 47% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 47.2% + QCS 9.13 (DEPLOY override: base CAGR 47% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 120.77,
 				"price6mAgo": 143.37,
 				"price1mAgo": 129.3,
@@ -105,11 +108,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ANET",
-		"strongBuy": 16,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 6,
+		"hold": 6,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy"
 }

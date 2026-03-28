@@ -10,7 +10,7 @@ const VIX_SYMBOLS = ['^VIX', 'VIX'];
 // Yahoo Finance serves ^V2TX with a frozen regularMarketTime (known issue with European indices).
 // We try the quote first, then fall back to chart() which has reliable dates.
 // V2TX.DE is an alias that sometimes returns a fresher timestamp.
-const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE', 'V2TX.SW', 'V2TX.F'];
+const VSTOXX_SYMBOLS = ['^V2TX', 'V2TX.DE'];
 
 function formatDate(dateValue: Date | string | null | undefined): string | null {
 	if (!dateValue) return null;
@@ -197,7 +197,7 @@ async function fetchVolIndexWithFallback(
 
 		const candidateTime = candidate.marketTime ? new Date(candidate.marketTime).getTime() : 0;
 		const currentBestTime = currentBest.marketTime ? new Date(currentBest.marketTime).getTime() : 0;
-
+		
 		if (candidateTime > currentBestTime) {
 			return candidate;
 		}
@@ -224,38 +224,17 @@ async function fetchVolIndexWithFallback(
 	);
 }
 
-import { fetchMarketWatchIndex } from './infrastructure/crawlers/marketwatch';
 
-// In-memory cache to prevent blocking the dashboard render loop with a 5-10s Puppeteer scrapers on every refresh
-let cachedSignal: { signal: WorldVolSignal; timestamp: number } | null = null;
-const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes
 
-async function fetchCrossVerifiedVolIndex(
-	yfSymbols: readonly string[],
-	mwPath: string,
-	label: string,
-	weight: number
-): Promise<VolComponent> {
-	// Let's run both concurrently to robustly verify
-	const [yfPromise, mwPromise] = await Promise.allSettled([
-		fetchVolIndexWithFallback(yfSymbols, label, weight),
-		fetchMarketWatchIndex(label, mwPath)
+export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
+	const [vix, vstoxx] = await Promise.all([
+		fetchVolIndexQuote(VIX_SYMBOL, 'VIX', WORLD_VOL_WEIGHTS.vix),
+		fetchVolIndexWithFallback(VSTOXX_SYMBOLS, 'VSTOXX', WORLD_VOL_WEIGHTS.vstoxx)
 	]);
 
-	const yfResult = yfPromise.status === 'fulfilled' ? yfPromise.value : null;
-	const mwResult = mwPromise.status === 'fulfilled' ? mwPromise.value : null;
-
-	if (!yfResult) {
-		// Fallback entirely to MW if YF crashed completely
-		return {
-			label,
-			symbol: label,
-			weight,
-			value: mwResult?.price || null,
-			marketTime: mwResult?.marketTime ?? null,
-			fresh: isFreshMarketTime(mwResult?.marketTime ?? null),
-			reason: yfPromise.status === 'rejected' ? yfPromise.reason?.message : 'YF Fetch Failed'
-		};
+	if (vix.fresh && vstoxx.fresh) {
+		const compositeSignal = buildCompositeWorldVolSignal([vix, vstoxx]);
+		if (compositeSignal) return compositeSignal;
 	}
 
 	let finalResult = yfResult;

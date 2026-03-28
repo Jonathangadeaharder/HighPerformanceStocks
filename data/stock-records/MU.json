@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~5%",
 		"fcfYield": "~1%",
-		"roic": null,
+		"roic": "7.7%",
 		"roe": "39.8%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "201%"
+		"ruleOf40": "201%",
+		"beta": "1.54",
+		"revenueGrowth": "196.3%",
+		"interestCoverage": "62.0x"
 	},
 	"targetPrice": "$527.60",
 	"bullCase": "The AI bottleneck is shifting to High-Bandwidth Memory (HBM). The physics of HBM require vastly more wafer capacity, leading to a structural supply shortage, skyrocketing unit prices, and massive FCF generation.",
@@ -43,7 +46,7 @@
 		},
 		"basis": "Cyclical memory; forward PE at cycle peak; exit PE 20 reflects mid-cycle normalized earnings"
 	},
-	"lastUpdated": "2026-03-28T18:00:58.505Z",
+	"lastUpdated": "2026-03-28T23:03:00.036Z",
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "REJECTED",
@@ -72,12 +75,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MU",
-		"strongBuy": 31,
-		"moderateBuy": 5,
+		"strongBuy": 6,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$466.75",
-	"consensusRating": "Unknown"
+	"consensusRating": "strong buy"
 }

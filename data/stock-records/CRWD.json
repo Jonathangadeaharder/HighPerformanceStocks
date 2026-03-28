@@ -18,10 +18,12 @@
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~2%",
-		"roic": null,
+		"roic": "1.8%",
 		"roe": "-4.1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "57%"
+		"ruleOf40": "57%",
+		"beta": "1.12",
+		"revenueGrowth": "23.3%"
 	},
 	"targetPrice": "$490.48",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
@@ -42,19 +44,19 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-28T18:00:45.285Z",
+	"lastUpdated": "2026-03-28T23:02:47.854Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.8,
+		"score": 1.75,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "EV/FCF",
 			"multiple": 55.7,
 			"cvStock": 0.087,
-			"riskMultiplier": 1.004
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 32.7% (DEPLOY override: base CAGR 33% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 32.7% (DEPLOY override: base CAGR 33% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.94
+		"secondaryScore": 1.88
 	},
 	"qcs": {
 		"earningsScore": 3.01,
@@ -101,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "CRWD",
-		"strongBuy": 27,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 15,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 3
 	},
 	"targetPriceAlternative": "$506.26",
 	"consensusRating": "Moderate Buy"

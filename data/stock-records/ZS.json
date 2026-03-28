@@ -18,10 +18,12 @@
 	"metrics": {
 		"fcfMargin": "~34%",
 		"fcfYield": "~5%",
-		"roic": null,
+		"roic": "5.6%",
 		"roe": "-3.6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "60%"
+		"ruleOf40": "60%",
+		"beta": "1.12",
+		"revenueGrowth": "25.9%"
 	},
 	"targetPrice": "$233.70",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
@@ -42,22 +44,22 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-03-28T18:01:10.452Z",
+	"lastUpdated": "2026-03-28T23:03:11.686Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.77,
-		"signal": "WAIT",
+		"score": 0.78,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
 			"multiple": 19.4,
 			"cvStock": 0.077,
-			"riskMultiplier": 0.998
+			"riskMultiplier": 1
 		},
-		"note": "Signal capped at WAIT due to customer concentration risk (WAIT override (stalled by stabilization): base CAGR 76% ≥ 20%)",
+		"note": "Signal capped at WAIT due to customer concentration risk (DEPLOY override: base CAGR 76% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 133.16,
 				"price6mAgo": 296.9,
 				"price1mAgo": 148.58,
@@ -101,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ZS",
-		"strongBuy": 34,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$267.13",
 	"consensusRating": "Moderate Buy"

@@ -21,7 +21,11 @@
 		"fcfMargin": "~23%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "36%"
+		"ruleOf40": "36%",
+		"beta": "0.83",
+		"revenueGrowth": "12.7%",
+		"roic": "6.8%",
+		"interestCoverage": "12.3x"
 	},
 	"targetPrice": "HK$713.90",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
@@ -44,22 +48,22 @@
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T18:00:35.457Z",
+	"lastUpdated": "2026-03-28T23:02:42.592Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.35,
+		"score": 1.38,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 16.5,
 			"cvStock": 0.054,
-			"riskMultiplier": 0.985
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 493.4,
 				"price6mAgo": 660,
 				"price1mAgo": 514,
@@ -79,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.23
+		"secondaryScore": 1.25
 	},
 	"qcs": {
 		"earningsScore": 3.27,

@@ -10,36 +10,39 @@
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "19%",
-		"ttmEPS": 2.27,
+		"epsGrowth": "18%",
+		"ttmEPS": 2.26,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "33%",
-			"base": "85%",
+			"bear": "-24%",
+			"base": "80%",
 			"bull": "173%"
 		}
 	},
 	"currentPrice": "$66.02",
 	"marketCap": "$59.4B USD",
 	"valuation": {
-		"trailingPE": 29.1,
+		"trailingPE": 29.2,
 		"forwardPE": 23.9
 	},
 	"metrics": {
-		"roe": "22.0%"
+		"roe": "22.0%",
+		"beta": "2.48",
+		"revenueGrowth": "26.5%",
+		"roic": "2.8%"
 	},
 	"consensus": {
-		"yahoo": "$122.23"
+		"yahoo": "$119.09"
 	},
-	"targetPrice": "$122.23",
+	"targetPrice": "$119.09",
 	"analystTargets": {
-		"low": 88,
-		"mean": 122.23,
+		"low": 50,
+		"mean": 119.09,
 		"high": 180
 	},
-	"expectedCAGR": "33% - 173%",
+	"expectedCAGR": "-24% - 173%",
 	"expectedVolatility": "~70%",
-	"sharpeRatio": 1.41,
+	"sharpeRatio": 1,
 	"screener": {
 		"engine": "fEVG",
 		"signal": "NO_DATA",
@@ -48,27 +51,27 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.31,
-		"totalScore": 4.69,
+		"revisionsScore": -0.29,
+		"totalScore": 4.71,
 		"raw": {
 			"avgSurprisePct": 16.34,
 			"netInsiderShares": 216758,
 			"instFlowTrend": "negative",
 			"upRevisions": 0,
 			"downRevisions": 1,
-			"totalAnalysts": 16
+			"totalAnalysts": 17
 		}
 	},
 	"description": "Robinhood Markets, Inc. operates financial services platform in the United States.",
-	"lastUpdated": "2026-03-28T18:00:51.119Z",
+	"lastUpdated": "2026-03-28T23:02:52.192Z",
 	"analystConsensus": {
 		"ticker": "HOOD",
-		"strongBuy": 14,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"targetPriceAlternative": "$120.59",
+	"targetPriceAlternative": "$117.49",
 	"consensusRating": "Moderate Buy"
 }

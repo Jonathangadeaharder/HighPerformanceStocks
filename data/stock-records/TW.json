@@ -25,7 +25,10 @@
 		"forwardPE": 25.9
 	},
 	"metrics": {
-		"roe": "13.6%"
+		"roe": "13.6%",
+		"beta": "0.78",
+		"revenueGrowth": "12.5%",
+		"roic": "4.9%"
 	},
 	"consensus": {
 		"yahoo": "$132.31"
@@ -34,14 +37,14 @@
 	"expectedCAGR": "-5% - 74%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.01,
+		"score": 2.05,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
 			"multiple": 30.8,
 			"cvStock": 0.045,
-			"riskMultiplier": 0.979
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -65,10 +68,10 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.69,
+		"secondaryScore": 1.73,
 		"note": "(CYCLICAL EPS)"
 	},
-	"lastUpdated": "2026-03-28T18:01:05.689Z",
+	"lastUpdated": "2026-03-28T23:03:08.415Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 1,
 	"qcs": {
@@ -93,11 +96,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "TW",
-		"strongBuy": 7,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 8,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$140.36",
 	"consensusRating": "Moderate Buy"

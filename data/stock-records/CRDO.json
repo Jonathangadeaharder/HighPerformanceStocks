@@ -29,7 +29,11 @@
 		"fcfMargin": "~16%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "218%"
+		"ruleOf40": "218%",
+		"beta": "2.68",
+		"revenueGrowth": "201.5%",
+		"roic": "2.1%",
+		"interestCoverage": "391.3x"
 	},
 	"consensus": {
 		"yahoo": "$199.38"
@@ -40,19 +44,19 @@
 	"sharpeRatio": 1.17,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.61,
-		"signal": "WAIT",
+		"score": 1.66,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 28,
 			"multipleType": "EV/EBITDA",
 			"multiple": 46.5,
 			"cvStock": 0.034,
-			"riskMultiplier": 0.972
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 109.3% + QCS 11.56 (WAIT override (stalled by stabilization): base CAGR 109% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 109.3% + QCS 11.56 (DEPLOY override: base CAGR 109% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 95.24,
 				"price6mAgo": 146.01,
 				"price1mAgo": 114.22,
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.7
+		"secondaryScore": 0.72
 	},
-	"lastUpdated": "2026-03-28T18:00:45.391Z",
+	"lastUpdated": "2026-03-28T23:02:47.765Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
@@ -99,12 +103,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "CRDO",
-		"strongBuy": 13,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$206.33",
-	"consensusRating": "Unknown"
+	"consensusRating": "Hold"
 }

@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~39%",
 		"fcfYield": "~4%",
-		"roic": null,
+		"roic": "3.0%",
 		"roe": "5.5%",
 		"netDebtEbitda": "5.4x",
-		"ruleOf40": "104%"
+		"ruleOf40": "104%",
+		"beta": "1.16",
+		"revenueGrowth": "65.5%",
+		"interestCoverage": "2.7x"
 	},
 	"targetPrice": "$537.75",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
@@ -43,22 +46,22 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-03-28T18:01:03.722Z",
+	"lastUpdated": "2026-03-28T23:03:05.971Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 3.79,
-		"signal": "WAIT",
+		"score": 3.88,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/EBITDA",
 			"multiple": 50.5,
 			"cvStock": 0.038,
-			"riskMultiplier": 0.975
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 41.3% + QCS 10.95 (WAIT override (stalled by stabilization): base CAGR 41% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 41.3% + QCS 10.95 (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 380.47,
 				"price6mAgo": 481.61,
 				"price1mAgo": 424.66,
@@ -78,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.67
+		"secondaryScore": 1.72
 	},
 	"qcs": {
 		"earningsScore": 1.37,
@@ -102,10 +105,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "SNPS",
-		"strongBuy": 16,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$531.00",

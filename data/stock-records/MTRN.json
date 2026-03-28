@@ -26,14 +26,14 @@
 	"expectedVolatility": "~44%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.65,
+		"score": 1.7,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 11,
 			"multipleType": "EV/EBITDA",
 			"multiple": 18.7,
 			"cvStock": 0.035,
-			"riskMultiplier": 0.973
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -57,9 +57,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.7
+		"secondaryScore": 1.75
 	},
-	"lastUpdated": "2026-03-28T18:00:58.451Z",
+	"lastUpdated": "2026-03-28T23:03:00.004Z",
 	"valuation": {
 		"trailingPE": 39.5,
 		"forwardPE": 19.2,
@@ -71,7 +71,11 @@
 		"fcfMargin": "~1%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "2.8x",
-		"ruleOf40": "13%"
+		"ruleOf40": "13%",
+		"beta": "0.87",
+		"revenueGrowth": "12.1%",
+		"roic": "3.0%",
+		"interestCoverage": "6.2x"
 	},
 	"expectedCAGR": "20% - 31%",
 	"sharpeRatio": 0.48,
@@ -98,10 +102,10 @@
 	"analystConsensus": {
 		"ticker": "MTRN",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Hold"
 }

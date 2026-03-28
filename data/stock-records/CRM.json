@@ -20,7 +20,11 @@
 		"fcfYield": "~10%",
 		"roe": "12.4%",
 		"netDebtEbitda": "0.6x",
-		"ruleOf40": "52%"
+		"ruleOf40": "52%",
+		"beta": "1.31",
+		"revenueGrowth": "12.1%",
+		"roic": "8.5%",
+		"interestCoverage": "12.9x"
 	},
 	"targetPrice": "$273.85",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
@@ -42,22 +46,22 @@
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-28T18:00:45.117Z",
+	"lastUpdated": "2026-03-28T23:02:47.771Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.7,
-		"signal": "WAIT",
+		"score": 0.71,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 10.6,
 			"cvStock": 0.07,
-			"riskMultiplier": 0.994
+			"riskMultiplier": 1
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 54% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 54% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 179.31,
 				"price6mAgo": 245.1,
 				"price1mAgo": 192.95,
@@ -101,11 +105,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "CRM",
-		"strongBuy": 36,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 12,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$280.22"
 }

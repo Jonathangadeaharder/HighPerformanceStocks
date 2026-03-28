@@ -5,9 +5,9 @@
 	"confidence": "low",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
 	"marketCap": "8.7B SEK",
-	"sharpeRatio": 2.69,
+	"sharpeRatio": 2.63,
 	"expectedCAGR": "75% - 165%",
-	"expectedVolatility": "~43%",
+	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": 20.1,
 		"forwardPE": 17.1,
@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~15%",
 		"fcfYield": "~6%",
-		"roic": "~30% acquisition / ~6% company-level",
+		"roic": "9.8%",
 		"roe": "8.9%",
 		"netDebtEbitda": "2.0x",
-		"ruleOf40": "22%"
+		"ruleOf40": "22%",
+		"beta": "0.91",
+		"revenueGrowth": "6.1%",
+		"interestCoverage": "8.0x"
 	},
 	"targetPrice": "448 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
@@ -42,22 +45,22 @@
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-28T18:01:06.670Z",
+	"lastUpdated": "2026-03-28T23:03:09.836Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.69,
-		"signal": "WAIT",
+		"score": 0.71,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
 			"multiple": 8.5,
 			"cvStock": 0.041,
-			"riskMultiplier": 0.977
+			"riskMultiplier": 1
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 105% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 105% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 220.2,
 				"price6mAgo": 331,
 				"price1mAgo": 233.6,
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": 1.43
 	},
 	"qcs": {
 		"earningsScore": 5,

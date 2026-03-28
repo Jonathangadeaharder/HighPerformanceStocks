@@ -19,10 +19,13 @@
 	"metrics": {
 		"fcfMargin": "~27%",
 		"fcfYield": "~1%",
-		"roic": null,
+		"roic": "2.6%",
 		"roe": "101.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "100%"
+		"ruleOf40": "100%",
+		"beta": "2.38",
+		"revenueGrowth": "73.2%",
+		"interestCoverage": "212.3x"
 	},
 	"targetPrice": "$268.22",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
@@ -44,19 +47,19 @@
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-28T18:01:00.333Z",
+	"lastUpdated": "2026-03-28T23:03:02.980Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.07,
+		"score": 1.05,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "EV/EBITDA",
 			"multiple": 30.2,
 			"cvStock": 0.127,
-			"riskMultiplier": 1.028
+			"riskMultiplier": 1.011
 		},
-		"note": "DEPLOY override: base CAGR 60% ≥ 20% (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 60% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -79,12 +82,12 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.54
+		"secondaryScore": 0.53
 	},
 	"intrinsicValue": {
-		"dcf": 232.25,
-		"date": "2026-03-26",
-		"discount": 30
+		"dcf": 229.76,
+		"date": "2026-03-28",
+		"discount": 37
 	},
 	"qcs": {
 		"earningsScore": 1.65,
@@ -108,12 +111,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "NVDA",
-		"strongBuy": 45,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"targetPriceAlternative": "$275.95",
-	"consensusRating": "Unknown"
+	"targetPriceAlternative": "$275.96",
+	"consensusRating": "Hold"
 }

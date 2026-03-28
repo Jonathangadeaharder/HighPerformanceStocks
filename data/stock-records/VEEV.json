@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
-		"roic": null,
+		"roic": "6.5%",
 		"roe": "13.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "49%"
+		"ruleOf40": "49%",
+		"beta": "1.12",
+		"revenueGrowth": "16.0%",
+		"interestCoverage": "186.8x"
 	},
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
@@ -43,22 +46,22 @@
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-03-28T18:01:06.605Z",
+	"lastUpdated": "2026-03-28T23:03:09.898Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.06,
-		"signal": "WAIT",
+		"score": 1.09,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "EV/FCF",
 			"multiple": 20.7,
 			"cvStock": 0.03,
-			"riskMultiplier": 0.97
+			"riskMultiplier": 1
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 57% ≥ 20%",
+		"note": "DEPLOY override: base CAGR 57% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 172.59,
 				"price6mAgo": 293,
 				"price1mAgo": 181.45,
@@ -78,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.89
+		"secondaryScore": 0.92
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -102,10 +105,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "VEEV",
-		"strongBuy": 15,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy"

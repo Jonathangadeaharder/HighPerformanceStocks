@@ -19,7 +19,11 @@
 		"fcfMargin": "~-8%",
 		"fcfYield": "~-3%",
 		"netDebtEbitda": "1.3x",
-		"ruleOf40": "36%"
+		"ruleOf40": "36%",
+		"beta": "1.53",
+		"revenueGrowth": "44.6%",
+		"roic": "14.1%",
+		"interestCoverage": "6.4x"
 	},
 	"targetPrice": "$2565.65",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
@@ -36,25 +40,25 @@
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-03-28T18:00:56.238Z",
+	"lastUpdated": "2026-03-28T23:02:58.086Z",
 	"consensus": {
 		"yahoo": "$2565.65"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.68,
+		"score": 1.7,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
 			"multiple": 33.6,
 			"cvStock": 0.167,
-			"riskMultiplier": 1.052
+			"riskMultiplier": 1.067
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 1599.52,
 				"price6mAgo": 2501.31,
 				"price1mAgo": 1777,
@@ -96,12 +100,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MELI",
-		"strongBuy": 15,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"targetPriceAlternative": "$2708.67",
+	"targetPriceAlternative": "$2708.68",
 	"consensusRating": "Moderate Buy"
 }

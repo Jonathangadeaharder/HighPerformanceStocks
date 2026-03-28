@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~13%",
 		"fcfYield": "~3%",
-		"roic": "~35%",
+		"roic": "7.0%",
 		"roe": "153.6%",
 		"netDebtEbitda": "2.3x",
-		"ruleOf40": "65%"
+		"ruleOf40": "65%",
+		"beta": "1.02",
+		"revenueGrowth": "51.6%",
+		"interestCoverage": "7.5x"
 	},
 	"targetPrice": "$84.50",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
@@ -42,22 +45,22 @@
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-03-28T18:00:50.906Z",
+	"lastUpdated": "2026-03-28T23:02:51.961Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.5,
-		"signal": "WAIT",
+		"score": 0.52,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
 			"multiple": 10.4,
 			"cvStock": 0.015,
-			"riskMultiplier": 0.961
+			"riskMultiplier": 1
 		},
-		"note": "WAIT override (stalled by stabilization): base CAGR 37% ≥ 15%",
+		"note": "DEPLOY override: base CAGR 37% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 61.63,
 				"price6mAgo": 73.29,
 				"price1mAgo": 69.85,
@@ -77,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.3
+		"secondaryScore": 0.32
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -101,10 +104,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "HALO",
-		"strongBuy": 6,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"strongBuy": 5,
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$78.56",

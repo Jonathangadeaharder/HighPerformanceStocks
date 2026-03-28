@@ -61,8 +61,10 @@ export async function fetchSummary(ticker: string): Promise<Record<string, unkno
 interface HistoricalResult {
 	vol: number | null;
 	price6mAgo: number | null;
+	price3mAgo: number | null;
 	price1mAgo: number | null;
 	low3m: number | null;
+	exAnteVol: number | null;
 }
 
 export async function fetchHistoricalData(ticker: string): Promise<HistoricalResult> {
@@ -79,15 +81,18 @@ export async function fetchHistoricalData(ticker: string): Promise<HistoricalRes
 		const history = chartData.quotes;
 
 		if (!history || history.length < 60) {
-			return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
+			return { vol: null, price6mAgo: null, price3mAgo: null, price1mAgo: null, low3m: null, exAnteVol: null };
 		}
 
 		const sixMonthsAgo = new Date();
 		sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+		const threeMonthsAgo = new Date();
+		threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
 		const oneMonthAgo = new Date();
 		oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
 
 		const entry6m = history.find((point) => new Date(point.date) >= sixMonthsAgo);
+		const entry3m = history.find((point) => new Date(point.date) >= threeMonthsAgo);
 		const entry1m = history.find((point) => new Date(point.date) >= oneMonthAgo);
 		const trailing3m = history.slice(-63);
 		const low3m =
@@ -112,8 +117,10 @@ export async function fetchHistoricalData(ticker: string): Promise<HistoricalRes
 			return {
 				vol: null,
 				price6mAgo: entry6m?.close ?? null,
+				price3mAgo: entry3m?.close ?? null,
 				price1mAgo: entry1m?.close ?? null,
-				low3m: low3m ?? null
+				low3m: low3m ?? null,
+				exAnteVol: null
 			};
 		}
 
@@ -121,13 +128,30 @@ export async function fetchHistoricalData(ticker: string): Promise<HistoricalRes
 		const variance =
 			logReturns.reduce((sum, value) => sum + (value - mean) ** 2, 0) / (logReturns.length - 1);
 
+		// 60-day EWMA ex-ante volatility for VAMS
+		const ewmaLambda = 0.94; // industry standard (RiskMetrics)
+		const recent60 = logReturns.slice(-60);
+		let ewmaVar = 0;
+		if (recent60.length > 0) {
+			// Initialize with sample variance of first 10 returns
+			const initSlice = recent60.slice(0, Math.min(10, recent60.length));
+			const initMean = initSlice.reduce((s, v) => s + v, 0) / initSlice.length;
+			ewmaVar = initSlice.reduce((s, v) => s + (v - initMean) ** 2, 0) / initSlice.length;
+			for (const r of recent60) {
+				ewmaVar = ewmaLambda * ewmaVar + (1 - ewmaLambda) * r * r;
+			}
+		}
+		const exAnteVol = ewmaVar > 0 ? Math.round(Math.sqrt(ewmaVar) * Math.sqrt(252) * 100) : null;
+
 		return {
 			vol: Math.round(Math.sqrt(variance) * Math.sqrt(252) * 100),
 			price6mAgo: entry6m?.close ?? null,
+			price3mAgo: entry3m?.close ?? null,
 			price1mAgo: entry1m?.close ?? null,
-			low3m
+			low3m,
+			exAnteVol
 		};
 	} catch {
-		return { vol: null, price6mAgo: null, price1mAgo: null, low3m: null };
+		return { vol: null, price6mAgo: null, price3mAgo: null, price1mAgo: null, low3m: null, exAnteVol: null };
 	}
 }

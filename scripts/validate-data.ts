@@ -2,8 +2,6 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseDisplayPrice, parsePercent } from '../src/lib/domain/finance/core.js';
 import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
-import { ENGINE_THRESHOLDS } from '../src/lib/domain/screener/types.js';
-import type { ScreenerSignal } from '../src/lib/types/dashboard.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
@@ -46,7 +44,7 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 		const statedReturn = parsePercent(data.cagrModel.scenarios[label] as string);
 		if (statedReturn == null || target == null) continue;
 
-		const expectedReturn = (((target as number) - price) / price) * 100 + dyPct;
+		const expectedReturn = ((target as number - price) / price) * 100 + dyPct;
 		const diff = Math.abs(expectedReturn - statedReturn);
 		if (diff > RETURN_TOLERANCE_PP) {
 			errors.push(
@@ -54,15 +52,6 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 			);
 		}
 	}
-}
-
-function validateStructuralIntegrity(data: any, errors: string[], warnings: string[]) {
-	// 1. QCS vs Confidence Alignment
-	// [Removed] Confidence is now automatically generated from QCS in the update pipeline.
-
-	// 2. Structural Downside Floor
-	// [Removed] Per user request: DO NOT enforce pessimism (negative Bear CAGRs) 
-	// for volatile/hyper-growth assets if Wall Street consensus implies otherwise.
 }
 
 function verifyData() {

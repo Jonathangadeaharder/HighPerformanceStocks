@@ -19,7 +19,11 @@
 		"fcfMargin": "~11%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "42%"
+		"ruleOf40": "42%",
+		"beta": "2.9",
+		"revenueGrowth": "30.6%",
+		"roic": "1.4%",
+		"interestCoverage": "186.6x"
 	},
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
@@ -36,22 +40,22 @@
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-28T18:01:03.607Z",
+	"lastUpdated": "2026-03-28T23:03:05.807Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.38,
+		"score": 4.37,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "EV/FCF",
 			"multiple": 109,
 			"cvStock": 0.153,
-			"riskMultiplier": 1.044
+			"riskMultiplier": 1.042
 		},
-		"note": "hasLikelyValueFloor: analyst upside 43.2% (DEPLOY override: base CAGR 43% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 43.2% (DEPLOY override: base CAGR 43% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,9 +81,9 @@
 		"secondaryScore": 1.95
 	},
 	"intrinsicValue": {
-		"dcf": 18.13,
-		"date": "2026-03-26",
-		"discount": -85
+		"dcf": 18,
+		"date": "2026-03-28",
+		"discount": -84
 	},
 	"qcs": {
 		"earningsScore": 0.82,
@@ -103,11 +107,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "SHOP",
-		"strongBuy": 25,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 20,
+		"hold": 20,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$163.38",
 	"consensusRating": "Moderate Buy"

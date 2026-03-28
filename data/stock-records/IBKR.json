@@ -25,7 +25,10 @@
 		"forwardPE": 23.4
 	},
 	"metrics": {
-		"roe": "23.5%"
+		"roe": "23.5%",
+		"beta": "1.25",
+		"revenueGrowth": "15.2%",
+		"roic": "54.3%"
 	},
 	"consensus": {
 		"yahoo": "$80.56"
@@ -37,7 +40,7 @@
 		"signal": "NO_DATA",
 		"note": "Missing/negative EV/EBITDA"
 	},
-	"lastUpdated": "2026-03-28T18:00:51.909Z",
+	"lastUpdated": "2026-03-28T23:02:52.980Z",
 	"expectedVolatility": "~43%",
 	"sharpeRatio": 0.26,
 	"qcs": {
@@ -63,10 +66,10 @@
 	"analystConsensus": {
 		"ticker": "IBKR",
 		"strongBuy": 8,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$76.39",
 	"consensusRating": "Moderate Buy"

@@ -29,7 +29,11 @@
 		"fcfMargin": "~23%",
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "46%"
+		"ruleOf40": "46%",
+		"beta": "1.79",
+		"revenueGrowth": "22.1%",
+		"roic": "2.7%",
+		"interestCoverage": "29.8x"
 	},
 	"consensus": {
 		"yahoo": "$274.90"
@@ -40,16 +44,16 @@
 	"sharpeRatio": 0.38,
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.46,
+		"score": 2.43,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 35.7,
 			"cvStock": 0.136,
-			"riskMultiplier": 1.034
+			"riskMultiplier": 1.02
 		},
-		"note": "hasLikelyValueFloor: analyst upside 30% (DEPLOY override: base CAGR 30% ≥ 20%) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 30% (DEPLOY override: base CAGR 30% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.11
+		"secondaryScore": 2.08
 	},
-	"lastUpdated": "2026-03-28T18:00:55.178Z",
+	"lastUpdated": "2026-03-28T23:02:57.108Z",
 	"qcs": {
 		"earningsScore": 1.94,
 		"flowScore": 0,
@@ -99,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "LRCX",
-		"strongBuy": 20,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$245.35",
 	"consensusRating": "Moderate Buy"

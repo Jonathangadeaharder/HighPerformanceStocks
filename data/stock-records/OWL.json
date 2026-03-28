@@ -31,7 +31,11 @@
 		"fcfMargin": "~47%",
 		"fcfYield": "~10%",
 		"netDebtEbitda": "3.0x",
-		"ruleOf40": "67%"
+		"ruleOf40": "67%",
+		"beta": "1.17",
+		"revenueGrowth": "19.7%",
+		"roic": "7.2%",
+		"interestCoverage": "5.8x"
 	},
 	"consensus": {
 		"yahoo": "$15.07"
@@ -43,14 +47,14 @@
 	"sharpeRatio": 1.92,
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.63,
+		"score": 0.64,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/FRE",
 			"multiple": 9.6,
 			"cvStock": 0.047,
-			"riskMultiplier": 0.98
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -77,7 +81,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 0.54
 	},
-	"lastUpdated": "2026-03-28T18:01:01.203Z",
+	"lastUpdated": "2026-03-28T23:03:03.921Z",
 	"qcs": {
 		"earningsScore": 0.17,
 		"flowScore": 2.5,
@@ -100,11 +104,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "OWL",
-		"strongBuy": 13,
+		"strongBuy": 5,
 		"moderateBuy": 5,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$16.64"
 }

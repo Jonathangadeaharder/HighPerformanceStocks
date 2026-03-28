@@ -17,10 +17,16 @@ export function qualityColor(metricName: string, rawValue: string | null | undef
 		return '#f87171';
 	}
 	const v = parsePercent(rawValue);
-	if (v == null) return '#3f3f46';
+	if (v == null) {
+		// Handle non-percentage string values (>50x for net cash)
+		if (metricName === 'interestCoverage' && />/i.test(rawValue)) return '#22c55e';
+		return '#3f3f46';
+	}
 	if (metricName === 'roe') return v >= 15 ? '#22c55e' : v >= 10 ? '#facc15' : '#71717a';
 	if (metricName === 'fcfYield') return v >= 3 ? '#22c55e' : v >= 1 ? '#facc15' : '#71717a';
 	if (metricName === 'ruleOf40') return v >= 40 ? '#22c55e' : v >= 20 ? '#facc15' : '#71717a';
+	if (metricName === 'beta') return v < 1.3 ? '#22c55e' : v < 1.8 ? '#facc15' : '#f87171';
+	if (metricName === 'interestCoverage') return v >= 8 ? '#22c55e' : v >= 3 ? '#facc15' : '#f87171';
 	return '#71717a';
 }
 

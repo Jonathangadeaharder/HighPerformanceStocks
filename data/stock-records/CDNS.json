@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~29%",
 		"fcfYield": "~2%",
-		"roic": "21.8% - 25.1%",
+		"roic": "2.3%",
 		"roe": "21.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "35%"
+		"ruleOf40": "35%",
+		"beta": "1.02",
+		"revenueGrowth": "6.2%",
+		"interestCoverage": "13.0x"
 	},
 	"targetPrice": "$371.68",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
@@ -43,22 +46,22 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-28T18:00:43.481Z",
+	"lastUpdated": "2026-03-28T23:02:46.932Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.69,
-		"signal": "WAIT",
+		"score": 2.8,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
 			"multiple": 55.9,
 			"cvStock": 0.015,
-			"riskMultiplier": 0.961
+			"riskMultiplier": 1
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (WAIT override (stalled by stabilization): base CAGR 37% ≥ 20%)",
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (DEPLOY override: base CAGR 37% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 271.77,
 				"price6mAgo": 348.52,
 				"price1mAgo": 303.36,
@@ -100,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "CDNS",
-		"strongBuy": 17,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"hold": 5,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"targetPriceAlternative": "$376.50",
 	"consensusRating": "Moderate Buy"

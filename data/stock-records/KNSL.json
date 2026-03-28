@@ -31,7 +31,11 @@
 		"fcfMargin": "~51%",
 		"fcfYield": "~13%",
 		"netDebtEbitda": "0.1x",
-		"ruleOf40": "69%"
+		"ruleOf40": "69%",
+		"beta": "1.04",
+		"revenueGrowth": "17.3%",
+		"roic": "13.6%",
+		"interestCoverage": "52.7x"
 	},
 	"consensus": {
 		"yahoo": "$407.33"
@@ -40,14 +44,14 @@
 	"expectedCAGR": "-5% - 37%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.74,
+		"score": 0.75,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
 			"multiple": 11.7,
 			"cvStock": 0.047,
-			"riskMultiplier": 1.257
+			"riskMultiplier": 1.282
 		},
 		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.74
+		"secondaryScore": 0.75
 	},
-	"lastUpdated": "2026-03-28T18:00:53.875Z",
+	"lastUpdated": "2026-03-28T23:02:55.316Z",
 	"expectedVolatility": "~38%",
 	"sharpeRatio": 0.3,
 	"qcs": {
@@ -99,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "KNSL",
-		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 12,
+		"moderateBuy": 4,
+		"hold": 12,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Hold"
 }

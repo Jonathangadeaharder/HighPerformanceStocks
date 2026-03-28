@@ -17,11 +17,13 @@
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": null,
+		"roic": "0.5%",
 		"roe": "8.6%",
 		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": "104%",
-		"bessemerRuleOfX": "158%"
+		"bessemerRuleOfX": "158%",
+		"beta": "2.01",
+		"revenueGrowth": "76.3%"
 	},
 	"targetPrice": "$135.77",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
@@ -43,17 +45,17 @@
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-03-28T18:00:53.100Z",
+	"lastUpdated": "2026-03-28T23:02:54.552Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.92,
+		"score": 0.94,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
 			"multiple": 18.8,
 			"cvStock": 0.048,
-			"riskMultiplier": 0.981
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -78,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.55
+		"secondaryScore": 0.57
 	},
 	"qcs": {
 		"earningsScore": 2.56,
@@ -102,11 +104,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "KKR",
-		"strongBuy": 16,
-		"moderateBuy": 5,
+		"strongBuy": 5,
+		"moderateBuy": 4,
 		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$149.01"
 }

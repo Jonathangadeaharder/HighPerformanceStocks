@@ -17,12 +17,15 @@
 	},
 	"metrics": {
 		"roe": "45.0%",
-		"roic": "42.1%",
+		"roic": "2.8%",
 		"operatingMargin": "~46%",
 		"netDebtEbitda": "3.0x",
 		"fcfMargin": "~28%",
 		"fcfYield": "~2%",
-		"ruleOf40": "44%"
+		"ruleOf40": "44%",
+		"beta": "1.28",
+		"revenueGrowth": "16.4%",
+		"interestCoverage": "5.7x"
 	},
 	"targetPrice": "$1872.18",
 	"consensus": {
@@ -43,22 +46,22 @@
 		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
 		"ttmEPS": 27
 	},
-	"lastUpdated": "2026-03-28T18:00:49.733Z",
+	"lastUpdated": "2026-03-28T23:02:50.925Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.5,
-		"signal": "WAIT",
+		"score": 1.49,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
 			"multiple": 26.9,
 			"cvStock": 0.089,
-			"riskMultiplier": 1.005
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 85.2% (WAIT override (stalled by stabilization): base CAGR 85% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 85.2% (DEPLOY override: base CAGR 85% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 1011.06,
 				"price6mAgo": 1525.44,
 				"price1mAgo": 1407.54,
@@ -102,10 +105,10 @@
 	},
 	"analystConsensus": {
 		"ticker": "FICO",
-		"strongBuy": 10,
+		"strongBuy": 5,
 		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
+		"hold": 3,
+		"moderateSell": 2,
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy"

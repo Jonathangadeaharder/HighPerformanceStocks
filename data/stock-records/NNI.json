@@ -15,7 +15,10 @@
 		"forwardPE": 12.7
 	},
 	"metrics": {
-		"roe": "11.6%"
+		"roe": "11.6%",
+		"beta": "0.83",
+		"revenueGrowth": "-8.6%",
+		"roic": "3.5%"
 	},
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
@@ -26,7 +29,7 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-28T18:01:00.159Z",
+	"lastUpdated": "2026-03-28T23:03:02.810Z",
 	"consensus": {},
 	"screener": {
 		"engine": "fEVG",
@@ -51,10 +54,11 @@
 	"analystConsensus": {
 		"ticker": "NNI",
 		"strongBuy": 5,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"moderateBuy": 4,
+		"hold": 3,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"targetPriceAlternative": "$140.00"
 }

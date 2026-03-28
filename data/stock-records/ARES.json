@@ -31,7 +31,11 @@
 		"fcfMargin": "~36%",
 		"fcfYield": "~6%",
 		"netDebtEbitda": "10.3x",
-		"ruleOf40": "56%"
+		"ruleOf40": "56%",
+		"beta": "1.56",
+		"revenueGrowth": "19.5%",
+		"roic": "6.8%",
+		"interestCoverage": "1.6x"
 	},
 	"consensus": {
 		"yahoo": "$163.65"
@@ -40,14 +44,14 @@
 	"expectedCAGR": "10% - 107%",
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.85,
+		"score": 0.88,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "P/FRE",
 			"multiple": 16.6,
 			"cvStock": 0.038,
-			"riskMultiplier": 0.975
+			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
@@ -72,9 +76,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.72
+		"secondaryScore": 0.74
 	},
-	"lastUpdated": "2026-03-28T18:00:37.566Z",
+	"lastUpdated": "2026-03-28T23:02:45.003Z",
 	"expectedVolatility": "~47%",
 	"sharpeRatio": 1.15,
 	"qcs": {
@@ -99,11 +103,11 @@
 	},
 	"analystConsensus": {
 		"ticker": "ARES",
-		"strongBuy": 9,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 8,
+		"hold": 8,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy"
 }

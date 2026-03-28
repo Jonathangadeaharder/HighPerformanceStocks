@@ -18,10 +18,13 @@
 	"metrics": {
 		"fcfMargin": "~50%",
 		"fcfYield": "~4%",
-		"roic": ">50%",
+		"roic": "4.0%",
 		"roe": "209.9%",
 		"netDebtEbitda": "0.4x",
-		"ruleOf40": "67%"
+		"ruleOf40": "67%",
+		"beta": "0.84",
+		"revenueGrowth": "17.6%",
+		"interestCoverage": "18.8x"
 	},
 	"targetPrice": "$661.12",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
@@ -43,22 +46,22 @@
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-28T18:00:55.968Z",
+	"lastUpdated": "2026-03-28T23:02:57.913Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.74,
-		"signal": "WAIT",
+		"score": 1.81,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
 			"multiple": 27.1,
 			"cvStock": 0.019,
-			"riskMultiplier": 0.963
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 36.5% (WAIT override (stalled by stabilization): base CAGR 38% ≥ 20%)",
+		"note": "hasLikelyValueFloor: analyst upside 36.5% (DEPLOY override: base CAGR 38% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
+				"pass": true,
 				"price": 484.24,
 				"price6mAgo": 568.14,
 				"price1mAgo": 521,
@@ -78,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.37
+		"secondaryScore": 1.43
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -102,11 +105,12 @@
 	},
 	"analystConsensus": {
 		"ticker": "MA",
-		"strongBuy": 25,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
+		"strongBuy": 5,
+		"moderateBuy": 9,
+		"hold": 9,
+		"moderateSell": 2,
+		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Hold",
+	"targetPriceAlternative": "$667.88"
 }
