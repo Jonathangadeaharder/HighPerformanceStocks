@@ -3,10 +3,10 @@
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {
-		"epsGrowth": "9%",
+		"epsGrowth": "5%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 38.58,
 		"dividendYield": "1%",
@@ -37,11 +37,11 @@
 	"targetPrice": "$985.89",
 	"expectedCAGR": "-19% - 108%",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 1.63,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 9,
+			"growth": 5,
 			"multipleType": "Forward P/E",
 			"multiple": 14.1,
 			"cvStock": 0.04,

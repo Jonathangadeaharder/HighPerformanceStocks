@@ -35,7 +35,7 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 1.54,
-		"epsGrowth": "8%",
+		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "33%",

@@ -36,13 +36,14 @@
 	"targetPrice": "$89.06",
 	"expectedCAGR": "-19% - 52%",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fCFG",
 		"score": 1.57,
 		"signal": "FAIL",
+		"note": "Engine → fCFG (strip hardware D&A noise; model pure FCF). 13% Base CAGR < 15% hurdle. CORRECTLY AGGRESSIVE.",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 23.8,
+			"multipleType": "EV/FCF",
+			"multiple": 32,
 			"cvStock": 0.063,
 			"riskMultiplier": 0.99
 		},

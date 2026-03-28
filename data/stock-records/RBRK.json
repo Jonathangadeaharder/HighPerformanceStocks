@@ -24,7 +24,8 @@
 	"bearCase": "Rubrik faces intense competition from Cohesity (now merged with Veritas), Commvault, Veeam, and Zerto in data protection. The path to sustained GAAP profitability requires continued ARR growth at high SBC dilution. Microsoft Backup and AWS native backup services could commoditize the lower end of the market.",
 	"currentPrice": "$47.18",
 	"cagrModel": {
-		"epsGrowth": "0%",
+		"ttmEPS": null,
+		"epsGrowth": "48%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "36%",
@@ -38,11 +39,14 @@
 		"yahoo": "$86.71"
 	},
 	"screener": {
-		"engine": "totalReturn",
+		"engine": "fCFG",
 		"score": 999,
-		"signal": "FAIL",
+		"signal": "DEPLOY",
+		"note": "STRUCTURALLY FLAWED corrected: totalReturn engine was illegally assigned (0% EPS growth parsed, bypassing required dividendYield≥4% gate). Engine → fCFG using ARR/Revenue growth (48%). 23x EV/FCF for 48% top-line = severe dislocation. Override: hasLikelyValueFloor() triggered (QCS=12.92 ≥ 8 + bear CAGR=36% ≥ 20%) → mandatory DEPLOY.",
 		"inputs": {
-			"growth": 0,
+			"growth": 48,
+			"multipleType": "EV/FCF",
+			"multiple": 23,
 			"dividendYield": 0,
 			"debtToEquity": 0,
 			"debtPenalty": false,

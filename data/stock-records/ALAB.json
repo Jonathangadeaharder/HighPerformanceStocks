@@ -11,7 +11,7 @@
 		"ttmEPS": 1.22,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "29%",
+			"bear": "-35%",
 			"base": "72%",
 			"bull": "108%"
 		},
@@ -36,7 +36,7 @@
 		"yahoo": "$206.75"
 	},
 	"targetPrice": "$206.75",
-	"expectedCAGR": "29% - 108%",
+	"expectedCAGR": "-35% - 108%",
 	"expectedVolatility": "~90%",
 	"sharpeRatio": 0.71,
 	"screener": {
@@ -92,7 +92,7 @@
 	"bearCase": "Astera is an early-stage company with limited revenue visibility. Marvell and Broadcom are developing competing connectivity solutions that could displace standalone retimers. Hyperscaler capex pauses would immediately compress Astera's revenue. Customer concentration at 2-3 hyperscalers creates binary revenue risk.",
 	"description": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure.",
 	"analystTargets": {
-		"low": 155,
+		"low": 78.21,
 		"mean": 206.75,
 		"high": 250
 	},

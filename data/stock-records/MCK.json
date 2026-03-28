@@ -37,13 +37,14 @@
 	"targetPrice": "$997.67",
 	"expectedCAGR": "-2% - 26%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.27,
+		"engine": "fCFG",
+		"score": 0.83,
 		"signal": "FAIL",
+		"note": "Cheap (0.83) but base return 13% misses the 15% hurdle",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 19.9,
+			"multipleType": "EV/FCF",
+			"multiple": 12.5,
 			"cvStock": 0.01,
 			"riskMultiplier": 0.958
 		},

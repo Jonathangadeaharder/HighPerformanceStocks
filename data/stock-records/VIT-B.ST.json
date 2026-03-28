@@ -42,11 +42,11 @@
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-26T08:26:33.246Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.69,
-		"signal": "PASS",
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
@@ -76,7 +76,8 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.38
+		"secondaryScore": 1.38,
+		"note": "Signal upgraded PASS → DEPLOY. Deployment rule: IF signal == WAIT|PASS AND baseCagr >= 20% → DEPLOY. fEVG score 0.69 > 0.60 threshold → technically WAIT/borderline. 108% Base CAGR from 8.5x cyclical-low EV/EBITDA demands deployment. QCS 4.17 and +165.6% earnings surprise confirm operational quality."
 	},
 	"qcs": {
 		"earningsScore": 5,

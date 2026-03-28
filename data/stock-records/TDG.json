@@ -3,7 +3,7 @@
 	"name": "TransDigm Group",
 	"group": "Serial Acquirers",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
 	"marketCap": "$65.3B USD",
 	"sharpeRatio": 1.28,
@@ -48,7 +48,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.08,
-		"signal": "WAIT",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",

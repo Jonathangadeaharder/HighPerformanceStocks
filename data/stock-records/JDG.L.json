@@ -38,13 +38,13 @@
 	"targetPrice": "£60.63",
 	"expectedCAGR": "1% - 78%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.29,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 0.71,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 20.2,
+			"multipleType": "EV/EBITDA",
+			"multiple": 10.7,
 			"cvStock": 0.016,
 			"riskMultiplier": 0.961
 		},
@@ -64,9 +64,10 @@
 				"up30d": 0,
 				"down30d": 1
 			}
-		}
+		},
+		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). fEVG score: 10.7 / 15 = 0.71. Signal upgraded to DEPLOY: 50% Base CAGR ≥ 20% override threshold. High-ROE asset-light UK serial acquirer at a rare cyclical -34.7% drawdown discount. EV/EBITDA 10.7 is strikingly cheap for a proven compounder."
 	},
-	"lastUpdated": "2026-03-26T08:26:21.311Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"expectedVolatility": "~44%",
 	"sharpeRatio": 0.8,
 	"qcs": {

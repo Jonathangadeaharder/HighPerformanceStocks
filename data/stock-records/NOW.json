@@ -10,7 +10,7 @@
 	"expectedVolatility": "~42%",
 	"valuation": {
 		"trailingPE": 61.7,
-		"forwardPE": 20.5,
+		"forwardPE": 51.0,
 		"evEbitda": 38,
 		"evFcf": 21
 	},
@@ -37,17 +37,18 @@
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
 	"lastUpdated": "2026-03-26T08:26:27.269Z",
+	"manualAudit": "Flag for manual target and multiple divergence audit. True fPE is likely ~51x. Score recalculates to ~2.42 (FAIL).",
 	"consensus": {
 		"yahoo": "$188.67"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.97,
-		"signal": "PASS",
+		"score": 2.42,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 20.5,
+			"multiple": 51.0,
 			"cvStock": 0.061,
 			"riskMultiplier": 0.989
 		},

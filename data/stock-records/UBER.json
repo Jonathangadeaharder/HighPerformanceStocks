@@ -37,17 +37,17 @@
 	"targetPrice": "$103.68",
 	"expectedCAGR": "-4% - 105%",
 	"screener": {
-		"engine": "tPERG",
-		"score": 0.9,
-		"signal": "PASS",
+		"engine": "fPERG",
+		"score": 0.94,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 15.5,
+			"multipleType": "Forward P/E",
+			"multiple": 17,
 			"cvStock": 0.165,
 			"riskMultiplier": 1.051
 		},
-		"note": "Recent earnings miss (CYCLICAL EPS)",
+		"note": "Engine corrected tPERG → fPERG (forwardPE 17.0 available). fPERG score: 17 / 18 = 0.94 — clean PASS. Signal upgraded to DEPLOY: 42% Base CAGR ≥ 20% override threshold. QCS 5.0 confirms fundamental stabilisation. Tailing PE (15.5) had diluted the score; forwardPE is the correct forward-looking metric.",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -72,7 +72,7 @@
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-26T08:26:32.910Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"intrinsicValue": {
 		"dcf": 141.64,
 		"date": "2026-03-26",

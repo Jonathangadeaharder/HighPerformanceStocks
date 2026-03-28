@@ -34,6 +34,7 @@
 		"stockanalysis": "$7.20"
 	},
 	"cagrModel": {
+		"ttmEPS": null,
 		"note": "Pre-profit biotech; PE-based model not applicable",
 		"scenarios": {
 			"bear": "-5%",
@@ -46,8 +47,8 @@
 	},
 	"lastUpdated": "2026-03-26T08:26:30.061Z",
 	"screener": {
-		"engine": "totalReturn",
-		"signal": "NO_DATA",
+		"engine": "DISQUALIFIED",
+		"signal": "REJECTED",
 		"note": "Missing/negative forward PE and no trailing EPS fallback"
 	},
 	"qcs": {

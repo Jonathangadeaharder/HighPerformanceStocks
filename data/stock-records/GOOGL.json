@@ -1,117 +1,117 @@
 {
-	"ticker": "GOOGL",
-	"name": "Alphabet",
-	"group": "Data & Software Monopolies",
-	"cyclical": true,
-	"confidence": "medium",
-	"confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
-	"marketCap": "$3519.4B USD",
-	"sharpeRatio": 0.12,
-	"expectedCAGR": "-36% - 52%",
-	"expectedVolatility": "~30%",
-	"valuation": {
-		"trailingPE": 26.9,
-		"forwardPE": 21.7,
-		"pegRatio": 2.3,
-		"evEbitda": 23,
-		"evFcf": 90.8
-	},
-	"metrics": {
-		"fcfMargin": "~9%",
-		"fcfYield": "~1%",
-		"roic": null,
-		"roe": "35.7%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "27%"
-	},
-	"targetPrice": "$376.75",
-	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
-	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$290.93",
-	"consensus": {
-		"tipranks": "$352",
-		"yahoo": "$376.75",
-		"stockanalysis": "$352"
-	},
-	"cagrModel": {
-		"ttmEPS": 10.82,
-		"epsGrowth": "12%",
-		"dividendYield": "0%",
-		"scenarios": {
-			"bear": "-36%",
-			"base": "29%",
-			"bull": "52%"
-		},
-		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
-	},
-	"lastUpdated": "2026-03-26T08:26:18.600Z",
-	"screener": {
-		"engine": "fPERG",
-		"score": 1.8,
-		"signal": "FAIL",
-		"inputs": {
-			"growth": 12,
-			"multipleType": "Forward P/E",
-			"multiple": 21.7,
-			"cvStock": 0.074,
-			"riskMultiplier": 0.997
-		},
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 290.93,
-				"price6mAgo": 246.54,
-				"price1mAgo": 307.38,
-				"low3m": 289.24,
-				"return6m": 18,
-				"return1m": -5.4,
-				"near3mLow": true
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 4,
-				"down30d": 4
-			},
-			"earningsSurprise": {
-				"surprise": 7,
-				"quarter": "2025-12"
-			}
-		},
-		"note": "(CYCLICAL EPS)"
-	},
-	"intrinsicValue": {
-		"dcf": 154.44,
-		"date": "2026-03-26",
-		"discount": -47
-	},
-	"qcs": {
-		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.18,
-		"totalScore": 5.18,
-		"raw": {
-			"avgSurprisePct": 19.92,
-			"netInsiderShares": 719008,
-			"instFlowTrend": "neutral",
-			"upRevisions": 5,
-			"downRevisions": 3,
-			"totalAnalysts": 55
-		}
-	},
-	"description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
-	"analystTargets": {
-		"low": 185,
-		"mean": 376.75,
-		"high": 443
-	},
-	"analystConsensus": {
-		"ticker": "GOOGL",
-		"strongBuy": 44,
-		"moderateBuy": 5,
-		"hold": 4,
-		"moderateSell": 3,
-		"strongSell": 2
-	},
-	"targetPriceAlternative": "$367.18",
-	"consensusRating": "Moderate Buy"
+  "ticker": "GOOGL",
+  "name": "Alphabet",
+  "group": "Data & Software Monopolies",
+  "cyclical": false,
+  "confidence": "medium",
+  "confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
+  "marketCap": "$3519.4B USD",
+  "sharpeRatio": 0.12,
+  "expectedCAGR": "-36% - 52%",
+  "expectedVolatility": "~30%",
+  "valuation": {
+    "trailingPE": 26.9,
+    "forwardPE": 21.7,
+    "pegRatio": 2.3,
+    "evEbitda": 23,
+    "evFcf": 90.8
+  },
+  "metrics": {
+    "fcfMargin": "~9%",
+    "fcfYield": "~1%",
+    "roic": null,
+    "roe": "35.7%",
+    "netDebtEbitda": "Net cash",
+    "ruleOf40": "27%"
+  },
+  "targetPrice": "$376.75",
+  "bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
+  "bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
+  "currentPrice": "$290.93",
+  "consensus": {
+    "tipranks": "$352",
+    "yahoo": "$376.75",
+    "stockanalysis": "$352"
+  },
+  "cagrModel": {
+    "ttmEPS": 10.82,
+    "epsGrowth": "12%",
+    "dividendYield": "0%",
+    "scenarios": {
+      "bear": "-36%",
+      "base": "29%",
+      "bull": "52%"
+    },
+    "basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
+  },
+  "lastUpdated": "2026-03-26T08:26:18.600Z",
+  "screener": {
+    "engine": "fPERG",
+    "score": 1.8,
+    "signal": "FAIL",
+    "inputs": {
+      "growth": 12,
+      "multipleType": "Forward P/E",
+      "multiple": 21.7,
+      "cvStock": 0.074,
+      "riskMultiplier": 0.997
+    },
+    "realityChecks": {
+      "stabilization": {
+        "pass": true,
+        "price": 290.93,
+        "price6mAgo": 246.54,
+        "price1mAgo": 307.38,
+        "low3m": 289.24,
+        "return6m": 18,
+        "return1m": -5.4,
+        "near3mLow": true
+      },
+      "revisions": {
+        "pass": true,
+        "up30d": 4,
+        "down30d": 4
+      },
+      "earningsSurprise": {
+        "surprise": 7,
+        "quarter": "2025-12"
+      }
+    },
+    "note": ""
+  },
+  "intrinsicValue": {
+    "dcf": 154.44,
+    "date": "2026-03-26",
+    "discount": -47
+  },
+  "qcs": {
+    "earningsScore": 5,
+    "flowScore": 0,
+    "revisionsScore": 0.18,
+    "totalScore": 5.18,
+    "raw": {
+      "avgSurprisePct": 19.92,
+      "netInsiderShares": 719008,
+      "instFlowTrend": "neutral",
+      "upRevisions": 5,
+      "downRevisions": 3,
+      "totalAnalysts": 55
+    }
+  },
+  "description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
+  "analystTargets": {
+    "low": 185,
+    "mean": 376.75,
+    "high": 443
+  },
+  "analystConsensus": {
+    "ticker": "GOOGL",
+    "strongBuy": 44,
+    "moderateBuy": 5,
+    "hold": 4,
+    "moderateSell": 3,
+    "strongSell": 2
+  },
+  "targetPriceAlternative": "$367.18",
+  "consensusRating": "Moderate Buy"
 }

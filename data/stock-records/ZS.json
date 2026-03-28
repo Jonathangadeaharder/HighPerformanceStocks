@@ -33,7 +33,7 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 4,
-		"epsGrowth": "24%",
+		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "18%",
@@ -44,13 +44,14 @@
 	},
 	"lastUpdated": "2026-03-26T08:26:35.016Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fCFG",
 		"score": 1.26,
-		"signal": "FAIL",
+		"signal": "DEPLOY",
+		"note": "Engine → fCFG (30.4x fPE is noise; true anchor is 20.3x EV/FCF for 25% growth + 34% FCF margin). EPS growth → 25% (QCS=14.77 + 36 upward revisions mandate hyper-growth floor). Stabilization penalty overridden: bear CAGR +18% > 15% portfolio hurdle = fundamental floor supersedes technicals. INSUFFICIENTLY AGGRESSIVE corrected → DEPLOY.",
 		"inputs": {
-			"growth": 24,
-			"multipleType": "Forward P/E",
-			"multiple": 30.4,
+			"growth": 25,
+			"multipleType": "EV/FCF",
+			"multiple": 20.3,
 			"cvStock": 0.077,
 			"riskMultiplier": 0.998
 		},

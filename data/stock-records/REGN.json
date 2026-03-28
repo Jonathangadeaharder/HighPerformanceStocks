@@ -49,7 +49,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.21,
-		"signal": "FAIL",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",

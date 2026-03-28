@@ -44,11 +44,11 @@
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-26T08:26:13.868Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fANIG",
 		"score": 0.41,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
@@ -73,7 +73,7 @@
 				"down30d": 0
 			}
 		},
-		"note": "Used benchmark CV (missing dispersion data)"
+		"note": "Engine corrected fPERG → fANIG. Standard GAAP EPS is an accounting mirage depressed by real-estate depreciation and non-recourse debt consolidation. Must be valued on Fee-Related Earnings (FRE) or Adjusted Net Income (ANI). Prior PASS score (0.41) was an artefact of distorted forward PE (6.8x)."
 	},
 	"qcs": {
 		"earningsScore": 0,

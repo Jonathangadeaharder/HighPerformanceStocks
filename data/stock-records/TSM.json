@@ -7,7 +7,7 @@
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
 	"marketCap": "$1803.6B USD",
 	"sharpeRatio": 0.59,
-	"expectedCAGR": "2% - 51%",
+	"expectedCAGR": "-40% - 51%",
 	"scenarios": {
 		"bear": "5%",
 		"base": "11%",
@@ -37,7 +37,7 @@
 		"epsGrowth": "18%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "2%",
+			"bear": "-40%",
 			"base": "25%",
 			"bull": "51%"
 		},
@@ -106,7 +106,7 @@
 	},
 	"description": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and other semiconductor devices in Taiwan, China, Eu...",
 	"analystTargets": {
-		"low": 351,
+		"low": 205.17,
 		"mean": 430.65,
 		"high": 520
 	},

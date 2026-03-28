@@ -26,10 +26,10 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-26T08:26:27.249Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {},
 	"screener": {
-		"engine": "tPERG",
+		"engine": "P/B",
 		"score": 1.59,
 		"signal": "FAIL",
 		"inputs": {
@@ -60,7 +60,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Engine corrected tPERG → P/B (Price-to-Book / NAV) proxy. Applying a standard PE model to a complex sum-of-the-parts \"baby Berkshire\" guarantees a broken output. GAAP EPS is actively obscured by ice-cube legacy dynamics + incubation ventures. Must be evaluated outside the PE framework via Book Value and incubation venture sum-of-parts. Perfect QCS (10) duly noted but insufficient to overcome structural model mismatch."
 	},
 	"qcs": {
 		"earningsScore": 5,

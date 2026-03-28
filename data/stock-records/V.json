@@ -47,7 +47,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.44,
-		"signal": "FAIL",
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",

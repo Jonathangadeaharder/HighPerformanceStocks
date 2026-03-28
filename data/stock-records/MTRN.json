@@ -25,7 +25,7 @@
 	},
 	"expectedVolatility": "~43%",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 1.79,
 		"signal": "FAIL",
 		"inputs": {

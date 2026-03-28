@@ -12,13 +12,13 @@
 		"ttmEPS": 3.9,
 		"epsGrowthSource": "auto",
 		"dividendYield": "0%",
-		"basis": "GAAP diluted EPS; lumpy contract revenue; cyclical earnings pattern",
+		"basis": "EV/EBITDA exit multiple",
 		"scenarios": {
 			"bear": "-29%",
 			"base": "45%",
 			"bull": "102%"
 		},
-		"epsGrowth": "35%"
+		"epsGrowth": "15%"
 	},
 	"currentPrice": "$193.26",
 	"marketCap": "$3.8B USD",

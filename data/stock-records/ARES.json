@@ -39,9 +39,9 @@
 	"targetPrice": "$163.65",
 	"expectedCAGR": "10% - 107%",
 	"screener": {
-		"engine": "totalReturn",
+		"engine": "fFREG",
 		"score": 0.69,
-		"signal": "PASS",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"dividendYield": 5,

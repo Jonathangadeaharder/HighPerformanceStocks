@@ -3,7 +3,7 @@
 	"name": "Lam Research",
 	"group": "AI & Semiconductors",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Oligopoly in etch and deposition equipment (alongside AMAT and KLA). Memory capex recovery from the deepest trough in a decade is the primary catalyst. High-margin services book provides earnings floor.",
 	"cagrModel": {
 		"epsGrowth": "15%",

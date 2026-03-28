@@ -3,7 +3,7 @@
 	"name": "Meta Platforms",
 	"group": "Data & Software Monopolies",
 	"cyclical": true,
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
 	"marketCap": "$1504.8B USD",
 	"sharpeRatio": 1.28,
@@ -46,11 +46,11 @@
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-26T08:26:25.303Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.11,
-		"signal": "WAIT",
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
@@ -79,7 +79,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Signal upgraded WAIT → DEPLOY. Deployment rule: IF screener.signal == WAIT AND baseCagr >= 20% → DEPLOY. 45% Base CAGR at 16.6x forward PE (PEG ~1.05) for a monopoly with 30% ROE and 82% gross margins. AI CapEx narrative fear is correctly subordinated to the quantitative math. (CYCLICAL EPS)"
 	},
 	"intrinsicValue": {
 		"dcf": 283.74,

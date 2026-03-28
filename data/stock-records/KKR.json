@@ -47,7 +47,7 @@
 	"screener": {
 		"engine": "fANIG",
 		"score": 0.93,
-		"signal": "WAIT",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",

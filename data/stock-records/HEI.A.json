@@ -40,7 +40,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.61,
-		"signal": "FAIL",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",

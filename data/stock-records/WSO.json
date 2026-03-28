@@ -2,7 +2,7 @@
 	"ticker": "WSO",
 	"name": "Watsco",
 	"group": "Capital Compounders",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "HVAC distribution serial acquirer. Massive dividend growth, zero debt, ruthless efficiency.",
 	"cagrModel": {
 		"epsGrowth": "10%",
@@ -36,13 +36,13 @@
 	"targetPrice": "$415.17",
 	"expectedCAGR": "1% - 32%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.64,
+		"engine": "fEVG",
+		"score": 1.91,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 26.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 19.1,
 			"cvStock": 0.096,
 			"riskMultiplier": 1.01
 		},
@@ -66,9 +66,10 @@
 				"surprise": -11,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). fEVG score: 19.1 / 10 = 1.91 — violently fails the strict valuation test. FAIL signal correctly rejects paying peak multiples for an HVAC distributor entering a normalised cycle. QCS -3.34 and 5 downward revisions confirm the rejection."
 	},
-	"lastUpdated": "2026-03-26T08:26:34.975Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"expectedVolatility": "~33%",
 	"sharpeRatio": 0.36,
 	"qcs": {

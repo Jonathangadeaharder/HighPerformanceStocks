@@ -31,17 +31,17 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 10.7,
-		"epsGrowth": "8%",
+		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"basis": "Through-cycle normalized growth; current ~5% consensus reflects cyclical trough in factory automation"
 	},
 	"lastUpdated": "2026-03-26T08:26:22.335Z",
 	"screener": {
-		"engine": "totalReturn",
+		"engine": "fEVG",
 		"score": 1.33,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 8,
+			"growth": 15,
 			"dividendYield": 1,
 			"debtToEquity": 0,
 			"debtPenalty": false,

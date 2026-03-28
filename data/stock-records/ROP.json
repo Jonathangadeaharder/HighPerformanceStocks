@@ -46,9 +46,9 @@
 	},
 	"lastUpdated": "2026-03-26T08:26:29.311Z",
 	"screener": {
-		"engine": "fEVG",
+		"engine": "fCFG",
 		"score": 1.15,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",

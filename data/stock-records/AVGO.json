@@ -46,7 +46,7 @@
 	},
 	"lastUpdated": "2026-03-26T08:26:13.725Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 0.56,
 		"signal": "PASS",
 		"inputs": {

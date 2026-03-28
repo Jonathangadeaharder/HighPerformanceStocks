@@ -2,7 +2,7 @@
 	"ticker": "DHR",
 	"name": "Danaher Corporation",
 	"group": "Serial Acquirers",
-	"cyclical": true,
+	"cyclical": false,
 	"confidence": "low",
 	"confidenceReason": "Historically elite compounder (450%+ total return over 10 years). Currently in a trough: ROIC depressed at ~6.8%, mid-single-digit growth. Integrating $9.9B Abcam acquisition. Could be a re-entry point for patient investors.",
 	"marketCap": "$132.3B USD",
@@ -36,7 +36,7 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 5.03,
-		"epsGrowth": "14%",
+		"epsGrowth": "18%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "19%",
@@ -49,9 +49,9 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.29,
-		"signal": "FAIL",
+		"signal": "PASS",
 		"inputs": {
-			"growth": 14,
+			"growth": 18,
 			"multipleType": "EV/EBITDA",
 			"multiple": 18.8,
 			"cvStock": 0.012,

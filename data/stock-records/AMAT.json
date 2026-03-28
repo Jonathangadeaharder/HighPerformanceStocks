@@ -6,7 +6,7 @@
 	"confidence": "high",
 	"confidenceReason": "Broadest portfolio in semiconductor manufacturing equipment. AGS services segment (~$6B) provides revenue resilience through WFE downturns. Advanced packaging (CoWoS, HBM) creates new growth vectors independent of leading-edge capex.",
 	"cagrModel": {
-		"epsGrowth": "25%",
+		"epsGrowth": "12%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 9.75,
 		"dividendYield": "1%",
@@ -45,8 +45,8 @@
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 25,
-			"multipleType": "Forward P/E",
-			"multiple": 26.7,
+			"multipleType": "Normalized P/E",
+			"multiple": 15,
 			"cvStock": 0.099,
 			"riskMultiplier": 1.011
 		},

@@ -38,18 +38,18 @@
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-26T08:26:14.638Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
-		"engine": "tPERG",
-		"score": 1.48,
+		"engine": "fPERG",
+		"score": 2.19,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 15.3,
+			"multipleType": "Forward P/E (Operating Earnings)",
+			"multiple": 21.9,
 			"cvStock": 0.02,
 			"riskMultiplier": 0.964
 		},
@@ -74,7 +74,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Engine corrected tPERG → fPERG (Operating Earnings basis). GAAP tPE captures volatile mark-to-market investment swings. Operating forwardPE 21.9x / 10% growth = 2.19 — correctly fails 15% hurdle. QCS -6.07 driven by GAAP noise, not structural deterioration."
 	},
 	"qcs": {
 		"earningsScore": -1.07,

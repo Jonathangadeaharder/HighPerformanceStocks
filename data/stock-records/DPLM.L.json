@@ -34,7 +34,7 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 1.38,
-		"epsGrowth": "16%",
+		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-13%",
@@ -49,7 +49,7 @@
 		"score": 1.46,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 16,
+			"growth": 14,
 			"multipleType": "EV/EBITDA",
 			"multiple": 23.7,
 			"cvStock": 0.057,

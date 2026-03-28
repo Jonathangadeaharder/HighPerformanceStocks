@@ -41,17 +41,18 @@
 			"base": "47%",
 			"bull": "99%"
 		},
-		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
+		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis",
+		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-26T08:26:13.741Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
-		"engine": "tPERG",
-		"score": 1.23,
-		"signal": "FAIL",
+		"engine": "fPERG",
+		"score": 1.28,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 13,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 14.4,
+			"multipleType": "Forward P/E",
+			"multiple": 16.7,
 			"cvStock": 0.192,
 			"riskMultiplier": 1.111
 		},
@@ -76,7 +77,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Engine corrected tPERG → fPERG (forwardPE 16.7 available). Signal hardened to REJECTED: consensus actively collapsing (20 down vs 1 up, QCS -7.09, -35% earnings miss)."
 	},
 	"intrinsicValue": {
 		"dcf": 239.73,

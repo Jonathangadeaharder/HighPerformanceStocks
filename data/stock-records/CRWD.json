@@ -47,6 +47,7 @@
 		"engine": "fPERG",
 		"score": 2.02,
 		"signal": "FAIL",
+		"note": "CORRECTLY AGGRESSIVE. 62.5x forward PE with zero margin of safety. 27% Base CAGR requires absolute multiple stability. -5% bear CAGR undersells catastrophic compression risk at $97B market cap. Absolute REJECT maintained.",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "Forward P/E",

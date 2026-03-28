@@ -8,7 +8,7 @@
 	"bullCase": "Interactive Brokers serves sophisticated traders with the lowest margin rates and most global market access. Client account growth of 20%+ annually drives structural NNA (net new assets). As a technology-first broker, IBKR has near-zero marginal cost per additional client. Margin interest income at elevated rates provides exceptional NII.",
 	"bearCase": "IBKR's NII — nearly 50% of revenues — compresses sharply when rates fall. Its holding company structure (Thomas Peterffy controls ~75% via IBG LLC) means public shareholders capture only 25% economics. Market volume slowdowns directly reduce commission revenue.",
 	"cagrModel": {
-		"epsGrowth": "15%",
+		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS; minority interest structure: public share represents ~25% economic interest in IBG LLC",
 		"ttmEPS": 2.22,
 		"dividendYield": "0%",
@@ -37,7 +37,7 @@
 		"score": 1.64,
 		"signal": "FAIL",
 		"inputs": {
-			"growth": 15,
+			"growth": 10,
 			"multipleType": "Forward P/E",
 			"multiple": 25.1,
 			"cvStock": 0.042,

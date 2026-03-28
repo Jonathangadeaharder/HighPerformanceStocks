@@ -9,7 +9,7 @@
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",
 	"cagrModel": {
 		"epsGrowth": "15%",
-		"basis": "GAAP diluted EPS",
+		"basis": "EV/EBITDA exit multiple",
 		"dividendYield": "0%",
 		"ttmEPS": 0.98,
 		"scenarios": {

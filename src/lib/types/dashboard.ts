@@ -1,6 +1,8 @@
 export type ScenarioKey = 'bear' | 'base' | 'bull';
-export type DeploymentStatus = 'DEPLOY' | 'WAIT' | 'REJECT' | 'FAIL' | 'OVERPRICED' | 'NO_DATA';
-export type ScreenerSignal = 'PASS' | 'WAIT' | 'REJECTED' | 'FAIL' | 'NO_DATA';
+export type DeploymentStatus = 'DEPLOY' | 'WAIT' | 'REJECT' | 'FAIL' | 'OVERPRICED' | 'NO_DATA' | 'FLAG FOR MANUAL REVIEW';
+// Screener signals: DEPLOY is a manual override stronger than PASS, triggered by QCS/value-floor rules.
+// PASS = quantitative screens pass; DEPLOY = PASS + mandatory deployment override (QCS ≥ 8 + bear CAGR ≥ 20%).
+export type ScreenerSignal = 'DEPLOY' | 'FLAG FOR MANUAL REVIEW' | 'PASS' | 'WAIT' | 'REJECTED' | 'FAIL' | 'NO_DATA';
 export type VolTone = 'buy' | 'hold' | 'sell';
 
 export interface VolComponent {

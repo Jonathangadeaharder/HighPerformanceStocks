@@ -2,7 +2,7 @@
 	"ticker": "MELI",
 	"name": "MercadoLibre",
 	"group": "Emerging Markets",
-	"confidence": "high",
+	"confidence": "cut",
 	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
 	"marketCap": "$83.1B USD",
 	"sharpeRatio": 1.69,
@@ -36,14 +36,14 @@
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-03-26T08:26:24.496Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "$2595.85"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.09,
-		"signal": "WAIT",
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
@@ -71,7 +71,8 @@
 				"surprise": -3.6,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "Signal hardened to REJECTED: consensus actively collapsing (down30d=11 ≥ 2×up30d=1 AND down30d ≥ 5). QCS -9.4 (worst in this batch). Trusting 58% Base CAGR against 11 downward revisions is mathematically incoherent. Engine fPERG is correct."
 	},
 	"qcs": {
 		"earningsScore": -0.58,

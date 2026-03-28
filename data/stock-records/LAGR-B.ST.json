@@ -36,13 +36,13 @@
 	"targetPrice": "250 SEK",
 	"expectedCAGR": "14% - 41%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 2.35,
+		"engine": "fEVG",
+		"score": 1.53,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 36.1,
+			"multipleType": "EV/EBITDA",
+			"multiple": 23,
 			"cvStock": 0.038,
 			"riskMultiplier": 0.975
 		},
@@ -66,9 +66,10 @@
 				"surprise": 3.3,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). fEVG score: 23.0 / 15 = 1.53 — violently fails strict ≤ 0.60 threshold. FAIL signal preserved: correctly protects capital from paying 23x EV/EBITDA for 15% growth. Mean-reversion from stretched multiples is the primary structural risk."
 	},
-	"lastUpdated": "2026-03-26T08:26:22.324Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"expectedVolatility": "~34%",
 	"sharpeRatio": 0.68,
 	"qcs": {

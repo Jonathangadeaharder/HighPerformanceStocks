@@ -10,7 +10,7 @@
 	"expectedVolatility": "~53%",
 	"valuation": {
 		"trailingPE": 38.6,
-		"forwardPE": 19.6,
+		"forwardPE": 32.7,
 		"pegRatio": 2.1,
 		"evEbitda": 27.6,
 		"evFcf": 48.5
@@ -46,12 +46,12 @@
 	"lastUpdated": "2026-03-26T08:26:18.435Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.09,
-		"signal": "WAIT",
+		"score": 1.81,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 19.6,
+			"multiple": 32.7,
 			"cvStock": 0.089,
 			"riskMultiplier": 1.005
 		},

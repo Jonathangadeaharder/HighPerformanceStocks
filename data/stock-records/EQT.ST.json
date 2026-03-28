@@ -49,7 +49,7 @@
 	"screener": {
 		"engine": "fFREG",
 		"score": 1.04,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/FRE",

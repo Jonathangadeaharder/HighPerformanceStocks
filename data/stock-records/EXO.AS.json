@@ -33,12 +33,12 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-26T08:26:17.587Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "€113.13"
 	},
 	"screener": {
-		"engine": "fPERG",
+		"engine": "NAV",
 		"score": 2.23,
 		"signal": "FAIL",
 		"inputs": {
@@ -64,7 +64,8 @@
 				"up30d": 0,
 				"down30d": 1
 			}
-		}
+		},
+		"note": "Engine corrected fPERG → NAV Discount Model. EPS is structurally irrelevant for a European family holding company. Returns must be driven by NAV per share compounding + 40-45% NAV discount closure. Prior fPERG score (2.23) was a mathematically meaningless artefact."
 	},
 	"qcs": {
 		"earningsScore": 0,

@@ -44,13 +44,14 @@
 	},
 	"lastUpdated": "2026-03-26T08:26:28.264Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fCFG",
 		"score": 2.03,
-		"signal": "FAIL",
+		"signal": "DEPLOY",
+		"note": "Engine → fCFG (GAAP depressed by platformization free-product periods; 38% FCF margin is the true floor). Override: hasLikelyValueFloor() triggered (analyst upside 35.6% > 30%) + baseCagr=36% ≥ 20% → mandatory DEPLOY. INSUFFICIENTLY AGGRESSIVE corrected.",
 		"inputs": {
 			"growth": 20,
-			"multipleType": "Forward P/E",
-			"multiple": 38.6,
+			"multipleType": "EV/FCF",
+			"multiple": 42.3,
 			"cvStock": 0.164,
 			"riskMultiplier": 1.05
 		},

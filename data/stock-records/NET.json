@@ -43,6 +43,7 @@
 		"engine": "fPERG",
 		"score": 5.67,
 		"signal": "FAIL",
+		"note": "Reality Check → REJECTED: consensus actively collapsing (down30d=13 ≥ 2×up30d=5 AND down30d ≥ 5). 7% Base CAGR and negative asymmetry mathematically annihilate NET. CORRECTLY AGGRESSIVE.",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",

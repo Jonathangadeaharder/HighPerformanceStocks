@@ -2,7 +2,7 @@
 	"ticker": "NVO",
 	"name": "Novo Nordisk",
 	"group": "Large-Cap Pharma",
-	"confidence": "high",
+	"confidence": "low",
 	"confidenceReason": "Leading GLP-1 manufacturer with Ozempic/Wegovy infrastructure advantage, though LLY is now a genuine competitor. Thesis rests on manufacturing scale, oral semaglutide, and CagriSema combination pipeline.",
 	"bullCase": "Novo Nordisk retains the world's most powerful GLP-1 commercial infrastructure — Ozempic and Wegovy have 70%+ market share in established markets. Oral semaglutide (Rybelsus and oral once-weekly formulations) open a new 10x larger addressable market. Manufacturing capacity expansion through 2027 will restore supply constraints. The CagriSema combination, despite a Phase 3 miss vs. expectations, still showed 22.7% weight loss — superior to any non-GLP-1 obesity drug.",
 	"bearCase": "Increasing competition from Eli Lilly's Zepbound and emerging oral challengers. Potential for Medicare pricing negotiations and political pressure on obesity drug pricing in the US.",
@@ -40,7 +40,7 @@
 	"expectedVolatility": "~56%",
 	"sharpeRatio": 0.77,
 	"screener": {
-		"engine": "totalReturn",
+		"engine": "fPERG",
 		"score": 0.67,
 		"signal": "REJECTED",
 		"inputs": {

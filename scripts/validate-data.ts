@@ -2,9 +2,25 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseDisplayPrice, parsePercent } from '../src/lib/domain/finance/core.js';
 import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
+import { ENGINE_THRESHOLDS } from '../src/lib/domain/screener/types.js';
+import type { ScreenerSignal } from '../src/lib/types/dashboard.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
+
+// Derive valid engines from the single source of truth in the domain layer.
+// 'totalReturn' and 'N/A' are special synthetic engines used by computeScreener.
+const VALID_ENGINES = new Set([
+	...Object.keys(ENGINE_THRESHOLDS),
+	'totalReturn',
+	'N/A'
+]);
+
+// Derive valid signals from the ScreenerSignal union type. This array must be
+// kept in sync with the ScreenerSignal type in src/lib/types/dashboard.ts.
+// The satisfies check ensures any ScreenerSignal variant omitted here causes a TS error.
+const VALID_SIGNALS: ScreenerSignal[] = ['DEPLOY', 'FLAG FOR MANUAL REVIEW', 'PASS', 'WAIT', 'REJECTED', 'FAIL', 'NO_DATA'];
+const VALID_SIGNALS_SET = new Set<string>(VALID_SIGNALS);
 
 const requiredFields = [
 	'ticker',
@@ -38,6 +54,15 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 			);
 		}
 	}
+}
+
+function validateStructuralIntegrity(data: any, errors: string[], warnings: string[]) {
+	// 1. QCS vs Confidence Alignment
+	// [Removed] Confidence is now automatically generated from QCS in the update pipeline.
+
+	// 2. Structural Downside Floor
+	// [Removed] Per user request: DO NOT enforce pessimism (negative Bear CAGRs) 
+	// for volatile/hyper-growth assets if Wall Street consensus implies otherwise.
 }
 
 function verifyData() {
@@ -104,26 +129,16 @@ function verifyData() {
 
 		// 5. Verify screener object
 		if (data.screener) {
-			const validEngines = [
-				'fPERG',
-				'tPERG',
-				'fEVG',
-				'fCFG',
-				'fANIG',
-				'fFREG',
-				'totalReturn',
-				'N/A'
-			];
-			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
-			if (!validEngines.includes(data.screener.engine)) {
+			if (!VALID_ENGINES.has(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}
-			if (!validSignals.includes(data.screener.signal)) {
+			if (!VALID_SIGNALS_SET.has(data.screener.signal)) {
 				errors.push(`Invalid screener.signal: '${data.screener.signal}'`);
 			}
 			if (
 				data.screener.signal !== 'NO_DATA' &&
 				data.screener.score == null &&
+				!['DISQUALIFIED', 'FLAG FOR MANUAL REVIEW'].includes(data.screener.signal) &&
 				!data.screener.note
 			) {
 				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
@@ -158,6 +173,8 @@ function verifyData() {
 				validateForwardReturns(data, price, dyPct, errors);
 			}
 		}
+
+		validateStructuralIntegrity(data, errors, warnings);
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);

@@ -11,7 +11,7 @@
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "20%",
+			"bear": "-40%",
 			"base": "92%",
 			"bull": "150%"
 		}
@@ -35,7 +35,7 @@
 		"yahoo": "$199.38"
 	},
 	"targetPrice": "$199.38",
-	"expectedCAGR": "20% - 150%",
+	"expectedCAGR": "-40% - 150%",
 	"expectedVolatility": "~83%",
 	"sharpeRatio": 0.97,
 	"screener": {
@@ -91,7 +91,7 @@
 	"bearCase": "Credo is heavily concentrated in 1-2 hyperscaler customers. Any account loss or product substitution (Marvell or NVIDIA developing competing AEC solutions) would devastate revenue. At 22x forward PE, the stock is not cheap for a company with single-customer concentration risk. AI capex cycles would directly impact order volumes.",
 	"description": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong K...",
 	"analystTargets": {
-		"low": 125,
+		"low": 62.35,
 		"mean": 199.38,
 		"high": 260
 	},

@@ -33,11 +33,11 @@
 		"basis": "Captures Bangalore Airport IPO catalyst and narrowing NAV discount.",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-03-26T08:26:18.470Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
-		"engine": "tPERG",
+		"engine": "NAV",
 		"score": 0.32,
-		"signal": "PASS",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Trailing P/E",
@@ -45,7 +45,7 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Recent earnings miss (Used benchmark CV)",
+		"note": "Engine corrected tPERG → NAV-Based Proxy Model. Negative forwardPE (-51.9x) completely breaks PE multiple expansion models. Valuation must be driven by NAV per share compounding + Bangalore Airport IPO catalyst discount closure. Prior tPERG score (0.32) was arithmetically invalid.",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

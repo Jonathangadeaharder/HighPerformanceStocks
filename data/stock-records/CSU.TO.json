@@ -46,7 +46,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.11,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/FCF",

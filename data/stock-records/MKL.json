@@ -34,23 +34,21 @@
 		},
 		"epsGrowth": "8%",
 		"dividendYield": "0%",
-		"basis": "Estimated compounder baseline NOTE: screener engine should be fPERG/tPERG as dividend yield is 0%; totalReturn routing appears to be a data pipeline error — re-run update-data to recalculate.",
+		"basis": "Estimated compounder baseline; normalized operating EPS.",
 		"ttmEPS": 169.22
 	},
-	"lastUpdated": "2026-03-26T08:26:25.288Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "$2085.40"
 	},
 	"screener": {
-		"engine": "totalReturn",
-		"score": 1.5,
+		"engine": "fPERG",
+		"score": 1.88,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 8,
-			"dividendYield": 0,
-			"debtToEquity": 26,
-			"debtPenalty": false,
-			"rawReturn": 8
+			"multipleType": "Forward P/E",
+			"multiple": 15
 		},
 		"realityChecks": {
 			"stabilization": {
@@ -72,7 +70,8 @@
 				"surprise": 45.4,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "Engine corrected totalReturn → fPERG. Data pipeline error: 0% dividend yield was incorrectly routing to totalReturn engine. fPERG score: 15.0 / 8 = 1.88 — FAIL correctly reflects 10% Base CAGR failing the 15% hurdle. QCS 6.0 and +45.4% earnings surprise are noted but do not override a sub-15% structural CAGR."
 	},
 	"qcs": {
 		"earningsScore": 5,

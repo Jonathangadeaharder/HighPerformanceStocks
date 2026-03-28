@@ -38,9 +38,9 @@
 		},
 		"basis": "GAAP diluted EPS (ADR); post 2:1 split Sep 2025"
 	},
-	"lastUpdated": "2026-03-26T08:26:19.408Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "P/B",
 		"score": 1.42,
 		"signal": "FAIL",
 		"inputs": {
@@ -70,7 +70,8 @@
 				"surprise": 1.6,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"note": "Engine corrected fPERG → Price/Book Proxy. EM banks compounding equity at 15% structurally fail PEG ≤ 1.0 tests — the model is wrong for banking. Base CAGR of 64% is a mathematical hallucination: ADR post-split (Sep 2025) price vs stale pre-split analyst targets. Requires recalculation against post-split adjusted consensus estimates."
 	},
 	"qcs": {
 		"earningsScore": 5,

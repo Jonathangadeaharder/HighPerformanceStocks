@@ -36,17 +36,17 @@
 	"targetPrice": "260 SEK",
 	"expectedCAGR": "14% - 57%",
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.51,
+		"engine": "fEVG",
+		"score": 1.13,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 23,
+			"multipleType": "EV/EBITDA",
+			"multiple": 16.9,
 			"cvStock": 0.051,
 			"riskMultiplier": 0.983
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). GAAP EPS is suppressed by non-cash M&A amortisation — EV/EBITDA reveals true cash generation. fEVG score: 16.9 / 15 = 1.13. Signal remains REJECTED: consensus actively collapsing (4 down, -14.7% earnings miss; analyst lag).",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -69,7 +69,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-03-26T08:26:20.451Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"expectedVolatility": "~30%",
 	"sharpeRatio": 1.03,
 	"qcs": {

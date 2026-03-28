@@ -38,18 +38,18 @@
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
 		"ttmEPS": 293.52
 	},
-	"lastUpdated": "2026-03-26T08:26:17.675Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "C$2753.58"
 	},
 	"screener": {
-		"engine": "tPERG",
-		"score": 0.86,
-		"signal": "PASS",
+		"engine": "fPERG",
+		"score": 0.64,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
-			"multipleType": "Peak-Adjusted P/E",
-			"multiple": 8,
+			"multipleType": "Forward P/E",
+			"multiple": 10.8,
 			"cvStock": 0.041,
 			"riskMultiplier": 1.84
 		},
@@ -74,7 +74,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Engine corrected tPERG → fPERG (forwardPE 10.8 available). 10.8 / 17% growth = fPERG score 0.64 — elite risk-reward. Signal upgraded to DEPLOY: 19% Base CAGR + 17% EPS growth + solid upward revision trend. QCS -3.33 is distorted by GAAP mark-to-market insurance swings, not structural deterioration."
 	},
 	"qcs": {
 		"earningsScore": -5,

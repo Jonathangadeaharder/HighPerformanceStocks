@@ -33,9 +33,9 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 6.95,
-		"epsGrowth": "15%",
+		"epsGrowth": "10%",
 		"dividendYield": "0%",
-		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
+		"basis": "Price-to-FCF"
 	},
 	"lastUpdated": "2026-03-26T08:26:31.177Z",
 	"screener": {

@@ -48,7 +48,8 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.57,
-		"signal": "FAIL",
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "Forward P/E",

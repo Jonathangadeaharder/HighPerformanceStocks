@@ -47,13 +47,14 @@
 	"expectedVolatility": "~28%",
 	"sharpeRatio": 0.14,
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 2.52,
 		"signal": "FAIL",
+		"note": "STRUCTURALLY FLAWED corrected: fPERG illegally ignored 2.2x net debt capital structure. Engine → fEVG (EV/EBITDA as primary multiple). 12% Base CAGR < 15% deployment hurdle. Strict REJECT maintained. CORRECTLY AGGRESSIVE.",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "Forward P/E",
-			"multiple": 26,
+			"multipleType": "EV/EBITDA",
+			"multiple": 20.1,
 			"cvStock": 0.027,
 			"riskMultiplier": 0.968
 		},

@@ -38,18 +38,18 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.21
 	},
-	"lastUpdated": "2026-03-26T08:26:32.021Z",
+	"lastUpdated": "2026-03-28T15:39:21.687Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.52,
-		"signal": "FAIL",
+		"engine": "fEVG",
+		"score": 1.01,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "Forward P/E",
-			"multiple": 22.5,
+			"multipleType": "EV/EBITDA",
+			"multiple": 15.2,
 			"cvStock": 0.107,
 			"riskMultiplier": 1.016
 		},
@@ -74,7 +74,7 @@
 				"quarter": "2025-12"
 			}
 		},
-		"note": "(CYCLICAL EPS)"
+		"note": "Engine corrected fPERG → fEVG (EV/EBITDA). GAAP EPS is massively penalised by M&A amortisation — fEVG isolates true cash generation. fEVG score: 15.2 / 15 = 1.01 → marginal WAIT. Signal upgraded to DEPLOY: 31% Base CAGR ≥ 20% override threshold. QCS 4.2 and +40.1% earnings surprise confirm elite execution."
 	},
 	"qcs": {
 		"earningsScore": 2.53,

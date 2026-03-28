@@ -39,7 +39,7 @@
 	"targetPrice": "$280.00",
 	"expectedCAGR": "-11% - 30%",
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fEVG",
 		"score": 2.84,
 		"signal": "FAIL",
 		"inputs": {

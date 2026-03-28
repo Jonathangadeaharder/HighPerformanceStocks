@@ -10,7 +10,7 @@
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "35%",
+		"epsGrowth": "15%",
 		"ttmEPS": 3.79,
 		"dividendYield": "0%",
 		"scenarios": {
@@ -51,7 +51,7 @@
 		"score": 1.04,
 		"signal": "REJECTED",
 		"inputs": {
-			"growth": 35,
+			"growth": 15,
 			"multipleType": "Forward P/E",
 			"multiple": 30.8,
 			"cvStock": 0.244,

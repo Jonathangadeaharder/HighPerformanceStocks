@@ -34,14 +34,14 @@
 	},
 	"cagrModel": {
 		"ttmEPS": 24.12,
-		"epsGrowth": "4%",
+		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
 			"bear": "-17%",
 			"base": "2%",
 			"bull": "19%"
 		},
-		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
+		"basis": "EV/EBITDA exit multiple"
 	},
 	"lastUpdated": "2026-03-26T08:26:23.276Z",
 	"screener": {
