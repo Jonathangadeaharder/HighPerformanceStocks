@@ -2,7 +2,6 @@
 	"ticker": "AVAV",
 	"name": "AeroVironment, Inc.",
 	"group": "Industrial Monopolies",
-	"cyclical": false,
 	"confidence": "cut",
 	"bullCase": "AeroVironment expands market share in drone defense as autonomous systems become critical to modern military strategy.",
 	"bearCase": "Defense spending cuts or increased competition in the UAS market could squeeze margins and slow revenue growth.",

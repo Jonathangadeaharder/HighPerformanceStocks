@@ -2,7 +2,6 @@
 	"ticker": "SE",
 	"name": "Sea Limited",
 	"group": "Emerging Markets",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "Dominant position in Southeast Asia e-commerce and gaming, re-accelerating profitable growth.",
 	"targetPrice": "$140.71",

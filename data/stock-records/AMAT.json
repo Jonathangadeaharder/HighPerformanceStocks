@@ -2,7 +2,6 @@
 	"ticker": "AMAT",
 	"name": "Applied Materials",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "Broadest portfolio in semiconductor manufacturing equipment. AGS services segment (~$6B) provides revenue resilience through WFE downturns. Advanced packaging (CoWoS, HBM) creates new growth vectors independent of leading-edge capex.",
 	"cagrModel": {

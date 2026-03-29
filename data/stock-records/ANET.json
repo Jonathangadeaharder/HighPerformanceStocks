@@ -2,7 +2,6 @@
 	"ticker": "ANET",
 	"name": "Arista Networks",
 	"group": "Network Infrastructure",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
 	"marketCap": "$152.1B USD",

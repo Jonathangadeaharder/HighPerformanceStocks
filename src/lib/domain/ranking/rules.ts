@@ -13,8 +13,6 @@ export const VALUE_FLOOR_MAX_SCORE = 0.65;
  * while the price is near a 3-month low.
  */
 export function hasLikelyValueFloor(stock: FindingStock): boolean {
-	if (stock.cyclical) return false;
-
 	const stabilization = stock.screener?.realityChecks?.stabilization;
 	const revisions = stock.screener?.realityChecks?.revisions;
 
@@ -157,9 +155,5 @@ export function assignDeployment(stock: FindingStock): void {
 				reason: `Unknown signal: ${String(_exhaustiveCheck)}`
 			};
 		}
-	}
-
-	if (stock.cyclical && stock.deployment.status !== 'NO_DATA') {
-		stock.deployment.reason += ' (CYCLICAL EPS)';
 	}
 }

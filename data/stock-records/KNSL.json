@@ -2,7 +2,6 @@
 	"ticker": "KNSL",
 	"name": "Kinsale Capital",
 	"group": "Insurance Compounders",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "E&S insurer using proprietary tech to dominate niche. EPS compounds at 20–30% a year.",
 	"bullCase": "Kinsale dominates E&S insurance through technology-driven underwriting that prices and binds risks faster than incumbents. ROE of 29% and combined ratio consistently below 85% give it a structural cost advantage. In a hard market, Kinsale's premium growth accelerates above 20%.",

@@ -2,7 +2,6 @@
 	"ticker": "LNG",
 	"name": "Cheniere Energy",
 	"group": "Energy",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
 	"marketCap": "$63.9B USD",

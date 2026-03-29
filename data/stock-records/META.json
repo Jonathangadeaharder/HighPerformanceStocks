@@ -2,7 +2,6 @@
 	"ticker": "META",
 	"name": "Meta Platforms",
 	"group": "Data & Software Monopolies",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
 	"marketCap": "$1329.8B USD",

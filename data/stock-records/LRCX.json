@@ -2,7 +2,6 @@
 	"ticker": "LRCX",
 	"name": "Lam Research",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Oligopoly in etch and deposition equipment (alongside AMAT and KLA). Memory capex recovery from the deepest trough in a decade is the primary catalyst. High-margin services book provides earnings floor.",
 	"cagrModel": {

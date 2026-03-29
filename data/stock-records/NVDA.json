@@ -2,7 +2,6 @@
 	"ticker": "NVDA",
 	"name": "NVIDIA",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
 	"marketCap": "$4071.6B USD",
@@ -47,19 +46,19 @@
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-28T23:03:02.980Z",
+	"lastUpdated": "2026-03-29T09:53:57.732Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.05,
+		"engine": "fPERG",
+		"score": 0.92,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 29,
-			"multipleType": "EV/EBITDA",
-			"multiple": 30.2,
+			"multipleType": "Forward P/E",
+			"multiple": 26.4,
 			"cvStock": 0.127,
 			"riskMultiplier": 1.011
 		},
-		"note": "DEPLOY override: base CAGR 60% ≥ 20% and stabilized (CYCLICAL EPS)",
+		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~26.4x (DEPLOY override: base CAGR 60% ≥ 15% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -80,13 +79,11 @@
 				"surprise": 5.3,
 				"quarter": "2026-01"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.53
+		}
 	},
 	"intrinsicValue": {
 		"dcf": 229.76,
-		"date": "2026-03-28",
+		"date": "2026-03-29",
 		"discount": 37
 	},
 	"qcs": {
@@ -96,7 +93,7 @@
 		"totalScore": 5.16,
 		"raw": {
 			"avgSurprisePct": 5.22,
-			"netInsiderShares": 56959933,
+			"netInsiderShares": 57184933,
 			"instFlowTrend": "negative",
 			"upRevisions": 38,
 			"downRevisions": 5,
@@ -118,5 +115,27 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$275.96",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 4.96,
+			"low": 4.4,
+			"average": 4.69
+		},
+		"2027": {
+			"high": 9.68,
+			"low": 5.4,
+			"average": 8.15
+		},
+		"2028": {
+			"high": 13.88,
+			"low": 6.3,
+			"average": 10.77
+		},
+		"2029": {
+			"high": 15.8,
+			"low": 7.3,
+			"average": 12.77
+		}
+	}
 }

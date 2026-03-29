@@ -2,7 +2,6 @@
 	"ticker": "HOOD",
 	"name": "Robinhood Markets, Inc.",
 	"group": "Financials & Alt Assets",
-	"cyclical": true,
 	"confidence": "low",
 	"bullCase": "Robinhood successfully captures a broader retail market, expands its financial services ecosystem, and drives recurring revenue.",
 	"bearCase": "Retail engagement drops significantly or payment for order flow is heavily restricted by regulators.",

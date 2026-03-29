@@ -2,7 +2,6 @@
 	"ticker": "NU",
 	"name": "Nu Holdings",
 	"group": "Financials & Alt Assets",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Elite ROE (25-33%), PEG ~0.6 screams value. But LatAm currency risk and potential NPL spike could decimate equity tranche.",
 	"marketCap": "$66.0B USD",

@@ -15,7 +15,6 @@ const TOTAL_RETURN_THRESHOLD = 12;
 const STABILIZATION_LOW_BUFFER = 1.05;
 const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
-const CYCLICAL_NOTE = '(CYCLICAL EPS)';
 
 // --- Component 1: Hyper-Growth Exponential Decay ---
 // Replaces the linear cap with a bounded exponential fade.
@@ -168,19 +167,13 @@ function computeGrowthScore(
 	multipleType: string,
 	multiple: number,
 	growthPct: number,
-	cvStock: number,
-	isCyclical = false
+	cvStock: number
 ): ScreenerResult {
 	// Component 1: Exponential fade for hyper-growth
 	const effectiveGrowth = computeEffectiveGrowth(growthPct);
 
 	// Component 2: Convex dispersion penalty
-	let riskMultiplier = computeDispersionMultiplier(cvStock);
-
-	// Deep Cyclical constraint (retained as separate multiplicative layer)
-	if (isCyclical && multiple > 0 && multiple < 15) {
-		riskMultiplier *= 15 / multiple;
-	}
+	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
@@ -274,7 +267,6 @@ export function detectGrowthBranch(
 		stock.group === 'Robotics' ||
 		stock.group === 'Industrial Monopolies' ||
 		stock.group === 'Materials & Infrastructure' ||
-		stock.cyclical ||
 		group.includes('industrial') ||
 		group.includes('material') ||
 		lowerBasis.includes('serial acquirer') ||
@@ -398,7 +390,6 @@ export function detectGrowthBranch(
 	}
 
 	if (
-		stock.cyclical &&
 		priceToBasis != null &&
 		valuation.forwardPE != null &&
 		priceToBasis > 0 &&
@@ -695,14 +686,6 @@ function applyDeployRejectOverrides(
 	stock: ScreenerStock,
 	baseCagr: number | null
 ): void {
-	// Existential Liquidity Risk (TDG)
-	const netDebtStr = stock.metrics?.netDebtEbitda ?? '';
-	const netDebt = parseNumber(netDebtStr) ?? 0;
-	if (stock.cyclical && netDebt > 5) {
-		result.signal = 'REJECTED';
-		appendNote(result, `Existential liquidity risk: ${netDebt}x leverage on cyclical asset`);
-	}
-
 	// Mandatory DEPLOY override & Rejection Floors:
 	if (baseCagr == null || result.signal === 'REJECTED') return;
 
@@ -774,8 +757,7 @@ function evaluateHyperGrowth(
 		branch.multipleType,
 		actualMultiple,
 		growthPct,
-		cvStock,
-		stock.cyclical
+		cvStock
 	);
 
 	if (hallucinationNote) {
@@ -810,8 +792,7 @@ function evaluateHyperGrowth(
 				FORWARD_PE_LABEL,
 				fpe,
 				growthPct,
-				cvStock,
-				stock.cyclical
+				cvStock
 			);
 			result.secondaryEngine = 'fPERG';
 			result.secondaryScore = fPERGCheck.score;
@@ -820,10 +801,6 @@ function evaluateHyperGrowth(
 
 	if (!dispersion) {
 		appendNote(result, 'Used benchmark CV');
-	}
-
-	if (stock.cyclical) {
-		result.note = result.note ? result.note + ` ${CYCLICAL_NOTE}` : CYCLICAL_NOTE;
 	}
 
 	return result;
@@ -905,10 +882,6 @@ export function computeScreener(
 
 	const debtToEquity = summary?.financialData?.debtToEquity ?? 0;
 	const result = computeTotalReturn(growthPct, divYieldPct, forwardPE, debtToEquity, stock);
-
-	if (stock.cyclical) {
-		result.note = result.note ? result.note + ` ${CYCLICAL_NOTE}` : CYCLICAL_NOTE;
-	}
 
 	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 

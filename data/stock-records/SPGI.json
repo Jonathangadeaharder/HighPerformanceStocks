@@ -2,7 +2,6 @@
 	"ticker": "SPGI",
 	"name": "S&P Global",
 	"group": "Data & Software Monopolies",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
 	"bullCase": "S&P Global's Ratings segment benefits from surging debt issuance volumes at still-elevated rates. Market Intelligence and Mobility segments are growing 10%+ organically on subscription revenue. After absorbing the IHS Markit integration, operating margins are expanding toward 50%+, driving compounding non-GAAP EPS.",

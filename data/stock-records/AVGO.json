@@ -2,7 +2,6 @@
 	"ticker": "AVGO",
 	"name": "Broadcom",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
 	"marketCap": "$1425.6B USD",

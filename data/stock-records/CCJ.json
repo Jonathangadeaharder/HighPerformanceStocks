@@ -80,7 +80,6 @@
 	},
 	"expectedCAGR": "-22% - 51%",
 	"sharpeRatio": 0.19,
-	"cyclical": true,
 	"qcs": {
 		"earningsScore": -4.67,
 		"flowScore": 0,

@@ -2,7 +2,6 @@
 	"ticker": "0700.HK",
 	"name": "Tencent",
 	"group": "Emerging Markets",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "China's most diversified tech platform — WeChat (1.3B MAU), gaming (#1 globally), fintech, cloud, and AI. Non-IFRS EPS growing ~15% with aggressive buybacks. Best risk-reward in China tech.",
 	"marketCap": "HK$4459.0B",

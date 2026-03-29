@@ -2,7 +2,6 @@
 	"ticker": "HEI.A",
 	"name": "HEICO Corp",
 	"group": "Serial Acquirers",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
 	"marketCap": "$33.1B USD",

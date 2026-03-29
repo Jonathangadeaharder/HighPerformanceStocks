@@ -2,7 +2,6 @@
 	"ticker": "KAP.IL",
 	"name": "Kazatomprom",
 	"group": "Energy & Infrastructure",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "World's largest uranium producer but carries geopolitical risk.",
 	"targetPrice": "$95.00",

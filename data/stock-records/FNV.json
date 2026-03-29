@@ -2,7 +2,6 @@
 	"ticker": "FNV",
 	"name": "Franco-Nevada",
 	"group": "Royalties",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$45.1B USD",

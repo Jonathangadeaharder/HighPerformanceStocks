@@ -2,7 +2,6 @@
 	"ticker": "RTX",
 	"name": "RTX Corporation",
 	"group": "Industrial Monopolies",
-	"cyclical": false,
 	"confidence": "medium",
 	"bullCase": "Commercial aerospace rebounds strongly while defense budgets globally swell, driving long-term revenue backlogs.",
 	"bearCase": "Supply chain disruptions or engine manufacturing defects lead to costly recalls and lower margins.",
