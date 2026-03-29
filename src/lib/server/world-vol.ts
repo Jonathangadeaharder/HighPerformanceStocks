@@ -6,7 +6,7 @@ import {
 	WORLD_VOL_WEIGHTS
 } from '$lib/domain/volatility/logic';
 
-const VIX_SYMBOLS = ['^VIX', 'VIX'];
+const VIX_SYMBOL = '^VIX';
 // Yahoo Finance serves ^V2TX with a frozen regularMarketTime (known issue with European indices).
 // We try the quote first, then fall back to chart() which has reliable dates.
 // V2TX.DE is an alias that sometimes returns a fresher timestamp.
@@ -86,7 +86,8 @@ async function tryChartFallback(
 		interval: '1d'
 	});
 	const quotes =
-		'quotes' in chart && Array.isArray((chart as { quotes?: unknown }).quotes)
+		'quotes' in chart &&
+		Array.isArray((chart as { quotes?: unknown }).quotes)
 			? (chart as { quotes: unknown[] }).quotes
 			: [];
 	const bars = quotes
@@ -140,15 +141,7 @@ async function fetchVolIndexQuote(
 
 			// Quote time is fresh — done
 			if (isFreshMarketTime(quoteTime)) {
-				return {
-					label,
-					symbol,
-					weight,
-					value: price,
-					marketTime: quoteTime,
-					fresh: true,
-					reason: null
-				};
+				return { label, symbol, weight, value: price, marketTime: quoteTime, fresh: true, reason: null };
 			}
 
 			// Quote time is stale/missing — try chart() for a reliable last-close date
@@ -211,17 +204,15 @@ async function fetchVolIndexWithFallback(
 		if (result.fresh) return result;
 		best = chooseBetter(result, best);
 	}
-	return (
-		best ?? {
-			label,
-			symbol: fallbackSymbol,
-			weight,
-			value: null,
-			marketTime: null,
-			fresh: false,
-			reason: 'all symbols failed'
-		}
-	);
+	return best ?? {
+		label,
+		symbol: fallbackSymbol,
+		weight,
+		value: null,
+		marketTime: null,
+		fresh: false,
+		reason: 'all symbols failed'
+	};
 }
 
 
@@ -237,86 +228,13 @@ export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
 		if (compositeSignal) return compositeSignal;
 	}
 
-	let finalResult = yfResult;
+	const primaryIssues = [vix, vstoxx]
+		.filter((component) => !component.fresh)
+		.map((component) => `${component.label}: ${component.reason ?? 'unavailable'}`);
 
-	const mwPrice = mwResult?.price ?? null;
-	const mwTime = mwResult?.marketTime ?? null;
-	const mwIsFresh = isFreshMarketTime(mwTime);
-
-	if (yfResult.fresh && mwIsFresh && yfResult.value && mwPrice) {
-		// Both are fresh. Cross-verify price discrepancy (tolerating ~2% intraday/closing differences)
-		const diffPercent = Math.abs(yfResult.value - mwPrice) / yfResult.value;
-		if (diffPercent > 0.05) {
-			console.warn(`🚨 [VOL] ${label} YF/MW mismatch: YF=${yfResult.value}, MW=${mwPrice}`);
-		} else {
-			console.log(
-				`✅ [VOL] ${label} successfully cross-verified. Difference ${diffPercent.toFixed(2)}%`
-			);
-		}
-		// Prefer YF as the standard truth if it's fresh and verified
-	} else if (!yfResult.fresh && mwIsFresh && mwPrice) {
-		// YF failed or is stale (e.g. VSTOXX is chronically stale on YF). Use MW!
-		console.log(
-			`📡 [VOL] ${label} YF is stale/missing. Successfully routing fallback to stealth crawler: ${mwPrice}`
-		);
-		finalResult = {
-			label,
-			symbol: label,
-			weight,
-			value: mwPrice,
-			marketTime: mwTime,
-			fresh: true,
-			reason: null
-		};
-	} else if (!yfResult.fresh && !mwIsFresh) {
-		console.log(`⚠️ [VOL] ${label} both YF and MW are reporting stale data.`);
-	}
-
-	return finalResult;
-}
-export async function fetchWorldVolSignal(): Promise<WorldVolSignal> {
-	if (cachedSignal && Date.now() - cachedSignal.timestamp < CACHE_TTL_MS) {
-		return cachedSignal.signal;
-	}
-
-	const [vix, vstoxx] = await Promise.all([
-		fetchCrossVerifiedVolIndex(VIX_SYMBOLS, 'vix', 'VIX', WORLD_VOL_WEIGHTS.vix),
-		fetchCrossVerifiedVolIndex(
-			VSTOXX_SYMBOLS,
-			'v2tx?countrycode=xx',
-			'VSTOXX',
-			WORLD_VOL_WEIGHTS.vstoxx
-		)
-	]);
-
-	// Ensure we shut the browser down if it was started
-	const { closeBrowser } = await import('./infrastructure/crawlers/browser');
-	await closeBrowser();
-
-	let result: WorldVolSignal;
-	const compositeSignal =
-		vix.fresh || vstoxx.fresh ? buildCompositeWorldVolSignal([vix, vstoxx]) : null;
-
-	if (compositeSignal) {
-		result = compositeSignal;
-	} else if (vix.fresh || vstoxx.fresh) {
-		result = {
-			available: false,
-			source: 'Global developed volatility proxies',
-			reason: 'Failed to build composite signal despite freshness.'
-		};
-	} else {
-		const primaryIssues = [vix, vstoxx]
-			.filter((component) => !component.fresh)
-			.map((component) => `${component.label}: ${component.reason ?? 'unavailable'}`);
-
-		result = {
-			available: false,
-			source: 'Global developed volatility proxies',
-			reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
-		};
-	}
-
-	cachedSignal = { signal: result, timestamp: Date.now() };
-	return result;
+	return {
+		available: false,
+		source: 'Global developed volatility proxies',
+		reason: `Core volatility inputs unavailable (${primaryIssues.join('; ')}).`
+	};
 }

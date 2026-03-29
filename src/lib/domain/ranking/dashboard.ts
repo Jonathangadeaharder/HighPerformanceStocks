@@ -104,8 +104,9 @@ function compareWatchlistStocks(left: FindingStock, right: FindingStock): number
 		FAIL: 1,
 		OVERPRICED: 2,
 		NO_DATA: 3,
-		DEPLOY: 4,
-		WAIT: 5
+		'FLAG FOR MANUAL REVIEW': 4,
+		DEPLOY: 5,
+		WAIT: 6
 	};
 	const deploymentDiff =
 		order[left.deployment?.status ?? 'NO_DATA'] - order[right.deployment?.status ?? 'NO_DATA'];
