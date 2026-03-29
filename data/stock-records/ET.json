@@ -2,7 +2,6 @@
 	"ticker": "ET",
 	"name": "Energy Transfer",
 	"group": "Energy",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "Largest US midstream pipeline network. 7%+ distribution yield with 10%+ EPS growth. Low valuation but high leverage and MLP complexity.",
 	"marketCap": "$67.7B USD",

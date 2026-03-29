@@ -2,7 +2,6 @@
 	"ticker": "FFH.TO",
 	"name": "Fairfax Financial",
 	"group": "The Capital Compounders",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "Consistent 15%+ ROE, massive hidden fair value, and disciplined underwriting.",
 	"marketCap": "C$49.5B",

@@ -134,7 +134,6 @@ export interface ScreenerStock {
 		interestCoverage?: string;
 	};
 	group?: string;
-	cyclical?: boolean;
 	bearCase?: string;
 	qcs?: {
 		totalScore?: number;

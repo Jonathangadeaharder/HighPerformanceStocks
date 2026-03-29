@@ -2,7 +2,6 @@
 	"ticker": "VRT",
 	"name": "Vertiv Holdings",
 	"group": "Industrial Monopolies",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
 	"marketCap": "$96.1B USD",

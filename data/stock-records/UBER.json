@@ -2,7 +2,6 @@
 	"ticker": "UBER",
 	"name": "Uber Technologies",
 	"group": "Marketplace Platforms",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Stabilized business yielding margin expansion and forward EPS growth projections.",
 	"cagrModel": {

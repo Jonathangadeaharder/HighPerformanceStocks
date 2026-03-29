@@ -2,7 +2,6 @@
 	"ticker": "PDD",
 	"name": "PDD Holdings",
 	"group": "Emerging Markets",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
 	"targetPrice": "$142.60",

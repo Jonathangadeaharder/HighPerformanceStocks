@@ -2,7 +2,6 @@
 	"ticker": "HEI",
 	"name": "HEICO Corporation",
 	"group": "Serial Acquirers",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Aerospace serial acquirer with 30+ year compounding track record (16-19% CAGR since 1990). Berkshire Hathaway position. FAA certification moat. Less than 10% of fragmented market = decades of M&A runway.",
 	"marketCap": "$38.1B USD",

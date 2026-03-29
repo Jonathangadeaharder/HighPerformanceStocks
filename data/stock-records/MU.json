@@ -52,7 +52,6 @@
 		"signal": "REJECTED",
 		"note": "Binary-outcome biotech breaking EPS compounding rules."
 	},
-	"cyclical": true,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,

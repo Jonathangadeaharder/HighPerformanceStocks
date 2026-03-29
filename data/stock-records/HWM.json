@@ -2,7 +2,6 @@
 	"ticker": "HWM",
 	"name": "Howmet Aerospace",
 	"group": "Industrial Monopolies",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Heavy IP moats in forged jet engine blades/fasteners. Aerospace super-cycle momentum.",
 	"cagrModel": {

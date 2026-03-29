@@ -2,7 +2,6 @@
 	"ticker": "CRDO",
 	"name": "Credo Technology Group",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "high",
 	"confidenceReason": "High-speed connectivity solutions for data centers, AEC cables taking share in AI networks.",
 	"cagrModel": {

@@ -21,7 +21,23 @@ const FORCE = process.argv.includes('--force');
 const updatedTickers = new Set<string>();
 
 async function main() {
-	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
+	let files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
+	
+	// Support targeted manual updates via CLI args (e.g. npx tsx update-data.ts --force NVDA)
+	const targetTickers = process.argv.filter((arg) => 
+		!arg.startsWith('--') && 
+		!arg.includes('node.exe') && 
+		!arg.includes('node') && 
+		!arg.includes('tsx') && 
+		!arg.endsWith('.ts') &&
+		!arg.endsWith('.js')
+	);
+	
+	if (targetTickers.length > 0) {
+		console.log(`Running targeted update for: ${targetTickers.join(', ')}`);
+		files = files.filter((f) => targetTickers.some(t => f.toUpperCase() === `${t.toUpperCase()}.JSON`));
+	}
+
 	const allStocks = files.map((f) => {
 		const path = resolve(DATA_DIR, f);
 		return { path, stock: JSON.parse(readFileSync(path, 'utf-8')) };
@@ -140,6 +156,29 @@ async function main() {
 				};
 				atomicWriteJson(path, stock);
 			}
+		}
+
+		// MarketWatch Sequential Fetching (Applied to all updated stocks to extract out-year estimates)
+		const tickersForMw = allStocks
+			.filter((s) => updatedTickers.has(s.stock.ticker))
+			.map((s) => s.stock.ticker);
+
+		if (tickersForMw.length > 0) {
+			const { fetchAllMarketWatch } = await import('./lib/marketwatch-client.js');
+			const mwMap = await fetchAllMarketWatch(tickersForMw);
+
+			// Merge MarketWatch estimates back into records
+			let mwHitCount = 0;
+			for (const { stock, path } of allStocks) {
+				if (!tickersForMw.includes(stock.ticker)) continue;
+				const epsData = mwMap[stock.ticker];
+				if (epsData) {
+					stock.forwardEstimates = epsData;
+					atomicWriteJson(path, stock);
+					mwHitCount++;
+				}
+			}
+			console.log(`\n✅ Saved multi-year estimates for ${mwHitCount} stocks.`);
 		}
 	}
 

@@ -2,7 +2,6 @@
 	"ticker": "URI",
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
-	"cyclical": true,
 	"confidence": "cut",
 	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {

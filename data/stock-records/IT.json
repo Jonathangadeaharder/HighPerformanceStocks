@@ -2,7 +2,6 @@
 	"ticker": "IT",
 	"name": "Gartner",
 	"group": "Data & Software Monopolies",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
 	"bullCase": "Gartner's enterprise IT research is the most defensible subscription moat in B2B services — Fortune 500 clients renew at 90%+ rates because Gartner's Magic Quadrant dictates vendor selection. Aggressive buybacks (~6% float reduction annually) compound EPS well above organic growth. After a 36% selloff, the stock trades at an anomalously low 11x forward PE.",

@@ -103,6 +103,15 @@ export interface AnalystTargets {
 	high: number;
 }
 
+export type ForwardEstimates = Record<
+	string,
+	{
+		high: number;
+		low: number;
+		average: number;
+	}
+>;
+
 export interface CagrModel {
 	ttmEPS?: number;
 	epsGrowth?: string;
@@ -181,6 +190,7 @@ export interface FindingStock {
 	bullCase?: string;
 	bearCase?: string;
 	analystTargets?: AnalystTargets;
+	forwardEstimates?: ForwardEstimates;
 	cagrModel?: CagrModel;
 	screener?: ScreenerData;
 	intrinsicValue?: IntrinsicValue;
@@ -192,7 +202,6 @@ export interface FindingStock {
 	qcs?: QuantitativeConviction;
 	sharpeRatio?: number;
 	marketCap?: string;
-	cyclical?: boolean;
 	upside?: number | null;
 	baseCagr?: number | null;
 	bearCagr?: number | null;

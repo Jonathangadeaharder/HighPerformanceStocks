@@ -2,7 +2,6 @@
 	"ticker": "TSM",
 	"name": "TSMC",
 	"group": "AI & Semiconductors",
-	"cyclical": true,
 	"confidence": "low",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
 	"marketCap": "$1694.6B USD",

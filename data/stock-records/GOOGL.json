@@ -2,7 +2,6 @@
 	"ticker": "GOOGL",
 	"name": "Alphabet",
 	"group": "Data & Software Monopolies",
-	"cyclical": true,
 	"confidence": "medium",
 	"confidenceReason": "Google Search retains 90%+ query share despite AI Overviews cannibalizing some clicks. YouTube is growing ad revenue 15%+ annually. Google Cloud is accelerating to 30%+ growth with Gemini AI integration. At 23x forward PE on 12% EPS growth, the stock is reasonably valued for a monopoly-quality business.",
 	"marketCap": "$3318.7B USD",

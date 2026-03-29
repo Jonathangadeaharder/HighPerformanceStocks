@@ -2,7 +2,6 @@
 	"ticker": "TSLA",
 	"name": "Tesla, Inc.",
 	"group": "Data & Software Monopolies",
-	"cyclical": true,
 	"confidence": "cut",
 	"bullCase": "Tesla achieves full autonomy and ramps up energy storage, maintaining extreme dominance in the clean energy sector.",
 	"bearCase": "Increased EV competition, price wars, and leadership distractions cause margin compression and slowing growth.",

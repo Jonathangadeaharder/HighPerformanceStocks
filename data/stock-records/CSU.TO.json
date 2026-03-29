@@ -10,7 +10,7 @@
 	"expectedVolatility": "~39%",
 	"valuation": {
 		"trailingPE": 70.9,
-		"forwardPE": 12.8,
+		"forwardPE": 12.7,
 		"pegRatio": null,
 		"evEbitda": 21.4,
 		"evFcf": 20.2
@@ -45,7 +45,7 @@
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-28T23:02:48.267Z",
+	"lastUpdated": "2026-03-29T09:58:12.683Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.19,

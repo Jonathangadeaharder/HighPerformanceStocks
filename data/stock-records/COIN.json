@@ -2,7 +2,6 @@
 	"ticker": "COIN",
 	"name": "Coinbase Global, Inc.",
 	"group": "Financials & Alt Assets",
-	"cyclical": true,
 	"confidence": "cut",
 	"bullCase": "Crypto adoption goes mainstream, launching Coinbase’s trading volume and institutional custody revenue to new highs.",
 	"bearCase": "Regulatory crackdowns or a prolonged crypto winter could severely hit transaction revenues and user engagement.",
