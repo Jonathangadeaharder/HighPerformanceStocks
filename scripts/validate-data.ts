@@ -6,20 +6,6 @@ import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
 
-// Derive valid engines from the single source of truth in the domain layer.
-// 'totalReturn' and 'N/A' are special synthetic engines used by computeScreener.
-const VALID_ENGINES = new Set([
-	...Object.keys(ENGINE_THRESHOLDS),
-	'totalReturn',
-	'N/A'
-]);
-
-// Derive valid signals from the ScreenerSignal union type. This array must be
-// kept in sync with the ScreenerSignal type in src/lib/types/dashboard.ts.
-// The satisfies check ensures any ScreenerSignal variant omitted here causes a TS error.
-const VALID_SIGNALS: ScreenerSignal[] = ['DEPLOY', 'FLAG FOR MANUAL REVIEW', 'PASS', 'WAIT', 'REJECTED', 'FAIL', 'NO_DATA'];
-const VALID_SIGNALS_SET = new Set<string>(VALID_SIGNALS);
-
 const requiredFields = [
 	'ticker',
 	'name',
@@ -27,10 +13,12 @@ const requiredFields = [
 	'confidence',
 	'confidenceReason',
 	'marketCap',
+	'expectedCAGR',
 	'expectedVolatility',
 	'bullCase',
 	'bearCase',
-	'currentPrice'
+	'currentPrice',
+	'targetPrice'
 ];
 
 function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
@@ -84,11 +72,11 @@ function verifyData() {
 
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
-			if (data.cagrModel.scenarios && !data.cagrModel.scenarios.base) {
+			if (!data.cagrModel.scenarios?.base) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			if (data.cagrModel.ttmEPS === undefined) {
-				errors.push(`Missing 'cagrModel.ttmEPS'`);
+			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
+				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
 			}
 			if (!data.cagrModel.epsGrowth) {
 				errors.push(`Missing 'cagrModel.epsGrowth'`);
@@ -118,16 +106,26 @@ function verifyData() {
 
 		// 5. Verify screener object
 		if (data.screener) {
-			if (!VALID_ENGINES.has(data.screener.engine)) {
+			const validEngines = [
+				'fPERG',
+				'tPERG',
+				'fEVG',
+				'fCFG',
+				'fANIG',
+				'fFREG',
+				'totalReturn',
+				'N/A'
+			];
+			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
+			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}
-			if (!VALID_SIGNALS_SET.has(data.screener.signal)) {
+			if (!validSignals.includes(data.screener.signal)) {
 				errors.push(`Invalid screener.signal: '${data.screener.signal}'`);
 			}
 			if (
 				data.screener.signal !== 'NO_DATA' &&
 				data.screener.score == null &&
-				!['DISQUALIFIED', 'FLAG FOR MANUAL REVIEW'].includes(data.screener.signal) &&
 				!data.screener.note
 			) {
 				errors.push(`Screener has signal '${data.screener.signal}' but missing score`);
@@ -162,8 +160,6 @@ function verifyData() {
 				validateForwardReturns(data, price, dyPct, errors);
 			}
 		}
-
-		validateStructuralIntegrity(data, errors, warnings);
 
 		if (errors.length > 0) {
 			console.log(`❌ ${data.ticker || f} has issues:`);

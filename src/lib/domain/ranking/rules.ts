@@ -142,6 +142,14 @@ export function assignDeployment(stock: FindingStock): void {
 			};
 			break;
 		}
+		case 'DEPLOY':
+		case 'FLAG FOR MANUAL REVIEW': {
+			stock.deployment = {
+				status: signal,
+				reason: stock.screener?.note ?? `Screener hit threshold.`
+			};
+			break;
+		}
 		default: {
 			const _exhaustiveCheck: never = signal;
 			stock.deployment = {
