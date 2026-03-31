@@ -63,4 +63,3 @@ downgrades.forEach(x => console.log(`  - ${x}`));
 
 console.log(`\n📈 Major Score Upgrades (${upgrades.length}):`);
 upgrades.forEach(x => console.log(`  - ${x}`));
-
