@@ -30,6 +30,35 @@ describe('hasLikelyValueFloor', () => {
 			}
 		};
 
+		// Simple deep merge for screener/realityChecks
+		if (overrides.screener) {
+			const baseScreener = base.screener!;
+			const overrideScreener = overrides.screener;
+
+			if (overrideScreener.realityChecks && baseScreener.realityChecks) {
+				const baseRC = baseScreener.realityChecks;
+				const overrideRC = overrideScreener.realityChecks;
+
+				overrideScreener.realityChecks = {
+					...baseRC,
+					...overrideRC,
+					stabilization: {
+						...baseRC.stabilization,
+						...overrideRC.stabilization
+					},
+					revisions: {
+						...baseRC.revisions,
+						...overrideRC.revisions
+					}
+				};
+			}
+
+			overrides.screener = {
+				...baseScreener,
+				...overrideScreener
+			};
+		}
+
 		return { ...base, ...overrides };
 	};
 
@@ -44,25 +73,17 @@ describe('hasLikelyValueFloor', () => {
 				createMockStock({
 					screener: {
 						realityChecks: {
-							stabilization: { near3mLow: false },
-							revisions: { pass: true, up30d: 2, down30d: 0 }
+							stabilization: { near3mLow: false }
 						}
 					}
 				})
 			)
 		).toBe(false);
 
-		expect(
-			hasLikelyValueFloor(
-				createMockStock({
-					screener: {
-						realityChecks: {
-							revisions: { pass: true, up30d: 2, down30d: 0 }
-						}
-					}
-				})
-			)
-		).toBe(false);
+		// Test missing stabilization
+		const stock = createMockStock();
+		delete stock.screener?.realityChecks?.stabilization;
+		expect(hasLikelyValueFloor(stock)).toBe(false);
 	});
 
 	it('returns false if revisions did not pass', () => {
@@ -71,8 +92,7 @@ describe('hasLikelyValueFloor', () => {
 				createMockStock({
 					screener: {
 						realityChecks: {
-							stabilization: { near3mLow: true },
-							revisions: { pass: false, up30d: 2, down30d: 0 }
+							revisions: { pass: false }
 						}
 					}
 				})
@@ -86,8 +106,7 @@ describe('hasLikelyValueFloor', () => {
 				createMockStock({
 					screener: {
 						realityChecks: {
-							stabilization: { near3mLow: true },
-							revisions: { pass: true, up30d: 1, down30d: 1 }
+							revisions: { up30d: 1, down30d: 1 }
 						}
 					}
 				})
@@ -99,8 +118,7 @@ describe('hasLikelyValueFloor', () => {
 				createMockStock({
 					screener: {
 						realityChecks: {
-							stabilization: { near3mLow: true },
-							revisions: { pass: true, up30d: 0, down30d: 1 }
+							revisions: { up30d: 0, down30d: 1 }
 						}
 					}
 				})
@@ -113,11 +131,7 @@ describe('hasLikelyValueFloor', () => {
 			hasLikelyValueFloor(
 				createMockStock({
 					screener: {
-						score: VALUE_FLOOR_MAX_SCORE + 0.1,
-						realityChecks: {
-							stabilization: { near3mLow: true },
-							revisions: { pass: true, up30d: 2, down30d: 0 }
-						}
+						score: VALUE_FLOOR_MAX_SCORE + 0.1
 					}
 				})
 			)
@@ -262,7 +276,14 @@ describe('assignDeployment', () => {
 	it('assigns deployment based on signal', () => {
 		const stock: FindingStock = {
 			ticker: 'TEST',
-			screener: { signal: 'PASS', realityChecks: { stabilization: { pass: true } }, baseCagr: 20, bearCagr: 5 }
+			baseCagr: 20,
+			bearCagr: 5,
+			screener: {
+				signal: 'PASS',
+				realityChecks: {
+					stabilization: { pass: true }
+				}
+			}
 		};
 		assignDeployment(stock);
 		expect(stock.deployment?.status).toBe('DEPLOY');
