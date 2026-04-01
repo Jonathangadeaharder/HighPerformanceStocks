@@ -1,0 +1,12 @@
+{
+	"ticker": "ADMA",
+	"name": "ADMA Biologics",
+	"group": "Biotech",
+	"confidence": "medium",
+	"confidenceReason": "Commercial-stage plasma biologics company with rapidly growing IG product revenue. Niche focus on immune deficiencies and infectious diseases; accelerating profitability.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS"
+	}
+}

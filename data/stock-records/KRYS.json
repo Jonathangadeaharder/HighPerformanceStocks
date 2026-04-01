@@ -1,0 +1,12 @@
+{
+	"ticker": "KRYS",
+	"name": "Krystal Biotech",
+	"group": "Biotech",
+	"confidence": "medium",
+	"confidenceReason": "Vyjuvek (beremagene geperpavec) is the first gene therapy approved for dystrophic epidermolysis bullosa. Orphan-drug pricing power and proprietary HSV-1 platform for other rare skin diseases.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS"
+	}
+}

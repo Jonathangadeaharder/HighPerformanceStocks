@@ -1,0 +1,12 @@
+{
+	"ticker": "VKTX",
+	"name": "Viking Therapeutics",
+	"group": "Biotech",
+	"confidence": "low",
+	"confidenceReason": "Clinical-stage biotech with VK2735, a GLP-1/GIP dual agonist showing strong Phase 2 data in obesity. No approved products yet; high binary risk but significant optionality in the GLP-1 space.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS"
+	}
+}
