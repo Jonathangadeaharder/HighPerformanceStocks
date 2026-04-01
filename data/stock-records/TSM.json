@@ -7,11 +7,6 @@
 	"marketCap": "$1694.6B USD",
 	"sharpeRatio": 0.78,
 	"expectedCAGR": "8% - 60%",
-	"scenarios": {
-		"bear": "5%",
-		"base": "11%",
-		"bull": "16%"
-	},
 	"metrics": {
 		"fcfMargin": "~17%",
 		"fcfYield": "~38%",

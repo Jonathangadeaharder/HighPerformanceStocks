@@ -766,13 +766,6 @@ function evaluateHyperGrowth(
 
 	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 
-	// Extreme Structural Risk Penalty
-	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();
-	if (bearCaseStr.includes('customer concentration') && result.signal === 'PASS') {
-		result.signal = 'WAIT';
-		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
-	}
-
 	const baseCagr = parsePercent(stock.cagrModel?.scenarios?.base);
 	if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
 		result.signal = 'FAIL';
@@ -781,6 +774,15 @@ function evaluateHyperGrowth(
 
 	applyValueFloorCheck(result, stock, rawPrice, summary);
 	applyDeployRejectOverrides(result, stock, baseCagr);
+
+	// Extreme Structural Risk Penalty — must run after deploy override so the cap
+	// is not immediately negated by the override promoting WAIT back to DEPLOY.
+	// (Canonical examples: ZS, AVGO, CRDO — concentrated in 1-2 hyperscaler customers.)
+	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();
+	if (bearCaseStr.includes('customer concentration') && result.signal === 'DEPLOY') {
+		result.signal = 'WAIT';
+		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
+	}
 
 	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 

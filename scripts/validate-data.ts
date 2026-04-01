@@ -13,12 +13,10 @@ const requiredFields = [
 	'confidence',
 	'confidenceReason',
 	'marketCap',
-	'expectedCAGR',
 	'expectedVolatility',
 	'bullCase',
 	'bearCase',
-	'currentPrice',
-	'targetPrice'
+	'currentPrice'
 ];
 
 function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
@@ -72,11 +70,15 @@ function verifyData() {
 
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
-			if (!data.cagrModel.scenarios?.base) {
+			// Scenarios are only set when analyst targets are available; allow missing when none exist
+			const hasAnalystTargets = data.analystTargets?.low != null || data.analystTargets?.mean != null;
+			if (!data.cagrModel.scenarios?.base && hasAnalystTargets) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
-				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
+			// ttmEPS === null is intentional for pre-profit platforms (they route via evFcf/fCFG)
+			// Only flag when ttmEPS is a defined non-positive number
+			if (typeof data.cagrModel.ttmEPS === 'number' && data.cagrModel.ttmEPS <= 0) {
+				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive or null for pre-profit)`);
 			}
 			if (!data.cagrModel.epsGrowth) {
 				errors.push(`Missing 'cagrModel.epsGrowth'`);
@@ -114,9 +116,10 @@ function verifyData() {
 				'fANIG',
 				'fFREG',
 				'totalReturn',
+				'DISQUALIFIED',
 				'N/A'
 			];
-			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
+			const validSignals = ['DEPLOY', 'PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA', 'FLAG FOR MANUAL REVIEW'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}

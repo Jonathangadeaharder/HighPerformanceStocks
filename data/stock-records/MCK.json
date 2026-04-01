@@ -51,7 +51,6 @@
 			"cvStock": 0.01,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 16% ≥ 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
