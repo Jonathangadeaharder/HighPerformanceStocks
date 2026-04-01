@@ -71,13 +71,21 @@ function verifyData() {
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
 			// Scenarios are only set when analyst targets are available; allow missing when none exist
-			const hasAnalystTargets = data.analystTargets?.low != null || data.analystTargets?.mean != null;
+			const hasAnalystTargets =
+				data.analystTargets?.low != null ||
+				data.analystTargets?.mean != null ||
+				data.analystTargets?.high != null;
 			if (!data.cagrModel.scenarios?.base && hasAnalystTargets) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			// ttmEPS === null is intentional for pre-profit platforms (they route via evFcf/fCFG)
-			// Only flag when ttmEPS is a defined non-positive number
-			if (typeof data.cagrModel.ttmEPS === 'number' && data.cagrModel.ttmEPS <= 0) {
+			// ttmEPS must be either a positive number (profitable stock) or explicitly null (pre-profit
+			// platforms that route via evFcf/fCFG). An absent or undefined value is an accidental omission.
+			const hasTtmEPS = Object.prototype.hasOwnProperty.call(data.cagrModel, 'ttmEPS');
+			const ttmEPS = data.cagrModel.ttmEPS;
+			const ttmEPSInvalid = hasTtmEPS
+				? ttmEPS !== null && (typeof ttmEPS !== 'number' || ttmEPS <= 0)
+				: true;
+			if (ttmEPSInvalid) {
 				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive or null for pre-profit)`);
 			}
 			if (!data.cagrModel.epsGrowth) {
