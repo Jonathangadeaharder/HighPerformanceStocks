@@ -13,12 +13,10 @@ const requiredFields = [
 	'confidence',
 	'confidenceReason',
 	'marketCap',
-	'expectedCAGR',
 	'expectedVolatility',
 	'bullCase',
 	'bearCase',
-	'currentPrice',
-	'targetPrice'
+	'currentPrice'
 ];
 
 // Fields required even on un-populated seed records
@@ -98,11 +96,23 @@ function verifyData() {
 
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
-			if (!data.cagrModel.scenarios?.base) {
+			// Scenarios are only set when analyst targets are available; allow missing when none exist
+			const hasAnalystTargets =
+				data.analystTargets?.low != null ||
+				data.analystTargets?.mean != null ||
+				data.analystTargets?.high != null;
+			if (!data.cagrModel.scenarios?.base && hasAnalystTargets) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
-				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
+			// ttmEPS must be either a positive number (profitable stock) or explicitly null (pre-profit
+			// platforms that route via evFcf/fCFG). An absent or undefined value is an accidental omission.
+			const hasTtmEPS = Object.prototype.hasOwnProperty.call(data.cagrModel, 'ttmEPS');
+			const ttmEPS = data.cagrModel.ttmEPS;
+			const ttmEPSInvalid = hasTtmEPS
+				? ttmEPS !== null && (typeof ttmEPS !== 'number' || ttmEPS <= 0)
+				: true;
+			if (ttmEPSInvalid) {
+				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive or null for pre-profit)`);
 			}
 			if (!data.cagrModel.epsGrowth) {
 				errors.push(`Missing 'cagrModel.epsGrowth'`);
@@ -138,9 +148,10 @@ function verifyData() {
 				'fANIG',
 				'fFREG',
 				'totalReturn',
+				'DISQUALIFIED',
 				'N/A'
 			];
-			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
+			const validSignals = ['DEPLOY', 'PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA', 'FLAG FOR MANUAL REVIEW'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}

@@ -7,12 +7,6 @@
 	"marketCap": "$1425.6B USD",
 	"sharpeRatio": 1.31,
 	"expectedCAGR": "21% - 111%",
-	"ttmEPS": 7.07,
-	"scenarios": {
-		"bear": "8%",
-		"base": "13%",
-		"bull": "18%"
-	},
 	"metrics": {
 		"fcfMargin": "~37%",
 		"fcfYield": "~2%",
@@ -25,7 +19,6 @@
 		"interestCoverage": "16.7x"
 	},
 	"targetPrice": "$471.55",
-	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
 	"currentPrice": "$300.68",
@@ -50,7 +43,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.15,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/EBITDA",
@@ -58,7 +51,7 @@
 			"cvStock": 0.109,
 			"riskMultiplier": 1.001
 		},
-		"note": "DEPLOY override: base CAGR 58% ≥ 20% and stabilized (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 58% ≥ 20% and stabilized (Signal capped at WAIT due to customer concentration risk)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

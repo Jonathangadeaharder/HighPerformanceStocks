@@ -6,3 +6,4 @@ build/
 .DS_Store
 repomix-output.xml
 holding-companies-wt/
+package-lock.json
