@@ -1,0 +1,12 @@
+{
+	"ticker": "ARQT",
+	"name": "Arcutis Biotherapeutics",
+	"group": "Biotech",
+	"confidence": "low",
+	"confidenceReason": "Commercial-stage dermatology biotech with approved topical treatments for plaque psoriasis and seborrheic dermatitis. Not yet profitable; revenue growth trajectory is the key driver.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"ticker": "BBIO",
+	"name": "BridgeBio Pharma",
+	"group": "Biotech",
+	"confidence": "medium",
+	"confidenceReason": "Attruby (acoramidis) approved for ATTR-CM competing directly with Tafamidis. Differentiated profile and favorable trial data could drive meaningful market share. Early commercial ramp.",
+	"cagrModel": {
+		"epsGrowth": "15%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS"
+	}
+}
