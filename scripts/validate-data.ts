@@ -21,6 +21,9 @@ const requiredFields = [
 	'targetPrice'
 ];
 
+// Fields required even on un-populated seed records
+const seedRequiredFields = ['ticker', 'name', 'group', 'confidence', 'confidenceReason'];
+
 function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
 	const targetMap = {
 		bear: data.analystTargets.low,
@@ -63,6 +66,29 @@ function verifyData() {
 
 		const errors: string[] = [];
 
+		// Seed records: not yet populated by update-data (missing lastUpdated).
+		// Only validate identity fields; emit a warning so operator knows to run update-data.
+		if (!data.lastUpdated) {
+			for (const field of seedRequiredFields) {
+				if (data[field] === undefined || data[field] === null || data[field] === '') {
+					errors.push(`Missing required seed field: '${field}'`);
+				}
+			}
+			if (!data.cagrModel?.epsGrowth) {
+				errors.push(`Missing 'cagrModel.epsGrowth'`);
+			}
+			if (errors.length > 0) {
+				console.log(`❌ ${data.ticker || f} has issues:`);
+				for (const e of errors) {
+					console.log(`   - ${e}`);
+				}
+				hasErrors = true;
+			} else {
+				warnings.push(`${data.ticker || f}: Seed record — run 'pnpm update-data' to populate`);
+			}
+			continue;
+		}
+
 		// 1. Verify all required fields exist and are not null/empty
 		for (const field of requiredFields) {
 			if (data[field] === undefined || data[field] === null || data[field] === '') {
@@ -100,8 +126,6 @@ function verifyData() {
 					`${data.ticker || f}: Cache stale (${daysSinceUpdate} days old, lastUpdated: ${updatedDate})`
 				);
 			}
-		} else {
-			errors.push(`Missing 'lastUpdated' timestamp`);
 		}
 
 		// 5. Verify screener object
