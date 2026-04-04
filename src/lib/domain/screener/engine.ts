@@ -176,12 +176,14 @@ function computeGrowthScore(
 	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
+	const thresholdMap: Record<string, number> = { PERG: 1.0, fCFG: 5.0, fEVG: 3.5 };
+	const threshold = thresholdMap[engine] ?? ENGINE_THRESHOLDS[engine] ?? 1.0;
+	const waitThreshold = threshold === 1.0 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
 	if (score <= threshold) {
 		signal = 'PASS';
-	} else if (score <= BORDERLINE_WAIT_THRESHOLD) {
+	} else if (score <= waitThreshold) {
 		signal = 'WAIT';
 	} else {
 		signal = 'FAIL';
@@ -669,7 +671,7 @@ function applyValueFloorCheck(
 	if (qcsScore != null && qcsScore >= 8) {
 		valueFloorReason = valueFloorReason
 			? `${valueFloorReason} + QCS ${qcsScore}`
-			: `QCS ${qcsScore} ≥ 8 (elite quality floor)`;
+			: `QCS ${qcsScore} >= 8 (elite quality floor)`;
 	}
 
 	if (valueFloorReason !== null) {
@@ -699,10 +701,10 @@ function applyDeployRejectOverrides(
 		appendNote(result, `REJECT: Stalled at WAIT with base CAGR ${baseCagr}% < 15%`);
 	} else if (result.signal === 'PASS' && baseCagr >= 15 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 15% and stabilized`);
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 15% and stabilized`);
 	} else if (result.signal === 'WAIT' && baseCagr >= 20 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 20% and stabilized`);
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 20% and stabilized`);
 	}
 }
 
@@ -717,10 +719,18 @@ function evaluateHyperGrowth(
 	const branch = detectGrowthBranch(stock, valuationPrice);
 
 	if (branch.engine === 'DISQUALIFIED') {
+		const s = stock as any;
+		if (s.sector === 'Healthcare' || (s.industry && s.industry.includes('Biotechnology'))) {
+			return {
+				engine: 'DISQUALIFIED',
+				signal: 'REJECTED',
+				note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			};
+		}
 		return {
 			engine: 'DISQUALIFIED',
-			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			signal: 'WAIT',
+			note: 'Extreme earnings volatility detected. Awaiting stabilization.'
 		};
 	}
 
@@ -742,13 +752,17 @@ function evaluateHyperGrowth(
 	let hallucinationNote = '';
 
 	if (branch.multipleType === FORWARD_PE_LABEL) {
-		const tpe = stock.valuation?.trailingPE;
-		if (tpe != null && tpe > 0 && growthPct > 0) {
-			const impliedFpe = tpe / (1 + growthPct / 100);
-			if (actualMultiple < impliedFpe * 0.8) {
-				actualMultiple = impliedFpe;
-				hallucinationNote = `Data hallucination override: structurally impossible forward PE rectified to computationally sound ~${impliedFpe.toFixed(1)}x`;
+		const eps = stock.cagrModel?.ttmEPS;
+		if ((eps != null && eps <= 0) || actualMultiple <= 0 || Number.isNaN(actualMultiple)) {
+			const fallbackPE = stock.valuation?.trailingPE;
+			if (fallbackPE == null || fallbackPE <= 0 || Number.isNaN(fallbackPE)) {
+				return {
+					engine: branch.engine,
+					signal: 'NO_DATA',
+					note: 'Negative/invalid earnings structure. Awaiting profitability.'
+				};
 			}
+			actualMultiple = fallbackPE;
 		}
 	}
 
@@ -821,10 +835,18 @@ export function computeScreener(
 
 	const group = stock.group?.toLowerCase() ?? '';
 	if (group.includes('disqualified') || group.includes('pre-profit') || group.includes('binary')) {
+		const s = stock as any;
+		if (s.sector === 'Healthcare' || (s.industry && s.industry.includes('Biotechnology'))) {
+			return {
+				engine: 'DISQUALIFIED',
+				signal: 'REJECTED',
+				note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			};
+		}
 		return {
 			engine: 'DISQUALIFIED',
 			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			note: 'Extreme earnings volatility detected. Strategically disqualified.'
 		};
 	}
 

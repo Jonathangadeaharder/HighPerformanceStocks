@@ -204,19 +204,53 @@ export function applyUpdates(
 		}
 	}
 
+	// --- Populate forwardEstimates from Yahoo earningsTrend (0y, +1y) ---
+	const earningsTrend = (summary as any)?.earningsTrend?.trend;
+	if (earningsTrend && Array.isArray(earningsTrend)) {
+		const currentYear = earningsTrend.find((t: any) => t.period === '0y');
+		const nextYear = earningsTrend.find((t: any) => t.period === '+1y');
+
+		if (currentYear?.earningsEstimate?.avg && nextYear?.earningsEstimate?.avg) {
+			const cy = currentYear.earningsEstimate;
+			const ny = nextYear.earningsEstimate;
+			const cyYear = String(new Date(currentYear.endDate).getFullYear());
+			const nyYear = String(new Date(nextYear.endDate).getFullYear());
+
+			stock.forwardEstimates = {
+				[cyYear]: { high: cy.high, low: cy.low, average: cy.avg },
+				[nyYear]: { high: ny.high, low: ny.low, average: ny.avg }
+			};
+		}
+	}
+
 	const model = stock.cagrModel;
 	if (model) {
 		if (model.epsGrowthSource === 'auto' || (!model.epsGrowth && !model.epsGrowthSource)) {
-			const currentYearTrend = summary?.earningsTrend?.trend?.find((t: any) => t.period === '0y');
-			const nextYearTrend = summary?.earningsTrend?.trend?.find((t: any) => t.period === '+1y');
-
-			if (currentYearTrend?.earningsEstimate?.avg && nextYearTrend?.earningsEstimate?.avg) {
-				const currentEps = currentYearTrend.earningsEstimate.avg;
-				const nextEps = nextYearTrend.earningsEstimate.avg;
-				const impliedGrowth = (nextEps / currentEps - 1) * 100;
-				const cappedGrowth = Math.min(35, Math.max(-10, impliedGrowth));
-				model.epsGrowth = `${Math.round(cappedGrowth)}%`;
-				model.epsGrowthSource = 'auto';
+			// Multi-year CAGR from forwardEstimates (analyst consensus)
+			// No artificial cap — analyst estimates determine what is realistic.
+			const fwdEst = stock.forwardEstimates;
+			if (fwdEst && typeof fwdEst === 'object') {
+				const years = Object.keys(fwdEst)
+					.filter((y) => /^\d{4}$/.test(y))
+					.sort();
+				if (years.length >= 2) {
+					const firstYearKey = years[0]!;
+					const lastYearKey = years[years.length - 1]!;
+					const firstYear = fwdEst[firstYearKey];
+					const lastYear = fwdEst[lastYearKey];
+					if (firstYear?.average > 0 && lastYear?.average > 0) {
+						const n = years.length - 1;
+						const cagr = (Math.pow(lastYear.average / firstYear.average, 1 / n) - 1) * 100;
+						model.epsGrowth = `${Math.round(cagr)}%`;
+						model.epsGrowthSource = 'auto';
+					} else {
+						console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but averages invalid (first=${firstYear?.average}, last=${lastYear?.average})`);
+					}
+				} else {
+					console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but only ${years.length} year(s) — need >=2`);
+				}
+			} else {
+				console.warn(`  ⚠️  ${stock.ticker}: NO forwardEstimates — no earningsTrend data available`);
 			}
 		}
 

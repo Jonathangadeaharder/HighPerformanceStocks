@@ -4,62 +4,62 @@
 	"group": "The Capital Compounders",
 	"confidence": "low",
 	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
-	"marketCap": "€21.0B",
-	"sharpeRatio": 2.88,
-	"expectedCAGR": "59% - 94%",
-	"expectedVolatility": "~25%",
+	"marketCap": "€22.1B",
+	"sharpeRatio": 2.52,
+	"expectedCAGR": "51% - 79%",
+	"expectedVolatility": "~24%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"forwardPE": 26.3,
-		"evFcf": -7.3
+		"forwardPE": 32.4,
+		"evFcf": -7.7
 	},
 	"metrics": {
 		"roe": "-10.6%",
-		"fcfYield": "~-10%",
-		"beta": "0.39",
-		"roic": "12.3%"
+		"fcfYield": "~-9%",
+		"beta": "0.5",
+		"roic": "11.7%"
 	},
-	"targetPrice": "€111.88",
+	"targetPrice": "€109.38",
 	"bullCase": "Under John Elkann, Exor has successfully pivoted from a legacy automotive holding (Fiat) to a diversified compounding engine (Healthcare, Luxury, Tech). Massive stakes in Ferrari and Philips drive baseline growth, while aggressive share buybacks target the extreme NAV discount to synthesize high returns.",
 	"bearCase": "Remaining exposure to cyclical auto sectors (Stellantis) and the risk of unproven ventures in healthcare and tech failing to match legacy automotive returns.",
-	"currentPrice": "€63.75",
+	"currentPrice": "€67.35",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "59%",
-			"base": "76%",
-			"bull": "94%"
+			"bear": "51%",
+			"base": "63%",
+			"bull": "79%"
 		},
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 6.5
 	},
-	"lastUpdated": "2026-03-28T23:02:50.059Z",
+	"lastUpdated": "2026-04-04T23:38:58.952Z",
 	"consensus": {
-		"yahoo": "€111.88"
+		"yahoo": "€109.38"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.19,
+		"score": 2.7,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 26.3,
-			"cvStock": 0.07,
+			"multiple": 32.4,
+			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 75.5% (DEPLOY override: base CAGR 76% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 62.4% (DEPLOY override: base CAGR 63% >= 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 63.75,
-				"price6mAgo": 83,
-				"price1mAgo": 72.3,
+				"price": 67.35,
+				"price6mAgo": 87.25,
+				"price1mAgo": 71.45,
 				"low3m": 59.75,
-				"return6m": -23.2,
-				"return1m": -11.8,
+				"return6m": -22.8,
+				"return1m": -5.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,14 +80,14 @@
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
 			"downRevisions": 0,
-			"totalAnalysts": 2
+			"totalAnalysts": 1
 		}
 	},
 	"description": "Exor N.V. engages in the automotive, agriculture and construction, sports car, commercial vehicle, health technology, football and powertrain businesses in the Netherlands and internationally.",
 	"analystTargets": {
 		"low": 101,
-		"mean": 111.88,
-		"high": 123
+		"mean": 109.38,
+		"high": 120
 	},
 	"analystConsensus": {
 		"ticker": "EXO.AS",
@@ -97,5 +97,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": -8.43564,
+			"low": -8.43564,
+			"average": -8.43564
+		},
+		"2027": {
+			"high": 2.08048,
+			"low": 2.08048,
+			"average": 2.08048
+		}
+	}
 }

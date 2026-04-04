@@ -5,30 +5,30 @@
 	"confidence": "high",
 	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
 	"marketCap": "$1.6B USD",
-	"sharpeRatio": 1.61,
-	"expectedCAGR": "2% - 274%",
-	"expectedVolatility": "~83%",
+	"sharpeRatio": 1.49,
+	"expectedCAGR": "-4% - 254%",
+	"expectedVolatility": "~81%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": -3.5,
+		"forwardPE": -3.7,
 		"pegRatio": null,
 		"evEbitda": null,
-		"evFcf": -4.2
+		"evFcf": -4.7
 	},
 	"metrics": {
 		"fcfMargin": "~-279%",
 		"fcfYield": "~-13%",
-		"roic": "-41.9%",
+		"roic": "-38.0%",
 		"roe": "-59.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "402%",
-		"beta": "0.96",
+		"beta": "1.01",
 		"revenueGrowth": "681.7%"
 	},
 	"targetPrice": "$6.71",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
 	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
-	"currentPrice": "$2.94",
+	"currentPrice": "$3.11",
 	"consensus": {
 		"tipranks": "$7.00",
 		"yahoo": "$6.71",
@@ -37,19 +37,19 @@
 	"cagrModel": {
 		"ttmEPS": null,
 		"scenarios": {
-			"bear": "2%",
-			"base": "128%",
-			"bull": "274%"
+			"bear": "-4%",
+			"base": "116%",
+			"bull": "254%"
 		},
 		"epsGrowth": "0%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-03-28T23:03:05.838Z",
+	"lastUpdated": "2026-04-04T23:39:12.764Z",
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "REJECTED",
-		"note": "Binary-outcome biotech breaking EPS compounding rules."
+		"note": "Extreme earnings volatility detected. Strategically disqualified."
 	},
 	"qcs": {
 		"earningsScore": 3.26,
@@ -58,7 +58,7 @@
 		"totalScore": 11.39,
 		"raw": {
 			"avgSurprisePct": 6.52,
-			"netInsiderShares": 2001402,
+			"netInsiderShares": 2004670,
 			"instFlowTrend": "positive",
 			"upRevisions": 6,
 			"downRevisions": 1,
@@ -80,5 +80,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$9.40",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": -0.83,
+			"low": -1.15,
+			"average": -0.98625
+		},
+		"2027": {
+			"high": -0.61,
+			"low": -0.96,
+			"average": -0.85097
+		}
+	}
 }

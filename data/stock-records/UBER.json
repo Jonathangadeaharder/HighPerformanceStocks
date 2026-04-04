@@ -10,18 +10,18 @@
 		"ttmEPS": 4.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "50%",
-			"bull": "117%"
+			"bear": "-3%",
+			"base": "44%",
+			"bull": "109%"
 		}
 	},
-	"currentPrice": "$69.18",
-	"marketCap": "$142.4B USD",
+	"currentPrice": "$71.84",
+	"marketCap": "$147.9B USD",
 	"valuation": {
-		"trailingPE": 14.6,
-		"forwardPE": 16.1,
-		"evEbitda": 23.5,
-		"evFcf": 23.3
+		"trailingPE": 15.2,
+		"forwardPE": 16.7,
+		"evEbitda": 24.3,
+		"evFcf": 24.2
 	},
 	"metrics": {
 		"roe": "39.9%",
@@ -29,72 +29,70 @@
 		"fcfYield": "~4%",
 		"netDebtEbitda": "0.7x",
 		"ruleOf40": "32%",
-		"beta": "1.22",
+		"beta": "1.21",
 		"revenueGrowth": "20.1%",
-		"roic": "6.9%",
+		"roic": "6.6%",
 		"interestCoverage": "9.3x"
 	},
 	"consensus": {
-		"yahoo": "$103.68"
+		"yahoo": "$103.58"
 	},
-	"targetPrice": "$103.68",
-	"expectedCAGR": "1% - 117%",
+	"targetPrice": "$103.58",
+	"expectedCAGR": "-3% - 109%",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.39,
+		"engine": "fPERG",
+		"score": 0.99,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
-			"multipleType": "EV/EBITDA",
-			"multiple": 23.5,
-			"cvStock": 0.165,
+			"multipleType": "Forward P/E",
+			"multiple": 16.7,
+			"cvStock": 0.164,
 			"riskMultiplier": 1.062
 		},
-		"note": "hasLikelyValueFloor: analyst upside 49.9% (DEPLOY override: base CAGR 50% ≥ 20% and stabilized) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 44% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 69.18,
-				"price6mAgo": 99.57,
-				"price1mAgo": 75.95,
+				"price": 71.84,
+				"price6mAgo": 100.1,
+				"price1mAgo": 75.44,
 				"low3m": 68.46,
-				"return6m": -30.5,
-				"return1m": -8.9,
+				"return6m": -28.2,
+				"return1m": -4.8,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 2
+				"up30d": 3,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": -81.9,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.95
+		}
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-03-28T23:03:09.587Z",
+	"lastUpdated": "2026-04-04T23:39:15.728Z",
 	"intrinsicValue": {
 		"dcf": 139.48,
 		"date": "2026-03-28",
 		"discount": 102
 	},
-	"expectedVolatility": "~36%",
-	"sharpeRatio": 1.51,
+	"expectedVolatility": "~35%",
+	"sharpeRatio": 1.39,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"revisionsScore": 0.24,
+		"totalScore": 5.24,
 		"raw": {
 			"avgSurprisePct": 84.33,
-			"netInsiderShares": 1259120,
+			"netInsiderShares": 1265147,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
+			"upRevisions": 2,
 			"downRevisions": 0,
 			"totalAnalysts": 41
 		}
@@ -102,7 +100,7 @@
 	"description": "Uber Technologies, Inc. develops and operates proprietary technology applications in the United States, Canada, Latin America, Europe, the Middle East, Africa, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 70,
-		"mean": 103.68,
+		"mean": 103.58,
 		"high": 150
 	},
 	"analystConsensus": {
@@ -113,5 +111,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 4.697,
+			"low": 2.66,
+			"average": 3.37194
+		},
+		"2027": {
+			"high": 5.778,
+			"low": 2.92,
+			"average": 4.3489
+		}
+	}
 }

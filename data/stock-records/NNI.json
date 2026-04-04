@@ -4,36 +4,65 @@
 	"group": "The Capital Compounders",
 	"confidence": "high",
 	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
-	"marketCap": "$4.5B USD",
+	"marketCap": "$4.6B USD",
 	"sharpeRatio": 0.28,
-	"expectedVolatility": "~23%",
+	"expectedVolatility": "~22%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 10.7,
-		"forwardPE": 12.7
+		"trailingPE": 11,
+		"forwardPE": 12.9
 	},
 	"metrics": {
 		"roe": "11.6%",
-		"beta": "0.83",
+		"beta": "0.81",
 		"revenueGrowth": "-8.6%",
 		"roic": "3.5%"
 	},
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$126.55",
+	"currentPrice": "$129.45",
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 11.79
 	},
-	"lastUpdated": "2026-03-28T23:03:02.810Z",
+	"lastUpdated": "2026-04-04T23:39:09.625Z",
 	"consensus": {},
 	"screener": {
-		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/EBITDA"
+		"engine": "fPERG",
+		"score": 1.43,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 9,
+			"multipleType": "Forward P/E",
+			"multiple": 12.9,
+			"cvStock": 0,
+			"riskMultiplier": 1
+		},
+		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 129.45,
+				"price6mAgo": 129.84,
+				"price1mAgo": 131.82,
+				"low3m": 122.36,
+				"return6m": -0.3,
+				"return1m": -1.8,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": -4.3,
+				"quarter": "2025-12"
+			}
+		}
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -42,7 +71,7 @@
 		"totalScore": 10,
 		"raw": {
 			"avgSurprisePct": 69.67,
-			"netInsiderShares": 107802,
+			"netInsiderShares": 117346,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
 			"downRevisions": 0,
@@ -59,5 +88,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$140.00"
+	"targetPriceAlternative": "$140.00",
+	"forwardEstimates": {
+		"2026": {
+			"high": 9.2,
+			"low": 9.2,
+			"average": 9.2
+		},
+		"2027": {
+			"high": 10,
+			"low": 10,
+			"average": 10
+		}
+	}
 }

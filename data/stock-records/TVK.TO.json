@@ -4,16 +4,16 @@
 	"group": "The Capital Compounders",
 	"confidence": "low",
 	"confidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
-	"marketCap": "C$3.1B",
-	"sharpeRatio": 0.61,
-	"expectedCAGR": "21% - 42%",
-	"expectedVolatility": "~44%",
+	"marketCap": "C$2.8B",
+	"sharpeRatio": 0.91,
+	"expectedCAGR": "32% - 55%",
+	"expectedVolatility": "~43%",
 	"valuation": {
 		"pegRatio": null,
-		"evEbitda": 15.3,
-		"trailingPE": 33.7,
-		"forwardPE": 22.7,
-		"evFcf": 59.8
+		"evEbitda": 14.4,
+		"trailingPE": 31,
+		"forwardPE": 20.8,
+		"evFcf": 56.1
 	},
 	"metrics": {
 		"roe": "16.9%",
@@ -21,52 +21,52 @@
 		"fcfYield": "~2%",
 		"netDebtEbitda": "3.5x",
 		"ruleOf40": "78%",
-		"beta": "0.47",
+		"beta": "0.55",
 		"revenueGrowth": "74.1%",
-		"roic": "4.3%",
+		"roic": "4.6%",
 		"interestCoverage": "5.2x"
 	},
 	"targetPrice": "C$182.83",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$141.87",
+	"currentPrice": "C$130.16",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "21%",
-			"base": "30%",
-			"bull": "42%"
+			"bear": "32%",
+			"base": "41%",
+			"bull": "55%"
 		},
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 4.21
+		"ttmEPS": 4.2
 	},
-	"lastUpdated": "2026-03-28T23:03:08.824Z",
+	"lastUpdated": "2026-04-04T23:39:14.863Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.02,
+		"score": 0.96,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 15.3,
+			"multiple": 14.4,
 			"cvStock": 0.107,
 			"riskMultiplier": 1.001
 		},
-		"note": "DEPLOY override: base CAGR 30% ≥ 20% and stabilized (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 41% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 141.87,
-				"price6mAgo": 139.04,
-				"price1mAgo": 147.9,
-				"low3m": 132.33,
-				"return6m": 2,
-				"return1m": -4.1,
-				"near3mLow": false
+				"price": 130.16,
+				"price6mAgo": 144.26,
+				"price1mAgo": 148.09,
+				"low3m": 124.82,
+				"return6m": -9.8,
+				"return1m": -12.1,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -79,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.51
+		"secondaryScore": 1.39
 	},
 	"qcs": {
 		"earningsScore": 2.53,
@@ -109,5 +109,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.89,
+			"low": 2.91,
+			"average": 3.36
+		},
+		"2027": {
+			"high": 7.69,
+			"low": 5.02,
+			"average": 6.24333
+		}
+	}
 }

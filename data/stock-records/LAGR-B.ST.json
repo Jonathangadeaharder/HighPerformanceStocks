@@ -10,18 +10,18 @@
 		"ttmEPS": 5.53,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "31%",
-			"bull": "44%"
+			"bear": "12%",
+			"base": "26%",
+			"bull": "38%"
 		}
 	},
-	"currentPrice": "193 SEK",
-	"marketCap": "39.7B SEK",
+	"currentPrice": "200 SEK",
+	"marketCap": "41.3B SEK",
 	"valuation": {
-		"trailingPE": 34.8,
-		"forwardPE": 35.5,
-		"evEbitda": 22.5,
-		"evFcf": 134.4
+		"trailingPE": 36.2,
+		"forwardPE": 36.9,
+		"evEbitda": 23.3,
+		"evFcf": 139.1
 	},
 	"metrics": {
 		"roe": "29.4%",
@@ -29,37 +29,38 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "2.3x",
 		"ruleOf40": "19%",
-		"beta": "1.17",
+		"beta": "1.16",
 		"revenueGrowth": "15.9%",
-		"roic": "3.2%",
+		"roic": "3.1%",
 		"interestCoverage": "7.2x"
 	},
 	"consensus": {
 		"yahoo": "250 SEK"
 	},
 	"targetPrice": "250 SEK",
-	"expectedCAGR": "16% - 44%",
+	"expectedCAGR": "12% - 38%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.5,
-		"signal": "FAIL",
+		"score": 1.55,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 22.5,
+			"multiple": 23.3,
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
+		"note": "DEPLOY override: base CAGR 26% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 192.7,
-				"price6mAgo": 203.2,
-				"price1mAgo": 214.2,
+				"price": 200.2,
+				"price6mAgo": 209.2,
+				"price1mAgo": 210,
 				"low3m": 185.2,
-				"return6m": -5.2,
-				"return1m": -10,
-				"near3mLow": true
+				"return6m": -4.3,
+				"return1m": -4.7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -72,11 +73,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.37
+		"secondaryScore": 2.46
 	},
-	"lastUpdated": "2026-03-28T23:02:55.476Z",
+	"lastUpdated": "2026-04-04T23:39:04.194Z",
 	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.77,
+	"sharpeRatio": 0.62,
 	"qcs": {
 		"earningsScore": -1.57,
 		"flowScore": 0,
@@ -107,5 +108,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 6.62,
+			"low": 5.52016,
+			"average": 6.09556
+		},
+		"2027": {
+			"high": 7.34,
+			"low": 6.3,
+			"average": 6.84197
+		}
+	}
 }

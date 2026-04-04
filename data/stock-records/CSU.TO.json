@@ -4,21 +4,21 @@
 	"group": "Serial Acquirers",
 	"confidence": "cut",
 	"confidenceReason": "Sharpe (0.13), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
-	"marketCap": "C$50.0B",
-	"sharpeRatio": 2.28,
-	"expectedCAGR": "48% - 139%",
+	"marketCap": "C$51.7B",
+	"sharpeRatio": 2.13,
+	"expectedCAGR": "43% - 132%",
 	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 70.9,
-		"forwardPE": 12.7,
+		"trailingPE": 72.5,
+		"forwardPE": 13.2,
 		"pegRatio": null,
-		"evEbitda": 21.4,
-		"evFcf": 20.2
+		"evEbitda": 22.1,
+		"evFcf": 20.9
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
 		"fcfYield": "~5%",
-		"roic": "5.2%",
+		"roic": "5.0%",
 		"roe": "15.5%",
 		"netDebtEbitda": "1.1x",
 		"ruleOf40": "40%",
@@ -26,47 +26,47 @@
 		"revenueGrowth": "17.5%",
 		"interestCoverage": "7.8x"
 	},
-	"targetPrice": "C$4242.57",
+	"targetPrice": "C$4222.33",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2358.89",
+	"currentPrice": "C$2441.27",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4242.57"
+		"yahoo": "C$4222.33"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.26,
+		"ttmEPS": 33.69,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "48%",
-			"base": "80%",
-			"bull": "139%"
+			"bear": "43%",
+			"base": "73%",
+			"bull": "132%"
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-03-29T09:58:12.683Z",
+	"lastUpdated": "2026-04-04T23:38:56.852Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.19,
+		"score": 1.23,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 21.4,
+			"multiple": 22.1,
 			"cvStock": 0.028,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 80% ≥ 20% and stabilized",
+		"note": "DEPLOY override: base CAGR 73% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2358.89,
-				"price6mAgo": 3766.74,
-				"price1mAgo": 2566.65,
+				"price": 2441.27,
+				"price6mAgo": 3897.6,
+				"price1mAgo": 2796.99,
 				"low3m": 2196,
 				"return6m": -37.4,
-				"return1m": -8.1,
+				"return1m": -12.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.71
+		"secondaryScore": 0.73
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -98,9 +98,9 @@
 	},
 	"description": "Constellation Software Inc., together with its subsidiaries, acquires, builds, and manages vertical market software businesses to develop mission-critical software solutions for public and private ...",
 	"analystTargets": {
-		"low": 3479.68,
-		"mean": 4242.57,
-		"high": 5631.46
+		"low": 3493.2,
+		"mean": 4222.33,
+		"high": 5653.35
 	},
 	"analystConsensus": {
 		"ticker": "CSU.TO",
@@ -110,5 +110,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 120.61,
+			"low": 109,
+			"average": 112.79
+		},
+		"2027": {
+			"high": 142.01,
+			"low": 127,
+			"average": 133.332
+		}
+	}
 }

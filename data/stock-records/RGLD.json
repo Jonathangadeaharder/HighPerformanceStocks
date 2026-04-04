@@ -4,35 +4,35 @@
 	"group": "Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$20.1B USD",
-	"sharpeRatio": 0.75,
-	"expectedCAGR": "10% - 59%",
+	"marketCap": "$22.3B USD",
+	"sharpeRatio": 0.44,
+	"expectedCAGR": "0% - 44%",
 	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 35.5,
-		"forwardPE": 15.7,
+		"trailingPE": 39.2,
+		"forwardPE": 17.7,
 		"pegRatio": 1.69,
-		"evEbitda": 29.9,
-		"evFcf": -26004.2
+		"evEbitda": 27.3,
+		"evFcf": -38
 	},
 	"metrics": {
-		"fcfMargin": "~0%",
-		"fcfYield": "~0%",
-		"roic": "2.3%",
-		"roe": "11.0%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "6%",
-		"beta": "0.65",
-		"revenueGrowth": "5.9%",
-		"interestCoverage": "1406.6x"
+		"fcfMargin": "~-59%",
+		"fcfYield": "~-3%",
+		"roic": "3.1%",
+		"roe": "9.1%",
+		"netDebtEbitda": "0.8x",
+		"ruleOf40": "27%",
+		"beta": "0.55",
+		"revenueGrowth": "86.1%",
+		"interestCoverage": "16.4x"
 	},
-	"targetPrice": "$329.64",
+	"targetPrice": "$330.09",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
 	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
-	"currentPrice": "$237.54",
+	"currentPrice": "$262.63",
 	"consensus": {
 		"tipranks": "$249",
-		"yahoo": "$329.64",
+		"yahoo": "$330.09",
 		"stockanalysis": "$231"
 	},
 	"cagrModel": {
@@ -40,67 +40,64 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "40%",
-			"bull": "59%"
+			"bear": "0%",
+			"base": "27%",
+			"bull": "44%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:04.890Z",
+	"lastUpdated": "2026-04-04T23:39:11.722Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 2.72,
-		"signal": "DEPLOY",
+		"engine": "fPERG",
+		"score": 1.63,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 12,
-			"multipleType": "EV/EBITDA",
-			"multiple": 29.9,
-			"cvStock": 0.178,
-			"riskMultiplier": 1.091
+			"multipleType": "Forward P/E",
+			"multiple": 17.7,
+			"cvStock": 0.183,
+			"riskMultiplier": 1.102
 		},
-		"note": "hasLikelyValueFloor: analyst upside 38.8% (DEPLOY override: base CAGR 40% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 237.54,
-				"price6mAgo": 198.5,
-				"price1mAgo": 304.29,
+				"price": 262.63,
+				"price6mAgo": 203.57,
+				"price1mAgo": 276.47,
 				"low3m": 213.76,
-				"return6m": 19.7,
-				"return1m": -21.9,
+				"return6m": 29,
+				"return1m": -5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": -27.4,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.43
+		}
 	},
 	"qcs": {
-		"earningsScore": -0.85,
+		"earningsScore": -0.83,
 		"flowScore": 5,
-		"revisionsScore": 0.91,
-		"totalScore": 5.06,
+		"revisionsScore": 1.36,
+		"totalScore": 5.53,
 		"raw": {
 			"avgSurprisePct": -3.8,
 			"netInsiderShares": 3731,
 			"instFlowTrend": "positive",
-			"upRevisions": 6,
-			"downRevisions": 4,
+			"upRevisions": 4,
+			"downRevisions": 1,
 			"totalAnalysts": 11
 		}
 	},
 	"description": "Royal Gold, Inc., together with its subsidiaries, acquires and manages precious metal streams, royalties, and related interests in North America, South and Central America, Europe, the Middle East,...",
 	"analystTargets": {
 		"low": 260,
-		"mean": 329.64,
+		"mean": 330.09,
 		"high": 375
 	},
 	"analystConsensus": {
@@ -112,5 +109,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$251.50",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 15.84,
+			"low": 9.93,
+			"average": 12.84455
+		},
+		"2027": {
+			"high": 21.61,
+			"low": 10.78,
+			"average": 14.82877
+		}
+	}
 }

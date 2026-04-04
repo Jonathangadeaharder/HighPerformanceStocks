@@ -9,60 +9,60 @@
 	"cagrModel": {
 		"epsGrowth": "20%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 21.63,
+		"ttmEPS": 21.66,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "24%",
-			"bull": "37%"
+			"bear": "-10%",
+			"base": "18%",
+			"bull": "30%"
 		}
 	},
-	"currentPrice": "$327.29",
-	"marketCap": "$7.6B USD",
+	"currentPrice": "$344.90",
+	"marketCap": "$8.0B USD",
 	"valuation": {
-		"trailingPE": 15.1,
-		"forwardPE": 14.7,
-		"evEbitda": 11.7,
-		"evFcf": 7.9
+		"trailingPE": 15.9,
+		"forwardPE": 15.5,
+		"evEbitda": 12.4,
+		"evFcf": 8.4
 	},
 	"metrics": {
 		"roe": "29.3%",
 		"fcfMargin": "~51%",
-		"fcfYield": "~13%",
+		"fcfYield": "~12%",
 		"netDebtEbitda": "0.1x",
 		"ruleOf40": "69%",
-		"beta": "1.04",
+		"beta": "1.08",
 		"revenueGrowth": "17.3%",
-		"roic": "13.6%",
+		"roic": "12.9%",
 		"interestCoverage": "52.7x"
 	},
 	"consensus": {
 		"yahoo": "$407.33"
 	},
 	"targetPrice": "$407.33",
-	"expectedCAGR": "-5% - 37%",
+	"expectedCAGR": "-10% - 30%",
 	"screener": {
-		"engine": "fEVG",
-		"score": 0.75,
+		"engine": "fCFG",
+		"score": 0.42,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
-			"multipleType": "EV/EBITDA",
-			"multiple": 11.7,
+			"multipleType": "EV/FCF",
+			"multiple": 8.4,
 			"cvStock": 0.047,
-			"riskMultiplier": 1.282
+			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 327.29,
-				"price6mAgo": 416.74,
-				"price1mAgo": 396.18,
+				"pass": true,
+				"price": 344.9,
+				"price6mAgo": 474.52,
+				"price1mAgo": 378.49,
 				"low3m": 321.97,
-				"return6m": -21.5,
-				"return1m": -17.4,
-				"near3mLow": true
+				"return6m": -27.3,
+				"return1m": -8.9,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
@@ -75,11 +75,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.75
+		"secondaryScore": 0.78
 	},
-	"lastUpdated": "2026-03-28T23:02:55.316Z",
+	"lastUpdated": "2026-04-04T23:39:03.178Z",
 	"expectedVolatility": "~38%",
-	"sharpeRatio": 0.3,
+	"sharpeRatio": 0.14,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -108,5 +108,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 21.93513,
+			"low": 19.51,
+			"average": 20.36959
+		},
+		"2027": {
+			"high": 24.68956,
+			"low": 20.5,
+			"average": 22.24541
+		}
+	}
 }

@@ -2,11 +2,74 @@
 	"ticker": "VKTX",
 	"name": "Viking Therapeutics",
 	"group": "Biotech",
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "Clinical-stage biotech with VK2735, a GLP-1/GIP dual agonist showing strong Phase 2 data in obesity. No approved products yet; high binary risk but significant optionality in the GLP-1 space.",
 	"cagrModel": {
-		"epsGrowth": "15%",
+		"epsGrowth": "10%",
 		"epsGrowthSource": "auto",
-		"basis": "Non-GAAP EPS"
+		"basis": "Non-GAAP EPS",
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "1%",
+			"base": "166%",
+			"bull": "259%"
+		}
+	},
+	"currentPrice": "$34.80",
+	"marketCap": "$4.0B USD",
+	"valuation": {
+		"forwardPE": -7.8,
+		"evFcf": -20.7
+	},
+	"metrics": {
+		"roe": "-47.3%",
+		"fcfYield": "~-4%",
+		"beta": "0.82",
+		"roic": "-8.4%"
+	},
+	"consensus": {
+		"yahoo": "$92.72"
+	},
+	"targetPrice": "$92.72",
+	"analystTargets": {
+		"low": 35,
+		"mean": 92.72,
+		"high": 125
+	},
+	"expectedCAGR": "1% - 259%",
+	"expectedVolatility": "~85%",
+	"sharpeRatio": 1.48,
+	"screener": {
+		"engine": "totalReturn",
+		"signal": "NO_DATA",
+		"note": "Missing/negative forward PE and no trailing EPS fallback"
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 5,
+		"revisionsScore": -0.33,
+		"totalScore": -0.33,
+		"raw": {
+			"avgSurprisePct": -34.12,
+			"netInsiderShares": 177031,
+			"instFlowTrend": "positive",
+			"upRevisions": 5,
+			"downRevisions": 6,
+			"totalAnalysts": 15
+		}
+	},
+	"description": "Viking Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on the development of novel therapies for metabolic and endocrine disorders.",
+	"lastUpdated": "2026-04-04T23:39:16.781Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": -2.75,
+			"low": -7.42,
+			"average": -4.04243
+		},
+		"2027": {
+			"high": -2.89,
+			"low": -8.51,
+			"average": -4.46005
+		}
 	}
 }

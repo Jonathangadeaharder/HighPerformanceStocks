@@ -5,24 +5,24 @@
 	"confidence": "high",
 	"confidenceReason": "Broadest portfolio in semiconductor manufacturing equipment. AGS services segment (~$6B) provides revenue resilience through WFE downturns. Advanced packaging (CoWoS, HBM) creates new growth vectors independent of leading-edge capex.",
 	"cagrModel": {
-		"epsGrowth": "25%",
+		"epsGrowth": "26%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 9.74,
+		"ttmEPS": 9.76,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-17%",
-			"base": "23%",
-			"bull": "40%"
+			"bear": "-19%",
+			"base": "21%",
+			"bull": "44%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$337.17",
-	"marketCap": "$267.6B USD",
+	"currentPrice": "$348.47",
+	"marketCap": "$276.5B USD",
 	"valuation": {
-		"trailingPE": 34.6,
-		"forwardPE": 24.4,
-		"evEbitda": 30,
-		"evFcf": 61.3
+		"trailingPE": 35.7,
+		"forwardPE": 25,
+		"evEbitda": 31,
+		"evFcf": 63.4
 	},
 	"metrics": {
 		"roe": "38.9%",
@@ -30,39 +30,39 @@
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "13%",
-		"beta": "1.63",
+		"beta": "1.64",
 		"revenueGrowth": "-2.1%",
-		"roic": "3.3%",
+		"roic": "3.2%",
 		"interestCoverage": "22.5x"
 	},
 	"consensus": {
-		"yahoo": "$410.63"
+		"yahoo": "$418.28"
 	},
-	"targetPrice": "$410.63",
-	"expectedCAGR": "-17% - 40%",
-	"expectedVolatility": "~49%",
-	"sharpeRatio": 0.14,
+	"targetPrice": "$418.28",
+	"expectedCAGR": "-19% - 44%",
+	"expectedVolatility": "~48%",
+	"sharpeRatio": 0.17,
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.2,
+		"engine": "fPERG",
+		"score": 0.96,
 		"signal": "DEPLOY",
 		"inputs": {
-			"growth": 25,
-			"multipleType": "EV/EBITDA",
-			"multiple": 30,
-			"cvStock": 0.099,
+			"growth": 26,
+			"multipleType": "Forward P/E",
+			"multiple": 25,
+			"cvStock": 0.102,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 23% ≥ 20% and stabilized (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 21% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 337.17,
-				"price6mAgo": 204.95,
-				"price1mAgo": 372.18,
-				"low3m": 255.96,
-				"return6m": 64.5,
-				"return1m": -9.4,
+				"price": 348.47,
+				"price6mAgo": 223.91,
+				"price1mAgo": 346.53,
+				"low3m": 265.1,
+				"return6m": 55.6,
+				"return1m": 0.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -74,32 +74,30 @@
 				"surprise": 7.9,
 				"quarter": "2026-01"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.98
+		}
 	},
-	"lastUpdated": "2026-03-28T23:02:44.003Z",
+	"lastUpdated": "2026-04-04T23:38:51.645Z",
 	"qcs": {
-		"earningsScore": 2.03,
+		"earningsScore": 1.97,
 		"flowScore": 5,
-		"revisionsScore": 5,
-		"totalScore": 12.03,
+		"revisionsScore": 4.85,
+		"totalScore": 11.82,
 		"raw": {
 			"avgSurprisePct": 5.03,
 			"netInsiderShares": 499440,
 			"instFlowTrend": "positive",
 			"upRevisions": 32,
 			"downRevisions": 0,
-			"totalAnalysts": 32
+			"totalAnalysts": 33
 		}
 	},
 	"bullCase": "Applied Materials has the broadest portfolio in semiconductor equipment — CVD, PVD, CMP, inspection, and display. Its AGS (Applied Global Services) segment generates $6B+ in high-margin recurring revenue from installed base maintenance, providing a 40%+ revenue floor through downturns. Advanced packaging (CoWoS, HBM) is a new growth vector where AMAT has strong positioning.",
 	"bearCase": "China revenues (~30% of total) are structurally at risk from escalating US export controls. If additional equipment restrictions are imposed, AMAT loses its single-largest growth market. Semiconductor equipment spending is among the most capital-intensive and volatile categories — a WFE downcycle of 20%+ is not uncommon. Concentrated customer risk (TSMC, Samsung, Intel).",
 	"description": "Applied Materials, Inc. provides materials engineering solutions, equipment, services, and software to the semiconductor and related industries in the United States, China, Korea, Taiwan, Japan, So...",
 	"analystTargets": {
-		"low": 275,
-		"mean": 410.63,
-		"high": 470
+		"low": 280,
+		"mean": 418.28,
+		"high": 500
 	},
 	"analystConsensus": {
 		"ticker": "AMAT",
@@ -110,5 +108,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$363.47",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 11.51,
+			"low": 10.22,
+			"average": 11.04853
+		},
+		"2027": {
+			"high": 16.78,
+			"low": 11.1,
+			"average": 13.91739
+		}
+	}
 }

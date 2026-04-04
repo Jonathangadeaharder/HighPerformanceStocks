@@ -4,16 +4,16 @@
 	"group": "Serial Acquirers",
 	"confidence": "cut",
 	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
-	"marketCap": "$64.4B USD",
-	"sharpeRatio": 1.37,
-	"expectedCAGR": "20% - 71%",
-	"expectedVolatility": "~30%",
+	"marketCap": "$65.9B USD",
+	"sharpeRatio": 1.16,
+	"expectedCAGR": "7% - 67%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 36.6,
-		"forwardPE": 24.9,
+		"trailingPE": 37.6,
+		"forwardPE": 25.4,
 		"pegRatio": null,
-		"evEbitda": 19.8,
-		"evFcf": 69.3
+		"evEbitda": 20.1,
+		"evFcf": 70.4
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
@@ -22,17 +22,17 @@
 		"roe": null,
 		"netDebtEbitda": "5.9x",
 		"ruleOf40": "28%",
-		"beta": "0.92",
+		"beta": "0.95",
 		"revenueGrowth": "13.9%",
 		"interestCoverage": "2.8x"
 	},
-	"targetPrice": "$1591.25",
+	"targetPrice": "$1567.86",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1140.03",
+	"currentPrice": "$1167",
 	"consensus": {
 		"tipranks": "$1,568",
-		"yahoo": "$1591.25",
+		"yahoo": "$1567.86",
 		"stockanalysis": "$1,590"
 	},
 	"cagrModel": {
@@ -40,40 +40,40 @@
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "20%",
-			"base": "44%",
-			"bull": "71%"
+			"bear": "7%",
+			"base": "38%",
+			"bull": "67%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-03-28T23:03:06.752Z",
+	"lastUpdated": "2026-04-04T23:39:13.819Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.1,
-		"signal": "REJECTED",
+		"score": 1.12,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.8,
-			"cvStock": 0.028,
+			"multiple": 20.1,
+			"cvStock": 0.029,
 			"riskMultiplier": 1
 		},
-		"note": "Existential liquidity risk: 5.9x leverage on cyclical asset (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 38% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 1140.03,
-				"price6mAgo": 1289.29,
-				"price1mAgo": 1316.26,
-				"low3m": 1137.06,
-				"return6m": -11.6,
-				"return1m": -13.4,
+				"pass": true,
+				"price": 1167,
+				"price6mAgo": 1291.74,
+				"price1mAgo": 1294.96,
+				"low3m": 1123.61,
+				"return6m": -9.7,
+				"return1m": -9.9,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 8,
-				"down30d": 9
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 2.3,
@@ -81,26 +81,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.38
+		"secondaryScore": 1.41
 	},
 	"qcs": {
-		"earningsScore": 3.13,
+		"earningsScore": 3.02,
 		"flowScore": -5,
-		"revisionsScore": 0,
-		"totalScore": -1.87,
+		"revisionsScore": -0.26,
+		"totalScore": -2.24,
 		"raw": {
 			"avgSurprisePct": 2.19,
 			"netInsiderShares": -84402,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 18
+			"downRevisions": 2,
+			"totalAnalysts": 19
 		}
 	},
 	"description": "TransDigm Group Incorporated designs, produces, and supplies aircraft components in the United States and internationally.",
 	"analystTargets": {
-		"low": 1317,
-		"mean": 1591.25,
+		"low": 1200,
+		"mean": 1567.86,
 		"high": 1900
 	},
 	"analystConsensus": {
@@ -112,5 +112,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$1584.44"
+	"targetPriceAlternative": "$1584.44",
+	"forwardEstimates": {
+		"2026": {
+			"high": 40.4,
+			"low": 37.29,
+			"average": 39.01534
+		},
+		"2027": {
+			"high": 48.7,
+			"low": 43.4,
+			"average": 46.01462
+		}
+	}
 }

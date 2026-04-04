@@ -2,7 +2,7 @@
 	"ticker": "NVO",
 	"name": "Novo Nordisk",
 	"group": "Large-Cap Pharma",
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Leading GLP-1 manufacturer with Ozempic/Wegovy infrastructure advantage, though LLY is now a genuine competitor. Thesis rests on manufacturing scale, oral semaglutide, and CagriSema combination pipeline.",
 	"bullCase": "Novo Nordisk retains the world's most powerful GLP-1 commercial infrastructure — Ozempic and Wegovy have 70%+ market share in established markets. Oral semaglutide (Rybelsus and oral once-weekly formulations) open a new 10x larger addressable market. Manufacturing capacity expansion through 2027 will restore supply constraints. The CagriSema combination, despite a Phase 3 miss vs. expectations, still showed 22.7% weight loss — superior to any non-GLP-1 obesity drug.",
 	"bearCase": "Increasing competition from Eli Lilly's Zepbound and emerging oral challengers. Potential for Medicare pricing negotiations and political pressure on obesity drug pricing in the US.",
@@ -12,18 +12,18 @@
 		"ttmEPS": 3.56,
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "15%",
-			"base": "35%",
-			"bull": "81%"
+			"bear": "12%",
+			"base": "32%",
+			"bull": "77%"
 		}
 	},
-	"currentPrice": "$36.04",
-	"marketCap": "$161.2B USD",
+	"currentPrice": "$36.98",
+	"marketCap": "$164.1B USD",
 	"valuation": {
-		"trailingPE": 10.1,
-		"forwardPE": 10.6,
+		"trailingPE": 10.4,
+		"forwardPE": 10.8,
 		"evEbitda": null,
-		"evFcf": 700.9
+		"evFcf": 712
 	},
 	"metrics": {
 		"roe": "60.7%",
@@ -33,43 +33,43 @@
 		"ruleOf40": "-7%",
 		"beta": "0.27",
 		"revenueGrowth": "-7.6%",
-		"roic": "44.9%",
+		"roic": "44.4%",
 		"interestCoverage": "21.3x"
 	},
 	"consensus": {
-		"yahoo": "$46.89"
+		"yahoo": "$47.02"
 	},
-	"targetPrice": "$46.89",
-	"expectedCAGR": "15% - 81%",
+	"targetPrice": "$47.02",
+	"expectedCAGR": "12% - 77%",
 	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.78,
+	"sharpeRatio": 0.71,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.82,
-		"signal": "REJECTED",
+		"score": 0.83,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 10.6,
-			"cvStock": 0.041,
+			"multiple": 10.8,
+			"cvStock": 0.04,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "DEPLOY override: base CAGR 32% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 36.04,
-				"price6mAgo": 55.5,
-				"price1mAgo": 37.76,
-				"low3m": 35.85,
-				"return6m": -35.1,
-				"return1m": -4.6,
-				"near3mLow": true
+				"price": 36.98,
+				"price6mAgo": 59.65,
+				"price1mAgo": 39.07,
+				"low3m": 35.12,
+				"return6m": -38,
+				"return1m": -5.3,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 5
+				"pass": true,
+				"up30d": 1,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 2.3,
@@ -78,25 +78,25 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": 3.7,
+		"earningsScore": 3.79,
 		"flowScore": 0,
-		"revisionsScore": 1.25,
-		"totalScore": 4.95,
+		"revisionsScore": 2.5,
+		"totalScore": 6.29,
 		"raw": {
 			"avgSurprisePct": 3.79,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 1,
+			"upRevisions": 2,
 			"downRevisions": 0,
 			"totalAnalysts": 4
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-03-28T23:03:03.155Z",
+	"lastUpdated": "2026-04-04T23:39:09.810Z",
 	"analystTargets": {
-		"low": 39.74,
-		"mean": 46.89,
-		"high": 63.43
+		"low": 39.7,
+		"mean": 47.02,
+		"high": 63.47
 	},
 	"analystConsensus": {
 		"ticker": "NVO",
@@ -107,5 +107,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$65.57"
+	"targetPriceAlternative": "$65.57",
+	"forwardEstimates": {
+		"2026": {
+			"high": 23.54,
+			"low": 20.45897,
+			"average": 21.44449
+		},
+		"2027": {
+			"high": 23.99834,
+			"low": 20.46,
+			"average": 22.06459
+		}
+	}
 }

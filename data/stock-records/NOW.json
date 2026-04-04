@@ -4,15 +4,15 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Massive, sticky IT workflow platform with ~21.5% annualized EPS growth and elite FCF margins, though valuation still caps upside.",
-	"marketCap": "$104.9B USD",
-	"sharpeRatio": 2.11,
-	"expectedCAGR": "24% - 162%",
+	"marketCap": "$107.6B USD",
+	"sharpeRatio": 1.98,
+	"expectedCAGR": "20% - 155%",
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 59.5,
-		"forwardPE": 19.8,
-		"evEbitda": 36.6,
-		"evFcf": 20.2
+		"trailingPE": 61.1,
+		"forwardPE": 20.3,
+		"evEbitda": 37.5,
+		"evFcf": 20.8
 	},
 	"metrics": {
 		"roe": "15.5%",
@@ -20,51 +20,51 @@
 		"fcfYield": "~5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "58%",
-		"beta": "1.02",
+		"beta": "1",
 		"revenueGrowth": "20.7%",
-		"roic": "5.4%",
+		"roic": "5.2%",
 		"interestCoverage": "20.7x"
 	},
-	"targetPrice": "$188.67",
+	"targetPrice": "$185.04",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$99.41",
+	"currentPrice": "$102",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "24%",
-			"base": "90%",
-			"bull": "162%"
+			"bear": "20%",
+			"base": "81%",
+			"bull": "155%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:02.820Z",
+	"lastUpdated": "2026-04-04T23:39:09.645Z",
 	"consensus": {
-		"yahoo": "$188.67"
+		"yahoo": "$185.04"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.96,
+		"score": 0.99,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 20.2,
+			"multiple": 20.8,
 			"cvStock": 0.061,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 90% ≥ 20% and stabilized",
+		"note": "DEPLOY override: base CAGR 81% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 99.41,
-				"price6mAgo": 188.17,
-				"price1mAgo": 109.42,
+				"price": 102,
+				"price6mAgo": 182.57,
+				"price1mAgo": 120.38,
 				"low3m": 98,
-				"return6m": -47.2,
-				"return1m": -9.1,
+				"return6m": -44.1,
+				"return1m": -15.3,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.94
+		"secondaryScore": 0.97
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -91,13 +91,13 @@
 			"instFlowTrend": "negative",
 			"upRevisions": 3,
 			"downRevisions": 1,
-			"totalAnalysts": 43
+			"totalAnalysts": 44
 		}
 	},
 	"description": "ServiceNow, Inc. provides cloud-based solution for digital workflows in the North America, Europe, the Middle East and Africa, Asia Pacific, and internationally.",
 	"analystTargets": {
 		"low": 122.78,
-		"mean": 188.67,
+		"mean": 185.04,
 		"high": 260
 	},
 	"analystConsensus": {
@@ -109,5 +109,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$192.62"
+	"targetPriceAlternative": "$192.62",
+	"forwardEstimates": {
+		"2026": {
+			"high": 4.36284,
+			"low": 3.48,
+			"average": 4.16611
+		},
+		"2027": {
+			"high": 5.4,
+			"low": 4.17,
+			"average": 5.01803
+		}
+	}
 }

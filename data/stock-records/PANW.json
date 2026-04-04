@@ -4,69 +4,69 @@
 	"group": "Cybersecurity",
 	"confidence": "low",
 	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
-	"marketCap": "$120.0B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "-22% - 80%",
+	"marketCap": "$133.2B USD",
+	"sharpeRatio": 0.32,
+	"expectedCAGR": "-30% - 62%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 82.1,
-		"forwardPE": 37,
+		"trailingPE": 90.7,
+		"forwardPE": 41.1,
 		"pegRatio": null,
-		"evEbitda": 75.4,
-		"evFcf": 40.5
+		"evEbitda": 84,
+		"evFcf": 45.2
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
 		"fcfYield": "~2%",
-		"roic": "3.4%",
+		"roic": "3.1%",
 		"roe": "16.3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "44%",
-		"beta": "0.82",
+		"beta": "0.77",
 		"revenueGrowth": "14.9%",
 		"interestCoverage": "60.9x"
 	},
-	"targetPrice": "$206.97",
+	"targetPrice": "$206.83",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
-	"currentPrice": "$147.02",
+	"currentPrice": "$163.21",
 	"consensus": {
 		"tipranks": "$220",
-		"yahoo": "$206.97"
+		"yahoo": "$206.83"
 	},
 	"cagrModel": {
 		"ttmEPS": 3.68,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "41%",
-			"bull": "80%"
+			"bear": "-30%",
+			"base": "27%",
+			"bull": "62%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-03-28T23:03:03.992Z",
+	"lastUpdated": "2026-04-04T23:39:10.674Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.15,
+		"score": 2.4,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
-			"multiple": 40.5,
+			"multiple": 45.2,
 			"cvStock": 0.164,
 			"riskMultiplier": 1.061
 		},
-		"note": "hasLikelyValueFloor: analyst upside 40.8% (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
+		"note": "DEPLOY override: base CAGR 27% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 147.02,
-				"price6mAgo": 203.96,
-				"price1mAgo": 150.15,
+				"price": 163.21,
+				"price6mAgo": 212.58,
+				"price1mAgo": 163.16,
 				"low3m": 139.57,
-				"return6m": -27.9,
-				"return1m": -2.1,
+				"return6m": -23.2,
+				"return1m": 0,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,26 +80,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.96
+		"secondaryScore": 2.18
 	},
 	"qcs": {
 		"earningsScore": 1.54,
 		"flowScore": 5,
-		"revisionsScore": -4.27,
-		"totalScore": 2.27,
+		"revisionsScore": -4.18,
+		"totalScore": 2.36,
 		"raw": {
 			"avgSurprisePct": 6.3,
-			"netInsiderShares": 2211786,
+			"netInsiderShares": 2280571,
 			"instFlowTrend": "positive",
 			"upRevisions": 3,
 			"downRevisions": 44,
-			"totalAnalysts": 48
+			"totalAnalysts": 49
 		}
 	},
 	"description": "Palo Alto Networks, Inc. provides cybersecurity solutions in the Americas, Europe, the Middle East, Africa, the Asia Pacific, and Japan.",
 	"analystTargets": {
 		"low": 114,
-		"mean": 206.97,
+		"mean": 206.83,
 		"high": 265
 	},
 	"analystConsensus": {
@@ -111,5 +111,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$210.19",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.97,
+			"low": 3.65,
+			"average": 3.69081
+		},
+		"2027": {
+			"high": 3.19,
+			"low": 1.69,
+			"average": 2.29168
+		}
+	}
 }

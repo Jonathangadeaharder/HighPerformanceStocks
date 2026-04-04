@@ -32,8 +32,13 @@ export function hasLikelyValueFloor(stock: FindingStock): boolean {
  * Rules for stocks that PASS the primary screener.
  */
 export function deploymentForPass(stock: FindingStock): DeploymentInfo {
-	const base = stock.baseCagr ?? -999;
-	const bear = stock.bearCagr ?? -999;
+	const base = stock.baseCagr;
+	const bear = stock.bearCagr;
+
+	if (base == null || base === -999 || bear == null || bear === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
+	}
+
 	const basePass = base >= ETF_HURDLE_RETURN;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
 	const bearPass = bear >= BEAR_FLOOR_RETURN;
@@ -78,7 +83,12 @@ export function deploymentForWait(stock: FindingStock): DeploymentInfo {
 export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const score = stock.screener?.score;
 	const note = stock.screener?.note;
-	const base = stock.baseCagr ?? -999;
+	const engine = stock.screener?.engine ?? 'fPERG';
+	const base = stock.baseCagr;
+
+	if (base == null || base === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates.' };
+	}
 
 	if ((score ?? 0) >= 1.5 && base >= 20) {
 		return {
@@ -87,10 +97,13 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (score != null && score > 1) {
+	const thresholdMap: Record<string, number> = { PERG: 1.0, fCFG: 5.0, fEVG: 3.5 };
+	const maxThreshold = thresholdMap[engine] ?? 1.0;
+
+	if (score != null && score > maxThreshold) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Valuation score ${score} is above the 1.0 buy threshold (lower is better).`
+			reason: note ?? `Valuation score ${score} is above the ${maxThreshold} threshold for ${engine}.`
 		};
 	}
 
@@ -149,7 +162,7 @@ export function assignDeployment(stock: FindingStock): void {
 			break;
 		}
 		default: {
-			const _exhaustiveCheck: never = signal;
+			const _exhaustiveCheck = signal as any;
 			stock.deployment = {
 				status: 'NO_DATA',
 				reason: `Unknown signal: ${String(_exhaustiveCheck)}`

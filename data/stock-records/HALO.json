@@ -4,74 +4,74 @@
 	"group": "Healthcare Technology",
 	"confidence": "low",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
-	"marketCap": "$7.3B USD",
-	"sharpeRatio": 0.42,
-	"expectedCAGR": "-9% - 56%",
+	"marketCap": "$7.6B USD",
+	"sharpeRatio": 0.3,
+	"expectedCAGR": "-13% - 49%",
 	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 24.1,
-		"forwardPE": 6.3,
+		"trailingPE": 25.2,
+		"forwardPE": 6.6,
 		"pegRatio": null,
-		"evEbitda": 10.4,
-		"evFcf": 50.4
+		"evEbitda": 10.7,
+		"evFcf": 52.2
 	},
 	"metrics": {
 		"fcfMargin": "~13%",
-		"fcfYield": "~3%",
-		"roic": "7.0%",
+		"fcfYield": "~2%",
+		"roic": "6.7%",
 		"roe": "153.6%",
 		"netDebtEbitda": "2.3x",
 		"ruleOf40": "65%",
-		"beta": "1.02",
+		"beta": "1.03",
 		"revenueGrowth": "51.6%",
 		"interestCoverage": "7.5x"
 	},
-	"targetPrice": "$84.50",
+	"targetPrice": "$84.89",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
 	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
-	"currentPrice": "$61.63",
+	"currentPrice": "$64.49",
 	"consensus": {
 		"tipranks": "$95",
-		"yahoo": "$84.50"
+		"yahoo": "$84.89"
 	},
 	"cagrModel": {
 		"ttmEPS": 2.56,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "37%",
-			"bull": "56%"
+			"bear": "-13%",
+			"base": "32%",
+			"bull": "49%"
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-03-28T23:02:51.961Z",
+	"lastUpdated": "2026-04-04T23:39:00.028Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.52,
+		"score": 0.53,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.4,
+			"multiple": 10.7,
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 37% ≥ 15% and stabilized",
+		"note": "DEPLOY override: base CAGR 32% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 61.63,
-				"price6mAgo": 73.29,
-				"price1mAgo": 69.85,
+				"price": 64.49,
+				"price6mAgo": 66.97,
+				"price1mAgo": 67.36,
 				"low3m": 61.33,
-				"return6m": -15.9,
-				"return1m": -11.8,
-				"near3mLow": true
+				"return6m": -3.7,
+				"return1m": -4.3,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 0,
 				"down30d": 1
 			},
 			"earningsSurprise": {
@@ -80,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.32
+		"secondaryScore": 0.33
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -89,7 +89,7 @@
 		"totalScore": 0,
 		"raw": {
 			"avgSurprisePct": -16.7,
-			"netInsiderShares": 219396,
+			"netInsiderShares": 221396,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
 			"downRevisions": 2,
@@ -99,7 +99,7 @@
 	"description": "Halozyme Therapeutics, Inc., a biopharmaceutical company, researches, develops, and commercializes of proprietary enzymes and devices in the United States, Switzerland, Belgium, Japan, and internat...",
 	"analystTargets": {
 		"low": 56,
-		"mean": 84.5,
+		"mean": 84.89,
 		"high": 96
 	},
 	"analystConsensus": {
@@ -111,5 +111,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$78.56",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 8.21,
+			"low": 7.87,
+			"average": 8.016
+		},
+		"2027": {
+			"high": 10.07,
+			"low": 9.48,
+			"average": 9.845
+		}
+	}
 }

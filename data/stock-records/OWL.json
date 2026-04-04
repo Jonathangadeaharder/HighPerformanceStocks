@@ -2,27 +2,27 @@
 	"ticker": "OWL",
 	"name": "Blue Owl Capital",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
+	"confidence": "cut",
 	"confidenceReason": "CUT: Automated pipeline natively pulls GAAP EPS ($0.10) which is obliterated by acquisition amortizations. Our mathematical models depend on accurate TTM inputs. Without an automated FRE feed, alt-asset managers distort system-wide risk logic.",
-	"targetPrice": "$15.07",
+	"targetPrice": "$14.93",
 	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
 	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",
 	"cagrModel": {
 		"ttmEPS": 0.92,
 		"epsGrowth": "15%",
-		"dividendYield": "10%",
+		"dividendYield": "11%",
 		"scenarios": {
-			"bear": "23%",
-			"base": "80%",
-			"bull": "170%"
+			"bear": "28%",
+			"base": "85%",
+			"bull": "179%"
 		},
 		"basis": "strictly hardcode FRE per share"
 	},
 	"valuation": {
-		"trailingPE": 9.6,
-		"forwardPE": 8.3,
-		"evEbitda": 10.8,
-		"evFcf": 9.9
+		"trailingPE": 9.4,
+		"forwardPE": 8.1,
+		"evEbitda": 10.7,
+		"evFcf": 9.8
 	},
 	"metrics": {
 		"aum": "$235B",
@@ -32,46 +32,46 @@
 		"fcfYield": "~10%",
 		"netDebtEbitda": "3.0x",
 		"ruleOf40": "67%",
-		"beta": "1.17",
+		"beta": "1.21",
 		"revenueGrowth": "19.7%",
-		"roic": "7.2%",
+		"roic": "7.4%",
 		"interestCoverage": "5.8x"
 	},
 	"consensus": {
-		"yahoo": "$15.07"
+		"yahoo": "$14.93"
 	},
-	"currentPrice": "$8.84",
-	"marketCap": "$13.8B USD",
-	"expectedCAGR": "23% - 170%",
-	"expectedVolatility": "~48%",
-	"sharpeRatio": 1.92,
+	"currentPrice": "$8.57",
+	"marketCap": "$13.4B USD",
+	"expectedCAGR": "28% - 179%",
+	"expectedVolatility": "~44%",
+	"sharpeRatio": 2.25,
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.64,
+		"score": 0.62,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/FRE",
-			"multiple": 9.6,
-			"cvStock": 0.047,
+			"multiple": 9.3,
+			"cvStock": 0.048,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 8.84,
-				"price6mAgo": 17.56,
-				"price1mAgo": 10.68,
-				"low3m": 8.55,
-				"return6m": -49.7,
-				"return1m": -17.2,
-				"near3mLow": true
+				"pass": true,
+				"price": 8.57,
+				"price6mAgo": 16.52,
+				"price1mAgo": 10.42,
+				"low3m": 7.95,
+				"return6m": -48.1,
+				"return1m": -17.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 6
+				"down30d": 8
 			},
 			"earningsSurprise": {
 				"surprise": 6.8,
@@ -81,25 +81,25 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 0.54
 	},
-	"lastUpdated": "2026-03-28T23:03:03.921Z",
+	"lastUpdated": "2026-04-04T23:39:10.666Z",
 	"qcs": {
-		"earningsScore": 0.17,
+		"earningsScore": 0.16,
 		"flowScore": 2.5,
-		"revisionsScore": -2,
-		"totalScore": 0.67,
+		"revisionsScore": -2.67,
+		"totalScore": -0.01,
 		"raw": {
 			"avgSurprisePct": 0.2,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 6,
+			"downRevisions": 8,
 			"totalAnalysts": 15
 		}
 	},
 	"description": "Blue Owl Capital Inc. operates as an alternative asset manager in the United States.",
 	"analystTargets": {
 		"low": 10,
-		"mean": 15.07,
+		"mean": 14.93,
 		"high": 23
 	},
 	"analystConsensus": {
@@ -111,5 +111,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$16.64"
+	"targetPriceAlternative": "$16.64",
+	"forwardEstimates": {
+		"2026": {
+			"high": 0.98,
+			"low": 0.85,
+			"average": 0.91509
+		},
+		"2027": {
+			"high": 1.15102,
+			"low": 0.95,
+			"average": 1.05753
+		}
+	}
 }

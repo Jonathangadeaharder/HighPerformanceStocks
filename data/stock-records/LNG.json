@@ -2,76 +2,77 @@
 	"ticker": "LNG",
 	"name": "Cheniere Energy",
 	"group": "Energy",
-	"confidence": "cut",
+	"confidence": "low",
 	"confidenceReason": "Dominant US LNG exporter with long-term take-or-pay contracts. ~$17.90 TTM EPS with 8-12% growth. Strong FCF generation but commodity-linked earnings volatility.",
-	"marketCap": "$63.9B USD",
-	"sharpeRatio": -0.1,
-	"expectedCAGR": "-13% - 16%",
-	"expectedVolatility": "~30%",
+	"marketCap": "$60.5B USD",
+	"sharpeRatio": 0.09,
+	"expectedCAGR": "-8% - 22%",
+	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 12.3,
-		"forwardPE": 17.7,
+		"trailingPE": 11.7,
+		"forwardPE": 15.7,
 		"pegRatio": null,
-		"evEbitda": 8.9,
-		"evFcf": 35.1
+		"evEbitda": 8.5,
+		"evFcf": 33.8
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
 		"fcfYield": "~4%",
-		"roic": "6.2%",
+		"roic": "6.5%",
 		"roe": "58.7%",
 		"netDebtEbitda": "2.4x",
 		"ruleOf40": "26%",
-		"beta": "0.24",
+		"beta": "0.13",
 		"revenueGrowth": "12.3%",
 		"interestCoverage": "7.2x"
 	},
-	"targetPrice": "$295",
+	"targetPrice": "$298.86",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$296.91",
+	"currentPrice": "$281.16",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$295"
+		"yahoo": "$298.86"
 	},
 	"cagrModel": {
-		"ttmEPS": 24.14,
+		"ttmEPS": 24.12,
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "0%",
-			"bull": "16%"
+			"bear": "-8%",
+			"base": "7%",
+			"bull": "22%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-03-28T23:02:57.067Z",
+	"lastUpdated": "2026-04-04T23:39:05.249Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 3.75,
+		"score": 2.19,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 4,
 			"multipleType": "EV/EBITDA",
-			"multiple": 8.9,
-			"cvStock": 0.086,
-			"riskMultiplier": 1.685
+			"multiple": 8.5,
+			"cvStock": 0.145,
+			"riskMultiplier": 1.031
 		},
+		"note": "Cheap (2.19) but base return 7% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 296.91,
-				"price6mAgo": 235.46,
-				"price1mAgo": 248.93,
-				"low3m": 188.13,
-				"return6m": 26.1,
-				"return1m": 19.3,
+				"price": 281.16,
+				"price6mAgo": 233.26,
+				"price1mAgo": 249.54,
+				"low3m": 191.64,
+				"return6m": 20.5,
+				"return1m": 12.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 1
+				"up30d": 3,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": -33,
@@ -79,27 +80,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 4.42,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 4.05
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": -3.02,
 		"flowScore": 2.5,
-		"revisionsScore": 1,
-		"totalScore": -1.5,
+		"revisionsScore": 1.25,
+		"totalScore": 0.73,
 		"raw": {
 			"avgSurprisePct": -10.93,
-			"netInsiderShares": -17534092,
+			"netInsiderShares": -17665190,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
 			"downRevisions": 1,
-			"totalAnalysts": 5
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Cheniere Energy, Inc., an energy infrastructure company, primarily engages in the liquefied natural gas (LNG) related businesses in the United States.",
 	"analystTargets": {
 		"low": 255,
-		"mean": 295,
+		"mean": 298.86,
 		"high": 340
 	},
 	"analystConsensus": {
@@ -111,5 +111,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$282.00"
+	"targetPriceAlternative": "$282.00",
+	"forwardEstimates": {
+		"2026": {
+			"high": 14.96,
+			"low": 13.64,
+			"average": 14.35
+		},
+		"2027": {
+			"high": 24.2326,
+			"low": 13.83,
+			"average": 17.91652
+		}
+	}
 }

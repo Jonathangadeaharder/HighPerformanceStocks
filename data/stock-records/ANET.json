@@ -4,36 +4,36 @@
 	"group": "Network Infrastructure",
 	"confidence": "medium",
 	"confidenceReason": "AI Ethernet networking monopoly. Zero debt, $10.7B cash. InfiniBand-to-Ethernet shift is multi-year tailwind. ROIC ~192% is asset-light perfection.",
-	"marketCap": "$152.1B USD",
-	"sharpeRatio": 0.84,
-	"expectedCAGR": "16% - 82%",
-	"expectedVolatility": "~53%",
+	"marketCap": "$159.5B USD",
+	"sharpeRatio": 0.73,
+	"expectedCAGR": "11% - 74%",
+	"expectedVolatility": "~52%",
 	"valuation": {
-		"trailingPE": 43.9,
-		"forwardPE": 28.3,
+		"trailingPE": 46.1,
+		"forwardPE": 29.6,
 		"pegRatio": 1.44,
-		"evEbitda": 35.9,
-		"evFcf": 41.6
+		"evEbitda": 37.8,
+		"evFcf": 43.8
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
 		"fcfYield": "~2%",
-		"roic": "3.1%",
+		"roic": "2.9%",
 		"roe": "31.4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "67%",
 		"grossMargin": "64.06%",
-		"beta": "1.46",
+		"beta": "1.48",
 		"revenueGrowth": "28.9%",
 		"interestCoverage": "789.3x"
 	},
-	"targetPrice": "$177.74",
+	"targetPrice": "$176.46",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$120.77",
+	"currentPrice": "$126.68",
 	"consensus": {
 		"tipranks": "$182",
-		"yahoo": "$177.74",
+		"yahoo": "$176.46",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
@@ -41,36 +41,36 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "47%",
-			"bull": "82%"
+			"bear": "11%",
+			"base": "39%",
+			"bull": "74%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T23:02:44.160Z",
+	"lastUpdated": "2026-04-04T23:38:52.441Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.71,
+		"engine": "fCFG",
+		"score": 2.09,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 21,
-			"multipleType": "EV/EBITDA",
-			"multiple": 35.9,
+			"multipleType": "EV/FCF",
+			"multiple": 43.8,
 			"cvStock": 0.082,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 47.2% + QCS 9.13 (DEPLOY override: base CAGR 47% ≥ 20% and stabilized) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 39% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 120.77,
-				"price6mAgo": 143.37,
-				"price1mAgo": 129.3,
-				"low3m": 120,
-				"return6m": -15.8,
-				"return1m": -6.6,
-				"near3mLow": true
+				"price": 126.68,
+				"price6mAgo": 149.5,
+				"price1mAgo": 139.4,
+				"low3m": 115.42,
+				"return6m": -15.3,
+				"return1m": -9.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -83,26 +83,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.35
+		"secondaryScore": 1.41
 	},
 	"qcs": {
 		"earningsScore": 4.33,
 		"flowScore": 5,
-		"revisionsScore": -0.2,
-		"totalScore": 9.13,
+		"revisionsScore": -0.19,
+		"totalScore": 9.14,
 		"raw": {
 			"avgSurprisePct": 8.88,
 			"netInsiderShares": 1197239,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
 			"downRevisions": 2,
-			"totalAnalysts": 25
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Eur...",
 	"analystTargets": {
 		"low": 140,
-		"mean": 177.74,
+		"mean": 176.46,
 		"high": 220
 	},
 	"analystConsensus": {
@@ -113,5 +113,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.81,
+			"low": 3.4,
+			"average": 3.53563
+		},
+		"2027": {
+			"high": 5.24,
+			"low": 3.84,
+			"average": 4.27467
+		}
+	}
 }

@@ -4,32 +4,32 @@
 	"group": "Biotech",
 	"confidence": "high",
 	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
-	"marketCap": "$11.1B USD",
-	"sharpeRatio": 0.22,
-	"expectedCAGR": "-16% - 44%",
+	"marketCap": "$11.8B USD",
+	"sharpeRatio": 0.09,
+	"expectedCAGR": "-20% - 37%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 14.9,
-		"forwardPE": 10.6,
+		"trailingPE": 15.8,
+		"forwardPE": 11.2,
 		"pegRatio": 0.8,
-		"evEbitda": 10.8,
-		"evFcf": 15.7
+		"evEbitda": 11.4,
+		"evFcf": 16.7
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
-		"fcfYield": "~6%",
-		"roic": "8.6%",
+		"fcfYield": "~5%",
+		"roic": "8.1%",
 		"roe": "35.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "33%",
-		"beta": "0.41",
+		"beta": "0.42",
 		"revenueGrowth": "5.6%",
 		"interestCoverage": "83.4x"
 	},
 	"targetPrice": "$46.83",
 	"bullCase": "Exelixis' Cabometyx has label expansions pending in front-line RCC combinations (with nivolumab) and additional tumor types. The pipeline assets XL092 (next-gen cabozantinib) and XB002 (ADC) represent the next growth phase. Massive cash balance ($2B+) with no debt funds buybacks and internal pipeline without equity dilution.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$41.53",
+	"currentPrice": "$43.88",
 	"consensus": {
 		"tipranks": "$45",
 		"yahoo": "$46.83",
@@ -40,35 +40,35 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-16%",
-			"base": "13%",
-			"bull": "44%"
+			"bear": "-20%",
+			"base": "7%",
+			"bull": "37%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-03-28T23:02:50.105Z",
+	"lastUpdated": "2026-04-04T23:38:58.956Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.76,
+		"score": 0.81,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 15.7,
+			"multiple": 16.7,
 			"cvStock": 0.135,
 			"riskMultiplier": 1.018
 		},
-		"note": "Cheap (0.76) but base return 13% misses the 15% hurdle (hasLikelyValueFloor: QCS 10.77 ≥ 8 (elite quality floor)) (REJECT: Stalled at WAIT with base CAGR 13% < 15%)",
+		"note": "Cheap (0.81) but base return 7% misses the 15% hurdle (hasLikelyValueFloor: QCS 10.77 >= 8 (elite quality floor)) (REJECT: Stalled at WAIT with base CAGR 7% < 15%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 41.53,
-				"price6mAgo": 40.57,
-				"price1mAgo": 41.03,
+				"price": 43.88,
+				"price6mAgo": 40.01,
+				"price1mAgo": 41.28,
 				"low3m": 39.71,
-				"return6m": 2.4,
-				"return1m": 1.2,
-				"near3mLow": true
+				"return6m": 9.7,
+				"return1m": 6.3,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -81,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.51
+		"secondaryScore": 0.54
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -112,5 +112,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$46.94",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.67,
+			"low": 2.92267,
+			"average": 3.39559
+		},
+		"2027": {
+			"high": 4.89,
+			"low": 2.77,
+			"average": 3.92938
+		}
+	}
 }
