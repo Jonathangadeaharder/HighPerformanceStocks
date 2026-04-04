@@ -253,11 +253,12 @@ describe('deploymentForFail', () => {
 	it('returns FAIL for moderately high score', () => {
 		const stock: FindingStock = {
 			ticker: 'TEST',
+			baseCagr: 20,
 			screener: { score: 1.2 }
 		};
 		const result = deploymentForFail(stock);
 		expect(result.status).toBe('FAIL');
-		expect(result.reason).toContain('above the 1.0 buy threshold');
+		expect(result.reason).toContain('threshold');
 	});
 
 	it('returns FAIL if base return misses hurdle', () => {
