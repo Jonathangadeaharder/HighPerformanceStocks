@@ -210,16 +210,19 @@ export function applyUpdates(
 		const currentYear = earningsTrend.find((t: any) => t.period === '0y');
 		const nextYear = earningsTrend.find((t: any) => t.period === '+1y');
 
-		if (currentYear?.earningsEstimate?.avg && nextYear?.earningsEstimate?.avg) {
-			const cy = currentYear.earningsEstimate;
-			const ny = nextYear.earningsEstimate;
-			const cyYear = String(new Date(currentYear.endDate).getFullYear());
-			const nyYear = String(new Date(nextYear.endDate).getFullYear());
+		const cyEst = currentYear?.earningsEstimate;
+		const nyEst = nextYear?.earningsEstimate;
+		if (cyEst?.avg != null && nyEst?.avg != null) {
+			const cyYear = new Date(currentYear.endDate).getFullYear();
+			const nyYear = new Date(nextYear.endDate).getFullYear();
 
-			stock.forwardEstimates = {
-				[cyYear]: { high: cy.high, low: cy.low, average: cy.avg },
-				[nyYear]: { high: ny.high, low: ny.low, average: ny.avg }
-			};
+			// Validate dates and guard against both periods landing in the same year
+			if (Number.isFinite(cyYear) && Number.isFinite(nyYear) && cyYear !== nyYear) {
+				stock.forwardEstimates = {
+					[String(cyYear)]: { high: cyEst.high, low: cyEst.low, average: cyEst.avg },
+					[String(nyYear)]: { high: nyEst.high, low: nyEst.low, average: nyEst.avg }
+				};
+			}
 		}
 	}
 

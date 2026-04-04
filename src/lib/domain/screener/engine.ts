@@ -176,8 +176,7 @@ function computeGrowthScore(
 	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const thresholdMap: Record<string, number> = { PERG: 1.0, fCFG: 5.0, fEVG: 3.5 };
-	const threshold = thresholdMap[engine] ?? ENGINE_THRESHOLDS[engine] ?? 1.0;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
 	const waitThreshold = threshold === 1.0 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
@@ -719,14 +718,6 @@ function evaluateHyperGrowth(
 	const branch = detectGrowthBranch(stock, valuationPrice);
 
 	if (branch.engine === 'DISQUALIFIED') {
-		const s = stock as any;
-		if (s.sector === 'Healthcare' || (s.industry && s.industry.includes('Biotechnology'))) {
-			return {
-				engine: 'DISQUALIFIED',
-				signal: 'REJECTED',
-				note: 'Binary-outcome biotech breaking EPS compounding rules.'
-			};
-		}
 		return {
 			engine: 'DISQUALIFIED',
 			signal: 'WAIT',
@@ -749,7 +740,6 @@ function evaluateHyperGrowth(
 	}
 
 	let actualMultiple = branch.multiple;
-	let hallucinationNote = '';
 
 	if (branch.multipleType === FORWARD_PE_LABEL) {
 		const eps = stock.cagrModel?.ttmEPS;
@@ -759,7 +749,7 @@ function evaluateHyperGrowth(
 				return {
 					engine: branch.engine,
 					signal: 'NO_DATA',
-					note: 'Negative/invalid earnings structure. Awaiting profitability.'
+					note: 'Missing/negative forward PE and no trailing EPS fallback'
 				};
 			}
 			actualMultiple = fallbackPE;
@@ -773,10 +763,6 @@ function evaluateHyperGrowth(
 		growthPct,
 		cvStock
 	);
-
-	if (hallucinationNote) {
-		appendNote(result, hallucinationNote);
-	}
 
 	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 

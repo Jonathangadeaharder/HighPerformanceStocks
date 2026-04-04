@@ -97,7 +97,7 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	const thresholdMap: Record<string, number> = { PERG: 1.0, fCFG: 5.0, fEVG: 3.5 };
+	const thresholdMap: Record<string, number> = { fPERG: 1.0, tPERG: 1.0, fCFG: 5.0, fEVG: 3.5 };
 	const maxThreshold = thresholdMap[engine] ?? 1.0;
 
 	if (score != null && score > maxThreshold) {
