@@ -186,8 +186,8 @@ function computeGrowthScore(
 	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
-	const waitThreshold = threshold === 1.0 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
+	const waitThreshold = threshold === 1 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
 	let note: string | undefined;
@@ -704,8 +704,6 @@ function applyDeployRejectOverrides(
 ): void {
 	// Mandatory DEPLOY override & Rejection Floors:
 	if (baseCagr == null || result.signal === 'REJECTED') return;
-
-	const stabPass = result.realityChecks?.stabilization?.pass !== false;
 
 	if (baseCagr < 0) {
 		result.signal = 'REJECTED';

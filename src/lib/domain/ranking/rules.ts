@@ -1,5 +1,5 @@
 import { ENGINE_THRESHOLDS } from '$lib/domain/screener/types';
-import type { DeploymentInfo, FindingStock, ScreenerSignal } from '$lib/types/dashboard';
+import type { DeploymentInfo, FindingStock } from '$lib/types/dashboard';
 import { computeEffectiveHurdle } from '$lib/domain/screener/engine';
 
 export { ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
@@ -105,7 +105,7 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	const maxThreshold = ENGINE_THRESHOLDS[engine as keyof typeof ENGINE_THRESHOLDS] ?? 1.0;
+	const maxThreshold = ENGINE_THRESHOLDS[engine as keyof typeof ENGINE_THRESHOLDS] ?? 1;
 
 	if (score != null && score > maxThreshold) {
 		return {
