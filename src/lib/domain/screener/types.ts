@@ -92,8 +92,7 @@ export interface RealityChecks {
 export interface ScreenerResult {
 	engine: string;
 	score?: number | null;
-	// DEPLOY is a manual override stronger than PASS: QCS ≥ 8 + bear CAGR ≥ 20% triggers mandatory deployment.
-	signal: 'DEPLOY' | 'FLAG FOR MANUAL REVIEW' | 'PASS' | 'FAIL' | 'WAIT' | 'REJECTED' | 'NO_DATA';
+	signal: 'FLAG FOR MANUAL REVIEW' | 'PASS' | 'FAIL' | 'WAIT' | 'REJECTED' | 'NO_DATA';
 	inputs?: ScreenerInputs;
 	note?: string;
 	secondaryEngine?: string;
