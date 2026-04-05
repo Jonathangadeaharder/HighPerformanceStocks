@@ -2,8 +2,10 @@
 	"ticker": "TMDX",
 	"name": "TransMedics Group",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "Functional monopoly in active organ transplant preservation and aviation logistics. High growth addressing immense unmet medical need.",
+	"bullCase": "TMDX achieves mass adoption of its OCS and aviation services across the US, becoming the de facto standard for all organ transplants and driving massive margin expansion.",
+	"bearCase": "Adoption plateaus as centers stick to traditional cold storage, or unexpected adverse clinical outcomes with OCS lead to regulatory pushback and diminished growth.",
 	"cagrModel": {
 		"epsGrowth": "50%",
 		"epsGrowthSource": "auto",
@@ -48,7 +50,7 @@
 		"2026": {
 			"high": 2.87,
 			"low": 2.08,
-			"average": 2.47333
+			"average": 2.47
 		},
 		"2027": {
 			"high": 4.19,
@@ -60,14 +62,14 @@
 	"expectedVolatility": "~56%",
 	"sharpeRatio": 0.97,
 	"screener": {
-		"engine": "fCFG",
+		"engine": "fPERG",
 		"score": 0.96,
-		"signal": "WAIT",
-		"note": "Borderline valuation (Score 0.96 vs 0.8 limit)",
+		"signal": "REJECTED",
+		"note": "REJECTED: Consensus Collapse",
 		"inputs": {
 			"growth": 50,
-			"multipleType": "EV/FCF",
-			"multiple": 37.1,
+			"multipleType": "Forward P/E",
+			"multiple": 27.2,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -83,9 +85,9 @@
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 3,
-				"down30d": 3
+				"pass": false,
+				"up30d": 2,
+				"down30d": 6
 			},
 			"earningsSurprise": {
 				"surprise": 41,
