@@ -46,7 +46,6 @@
 			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (3.69) but base return 8% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -71,7 +70,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 3.45
 	},
-	"lastUpdated": "2026-04-04T23:39:10.849Z",
+	"lastUpdated": "2026-04-05T07:21:32.302Z",
 	"expectedVolatility": "~23%",
 	"sharpeRatio": 0.39,
 	"qcs": {

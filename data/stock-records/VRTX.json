@@ -7,7 +7,7 @@
 	"marketCap": "$111.4B USD",
 	"sharpeRatio": 0.16,
 	"expectedCAGR": "-25% - 46%",
-	"expectedVolatility": "~37%",
+	"expectedVolatility": "~38%",
 	"valuation": {
 		"trailingPE": 28.7,
 		"forwardPE": 20,
@@ -46,11 +46,11 @@
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-04-04T23:39:17.829Z",
+	"lastUpdated": "2026-04-05T07:21:39.257Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 3.19,
-		"signal": "DEPLOY",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/FCF",
@@ -58,7 +58,6 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 25% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

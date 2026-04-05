@@ -47,7 +47,7 @@
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-04-04T23:38:54.938Z",
+	"lastUpdated": "2026-04-05T07:21:16.392Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.42,
@@ -59,7 +59,7 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 32% >= 15% and stabilized (Massive P/E divergence (>300%); potential data hallucination) (Used benchmark CV)",
+		"note": "Massive P/E divergence (>300%); potential data hallucination (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

@@ -772,7 +772,7 @@ function evaluateHyperGrowth(
 	// Extreme Structural Risk Penalty
 	// (Canonical examples: ZS, AVGO, CRDO — concentrated in 1-2 hyperscaler customers.)
 	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();
-	if (bearCaseStr.includes('customer concentration') && result.signal === 'PASS') {
+	if (bearCaseStr.includes('customer concentration') && (result.signal === 'PASS' || result.signal === 'WAIT')) {
 		result.signal = 'WAIT';
 		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
 	}

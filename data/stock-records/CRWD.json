@@ -44,11 +44,11 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-04-04T23:38:56.850Z",
+	"lastUpdated": "2026-04-05T07:21:18.490Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.9,
-		"signal": "DEPLOY",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "EV/FCF",
@@ -56,7 +56,6 @@
 			"cvStock": 0.087,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 23% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

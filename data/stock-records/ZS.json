@@ -44,7 +44,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-04-04T23:39:18.015Z",
+	"lastUpdated": "2026-04-05T07:21:39.460Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.81,
@@ -56,7 +56,7 @@
 			"cvStock": 0.077,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 69% >= 15% and stabilized (Signal capped at WAIT due to customer concentration risk)",
+		"note": "Signal capped at WAIT due to customer concentration risk",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

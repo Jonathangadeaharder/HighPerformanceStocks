@@ -48,11 +48,11 @@
 		},
 		"basis": "Fee-related earnings per share basis; exit PE reflects normalized FRE multiple rather than GAAP carried-interest swings"
 	},
-	"lastUpdated": "2026-04-04T23:38:57.945Z",
+	"lastUpdated": "2026-04-05T07:21:19.601Z",
 	"screener": {
 		"engine": "fFREG",
 		"score": 1.05,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/FRE",
@@ -60,16 +60,16 @@
 			"cvStock": 0.07,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.4% (DEPLOY override: base CAGR 41% >= 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 39.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
 				"price": 286.7,
 				"price6mAgo": 343.8,
-				"price1mAgo": 287.5,
+				"price1mAgo": 285.6,
 				"low3m": 262.1,
 				"return6m": -16.6,
-				"return1m": -0.3,
+				"return1m": 0.4,
 				"near3mLow": false
 			},
 			"revisions": {

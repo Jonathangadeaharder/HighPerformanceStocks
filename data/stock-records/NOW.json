@@ -40,14 +40,14 @@
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:09.645Z",
+	"lastUpdated": "2026-04-05T07:21:31.076Z",
 	"consensus": {
 		"yahoo": "$185.04"
 	},
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.99,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
@@ -55,7 +55,7 @@
 			"cvStock": 0.061,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 81% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 81.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

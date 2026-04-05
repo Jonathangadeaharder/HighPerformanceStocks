@@ -46,7 +46,7 @@
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-04-04T23:38:57.900Z",
+	"lastUpdated": "2026-04-05T07:21:19.532Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.55,
@@ -58,16 +58,15 @@
 			"cvStock": 0.043,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (1.55) but base return 8% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
 				"price": 6225,
 				"price6mAgo": 5330,
-				"price1mAgo": 5360,
+				"price1mAgo": 5280,
 				"low3m": 4970,
 				"return6m": 16.8,
-				"return1m": 16.1,
+				"return1m": 17.9,
 				"near3mLow": false
 			},
 			"revisions": {

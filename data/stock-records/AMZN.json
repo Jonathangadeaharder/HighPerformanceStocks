@@ -45,7 +45,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 4.76,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "EV/FCF",
@@ -53,7 +53,7 @@
 			"cvStock": 0.172,
 			"riskMultiplier": 1.079
 		},
-		"note": "DEPLOY override: base CAGR 34% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 34.1%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -80,7 +80,7 @@
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-04-04T23:38:51.452Z",
+	"lastUpdated": "2026-04-05T07:21:13.443Z",
 	"intrinsicValue": {
 		"dcf": 127.68,
 		"date": "2026-03-28",

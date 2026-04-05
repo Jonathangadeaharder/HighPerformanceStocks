@@ -45,11 +45,11 @@
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:05.244Z",
+	"lastUpdated": "2026-04-05T07:21:26.874Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.59,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
@@ -57,7 +57,7 @@
 			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 92% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 92.4% + QCS 10",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

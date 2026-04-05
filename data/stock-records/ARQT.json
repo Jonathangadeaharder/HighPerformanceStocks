@@ -47,7 +47,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.48,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 248,
 			"multipleType": "Forward P/E",
@@ -55,7 +55,6 @@
 			"cvStock": 0.153,
 			"riskMultiplier": 1.041
 		},
-		"note": "DEPLOY override: base CAGR 47% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -93,7 +92,7 @@
 		}
 	},
 	"description": "Arcutis Biotherapeutics, Inc., a biopharmaceutical company, focuses on developing and commercializing treatments for dermatological diseases.",
-	"lastUpdated": "2026-04-04T23:38:53.646Z",
+	"lastUpdated": "2026-04-05T07:21:15.339Z",
 	"forwardEstimates": {
 		"2026": {
 			"high": 0.75,

@@ -5,9 +5,9 @@
 	"confidence": "low",
 	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
 	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.3,
+	"sharpeRatio": 0.29,
 	"expectedCAGR": "-13% - 49%",
-	"expectedVolatility": "~45%",
+	"expectedVolatility": "~46%",
 	"valuation": {
 		"trailingPE": 25.2,
 		"forwardPE": 6.6,
@@ -45,11 +45,11 @@
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-04-04T23:39:00.028Z",
+	"lastUpdated": "2026-04-05T07:21:21.697Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.53,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
@@ -57,7 +57,7 @@
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 32% >= 15% and stabilized",
+		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

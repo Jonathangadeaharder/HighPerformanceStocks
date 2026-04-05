@@ -45,11 +45,11 @@
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-04-04T23:38:56.852Z",
+	"lastUpdated": "2026-04-05T07:21:18.492Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.23,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
@@ -57,7 +57,7 @@
 			"cvStock": 0.028,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 73% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 73%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

@@ -19,7 +19,7 @@
 		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-04T23:38:51.367Z",
+	"lastUpdated": "2026-04-05T07:21:13.343Z",
 	"consensus": {
 		"yahoo": "$289.61"
 	},
@@ -34,7 +34,7 @@
 			"cvStock": 0.159,
 			"riskMultiplier": 1.052
 		},
-		"note": "DEPLOY override: base CAGR 33% >= 15% and stabilized (Massive P/E divergence (>300%); potential data hallucination)",
+		"note": "Massive P/E divergence (>300%); potential data hallucination",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -81,7 +81,7 @@
 		"interestCoverage": "30.6x"
 	},
 	"targetPrice": "$289.61",
-	"expectedVolatility": "~62%",
+	"expectedVolatility": "~63%",
 	"qcs": {
 		"earningsScore": 1.3,
 		"flowScore": 0,

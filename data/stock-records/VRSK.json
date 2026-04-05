@@ -42,7 +42,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.99,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
@@ -50,7 +50,7 @@
 			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 25% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: QCS 9.72 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -75,7 +75,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.54
 	},
-	"lastUpdated": "2026-04-04T23:39:16.823Z",
+	"lastUpdated": "2026-04-05T07:21:38.279Z",
 	"expectedVolatility": "~29%",
 	"sharpeRatio": 0.71,
 	"qcs": {

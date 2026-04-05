@@ -48,7 +48,7 @@
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:16.964Z",
+	"lastUpdated": "2026-04-05T07:21:38.405Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.54,
@@ -60,7 +60,6 @@
 			"cvStock": 0.124,
 			"riskMultiplier": 1.008
 		},
-		"note": "Cheap (1.54) but base return 4% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

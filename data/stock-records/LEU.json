@@ -50,7 +50,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 2.15,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 50,
 			"multipleType": "EV/EBITDA",
@@ -58,7 +58,7 @@
 			"cvStock": 0.292,
 			"riskMultiplier": 1.551
 		},
-		"note": "DEPLOY override: base CAGR 52% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 51.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -83,7 +83,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.39
 	},
-	"lastUpdated": "2026-04-04T23:39:04.221Z",
+	"lastUpdated": "2026-04-05T07:21:25.886Z",
 	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
 	"analystTargets": {
 		"low": 137,

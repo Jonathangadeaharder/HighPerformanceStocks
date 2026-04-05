@@ -5,9 +5,9 @@
 	"confidence": "medium",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
 	"marketCap": "$77.0B USD",
-	"sharpeRatio": 0.49,
+	"sharpeRatio": 0.47,
 	"expectedCAGR": "-1% - 47%",
-	"expectedVolatility": "~38%",
+	"expectedVolatility": "~39%",
 	"valuation": {
 		"trailingPE": 68.5,
 		"forwardPE": 29.6,
@@ -46,11 +46,11 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-04T23:38:55.808Z",
+	"lastUpdated": "2026-04-05T07:21:17.442Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.48,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
@@ -58,7 +58,7 @@
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.4% (DEPLOY override: base CAGR 33% >= 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 33.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

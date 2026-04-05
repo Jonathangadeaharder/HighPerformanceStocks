@@ -50,7 +50,6 @@
 			"cvStock": 0.063,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (2.23) but base return 8% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,7 +76,7 @@
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-04-04T23:38:59.997Z",
+	"lastUpdated": "2026-04-05T07:21:21.643Z",
 	"expectedVolatility": "~43%",
 	"sharpeRatio": 0.16,
 	"qcs": {

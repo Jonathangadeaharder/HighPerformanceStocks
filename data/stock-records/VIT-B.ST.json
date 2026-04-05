@@ -45,11 +45,11 @@
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-04-04T23:39:16.776Z",
+	"lastUpdated": "2026-04-05T07:21:38.189Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.77,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
@@ -57,16 +57,15 @@
 			"cvStock": 0.041,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 87% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
 				"price": 241.8,
 				"price6mAgo": 340.4,
-				"price1mAgo": 251.2,
+				"price1mAgo": 248.8,
 				"low3m": 215.4,
 				"return6m": -29,
-				"return1m": -3.7,
+				"return1m": -2.8,
 				"near3mLow": false
 			},
 			"revisions": {

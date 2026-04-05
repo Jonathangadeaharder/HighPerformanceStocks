@@ -41,14 +41,14 @@
 		"basis": "Estimated compounder baseline",
 		"ttmEPS": 4.2
 	},
-	"lastUpdated": "2026-04-04T23:39:14.863Z",
+	"lastUpdated": "2026-04-05T07:21:36.309Z",
 	"consensus": {
 		"yahoo": "C$182.83"
 	},
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.96,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
@@ -56,7 +56,7 @@
 			"cvStock": 0.107,
 			"riskMultiplier": 1.001
 		},
-		"note": "DEPLOY override: base CAGR 41% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 40.5%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

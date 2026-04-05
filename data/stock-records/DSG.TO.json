@@ -35,7 +35,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 2.05,
-		"signal": "PASS",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
@@ -43,6 +43,7 @@
 			"cvStock": 0.072,
 			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -67,7 +68,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.31
 	},
-	"lastUpdated": "2026-04-04T23:38:57.902Z",
+	"lastUpdated": "2026-04-05T07:21:19.535Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {

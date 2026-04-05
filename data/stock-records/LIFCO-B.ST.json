@@ -45,7 +45,7 @@
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-04T23:39:04.375Z",
+	"lastUpdated": "2026-04-05T07:21:26.023Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.66,
@@ -63,10 +63,10 @@
 				"pass": true,
 				"price": 275,
 				"price6mAgo": 328,
-				"price1mAgo": 301,
+				"price1mAgo": 299,
 				"low3m": 268.2,
 				"return6m": -16.2,
-				"return1m": -8.6,
+				"return1m": -8,
 				"near3mLow": true
 			},
 			"revisions": {

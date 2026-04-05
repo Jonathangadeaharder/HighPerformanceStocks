@@ -46,11 +46,11 @@
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-04-04T23:41:32.119Z",
+	"lastUpdated": "2026-04-05T07:21:31.268Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.56,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
@@ -58,7 +58,6 @@
 			"cvStock": 0.127,
 			"riskMultiplier": 1.011
 		},
-		"note": "DEPLOY override: base CAGR 51% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

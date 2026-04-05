@@ -5,9 +5,9 @@
 	"confidence": "low",
 	"confidenceReason": "Strong Sharpe (0.46), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
 	"marketCap": "C$8.0B",
-	"sharpeRatio": 1.14,
+	"sharpeRatio": 1.11,
 	"expectedCAGR": "45% - 55%",
-	"expectedVolatility": "~40%",
+	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 120.5,
 		"forwardPE": 21.5,
@@ -45,11 +45,11 @@
 		},
 		"basis": "Price-to-FCF; Normalized FCF/FCFA2S; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:13.868Z",
+	"lastUpdated": "2026-04-05T07:21:35.265Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.77,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
@@ -57,7 +57,7 @@
 			"cvStock": 0.115,
 			"riskMultiplier": 1.003
 		},
-		"note": "DEPLOY override: base CAGR 49% >= 15% and stabilized",
+		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
