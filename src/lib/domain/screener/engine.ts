@@ -186,22 +186,27 @@ function computeGrowthScore(
 	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
-	const waitThreshold = threshold === 1.0 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
+	const waitThreshold = threshold === 1 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
+	let note: string | undefined;
+	
 	if (score <= threshold) {
 		signal = 'PASS';
 	} else if (score <= waitThreshold) {
 		signal = 'WAIT';
+		note = `Borderline valuation (Score ${score.toFixed(2)} vs ${threshold} limit)`;
 	} else {
 		signal = 'FAIL';
+		note = `Valuation score ${score.toFixed(2)} exceeds ${threshold} limit`;
 	}
 
 	return {
 		engine,
 		score: +score.toFixed(2),
 		signal,
+		...(note ? { note } : {}),
 		inputs: {
 			growth: growthPct,
 			multipleType,
@@ -679,13 +684,13 @@ function applyValueFloorCheck(
 	const qcsScore = stock.qcs?.totalScore;
 	if (qcsScore != null && qcsScore >= 8) {
 		valueFloorReason = valueFloorReason
-			? `${valueFloorReason} + QCS ${qcsScore}`
-			: `QCS ${qcsScore} >= 8 (elite quality floor)`;
+			? `${valueFloorReason} & elite quality floor (QCS ${qcsScore})`
+			: `elite quality floor (QCS ${qcsScore})`;
 	}
 
 	if (valueFloorReason !== null) {
 		result.signal = 'WAIT';
-		appendNote(result, `hasLikelyValueFloor: ${valueFloorReason}`);
+		appendNote(result, `Upgraded from FAIL: Protected by ${valueFloorReason}`);
 	}
 }
 
@@ -699,8 +704,6 @@ function applyDeployRejectOverrides(
 ): void {
 	// Mandatory DEPLOY override & Rejection Floors:
 	if (baseCagr == null || result.signal === 'REJECTED') return;
-
-	const stabPass = result.realityChecks?.stabilization?.pass !== false;
 
 	if (baseCagr < 0) {
 		result.signal = 'REJECTED';
