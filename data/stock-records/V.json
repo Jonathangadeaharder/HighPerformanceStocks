@@ -46,11 +46,11 @@
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-04-04T23:39:15.757Z",
+	"lastUpdated": "2026-04-05T07:21:37.225Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.48,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
@@ -58,7 +58,7 @@
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 31.9% (DEPLOY override: base CAGR 33% >= 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

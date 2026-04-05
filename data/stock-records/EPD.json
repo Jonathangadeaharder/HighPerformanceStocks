@@ -5,9 +5,9 @@
 	"confidence": "low",
 	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
 	"marketCap": "$81.2B USD",
-	"sharpeRatio": 0.22,
+	"sharpeRatio": 0.24,
 	"expectedCAGR": "-9% - 26%",
-	"expectedVolatility": "~18%",
+	"expectedVolatility": "~17%",
 	"valuation": {
 		"trailingPE": 13.3,
 		"forwardPE": 12.1,
@@ -45,7 +45,7 @@
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-04-04T23:38:57.903Z",
+	"lastUpdated": "2026-04-05T07:21:19.539Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 2.02,
@@ -57,7 +57,6 @@
 			"cvStock": 0.027,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (2.02) but base return 9% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

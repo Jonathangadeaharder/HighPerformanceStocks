@@ -199,13 +199,6 @@ describe('deploymentForPass', () => {
 		expect(result.reason).toContain('misses hurdle');
 	});
 
-	it('returns FAIL when bear floor is missed', () => {
-		const stock = createMockStock({ bearCagr: BEAR_FLOOR_RETURN - 1 });
-		const result = deploymentForPass(stock);
-		expect(result.status).toBe('FAIL');
-		expect(result.reason).toContain('misses hurdle');
-	});
-
 	it('returns NO_DATA when baseCagr is missing', () => {
 		const stock = createMockStock({ baseCagr: undefined });
 		const result = deploymentForPass(stock);

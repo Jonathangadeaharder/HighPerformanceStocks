@@ -46,11 +46,11 @@
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-04-04T23:39:15.914Z",
+	"lastUpdated": "2026-04-05T07:21:37.382Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.1,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "EV/FCF",
@@ -58,7 +58,7 @@
 			"cvStock": 0.03,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 56% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 55.7% + QCS 9.33",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,

@@ -46,11 +46,11 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-04-04T23:39:12.957Z",
+	"lastUpdated": "2026-04-05T07:21:34.406Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 4.02,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/EBITDA",
@@ -58,7 +58,7 @@
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 36% >= 20% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 35.8% + QCS 10.95",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

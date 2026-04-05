@@ -44,7 +44,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 2.67,
-		"signal": "DEPLOY",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
@@ -52,7 +52,6 @@
 			"cvStock": 0.032,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 19% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -77,9 +76,9 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 2.82
 	},
-	"lastUpdated": "2026-04-04T23:39:01.096Z",
-	"expectedVolatility": "~32%",
-	"sharpeRatio": 0.28,
+	"lastUpdated": "2026-04-05T07:21:22.716Z",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": 0.29,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,

@@ -50,7 +50,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 6.76,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 33,
 			"multipleType": "EV/EBITDA",
@@ -58,7 +58,7 @@
 			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 155.7% + QCS 8.06 (DEPLOY override: base CAGR 156% >= 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 155.7% + QCS 8.06",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -98,7 +98,7 @@
 		}
 	},
 	"description": "ADMA Biologics, Inc., a biopharmaceutical company, develops, manufactures, and markets specialty plasma-derived biologics for the treatment of immune deficiencies and infectious diseases in the Uni...",
-	"lastUpdated": "2026-04-04T23:38:50.401Z",
+	"lastUpdated": "2026-04-05T07:21:12.399Z",
 	"forwardEstimates": {
 		"2026": {
 			"high": 1.04,

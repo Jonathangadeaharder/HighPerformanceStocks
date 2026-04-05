@@ -47,7 +47,7 @@
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-04T23:38:50.220Z",
+	"lastUpdated": "2026-04-05T07:21:12.203Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.05,
@@ -65,10 +65,10 @@
 				"pass": true,
 				"price": 489.2,
 				"price6mAgo": 677.5,
-				"price1mAgo": 502,
+				"price1mAgo": 519,
 				"low3m": 476,
 				"return6m": -27.8,
-				"return1m": -2.5,
+				"return1m": -5.7,
 				"near3mLow": true
 			},
 			"revisions": {

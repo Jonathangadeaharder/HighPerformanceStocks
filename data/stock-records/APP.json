@@ -46,11 +46,11 @@
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-04T23:38:52.453Z",
+	"lastUpdated": "2026-04-05T07:21:14.295Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 1.62,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/FCF",
@@ -58,7 +58,7 @@
 			"cvStock": 0.098,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 67% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 67.1%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

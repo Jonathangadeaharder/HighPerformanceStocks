@@ -40,14 +40,14 @@
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:12.777Z",
+	"lastUpdated": "2026-04-05T07:21:34.217Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fCFG",
 		"score": 4.63,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "EV/FCF",
@@ -55,7 +55,7 @@
 			"cvStock": 0.153,
 			"riskMultiplier": 1.042
 		},
-		"note": "DEPLOY override: base CAGR 35% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 35.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

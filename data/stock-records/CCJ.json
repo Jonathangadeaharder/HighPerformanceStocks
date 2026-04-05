@@ -27,7 +27,7 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 3.57,
-		"signal": "REJECTED",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
@@ -35,7 +35,6 @@
 			"cvStock": 0.089,
 			"riskMultiplier": 1
 		},
-		"note": "REJECT: Stalled at WAIT with base CAGR 14% < 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -60,7 +59,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 4.13
 	},
-	"lastUpdated": "2026-04-04T23:38:55.010Z",
+	"lastUpdated": "2026-04-05T07:21:16.576Z",
 	"valuation": {
 		"trailingPE": 116.1,
 		"forwardPE": 61.9,

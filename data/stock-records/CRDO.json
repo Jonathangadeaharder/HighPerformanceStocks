@@ -52,7 +52,7 @@
 			"cvStock": 0.034,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 97% >= 15% and stabilized (Signal capped at WAIT due to customer concentration risk)",
+		"note": "Signal capped at WAIT due to customer concentration risk",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -75,7 +75,7 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-04-04T23:38:55.985Z",
+	"lastUpdated": "2026-04-05T07:21:17.629Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,

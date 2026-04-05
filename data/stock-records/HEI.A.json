@@ -38,11 +38,11 @@
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
 		"ttmEPS": 5.04
 	},
-	"lastUpdated": "2026-04-04T23:39:01.047Z",
+	"lastUpdated": "2026-04-05T07:21:22.684Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.59,
-		"signal": "PASS",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
@@ -50,6 +50,7 @@
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
+		"note": "hasLikelyValueFloor: analyst upside 32.7% (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -68,8 +69,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.06,
-		"note": "Used benchmark CV"
+		"secondaryScore": 3.06
 	},
 	"qcs": {
 		"earningsScore": 0,

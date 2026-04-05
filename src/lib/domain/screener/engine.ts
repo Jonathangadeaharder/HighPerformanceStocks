@@ -698,12 +698,6 @@ function applyDeployRejectOverrides(
 	} else if (result.signal === 'WAIT' && baseCagr < 15) {
 		result.signal = 'REJECTED';
 		appendNote(result, `REJECT: Stalled at WAIT with base CAGR ${baseCagr}% < 15%`);
-	} else if (result.signal === 'PASS' && baseCagr >= 15 && stabPass) {
-		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 15% and stabilized`);
-	} else if (result.signal === 'WAIT' && baseCagr >= 20 && stabPass) {
-		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 20% and stabilized`);
 	}
 }
 
@@ -775,11 +769,10 @@ function evaluateHyperGrowth(
 	applyValueFloorCheck(result, stock, rawPrice, summary);
 	applyDeployRejectOverrides(result, stock, baseCagr);
 
-	// Extreme Structural Risk Penalty — must run after deploy override so the cap
-	// is not immediately negated by the override promoting WAIT back to DEPLOY.
+	// Extreme Structural Risk Penalty
 	// (Canonical examples: ZS, AVGO, CRDO — concentrated in 1-2 hyperscaler customers.)
 	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();
-	if (bearCaseStr.includes('customer concentration') && result.signal === 'DEPLOY') {
+	if (bearCaseStr.includes('customer concentration') && (result.signal === 'PASS' || result.signal === 'WAIT')) {
 		result.signal = 'WAIT';
 		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
 	}

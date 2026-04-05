@@ -44,7 +44,7 @@
 	"screener": {
 		"engine": "fCFG",
 		"score": 3.74,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
@@ -52,7 +52,7 @@
 			"cvStock": 0.101,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 58% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 57.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
@@ -79,7 +79,7 @@
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-04-04T23:39:07.529Z",
+	"lastUpdated": "2026-04-05T07:21:29.168Z",
 	"intrinsicValue": {
 		"dcf": 314.88,
 		"date": "2026-03-28",

@@ -46,11 +46,11 @@
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:17.846Z",
+	"lastUpdated": "2026-04-05T07:21:39.268Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.13,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
@@ -58,7 +58,7 @@
 			"cvStock": 0.264,
 			"riskMultiplier": 1.405
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3% (DEPLOY override: base CAGR 40% >= 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 39.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

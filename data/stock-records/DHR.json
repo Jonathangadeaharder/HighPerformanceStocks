@@ -47,11 +47,11 @@
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-04-04T23:38:57.040Z",
+	"lastUpdated": "2026-04-05T07:21:18.681Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.37,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
@@ -59,7 +59,7 @@
 			"cvStock": 0.012,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 40% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 38.6%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

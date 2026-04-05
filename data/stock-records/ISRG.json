@@ -45,11 +45,11 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-04-04T23:39:02.123Z",
+	"lastUpdated": "2026-04-05T07:21:23.756Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 3.11,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
@@ -57,7 +57,7 @@
 			"cvStock": 0.031,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 34% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 33.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

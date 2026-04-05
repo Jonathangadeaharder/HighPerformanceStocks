@@ -60,7 +60,6 @@
 			"cvStock": 0.027,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (2.02) but base return 11% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -100,7 +99,7 @@
 		}
 	},
 	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
-	"lastUpdated": "2026-04-04T23:39:11.908Z",
+	"lastUpdated": "2026-04-05T07:21:33.351Z",
 	"analystConsensus": {
 		"ticker": "RTX",
 		"strongBuy": 5,

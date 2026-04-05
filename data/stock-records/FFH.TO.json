@@ -41,14 +41,14 @@
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
 		"ttmEPS": 297.32
 	},
-	"lastUpdated": "2026-04-04T23:38:58.958Z",
+	"lastUpdated": "2026-04-05T07:21:20.598Z",
 	"consensus": {
 		"yahoo": "C$2751.27"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.64,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
@@ -56,7 +56,6 @@
 			"cvStock": 0.041,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 17% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

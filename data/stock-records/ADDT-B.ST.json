@@ -47,11 +47,11 @@
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-04T23:38:50.369Z",
+	"lastUpdated": "2026-04-05T07:21:12.215Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.51,
-		"signal": "DEPLOY",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/EBITDA",
@@ -59,16 +59,15 @@
 			"cvStock": 0.053,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 20% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
 				"price": 320.6,
 				"price6mAgo": 305.8,
-				"price1mAgo": 315,
+				"price1mAgo": 312.6,
 				"low3m": 283.2,
 				"return6m": 4.8,
-				"return1m": 1.8,
+				"return1m": 2.6,
 				"near3mLow": false
 			},
 			"revisions": {

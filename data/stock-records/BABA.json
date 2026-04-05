@@ -5,9 +5,9 @@
 	"confidence": "cut",
 	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
 	"marketCap": "$291.4B USD",
-	"sharpeRatio": 1.08,
+	"sharpeRatio": 1.1,
 	"expectedCAGR": "-7% - 113%",
-	"expectedVolatility": "~45%",
+	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": 21.8,
 		"forwardPE": 15.7,
@@ -46,7 +46,7 @@
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-04-04T23:38:54.024Z",
+	"lastUpdated": "2026-04-05T07:21:15.519Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 1.34,

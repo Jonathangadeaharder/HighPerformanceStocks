@@ -78,9 +78,9 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 0.68
 	},
-	"lastUpdated": "2026-04-04T23:38:52.530Z",
-	"expectedVolatility": "~43%",
-	"sharpeRatio": 1.4,
+	"lastUpdated": "2026-04-05T07:21:14.341Z",
+	"expectedVolatility": "~42%",
+	"sharpeRatio": 1.43,
 	"qcs": {
 		"earningsScore": 0.04,
 		"flowScore": 5,

@@ -45,11 +45,11 @@
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-04-04T23:38:58.141Z",
+	"lastUpdated": "2026-04-05T07:21:19.724Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.14,
-		"signal": "DEPLOY",
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "EV/EBITDA",
@@ -57,7 +57,6 @@
 			"cvStock": 0.189,
 			"riskMultiplier": 1.119
 		},
-		"note": "DEPLOY override: base CAGR 24% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

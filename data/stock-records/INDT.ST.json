@@ -56,10 +56,10 @@
 				"pass": true,
 				"price": 211.4,
 				"price6mAgo": 235,
-				"price1mAgo": 221.8,
+				"price1mAgo": 219.2,
 				"low3m": 194,
 				"return6m": -10,
-				"return1m": -4.7,
+				"return1m": -3.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -75,7 +75,7 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.57
 	},
-	"lastUpdated": "2026-04-04T23:39:02.092Z",
+	"lastUpdated": "2026-04-05T07:21:23.728Z",
 	"expectedVolatility": "~29%",
 	"sharpeRatio": 0.91,
 	"qcs": {

@@ -46,11 +46,11 @@
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-04-04T23:39:16.783Z",
+	"lastUpdated": "2026-04-05T07:21:38.201Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 3.41,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 8,
 			"multipleType": "EV/EBITDA",
@@ -58,7 +58,7 @@
 			"cvStock": 0.377,
 			"riskMultiplier": 2.15
 		},
-		"note": "DEPLOY override: base CAGR 22% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: QCS 9.71 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

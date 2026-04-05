@@ -42,9 +42,8 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 
 	const basePass = base >= ETF_HURDLE_RETURN;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
-	const bearPass = bear >= BEAR_FLOOR_RETURN;
 
-	if (basePass && stabPass && bearPass) {
+	if (basePass && stabPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
 	}
 
@@ -55,10 +54,10 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (!basePass || !bearPass) {
+	if (!basePass) {
 		return {
 			status: 'FAIL',
-			reason: `Forward return (Base ${base}%, Bear ${bear}%) misses hurdle.`
+			reason: `Forward return (Base ${base}%) misses hurdle.`
 		};
 	}
 
@@ -153,7 +152,6 @@ export function assignDeployment(stock: FindingStock): void {
 			};
 			break;
 		}
-		case 'DEPLOY':
 		case 'FLAG FOR MANUAL REVIEW': {
 			stock.deployment = {
 				status: signal,

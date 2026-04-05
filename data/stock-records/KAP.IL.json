@@ -35,10 +35,10 @@
 				"pass": true,
 				"price": 80.3,
 				"price6mAgo": 52.9,
-				"price1mAgo": 80.1,
+				"price1mAgo": 76.8,
 				"low3m": 60,
 				"return6m": 51.8,
-				"return1m": 0.2,
+				"return1m": 4.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -49,7 +49,7 @@
 		},
 		"note": "Used benchmark CV"
 	},
-	"lastUpdated": "2026-04-04T23:39:03.144Z",
+	"lastUpdated": "2026-04-05T07:21:24.776Z",
 	"valuation": {
 		"trailingPE": 13,
 		"forwardPE": 0,

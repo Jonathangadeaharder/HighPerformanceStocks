@@ -46,7 +46,7 @@
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.83,
-		"signal": "DEPLOY",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
@@ -54,7 +54,6 @@
 			"cvStock": 0.04,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 32% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
@@ -92,7 +91,7 @@
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-04-04T23:39:09.810Z",
+	"lastUpdated": "2026-04-05T07:21:31.278Z",
 	"analystTargets": {
 		"low": 39.7,
 		"mean": 47.02,

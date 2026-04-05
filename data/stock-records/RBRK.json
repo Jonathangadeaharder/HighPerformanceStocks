@@ -36,14 +36,14 @@
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-04-04T23:39:11.896Z",
+	"lastUpdated": "2026-04-05T07:21:33.165Z",
 	"consensus": {
 		"yahoo": "$86.71"
 	},
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.98,
-		"signal": "DEPLOY",
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 48,
 			"multipleType": "EV/FCF",
@@ -51,7 +51,7 @@
 			"cvStock": 0.281,
 			"riskMultiplier": 1.492
 		},
-		"note": "DEPLOY override: base CAGR 69% >= 15% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 68.6% + QCS 12.92",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
