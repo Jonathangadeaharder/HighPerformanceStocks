@@ -21,11 +21,10 @@
 		{/if}
 	</div>
 	<div class="mini-guide">
-		Why this is here: these may become opportunities, but the price action still suggests patience.
+		Why this is here: these stocks require patience due to active drawdowns, structural risks, or elevated valuations offset by massive upside.
 	</div>
 	<p class="section-note">
-		These stocks look cheap enough, but the drawdown still looks active. They are candidates for
-		monitoring, not deployment.
+		These are solid candidates for monitoring, but current conditions prohibit immediate deployment. Review the specific constraints below.
 	</p>
 
 	{#if cheapWait.length === 0}
