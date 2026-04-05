@@ -1,6 +1,6 @@
 import { ENGINE_THRESHOLDS } from '$lib/domain/screener/types';
 import type { DeploymentInfo, FindingStock, ScreenerSignal } from '$lib/types/dashboard';
-import { computeEffectiveHurdle, ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
+import { computeEffectiveHurdle } from '$lib/domain/screener/engine';
 
 export { ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
 export const BEAR_FLOOR_RETURN = 0;
@@ -8,6 +8,11 @@ export const VALUE_FLOOR_BEAR_RETURN = 5;
 export const VALUE_FLOOR_BASE_RETURN = 25;
 export const VALUE_FLOOR_UPSIDE = 25;
 export const VALUE_FLOOR_MAX_SCORE = 0.65;
+
+function getEffectiveHurdle(stock: FindingStock): number {
+	const revisions = stock.screener?.realityChecks?.revisions;
+	return computeEffectiveHurdle(revisions?.up30d ?? 0, revisions?.down30d ?? 0);
+}
 
 /**
  * Determines if a stock likely has a "value floor" established.
@@ -41,10 +46,7 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
 	}
 
-	const revisions = stock.screener?.realityChecks?.revisions;
-	const up30d = revisions?.up30d ?? 0;
-	const down30d = revisions?.down30d ?? 0;
-	const hurdle = computeEffectiveHurdle(up30d, down30d);
+	const hurdle = getEffectiveHurdle(stock);
 
 	const basePass = base >= hurdle;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
@@ -112,10 +114,7 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	const revisions = stock.screener?.realityChecks?.revisions;
-	const up30d = revisions?.up30d ?? 0;
-	const down30d = revisions?.down30d ?? 0;
-	const hurdle = computeEffectiveHurdle(up30d, down30d);
+	const hurdle = getEffectiveHurdle(stock);
 
 	if (base < hurdle) {
 		return {

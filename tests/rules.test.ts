@@ -199,7 +199,7 @@ describe('deploymentForPass', () => {
 		expect(result.reason).toContain('misses 15% hurdle');
 	});
 
-	it('returns WAIT or PASS using dynamic 12% effective hurdle if overwhelming upgrades', () => {
+	it('returns DEPLOY when dynamic 12% hurdle is met with strong upgrades', () => {
 		const stock = createMockStock({ 
 			baseCagr: 13, 
 			screener: { 
@@ -213,7 +213,7 @@ describe('deploymentForPass', () => {
 		expect(result.status).toBe('DEPLOY'); // 13 >= 12 hurdle
 	});
 
-	it('returns WAIT or PASS using dynamic 10% effective hurdle if massive upgrades', () => {
+	it('returns WAIT when dynamic 10% hurdle is met but stabilization fails', () => {
 		const stock = createMockStock({ 
 			baseCagr: 11, 
 			screener: { 

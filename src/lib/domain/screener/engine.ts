@@ -770,17 +770,19 @@ function evaluateHyperGrowth(
 
 	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 
+	// Run reality checks early so we can source revision data from result.realityChecks
+	// instead of duplicating the earningsTrend extraction logic.
+	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
+
 	const baseCagr = parsePercent(stock.cagrModel?.scenarios?.base);
-	
-	const entry = summary?.earningsTrend?.trend?.find((trend) => trend.period === '+1y');
-	const revisions = entry?.epsRevisions;
-	const up30d = revisions?.upLast30days ?? 0;
-	const down30d = revisions?.downLast30days ?? 0;
+
+	const up30d = result.realityChecks?.revisions?.up30d ?? 0;
+	const down30d = result.realityChecks?.revisions?.down30d ?? 0;
 	const effectiveHurdle = computeEffectiveHurdle(up30d, down30d);
 
 	if (result.signal === 'PASS' && baseCagr != null && baseCagr < effectiveHurdle) {
 		result.signal = 'FAIL';
-		result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${effectiveHurdle}% hurdle`;
+		appendNote(result, `Cheap (${result.score}) but base return ${baseCagr}% misses the ${effectiveHurdle}% hurdle`);
 	} else if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
 		appendNote(result, `Analyst Lag Override: Hurdle adjusted to ${effectiveHurdle}% due to strong up-revisions`);
 	}
@@ -795,8 +797,6 @@ function evaluateHyperGrowth(
 		result.signal = 'WAIT';
 		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
 	}
-
-	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 
 	if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
 		const fpe = stock.valuation?.forwardPE;
