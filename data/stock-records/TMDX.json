@@ -62,14 +62,14 @@
 	"expectedVolatility": "~56%",
 	"sharpeRatio": 0.97,
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fCFG",
 		"score": 0.96,
 		"signal": "REJECTED",
-		"note": "REJECTED: Consensus Collapse",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 50,
-			"multipleType": "Forward P/E",
-			"multiple": 27.2,
+			"multipleType": "EV/FCF",
+			"multiple": 37.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
