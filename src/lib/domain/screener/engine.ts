@@ -821,14 +821,6 @@ export function computeScreener(
 
 	const group = stock.group?.toLowerCase() ?? '';
 	if (group.includes('disqualified') || group.includes('pre-profit') || group.includes('binary')) {
-		const s = stock as any;
-		if (s.sector === 'Healthcare' || (s.industry && s.industry.includes('Biotechnology'))) {
-			return {
-				engine: 'DISQUALIFIED',
-				signal: 'REJECTED',
-				note: 'Binary-outcome biotech breaking EPS compounding rules.'
-			};
-		}
 		return {
 			engine: 'DISQUALIFIED',
 			signal: 'REJECTED',

@@ -205,6 +205,24 @@ describe('deploymentForPass', () => {
 		expect(result.status).toBe('FAIL');
 		expect(result.reason).toContain('misses hurdle');
 	});
+
+	it('returns NO_DATA when baseCagr is missing', () => {
+		const stock = createMockStock({ baseCagr: undefined });
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('NO_DATA');
+	});
+
+	it('returns NO_DATA when baseCagr is the -999 sentinel', () => {
+		const stock = createMockStock({ baseCagr: -999 });
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('NO_DATA');
+	});
+
+	it('returns NO_DATA when bearCagr is the -999 sentinel', () => {
+		const stock = createMockStock({ bearCagr: -999 });
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('NO_DATA');
+	});
 });
 
 describe('deploymentForWait', () => {
@@ -270,6 +288,18 @@ describe('deploymentForFail', () => {
 		const result = deploymentForFail(stock);
 		expect(result.status).toBe('FAIL');
 		expect(result.reason).toContain('misses the 15% hurdle');
+	});
+
+	it('returns NO_DATA when baseCagr is missing', () => {
+		const stock: FindingStock = { ticker: 'TEST', screener: { score: 1.2 } };
+		const result = deploymentForFail(stock);
+		expect(result.status).toBe('NO_DATA');
+	});
+
+	it('returns NO_DATA when baseCagr is the -999 sentinel', () => {
+		const stock: FindingStock = { ticker: 'TEST', baseCagr: -999, screener: { score: 0.8 } };
+		const result = deploymentForFail(stock);
+		expect(result.status).toBe('NO_DATA');
 	});
 });
 
