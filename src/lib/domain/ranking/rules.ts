@@ -1,7 +1,8 @@
 import { ENGINE_THRESHOLDS } from '$lib/domain/screener/types';
 import type { DeploymentInfo, FindingStock, ScreenerSignal } from '$lib/types/dashboard';
+import { computeEffectiveHurdle, ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
 
-export const ETF_HURDLE_RETURN = 15;
+export { ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
 export const BEAR_FLOOR_RETURN = 0;
 export const VALUE_FLOOR_BEAR_RETURN = 5;
 export const VALUE_FLOOR_BASE_RETURN = 25;
@@ -40,7 +41,12 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
 	}
 
-	const basePass = base >= ETF_HURDLE_RETURN;
+	const revisions = stock.screener?.realityChecks?.revisions;
+	const up30d = revisions?.up30d ?? 0;
+	const down30d = revisions?.down30d ?? 0;
+	const hurdle = computeEffectiveHurdle(up30d, down30d);
+
+	const basePass = base >= hurdle;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
 
 	if (basePass && stabPass) {
@@ -57,7 +63,7 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 	if (!basePass) {
 		return {
 			status: 'FAIL',
-			reason: `Forward return (Base ${base}%) misses hurdle.`
+			reason: `Forward return (Base ${base}%) misses ${hurdle}% hurdle.`
 		};
 	}
 
@@ -106,12 +112,17 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (base < ETF_HURDLE_RETURN) {
+	const revisions = stock.screener?.realityChecks?.revisions;
+	const up30d = revisions?.up30d ?? 0;
+	const down30d = revisions?.down30d ?? 0;
+	const hurdle = computeEffectiveHurdle(up30d, down30d);
+
+	if (base < hurdle) {
 		return {
 			status: 'FAIL',
 			reason:
 				note ??
-				`Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
+				`Cheap (Score ${score}) but base return ${base}% misses the ${hurdle}% hurdle.`
 		};
 	}
 

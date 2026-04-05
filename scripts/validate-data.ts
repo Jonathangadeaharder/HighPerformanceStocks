@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseDisplayPrice, parsePercent } from '../src/lib/domain/finance/core.js';
 import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
+import { computeEffectiveHurdle } from '../src/lib/domain/screener/engine.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
@@ -179,9 +180,12 @@ function verifyData() {
 			data.screener.engine !== 'totalReturn'
 		) {
 			const baseReturn = parsePercent(data.cagrModel.scenarios.base);
-			if (baseReturn != null && baseReturn < 15) {
+			const up30d = data.screener.realityChecks?.revisions?.up30d ?? 0;
+			const down30d = data.screener.realityChecks?.revisions?.down30d ?? 0;
+			const effectiveHurdle = computeEffectiveHurdle(up30d, down30d);
+			if (baseReturn != null && baseReturn < effectiveHurdle) {
 				errors.push(
-					`Screener PASS but base return ${baseReturn}% < 15% hurdle (valuation/return mismatch)`
+					`Screener PASS but base return ${baseReturn}% < ${effectiveHurdle}% hurdle (valuation/return mismatch)`
 				);
 			}
 		}
