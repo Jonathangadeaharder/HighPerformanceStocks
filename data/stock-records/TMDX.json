@@ -60,14 +60,14 @@
 	"expectedVolatility": "~56%",
 	"sharpeRatio": 0.97,
 	"screener": {
-		"engine": "fPERG",
+		"engine": "fCFG",
 		"score": 0.96,
 		"signal": "REJECTED",
-		"note": "Borderline valuation (Score 0.96 vs 0.8 limit)",
+		"note": "REJECTED: Reality Check Failure (revisions)",
 		"inputs": {
 			"growth": 50,
-			"multipleType": "Forward P/E",
-			"multiple": 27.2,
+			"multipleType": "EV/FCF",
+			"multiple": 37.1,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -83,7 +83,7 @@
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
+				"pass": false,
 				"up30d": 2,
 				"down30d": 6
 			},
