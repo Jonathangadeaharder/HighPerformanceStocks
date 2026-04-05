@@ -6,7 +6,7 @@
 	"confidenceReason": "High-speed connectivity solutions for data centers, AEC cables taking share in AI networks.",
 	"cagrModel": {
 		"epsGrowth": "28%",
-		"basis": "Adjusted for semiconductor cyclicality and customer concentration risk.",
+		"basis": "Adjusted for semiconductor cyclicality.",
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
@@ -52,7 +52,6 @@
 			"cvStock": 0.034,
 			"riskMultiplier": 1
 		},
-		"note": "Signal capped at WAIT due to customer concentration risk",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,

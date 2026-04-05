@@ -53,7 +53,6 @@
 			"cvStock": 0.121,
 			"riskMultiplier": 1.006
 		},
-		"note": "Signal capped at WAIT due to customer concentration risk",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
