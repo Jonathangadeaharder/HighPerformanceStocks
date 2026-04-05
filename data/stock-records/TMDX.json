@@ -4,8 +4,6 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "high",
 	"confidenceReason": "Functional monopoly in active organ transplant preservation and aviation logistics. High growth addressing immense unmet medical need.",
-	"bullCase": "TMDX achieves mass adoption of its OCS and aviation services across the US, becoming the de facto standard for all organ transplants and driving massive margin expansion.",
-	"bearCase": "Adoption plateaus as centers stick to traditional cold storage, or unexpected adverse clinical outcomes with OCS lead to regulatory pushback and diminished growth.",
 	"cagrModel": {
 		"epsGrowth": "50%",
 		"epsGrowthSource": "auto",
@@ -62,14 +60,14 @@
 	"expectedVolatility": "~56%",
 	"sharpeRatio": 0.97,
 	"screener": {
-		"engine": "fCFG",
+		"engine": "fPERG",
 		"score": 0.96,
 		"signal": "REJECTED",
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Borderline valuation (Score 0.96 vs 0.8 limit)",
 		"inputs": {
 			"growth": 50,
-			"multipleType": "EV/FCF",
-			"multiple": 37.1,
+			"multipleType": "Forward P/E",
+			"multiple": 27.2,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -85,7 +83,7 @@
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 2,
 				"down30d": 6
 			},
@@ -112,5 +110,7 @@
 		}
 	},
 	"description": "TransMedics Group, Inc., a commercial-stage medical technology company, engages in transforming organ transplant therapy for end-stage organ failure patients in the United States and internationally.",
-	"lastUpdated": "2026-04-05T19:13:55.624Z"
+	"lastUpdated": "2026-04-05T19:13:55.624Z",
+	"bullCase": "TransMedics dominates the active organ preservation space and is building an integrated aviation logistics network to capture end-to-end transplant economics. High unmet medical need will drive long-term hyper-growth.",
+	"bearCase": "Aviation logistics introduce lower margin operations and heavy capex requirements. Any disruption in flight ops or regulatory scrutiny could impede growth in this high-valuation narrative."
 }
