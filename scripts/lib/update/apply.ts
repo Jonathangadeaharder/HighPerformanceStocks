@@ -246,8 +246,15 @@ export function applyUpdates(
 						const cagr = (Math.pow(lastYear.average / firstYear.average, 1 / n) - 1) * 100;
 						model.epsGrowth = `${Math.round(cagr)}%`;
 						model.epsGrowthSource = 'auto';
+					} else if ((firstYear?.average ?? 0) <= 0 && (lastYear?.average ?? 0) > 0) {
+						// Turnaround: moving from loss to profit — CAGR formula undefined.
+						// Preserve any manually-set growth; screener handles via ttmEPS guard.
+						if (!model.epsGrowth) {
+							console.warn(`  ⚠️  ${stock.ticker}: turnaround (first=${firstYear?.average}, last=${lastYear?.average}) — set epsGrowth manually`);
+						}
 					} else {
-						console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but averages invalid (first=${firstYear?.average}, last=${lastYear?.average})`);
+						// Both years negative or last year negative: cannot derive growth.
+						console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates averages invalid for CAGR (first=${firstYear?.average}, last=${lastYear?.average})`);
 					}
 				} else {
 					console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but only ${years.length} year(s) — need >=2`);
