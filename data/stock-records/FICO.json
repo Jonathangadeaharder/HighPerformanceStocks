@@ -2,78 +2,78 @@
 	"ticker": "FICO",
 	"name": "Fair Isaac Corp",
 	"group": "Defensive Monopolies",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
-	"marketCap": "$24.0B USD",
-	"sharpeRatio": 1.23,
-	"expectedCAGR": "2% - 137%",
+	"marketCap": "$25.9B USD",
+	"sharpeRatio": 1,
+	"expectedCAGR": "-5% - 120%",
 	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 37.4,
-		"forwardPE": 19,
+		"trailingPE": 40.3,
+		"forwardPE": 20.5,
 		"pegRatio": 2.1,
-		"evEbitda": 26.9,
-		"evFcf": 47.2
+		"evEbitda": 28.7,
+		"evFcf": 50.4
 	},
 	"metrics": {
 		"roe": "45.0%",
-		"roic": "2.8%",
+		"roic": "2.6%",
 		"operatingMargin": "~46%",
 		"netDebtEbitda": "3.0x",
 		"fcfMargin": "~28%",
 		"fcfYield": "~2%",
 		"ruleOf40": "44%",
-		"beta": "1.28",
+		"beta": "1.38",
 		"revenueGrowth": "16.4%",
 		"interestCoverage": "5.7x"
 	},
-	"targetPrice": "$1872.18",
+	"targetPrice": "$1851.55",
 	"consensus": {
 		"tipranks": "$1986",
-		"yahoo": "$1872.18"
+		"yahoo": "$1851.55"
 	},
 	"bullCase": "FICO operates an irreplaceable, legally entrenched monopoly—the FICO credit score—used by ~90% of US lenders. Boasting near 50% operating margins and astronomical capital efficiency (>40% ROIC). The launch of 'Mortgage Direct' successfully defends its pricing power against regulatory shifts (like VantageScore) by bypassing credit bureaus and charging lenders directly.",
 	"bearCase": "The ultimate risk is regulatory disruption of its monopoly status. The FHFA authorizing Fannie/Freddie to accept VantageScore 4.0 breaks FICO's absolute gatekeeper status for the $13T mortgage market. Valued for absolute perfection at ~60x P/E; any loss of market share will cause severe multiple compression.",
-	"currentPrice": "$1011.06",
+	"currentPrice": "$1089.76",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "85%",
-			"bull": "137%"
+			"bear": "-5%",
+			"base": "70%",
+			"bull": "120%"
 		},
 		"basis": "Non-GAAP EPS; growth driven by B2B Scores pricing increases and SaaS platform transition",
-		"ttmEPS": 27
+		"ttmEPS": 27.03
 	},
-	"lastUpdated": "2026-03-28T23:02:50.925Z",
+	"lastUpdated": "2026-04-04T23:38:59.015Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.49,
+		"score": 1.59,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 26.9,
+			"multiple": 28.7,
 			"cvStock": 0.089,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 85.2% (DEPLOY override: base CAGR 85% ≥ 20% and stabilized)",
+		"note": "DEPLOY override: base CAGR 70% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1011.06,
-				"price6mAgo": 1525.44,
-				"price1mAgo": 1407.54,
+				"price": 1089.76,
+				"price6mAgo": 1850.18,
+				"price1mAgo": 1475.09,
 				"low3m": 969.32,
-				"return6m": -33.7,
-				"return1m": -28.2,
-				"near3mLow": true
+				"return6m": -41.1,
+				"return1m": -26.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 13,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 3.5,
@@ -81,18 +81,18 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.06
+		"secondaryScore": 1.14
 	},
 	"qcs": {
 		"earningsScore": 2.79,
 		"flowScore": 0,
-		"revisionsScore": 3.5,
-		"totalScore": 6.29,
+		"revisionsScore": -0.25,
+		"totalScore": 2.54,
 		"raw": {
 			"avgSurprisePct": 6.22,
 			"netInsiderShares": 89328,
 			"instFlowTrend": "negative",
-			"upRevisions": 15,
+			"upRevisions": 0,
 			"downRevisions": 1,
 			"totalAnalysts": 20
 		}
@@ -100,7 +100,7 @@
 	"description": "Fair Isaac Corporation provides analytics software in the Americas, Europe, the Middle East, Africa, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 1032,
-		"mean": 1872.18,
+		"mean": 1851.55,
 		"high": 2400
 	},
 	"analystConsensus": {
@@ -111,5 +111,17 @@
 		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 46.70201,
+			"low": 38.17,
+			"average": 41.84478
+		},
+		"2027": {
+			"high": 66,
+			"low": 47.00452,
+			"average": 53.26446
+		}
+	}
 }

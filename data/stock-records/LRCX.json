@@ -7,21 +7,21 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.86,
+		"ttmEPS": 4.87,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "30%",
-			"bull": "54%"
+			"bear": "-8%",
+			"base": "26%",
+			"bull": "49%"
 		}
 	},
-	"currentPrice": "$211.41",
-	"marketCap": "$265.5B USD",
+	"currentPrice": "$218.44",
+	"marketCap": "$274.4B USD",
 	"valuation": {
-		"trailingPE": 43.5,
-		"forwardPE": 30.6,
-		"evEbitda": 35.7,
-		"evFcf": 54.5
+		"trailingPE": 44.9,
+		"forwardPE": 31.6,
+		"evEbitda": 36.9,
+		"evFcf": 56.3
 	},
 	"metrics": {
 		"roe": "65.6%",
@@ -31,37 +31,36 @@
 		"ruleOf40": "46%",
 		"beta": "1.79",
 		"revenueGrowth": "22.1%",
-		"roic": "2.7%",
+		"roic": "2.6%",
 		"interestCoverage": "29.8x"
 	},
 	"consensus": {
 		"yahoo": "$274.90"
 	},
 	"targetPrice": "$274.90",
-	"expectedCAGR": "-5% - 54%",
-	"expectedVolatility": "~53%",
-	"sharpeRatio": 0.38,
+	"expectedCAGR": "-8% - 49%",
+	"expectedVolatility": "~51%",
+	"sharpeRatio": 0.31,
 	"screener": {
-		"engine": "fEVG",
-		"score": 2.43,
-		"signal": "DEPLOY",
+		"engine": "fPERG",
+		"score": 2.13,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "EV/EBITDA",
-			"multiple": 35.7,
-			"cvStock": 0.136,
-			"riskMultiplier": 1.02
+			"multipleType": "Forward P/E",
+			"multiple": 31.6,
+			"cvStock": 0.127,
+			"riskMultiplier": 1.011
 		},
-		"note": "hasLikelyValueFloor: analyst upside 30% (DEPLOY override: base CAGR 30% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.41,
-				"price6mAgo": 131.09,
-				"price1mAgo": 231,
-				"low3m": 170.76,
-				"return6m": 61.3,
-				"return1m": -8.5,
+				"price": 218.44,
+				"price6mAgo": 149.15,
+				"price1mAgo": 214.68,
+				"low3m": 177.5,
+				"return6m": 46.5,
+				"return1m": 1.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,16 +72,14 @@
 				"surprise": 8.7,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.08
+		}
 	},
-	"lastUpdated": "2026-03-28T23:02:57.108Z",
+	"lastUpdated": "2026-04-04T23:39:05.307Z",
 	"qcs": {
-		"earningsScore": 1.94,
+		"earningsScore": 2.08,
 		"flowScore": 0,
 		"revisionsScore": 0.15,
-		"totalScore": 2.09,
+		"totalScore": 2.23,
 		"raw": {
 			"avgSurprisePct": 6.6,
 			"netInsiderShares": 563134,
@@ -109,5 +106,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$245.35",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 5.46326,
+			"low": 4.87,
+			"average": 5.30821
+		},
+		"2027": {
+			"high": 8.14124,
+			"low": 4.64,
+			"average": 6.88964
+		}
+	}
 }

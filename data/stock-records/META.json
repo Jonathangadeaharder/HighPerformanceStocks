@@ -4,37 +4,37 @@
 	"group": "Data & Software Monopolies",
 	"confidence": "cut",
 	"confidenceReason": "Cheapest Mag 7 stock at PEG 1.05 with 22-26% revenue growth. 82% gross margin, 40-43% operating margins. Massive buybacks (~1.5% annual share reduction).",
-	"marketCap": "$1329.8B USD",
-	"sharpeRatio": 1.62,
-	"expectedCAGR": "17% - 118%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$1453.1B USD",
+	"sharpeRatio": 1.28,
+	"expectedCAGR": "7% - 99%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 22.4,
-		"forwardPE": 14.7,
+		"trailingPE": 24.4,
+		"forwardPE": 16,
 		"pegRatio": 1.05,
-		"evEbitda": 13.1,
-		"evFcf": 56.9
+		"evEbitda": 14.3,
+		"evFcf": 62.2
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
 		"fcfYield": "~2%",
-		"roic": "8.7%",
+		"roic": "7.9%",
 		"roe": "30.2%",
 		"netDebtEbitda": "0.0x",
 		"ruleOf40": "35%",
 		"grossMargin": "82.00%",
 		"operatingMargin": "~41%",
-		"beta": "1.28",
+		"beta": "1.31",
 		"revenueGrowth": "23.8%",
 		"interestCoverage": "21.8x"
 	},
-	"targetPrice": "$862.60",
+	"targetPrice": "$860.25",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$525.72",
+	"currentPrice": "$574.46",
 	"consensus": {
 		"tipranks": "$836",
-		"yahoo": "$862.60",
+		"yahoo": "$860.25",
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
@@ -42,40 +42,40 @@
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "17%",
-			"base": "64%",
-			"bull": "118%"
+			"bear": "7%",
+			"base": "50%",
+			"bull": "99%"
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-03-28T23:02:58.843Z",
+	"lastUpdated": "2026-04-04T23:39:07.344Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.79,
+		"score": 4.15,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 56.9,
+			"multiple": 62.2,
 			"cvStock": 0.084,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 64.1% (DEPLOY override: base CAGR 64% ≥ 20% and stabilized) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 50% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 525.72,
-				"price6mAgo": 743.4,
-				"price1mAgo": 653.56,
+				"price": 574.46,
+				"price6mAgo": 715.66,
+				"price1mAgo": 660.57,
 				"low3m": 520.26,
-				"return6m": -29.3,
-				"return1m": -19.6,
-				"near3mLow": true
+				"return6m": -19.7,
+				"return1m": -13,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 8,
@@ -83,7 +83,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1
+		"secondaryScore": 1.07
 	},
 	"intrinsicValue": {
 		"dcf": 280.69,
@@ -107,7 +107,7 @@
 	"description": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets...",
 	"analystTargets": {
 		"low": 614,
-		"mean": 862.6,
+		"mean": 860.25,
 		"high": 1144
 	},
 	"analystConsensus": {
@@ -119,5 +119,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$846.64",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 31.95,
+			"low": 26.43,
+			"average": 29.59606
+		},
+		"2027": {
+			"high": 40,
+			"low": 28.46,
+			"average": 34.37413
+		}
+	}
 }

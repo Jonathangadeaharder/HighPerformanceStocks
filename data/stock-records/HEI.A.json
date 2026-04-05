@@ -4,25 +4,25 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Dominates the PMA aerospace aftermarket. 27% EBITDA margins with ~20% annualized historical returns. Massive insider ownership by the Mendelson family.",
-	"marketCap": "$33.1B USD",
+	"marketCap": "$33.6B USD",
 	"sharpeRatio": 0.78,
-	"expectedVolatility": "~29%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 41.1,
-		"forwardPE": 48.2,
+		"trailingPE": 41.9,
+		"forwardPE": 49,
 		"pegRatio": 3.2,
-		"evEbitda": 25.1,
-		"evFcf": 46
+		"evEbitda": 25.5,
+		"evFcf": 46.7
 	},
 	"metrics": {
 		"roe": "16.6%",
-		"roic": "2.6%",
+		"roic": "2.5%",
 		"operatingMargin": "~22%",
 		"netDebtEbitda": "1.8x",
 		"fcfMargin": "~15%",
 		"fcfYield": "~2%",
 		"ruleOf40": "29%",
-		"beta": "1.02",
+		"beta": "1.08",
 		"revenueGrowth": "14.4%",
 		"interestCoverage": "9.2x"
 	},
@@ -31,35 +31,34 @@
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$207.78",
+	"currentPrice": "$211.04",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
-		"ttmEPS": 5.05
+		"ttmEPS": 5.04
 	},
-	"lastUpdated": "2026-03-28T23:02:51.972Z",
+	"lastUpdated": "2026-04-04T23:39:01.047Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.57,
-		"signal": "WAIT",
+		"score": 1.59,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 25.1,
+			"multiple": 25.5,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 34.8% (Used benchmark CV) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 207.78,
-				"price6mAgo": 251.19,
-				"price1mAgo": 246.39,
-				"low3m": 206.22,
-				"return6m": -17.3,
-				"return1m": -15.7,
+				"pass": true,
+				"price": 211.04,
+				"price6mAgo": 254.88,
+				"price1mAgo": 234.76,
+				"low3m": 202.61,
+				"return6m": -17.2,
+				"return1m": -10.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -69,7 +68,8 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.01
+		"secondaryScore": 3.06,
+		"note": "Used benchmark CV"
 	},
 	"qcs": {
 		"earningsScore": 0,

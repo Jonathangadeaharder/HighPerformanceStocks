@@ -4,35 +4,35 @@
 	"group": "Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$56.8B USD",
-	"sharpeRatio": 1.44,
-	"expectedCAGR": "29% - 110%",
-	"expectedVolatility": "~45%",
+	"marketCap": "$61.7B USD",
+	"sharpeRatio": 1.1,
+	"expectedCAGR": "12% - 94%",
+	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 38.5,
-		"forwardPE": 20.4,
+		"trailingPE": 41.8,
+		"forwardPE": 22.7,
 		"pegRatio": 1.41,
-		"evEbitda": 29.2,
-		"evFcf": 735
+		"evEbitda": 31.8,
+		"evFcf": 800.3
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
 		"fcfYield": "~0%",
-		"roic": "3.4%",
+		"roic": "3.1%",
 		"roe": "18.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "130%",
-		"beta": "1.11",
+		"beta": "1.22",
 		"revenueGrowth": "127.2%",
 		"interestCoverage": "4364.4x"
 	},
-	"targetPrice": "$191.59",
+	"targetPrice": "$188.90",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$124.70",
+	"currentPrice": "$135.56",
 	"consensus": {
 		"tipranks": "$140",
-		"yahoo": "$191.59",
+		"yahoo": "$188.90",
 		"stockanalysis": "$133"
 	},
 	"cagrModel": {
@@ -40,34 +40,34 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "29%",
-			"base": "55%",
-			"bull": "110%"
+			"bear": "12%",
+			"base": "40%",
+			"bull": "94%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:10.821Z",
+	"lastUpdated": "2026-04-04T23:39:17.846Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 2.64,
+		"engine": "fPERG",
+		"score": 2.13,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "EV/EBITDA",
-			"multiple": 29.2,
-			"cvStock": 0.255,
-			"riskMultiplier": 1.359
+			"multipleType": "Forward P/E",
+			"multiple": 22.7,
+			"cvStock": 0.264,
+			"riskMultiplier": 1.405
 		},
-		"note": "hasLikelyValueFloor: analyst upside 53.6% (DEPLOY override: base CAGR 55% ≥ 20% and stabilized) (CYCLICAL EPS)",
+		"note": "hasLikelyValueFloor: analyst upside 39.3% (DEPLOY override: base CAGR 40% >= 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 124.7,
-				"price6mAgo": 110.49,
-				"price1mAgo": 165.72,
+				"price": 135.56,
+				"price6mAgo": 109.81,
+				"price1mAgo": 147.83,
 				"low3m": 113.39,
-				"return6m": 12.9,
-				"return1m": -24.8,
+				"return6m": 23.4,
+				"return1m": -8.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,28 +79,26 @@
 				"surprise": 11.7,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.85
+		}
 	},
 	"qcs": {
-		"earningsScore": 1.25,
+		"earningsScore": 1.21,
 		"flowScore": 2.5,
-		"revisionsScore": 2.5,
-		"totalScore": 6.25,
+		"revisionsScore": 2.31,
+		"totalScore": 6.02,
 		"raw": {
 			"avgSurprisePct": 7.96,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 7,
 			"downRevisions": 1,
-			"totalAnalysts": 12
+			"totalAnalysts": 13
 		}
 	},
 	"description": "Wheaton Precious Metals Corp. operates as a precious metal streaming company.",
 	"analystTargets": {
-		"low": 160,
-		"mean": 191.59,
+		"low": 150,
+		"mean": 188.9,
 		"high": 260.97
 	},
 	"analystConsensus": {
@@ -112,5 +110,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$145.36"
+	"targetPriceAlternative": "$145.36",
+	"forwardEstimates": {
+		"2026": {
+			"high": 7.78,
+			"low": 4.25943,
+			"average": 5.71596
+		},
+		"2027": {
+			"high": 9.66,
+			"low": 3.43,
+			"average": 5.89121
+		}
+	}
 }

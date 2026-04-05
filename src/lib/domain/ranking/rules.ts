@@ -1,4 +1,5 @@
-import type { DeploymentInfo, FindingStock } from '$lib/types/dashboard';
+import { ENGINE_THRESHOLDS } from '$lib/domain/screener/types';
+import type { DeploymentInfo, FindingStock, ScreenerSignal } from '$lib/types/dashboard';
 
 export const ETF_HURDLE_RETURN = 15;
 export const BEAR_FLOOR_RETURN = 0;
@@ -32,8 +33,13 @@ export function hasLikelyValueFloor(stock: FindingStock): boolean {
  * Rules for stocks that PASS the primary screener.
  */
 export function deploymentForPass(stock: FindingStock): DeploymentInfo {
-	const base = stock.baseCagr ?? -999;
-	const bear = stock.bearCagr ?? -999;
+	const base = stock.baseCagr;
+	const bear = stock.bearCagr;
+
+	if (base == null || base === -999 || bear == null || bear === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
+	}
+
 	const basePass = base >= ETF_HURDLE_RETURN;
 	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
 	const bearPass = bear >= BEAR_FLOOR_RETURN;
@@ -78,7 +84,12 @@ export function deploymentForWait(stock: FindingStock): DeploymentInfo {
 export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const score = stock.screener?.score;
 	const note = stock.screener?.note;
-	const base = stock.baseCagr ?? -999;
+	const engine = stock.screener?.engine ?? 'fPERG';
+	const base = stock.baseCagr;
+
+	if (base == null || base === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates.' };
+	}
 
 	if ((score ?? 0) >= 1.5 && base >= 20) {
 		return {
@@ -87,10 +98,12 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (score != null && score > 1) {
+	const maxThreshold = ENGINE_THRESHOLDS[engine as keyof typeof ENGINE_THRESHOLDS] ?? 1.0;
+
+	if (score != null && score > maxThreshold) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Valuation score ${score} is above the 1.0 buy threshold (lower is better).`
+			reason: note ?? `Valuation score ${score} is above the ${maxThreshold} threshold for ${engine}.`
 		};
 	}
 
@@ -149,7 +162,10 @@ export function assignDeployment(stock: FindingStock): void {
 			break;
 		}
 		default: {
-			const _exhaustiveCheck: never = signal;
+			// signal is ScreenerSignal — all variants are handled above.
+			// This branch is unreachable at runtime but guards against future
+			// ScreenerSignal additions that aren't yet handled here.
+			const _exhaustiveCheck: never = signal as never;
 			stock.deployment = {
 				status: 'NO_DATA',
 				reason: `Unknown signal: ${String(_exhaustiveCheck)}`

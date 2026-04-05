@@ -4,32 +4,32 @@
 	"group": "Serial Acquirers",
 	"confidence": "high",
 	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
-	"marketCap": "C$5.5B",
-	"sharpeRatio": 2.46,
-	"expectedCAGR": "83% - 167%",
+	"marketCap": "C$5.9B",
+	"sharpeRatio": 2.13,
+	"expectedCAGR": "70% - 148%",
 	"expectedVolatility": "~49%",
 	"valuation": {
-		"trailingPE": 33.3,
-		"forwardPE": 14.3,
+		"trailingPE": 35.9,
+		"forwardPE": 15.4,
 		"pegRatio": null,
-		"evEbitda": 18.9,
-		"evFcf": 25
+		"evEbitda": 20.4,
+		"evFcf": 27
 	},
 	"metrics": {
 		"fcfMargin": "~28%",
 		"fcfYield": "~4%",
-		"roic": "4.4%",
+		"roic": "4.1%",
 		"roe": "15.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "43%",
-		"beta": "0.9",
+		"beta": "0.78",
 		"revenueGrowth": "15.6%",
 		"interestCoverage": "23.7x"
 	},
 	"targetPrice": "C$44.25",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$21.34",
+	"currentPrice": "C$23",
 	"consensus": {
 		"tipranks": "C$49",
 		"yahoo": "C$44.25"
@@ -39,34 +39,34 @@
 		"epsGrowth": "17%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "83%",
-			"base": "107%",
-			"bull": "167%"
+			"bear": "70%",
+			"base": "92%",
+			"bull": "148%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T23:02:57.090Z",
+	"lastUpdated": "2026-04-04T23:39:05.244Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.47,
+		"score": 1.59,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 25,
+			"multiple": 27,
 			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 107.4% + QCS 10 (DEPLOY override: base CAGR 107% ≥ 20% and stabilized)",
+		"note": "DEPLOY override: base CAGR 92% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 21.34,
-				"price6mAgo": 39.9,
-				"price1mAgo": 20.87,
+				"price": 23,
+				"price6mAgo": 41.3,
+				"price1mAgo": 26.05,
 				"low3m": 17.77,
-				"return6m": -46.5,
-				"return1m": 2.3,
+				"return6m": -44.3,
+				"return1m": -11.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.84
+		"secondaryScore": 0.91
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -110,5 +110,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.271,
+			"low": 1.257,
+			"average": 1.264
+		},
+		"2027": {
+			"high": 1.49,
+			"low": 1.49,
+			"average": 1.49
+		}
+	}
 }

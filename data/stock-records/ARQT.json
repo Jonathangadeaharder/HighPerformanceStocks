@@ -5,8 +5,105 @@
 	"confidence": "low",
 	"confidenceReason": "Commercial-stage dermatology biotech with approved topical treatments for plaque psoriasis and seborrheic dermatitis. Not yet profitable; revenue growth trajectory is the key driver.",
 	"cagrModel": {
-		"epsGrowth": "15%",
+		"epsGrowth": "248%",
 		"epsGrowthSource": "auto",
-		"basis": "Non-GAAP EPS"
+		"basis": "Non-GAAP EPS",
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "40%",
+			"base": "47%",
+			"bull": "52%"
+		}
+	},
+	"currentPrice": "$23.63",
+	"marketCap": "$2.9B USD",
+	"valuation": {
+		"forwardPE": 18.5,
+		"evFcf": -179.9,
+		"evEbitda": -373.6
+	},
+	"metrics": {
+		"roe": "-9.3%",
+		"fcfMargin": "~-4%",
+		"fcfYield": "~-1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "77%",
+		"beta": "1.77",
+		"revenueGrowth": "81.5%",
+		"roic": "-0.2%"
+	},
+	"consensus": {
+		"yahoo": "$34.75"
+	},
+	"targetPrice": "$34.75",
+	"analystTargets": {
+		"low": 33,
+		"mean": 34.75,
+		"high": 36
+	},
+	"expectedCAGR": "40% - 52%",
+	"expectedVolatility": "~57%",
+	"sharpeRatio": 0.73,
+	"screener": {
+		"engine": "fPERG",
+		"score": 0.48,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 248,
+			"multipleType": "Forward P/E",
+			"multiple": 18.5,
+			"cvStock": 0.153,
+			"riskMultiplier": 1.041
+		},
+		"note": "DEPLOY override: base CAGR 47% >= 15% and stabilized",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 23.63,
+				"price6mAgo": 19.76,
+				"price1mAgo": 23.97,
+				"low3m": 21.12,
+				"return6m": 19.6,
+				"return1m": -1.4,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 2,
+				"down30d": 3
+			},
+			"earningsSurprise": {
+				"surprise": 46.8,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": -5,
+		"revisionsScore": 0,
+		"totalScore": 0,
+		"raw": {
+			"avgSurprisePct": 58.27,
+			"netInsiderShares": -148827,
+			"instFlowTrend": "negative",
+			"upRevisions": 2,
+			"downRevisions": 2,
+			"totalAnalysts": 7
+		}
+	},
+	"description": "Arcutis Biotherapeutics, Inc., a biopharmaceutical company, focuses on developing and commercializing treatments for dermatological diseases.",
+	"lastUpdated": "2026-04-04T23:38:53.646Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": 0.75,
+			"low": 0.08,
+			"average": 0.36714
+		},
+		"2027": {
+			"high": 1.61,
+			"low": 0.83,
+			"average": 1.27857
+		}
 	}
 }

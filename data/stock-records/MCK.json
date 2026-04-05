@@ -12,54 +12,55 @@
 		"ttmEPS": 34.66,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "16%",
-			"bull": "29%"
+			"bear": "-3%",
+			"base": "13%",
+			"bull": "25%"
 		}
 	},
-	"currentPrice": "$860.16",
-	"marketCap": "$106.2B USD",
+	"currentPrice": "$884.28",
+	"marketCap": "$109.1B USD",
 	"valuation": {
-		"trailingPE": 24.8,
-		"forwardPE": 19.4,
-		"evEbitda": 18.9,
-		"evFcf": 12.3
+		"trailingPE": 25.5,
+		"forwardPE": 20,
+		"evEbitda": 19.4,
+		"evFcf": 12.6
 	},
 	"metrics": {
 		"fcfMargin": "~2%",
-		"fcfYield": "~9%",
+		"fcfYield": "~8%",
 		"netDebtEbitda": "1.0x",
 		"ruleOf40": "14%",
-		"beta": "0.35",
+		"beta": "0.42",
 		"revenueGrowth": "11.4%",
-		"roic": "9.4%",
+		"roic": "9.1%",
 		"interestCoverage": "12.3x"
 	},
 	"consensus": {
 		"yahoo": "$997.67"
 	},
 	"targetPrice": "$997.67",
-	"expectedCAGR": "0% - 29%",
+	"expectedCAGR": "-3% - 25%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.82,
-		"signal": "WAIT",
+		"score": 0.84,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 12.3,
+			"multiple": 12.6,
 			"cvStock": 0.01,
 			"riskMultiplier": 1
 		},
+		"note": "Cheap (0.84) but base return 13% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 860.16,
-				"price6mAgo": 761.82,
-				"price1mAgo": 990.95,
+				"price": 884.28,
+				"price6mAgo": 741.29,
+				"price1mAgo": 931.35,
 				"low3m": 794.59,
-				"return6m": 12.9,
-				"return1m": -13.2,
+				"return6m": 19.3,
+				"return1m": -5.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,11 +74,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.29
+		"secondaryScore": 1.33
 	},
-	"lastUpdated": "2026-03-28T23:02:57.927Z",
-	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.34,
+	"lastUpdated": "2026-04-04T23:39:06.294Z",
+	"expectedVolatility": "~28%",
+	"sharpeRatio": 0.23,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -107,5 +108,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$960.93"
+	"targetPriceAlternative": "$960.93",
+	"forwardEstimates": {
+		"2026": {
+			"high": 39.10129,
+			"low": 38.94,
+			"average": 39.02287
+		},
+		"2027": {
+			"high": 44.78,
+			"low": 43.07,
+			"average": 44.23371
+		}
+	}
 }

@@ -176,12 +176,13 @@ function computeGrowthScore(
 	const riskMultiplier = computeDispersionMultiplier(cvStock);
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
-	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
+	const threshold = ENGINE_THRESHOLDS[engine] ?? 1.0;
+	const waitThreshold = threshold === 1.0 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
 	if (score <= threshold) {
 		signal = 'PASS';
-	} else if (score <= BORDERLINE_WAIT_THRESHOLD) {
+	} else if (score <= waitThreshold) {
 		signal = 'WAIT';
 	} else {
 		signal = 'FAIL';
@@ -669,7 +670,7 @@ function applyValueFloorCheck(
 	if (qcsScore != null && qcsScore >= 8) {
 		valueFloorReason = valueFloorReason
 			? `${valueFloorReason} + QCS ${qcsScore}`
-			: `QCS ${qcsScore} ≥ 8 (elite quality floor)`;
+			: `QCS ${qcsScore} >= 8 (elite quality floor)`;
 	}
 
 	if (valueFloorReason !== null) {
@@ -699,10 +700,10 @@ function applyDeployRejectOverrides(
 		appendNote(result, `REJECT: Stalled at WAIT with base CAGR ${baseCagr}% < 15%`);
 	} else if (result.signal === 'PASS' && baseCagr >= 15 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 15% and stabilized`);
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 15% and stabilized`);
 	} else if (result.signal === 'WAIT' && baseCagr >= 20 && stabPass) {
 		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 20% and stabilized`);
+		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% >= 20% and stabilized`);
 	}
 }
 
@@ -719,8 +720,8 @@ function evaluateHyperGrowth(
 	if (branch.engine === 'DISQUALIFIED') {
 		return {
 			engine: 'DISQUALIFIED',
-			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			signal: 'WAIT',
+			note: 'Extreme earnings volatility detected. Awaiting stabilization.'
 		};
 	}
 
@@ -739,16 +740,19 @@ function evaluateHyperGrowth(
 	}
 
 	let actualMultiple = branch.multiple;
-	let hallucinationNote = '';
 
 	if (branch.multipleType === FORWARD_PE_LABEL) {
-		const tpe = stock.valuation?.trailingPE;
-		if (tpe != null && tpe > 0 && growthPct > 0) {
-			const impliedFpe = tpe / (1 + growthPct / 100);
-			if (actualMultiple < impliedFpe * 0.8) {
-				actualMultiple = impliedFpe;
-				hallucinationNote = `Data hallucination override: structurally impossible forward PE rectified to computationally sound ~${impliedFpe.toFixed(1)}x`;
+		const eps = stock.cagrModel?.ttmEPS;
+		if ((eps != null && eps <= 0) || actualMultiple <= 0 || Number.isNaN(actualMultiple)) {
+			const fallbackPE = stock.valuation?.trailingPE;
+			if (fallbackPE == null || fallbackPE <= 0 || Number.isNaN(fallbackPE)) {
+				return {
+					engine: branch.engine,
+					signal: 'NO_DATA',
+					note: 'Missing/negative forward PE and no trailing EPS fallback'
+				};
 			}
+			actualMultiple = fallbackPE;
 		}
 	}
 
@@ -759,10 +763,6 @@ function evaluateHyperGrowth(
 		growthPct,
 		cvStock
 	);
-
-	if (hallucinationNote) {
-		appendNote(result, hallucinationNote);
-	}
 
 	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 
@@ -824,7 +824,7 @@ export function computeScreener(
 		return {
 			engine: 'DISQUALIFIED',
 			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			note: 'Extreme earnings volatility detected. Strategically disqualified.'
 		};
 	}
 

@@ -4,70 +4,70 @@
 	"group": "Serial Acquirers",
 	"confidence": "low",
 	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
-	"marketCap": "8.7B SEK",
-	"sharpeRatio": 2.63,
-	"expectedCAGR": "75% - 165%",
-	"expectedVolatility": "~44%",
+	"marketCap": "9.6B SEK",
+	"sharpeRatio": 2.23,
+	"expectedCAGR": "59% - 142%",
+	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 20.1,
-		"forwardPE": 17.1,
+		"trailingPE": 22.1,
+		"forwardPE": 18.8,
 		"pegRatio": null,
-		"evEbitda": 8.5,
-		"evFcf": 20.3
+		"evEbitda": 9.2,
+		"evFcf": 21.8
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
 		"fcfYield": "~6%",
-		"roic": "9.8%",
+		"roic": "9.1%",
 		"roe": "8.9%",
 		"netDebtEbitda": "2.0x",
 		"ruleOf40": "22%",
-		"beta": "0.91",
+		"beta": "0.82",
 		"revenueGrowth": "6.1%",
 		"interestCoverage": "8.0x"
 	},
 	"targetPrice": "448 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "220 SEK",
+	"currentPrice": "242 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
 		"yahoo": "448 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.97,
+		"ttmEPS": 10.95,
 		"epsGrowth": "12%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "75%",
-			"base": "105%",
-			"bull": "165%"
+			"bear": "59%",
+			"base": "87%",
+			"bull": "142%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-03-28T23:03:09.836Z",
+	"lastUpdated": "2026-04-04T23:39:16.776Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.71,
+		"score": 0.77,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 8.5,
+			"multiple": 9.2,
 			"cvStock": 0.041,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 105% ≥ 15% and stabilized",
+		"note": "DEPLOY override: base CAGR 87% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 220.2,
-				"price6mAgo": 331,
-				"price1mAgo": 233.6,
-				"low3m": 215.6,
-				"return6m": -33.5,
-				"return1m": -5.7,
-				"near3mLow": true
+				"price": 241.8,
+				"price6mAgo": 340.4,
+				"price1mAgo": 251.2,
+				"low3m": 215.4,
+				"return6m": -29,
+				"return1m": -3.7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -80,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.43
+		"secondaryScore": 1.57
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -110,5 +110,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 14.8,
+			"low": 11.7,
+			"average": 13.21431
+		},
+		"2027": {
+			"high": 16.53704,
+			"low": 14,
+			"average": 15.36217
+		}
+	}
 }

@@ -8,20 +8,20 @@
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 12.26,
-		"dividendYield": "3%",
+		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "6%",
-			"base": "23%",
-			"bull": "40%"
+			"bear": "2%",
+			"base": "16%",
+			"bull": "32%"
 		}
 	},
-	"currentPrice": "$347.20",
-	"marketCap": "$14.1B USD",
+	"currentPrice": "$370.31",
+	"marketCap": "$15.1B USD",
 	"valuation": {
-		"trailingPE": 28.3,
-		"forwardPE": 24.7,
-		"evEbitda": 18.1,
-		"evFcf": 45.9
+		"trailingPE": 30.2,
+		"forwardPE": 26.1,
+		"evEbitda": 19.3,
+		"evFcf": 48.9
 	},
 	"metrics": {
 		"roe": "18.7%",
@@ -29,38 +29,36 @@
 		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-6%",
-		"beta": "1.01",
+		"beta": "1.05",
 		"revenueGrowth": "-10.0%",
-		"roic": "4.1%",
+		"roic": "3.8%",
 		"interestCoverage": "28.0x"
 	},
 	"consensus": {
-		"yahoo": "$415.17"
+		"yahoo": "$415.42"
 	},
-	"targetPrice": "$415.17",
-	"expectedCAGR": "6% - 40%",
+	"targetPrice": "$415.42",
+	"expectedCAGR": "2% - 32%",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.81,
+		"engine": "totalReturn",
+		"score": null,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 10,
-			"multipleType": "EV/EBITDA",
-			"multiple": 18.1,
-			"cvStock": 0.096,
-			"riskMultiplier": 1
+			"dividendYield": 4,
+			"earningsYield": 3.8
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 347.2,
-				"price6mAgo": 399.57,
-				"price1mAgo": 410.87,
-				"low3m": 336.82,
-				"return6m": -13.1,
-				"return1m": -15.5,
-				"near3mLow": true
+				"price": 370.31,
+				"price6mAgo": 409.99,
+				"price1mAgo": 400.87,
+				"low3m": 336.96,
+				"return6m": -9.7,
+				"return1m": -7.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
@@ -71,18 +69,16 @@
 				"surprise": -11,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.47
+		}
 	},
-	"lastUpdated": "2026-03-28T23:03:11.594Z",
+	"lastUpdated": "2026-04-04T23:39:17.826Z",
 	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.56,
+	"sharpeRatio": 0.38,
 	"qcs": {
-		"earningsScore": -3.92,
+		"earningsScore": -4.7,
 		"flowScore": 2.5,
 		"revisionsScore": -1.92,
-		"totalScore": -3.34,
+		"totalScore": -4.12,
 		"raw": {
 			"avgSurprisePct": -9.4,
 			"netInsiderShares": 0,
@@ -96,8 +92,8 @@
 	"bearCase": "HVAC equipment spending is tied to new construction and replacement cycles. A housing market slowdown reduces new construction volume. The refrigerant transition cycle may normalize by 2026, and gross margins could compress as new-format competitors (Carrier, Lennox direct distribution) expand.",
 	"description": "Watsco, Inc., together with its subsidiaries, engages in the distribution of air conditioning, heating, and refrigeration equipment, and related parts and supplies in the United States, Canada, Lat...",
 	"analystTargets": {
-		"low": 359,
-		"mean": 415.17,
+		"low": 362,
+		"mean": 415.42,
 		"high": 475
 	},
 	"analystConsensus": {
@@ -109,5 +105,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$409.00"
+	"targetPriceAlternative": "$409.00",
+	"forwardEstimates": {
+		"2026": {
+			"high": 14.16,
+			"low": 11.56,
+			"average": 12.74573
+		},
+		"2027": {
+			"high": 17.92,
+			"low": 12.44,
+			"average": 14.37378
+		}
+	}
 }

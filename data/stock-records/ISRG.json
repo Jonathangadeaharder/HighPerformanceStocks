@@ -4,16 +4,16 @@
 	"group": "Robotics",
 	"confidence": "medium",
 	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
-	"marketCap": "$160.8B USD",
-	"sharpeRatio": 0.62,
+	"marketCap": "$160.6B USD",
+	"sharpeRatio": 0.64,
 	"expectedCAGR": "-16% - 66%",
-	"expectedVolatility": "~33%",
+	"expectedVolatility": "~32%",
 	"valuation": {
 		"trailingPE": 57.4,
-		"forwardPE": 39.6,
+		"forwardPE": 39.5,
 		"pegRatio": null,
-		"evEbitda": 43.6,
-		"evFcf": 68.2
+		"evEbitda": 43.5,
+		"evFcf": 68.1
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -29,13 +29,13 @@
 	"targetPrice": "$605.08",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$452.66",
+	"currentPrice": "$452.07",
 	"consensus": {
 		"tipranks": "$620",
 		"yahoo": "$605.08"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.88,
+		"ttmEPS": 7.87,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
@@ -45,7 +45,7 @@
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-03-28T23:02:54.301Z",
+	"lastUpdated": "2026-04-04T23:39:02.123Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 3.11,
@@ -53,20 +53,20 @@
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 43.6,
+			"multiple": 43.5,
 			"cvStock": 0.031,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.7% (DEPLOY override: base CAGR 34% ≥ 20% and stabilized)",
+		"note": "DEPLOY override: base CAGR 34% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 452.66,
-				"price6mAgo": 439.22,
-				"price1mAgo": 496.25,
-				"low3m": 451.56,
-				"return6m": 3.1,
-				"return1m": -8.8,
+				"price": 452.07,
+				"price6mAgo": 449.69,
+				"price1mAgo": 496.7,
+				"low3m": 448.4,
+				"return6m": 0.5,
+				"return1m": -9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -80,7 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.83
+		"secondaryScore": 2.82
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -111,5 +111,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$614.95",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 10.65,
+			"low": 9.7,
+			"average": 10.02723
+		},
+		"2027": {
+			"high": 12.21,
+			"low": 10.81,
+			"average": 11.43738
+		}
+	}
 }

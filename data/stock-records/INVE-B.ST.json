@@ -4,42 +4,42 @@
 	"group": "Capital Compounders",
 	"confidence": "cut",
 	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
-	"marketCap": "1058.4B SEK",
-	"sharpeRatio": -0.05,
-	"expectedCAGR": "-8% - 15%",
-	"expectedVolatility": "~21%",
+	"marketCap": "1086.5B SEK",
+	"sharpeRatio": -0.17,
+	"expectedCAGR": "-11% - 13%",
+	"expectedVolatility": "~20%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 6.7,
-		"forwardPE": 21.9,
-		"evFcf": 12
+		"trailingPE": 6.9,
+		"forwardPE": 22.5,
+		"evFcf": 11.5
 	},
 	"metrics": {
 		"roe": "17.7%",
-		"fcfMargin": "~44%",
+		"fcfMargin": "~47%",
 		"fcfYield": "~9%",
 		"netDebtEbitda": "0.6x",
-		"beta": "0.81",
+		"beta": "0.8",
 		"roic": "1.9%",
-		"interestCoverage": "26.2x"
+		"interestCoverage": "25.9x"
 	},
 	"targetPrice": "362 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "345 SEK",
+	"currentPrice": "355 SEK",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-8%",
-			"base": "7%",
-			"bull": "15%"
+			"bear": "-11%",
+			"base": "4%",
+			"bull": "13%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "2%",
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-03-28T23:02:53.526Z",
+	"lastUpdated": "2026-04-04T23:39:02.094Z",
 	"consensus": {
 		"yahoo": "362 SEK"
 	},
@@ -76,5 +76,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 39.5321,
+			"low": 39.5321,
+			"average": 39.5321
+		},
+		"2027": {
+			"high": 25.83866,
+			"low": 25.83866,
+			"average": 25.83866
+		}
+	}
 }

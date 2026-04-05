@@ -10,7 +10,7 @@
 		"ttmEPS": 3.01,
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "35%",
+		"epsGrowth": "41%",
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "27%",
@@ -18,7 +18,7 @@
 			"bull": "144%"
 		}
 	},
-	"currentPrice": "$184.43",
+	"currentPrice": "$184.36",
 	"marketCap": "$9.3B USD",
 	"valuation": {
 		"forwardPE": 45.5,
@@ -31,7 +31,7 @@
 		"fcfYield": "~-3%",
 		"netDebtEbitda": "1.6x",
 		"ruleOf40": "125%",
-		"beta": "1.26",
+		"beta": "1.38",
 		"revenueGrowth": "143.4%",
 		"roic": "-1.8%",
 		"interestCoverage": "3.3x"
@@ -50,10 +50,10 @@
 	"sharpeRatio": 1.16,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.9,
+		"score": 1.76,
 		"signal": "REJECTED",
 		"inputs": {
-			"growth": 35,
+			"growth": 41,
 			"multipleType": "EV/EBITDA",
 			"multiple": 62.2,
 			"cvStock": 0.149,
@@ -63,13 +63,13 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 184.43,
-				"price6mAgo": 308.69,
-				"price1mAgo": 208.32,
-				"low3m": 183.85,
-				"return6m": -40.3,
-				"return1m": -11.5,
-				"near3mLow": true
+				"price": 184.36,
+				"price6mAgo": 391.88,
+				"price1mAgo": 220.56,
+				"low3m": 175.42,
+				"return6m": -53,
+				"return1m": -16.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
@@ -82,7 +82,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": 1.29
 	},
 	"qcs": {
 		"earningsScore": -2.86,
@@ -99,7 +99,7 @@
 		}
 	},
 	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-03-28T23:02:45.886Z",
+	"lastUpdated": "2026-04-04T23:38:53.805Z",
 	"analystConsensus": {
 		"ticker": "AVAV",
 		"strongBuy": 5,
@@ -109,5 +109,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$318.79",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.07,
+			"low": 2.70853,
+			"average": 2.88011
+		},
+		"2027": {
+			"high": 4.95,
+			"low": 2.53,
+			"average": 4.05194
+		}
+	}
 }

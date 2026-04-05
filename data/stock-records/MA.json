@@ -4,75 +4,75 @@
 	"group": "Defensive Monopolies",
 	"confidence": "medium",
 	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
-	"marketCap": "$432.2B USD",
-	"sharpeRatio": 1.25,
-	"expectedCAGR": "15% - 54%",
-	"expectedVolatility": "~24%",
+	"marketCap": "$440.4B USD",
+	"sharpeRatio": 1.17,
+	"expectedCAGR": "12% - 51%",
+	"expectedVolatility": "~23%",
 	"valuation": {
-		"trailingPE": 29.3,
-		"forwardPE": 21.4,
+		"trailingPE": 29.9,
+		"forwardPE": 21.8,
 		"pegRatio": null,
-		"evEbitda": 21.5,
-		"evFcf": 27.1
+		"evEbitda": 21.9,
+		"evFcf": 27.6
 	},
 	"metrics": {
 		"fcfMargin": "~50%",
 		"fcfYield": "~4%",
-		"roic": "4.0%",
+		"roic": "3.9%",
 		"roe": "209.9%",
 		"netDebtEbitda": "0.4x",
 		"ruleOf40": "67%",
-		"beta": "0.84",
+		"beta": "0.83",
 		"revenueGrowth": "17.6%",
 		"interestCoverage": "18.8x"
 	},
-	"targetPrice": "$661.12",
+	"targetPrice": "$657.11",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$484.24",
+	"currentPrice": "$493.44",
 	"consensus": {
 		"tipranks": "$659",
-		"yahoo": "$661.12",
+		"yahoo": "$657.11",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.51,
+		"ttmEPS": 16.53,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "15%",
-			"base": "38%",
-			"bull": "54%"
+			"bear": "12%",
+			"base": "34%",
+			"bull": "51%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-28T23:02:57.913Z",
+	"lastUpdated": "2026-04-04T23:39:05.430Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.81,
+		"score": 1.84,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 27.1,
+			"multiple": 27.6,
 			"cvStock": 0.019,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 36.5% (DEPLOY override: base CAGR 38% ≥ 20% and stabilized)",
+		"note": "DEPLOY override: base CAGR 34% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 484.24,
-				"price6mAgo": 568.14,
-				"price1mAgo": 521,
+				"price": 493.44,
+				"price6mAgo": 578.81,
+				"price1mAgo": 524.66,
 				"low3m": 480.5,
-				"return6m": -14.8,
-				"return1m": -7.1,
+				"return6m": -14.7,
+				"return1m": -6,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 4,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -81,26 +81,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.43
+		"secondaryScore": 1.45
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.44,
-		"totalScore": 5.44,
+		"revisionsScore": 0.43,
+		"totalScore": 5.43,
 		"raw": {
 			"avgSurprisePct": 5.43,
 			"netInsiderShares": 178595,
 			"instFlowTrend": "negative",
 			"upRevisions": 3,
 			"downRevisions": 0,
-			"totalAnalysts": 34
+			"totalAnalysts": 35
 		}
 	},
 	"description": "Mastercard Incorporated, a technology company, provides transaction processing and other payment-related products and services in the United States and internationally.",
 	"analystTargets": {
 		"low": 550,
-		"mean": 661.12,
+		"mean": 657.11,
 		"high": 739
 	},
 	"analystConsensus": {
@@ -112,5 +112,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$667.88"
+	"targetPriceAlternative": "$667.88",
+	"forwardEstimates": {
+		"2026": {
+			"high": 20.11363,
+			"low": 19.15,
+			"average": 19.59812
+		},
+		"2027": {
+			"high": 23.58918,
+			"low": 21.9,
+			"average": 22.66326
+		}
+	}
 }

@@ -4,12 +4,12 @@
 	"group": "Healthcare Monopolies",
 	"confidence": "low",
 	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
-	"marketCap": "$370.4B USD",
-	"sharpeRatio": 0.52,
+	"marketCap": "$369.4B USD",
+	"sharpeRatio": 0.54,
 	"expectedCAGR": "-9% - 46%",
-	"expectedVolatility": "~27%",
+	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 88.4,
+		"trailingPE": 88.5,
 		"forwardPE": 13,
 		"pegRatio": 1.06,
 		"evEbitda": 14.8,
@@ -24,14 +24,14 @@
 		"ruleOf40": "40%",
 		"grossMargin": "71.62%",
 		"operatingMargin": "~34%",
-		"beta": "0.33",
+		"beta": "0.36",
 		"revenueGrowth": "10.0%",
 		"interestCoverage": "7.8x"
 	},
 	"targetPrice": "$249.14",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$209.40",
+	"currentPrice": "$208.84",
 	"consensus": {
 		"tipranks": "$253",
 		"yahoo": "$249.14",
@@ -48,7 +48,7 @@
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-03-28T23:02:43.228Z",
+	"lastUpdated": "2026-04-04T23:38:50.255Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.99,
@@ -60,16 +60,16 @@
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 22% ≥ 20% and stabilized",
+		"note": "DEPLOY override: base CAGR 22% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 209.4,
-				"price6mAgo": 223.16,
-				"price1mAgo": 234.26,
+				"price": 208.84,
+				"price6mAgo": 230.19,
+				"price1mAgo": 232.35,
 				"low3m": 201.8,
-				"return6m": -6.2,
-				"return1m": -10.6,
+				"return6m": -9.3,
+				"return1m": -10.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -118,5 +118,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 15.25,
+			"low": 14.15,
+			"average": 14.5364
+		},
+		"2027": {
+			"high": 17.43,
+			"low": 14.95,
+			"average": 16.11592
+		}
+	}
 }

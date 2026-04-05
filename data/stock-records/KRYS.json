@@ -2,11 +2,110 @@
 	"ticker": "KRYS",
 	"name": "Krystal Biotech",
 	"group": "Biotech",
-	"confidence": "medium",
+	"confidence": "low",
 	"confidenceReason": "Vyjuvek (beremagene geperpavec) is the first gene therapy approved for dystrophic epidermolysis bullosa. Orphan-drug pricing power and proprietary HSV-1 platform for other rare skin diseases.",
 	"cagrModel": {
-		"epsGrowth": "15%",
+		"epsGrowth": "37%",
 		"epsGrowthSource": "auto",
-		"basis": "Non-GAAP EPS"
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 6.83,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-8%",
+			"base": "20%",
+			"bull": "42%"
+		}
+	},
+	"currentPrice": "$260.95",
+	"marketCap": "$7.6B USD",
+	"valuation": {
+		"trailingPE": 38.2,
+		"forwardPE": 24.7,
+		"evFcf": 72.5,
+		"evEbitda": 41.8
+	},
+	"metrics": {
+		"roe": "18.9%",
+		"fcfMargin": "~24%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "42%",
+		"beta": "0.54",
+		"revenueGrowth": "17.5%",
+		"roic": "2.9%",
+		"interestCoverage": "317.2x"
+	},
+	"consensus": {
+		"yahoo": "$314"
+	},
+	"targetPrice": "$314",
+	"analystTargets": {
+		"low": 241,
+		"mean": 314,
+		"high": 371
+	},
+	"expectedCAGR": "-8% - 42%",
+	"expectedVolatility": "~43%",
+	"sharpeRatio": 0.29,
+	"screener": {
+		"engine": "fPERG",
+		"score": 1.24,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 37,
+			"multipleType": "Forward P/E",
+			"multiple": 24.7,
+			"cvStock": 0.326,
+			"riskMultiplier": 1.764
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 260.95,
+				"price6mAgo": 180.57,
+				"price1mAgo": 260.33,
+				"low3m": 235.6,
+				"return6m": 44.5,
+				"return1m": 0.2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 5.8,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": 3.42,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 3.42,
+		"raw": {
+			"avgSurprisePct": 27.91,
+			"netInsiderShares": -31569,
+			"instFlowTrend": "neutral",
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 9
+		}
+	},
+	"description": "Krystal Biotech, Inc., a commercial-stage biotechnology company, discovers, develops, manufactures, and commercializes genetic medicines to treat diseases with high unmet medical needs in the Unite...",
+	"lastUpdated": "2026-04-04T23:39:03.329Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": 9.59,
+			"low": 5.57305,
+			"average": 7.73256
+		},
+		"2027": {
+			"high": 20.3,
+			"low": 6.52,
+			"average": 10.57953
+		}
 	}
 }

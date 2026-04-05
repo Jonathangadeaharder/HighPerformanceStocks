@@ -9,60 +9,89 @@
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "18%",
-		"ttmEPS": 2.26,
+		"epsGrowth": "21%",
+		"ttmEPS": 2.22,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-24%",
-			"base": "80%",
-			"bull": "173%"
+			"bear": "-27%",
+			"base": "62%",
+			"bull": "161%"
 		}
 	},
-	"currentPrice": "$66.02",
-	"marketCap": "$59.4B USD",
+	"currentPrice": "$68.90",
+	"marketCap": "$62.0B USD",
 	"valuation": {
-		"trailingPE": 29.2,
-		"forwardPE": 23.9
+		"trailingPE": 31.1,
+		"forwardPE": 24.7
 	},
 	"metrics": {
 		"roe": "22.0%",
-		"beta": "2.48",
+		"beta": "2.46",
 		"revenueGrowth": "26.5%",
-		"roic": "2.8%"
+		"roic": "2.6%"
 	},
 	"consensus": {
-		"yahoo": "$119.09"
+		"yahoo": "$111.37"
 	},
-	"targetPrice": "$119.09",
+	"targetPrice": "$111.37",
 	"analystTargets": {
 		"low": 50,
-		"mean": 119.09,
+		"mean": 111.37,
 		"high": 180
 	},
-	"expectedCAGR": "-24% - 173%",
-	"expectedVolatility": "~70%",
-	"sharpeRatio": 1,
+	"expectedCAGR": "-27% - 161%",
+	"expectedVolatility": "~69%",
+	"sharpeRatio": 0.91,
 	"screener": {
-		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/EBITDA"
+		"engine": "fPERG",
+		"score": 1.49,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 21,
+			"multipleType": "Forward P/E",
+			"multiple": 24.7,
+			"cvStock": 0.233,
+			"riskMultiplier": 1.264
+		},
+		"note": "hasLikelyValueFloor: analyst upside 61.6% (DEPLOY override: base CAGR 62% >= 20% and stabilized)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 68.9,
+				"price6mAgo": 144.26,
+				"price1mAgo": 80.56,
+				"low3m": 63.51,
+				"return6m": -52.2,
+				"return1m": -14.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": 3.8,
+				"quarter": "2025-12"
+			}
+		}
 	},
 	"qcs": {
-		"earningsScore": 5,
+		"earningsScore": 2.8,
 		"flowScore": 0,
-		"revisionsScore": -0.29,
-		"totalScore": 4.71,
+		"revisionsScore": -0.53,
+		"totalScore": 2.27,
 		"raw": {
 			"avgSurprisePct": 16.34,
 			"netInsiderShares": 216758,
 			"instFlowTrend": "negative",
 			"upRevisions": 0,
-			"downRevisions": 1,
-			"totalAnalysts": 17
+			"downRevisions": 2,
+			"totalAnalysts": 19
 		}
 	},
 	"description": "Robinhood Markets, Inc. operates financial services platform in the United States.",
-	"lastUpdated": "2026-03-28T23:02:52.192Z",
+	"lastUpdated": "2026-04-04T23:41:31.895Z",
 	"analystConsensus": {
 		"ticker": "HOOD",
 		"strongBuy": 5,
@@ -72,5 +101,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$117.49",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 2.65,
+			"low": 1.91,
+			"average": 2.21844
+		},
+		"2027": {
+			"high": 3.7,
+			"low": 1.19785,
+			"average": 2.68906
+		}
+	}
 }

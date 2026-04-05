@@ -2,28 +2,28 @@
 	"ticker": "IT",
 	"name": "Gartner",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
+	"confidence": "high",
 	"confidenceReason": "Monopoly in enterprise IT research. Massive free cash flow and relentless share buybacks.",
 	"bullCase": "Gartner's enterprise IT research is the most defensible subscription moat in B2B services — Fortune 500 clients renew at 90%+ rates because Gartner's Magic Quadrant dictates vendor selection. Aggressive buybacks (~6% float reduction annually) compound EPS well above organic growth. After a 36% selloff, the stock trades at an anomalously low 11x forward PE.",
 	"bearCase": "Enterprise IT budgets are among the first to be cut in a downturn. If new contract volumes slow in a recession, Gartner's double-digit growth engine stalls. The buyback program — funded by FCF — is the primary EPS driver; any FCF pressure creates a compounding miss.",
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
-		"ttmEPS": 9.65,
+		"ttmEPS": 9.64,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-10%",
-			"base": "21%",
-			"bull": "64%"
+			"bear": "-11%",
+			"base": "19%",
+			"bull": "62%"
 		}
 	},
-	"currentPrice": "$155.42",
-	"marketCap": "$11.2B USD",
+	"currentPrice": "$157.85",
+	"marketCap": "$11.4B USD",
 	"valuation": {
-		"trailingPE": 16.1,
-		"forwardPE": 10.7,
-		"evEbitda": 9.6,
-		"evFcf": 13.6
+		"trailingPE": 16.4,
+		"forwardPE": 10.9,
+		"evEbitda": 9.7,
+		"evFcf": 13.8
 	},
 	"metrics": {
 		"roe": "86.9%",
@@ -31,43 +31,43 @@
 		"fcfYield": "~8%",
 		"netDebtEbitda": "1.2x",
 		"ruleOf40": "16%",
-		"beta": "1.08",
+		"beta": "1.04",
 		"revenueGrowth": "2.2%",
-		"roic": "10.1%",
+		"roic": "9.9%",
 		"interestCoverage": "7.1x"
 	},
 	"consensus": {
 		"yahoo": "$188.62"
 	},
 	"targetPrice": "$188.62",
-	"expectedCAGR": "-10% - 64%",
+	"expectedCAGR": "-11% - 62%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.25,
-		"signal": "REJECTED",
+		"score": 1.15,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 13.6,
+			"multiple": 13.8,
 			"cvStock": 0.051,
-			"riskMultiplier": 1.103
+			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 19% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 155.42,
-				"price6mAgo": 261.19,
-				"price1mAgo": 159.27,
+				"price": 157.85,
+				"price6mAgo": 256.43,
+				"price1mAgo": 170.98,
 				"low3m": 139.18,
-				"return6m": -40.5,
-				"return1m": -2.4,
+				"return6m": -38.4,
+				"return1m": -7.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 3,
-				"down30d": 6
+				"pass": true,
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 12.2,
@@ -75,22 +75,22 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.25
+		"secondaryScore": 0.91
 	},
-	"lastUpdated": "2026-03-28T23:02:54.307Z",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.42,
+	"lastUpdated": "2026-04-04T23:39:02.272Z",
+	"expectedVolatility": "~53%",
+	"sharpeRatio": 0.4,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -1.33,
-		"totalScore": 8.67,
+		"revisionsScore": 0,
+		"totalScore": 10,
 		"raw": {
 			"avgSurprisePct": 10.61,
 			"netInsiderShares": 114253,
 			"instFlowTrend": "positive",
-			"upRevisions": 4,
-			"downRevisions": 8,
+			"upRevisions": 1,
+			"downRevisions": 1,
 			"totalAnalysts": 15
 		}
 	},
@@ -109,5 +109,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$188.30"
+	"targetPriceAlternative": "$188.30",
+	"forwardEstimates": {
+		"2026": {
+			"high": 14.78907,
+			"low": 12.32,
+			"average": 13.15599
+		},
+		"2027": {
+			"high": 16.14,
+			"low": 13.2,
+			"average": 14.49149
+		}
+	}
 }

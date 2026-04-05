@@ -4,35 +4,35 @@
 	"group": "Energy Royalties",
 	"confidence": "medium",
 	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
-	"marketCap": "$17.9B USD",
-	"sharpeRatio": 0.46,
-	"expectedCAGR": "-5% - 47%",
-	"expectedVolatility": "~36%",
+	"marketCap": "$17.4B USD",
+	"sharpeRatio": 0.61,
+	"expectedCAGR": "-2% - 51%",
+	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 22.2,
-		"forwardPE": 21.8,
+		"trailingPE": 21.2,
+		"forwardPE": 20.4,
 		"pegRatio": null,
-		"evEbitda": 12.9,
-		"evFcf": -10.4
+		"evEbitda": 12.7,
+		"evFcf": -10.3
 	},
 	"metrics": {
 		"fcfMargin": "~-120%",
 		"fcfYield": "~-9%",
-		"roic": "5.2%",
+		"roic": "5.4%",
 		"roe": "-2.9%",
 		"netDebtEbitda": "1.7x",
 		"ruleOf40": "-30%",
-		"beta": "0.33",
+		"beta": "0.3",
 		"revenueGrowth": "89.4%",
 		"interestCoverage": "10.6x"
 	},
-	"targetPrice": "$54.06",
+	"targetPrice": "$54.33",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
-	"currentPrice": "$47.85",
+	"currentPrice": "$46.47",
 	"consensus": {
 		"tipranks": "$51",
-		"yahoo": "$54.06",
+		"yahoo": "$54.33",
 		"stockanalysis": "$53"
 	},
 	"cagrModel": {
@@ -40,40 +40,40 @@
 		"epsGrowth": "8%",
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "18%",
-			"bull": "47%"
+			"bear": "-2%",
+			"base": "22%",
+			"bull": "51%"
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:10.659Z",
+	"lastUpdated": "2026-04-04T23:39:16.783Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 4.24,
-		"signal": "FAIL",
+		"score": 3.41,
+		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 8,
 			"multipleType": "EV/EBITDA",
-			"multiple": 12.9,
-			"cvStock": 0.39,
-			"riskMultiplier": 2.628
+			"multiple": 12.7,
+			"cvStock": 0.377,
+			"riskMultiplier": 2.15
 		},
-		"note": "(CYCLICAL EPS)",
+		"note": "DEPLOY override: base CAGR 22% >= 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 47.85,
-				"price6mAgo": 38.48,
-				"price1mAgo": 47.59,
+				"price": 46.47,
+				"price6mAgo": 38.9,
+				"price1mAgo": 43.65,
 				"low3m": 35.45,
-				"return6m": 24.4,
-				"return1m": 0.5,
+				"return6m": 19.5,
+				"return1m": 6.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 3
+				"up30d": 8,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -1.2,
@@ -81,26 +81,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 6.16
+		"secondaryScore": 5.48
 	},
 	"qcs": {
-		"earningsScore": 0.53,
+		"earningsScore": 0.54,
 		"flowScore": 5,
-		"revisionsScore": 1.92,
-		"totalScore": 7.45,
+		"revisionsScore": 4.17,
+		"totalScore": 9.71,
 		"raw": {
 			"avgSurprisePct": 5.13,
 			"netInsiderShares": 21089,
 			"instFlowTrend": "positive",
-			"upRevisions": 7,
-			"downRevisions": 2,
-			"totalAnalysts": 13
+			"upRevisions": 11,
+			"downRevisions": 1,
+			"totalAnalysts": 12
 		}
 	},
 	"description": "Viper Energy, Inc. owns, acquires, and exploits oil and natural gas properties in North America.",
 	"analystTargets": {
 		"low": 43,
-		"mean": 54.06,
+		"mean": 54.33,
 		"high": 68
 	},
 	"analystConsensus": {
@@ -112,5 +112,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$52.28",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 5.25,
+			"low": 1.14,
+			"average": 2.19404
+		},
+		"2027": {
+			"high": 4.68,
+			"low": 1.25,
+			"average": 2.27528
+		}
+	}
 }

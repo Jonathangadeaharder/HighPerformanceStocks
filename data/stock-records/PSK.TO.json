@@ -10,51 +10,52 @@
 		"ttmEPS": 0.87,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "1%",
-			"bull": "8%"
+			"bear": "-10%",
+			"base": "8%",
+			"bull": "37%"
 		}
 	},
-	"currentPrice": "C$33.21",
-	"marketCap": "C$7.7B",
+	"currentPrice": "C$32.09",
+	"marketCap": "C$7.5B",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 35.7
+		"trailingPE": 36.9,
+		"forwardPE": 34.5
 	},
 	"metrics": {
 		"roe": "7.8%",
 		"fcfMargin": "~46%",
 		"fcfYield": "~3%",
 		"ruleOf40": "36%",
-		"beta": "0.91",
+		"beta": "0.86",
 		"revenueGrowth": "-10.2%",
 		"interestCoverage": "32.8x"
 	},
 	"consensus": {
-		"yahoo": "C$32.68"
+		"yahoo": "C$33.64"
 	},
-	"targetPrice": "C$32.68",
-	"expectedCAGR": "-13% - 8%",
+	"targetPrice": "C$33.64",
+	"expectedCAGR": "-10% - 37%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.82,
+		"score": 3.69,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "P/CF",
-			"multiple": 38.2,
+			"multiple": 36.9,
 			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
+		"note": "Cheap (3.69) but base return 8% misses the 15% hurdle",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 33.21,
-				"price6mAgo": 25.72,
-				"price1mAgo": 31.79,
+				"price": 32.09,
+				"price6mAgo": 26.15,
+				"price1mAgo": 31.37,
 				"low3m": 25.83,
-				"return6m": 29.1,
-				"return1m": 4.5,
+				"return6m": 22.7,
+				"return1m": 2.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -68,11 +69,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.57
+		"secondaryScore": 3.45
 	},
-	"lastUpdated": "2026-03-28T23:03:04.080Z",
-	"expectedVolatility": "~25%",
-	"sharpeRatio": -0.28,
+	"lastUpdated": "2026-04-04T23:39:10.849Z",
+	"expectedVolatility": "~23%",
+	"sharpeRatio": 0.39,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -92,8 +93,8 @@
 	"description": "PrairieSky Royalty Ltd. holds crude oil and natural gas royalty interests in Canada.",
 	"analystTargets": {
 		"low": 28,
-		"mean": 32.68,
-		"high": 35
+		"mean": 33.64,
+		"high": 43
 	},
 	"analystConsensus": {
 		"ticker": "PSK.TO",
@@ -103,5 +104,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.06,
+			"low": 0.89,
+			"average": 0.96
+		},
+		"2027": {
+			"high": 0.96,
+			"low": 0.9,
+			"average": 0.93
+		}
+	}
 }

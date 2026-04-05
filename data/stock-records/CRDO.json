@@ -10,18 +10,18 @@
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "31%",
-			"base": "109%",
-			"bull": "173%"
+			"bear": "23%",
+			"base": "97%",
+			"bull": "156%"
 		}
 	},
-	"currentPrice": "$95.24",
-	"marketCap": "$17.6B USD",
+	"currentPrice": "$101.45",
+	"marketCap": "$18.7B USD",
 	"valuation": {
-		"trailingPE": 52.3,
-		"forwardPE": 20.2,
-		"evEbitda": 46.5,
-		"evFcf": 94.5
+		"trailingPE": 55.7,
+		"forwardPE": 21.5,
+		"evEbitda": 49.8,
+		"evFcf": 101.2
 	},
 	"metrics": {
 		"roe": "27.5%",
@@ -29,40 +29,40 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "218%",
-		"beta": "2.68",
+		"beta": "2.72",
 		"revenueGrowth": "201.5%",
-		"roic": "2.1%",
+		"roic": "2.0%",
 		"interestCoverage": "391.3x"
 	},
 	"consensus": {
 		"yahoo": "$199.38"
 	},
 	"targetPrice": "$199.38",
-	"expectedCAGR": "31% - 173%",
-	"expectedVolatility": "~83%",
-	"sharpeRatio": 1.17,
+	"expectedCAGR": "23% - 156%",
+	"expectedVolatility": "~82%",
+	"sharpeRatio": 1.04,
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.66,
+		"engine": "fPERG",
+		"score": 0.77,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 28,
-			"multipleType": "EV/EBITDA",
-			"multiple": 46.5,
+			"multipleType": "Forward P/E",
+			"multiple": 21.5,
 			"cvStock": 0.034,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 109.3% + QCS 11.56 (DEPLOY override: base CAGR 109% ≥ 20% and stabilized) (Signal capped at WAIT due to customer concentration risk)",
+		"note": "DEPLOY override: base CAGR 97% >= 15% and stabilized (Signal capped at WAIT due to customer concentration risk)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 95.24,
-				"price6mAgo": 146.01,
-				"price1mAgo": 114.22,
-				"low3m": 92.6,
-				"return6m": -34.8,
-				"return1m": -16.6,
-				"near3mLow": true
+				"price": 101.45,
+				"price6mAgo": 147.42,
+				"price1mAgo": 114.74,
+				"low3m": 86.49,
+				"return6m": -31.2,
+				"return1m": -11.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -73,11 +73,9 @@
 				"surprise": 13.7,
 				"quarter": "2026-01"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.72
+		}
 	},
-	"lastUpdated": "2026-03-28T23:02:47.765Z",
+	"lastUpdated": "2026-04-04T23:38:55.985Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
@@ -109,5 +107,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$206.33",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.37,
+			"low": 3.27,
+			"average": 3.30884
+		},
+		"2027": {
+			"high": 5.1,
+			"low": 4.46,
+			"average": 4.72452
+		}
+	}
 }

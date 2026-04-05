@@ -2,28 +2,28 @@
 	"ticker": "TSM",
 	"name": "TSMC",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
+	"confidence": "medium",
 	"confidenceReason": "Foundry monopoly (~68% market share). Makes every AI chip for NVDA/AVGO/MRVL. PEG 0.57 suggests undervaluation. 2nm node ramp in 2026 with 10-20% price premium.",
-	"marketCap": "$1694.6B USD",
-	"sharpeRatio": 0.78,
-	"expectedCAGR": "8% - 60%",
+	"marketCap": "$1758.4B USD",
+	"sharpeRatio": 0.68,
+	"expectedCAGR": "5% - 54%",
 	"metrics": {
 		"fcfMargin": "~17%",
-		"fcfYield": "~38%",
+		"fcfYield": "~37%",
 		"roic": "45% - 49%",
 		"roe": "35.1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "37%",
 		"netMargin": "45.1%",
 		"grossMargin": "59.89%",
-		"beta": "1.28",
+		"beta": "1.25",
 		"revenueGrowth": "20.5%",
 		"interestCoverage": "44.5x"
 	},
 	"targetPrice": "$430.65",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$326.74",
+	"currentPrice": "$339.04",
 	"consensus": {
 		"tipranks": "$424",
 		"yahoo": "$430.65",
@@ -34,17 +34,46 @@
 		"epsGrowth": "18%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "33%",
-			"bull": "60%"
+			"bear": "5%",
+			"base": "28%",
+			"bull": "54%"
 		},
 		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-03-28T23:03:07.992Z",
+	"lastUpdated": "2026-04-04T23:39:14.762Z",
 	"screener": {
-		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/EBITDA"
+		"engine": "fPERG",
+		"score": 1.05,
+		"signal": "DEPLOY",
+		"inputs": {
+			"growth": 18,
+			"multipleType": "Forward P/E",
+			"multiple": 18.9,
+			"cvStock": 0.053,
+			"riskMultiplier": 1
+		},
+		"note": "DEPLOY override: base CAGR 28% >= 20% and stabilized",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 339.04,
+				"price6mAgo": 302.4,
+				"price1mAgo": 353.86,
+				"low3m": 311.7,
+				"return6m": 12.1,
+				"return1m": -4.2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 5.5,
+				"quarter": "2025-12"
+			}
+		}
 	},
 	"intrinsicValue": {
 		"dcf": 152.96,
@@ -52,17 +81,17 @@
 		"discount": -53
 	},
 	"valuation": {
-		"trailingPE": 31.5,
-		"forwardPE": 18.2,
+		"trailingPE": 32.7,
+		"forwardPE": 18.9,
 		"evEbitda": null,
-		"evFcf": 10.1
+		"evFcf": 10.6
 	},
-	"expectedVolatility": "~38%",
+	"expectedVolatility": "~37%",
 	"qcs": {
-		"earningsScore": 3.34,
+		"earningsScore": 5,
 		"flowScore": 0,
 		"revisionsScore": 0,
-		"totalScore": 3.34,
+		"totalScore": 5,
 		"raw": {
 			"avgSurprisePct": 6.69,
 			"netInsiderShares": 0,
@@ -87,5 +116,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$391.43"
+	"targetPriceAlternative": "$391.43",
+	"forwardEstimates": {
+		"2026": {
+			"high": 15.21,
+			"low": 14.182,
+			"average": 14.51715
+		},
+		"2027": {
+			"high": 20.01,
+			"low": 16.186,
+			"average": 17.93122
+		}
+	}
 }

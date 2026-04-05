@@ -4,16 +4,16 @@
 	"group": "AI & Semiconductors",
 	"confidence": "medium",
 	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
-	"marketCap": "$75.0B USD",
-	"sharpeRatio": 0.55,
-	"expectedCAGR": "1% - 51%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$77.0B USD",
+	"sharpeRatio": 0.49,
+	"expectedCAGR": "-1% - 47%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 67.1,
-		"forwardPE": 28.9,
+		"trailingPE": 68.5,
+		"forwardPE": 29.6,
 		"pegRatio": 3.9,
-		"evEbitda": 38.6,
-		"evFcf": 48.7
+		"evEbitda": 39.6,
+		"evFcf": 50
 	},
 	"metrics": {
 		"fcfMargin": "~29%",
@@ -22,53 +22,53 @@
 		"roe": "21.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "35%",
-		"beta": "1.02",
+		"beta": "1.04",
 		"revenueGrowth": "6.2%",
 		"interestCoverage": "13.0x"
 	},
 	"targetPrice": "$371.68",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$271.77",
+	"currentPrice": "$278.72",
 	"consensus": {
 		"tipranks": "$369",
 		"yahoo": "$371.68",
 		"stockanalysis": "$369"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.05,
+		"ttmEPS": 4.07,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "37%",
-			"bull": "51%"
+			"bear": "-1%",
+			"base": "33%",
+			"bull": "47%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-28T23:02:46.932Z",
+	"lastUpdated": "2026-04-04T23:38:55.808Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.8,
+		"score": 1.48,
 		"signal": "DEPLOY",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 55.9,
+			"multiple": 29.6,
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~55.9x (hasLikelyValueFloor: analyst upside 36.8%) (DEPLOY override: base CAGR 37% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 33.4% (DEPLOY override: base CAGR 33% >= 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 271.77,
-				"price6mAgo": 348.52,
-				"price1mAgo": 303.36,
+				"price": 278.72,
+				"price6mAgo": 353.36,
+				"price1mAgo": 299.84,
 				"low3m": 262.75,
-				"return6m": -22,
-				"return1m": -10.4,
-				"near3mLow": true
+				"return6m": -21.1,
+				"return1m": -7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -88,7 +88,7 @@
 		"totalScore": 5,
 		"raw": {
 			"avgSurprisePct": 5.67,
-			"netInsiderShares": 428037,
+			"netInsiderShares": 436537,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
 			"downRevisions": 1,
@@ -110,5 +110,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$376.50",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 4.85,
+			"low": 4.74,
+			"average": 4.795
+		},
+		"2027": {
+			"high": 9.75,
+			"low": 9.18,
+			"average": 9.41429
+		}
+	}
 }

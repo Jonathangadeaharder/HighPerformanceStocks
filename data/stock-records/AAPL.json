@@ -10,19 +10,19 @@
 		"ttmEPS": 7.89,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-18%",
-			"base": "19%",
-			"bull": "41%"
+			"bear": "-20%",
+			"base": "15%",
+			"bull": "37%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$248.80",
-	"marketCap": "$3656.8B USD",
+	"currentPrice": "$255.92",
+	"marketCap": "$3761.5B USD",
 	"valuation": {
-		"trailingPE": 31.5,
-		"forwardPE": 26.7,
-		"evEbitda": 24,
-		"evFcf": 34.6
+		"trailingPE": 32.4,
+		"forwardPE": 27.5,
+		"evEbitda": 24.7,
+		"evFcf": 35.6
 	},
 	"metrics": {
 		"roe": "152.0%",
@@ -30,44 +30,44 @@
 		"fcfYield": "~3%",
 		"netDebtEbitda": "0.2x",
 		"ruleOf40": "40%",
-		"beta": "1.12",
+		"beta": "1.11",
 		"revenueGrowth": "15.7%",
-		"roic": "3.7%",
+		"roic": "3.6%",
 		"interestCoverage": "30.7x"
 	},
 	"consensus": {
-		"yahoo": "$295.31"
+		"yahoo": "$295.07"
 	},
-	"targetPrice": "$295.31",
-	"expectedCAGR": "-18% - 41%",
-	"expectedVolatility": "~31%",
-	"sharpeRatio": 0.23,
+	"targetPrice": "$295.07",
+	"expectedCAGR": "-20% - 37%",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 0.14,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.67,
+		"score": 2.75,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 26.7,
+			"multiple": 27.5,
 			"cvStock": 0.054,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 248.8,
-				"price6mAgo": 254.43,
-				"price1mAgo": 264.72,
+				"price": 255.92,
+				"price6mAgo": 256.69,
+				"price1mAgo": 260.29,
 				"low3m": 243.42,
-				"return6m": -2.2,
-				"return1m": -6,
-				"near3mLow": true
+				"return6m": -0.3,
+				"return1m": -1.7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 5,
-				"down30d": 2
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 6.3,
@@ -77,7 +77,7 @@
 	},
 	"bullCase": "Apple's Services segment (App Store, iCloud, Apple TV+, Apple Pay) is growing 15%+ annually and now represents ~40% of gross profit at 70%+ margins. Apple Intelligence AI features are the catalyst for an iPhone 17 upgrade supercycle in 2025-2026. The $100B+ annual buyback program reduces float by ~3% per year, compounding EPS mechanically.",
 	"bearCase": "Apple is expensive at 27x forward PE for a 10% EPS grower. China revenue (~18% of total) faces escalating geopolitical and regulatory pressure. Antitrust actions targeting the App Store 30% commission could remove $5-8B of annual high-margin revenue. Hardware replacement cycles are extending as smartphones mature.",
-	"lastUpdated": "2026-03-28T23:02:42.636Z",
+	"lastUpdated": "2026-04-04T23:38:50.243Z",
 	"intrinsicValue": {
 		"dcf": 155.02,
 		"date": "2026-03-28",
@@ -86,21 +86,21 @@
 	"qcs": {
 		"earningsScore": 4.2,
 		"flowScore": 0,
-		"revisionsScore": 0.37,
-		"totalScore": 4.57,
+		"revisionsScore": 0,
+		"totalScore": 4.2,
 		"raw": {
 			"avgSurprisePct": 5.67,
 			"netInsiderShares": 423905,
 			"instFlowTrend": "negative",
-			"upRevisions": 5,
-			"downRevisions": 2,
+			"upRevisions": 4,
+			"downRevisions": 4,
 			"totalAnalysts": 41
 		}
 	},
 	"description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.",
 	"analystTargets": {
 		"low": 205,
-		"mean": 295.31,
+		"mean": 295.07,
 		"high": 350
 	},
 	"analystConsensus": {
@@ -112,5 +112,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$297.58",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 8.97,
+			"low": 8.15,
+			"average": 8.51202
+		},
+		"2027": {
+			"high": 10.38,
+			"low": 8.36,
+			"average": 9.35999
+		}
+	}
 }
