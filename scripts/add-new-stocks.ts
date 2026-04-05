@@ -158,6 +158,13 @@ const stocks = [
 
 	// Healthcare Monopolies
 	{
+		ticker: 'TMDX',
+		name: 'TransMedics Group',
+		group: 'Healthcare Monopolies',
+		confidence: 'high',
+		reason: 'Functional monopoly in active organ transplant preservation and aviation logistics. High growth addressing immense unmet medical need.'
+	},
+	{
 		ticker: 'MCK',
 		name: 'McKesson',
 		group: 'Healthcare Monopolies',
