@@ -196,7 +196,35 @@ describe('deploymentForPass', () => {
 		const stock = createMockStock({ baseCagr: ETF_HURDLE_RETURN - 1 });
 		const result = deploymentForPass(stock);
 		expect(result.status).toBe('FAIL');
-		expect(result.reason).toContain('misses hurdle');
+		expect(result.reason).toContain('misses 15% hurdle');
+	});
+
+	it('returns DEPLOY when dynamic 12% hurdle is met with strong upgrades', () => {
+		const stock = createMockStock({ 
+			baseCagr: 13, 
+			screener: { 
+				realityChecks: { 
+					stabilization: { pass: true },
+					revisions: { pass: true, up30d: 6, down30d: 1 } 
+				} 
+			} 
+		});
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('DEPLOY'); // 13 >= 12 hurdle
+	});
+
+	it('returns WAIT when dynamic 10% hurdle is met but stabilization fails', () => {
+		const stock = createMockStock({ 
+			baseCagr: 11, 
+			screener: { 
+				realityChecks: { 
+					stabilization: { pass: false }, // will return WAIT
+					revisions: { pass: true, up30d: 14, down30d: 1 } 
+				} 
+			} 
+		});
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('WAIT'); // 11 >= 10 hurdle, but fails stabilization
 	});
 
 	it('returns NO_DATA when baseCagr is missing', () => {
@@ -281,6 +309,22 @@ describe('deploymentForFail', () => {
 		const result = deploymentForFail(stock);
 		expect(result.status).toBe('FAIL');
 		expect(result.reason).toContain('misses the 15% hurdle');
+	});
+
+	it('uses dynamic 10% hurdle for deploymentForFail with high revisions', () => {
+		const stock: FindingStock = {
+			ticker: 'TEST',
+			baseCagr: 10, // 10 >= 10, should not fail here, should return 'No valuation edge.' or equivalent
+			screener: { 
+				score: 0.5,
+				realityChecks: {
+					revisions: { pass: true, up30d: 12, down30d: 2 }
+				}
+			}
+		};
+		const result = deploymentForFail(stock);
+		expect(result.status).toBe('FAIL');
+		expect(result.reason).toBe('No valuation edge.'); 
 	});
 
 	it('returns NO_DATA when baseCagr is missing', () => {

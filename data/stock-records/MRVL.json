@@ -46,11 +46,11 @@
 		},
 		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-04-05T07:21:29.065Z",
+	"lastUpdated": "2026-04-05T07:47:17.747Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.66,
-		"signal": "FAIL",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
@@ -58,7 +58,7 @@
 			"cvStock": 0.094,
 			"riskMultiplier": 1
 		},
-		"note": "Cheap (0.66) but base return 13% misses the 15% hurdle",
+		"note": "Analyst Lag Override: Hurdle adjusted to 10% due to strong up-revisions",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
