@@ -452,4 +452,20 @@ describe('computeScreener — fPERG threshold and WAIT-band', () => {
 		const result = computeScreener(stock, undefined, 100, 100, undefined);
 		expect(result.signal).toBe('NO_DATA');
 	});
+
+	// Regression: the hardcoded bearCase string-match that capped
+	// "customer concentration" stocks at WAIT was removed in
+	// refactor/remove-customer-concentration-filter. This test asserts it
+	// is never reintroduced — a clear PASS stock must remain PASS regardless
+	// of what prose appears in its bearCase narrative.
+	it('does NOT cap a clean fPERG PASS to WAIT when bearCase mentions "customer concentration"', () => {
+		const stock: ScreenerStock = {
+			cagrModel: { epsGrowth: '57%', ttmEPS: 5 },
+			valuation: { forwardPE: 17.6 },
+			bearCase: 'Heavy reliance on a few massive hyperscaler clients creates customer concentration risk.'
+		};
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).toBe('PASS');
+	});
 });

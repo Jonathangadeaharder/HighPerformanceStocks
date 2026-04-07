@@ -8,7 +8,7 @@
 	"expectedVolatility": "~45%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 30.2,
+		"forwardPE": 30.4,
 		"pegRatio": null,
 		"evEbitda": -303.3,
 		"evFcf": 20.2
@@ -26,7 +26,7 @@
 	"targetPrice": "$233.70",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$138.56",
+	"currentPrice": "$139.52",
 	"consensus": {
 		"tipranks": "$240",
 		"yahoo": "$233.70"
@@ -36,17 +36,18 @@
 		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "19%",
-			"base": "69%",
-			"bull": "142%"
+			"bear": "18%",
+			"base": "68%",
+			"bull": "140%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-04-05T07:21:39.460Z",
+	"lastUpdated": "2026-04-07T11:23:06.462Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.81,
 		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.81 vs 0.8 limit)",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
@@ -54,16 +55,15 @@
 			"cvStock": 0.077,
 			"riskMultiplier": 1
 		},
-		"note": "Signal capped at WAIT due to customer concentration risk",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 138.56,
-				"price6mAgo": 305.24,
-				"price1mAgo": 161.96,
+				"price": 139.52,
+				"price6mAgo": 292.75,
+				"price1mAgo": 162.62,
 				"low3m": 128,
-				"return6m": -54.6,
-				"return1m": -14.4,
+				"return6m": -52.3,
+				"return1m": -14.2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -77,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.21
+		"secondaryScore": 1.22
 	},
 	"qcs": {
 		"earningsScore": 5,
