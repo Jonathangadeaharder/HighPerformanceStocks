@@ -21,7 +21,7 @@ const requiredFields = [
 // Fields required even on un-populated seed records
 const seedRequiredFields = ['ticker', 'name', 'group'];
 
-function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
+function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]): void {
 	const targetMap = {
 		bear: data.analystTargets.low,
 		base: data.analystTargets.mean,
@@ -42,7 +42,7 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 	}
 }
 
-function verifyData() {
+function verifyData(): void {
 	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
 	let hasErrors = false;
 	const today = new Date().toISOString().slice(0, 10);
