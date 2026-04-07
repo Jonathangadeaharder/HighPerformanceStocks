@@ -1,8 +1,9 @@
-import { execSync } from 'child_process';
-import { readFileSync, readdirSync } from 'fs';
-import { join } from 'path';
+import { execFileSync } from 'node:child_process';
+import { readFileSync, readdirSync } from 'node:fs';
+import { join, relative, resolve } from 'node:path';
 
-const DIR = 'c:/Users/jogah/Coding Projects/HighPerformanceStocks/data/stock-records';
+const DIR = resolve(process.cwd(), 'data/stock-records');
+const GIT_DIR = relative(process.cwd(), DIR).replace(/\\/g, '/');
 const files = readdirSync(DIR).filter(f => f.endsWith('.json'));
 
 let deployToReject = [];
@@ -18,7 +19,7 @@ for (const f of files) {
     const freshObj = JSON.parse(freshRaw);
     
     // Get original from git
-    const oldRaw = execSync(`git show HEAD:"data/stock-records/${f}"`, { encoding: 'utf-8' });
+    const oldRaw = execFileSync('git', ['show', `HEAD:${GIT_DIR}/${f}`], { encoding: 'utf-8' });
     const oldObj = JSON.parse(oldRaw);
     
     const freshScreener = freshObj.screener || {};
