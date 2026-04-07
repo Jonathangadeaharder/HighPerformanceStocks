@@ -2,8 +2,6 @@
 	"ticker": "ZTS",
 	"name": "Zoetis",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
-	"confidenceReason": "Global monopoly in animal health/vaccines. No insurance price caps equals incredible pricing power.",
 	"bullCase": "Zoetis is the global leader in animal health medicines and vaccines — a $70B market growing 6-7% annually with no generic substitution risk in veterinary biologics. Librela (monoclonal antibody for osteoarthritis pain in dogs) is the fastest-growing product launch in animal health history. The pet humanization trend drives premiumization of veterinary care globally.",
 	"bearCase": "Zoetis has de-rated from 35-40x to 16x forward PE as growth slowed from 15% to 12-14% EPS. Competition in the monoclonal antibody space (Elanco's Credelio, others) could pressure Librela margins. Livestock segment is directly exposed to agricultural commodity cycles and is structurally less attractive than companion animal.",
 	"cagrModel": {

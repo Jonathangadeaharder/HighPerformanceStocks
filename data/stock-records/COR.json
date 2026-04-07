@@ -2,8 +2,6 @@
 	"ticker": "COR",
 	"name": "Cencora",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
-	"confidenceReason": "Consolidated oligopoly drug distributor with immense cash flow and repurchase programs.",
 	"bullCase": "Cencora (formerly AmerisourceBergen) has the strongest specialty pharma distribution franchise in the US through its World Courier, ASD Healthcare, and Lash Group subsidiaries. GLP-1 drug distribution volumes provide a new growth vector as obesity drug prescriptions compound. Systematic buybacks reduce float 5-7% annually, driving EPS well above revenue growth.",
 	"bearCase": "Like McKesson, Cencora operates on <1% net margins in a business where drug pricing policy is set by regulators and PBMs. If Medicare Part D restructuring compresses specialty drug reimbursement or GLP-1 list prices fall sharply, Cencora's revenue base shrinks. The business has minimal organic growth levers beyond M&A.",
 	"cagrModel": {

@@ -2,8 +2,6 @@
 	"ticker": "KYCCF",
 	"name": "Keyence Corporation",
 	"group": "Robotics",
-	"confidence": "low",
-	"confidenceReason": "Japan's most profitable manufacturer. 55%+ operating margins in factory automation sensors. Direct sales model creates deep moat. But premium valuation and yen exposure.",
 	"marketCap": "$88.2B USD",
 	"sharpeRatio": 0.06,
 	"expectedVolatility": "~42%",

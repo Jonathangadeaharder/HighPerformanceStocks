@@ -2,8 +2,6 @@
 	"ticker": "NVDA",
 	"name": "NVIDIA",
 	"group": "AI & Semiconductors",
-	"confidence": "medium",
-	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
 	"marketCap": "$4311.5B USD",
 	"sharpeRatio": 1.08,
 	"expectedCAGR": "-21% - 114%",

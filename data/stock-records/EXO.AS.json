@@ -2,8 +2,6 @@
 	"ticker": "EXO.AS",
 	"name": "Exor N.V.",
 	"group": "The Capital Compounders",
-	"confidence": "low",
-	"confidenceReason": "Deep 40-45% discount to NAV. Pivot to Healthcare and Tech under Elkann.",
 	"marketCap": "€22.1B",
 	"sharpeRatio": 2.52,
 	"expectedCAGR": "51% - 79%",

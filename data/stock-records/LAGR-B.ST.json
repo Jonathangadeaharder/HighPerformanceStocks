@@ -2,8 +2,6 @@
 	"ticker": "LAGR-B.ST",
 	"name": "Lagercrantz Group",
 	"group": "Capital Compounders",
-	"confidence": "low",
-	"confidenceReason": "Identical niche-B2B M&A model to Addtech/Lifco. Grows EPS beautifully at 15–20%+.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",

@@ -2,8 +2,6 @@
 	"ticker": "ROP",
 	"name": "Roper Technologies",
 	"group": "Serial Acquirers",
-	"confidence": "medium",
-	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
 	"marketCap": "$38.5B USD",
 	"sharpeRatio": 0.98,
 	"expectedCAGR": "3% - 55%",

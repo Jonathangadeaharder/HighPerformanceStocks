@@ -2,8 +2,6 @@
 	"ticker": "KKR",
 	"name": "KKR & Co.",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "FRE margin ~69% on $638B AUM with permanent capital vehicle flywheel. Market misunderstands recurring permanent capital vehicle revenues.",
 	"marketCap": "$84.5B USD",
 	"sharpeRatio": 1.36,
 	"expectedCAGR": "17% - 106%",

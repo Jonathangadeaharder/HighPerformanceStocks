@@ -2,8 +2,6 @@
 	"ticker": "PDD",
 	"name": "PDD Holdings",
 	"group": "Emerging Markets",
-	"confidence": "low",
-	"confidenceReason": "Incredible growth and cash flow, but severe geopolitical and regulatory risks.",
 	"targetPrice": "$142.42",
 	"bullCase": "PDD Holdings runs the most efficient e-commerce operation in China (50%+ EBIT margin) while Temu is executing aggressive global expansion. If Temu captures 5% of global cross-border e-commerce, incremental revenue could be $40-60B by 2030. The trailing P/E of 9x prices in a permanent growth halt that fundamentals don't support.",
 	"bearCase": "Temu faces existential tariff risk: US de minimis exemption elimination and 145% tariffs make the sub-$15 product model unprofitable. Pinduoduo's domestic dominance may also erode as JD and Alibaba match its price-discovery algorithm.",

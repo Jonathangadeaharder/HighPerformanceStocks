@@ -2,8 +2,6 @@
 	"ticker": "ABBV",
 	"name": "AbbVie Inc.",
 	"group": "Healthcare Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Successfully navigated Humira patent cliff via Skyrizi/Rinvoq. Forward P/E ~16x is cheap for growth pharma. PEG 1.06. $15.5B FCF. Borderline on CAGR floor (12-16%).",
 	"marketCap": "$369.4B USD",
 	"sharpeRatio": 0.52,
 	"expectedCAGR": "-9% - 46%",

@@ -2,8 +2,6 @@
 	"ticker": "DSG.TO",
 	"name": "Descartes Systems",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
 	"bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
 	"bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
 	"cagrModel": {

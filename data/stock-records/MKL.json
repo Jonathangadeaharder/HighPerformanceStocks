@@ -2,8 +2,6 @@
 	"ticker": "MKL",
 	"name": "Markel Group",
 	"group": "The Capital Compounders",
-	"confidence": "medium",
-	"confidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
 	"marketCap": "$23.9B USD",
 	"sharpeRatio": 0.21,
 	"expectedCAGR": "-1% - 18%",

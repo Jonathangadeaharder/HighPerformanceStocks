@@ -2,8 +2,6 @@
 	"ticker": "TOI.V",
 	"name": "Topicus.com",
 	"group": "Serial Acquirers",
-	"confidence": "low",
-	"confidenceReason": "Strong Sharpe (0.46), executing CSU playbook flawlessly in Europe. 4% organic growth in stagnant macro proves pricing power. €625M deployed.",
 	"marketCap": "C$8.0B",
 	"sharpeRatio": 1.11,
 	"expectedCAGR": "45% - 55%",

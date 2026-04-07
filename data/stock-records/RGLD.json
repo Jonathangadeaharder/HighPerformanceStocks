@@ -2,8 +2,6 @@
 	"ticker": "RGLD",
 	"name": "Royal Gold",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$22.3B USD",
 	"sharpeRatio": 0.44,
 	"expectedCAGR": "0% - 44%",

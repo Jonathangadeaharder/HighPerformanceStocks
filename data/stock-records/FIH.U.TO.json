@@ -2,8 +2,6 @@
 	"ticker": "FIH.U.TO",
 	"name": "Fairfax India Holdings",
 	"group": "The Capital Compounders",
-	"confidence": "medium",
-	"confidenceReason": "Trading at a steep discount to NAV, Anchorage Infrastructure IPO catalyst.",
 	"marketCap": "$2.2B USD",
 	"sharpeRatio": 0.97,
 	"expectedVolatility": "~32%",

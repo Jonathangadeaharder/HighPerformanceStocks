@@ -2,8 +2,6 @@
 	"ticker": "HALO",
 	"name": "Halozyme Therapeutics",
 	"group": "Healthcare Technology",
-	"confidence": "low",
-	"confidenceReason": "Asset-light royalty model via ENHANZE drug delivery platform. 20% EPS growth with 70%+ gross margins. But royalty concentration risk and patent cliffs.",
 	"marketCap": "$7.6B USD",
 	"sharpeRatio": 0.29,
 	"expectedCAGR": "-13% - 49%",

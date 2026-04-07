@@ -2,8 +2,6 @@
 	"ticker": "AAPL",
 	"name": "Apple",
 	"group": "Consumer Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Unmatched consumer hardware ecosystem and services revenue moat. Massive, relentless share repurchases support EPS floor.",
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS (adjusted for buyback skew)",

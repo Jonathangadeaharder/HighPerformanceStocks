@@ -2,8 +2,6 @@
 	"ticker": "SHOP",
 	"name": "Shopify",
 	"group": "High-Growth Tech",
-	"confidence": "low",
-	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
 	"marketCap": "$154.3B USD",
 	"sharpeRatio": 0.46,
 	"expectedCAGR": "-7% - 69%",

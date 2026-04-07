@@ -2,8 +2,6 @@
 	"ticker": "V",
 	"name": "Visa",
 	"group": "Defensive Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
 	"marketCap": "$580.0B USD",
 	"sharpeRatio": 1.14,
 	"expectedCAGR": "8% - 51%",

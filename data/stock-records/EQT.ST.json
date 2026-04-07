@@ -2,8 +2,6 @@
 	"ticker": "EQT.ST",
 	"name": "EQT AB",
 	"group": "Financials & Alt Assets",
-	"confidence": "cut",
-	"confidenceReason": "European macro stagnation toxic for PE. If IPO/M&A exit windows freeze, carried interest collapses. Limited near-term catalysts.",
 	"marketCap": "335.9B SEK",
 	"sharpeRatio": 0.88,
 	"expectedCAGR": "14% - 58%",

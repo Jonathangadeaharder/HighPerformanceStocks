@@ -2,8 +2,6 @@
 	"ticker": "LMN.V",
 	"name": "Lumine Group",
 	"group": "Serial Acquirers",
-	"confidence": "high",
-	"confidenceReason": "Flawless turnaround ($118.8M profit from $258.9M loss), but multiple expansion to 21.1x EV/EBITDA reduces future torque. Telecom end-market lacks organic growth.",
 	"marketCap": "C$5.9B",
 	"sharpeRatio": 2.13,
 	"expectedCAGR": "70% - 148%",

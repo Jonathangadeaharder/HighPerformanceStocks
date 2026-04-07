@@ -2,8 +2,6 @@
 	"ticker": "ASML",
 	"name": "ASML Holding",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
-	"confidenceReason": "Literal EUV monopoly with elite Rule of 40 (49.5%), but uncompensated geopolitical risk. 5.3% single-day drop on export control panic proves China dependency.",
 	"marketCap": "$517.2B USD",
 	"sharpeRatio": 0.12,
 	"expectedCAGR": "-31% - 50%",

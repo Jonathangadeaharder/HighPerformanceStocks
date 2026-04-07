@@ -2,10 +2,8 @@
 	"ticker": "KTOS",
 	"name": "Kratos Defense & Security Solutions, Inc.",
 	"group": "Industrial Monopolies",
-	"confidence": "medium",
 	"bullCase": "Kratos dominates the tactical drone market with Valkyrie, securing major long-term defense contracts.",
 	"bearCase": "Government budget constraints or delays in autonomous drone program adoption limit growth.",
-	"confidenceReason": "Provides defense, national security, and technology solutions. Primarily known for unmanned systems, satellite communications, and microwave electronics. Solid defense niche but heavily reliant on government contracts.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",

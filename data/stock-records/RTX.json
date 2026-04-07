@@ -2,10 +2,8 @@
 	"ticker": "RTX",
 	"name": "RTX Corporation",
 	"group": "Industrial Monopolies",
-	"confidence": "medium",
 	"bullCase": "Commercial aerospace rebounds strongly while defense budgets globally swell, driving long-term revenue backlogs.",
 	"bearCase": "Supply chain disruptions or engine manufacturing defects lead to costly recalls and lower margins.",
-	"confidenceReason": "Major defense contractor and aerospace manufacturer with massive backlog, benefiting from global defense spending cycles and commercial aerospace recovery. EPS growth modeled to be auto-derived from analyst consensus.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",

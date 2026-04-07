@@ -2,8 +2,6 @@
 	"ticker": "MCO",
 	"name": "Moody's",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
 	"bullCase": "Moody's Analytics (MA) subscription segment now represents ~60% of revenue and grows 10%+ regardless of issuance cycles, providing a structural recurring revenue floor. The MIS ratings segment benefits from the refinancing wave as $8T in corporate debt comes due by 2026. Fee-based pricing power with no regulatory cap.",
 	"bearCase": "If investment-grade issuance dries up in a recession or credit freeze, MIS revenue collapses rapidly (2022: -18% MIS revenue). At 23x forward PE, Moody's trades at a premium that requires sustained mid-teens EPS growth; any miss compresses the multiple sharply.",
 	"cagrModel": {

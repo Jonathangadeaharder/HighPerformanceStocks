@@ -2,8 +2,6 @@
 	"ticker": "HDB",
 	"name": "HDFC Bank",
 	"group": "Emerging Markets",
-	"confidence": "low",
-	"confidenceReason": "India's largest private bank by market cap. Consistent ~15% loan growth post-merger with HDFC Ltd. Low NPAs (~1.3%) and strong ROA (~1.9%). ADR trades at slight premium to local shares.",
 	"marketCap": "$127.4B USD",
 	"sharpeRatio": 1.9,
 	"expectedCAGR": "9% - 91%",

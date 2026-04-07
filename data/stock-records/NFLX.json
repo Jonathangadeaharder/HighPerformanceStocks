@@ -2,8 +2,6 @@
 	"ticker": "NFLX",
 	"name": "Netflix",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Won the streaming wars. Transitioned from high-burn content spending to predictable, compounding free cash flow and advertising tier optionality.",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "Non-GAAP EPS / Cash FCF parity",

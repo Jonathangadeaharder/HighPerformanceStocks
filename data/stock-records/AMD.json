@@ -2,8 +2,6 @@
 	"ticker": "AMD",
 	"name": "Advanced Micro Devices",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
-	"confidenceReason": "Targeting >35% data center revenue CAGR through 2028 with MI450 ramp and data center expansion.",
 	"marketCap": "$354.6B USD",
 	"sharpeRatio": 0.48,
 	"expectedCAGR": "1% - 68%",

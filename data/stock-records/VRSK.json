@@ -2,8 +2,6 @@
 	"ticker": "VRSK",
 	"name": "Verisk Analytics",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "The 'FICO of insurance'. Proprietary databases for P&C insurers. Asset-light, massive margins.",
 	"bullCase": "Verisk is the FICO of insurance — the essential data and analytics infrastructure for P&C underwriting. After divesting Energy and Financial Services, it is a pure-play insurance analytics monopoly with 92%+ recurring revenue. ISO/AIR catastrophe modeling is non-substitutable for carrier pricing and reinsurance.",
 	"bearCase": "Verisk's 14x forward PE and 14% EPS growth trajectory are attractive but execution risk exists as the company refocuses post-divestitures. If the P&C insurance market softens significantly, data licensing volumes plateau. Data breach risk for a company holding underwriting data on nearly every US property.",
 	"cagrModel": {

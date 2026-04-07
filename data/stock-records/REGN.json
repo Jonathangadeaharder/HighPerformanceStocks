@@ -2,8 +2,6 @@
 	"ticker": "REGN",
 	"name": "Regeneron Pharmaceuticals",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Monopolistic drug franchises (Dupixent, EYLEA HD) with one of the best R&D engines in pharma. 5-year avg ROIC of 28%. Forward P/E ~17x with 0.40 beta provides defensive ballast.",
 	"marketCap": "$80.5B USD",
 	"sharpeRatio": 0.32,
 	"expectedCAGR": "-4% - 39%",

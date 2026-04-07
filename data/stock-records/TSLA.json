@@ -2,10 +2,8 @@
 	"ticker": "TSLA",
 	"name": "Tesla, Inc.",
 	"group": "Data & Software Monopolies",
-	"confidence": "cut",
 	"bullCase": "Tesla achieves full autonomy and ramps up energy storage, maintaining extreme dominance in the clean energy sector.",
 	"bearCase": "Increased EV competition, price wars, and leadership distractions cause margin compression and slowing growth.",
-	"confidenceReason": "Leader in electric vehicles, battery energy storage, and AI software/robotics. Unprecedented scale and brand power, though exposed to auto-cycle cyclicality and massive continuous capital requirements. High premium commands a flawless execution trajectory.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",

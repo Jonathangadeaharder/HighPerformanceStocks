@@ -2,8 +2,6 @@
 	"ticker": "INDT.ST",
 	"name": "Indutrade",
 	"group": "Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",

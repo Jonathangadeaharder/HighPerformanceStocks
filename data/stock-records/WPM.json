@@ -2,8 +2,6 @@
 	"ticker": "WPM",
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
 	"marketCap": "$61.7B USD",
 	"sharpeRatio": 1.1,
 	"expectedCAGR": "12% - 94%",

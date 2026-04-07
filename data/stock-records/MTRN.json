@@ -2,8 +2,6 @@
 	"ticker": "MTRN",
 	"name": "Materion",
 	"group": "Materials & Infrastructure",
-	"confidence": "medium",
-	"confidenceReason": "Niche advanced materials provider with strong exposure to aerospace, defense, and semiconductor end markets.",
 	"targetPrice": "$178.33",
 	"bullCase": "Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.",
 	"bearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.",

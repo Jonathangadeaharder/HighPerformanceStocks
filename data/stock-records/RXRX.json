@@ -2,8 +2,6 @@
 	"ticker": "RXRX",
 	"name": "Recursion Pharmaceuticals",
 	"group": "Disqualified",
-	"confidence": "high",
-	"confidenceReason": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model.",
 	"marketCap": "$1.6B USD",
 	"sharpeRatio": 1.49,
 	"expectedCAGR": "-4% - 254%",

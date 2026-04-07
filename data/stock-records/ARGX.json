@@ -2,8 +2,6 @@
 	"ticker": "ARGX",
 	"name": "argenx SE",
 	"group": "Biotech",
-	"confidence": "low",
-	"confidenceReason": "Vyvgart is a blockbuster FcRn antagonist with multi-indication expansion. 35-40% revenue growth. But early profitability, high valuation, and clinical pipeline risk.",
 	"marketCap": "$46.3B USD",
 	"sharpeRatio": 0.78,
 	"expectedCAGR": "-7% - 66%",

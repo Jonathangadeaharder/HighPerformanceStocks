@@ -2,8 +2,6 @@
 	"ticker": "SMSN.IL",
 	"name": "Samsung Electronics",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
-	"confidenceReason": "Global leader in memory but cyclical exposure.",
 	"targetPrice": "$4500.00",
 	"bullCase": "Memory cycle upswing and HBM catch-up drive massive earnings leverage.",
 	"bearCase": "Intense competition in foundry and smartphone markets.",

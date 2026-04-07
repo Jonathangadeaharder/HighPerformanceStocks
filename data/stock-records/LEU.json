@@ -2,8 +2,6 @@
 	"ticker": "LEU",
 	"name": "Centrus Energy Corp.",
 	"group": "Energy & Infrastructure",
-	"confidence": "low",
-	"confidenceReason": "Only US-licensed uranium enrichment company with strategic HALEU monopoly. Forward P/E ~67x is extremely expensive for lumpy contract revenue. Earnings are highly volatile quarter-to-quarter. Strong nuclear renaissance thesis but DOE-contract dependent. EPS growth to be auto-derived from analyst consensus.",
 	"targetPrice": "$278.12",
 	"bullCase": "Only US-licensed uranium enrichment facility — irreplaceable national security infrastructure. HALEU production is essential for next-gen advanced reactors (Oklo, TerraPower, etc.) with no domestic alternative. DOE contracts provide long-term revenue visibility. Nuclear renaissance accelerating globally as clean baseload demand surges. $1.96B cash fortress with net cash position. 12 analysts see 23%+ upside to $238 consensus target.",
 	"bearCase": "Earnings are wildly lumpy — recent quarters saw both +1,468% beats and -51% misses depending on contract timing. Forward P/E of ~67x is hard to justify even with monopoly pricing. Highly dependent on government funding and single-facility execution risk. 23.6% short interest signals significant skepticism. Revenue growth is ~3-4% annually with lumpiness making any P/E-based valuation extremely uncertain.",
