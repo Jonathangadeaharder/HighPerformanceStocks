@@ -4,7 +4,7 @@
 	"group": "AI & Semiconductors",
 	"confidence": "low",
 	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
-	"marketCap": "$1491.4B USD",
+	"marketCap": "$1490.8B USD",
 	"sharpeRatio": 1.16,
 	"expectedCAGR": "15% - 101%",
 	"metrics": {
@@ -21,7 +21,7 @@
 	"targetPrice": "$471.55",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$314.55",
+	"currentPrice": "$314.43",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$471.55",
@@ -39,11 +39,11 @@
 		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:15.373Z",
+	"lastUpdated": "2026-04-07T11:23:06.316Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.45,
-		"signal": "WAIT",
+		"signal": "PASS",
 		"inputs": {
 			"growth": 57,
 			"multipleType": "Forward P/E",
@@ -54,12 +54,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 314.55,
-				"price6mAgo": 335.49,
-				"price1mAgo": 332.77,
+				"price": 314.43,
+				"price6mAgo": 336.41,
+				"price1mAgo": 345.75,
 				"low3m": 289.96,
-				"return6m": -6.2,
-				"return1m": -5.5,
+				"return6m": -6.5,
+				"return1m": -9.1,
 				"near3mLow": false
 			},
 			"revisions": {
