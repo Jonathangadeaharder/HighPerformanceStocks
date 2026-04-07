@@ -2,8 +2,6 @@
 	"ticker": "INVE-B.ST",
 	"name": "Investor AB",
 	"group": "Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "Gold standard of European holding companies. 18% historical NAV CAGR. Normalized EPS used to avoid distortion from volatile investment gains.",
 	"marketCap": "1086.5B SEK",
 	"sharpeRatio": -0.17,
 	"expectedCAGR": "-11% - 13%",

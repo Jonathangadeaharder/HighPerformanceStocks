@@ -2,8 +2,6 @@
 	"ticker": "URI",
 	"name": "United Rentals",
 	"group": "Industrial Monopolies",
-	"confidence": "cut",
-	"confidenceReason": "NA equipment rental leader. Massive scale, heavy operational momentum from infrastructure cycles.",
 	"cagrModel": {
 		"epsGrowth": "5%",
 		"basis": "Non-GAAP EPS",

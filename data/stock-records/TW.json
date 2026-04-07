@@ -2,8 +2,6 @@
 	"ticker": "TW",
 	"name": "Tradeweb",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Electronic bond trading matching traditional voice-brokers. Asset-light, massive operating leverage.",
 	"bullCase": "Tradeweb is systematically replacing voice-brokered bond trading with electronic protocols, growing market share in US Treasuries, IG credit, and rates derivatives. Commission-per-ticket is rising as automation reduces headcount costs for clients. At 30%+ revenue CAGR, it is taking share from both MKTX and legacy dealers simultaneously.",
 	"bearCase": "At 28x forward PE, TW is priced for continued share gains in fixed income e-trading. If bond market volumes collapse (credit freeze, rate stability), revenue growth stalls. MKTX is fighting back in US credit and dealer internalization poses a long-term structural risk.",
 	"cagrModel": {

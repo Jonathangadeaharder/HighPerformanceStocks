@@ -2,8 +2,6 @@
 	"ticker": "PLTR",
 	"name": "Palantir",
 	"group": "Enterprise Software",
-	"confidence": "low",
-	"confidenceReason": "AIP platform gaining massive traction in commercial sector.",
 	"targetPrice": "$185.25",
 	"bullCase": "Palantir's AIP platform is becoming the enterprise AI operating system — AIP bootcamps are converting Fortune 500 trials to paid contracts at an accelerating pace. US commercial revenue grew 55%+ in 2025. The US government remains a structural buyer (DoD, CIA, NHS equivalent) regardless of political cycles. AIP's value proposition strengthens as AI adoption deepens.",
 	"bearCase": "At 83x forward PE and $370B market cap, Palantir is priced for decades of compounding. Government contract cancellations under DOGE budget cuts pose direct revenue risk. European data sovereignty laws restrict PLTR's commercial expansion on the continent. The AIP e-commerce expansion is early-stage and unproven at scale.",

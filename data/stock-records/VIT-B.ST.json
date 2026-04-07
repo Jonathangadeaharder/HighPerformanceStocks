@@ -2,8 +2,6 @@
 	"ticker": "VIT-B.ST",
 	"name": "Vitec Software Group",
 	"group": "Serial Acquirers",
-	"confidence": "low",
-	"confidenceReason": "Closest Nordic equivalent to Constellation Software. Perpetual owner of 45 VMS businesses across 20+ verticals. Acquisition ROIC ~30% is elite. Stock down 37% = potential entry. But company-level ROIC is depressed (~6%). fEVG threshold is 0.60 (stricter than fPERG 1.0), so score 0.74 correctly FAILs.",
 	"marketCap": "9.6B SEK",
 	"sharpeRatio": 2.23,
 	"expectedCAGR": "59% - 142%",

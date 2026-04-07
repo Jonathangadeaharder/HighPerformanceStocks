@@ -2,8 +2,6 @@
 	"ticker": "TDG",
 	"name": "TransDigm Group",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Existential leverage gamble: 5.7x Net Debt/EBITDA on cyclical aerospace. Liquidity shock forces punitive dilution. Sharpe 0.15.",
 	"marketCap": "$65.9B USD",
 	"sharpeRatio": 1.16,
 	"expectedCAGR": "7% - 67%",

@@ -2,8 +2,6 @@
 	"ticker": "NET",
 	"name": "Cloudflare",
 	"group": "Cybersecurity",
-	"confidence": "low",
-	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
 	"marketCap": "$74.5B USD",
 	"sharpeRatio": -0.03,
 	"expectedCAGR": "-36% - 42%",

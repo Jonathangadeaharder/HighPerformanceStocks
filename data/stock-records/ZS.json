@@ -2,8 +2,6 @@
 	"ticker": "ZS",
 	"name": "Zscaler",
 	"group": "Cybersecurity",
-	"confidence": "high",
-	"confidenceReason": "Pioneer in zero-trust cloud security. 25-35% revenue growth with expanding margins. But elevated non-GAAP PE and execution risk in competitive market.",
 	"marketCap": "$22.3B USD",
 	"sharpeRatio": 1.69,
 	"expectedCAGR": "19% - 142%",

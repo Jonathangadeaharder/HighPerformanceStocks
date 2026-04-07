@@ -2,8 +2,6 @@
 	"ticker": "MRVL",
 	"name": "Marvell Technology",
 	"group": "AI & Semiconductors",
-	"confidence": "medium",
-	"confidenceReason": "Dominates AI networking bottleneck at reasonable 29.2x P/E. Aggressive optical interconnect M&A. But legacy enterprise networking creates cyclical drag.",
 	"marketCap": "$93.7B USD",
 	"sharpeRatio": 0.19,
 	"expectedCAGR": "-21% - 53%",

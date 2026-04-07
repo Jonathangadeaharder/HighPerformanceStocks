@@ -2,8 +2,6 @@
 	"ticker": "NNI",
 	"name": "Nelnet",
 	"group": "The Capital Compounders",
-	"confidence": "high",
-	"confidenceReason": "Trading near or below adjusted Book Value. Retains ~68% of earnings for aggressive reinvestment.",
 	"marketCap": "$4.6B USD",
 	"sharpeRatio": 0.28,
 	"expectedVolatility": "~22%",

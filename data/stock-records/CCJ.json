@@ -2,8 +2,6 @@
 	"ticker": "CCJ",
 	"name": "Cameco",
 	"group": "Energy & Infrastructure",
-	"confidence": "cut",
-	"confidenceReason": "Tier-1 uranium assets and strong long-term contracts.",
 	"targetPrice": "$128.43",
 	"bullCase": "Global nuclear renaissance and supply deficits drive structural bull market in uranium.",
 	"bearCase": "Uranium price volatility and execution risks in mining operations.",

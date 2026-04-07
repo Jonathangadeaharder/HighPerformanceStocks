@@ -2,8 +2,6 @@
 	"ticker": "BN",
 	"name": "Brookfield Corporation",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
 	"marketCap": "$92.5B USD",
 	"sharpeRatio": 0.26,
 	"expectedCAGR": "-23% - 48%",

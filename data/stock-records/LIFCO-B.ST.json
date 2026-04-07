@@ -2,8 +2,6 @@
 	"ticker": "LIFCO-B.ST",
 	"name": "Lifco AB",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
 	"marketCap": "124.9B SEK",
 	"sharpeRatio": 1.02,
 	"expectedCAGR": "23% - 41%",

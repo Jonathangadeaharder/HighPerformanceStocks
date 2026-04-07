@@ -2,8 +2,6 @@
 	"ticker": "UBER",
 	"name": "Uber Technologies",
 	"group": "Marketplace Platforms",
-	"confidence": "medium",
-	"confidenceReason": "Stabilized business yielding margin expansion and forward EPS growth projections.",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "Factored in Waymo/Tesla disruption risk and terminal value uncertainty.",

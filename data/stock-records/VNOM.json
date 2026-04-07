@@ -2,8 +2,6 @@
 	"ticker": "VNOM",
 	"name": "Viper Energy",
 	"group": "Energy Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Premier Permian Basin mineral rights with 93% gross margin and ~8% distributable cash flow yield. But oil price dependency, elevated PEG, and depressed ROIC post-Sitio acquisition add risk.",
 	"marketCap": "$17.4B USD",
 	"sharpeRatio": 0.61,
 	"expectedCAGR": "-2% - 51%",

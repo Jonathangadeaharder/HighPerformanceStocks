@@ -2,8 +2,6 @@
 	"ticker": "APP",
 	"name": "AppLovin",
 	"group": "Ad-Tech",
-	"confidence": "low",
-	"confidenceReason": "Rule of 40 > 135% with an insane 114% ROIC. AXON 2.0 AI engine expanding successfully beyond gaming into e-commerce.",
 	"marketCap": "$130.6B USD",
 	"sharpeRatio": 0.69,
 	"expectedCAGR": "-12% - 123%",

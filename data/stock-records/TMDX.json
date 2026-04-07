@@ -2,8 +2,6 @@
 	"ticker": "TMDX",
 	"name": "TransMedics Group",
 	"group": "Healthcare Monopolies",
-	"confidence": "high",
-	"confidenceReason": "Functional monopoly in active organ transplant preservation and aviation logistics. High growth addressing immense unmet medical need.",
 	"cagrModel": {
 		"epsGrowth": "50%",
 		"epsGrowthSource": "auto",

@@ -2,8 +2,6 @@
 	"ticker": "DDOG",
 	"name": "Datadog",
 	"group": "Cloud Infrastructure",
-	"confidence": "medium",
-	"confidenceReason": "Cloud observability leader with durable 20% growth, but valuation remains rich versus current guidance.",
 	"marketCap": "$42.6B USD",
 	"sharpeRatio": 1,
 	"expectedCAGR": "1% - 116%",

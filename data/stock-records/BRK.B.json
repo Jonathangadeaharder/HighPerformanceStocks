@@ -2,8 +2,6 @@
 	"ticker": "BRK.B",
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
 	"marketCap": "$1029.6B USD",
 	"sharpeRatio": 0.38,
 	"expectedCAGR": "1% - 21%",

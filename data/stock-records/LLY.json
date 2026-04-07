@@ -2,8 +2,6 @@
 	"ticker": "LLY",
 	"name": "Eli Lilly",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Duopoly in GLP-1 weight-loss market with ~24% expected EPS growth.",
 	"marketCap": "$837.4B USD",
 	"sharpeRatio": 0.52,
 	"expectedCAGR": "-8% - 61%",

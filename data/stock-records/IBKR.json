@@ -2,8 +2,6 @@
 	"ticker": "IBKR",
 	"name": "Interactive Brokers",
 	"group": "Financial Services",
-	"confidence": "low",
-	"confidenceReason": "Highest margin brokerage globally. User base expands ~20% YoY. Deep margin moats.",
 	"bullCase": "Interactive Brokers serves sophisticated traders with the lowest margin rates and most global market access. Client account growth of 20%+ annually drives structural NNA (net new assets). As a technology-first broker, IBKR has near-zero marginal cost per additional client. Margin interest income at elevated rates provides exceptional NII.",
 	"bearCase": "IBKR's NII — nearly 50% of revenues — compresses sharply when rates fall. Its holding company structure (Thomas Peterffy controls ~75% via IBG LLC) means public shareholders capture only 25% economics. Market volume slowdowns directly reduce commission revenue.",
 	"cagrModel": {

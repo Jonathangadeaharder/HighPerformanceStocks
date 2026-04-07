@@ -2,8 +2,6 @@
 	"ticker": "WSO",
 	"name": "Watsco",
 	"group": "Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "HVAC distribution serial acquirer. Massive dividend growth, zero debt, ruthless efficiency.",
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",

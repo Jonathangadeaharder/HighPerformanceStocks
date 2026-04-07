@@ -2,8 +2,6 @@
 	"ticker": "BKNG",
 	"name": "Booking Holdings",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Textbook GARP. Shrinking float, increasing margins, stable 15%+ EPS growth.",
 	"cagrModel": {
 		"epsGrowth": "17%",
 		"basis": "Non-GAAP EPS",

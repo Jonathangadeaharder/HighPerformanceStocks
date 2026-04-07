@@ -2,8 +2,6 @@
 	"ticker": "WST",
 	"name": "West Pharmaceutical",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Near-monopoly on specialized rubber stoppers/seals for injectables (GLP-1s). High-margin, high-moat.",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",

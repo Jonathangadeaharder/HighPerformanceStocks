@@ -2,8 +2,6 @@
 	"ticker": "EPD",
 	"name": "Enterprise Products Partners",
 	"group": "Energy",
-	"confidence": "low",
-	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
 	"marketCap": "$81.2B USD",
 	"sharpeRatio": 0.24,
 	"expectedCAGR": "-9% - 26%",

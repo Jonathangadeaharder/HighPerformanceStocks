@@ -2,8 +2,6 @@
 	"ticker": "BABA",
 	"name": "Alibaba",
 	"group": "Emerging Markets",
-	"confidence": "cut",
-	"confidenceReason": "China's dominant e-commerce and cloud platform. Trading at deep discount to intrinsic value due to regulatory overhang. Non-GAAP EPS growing ~13% with massive buyback program.",
 	"marketCap": "$291.4B USD",
 	"sharpeRatio": 1.1,
 	"expectedCAGR": "-7% - 113%",

@@ -2,8 +2,6 @@
 	"ticker": "APO",
 	"name": "Apollo Global Management",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "Record AUM of $938B (25% YoY growth) with $228B in record inflows. FRE growth guidance 20%+ for 2026. 20% pullback from Nov 2025 creates entry point. Cheaper than KKR at 15.4x forward P/E.",
 	"marketCap": "$62.1B USD",
 	"sharpeRatio": 0.9,
 	"expectedCAGR": "10% - 71%",

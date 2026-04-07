@@ -2,8 +2,6 @@
 	"ticker": "MELI",
 	"name": "MercadoLibre",
 	"group": "Emerging Markets",
-	"confidence": "cut",
-	"confidenceReason": "LatAm e-commerce and fintech dominant platform, 24-39% EPS growth expected.",
 	"marketCap": "$87.0B USD",
 	"sharpeRatio": 1.29,
 	"expectedCAGR": "6% - 104%",

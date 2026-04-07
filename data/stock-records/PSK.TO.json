@@ -2,8 +2,6 @@
 	"ticker": "PSK.TO",
 	"name": "PrairieSky Royalty",
 	"group": "Energy & Infrastructure",
-	"confidence": "low",
-	"confidenceReason": "Canadian equivalent of TPL. Fee-simple land royalties. Zero capex, pure FCF.",
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Price-to-FCF",

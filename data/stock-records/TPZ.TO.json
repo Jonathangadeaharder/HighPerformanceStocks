@@ -2,8 +2,6 @@
 	"ticker": "TPZ.TO",
 	"name": "Topaz Energy",
 	"group": "Energy & Infrastructure",
-	"confidence": "medium",
-	"confidenceReason": "Canadian royalty tied to natural gas and LNG buildout. High yield + growth.",
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",

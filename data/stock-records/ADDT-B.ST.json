@@ -2,8 +2,6 @@
 	"ticker": "ADDT-B.ST",
 	"name": "Addtech AB",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
 	"marketCap": "86.5B SEK",
 	"sharpeRatio": 0.38,
 	"expectedCAGR": "4% - 26%",

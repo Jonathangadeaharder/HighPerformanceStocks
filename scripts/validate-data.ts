@@ -11,8 +11,6 @@ const requiredFields = [
 	'ticker',
 	'name',
 	'group',
-	'confidence',
-	'confidenceReason',
 	'marketCap',
 	'expectedVolatility',
 	'bullCase',
@@ -21,7 +19,7 @@ const requiredFields = [
 ];
 
 // Fields required even on un-populated seed records
-const seedRequiredFields = ['ticker', 'name', 'group', 'confidence', 'confidenceReason'];
+const seedRequiredFields = ['ticker', 'name', 'group'];
 
 function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
 	const targetMap = {

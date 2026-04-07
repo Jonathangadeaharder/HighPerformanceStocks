@@ -2,8 +2,6 @@
 	"ticker": "MSFT",
 	"name": "Microsoft",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Enterprise software and cloud computing monopoly. Unparalleled B2B distribution network and AI infrastructure leadership via Azure/OpenAI.",
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS (CapEx depreciation adjusted)",

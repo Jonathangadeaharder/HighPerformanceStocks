@@ -2,8 +2,6 @@
 	"ticker": "PANW",
 	"name": "Palo Alto Networks",
 	"group": "Cybersecurity",
-	"confidence": "low",
-	"confidenceReason": "Largest pure-play cybersecurity company. Platformization strategy consolidating security spend. 17-22% growth with improving margins. Premium valuation.",
 	"marketCap": "$133.2B USD",
 	"sharpeRatio": 0.32,
 	"expectedCAGR": "-30% - 62%",

@@ -2,8 +2,6 @@
 	"ticker": "FICO",
 	"name": "Fair Isaac Corp",
 	"group": "Defensive Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Unregulated natural monopoly with ~48% operating margins and elite 40%+ ROIC. Shifting to fixed-fee direct licensing protects pricing power.",
 	"marketCap": "$25.9B USD",
 	"sharpeRatio": 1,
 	"expectedCAGR": "-5% - 120%",

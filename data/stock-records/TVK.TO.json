@@ -2,8 +2,6 @@
 	"ticker": "TVK.TO",
 	"name": "TerraVest Industries",
 	"group": "The Capital Compounders",
-	"confidence": "low",
-	"confidenceReason": "Serial acquirer buying at 5-6x EBITDA and optimizing cash flow. Current valuation (33.8x trailing PE) leaves limited margin of safety.",
 	"marketCap": "C$2.8B",
 	"sharpeRatio": 0.91,
 	"expectedCAGR": "32% - 55%",

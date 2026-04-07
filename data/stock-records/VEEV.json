@@ -2,8 +2,6 @@
 	"ticker": "VEEV",
 	"name": "Veeva Systems",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
 	"marketCap": "$28.6B USD",
 	"sharpeRatio": 1.4,
 	"expectedCAGR": "9% - 101%",

@@ -2,8 +2,6 @@
 	"ticker": "SNPS",
 	"name": "Synopsys",
 	"group": "AI & Semiconductors",
-	"confidence": "high",
-	"confidenceReason": "Forward P/E 75.8x with slowing growth. Part of EDA duopoly moat but valuation leaves no margin of safety. Post-Ansys debt at 5.4x.",
 	"marketCap": "$75.8B USD",
 	"sharpeRatio": 0.49,
 	"expectedCAGR": "7% - 64%",
