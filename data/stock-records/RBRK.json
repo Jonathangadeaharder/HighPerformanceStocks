@@ -2,16 +2,14 @@
 	"ticker": "RBRK",
 	"name": "Rubrik",
 	"group": "Cybersecurity",
-	"confidence": "high",
-	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
-	"marketCap": "$9.3B USD",
-	"sharpeRatio": 1.7,
-	"expectedCAGR": "40% - 176%",
-	"expectedVolatility": "~61%",
+	"marketCap": "$10.4B USD",
+	"sharpeRatio": 1.33,
+	"expectedCAGR": "24% - 145%",
+	"expectedVolatility": "~60%",
 	"valuation": {
-		"forwardPE": 77.9,
-		"evEbitda": -27.3,
-		"evFcf": 22.3
+		"forwardPE": 87.6,
+		"evEbitda": -30.9,
+		"evFcf": 25.2
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
@@ -19,49 +17,49 @@
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "76%",
 		"revenueGrowth": "46.3%",
-		"roic": "3.2%"
+		"roic": "2.9%"
 	},
 	"targetPrice": "$86.71",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
 	"bearCase": "Rubrik faces intense competition from Cohesity (now merged with Veritas), Commvault, Veeam, and Zerto in data protection. The path to sustained GAAP profitability requires continued ARR growth at high SBC dilution. Microsoft Backup and AWS native backup services could commoditize the lower end of the market.",
-	"currentPrice": "$45.73",
+	"currentPrice": "$51.44",
 	"cagrModel": {
 		"ttmEPS": null,
 		"epsGrowth": "48%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "40%",
-			"base": "90%",
-			"bull": "176%"
+			"bear": "24%",
+			"base": "69%",
+			"bull": "145%"
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-03-28T23:03:04.902Z",
+	"lastUpdated": "2026-04-05T07:21:33.165Z",
 	"consensus": {
 		"yahoo": "$86.71"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.87,
-		"signal": "DEPLOY",
+		"score": 0.98,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 48,
 			"multipleType": "EV/FCF",
-			"multiple": 22.3,
+			"multiple": 25.2,
 			"cvStock": 0.281,
 			"riskMultiplier": 1.492
 		},
-		"note": "DEPLOY override: base CAGR 90% ≥ 20% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 68.6% + QCS 12.92",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 45.73,
-				"price6mAgo": 83.34,
-				"price1mAgo": 53.69,
+				"price": 51.44,
+				"price6mAgo": 82.21,
+				"price1mAgo": 55.88,
 				"low3m": 44.75,
-				"return6m": -45.1,
-				"return1m": -14.8,
-				"near3mLow": true
+				"return6m": -37.4,
+				"return1m": -7.9,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -74,7 +72,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.03
+		"secondaryScore": 3.41
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -83,7 +81,7 @@
 		"totalScore": 12.92,
 		"raw": {
 			"avgSurprisePct": 109.78,
-			"netInsiderShares": 3942498,
+			"netInsiderShares": 3913276,
 			"instFlowTrend": "positive",
 			"upRevisions": 17,
 			"downRevisions": 3,
@@ -104,5 +102,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2027": {
+			"high": 0.27488,
+			"low": 0.08,
+			"average": 0.17425
+		},
+		"2028": {
+			"high": 0.95,
+			"low": 0.29,
+			"average": 0.58695
+		}
+	}
 }

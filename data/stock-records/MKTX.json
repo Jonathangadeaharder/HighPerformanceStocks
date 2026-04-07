@@ -2,28 +2,26 @@
 	"ticker": "MKTX",
 	"name": "MarketAxess",
 	"group": "Data & Software Monopolies",
-	"confidence": "cut",
-	"confidenceReason": "MarketAxess pioneered electronic credit trading and still leads in high-yield and EM bonds. However, Tradeweb has been taking significant market share in investment-grade credit. The recovery thesis rests on defending its HY/EM moat and rebuilding IG share — execution risk is high.",
 	"bullCase": "MarketAxess retains dominant share in high-yield and emerging market bond trading where Tradeweb has less penetration. Portfolio trading volumes are growing rapidly. At 20x forward PE — a historic low — the market is pricing in permanent share loss that may be overstated.",
 	"bearCase": "Tradeweb continues taking IG credit market share and now offers better price discovery through its dealer network. MKTX revenue was essentially flat in 2023-2024. At a current forward PE of 20x on 9% EPS growth, there is limited upside if share losses continue.",
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.65,
+		"ttmEPS": 6.64,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "20%",
-			"bull": "54%"
+			"bear": "1%",
+			"base": "16%",
+			"bull": "48%"
 		}
 	},
-	"currentPrice": "$164.12",
-	"marketCap": "$6.1B USD",
+	"currentPrice": "$171.46",
+	"marketCap": "$6.4B USD",
 	"valuation": {
-		"trailingPE": 24.7,
-		"forwardPE": 18.1,
-		"evEbitda": 13,
-		"evFcf": 24.6
+		"trailingPE": 25.8,
+		"forwardPE": 18.8,
+		"evEbitda": 13.6,
+		"evFcf": 25.7
 	},
 	"metrics": {
 		"roe": "19.4%",
@@ -31,37 +29,37 @@
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "30%",
-		"beta": "0.97",
+		"beta": "1",
 		"revenueGrowth": "3.5%",
-		"roic": "6.6%",
+		"roic": "6.3%",
 		"interestCoverage": "27.0x"
 	},
 	"consensus": {
-		"yahoo": "$193.70"
+		"yahoo": "$194.70"
 	},
-	"targetPrice": "$193.70",
-	"expectedCAGR": "5% - 54%",
+	"targetPrice": "$194.70",
+	"expectedCAGR": "1% - 48%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.73,
+		"score": 2.86,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "EV/FCF",
-			"multiple": 24.6,
+			"multiple": 25.7,
 			"cvStock": 0.019,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 164.12,
-				"price6mAgo": 177.63,
-				"price1mAgo": 192.05,
+				"pass": true,
+				"price": 171.46,
+				"price6mAgo": 167.88,
+				"price1mAgo": 184.44,
 				"low3m": 157.93,
-				"return6m": -7.6,
-				"return1m": -14.5,
-				"near3mLow": true
+				"return6m": 2.1,
+				"return1m": -7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -74,11 +72,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.01
+		"secondaryScore": 2.09
 	},
-	"lastUpdated": "2026-03-28T23:02:58.862Z",
+	"lastUpdated": "2026-04-05T07:21:29.053Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.93,
+	"sharpeRatio": 0.74,
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
@@ -96,7 +94,7 @@
 	"description": "MarketAxess Holdings Inc., together with its subsidiaries, operates an electronic trading platform for institutional investor and broker-dealer firms in the United States, the United Kingdom, and i...",
 	"analystTargets": {
 		"low": 169,
-		"mean": 193.7,
+		"mean": 194.7,
 		"high": 250
 	},
 	"analystConsensus": {
@@ -108,5 +106,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$200.40",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 8.43678,
+			"low": 8,
+			"average": 8.17186
+		},
+		"2027": {
+			"high": 9.46241,
+			"low": 8.75341,
+			"average": 9.10262
+		}
+	}
 }

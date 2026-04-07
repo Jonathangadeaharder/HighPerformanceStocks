@@ -2,39 +2,37 @@
 	"ticker": "VRT",
 	"name": "Vertiv Holdings",
 	"group": "Industrial Monopolies",
-	"confidence": "low",
-	"confidenceReason": "AI data center power/cooling play. ROIC ~25%, revenue growing 27-29%, $15B backlog, orders up 252% YoY. But trading at ~72x trailing earnings means priced for perfection.",
-	"marketCap": "$96.1B USD",
-	"sharpeRatio": -0.15,
-	"expectedCAGR": "-38% - 29%",
-	"expectedVolatility": "~61%",
+	"marketCap": "$100.0B USD",
+	"sharpeRatio": -0.22,
+	"expectedCAGR": "-41% - 24%",
+	"expectedVolatility": "~59%",
 	"valuation": {
-		"trailingPE": 73.6,
-		"forwardPE": 31.3,
+		"trailingPE": 76.4,
+		"forwardPE": 32.5,
 		"pegRatio": null,
-		"evEbitda": 44.1,
-		"evFcf": 68.2
+		"evEbitda": 45.9,
+		"evFcf": 70.9
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
 		"fcfYield": "~1%",
-		"roic": "2.2%",
+		"roic": "2.1%",
 		"roe": "41.8%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "37%",
 		"revenueGrowth": "22.7%",
 		"backlog": "$15B",
 		"orderGrowth": "252% YoY",
-		"beta": "2.08",
+		"beta": "2.05",
 		"interestCoverage": "12.4x"
 	},
-	"targetPrice": "$270.21",
+	"targetPrice": "$271.21",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$251.07",
+	"currentPrice": "$261.29",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$270.21",
+		"yahoo": "$271.21",
 		"stockanalysis": "$217"
 	},
 	"cagrModel": {
@@ -42,33 +40,33 @@
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-38%",
-			"base": "8%",
-			"bull": "29%"
+			"bear": "-41%",
+			"base": "4%",
+			"bull": "24%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:10.667Z",
+	"lastUpdated": "2026-04-05T07:21:38.405Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.48,
+		"score": 1.54,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/EBITDA",
-			"multiple": 44.1,
+			"multiple": 45.9,
 			"cvStock": 0.124,
-			"riskMultiplier": 1.009
+			"riskMultiplier": 1.008
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 251.07,
-				"price6mAgo": 143.31,
-				"price1mAgo": 257.75,
+				"price": 261.29,
+				"price6mAgo": 162.8,
+				"price1mAgo": 249.75,
 				"low3m": 158.77,
-				"return6m": 75.2,
-				"return1m": -2.6,
+				"return6m": 60.5,
+				"return1m": 4.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -82,8 +80,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.05,
-		"note": "(CYCLICAL EPS)"
+		"secondaryScore": 1.09
 	},
 	"qcs": {
 		"earningsScore": 3.89,
@@ -92,7 +89,7 @@
 		"totalScore": 3.67,
 		"raw": {
 			"avgSurprisePct": 12.05,
-			"netInsiderShares": -158434,
+			"netInsiderShares": -157778,
 			"instFlowTrend": "negative",
 			"upRevisions": 22,
 			"downRevisions": 0,
@@ -102,7 +99,7 @@
 	"description": "Vertiv Holdings Co designs, manufactures, and services critical digital infrastructure technologies and life cycle services for data centers, communication networks, and commercial and industrial e...",
 	"analystTargets": {
 		"low": 155,
-		"mean": 270.21,
+		"mean": 271.21,
 		"high": 325
 	},
 	"analystConsensus": {
@@ -114,5 +111,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$235.26"
+	"targetPriceAlternative": "$235.26",
+	"forwardEstimates": {
+		"2026": {
+			"high": 6.74616,
+			"low": 6,
+			"average": 6.14891
+		},
+		"2027": {
+			"high": 9.50177,
+			"low": 5.518,
+			"average": 8.04468
+		}
+	}
 }

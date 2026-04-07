@@ -1,0 +1,79 @@
+{
+	"ticker": "AUR",
+	"name": "Aurora Innovation",
+	"group": "Autonomous Vehicles",
+	"bullCase": "Aurora establishes itself as the de facto autonomous trucking platform, scaling to 200+ driverless trucks by late 2026 with OEM partnerships (Volvo, PACCAR). Next-gen hardware cost reductions drive gross-profit-positive status, unlocking the $1T+ autonomous freight TAM.",
+	"bearCase": "Persistent cash burn forces continuous share dilution, eroding equity value. Commercial scaling stalls if customers resist Driver-as-a-Service pricing, a high-profile safety incident triggers regulatory backlash, or well-funded competitors (Waymo, TuSimple) capture market share first.",
+	"cagrModel": {
+		"epsGrowth": "0%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": null,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-5%",
+			"base": "149%",
+			"bull": "257%"
+		}
+	},
+	"currentPrice": "$4.20",
+	"marketCap": "$8.2B USD",
+	"valuation": {
+		"forwardPE": -9.3,
+		"evFcf": -18.4,
+		"evEbitda": -7.9
+	},
+	"metrics": {
+		"roe": "-40.6%",
+		"fcfMargin": "~-12504%",
+		"fcfYield": "~-5%",
+		"netDebtEbitda": "Net cash",
+		"beta": "2.45",
+		"roic": "-8.3%"
+	},
+	"consensus": {
+		"yahoo": "$10.46"
+	},
+	"targetPrice": "$10.46",
+	"analystTargets": {
+		"low": 4,
+		"mean": 10.46,
+		"high": 15
+	},
+	"forwardEstimates": {
+		"2026": {
+			"high": -0.48,
+			"low": -0.48,
+			"average": -0.48
+		},
+		"2027": {
+			"high": -0.45,
+			"low": -0.45,
+			"average": -0.45
+		}
+	},
+	"expectedCAGR": "-5% - 257%",
+	"expectedVolatility": "~61%",
+	"sharpeRatio": 1.99,
+	"screener": {
+		"engine": "totalReturn",
+		"signal": "NO_DATA",
+		"note": "Missing/negative forward PE and no trailing EPS fallback"
+	},
+	"qcs": {
+		"earningsScore": 5,
+		"flowScore": 5,
+		"revisionsScore": 5,
+		"totalScore": 15,
+		"raw": {
+			"avgSurprisePct": 22.95,
+			"netInsiderShares": 2211181,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
+	},
+	"description": "Aurora Innovation, Inc. engages in the self-driving technology business in the United States.",
+	"lastUpdated": "2026-04-07T10:31:36.078Z"
+}

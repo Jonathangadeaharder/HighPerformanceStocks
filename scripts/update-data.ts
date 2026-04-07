@@ -157,29 +157,6 @@ async function main() {
 				atomicWriteJson(path, stock);
 			}
 		}
-
-		// MarketWatch Sequential Fetching (Applied to all updated stocks to extract out-year estimates)
-		const tickersForMw = allStocks
-			.filter((s) => updatedTickers.has(s.stock.ticker))
-			.map((s) => s.stock.ticker);
-
-		if (tickersForMw.length > 0) {
-			const { fetchAllMarketWatch } = await import('./lib/marketwatch-client.js');
-			const mwMap = await fetchAllMarketWatch(tickersForMw);
-
-			// Merge MarketWatch estimates back into records
-			let mwHitCount = 0;
-			for (const { stock, path } of allStocks) {
-				if (!tickersForMw.includes(stock.ticker)) continue;
-				const epsData = mwMap[stock.ticker];
-				if (epsData) {
-					stock.forwardEstimates = epsData;
-					atomicWriteJson(path, stock);
-					mwHitCount++;
-				}
-			}
-			console.log(`\n✅ Saved multi-year estimates for ${mwHitCount} stocks.`);
-		}
 	}
 
 	console.log(`\n✅ Done: ${updatedCount} updated, ${failedCount} failed.`);

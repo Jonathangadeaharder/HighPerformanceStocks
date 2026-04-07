@@ -2,27 +2,25 @@
 	"ticker": "AMZN",
 	"name": "Amazon",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Dual monopolies in e-commerce logistics and cloud computing (AWS). Currently undergoing massive FCF margin inflection.",
 	"cagrModel": {
 		"epsGrowth": "22%",
 		"basis": "Non-GAAP Operating EPS (GAAP EPS adjusted for stock-based compensation and depreciation normalization; AWS FCF inflection is primary driver)",
 		"ttmEPS": 7.17,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-12%",
-			"base": "41%",
-			"bull": "81%"
+			"bear": "-17%",
+			"base": "34%",
+			"bull": "72%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$199.34",
-	"marketCap": "$2139.9B USD",
+	"currentPrice": "$209.77",
+	"marketCap": "$2251.9B USD",
 	"valuation": {
-		"trailingPE": 27.8,
-		"forwardPE": 21.2,
-		"evEbitda": 15.1,
-		"evFcf": 92.3
+		"trailingPE": 29.3,
+		"forwardPE": 22.3,
+		"evEbitda": 15.8,
+		"evFcf": 97
 	},
 	"metrics": {
 		"roe": "22.3%",
@@ -30,45 +28,45 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "0.4x",
 		"ruleOf40": "17%",
-		"beta": "1.42",
+		"beta": "1.38",
 		"revenueGrowth": "13.6%",
-		"roic": "6.4%",
+		"roic": "6.0%",
 		"interestCoverage": "14.8x"
 	},
 	"consensus": {
-		"yahoo": "$281.34"
+		"yahoo": "$281.27"
 	},
-	"targetPrice": "$281.34",
-	"expectedCAGR": "-12% - 81%",
-	"expectedVolatility": "~35%",
-	"sharpeRatio": 0.86,
+	"targetPrice": "$281.27",
+	"expectedCAGR": "-17% - 72%",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.7,
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.52,
-		"signal": "DEPLOY",
+		"score": 4.76,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "EV/FCF",
-			"multiple": 92.3,
+			"multiple": 97,
 			"cvStock": 0.172,
-			"riskMultiplier": 1.078
+			"riskMultiplier": 1.079
 		},
-		"note": "hasLikelyValueFloor: analyst upside 41.1% (DEPLOY override: base CAGR 41% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 34.1%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 199.34,
-				"price6mAgo": 222.17,
-				"price1mAgo": 208.39,
+				"price": 209.77,
+				"price6mAgo": 220.9,
+				"price1mAgo": 218.94,
 				"low3m": 196,
-				"return6m": -10.3,
-				"return1m": -4.3,
-				"near3mLow": true
+				"return6m": -5,
+				"return1m": -4.2,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 4,
-				"down30d": 5
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": -0.5,
@@ -76,11 +74,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.04
+		"secondaryScore": 1.09
 	},
 	"bullCase": "AWS is inflecting to 30%+ growth as AI training and inference workloads drive the next compute supercycle. Amazon Advertising is a $55B+ revenue stream growing 20%+ annually at 60%+ margins. The retail segment is approaching structural profitability as third-party seller fees and delivery efficiency improve. FCF is compounding toward $100B+/year.",
 	"bearCase": "Amazon's massive CapEx ($75B+ in 2025) on AWS and logistics infrastructure compresses near-term FCF. If the AWS growth reacceleration proves temporary (Google Cloud and Azure competing aggressively), the multiple contracts sharply. Antitrust actions targeting Prime bundling or AWS dominance could restructure the business.",
-	"lastUpdated": "2026-03-28T23:02:44.066Z",
+	"lastUpdated": "2026-04-05T07:21:13.443Z",
 	"intrinsicValue": {
 		"dcf": 127.68,
 		"date": "2026-03-28",
@@ -103,7 +101,7 @@
 	"description": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally.",
 	"analystTargets": {
 		"low": 175,
-		"mean": 281.34,
+		"mean": 281.27,
 		"high": 360
 	},
 	"analystConsensus": {
@@ -115,5 +113,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$286.66",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 9.64931,
+			"low": 6.47,
+			"average": 7.77216
+		},
+		"2027": {
+			"high": 14.21048,
+			"low": 7.68,
+			"average": 9.47196
+		}
+	}
 }

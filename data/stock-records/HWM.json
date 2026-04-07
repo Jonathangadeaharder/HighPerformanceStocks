@@ -2,28 +2,26 @@
 	"ticker": "HWM",
 	"name": "Howmet Aerospace",
 	"group": "Industrial Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Heavy IP moats in forged jet engine blades/fasteners. Aerospace super-cycle momentum.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.71,
+		"ttmEPS": 3.7,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-6%",
-			"base": "23%",
-			"bull": "38%"
+			"bear": "-8%",
+			"base": "19%",
+			"bull": "35%"
 		}
 	},
 	"bullCase": "Howmet Aerospace is the sole approved supplier for titanium fan blades and aluminum structural castings on every major western jetliner. This FAA certification barrier means Boeing and Airbus cannot multi-source critical airframe components. With aviation at record passenger levels and a 10-year production backlog, Howmet is compounding earnings at 15%+ with no margin ceiling.",
 	"bearCase": "Defense/commercial aerospace spending is a long-cycle business. Any Boeing production halt, supply chain disruption, or airline capacity rationalization has multi-year revenue implications. The 5.7x leverage from prior private equity era constrains financial flexibility.",
-	"currentPrice": "$227.90",
-	"marketCap": "$91.7B USD",
+	"currentPrice": "$232.68",
+	"marketCap": "$93.7B USD",
 	"valuation": {
-		"trailingPE": 61.4,
-		"forwardPE": 41.5,
-		"evEbitda": 39.3,
-		"evFcf": 102.3
+		"trailingPE": 62.9,
+		"forwardPE": 42.3,
+		"evEbitda": 40.1,
+		"evFcf": 104.4
 	},
 	"metrics": {
 		"roe": "30.4%",
@@ -31,42 +29,41 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "1.0x",
 		"ruleOf40": "26%",
-		"beta": "1.19",
+		"beta": "1.24",
 		"revenueGrowth": "14.6%",
 		"roic": "2.0%",
 		"interestCoverage": "13.5x"
 	},
 	"consensus": {
-		"yahoo": "$280.00"
+		"yahoo": "$277.52"
 	},
-	"targetPrice": "$280.00",
-	"expectedCAGR": "-6% - 38%",
+	"targetPrice": "$277.52",
+	"expectedCAGR": "-8% - 35%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.62,
-		"signal": "DEPLOY",
+		"score": 2.67,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 39.3,
-			"cvStock": 0.031,
+			"multiple": 40.1,
+			"cvStock": 0.032,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 8.57 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 23% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 227.9,
-				"price6mAgo": 191.92,
-				"price1mAgo": 265.11,
+				"price": 232.68,
+				"price6mAgo": 190.48,
+				"price1mAgo": 252.39,
 				"low3m": 204.15,
-				"return6m": 18.7,
-				"return1m": -14,
+				"return6m": 22.2,
+				"return1m": -7.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
+				"up30d": 1,
 				"down30d": 1
 			},
 			"earningsSurprise": {
@@ -75,29 +72,29 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.77
+		"secondaryScore": 2.82
 	},
-	"lastUpdated": "2026-03-28T23:02:52.966Z",
-	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.34,
+	"lastUpdated": "2026-04-05T07:21:22.716Z",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": 0.29,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 3.57,
-		"totalScore": 8.57,
+		"revisionsScore": 0.23,
+		"totalScore": 5.23,
 		"raw": {
 			"avgSurprisePct": 7.03,
 			"netInsiderShares": 58230,
 			"instFlowTrend": "negative",
-			"upRevisions": 17,
-			"downRevisions": 2,
-			"totalAnalysts": 21
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 22
 		}
 	},
 	"description": "Howmet Aerospace Inc. provides advanced engineered solutions for the aerospace and transportation industries in the United States, Japan, France, Germany, the United Kingdom, Mexico, Italy, Canada,...",
 	"analystTargets": {
 		"low": 214.92,
-		"mean": 280,
+		"mean": 277.52,
 		"high": 315
 	},
 	"analystConsensus": {
@@ -109,5 +106,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$256.15"
+	"targetPriceAlternative": "$256.15",
+	"forwardEstimates": {
+		"2026": {
+			"high": 4.76,
+			"low": 4.45,
+			"average": 4.61273
+		},
+		"2027": {
+			"high": 5.90542,
+			"low": 5.2,
+			"average": 5.50628
+		}
+	}
 }

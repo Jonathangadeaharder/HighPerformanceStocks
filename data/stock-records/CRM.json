@@ -2,78 +2,75 @@
 	"ticker": "CRM",
 	"name": "Salesforce",
 	"group": "Data & Software Monopolies",
-	"confidence": "high",
-	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
-	"marketCap": "$168.0B USD",
-	"sharpeRatio": 2.34,
-	"expectedCAGR": "7% - 166%",
+	"marketCap": "$175.4B USD",
+	"sharpeRatio": 2.13,
+	"expectedCAGR": "3% - 155%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 23,
-		"forwardPE": 12,
+		"trailingPE": 24,
+		"forwardPE": 12.6,
 		"pegRatio": 0.88,
-		"evEbitda": 13.8,
-		"evFcf": 10.6
+		"evEbitda": 14.4,
+		"evFcf": 11.1
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
-		"fcfYield": "~10%",
+		"fcfYield": "~9%",
 		"roe": "12.4%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "52%",
-		"beta": "1.31",
+		"beta": "1.29",
 		"revenueGrowth": "12.1%",
-		"roic": "8.5%",
+		"roic": "8.2%",
 		"interestCoverage": "12.9x"
 	},
-	"targetPrice": "$273.85",
+	"targetPrice": "$273.06",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$179.31",
+	"currentPrice": "$187.18",
 	"consensus": {
 		"tipranks": "$268",
-		"yahoo": "$273.85",
+		"yahoo": "$273.06",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.8,
+		"ttmEPS": 7.81,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "54%",
-			"bull": "166%"
+			"bear": "3%",
+			"base": "47%",
+			"bull": "155%"
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-03-28T23:02:47.771Z",
+	"lastUpdated": "2026-04-05T07:21:18.494Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.71,
-		"signal": "DEPLOY",
+		"score": 0.74,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 10.6,
+			"multiple": 11.1,
 			"cvStock": 0.07,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 54% ≥ 15% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 179.31,
-				"price6mAgo": 245.1,
-				"price1mAgo": 192.95,
+				"price": 187.18,
+				"price6mAgo": 245.78,
+				"price1mAgo": 201.39,
 				"low3m": 174.57,
-				"return6m": -26.8,
+				"return6m": -23.8,
 				"return1m": -7.1,
-				"near3mLow": true
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 17,
-				"down30d": 15
+				"up30d": 3,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 24.9,
@@ -81,26 +78,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.8
+		"secondaryScore": 0.84
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 1.2,
-		"totalScore": 11.2,
+		"revisionsScore": -0.1,
+		"totalScore": 9.9,
 		"raw": {
 			"avgSurprisePct": 11.12,
 			"netInsiderShares": 299190,
 			"instFlowTrend": "positive",
-			"upRevisions": 31,
-			"downRevisions": 18,
-			"totalAnalysts": 54
+			"upRevisions": 2,
+			"downRevisions": 3,
+			"totalAnalysts": 52
 		}
 	},
 	"description": "Salesforce, Inc. provides customer relationship management technology services that connect companies and customers together in the United States, Europe, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 190,
-		"mean": 273.85,
+		"mean": 273.06,
 		"high": 475
 	},
 	"analystConsensus": {
@@ -112,5 +109,17 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$280.22"
+	"targetPriceAlternative": "$280.22",
+	"forwardEstimates": {
+		"2027": {
+			"high": 13.93,
+			"low": 12.6,
+			"average": 13.19627
+		},
+		"2028": {
+			"high": 17.78,
+			"low": 13.61,
+			"average": 14.88893
+		}
+	}
 }

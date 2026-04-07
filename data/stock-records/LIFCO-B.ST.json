@@ -2,18 +2,16 @@
 	"ticker": "LIFCO-B.ST",
 	"name": "Lifco AB",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Priced for perfection at 44.6x P/E on cyclical industrials. Zero margin of safety. European construction slowdown will compress multiple.",
-	"marketCap": "127.5B SEK",
-	"sharpeRatio": 0.88,
-	"expectedCAGR": "20% - 38%",
-	"expectedVolatility": "~28%",
+	"marketCap": "124.9B SEK",
+	"sharpeRatio": 1.02,
+	"expectedCAGR": "23% - 41%",
+	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 35.1,
-		"forwardPE": 35.2,
+		"trailingPE": 34.4,
+		"forwardPE": 34.5,
 		"pegRatio": null,
-		"evEbitda": 19.3,
-		"evFcf": 29.5
+		"evEbitda": 19.9,
+		"evFcf": 29.3
 	},
 	"metrics": {
 		"fcfMargin": "~16%",
@@ -24,12 +22,12 @@
 		"ruleOf40": "22%",
 		"beta": "1.2",
 		"revenueGrowth": "5.8%",
-		"interestCoverage": "11.7x"
+		"interestCoverage": "11.2x"
 	},
 	"targetPrice": "356 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "281 SEK",
+	"currentPrice": "275 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
 		"yahoo": "356 SEK"
@@ -39,34 +37,34 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "20%",
-			"base": "28%",
-			"bull": "38%"
+			"bear": "23%",
+			"base": "30%",
+			"bull": "41%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-03-28T23:02:56.940Z",
+	"lastUpdated": "2026-04-05T07:21:26.023Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.61,
+		"score": 1.66,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.3,
+			"multiple": 19.9,
 			"cvStock": 0.078,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 280.8,
-				"price6mAgo": 319,
-				"price1mAgo": 312.8,
+				"pass": true,
+				"price": 275,
+				"price6mAgo": 328,
+				"price1mAgo": 299,
 				"low3m": 268.2,
-				"return6m": -12,
-				"return1m": -10.2,
+				"return6m": -16.2,
+				"return1m": -8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -80,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.93
+		"secondaryScore": 2.88
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -96,7 +94,7 @@
 			"totalAnalysts": 6
 		}
 	},
-	"description": "Lifco AB (publ) engages in the dental, demolition and tools, and systems solutions businesses in Sweden, Norway, Germany, rest of Europe, the United Kingdom, Asia, Australia, Italy, North America, ...",
+	"description": "Lifco AB (publ) engages in the dental, demolition and tools, and systems solutions businesses in Sweden, Norway, Finland, Germany, rest of Europe, the United Kingdom, Asia, Australia, Italy, North ...",
 	"analystTargets": {
 		"low": 335,
 		"mean": 356,
@@ -110,5 +108,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 11.1,
+			"low": 8.27,
+			"average": 9.55329
+		},
+		"2027": {
+			"high": 11.9,
+			"low": 8.65,
+			"average": 10.47304
+		}
+	}
 }

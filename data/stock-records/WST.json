@@ -2,64 +2,62 @@
 	"ticker": "WST",
 	"name": "West Pharmaceutical",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Near-monopoly on specialized rubber stoppers/seals for injectables (GLP-1s). High-margin, high-moat.",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.79,
+		"ttmEPS": 6.78,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "30%",
-			"bull": "54%"
+			"bear": "4%",
+			"base": "24%",
+			"bull": "47%"
 		}
 	},
-	"currentPrice": "$243.35",
-	"marketCap": "$17.5B USD",
+	"currentPrice": "$254.80",
+	"marketCap": "$18.4B USD",
 	"valuation": {
-		"trailingPE": 35.8,
-		"forwardPE": 27.5,
-		"evEbitda": 21.1,
-		"evFcf": 62.3
+		"trailingPE": 37.6,
+		"forwardPE": 28.8,
+		"evEbitda": 22.1,
+		"evFcf": 65.3
 	},
 	"metrics": {
 		"roe": "16.9%",
 		"fcfMargin": "~9%",
-		"fcfYield": "~2%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "16%",
-		"beta": "1.18",
+		"beta": "1.15",
 		"revenueGrowth": "7.5%",
-		"roic": "4.4%",
+		"roic": "4.2%",
 		"interestCoverage": "45.2x"
 	},
 	"consensus": {
 		"yahoo": "$316.69"
 	},
 	"targetPrice": "$316.69",
-	"expectedCAGR": "9% - 54%",
+	"expectedCAGR": "4% - 47%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.89,
-		"signal": "DEPLOY",
+		"score": 4.08,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/FCF",
-			"multiple": 62.3,
+			"multiple": 65.3,
 			"cvStock": 0.028,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 30.1% + QCS 9 (DEPLOY override: base CAGR 30% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: QCS 9 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 243.35,
-				"price6mAgo": 260.32,
-				"price1mAgo": 251.25,
+				"price": 254.8,
+				"price6mAgo": 268.07,
+				"price1mAgo": 244.35,
 				"low3m": 223.83,
-				"return6m": -6.5,
-				"return1m": -3.1,
+				"return6m": -5,
+				"return1m": 4.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,11 +71,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.72
+		"secondaryScore": 1.8
 	},
-	"lastUpdated": "2026-03-28T23:03:11.619Z",
+	"lastUpdated": "2026-04-05T07:21:39.457Z",
 	"expectedVolatility": "~40%",
-	"sharpeRatio": 0.68,
+	"sharpeRatio": 0.53,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -109,5 +107,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$314.56"
+	"targetPriceAlternative": "$314.56",
+	"forwardEstimates": {
+		"2026": {
+			"high": 8.21181,
+			"low": 7.9,
+			"average": 8.02283
+		},
+		"2027": {
+			"high": 9.29798,
+			"low": 8.31,
+			"average": 8.85366
+		}
+	}
 }

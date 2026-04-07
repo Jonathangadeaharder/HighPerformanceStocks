@@ -2,27 +2,25 @@
 	"ticker": "ALAB",
 	"name": "Astera Labs",
 	"group": "AI & Semiconductors",
-	"confidence": "high",
-	"confidenceReason": "Pure-play on AI connectivity, PCIe/CXL retimers critical for AI server clusters.",
 	"cagrModel": {
-		"epsGrowth": "35%",
+		"epsGrowth": "44%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 1.21,
+		"ttmEPS": 1.22,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "38%",
-			"base": "84%",
-			"bull": "122%"
+			"bear": "31%",
+			"base": "73%",
+			"bull": "112%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$112.47",
-	"marketCap": "$19.1B USD",
+	"currentPrice": "$117.99",
+	"marketCap": "$20.1B USD",
 	"valuation": {
-		"trailingPE": 93,
-		"forwardPE": 31.9,
-		"evEbitda": 99.8,
-		"evFcf": 87
+		"trailingPE": 96.7,
+		"forwardPE": 33.5,
+		"evEbitda": 104.2,
+		"evFcf": 90.8
 	},
 	"metrics": {
 		"roe": "18.8%",
@@ -30,39 +28,38 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "116%",
-		"beta": "1.76",
+		"beta": "1.79",
 		"revenueGrowth": "91.8%",
-		"roic": "1.8%",
+		"roic": "1.7%",
 		"interestCoverage": "105.8x"
 	},
 	"consensus": {
-		"yahoo": "$206.75"
+		"yahoo": "$204.25"
 	},
-	"targetPrice": "$206.75",
-	"expectedCAGR": "38% - 122%",
-	"expectedVolatility": "~90%",
-	"sharpeRatio": 0.84,
+	"targetPrice": "$204.25",
+	"expectedCAGR": "31% - 112%",
+	"expectedVolatility": "~91%",
+	"sharpeRatio": 0.74,
 	"screener": {
-		"engine": "fEVG",
-		"score": 2.96,
-		"signal": "DEPLOY",
+		"engine": "fPERG",
+		"score": 0.9,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 35,
-			"multipleType": "EV/EBITDA",
-			"multiple": 99.8,
-			"cvStock": 0.123,
-			"riskMultiplier": 1.008
+			"growth": 44,
+			"multipleType": "Forward P/E",
+			"multiple": 33.5,
+			"cvStock": 0.121,
+			"riskMultiplier": 1.006
 		},
-		"note": "hasLikelyValueFloor: analyst upside 83.8% + QCS 12.14 (DEPLOY override: base CAGR 84% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 112.47,
-				"price6mAgo": 198.8,
-				"price1mAgo": 120.55,
-				"low3m": 107.08,
-				"return6m": -43.4,
-				"return1m": -6.7,
+				"price": 117.99,
+				"price6mAgo": 212.1,
+				"price1mAgo": 122.31,
+				"low3m": 97.89,
+				"return6m": -44.4,
+				"return1m": -3.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -74,11 +71,9 @@
 				"surprise": 12.6,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.95
+		}
 	},
-	"lastUpdated": "2026-03-28T23:02:43.998Z",
+	"lastUpdated": "2026-04-07T11:23:06.296Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
@@ -98,7 +93,7 @@
 	"description": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure.",
 	"analystTargets": {
 		"low": 155,
-		"mean": 206.75,
+		"mean": 204.25,
 		"high": 250
 	},
 	"analystConsensus": {
@@ -110,5 +105,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$202.23",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 2.95277,
+			"low": 2.25,
+			"average": 2.48768
+		},
+		"2027": {
+			"high": 4.68,
+			"low": 2.95123,
+			"average": 3.57742
+		}
+	}
 }

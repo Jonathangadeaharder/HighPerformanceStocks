@@ -2,8 +2,6 @@
 	"ticker": "SMSN.IL",
 	"name": "Samsung Electronics",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
-	"confidenceReason": "Global leader in memory but cyclical exposure.",
 	"targetPrice": "$4500.00",
 	"bullCase": "Memory cycle upswing and HBM catch-up drive massive earnings leverage.",
 	"bearCase": "Intense competition in foundry and smartphone markets.",
@@ -13,21 +11,46 @@
 		"dividendYield": "2%",
 		"ttmEPS": 96.44
 	},
-	"currentPrice": "$2900",
-	"marketCap": "$788.0B USD",
+	"currentPrice": "$3022",
+	"marketCap": "$821.1B USD",
 	"consensus": {
 		"yahoo": "$4500.00"
 	},
-	"expectedVolatility": "~42%",
+	"expectedVolatility": "~43%",
 	"screener": {
-		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/EBITDA"
+		"engine": "fPERG",
+		"score": 5.36,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 9,
+			"multipleType": "Forward P/E",
+			"multiple": 48.2,
+			"cvStock": 0.08,
+			"riskMultiplier": 1
+		},
+		"note": "hasLikelyValueFloor: analyst upside 48.9% (Used benchmark CV)",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 3022,
+				"price6mAgo": 1643,
+				"price1mAgo": 3028,
+				"low3m": 2274,
+				"return6m": 83.9,
+				"return1m": -0.2,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 0
+			}
+		}
 	},
-	"lastUpdated": "2026-03-28T23:03:05.859Z",
+	"lastUpdated": "2026-04-05T07:21:34.236Z",
 	"valuation": {
-		"trailingPE": 30.1,
-		"forwardPE": 46.2,
+		"trailingPE": 31.3,
+		"forwardPE": 48.2,
 		"pegRatio": 1.3,
 		"evEbitda": null
 	},

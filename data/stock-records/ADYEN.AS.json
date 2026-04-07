@@ -2,14 +2,12 @@
 	"ticker": "ADYEN.AS",
 	"name": "Adyen N.V.",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
-	"marketCap": "€27.0B",
+	"marketCap": "€26.7B",
 	"sharpeRatio": 0.1,
-	"expectedVolatility": "~43%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 25.4,
-		"forwardPE": 17.9,
+		"trailingPE": 25.1,
+		"forwardPE": 17.7,
 		"pegRatio": null,
 		"evEbitda": 15.2
 	},
@@ -26,38 +24,38 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€855.50",
+	"currentPrice": "€845.20",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.62,
+		"ttmEPS": 33.64,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-03-28T23:02:42.755Z",
+	"lastUpdated": "2026-04-05T07:21:13.304Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.99,
+		"score": 0.98,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 17.9,
+			"multiple": 17.7,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 855.5,
-				"price6mAgo": 1367.6,
-				"price1mAgo": 965.7,
-				"low3m": 843.2,
-				"return6m": -37.4,
-				"return1m": -11.4,
+				"price": 845.2,
+				"price6mAgo": 1476.6,
+				"price1mAgo": 930.4,
+				"low3m": 824.4,
+				"return6m": -42.8,
+				"return1m": -9.2,
 				"near3mLow": true
 			},
 			"revisions": {

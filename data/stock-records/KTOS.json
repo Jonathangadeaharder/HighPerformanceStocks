@@ -2,29 +2,27 @@
 	"ticker": "KTOS",
 	"name": "Kratos Defense & Security Solutions, Inc.",
 	"group": "Industrial Monopolies",
-	"confidence": "high",
 	"bullCase": "Kratos dominates the tactical drone market with Valkyrie, securing major long-term defense contracts.",
 	"bearCase": "Government budget constraints or delays in autonomous drone program adoption limit growth.",
-	"confidenceReason": "Provides defense, national security, and technology solutions. Primarily known for unmanned systems, satellite communications, and microwave electronics. Solid defense niche but heavily reliant on government contracts.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "35%",
+		"epsGrowth": "38%",
 		"ttmEPS": 0.13,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "18%",
-			"base": "65%",
-			"bull": "109%"
+			"bear": "26%",
+			"base": "76%",
+			"bull": "123%"
 		}
 	},
-	"currentPrice": "$71.94",
-	"marketCap": "$13.4B USD",
+	"currentPrice": "$67.31",
+	"marketCap": "$12.6B USD",
 	"valuation": {
-		"trailingPE": 553.4,
-		"forwardPE": 67.2,
-		"evFcf": -93.3,
-		"evEbitda": 158.3
+		"trailingPE": 517.8,
+		"forwardPE": 62.8,
+		"evFcf": -87.1,
+		"evEbitda": 147.7
 	},
 	"metrics": {
 		"roe": "1.3%",
@@ -32,7 +30,7 @@
 		"fcfYield": "~-1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "12%",
-		"beta": "1.15",
+		"beta": "1.22",
 		"revenueGrowth": "21.9%",
 		"roic": "-0.3%",
 		"interestCoverage": "9.3x"
@@ -46,30 +44,30 @@
 		"mean": 118.35,
 		"high": 150
 	},
-	"expectedCAGR": "18% - 109%",
-	"expectedVolatility": "~66%",
-	"sharpeRatio": 0.89,
+	"expectedCAGR": "26% - 123%",
+	"expectedVolatility": "~67%",
+	"sharpeRatio": 1.04,
 	"screener": {
 		"engine": "DISQUALIFIED",
-		"signal": "REJECTED",
-		"note": "Binary-outcome biotech breaking EPS compounding rules."
+		"signal": "WAIT",
+		"note": "Extreme earnings volatility detected. Awaiting stabilization."
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 10,
+		"revisionsScore": -0.29,
+		"totalScore": 9.71,
 		"raw": {
 			"avgSurprisePct": 21.25,
-			"netInsiderShares": 116736,
+			"netInsiderShares": 107736,
 			"instFlowTrend": "positive",
-			"upRevisions": 8,
-			"downRevisions": 8,
+			"upRevisions": 1,
+			"downRevisions": 2,
 			"totalAnalysts": 17
 		}
 	},
 	"description": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the Unit...",
-	"lastUpdated": "2026-03-28T23:02:55.312Z",
+	"lastUpdated": "2026-04-05T07:21:25.831Z",
 	"analystConsensus": {
 		"ticker": "KTOS",
 		"strongBuy": 5,
@@ -79,5 +77,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$98.28",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 0.9,
+			"low": 0.69,
+			"average": 0.77628
+		},
+		"2027": {
+			"high": 1.33,
+			"low": 0.83,
+			"average": 1.07125
+		}
+	}
 }

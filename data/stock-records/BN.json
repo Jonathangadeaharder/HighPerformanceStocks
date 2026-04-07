@@ -2,35 +2,33 @@
 	"ticker": "BN",
 	"name": "Brookfield Corporation",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "19% CAGR for 30 years. $1T+ AUM. Launched $100B AI infrastructure fund. Management estimates 25% annual earnings growth over 5 years. But opaque corporate structure and distorted accounting.",
-	"marketCap": "$88.2B USD",
-	"sharpeRatio": 0.39,
-	"expectedCAGR": "-20% - 55%",
-	"expectedVolatility": "~33%",
+	"marketCap": "$92.5B USD",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "-23% - 48%",
+	"expectedVolatility": "~31%",
 	"valuation": {
-		"trailingPE": 79.6,
-		"forwardPE": 6.6,
+		"trailingPE": 83.4,
+		"forwardPE": 7,
 		"pegRatio": null,
-		"evEbitda": 15,
-		"evFcf": -100.8
+		"evEbitda": 15.2,
+		"evFcf": -101.7
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
 		"fcfYield": "~-5%",
-		"roic": "3.2%",
+		"roic": "3.1%",
 		"roe": "2.0%",
 		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": "-2%",
 		"aum": "$1T+",
-		"beta": "1.86",
+		"beta": "1.83",
 		"revenueGrowth": "3.5%",
 		"interestCoverage": "2.1x"
 	},
 	"targetPrice": "$53.60",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$39",
+	"currentPrice": "$40.89",
 	"consensus": {
 		"tipranks": "$55",
 		"yahoo": "$53.60",
@@ -41,35 +39,35 @@
 		"epsGrowth": "16.5%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-20%",
-			"base": "38%",
-			"bull": "55%"
+			"bear": "-23%",
+			"base": "32%",
+			"bull": "48%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-03-28T23:02:46.047Z",
+	"lastUpdated": "2026-04-05T07:21:16.392Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 4.14,
+		"score": 0.42,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
-			"multiple": 68.3,
+			"multiple": 7,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~68.3x (hasLikelyValueFloor: analyst upside 37.4%) (DEPLOY override: base CAGR 38% ≥ 20% and stabilized) (Massive P/E divergence (>300%); potential data hallucination) (Used benchmark CV)",
+		"note": "Massive P/E divergence (>300%); potential data hallucination (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 39,
-				"price6mAgo": 46.09,
-				"price1mAgo": 43.96,
+				"price": 40.89,
+				"price6mAgo": 45.39,
+				"price1mAgo": 42.49,
 				"low3m": 37.93,
-				"return6m": -15.4,
-				"return1m": -11.3,
-				"near3mLow": true
+				"return6m": -9.9,
+				"return1m": -3.8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,

@@ -404,3 +404,68 @@ describe('VAMS (Volatility-Adjusted Momentum Score)', () => {
 		expect(Math.abs(lowVol)).toBeGreaterThan(Math.abs(highVol) * 2);
 	});
 });
+
+// ────────────────────────────────────────────────────────
+// computeScreener: threshold & WAIT-band boundaries
+// ────────────────────────────────────────────────────────
+import { computeScreener } from '../src/lib/domain/screener/engine';
+import type { ScreenerStock } from '../src/lib/domain/screener/types';
+
+/** Minimal stock that routes to fPERG (forward P/E engine). */
+function makePERGStock(forwardPE: number, epsGrowth: string): ScreenerStock {
+	return {
+		cagrModel: { epsGrowth, ttmEPS: 5 },
+		valuation: { forwardPE }
+	};
+}
+
+describe('computeScreener — fPERG threshold and WAIT-band', () => {
+	// fPERG threshold = 1.0; score = forwardPE / effectiveGrowth
+	// At 25% growth effectiveGrowth=25. score=1.0 → exactly at threshold → PASS.
+	it('returns PASS when score equals the fPERG threshold (1.0)', () => {
+		const stock = makePERGStock(25, '25%');
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).toBe('PASS');
+	});
+
+	// score slightly above 1.0 but inside the WAIT band (threshold * 1.2 = 1.2)
+	it('returns WAIT when score is within the 20% borderline band above fPERG threshold', () => {
+		// score = 28 / 25 = 1.12 — inside [1.0, 1.2] WAIT band
+		const stock = makePERGStock(28, '25%');
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).toBe('WAIT');
+	});
+
+	// score above waitThreshold (1.2) → FAIL
+	it('returns FAIL when score exceeds the fPERG wait-band upper bound', () => {
+		// score = 40 / 25 = 1.6 — well above 1.2 waitThreshold
+		const stock = makePERGStock(40, '25%');
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).toBe('FAIL');
+	});
+
+	it('returns NO_DATA when growth is missing', () => {
+		const stock: ScreenerStock = { cagrModel: {}, valuation: { forwardPE: 20 } };
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.signal).toBe('NO_DATA');
+	});
+
+	// Regression: the hardcoded bearCase string-match that capped
+	// "customer concentration" stocks at WAIT was removed in
+	// refactor/remove-customer-concentration-filter. This test asserts it
+	// is never reintroduced — a clear PASS stock must remain PASS regardless
+	// of what prose appears in its bearCase narrative.
+	it('does NOT cap a clean fPERG PASS to WAIT when bearCase mentions "customer concentration"', () => {
+		const stock: ScreenerStock = {
+			cagrModel: { epsGrowth: '57%', ttmEPS: 5 },
+			valuation: { forwardPE: 17.6 },
+			bearCase: 'Heavy reliance on a few massive hyperscaler clients creates customer concentration risk.'
+		};
+		const result = computeScreener(stock, undefined, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).toBe('PASS');
+	});
+});

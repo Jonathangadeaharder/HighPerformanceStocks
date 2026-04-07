@@ -2,34 +2,32 @@
 	"ticker": "VEEV",
 	"name": "Veeva Systems",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Dominant life sciences cloud at 16% growth on $3.2B scale. >99% retention. But core CRM saturation and platform migration risk.",
-	"marketCap": "$28.4B USD",
-	"sharpeRatio": 1.44,
-	"expectedCAGR": "10% - 103%",
+	"marketCap": "$28.6B USD",
+	"sharpeRatio": 1.4,
+	"expectedCAGR": "9% - 101%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 31.7,
-		"forwardPE": 17.5,
+		"trailingPE": 31.9,
+		"forwardPE": 17.6,
 		"pegRatio": null,
-		"evEbitda": 22.1,
-		"evFcf": 20.7
+		"evEbitda": 22.3,
+		"evFcf": 20.9
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
-		"roic": "6.5%",
+		"roic": "6.4%",
 		"roe": "13.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "49%",
-		"beta": "1.12",
+		"beta": "1.1",
 		"revenueGrowth": "16.0%",
 		"interestCoverage": "186.8x"
 	},
 	"targetPrice": "$270.93",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$172.59",
+	"currentPrice": "$173.98",
 	"consensus": {
 		"tipranks": "$300",
 		"yahoo": "$270.93",
@@ -40,40 +38,40 @@
 		"epsGrowth": "19%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "57%",
-			"bull": "103%"
+			"bear": "9%",
+			"base": "56%",
+			"bull": "101%"
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-03-28T23:03:09.898Z",
+	"lastUpdated": "2026-04-05T07:21:37.382Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.09,
-		"signal": "DEPLOY",
+		"score": 1.1,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "EV/FCF",
-			"multiple": 20.7,
+			"multiple": 20.9,
 			"cvStock": 0.03,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 57% ≥ 20% and stabilized",
+		"note": "hasLikelyValueFloor: analyst upside 55.7% + QCS 9.33",
 		"realityChecks": {
 			"stabilization": {
-				"pass": true,
-				"price": 172.59,
-				"price6mAgo": 293,
-				"price1mAgo": 181.45,
+				"pass": false,
+				"price": 173.98,
+				"price6mAgo": 299.76,
+				"price1mAgo": 196.06,
 				"low3m": 168.14,
-				"return6m": -41.1,
-				"return1m": -4.9,
+				"return6m": -42,
+				"return1m": -11.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 17,
-				"down30d": 4
+				"up30d": 16,
+				"down30d": 5
 			},
 			"earningsSurprise": {
 				"surprise": 6.5,
@@ -81,18 +79,18 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.92
+		"secondaryScore": 0.93
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 4,
-		"totalScore": 9,
+		"revisionsScore": 4.33,
+		"totalScore": 9.33,
 		"raw": {
 			"avgSurprisePct": 7.18,
 			"netInsiderShares": 18301,
 			"instFlowTrend": "negative",
-			"upRevisions": 25,
+			"upRevisions": 27,
 			"downRevisions": 1,
 			"totalAnalysts": 30
 		}
@@ -111,5 +109,17 @@
 		"moderateSell": 2,
 		"strongSell": 2
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2027": {
+			"high": 9.1,
+			"low": 8.55,
+			"average": 8.83368
+		},
+		"2028": {
+			"high": 10.29,
+			"low": 9.12,
+			"average": 9.88734
+		}
+	}
 }

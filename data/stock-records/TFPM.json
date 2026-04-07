@@ -2,34 +2,32 @@
 	"ticker": "TFPM",
 	"name": "Triple Flag Precious Metals",
 	"group": "Royalties",
-	"confidence": "medium",
-	"confidenceReason": "Model suggests low CAGR, but Royalties are held for structural uncorrelated convexity, not just organic compounding.",
-	"marketCap": "$6.8B USD",
-	"sharpeRatio": 0.85,
-	"expectedCAGR": "32% - 50%",
+	"marketCap": "$7.4B USD",
+	"sharpeRatio": 0.58,
+	"expectedCAGR": "21% - 38%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 27.8,
-		"forwardPE": 19.9,
+		"trailingPE": 30.3,
+		"forwardPE": 21.8,
 		"pegRatio": 1.02,
-		"evEbitda": 22.6,
-		"evFcf": -1600.2
+		"evEbitda": 24.7,
+		"evFcf": -1750
 	},
 	"metrics": {
 		"fcfMargin": "~-1%",
 		"fcfYield": "~0%",
-		"roic": "4.7%",
+		"roic": "4.3%",
 		"roe": "12.7%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "59%",
-		"beta": "0.23",
+		"beta": "0.34",
 		"revenueGrowth": "60.2%",
 		"interestCoverage": "3673.2x"
 	},
 	"targetPrice": "$45",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
-	"currentPrice": "$32.78",
+	"currentPrice": "$35.81",
 	"consensus": {
 		"tipranks": "C$59",
 		"yahoo": "$45",
@@ -40,60 +38,57 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "32%",
-			"base": "38%",
-			"bull": "50%"
+			"bear": "21%",
+			"base": "27%",
+			"bull": "38%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:06.839Z",
+	"lastUpdated": "2026-04-05T07:21:35.270Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.54,
-		"signal": "DEPLOY",
+		"engine": "fPERG",
+		"score": 1.48,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
-			"multipleType": "EV/EBITDA",
-			"multiple": 22.6,
+			"multipleType": "Forward P/E",
+			"multiple": 21.8,
 			"cvStock": 0.137,
 			"riskMultiplier": 1.02
 		},
-		"note": "hasLikelyValueFloor: analyst upside 37.3% (DEPLOY override: base CAGR 38% ≥ 20% and stabilized) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.78,
-				"price6mAgo": 29.19,
-				"price1mAgo": 41.13,
+				"price": 35.81,
+				"price6mAgo": 30.42,
+				"price1mAgo": 38.21,
 				"low3m": 30.04,
-				"return6m": 12.3,
-				"return1m": -20.3,
+				"return6m": 17.7,
+				"return1m": -6.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 3,
-				"down30d": 3
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 4.1,
 				"quarter": "2025-12"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.35
+		}
 	},
 	"qcs": {
 		"earningsScore": 2.35,
 		"flowScore": 2.5,
-		"revisionsScore": 1.5,
-		"totalScore": 6.35,
+		"revisionsScore": 2,
+		"totalScore": 6.85,
 		"raw": {
 			"avgSurprisePct": 8.06,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 5,
-			"downRevisions": 2,
+			"upRevisions": 4,
+			"downRevisions": 0,
 			"totalAnalysts": 10
 		}
 	},
@@ -111,5 +106,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.71,
+			"low": 1.22,
+			"average": 1.449
+		},
+		"2027": {
+			"high": 2.18,
+			"low": 1.28,
+			"average": 1.64556
+		}
+	}
 }

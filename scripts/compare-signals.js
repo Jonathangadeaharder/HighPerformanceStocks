@@ -4,6 +4,7 @@ import { join, relative } from 'node:path';
 import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
 
 // Repo-relative path for `git show HEAD:<path>` — must be relative to repo root.
+// Always use forward slashes regardless of OS.
 const GIT_DIR = relative(process.cwd(), STOCK_RECORDS_DIR).replaceAll('\\', '/');
 
 const files = readdirSync(STOCK_RECORDS_DIR).filter(f => f.endsWith('.json'));
@@ -61,4 +62,3 @@ downgrades.forEach(x => console.log(`  - ${x}`));
 
 console.log(`\n📈 Major Score Upgrades (${upgrades.length}):`);
 upgrades.forEach(x => console.log(`  - ${x}`));
-

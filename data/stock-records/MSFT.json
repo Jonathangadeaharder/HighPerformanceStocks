@@ -2,26 +2,24 @@
 	"ticker": "MSFT",
 	"name": "Microsoft",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Enterprise software and cloud computing monopoly. Unparalleled B2B distribution network and AI infrastructure leadership via Azure/OpenAI.",
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS (CapEx depreciation adjusted)",
 		"ttmEPS": 16,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "66%",
-			"bull": "106%"
+			"bear": "6%",
+			"base": "58%",
+			"bull": "96%"
 		}
 	},
-	"currentPrice": "$356.77",
-	"marketCap": "$2651.6B USD",
+	"currentPrice": "$373.46",
+	"marketCap": "$2775.7B USD",
 	"valuation": {
-		"trailingPE": 22.3,
-		"forwardPE": 18.9,
-		"evEbitda": 15.3,
-		"evFcf": 50
+		"trailingPE": 23.4,
+		"forwardPE": 19.8,
+		"evEbitda": 16,
+		"evFcf": 52.3
 	},
 	"metrics": {
 		"roe": "34.4%",
@@ -31,37 +29,37 @@
 		"ruleOf40": "34%",
 		"beta": "1.11",
 		"revenueGrowth": "16.7%",
-		"roic": "6.0%",
+		"roic": "5.7%",
 		"interestCoverage": "25.8x"
 	},
 	"consensus": {
-		"yahoo": "$589.90"
+		"yahoo": "$587.31"
 	},
-	"targetPrice": "$589.90",
-	"expectedCAGR": "11% - 106%",
+	"targetPrice": "$587.31",
+	"expectedCAGR": "6% - 96%",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 2.08,
+	"sharpeRatio": 1.79,
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.57,
-		"signal": "DEPLOY",
+		"score": 3.74,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
-			"multiple": 50,
+			"multiple": 52.3,
 			"cvStock": 0.101,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 65.3% (DEPLOY override: base CAGR 66% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 57.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 356.77,
-				"price6mAgo": 514.6,
-				"price1mAgo": 398.55,
-				"low3m": 356.51,
-				"return6m": -30.7,
-				"return1m": -10.5,
+				"price": 373.46,
+				"price6mAgo": 528.57,
+				"price1mAgo": 410.68,
+				"low3m": 356.28,
+				"return6m": -29.3,
+				"return1m": -9.1,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -75,11 +73,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.35
+		"secondaryScore": 1.41
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-03-28T23:02:59.229Z",
+	"lastUpdated": "2026-04-05T07:21:29.168Z",
 	"intrinsicValue": {
 		"dcf": 314.88,
 		"date": "2026-03-28",
@@ -88,21 +86,21 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": -5,
-		"revisionsScore": 0.32,
-		"totalScore": 0.32,
+		"revisionsScore": 0.31,
+		"totalScore": 0.31,
 		"raw": {
 			"avgSurprisePct": 12.82,
 			"netInsiderShares": -38372,
 			"instFlowTrend": "negative",
 			"upRevisions": 2,
 			"downRevisions": 0,
-			"totalAnalysts": 31
+			"totalAnalysts": 32
 		}
 	},
 	"description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide.",
 	"analystTargets": {
 		"low": 392,
-		"mean": 589.9,
+		"mean": 587.31,
 		"high": 730
 	},
 	"analystConsensus": {
@@ -114,5 +112,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$588.98",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 19.71,
+			"low": 16.47,
+			"average": 17.19787
+		},
+		"2027": {
+			"high": 24.31,
+			"low": 16.61,
+			"average": 19.00412
+		}
+	}
 }

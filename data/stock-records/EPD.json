@@ -2,70 +2,68 @@
 	"ticker": "EPD",
 	"name": "Enterprise Products Partners",
 	"group": "Energy",
-	"confidence": "low",
-	"confidenceReason": "Best-in-class midstream MLP. Conservative management, 25 consecutive years of distribution growth. Lower volatility but also lower upside.",
-	"marketCap": "$84.9B USD",
-	"sharpeRatio": -0.03,
-	"expectedCAGR": "-13% - 21%",
-	"expectedVolatility": "~19%",
+	"marketCap": "$81.2B USD",
+	"sharpeRatio": 0.24,
+	"expectedCAGR": "-9% - 26%",
+	"expectedVolatility": "~17%",
 	"valuation": {
-		"trailingPE": 13.9,
-		"forwardPE": 12.7,
+		"trailingPE": 13.3,
+		"forwardPE": 12.1,
 		"pegRatio": null,
-		"evEbitda": 12.5,
-		"evFcf": 5379.9
+		"evEbitda": 12.1,
+		"evFcf": 5213.7
 	},
 	"metrics": {
 		"fcfMargin": "~0%",
 		"fcfYield": "~0%",
-		"roic": "7.2%",
+		"roic": "7.5%",
 		"roe": "19.5%",
 		"netDebtEbitda": "3.5x",
 		"ruleOf40": "-3%",
-		"beta": "0.57",
+		"beta": "0.53",
 		"revenueGrowth": "-2.9%",
 		"interestCoverage": "5.0x"
 	},
-	"targetPrice": "$38.52",
+	"targetPrice": "$38.81",
 	"bullCase": "Enterprise Products Partners is one of the most financially disciplined MLPs in North America, with a 1.7x+ distribution coverage ratio, AA-/Baa1 credit rating, and a 22-year track record of consecutive distribution increases. The ~7% yield alone provides equity-like total returns, and organic growth from new natural gas infrastructure projects adds upside.",
 	"bearCase": "Midstream infrastructure is a terminal-value business as the energy transition progresses. Volume risk increases if US LNG export permitting slows or if industrial natural gas demand peaks. The 4.0x+ leverage is manageable but constrains financial flexibility.",
-	"currentPrice": "$39.28",
+	"currentPrice": "$37.57",
 	"consensus": {
 		"tipranks": "$40",
-		"yahoo": "$38.52"
+		"yahoo": "$38.81"
 	},
 	"cagrModel": {
 		"ttmEPS": 2.66,
 		"epsGrowth": "6%",
 		"dividendYield": "6%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "4%",
-			"bull": "21%"
+			"bear": "-9%",
+			"base": "9%",
+			"bull": "26%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-03-28T23:02:49.196Z",
+	"lastUpdated": "2026-04-05T07:21:19.539Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.08,
+		"score": 2.02,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 6,
 			"multipleType": "EV/EBITDA",
-			"multiple": 12.5,
+			"multiple": 12.1,
 			"cvStock": 0.027,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 39.28,
-				"price6mAgo": 31.26,
-				"price1mAgo": 36.89,
+				"price": 37.57,
+				"price6mAgo": 31.5,
+				"price1mAgo": 37.29,
 				"low3m": 31.55,
-				"return6m": 25.7,
-				"return1m": 6.5,
+				"return6m": 19.3,
+				"return1m": 0.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,7 +77,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.12
+		"secondaryScore": 2.02
 	},
 	"qcs": {
 		"earningsScore": -0.24,
@@ -98,7 +96,7 @@
 	"description": "Enterprise Products Partners L.P. provides midstream energy services to producers and consumers of natural gas, natural gas liquids (NGLs), crude oil, petrochemicals, and refined products.",
 	"analystTargets": {
 		"low": 32,
-		"mean": 38.52,
+		"mean": 38.81,
 		"high": 45
 	},
 	"analystConsensus": {
@@ -110,5 +108,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$37.20"
+	"targetPriceAlternative": "$37.20",
+	"forwardEstimates": {
+		"2026": {
+			"high": 2.91,
+			"low": 2.7,
+			"average": 2.82234
+		},
+		"2027": {
+			"high": 3.29,
+			"low": 2.95,
+			"average": 3.1037
+		}
+	}
 }

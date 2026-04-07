@@ -2,26 +2,24 @@
 	"ticker": "CPRT",
 	"name": "Copart",
 	"group": "Capital Compounders",
-	"confidence": "low",
-	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 1.59,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "32%",
-			"bull": "70%"
+			"bear": "-4%",
+			"base": "28%",
+			"bull": "65%"
 		}
 	},
-	"currentPrice": "$32.43",
-	"marketCap": "$31.4B USD",
+	"currentPrice": "$33.40",
+	"marketCap": "$32.3B USD",
 	"valuation": {
-		"trailingPE": 20.4,
-		"forwardPE": 19.3,
-		"evEbitda": 13.5,
-		"evFcf": 25.4
+		"trailingPE": 21,
+		"forwardPE": 19.9,
+		"evEbitda": 14,
+		"evFcf": 26.3
 	},
 	"metrics": {
 		"roe": "17.1%",
@@ -29,24 +27,24 @@
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "19%",
-		"beta": "1.11",
+		"beta": "1.14",
 		"revenueGrowth": "-3.6%",
-		"roic": "6.8%",
+		"roic": "6.6%",
 		"interestCoverage": "367.7x"
 	},
 	"consensus": {
 		"yahoo": "$42.67"
 	},
 	"targetPrice": "$42.67",
-	"expectedCAGR": "-1% - 70%",
+	"expectedCAGR": "-4% - 65%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.84,
+		"score": 0.88,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 13.5,
+			"multiple": 14,
 			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
@@ -54,12 +52,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": false,
-				"price": 32.43,
-				"price6mAgo": 44.6,
-				"price1mAgo": 38.31,
+				"price": 33.4,
+				"price6mAgo": 44.45,
+				"price1mAgo": 38.02,
 				"low3m": 32.2,
-				"return6m": -27.3,
-				"return1m": -15.3,
+				"return6m": -24.9,
+				"return1m": -12.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -73,11 +71,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.21
+		"secondaryScore": 1.24
 	},
-	"lastUpdated": "2026-03-28T23:02:47.757Z",
+	"lastUpdated": "2026-04-05T07:21:17.645Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 1.11,
+	"sharpeRatio": 0.96,
 	"qcs": {
 		"earningsScore": 2.98,
 		"flowScore": 5,
@@ -109,5 +107,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$44.40",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.66,
+			"low": 1.54,
+			"average": 1.57535
+		},
+		"2027": {
+			"high": 1.85,
+			"low": 1.6,
+			"average": 1.68001
+		}
+	}
 }

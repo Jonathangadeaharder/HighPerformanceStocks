@@ -2,35 +2,33 @@
 	"ticker": "ADDT-B.ST",
 	"name": "Addtech AB",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Swedish serial acquirer with 18% EBITA CAGR since 2001. Zero dilution — uses only cash flow and debt. Better ROIC and growth profile than LIFCO-B.ST. Targets doubling earnings every 5 years.",
-	"marketCap": "83.4B SEK",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "8% - 31%",
-	"expectedVolatility": "~29%",
+	"marketCap": "86.5B SEK",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "4% - 26%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 40.3,
-		"forwardPE": 39.4,
+		"trailingPE": 41.9,
+		"forwardPE": 40.9,
 		"pegRatio": null,
-		"evEbitda": 24.7,
-		"evFcf": 35.6
+		"evEbitda": 25.6,
+		"evFcf": 36.9
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
 		"fcfYield": "~3%",
-		"roic": "3.4%",
+		"roic": "3.3%",
 		"roe": "29.3%",
 		"netDebtEbitda": "1.3x",
 		"ruleOf40": "12%",
 		"roce": "~22%",
-		"beta": "1.23",
+		"beta": "1.16",
 		"revenueGrowth": "1.4%",
 		"interestCoverage": "11.0x"
 	},
 	"targetPrice": "381 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "309 SEK",
+	"currentPrice": "321 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
 		"yahoo": "381 SEK"
@@ -40,34 +38,34 @@
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "24%",
-			"bull": "31%"
+			"bear": "4%",
+			"base": "20%",
+			"bull": "26%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T23:02:42.614Z",
+	"lastUpdated": "2026-04-05T07:21:12.215Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.45,
+		"score": 1.51,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.7,
+			"multiple": 25.6,
 			"cvStock": 0.053,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 308.8,
-				"price6mAgo": 309.8,
-				"price1mAgo": 324.8,
+				"price": 320.6,
+				"price6mAgo": 305.8,
+				"price1mAgo": 312.6,
 				"low3m": 283.2,
-				"return6m": -0.3,
-				"return1m": -4.9,
+				"return6m": 4.8,
+				"return1m": 2.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -81,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.32
+		"secondaryScore": 2.41
 	},
 	"qcs": {
 		"earningsScore": -5,
@@ -111,5 +109,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 9.91,
+			"low": 7.80723,
+			"average": 8.68392
+		},
+		"2027": {
+			"high": 11.4,
+			"low": 9.25353,
+			"average": 10.14642
+		}
+	}
 }

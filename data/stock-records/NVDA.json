@@ -2,73 +2,70 @@
 	"ticker": "NVDA",
 	"name": "NVIDIA",
 	"group": "AI & Semiconductors",
-	"confidence": "medium",
-	"confidenceReason": "Massive discount to peers (36x vs 80.7x avg). CAGR 22-28%. Vera Rubin platform implies $40B upside to consensus. Deeply entrenched value-compounder.",
-	"marketCap": "$4071.6B USD",
-	"sharpeRatio": 1.24,
-	"expectedCAGR": "-16% - 127%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$4311.5B USD",
+	"sharpeRatio": 1.08,
+	"expectedCAGR": "-21% - 114%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 34.1,
-		"forwardPE": 15.1,
+		"trailingPE": 36.2,
+		"forwardPE": 16,
 		"pegRatio": 1.6,
-		"evEbitda": 30.2,
-		"evFcf": 69.1
+		"evEbitda": 32,
+		"evFcf": 73.3
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
 		"fcfYield": "~1%",
-		"roic": "2.6%",
+		"roic": "2.4%",
 		"roe": "101.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "100%",
-		"beta": "2.38",
+		"beta": "2.33",
 		"revenueGrowth": "73.2%",
 		"interestCoverage": "212.3x"
 	},
 	"targetPrice": "$268.22",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$167.52",
+	"currentPrice": "$177.39",
 	"consensus": {
 		"tipranks": "$272",
 		"yahoo": "$268.22",
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.91,
+		"ttmEPS": 4.9,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-16%",
-			"base": "60%",
-			"bull": "127%"
+			"bear": "-21%",
+			"base": "51%",
+			"bull": "114%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-03-29T09:53:57.732Z",
+	"lastUpdated": "2026-04-05T07:21:31.268Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.92,
-		"signal": "DEPLOY",
+		"score": 0.56,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
-			"multiple": 26.4,
+			"multiple": 16,
 			"cvStock": 0.127,
 			"riskMultiplier": 1.011
 		},
-		"note": "Data hallucination override: structurally impossible forward PE rectified to computationally sound ~26.4x (DEPLOY override: base CAGR 60% ≥ 15% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 167.52,
-				"price6mAgo": 181.85,
-				"price1mAgo": 182.48,
-				"low3m": 167.01,
-				"return6m": -7.9,
-				"return1m": -8.2,
-				"near3mLow": true
+				"price": 177.39,
+				"price6mAgo": 185.54,
+				"price1mAgo": 183.34,
+				"low3m": 164.27,
+				"return6m": -4.4,
+				"return1m": -3.2,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -93,7 +90,7 @@
 		"totalScore": 5.16,
 		"raw": {
 			"avgSurprisePct": 5.22,
-			"netInsiderShares": 57184933,
+			"netInsiderShares": 57409933,
 			"instFlowTrend": "negative",
 			"upRevisions": 38,
 			"downRevisions": 5,
@@ -117,25 +114,15 @@
 	"targetPriceAlternative": "$275.96",
 	"consensusRating": "Hold",
 	"forwardEstimates": {
-		"2026": {
-			"high": 4.96,
-			"low": 4.4,
-			"average": 4.69
-		},
 		"2027": {
-			"high": 9.68,
-			"low": 5.4,
-			"average": 8.15
+			"high": 9.4,
+			"low": 7.68,
+			"average": 8.29457
 		},
 		"2028": {
 			"high": 13.88,
-			"low": 6.3,
-			"average": 10.77
-		},
-		"2029": {
-			"high": 15.8,
-			"low": 7.3,
-			"average": 12.77
+			"low": 8.23,
+			"average": 11.11635
 		}
 	}
 }

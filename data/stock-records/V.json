@@ -2,72 +2,70 @@
 	"ticker": "V",
 	"name": "Visa",
 	"group": "Defensive Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Ultimate inflation-protected toll road. >50% ROIC, 78% gross margin. But too low-volatility (~16%) for synthetic leverage strategy. Predictable compounder.",
-	"marketCap": "$569.8B USD",
-	"sharpeRatio": 1.13,
-	"expectedCAGR": "10% - 53%",
-	"expectedVolatility": "~24%",
+	"marketCap": "$580.0B USD",
+	"sharpeRatio": 1.14,
+	"expectedCAGR": "8% - 51%",
+	"expectedVolatility": "~22%",
 	"valuation": {
-		"trailingPE": 27.8,
-		"forwardPE": 20.3,
+		"trailingPE": 28.2,
+		"forwardPE": 20.7,
 		"pegRatio": null,
-		"evEbitda": 19.6,
-		"evFcf": 25.8
+		"evEbitda": 20,
+		"evFcf": 26.3
 	},
 	"metrics": {
 		"fcfMargin": "~53%",
 		"fcfYield": "~4%",
-		"roic": "4.3%",
+		"roic": "4.2%",
 		"roe": "54.0%",
 		"netDebtEbitda": "0.2x",
 		"ruleOf40": "68%",
-		"beta": "0.79",
+		"beta": "0.8",
 		"revenueGrowth": "14.6%",
 		"interestCoverage": "24.9x"
 	},
-	"targetPrice": "$398.91",
+	"targetPrice": "$396.83",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$295.52",
+	"currentPrice": "$300.80",
 	"consensus": {
 		"tipranks": "$400",
-		"yahoo": "$398.91",
+		"yahoo": "$396.83",
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.64,
+		"ttmEPS": 10.65,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "36%",
-			"bull": "53%"
+			"bear": "8%",
+			"base": "33%",
+			"bull": "51%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-03-28T23:03:09.614Z",
+	"lastUpdated": "2026-04-05T07:21:37.225Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.45,
-		"signal": "DEPLOY",
+		"score": 1.48,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.3,
+			"multiple": 20.7,
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 35% (DEPLOY override: base CAGR 36% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 295.52,
-				"price6mAgo": 340.16,
-				"price1mAgo": 320.51,
-				"low3m": 294.32,
-				"return6m": -13.1,
-				"return1m": -7.8,
+				"price": 300.8,
+				"price6mAgo": 349.28,
+				"price1mAgo": 319.8,
+				"low3m": 293.89,
+				"return6m": -13.9,
+				"return1m": -5.9,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -97,13 +95,13 @@
 			"instFlowTrend": "neutral",
 			"upRevisions": 2,
 			"downRevisions": 1,
-			"totalAnalysts": 36
+			"totalAnalysts": 37
 		}
 	},
 	"description": "Visa Inc. operates as a payment technology company in the United States and internationally.",
 	"analystTargets": {
 		"low": 323,
-		"mean": 398.91,
+		"mean": 396.83,
 		"high": 450
 	},
 	"analystConsensus": {
@@ -115,5 +113,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$392.65"
+	"targetPriceAlternative": "$392.65",
+	"forwardEstimates": {
+		"2026": {
+			"high": 13.2,
+			"low": 12.66,
+			"average": 12.85541
+		},
+		"2027": {
+			"high": 15.01,
+			"low": 14.11,
+			"average": 14.5393
+		}
+	}
 }

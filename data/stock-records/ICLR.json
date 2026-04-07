@@ -2,8 +2,6 @@
 	"ticker": "ICLR",
 	"name": "ICON plc",
 	"group": "Healthcare Services",
-	"confidence": "cut",
-	"confidenceReason": "Massive CRO running trials for big pharma. Consistent 12-16% EPS growth, often very reasonably priced.",
 	"bullCase": "ICON is the world's second-largest CRO with deep therapeutic expertise in oncology and rare disease. After a severe biotech funding correction drove a -44% selloff, the stock trades at 8x forward PE — an extreme valuation compression. When biotech funding recovers, ICON benefits from pent-up demand for Phase II-III outsourcing. FSP (Functional Service Provider) model provides flexible capacity to large pharma clients.",
 	"bearCase": "NIH budget cuts under DOGE are directly reducing academic research contracts. The biotech funding freeze of 2022-2025 caused trial cancellations that are still clearing backlogs. ICON faces pricing pressure from IQVIA and Syneos competing for large pharma FSP contracts. High fixed costs from headcount make it operationally leveraged in both directions.",
 	"cagrModel": {
@@ -12,62 +10,61 @@
 		"ttmEPS": 7.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-27%",
-			"base": "32%",
-			"bull": "112%"
+			"bear": "-34%",
+			"base": "18%",
+			"bull": "89%"
 		}
 	},
-	"currentPrice": "$102.08",
-	"marketCap": "$7.9B USD",
+	"currentPrice": "$114.19",
+	"marketCap": "$8.9B USD",
 	"valuation": {
-		"trailingPE": 13.8,
-		"forwardPE": 8.2,
-		"evEbitda": 7.2,
-		"evFcf": 11.8
+		"trailingPE": 15.4,
+		"forwardPE": 9.1,
+		"evEbitda": 7.8,
+		"evFcf": 12.8
 	},
 	"metrics": {
 		"roe": "6.3%",
 		"fcfMargin": "~11%",
-		"fcfYield": "~12%",
+		"fcfYield": "~10%",
 		"netDebtEbitda": "2.0x",
 		"ruleOf40": "12%",
-		"beta": "1.34",
+		"beta": "1.28",
 		"revenueGrowth": "0.6%",
-		"roic": "10.3%",
+		"roic": "9.5%",
 		"interestCoverage": "7.7x"
 	},
 	"consensus": {
 		"yahoo": "$134.69"
 	},
 	"targetPrice": "$134.69",
-	"expectedCAGR": "-27% - 112%",
+	"expectedCAGR": "-34% - 89%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.07,
-		"signal": "REJECTED",
+		"score": 0.56,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 7.2,
+			"multiple": 7.8,
 			"cvStock": 0.069,
-			"riskMultiplier": 2.083
+			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag) (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 102.08,
-				"price6mAgo": 163.44,
-				"price1mAgo": 108.27,
+				"price": 114.19,
+				"price6mAgo": 190.43,
+				"price1mAgo": 110.6,
 				"low3m": 66.57,
-				"return6m": -37.5,
-				"return1m": -5.7,
+				"return6m": -40,
+				"return1m": 3.2,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 1,
-				"down30d": 7
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 1,
@@ -75,22 +72,22 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.07
+		"secondaryScore": 0.65
 	},
-	"lastUpdated": "2026-03-28T23:02:52.990Z",
+	"lastUpdated": "2026-04-05T07:21:23.732Z",
 	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.51,
+	"sharpeRatio": 0.31,
 	"qcs": {
 		"earningsScore": 0.97,
 		"flowScore": 0,
-		"revisionsScore": -1.56,
-		"totalScore": -0.59,
+		"revisionsScore": -0.63,
+		"totalScore": 0.34,
 		"raw": {
 			"avgSurprisePct": 1.68,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
-			"downRevisions": 5,
+			"downRevisions": 2,
 			"totalAnalysts": 16
 		}
 	},
@@ -109,5 +106,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$148.80",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2025": {
+			"high": 13.10509,
+			"low": 12.28,
+			"average": 12.96204
+		},
+		"2026": {
+			"high": 13.82386,
+			"low": 10.39,
+			"average": 12.51214
+		}
+	}
 }

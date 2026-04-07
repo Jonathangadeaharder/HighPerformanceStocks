@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseDisplayPrice, parsePercent } from '../src/lib/domain/finance/core.js';
 import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
+import { computeEffectiveHurdle } from '../src/lib/domain/screener/engine.js';
 
 const DATA_DIR = STOCK_RECORDS_DIR;
 const RETURN_TOLERANCE_PP = 2;
@@ -10,18 +11,17 @@ const requiredFields = [
 	'ticker',
 	'name',
 	'group',
-	'confidence',
-	'confidenceReason',
 	'marketCap',
-	'expectedCAGR',
 	'expectedVolatility',
 	'bullCase',
 	'bearCase',
-	'currentPrice',
-	'targetPrice'
+	'currentPrice'
 ];
 
-function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]) {
+// Fields required even on un-populated seed records
+const seedRequiredFields = ['ticker', 'name', 'group'];
+
+function validateForwardReturns(data: any, price: number, dyPct: number, errors: string[]): void {
 	const targetMap = {
 		bear: data.analystTargets.low,
 		base: data.analystTargets.mean,
@@ -42,7 +42,7 @@ function validateForwardReturns(data: any, price: number, dyPct: number, errors:
 	}
 }
 
-function verifyData() {
+function verifyData(): void {
 	const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'));
 	let hasErrors = false;
 	const today = new Date().toISOString().slice(0, 10);
@@ -63,6 +63,29 @@ function verifyData() {
 
 		const errors: string[] = [];
 
+		// Seed records: not yet populated by update-data (missing lastUpdated).
+		// Only validate identity fields; emit a warning so operator knows to run update-data.
+		if (!data.lastUpdated) {
+			for (const field of seedRequiredFields) {
+				if (data[field] === undefined || data[field] === null || data[field] === '') {
+					errors.push(`Missing required seed field: '${field}'`);
+				}
+			}
+			if (!data.cagrModel?.epsGrowth) {
+				errors.push(`Missing 'cagrModel.epsGrowth'`);
+			}
+			if (errors.length > 0) {
+				console.log(`❌ ${data.ticker || f} has issues:`);
+				for (const e of errors) {
+					console.log(`   - ${e}`);
+				}
+				hasErrors = true;
+			} else {
+				warnings.push(`${data.ticker || f}: Seed record — run 'pnpm update-data' to populate`);
+			}
+			continue;
+		}
+
 		// 1. Verify all required fields exist and are not null/empty
 		for (const field of requiredFields) {
 			if (data[field] === undefined || data[field] === null || data[field] === '') {
@@ -72,11 +95,23 @@ function verifyData() {
 
 		// 2. Verify CAGR Model structure (if present)
 		if (data.cagrModel) {
-			if (!data.cagrModel.scenarios?.base) {
+			// Scenarios are only set when analyst targets are available; allow missing when none exist
+			const hasAnalystTargets =
+				data.analystTargets?.low != null ||
+				data.analystTargets?.mean != null ||
+				data.analystTargets?.high != null;
+			if (!data.cagrModel.scenarios?.base && hasAnalystTargets) {
 				errors.push(`Missing 'cagrModel.scenarios.base'`);
 			}
-			if (!data.cagrModel.ttmEPS || data.cagrModel.ttmEPS <= 0) {
-				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive)`);
+			// ttmEPS must be either a positive number (profitable stock) or explicitly null (pre-profit
+			// platforms that route via evFcf/fCFG). An absent or undefined value is an accidental omission.
+			const hasTtmEPS = Object.prototype.hasOwnProperty.call(data.cagrModel, 'ttmEPS');
+			const ttmEPS = data.cagrModel.ttmEPS;
+			const ttmEPSInvalid = hasTtmEPS
+				? ttmEPS !== null && (typeof ttmEPS !== 'number' || ttmEPS <= 0)
+				: true;
+			if (ttmEPSInvalid) {
+				errors.push(`Missing or invalid 'cagrModel.ttmEPS' (must be positive or null for pre-profit)`);
 			}
 			if (!data.cagrModel.epsGrowth) {
 				errors.push(`Missing 'cagrModel.epsGrowth'`);
@@ -100,8 +135,6 @@ function verifyData() {
 					`${data.ticker || f}: Cache stale (${daysSinceUpdate} days old, lastUpdated: ${updatedDate})`
 				);
 			}
-		} else {
-			errors.push(`Missing 'lastUpdated' timestamp`);
 		}
 
 		// 5. Verify screener object
@@ -114,9 +147,10 @@ function verifyData() {
 				'fANIG',
 				'fFREG',
 				'totalReturn',
+				'DISQUALIFIED',
 				'N/A'
 			];
-			const validSignals = ['PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA'];
+			const validSignals = ['DEPLOY', 'PASS', 'WAIT', 'FAIL', 'REJECTED', 'NO_DATA', 'FLAG FOR MANUAL REVIEW'];
 			if (!validEngines.includes(data.screener.engine)) {
 				errors.push(`Invalid screener.engine: '${data.screener.engine}'`);
 			}
@@ -144,9 +178,12 @@ function verifyData() {
 			data.screener.engine !== 'totalReturn'
 		) {
 			const baseReturn = parsePercent(data.cagrModel.scenarios.base);
-			if (baseReturn != null && baseReturn < 15) {
+			const up30d = data.screener.realityChecks?.revisions?.up30d ?? 0;
+			const down30d = data.screener.realityChecks?.revisions?.down30d ?? 0;
+			const effectiveHurdle = computeEffectiveHurdle(up30d, down30d);
+			if (baseReturn != null && baseReturn < effectiveHurdle) {
 				errors.push(
-					`Screener PASS but base return ${baseReturn}% < 15% hurdle (valuation/return mismatch)`
+					`Screener PASS but base return ${baseReturn}% < ${effectiveHurdle}% hurdle (valuation/return mismatch)`
 				);
 			}
 		}

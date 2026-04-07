@@ -2,72 +2,70 @@
 	"ticker": "ZTS",
 	"name": "Zoetis",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Global monopoly in animal health/vaccines. No insurance price caps equals incredible pricing power.",
 	"bullCase": "Zoetis is the global leader in animal health medicines and vaccines — a $70B market growing 6-7% annually with no generic substitution risk in veterinary biologics. Librela (monoclonal antibody for osteoarthritis pain in dogs) is the fastest-growing product launch in animal health history. The pet humanization trend drives premiumization of veterinary care globally.",
 	"bearCase": "Zoetis has de-rated from 35-40x to 16x forward PE as growth slowed from 15% to 12-14% EPS. Competition in the monoclonal antibody space (Elanco's Credelio, others) could pressure Librela margins. Livestock segment is directly exposed to agricultural commodity cycles and is structurally less attractive than companion animal.",
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.02,
+		"ttmEPS": 6.01,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "17%",
-			"base": "35%",
-			"bull": "70%"
+			"bear": "12%",
+			"base": "30%",
+			"bull": "63%"
 		}
 	},
-	"currentPrice": "$113.35",
-	"marketCap": "$50.0B USD",
+	"currentPrice": "$117.94",
+	"marketCap": "$52.0B USD",
 	"valuation": {
-		"trailingPE": 18.8,
-		"forwardPE": 15,
-		"evEbitda": 13.5,
-		"evFcf": 30.6
+		"trailingPE": 19.6,
+		"forwardPE": 15.6,
+		"evEbitda": 14,
+		"evFcf": 31.7
 	},
 	"metrics": {
 		"roe": "66.0%",
 		"fcfMargin": "~19%",
-		"fcfYield": "~4%",
+		"fcfYield": "~3%",
 		"netDebtEbitda": "1.7x",
 		"ruleOf40": "22%",
-		"beta": "0.95",
+		"beta": "0.97",
 		"revenueGrowth": "3.0%",
-		"roic": "5.1%",
+		"roic": "4.9%",
 		"interestCoverage": "7.9x"
 	},
 	"consensus": {
 		"yahoo": "$151"
 	},
 	"targetPrice": "$151",
-	"expectedCAGR": "17% - 70%",
+	"expectedCAGR": "12% - 63%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.96,
-		"signal": "DEPLOY",
+		"score": 1,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 13.5,
+			"multiple": 14,
 			"cvStock": 0.017,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 35% ≥ 20% and stabilized",
+		"note": "hasLikelyValueFloor: QCS 10.33 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 113.35,
-				"price6mAgo": 143.06,
-				"price1mAgo": 128.96,
+				"price": 117.94,
+				"price6mAgo": 145.36,
+				"price1mAgo": 122.23,
 				"low3m": 113.29,
-				"return6m": -20.8,
-				"return1m": -12.1,
+				"return6m": -18.9,
+				"return1m": -3.5,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 3
+				"up30d": 2,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 5.5,
@@ -75,22 +73,22 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.07
+		"secondaryScore": 1.11
 	},
-	"lastUpdated": "2026-03-28T23:03:11.757Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.3,
+	"lastUpdated": "2026-04-05T07:21:40.158Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 1.14,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.33,
-		"totalScore": 9.67,
+		"revisionsScore": 0.33,
+		"totalScore": 10.33,
 		"raw": {
 			"avgSurprisePct": 6.31,
-			"netInsiderShares": 48831,
+			"netInsiderShares": 49575,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
+			"upRevisions": 2,
+			"downRevisions": 1,
 			"totalAnalysts": 15
 		}
 	},
@@ -109,5 +107,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$152.91"
+	"targetPriceAlternative": "$152.91",
+	"forwardEstimates": {
+		"2026": {
+			"high": 7.05,
+			"low": 6.99,
+			"average": 7.0269
+		},
+		"2027": {
+			"high": 7.83,
+			"low": 7.32,
+			"average": 7.54387
+		}
+	}
 }

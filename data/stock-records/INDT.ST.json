@@ -2,64 +2,62 @@
 	"ticker": "INDT.ST",
 	"name": "Indutrade",
 	"group": "Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "Swedish serial acquirer of niche B2B industrial tech. Extremely consistent 15%+ EPS compounder.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 7.03,
-		"dividendYield": "2%",
+		"ttmEPS": 7.04,
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "29%",
-			"bull": "58%"
+			"bear": "10%",
+			"base": "24%",
+			"bull": "52%"
 		}
 	},
-	"currentPrice": "206 SEK",
-	"marketCap": "74.9B SEK",
+	"currentPrice": "211 SEK",
+	"marketCap": "77.0B SEK",
 	"valuation": {
-		"trailingPE": 29.2,
-		"forwardPE": 22.9,
-		"evEbitda": 16.8,
-		"evFcf": 24.3
+		"trailingPE": 30,
+		"forwardPE": 23.6,
+		"evEbitda": 17.2,
+		"evFcf": 24.9
 	},
 	"metrics": {
 		"roe": "15.2%",
 		"fcfMargin": "~11%",
-		"fcfYield": "~5%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "1.5x",
 		"ruleOf40": "9%",
-		"beta": "1.34",
+		"beta": "1.28",
 		"revenueGrowth": "-1.3%",
-		"roic": "4.9%",
+		"roic": "4.7%",
 		"interestCoverage": "9.2x"
 	},
 	"consensus": {
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "14% - 58%",
+	"expectedCAGR": "10% - 52%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.12,
+		"score": 1.15,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 16.8,
-			"cvStock": 0.051,
+			"multiple": 17.2,
+			"cvStock": 0.05,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 205.6,
-				"price6mAgo": 216.8,
-				"price1mAgo": 226.2,
+				"price": 211.4,
+				"price6mAgo": 235,
+				"price1mAgo": 219.2,
 				"low3m": 194,
-				"return6m": -5.2,
-				"return1m": -9.1,
+				"return6m": -10,
+				"return1m": -3.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -73,11 +71,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.53
+		"secondaryScore": 1.57
 	},
-	"lastUpdated": "2026-03-28T23:02:53.062Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 1.05,
+	"lastUpdated": "2026-04-05T07:21:23.728Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 0.91,
 	"qcs": {
 		"earningsScore": 0.14,
 		"flowScore": 0,
@@ -97,7 +95,7 @@
 	"description": "Indutrade AB (publ) manufactures, develops, and sells components, systems, and services to various industries worldwide.",
 	"analystTargets": {
 		"low": 230,
-		"mean": 260.43,
+		"mean": 259.71,
 		"high": 320
 	},
 	"analystConsensus": {
@@ -108,5 +106,17 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 10.17,
+			"low": 8.17,
+			"average": 9.55974
+		},
+		"2027": {
+			"high": 11.27555,
+			"low": 9.15,
+			"average": 10.5646
+		}
+	}
 }

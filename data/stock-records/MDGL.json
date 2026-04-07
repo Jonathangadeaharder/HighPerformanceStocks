@@ -1,0 +1,107 @@
+{
+	"ticker": "MDGL",
+	"name": "Madrigal Pharmaceuticals",
+	"group": "Biotech",
+	"cagrModel": {
+		"epsGrowth": "-10%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "-3%",
+			"base": "22%",
+			"bull": "76%"
+		}
+	},
+	"currentPrice": "$546.89",
+	"marketCap": "$12.5B USD",
+	"valuation": {
+		"forwardPE": 42.7,
+		"evFcf": -103.5,
+		"evEbitda": -39.9
+	},
+	"metrics": {
+		"roe": "-42.5%",
+		"fcfMargin": "~-12%",
+		"fcfYield": "~-1%",
+		"netDebtEbitda": "Net cash",
+		"ruleOf40": "199%",
+		"beta": "-1.01",
+		"revenueGrowth": "210.8%",
+		"roic": "-1.6%"
+	},
+	"consensus": {
+		"yahoo": "$668.57"
+	},
+	"targetPrice": "$668.57",
+	"analystTargets": {
+		"low": 529,
+		"mean": 668.57,
+		"high": 964
+	},
+	"expectedCAGR": "-3% - 76%",
+	"expectedVolatility": "~45%",
+	"sharpeRatio": 0.71,
+	"screener": {
+		"engine": "fPERG",
+		"score": -5.33,
+		"signal": "FLAG FOR MANUAL REVIEW",
+		"inputs": {
+			"growth": -10,
+			"multipleType": "Forward P/E",
+			"multiple": 42.7,
+			"cvStock": 0.228,
+			"riskMultiplier": 1.247
+		},
+		"note": "Earnings miss > 100% broke P/E model structure.",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 546.89,
+				"price6mAgo": 442.31,
+				"price1mAgo": 439.34,
+				"low3m": 416.21,
+				"return6m": 23.6,
+				"return1m": 24.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": -192.2,
+				"quarter": "2025-12"
+			}
+		}
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": -5,
+		"raw": {
+			"avgSurprisePct": -70.58,
+			"netInsiderShares": 80423,
+			"instFlowTrend": "negative",
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "Madrigal Pharmaceuticals, Inc., a biopharmaceutical company, focuses on delivering novel therapeutics for metabolic dysfunction-associated steatohepatitis (MASH) in the United States.",
+	"lastUpdated": "2026-04-05T07:21:27.924Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": -0.6,
+			"low": -9.7,
+			"average": -5.782
+		},
+		"2027": {
+			"high": 17.85,
+			"low": 6.16,
+			"average": 12.794
+		}
+	}
+}

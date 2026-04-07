@@ -2,104 +2,92 @@
 	"ticker": "AVGO",
 	"name": "Broadcom",
 	"group": "AI & Semiconductors",
-	"confidence": "low",
-	"confidenceReason": "Flawless dual-engine: AI ASICs + VMware recurring revenue. 41.5% upside to $467.62 target. Sharpe 0.15. Superior scale vs MRVL.",
-	"marketCap": "$1425.6B USD",
-	"sharpeRatio": 1.31,
-	"expectedCAGR": "21% - 111%",
-	"ttmEPS": 7.07,
-	"scenarios": {
-		"bear": "8%",
-		"base": "13%",
-		"bull": "18%"
-	},
+	"marketCap": "$1491.4B USD",
+	"sharpeRatio": 1.16,
+	"expectedCAGR": "15% - 101%",
 	"metrics": {
 		"fcfMargin": "~37%",
 		"fcfYield": "~2%",
-		"roic": "2.0%",
+		"roic": "1.9%",
 		"roe": "33.4%",
-		"netDebtEbitda": "0.8x",
-		"ruleOf40": "54%",
-		"beta": "1.26",
-		"revenueGrowth": "16.4%",
-		"interestCoverage": "16.7x"
+		"netDebtEbitda": "1.4x",
+		"ruleOf40": "67%",
+		"beta": "1.25",
+		"revenueGrowth": "29.5%",
+		"interestCoverage": "10.2x"
 	},
 	"targetPrice": "$471.55",
-	"dcfFairValue": "$340.27 (Current $330.48)",
 	"bullCase": "A flawless dual-engine compounder. It combines the hyper-growth velocity of custom AI hardware (ASICs/TPUs) with the high-margin, sticky recurring software revenue from VMware. Offers superior absolute scale and profitability compared to Marvell.",
 	"bearCase": "Heavy reliance on a few massive hyperscaler clients (like Google) for custom silicon revenues creates customer concentration risk.",
-	"currentPrice": "$300.68",
+	"currentPrice": "$314.43",
 	"consensus": {
 		"tipranks": "$460",
 		"yahoo": "$471.55",
 		"stockanalysis": "$431"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.14,
-		"epsGrowth": "35%",
+		"ttmEPS": 5.13,
+		"epsGrowth": "57%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "21%",
-			"base": "58%",
-			"bull": "111%"
+			"bear": "15%",
+			"base": "51%",
+			"bull": "101%"
 		},
 		"basis": "Non-GAAP EPS (Excluding VMware amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-03-28T23:02:45.891Z",
+	"lastUpdated": "2026-04-07T11:23:06.316Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.15,
-		"signal": "DEPLOY",
+		"engine": "fPERG",
+		"score": 0.45,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 35,
-			"multipleType": "EV/EBITDA",
-			"multiple": 39.1,
+			"growth": 57,
+			"multipleType": "Forward P/E",
+			"multiple": 17.6,
 			"cvStock": 0.109,
 			"riskMultiplier": 1.001
 		},
-		"note": "DEPLOY override: base CAGR 58% ≥ 20% and stabilized (CYCLICAL EPS)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 300.68,
-				"price6mAgo": 327.9,
-				"price1mAgo": 318.82,
-				"low3m": 295.3,
-				"return6m": -8.3,
-				"return1m": -5.7,
-				"near3mLow": true
+				"price": 314.43,
+				"price6mAgo": 336.41,
+				"price1mAgo": 345.75,
+				"low3m": 289.96,
+				"return6m": -6.5,
+				"return1m": -9.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 36,
+				"up30d": 39,
 				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 1.3,
 				"quarter": "2026-01"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.5
+		}
 	},
 	"valuation": {
-		"trailingPE": 58.5,
-		"forwardPE": 16.9,
-		"evEbitda": 39.1,
-		"evFcf": 57
+		"trailingPE": 61.3,
+		"forwardPE": 17.6,
+		"evEbitda": 41.4,
+		"evFcf": 60.4
 	},
-	"expectedVolatility": "~47%",
+	"expectedVolatility": "~46%",
 	"qcs": {
 		"earningsScore": 0.72,
 		"flowScore": -5,
-		"revisionsScore": 4.55,
-		"totalScore": 0.27,
+		"revisionsScore": 4.77,
+		"totalScore": 0.49,
 		"raw": {
 			"avgSurprisePct": 1.97,
 			"netInsiderShares": -471527,
 			"instFlowTrend": "negative",
-			"upRevisions": 40,
+			"upRevisions": 42,
 			"downRevisions": 0,
 			"totalAnalysts": 44
 		}
@@ -119,5 +107,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$435.30",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 13.31,
+			"low": 9.62,
+			"average": 11.34687
+		},
+		"2027": {
+			"high": 21.13585,
+			"low": 13.35,
+			"average": 17.83957
+		}
+	}
 }

@@ -2,8 +2,6 @@
 	"ticker": "DSG.TO",
 	"name": "Descartes Systems",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Logistics/supply chain software serial acquirer (similar to CSU focused on global trade).",
 	"bullCase": "Descartes holds a near-monopoly position in global logistics software (customs, routing, compliance), with 32%+ FCF margins and a serial acquisition model. A 20x exit P/E significantly undervalues an asset-light SaaS compounder with captive government-agency and logistics-operator clients.",
 	"bearCase": "Organic revenue growth of 8-10% limits EPS expansion without meaningful acquisitions. A global trade slowdown (tariffs, recession) would hit volumes and depress the ARR base. The 20x exit P/E leaves no cushion if the market reclassifies it as an industrial.",
 	"cagrModel": {
@@ -12,13 +10,13 @@
 		"ttmEPS": 2.56,
 		"dividendYield": "0%"
 	},
-	"currentPrice": "C$96.72",
-	"marketCap": "C$8.3B",
+	"currentPrice": "C$99.49",
+	"marketCap": "C$8.6B",
 	"valuation": {
-		"trailingPE": 37.5,
-		"forwardPE": 21.6,
-		"evEbitda": 25.9,
-		"evFcf": 33.7
+		"trailingPE": 38.3,
+		"forwardPE": 22.2,
+		"evEbitda": 26.7,
+		"evFcf": 34.8
 	},
 	"metrics": {
 		"roe": "10.9%",
@@ -26,33 +24,33 @@
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "48%",
-		"beta": "0.27",
+		"beta": "0.19",
 		"revenueGrowth": "15.1%",
-		"roic": "3.3%",
+		"roic": "3.2%",
 		"interestCoverage": "668.6x"
 	},
 	"consensus": {},
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.98,
+		"score": 2.05,
 		"signal": "WAIT",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 33.7,
+			"multiple": 34.8,
 			"cvStock": 0.072,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 35.2%",
+		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 96.72,
-				"price6mAgo": 132.77,
-				"price1mAgo": 92.14,
+				"price": 99.49,
+				"price6mAgo": 131.98,
+				"price1mAgo": 97.89,
 				"low3m": 85.26,
-				"return6m": -27.2,
-				"return1m": 5,
+				"return6m": -24.6,
+				"return1m": 1.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -66,9 +64,9 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.27
+		"secondaryScore": 1.31
 	},
-	"lastUpdated": "2026-03-28T23:02:49.199Z",
+	"lastUpdated": "2026-04-05T07:21:19.535Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {
@@ -94,5 +92,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2027": {
+			"high": 3.25,
+			"low": 2.32,
+			"average": 2.80574
+		},
+		"2028": {
+			"high": 3.66,
+			"low": 2.73,
+			"average": 3.22013
+		}
+	}
 }

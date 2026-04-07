@@ -2,26 +2,24 @@
 	"ticker": "NFLX",
 	"name": "Netflix",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Won the streaming wars. Transitioned from high-burn content spending to predictable, compounding free cash flow and advertising tier optionality.",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "Non-GAAP EPS / Cash FCF parity",
 		"ttmEPS": 2.53,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-14%",
-			"base": "21%",
-			"bull": "62%"
+			"bear": "-19%",
+			"base": "15%",
+			"bull": "53%"
 		}
 	},
-	"currentPrice": "$93.43",
-	"marketCap": "$396.3B USD",
+	"currentPrice": "$98.66",
+	"marketCap": "$418.5B USD",
 	"valuation": {
-		"trailingPE": 36.9,
-		"forwardPE": 24.2,
-		"evEbitda": 29.5,
-		"evFcf": 16.2
+		"trailingPE": 39,
+		"forwardPE": 25.6,
+		"evEbitda": 31.1,
+		"evFcf": 17.1
 	},
 	"metrics": {
 		"roe": "42.8%",
@@ -29,45 +27,44 @@
 		"fcfYield": "~6%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "73%",
-		"beta": "1.71",
+		"beta": "1.67",
 		"revenueGrowth": "17.6%",
-		"roic": "2.5%",
+		"roic": "2.4%",
 		"interestCoverage": "14.6x"
 	},
 	"consensus": {
 		"yahoo": "$113.43"
 	},
 	"targetPrice": "$113.43",
-	"expectedCAGR": "-14% - 62%",
+	"expectedCAGR": "-19% - 53%",
 	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.57,
+	"sharpeRatio": 0.37,
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.9,
-		"signal": "DEPLOY",
+		"score": 0.95,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/FCF",
-			"multiple": 16.2,
+			"multiple": 17.1,
 			"cvStock": 0.07,
 			"riskMultiplier": 1
 		},
-		"note": "DEPLOY override: base CAGR 21% ≥ 20% and stabilized",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 93.43,
-				"price6mAgo": 120.64,
-				"price1mAgo": 97.09,
+				"price": 98.66,
+				"price6mAgo": 116.33,
+				"price1mAgo": 99.17,
 				"low3m": 75.01,
-				"return6m": -22.6,
-				"return1m": -3.8,
+				"return6m": -15.2,
+				"return1m": -0.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 8,
-				"down30d": 1
+				"up30d": 2,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 1.4,
@@ -75,11 +72,11 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.34
+		"secondaryScore": 1.42
 	},
 	"bullCase": "Netflix won the streaming wars. It is the only pure-play streaming platform with global scale (300M+ subscribers), consistent content investment discipline, and a growing advertising tier that creates a new high-margin revenue stream. Live sports and events (NFL, WWE) are extending the addressable audience. FCF has inflected to $7B+ annually.",
 	"bearCase": "At 24x forward PE for an 18% EPS grower, Netflix is not cheap. Subscriber growth in developed markets is approaching saturation — the next growth leg requires LatAm/Asia penetration at lower ARPU. The advertising tier depends on Netflix building an ad tech stack from scratch. Password sharing re-enforcement tailwind is exhausted in 2025-2026.",
-	"lastUpdated": "2026-03-28T23:03:02.037Z",
+	"lastUpdated": "2026-04-05T07:21:30.212Z",
 	"intrinsicValue": {
 		"dcf": 110.8,
 		"date": "2026-03-28",
@@ -88,15 +85,15 @@
 	"qcs": {
 		"earningsScore": 0.67,
 		"flowScore": 0,
-		"revisionsScore": 0.37,
-		"totalScore": 1.04,
+		"revisionsScore": -0.12,
+		"totalScore": 0.55,
 		"raw": {
 			"avgSurprisePct": 1.17,
 			"netInsiderShares": 759984,
 			"instFlowTrend": "negative",
-			"upRevisions": 5,
+			"upRevisions": 1,
 			"downRevisions": 2,
-			"totalAnalysts": 41
+			"totalAnalysts": 42
 		}
 	},
 	"description": "Netflix, Inc. provides entertainment services worldwide.",
@@ -114,5 +111,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$114.55",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 3.85,
+			"low": 2.88,
+			"average": 3.16764
+		},
+		"2027": {
+			"high": 4.46,
+			"low": 3.39,
+			"average": 3.84269
+		}
+	}
 }

@@ -2,70 +2,67 @@
 	"ticker": "CRWD",
 	"name": "CrowdStrike Holdings",
 	"group": "Cybersecurity",
-	"confidence": "medium",
-	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
-	"marketCap": "$93.7B USD",
-	"sharpeRatio": 0.91,
-	"expectedCAGR": "0% - 91%",
-	"expectedVolatility": "~45%",
+	"marketCap": "$101.2B USD",
+	"sharpeRatio": 0.68,
+	"expectedCAGR": "-8% - 77%",
+	"expectedVolatility": "~44%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 59.8,
+		"forwardPE": 64.7,
 		"pegRatio": null,
 		"evEbitda": null,
-		"evFcf": 55.7
+		"evFcf": 60.4
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~2%",
-		"roic": "1.8%",
+		"roic": "1.7%",
 		"roe": "-4.1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "57%",
-		"beta": "1.12",
+		"beta": "1.07",
 		"revenueGrowth": "23.3%"
 	},
-	"targetPrice": "$490.48",
+	"targetPrice": "$489.86",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$369.58",
+	"currentPrice": "$399.12",
 	"consensus": {
 		"tipranks": "$550",
-		"yahoo": "$490.48"
+		"yahoo": "$489.86"
 	},
 	"cagrModel": {
 		"ttmEPS": 3.79,
 		"epsGrowth": "32%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "33%",
-			"bull": "91%"
+			"bear": "-8%",
+			"base": "23%",
+			"bull": "77%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-03-28T23:02:47.854Z",
+	"lastUpdated": "2026-04-05T07:21:18.490Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.75,
-		"signal": "DEPLOY",
+		"score": 1.9,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "EV/FCF",
-			"multiple": 55.7,
+			"multiple": 60.4,
 			"cvStock": 0.087,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 32.7% (DEPLOY override: base CAGR 33% ≥ 20% and stabilized)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 369.58,
-				"price6mAgo": 488.45,
-				"price1mAgo": 384.86,
+				"price": 399.12,
+				"price6mAgo": 495.95,
+				"price1mAgo": 426.16,
 				"low3m": 342.72,
-				"return6m": -24.3,
-				"return1m": -4,
+				"return6m": -19.5,
+				"return1m": -6.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,26 +76,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.88
+		"secondaryScore": 2.03
 	},
 	"qcs": {
 		"earningsScore": 3.01,
 		"flowScore": 0,
-		"revisionsScore": 2.26,
-		"totalScore": 5.27,
+		"revisionsScore": 2.22,
+		"totalScore": 5.23,
 		"raw": {
 			"avgSurprisePct": 6.55,
-			"netInsiderShares": 95478,
+			"netInsiderShares": 138477,
 			"instFlowTrend": "negative",
 			"upRevisions": 35,
 			"downRevisions": 11,
-			"totalAnalysts": 53
+			"totalAnalysts": 54
 		}
 	},
 	"description": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally.",
 	"analystTargets": {
 		"low": 368,
-		"mean": 490.48,
+		"mean": 489.86,
 		"high": 706
 	},
 	"analystConsensus": {
@@ -110,5 +107,17 @@
 		"strongSell": 3
 	},
 	"targetPriceAlternative": "$506.26",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2027": {
+			"high": 5,
+			"low": 4.79,
+			"average": 4.85741
+		},
+		"2028": {
+			"high": 7.74,
+			"low": 5.6,
+			"average": 6.17242
+		}
+	}
 }

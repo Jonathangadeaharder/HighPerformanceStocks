@@ -2,17 +2,15 @@
 	"ticker": "SHOP",
 	"name": "Shopify",
 	"group": "High-Growth Tech",
-	"confidence": "low",
-	"confidenceReason": "E-commerce infrastructure leader with 26-28% adjusted EPS growth and strong operating leverage, though valuation remains premium.",
-	"marketCap": "$146.0B USD",
-	"sharpeRatio": 0.57,
-	"expectedCAGR": "-2% - 79%",
-	"expectedVolatility": "~60%",
+	"marketCap": "$154.3B USD",
+	"sharpeRatio": 0.46,
+	"expectedCAGR": "-7% - 69%",
+	"expectedVolatility": "~57%",
 	"valuation": {
-		"trailingPE": 119,
-		"forwardPE": 48.6,
-		"evEbitda": 72.7,
-		"evFcf": 109
+		"trailingPE": 127.2,
+		"forwardPE": 51.4,
+		"evEbitda": 77,
+		"evFcf": 115.5
 	},
 	"metrics": {
 		"roe": "9.8%",
@@ -20,7 +18,7 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "42%",
-		"beta": "2.9",
+		"beta": "2.82",
 		"revenueGrowth": "30.6%",
 		"roic": "1.4%",
 		"interestCoverage": "186.6x"
@@ -28,43 +26,43 @@
 	"targetPrice": "$160.15",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$111.85",
+	"currentPrice": "$118.25",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-2%",
-			"base": "43%",
-			"bull": "79%"
+			"bear": "-7%",
+			"base": "35%",
+			"bull": "69%"
 		},
 		"ttmEPS": 1.89,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:05.807Z",
+	"lastUpdated": "2026-04-05T07:21:34.217Z",
 	"consensus": {
 		"yahoo": "$160.15"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.37,
-		"signal": "DEPLOY",
+		"score": 4.63,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "EV/FCF",
-			"multiple": 109,
+			"multiple": 115.5,
 			"cvStock": 0.153,
 			"riskMultiplier": 1.042
 		},
-		"note": "hasLikelyValueFloor: analyst upside 43.2% (DEPLOY override: base CAGR 43% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: analyst upside 35.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 111.85,
-				"price6mAgo": 149,
-				"price1mAgo": 119.38,
+				"price": 118.25,
+				"price6mAgo": 164.5,
+				"price1mAgo": 134.79,
 				"low3m": 104.92,
-				"return6m": -24.9,
-				"return1m": -6.3,
+				"return6m": -28.1,
+				"return1m": -12.3,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +76,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.95
+		"secondaryScore": 2.06
 	},
 	"intrinsicValue": {
 		"dcf": 18,
@@ -114,5 +112,17 @@
 		"strongSell": 1
 	},
 	"targetPriceAlternative": "$163.38",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 2.24,
+			"low": 1.32,
+			"average": 1.82903
+		},
+		"2027": {
+			"high": 3.05765,
+			"low": 1.65,
+			"average": 2.30073
+		}
+	}
 }

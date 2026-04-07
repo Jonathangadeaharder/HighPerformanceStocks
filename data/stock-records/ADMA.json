@@ -1,0 +1,112 @@
+{
+	"ticker": "ADMA",
+	"name": "ADMA Biologics",
+	"group": "Biotech",
+	"cagrModel": {
+		"epsGrowth": "33%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"ttmEPS": 0.6,
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "85%",
+			"base": "156%",
+			"bull": "226%"
+		}
+	},
+	"currentPrice": "$9.19",
+	"marketCap": "$2.2B USD",
+	"valuation": {
+		"trailingPE": 15.3,
+		"forwardPE": 6.7,
+		"evFcf": -2420.1,
+		"evEbitda": 220.2
+	},
+	"metrics": {
+		"roe": "35.6%",
+		"fcfMargin": "~-4%",
+		"fcfYield": "~-1%",
+		"netDebtEbitda": "209.2x",
+		"ruleOf40": "12%",
+		"beta": "0.82",
+		"revenueGrowth": "15.9%",
+		"roic": "0.1%",
+		"interestCoverage": "0.0x"
+	},
+	"consensus": {
+		"yahoo": "$23.50"
+	},
+	"targetPrice": "$23.50",
+	"analystTargets": {
+		"low": 17,
+		"mean": 23.5,
+		"high": 30
+	},
+	"expectedCAGR": "85% - 226%",
+	"expectedVolatility": "~58%",
+	"sharpeRatio": 2.6,
+	"screener": {
+		"engine": "fEVG",
+		"score": 6.76,
+		"signal": "WAIT",
+		"inputs": {
+			"growth": 33,
+			"multipleType": "EV/EBITDA",
+			"multiple": 220.2,
+			"cvStock": 0,
+			"riskMultiplier": 1
+		},
+		"note": "hasLikelyValueFloor: analyst upside 155.7% + QCS 8.06",
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 9.19,
+				"price6mAgo": 14.07,
+				"price1mAgo": 15.7,
+				"low3m": 7.21,
+				"return6m": -34.7,
+				"return1m": -41.5,
+				"near3mLow": false
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
+			},
+			"earningsSurprise": {
+				"surprise": 7.8,
+				"quarter": "2025-12"
+			}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.21
+	},
+	"qcs": {
+		"earningsScore": -1.94,
+		"flowScore": 5,
+		"revisionsScore": 5,
+		"totalScore": 8.06,
+		"raw": {
+			"avgSurprisePct": -3.87,
+			"netInsiderShares": 482300,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 1
+		}
+	},
+	"description": "ADMA Biologics, Inc., a biopharmaceutical company, develops, manufactures, and markets specialty plasma-derived biologics for the treatment of immune deficiencies and infectious diseases in the Uni...",
+	"lastUpdated": "2026-04-05T07:21:12.399Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.04,
+			"low": 1.04,
+			"average": 1.04
+		},
+		"2027": {
+			"high": 1.38,
+			"low": 1.38,
+			"average": 1.38
+		}
+	}
+}

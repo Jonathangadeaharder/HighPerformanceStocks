@@ -2,8 +2,6 @@
 	"ticker": "MTRN",
 	"name": "Materion",
 	"group": "Materials & Infrastructure",
-	"confidence": "medium",
-	"confidenceReason": "Niche advanced materials provider with strong exposure to aerospace, defense, and semiconductor end markets.",
 	"targetPrice": "$178.33",
 	"bullCase": "Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.",
 	"bearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.",
@@ -13,37 +11,37 @@
 		"dividendYield": "0%",
 		"ttmEPS": 3.58,
 		"scenarios": {
-			"bear": "20%",
-			"base": "26%",
-			"bull": "31%"
+			"bear": "14%",
+			"base": "20%",
+			"bull": "24%"
 		}
 	},
-	"currentPrice": "$141.39",
-	"marketCap": "$2.9B USD",
+	"currentPrice": "$149.12",
+	"marketCap": "$3.1B USD",
 	"consensus": {
 		"yahoo": "$178.33"
 	},
-	"expectedVolatility": "~44%",
+	"expectedVolatility": "~43%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.7,
+		"score": 1.78,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 11,
 			"multipleType": "EV/EBITDA",
-			"multiple": 18.7,
+			"multiple": 19.6,
 			"cvStock": 0.035,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 141.39,
-				"price6mAgo": 118.53,
-				"price1mAgo": 166.59,
-				"low3m": 124.32,
-				"return6m": 19.3,
-				"return1m": -15.1,
+				"price": 149.12,
+				"price6mAgo": 125.91,
+				"price1mAgo": 150.4,
+				"low3m": 125.02,
+				"return6m": 18.4,
+				"return1m": -0.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -57,14 +55,14 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.75
+		"secondaryScore": 1.85
 	},
-	"lastUpdated": "2026-03-28T23:03:00.004Z",
+	"lastUpdated": "2026-04-05T07:21:30.022Z",
 	"valuation": {
-		"trailingPE": 39.5,
-		"forwardPE": 19.2,
-		"evEbitda": 18.7,
-		"evFcf": 140.6
+		"trailingPE": 41.7,
+		"forwardPE": 20.3,
+		"evEbitda": 19.6,
+		"evFcf": 147.1
 	},
 	"metrics": {
 		"roe": "8.3%",
@@ -72,13 +70,13 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "2.8x",
 		"ruleOf40": "13%",
-		"beta": "0.87",
+		"beta": "0.91",
 		"revenueGrowth": "12.1%",
-		"roic": "3.0%",
+		"roic": "2.8%",
 		"interestCoverage": "6.2x"
 	},
-	"expectedCAGR": "20% - 31%",
-	"sharpeRatio": 0.48,
+	"expectedCAGR": "14% - 24%",
+	"sharpeRatio": 0.34,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
@@ -107,5 +105,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 6.4,
+			"low": 6.25,
+			"average": 6.314
+		},
+		"2027": {
+			"high": 7.91,
+			"low": 6.87,
+			"average": 7.346
+		}
+	}
 }

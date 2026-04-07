@@ -2,18 +2,16 @@
 	"ticker": "MKL",
 	"name": "Markel Group",
 	"group": "The Capital Compounders",
-	"confidence": "medium",
-	"confidenceReason": "Undergoing restructuring, exiting lower-margin reinsurance to boost ROE towards 15%.",
-	"marketCap": "$23.5B USD",
-	"sharpeRatio": 0.3,
-	"expectedCAGR": "1% - 20%",
-	"expectedVolatility": "~20%",
+	"marketCap": "$23.9B USD",
+	"sharpeRatio": 0.21,
+	"expectedCAGR": "-1% - 18%",
+	"expectedVolatility": "~19%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 11,
-		"forwardPE": 14.8,
-		"evFcf": -36.6
+		"trailingPE": 11.2,
+		"forwardPE": 15,
+		"evFcf": -37.3
 	},
 	"metrics": {
 		"roe": "11.8%",
@@ -21,50 +19,50 @@
 		"fcfYield": "~-3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "6%",
-		"beta": "0.77",
+		"beta": "0.79",
 		"revenueGrowth": "9.9%",
-		"roic": "12.2%",
+		"roic": "12.0%",
 		"interestCoverage": "12.8x"
 	},
 	"targetPrice": "$2085.40",
 	"bullCase": "Markel's ongoing restructuring is bearing fruit as it exits lower-margin reinsurance to focus on highly profitable specialty lines. The 'Markel Ventures' private equity arm provides a robust, non-correlated earnings floor, driving margin expansion.",
 	"bearCase": "Restructuring execution risk remains. If the combined ratio slips above 95%, the compounding math breaks down and the historical premium multiple will face permanent compression.",
-	"currentPrice": "$1867.29",
+	"currentPrice": "$1898.98",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "12%",
-			"bull": "20%"
+			"bear": "-1%",
+			"base": "10%",
+			"bull": "18%"
 		},
 		"epsGrowth": "8%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline NOTE: screener engine should be fPERG/tPERG as dividend yield is 0%; totalReturn routing appears to be a data pipeline error — re-run update-data to recalculate.",
-		"ttmEPS": 169.18
+		"ttmEPS": 169.2
 	},
-	"lastUpdated": "2026-03-28T23:02:58.850Z",
+	"lastUpdated": "2026-04-05T07:21:28.982Z",
 	"consensus": {
 		"yahoo": "$2085.40"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.85,
+		"score": 1.88,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 8,
 			"multipleType": "Forward P/E",
-			"multiple": 14.8,
+			"multiple": 15,
 			"cvStock": 0.047,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 1867.29,
-				"price6mAgo": 1900.55,
-				"price1mAgo": 2080.8,
+				"pass": true,
+				"price": 1898.98,
+				"price6mAgo": 1957.98,
+				"price1mAgo": 2019.81,
 				"low3m": 1863.07,
-				"return6m": -1.8,
-				"return1m": -10.3,
+				"return6m": -3,
+				"return1m": -6,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -107,5 +105,17 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$2100.00"
+	"targetPriceAlternative": "$2100.00",
+	"forwardEstimates": {
+		"2026": {
+			"high": 122.31,
+			"low": 109.55,
+			"average": 115.928
+		},
+		"2027": {
+			"high": 138.53,
+			"low": 114.75,
+			"average": 126.384
+		}
+	}
 }

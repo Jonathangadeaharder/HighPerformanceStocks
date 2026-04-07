@@ -1,9 +1,7 @@
 {
-	"ticker": "XYZ",
+	"ticker": "SQ",
 	"name": "Block Inc.",
 	"group": "Fintech",
-	"confidence": "cut",
-	"confidenceReason": "Fails Rule of 40 (~29.33%). Razor-thin 5.4% net margin. Desperate 40% headcount cut is defensive bloat-cutting, not offensive compounding.",
 	"marketCap": "$34.0B USD",
 	"sharpeRatio": 0.86,
 	"expectedCAGR": "-9% - 113%",

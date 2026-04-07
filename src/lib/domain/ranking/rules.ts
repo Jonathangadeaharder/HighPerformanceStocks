@@ -1,11 +1,18 @@
+import { ENGINE_THRESHOLDS } from '$lib/domain/screener/types';
 import type { DeploymentInfo, FindingStock } from '$lib/types/dashboard';
+import { computeEffectiveHurdle } from '$lib/domain/screener/engine';
 
-export const ETF_HURDLE_RETURN = 15;
+export { ETF_HURDLE_RETURN } from '$lib/domain/screener/engine';
 export const BEAR_FLOOR_RETURN = 0;
 export const VALUE_FLOOR_BEAR_RETURN = 5;
 export const VALUE_FLOOR_BASE_RETURN = 25;
 export const VALUE_FLOOR_UPSIDE = 25;
 export const VALUE_FLOOR_MAX_SCORE = 0.65;
+
+function getEffectiveHurdle(stock: FindingStock): number {
+	const revisions = stock.screener?.realityChecks?.revisions;
+	return computeEffectiveHurdle(revisions?.up30d ?? 0, revisions?.down30d ?? 0);
+}
 
 /**
  * Determines if a stock likely has a "value floor" established.
@@ -32,13 +39,19 @@ export function hasLikelyValueFloor(stock: FindingStock): boolean {
  * Rules for stocks that PASS the primary screener.
  */
 export function deploymentForPass(stock: FindingStock): DeploymentInfo {
-	const base = stock.baseCagr ?? -999;
-	const bear = stock.bearCagr ?? -999;
-	const basePass = base >= ETF_HURDLE_RETURN;
-	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
-	const bearPass = bear >= BEAR_FLOOR_RETURN;
+	const base = stock.baseCagr;
+	const bear = stock.bearCagr;
 
-	if (basePass && stabPass && bearPass) {
+	if (base == null || base === -999 || bear == null || bear === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
+	}
+
+	const hurdle = getEffectiveHurdle(stock);
+
+	const basePass = base >= hurdle;
+	const stabPass = stock.screener?.realityChecks?.stabilization?.pass ?? false;
+
+	if (basePass && stabPass) {
 		return { status: 'DEPLOY', reason: 'Valuation, forward return, and stabilization all pass.' };
 	}
 
@@ -49,10 +62,10 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (!basePass || !bearPass) {
+	if (!basePass) {
 		return {
 			status: 'FAIL',
-			reason: `Forward return (Base ${base}%, Bear ${bear}%) misses hurdle.`
+			reason: `Forward return (Base ${base}%) misses ${hurdle}% hurdle.`
 		};
 	}
 
@@ -78,7 +91,12 @@ export function deploymentForWait(stock: FindingStock): DeploymentInfo {
 export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 	const score = stock.screener?.score;
 	const note = stock.screener?.note;
-	const base = stock.baseCagr ?? -999;
+	const engine = stock.screener?.engine ?? 'fPERG';
+	const base = stock.baseCagr;
+
+	if (base == null || base === -999) {
+		return { status: 'NO_DATA', reason: 'Missing forward estimates.' };
+	}
 
 	if ((score ?? 0) >= 1.5 && base >= 20) {
 		return {
@@ -87,19 +105,23 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 		};
 	}
 
-	if (score != null && score > 1) {
+	const maxThreshold = ENGINE_THRESHOLDS[engine as keyof typeof ENGINE_THRESHOLDS] ?? 1;
+
+	if (score != null && score > maxThreshold) {
 		return {
 			status: 'FAIL',
-			reason: note ?? `Valuation score ${score} is above the 1.0 buy threshold (lower is better).`
+			reason: note ?? `Valuation score ${score} is above the ${maxThreshold} threshold for ${engine}.`
 		};
 	}
 
-	if (base < ETF_HURDLE_RETURN) {
+	const hurdle = getEffectiveHurdle(stock);
+
+	if (base < hurdle) {
 		return {
 			status: 'FAIL',
 			reason:
 				note ??
-				`Cheap (Score ${score}) but base return ${base}% misses the ${ETF_HURDLE_RETURN}% hurdle.`
+				`Cheap (Score ${score}) but base return ${base}% misses the ${hurdle}% hurdle.`
 		};
 	}
 
@@ -140,7 +162,6 @@ export function assignDeployment(stock: FindingStock): void {
 			};
 			break;
 		}
-		case 'DEPLOY':
 		case 'FLAG FOR MANUAL REVIEW': {
 			stock.deployment = {
 				status: signal,
@@ -149,7 +170,10 @@ export function assignDeployment(stock: FindingStock): void {
 			break;
 		}
 		default: {
-			const _exhaustiveCheck: never = signal;
+			// signal is ScreenerSignal — all variants are handled above.
+			// This branch is unreachable at runtime but guards against future
+			// ScreenerSignal additions that aren't yet handled here.
+			const _exhaustiveCheck: never = signal as never;
 			stock.deployment = {
 				status: 'NO_DATA',
 				reason: `Unknown signal: ${String(_exhaustiveCheck)}`

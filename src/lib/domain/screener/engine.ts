@@ -13,8 +13,18 @@ import { ENGINE_THRESHOLDS } from './types';
 const CV_BENCHMARK = 0.08;
 const TOTAL_RETURN_THRESHOLD = 12;
 const STABILIZATION_LOW_BUFFER = 1.05;
-const ETF_HURDLE_RETURN = 15;
+export const ETF_HURDLE_RETURN = 15;
 const BORDERLINE_WAIT_THRESHOLD = 1.2;
+
+/**
+ * Computes a dynamically adjusted hurdle rate.
+ * Deducts a lag-discount when analysts are overwhelmingly upgrading.
+ */
+export function computeEffectiveHurdle(up30d: number = 0, down30d: number = 0): number {
+	if (up30d >= 10 && up30d >= 2 * down30d) return 10;
+	if (up30d >= 5 && up30d >= 2 * down30d) return 12;
+	return ETF_HURDLE_RETURN;
+}
 
 // --- Component 1: Hyper-Growth Exponential Decay ---
 // Replaces the linear cap with a bounded exponential fade.
@@ -177,20 +187,26 @@ function computeGrowthScore(
 
 	const score = (multiple / effectiveGrowth) * riskMultiplier;
 	const threshold = ENGINE_THRESHOLDS[engine] ?? 1;
+	const waitThreshold = threshold === 1 ? BORDERLINE_WAIT_THRESHOLD : threshold * 1.2;
 
 	let signal: 'PASS' | 'FAIL' | 'WAIT';
+	let note: string | undefined;
+	
 	if (score <= threshold) {
 		signal = 'PASS';
-	} else if (score <= BORDERLINE_WAIT_THRESHOLD) {
+	} else if (score <= waitThreshold) {
 		signal = 'WAIT';
+		note = `Borderline valuation (Score ${score.toFixed(2)} vs ${threshold} limit)`;
 	} else {
 		signal = 'FAIL';
+		note = `Valuation score ${score.toFixed(2)} exceeds ${threshold} limit`;
 	}
 
 	return {
 		engine,
 		score: +score.toFixed(2),
 		signal,
+		...(note ? { note } : {}),
 		inputs: {
 			growth: growthPct,
 			multipleType,
@@ -668,13 +684,13 @@ function applyValueFloorCheck(
 	const qcsScore = stock.qcs?.totalScore;
 	if (qcsScore != null && qcsScore >= 8) {
 		valueFloorReason = valueFloorReason
-			? `${valueFloorReason} + QCS ${qcsScore}`
-			: `QCS ${qcsScore} ≥ 8 (elite quality floor)`;
+			? `${valueFloorReason} & elite quality floor (QCS ${qcsScore})`
+			: `elite quality floor (QCS ${qcsScore})`;
 	}
 
 	if (valueFloorReason !== null) {
 		result.signal = 'WAIT';
-		appendNote(result, `hasLikelyValueFloor: ${valueFloorReason}`);
+		appendNote(result, `Upgraded from FAIL: Protected by ${valueFloorReason}`);
 	}
 }
 
@@ -689,20 +705,12 @@ function applyDeployRejectOverrides(
 	// Mandatory DEPLOY override & Rejection Floors:
 	if (baseCagr == null || result.signal === 'REJECTED') return;
 
-	const stabPass = result.realityChecks?.stabilization?.pass !== false;
-
 	if (baseCagr < 0) {
 		result.signal = 'REJECTED';
 		appendNote(result, `Absolute REJECT: Base CAGR ${baseCagr}% is negative`);
 	} else if (result.signal === 'WAIT' && baseCagr < 15) {
 		result.signal = 'REJECTED';
 		appendNote(result, `REJECT: Stalled at WAIT with base CAGR ${baseCagr}% < 15%`);
-	} else if (result.signal === 'PASS' && baseCagr >= 15 && stabPass) {
-		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 15% and stabilized`);
-	} else if (result.signal === 'WAIT' && baseCagr >= 20 && stabPass) {
-		result.signal = 'DEPLOY';
-		appendNote(result, `DEPLOY override: base CAGR ${baseCagr}% ≥ 20% and stabilized`);
 	}
 }
 
@@ -719,8 +727,8 @@ function evaluateHyperGrowth(
 	if (branch.engine === 'DISQUALIFIED') {
 		return {
 			engine: 'DISQUALIFIED',
-			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			signal: 'WAIT',
+			note: 'Extreme earnings volatility detected. Awaiting stabilization.'
 		};
 	}
 
@@ -739,16 +747,19 @@ function evaluateHyperGrowth(
 	}
 
 	let actualMultiple = branch.multiple;
-	let hallucinationNote = '';
 
 	if (branch.multipleType === FORWARD_PE_LABEL) {
-		const tpe = stock.valuation?.trailingPE;
-		if (tpe != null && tpe > 0 && growthPct > 0) {
-			const impliedFpe = tpe / (1 + growthPct / 100);
-			if (actualMultiple < impliedFpe * 0.8) {
-				actualMultiple = impliedFpe;
-				hallucinationNote = `Data hallucination override: structurally impossible forward PE rectified to computationally sound ~${impliedFpe.toFixed(1)}x`;
+		const eps = stock.cagrModel?.ttmEPS;
+		if ((eps != null && eps <= 0) || actualMultiple <= 0 || Number.isNaN(actualMultiple)) {
+			const fallbackPE = stock.valuation?.trailingPE;
+			if (fallbackPE == null || fallbackPE <= 0 || Number.isNaN(fallbackPE)) {
+				return {
+					engine: branch.engine,
+					signal: 'NO_DATA',
+					note: 'Missing/negative forward PE and no trailing EPS fallback'
+				};
 			}
+			actualMultiple = fallbackPE;
 		}
 	}
 
@@ -760,29 +771,27 @@ function evaluateHyperGrowth(
 		cvStock
 	);
 
-	if (hallucinationNote) {
-		appendNote(result, hallucinationNote);
-	}
-
 	applyPegBoundsCheck(result, actualMultiple, growthPct, branch.multipleType, stock);
 
-	// Extreme Structural Risk Penalty
-	const bearCaseStr = (stock.bearCase ?? '').toLowerCase();
-	if (bearCaseStr.includes('customer concentration') && result.signal === 'PASS') {
-		result.signal = 'WAIT';
-		appendNote(result, 'Signal capped at WAIT due to customer concentration risk');
-	}
+	// Run reality checks early so we can source revision data from result.realityChecks
+	// instead of duplicating the earningsTrend extraction logic.
+	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 
 	const baseCagr = parsePercent(stock.cagrModel?.scenarios?.base);
-	if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
+
+	const up30d = result.realityChecks?.revisions?.up30d ?? 0;
+	const down30d = result.realityChecks?.revisions?.down30d ?? 0;
+	const effectiveHurdle = computeEffectiveHurdle(up30d, down30d);
+
+	if (result.signal === 'PASS' && baseCagr != null && baseCagr < effectiveHurdle) {
 		result.signal = 'FAIL';
-		result.note = `Cheap (${result.score}) but base return ${baseCagr}% misses the ${ETF_HURDLE_RETURN}% hurdle`;
+		appendNote(result, `Cheap (${result.score}) but base return ${baseCagr}% misses the ${effectiveHurdle}% hurdle`);
+	} else if (result.signal === 'PASS' && baseCagr != null && baseCagr < ETF_HURDLE_RETURN) {
+		appendNote(result, `Analyst Lag Override: Hurdle adjusted to ${effectiveHurdle}% due to strong up-revisions`);
 	}
 
 	applyValueFloorCheck(result, stock, rawPrice, summary);
 	applyDeployRejectOverrides(result, stock, baseCagr);
-
-	applyRealityChecks(result, rawPrice, historicalData, summary, stock);
 
 	if (branch.engine !== 'fPERG' && branch.engine !== 'tPERG') {
 		const fpe = stock.valuation?.forwardPE;
@@ -822,7 +831,7 @@ export function computeScreener(
 		return {
 			engine: 'DISQUALIFIED',
 			signal: 'REJECTED',
-			note: 'Binary-outcome biotech breaking EPS compounding rules.'
+			note: 'Extreme earnings volatility detected. Strategically disqualified.'
 		};
 	}
 

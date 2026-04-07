@@ -2,70 +2,68 @@
 	"ticker": "VRSK",
 	"name": "Verisk Analytics",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "The 'FICO of insurance'. Proprietary databases for P&C insurers. Asset-light, massive margins.",
 	"bullCase": "Verisk is the FICO of insurance — the essential data and analytics infrastructure for P&C underwriting. After divesting Energy and Financial Services, it is a pure-play insurance analytics monopoly with 92%+ recurring revenue. ISO/AIR catastrophe modeling is non-substitutable for carrier pricing and reinsurance.",
 	"bearCase": "Verisk's 14x forward PE and 14% EPS growth trajectory are attractive but execution risk exists as the company refocuses post-divestitures. If the P&C insurance market softens significantly, data licensing volumes plateau. Data breach risk for a company holding underwriting data on nearly every US property.",
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.49,
+		"ttmEPS": 6.48,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "27%",
-			"bull": "51%"
+			"bear": "0%",
+			"base": "25%",
+			"bull": "50%"
 		}
 	},
-	"currentPrice": "$182.75",
-	"marketCap": "$25.5B USD",
+	"currentPrice": "$185.08",
+	"marketCap": "$25.8B USD",
 	"valuation": {
-		"trailingPE": 28.2,
-		"forwardPE": 21.3,
-		"evEbitda": 18.8,
-		"evFcf": 27.6
+		"trailingPE": 28.6,
+		"forwardPE": 21.5,
+		"evEbitda": 19,
+		"evFcf": 27.9
 	},
 	"metrics": {
 		"roe": "437.9%",
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
 		"netDebtEbitda": "1.8x",
-		"beta": "0.8",
-		"roic": "5.1%",
+		"beta": "0.82",
+		"roic": "5.0%",
 		"interestCoverage": "5.5x"
 	},
 	"consensus": {
 		"yahoo": "$229.53"
 	},
 	"targetPrice": "$229.53",
-	"expectedCAGR": "1% - 51%",
+	"expectedCAGR": "0% - 50%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.97,
-		"signal": "DEPLOY",
+		"score": 1.99,
+		"signal": "WAIT",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
-			"multiple": 27.6,
+			"multiple": 27.9,
 			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.17 ≥ 8 (elite quality floor) (DEPLOY override: base CAGR 27% ≥ 20% and stabilized)",
+		"note": "hasLikelyValueFloor: QCS 9.72 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 182.75,
-				"price6mAgo": 248.78,
-				"price1mAgo": 214.79,
+				"price": 185.08,
+				"price6mAgo": 245.07,
+				"price1mAgo": 211.22,
 				"low3m": 164.6,
-				"return6m": -26.5,
-				"return1m": -14.9,
+				"return6m": -24.5,
+				"return1m": -12.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 2,
-				"down30d": 2
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 12.9,
@@ -73,21 +71,21 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.52
+		"secondaryScore": 1.54
 	},
-	"lastUpdated": "2026-03-28T23:03:10.727Z",
-	"expectedVolatility": "~30%",
-	"sharpeRatio": 0.72,
+	"lastUpdated": "2026-04-05T07:21:38.279Z",
+	"expectedVolatility": "~29%",
+	"sharpeRatio": 0.71,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.83,
-		"totalScore": 9.17,
+		"revisionsScore": -0.28,
+		"totalScore": 9.72,
 		"raw": {
 			"avgSurprisePct": 5.7,
 			"netInsiderShares": 75698,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
+			"upRevisions": 2,
 			"downRevisions": 3,
 			"totalAnalysts": 18
 		}
@@ -107,5 +105,17 @@
 		"strongSell": 2
 	},
 	"targetPriceAlternative": "$237.20",
-	"consensusRating": "Moderate Buy"
+	"consensusRating": "Moderate Buy",
+	"forwardEstimates": {
+		"2026": {
+			"high": 7.718,
+			"low": 7.19549,
+			"average": 7.62072
+		},
+		"2027": {
+			"high": 8.85,
+			"low": 8.29827,
+			"average": 8.59282
+		}
+	}
 }

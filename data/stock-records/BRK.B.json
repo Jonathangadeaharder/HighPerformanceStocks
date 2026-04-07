@@ -2,17 +2,15 @@
 	"ticker": "BRK.B",
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
-	"confidence": "cut",
-	"confidenceReason": "Ultimate defensive safe harbor with $380B+ cash fortress providing unmatched optionality.",
-	"marketCap": "$1010.5B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "3% - 23%",
-	"expectedVolatility": "~18%",
+	"marketCap": "$1029.6B USD",
+	"sharpeRatio": 0.38,
+	"expectedCAGR": "1% - 21%",
+	"expectedVolatility": "~17%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 15.1,
-		"forwardPE": 21.5,
+		"trailingPE": 15.4,
+		"forwardPE": 21.9,
 		"evFcf": -6.4
 	},
 	"metrics": {
@@ -21,40 +19,68 @@
 		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "9%",
-		"beta": "0.69",
+		"beta": "0.7",
 		"revenueGrowth": "-0.7%",
-		"roic": "6.0%",
+		"roic": "5.8%",
 		"interestCoverage": "14.9x"
 	},
 	"targetPrice": "$523",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$468.49",
+	"currentPrice": "$477.35",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "3%",
-			"base": "12%",
-			"bull": "23%"
+			"bear": "1%",
+			"base": "10%",
+			"bull": "21%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-03-28T23:02:46.879Z",
+	"lastUpdated": "2026-04-05T07:21:16.439Z",
 	"consensus": {
 		"yahoo": "$523"
 	},
 	"screener": {
-		"engine": "fEVG",
-		"signal": "NO_DATA",
-		"note": "Missing/negative EV/EBITDA"
+		"engine": "fPERG",
+		"score": 2.19,
+		"signal": "FAIL",
+		"inputs": {
+			"growth": 10,
+			"multipleType": "Forward P/E",
+			"multiple": 21.9,
+			"cvStock": 0.02,
+			"riskMultiplier": 1
+		},
+		"realityChecks": {
+			"stabilization": {
+				"pass": true,
+				"price": 477.35,
+				"price6mAgo": 500.02,
+				"price1mAgo": 500.4,
+				"low3m": 467.21,
+				"return6m": -4.5,
+				"return1m": -4.6,
+				"near3mLow": true
+			},
+			"revisions": {
+				"pass": true,
+				"up30d": 0,
+				"down30d": 2
+			},
+			"earningsSurprise": {
+				"surprise": -8.5,
+				"quarter": "2025-12"
+			}
+		}
 	},
 	"qcs": {
-		"earningsScore": -0.27,
+		"earningsScore": -1.07,
 		"flowScore": 0,
 		"revisionsScore": -5,
-		"totalScore": -5.27,
+		"totalScore": -6.07,
 		"raw": {
 			"avgSurprisePct": -0.54,
 			"netInsiderShares": 0,
@@ -78,5 +104,17 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"forwardEstimates": {
+		"2026": {
+			"high": 21.38912,
+			"low": 19.45,
+			"average": 20.61304
+		},
+		"2027": {
+			"high": 22.35,
+			"low": 20.61,
+			"average": 21.77445
+		}
+	}
 }

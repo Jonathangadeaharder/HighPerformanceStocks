@@ -2,16 +2,14 @@
 	"ticker": "NET",
 	"name": "Cloudflare",
 	"group": "Cybersecurity",
-	"confidence": "low",
-	"confidenceReason": "Edge network and security platform with ~27% adjusted EPS growth, but still one of the market's richest software valuations.",
-	"marketCap": "$71.5B USD",
-	"sharpeRatio": 0.05,
-	"expectedCAGR": "-34% - 48%",
-	"expectedVolatility": "~52%",
+	"marketCap": "$74.5B USD",
+	"sharpeRatio": -0.03,
+	"expectedCAGR": "-36% - 42%",
+	"expectedVolatility": "~50%",
 	"valuation": {
-		"forwardPE": 140.8,
+		"forwardPE": 146.8,
 		"evEbitda": null,
-		"evFcf": 182.7
+		"evFcf": 190.5
 	},
 	"metrics": {
 		"roe": "-8.2%",
@@ -19,56 +17,55 @@
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "51%",
-		"beta": "2.03",
+		"beta": "1.88",
 		"revenueGrowth": "33.6%",
-		"roic": "0.9%"
+		"roic": "0.8%"
 	},
 	"targetPrice": "$233.47",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$203.02",
+	"currentPrice": "$211.69",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-34%",
-			"base": "15%",
-			"bull": "48%"
+			"bear": "-36%",
+			"base": "10%",
+			"bull": "42%"
 		},
 		"ttmEPS": 1.12,
 		"epsGrowth": "27%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-03-28T23:03:00.175Z",
+	"lastUpdated": "2026-04-05T07:21:30.088Z",
 	"consensus": {
 		"yahoo": "$233.47"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.22,
-		"signal": "REJECTED",
+		"score": 5.44,
+		"signal": "FAIL",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 140.8,
+			"multiple": 146.8,
 			"cvStock": 0.105,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 203.02,
-				"price6mAgo": 218.58,
-				"price1mAgo": 181.02,
+				"price": 211.69,
+				"price6mAgo": 221.03,
+				"price1mAgo": 192.31,
 				"low3m": 158.83,
-				"return6m": -7.1,
-				"return1m": 12.2,
+				"return6m": -4.2,
+				"return1m": 10.1,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 5,
-				"down30d": 13
+				"pass": true,
+				"up30d": 0,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 3.2,
@@ -79,14 +76,14 @@
 	"qcs": {
 		"earningsScore": 3.1,
 		"flowScore": 0,
-		"revisionsScore": -2.42,
-		"totalScore": 0.68,
+		"revisionsScore": -0.16,
+		"totalScore": 2.94,
 		"raw": {
 			"avgSurprisePct": 8.13,
-			"netInsiderShares": 176342,
+			"netInsiderShares": 185085,
 			"instFlowTrend": "negative",
-			"upRevisions": 7,
-			"downRevisions": 22,
+			"upRevisions": 0,
+			"downRevisions": 1,
 			"totalAnalysts": 31
 		}
 	},
@@ -105,5 +102,17 @@
 		"strongSell": 3
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$233.38"
+	"targetPriceAlternative": "$233.38",
+	"forwardEstimates": {
+		"2026": {
+			"high": 1.16,
+			"low": 1.10607,
+			"average": 1.12152
+		},
+		"2027": {
+			"high": 1.86,
+			"low": 1.25168,
+			"average": 1.44174
+		}
+	}
 }

@@ -1,0 +1,77 @@
+{
+	"ticker": "BBIO",
+	"name": "BridgeBio Pharma",
+	"group": "Biotech",
+	"cagrModel": {
+		"epsGrowth": "-10%",
+		"epsGrowthSource": "auto",
+		"basis": "Non-GAAP EPS",
+		"dividendYield": "0%",
+		"scenarios": {
+			"bear": "9%",
+			"base": "38%",
+			"bull": "115%"
+		}
+	},
+	"currentPrice": "$73.15",
+	"marketCap": "$14.2B USD",
+	"valuation": {
+		"forwardPE": 36575,
+		"evFcf": -47.5,
+		"evEbitda": -31.1
+	},
+	"metrics": {
+		"fcfMargin": "~-65%",
+		"fcfYield": "~-2%",
+		"netDebtEbitda": "-2.6x",
+		"ruleOf40": "2456%",
+		"beta": "1.09",
+		"revenueGrowth": "2521.2%",
+		"roic": "-2.9%"
+	},
+	"consensus": {
+		"yahoo": "$100.64"
+	},
+	"targetPrice": "$100.64",
+	"analystTargets": {
+		"low": 80,
+		"mean": 100.64,
+		"high": 157
+	},
+	"expectedCAGR": "9% - 115%",
+	"expectedVolatility": "~48%",
+	"sharpeRatio": 1.2,
+	"screener": {
+		"engine": "DISQUALIFIED",
+		"signal": "WAIT",
+		"note": "Extreme earnings volatility detected. Awaiting stabilization."
+	},
+	"qcs": {
+		"earningsScore": -5,
+		"flowScore": 2.5,
+		"revisionsScore": -2,
+		"totalScore": -4.5,
+		"raw": {
+			"avgSurprisePct": -24.79,
+			"netInsiderShares": -631282,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 5
+		}
+	},
+	"description": "BridgeBio Pharma, Inc., a biopharmaceutical company, discovers, develops, and delivers medicines for patients with genetic diseases.",
+	"lastUpdated": "2026-04-05T07:21:16.394Z",
+	"forwardEstimates": {
+		"2026": {
+			"high": -1.48,
+			"low": -2.68,
+			"average": -2.144
+		},
+		"2027": {
+			"high": 1.83,
+			"low": -1.56,
+			"average": 0.002
+		}
+	}
+}

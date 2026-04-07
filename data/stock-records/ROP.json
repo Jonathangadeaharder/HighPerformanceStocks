@@ -2,60 +2,57 @@
 	"ticker": "ROP",
 	"name": "Roper Technologies",
 	"group": "Serial Acquirers",
-	"confidence": "medium",
-	"confidenceReason": "Best Sharpe in portfolio (0.60). >20% discount to DCF fair value. CSU-style M&A playbook at massive relative discount. Stabilizing anchor.",
-	"marketCap": "$37.1B USD",
-	"sharpeRatio": 1.13,
-	"expectedCAGR": "7% - 61%",
-	"expectedVolatility": "~26%",
+	"marketCap": "$38.5B USD",
+	"sharpeRatio": 0.98,
+	"expectedCAGR": "3% - 55%",
+	"expectedVolatility": "~25%",
 	"valuation": {
-		"trailingPE": 24.3,
-		"forwardPE": 14.8,
+		"trailingPE": 25.2,
+		"forwardPE": 15.3,
 		"pegRatio": null,
-		"evEbitda": 14.3,
-		"evFcf": 21.1
+		"evEbitda": 14.7,
+		"evFcf": 21.7
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
-		"fcfYield": "~6%",
-		"roic": "5.5%",
+		"fcfYield": "~5%",
+		"roic": "5.3%",
 		"roe": "7.9%",
 		"netDebtEbitda": "2.9x",
 		"ruleOf40": "37%",
-		"beta": "0.93",
+		"beta": "0.89",
 		"revenueGrowth": "9.7%",
 		"interestCoverage": "6.0x"
 	},
-	"targetPrice": "$462.19",
-	"dcfFairValue": "$621.46 (Current $367.50, >20% discount)",
+	"targetPrice": "$460.38",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
-	"currentPrice": "$344.42",
+	"currentPrice": "$357.88",
 	"consensus": {
 		"tipranks": "$479",
-		"yahoo": "$462.19",
+		"yahoo": "$460.38",
 		"stockanalysis": "$495"
 	},
 	"cagrModel": {
-		"ttmEPS": 14.19,
+		"ttmEPS": 14.21,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "35%",
-			"bull": "61%"
+			"bear": "3%",
+			"base": "30%",
+			"bull": "55%"
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-03-28T23:03:04.975Z",
+	"lastUpdated": "2026-04-05T07:21:33.244Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.76,
+		"score": 1.81,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 21.1,
+			"multiple": 21.7,
 			"cvStock": 0.02,
 			"riskMultiplier": 1
 		},
@@ -63,12 +60,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 344.42,
-				"price6mAgo": 500.96,
-				"price1mAgo": 353.93,
+				"price": 357.88,
+				"price6mAgo": 506.99,
+				"price1mAgo": 366.02,
 				"low3m": 313.07,
-				"return6m": -31.2,
-				"return1m": -2.7,
+				"return6m": -29.4,
+				"return1m": -2.2,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -82,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.23
+		"secondaryScore": 1.28
 	},
 	"qcs": {
 		"earningsScore": 1.73,
@@ -101,7 +98,7 @@
 	"description": "Roper Technologies, Inc. designs and develops vertical software and technology enabled products in the United States, Canada, Europe, Asia, and internationally.",
 	"analystTargets": {
 		"low": 365,
-		"mean": 462.19,
+		"mean": 460.38,
 		"high": 550
 	},
 	"analystConsensus": {
@@ -113,5 +110,17 @@
 		"strongSell": 3
 	},
 	"targetPriceAlternative": "$478.53",
-	"consensusRating": "Hold"
+	"consensusRating": "Hold",
+	"forwardEstimates": {
+		"2026": {
+			"high": 21.74,
+			"low": 21.29542,
+			"average": 21.46281
+		},
+		"2027": {
+			"high": 24.66,
+			"low": 22.75,
+			"average": 23.3337
+		}
+	}
 }

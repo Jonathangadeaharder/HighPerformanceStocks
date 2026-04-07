@@ -106,7 +106,64 @@ const stocks = [
 		reason: 'Highest margin brokerage globally. User base expands ~20% YoY. Deep margin moats.'
 	},
 
+	// Biotech
+	{
+		ticker: 'ADMA',
+		name: 'ADMA Biologics',
+		group: 'Biotech',
+		confidence: 'medium',
+		reason:
+			'Commercial-stage plasma biologics company with rapidly growing IG product revenue. Niche focus on immune deficiencies and infectious diseases; accelerating profitability.'
+	},
+	{
+		ticker: 'ARQT',
+		name: 'Arcutis Biotherapeutics',
+		group: 'Biotech',
+		confidence: 'low',
+		reason:
+			'Commercial-stage dermatology biotech with approved topical treatments for plaque psoriasis and seborrheic dermatitis. Not yet profitable; revenue growth trajectory is the key driver.'
+	},
+	{
+		ticker: 'BBIO',
+		name: 'BridgeBio Pharma',
+		group: 'Biotech',
+		confidence: 'medium',
+		reason:
+			'Attruby (acoramidis) approved for ATTR-CM competing directly with Tafamidis. Differentiated profile and favorable trial data could drive meaningful market share. Early commercial ramp.'
+	},
+	{
+		ticker: 'KRYS',
+		name: 'Krystal Biotech',
+		group: 'Biotech',
+		confidence: 'medium',
+		reason:
+			'Vyjuvek (beremagene geperpavec) is the first gene therapy approved for dystrophic epidermolysis bullosa. Orphan-drug pricing power and proprietary HSV-1 platform for other rare skin diseases.'
+	},
+	{
+		ticker: 'MDGL',
+		name: 'Madrigal Pharmaceuticals',
+		group: 'Biotech',
+		confidence: 'medium',
+		reason:
+			'Rezdiffra (resmetirom) is the first and only FDA-approved treatment for MASH, addressing a massive unmet need. First-mover advantage in a multi-billion dollar market with ~32M US patients.'
+	},
+	{
+		ticker: 'VKTX',
+		name: 'Viking Therapeutics',
+		group: 'Biotech',
+		confidence: 'low',
+		reason:
+			'Clinical-stage biotech with VK2735, a GLP-1/GIP dual agonist showing strong Phase 2 data in obesity. No approved products yet; high binary risk but significant optionality in the GLP-1 space.'
+	},
+
 	// Healthcare Monopolies
+	{
+		ticker: 'TMDX',
+		name: 'TransMedics Group',
+		group: 'Healthcare Monopolies',
+		confidence: 'high',
+		reason: 'Functional monopoly in active organ transplant preservation and aviation logistics. High growth addressing immense unmet medical need.'
+	},
 	{
 		ticker: 'MCK',
 		name: 'McKesson',
