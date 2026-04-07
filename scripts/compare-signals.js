@@ -1,14 +1,13 @@
-import { execFileSync } from 'child_process';
-import { readFileSync, readdirSync } from 'fs';
-import { dirname, join, resolve } from 'path';
-import { fileURLToPath } from 'url';
+import { execFileSync } from 'node:child_process';
+import { readFileSync, readdirSync } from 'node:fs';
+import { join, relative } from 'node:path';
+import { STOCK_RECORDS_DIR } from '../src/lib/server/infrastructure/paths.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const PROJECT_ROOT = resolve(__dirname, '..');
-const DIR = resolve(PROJECT_ROOT, 'data/stock-records');
-// Git path relative to project root (always use forward slashes)
-const GIT_DIR = 'data/stock-records';
-const files = readdirSync(DIR).filter(f => f.endsWith('.json'));
+// Repo-relative path for `git show HEAD:<path>` — must be relative to repo root.
+// Always use forward slashes regardless of OS.
+const GIT_DIR = relative(process.cwd(), STOCK_RECORDS_DIR).replaceAll('\\', '/');
+
+const files = readdirSync(STOCK_RECORDS_DIR).filter(f => f.endsWith('.json'));
 
 let deployToReject = [];
 let rejectToDeploy = [];
@@ -19,21 +18,21 @@ console.log('--- Phase 1 & 2 Alpha Decay Analysis ---');
 
 for (const f of files) {
   try {
-    const freshRaw = readFileSync(join(DIR, f), 'utf-8');
+    const freshRaw = readFileSync(join(STOCK_RECORDS_DIR, f), 'utf-8');
     const freshObj = JSON.parse(freshRaw);
 
-    // Get original from git
+    // Get original from git using the constant — avoids desync with disk reads
     const oldRaw = execFileSync('git', ['show', `HEAD:${GIT_DIR}/${f}`], { encoding: 'utf-8' });
     const oldObj = JSON.parse(oldRaw);
-    
+
     const freshScreener = freshObj.screener || {};
     const oldScreener = oldObj.screener || {};
-    
+
     const freshSig = freshScreener.signal;
     const oldSig = oldScreener.signal;
     const freshScore = freshScreener.score;
     const oldScore = oldScreener.score;
-    
+
     if (freshSig !== oldSig) {
       if (oldSig === 'DEPLOY' && freshSig === 'REJECT') {
         deployToReject.push(`${f.replace('.json','')} (Score: ${oldScore} -> ${freshScore || 'null'} | Notes: ${freshScreener.note})`);
