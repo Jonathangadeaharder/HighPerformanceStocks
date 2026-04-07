@@ -2,8 +2,6 @@
 	"ticker": "VRTX",
 	"name": "Vertex Pharmaceuticals",
 	"group": "Healthcare Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Global CF monopoly funding non-CF pipeline without dilution. But top-line decelerating. 2026 guidance $12.95-13.1B (8.5-9% growth) shows maturing profile.",
 	"marketCap": "$111.4B USD",
 	"sharpeRatio": 0.16,
 	"expectedCAGR": "-25% - 46%",

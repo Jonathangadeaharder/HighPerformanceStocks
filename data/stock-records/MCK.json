@@ -2,8 +2,6 @@
 	"ticker": "MCK",
 	"name": "McKesson",
 	"group": "Healthcare Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Consolidated oligopoly drug distributor. Massive share repurchases lead to consistent 12–15% EPS growth floors.",
 	"bullCase": "McKesson is a pharmaceutical distribution monopoly (with Cencora and Cardinal Health) distributing over 30% of US drug supply. The business is structurally non-disruptable — drug distribution requires regulatory compliance, cold chain, and scale economics that no new entrant can replicate. Systematic share buybacks (8%+ annual float reduction) drive 15%+ EPS growth on 5-7% revenue growth.",
 	"bearCase": "Drug distribution is a razor-thin margin business — McKesson earns <1% net margin on $300B+ of drug revenue. Any repricing of generic drug contracts, specialty drug exclusivity losses, or government reimbursement rate cuts flows directly through to EPS. PBM consolidation increases buyer bargaining power against distributors.",
 	"cagrModel": {

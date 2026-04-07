@@ -2,8 +2,6 @@
 	"ticker": "TPL",
 	"name": "Texas Pacific Land",
 	"group": "Energy Royalties",
-	"confidence": "low",
-	"confidenceReason": "Irreplaceable 880K-acre Permian asset with world-class profitability (39% ROE, 30% ROIC, 62% FCF margin). Data center optionality via Bolt partnership. But 41x P/E after 50% February rally prices in much of the upside.",
 	"marketCap": "$30.6B USD",
 	"sharpeRatio": -0.11,
 	"expectedVolatility": "~46%",

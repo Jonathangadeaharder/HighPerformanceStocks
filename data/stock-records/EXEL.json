@@ -2,8 +2,6 @@
 	"ticker": "EXEL",
 	"name": "Exelixis",
 	"group": "Biotech",
-	"confidence": "high",
-	"confidenceReason": "Deep value (PEG ~0.8, FCF yield ~7.5%) but severe single-asset Cabometyx reliance. Pipeline failure kills growth narrative entirely.",
 	"marketCap": "$11.8B USD",
 	"sharpeRatio": 0.09,
 	"expectedCAGR": "-20% - 37%",

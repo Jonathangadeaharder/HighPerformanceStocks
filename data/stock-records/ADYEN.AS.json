@@ -2,8 +2,6 @@
 	"ticker": "ADYEN.AS",
 	"name": "Adyen N.V.",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "Europe's premier payments infrastructure company. Rule of 40 score of 77%. EBITDA margins above 50%. Virtually unlevered ($12.6B cash vs $248M debt). But 37x forward P/E is not cheap and beta 2.11 adds risk.",
 	"marketCap": "€26.7B",
 	"sharpeRatio": 0.1,
 	"expectedVolatility": "~42%",

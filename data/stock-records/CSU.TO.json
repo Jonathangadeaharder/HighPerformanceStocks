@@ -2,8 +2,6 @@
 	"ticker": "CSU.TO",
 	"name": "Constellation Software",
 	"group": "Serial Acquirers",
-	"confidence": "cut",
-	"confidenceReason": "Sharpe (0.13), violent forward P/E compression to 18.4x, 6.42% FCF yield reclassifies as deep value. Generational compounder.",
 	"marketCap": "C$51.7B",
 	"sharpeRatio": 2.13,
 	"expectedCAGR": "43% - 132%",

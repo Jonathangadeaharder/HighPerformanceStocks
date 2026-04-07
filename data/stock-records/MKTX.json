@@ -2,8 +2,6 @@
 	"ticker": "MKTX",
 	"name": "MarketAxess",
 	"group": "Data & Software Monopolies",
-	"confidence": "cut",
-	"confidenceReason": "MarketAxess pioneered electronic credit trading and still leads in high-yield and EM bonds. However, Tradeweb has been taking significant market share in investment-grade credit. The recovery thesis rests on defending its HY/EM moat and rebuilding IG share — execution risk is high.",
 	"bullCase": "MarketAxess retains dominant share in high-yield and emerging market bond trading where Tradeweb has less penetration. Portfolio trading volumes are growing rapidly. At 20x forward PE — a historic low — the market is pricing in permanent share loss that may be overstated.",
 	"bearCase": "Tradeweb continues taking IG credit market share and now offers better price discovery through its dealer network. MKTX revenue was essentially flat in 2023-2024. At a current forward PE of 20x on 9% EPS growth, there is limited upside if share losses continue.",
 	"cagrModel": {

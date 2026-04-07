@@ -2,8 +2,6 @@
 	"ticker": "ARES",
 	"name": "Ares Management",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
-	"confidenceReason": "Heavyweight champion of private credit. Relentless FRE growth.",
 	"bullCase": "Ares is the largest pure-play private credit manager with $450B+ AUM, growing 20%+ annually in the direct lending boom. Its permanent capital vehicles (ARCC, ACRE) provide structural FRE visibility. Credit spreads remaining elevated extends the private credit wave. Growing insurance channel (via Aspida Life) adds recurring fee flow.",
 	"bearCase": "A sharp credit cycle downturn with default rates spiking would impair Ares' direct lending book and compress marks on private equity. The 5% dividend yield is funded by distributable earnings — any payout cut would crater the stock. Regulatory scrutiny of private credit opacity is an emerging risk.",
 	"cagrModel": {

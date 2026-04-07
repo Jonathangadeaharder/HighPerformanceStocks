@@ -2,8 +2,6 @@
 	"ticker": "FTNT",
 	"name": "Fortinet",
 	"group": "Cybersecurity",
-	"confidence": "low",
-	"confidenceReason": "Hardware+software security cycles at much cheaper P/E than CRWD/PANW. Buy on billing cycle panics.",
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",

@@ -2,10 +2,8 @@
 	"ticker": "HOOD",
 	"name": "Robinhood Markets, Inc.",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
 	"bullCase": "Robinhood successfully captures a broader retail market, expands its financial services ecosystem, and drives recurring revenue.",
 	"bearCase": "Retail engagement drops significantly or payment for order flow is heavily restricted by regulators.",
-	"confidenceReason": "Commission-free stock and crypto trading app aggressively taking market share among gen-z and millennials. Diversifying revenue streams with subscriptions (Gold) and retirement accounts. Sensitive to retail engagement cycles.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",

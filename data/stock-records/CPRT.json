@@ -2,8 +2,6 @@
 	"ticker": "CPRT",
 	"name": "Copart",
 	"group": "Capital Compounders",
-	"confidence": "low",
-	"confidenceReason": "Unassailable monopoly in salvage auto auctions. Very little capex requirement, consistent 12–18% growth.",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",

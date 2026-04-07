@@ -2,8 +2,6 @@
 	"ticker": "ISRG",
 	"name": "Intuitive Surgical",
 	"group": "Robotics",
-	"confidence": "medium",
-	"confidenceReason": "Unmatched surgical robotics monopoly with 9,000+ installed da Vinci systems. Razor-and-blade recurring revenue. But premium valuation limits upside.",
 	"marketCap": "$160.6B USD",
 	"sharpeRatio": 0.64,
 	"expectedCAGR": "-16% - 66%",

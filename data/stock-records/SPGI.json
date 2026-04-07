@@ -2,8 +2,6 @@
 	"ticker": "SPGI",
 	"name": "S&P Global",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Asset-light, unregulated duopoly with infinite pricing power.",
 	"bullCase": "S&P Global's Ratings segment benefits from surging debt issuance volumes at still-elevated rates. Market Intelligence and Mobility segments are growing 10%+ organically on subscription revenue. After absorbing the IHS Markit integration, operating margins are expanding toward 50%+, driving compounding non-GAAP EPS.",
 	"bearCase": "Ratings revenue is highly sensitive to debt issuance cycles — a credit freeze or prolonged rate inversion collapses new issuance and cuts Ratings revenue materially (as seen in 2022). At 19x forward PE, any deceleration below 12% EPS growth would re-rate the stock.",
 	"cagrModel": {

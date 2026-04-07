@@ -2,8 +2,6 @@
 	"ticker": "CRM",
 	"name": "Salesforce",
 	"group": "Data & Software Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Dominant enterprise CRM platform with 33% FCF margins and PEG of 0.88. Agentforce AI momentum strong, but competition from Microsoft and ServiceNow, plus slowing Sales Cloud growth (8.4% YoY).",
 	"marketCap": "$175.4B USD",
 	"sharpeRatio": 2.13,
 	"expectedCAGR": "3% - 155%",

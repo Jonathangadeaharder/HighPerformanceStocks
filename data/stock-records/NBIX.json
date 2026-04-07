@@ -2,8 +2,6 @@
 	"ticker": "NBIX",
 	"name": "Neurocrine Biosciences",
 	"group": "Biotech",
-	"confidence": "cut",
-	"confidenceReason": "Dominant franchise in tardive dyskinesia (Ingrezza). 15-20% EPS growth. Strong pipeline in neuropsychiatry. But single-product concentration risk.",
 	"marketCap": "$13.2B USD",
 	"sharpeRatio": 0.94,
 	"expectedCAGR": "6% - 65%",

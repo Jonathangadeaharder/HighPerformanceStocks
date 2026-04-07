@@ -2,8 +2,6 @@
 	"ticker": "MEDP",
 	"name": "Medpace",
 	"group": "Healthcare Services",
-	"confidence": "medium",
-	"confidenceReason": "Leading CRO for small-mid biotech companies with differentiated full-service model. Biotech funding headwinds have compressed near-term growth expectations from 20%+ to ~12%. At 24x forward PE, the stock is pricing in a sustained recovery — which is not guaranteed given NIH budget pressures.",
 	"bullCase": "Medpace's focused CRO model (only biotech/specialty pharma clients) enables superior therapeutic expertise. When biotech funding recovers, Medpace benefits from its reputation as the premium small-biotech CRO. Clean balance sheet with significant cash enables opportunistic buybacks. Historically delivered industry-leading EBITDA margins (~30%).",
 	"bearCase": "CRO revenues are directly tied to biotech clinical trial activity — when funding freezes (2022-2025), cancellations and deferrals cascade through revenue pipelines 6-12 months later. NIH budget cuts under DOGE are removing a key source of academic grants that feed into Phase II commercial trials. IQVIA and ICON are competing aggressively for Medpace's specialty clients.",
 	"cagrModel": {

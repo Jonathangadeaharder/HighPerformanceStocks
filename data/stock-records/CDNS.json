@@ -2,8 +2,6 @@
 	"ticker": "CDNS",
 	"name": "Cadence Design Systems",
 	"group": "AI & Semiconductors",
-	"confidence": "medium",
-	"confidenceReason": "PEG near 4.0x — valuation severely outpacing growth. Shelf registration suggests management sees stock as rich. Nonexistent margin of safety.",
 	"marketCap": "$77.0B USD",
 	"sharpeRatio": 0.47,
 	"expectedCAGR": "-1% - 47%",

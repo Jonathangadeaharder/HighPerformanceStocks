@@ -2,8 +2,6 @@
 	"ticker": "OWL",
 	"name": "Blue Owl Capital",
 	"group": "Financials & Alt Assets",
-	"confidence": "cut",
-	"confidenceReason": "CUT: Automated pipeline natively pulls GAAP EPS ($0.10) which is obliterated by acquisition amortizations. Our mathematical models depend on accurate TTM inputs. Without an automated FRE feed, alt-asset managers distort system-wide risk logic.",
 	"targetPrice": "$14.93",
 	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
 	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",

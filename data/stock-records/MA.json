@@ -2,8 +2,6 @@
 	"ticker": "MA",
 	"name": "Mastercard",
 	"group": "Defensive Monopolies",
-	"confidence": "medium",
-	"confidenceReason": "Same duopoly dynamics as Visa. Asset-light perfection. But insufficient volatility for the 2x leverage simulation target.",
 	"marketCap": "$440.4B USD",
 	"sharpeRatio": 1.17,
 	"expectedCAGR": "12% - 51%",

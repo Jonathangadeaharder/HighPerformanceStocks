@@ -2,10 +2,8 @@
 	"ticker": "COIN",
 	"name": "Coinbase Global, Inc.",
 	"group": "Financials & Alt Assets",
-	"confidence": "low",
 	"bullCase": "Crypto adoption goes mainstream, launching Coinbase’s trading volume and institutional custody revenue to new highs.",
 	"bearCase": "Regulatory crackdowns or a prolonged crypto winter could severely hit transaction revenues and user engagement.",
-	"confidenceReason": "Dominant US cryptocurrency exchange platform. Massively exposed to crypto volume cycles, but acting as the 'picks and shovels' monopoly of the US crypto market. Huge operating leverage upside during bull regimes.",
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",

@@ -2,8 +2,6 @@
 	"ticker": "RBRK",
 	"name": "Rubrik",
 	"group": "Cybersecurity",
-	"confidence": "high",
-	"confidenceReason": "Fast-growing data security platform, but still too early for a rational P/E-based underwriting model.",
 	"marketCap": "$10.4B USD",
 	"sharpeRatio": 1.33,
 	"expectedCAGR": "24% - 145%",

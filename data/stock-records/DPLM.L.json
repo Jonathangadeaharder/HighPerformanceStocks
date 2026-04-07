@@ -2,8 +2,6 @@
 	"ticker": "DPLM.L",
 	"name": "Diploma PLC",
 	"group": "Serial Acquirers",
-	"confidence": "low",
-	"confidenceReason": "UK serial acquirer in technical products distribution. ROIC ~15%, ROE ~20%, 14% organic revenue growth in Q1 2026. Unanimous analyst Buy. But CAGR of 12-16% is borderline on the floor.",
 	"marketCap": "£8.3B",
 	"sharpeRatio": 0.05,
 	"expectedCAGR": "-9% - 21%",

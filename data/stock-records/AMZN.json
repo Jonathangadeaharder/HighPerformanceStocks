@@ -2,8 +2,6 @@
 	"ticker": "AMZN",
 	"name": "Amazon",
 	"group": "Data & Software Monopolies",
-	"confidence": "low",
-	"confidenceReason": "Dual monopolies in e-commerce logistics and cloud computing (AWS). Currently undergoing massive FCF margin inflection.",
 	"cagrModel": {
 		"epsGrowth": "22%",
 		"basis": "Non-GAAP Operating EPS (GAAP EPS adjusted for stock-based compensation and depreciation normalization; AWS FCF inflection is primary driver)",

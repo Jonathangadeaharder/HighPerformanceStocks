@@ -2,8 +2,6 @@
 	"ticker": "MDGL",
 	"name": "Madrigal Pharmaceuticals",
 	"group": "Biotech",
-	"confidence": "cut",
-	"confidenceReason": "Rezdiffra (resmetirom) is the first and only FDA-approved treatment for MASH, addressing a massive unmet need. First-mover advantage in a multi-billion dollar market with ~32M US patients.",
 	"cagrModel": {
 		"epsGrowth": "-10%",
 		"epsGrowthSource": "auto",

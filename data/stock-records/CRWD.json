@@ -2,8 +2,6 @@
 	"ticker": "CRWD",
 	"name": "CrowdStrike Holdings",
 	"group": "Cybersecurity",
-	"confidence": "medium",
-	"confidenceReason": "Leading endpoint security platform. 30-35% revenue growth at scale. Module adoption accelerating. But premium valuation and July 2024 outage reputational overhang.",
 	"marketCap": "$101.2B USD",
 	"sharpeRatio": 0.68,
 	"expectedCAGR": "-8% - 77%",

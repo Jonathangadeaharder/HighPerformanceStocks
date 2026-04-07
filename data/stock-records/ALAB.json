@@ -2,8 +2,6 @@
 	"ticker": "ALAB",
 	"name": "Astera Labs",
 	"group": "AI & Semiconductors",
-	"confidence": "high",
-	"confidenceReason": "Pure-play on AI connectivity, PCIe/CXL retimers critical for AI server clusters.",
 	"cagrModel": {
 		"epsGrowth": "44%",
 		"basis": "Non-GAAP EPS",
