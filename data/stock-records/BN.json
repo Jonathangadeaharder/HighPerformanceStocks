@@ -2,16 +2,16 @@
 	"ticker": "BN",
 	"name": "Brookfield Corporation",
 	"group": "Financials & Alt Assets",
-	"marketCap": "$92.5B USD",
-	"sharpeRatio": 0.26,
-	"expectedCAGR": "-23% - 48%",
-	"expectedVolatility": "~31%",
+	"marketCap": "$96.6B USD",
+	"sharpeRatio": 0.2,
+	"expectedCAGR": "-27% - 47%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 83.4,
-		"forwardPE": 7,
-		"pegRatio": null,
-		"evEbitda": 15.2,
-		"evFcf": -101.7
+		"trailingPE": 88.1,
+		"forwardPE": 7.4,
+		"pegRatio": 1.27,
+		"evEbitda": 15.3,
+		"evFcf": -102.8
 	},
 	"metrics": {
 		"fcfMargin": "~-6%",
@@ -25,13 +25,13 @@
 		"revenueGrowth": "3.5%",
 		"interestCoverage": "2.1x"
 	},
-	"targetPrice": "$53.60",
+	"targetPrice": "$53.70",
 	"bullCase": "Management estimates 25% annual earnings growth over the next 5 years. AI infrastructure fund creates massive new growth vector. Insurance reintegration adds fee-generating scale. Ultimate real-asset compounder at scale.",
 	"bearCase": "Extremely complex corporate structure makes analysis difficult. Low reported margins/ROIC due to consolidation accounting with $251B non-recourse debt. Rate-sensitive across many business lines. Valuation looks optically expensive on standard screens.",
-	"currentPrice": "$40.89",
+	"currentPrice": "$43.17",
 	"consensus": {
 		"tipranks": "$55",
-		"yahoo": "$53.60",
+		"yahoo": "$53.70",
 		"stockanalysis": "$46"
 	},
 	"cagrModel": {
@@ -39,21 +39,21 @@
 		"epsGrowth": "16.5%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-23%",
-			"base": "32%",
-			"bull": "48%"
+			"bear": "-27%",
+			"base": "25%",
+			"bull": "47%"
 		},
 		"basis": "Conservatively adjusted from management guidance to account for corporate complexity and debt load."
 	},
-	"lastUpdated": "2026-04-05T07:21:16.392Z",
+	"lastUpdated": "2026-04-30T00:44:33.724Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.42,
+		"score": 0.45,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 16.5,
 			"multipleType": "Forward P/E",
-			"multiple": 7,
+			"multiple": 7.4,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -61,12 +61,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 40.89,
-				"price6mAgo": 45.39,
-				"price1mAgo": 42.49,
+				"price": 43.17,
+				"price6mAgo": 45.76,
+				"price1mAgo": 38.72,
 				"low3m": 37.93,
-				"return6m": -9.9,
-				"return1m": -3.8,
+				"return6m": -5.7,
+				"return1m": 11.5,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -93,8 +93,8 @@
 	"description": "Brookfield Corporation is a multi-asset manager focused on real estate, credit, renewable power and transition, infrastructure, venture capital, and private equity including growth capital and emer...",
 	"analystTargets": {
 		"low": 31,
-		"mean": 53.6,
-		"high": 60
+		"mean": 53.7,
+		"high": 63
 	},
 	"analystConsensus": {
 		"ticker": "BN",
@@ -105,5 +105,6 @@
 		"strongSell": 2
 	},
 	"consensusRating": "Moderate Buy",
-	"targetPriceAlternative": "$54.20"
+	"targetPriceAlternative": "$54.20",
+	"confidence": "low"
 }

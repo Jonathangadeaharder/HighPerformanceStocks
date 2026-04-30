@@ -2,21 +2,21 @@
 	"ticker": "HALO",
 	"name": "Halozyme Therapeutics",
 	"group": "Healthcare Technology",
-	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "-13% - 49%",
-	"expectedVolatility": "~46%",
+	"marketCap": "$7.5B USD",
+	"sharpeRatio": 0.37,
+	"expectedCAGR": "-10% - 52%",
+	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 25.2,
-		"forwardPE": 6.6,
+		"trailingPE": 24.6,
+		"forwardPE": 6.4,
 		"pegRatio": null,
-		"evEbitda": 10.7,
-		"evFcf": 52.2
+		"evEbitda": 10.6,
+		"evFcf": 51.3
 	},
 	"metrics": {
 		"fcfMargin": "~13%",
 		"fcfYield": "~2%",
-		"roic": "6.7%",
+		"roic": "6.9%",
 		"roe": "153.6%",
 		"netDebtEbitda": "2.3x",
 		"ruleOf40": "65%",
@@ -24,26 +24,26 @@
 		"revenueGrowth": "51.6%",
 		"interestCoverage": "7.5x"
 	},
-	"targetPrice": "$84.89",
+	"targetPrice": "$85.78",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
 	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
-	"currentPrice": "$64.49",
+	"currentPrice": "$63.06",
 	"consensus": {
 		"tipranks": "$95",
-		"yahoo": "$84.89"
+		"yahoo": "$85.78"
 	},
 	"cagrModel": {
 		"ttmEPS": 2.56,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "32%",
-			"bull": "49%"
+			"bear": "-10%",
+			"base": "36%",
+			"bull": "52%"
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-04-05T07:21:21.697Z",
+	"lastUpdated": "2026-04-30T00:44:37.568Z",
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.53,
@@ -51,26 +51,26 @@
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.7,
-			"cvStock": 0.015,
+			"multiple": 10.6,
+			"cvStock": 0.009,
 			"riskMultiplier": 1
 		},
 		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 64.49,
-				"price6mAgo": 66.97,
-				"price1mAgo": 67.36,
+				"price": 63.06,
+				"price6mAgo": 64.63,
+				"price1mAgo": 62.13,
 				"low3m": 61.33,
-				"return6m": -3.7,
-				"return1m": -4.3,
-				"near3mLow": false
+				"return6m": -2.4,
+				"return1m": 1.5,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 1
+				"up30d": 1,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": -110.9,
@@ -78,26 +78,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.33
+		"secondaryScore": 0.32
 	},
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"revisionsScore": 2,
+		"totalScore": 2,
 		"raw": {
 			"avgSurprisePct": -16.7,
 			"netInsiderShares": 221396,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
-			"downRevisions": 2,
+			"downRevisions": 0,
 			"totalAnalysts": 5
 		}
 	},
 	"description": "Halozyme Therapeutics, Inc., a biopharmaceutical company, researches, develops, and commercializes of proprietary enzymes and devices in the United States, Switzerland, Belgium, Japan, and internat...",
 	"analystTargets": {
-		"low": 56,
-		"mean": 84.89,
+		"low": 57,
+		"mean": 85.78,
 		"high": 96
 	},
 	"analystConsensus": {
@@ -113,13 +113,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 8.21,
-			"low": 7.87,
-			"average": 8.016
+			"low": 7.95,
+			"average": 8.088
 		},
 		"2027": {
 			"high": 10.07,
-			"low": 9.48,
-			"average": 9.845
+			"low": 9.72,
+			"average": 9.8625
 		}
-	}
+	},
+	"confidence": "low"
 }

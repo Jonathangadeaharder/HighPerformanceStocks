@@ -2,29 +2,29 @@
 	"ticker": "FIH.U.TO",
 	"name": "Fairfax India Holdings",
 	"group": "The Capital Compounders",
-	"marketCap": "$2.2B USD",
+	"marketCap": "$2.5B USD",
 	"sharpeRatio": 0.97,
-	"expectedVolatility": "~32%",
+	"expectedVolatility": "~33%",
 	"valuation": {
 		"pegRatio": null,
 		"evEbitda": null,
-		"trailingPE": 5.4,
-		"forwardPE": -51.1,
-		"evFcf": 6.6
+		"trailingPE": 6,
+		"forwardPE": -57.5,
+		"evFcf": 7.3
 	},
 	"metrics": {
 		"roe": "14.3%",
 		"fcfMargin": "~67%",
-		"fcfYield": "~19%",
+		"fcfYield": "~17%",
 		"ruleOf40": "3384%",
 		"beta": "0.84",
 		"revenueGrowth": "3316.8%",
-		"roic": "-1.5%"
+		"roic": "-1.4%"
 	},
 	"targetPrice": "$21",
 	"bullCase": "A highly discounted vehicle for elite capital allocation in the world's fastest-growing major economy. The impending IPO of Anchorage Infrastructure (Bangalore Airport), now expected in September 2026, is a massive near-term catalyst that will crystallize intrinsic value and narrow the steep NAV discount.",
 	"bearCase": "Significant emerging market FX risk (Rupee depreciation) and illiquidity in its sum-of-the-parts portfolio. Unlocking value relies heavily on specific exit events rather than recurring distributions.",
-	"currentPrice": "$16.34",
+	"currentPrice": "$18.40",
 	"consensus": {
 		"yahoo": "$21"
 	},
@@ -34,15 +34,15 @@
 		"basis": "Captures Bangalore Airport IPO catalyst and narrowing NAV discount.",
 		"ttmEPS": 3.05
 	},
-	"lastUpdated": "2026-04-05T07:21:20.767Z",
+	"lastUpdated": "2026-04-30T00:44:37.463Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.39,
+		"score": 0.43,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 6.6,
+			"multiple": 7.3,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -50,13 +50,13 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 16.34,
-				"price6mAgo": 17.37,
-				"price1mAgo": 17.92,
+				"price": 18.4,
+				"price6mAgo": 17.3,
+				"price1mAgo": 16.1,
 				"low3m": 15.9,
-				"return6m": -5.9,
-				"return1m": -8.8,
-				"near3mLow": true
+				"return6m": 6.4,
+				"return1m": 14.3,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -92,5 +92,6 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"confidence": "medium"
 }

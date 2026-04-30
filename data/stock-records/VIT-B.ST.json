@@ -2,101 +2,102 @@
 	"ticker": "VIT-B.ST",
 	"name": "Vitec Software Group",
 	"group": "Serial Acquirers",
-	"marketCap": "9.6B SEK",
-	"sharpeRatio": 2.23,
-	"expectedCAGR": "59% - 142%",
-	"expectedVolatility": "~43%",
+	"marketCap": "9.9B SEK",
+	"sharpeRatio": 2.05,
+	"expectedCAGR": "45% - 132%",
+	"expectedVolatility": "~41%",
 	"valuation": {
 		"trailingPE": 22.1,
-		"forwardPE": 18.8,
+		"forwardPE": 19.5,
 		"pegRatio": null,
-		"evEbitda": 9.2,
-		"evFcf": 21.8
+		"evEbitda": 12.7,
+		"evFcf": 18
 	},
 	"metrics": {
-		"fcfMargin": "~15%",
-		"fcfYield": "~6%",
-		"roic": "9.1%",
-		"roe": "8.9%",
-		"netDebtEbitda": "2.0x",
-		"ruleOf40": "22%",
+		"fcfMargin": "~20%",
+		"fcfYield": "~8%",
+		"roic": "8.9%",
+		"roe": "9.3%",
+		"netDebtEbitda": "2.7x",
+		"ruleOf40": "26%",
 		"beta": "0.82",
-		"revenueGrowth": "6.1%",
-		"interestCoverage": "8.0x"
+		"revenueGrowth": "5.8%",
+		"interestCoverage": "5.3x"
 	},
-	"targetPrice": "448 SEK",
+	"targetPrice": "445 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "242 SEK",
+	"currentPrice": "251 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
-		"yahoo": "448 SEK"
+		"yahoo": "445 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.95,
+		"ttmEPS": 11.36,
 		"epsGrowth": "12%",
-		"dividendYield": "2%",
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "59%",
-			"base": "87%",
-			"bull": "142%"
+			"bear": "45%",
+			"base": "78%",
+			"bull": "132%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-04-05T07:21:38.189Z",
+	"lastUpdated": "2026-04-30T00:44:49.523Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.77,
-		"signal": "PASS",
+		"score": 1.06,
+		"signal": "WAIT",
+		"note": "Valuation score 1.06 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 77.3%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 9.2,
-			"cvStock": 0.041,
+			"multiple": 12.7,
+			"cvStock": 0.091,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 241.8,
-				"price6mAgo": 340.4,
-				"price1mAgo": 248.8,
+				"price": 250.8,
+				"price6mAgo": 339.8,
+				"price1mAgo": 224.6,
 				"low3m": 215.4,
-				"return6m": -29,
-				"return1m": -2.8,
+				"return6m": -26.2,
+				"return1m": 11.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 0
+				"up30d": 1,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 165.6,
-				"quarter": "2025-12"
+				"surprise": 59.1,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.57
+		"secondaryScore": 1.63
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.83,
-		"totalScore": 4.17,
+		"revisionsScore": -2.5,
+		"totalScore": 2.5,
 		"raw": {
-			"avgSurprisePct": 67.6,
+			"avgSurprisePct": 75.24,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 3,
+			"upRevisions": 1,
+			"downRevisions": 4,
 			"totalAnalysts": 6
 		}
 	},
-	"description": "Vitec Software Group AB (publ) develops and delivers vertical market software solutions in Sweden, Denmark, Finland, Norway, the Netherlands, the United States, and internationally.",
+	"description": "Vitec Software Group AB (publ) develops and delivers vertical software solutions in Sweden, Denmark, Finland, Norway, the Netherlands, the United States, and internationally.",
 	"analystTargets": {
-		"low": 380,
-		"mean": 447.86,
+		"low": 360,
+		"mean": 444.57,
 		"high": 580
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.8,
-			"low": 11.7,
-			"average": 13.21431
+			"high": 17.72,
+			"low": 12.1,
+			"average": 13.77289
 		},
 		"2027": {
-			"high": 16.53704,
-			"low": 14,
-			"average": 15.36217
+			"high": 20.51,
+			"low": 14.6,
+			"average": 16.29555
 		}
-	}
+	},
+	"confidence": "low"
 }

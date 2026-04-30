@@ -2,25 +2,26 @@
 	"ticker": "OWL",
 	"name": "Blue Owl Capital",
 	"group": "Financials & Alt Assets",
-	"targetPrice": "$14.93",
+	"targetPrice": "$12.83",
 	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
 	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",
 	"cagrModel": {
-		"ttmEPS": 0.92,
+		"ttmEPS": 0.88,
 		"epsGrowth": "15%",
-		"dividendYield": "11%",
+		"dividendYield": "10%",
 		"scenarios": {
-			"bear": "28%",
-			"base": "85%",
-			"bull": "179%"
+			"bear": "11%",
+			"base": "54%",
+			"bull": "146%"
 		},
 		"basis": "strictly hardcode FRE per share"
 	},
 	"valuation": {
-		"trailingPE": 9.4,
-		"forwardPE": 8.1,
-		"evEbitda": 10.7,
-		"evFcf": 9.8
+		"trailingPE": 10,
+		"forwardPE": 8.8,
+		"evEbitda": 10.9,
+		"evFcf": 9.9,
+		"pegRatio": 0.14
 	},
 	"metrics": {
 		"aum": "$235B",
@@ -32,44 +33,44 @@
 		"ruleOf40": "67%",
 		"beta": "1.21",
 		"revenueGrowth": "19.7%",
-		"roic": "7.4%",
+		"roic": "7.2%",
 		"interestCoverage": "5.8x"
 	},
 	"consensus": {
-		"yahoo": "$14.93"
+		"yahoo": "$12.83"
 	},
-	"currentPrice": "$8.57",
-	"marketCap": "$13.4B USD",
-	"expectedCAGR": "28% - 179%",
-	"expectedVolatility": "~44%",
-	"sharpeRatio": 2.25,
+	"currentPrice": "$8.88",
+	"marketCap": "$13.9B USD",
+	"expectedCAGR": "11% - 146%",
+	"expectedVolatility": "~42%",
+	"sharpeRatio": 1.76,
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.62,
+		"score": 0.67,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/FRE",
-			"multiple": 9.3,
-			"cvStock": 0.048,
+			"multiple": 10.1,
+			"cvStock": 0.04,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 8.57,
-				"price6mAgo": 16.52,
-				"price1mAgo": 10.42,
+				"price": 8.88,
+				"price6mAgo": 15.86,
+				"price1mAgo": 9.07,
 				"low3m": 7.95,
-				"return6m": -48.1,
-				"return1m": -17.8,
+				"return6m": -44,
+				"return1m": -2.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 8
+				"down30d": 13
 			},
 			"earningsSurprise": {
 				"surprise": 6.8,
@@ -77,28 +78,28 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.54
+		"secondaryScore": 0.59
 	},
-	"lastUpdated": "2026-04-05T07:21:32.114Z",
+	"lastUpdated": "2026-04-30T00:44:45.116Z",
 	"qcs": {
-		"earningsScore": 0.16,
+		"earningsScore": 0.2,
 		"flowScore": 2.5,
-		"revisionsScore": -2.67,
-		"totalScore": -0.01,
+		"revisionsScore": -3.67,
+		"totalScore": -0.97,
 		"raw": {
 			"avgSurprisePct": 0.2,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 8,
+			"downRevisions": 11,
 			"totalAnalysts": 15
 		}
 	},
 	"description": "Blue Owl Capital Inc. operates as an alternative asset manager in the United States.",
 	"analystTargets": {
-		"low": 10,
-		"mean": 14.93,
-		"high": 23
+		"low": 9,
+		"mean": 12.83,
+		"high": 21
 	},
 	"analystConsensus": {
 		"ticker": "OWL",
@@ -112,14 +113,15 @@
 	"targetPriceAlternative": "$16.64",
 	"forwardEstimates": {
 		"2026": {
-			"high": 0.98,
+			"high": 0.94,
 			"low": 0.85,
-			"average": 0.91509
+			"average": 0.88476
 		},
 		"2027": {
-			"high": 1.15102,
+			"high": 1.11,
 			"low": 0.95,
-			"average": 1.05753
+			"average": 1.01238
 		}
-	}
+	},
+	"confidence": "cut"
 }

@@ -2,16 +2,16 @@
 	"ticker": "FFH.TO",
 	"name": "Fairfax Financial",
 	"group": "The Capital Compounders",
-	"marketCap": "C$50.7B",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "-26% - 39%",
+	"marketCap": "C$50.3B",
+	"sharpeRatio": 0.14,
+	"expectedCAGR": "-27% - 42%",
 	"expectedVolatility": "~21%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 0.28,
 		"evEbitda": null,
-		"trailingPE": 7.9,
-		"forwardPE": 10.8,
-		"evFcf": 26.8
+		"trailingPE": 8,
+		"forwardPE": 10.9,
+		"evFcf": 26.7
 	},
 	"metrics": {
 		"roe": "17.8%",
@@ -21,27 +21,27 @@
 		"ruleOf40": "15%",
 		"beta": "0.48",
 		"revenueGrowth": "9.6%",
-		"roic": "4.2%",
+		"roic": "4.3%",
 		"interestCoverage": "9.6x"
 	},
-	"targetPrice": "C$2751.27",
+	"targetPrice": "C$2718.74",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2363.41",
+	"currentPrice": "C$2346.41",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-26%",
+			"bear": "-27%",
 			"base": "17%",
-			"bull": "39%"
+			"bull": "42%"
 		},
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
-		"ttmEPS": 297.32
+		"ttmEPS": 292.39
 	},
-	"lastUpdated": "2026-04-05T07:21:20.598Z",
+	"lastUpdated": "2026-04-30T00:44:36.781Z",
 	"consensus": {
-		"yahoo": "C$2751.27"
+		"yahoo": "C$2718.74"
 	},
 	"screener": {
 		"engine": "fPERG",
@@ -50,24 +50,24 @@
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 10.8,
+			"multiple": 10.9,
 			"cvStock": 0.041,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2363.41,
-				"price6mAgo": 2445.01,
-				"price1mAgo": 2280.01,
+				"price": 2346.41,
+				"price6mAgo": 2278.03,
+				"price1mAgo": 2313.68,
 				"low3m": 2151.07,
-				"return6m": -3.3,
-				"return1m": 3.7,
+				"return6m": 3,
+				"return1m": 1.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 0,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -79,22 +79,22 @@
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 0,
-		"revisionsScore": 1.67,
-		"totalScore": -3.33,
+		"revisionsScore": 0,
+		"totalScore": -5,
 		"raw": {
 			"avgSurprisePct": -11.7,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 3
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 2
 		}
 	},
 	"description": "Fairfax Financial Holdings Limited, through its subsidiaries, provides property and casualty insurance and reinsurance, and investment management services in Canada, the United States, the Middle E...",
 	"analystTargets": {
-		"low": 1728.44,
-		"mean": 2751.27,
-		"high": 3269.99
+		"low": 1694.53,
+		"mean": 2718.74,
+		"high": 3298.79
 	},
 	"analystConsensus": {
 		"ticker": "FFH.TO",
@@ -109,12 +109,13 @@
 		"2026": {
 			"high": 174.39,
 			"low": 128.47,
-			"average": 148.62666
+			"average": 151.43
 		},
 		"2027": {
 			"high": 170.96,
 			"low": 145.16,
-			"average": 157.77333
+			"average": 158.06
 		}
-	}
+	},
+	"confidence": "cut"
 }

@@ -2,21 +2,21 @@
 	"ticker": "VEEV",
 	"name": "Veeva Systems",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$28.6B USD",
-	"sharpeRatio": 1.4,
-	"expectedCAGR": "9% - 101%",
-	"expectedVolatility": "~36%",
+	"marketCap": "$26.0B USD",
+	"sharpeRatio": 1.66,
+	"expectedCAGR": "11% - 121%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 31.9,
-		"forwardPE": 17.6,
-		"pegRatio": null,
-		"evEbitda": 22.3,
-		"evFcf": 20.9
+		"trailingPE": 29.1,
+		"forwardPE": 16,
+		"pegRatio": 0.73,
+		"evEbitda": 19.7,
+		"evFcf": 18.5
 	},
 	"metrics": {
 		"fcfMargin": "~33%",
 		"fcfYield": "~4%",
-		"roic": "6.4%",
+		"roic": "7.2%",
 		"roe": "13.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "49%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "16.0%",
 		"interestCoverage": "186.8x"
 	},
-	"targetPrice": "$270.93",
+	"targetPrice": "$264.46",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$173.98",
+	"currentPrice": "$158.22",
 	"consensus": {
 		"tipranks": "$300",
-		"yahoo": "$270.93",
+		"yahoo": "$264.46",
 		"stockanalysis": "$284"
 	},
 	"cagrModel": {
@@ -38,40 +38,40 @@
 		"epsGrowth": "19%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "56%",
-			"bull": "101%"
+			"bear": "11%",
+			"base": "67%",
+			"bull": "121%"
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-04-05T07:21:37.382Z",
+	"lastUpdated": "2026-04-30T00:44:49.484Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.1,
+		"score": 0.97,
 		"signal": "WAIT",
+		"note": "Valuation score 0.97 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 67.1% & elite quality floor (QCS 9.33))",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "EV/FCF",
-			"multiple": 20.9,
+			"multiple": 18.5,
 			"cvStock": 0.03,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 55.7% + QCS 9.33",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 173.98,
-				"price6mAgo": 299.76,
-				"price1mAgo": 196.06,
-				"low3m": 168.14,
-				"return6m": -42,
-				"return1m": -11.3,
-				"near3mLow": true
+				"pass": true,
+				"price": 158.22,
+				"price6mAgo": 285.03,
+				"price1mAgo": 175.96,
+				"low3m": 148.05,
+				"return6m": -44.5,
+				"return1m": -10.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
-				"down30d": 5
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 6.5,
@@ -79,26 +79,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.93
+		"secondaryScore": 0.84
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 4.33,
-		"totalScore": 9.33,
+		"revisionsScore": 4.64,
+		"totalScore": 9.64,
 		"raw": {
 			"avgSurprisePct": 7.18,
-			"netInsiderShares": 18301,
+			"netInsiderShares": 33025,
 			"instFlowTrend": "negative",
 			"upRevisions": 27,
 			"downRevisions": 1,
-			"totalAnalysts": 30
+			"totalAnalysts": 28
 		}
 	},
 	"description": "Veeva Systems Inc. provides cloud-based software for the life sciences industry in North America, Europe, the Asia Pacific, the Middle East, Africa, and Latin America.",
 	"analystTargets": {
-		"low": 190,
-		"mean": 270.93,
+		"low": 176,
+		"mean": 264.46,
 		"high": 350
 	},
 	"analystConsensus": {
@@ -114,12 +114,13 @@
 		"2027": {
 			"high": 9.1,
 			"low": 8.55,
-			"average": 8.83368
+			"average": 8.85037
 		},
 		"2028": {
 			"high": 10.29,
 			"low": 9.12,
-			"average": 9.88734
+			"average": 9.88398
 		}
-	}
+	},
+	"confidence": "medium"
 }

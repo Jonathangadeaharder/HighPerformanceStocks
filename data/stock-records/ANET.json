@@ -2,21 +2,21 @@
 	"ticker": "ANET",
 	"name": "Arista Networks",
 	"group": "Network Infrastructure",
-	"marketCap": "$159.5B USD",
-	"sharpeRatio": 0.75,
-	"expectedCAGR": "11% - 74%",
+	"marketCap": "$212.4B USD",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "-17% - 30%",
 	"expectedVolatility": "~51%",
 	"valuation": {
-		"trailingPE": 46.1,
-		"forwardPE": 29.6,
-		"pegRatio": 1.44,
-		"evEbitda": 37.8,
-		"evFcf": 43.8
+		"trailingPE": 61.6,
+		"forwardPE": 39.2,
+		"pegRatio": 2.3,
+		"evEbitda": 51.2,
+		"evFcf": 59.4
 	},
 	"metrics": {
 		"fcfMargin": "~38%",
 		"fcfYield": "~2%",
-		"roic": "2.9%",
+		"roic": "2.2%",
 		"roe": "31.4%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "67%",
@@ -25,55 +25,55 @@
 		"revenueGrowth": "28.9%",
 		"interestCoverage": "789.3x"
 	},
-	"targetPrice": "$176.46",
+	"targetPrice": "$179.75",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$126.68",
+	"currentPrice": "$168.68",
 	"consensus": {
 		"tipranks": "$182",
-		"yahoo": "$176.46",
+		"yahoo": "$179.75",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.75,
-		"epsGrowth": "21%",
+		"ttmEPS": 2.74,
+		"epsGrowth": "22%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "39%",
-			"bull": "74%"
+			"bear": "-17%",
+			"base": "7%",
+			"bull": "30%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.297Z",
+	"lastUpdated": "2026-04-30T00:44:32.193Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.09,
-		"signal": "WAIT",
+		"score": 2.7,
+		"signal": "REJECTED",
+		"note": "Valuation score 2.70 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.14)) (REJECT: Stalled at WAIT with base CAGR 7% < 15%)",
 		"inputs": {
-			"growth": 21,
+			"growth": 22,
 			"multipleType": "EV/FCF",
-			"multiple": 43.8,
-			"cvStock": 0.082,
+			"multiple": 59.4,
+			"cvStock": 0.081,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3% + QCS 9.14",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 126.68,
-				"price6mAgo": 149.5,
-				"price1mAgo": 139.4,
+				"price": 168.68,
+				"price6mAgo": 158.44,
+				"price1mAgo": 116.13,
 				"low3m": 115.42,
-				"return6m": -15.3,
-				"return1m": -9.1,
+				"return6m": 6.5,
+				"return1m": 45.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 3,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 8.2,
@@ -81,26 +81,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.78
 	},
 	"qcs": {
-		"earningsScore": 4.33,
-		"flowScore": 5,
-		"revisionsScore": -0.19,
-		"totalScore": 9.14,
+		"earningsScore": 4.38,
+		"flowScore": 2.5,
+		"revisionsScore": 0.37,
+		"totalScore": 7.25,
 		"raw": {
 			"avgSurprisePct": 8.88,
-			"netInsiderShares": 1197239,
+			"netInsiderShares": -103858,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
+			"upRevisions": 2,
+			"downRevisions": 0,
 			"totalAnalysts": 27
 		}
 	},
 	"description": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Eur...",
 	"analystTargets": {
 		"low": 140,
-		"mean": 176.46,
+		"mean": 179.75,
 		"high": 220
 	},
 	"analystConsensus": {
@@ -116,12 +116,13 @@
 		"2026": {
 			"high": 3.81,
 			"low": 3.4,
-			"average": 3.53563
+			"average": 3.54325
 		},
 		"2027": {
 			"high": 5.24,
 			"low": 3.84,
-			"average": 4.27467
+			"average": 4.30509
 		}
-	}
+	},
+	"confidence": "medium"
 }

@@ -2,21 +2,21 @@
 	"ticker": "EXEL",
 	"name": "Exelixis",
 	"group": "Biotech",
-	"marketCap": "$11.8B USD",
-	"sharpeRatio": 0.09,
-	"expectedCAGR": "-20% - 37%",
+	"marketCap": "$11.4B USD",
+	"sharpeRatio": 0.03,
+	"expectedCAGR": "-22% - 34%",
 	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 15.8,
-		"forwardPE": 11.2,
-		"pegRatio": 0.8,
-		"evEbitda": 11.4,
-		"evFcf": 16.7
+		"trailingPE": 16.1,
+		"forwardPE": 11.3,
+		"pegRatio": 2.56,
+		"evEbitda": 11.7,
+		"evFcf": 17
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
-		"fcfYield": "~5%",
-		"roic": "8.1%",
+		"fcfYield": "~6%",
+		"roic": "8.4%",
 		"roe": "35.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "33%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "5.6%",
 		"interestCoverage": "83.4x"
 	},
-	"targetPrice": "$46.83",
+	"targetPrice": "$47.53",
 	"bullCase": "Exelixis' Cabometyx has label expansions pending in front-line RCC combinations (with nivolumab) and additional tumor types. The pipeline assets XL092 (next-gen cabozantinib) and XB002 (ADC) represent the next growth phase. Massive cash balance ($2B+) with no debt funds buybacks and internal pipeline without equity dilution.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$43.88",
+	"currentPrice": "$44.69",
 	"consensus": {
 		"tipranks": "$45",
-		"yahoo": "$46.83",
+		"yahoo": "$47.53",
 		"stockanalysis": "$46"
 	},
 	"cagrModel": {
@@ -38,40 +38,40 @@
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-20%",
-			"base": "7%",
-			"bull": "37%"
+			"bear": "-22%",
+			"base": "6%",
+			"bull": "34%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:20.588Z",
+	"lastUpdated": "2026-04-30T00:44:36.729Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.81,
+		"score": 0.82,
 		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 0.82 vs 0.8 limit) (REJECT: Stalled at WAIT with base CAGR 6% < 15%)",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 16.7,
-			"cvStock": 0.135,
-			"riskMultiplier": 1.018
+			"multiple": 17,
+			"cvStock": 0.134,
+			"riskMultiplier": 1.017
 		},
-		"note": "REJECT: Stalled at WAIT with base CAGR 7% < 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 43.88,
-				"price6mAgo": 40.01,
-				"price1mAgo": 41.28,
+				"price": 44.69,
+				"price6mAgo": 38.94,
+				"price1mAgo": 41.95,
 				"low3m": 39.71,
-				"return6m": 9.7,
-				"return1m": 6.3,
+				"return6m": 14.8,
+				"return1m": 6.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 6
+				"up30d": 1,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 16.2,
@@ -79,26 +79,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.54
+		"secondaryScore": 0.55
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0.77,
-		"totalScore": 10.77,
+		"revisionsScore": -0.91,
+		"totalScore": 9.09,
 		"raw": {
 			"avgSurprisePct": 22.12,
-			"netInsiderShares": 2157881,
+			"netInsiderShares": 2107208,
 			"instFlowTrend": "positive",
-			"upRevisions": 7,
-			"downRevisions": 5,
-			"totalAnalysts": 13
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 11
 		}
 	},
 	"description": "Exelixis, Inc., an oncology company, focuses on the discovery, development, and commercialization of new medicines for difficult-to-treat cancers in the United States.",
 	"analystTargets": {
 		"low": 35,
-		"mean": 46.83,
+		"mean": 47.53,
 		"high": 60
 	},
 	"analystConsensus": {
@@ -114,13 +114,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 3.67,
-			"low": 2.92267,
-			"average": 3.39559
+			"low": 3.21,
+			"average": 3.43909
 		},
 		"2027": {
 			"high": 4.89,
 			"low": 2.77,
-			"average": 3.92938
+			"average": 3.95818
 		}
-	}
+	},
+	"confidence": "medium"
 }

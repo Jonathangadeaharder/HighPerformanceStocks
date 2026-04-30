@@ -2,21 +2,21 @@
 	"ticker": "HEI",
 	"name": "HEICO Corporation",
 	"group": "Serial Acquirers",
-	"marketCap": "$37.9B USD",
-	"sharpeRatio": 0.83,
-	"expectedCAGR": "4% - 53%",
-	"expectedVolatility": "~29%",
+	"marketCap": "$36.4B USD",
+	"sharpeRatio": 0.98,
+	"expectedCAGR": "8% - 60%",
+	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 53.8,
-		"forwardPE": 42.9,
-		"pegRatio": null,
-		"evEbitda": 32.2,
-		"evFcf": 58.9
+		"trailingPE": 51.8,
+		"forwardPE": 41.1,
+		"pegRatio": 2.46,
+		"evEbitda": 31,
+		"evFcf": 56.8
 	},
 	"metrics": {
 		"fcfMargin": "~15%",
 		"fcfYield": "~2%",
-		"roic": "2.3%",
+		"roic": "2.4%",
 		"roe": "16.6%",
 		"netDebtEbitda": "1.8x",
 		"ruleOf40": "29%",
@@ -26,54 +26,54 @@
 		"revenueGrowth": "14.4%",
 		"interestCoverage": "9.2x"
 	},
-	"targetPrice": "$363.16",
+	"targetPrice": "$354.11",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$271.77",
+	"currentPrice": "$260.99",
 	"consensus": {
 		"tipranks": "$366",
-		"yahoo": "$363.16",
+		"yahoo": "$354.11",
 		"stockanalysis": "$366"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.05,
+		"ttmEPS": 5.04,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "34%",
-			"bull": "53%"
+			"bear": "8%",
+			"base": "36%",
+			"bull": "60%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:22.688Z",
+	"lastUpdated": "2026-04-30T00:44:38.270Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.79,
+		"score": 1.72,
 		"signal": "WAIT",
+		"note": "Valuation score 1.72 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 35.7% & elite quality floor (QCS 9.75))",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 32.2,
+			"multiple": 31,
 			"cvStock": 0.048,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.6% + QCS 9.75",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 271.77,
-				"price6mAgo": 322.01,
-				"price1mAgo": 307.36,
-				"low3m": 263.55,
-				"return6m": -15.6,
-				"return1m": -11.6,
+				"price": 260.99,
+				"price6mAgo": 310.33,
+				"price1mAgo": 265.02,
+				"low3m": 256.11,
+				"return6m": -15.9,
+				"return1m": -1.5,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 11,
-				"down30d": 4
+				"up30d": 3,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 4.7,
@@ -81,27 +81,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.38
+		"secondaryScore": 2.28
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": 2.25,
-		"totalScore": 9.75,
+		"revisionsScore": 0,
+		"totalScore": 7.5,
 		"raw": {
 			"avgSurprisePct": 8.28,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 13,
-			"downRevisions": 4,
+			"upRevisions": 2,
+			"downRevisions": 2,
 			"totalAnalysts": 20
 		}
 	},
 	"description": "HEICO Corporation provides aerospace, defense, and electronic related products and services in the United States and internationally.",
 	"analystTargets": {
 		"low": 282,
-		"mean": 363.16,
-		"high": 417
+		"mean": 354.11,
+		"high": 418
 	},
 	"analystConsensus": {
 		"ticker": "HEI",
@@ -117,12 +117,13 @@
 		"2026": {
 			"high": 6.14,
 			"low": 5.4,
-			"average": 5.63351
+			"average": 5.64556
 		},
 		"2027": {
 			"high": 7.16,
 			"low": 5.95,
-			"average": 6.33176
+			"average": 6.3519
 		}
-	}
+	},
+	"confidence": "medium"
 }

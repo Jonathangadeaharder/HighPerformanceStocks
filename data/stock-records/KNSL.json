@@ -7,96 +7,97 @@
 	"cagrModel": {
 		"epsGrowth": "20%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 21.66,
+		"ttmEPS": 22.71,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-10%",
-			"base": "18%",
-			"bull": "30%"
+			"bear": "-19%",
+			"base": "9%",
+			"bull": "34%"
 		}
 	},
-	"currentPrice": "$344.90",
-	"marketCap": "$8.0B USD",
+	"currentPrice": "$331.03",
+	"marketCap": "$7.6B USD",
 	"valuation": {
-		"trailingPE": 15.9,
-		"forwardPE": 15.5,
-		"evEbitda": 12.4,
-		"evFcf": 8.4
+		"trailingPE": 14.6,
+		"forwardPE": 15.1,
+		"evEbitda": 11.2,
+		"evFcf": 7.8,
+		"pegRatio": 1.06
 	},
 	"metrics": {
-		"roe": "29.3%",
+		"roe": "29.7%",
 		"fcfMargin": "~51%",
-		"fcfYield": "~12%",
-		"netDebtEbitda": "0.1x",
-		"ruleOf40": "69%",
+		"fcfYield": "~13%",
+		"netDebtEbitda": "0.0x",
+		"ruleOf40": "61%",
 		"beta": "1.08",
-		"revenueGrowth": "17.3%",
-		"roic": "12.9%",
-		"interestCoverage": "52.7x"
+		"revenueGrowth": "10.2%",
+		"roic": "13.9%",
+		"interestCoverage": "55.0x"
 	},
 	"consensus": {
-		"yahoo": "$407.33"
+		"yahoo": "$360.22"
 	},
-	"targetPrice": "$407.33",
-	"expectedCAGR": "-10% - 30%",
+	"targetPrice": "$360.22",
+	"expectedCAGR": "-19% - 34%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.42,
+		"score": 0.39,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
-			"multiple": 8.4,
-			"cvStock": 0.047,
+			"multiple": 7.8,
+			"cvStock": 0.049,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 344.9,
-				"price6mAgo": 474.52,
-				"price1mAgo": 378.49,
+				"price": 331.03,
+				"price6mAgo": 398.16,
+				"price1mAgo": 336.69,
 				"low3m": 321.97,
-				"return6m": -27.3,
-				"return1m": -8.9,
-				"near3mLow": false
+				"return6m": -16.9,
+				"return1m": -1.7,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 0,
+				"up30d": 1,
 				"down30d": 7
 			},
 			"earningsSurprise": {
-				"surprise": 9.5,
-				"quarter": "2025-12"
+				"surprise": 9.3,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.78
+		"secondaryScore": 0.76
 	},
-	"lastUpdated": "2026-04-05T07:21:24.960Z",
-	"expectedVolatility": "~37%",
-	"sharpeRatio": 0.15,
+	"lastUpdated": "2026-04-30T00:44:39.792Z",
+	"expectedVolatility": "~32%",
+	"sharpeRatio": 0.09,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -1.67,
-		"totalScore": 8.33,
+		"revisionsScore": 2.5,
+		"totalScore": 12.5,
 		"raw": {
-			"avgSurprisePct": 9.8,
+			"avgSurprisePct": 8.71,
 			"netInsiderShares": 23374,
 			"instFlowTrend": "positive",
-			"upRevisions": 3,
-			"downRevisions": 7,
-			"totalAnalysts": 12
+			"upRevisions": 5,
+			"downRevisions": 0,
+			"totalAnalysts": 10
 		}
 	},
 	"description": "Kinsale Capital Group, Inc. engages in the provision of property and casualty insurance products in the United States.",
 	"analystTargets": {
-		"low": 312,
-		"mean": 407.33,
-		"high": 450
+		"low": 267,
+		"mean": 360.22,
+		"high": 442
 	},
 	"analystConsensus": {
 		"ticker": "KNSL",
@@ -109,14 +110,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 21.93513,
-			"low": 19.51,
-			"average": 20.36959
+			"high": 21.5,
+			"low": 20.15,
+			"average": 20.692
 		},
 		"2027": {
-			"high": 24.68956,
-			"low": 20.5,
-			"average": 22.24541
+			"high": 24.36,
+			"low": 20.08,
+			"average": 21.93091
 		}
-	}
+	},
+	"confidence": "high"
 }

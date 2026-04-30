@@ -10,13 +10,14 @@
 		"ttmEPS": 2.56,
 		"dividendYield": "0%"
 	},
-	"currentPrice": "C$99.49",
-	"marketCap": "C$8.6B",
+	"currentPrice": "C$98.96",
+	"marketCap": "C$8.5B",
 	"valuation": {
-		"trailingPE": 38.3,
-		"forwardPE": 22.2,
-		"evEbitda": 26.7,
-		"evFcf": 34.8
+		"trailingPE": 38.7,
+		"forwardPE": 22.4,
+		"evEbitda": 26.6,
+		"evFcf": 34.6,
+		"pegRatio": 1.45
 	},
 	"metrics": {
 		"roe": "10.9%",
@@ -26,36 +27,36 @@
 		"ruleOf40": "48%",
 		"beta": "0.19",
 		"revenueGrowth": "15.1%",
-		"roic": "3.2%",
+		"roic": "3.3%",
 		"interestCoverage": "668.6x"
 	},
 	"consensus": {},
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.05,
+		"score": 2.04,
 		"signal": "WAIT",
+		"note": "Valuation score 2.04 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 30%)",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 34.8,
+			"multiple": 34.6,
 			"cvStock": 0.072,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 99.49,
-				"price6mAgo": 131.98,
-				"price1mAgo": 97.89,
+				"price": 98.96,
+				"price6mAgo": 125.13,
+				"price1mAgo": 98.84,
 				"low3m": 85.26,
-				"return6m": -24.6,
-				"return1m": 1.6,
+				"return6m": -20.9,
+				"return1m": 0.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
+				"up30d": 1,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -64,23 +65,23 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.31
+		"secondaryScore": 1.32
 	},
-	"lastUpdated": "2026-04-05T07:21:19.535Z",
+	"lastUpdated": "2026-04-30T00:44:36.014Z",
 	"expectedVolatility": "~37%",
 	"sharpeRatio": 0.74,
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 2.5,
-		"revisionsScore": 2.86,
-		"totalScore": 0.36,
+		"revisionsScore": 0.63,
+		"totalScore": -1.87,
 		"raw": {
 			"avgSurprisePct": -13.74,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 4,
+			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 7
+			"totalAnalysts": 8
 		}
 	},
 	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
@@ -96,13 +97,14 @@
 	"forwardEstimates": {
 		"2027": {
 			"high": 3.25,
-			"low": 2.32,
-			"average": 2.80574
+			"low": 2.08,
+			"average": 2.73004
 		},
 		"2028": {
 			"high": 3.66,
 			"low": 2.73,
-			"average": 3.22013
+			"average": 3.23685
 		}
-	}
+	},
+	"confidence": "cut"
 }

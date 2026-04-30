@@ -8,17 +8,17 @@
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "22%",
-			"bull": "76%"
+			"bear": "2%",
+			"base": "30%",
+			"bull": "86%"
 		}
 	},
-	"currentPrice": "$546.89",
-	"marketCap": "$12.5B USD",
+	"currentPrice": "$518.58",
+	"marketCap": "$11.9B USD",
 	"valuation": {
-		"forwardPE": 42.7,
-		"evFcf": -103.5,
-		"evEbitda": -39.9
+		"forwardPE": 40.5,
+		"evFcf": -97.9,
+		"evEbitda": -37.7
 	},
 	"metrics": {
 		"roe": "-42.5%",
@@ -28,28 +28,28 @@
 		"ruleOf40": "199%",
 		"beta": "-1.01",
 		"revenueGrowth": "210.8%",
-		"roic": "-1.6%"
+		"roic": "-1.7%"
 	},
 	"consensus": {
-		"yahoo": "$668.57"
+		"yahoo": "$672.79"
 	},
-	"targetPrice": "$668.57",
+	"targetPrice": "$672.79",
 	"analystTargets": {
 		"low": 529,
-		"mean": 668.57,
+		"mean": 672.79,
 		"high": 964
 	},
-	"expectedCAGR": "-3% - 76%",
-	"expectedVolatility": "~45%",
-	"sharpeRatio": 0.71,
+	"expectedCAGR": "2% - 86%",
+	"expectedVolatility": "~44%",
+	"sharpeRatio": 0.9,
 	"screener": {
 		"engine": "fPERG",
-		"score": -5.33,
+		"score": -5.05,
 		"signal": "FLAG FOR MANUAL REVIEW",
 		"inputs": {
 			"growth": -10,
 			"multipleType": "Forward P/E",
-			"multiple": 42.7,
+			"multiple": 40.5,
 			"cvStock": 0.228,
 			"riskMultiplier": 1.247
 		},
@@ -57,12 +57,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 546.89,
-				"price6mAgo": 442.31,
-				"price1mAgo": 439.34,
+				"price": 518.58,
+				"price6mAgo": 427.52,
+				"price1mAgo": 505.34,
 				"low3m": 416.21,
-				"return6m": 23.6,
-				"return1m": 24.5,
+				"return6m": 21.3,
+				"return1m": 2.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -91,7 +91,7 @@
 		}
 	},
 	"description": "Madrigal Pharmaceuticals, Inc., a biopharmaceutical company, focuses on delivering novel therapeutics for metabolic dysfunction-associated steatohepatitis (MASH) in the United States.",
-	"lastUpdated": "2026-04-05T07:21:27.924Z",
+	"lastUpdated": "2026-04-30T00:44:42.129Z",
 	"forwardEstimates": {
 		"2026": {
 			"high": -0.6,
@@ -103,5 +103,6 @@
 			"low": 6.16,
 			"average": 12.794
 		}
-	}
+	},
+	"confidence": "cut"
 }

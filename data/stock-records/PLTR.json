@@ -2,51 +2,52 @@
 	"ticker": "PLTR",
 	"name": "Palantir",
 	"group": "Enterprise Software",
-	"targetPrice": "$185.25",
+	"targetPrice": "$184.47",
 	"bullCase": "Palantir's AIP platform is becoming the enterprise AI operating system — AIP bootcamps are converting Fortune 500 trials to paid contracts at an accelerating pace. US commercial revenue grew 55%+ in 2025. The US government remains a structural buyer (DoD, CIA, NHS equivalent) regardless of political cycles. AIP's value proposition strengthens as AI adoption deepens.",
 	"bearCase": "At 83x forward PE and $370B market cap, Palantir is priced for decades of compounding. Government contract cancellations under DOGE budget cuts pose direct revenue risk. European data sovereignty laws restrict PLTR's commercial expansion on the continent. The AIP e-commerce expansion is early-stage and unproven at scale.",
 	"cagrModel": {
 		"epsGrowth": "35%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 0.62,
+		"ttmEPS": 0.64,
 		"scenarios": {
-			"bear": "-53%",
-			"base": "25%",
-			"bull": "75%"
+			"bear": "-49%",
+			"base": "34%",
+			"bull": "85%"
 		}
 	},
-	"currentPrice": "$148.46",
-	"marketCap": "$355.1B USD",
+	"currentPrice": "$137.97",
+	"marketCap": "$330.7B USD",
 	"consensus": {
-		"yahoo": "$185.25"
+		"yahoo": "$184.47"
 	},
-	"expectedVolatility": "~56%",
+	"expectedVolatility": "~53%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 8.2,
-		"signal": "FAIL",
+		"score": 7.61,
+		"signal": "WAIT",
+		"note": "Valuation score 7.61 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 33.7%)",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/FCF",
-			"multiple": 276.2,
+			"multiple": 256.3,
 			"cvStock": 0.122,
 			"riskMultiplier": 1.007
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 148.46,
-				"price6mAgo": 179.53,
-				"price1mAgo": 152.67,
-				"low3m": 126.23,
-				"return6m": -17.3,
-				"return1m": -2.8,
+				"price": 137.97,
+				"price6mAgo": 194.55,
+				"price1mAgo": 137.55,
+				"low3m": 122.68,
+				"return6m": -29.1,
+				"return1m": 0.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -55,14 +56,15 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.37
+		"secondaryScore": 2.2
 	},
-	"lastUpdated": "2026-04-05T07:21:32.239Z",
+	"lastUpdated": "2026-04-30T00:44:45.111Z",
 	"valuation": {
-		"trailingPE": 239.5,
-		"forwardPE": 79.8,
-		"evEbitda": 241.8,
-		"evFcf": 276.2
+		"trailingPE": 215.6,
+		"forwardPE": 74,
+		"evEbitda": 224.4,
+		"evFcf": 256.3,
+		"pegRatio": 2.81
 	},
 	"metrics": {
 		"roe": "26.0%",
@@ -72,11 +74,11 @@
 		"ruleOf40": "98%",
 		"beta": "1.67",
 		"revenueGrowth": "70.0%",
-		"roic": "0.6%",
+		"roic": "0.7%",
 		"interestCoverage": "114.2x"
 	},
-	"expectedCAGR": "-53% - 75%",
-	"sharpeRatio": 0.12,
+	"expectedCAGR": "-49% - 85%",
+	"sharpeRatio": 0.25,
 	"intrinsicValue": {
 		"dcf": 9.53,
 		"date": "2026-03-28",
@@ -85,13 +87,13 @@
 	"qcs": {
 		"earningsScore": 4.16,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 4.16,
+		"revisionsScore": 0.18,
+		"totalScore": 4.34,
 		"raw": {
 			"avgSurprisePct": 12.68,
-			"netInsiderShares": -2240639,
+			"netInsiderShares": -2214698,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
+			"upRevisions": 1,
 			"downRevisions": 0,
 			"totalAnalysts": 28
 		}
@@ -99,8 +101,8 @@
 	"description": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom,...",
 	"analystTargets": {
 		"low": 70,
-		"mean": 185.25,
-		"high": 260
+		"mean": 184.47,
+		"high": 255
 	},
 	"analystConsensus": {
 		"ticker": "PLTR",
@@ -116,12 +118,13 @@
 		"2026": {
 			"high": 1.53,
 			"low": 1.13,
-			"average": 1.3213
+			"average": 1.32363
 		},
 		"2027": {
 			"high": 2.38,
 			"low": 1.47,
-			"average": 1.86141
+			"average": 1.86521
 		}
-	}
+	},
+	"confidence": "low"
 }

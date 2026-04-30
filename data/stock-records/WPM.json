@@ -2,21 +2,21 @@
 	"ticker": "WPM",
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
-	"marketCap": "$61.7B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "12% - 94%",
-	"expectedVolatility": "~44%",
+	"marketCap": "$56.7B USD",
+	"sharpeRatio": 1.34,
+	"expectedCAGR": "21% - 109%",
+	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 41.8,
-		"forwardPE": 22.7,
-		"pegRatio": 1.41,
-		"evEbitda": 31.8,
-		"evFcf": 800.3
+		"trailingPE": 38.5,
+		"forwardPE": 22.2,
+		"pegRatio": 0.43,
+		"evEbitda": 29.3,
+		"evFcf": 736.1
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
 		"fcfYield": "~0%",
-		"roic": "3.1%",
+		"roic": "3.4%",
 		"roe": "18.5%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "130%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "127.2%",
 		"interestCoverage": "4364.4x"
 	},
-	"targetPrice": "$188.90",
+	"targetPrice": "$189.64",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$135.56",
+	"currentPrice": "$124.89",
 	"consensus": {
 		"tipranks": "$140",
-		"yahoo": "$188.90",
+		"yahoo": "$189.64",
 		"stockanalysis": "$133"
 	},
 	"cagrModel": {
@@ -38,40 +38,40 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "12%",
-			"base": "40%",
-			"bull": "94%"
+			"bear": "21%",
+			"base": "53%",
+			"bull": "109%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:39.268Z",
+	"lastUpdated": "2026-04-30T00:44:50.286Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
+		"score": 2.04,
 		"signal": "WAIT",
+		"note": "Valuation score 2.04 exceeds 1 limit (Upgraded from FAIL: Protected by analyst upside 51.8%)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 22.7,
-			"cvStock": 0.264,
-			"riskMultiplier": 1.405
+			"multiple": 22.2,
+			"cvStock": 0.259,
+			"riskMultiplier": 1.38
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 135.56,
-				"price6mAgo": 109.81,
-				"price1mAgo": 147.83,
+				"price": 124.89,
+				"price6mAgo": 98.07,
+				"price1mAgo": 123.7,
 				"low3m": 113.39,
-				"return6m": 23.4,
-				"return1m": -8.3,
+				"return6m": 27.3,
+				"return1m": 1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 11.7,
@@ -80,24 +80,24 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": 1.21,
+		"earningsScore": 1.23,
 		"flowScore": 2.5,
-		"revisionsScore": 2.31,
-		"totalScore": 6.02,
+		"revisionsScore": -1.67,
+		"totalScore": 2.06,
 		"raw": {
 			"avgSurprisePct": 7.96,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 7,
-			"downRevisions": 1,
-			"totalAnalysts": 13
+			"upRevisions": 2,
+			"downRevisions": 7,
+			"totalAnalysts": 15
 		}
 	},
 	"description": "Wheaton Precious Metals Corp. operates as a precious metal streaming company.",
 	"analystTargets": {
 		"low": 150,
-		"mean": 188.9,
-		"high": 260.97
+		"mean": 189.64,
+		"high": 260.39
 	},
 	"analystConsensus": {
 		"ticker": "WPM",
@@ -111,14 +111,15 @@
 	"targetPriceAlternative": "$145.36",
 	"forwardEstimates": {
 		"2026": {
-			"high": 7.78,
+			"high": 7.07,
 			"low": 4.25943,
-			"average": 5.71596
+			"average": 5.32996
 		},
 		"2027": {
-			"high": 9.66,
-			"low": 3.43,
-			"average": 5.89121
+			"high": 9.25,
+			"low": 3.33,
+			"average": 5.71241
 		}
-	}
+	},
+	"confidence": "low"
 }

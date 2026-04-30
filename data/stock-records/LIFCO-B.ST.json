@@ -2,102 +2,102 @@
 	"ticker": "LIFCO-B.ST",
 	"name": "Lifco AB",
 	"group": "Serial Acquirers",
-	"marketCap": "124.9B SEK",
-	"sharpeRatio": 1.02,
-	"expectedCAGR": "23% - 41%",
+	"marketCap": "129.9B SEK",
+	"sharpeRatio": 0.74,
+	"expectedCAGR": "13% - 36%",
 	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 34.4,
-		"forwardPE": 34.5,
+		"trailingPE": 35.1,
+		"forwardPE": 35.8,
 		"pegRatio": null,
-		"evEbitda": 19.9,
-		"evFcf": 29.3
+		"evEbitda": 19.7,
+		"evFcf": 31.2
 	},
 	"metrics": {
-		"fcfMargin": "~16%",
-		"fcfYield": "~4%",
+		"fcfMargin": "~15%",
+		"fcfYield": "~3%",
 		"roic": "3.8%",
-		"roe": "19.5%",
-		"netDebtEbitda": "1.3x",
-		"ruleOf40": "22%",
+		"roe": "19.3%",
+		"netDebtEbitda": "0.7x",
+		"ruleOf40": "19%",
 		"beta": "1.2",
-		"revenueGrowth": "5.8%",
-		"interestCoverage": "11.2x"
+		"revenueGrowth": "3.6%",
+		"interestCoverage": "20.0x"
 	},
-	"targetPrice": "356 SEK",
+	"targetPrice": "355 SEK",
 	"bullCase": "Provides necessary industrial diversification (dental, demolition) with a stellar historical compounding track record, mitigating pure software concentration risk.",
 	"bearCase": "Priced for absolute macroeconomic perfection. Applying a 44.6x software-like multiple to cyclical physical industrials leaves a zero margin of safety. Any European construction slowdown will immediately compress this multiple.",
-	"currentPrice": "275 SEK",
+	"currentPrice": "286 SEK",
 	"consensus": {
 		"tipranks": "382 SEK",
-		"yahoo": "356 SEK"
+		"yahoo": "355 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 8,
+		"ttmEPS": 8.15,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "23%",
-			"base": "30%",
-			"bull": "41%"
+			"bear": "13%",
+			"base": "25%",
+			"bull": "36%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.023Z",
+	"lastUpdated": "2026-04-30T00:44:41.308Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.66,
-		"signal": "REJECTED",
+		"score": 1.64,
+		"signal": "FAIL",
+		"note": "Valuation score 1.64 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.9,
-			"cvStock": 0.078,
+			"multiple": 19.7,
+			"cvStock": 0.084,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 275,
-				"price6mAgo": 328,
-				"price1mAgo": 299,
+				"price": 286,
+				"price6mAgo": 372,
+				"price1mAgo": 281.8,
 				"low3m": 268.2,
-				"return6m": -16.2,
-				"return1m": -8,
-				"near3mLow": true
+				"return6m": -23.1,
+				"return1m": 1.5,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 4
+				"pass": true,
+				"up30d": 2,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -7.8,
-				"quarter": "2025-12"
+				"surprise": -11.9,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.88
+		"secondaryScore": 2.98
 	},
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 0,
-		"revisionsScore": -3.33,
-		"totalScore": -8.33,
+		"revisionsScore": 0,
+		"totalScore": -5,
 		"raw": {
-			"avgSurprisePct": -14.28,
+			"avgSurprisePct": -13.41,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
-			"downRevisions": 4,
-			"totalAnalysts": 6
+			"downRevisions": 0,
+			"totalAnalysts": 7
 		}
 	},
 	"description": "Lifco AB (publ) engages in the dental, demolition and tools, and systems solutions businesses in Sweden, Norway, Finland, Germany, rest of Europe, the United Kingdom, Asia, Australia, Italy, North ...",
 	"analystTargets": {
-		"low": 335,
-		"mean": 356,
+		"low": 320,
+		"mean": 355.14,
 		"high": 385
 	},
 	"analystConsensus": {
@@ -111,14 +111,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 11.1,
-			"low": 8.27,
-			"average": 9.55329
+			"high": 11.5,
+			"low": 8.39,
+			"average": 9.79814
 		},
 		"2027": {
-			"high": 11.9,
-			"low": 8.65,
-			"average": 10.47304
+			"high": 12.4,
+			"low": 8.76,
+			"average": 10.81108
 		}
-	}
+	},
+	"confidence": "cut"
 }

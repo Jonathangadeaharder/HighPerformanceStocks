@@ -2,14 +2,14 @@
 	"ticker": "BRK.B",
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
-	"marketCap": "$1029.6B USD",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "1% - 21%",
-	"expectedVolatility": "~17%",
+	"marketCap": "$1025.3B USD",
+	"sharpeRatio": 0.47,
+	"expectedCAGR": "1% - 22%",
+	"expectedVolatility": "~15%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 10.06,
 		"evEbitda": null,
-		"trailingPE": 15.4,
+		"trailingPE": 15.3,
 		"forwardPE": 21.9,
 		"evFcf": -6.4
 	},
@@ -24,45 +24,46 @@
 		"roic": "5.8%",
 		"interestCoverage": "14.9x"
 	},
-	"targetPrice": "$523",
+	"targetPrice": "$524",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$477.35",
+	"currentPrice": "$475.38",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "1%",
 			"base": "10%",
-			"bull": "21%"
+			"bull": "22%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-04-05T07:21:16.439Z",
+	"lastUpdated": "2026-04-30T00:44:33.777Z",
 	"consensus": {
-		"yahoo": "$523"
+		"yahoo": "$524"
 	},
 	"screener": {
 		"engine": "fPERG",
 		"score": 2.19,
 		"signal": "FAIL",
+		"note": "Valuation score 2.19 exceeds 1 limit",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
 			"multiple": 21.9,
-			"cvStock": 0.02,
+			"cvStock": 0.021,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 477.35,
-				"price6mAgo": 500.02,
-				"price1mAgo": 500.4,
-				"low3m": 467.21,
-				"return6m": -4.5,
-				"return1m": -4.6,
+				"price": 475.38,
+				"price6mAgo": 478.52,
+				"price1mAgo": 474.66,
+				"low3m": 464.01,
+				"return6m": -0.7,
+				"return1m": 0.2,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -77,24 +78,24 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": -1.07,
+		"earningsScore": -1.02,
 		"flowScore": 0,
-		"revisionsScore": -5,
-		"totalScore": -6.07,
+		"revisionsScore": 0,
+		"totalScore": -1.02,
 		"raw": {
 			"avgSurprisePct": -0.54,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 3,
+			"upRevisions": 1,
+			"downRevisions": 1,
 			"totalAnalysts": 3
 		}
 	},
 	"description": "Berkshire Hathaway Inc., together with its subsidiaries, engages in the insurance, freight rail transportation, and utility businesses.",
 	"analystTargets": {
 		"low": 481,
-		"mean": 523,
-		"high": 578
+		"mean": 524,
+		"high": 581
 	},
 	"analystConsensus": {
 		"ticker": "BRK.B",
@@ -107,14 +108,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 21.38912,
-			"low": 19.45,
-			"average": 20.61304
+			"high": 21.19993,
+			"low": 19.49,
+			"average": 20.56331
 		},
 		"2027": {
 			"high": 22.35,
-			"low": 20.61,
-			"average": 21.77445
+			"low": 20.52,
+			"average": 21.74998
 		}
-	}
+	},
+	"confidence": "cut"
 }

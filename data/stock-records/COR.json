@@ -7,21 +7,22 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS; ttmEPS reflects GAAP; non-GAAP EPS is significantly higher (~$18-20); CAGR model uses GAAP basis",
-		"ttmEPS": 8.31,
+		"ttmEPS": 8.33,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "28%",
-			"bull": "40%"
+			"bear": "10%",
+			"base": "30%",
+			"bull": "45%"
 		}
 	},
-	"currentPrice": "$320.96",
-	"marketCap": "$62.4B USD",
+	"currentPrice": "$311.43",
+	"marketCap": "$60.6B USD",
 	"valuation": {
-		"trailingPE": 38.6,
-		"forwardPE": 16.3,
-		"evEbitda": 14.4,
-		"evFcf": 20.7
+		"trailingPE": 37.4,
+		"forwardPE": 15.9,
+		"evEbitda": 13.9,
+		"evFcf": 19.9,
+		"pegRatio": 0.74
 	},
 	"metrics": {
 		"roe": "133.5%",
@@ -31,41 +32,41 @@
 		"ruleOf40": "7%",
 		"beta": "0.72",
 		"revenueGrowth": "5.5%",
-		"roic": "6.1%",
+		"roic": "6.2%",
 		"interestCoverage": "9.1x"
 	},
 	"consensus": {
-		"yahoo": "$407.92"
+		"yahoo": "$402.92"
 	},
-	"targetPrice": "$407.92",
-	"expectedCAGR": "7% - 40%",
+	"targetPrice": "$402.92",
+	"expectedCAGR": "10% - 45%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.96,
+		"score": 0.93,
 		"signal": "WAIT",
-		"note": "Borderline valuation (Score 0.96 vs 0.8 limit)",
+		"note": "Borderline valuation (Score 0.93 vs 0.8 limit)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14.4,
+			"multiple": 13.9,
 			"cvStock": 0.012,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 320.96,
-				"price6mAgo": 308.71,
-				"price1mAgo": 361.8,
-				"low3m": 308.48,
-				"return6m": 4,
-				"return1m": -11.3,
+				"price": 311.43,
+				"price6mAgo": 341.21,
+				"price1mAgo": 309.93,
+				"low3m": 303.8,
+				"return6m": -8.7,
+				"return1m": 0.5,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 1,
-				"down30d": 2
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": 1,
@@ -73,29 +74,29 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.09
+		"secondaryScore": 1.06
 	},
-	"lastUpdated": "2026-04-07T11:23:06.309Z",
-	"expectedVolatility": "~25%",
-	"sharpeRatio": 0.76,
+	"lastUpdated": "2026-04-30T00:44:34.497Z",
+	"expectedVolatility": "~26%",
+	"sharpeRatio": 0.88,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 10,
+		"revisionsScore": -0.33,
+		"totalScore": 9.67,
 		"raw": {
 			"avgSurprisePct": 3.65,
-			"netInsiderShares": 225154,
+			"netInsiderShares": 228374,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
-			"downRevisions": 1,
+			"downRevisions": 2,
 			"totalAnalysts": 15
 		}
 	},
 	"description": "Cencora, Inc. sources and distributes pharmaceutical products in the United States and internationally.",
 	"analystTargets": {
 		"low": 340,
-		"mean": 407.92,
+		"mean": 402.92,
 		"high": 447
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$403.17",
 	"forwardEstimates": {
 		"2026": {
-			"high": 17.83,
+			"high": 17.76,
 			"low": 17.45,
-			"average": 17.62096
+			"average": 17.60962
 		},
 		"2027": {
 			"high": 20.03,
-			"low": 19.07,
-			"average": 19.63689
+			"low": 19.06,
+			"average": 19.59177
 		}
-	}
+	},
+	"confidence": "medium"
 }

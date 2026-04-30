@@ -11,18 +11,19 @@
 		"ttmEPS": 0.13,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "26%",
-			"base": "76%",
-			"bull": "123%"
+			"bear": "34%",
+			"base": "96%",
+			"bull": "152%"
 		}
 	},
-	"currentPrice": "$67.31",
-	"marketCap": "$12.6B USD",
+	"currentPrice": "$59.56",
+	"marketCap": "$11.2B USD",
 	"valuation": {
-		"trailingPE": 517.8,
-		"forwardPE": 62.8,
-		"evFcf": -87.1,
-		"evEbitda": 147.7
+		"trailingPE": 458.2,
+		"forwardPE": 55.4,
+		"evFcf": -76.7,
+		"evEbitda": 130.1,
+		"pegRatio": 36.41
 	},
 	"metrics": {
 		"roe": "1.3%",
@@ -32,21 +33,21 @@
 		"ruleOf40": "12%",
 		"beta": "1.22",
 		"revenueGrowth": "21.9%",
-		"roic": "-0.3%",
+		"roic": "-0.4%",
 		"interestCoverage": "9.3x"
 	},
 	"consensus": {
-		"yahoo": "$118.35"
+		"yahoo": "$116.75"
 	},
-	"targetPrice": "$118.35",
+	"targetPrice": "$116.75",
 	"analystTargets": {
-		"low": 85,
-		"mean": 118.35,
+		"low": 80,
+		"mean": 116.75,
 		"high": 150
 	},
-	"expectedCAGR": "26% - 123%",
-	"expectedVolatility": "~67%",
-	"sharpeRatio": 1.04,
+	"expectedCAGR": "34% - 152%",
+	"expectedVolatility": "~68%",
+	"sharpeRatio": 1.3,
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "WAIT",
@@ -55,19 +56,19 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.29,
-		"totalScore": 9.71,
+		"revisionsScore": 0.59,
+		"totalScore": 10.59,
 		"raw": {
 			"avgSurprisePct": 21.25,
-			"netInsiderShares": 107736,
+			"netInsiderShares": 82105,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
+			"upRevisions": 3,
+			"downRevisions": 1,
 			"totalAnalysts": 17
 		}
 	},
 	"description": "Kratos Defense & Security Solutions, Inc., a technology company, provides technology, hardware, products, system, and software for the defense, national security, and commercial markets in the Unit...",
-	"lastUpdated": "2026-04-05T07:21:25.831Z",
+	"lastUpdated": "2026-04-30T00:44:40.459Z",
 	"analystConsensus": {
 		"ticker": "KTOS",
 		"strongBuy": 5,
@@ -82,12 +83,13 @@
 		"2026": {
 			"high": 0.9,
 			"low": 0.69,
-			"average": 0.77628
+			"average": 0.77804
 		},
 		"2027": {
 			"high": 1.33,
 			"low": 0.83,
-			"average": 1.07125
+			"average": 1.0757
 		}
-	}
+	},
+	"confidence": "high"
 }

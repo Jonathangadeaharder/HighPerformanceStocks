@@ -11,33 +11,33 @@
 		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "149%",
-			"bull": "257%"
+			"bear": "-8%",
+			"base": "108%",
+			"bull": "195%"
 		}
 	},
-	"currentPrice": "$4.20",
-	"marketCap": "$8.2B USD",
+	"currentPrice": "$5.09",
+	"marketCap": "$10.0B USD",
 	"valuation": {
-		"forwardPE": -9.3,
-		"evFcf": -18.4,
-		"evEbitda": -7.9
+		"forwardPE": -11.3,
+		"evFcf": -23.3,
+		"evEbitda": -10
 	},
 	"metrics": {
 		"roe": "-40.6%",
 		"fcfMargin": "~-12504%",
-		"fcfYield": "~-5%",
+		"fcfYield": "~-4%",
 		"netDebtEbitda": "Net cash",
 		"beta": "2.45",
-		"roic": "-8.3%"
+		"roic": "-6.6%"
 	},
 	"consensus": {
-		"yahoo": "$10.46"
+		"yahoo": "$10.59"
 	},
-	"targetPrice": "$10.46",
+	"targetPrice": "$10.59",
 	"analystTargets": {
-		"low": 4,
-		"mean": 10.46,
+		"low": 4.7,
+		"mean": 10.59,
 		"high": 15
 	},
 	"forwardEstimates": {
@@ -52,9 +52,9 @@
 			"average": -0.45
 		}
 	},
-	"expectedCAGR": "-5% - 257%",
-	"expectedVolatility": "~61%",
-	"sharpeRatio": 1.99,
+	"expectedCAGR": "-8% - 195%",
+	"expectedVolatility": "~60%",
+	"sharpeRatio": 1.48,
 	"screener": {
 		"engine": "totalReturn",
 		"signal": "NO_DATA",
@@ -62,12 +62,12 @@
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 5,
+		"flowScore": 2.5,
 		"revisionsScore": 5,
-		"totalScore": 15,
+		"totalScore": 12.5,
 		"raw": {
 			"avgSurprisePct": 22.95,
-			"netInsiderShares": 2211181,
+			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
 			"downRevisions": 0,
@@ -75,5 +75,6 @@
 		}
 	},
 	"description": "Aurora Innovation, Inc. engages in the self-driving technology business in the United States.",
-	"lastUpdated": "2026-04-07T10:31:36.078Z"
+	"lastUpdated": "2026-04-30T00:44:32.986Z",
+	"confidence": "high"
 }

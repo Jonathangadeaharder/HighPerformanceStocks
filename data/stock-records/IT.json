@@ -7,65 +7,66 @@
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
-		"ttmEPS": 9.64,
+		"ttmEPS": 9.65,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "19%",
-			"bull": "62%"
+			"bear": "-7%",
+			"base": "15%",
+			"bull": "60%"
 		}
 	},
-	"currentPrice": "$157.85",
-	"marketCap": "$11.4B USD",
+	"currentPrice": "$150.23",
+	"marketCap": "$10.1B USD",
 	"valuation": {
-		"trailingPE": 16.4,
-		"forwardPE": 10.9,
-		"evEbitda": 9.7,
-		"evFcf": 13.8
+		"trailingPE": 15.6,
+		"forwardPE": 10.2,
+		"evEbitda": 9.3,
+		"evFcf": 13.2,
+		"pegRatio": 0.79
 	},
 	"metrics": {
 		"roe": "86.9%",
 		"fcfMargin": "~14%",
-		"fcfYield": "~8%",
+		"fcfYield": "~9%",
 		"netDebtEbitda": "1.2x",
 		"ruleOf40": "16%",
 		"beta": "1.04",
 		"revenueGrowth": "2.2%",
-		"roic": "9.9%",
+		"roic": "11.0%",
 		"interestCoverage": "7.1x"
 	},
 	"consensus": {
-		"yahoo": "$188.62"
+		"yahoo": "$173"
 	},
-	"targetPrice": "$188.62",
-	"expectedCAGR": "-11% - 62%",
+	"targetPrice": "$173",
+	"expectedCAGR": "-7% - 60%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.15,
+		"score": 1.1,
 		"signal": "WAIT",
+		"note": "Valuation score 1.10 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10))",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 13.8,
-			"cvStock": 0.051,
+			"multiple": 13.2,
+			"cvStock": 0.076,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 157.85,
-				"price6mAgo": 256.43,
-				"price1mAgo": 170.98,
+				"price": 150.23,
+				"price6mAgo": 248.4,
+				"price1mAgo": 159.14,
 				"low3m": 139.18,
-				"return6m": -38.4,
-				"return1m": -7.7,
+				"return6m": -39.5,
+				"return1m": -5.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 12.2,
@@ -73,21 +74,21 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.91
+		"secondaryScore": 0.85
 	},
-	"lastUpdated": "2026-04-05T07:21:23.964Z",
+	"lastUpdated": "2026-04-30T00:44:39.724Z",
 	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.39,
+	"sharpeRatio": 0.41,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 10,
+		"revisionsScore": 1,
+		"totalScore": 11,
 		"raw": {
 			"avgSurprisePct": 10.61,
-			"netInsiderShares": 114253,
+			"netInsiderShares": 114087,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
+			"upRevisions": 4,
 			"downRevisions": 1,
 			"totalAnalysts": 15
 		}
@@ -95,8 +96,8 @@
 	"description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
 	"analystTargets": {
 		"low": 140,
-		"mean": 188.62,
-		"high": 255
+		"mean": 173,
+		"high": 240
 	},
 	"analystConsensus": {
 		"ticker": "IT",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$188.30",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.78907,
+			"high": 14.41483,
 			"low": 12.32,
-			"average": 13.15599
+			"average": 13.16837
 		},
 		"2027": {
-			"high": 16.14,
+			"high": 17.66136,
 			"low": 13.2,
-			"average": 14.49149
+			"average": 14.72241
 		}
-	}
+	},
+	"confidence": "high"
 }

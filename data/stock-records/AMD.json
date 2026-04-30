@@ -2,52 +2,52 @@
 	"ticker": "AMD",
 	"name": "Advanced Micro Devices",
 	"group": "AI & Semiconductors",
-	"marketCap": "$354.6B USD",
-	"sharpeRatio": 0.48,
-	"expectedCAGR": "1% - 68%",
+	"marketCap": "$549.6B USD",
+	"sharpeRatio": -0.06,
+	"expectedCAGR": "-33% - 35%",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "33%",
-			"bull": "68%"
+			"bear": "-33%",
+			"base": "-11%",
+			"bull": "35%"
 		},
-		"ttmEPS": 2.61,
-		"epsGrowth": "62%",
+		"ttmEPS": 2.62,
+		"epsGrowth": "64%",
 		"dividendYield": "0%",
 		"basis": "Non-GAAP EPS (Excluding Xilinx amortization)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:13.343Z",
+	"lastUpdated": "2026-04-30T00:44:31.545Z",
 	"consensus": {
-		"yahoo": "$289.61"
+		"yahoo": "$300.54"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.54,
-		"signal": "FAIL",
+		"score": 0.8,
+		"signal": "REJECTED",
 		"inputs": {
-			"growth": 62,
+			"growth": 64,
 			"multipleType": "Forward P/E",
-			"multiple": 20.2,
-			"cvStock": 0.159,
-			"riskMultiplier": 1.052
+			"multiple": 30.5,
+			"cvStock": 0.155,
+			"riskMultiplier": 1.046
 		},
-		"note": "Massive P/E divergence (>300%); potential data hallucination",
+		"note": "Massive P/E divergence (>300%); potential data hallucination (Absolute REJECT: Base CAGR -11% is negative)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 217.5,
-				"price6mAgo": 203.71,
-				"price1mAgo": 199.45,
+				"price": 337.11,
+				"price6mAgo": 254.84,
+				"price1mAgo": 196.04,
 				"low3m": 188.22,
-				"return6m": 6.8,
-				"return1m": 9,
+				"return6m": 32.3,
+				"return1m": 72,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 11,
-				"down30d": 2
+				"up30d": 12,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 16,
@@ -60,12 +60,13 @@
 		"date": "2026-03-28",
 		"discount": -69
 	},
-	"currentPrice": "$217.50",
+	"currentPrice": "$337.11",
 	"valuation": {
-		"trailingPE": 83.3,
-		"forwardPE": 20.2,
-		"evEbitda": 51.6,
-		"evFcf": 75.9
+		"trailingPE": 128.7,
+		"forwardPE": 30.5,
+		"evEbitda": 80.5,
+		"evFcf": 118.4,
+		"pegRatio": 0.96
 	},
 	"metrics": {
 		"roe": "7.1%",
@@ -75,22 +76,22 @@
 		"ruleOf40": "47%",
 		"beta": "1.96",
 		"revenueGrowth": "34.1%",
-		"roic": "2.2%",
+		"roic": "1.4%",
 		"interestCoverage": "30.6x"
 	},
-	"targetPrice": "$289.61",
-	"expectedVolatility": "~63%",
+	"targetPrice": "$300.54",
+	"expectedVolatility": "~59%",
 	"qcs": {
-		"earningsScore": 1.3,
+		"earningsScore": 1.34,
 		"flowScore": 0,
-		"revisionsScore": 0.23,
-		"totalScore": 1.53,
+		"revisionsScore": 0.93,
+		"totalScore": 2.27,
 		"raw": {
 			"avgSurprisePct": 5.18,
-			"netInsiderShares": 486854,
+			"netInsiderShares": 428000,
 			"instFlowTrend": "neutral",
-			"upRevisions": 7,
-			"downRevisions": 5,
+			"upRevisions": 10,
+			"downRevisions": 2,
 			"totalAnalysts": 43
 		}
 	},
@@ -98,9 +99,9 @@
 	"bearCase": "NVIDIA's CUDA software moat is extraordinarily deep — switching costs for AI developers are immense. AMD's ROCm software ecosystem lags by 3-5 years. If NVIDIA's Blackwell/Vera Rubin delivers as promised, AMD's MI-series performance gap widens. Consumer GPU (RDNA) faces structural margin pressure from discrete GPU market contraction.",
 	"description": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally.",
 	"analystTargets": {
-		"low": 220,
-		"mean": 289.61,
-		"high": 365
+		"low": 225,
+		"mean": 300.54,
+		"high": 455
 	},
 	"analystConsensus": {
 		"ticker": "AMD",
@@ -114,14 +115,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 7.56,
+			"high": 7.95,
 			"low": 5.6,
-			"average": 6.66718
+			"average": 6.73997
 		},
 		"2027": {
 			"high": 14.26,
 			"low": 7.4,
-			"average": 10.81165
+			"average": 11.03789
 		}
-	}
+	},
+	"confidence": "low"
 }

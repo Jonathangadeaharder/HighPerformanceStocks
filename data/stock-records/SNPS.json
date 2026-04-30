@@ -2,21 +2,21 @@
 	"ticker": "SNPS",
 	"name": "Synopsys",
 	"group": "AI & Semiconductors",
-	"marketCap": "$75.8B USD",
-	"sharpeRatio": 0.49,
-	"expectedCAGR": "7% - 64%",
-	"expectedVolatility": "~63%",
+	"marketCap": "$92.2B USD",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "-16% - 35%",
+	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 60.6,
-		"forwardPE": 23.2,
-		"pegRatio": null,
-		"evEbitda": 52.3,
-		"evFcf": 27.3
+		"trailingPE": 73.7,
+		"forwardPE": 28.2,
+		"pegRatio": 3.19,
+		"evEbitda": 62.4,
+		"evFcf": 32.6
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
-		"fcfYield": "~4%",
-		"roic": "2.9%",
+		"fcfYield": "~3%",
+		"roic": "2.4%",
 		"roe": "5.5%",
 		"netDebtEbitda": "5.4x",
 		"ruleOf40": "104%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "65.5%",
 		"interestCoverage": "2.7x"
 	},
-	"targetPrice": "$537.75",
+	"targetPrice": "$534.65",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~5.4x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$395.95",
+	"currentPrice": "$481.22",
 	"consensus": {
 		"tipranks": "$535",
-		"yahoo": "$537.75",
+		"yahoo": "$534.65",
 		"stockanalysis": "$541"
 	},
 	"cagrModel": {
@@ -38,35 +38,35 @@
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "36%",
-			"bull": "64%"
+			"bear": "-16%",
+			"base": "11%",
+			"bull": "35%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:34.406Z",
+	"lastUpdated": "2026-04-30T00:44:47.253Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 4.02,
-		"signal": "WAIT",
+		"score": 4.8,
+		"signal": "REJECTED",
+		"note": "Valuation score 4.80 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10.95)) (REJECT: Stalled at WAIT with base CAGR 11% < 15%)",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/EBITDA",
-			"multiple": 52.3,
+			"multiple": 62.4,
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 35.8% + QCS 10.95",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 395.95,
-				"price6mAgo": 478.22,
-				"price1mAgo": 442.3,
+				"price": 481.22,
+				"price6mAgo": 442.93,
+				"price1mAgo": 383.14,
 				"low3m": 379.5,
-				"return6m": -17.2,
-				"return1m": -10.5,
-				"near3mLow": true
+				"return6m": 8.6,
+				"return1m": 25.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
@@ -79,26 +79,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.78
+		"secondaryScore": 2.17
 	},
 	"qcs": {
 		"earningsScore": 1.37,
 		"flowScore": 5,
-		"revisionsScore": 4.58,
-		"totalScore": 10.95,
+		"revisionsScore": 4.4,
+		"totalScore": 10.77,
 		"raw": {
 			"avgSurprisePct": 1.31,
-			"netInsiderShares": 30392,
+			"netInsiderShares": 34016,
 			"instFlowTrend": "positive",
 			"upRevisions": 22,
 			"downRevisions": 0,
-			"totalAnalysts": 24
+			"totalAnalysts": 25
 		}
 	},
 	"description": "Synopsys, Inc. provides design IP solutions in the semiconductor and electronics industries.",
 	"analystTargets": {
-		"low": 425,
-		"mean": 537.75,
+		"low": 403.85,
+		"mean": 534.65,
 		"high": 650
 	},
 	"analystConsensus": {
@@ -114,13 +114,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 14.84904,
-			"low": 14.32,
-			"average": 14.45791
+			"low": 14.31,
+			"average": 14.45319
 		},
 		"2027": {
 			"high": 18.6,
 			"low": 16.01,
-			"average": 17.0551
+			"average": 17.04947
 		}
-	}
+	},
+	"confidence": "high"
 }

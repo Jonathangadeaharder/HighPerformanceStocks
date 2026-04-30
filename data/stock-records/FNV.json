@@ -2,21 +2,21 @@
 	"ticker": "FNV",
 	"name": "Franco-Nevada",
 	"group": "Royalties",
-	"marketCap": "$49.7B USD",
-	"sharpeRatio": 0.49,
-	"expectedCAGR": "5% - 39%",
+	"marketCap": "$44.1B USD",
+	"sharpeRatio": 0.93,
+	"expectedCAGR": "20% - 56%",
 	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 44.8,
-		"forwardPE": 26.1,
+		"trailingPE": 39.7,
+		"forwardPE": 22.5,
 		"pegRatio": 5,
-		"evEbitda": 29.8,
-		"evFcf": -46
+		"evEbitda": 26.3,
+		"evFcf": -40.7
 	},
 	"metrics": {
 		"fcfMargin": "~-59%",
 		"fcfYield": "~-2%",
-		"roic": "3.0%",
+		"roic": "3.4%",
 		"roe": "16.3%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "27%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "85.8%",
 		"interestCoverage": ">50x"
 	},
-	"targetPrice": "$305.90",
+	"targetPrice": "$306.36",
 	"bullCase": "Franco-Nevada has the strongest balance sheet in the royalty/streaming space -- zero debt and $280M cash -- giving it unmatched optionality for acquisitions. Revenue is expected to surge 59% to $1.75B as Cobre Panama potentially normalizes. The company just raised its dividend 16% (19th consecutive annual increase). At a forward P/E of ~32x with net cash, FNV is the premium defensive compounder in the gold space.",
 	"bearCase": "At a trailing P/E of ~49x, FNV is pricing in a perfect scenario. The PEG ratio of 5.0x is extremely elevated. Cobre Panama (historically ~15-20% of revenue) remains uncertain, and a permanent impairment would remove a key growth driver. The stock has rallied 99% in 52 weeks, making it vulnerable to profit-taking on any gold pullback. Levered free cash flow was negative (-$1.16B TTM) due to large streaming prepayments.",
-	"currentPrice": "$257.74",
+	"currentPrice": "$228.51",
 	"consensus": {
 		"tipranks": "$250",
-		"yahoo": "$305.90",
+		"yahoo": "$306.36",
 		"stockanalysis": "$236"
 	},
 	"cagrModel": {
@@ -38,38 +38,39 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "20%",
-			"bull": "39%"
+			"bear": "20%",
+			"base": "35%",
+			"bull": "56%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:21.637Z",
+	"lastUpdated": "2026-04-30T00:44:37.473Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.18,
-		"signal": "FAIL",
+		"score": 1.9,
+		"signal": "WAIT",
+		"note": "Valuation score 1.90 exceeds 1 limit (Upgraded from FAIL: Protected by analyst upside 34.1%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 26.1,
-			"cvStock": 0.114,
-			"riskMultiplier": 1.003
+			"multiple": 22.5,
+			"cvStock": 0.129,
+			"riskMultiplier": 1.013
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 257.74,
-				"price6mAgo": 221.78,
-				"price1mAgo": 255.35,
-				"low3m": 202.62,
-				"return6m": 16.2,
-				"return1m": 0.9,
-				"near3mLow": false
+				"price": 228.51,
+				"price6mAgo": 188.9,
+				"price1mAgo": 233.6,
+				"low3m": 219.1,
+				"return6m": 21,
+				"return1m": -2.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
+				"up30d": 5,
 				"down30d": 2
 			},
 			"earningsSurprise": {
@@ -79,24 +80,24 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": 2.88,
+		"earningsScore": 2.55,
 		"flowScore": 2.5,
-		"revisionsScore": 1.5,
-		"totalScore": 6.88,
+		"revisionsScore": 2.5,
+		"totalScore": 7.55,
 		"raw": {
 			"avgSurprisePct": 8.21,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 6,
-			"downRevisions": 3,
-			"totalAnalysts": 10
+			"upRevisions": 7,
+			"downRevisions": 1,
+			"totalAnalysts": 12
 		}
 	},
 	"description": "Franco-Nevada Corporation operates as a royalty and stream company focused on precious metals in South America, Central America, Mexico, the United States, Canada, Australia, Europe, and Africa.",
 	"analystTargets": {
-		"low": 269,
-		"mean": 305.9,
-		"high": 356.09
+		"low": 273,
+		"mean": 306.36,
+		"high": 354.21
 	},
 	"analystConsensus": {
 		"ticker": "FNV",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$257.25",
 	"forwardEstimates": {
 		"2026": {
-			"high": 10.39,
-			"low": 7.85,
-			"average": 8.878
+			"high": 11.07,
+			"low": 8.03,
+			"average": 8.87167
 		},
 		"2027": {
-			"high": 12.34,
+			"high": 13.03,
 			"low": 7.83,
-			"average": 9.89025
+			"average": 10.0725
 		}
-	}
+	},
+	"confidence": "medium"
 }

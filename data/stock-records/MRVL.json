@@ -2,21 +2,21 @@
 	"ticker": "MRVL",
 	"name": "Marvell Technology",
 	"group": "AI & Semiconductors",
-	"marketCap": "$93.7B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "-21% - 53%",
-	"expectedVolatility": "~62%",
+	"marketCap": "$136.9B USD",
+	"sharpeRatio": -0.4,
+	"expectedCAGR": "-46% - 9%",
+	"expectedVolatility": "~58%",
 	"valuation": {
-		"trailingPE": 34.9,
-		"forwardPE": 19.8,
-		"pegRatio": 1.5,
-		"evEbitda": 36.4,
-		"evFcf": 66.4
+		"trailingPE": 51.2,
+		"forwardPE": 28.9,
+		"pegRatio": 1.8,
+		"evEbitda": 52.9,
+		"evFcf": 96.4
 	},
 	"metrics": {
 		"fcfMargin": "~18%",
-		"fcfYield": "~2%",
-		"roic": "1.8%",
+		"fcfYield": "~1%",
+		"roic": "1.3%",
 		"roe": "19.3%",
 		"netDebtEbitda": "0.8x",
 		"ruleOf40": "40%",
@@ -24,80 +24,80 @@
 		"revenueGrowth": "22.1%",
 		"interestCoverage": "10.0x"
 	},
-	"targetPrice": "$120.88",
+	"targetPrice": "$128.36",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$107.11",
+	"currentPrice": "$156.57",
 	"consensus": {
 		"tipranks": "$122",
-		"yahoo": "$120.88",
+		"yahoo": "$128.36",
 		"stockanalysis": "$116"
 	},
 	"cagrModel": {
-		"ttmEPS": 3.07,
+		"ttmEPS": 3.06,
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-21%",
-			"base": "13%",
-			"bull": "53%"
+			"bear": "-46%",
+			"base": "-18%",
+			"bull": "9%"
 		},
 		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-04-05T07:47:17.747Z",
+	"lastUpdated": "2026-04-30T00:44:42.900Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.66,
-		"signal": "PASS",
+		"score": 0.96,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 19.8,
-			"cvStock": 0.094,
+			"multiple": 28.9,
+			"cvStock": 0.097,
 			"riskMultiplier": 1
 		},
-		"note": "Analyst Lag Override: Hurdle adjusted to 10% due to strong up-revisions",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 107.11,
-				"price6mAgo": 88.92,
-				"price1mAgo": 75.68,
+				"price": 156.57,
+				"price6mAgo": 88.57,
+				"price1mAgo": 87.81,
 				"low3m": 70.69,
-				"return6m": 20.5,
-				"return1m": 41.5,
+				"return6m": 76.8,
+				"return1m": 78.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 14,
-				"down30d": 1
+				"up30d": 3,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 1.1,
 				"quarter": "2026-01"
 			}
-		}
+		},
+		"note": "Cheap (0.96) but base return -18% misses the 15% hurdle (Absolute REJECT: Base CAGR -18% is negative)"
 	},
 	"qcs": {
-		"earningsScore": 0.5,
+		"earningsScore": 0.48,
 		"flowScore": 5,
-		"revisionsScore": 1.32,
-		"totalScore": 6.82,
+		"revisionsScore": 0.25,
+		"totalScore": 5.73,
 		"raw": {
 			"avgSurprisePct": 1.17,
-			"netInsiderShares": 410603,
+			"netInsiderShares": 1667253,
 			"instFlowTrend": "positive",
-			"upRevisions": 10,
-			"downRevisions": 0,
-			"totalAnalysts": 38
+			"upRevisions": 4,
+			"downRevisions": 2,
+			"totalAnalysts": 40
 		}
 	},
 	"description": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, Chi...",
 	"analystTargets": {
 		"low": 85,
-		"mean": 120.88,
-		"high": 164
+		"mean": 128.36,
+		"high": 170
 	},
 	"analystConsensus": {
 		"ticker": "MRVL",
@@ -113,12 +113,13 @@
 		"2027": {
 			"high": 4.28,
 			"low": 3.35009,
-			"average": 3.81647
+			"average": 3.82852
 		},
 		"2028": {
-			"high": 6.02,
+			"high": 6.099,
 			"low": 4,
-			"average": 5.3966
+			"average": 5.42457
 		}
-	}
+	},
+	"confidence": "medium"
 }

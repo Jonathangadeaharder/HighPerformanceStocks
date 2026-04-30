@@ -8,18 +8,19 @@
 		"ttmEPS": 2.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "8%",
-			"bull": "45%"
+			"bear": "-26%",
+			"base": "4%",
+			"bull": "39%"
 		}
 	},
-	"currentPrice": "$82.53",
-	"marketCap": "$61.4B USD",
+	"currentPrice": "$86.11",
+	"marketCap": "$63.7B USD",
 	"valuation": {
-		"trailingPE": 34.1,
-		"forwardPE": 24.9,
-		"evEbitda": 26.3,
-		"evFcf": 33.5
+		"trailingPE": 35.6,
+		"forwardPE": 26,
+		"evEbitda": 27.5,
+		"evFcf": 35,
+		"pegRatio": 2.08
 	},
 	"metrics": {
 		"roe": "135.7%",
@@ -29,40 +30,41 @@
 		"ruleOf40": "40%",
 		"beta": "1",
 		"revenueGrowth": "14.8%",
-		"roic": "4.4%",
+		"roic": "4.2%",
 		"interestCoverage": "38.1x"
 	},
 	"consensus": {
-		"yahoo": "$89.12"
+		"yahoo": "$89.43"
 	},
-	"targetPrice": "$89.12",
-	"expectedCAGR": "-22% - 45%",
+	"targetPrice": "$89.43",
+	"expectedCAGR": "-26% - 39%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.23,
+		"score": 2.33,
 		"signal": "FAIL",
+		"note": "Valuation score 2.33 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 33.5,
+			"multiple": 35,
 			"cvStock": 0.063,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 82.53,
-				"price6mAgo": 86.38,
-				"price1mAgo": 84.42,
-				"low3m": 73.55,
-				"return6m": -4.5,
-				"return1m": -2.2,
+				"price": 86.11,
+				"price6mAgo": 84.2,
+				"price1mAgo": 79.05,
+				"low3m": 74.31,
+				"return6m": 2.3,
+				"return1m": 8.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 2
+				"up30d": 3,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 9,
@@ -70,31 +72,31 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.66
+		"secondaryScore": 1.73
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-04-05T07:21:21.643Z",
-	"expectedVolatility": "~43%",
-	"sharpeRatio": 0.16,
+	"lastUpdated": "2026-04-30T00:44:37.485Z",
+	"expectedVolatility": "~41%",
+	"sharpeRatio": 0.05,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.24,
-		"totalScore": 4.76,
+		"revisionsScore": 0.12,
+		"totalScore": 5.12,
 		"raw": {
 			"avgSurprisePct": 10.79,
-			"netInsiderShares": 414449,
+			"netInsiderShares": 1829790,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 42
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 43
 		}
 	},
 	"description": "Fortinet, Inc. provides cybersecurity and convergence of networking and security solutions worldwide.",
 	"analystTargets": {
 		"low": 64,
-		"mean": 89.12,
+		"mean": 89.43,
 		"high": 120
 	},
 	"analystConsensus": {
@@ -110,13 +112,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 3.13,
-			"low": 2.91,
-			"average": 2.9807
+			"low": 2.85,
+			"average": 2.97603
 		},
 		"2027": {
 			"high": 3.81,
 			"low": 2.97,
-			"average": 3.31038
+			"average": 3.30772
 		}
-	}
+	},
+	"confidence": "medium"
 }

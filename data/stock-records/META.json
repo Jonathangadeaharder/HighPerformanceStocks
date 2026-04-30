@@ -2,21 +2,21 @@
 	"ticker": "META",
 	"name": "Meta Platforms",
 	"group": "Data & Software Monopolies",
-	"marketCap": "$1453.1B USD",
-	"sharpeRatio": 1.28,
-	"expectedCAGR": "7% - 99%",
-	"expectedVolatility": "~38%",
+	"marketCap": "$1698.5B USD",
+	"sharpeRatio": 0.5,
+	"expectedCAGR": "-8% - 52%",
+	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 24.4,
-		"forwardPE": 16,
+		"trailingPE": 28.5,
+		"forwardPE": 18.6,
 		"pegRatio": 1.05,
-		"evEbitda": 14.3,
-		"evFcf": 62.2
+		"evEbitda": 16.7,
+		"evFcf": 72.5
 	},
 	"metrics": {
 		"fcfMargin": "~12%",
-		"fcfYield": "~2%",
-		"roic": "7.9%",
+		"fcfYield": "~1%",
+		"roic": "6.8%",
 		"roe": "30.2%",
 		"netDebtEbitda": "0.0x",
 		"ruleOf40": "35%",
@@ -26,13 +26,13 @@
 		"revenueGrowth": "23.8%",
 		"interestCoverage": "21.8x"
 	},
-	"targetPrice": "$860.25",
+	"targetPrice": "$855.11",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$574.46",
+	"currentPrice": "$669.12",
 	"consensus": {
 		"tipranks": "$836",
-		"yahoo": "$860.25",
+		"yahoo": "$855.11",
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
@@ -40,40 +40,40 @@
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "50%",
-			"bull": "99%"
+			"bear": "-8%",
+			"base": "28%",
+			"bull": "52%"
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-04-05T07:21:28.979Z",
+	"lastUpdated": "2026-04-30T00:44:42.827Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.15,
-		"signal": "WAIT",
+		"score": 4.83,
+		"signal": "FAIL",
+		"note": "Valuation score 4.83 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 62.2,
+			"multiple": 72.5,
 			"cvStock": 0.084,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 49.7%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 574.46,
-				"price6mAgo": 715.66,
-				"price1mAgo": 660.57,
+				"price": 669.12,
+				"price6mAgo": 666.47,
+				"price1mAgo": 536.38,
 				"low3m": 520.26,
-				"return6m": -19.7,
-				"return1m": -13,
+				"return6m": 0.4,
+				"return1m": 24.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 3
+				"up30d": 8,
+				"down30d": 7
 			},
 			"earningsSurprise": {
 				"surprise": 8,
@@ -81,7 +81,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.07
+		"secondaryScore": 1.24
 	},
 	"intrinsicValue": {
 		"dcf": 280.69,
@@ -91,22 +91,22 @@
 	"qcs": {
 		"earningsScore": -3.84,
 		"flowScore": 0,
-		"revisionsScore": -0.09,
-		"totalScore": -3.93,
+		"revisionsScore": 0.09,
+		"totalScore": -3.75,
 		"raw": {
 			"avgSurprisePct": -8.07,
 			"netInsiderShares": 0,
 			"instFlowTrend": "negative",
-			"upRevisions": 2,
-			"downRevisions": 3,
-			"totalAnalysts": 56
+			"upRevisions": 8,
+			"downRevisions": 7,
+			"totalAnalysts": 54
 		}
 	},
 	"description": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets...",
 	"analystTargets": {
 		"low": 614,
-		"mean": 860.25,
-		"high": 1144
+		"mean": 855.11,
+		"high": 1015
 	},
 	"analystConsensus": {
 		"ticker": "META",
@@ -120,14 +120,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 31.95,
+			"high": 31.65,
 			"low": 26.43,
-			"average": 29.59606
+			"average": 29.64461
 		},
 		"2027": {
 			"high": 40,
 			"low": 28.46,
-			"average": 34.37413
+			"average": 34.41838
 		}
-	}
+	},
+	"confidence": "cut"
 }

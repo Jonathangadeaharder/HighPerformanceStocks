@@ -2,21 +2,21 @@
 	"ticker": "GOOGL",
 	"name": "Alphabet",
 	"group": "Data & Software Monopolies",
-	"marketCap": "$3577.9B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "-37% - 50%",
-	"expectedVolatility": "~30%",
+	"marketCap": "$4233.4B USD",
+	"sharpeRatio": -0.52,
+	"expectedCAGR": "-47% - 27%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 27.4,
-		"forwardPE": 22,
+		"trailingPE": 32.4,
+		"forwardPE": 25.9,
 		"pegRatio": 2.3,
-		"evEbitda": 23.4,
-		"evFcf": 92.4
+		"evEbitda": 27.8,
+		"evFcf": 109.7
 	},
 	"metrics": {
 		"fcfMargin": "~9%",
 		"fcfYield": "~1%",
-		"roic": "4.7%",
+		"roic": "3.9%",
 		"roe": "35.7%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "27%",
@@ -24,13 +24,13 @@
 		"revenueGrowth": "18.0%",
 		"interestCoverage": "40.8x"
 	},
-	"targetPrice": "$376.29",
+	"targetPrice": "$378.50",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$295.77",
+	"currentPrice": "$349.94",
 	"consensus": {
 		"tipranks": "$352",
-		"yahoo": "$376.29",
+		"yahoo": "$378.50",
 		"stockanalysis": "$352"
 	},
 	"cagrModel": {
@@ -38,39 +38,40 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-37%",
-			"base": "27%",
-			"bull": "50%"
+			"bear": "-47%",
+			"base": "8%",
+			"bull": "27%"
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-04-05T07:21:21.641Z",
+	"lastUpdated": "2026-04-30T00:44:37.511Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 7.7,
+		"score": 9.14,
 		"signal": "FAIL",
+		"note": "Valuation score 9.14 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 92.4,
+			"multiple": 109.7,
 			"cvStock": 0.074,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 295.77,
-				"price6mAgo": 250.43,
-				"price1mAgo": 300.88,
+				"price": 349.94,
+				"price6mAgo": 281.48,
+				"price1mAgo": 273.5,
 				"low3m": 272.11,
-				"return6m": 18.1,
-				"return1m": -1.7,
+				"return6m": 24.3,
+				"return1m": 27.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 3
+				"up30d": 14,
+				"down30d": 7
 			},
 			"earningsSurprise": {
 				"surprise": 7,
@@ -78,7 +79,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.83
+		"secondaryScore": 2.16
 	},
 	"intrinsicValue": {
 		"dcf": 151.54,
@@ -88,21 +89,21 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.27,
-		"totalScore": 5.27,
+		"revisionsScore": 0.66,
+		"totalScore": 5.66,
 		"raw": {
 			"avgSurprisePct": 19.92,
 			"netInsiderShares": 719008,
 			"instFlowTrend": "neutral",
-			"upRevisions": 4,
-			"downRevisions": 1,
-			"totalAnalysts": 55
+			"upRevisions": 14,
+			"downRevisions": 6,
+			"totalAnalysts": 61
 		}
 	},
 	"description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
 	"analystTargets": {
 		"low": 185,
-		"mean": 376.29,
+		"mean": 378.5,
 		"high": 443
 	},
 	"analystConsensus": {
@@ -117,14 +118,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 12.38,
-			"low": 10.43,
-			"average": 11.43352
+			"high": 13.97,
+			"low": 10.42,
+			"average": 11.64025
 		},
 		"2027": {
 			"high": 14.88,
 			"low": 10.92,
-			"average": 13.324
+			"average": 13.43346
 		}
-	}
+	},
+	"confidence": "medium"
 }

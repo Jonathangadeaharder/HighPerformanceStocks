@@ -2,21 +2,21 @@
 	"ticker": "TFPM",
 	"name": "Triple Flag Precious Metals",
 	"group": "Royalties",
-	"marketCap": "$7.4B USD",
-	"sharpeRatio": 0.58,
-	"expectedCAGR": "21% - 38%",
+	"marketCap": "$6.5B USD",
+	"sharpeRatio": 1,
+	"expectedCAGR": "38% - 57%",
 	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 30.3,
-		"forwardPE": 21.8,
+		"trailingPE": 26.7,
+		"forwardPE": 20.2,
 		"pegRatio": 1.02,
-		"evEbitda": 24.7,
-		"evFcf": -1750
+		"evEbitda": 21.7,
+		"evFcf": -1536.9
 	},
 	"metrics": {
 		"fcfMargin": "~-1%",
 		"fcfYield": "~0%",
-		"roic": "4.3%",
+		"roic": "4.9%",
 		"roe": "12.7%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "59%",
@@ -27,7 +27,7 @@
 	"targetPrice": "$45",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
-	"currentPrice": "$35.81",
+	"currentPrice": "$31.50",
 	"consensus": {
 		"tipranks": "C$59",
 		"yahoo": "$45",
@@ -38,39 +38,40 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "21%",
-			"base": "27%",
-			"bull": "38%"
+			"bear": "38%",
+			"base": "44%",
+			"bull": "57%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:35.270Z",
+	"lastUpdated": "2026-04-30T00:44:47.331Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "FAIL",
+		"score": 1.35,
+		"signal": "WAIT",
+		"note": "Valuation score 1.35 exceeds 1 limit (Upgraded from FAIL: Protected by analyst upside 42.9%)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 21.8,
-			"cvStock": 0.137,
-			"riskMultiplier": 1.02
+			"multiple": 20.2,
+			"cvStock": 0.115,
+			"riskMultiplier": 1.004
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 35.81,
-				"price6mAgo": 30.42,
-				"price1mAgo": 38.21,
+				"price": 31.5,
+				"price6mAgo": 28.29,
+				"price1mAgo": 32.87,
 				"low3m": 30.04,
-				"return6m": 17.7,
-				"return1m": -6.3,
-				"near3mLow": false
+				"return6m": 11.3,
+				"return1m": -4.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 1
+				"up30d": 2,
+				"down30d": 2
 			},
 			"earningsSurprise": {
 				"surprise": 4.1,
@@ -79,16 +80,16 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": 2.35,
+		"earningsScore": 2.81,
 		"flowScore": 2.5,
-		"revisionsScore": 2,
-		"totalScore": 6.85,
+		"revisionsScore": -1,
+		"totalScore": 4.31,
 		"raw": {
 			"avgSurprisePct": 8.06,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 4,
-			"downRevisions": 0,
+			"upRevisions": 2,
+			"downRevisions": 4,
 			"totalAnalysts": 10
 		}
 	},
@@ -109,14 +110,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.71,
-			"low": 1.22,
-			"average": 1.449
+			"high": 1.67,
+			"low": 1.25,
+			"average": 1.409
 		},
 		"2027": {
-			"high": 2.18,
+			"high": 2,
 			"low": 1.28,
-			"average": 1.64556
+			"average": 1.56
 		}
-	}
+	},
+	"confidence": "low"
 }

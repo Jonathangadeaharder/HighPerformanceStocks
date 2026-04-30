@@ -2,15 +2,16 @@
 	"ticker": "LLY",
 	"name": "Eli Lilly",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$837.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-8% - 61%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$760.4B USD",
+	"sharpeRatio": 0.86,
+	"expectedCAGR": "1% - 77%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 40.8,
-		"forwardPE": 22.2,
-		"evEbitda": 27.5,
-		"evFcf": 447.2
+		"trailingPE": 37,
+		"forwardPE": 20.2,
+		"evEbitda": 25.1,
+		"evFcf": 408.6,
+		"pegRatio": 1.29
 	},
 	"metrics": {
 		"roe": "101.2%",
@@ -20,54 +21,55 @@
 		"ruleOf40": "46%",
 		"beta": "0.5",
 		"revenueGrowth": "42.6%",
-		"roic": "1.9%",
+		"roic": "2.1%",
 		"interestCoverage": "13.1x"
 	},
-	"targetPrice": "$1209.21",
+	"targetPrice": "$1202.34",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$935.58",
+	"currentPrice": "$851.21",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-8%",
-			"base": "30%",
-			"bull": "61%"
+			"bear": "1%",
+			"base": "42%",
+			"bull": "77%"
 		},
-		"ttmEPS": 22.92,
+		"ttmEPS": 22.99,
 		"epsGrowth": "24%",
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.877Z",
+	"lastUpdated": "2026-04-30T00:44:41.347Z",
 	"consensus": {
-		"yahoo": "$1209.21"
+		"yahoo": "$1202.34"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 18.63,
-		"signal": "FAIL",
+		"score": 17.03,
+		"signal": "WAIT",
+		"note": "Valuation score 17.03 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 41.3%)",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "EV/FCF",
-			"multiple": 447.2,
-			"cvStock": 0.051,
+			"multiple": 408.6,
+			"cvStock": 0.048,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 935.58,
-				"price6mAgo": 845.05,
-				"price1mAgo": 983.26,
-				"low3m": 877.11,
-				"return6m": 10.7,
-				"return1m": -4.8,
-				"near3mLow": false
+				"price": 851.21,
+				"price6mAgo": 844.5,
+				"price1mAgo": 886.63,
+				"low3m": 850.51,
+				"return6m": 0.8,
+				"return1m": -4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 1
+				"up30d": 6,
+				"down30d": 10
 			},
 			"earningsSurprise": {
 				"surprise": 9.1,
@@ -75,26 +77,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.92
+		"secondaryScore": 0.84
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.36,
-		"totalScore": 5.36,
+		"revisionsScore": -0.2,
+		"totalScore": 4.8,
 		"raw": {
 			"avgSurprisePct": 8.86,
-			"netInsiderShares": -3046744,
+			"netInsiderShares": -2438091,
 			"instFlowTrend": "neutral",
-			"upRevisions": 3,
-			"downRevisions": 1,
-			"totalAnalysts": 28
+			"upRevisions": 8,
+			"downRevisions": 9,
+			"totalAnalysts": 25
 		}
 	},
 	"description": "Eli Lilly and Company discovers, develops, manufactures, and markets human pharmaceutical products in the United States, Europe, China, Japan, and internationally.",
 	"analystTargets": {
 		"low": 850,
-		"mean": 1209.21,
+		"mean": 1202.34,
 		"high": 1500
 	},
 	"analystConsensus": {
@@ -109,14 +111,15 @@
 	"targetPriceAlternative": "$1221.44",
 	"forwardEstimates": {
 		"2026": {
-			"high": 38.02,
-			"low": 33.5,
-			"average": 34.6656
+			"high": 37.35,
+			"low": 32.98,
+			"average": 34.53162
 		},
 		"2027": {
-			"high": 46.48152,
-			"low": 37.9,
-			"average": 42.06553
+			"high": 46.14138,
+			"low": 38.12,
+			"average": 42.09421
 		}
-	}
+	},
+	"confidence": "low"
 }

@@ -13,13 +13,14 @@
 			"bull": "65%"
 		}
 	},
-	"currentPrice": "$33.40",
-	"marketCap": "$32.3B USD",
+	"currentPrice": "$33.33",
+	"marketCap": "$32.1B USD",
 	"valuation": {
 		"trailingPE": 21,
-		"forwardPE": 19.9,
+		"forwardPE": 19.8,
 		"evEbitda": 14,
-		"evFcf": 26.3
+		"evFcf": 26.2,
+		"pegRatio": 4.05
 	},
 	"metrics": {
 		"roe": "17.1%",
@@ -40,7 +41,8 @@
 	"screener": {
 		"engine": "fEVG",
 		"score": 0.88,
-		"signal": "REJECTED",
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.88 vs 0.8 limit)",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
@@ -48,22 +50,21 @@
 			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 33.4,
-				"price6mAgo": 44.45,
-				"price1mAgo": 38.02,
+				"pass": true,
+				"price": 33.33,
+				"price6mAgo": 42.48,
+				"price1mAgo": 32.61,
 				"low3m": 32.2,
-				"return6m": -24.9,
-				"return1m": -12.2,
+				"return6m": -21.5,
+				"return1m": 2.2,
 				"near3mLow": true
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
-				"down30d": 10
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": -8.1,
@@ -73,20 +74,20 @@
 		"secondaryEngine": "fPERG",
 		"secondaryScore": 1.24
 	},
-	"lastUpdated": "2026-04-05T07:21:17.645Z",
-	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.96,
+	"lastUpdated": "2026-04-30T00:44:34.537Z",
+	"expectedVolatility": "~26%",
+	"sharpeRatio": 1,
 	"qcs": {
 		"earningsScore": 2.98,
 		"flowScore": 5,
-		"revisionsScore": -4.17,
-		"totalScore": 3.81,
+		"revisionsScore": -0.42,
+		"totalScore": 7.56,
 		"raw": {
 			"avgSurprisePct": 2.76,
-			"netInsiderShares": 275901,
+			"netInsiderShares": 226211,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 10,
+			"downRevisions": 1,
 			"totalAnalysts": 12
 		}
 	},
@@ -112,12 +113,13 @@
 		"2026": {
 			"high": 1.66,
 			"low": 1.54,
-			"average": 1.57535
+			"average": 1.57435
 		},
 		"2027": {
 			"high": 1.85,
 			"low": 1.6,
-			"average": 1.68001
+			"average": 1.67993
 		}
-	}
+	},
+	"confidence": "medium"
 }

@@ -2,12 +2,12 @@
 	"ticker": "TPL",
 	"name": "Texas Pacific Land",
 	"group": "Energy Royalties",
-	"marketCap": "$30.6B USD",
+	"marketCap": "$30.3B USD",
 	"sharpeRatio": -0.11,
-	"expectedVolatility": "~46%",
+	"expectedVolatility": "~47%",
 	"valuation": {
-		"trailingPE": 63.7,
-		"forwardPE": 6.1,
+		"trailingPE": 62.9,
+		"forwardPE": 6,
 		"pegRatio": null,
 		"evEbitda": 55.7
 	},
@@ -22,27 +22,27 @@
 	"targetPrice": "$444.50",
 	"bullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
 	"bearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot.",
-	"currentPrice": "$444.24",
+	"currentPrice": "$439.03",
 	"consensus": {
 		"tipranks": "$445",
 		"yahoo": "$444.50",
 		"stockanalysis": "$445"
 	},
 	"cagrModel": {
-		"ttmEPS": 6.97,
+		"ttmEPS": 6.98,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:36.084Z",
+	"lastUpdated": "2026-04-30T00:44:47.985Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.41,
+		"score": 0.4,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 6.1,
+			"multiple": 6,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
@@ -50,12 +50,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 444.24,
-				"price6mAgo": 325.13,
-				"price1mAgo": 523.31,
-				"low3m": 280.95,
-				"return6m": 36.6,
-				"return1m": -15.1,
+				"price": 439.03,
+				"price6mAgo": 309.5,
+				"price1mAgo": 467.37,
+				"low3m": 326.68,
+				"return6m": 41.9,
+				"return1m": -6.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -88,5 +88,6 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$639.00"
+	"targetPriceAlternative": "$639.00",
+	"confidence": "low"
 }

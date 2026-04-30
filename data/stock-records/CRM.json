@@ -2,69 +2,69 @@
 	"ticker": "CRM",
 	"name": "Salesforce",
 	"group": "Data & Software Monopolies",
-	"marketCap": "$175.4B USD",
-	"sharpeRatio": 2.13,
-	"expectedCAGR": "3% - 155%",
+	"marketCap": "$148.2B USD",
+	"sharpeRatio": 2.29,
+	"expectedCAGR": "6% - 163%",
 	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 24,
-		"forwardPE": 12.6,
-		"pegRatio": 0.88,
-		"evEbitda": 14.4,
-		"evFcf": 11.1
+		"trailingPE": 23.2,
+		"forwardPE": 12.1,
+		"pegRatio": 0.98,
+		"evEbitda": 14,
+		"evFcf": 10.7
 	},
 	"metrics": {
 		"fcfMargin": "~39%",
-		"fcfYield": "~9%",
+		"fcfYield": "~11%",
 		"roe": "12.4%",
 		"netDebtEbitda": "0.6x",
 		"ruleOf40": "52%",
 		"beta": "1.29",
 		"revenueGrowth": "12.1%",
-		"roic": "8.2%",
+		"roic": "9.6%",
 		"interestCoverage": "12.9x"
 	},
-	"targetPrice": "$273.06",
+	"targetPrice": "$269.37",
 	"bullCase": "The dominant enterprise CRM platform with 150,000+ customers and massive switching costs. Agentforce AI initiative is driving re-acceleration with Q4 FY26 non-GAAP EPS beating consensus by 25%. FCF margins at 33% are best-in-class for enterprise SaaS. A $50B buyback plan provides a strong capital return floor. Trading at just 26x trailing PE — 79% below its 10-year median of 127x — offers rare value entry for a software monopoly.",
 	"bearCase": "Sales Cloud growth has slowed to 8.4% YoY, and FY27 revenue guidance fell short of expectations. Competition from Microsoft Copilot and ServiceNow AI is intensifying. The stock has declined 31% over the past 52 weeks, suggesting the market sees structural deceleration. If Agentforce fails to drive meaningful revenue uplift, the re-rating thesis collapses.",
-	"currentPrice": "$187.18",
+	"currentPrice": "$181.22",
 	"consensus": {
 		"tipranks": "$268",
-		"yahoo": "$273.06",
+		"yahoo": "$269.37",
 		"stockanalysis": "$283"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.81,
+		"ttmEPS": 7.8,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "47%",
-			"bull": "155%"
+			"bear": "6%",
+			"base": "50%",
+			"bull": "163%"
 		},
 		"basis": "Non-GAAP EPS (excl. SBC and acquisition amortization); exit PE calibrated to 10yr median discount analysis"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.494Z",
+	"lastUpdated": "2026-04-30T00:44:35.231Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.74,
+		"score": 0.71,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 11.1,
-			"cvStock": 0.07,
+			"multiple": 10.7,
+			"cvStock": 0.068,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 187.18,
-				"price6mAgo": 245.78,
-				"price1mAgo": 201.39,
-				"low3m": 174.57,
-				"return6m": -23.8,
-				"return1m": -7.1,
+				"price": 181.22,
+				"price6mAgo": 256.65,
+				"price1mAgo": 185.03,
+				"low3m": 163.52,
+				"return6m": -29.4,
+				"return1m": -2.1,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,7 +78,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.84
+		"secondaryScore": 0.81
 	},
 	"qcs": {
 		"earningsScore": 5,
@@ -86,8 +86,8 @@
 		"revisionsScore": -0.1,
 		"totalScore": 9.9,
 		"raw": {
-			"avgSurprisePct": 11.12,
-			"netInsiderShares": 299190,
+			"avgSurprisePct": 11.1,
+			"netInsiderShares": 298278,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
 			"downRevisions": 3,
@@ -97,7 +97,7 @@
 	"description": "Salesforce, Inc. provides customer relationship management technology services that connect companies and customers together in the United States, Europe, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 190,
-		"mean": 273.06,
+		"mean": 269.37,
 		"high": 475
 	},
 	"analystConsensus": {
@@ -114,12 +114,13 @@
 		"2027": {
 			"high": 13.93,
 			"low": 12.6,
-			"average": 13.19627
+			"average": 13.20107
 		},
 		"2028": {
 			"high": 17.78,
-			"low": 13.61,
-			"average": 14.88893
+			"low": 13.7,
+			"average": 14.93324
 		}
-	}
+	},
+	"confidence": "medium"
 }

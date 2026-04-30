@@ -11,37 +11,38 @@
 		"dividendYield": "0%",
 		"ttmEPS": 3.58,
 		"scenarios": {
-			"bear": "14%",
-			"base": "20%",
-			"bull": "24%"
+			"bear": "-1%",
+			"base": "3%",
+			"bull": "7%"
 		}
 	},
-	"currentPrice": "$149.12",
-	"marketCap": "$3.1B USD",
+	"currentPrice": "$172.54",
+	"marketCap": "$3.6B USD",
 	"consensus": {
 		"yahoo": "$178.33"
 	},
 	"expectedVolatility": "~43%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.78,
+		"score": 2.07,
 		"signal": "FAIL",
+		"note": "Valuation score 2.07 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 11,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.6,
-			"cvStock": 0.035,
+			"multiple": 22.8,
+			"cvStock": 0.031,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 149.12,
-				"price6mAgo": 125.91,
-				"price1mAgo": 150.4,
-				"low3m": 125.02,
-				"return6m": 18.4,
-				"return1m": -0.9,
+				"price": 172.54,
+				"price6mAgo": 115.51,
+				"price1mAgo": 137.42,
+				"low3m": 129.54,
+				"return6m": 49.4,
+				"return1m": 25.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -50,19 +51,20 @@
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 1.5,
-				"quarter": "2025-12"
+				"surprise": 1.9,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.85
+		"secondaryScore": 2.14
 	},
-	"lastUpdated": "2026-04-05T07:21:30.022Z",
+	"lastUpdated": "2026-04-30T00:44:43.573Z",
 	"valuation": {
-		"trailingPE": 41.7,
-		"forwardPE": 20.3,
-		"evEbitda": 19.6,
-		"evFcf": 147.1
+		"trailingPE": 48.2,
+		"forwardPE": 23.5,
+		"evEbitda": 22.8,
+		"evFcf": 170.9,
+		"pegRatio": 1.28
 	},
 	"metrics": {
 		"roe": "8.3%",
@@ -72,23 +74,23 @@
 		"ruleOf40": "13%",
 		"beta": "0.91",
 		"revenueGrowth": "12.1%",
-		"roic": "2.8%",
+		"roic": "2.5%",
 		"interestCoverage": "6.2x"
 	},
-	"expectedCAGR": "14% - 24%",
-	"sharpeRatio": 0.34,
+	"expectedCAGR": "-1% - 7%",
+	"sharpeRatio": -0.03,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
 		"revisionsScore": 0,
 		"totalScore": 5,
 		"raw": {
-			"avgSurprisePct": 7.75,
-			"netInsiderShares": 42469,
+			"avgSurprisePct": 6.12,
+			"netInsiderShares": 42410,
 			"instFlowTrend": "neutral",
 			"upRevisions": 2,
 			"downRevisions": 2,
-			"totalAnalysts": 5
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Materion Corporation, together with its subsidiaries, produces advanced engineered materials in the United States, Asia, Europe, and internationally.",
@@ -110,12 +112,13 @@
 		"2026": {
 			"high": 6.4,
 			"low": 6.25,
-			"average": 6.314
+			"average": 6.295
 		},
 		"2027": {
-			"high": 7.91,
+			"high": 7.75,
 			"low": 6.87,
-			"average": 7.346
+			"average": 7.205
 		}
-	}
+	},
+	"confidence": "medium"
 }

@@ -2,53 +2,53 @@
 	"ticker": "NNI",
 	"name": "Nelnet",
 	"group": "The Capital Compounders",
-	"marketCap": "$4.6B USD",
+	"marketCap": "$5.1B USD",
 	"sharpeRatio": 0.28,
-	"expectedVolatility": "~22%",
+	"expectedVolatility": "~21%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 0.46,
 		"evEbitda": null,
-		"trailingPE": 11,
-		"forwardPE": 12.9
+		"trailingPE": 12.1,
+		"forwardPE": 14.2
 	},
 	"metrics": {
 		"roe": "11.6%",
 		"beta": "0.81",
 		"revenueGrowth": "-8.6%",
-		"roic": "3.5%"
+		"roic": "3.3%"
 	},
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$129.45",
+	"currentPrice": "$142.48",
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 11.79
+		"ttmEPS": 11.78
 	},
-	"lastUpdated": "2026-04-05T07:21:31.092Z",
+	"lastUpdated": "2026-04-30T00:44:44.333Z",
 	"consensus": {},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.43,
+		"score": 1.58,
 		"signal": "WAIT",
+		"note": "Valuation score 1.58 exceeds 1 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10))",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 14.2,
 			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 129.45,
-				"price6mAgo": 129.84,
-				"price1mAgo": 131.82,
+				"price": 142.48,
+				"price6mAgo": 128.34,
+				"price1mAgo": 129.09,
 				"low3m": 122.36,
-				"return6m": -0.3,
-				"return1m": -1.8,
+				"return6m": 11,
+				"return1m": 10.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -69,7 +69,7 @@
 		"totalScore": 10,
 		"raw": {
 			"avgSurprisePct": 69.67,
-			"netInsiderShares": 117346,
+			"netInsiderShares": 118398,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
 			"downRevisions": 0,
@@ -98,5 +98,6 @@
 			"low": 10,
 			"average": 10
 		}
-	}
+	},
+	"confidence": "high"
 }

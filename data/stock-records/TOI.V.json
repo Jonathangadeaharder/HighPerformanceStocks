@@ -3,11 +3,11 @@
 	"name": "Topicus.com",
 	"group": "Serial Acquirers",
 	"marketCap": "C$8.0B",
-	"sharpeRatio": 1.11,
-	"expectedCAGR": "45% - 55%",
+	"sharpeRatio": 1.1,
+	"expectedCAGR": "44% - 55%",
 	"expectedVolatility": "~41%",
 	"valuation": {
-		"trailingPE": 120.5,
+		"trailingPE": 120.3,
 		"forwardPE": 21.5,
 		"pegRatio": null,
 		"evEbitda": 26.8,
@@ -24,26 +24,26 @@
 		"revenueGrowth": "19.7%",
 		"interestCoverage": "7.5x"
 	},
-	"targetPrice": "C$143.87",
+	"targetPrice": "C$142.65",
 	"bullCase": "Topicus is executing the Constellation playbook flawlessly in Europe. Achieving 4% organic growth in a stagnant European macro environment proves absolute pricing power. Their recent €625M capital deployment signals a transition to massive, centralized compounding.",
 	"bearCase": "European macroeconomic stagnation and complex cross-border regulations could slow M&A velocity. The optical 247x P/E requires constant investor education to prevent panic sell-offs.",
-	"currentPrice": "C$96.37",
+	"currentPrice": "C$96.27",
 	"consensus": {
 		"tipranks": "C$160",
-		"yahoo": "C$143.87"
+		"yahoo": "C$142.65"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.69,
 		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "45%",
-			"base": "49%",
+			"bear": "44%",
+			"base": "48%",
 			"bull": "55%"
 		},
 		"basis": "Price-to-FCF; Normalized FCF/FCFA2S; CSU spinoff serial acquirer with premium VMS-style multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:35.265Z",
+	"lastUpdated": "2026-04-30T00:44:48.007Z",
 	"screener": {
 		"engine": "fCFG",
 		"score": 0.77,
@@ -59,12 +59,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 96.37,
-				"price6mAgo": 143.64,
-				"price1mAgo": 105.98,
+				"price": 96.27,
+				"price6mAgo": 132.09,
+				"price1mAgo": 93.85,
 				"low3m": 82.67,
-				"return6m": -32.9,
-				"return1m": -9.1,
+				"return6m": -27.1,
+				"return1m": 2.6,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -96,9 +96,9 @@
 	},
 	"description": "Topicus.com Inc. provides vertical market software and vertical market platforms in the Netherlands and internationally.",
 	"analystTargets": {
-		"low": 139.27,
-		"mean": 143.87,
-		"high": 149.29
+		"low": 138.48,
+		"mean": 142.65,
+		"high": 149.55
 	},
 	"analystConsensus": {
 		"ticker": "TOI.V",
@@ -120,5 +120,6 @@
 			"low": 1.97,
 			"average": 2.78667
 		}
-	}
+	},
+	"confidence": "low"
 }

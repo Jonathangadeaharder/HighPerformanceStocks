@@ -2,103 +2,103 @@
 	"ticker": "ROP",
 	"name": "Roper Technologies",
 	"group": "Serial Acquirers",
-	"marketCap": "$38.5B USD",
-	"sharpeRatio": 0.98,
-	"expectedCAGR": "3% - 55%",
-	"expectedVolatility": "~25%",
+	"marketCap": "$36.6B USD",
+	"sharpeRatio": 1.06,
+	"expectedCAGR": "4% - 56%",
+	"expectedVolatility": "~24%",
 	"valuation": {
-		"trailingPE": 25.2,
-		"forwardPE": 15.3,
-		"pegRatio": null,
-		"evEbitda": 14.7,
-		"evFcf": 21.7
+		"trailingPE": 22.2,
+		"forwardPE": 14.9,
+		"pegRatio": 1.45,
+		"evEbitda": 14.6,
+		"evFcf": 21.4
 	},
 	"metrics": {
 		"fcfMargin": "~27%",
-		"fcfYield": "~5%",
-		"roic": "5.3%",
-		"roe": "7.9%",
-		"netDebtEbitda": "2.9x",
-		"ruleOf40": "37%",
+		"fcfYield": "~6%",
+		"roic": "5.6%",
+		"roe": "9.0%",
+		"netDebtEbitda": "3.2x",
+		"ruleOf40": "38%",
 		"beta": "0.89",
-		"revenueGrowth": "9.7%",
-		"interestCoverage": "6.0x"
+		"revenueGrowth": "11.3%",
+		"interestCoverage": "5.6x"
 	},
-	"targetPrice": "$460.38",
+	"targetPrice": "$453.75",
 	"bullCase": "Roper executes the exact Constellation Software M&A playbook but trades at a massive relative discount to both the software sector and its compounding peers. It provides highly predictable, low-leverage compounding torque as a stabilizing portfolio anchor.",
 	"bearCase": "Slower organic growth compared to hyper-growth SaaS peers. Relies heavily on continuous M&A execution to drive the bottom line.",
-	"currentPrice": "$357.88",
+	"currentPrice": "$355.97",
 	"consensus": {
 		"tipranks": "$479",
-		"yahoo": "$460.38",
+		"yahoo": "$453.75",
 		"stockanalysis": "$495"
 	},
 	"cagrModel": {
-		"ttmEPS": 14.21,
+		"ttmEPS": 16.01,
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "3%",
-			"base": "30%",
-			"bull": "55%"
+			"bear": "4%",
+			"base": "28%",
+			"bull": "56%"
 		},
 		"basis": "Serial acquirer of niche software; forward PE reflects recent acquisition dilution; exit PE 35 reflects historical 10yr avg for asset-light compounders"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.244Z",
+	"lastUpdated": "2026-04-30T00:44:45.859Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.81,
-		"signal": "REJECTED",
+		"score": 1.78,
+		"signal": "FAIL",
+		"note": "Valuation score 1.78 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 21.7,
-			"cvStock": 0.02,
+			"multiple": 21.4,
+			"cvStock": 0.024,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 357.88,
-				"price6mAgo": 506.99,
-				"price1mAgo": 366.02,
+				"price": 355.97,
+				"price6mAgo": 443.4,
+				"price1mAgo": 351.96,
 				"low3m": 313.07,
-				"return6m": -29.4,
-				"return1m": -2.2,
+				"return6m": -19.7,
+				"return1m": 1.1,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 2,
-				"down30d": 6
+				"pass": true,
+				"up30d": 12,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 1.4,
-				"quarter": "2025-12"
+				"surprise": 3.5,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.28
+		"secondaryScore": 1.24
 	},
 	"qcs": {
-		"earningsScore": 1.73,
+		"earningsScore": 2.58,
 		"flowScore": 5,
-		"revisionsScore": -1.39,
-		"totalScore": 5.34,
+		"revisionsScore": 3.53,
+		"totalScore": 11.11,
 		"raw": {
-			"avgSurprisePct": 0.87,
+			"avgSurprisePct": 1.55,
 			"netInsiderShares": 18156,
 			"instFlowTrend": "positive",
-			"upRevisions": 5,
-			"downRevisions": 10,
-			"totalAnalysts": 18
+			"upRevisions": 12,
+			"downRevisions": 0,
+			"totalAnalysts": 17
 		}
 	},
 	"description": "Roper Technologies, Inc. designs and develops vertical software and technology enabled products in the United States, Canada, Europe, Asia, and internationally.",
 	"analystTargets": {
 		"low": 365,
-		"mean": 460.38,
+		"mean": 453.75,
 		"high": 550
 	},
 	"analystConsensus": {
@@ -113,14 +113,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 21.74,
-			"low": 21.29542,
-			"average": 21.46281
+			"high": 22.1,
+			"low": 21.8,
+			"average": 21.95284
 		},
 		"2027": {
-			"high": 24.66,
+			"high": 25,
 			"low": 22.75,
-			"average": 23.3337
+			"average": 23.89257
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -2,20 +2,20 @@
 	"ticker": "APP",
 	"name": "AppLovin",
 	"group": "Ad-Tech",
-	"marketCap": "$130.6B USD",
-	"sharpeRatio": 0.69,
-	"expectedCAGR": "-12% - 123%",
-	"expectedVolatility": "~74%",
+	"marketCap": "$149.1B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "-23% - 94%",
+	"expectedVolatility": "~72%",
 	"valuation": {
-		"trailingPE": 38.4,
-		"forwardPE": 19.1,
-		"pegRatio": 0.8,
-		"evEbitda": 30.8,
-		"evFcf": 48.7
+		"trailingPE": 44.1,
+		"forwardPE": 21.8,
+		"pegRatio": 1.25,
+		"evEbitda": 35.3,
+		"evFcf": 55.8
 	},
 	"metrics": {
 		"roe": "212.9%",
-		"roic": "3.0%",
+		"roic": "2.7%",
 		"fcfMargin": "~49%",
 		"ruleOf40": "115%",
 		"fcfYield": "~2%",
@@ -24,54 +24,54 @@
 		"revenueGrowth": "65.9%",
 		"interestCoverage": "21.2x"
 	},
-	"targetPrice": "$645.74",
+	"targetPrice": "$639.36",
 	"consensus": {
 		"tipranks": "$663",
-		"yahoo": "$645.74"
+		"yahoo": "$639.36"
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$386.37",
+	"currentPrice": "$443.43",
 	"cagrModel": {
-		"epsGrowth": "30%",
+		"epsGrowth": "31%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-12%",
-			"base": "67%",
-			"bull": "123%"
+			"bear": "-23%",
+			"base": "44%",
+			"bull": "94%"
 		},
 		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.295Z",
+	"lastUpdated": "2026-04-30T00:44:32.228Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.62,
+		"score": 1.8,
 		"signal": "WAIT",
+		"note": "Valuation score 1.80 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 44.2%)",
 		"inputs": {
-			"growth": 30,
+			"growth": 31,
 			"multipleType": "EV/FCF",
-			"multiple": 48.7,
-			"cvStock": 0.098,
+			"multiple": 55.8,
+			"cvStock": 0.097,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 67.1%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 386.37,
-				"price6mAgo": 587,
-				"price1mAgo": 508.56,
+				"price": 443.43,
+				"price6mAgo": 620.62,
+				"price1mAgo": 372.08,
 				"low3m": 359,
-				"return6m": -34.2,
-				"return1m": -24,
+				"return6m": -28.6,
+				"return1m": 19.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 12,
-				"down30d": 2
+				"up30d": 4,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 10.1,
@@ -79,26 +79,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.64
+		"secondaryScore": 0.7
 	},
 	"qcs": {
-		"earningsScore": 4.99,
+		"earningsScore": 5,
 		"flowScore": -5,
-		"revisionsScore": 4.29,
-		"totalScore": 4.28,
+		"revisionsScore": 1.09,
+		"totalScore": 1.09,
 		"raw": {
 			"avgSurprisePct": 12.21,
-			"netInsiderShares": -289747,
+			"netInsiderShares": -289760,
 			"instFlowTrend": "negative",
-			"upRevisions": 19,
-			"downRevisions": 1,
-			"totalAnalysts": 21
+			"upRevisions": 5,
+			"downRevisions": 0,
+			"totalAnalysts": 23
 		}
 	},
 	"description": "AppLovin Corporation provides end-to-end artificial intelligence-powered advertising solutions for businesses in the United States and internationally.",
 	"analystTargets": {
 		"low": 340,
-		"mean": 645.74,
+		"mean": 639.36,
 		"high": 860
 	},
 	"analystConsensus": {
@@ -115,12 +115,13 @@
 		"2026": {
 			"high": 17.62,
 			"low": 14.32,
-			"average": 15.73543
+			"average": 15.81174
 		},
 		"2027": {
 			"high": 23.74657,
 			"low": 15.72,
-			"average": 20.43699
+			"average": 20.71294
 		}
-	}
+	},
+	"confidence": "low"
 }

@@ -2,44 +2,46 @@
 	"ticker": "INVE-B.ST",
 	"name": "Investor AB",
 	"group": "Capital Compounders",
-	"marketCap": "1086.5B SEK",
-	"sharpeRatio": -0.17,
-	"expectedCAGR": "-11% - 13%",
-	"expectedVolatility": "~20%",
+	"marketCap": "1131.6B SEK",
+	"sharpeRatio": -0.25,
+	"expectedCAGR": "-14% - 14%",
+	"expectedVolatility": "~18%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 5.08,
 		"evEbitda": null,
-		"trailingPE": 6.9,
-		"forwardPE": 22.5,
-		"evFcf": 11.5
+		"trailingPE": 5.9,
+		"forwardPE": 23.5,
+		"evFcf": 9.7
 	},
 	"metrics": {
-		"roe": "17.7%",
-		"fcfMargin": "~47%",
-		"fcfYield": "~9%",
-		"netDebtEbitda": "0.6x",
+		"roe": "21.2%",
+		"fcfMargin": "~49%",
+		"fcfYield": "~11%",
+		"netDebtEbitda": "0.5x",
 		"beta": "0.8",
-		"roic": "1.9%",
-		"interestCoverage": "25.9x"
+		"roic": "2.6%",
+		"interestCoverage": "30.0x",
+		"ruleOf40": "407%",
+		"revenueGrowth": "357.3%"
 	},
-	"targetPrice": "362 SEK",
+	"targetPrice": "376 SEK",
 	"bullCase": "The gold standard of European holding companies, controlled by the Wallenberg family. Combines a portfolio of world-class listed industrials (Atlas Copco, ABB) with a maturing private equity segment. It reliably compounds capital at high rates and benefits from the closing of the PE exit window.",
 	"bearCase": "High exposure to cyclical European and global industrial markets. Sensitivity to macroeconomic tariffs and cyclical downturns could slow NAV growth in the short term.",
-	"currentPrice": "355 SEK",
+	"currentPrice": "369 SEK",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-11%",
+			"bear": "-14%",
 			"base": "4%",
-			"bull": "13%"
+			"bull": "14%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "2%",
 		"basis": "Normalized EPS (excl. one-time investment gains); forward-earnings basis",
 		"ttmEPS": 15.7
 	},
-	"lastUpdated": "2026-04-05T07:21:23.731Z",
+	"lastUpdated": "2026-04-30T00:44:39.007Z",
 	"consensus": {
-		"yahoo": "362 SEK"
+		"yahoo": "376 SEK"
 	},
 	"screener": {
 		"engine": "fEVG",
@@ -63,8 +65,8 @@
 	"description": "Investor AB (publ) is a private equity firm specializing in mature, middle market, buyouts and growth capital investments.",
 	"analystTargets": {
 		"low": 310,
-		"mean": 362.4,
-		"high": 392
+		"mean": 375.6,
+		"high": 415
 	},
 	"analystConsensus": {
 		"ticker": "INVE-B.ST",
@@ -77,14 +79,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 39.5321,
-			"low": 39.5321,
-			"average": 39.5321
+			"high": 41.11813,
+			"low": 41.11813,
+			"average": 41.11813
 		},
 		"2027": {
-			"high": 25.83866,
-			"low": 25.83866,
-			"average": 25.83866
+			"high": 25.79245,
+			"low": 25.79245,
+			"average": 25.79245
 		}
-	}
+	},
+	"confidence": "cut"
 }

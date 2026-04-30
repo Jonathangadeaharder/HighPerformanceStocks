@@ -10,18 +10,19 @@
 		"ttmEPS": 6.64,
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "16%",
-			"bull": "48%"
+			"bear": "9%",
+			"base": "24%",
+			"bull": "58%"
 		}
 	},
-	"currentPrice": "$171.46",
-	"marketCap": "$6.4B USD",
+	"currentPrice": "$160.77",
+	"marketCap": "$5.7B USD",
 	"valuation": {
-		"trailingPE": 25.8,
-		"forwardPE": 18.8,
-		"evEbitda": 13.6,
-		"evFcf": 25.7
+		"trailingPE": 24.2,
+		"forwardPE": 17.7,
+		"evEbitda": 12.7,
+		"evFcf": 24,
+		"pegRatio": 1.32
 	},
 	"metrics": {
 		"roe": "19.4%",
@@ -31,40 +32,41 @@
 		"ruleOf40": "30%",
 		"beta": "1",
 		"revenueGrowth": "3.5%",
-		"roic": "6.3%",
+		"roic": "7.1%",
 		"interestCoverage": "27.0x"
 	},
 	"consensus": {
-		"yahoo": "$194.70"
+		"yahoo": "$195.45"
 	},
-	"targetPrice": "$194.70",
-	"expectedCAGR": "1% - 48%",
+	"targetPrice": "$195.45",
+	"expectedCAGR": "9% - 58%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.86,
+		"score": 2.67,
 		"signal": "FAIL",
+		"note": "Valuation score 2.67 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "EV/FCF",
-			"multiple": 25.7,
-			"cvStock": 0.019,
+			"multiple": 24,
+			"cvStock": 0.018,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 171.46,
-				"price6mAgo": 167.88,
-				"price1mAgo": 184.44,
-				"low3m": 157.93,
-				"return6m": 2.1,
-				"return1m": -7,
-				"near3mLow": false
+				"price": 160.77,
+				"price6mAgo": 159.98,
+				"price1mAgo": 164.77,
+				"low3m": 155.34,
+				"return6m": 0.5,
+				"return1m": -2.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 0
+				"up30d": 3,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 51.4,
@@ -72,29 +74,29 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.09
+		"secondaryScore": 1.97
 	},
-	"lastUpdated": "2026-04-05T07:21:29.053Z",
+	"lastUpdated": "2026-04-30T00:44:42.891Z",
 	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.74,
+	"sharpeRatio": 1.07,
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
-		"revisionsScore": -0.63,
-		"totalScore": -0.63,
+		"revisionsScore": 1.25,
+		"totalScore": 1.25,
 		"raw": {
 			"avgSurprisePct": -4.9,
-			"netInsiderShares": 61324,
+			"netInsiderShares": 35207,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
+			"upRevisions": 4,
 			"downRevisions": 2,
 			"totalAnalysts": 8
 		}
 	},
 	"description": "MarketAxess Holdings Inc., together with its subsidiaries, operates an electronic trading platform for institutional investor and broker-dealer firms in the United States, the United Kingdom, and i...",
 	"analystTargets": {
-		"low": 169,
-		"mean": 194.7,
+		"low": 172,
+		"mean": 195.45,
 		"high": 250
 	},
 	"analystConsensus": {
@@ -109,14 +111,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 8.43678,
-			"low": 8,
-			"average": 8.17186
+			"high": 8.38159,
+			"low": 8.01,
+			"average": 8.22316
 		},
 		"2027": {
-			"high": 9.46241,
-			"low": 8.75341,
-			"average": 9.10262
+			"high": 9.45421,
+			"low": 8.81,
+			"average": 9.09623
 		}
-	}
+	},
+	"confidence": "low"
 }

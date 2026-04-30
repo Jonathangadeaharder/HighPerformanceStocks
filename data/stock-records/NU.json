@@ -2,20 +2,20 @@
 	"ticker": "NU",
 	"name": "Nu Holdings",
 	"group": "Financials & Alt Assets",
-	"marketCap": "$68.7B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "8% - 55%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$68.2B USD",
+	"sharpeRatio": 0.75,
+	"expectedCAGR": "9% - 57%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 16.9,
+		"trailingPE": 16.8,
 		"forwardPE": 12.2,
-		"pegRatio": 0.6,
+		"pegRatio": 0.85,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "-16.2%",
+		"roic": "-16.4%",
 		"roe": "30.3%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
@@ -23,27 +23,27 @@
 		"beta": "1.11",
 		"revenueGrowth": "43.9%"
 	},
-	"targetPrice": "$20.04",
+	"targetPrice": "$19.87",
 	"bullCase": "Systematically dismantling the oligopolistic banking structures of LatAm with massive customer acquisition and elite capital efficiency.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation. A spike in Non-Performing Loans (NPLs) could decimate the equity tranche.",
-	"currentPrice": "$14.15",
+	"currentPrice": "$14.04",
 	"consensus": {
 		"tipranks": "$18",
-		"yahoo": "$20.04",
+		"yahoo": "$19.87",
 		"stockanalysis": "$18"
 	},
 	"cagrModel": {
-		"ttmEPS": 0.84,
+		"ttmEPS": 0.83,
 		"epsGrowth": "28%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "8%",
+			"bear": "9%",
 			"base": "42%",
-			"bull": "55%"
+			"bull": "57%"
 		},
 		"basis": "Hyper-growth LatAm fintech; forward PE depressed by rapid earnings growth; exit PE reflects mature fintech platform multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:31.073Z",
+	"lastUpdated": "2026-04-30T00:44:44.372Z",
 	"screener": {
 		"engine": "fPERG",
 		"score": 0.44,
@@ -58,18 +58,18 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 14.15,
-				"price6mAgo": 15.38,
-				"price1mAgo": 14.82,
+				"price": 14.04,
+				"price6mAgo": 16.06,
+				"price1mAgo": 13.51,
 				"low3m": 13.41,
-				"return6m": -8,
-				"return1m": -4.5,
-				"near3mLow": false
+				"return6m": -12.6,
+				"return1m": 3.9,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 2
+				"up30d": 2,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": -1.6,
@@ -80,21 +80,21 @@
 	"qcs": {
 		"earningsScore": 0.36,
 		"flowScore": 0,
-		"revisionsScore": 0.67,
-		"totalScore": 1.03,
+		"revisionsScore": 0,
+		"totalScore": 0.36,
 		"raw": {
 			"avgSurprisePct": 0.86,
-			"netInsiderShares": 0,
+			"netInsiderShares": 2061450,
 			"instFlowTrend": "negative",
-			"upRevisions": 5,
-			"downRevisions": 3,
+			"upRevisions": 2,
+			"downRevisions": 2,
 			"totalAnalysts": 15
 		}
 	},
 	"description": "Nu Holdings Ltd. provides digital banking platform in Brazil, Mexico, Colombia, the Cayman Islands, and the United States.",
 	"analystTargets": {
 		"low": 15.3,
-		"mean": 20.04,
+		"mean": 19.87,
 		"high": 22
 	},
 	"analystConsensus": {
@@ -109,14 +109,15 @@
 	"targetPriceAlternative": "$18.26",
 	"forwardEstimates": {
 		"2026": {
-			"high": 0.9007,
+			"high": 0.91637,
 			"low": 0.72,
-			"average": 0.83548
+			"average": 0.83435
 		},
 		"2027": {
 			"high": 1.35,
 			"low": 0.92,
-			"average": 1.10745
+			"average": 1.1057
 		}
-	}
+	},
+	"confidence": "low"
 }

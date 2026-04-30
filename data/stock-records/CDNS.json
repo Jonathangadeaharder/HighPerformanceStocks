@@ -2,80 +2,80 @@
 	"ticker": "CDNS",
 	"name": "Cadence Design Systems",
 	"group": "AI & Semiconductors",
-	"marketCap": "$77.0B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "-1% - 47%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$91.1B USD",
+	"sharpeRatio": 0.04,
+	"expectedCAGR": "-17% - 29%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 68.5,
-		"forwardPE": 29.6,
-		"pegRatio": 3.9,
-		"evEbitda": 39.6,
-		"evFcf": 50
+		"trailingPE": 76.9,
+		"forwardPE": 35.2,
+		"pegRatio": 2.95,
+		"evEbitda": 45.4,
+		"evFcf": 67.3
 	},
 	"metrics": {
-		"fcfMargin": "~29%",
-		"fcfYield": "~2%",
-		"roic": "2.3%",
-		"roe": "21.9%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "35%",
+		"fcfMargin": "~25%",
+		"fcfYield": "~1%",
+		"roic": "1.7%",
+		"roe": "20.7%",
+		"netDebtEbitda": "0.7x",
+		"ruleOf40": "43%",
 		"beta": "1.04",
-		"revenueGrowth": "6.2%",
-		"interestCoverage": "13.0x"
+		"revenueGrowth": "18.7%",
+		"interestCoverage": "12.6x"
 	},
-	"targetPrice": "$371.68",
+	"targetPrice": "$380.01",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$278.72",
+	"currentPrice": "$329.95",
 	"consensus": {
 		"tipranks": "$369",
-		"yahoo": "$371.68",
+		"yahoo": "$380.01",
 		"stockanalysis": "$369"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.07,
+		"ttmEPS": 4.29,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "33%",
-			"bull": "47%"
+			"bear": "-17%",
+			"base": "15%",
+			"bull": "29%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:17.442Z",
+	"lastUpdated": "2026-04-30T00:44:34.447Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "WAIT",
+		"score": 1.76,
+		"signal": "FAIL",
+		"note": "Valuation score 1.76 exceeds 1 limit",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 29.6,
-			"cvStock": 0.015,
+			"multiple": 35.2,
+			"cvStock": 0.032,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 278.72,
-				"price6mAgo": 353.36,
-				"price1mAgo": 299.84,
+				"price": 329.95,
+				"price6mAgo": 336.09,
+				"price1mAgo": 270.88,
 				"low3m": 262.75,
-				"return6m": -21.1,
-				"return1m": -7,
+				"return6m": -1.8,
+				"return1m": 21.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 0,
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 4.1,
-				"quarter": "2025-12"
+				"surprise": 4,
+				"quarter": "2026-03"
 			}
 		}
 	},
@@ -85,19 +85,19 @@
 		"revisionsScore": 0,
 		"totalScore": 5,
 		"raw": {
-			"avgSurprisePct": 5.67,
-			"netInsiderShares": 436537,
+			"avgSurprisePct": 5.48,
+			"netInsiderShares": 414037,
 			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 2
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 11
 		}
 	},
 	"description": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions.",
 	"analystTargets": {
 		"low": 275,
-		"mean": 371.68,
-		"high": 410
+		"mean": 380.01,
+		"high": 425
 	},
 	"analystConsensus": {
 		"ticker": "CDNS",
@@ -111,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.85,
-			"low": 4.74,
-			"average": 4.795
+			"high": 4.66573,
+			"low": 4.38,
+			"average": 4.48861
 		},
 		"2027": {
-			"high": 9.75,
-			"low": 9.18,
-			"average": 9.41429
+			"high": 9.91374,
+			"low": 8.71,
+			"average": 9.38051
 		}
-	}
+	},
+	"confidence": "medium"
 }

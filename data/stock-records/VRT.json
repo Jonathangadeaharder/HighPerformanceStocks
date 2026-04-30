@@ -2,37 +2,37 @@
 	"ticker": "VRT",
 	"name": "Vertiv Holdings",
 	"group": "Industrial Monopolies",
-	"marketCap": "$100.0B USD",
-	"sharpeRatio": -0.22,
-	"expectedCAGR": "-41% - 24%",
-	"expectedVolatility": "~59%",
+	"marketCap": "$117.6B USD",
+	"sharpeRatio": -0.26,
+	"expectedCAGR": "-49% - 29%",
+	"expectedVolatility": "~56%",
 	"valuation": {
-		"trailingPE": 76.4,
-		"forwardPE": 32.5,
-		"pegRatio": null,
-		"evEbitda": 45.9,
-		"evFcf": 70.9
+		"trailingPE": 77.1,
+		"forwardPE": 35.6,
+		"pegRatio": 1.62,
+		"evEbitda": 49.7,
+		"evFcf": 60.2
 	},
 	"metrics": {
-		"fcfMargin": "~14%",
-		"fcfYield": "~1%",
-		"roic": "2.1%",
-		"roe": "41.8%",
-		"netDebtEbitda": "0.6x",
-		"ruleOf40": "37%",
-		"revenueGrowth": "22.7%",
+		"fcfMargin": "~18%",
+		"fcfYield": "~2%",
+		"roic": "2.2%",
+		"roe": "45.1%",
+		"netDebtEbitda": "0.3x",
+		"ruleOf40": "48%",
+		"revenueGrowth": "30.1%",
 		"backlog": "$15B",
 		"orderGrowth": "252% YoY",
 		"beta": "2.05",
-		"interestCoverage": "12.4x"
+		"interestCoverage": "13.3x"
 	},
-	"targetPrice": "$271.21",
+	"targetPrice": "$327.44",
 	"bullCase": "AI power/cooling infrastructure is essential and non-optional. 27-29% revenue growth with $15B backlog and orders up 252% YoY. ROIC of ~25% is solid for industrial. Market leader in mission-critical data center thermal management.",
 	"bearCase": "Trading at ~72x trailing earnings means priced for perfection. Any miss in execution could cause violent multiple compression. Cyclical industrial stock dressed up as a growth story.",
-	"currentPrice": "$261.29",
+	"currentPrice": "$306.18",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$271.21",
+		"yahoo": "$327.44",
 		"stockanalysis": "$217"
 	},
 	"cagrModel": {
@@ -40,58 +40,59 @@
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-41%",
-			"base": "4%",
-			"bull": "24%"
+			"bear": "-49%",
+			"base": "7%",
+			"bull": "29%"
 		},
 		"basis": "2026E adjusted EPS; AI infrastructure power and cooling multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:38.405Z",
+	"lastUpdated": "2026-04-30T00:44:50.201Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.54,
+		"score": 1.77,
 		"signal": "FAIL",
+		"note": "Valuation score 1.77 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "EV/EBITDA",
-			"multiple": 45.9,
-			"cvStock": 0.124,
-			"riskMultiplier": 1.008
+			"multiple": 49.7,
+			"cvStock": 0.166,
+			"riskMultiplier": 1.066
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 261.29,
-				"price6mAgo": 162.8,
-				"price1mAgo": 249.75,
-				"low3m": 158.77,
-				"return6m": 60.5,
-				"return1m": 4.6,
+				"price": 306.18,
+				"price6mAgo": 193.76,
+				"price1mAgo": 234.22,
+				"low3m": 172.35,
+				"return6m": 58,
+				"return1m": 30.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
-				"down30d": 0
+				"up30d": 20,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 4.9,
-				"quarter": "2025-12"
+				"surprise": 15.7,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.09
+		"secondaryScore": 1.27
 	},
 	"qcs": {
-		"earningsScore": 3.89,
+		"earningsScore": 3.61,
 		"flowScore": -5,
-		"revisionsScore": 4.78,
-		"totalScore": 3.67,
+		"revisionsScore": 4.57,
+		"totalScore": 3.18,
 		"raw": {
-			"avgSurprisePct": 12.05,
+			"avgSurprisePct": 14.99,
 			"netInsiderShares": -157778,
 			"instFlowTrend": "negative",
-			"upRevisions": 22,
+			"upRevisions": 21,
 			"downRevisions": 0,
 			"totalAnalysts": 23
 		}
@@ -99,8 +100,8 @@
 	"description": "Vertiv Holdings Co designs, manufactures, and services critical digital infrastructure technologies and life cycle services for data centers, communication networks, and commercial and industrial e...",
 	"analystTargets": {
 		"low": 155,
-		"mean": 271.21,
-		"high": 325
+		"mean": 327.44,
+		"high": 394
 	},
 	"analystConsensus": {
 		"ticker": "VRT",
@@ -114,14 +115,15 @@
 	"targetPriceAlternative": "$235.26",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.74616,
-			"low": 6,
-			"average": 6.14891
+			"high": 7.16,
+			"low": 6.26,
+			"average": 6.48929
 		},
 		"2027": {
-			"high": 9.50177,
+			"high": 11.25,
 			"low": 5.518,
-			"average": 8.04468
+			"average": 8.61263
 		}
-	}
+	},
+	"confidence": "low"
 }

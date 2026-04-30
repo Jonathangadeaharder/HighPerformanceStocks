@@ -8,22 +8,22 @@
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "166%",
-			"bull": "259%"
+			"bear": "12%",
+			"base": "196%",
+			"bull": "299%"
 		}
 	},
-	"currentPrice": "$34.80",
-	"marketCap": "$4.0B USD",
+	"currentPrice": "$31.33",
+	"marketCap": "$3.6B USD",
 	"valuation": {
-		"forwardPE": -7.8,
-		"evFcf": -20.7
+		"forwardPE": -7.7,
+		"evFcf": -18.2
 	},
 	"metrics": {
 		"roe": "-47.3%",
 		"fcfYield": "~-4%",
 		"beta": "0.82",
-		"roic": "-8.4%"
+		"roic": "-9.5%"
 	},
 	"consensus": {
 		"yahoo": "$92.72"
@@ -34,9 +34,9 @@
 		"mean": 92.72,
 		"high": 125
 	},
-	"expectedCAGR": "1% - 259%",
-	"expectedVolatility": "~85%",
-	"sharpeRatio": 1.48,
+	"expectedCAGR": "12% - 299%",
+	"expectedVolatility": "~82%",
+	"sharpeRatio": 1.84,
 	"screener": {
 		"engine": "totalReturn",
 		"signal": "NO_DATA",
@@ -49,7 +49,7 @@
 		"totalScore": -0.33,
 		"raw": {
 			"avgSurprisePct": -34.12,
-			"netInsiderShares": 177031,
+			"netInsiderShares": 120072,
 			"instFlowTrend": "positive",
 			"upRevisions": 5,
 			"downRevisions": 6,
@@ -57,17 +57,18 @@
 		}
 	},
 	"description": "Viking Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on the development of novel therapies for metabolic and endocrine disorders.",
-	"lastUpdated": "2026-04-05T07:21:38.196Z",
+	"lastUpdated": "2026-04-30T00:44:49.521Z",
 	"forwardEstimates": {
 		"2026": {
 			"high": -2.75,
-			"low": -7.42,
-			"average": -4.04243
+			"low": -5.85,
+			"average": -3.74376
 		},
 		"2027": {
 			"high": -2.89,
-			"low": -8.51,
-			"average": -4.46005
+			"low": -7.17,
+			"average": -4.07505
 		}
-	}
+	},
+	"confidence": "cut"
 }

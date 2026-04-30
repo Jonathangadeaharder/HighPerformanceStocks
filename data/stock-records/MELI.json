@@ -2,15 +2,16 @@
 	"ticker": "MELI",
 	"name": "MercadoLibre",
 	"group": "Emerging Markets",
-	"marketCap": "$87.0B USD",
-	"sharpeRatio": 1.29,
-	"expectedCAGR": "6% - 104%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$89.6B USD",
+	"sharpeRatio": 1.24,
+	"expectedCAGR": "3% - 98%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 43.5,
-		"forwardPE": 23.5,
-		"evEbitda": 22.9,
-		"evFcf": -37.5
+		"trailingPE": 44.8,
+		"forwardPE": 26,
+		"evEbitda": 23.6,
+		"evFcf": -38.6,
+		"pegRatio": 0.84
 	},
 	"metrics": {
 		"roe": "36.0%",
@@ -20,55 +21,55 @@
 		"ruleOf40": "36%",
 		"beta": "1.49",
 		"revenueGrowth": "44.6%",
-		"roic": "13.2%",
+		"roic": "12.8%",
 		"interestCoverage": "6.4x"
 	},
-	"targetPrice": "$2544.50",
+	"targetPrice": "$2434.50",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1715.52",
+	"currentPrice": "$1767.02",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "6%",
-			"base": "48%",
-			"bull": "104%"
+			"bear": "3%",
+			"base": "38%",
+			"bull": "98%"
 		},
-		"ttmEPS": 39.46,
+		"ttmEPS": 39.42,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-04-05T07:21:28.114Z",
+	"lastUpdated": "2026-04-30T00:44:42.811Z",
 	"consensus": {
-		"yahoo": "$2544.50"
+		"yahoo": "$2434.50"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.13,
+		"score": 1.27,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "Forward P/E",
-			"multiple": 23.5,
-			"cvStock": 0.13,
-			"riskMultiplier": 1.013
+			"multiple": 26,
+			"cvStock": 0.138,
+			"riskMultiplier": 1.022
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1715.52,
-				"price6mAgo": 2154.22,
-				"price1mAgo": 1780.36,
+				"price": 1767.02,
+				"price6mAgo": 2360.76,
+				"price1mAgo": 1619.2,
 				"low3m": 1593.21,
-				"return6m": -20.4,
-				"return1m": -3.6,
+				"return6m": -25.2,
+				"return1m": 9.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 9
+				"down30d": 10
 			},
 			"earningsSurprise": {
 				"surprise": -3.6,
@@ -77,23 +78,23 @@
 		}
 	},
 	"qcs": {
-		"earningsScore": -0.74,
+		"earningsScore": -0.69,
 		"flowScore": -5,
-		"revisionsScore": -2.78,
-		"totalScore": -8.52,
+		"revisionsScore": -2.11,
+		"totalScore": -7.8,
 		"raw": {
 			"avgSurprisePct": -2.4,
 			"netInsiderShares": -1079,
 			"instFlowTrend": "negative",
 			"upRevisions": 0,
-			"downRevisions": 10,
-			"totalAnalysts": 18
+			"downRevisions": 8,
+			"totalAnalysts": 19
 		}
 	},
 	"description": "MercadoLibre, Inc. operates online commerce platforms in Brazil, Mexico, Argentina, and internationally.",
 	"analystTargets": {
 		"low": 1827,
-		"mean": 2544.5,
+		"mean": 2434.5,
 		"high": 3500
 	},
 	"analystConsensus": {
@@ -108,14 +109,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 60.38,
+			"high": 54.5,
 			"low": 39.74,
-			"average": 51.46614
+			"average": 48.56159
 		},
 		"2027": {
 			"high": 87.09,
 			"low": 49.53,
-			"average": 72.44748
+			"average": 67.80414
 		}
-	}
+	},
+	"confidence": "cut"
 }

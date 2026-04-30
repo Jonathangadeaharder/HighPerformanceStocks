@@ -2,19 +2,19 @@
 	"ticker": "HEI.A",
 	"name": "HEICO Corp",
 	"group": "Serial Acquirers",
-	"marketCap": "$33.6B USD",
+	"marketCap": "$28.1B USD",
 	"sharpeRatio": 0.78,
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 41.9,
-		"forwardPE": 49,
-		"pegRatio": 3.2,
-		"evEbitda": 25.5,
-		"evFcf": 46.7
+		"trailingPE": 39.8,
+		"forwardPE": 46.7,
+		"pegRatio": 1.92,
+		"evEbitda": 24.4,
+		"evFcf": 44.7
 	},
 	"metrics": {
 		"roe": "16.6%",
-		"roic": "2.5%",
+		"roic": "3.0%",
 		"operatingMargin": "~22%",
 		"netDebtEbitda": "1.8x",
 		"fcfMargin": "~15%",
@@ -29,35 +29,35 @@
 	},
 	"bullCase": "HEICO is a compounding machine protected by the ultimate regulatory moat: FAA Parts Manufacturer Approval (PMA). They reverse-engineer aerospace parts to sell at a 30-50% discount to OEMs. With 50% market share in PMA but only ~2% penetration of the total aftermarket, the runway is massive. The Mendelson family provides legendary capital allocation and high insider ownership.",
 	"bearCase": "The stock is priced for absolute perfection. At ~55x forward P/E, any slowdown in global air traffic or commercial airline capacity could lead to severe multiple compression, even though their parts are non-discretionary. HEI.A (Class A) shares carry less voting power, though they trade at a discount to the common stock.",
-	"currentPrice": "$211.04",
+	"currentPrice": "$201.28",
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"dividendYield": "0%",
 		"basis": "Continued M&A integration and PMA aftermarket penetration",
-		"ttmEPS": 5.04
+		"ttmEPS": 5.06
 	},
-	"lastUpdated": "2026-04-05T07:21:22.684Z",
+	"lastUpdated": "2026-04-30T00:44:38.247Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.59,
+		"score": 1.52,
 		"signal": "WAIT",
+		"note": "Valuation score 1.52 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 39.1%) (Used benchmark CV)",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 25.5,
+			"multiple": 24.4,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 32.7% (Used benchmark CV)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.04,
-				"price6mAgo": 254.88,
-				"price1mAgo": 234.76,
-				"low3m": 202.61,
-				"return6m": -17.2,
-				"return1m": -10.1,
+				"price": 201.28,
+				"price6mAgo": 241.66,
+				"price1mAgo": 204.88,
+				"low3m": 199.35,
+				"return6m": -16.7,
+				"return1m": -1.8,
 				"near3mLow": true
 			},
 			"revisions": {
@@ -67,7 +67,7 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.06
+		"secondaryScore": 2.92
 	},
 	"qcs": {
 		"earningsScore": 0,
@@ -92,5 +92,6 @@
 		"moderateSell": 2,
 		"strongSell": 1
 	},
-	"consensusRating": "strong buy"
+	"consensusRating": "strong buy",
+	"confidence": "low"
 }

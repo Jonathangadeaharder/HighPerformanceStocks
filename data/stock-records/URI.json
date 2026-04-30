@@ -5,97 +5,98 @@
 	"cagrModel": {
 		"epsGrowth": "5%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 38.58,
+		"ttmEPS": 39.09,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-17%",
-			"base": "36%",
-			"bull": "113%"
+			"bear": "-24%",
+			"base": "14%",
+			"bull": "64%"
 		}
 	},
-	"currentPrice": "$732.09",
-	"marketCap": "$46.1B USD",
+	"currentPrice": "$952.13",
+	"marketCap": "$59.6B USD",
 	"valuation": {
-		"trailingPE": 19,
-		"forwardPE": 13.9,
-		"evEbitda": 13.8,
-		"evFcf": 31.8
+		"trailingPE": 24.4,
+		"forwardPE": 17.7,
+		"evEbitda": 16.4,
+		"evFcf": 39.8,
+		"pegRatio": 1.59
 	},
 	"metrics": {
-		"roe": "28.4%",
-		"fcfMargin": "~12%",
-		"fcfYield": "~4%",
-		"netDebtEbitda": "3.4x",
-		"ruleOf40": "15%",
+		"roe": "28.2%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "3.3x",
+		"ruleOf40": "19%",
 		"beta": "1.68",
-		"revenueGrowth": "2.8%",
-		"roic": "8.5%",
-		"interestCoverage": "5.2x"
+		"revenueGrowth": "7.2%",
+		"roic": "7.1%",
+		"interestCoverage": "5.5x"
 	},
 	"consensus": {
-		"yahoo": "$985.89"
+		"yahoo": "$1071.62"
 	},
-	"targetPrice": "$985.89",
-	"expectedCAGR": "-17% - 113%",
+	"targetPrice": "$1071.62",
+	"expectedCAGR": "-24% - 64%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.76,
-		"signal": "WAIT",
+		"score": 3.28,
+		"signal": "FAIL",
+		"note": "Valuation score 3.28 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 5,
 			"multipleType": "EV/EBITDA",
-			"multiple": 13.8,
-			"cvStock": 0.04,
+			"multiple": 16.4,
+			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 34.7%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 732.09,
-				"price6mAgo": 987.34,
-				"price1mAgo": 842.93,
+				"price": 952.13,
+				"price6mAgo": 858.91,
+				"price1mAgo": 713.86,
 				"low3m": 701.59,
-				"return6m": -25.9,
-				"return1m": -13.1,
-				"near3mLow": true
+				"return6m": 10.9,
+				"return1m": 33.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 2
+				"up30d": 10,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": -6.1,
-				"quarter": "2025-12"
+				"surprise": 8.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.78
+		"secondaryScore": 3.54
 	},
-	"lastUpdated": "2026-04-05T07:21:37.195Z",
-	"expectedVolatility": "~38%",
-	"sharpeRatio": 1.14,
+	"lastUpdated": "2026-04-30T00:44:48.809Z",
+	"expectedVolatility": "~41%",
+	"sharpeRatio": 0.38,
 	"qcs": {
-		"earningsScore": -2.73,
+		"earningsScore": -0.74,
 		"flowScore": 0,
-		"revisionsScore": -0.23,
-		"totalScore": -2.96,
+		"revisionsScore": 1.5,
+		"totalScore": 0.76,
 		"raw": {
-			"avgSurprisePct": -2.73,
-			"netInsiderShares": 29979,
+			"avgSurprisePct": -0.71,
+			"netInsiderShares": 3851,
 			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 2,
-			"totalAnalysts": 22
+			"upRevisions": 11,
+			"downRevisions": 5,
+			"totalAnalysts": 20
 		}
 	},
 	"bullCase": "United Rentals has a structural advantage in the equipment rental market — the secular shift from ownership to rental is still early (rental penetration ~55% in North America vs 80%+ in mature markets). URI generates 20%+ ROIC and has a long runway of consolidation targets in the fragmented regional rental market. Infrastructure legislation provides multi-year volume floor.",
 	"bearCase": "Equipment rental is deeply cyclical — a construction recession cuts utilization rates sharply while fixed depreciation costs remain. The current softness in commercial construction and 15 analyst down-revisions in 30 days signal a potential cyclical peak. URI's leverage (2.5x net debt) amplifies earnings downside.",
 	"description": "United Rentals, Inc., through its subsidiaries, operates as an equipment rental company in the United States, Canada, Europe, Australia, and New Zealand.",
 	"analystTargets": {
-		"low": 600,
-		"mean": 985.89,
+		"low": 715,
+		"mean": 1071.62,
 		"high": 1550
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$925.59",
 	"forwardEstimates": {
 		"2026": {
-			"high": 48.74,
-			"low": 41.78,
-			"average": 46.40154
+			"high": 48.9,
+			"low": 43.89992,
+			"average": 47.03232
 		},
 		"2027": {
-			"high": 57.35,
-			"low": 48.81,
-			"average": 52.85833
+			"high": 58.975,
+			"low": 50.71,
+			"average": 53.80066
 		}
-	}
+	},
+	"confidence": "low"
 }

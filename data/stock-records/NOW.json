@@ -2,101 +2,102 @@
 	"ticker": "NOW",
 	"name": "ServiceNow",
 	"group": "Defensive Monopolies",
-	"marketCap": "$107.6B USD",
-	"sharpeRatio": 1.98,
-	"expectedCAGR": "20% - 155%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$91.7B USD",
+	"sharpeRatio": 1.6,
+	"expectedCAGR": "-4% - 154%",
+	"expectedVolatility": "~44%",
 	"valuation": {
-		"trailingPE": 61.1,
-		"forwardPE": 20.3,
-		"evEbitda": 37.5,
-		"evFcf": 20.8
+		"trailingPE": 52.9,
+		"forwardPE": 17.8,
+		"evEbitda": 30.8,
+		"evFcf": 17.4,
+		"pegRatio": 0.88
 	},
 	"metrics": {
-		"roe": "15.5%",
+		"roe": "16.1%",
 		"fcfMargin": "~37%",
-		"fcfYield": "~5%",
+		"fcfYield": "~6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "58%",
+		"ruleOf40": "59%",
 		"beta": "1",
-		"revenueGrowth": "20.7%",
-		"roic": "5.2%",
-		"interestCoverage": "20.7x"
+		"revenueGrowth": "22.1%",
+		"roic": "6.1%",
+		"interestCoverage": "21.6x"
 	},
-	"targetPrice": "$185.04",
+	"targetPrice": "$142.04",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$102",
+	"currentPrice": "$88.89",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "20%",
-			"base": "81%",
-			"bull": "155%"
+			"bear": "-4%",
+			"base": "60%",
+			"bull": "154%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:31.076Z",
+	"lastUpdated": "2026-04-30T00:44:44.369Z",
 	"consensus": {
-		"yahoo": "$185.04"
+		"yahoo": "$142.04"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.99,
+		"score": 0.83,
 		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.83 vs 0.8 limit)",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 20.8,
-			"cvStock": 0.061,
+			"multiple": 17.4,
+			"cvStock": 0.059,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 81.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 102,
-				"price6mAgo": 182.57,
-				"price1mAgo": 120.38,
-				"low3m": 98,
-				"return6m": -44.1,
+				"price": 88.89,
+				"price6mAgo": 186.94,
+				"price1mAgo": 104.97,
+				"low3m": 81.24,
+				"return6m": -52.4,
 				"return1m": -15.3,
-				"near3mLow": true
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 2
+				"up30d": 16,
+				"down30d": 19
 			},
 			"earningsSurprise": {
-				"surprise": 3.9,
-				"quarter": "2025-12"
+				"surprise": 0.4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.97
+		"secondaryScore": 0.85
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.23,
-		"totalScore": 5.23,
+		"revisionsScore": -1.41,
+		"totalScore": 3.59,
 		"raw": {
-			"avgSurprisePct": 9.24,
-			"netInsiderShares": 435053,
+			"avgSurprisePct": 7.99,
+			"netInsiderShares": 426126,
 			"instFlowTrend": "negative",
-			"upRevisions": 3,
-			"downRevisions": 1,
-			"totalAnalysts": 44
+			"upRevisions": 10,
+			"downRevisions": 21,
+			"totalAnalysts": 39
 		}
 	},
 	"description": "ServiceNow, Inc. provides cloud-based solution for digital workflows in the North America, Europe, the Middle East and Africa, Asia Pacific, and internationally.",
 	"analystTargets": {
-		"low": 122.78,
-		"mean": 185.04,
-		"high": 260
+		"low": 85,
+		"mean": 142.04,
+		"high": 226
 	},
 	"analystConsensus": {
 		"ticker": "NOW",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$192.62",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.36284,
-			"low": 3.48,
-			"average": 4.16611
+			"high": 4.33,
+			"low": 3.64,
+			"average": 4.11691
 		},
 		"2027": {
-			"high": 5.4,
-			"low": 4.17,
-			"average": 5.01803
+			"high": 5.31931,
+			"low": 4.13,
+			"average": 5.00265
 		}
-	}
+	},
+	"confidence": "low"
 }

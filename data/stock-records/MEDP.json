@@ -7,94 +7,95 @@
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 15.26,
+		"ttmEPS": 15.89,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-34%",
-			"base": "0%",
+			"bear": "-20%",
+			"base": "7%",
 			"bull": "20%"
 		}
 	},
-	"currentPrice": "$498.34",
-	"marketCap": "$14.1B USD",
+	"currentPrice": "$413.59",
+	"marketCap": "$11.8B USD",
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 25.9,
-		"evEbitda": 24.5,
-		"evFcf": 29.2
+		"trailingPE": 26,
+		"forwardPE": 22.3,
+		"evEbitda": 19.1,
+		"evFcf": 23,
+		"pegRatio": 2.52
 	},
 	"metrics": {
-		"roe": "70.2%",
-		"fcfMargin": "~19%",
-		"fcfYield": "~3%",
+		"roe": "77.3%",
+		"fcfMargin": "~18%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "51%",
+		"ruleOf40": "45%",
 		"beta": "1.39",
-		"revenueGrowth": "32.0%",
-		"roic": "5.2%",
-		"interestCoverage": "74.8x"
+		"revenueGrowth": "26.5%",
+		"roic": "6.5%",
+		"interestCoverage": "73.6x"
 	},
 	"consensus": {
-		"yahoo": "$500.08"
+		"yahoo": "$442.83"
 	},
-	"targetPrice": "$500.08",
-	"expectedCAGR": "-34% - 20%",
+	"targetPrice": "$442.83",
+	"expectedCAGR": "-20% - 20%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.16,
+		"score": 1.86,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 25.9,
-			"cvStock": 0.036,
+			"multiple": 22.3,
+			"cvStock": 0.019,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.44 >= 8 (elite quality floor) (REJECT: Stalled at WAIT with base CAGR 0% < 15%)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 498.34,
-				"price6mAgo": 530.3,
-				"price1mAgo": 469.38,
-				"low3m": 392.35,
-				"return6m": -6,
-				"return1m": 6.2,
+				"price": 413.59,
+				"price6mAgo": 580.37,
+				"price1mAgo": 460.3,
+				"low3m": 373,
+				"return6m": -28.7,
+				"return1m": -10.1,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 7,
-				"down30d": 0
+				"pass": false,
+				"up30d": 3,
+				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": 10.5,
-				"quarter": "2025-12"
+				"surprise": 8.2,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:27.966Z",
-	"expectedVolatility": "~60%",
-	"sharpeRatio": -0.19,
+	"lastUpdated": "2026-04-30T00:44:42.169Z",
+	"expectedVolatility": "~64%",
+	"sharpeRatio": -0.07,
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 4.44,
-		"totalScore": 9.44,
+		"flowScore": 2.5,
+		"revisionsScore": -0.5,
+		"totalScore": 7,
 		"raw": {
-			"avgSurprisePct": 10.43,
-			"netInsiderShares": -283009,
-			"instFlowTrend": "neutral",
-			"upRevisions": 8,
-			"downRevisions": 0,
-			"totalAnalysts": 9
+			"avgSurprisePct": 7.57,
+			"netInsiderShares": -270530,
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 5,
+			"totalAnalysts": 10
 		}
 	},
 	"description": "Medpace Holdings, Inc. provides clinical research-based drug and medical device development services in North America, Europe, Asia, South America, Africa, and Australia.",
 	"analystTargets": {
 		"low": 329,
-		"mean": 500.08,
-		"high": 600
+		"mean": 442.83,
+		"high": 495
 	},
 	"analystConsensus": {
 		"ticker": "MEDP",
@@ -108,14 +109,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 18.65,
-			"low": 16.9,
-			"average": 17.38499
+			"high": 17.78,
+			"low": 16.7,
+			"average": 17.06482
 		},
 		"2027": {
-			"high": 21.14,
-			"low": 18.35,
-			"average": 19.20766
+			"high": 19.26,
+			"low": 17.85,
+			"average": 18.56183
 		}
-	}
+	},
+	"confidence": "medium"
 }

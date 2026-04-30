@@ -8,16 +8,16 @@
 		"ttmEPS": 0.83,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "14%",
-			"bull": "25%"
+			"bear": "-4%",
+			"base": "13%",
+			"bull": "23%"
 		}
 	},
-	"currentPrice": "C$31.09",
-	"marketCap": "C$4.8B",
+	"currentPrice": "C$31.54",
+	"marketCap": "C$4.9B",
 	"valuation": {
-		"trailingPE": 37.5,
-		"forwardPE": 30.2,
+		"trailingPE": 38,
+		"forwardPE": 19.9,
 		"evEbitda": 16.4,
 		"evFcf": 47.2
 	},
@@ -33,10 +33,10 @@
 		"interestCoverage": "10.6x"
 	},
 	"consensus": {
-		"yahoo": "C$34.08"
+		"yahoo": "C$34.25"
 	},
-	"targetPrice": "C$34.08",
-	"expectedCAGR": "-3% - 25%",
+	"targetPrice": "C$34.25",
+	"expectedCAGR": "-4% - 23%",
 	"screener": {
 		"engine": "totalReturn",
 		"score": 0.86,
@@ -51,12 +51,12 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 31.09,
-				"price6mAgo": 26.67,
-				"price1mAgo": 31.83,
-				"low3m": 26,
-				"return6m": 16.6,
-				"return1m": -2.3,
+				"price": 31.54,
+				"price6mAgo": 25,
+				"price1mAgo": 31.55,
+				"low3m": 28.05,
+				"return6m": 26.2,
+				"return1m": 0,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -70,21 +70,21 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:36.092Z",
-	"expectedVolatility": "~22%",
-	"sharpeRatio": 0.3,
+	"lastUpdated": "2026-04-30T00:44:48.068Z",
+	"expectedVolatility": "~19%",
+	"sharpeRatio": 0.26,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 1.67,
-		"totalScore": 6.67,
+		"revisionsScore": 2.5,
+		"totalScore": 7.5,
 		"raw": {
 			"avgSurprisePct": 31.34,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 3
+			"totalAnalysts": 2
 		}
 	},
 	"bullCase": "Topaz Energy is a pure-play royalty company with zero capital commitment — it receives net royalty payments on ~3.4 million BOE/d of production across Canada. The 5%+ royalty yield provides a floor return, and Tourmaline Oil's continued development activity drives organic royalty growth. The royalty model provides inflation protection.",
@@ -92,7 +92,7 @@
 	"description": "Topaz Energy Corp. operates as a royalty and infrastructure energy company in Canada.",
 	"analystTargets": {
 		"low": 29,
-		"mean": 34.08,
+		"mean": 34.25,
 		"high": 37.5
 	},
 	"analystConsensus": {
@@ -106,14 +106,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 0.86,
-			"low": 0.41,
-			"average": 0.59805
+			"high": 0.78,
+			"low": 0.71987,
+			"average": 0.74994
 		},
 		"2027": {
-			"high": 1.03,
-			"low": 1.03,
-			"average": 1.03
+			"high": 2.99,
+			"low": 0.74,
+			"average": 1.58667
 		}
-	}
+	},
+	"confidence": "medium"
 }

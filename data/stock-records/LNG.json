@@ -2,21 +2,21 @@
 	"ticker": "LNG",
 	"name": "Cheniere Energy",
 	"group": "Energy",
-	"marketCap": "$60.5B USD",
-	"sharpeRatio": 0.09,
-	"expectedCAGR": "-8% - 22%",
-	"expectedVolatility": "~27%",
+	"marketCap": "$57.2B USD",
+	"sharpeRatio": 0.25,
+	"expectedCAGR": "-4% - 26%",
+	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 11.7,
-		"forwardPE": 15.7,
-		"pegRatio": null,
-		"evEbitda": 8.5,
-		"evFcf": 33.8
+		"trailingPE": 11.3,
+		"forwardPE": 15.1,
+		"pegRatio": 9.46,
+		"evEbitda": 8.4,
+		"evFcf": 33.1
 	},
 	"metrics": {
 		"fcfMargin": "~14%",
-		"fcfYield": "~4%",
-		"roic": "6.5%",
+		"fcfYield": "~5%",
+		"roic": "6.7%",
 		"roe": "58.7%",
 		"netDebtEbitda": "2.4x",
 		"ruleOf40": "26%",
@@ -24,51 +24,52 @@
 		"revenueGrowth": "12.3%",
 		"interestCoverage": "7.2x"
 	},
-	"targetPrice": "$298.86",
+	"targetPrice": "$303",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$281.16",
+	"currentPrice": "$272.23",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$298.86"
+		"yahoo": "$303"
 	},
 	"cagrModel": {
-		"ttmEPS": 24.12,
+		"ttmEPS": 24.14,
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "7%",
-			"bull": "22%"
+			"bear": "-4%",
+			"base": "12%",
+			"bull": "26%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.937Z",
+	"lastUpdated": "2026-04-30T00:44:41.374Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.19,
+		"score": 2.22,
 		"signal": "FAIL",
+		"note": "Valuation score 2.22 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 4,
 			"multipleType": "EV/EBITDA",
-			"multiple": 8.5,
-			"cvStock": 0.145,
-			"riskMultiplier": 1.031
+			"multiple": 8.4,
+			"cvStock": 0.162,
+			"riskMultiplier": 1.058
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 281.16,
-				"price6mAgo": 233.26,
-				"price1mAgo": 249.54,
-				"low3m": 191.64,
-				"return6m": 20.5,
-				"return1m": 12.7,
+				"price": 272.23,
+				"price6mAgo": 211.52,
+				"price1mAgo": 293.64,
+				"low3m": 206.19,
+				"return6m": 28.7,
+				"return1m": -7.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
@@ -77,26 +78,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 4.05
+		"secondaryScore": 4
 	},
 	"qcs": {
-		"earningsScore": -3.02,
+		"earningsScore": -2.7,
 		"flowScore": 2.5,
-		"revisionsScore": 1.25,
-		"totalScore": 0.73,
+		"revisionsScore": 3.33,
+		"totalScore": 3.13,
 		"raw": {
 			"avgSurprisePct": -10.93,
 			"netInsiderShares": -17665190,
 			"instFlowTrend": "positive",
 			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 4
+			"downRevisions": 0,
+			"totalAnalysts": 3
 		}
 	},
 	"description": "Cheniere Energy, Inc., an energy infrastructure company, primarily engages in the liquefied natural gas (LNG) related businesses in the United States.",
 	"analystTargets": {
-		"low": 255,
-		"mean": 298.86,
+		"low": 259,
+		"mean": 303,
 		"high": 340
 	},
 	"analystConsensus": {
@@ -111,14 +112,15 @@
 	"targetPriceAlternative": "$282.00",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.96,
-			"low": 13.64,
-			"average": 14.35
+			"high": 20.64682,
+			"low": 12.72,
+			"average": 15.91561
 		},
 		"2027": {
-			"high": 24.2326,
-			"low": 13.83,
-			"average": 17.91652
+			"high": 24.20363,
+			"low": 12.49,
+			"average": 18.03091
 		}
-	}
+	},
+	"confidence": "low"
 }

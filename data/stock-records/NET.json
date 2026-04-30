@@ -2,14 +2,15 @@
 	"ticker": "NET",
 	"name": "Cloudflare",
 	"group": "Cybersecurity",
-	"marketCap": "$74.5B USD",
+	"marketCap": "$74.6B USD",
 	"sharpeRatio": -0.03,
 	"expectedCAGR": "-36% - 42%",
-	"expectedVolatility": "~50%",
+	"expectedVolatility": "~51%",
 	"valuation": {
-		"forwardPE": 146.8,
+		"forwardPE": 147,
 		"evEbitda": null,
-		"evFcf": 190.5
+		"evFcf": 190.8,
+		"pegRatio": 2.38
 	},
 	"metrics": {
 		"roe": "-8.2%",
@@ -21,14 +22,14 @@
 		"revenueGrowth": "33.6%",
 		"roic": "0.8%"
 	},
-	"targetPrice": "$233.47",
+	"targetPrice": "$231.85",
 	"bullCase": "Unavoidable tollbooth for internet traffic and edge security. Expanding successfully into AI-agent infrastructure.",
 	"bearCase": "High forward multiple leaves little room for error; requires sustained hyper-growth to maintain valuation.",
-	"currentPrice": "$211.69",
+	"currentPrice": "$211.97",
 	"cagrModel": {
 		"scenarios": {
 			"bear": "-36%",
-			"base": "10%",
+			"base": "9%",
 			"bull": "42%"
 		},
 		"ttmEPS": 1.12,
@@ -36,30 +37,31 @@
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; premium edge network and security multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:30.088Z",
+	"lastUpdated": "2026-04-30T00:44:43.700Z",
 	"consensus": {
-		"yahoo": "$233.47"
+		"yahoo": "$231.85"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 5.44,
+		"score": 5.45,
 		"signal": "FAIL",
+		"note": "Valuation score 5.45 exceeds 1 limit",
 		"inputs": {
 			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 146.8,
+			"multiple": 147,
 			"cvStock": 0.105,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.69,
-				"price6mAgo": 221.03,
-				"price1mAgo": 192.31,
+				"price": 211.97,
+				"price6mAgo": 222.5,
+				"price1mAgo": 194.63,
 				"low3m": 158.83,
-				"return6m": -4.2,
-				"return1m": 10.1,
+				"return6m": -4.7,
+				"return1m": 8.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -80,17 +82,17 @@
 		"totalScore": 2.94,
 		"raw": {
 			"avgSurprisePct": 8.13,
-			"netInsiderShares": 185085,
+			"netInsiderShares": 200085,
 			"instFlowTrend": "negative",
 			"upRevisions": 0,
 			"downRevisions": 1,
-			"totalAnalysts": 31
+			"totalAnalysts": 32
 		}
 	},
 	"description": "Cloudflare, Inc. operates as a cloud services provider that delivers a range of services to businesses worldwide.",
 	"analystTargets": {
 		"low": 135,
-		"mean": 233.47,
+		"mean": 231.85,
 		"high": 300
 	},
 	"analystConsensus": {
@@ -105,14 +107,15 @@
 	"targetPriceAlternative": "$233.38",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.16,
+			"high": 1.17,
 			"low": 1.10607,
-			"average": 1.12152
+			"average": 1.12304
 		},
 		"2027": {
 			"high": 1.86,
 			"low": 1.25168,
 			"average": 1.44174
 		}
-	}
+	},
+	"confidence": "low"
 }

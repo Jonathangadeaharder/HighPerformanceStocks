@@ -5,88 +5,89 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 7.04,
-		"dividendYield": "1%",
+		"ttmEPS": 6.96,
+		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "24%",
-			"bull": "52%"
+			"bear": "15%",
+			"base": "32%",
+			"bull": "56%"
 		}
 	},
-	"currentPrice": "211 SEK",
-	"marketCap": "77.0B SEK",
+	"currentPrice": "198 SEK",
+	"marketCap": "72.3B SEK",
 	"valuation": {
-		"trailingPE": 30,
-		"forwardPE": 23.6,
-		"evEbitda": 17.2,
-		"evFcf": 24.9
+		"trailingPE": 28.5,
+		"forwardPE": 22.1,
+		"evEbitda": 16.2,
+		"evFcf": 27.3,
+		"pegRatio": 1.63
 	},
 	"metrics": {
-		"roe": "15.2%",
-		"fcfMargin": "~11%",
+		"roe": "14.7%",
+		"fcfMargin": "~9%",
 		"fcfYield": "~4%",
-		"netDebtEbitda": "1.5x",
+		"netDebtEbitda": "1.6x",
 		"ruleOf40": "9%",
 		"beta": "1.28",
-		"revenueGrowth": "-1.3%",
-		"roic": "4.7%",
-		"interestCoverage": "9.2x"
+		"revenueGrowth": "0.3%",
+		"roic": "5.0%",
+		"interestCoverage": "9.1x"
 	},
 	"consensus": {
-		"yahoo": "260 SEK"
+		"yahoo": "258 SEK"
 	},
-	"targetPrice": "260 SEK",
-	"expectedCAGR": "10% - 52%",
+	"targetPrice": "258 SEK",
+	"expectedCAGR": "15% - 56%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.15,
-		"signal": "REJECTED",
+		"score": 1.08,
+		"signal": "FAIL",
+		"note": "Valuation score 1.08 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 17.2,
-			"cvStock": 0.05,
+			"multiple": 16.2,
+			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.4,
-				"price6mAgo": 235,
-				"price1mAgo": 219.2,
+				"price": 198.4,
+				"price6mAgo": 257.4,
+				"price1mAgo": 210.6,
 				"low3m": 194,
-				"return6m": -10,
-				"return1m": -3.6,
-				"near3mLow": false
+				"return6m": -22.9,
+				"return1m": -5.8,
+				"near3mLow": true
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 4
+				"pass": true,
+				"up30d": 4,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -14.7,
-				"quarter": "2025-12"
+				"surprise": 11.7,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.57
+		"secondaryScore": 1.47
 	},
-	"lastUpdated": "2026-04-05T07:21:23.728Z",
-	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.91,
+	"lastUpdated": "2026-04-30T00:44:39.013Z",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.94,
 	"qcs": {
-		"earningsScore": 0.14,
+		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -4,
-		"totalScore": -3.86,
+		"revisionsScore": 1,
+		"totalScore": 6,
 		"raw": {
-			"avgSurprisePct": 0.17,
+			"avgSurprisePct": 2.93,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 4,
+			"upRevisions": 1,
+			"downRevisions": 0,
 			"totalAnalysts": 5
 		}
 	},
@@ -94,9 +95,9 @@
 	"bearCase": "The Swedish and European industrial economy is exposed to the macro slowdown — automotive and heavy industry clients have been reducing capex. Currency risk from SEK exposure and acquisition integration missteps represent the primary execution risks.",
 	"description": "Indutrade AB (publ) manufactures, develops, and sells components, systems, and services to various industries worldwide.",
 	"analystTargets": {
-		"low": 230,
-		"mean": 259.71,
-		"high": 320
+		"low": 225,
+		"mean": 257.88,
+		"high": 305
 	},
 	"analystConsensus": {
 		"ticker": "INDT.ST",
@@ -109,14 +110,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 10.17,
-			"low": 8.17,
-			"average": 9.55974
+			"high": 9.96,
+			"low": 9.59,
+			"average": 9.77896
 		},
 		"2027": {
-			"high": 11.27555,
-			"low": 9.15,
-			"average": 10.5646
+			"high": 11.28,
+			"low": 10.6,
+			"average": 10.94549
 		}
-	}
+	},
+	"confidence": "medium"
 }

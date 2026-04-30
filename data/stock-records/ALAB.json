@@ -5,22 +5,22 @@
 	"cagrModel": {
 		"epsGrowth": "44%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 1.22,
+		"ttmEPS": 1.23,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "31%",
-			"base": "73%",
-			"bull": "112%"
+			"bear": "-29%",
+			"base": "3%",
+			"bull": "27%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$117.99",
-	"marketCap": "$20.1B USD",
+	"currentPrice": "$196.85",
+	"marketCap": "$33.7B USD",
 	"valuation": {
-		"trailingPE": 96.7,
-		"forwardPE": 33.5,
-		"evEbitda": 104.2,
-		"evFcf": 90.8
+		"trailingPE": 160,
+		"forwardPE": 54.9,
+		"evEbitda": 179.5,
+		"evFcf": 156.5
 	},
 	"metrics": {
 		"roe": "18.8%",
@@ -30,42 +30,43 @@
 		"ruleOf40": "116%",
 		"beta": "1.79",
 		"revenueGrowth": "91.8%",
-		"roic": "1.7%",
+		"roic": "1.0%",
 		"interestCoverage": "105.8x"
 	},
 	"consensus": {
-		"yahoo": "$204.25"
+		"yahoo": "$202.86"
 	},
-	"targetPrice": "$204.25",
-	"expectedCAGR": "31% - 112%",
+	"targetPrice": "$202.86",
+	"expectedCAGR": "-29% - 27%",
 	"expectedVolatility": "~91%",
-	"sharpeRatio": 0.74,
+	"sharpeRatio": -0.06,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.9,
-		"signal": "PASS",
+		"score": 1.47,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.47 exceeds 1 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 12.14)) (REJECT: Stalled at WAIT with base CAGR 3% < 15%)",
 		"inputs": {
 			"growth": 44,
 			"multipleType": "Forward P/E",
-			"multiple": 33.5,
+			"multiple": 54.9,
 			"cvStock": 0.121,
 			"riskMultiplier": 1.006
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 117.99,
-				"price6mAgo": 212.1,
-				"price1mAgo": 122.31,
+				"price": 196.85,
+				"price6mAgo": 169.55,
+				"price1mAgo": 100.27,
 				"low3m": 97.89,
-				"return6m": -44.4,
-				"return1m": -3.5,
+				"return6m": 16.1,
+				"return1m": 96.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 11,
-				"down30d": 2
+				"up30d": 1,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 12.6,
@@ -73,27 +74,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-04-07T11:23:06.296Z",
+	"lastUpdated": "2026-04-30T00:44:31.507Z",
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 5,
-		"revisionsScore": 2.14,
-		"totalScore": 12.14,
+		"flowScore": 2.5,
+		"revisionsScore": 0.23,
+		"totalScore": 7.73,
 		"raw": {
 			"avgSurprisePct": 22.57,
-			"netInsiderShares": 10214,
+			"netInsiderShares": -660382,
 			"instFlowTrend": "positive",
-			"upRevisions": 13,
-			"downRevisions": 4,
-			"totalAnalysts": 21
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 22
 		}
 	},
 	"bullCase": "Astera Labs makes PCIe and CXL retimers — the signal conditioning chips that enable high-speed connectivity in AI server clusters. As the only major standalone retimer vendor, it has design wins at Microsoft, Google, and AWS. The transition to CXL 3.0 memory pooling opens a new $5B+ TAM beyond the current retimer market.",
 	"bearCase": "Astera is an early-stage company with limited revenue visibility. Marvell and Broadcom are developing competing connectivity solutions that could displace standalone retimers. Hyperscaler capex pauses would immediately compress Astera's revenue. Customer concentration at 2-3 hyperscalers creates binary revenue risk.",
 	"description": "Astera Labs, Inc. designs, manufactures, and sells semiconductor-based connectivity solutions for cloud and AI infrastructure.",
 	"analystTargets": {
-		"low": 155,
-		"mean": 204.25,
+		"low": 140,
+		"mean": 202.86,
 		"high": 250
 	},
 	"analystConsensus": {
@@ -110,12 +111,13 @@
 		"2026": {
 			"high": 2.95277,
 			"low": 2.25,
-			"average": 2.48768
+			"average": 2.49408
 		},
 		"2027": {
 			"high": 4.68,
 			"low": 2.95123,
-			"average": 3.57742
+			"average": 3.58434
 		}
-	}
+	},
+	"confidence": "medium"
 }

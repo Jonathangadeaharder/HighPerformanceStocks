@@ -7,64 +7,64 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 34.66,
+		"ttmEPS": 34.65,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "13%",
-			"bull": "25%"
+			"bear": "5%",
+			"base": "20%",
+			"bull": "35%"
 		}
 	},
-	"currentPrice": "$884.28",
-	"marketCap": "$109.1B USD",
+	"currentPrice": "$822.63",
+	"marketCap": "$100.8B USD",
 	"valuation": {
-		"trailingPE": 25.5,
-		"forwardPE": 20,
-		"evEbitda": 19.4,
-		"evFcf": 12.6
+		"trailingPE": 23.7,
+		"forwardPE": 18.7,
+		"evEbitda": 18.2,
+		"evFcf": 11.8,
+		"pegRatio": 1.02
 	},
 	"metrics": {
 		"fcfMargin": "~2%",
-		"fcfYield": "~8%",
+		"fcfYield": "~9%",
 		"netDebtEbitda": "1.0x",
 		"ruleOf40": "14%",
 		"beta": "0.42",
 		"revenueGrowth": "11.4%",
-		"roic": "9.1%",
+		"roic": "9.8%",
 		"interestCoverage": "12.3x"
 	},
 	"consensus": {
-		"yahoo": "$997.67"
+		"yahoo": "$990.87"
 	},
-	"targetPrice": "$997.67",
-	"expectedCAGR": "-3% - 25%",
+	"targetPrice": "$990.87",
+	"expectedCAGR": "5% - 35%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.84,
-		"signal": "REJECTED",
+		"score": 0.79,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 12.6,
-			"cvStock": 0.01,
+			"multiple": 11.8,
+			"cvStock": 0.009,
 			"riskMultiplier": 1
 		},
-		"note": "REJECT: Stalled at WAIT with base CAGR 13% < 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 884.28,
-				"price6mAgo": 741.29,
-				"price1mAgo": 931.35,
-				"low3m": 794.59,
-				"return6m": 19.3,
-				"return1m": -5.1,
-				"near3mLow": false
+				"price": 822.63,
+				"price6mAgo": 825.53,
+				"price1mAgo": 860.19,
+				"low3m": 817.17,
+				"return6m": -0.4,
+				"return1m": -4.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 0
+				"up30d": 1,
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": 0.7,
@@ -72,29 +72,29 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.33
+		"secondaryScore": 1.25
 	},
-	"lastUpdated": "2026-04-05T07:21:27.921Z",
+	"lastUpdated": "2026-04-30T00:44:42.116Z",
 	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.23,
+	"sharpeRatio": 0.55,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.31,
-		"totalScore": 5.31,
+		"revisionsScore": -0.59,
+		"totalScore": 4.41,
 		"raw": {
 			"avgSurprisePct": 3.5,
 			"netInsiderShares": 756,
 			"instFlowTrend": "negative",
 			"upRevisions": 1,
-			"downRevisions": 0,
-			"totalAnalysts": 16
+			"downRevisions": 3,
+			"totalAnalysts": 17
 		}
 	},
 	"description": "McKesson Corporation provides healthcare services in the United States and internationally.",
 	"analystTargets": {
 		"low": 860,
-		"mean": 997.67,
+		"mean": 990.87,
 		"high": 1107
 	},
 	"analystConsensus": {
@@ -110,13 +110,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 39.10129,
-			"low": 38.94,
-			"average": 39.02287
+			"low": 38.91,
+			"average": 39.01329
 		},
 		"2027": {
-			"high": 44.78,
-			"low": 43.07,
-			"average": 44.23371
+			"high": 44.65,
+			"low": 43.05,
+			"average": 44.10646
 		}
-	}
+	},
+	"confidence": "low"
 }

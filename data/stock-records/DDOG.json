@@ -2,15 +2,16 @@
 	"ticker": "DDOG",
 	"name": "Datadog",
 	"group": "Cloud Infrastructure",
-	"marketCap": "$42.6B USD",
-	"sharpeRatio": 1,
-	"expectedCAGR": "1% - 116%",
-	"expectedVolatility": "~54%",
+	"marketCap": "$47.4B USD",
+	"sharpeRatio": 0.71,
+	"expectedCAGR": "-10% - 94%",
+	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 388.3,
-		"forwardPE": 45.7,
-		"evEbitda": 5211.9,
-		"evFcf": 44.6
+		"trailingPE": 418.7,
+		"forwardPE": 50.7,
+		"evEbitda": 5850.2,
+		"evFcf": 50.1,
+		"pegRatio": 0.99
 	},
 	"metrics": {
 		"roe": "3.3%",
@@ -20,55 +21,55 @@
 		"ruleOf40": "55%",
 		"beta": "1.29",
 		"revenueGrowth": "29.2%",
-		"roic": "2.7%",
+		"roic": "2.4%",
 		"interestCoverage": "0.1x"
 	},
-	"targetPrice": "$181.52",
+	"targetPrice": "$176.95",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$120.36",
+	"currentPrice": "$133.98",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "51%",
-			"bull": "116%"
+			"bear": "-10%",
+			"base": "32%",
+			"bull": "94%"
 		},
 		"ttmEPS": 2.12,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.669Z",
+	"lastUpdated": "2026-04-30T00:44:35.292Z",
 	"consensus": {
-		"yahoo": "$181.52"
+		"yahoo": "$176.95"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.23,
-		"signal": "REJECTED",
+		"score": 2.51,
+		"signal": "WAIT",
+		"note": "Valuation score 2.51 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 32.1%)",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
-			"multiple": 44.6,
+			"multiple": 50.1,
 			"cvStock": 0.11,
-			"riskMultiplier": 1.002
+			"riskMultiplier": 1.001
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 120.36,
-				"price6mAgo": 157.36,
-				"price1mAgo": 122.36,
+				"price": 133.98,
+				"price6mAgo": 157.07,
+				"price1mAgo": 115.81,
 				"low3m": 98.01,
-				"return6m": -23.5,
-				"return1m": -1.6,
+				"return6m": -14.7,
+				"return1m": 15.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 3,
-				"down30d": 28
+				"pass": true,
+				"up30d": 1,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": 6.3,
@@ -76,26 +77,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.29
+		"secondaryScore": 2.54
 	},
 	"qcs": {
 		"earningsScore": 4.36,
 		"flowScore": 5,
-		"revisionsScore": -3.41,
-		"totalScore": 5.95,
+		"revisionsScore": 0.22,
+		"totalScore": 9.58,
 		"raw": {
 			"avgSurprisePct": 11.99,
-			"netInsiderShares": 892456,
+			"netInsiderShares": 1398814,
 			"instFlowTrend": "positive",
-			"upRevisions": 6,
-			"downRevisions": 36,
-			"totalAnalysts": 44
+			"upRevisions": 3,
+			"downRevisions": 1,
+			"totalAnalysts": 45
 		}
 	},
 	"description": "Datadog, Inc. operates an observability and security platform for cloud applications in the United States and internationally.",
 	"analystTargets": {
-		"low": 121,
-		"mean": 181.52,
+		"low": 120,
+		"mean": 176.95,
 		"high": 260
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.56,
-			"low": 2.07,
-			"average": 2.16072
+			"high": 2.68888,
+			"low": 2.0712,
+			"average": 2.17359
 		},
 		"2027": {
 			"high": 3.51,
 			"low": 2.35,
-			"average": 2.63493
+			"average": 2.64305
 		}
-	}
+	},
+	"confidence": "medium"
 }

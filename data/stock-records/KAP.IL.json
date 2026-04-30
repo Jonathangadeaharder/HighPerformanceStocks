@@ -11,32 +11,33 @@
 		"dividendYield": "0%",
 		"ttmEPS": 6.16
 	},
-	"currentPrice": "$80.30",
+	"currentPrice": "$83.80",
 	"marketCap": "$20.8B USD",
 	"consensus": {
 		"yahoo": "$95.00"
 	},
-	"expectedVolatility": "~46%",
+	"expectedVolatility": "~45%",
 	"screener": {
 		"engine": "tPERG",
-		"score": 1.63,
+		"score": 1.7,
 		"signal": "FAIL",
+		"note": "Valuation score 1.70 exceeds 1 limit (Used benchmark CV)",
 		"inputs": {
 			"growth": 8,
 			"multipleType": "Trailing P/E",
-			"multiple": 13,
+			"multiple": 13.6,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 80.3,
-				"price6mAgo": 52.9,
-				"price1mAgo": 76.8,
-				"low3m": 60,
-				"return6m": 51.8,
-				"return1m": 4.6,
+				"price": 83.8,
+				"price6mAgo": 57.7,
+				"price1mAgo": 79.3,
+				"low3m": 70.2,
+				"return6m": 45.2,
+				"return1m": 5.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -44,12 +45,11 @@
 				"up30d": 0,
 				"down30d": 0
 			}
-		},
-		"note": "Used benchmark CV"
+		}
 	},
-	"lastUpdated": "2026-04-05T07:21:24.776Z",
+	"lastUpdated": "2026-04-30T00:44:39.774Z",
 	"valuation": {
-		"trailingPE": 13,
+		"trailingPE": 13.6,
 		"forwardPE": 0,
 		"pegRatio": 0.74,
 		"evEbitda": 0.3
@@ -84,5 +84,6 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"confidence": "low"
 }

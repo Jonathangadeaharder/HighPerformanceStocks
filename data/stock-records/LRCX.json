@@ -5,95 +5,97 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.87,
+		"ttmEPS": 5.3,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "26%",
-			"bull": "49%"
+			"bear": "-12%",
+			"base": "24%",
+			"bull": "55%"
 		}
 	},
-	"currentPrice": "$218.44",
-	"marketCap": "$274.4B USD",
+	"currentPrice": "$248.75",
+	"marketCap": "$311.1B USD",
 	"valuation": {
-		"trailingPE": 44.9,
-		"forwardPE": 31.6,
-		"evEbitda": 36.9,
-		"evFcf": 56.3
+		"trailingPE": 46.9,
+		"forwardPE": 31.8,
+		"evEbitda": 39.5,
+		"evFcf": 71.3,
+		"pegRatio": 1.49
 	},
 	"metrics": {
-		"roe": "65.6%",
-		"fcfMargin": "~23%",
-		"fcfYield": "~2%",
+		"roe": "66.8%",
+		"fcfMargin": "~20%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "46%",
+		"ruleOf40": "44%",
 		"beta": "1.79",
-		"revenueGrowth": "22.1%",
-		"roic": "2.6%",
-		"interestCoverage": "29.8x"
+		"revenueGrowth": "23.8%",
+		"roic": "2.2%",
+		"interestCoverage": "38.2x"
 	},
 	"consensus": {
-		"yahoo": "$274.90"
+		"yahoo": "$307.74"
 	},
-	"targetPrice": "$274.90",
-	"expectedCAGR": "-8% - 49%",
-	"expectedVolatility": "~51%",
-	"sharpeRatio": 0.31,
+	"targetPrice": "$307.74",
+	"expectedCAGR": "-12% - 55%",
+	"expectedVolatility": "~49%",
+	"sharpeRatio": 0.35,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
+		"score": 2.12,
 		"signal": "FAIL",
+		"note": "Valuation score 2.12 exceeds 1 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 31.6,
-			"cvStock": 0.127,
-			"riskMultiplier": 1.011
+			"multiple": 31.8,
+			"cvStock": 0.099,
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 218.44,
-				"price6mAgo": 149.15,
-				"price1mAgo": 214.68,
-				"low3m": 177.5,
-				"return6m": 46.5,
-				"return1m": 1.8,
+				"price": 248.75,
+				"price6mAgo": 161.01,
+				"price1mAgo": 199.93,
+				"low3m": 194.08,
+				"return6m": 54.5,
+				"return1m": 24.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 0
+				"up30d": 26,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 8.7,
-				"quarter": "2025-12"
+				"surprise": 7.9,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:26.965Z",
+	"lastUpdated": "2026-04-30T00:44:41.406Z",
 	"qcs": {
-		"earningsScore": 2.08,
+		"earningsScore": 3.05,
 		"flowScore": 0,
-		"revisionsScore": 0.15,
-		"totalScore": 2.23,
+		"revisionsScore": 3.87,
+		"totalScore": 6.92,
 		"raw": {
-			"avgSurprisePct": 6.6,
-			"netInsiderShares": 563134,
+			"avgSurprisePct": 7.55,
+			"netInsiderShares": 618324,
 			"instFlowTrend": "neutral",
-			"upRevisions": 1,
+			"upRevisions": 24,
 			"downRevisions": 0,
-			"totalAnalysts": 34
+			"totalAnalysts": 31
 		}
 	},
 	"bullCase": "Lam Research dominates etch and deposition equipment — the two most critical process steps in advanced semiconductor manufacturing. As NAND recovers from its trough and advanced foundry (3D-stacking, gate-all-around) accelerates, Lam's wafer-fab equipment revenue is positioned for a major upcycle. Its high-margin Customer Support Business Group provides a ~$4B recurring revenue floor.",
 	"bearCase": "Lam's NAND exposure (~40% of revenue) makes it one of the most cyclically volatile names in semiconductor equipment. Memory capex cycles can compress revenue 30-40% within 12 months. US export controls on advanced equipment to China removed ~$1.5B of annual revenue. Any delay in the NAND recovery or GAA adoption pushes out the earnings inflection.",
 	"description": "Lam Research Corporation designs, manufactures, markets, refurbishes, and services semiconductor processing equipment used in the fabrication of integrated circuits in the United States, China, Kor...",
 	"analystTargets": {
-		"low": 200,
-		"mean": 274.9,
-		"high": 325
+		"low": 220,
+		"mean": 307.74,
+		"high": 385
 	},
 	"analystConsensus": {
 		"ticker": "LRCX",
@@ -107,14 +109,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 5.46326,
-			"low": 4.87,
-			"average": 5.30821
+			"high": 5.79,
+			"low": 5.62,
+			"average": 5.68097
 		},
 		"2027": {
-			"high": 8.14124,
-			"low": 4.64,
-			"average": 6.88964
+			"high": 10.03,
+			"low": 6.92,
+			"average": 7.8671
 		}
-	}
+	},
+	"confidence": "medium"
 }

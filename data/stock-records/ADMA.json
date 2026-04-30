@@ -9,18 +9,18 @@
 		"ttmEPS": 0.6,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "85%",
-			"base": "156%",
-			"bull": "226%"
+			"bear": "60%",
+			"base": "95%",
+			"bull": "126%"
 		}
 	},
-	"currentPrice": "$9.19",
-	"marketCap": "$2.2B USD",
+	"currentPrice": "$10.60",
+	"marketCap": "$2.5B USD",
 	"valuation": {
-		"trailingPE": 15.3,
-		"forwardPE": 6.7,
-		"evFcf": -2420.1,
-		"evEbitda": 220.2
+		"trailingPE": 17.7,
+		"forwardPE": 8.4,
+		"evFcf": -2438.7,
+		"evEbitda": 221.9
 	},
 	"metrics": {
 		"roe": "35.6%",
@@ -34,38 +34,38 @@
 		"interestCoverage": "0.0x"
 	},
 	"consensus": {
-		"yahoo": "$23.50"
+		"yahoo": "$20.67"
 	},
-	"targetPrice": "$23.50",
+	"targetPrice": "$20.67",
 	"analystTargets": {
 		"low": 17,
-		"mean": 23.5,
-		"high": 30
+		"mean": 20.67,
+		"high": 24
 	},
-	"expectedCAGR": "85% - 226%",
-	"expectedVolatility": "~58%",
-	"sharpeRatio": 2.6,
+	"expectedCAGR": "60% - 126%",
+	"expectedVolatility": "~54%",
+	"sharpeRatio": 1.64,
 	"screener": {
 		"engine": "fEVG",
-		"score": 6.76,
+		"score": 6.81,
 		"signal": "WAIT",
+		"note": "Valuation score 6.81 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 95% & elite quality floor (QCS 8.06))",
 		"inputs": {
 			"growth": 33,
 			"multipleType": "EV/EBITDA",
-			"multiple": 220.2,
-			"cvStock": 0,
+			"multiple": 221.9,
+			"cvStock": 0.049,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 155.7% + QCS 8.06",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 9.19,
-				"price6mAgo": 14.07,
-				"price1mAgo": 15.7,
+				"price": 10.6,
+				"price6mAgo": 15.27,
+				"price1mAgo": 9.15,
 				"low3m": 7.21,
-				"return6m": -34.7,
-				"return1m": -41.5,
+				"return6m": -30.6,
+				"return1m": 15.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,34 +79,35 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.21
+		"secondaryScore": 0.26
 	},
 	"qcs": {
-		"earningsScore": -1.94,
+		"earningsScore": -3.16,
 		"flowScore": 5,
-		"revisionsScore": 5,
-		"totalScore": 8.06,
+		"revisionsScore": 1.67,
+		"totalScore": 3.51,
 		"raw": {
 			"avgSurprisePct": -3.87,
-			"netInsiderShares": 482300,
+			"netInsiderShares": 488300,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 1
+			"totalAnalysts": 3
 		}
 	},
 	"description": "ADMA Biologics, Inc., a biopharmaceutical company, develops, manufactures, and markets specialty plasma-derived biologics for the treatment of immune deficiencies and infectious diseases in the Uni...",
-	"lastUpdated": "2026-04-05T07:21:12.399Z",
+	"lastUpdated": "2026-04-30T00:44:30.788Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.04,
-			"low": 1.04,
-			"average": 1.04
+			"high": 1.01,
+			"low": 0.87,
+			"average": 0.95333
 		},
 		"2027": {
-			"high": 1.38,
-			"low": 1.38,
-			"average": 1.38
+			"high": 1.35,
+			"low": 1.1,
+			"average": 1.26333
 		}
-	}
+	},
+	"confidence": "low"
 }

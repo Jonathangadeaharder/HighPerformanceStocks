@@ -5,57 +5,59 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.26,
-		"dividendYield": "4%",
+		"ttmEPS": 12.23,
+		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "16%",
-			"bull": "32%"
+			"bear": "-13%",
+			"base": "1%",
+			"bull": "14%"
 		}
 	},
-	"currentPrice": "$370.31",
-	"marketCap": "$15.1B USD",
+	"currentPrice": "$428.51",
+	"marketCap": "$17.4B USD",
 	"valuation": {
-		"trailingPE": 30.2,
-		"forwardPE": 26.1,
-		"evEbitda": 19.3,
-		"evFcf": 48.9
+		"trailingPE": 35,
+		"forwardPE": 30,
+		"evEbitda": 22.6,
+		"evFcf": 31.7
 	},
 	"metrics": {
-		"roe": "18.7%",
-		"fcfMargin": "~4%",
-		"fcfYield": "~2%",
+		"roe": "18.6%",
+		"fcfMargin": "~7%",
+		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-6%",
+		"ruleOf40": "7%",
 		"beta": "1.05",
-		"revenueGrowth": "-10.0%",
-		"roic": "3.8%",
-		"interestCoverage": "28.0x"
+		"revenueGrowth": "0.1%",
+		"roic": "4.2%",
+		"interestCoverage": "28.1x"
 	},
 	"consensus": {
-		"yahoo": "$415.42"
+		"yahoo": "$418.18"
 	},
-	"targetPrice": "$415.42",
-	"expectedCAGR": "2% - 32%",
+	"targetPrice": "$418.18",
+	"expectedCAGR": "-13% - 14%",
 	"screener": {
-		"engine": "totalReturn",
-		"score": null,
+		"engine": "fEVG",
+		"score": 2.26,
 		"signal": "REJECTED",
 		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 10,
-			"dividendYield": 4,
-			"earningsYield": 3.8
+			"multipleType": "EV/EBITDA",
+			"multiple": 22.6,
+			"cvStock": 0.096,
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 370.31,
-				"price6mAgo": 409.99,
-				"price1mAgo": 400.87,
-				"low3m": 336.96,
-				"return6m": -9.7,
-				"return1m": -7.6,
+				"price": 428.51,
+				"price6mAgo": 358.36,
+				"price1mAgo": 348.91,
+				"low3m": 340.01,
+				"return6m": 19.6,
+				"return1m": 22.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -67,23 +69,25 @@
 				"surprise": -11,
 				"quarter": "2025-12"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 3
 	},
-	"lastUpdated": "2026-04-05T07:21:39.272Z",
-	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.38,
+	"lastUpdated": "2026-04-30T00:44:50.292Z",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": -0.13,
 	"qcs": {
-		"earningsScore": -4.7,
+		"earningsScore": -3.92,
 		"flowScore": 2.5,
-		"revisionsScore": -1.92,
-		"totalScore": -4.12,
+		"revisionsScore": 0.45,
+		"totalScore": -0.97,
 		"raw": {
 			"avgSurprisePct": -9.4,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 7,
-			"totalAnalysts": 13
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 11
 		}
 	},
 	"bullCase": "Watsco is the dominant HVAC equipment distributor with a captive network of ~700 locations and a fragmented, 100,000-contractor customer base that has high switching costs. The mandated refrigerant transition (R-410A to R-454B by 2025) creates a multi-year equipment replacement super-cycle as contractors upgrade installed base.",
@@ -91,7 +95,7 @@
 	"description": "Watsco, Inc., together with its subsidiaries, engages in the distribution of air conditioning, heating, and refrigeration equipment, and related parts and supplies in the United States, Canada, Lat...",
 	"analystTargets": {
 		"low": 362,
-		"mean": 415.42,
+		"mean": 418.18,
 		"high": 475
 	},
 	"analystConsensus": {
@@ -108,12 +112,13 @@
 		"2026": {
 			"high": 14.16,
 			"low": 11.56,
-			"average": 12.74573
+			"average": 12.59998
 		},
 		"2027": {
 			"high": 17.92,
 			"low": 12.44,
-			"average": 14.37378
+			"average": 14.20874
 		}
-	}
+	},
+	"confidence": "cut"
 }

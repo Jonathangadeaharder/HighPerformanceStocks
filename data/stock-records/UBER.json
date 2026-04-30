@@ -8,18 +8,19 @@
 		"ttmEPS": 4.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "44%",
-			"bull": "109%"
+			"bear": "-6%",
+			"base": "39%",
+			"bull": "101%"
 		}
 	},
-	"currentPrice": "$71.84",
-	"marketCap": "$147.9B USD",
+	"currentPrice": "$74.47",
+	"marketCap": "$153.3B USD",
 	"valuation": {
-		"trailingPE": 15.2,
-		"forwardPE": 16.7,
-		"evEbitda": 24.3,
-		"evFcf": 24.2
+		"trailingPE": 15.7,
+		"forwardPE": 17.3,
+		"evEbitda": 25.2,
+		"evFcf": 25.1,
+		"pegRatio": 4.51
 	},
 	"metrics": {
 		"roe": "39.9%",
@@ -29,41 +30,41 @@
 		"ruleOf40": "32%",
 		"beta": "1.21",
 		"revenueGrowth": "20.1%",
-		"roic": "6.6%",
+		"roic": "6.4%",
 		"interestCoverage": "9.3x"
 	},
 	"consensus": {
-		"yahoo": "$103.58"
+		"yahoo": "$103.46"
 	},
-	"targetPrice": "$103.58",
-	"expectedCAGR": "-3% - 109%",
+	"targetPrice": "$103.46",
+	"expectedCAGR": "-6% - 101%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.99,
-		"signal": "PASS",
+		"score": 1.02,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 1.02 vs 1 limit)",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 16.7,
-			"cvStock": 0.164,
-			"riskMultiplier": 1.062
+			"multiple": 17.3,
+			"cvStock": 0.165,
+			"riskMultiplier": 1.063
 		},
-		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 71.84,
-				"price6mAgo": 100.1,
-				"price1mAgo": 75.44,
+				"price": 74.47,
+				"price6mAgo": 96.49,
+				"price1mAgo": 69.91,
 				"low3m": 68.46,
-				"return6m": -28.2,
-				"return1m": -4.8,
-				"near3mLow": true
+				"return6m": -22.8,
+				"return1m": 6.5,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 3,
-				"down30d": 1
+				"down30d": 4
 			},
 			"earningsSurprise": {
 				"surprise": -81.9,
@@ -73,32 +74,32 @@
 	},
 	"bullCase": "Uber is the global rides and delivery platform with 7B+ annual trips. Autonomous vehicle integration (Waymo partnership) will structurally reduce driver costs as AVs scale — Uber's platform owner economics improve dramatically without a fleet. Delivery (Uber Eats) is approaching profitability as density increases. 20%+ EBITDA margin trajectory with operating leverage.",
 	"bearCase": "Waymo and Tesla's robotaxi fleets may eventually disintermediate Uber's driver network, compressing take-rates or rendering the platform redundant. Food delivery faces structural margin pressure with DoorDash competing aggressively on restaurant exclusives. Regulatory headwinds on gig worker classification (AB5-style laws) increase driver costs in key markets.",
-	"lastUpdated": "2026-04-05T07:21:37.241Z",
+	"lastUpdated": "2026-04-30T00:44:48.774Z",
 	"intrinsicValue": {
 		"dcf": 139.48,
 		"date": "2026-03-28",
 		"discount": 102
 	},
-	"expectedVolatility": "~35%",
-	"sharpeRatio": 1.39,
+	"expectedVolatility": "~32%",
+	"sharpeRatio": 1.34,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.24,
-		"totalScore": 5.24,
+		"revisionsScore": 0,
+		"totalScore": 5,
 		"raw": {
 			"avgSurprisePct": 84.33,
-			"netInsiderShares": 1265147,
+			"netInsiderShares": 1258233,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 0,
+			"upRevisions": 4,
+			"downRevisions": 4,
 			"totalAnalysts": 41
 		}
 	},
 	"description": "Uber Technologies, Inc. develops and operates proprietary technology applications in the United States, Canada, Latin America, Europe, the Middle East, Africa, and the Asia Pacific.",
 	"analystTargets": {
 		"low": 70,
-		"mean": 103.58,
+		"mean": 103.46,
 		"high": 150
 	},
 	"analystConsensus": {
@@ -113,13 +114,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 4.697,
-			"low": 2.66,
-			"average": 3.37194
+			"low": 2.74,
+			"average": 3.36877
 		},
 		"2027": {
 			"high": 5.778,
 			"low": 2.92,
-			"average": 4.3489
+			"average": 4.34065
 		}
-	}
+	},
+	"confidence": "medium"
 }

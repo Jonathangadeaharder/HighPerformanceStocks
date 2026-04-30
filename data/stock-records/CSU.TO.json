@@ -2,16 +2,16 @@
 	"ticker": "CSU.TO",
 	"name": "Constellation Software",
 	"group": "Serial Acquirers",
-	"marketCap": "C$51.7B",
-	"sharpeRatio": 2.13,
-	"expectedCAGR": "43% - 132%",
-	"expectedVolatility": "~39%",
+	"marketCap": "C$51.8B",
+	"sharpeRatio": 2.07,
+	"expectedCAGR": "39% - 127%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 72.5,
-		"forwardPE": 13.2,
-		"pegRatio": null,
-		"evEbitda": 22.1,
-		"evFcf": 20.9
+		"trailingPE": 73.8,
+		"forwardPE": 13.5,
+		"pegRatio": 0.45,
+		"evEbitda": 22,
+		"evFcf": 20.8
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
@@ -24,47 +24,47 @@
 		"revenueGrowth": "17.5%",
 		"interestCoverage": "7.8x"
 	},
-	"targetPrice": "C$4222.33",
+	"targetPrice": "C$4078.35",
 	"bullCase": "CSU is the apex predator of serial acquirers. The violent compression of its forward P/E to 18.40x and a 6.42% FCF yield proves its recent pivot to larger corporate carve-outs is generating massive cash flow, overwhelming GAAP amortization. It is a generational, low-risk compounder. The Sept 2025 resignation of Mark Leonard caused a short-term stock drop, creating a potential entry point for a company built specifically to function without centralized visionary control.",
 	"bearCase": "FX dynamics and broader market rotations have caused slight market cap contraction. If the centralized capital deployment engine falters on integrating larger acquisitions, the historical premium multiple could permanently compress. NOTE: Mark Leonard resigned as President in Sept 2025 due to health reasons (succeeded by Mark Miller). While he remains on the board and the decentralized model is built to outlast him, this introduces unprecedented leadership transition risk.",
-	"currentPrice": "C$2441.27",
+	"currentPrice": "C$2444.36",
 	"consensus": {
 		"tipranks": "C$4,481",
-		"yahoo": "C$4222.33"
+		"yahoo": "C$4078.35"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.69,
+		"ttmEPS": 33.12,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "43%",
-			"base": "73%",
-			"bull": "132%"
+			"bear": "39%",
+			"base": "67%",
+			"bull": "127%"
 		},
 		"basis": "Price-to-FCF; historical avg PE 80-100x; exit PE represents de-rating from peak as growth normalizes"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.492Z",
+	"lastUpdated": "2026-04-30T00:44:35.245Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.23,
+		"score": 1.22,
 		"signal": "WAIT",
+		"note": "Valuation score 1.22 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 66.8%)",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 22.1,
+			"multiple": 22,
 			"cvStock": 0.028,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 73%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2441.27,
-				"price6mAgo": 3897.6,
-				"price1mAgo": 2796.99,
+				"price": 2444.36,
+				"price6mAgo": 3586.89,
+				"price1mAgo": 2386.77,
 				"low3m": 2196,
-				"return6m": -37.4,
-				"return1m": -12.7,
+				"return6m": -31.9,
+				"return1m": 2.4,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -78,27 +78,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.73
+		"secondaryScore": 0.75
 	},
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 0,
-		"revisionsScore": 3,
-		"totalScore": -2,
+		"revisionsScore": 0,
+		"totalScore": -5,
 		"raw": {
 			"avgSurprisePct": -18.87,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 4,
-			"downRevisions": 1,
+			"upRevisions": 0,
+			"downRevisions": 0,
 			"totalAnalysts": 5
 		}
 	},
 	"description": "Constellation Software Inc., together with its subsidiaries, acquires, builds, and manages vertical market software businesses to develop mission-critical software solutions for public and private ...",
 	"analystTargets": {
-		"low": 3493.2,
-		"mean": 4222.33,
-		"high": 5653.35
+		"low": 3397.54,
+		"mean": 4078.35,
+		"high": 5542.44
 	},
 	"analystConsensus": {
 		"ticker": "CSU.TO",
@@ -120,5 +120,6 @@
 			"low": 127,
 			"average": 133.332
 		}
-	}
+	},
+	"confidence": "cut"
 }

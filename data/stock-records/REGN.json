@@ -2,21 +2,21 @@
 	"ticker": "REGN",
 	"name": "Regeneron Pharmaceuticals",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$80.5B USD",
-	"sharpeRatio": 0.32,
-	"expectedCAGR": "-4% - 39%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$72.0B USD",
+	"sharpeRatio": 0.66,
+	"expectedCAGR": "7% - 55%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 18.4,
-		"forwardPE": 14.5,
-		"pegRatio": null,
-		"evEbitda": 17.1,
-		"evFcf": 22.3
+		"trailingPE": 16.5,
+		"forwardPE": 13,
+		"pegRatio": 1.56,
+		"evEbitda": 16.4,
+		"evFcf": 21.3
 	},
 	"metrics": {
 		"fcfMargin": "~23%",
-		"fcfYield": "~4%",
-		"roic": "6.6%",
+		"fcfYield": "~5%",
+		"roic": "7.5%",
 		"roe": "14.9%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "25%",
@@ -25,81 +25,81 @@
 		"revenueGrowth": "2.5%",
 		"interestCoverage": "26.0x"
 	},
-	"targetPrice": "$872.70",
+	"targetPrice": "$877.73",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$761.85",
+	"currentPrice": "$686.36",
 	"consensus": {
 		"tipranks": "$813",
-		"yahoo": "$872.70",
+		"yahoo": "$877.73",
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
-		"ttmEPS": 41.44,
+		"ttmEPS": 41.49,
 		"epsGrowth": "12%",
-		"dividendYield": "0%",
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "15%",
-			"bull": "39%"
+			"bear": "7%",
+			"base": "29%",
+			"bull": "55%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.171Z",
+	"lastUpdated": "2026-04-30T00:44:45.764Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.86,
+		"score": 1.78,
 		"signal": "WAIT",
+		"note": "Valuation score 1.78 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.64))",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 22.3,
-			"cvStock": 0.112,
-			"riskMultiplier": 1.002
+			"multiple": 21.3,
+			"cvStock": 0.098,
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.64 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 761.85,
-				"price6mAgo": 585.48,
-				"price1mAgo": 764.93,
-				"low3m": 718.38,
-				"return6m": 30.1,
-				"return1m": -0.4,
-				"near3mLow": false
+				"price": 686.36,
+				"price6mAgo": 654.04,
+				"price1mAgo": 749.29,
+				"low3m": 668.84,
+				"return6m": 4.9,
+				"return1m": -8.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 0
+				"up30d": 5,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 6.4,
-				"quarter": "2025-12"
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.21
+		"secondaryScore": 1.08
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.36,
-		"totalScore": 9.64,
+		"revisionsScore": 0.21,
+		"totalScore": 10.21,
 		"raw": {
-			"avgSurprisePct": 19.68,
-			"netInsiderShares": 457101,
+			"avgSurprisePct": 22.03,
+			"netInsiderShares": 457001,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 3,
-			"totalAnalysts": 28
+			"upRevisions": 9,
+			"downRevisions": 8,
+			"totalAnalysts": 24
 		}
 	},
 	"description": "Regeneron Pharmaceuticals, Inc. discovers, invents, develops, manufactures, and commercializes medicines to treat various diseases worldwide.",
 	"analystTargets": {
 		"low": 730,
-		"mean": 872.7,
+		"mean": 877.73,
 		"high": 1057
 	},
 	"analystConsensus": {
@@ -114,14 +114,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 49.79,
-			"low": 32.31,
-			"average": 44.87904
+			"high": 49.83,
+			"low": 41.19,
+			"average": 46.49214
 		},
 		"2027": {
-			"high": 59.71,
-			"low": 38.31,
-			"average": 47.58308
+			"high": 60.05,
+			"low": 40.92,
+			"average": 48.68151
 		}
-	}
+	},
+	"confidence": "high"
 }

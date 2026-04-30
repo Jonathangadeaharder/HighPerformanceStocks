@@ -2,35 +2,36 @@
 	"ticker": "LEU",
 	"name": "Centrus Energy Corp.",
 	"group": "Energy & Infrastructure",
-	"targetPrice": "$278.12",
+	"targetPrice": "$277.08",
 	"bullCase": "Only US-licensed uranium enrichment facility — irreplaceable national security infrastructure. HALEU production is essential for next-gen advanced reactors (Oklo, TerraPower, etc.) with no domestic alternative. DOE contracts provide long-term revenue visibility. Nuclear renaissance accelerating globally as clean baseload demand surges. $1.96B cash fortress with net cash position. 12 analysts see 23%+ upside to $238 consensus target.",
 	"bearCase": "Earnings are wildly lumpy — recent quarters saw both +1,468% beats and -51% misses depending on contract timing. Forward P/E of ~67x is hard to justify even with monopoly pricing. Highly dependent on government funding and single-facility execution risk. 23.6% short interest signals significant skepticism. Revenue growth is ~3-4% annually with lumpiness making any P/E-based valuation extremely uncertain.",
 	"cagrModel": {
-		"ttmEPS": 3.9,
+		"ttmEPS": 3.91,
 		"epsGrowthSource": "auto",
 		"dividendYield": "0%",
 		"basis": "EV/EBITDA exit multiple",
 		"scenarios": {
-			"bear": "-25%",
-			"base": "52%",
-			"bull": "113%"
+			"bear": "-29%",
+			"base": "44%",
+			"bull": "103%"
 		},
-		"epsGrowth": "50%"
+		"epsGrowth": "17%"
 	},
-	"currentPrice": "$183.21",
-	"marketCap": "$3.6B USD",
+	"currentPrice": "$191.98",
+	"marketCap": "$3.8B USD",
 	"consensus": {
-		"yahoo": "$278.12",
+		"yahoo": "$277.08",
 		"stockanalysis": "$238.83"
 	},
 	"expectedVolatility": "~93%",
-	"expectedCAGR": "-25% - 113%",
-	"sharpeRatio": 0.42,
+	"expectedCAGR": "-29% - 103%",
+	"sharpeRatio": 0.35,
 	"valuation": {
-		"trailingPE": 47,
-		"forwardPE": 34.6,
-		"evEbitda": 53.7,
-		"evFcf": 75.2
+		"trailingPE": 49.1,
+		"forwardPE": 43.7,
+		"evEbitda": 56.9,
+		"evFcf": 79.7,
+		"pegRatio": 2.87
 	},
 	"metrics": {
 		"roe": "16.8%",
@@ -42,30 +43,30 @@
 		"ruleOf40": "5%",
 		"beta": "1.36",
 		"revenueGrowth": "-3.6%",
-		"roic": "1.8%",
+		"roic": "1.7%",
 		"interestCoverage": "0.8x"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.15,
+		"score": 3.35,
 		"signal": "WAIT",
+		"note": "Valuation score 3.35 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 44.3%)",
 		"inputs": {
-			"growth": 50,
+			"growth": 17,
 			"multipleType": "EV/EBITDA",
-			"multiple": 53.7,
-			"cvStock": 0.292,
-			"riskMultiplier": 1.551
+			"multiple": 56.9,
+			"cvStock": 0.056,
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 51.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 183.21,
-				"price6mAgo": 356.28,
-				"price1mAgo": 194.28,
+				"price": 191.98,
+				"price6mAgo": 383.31,
+				"price1mAgo": 168.52,
 				"low3m": 165.28,
-				"return6m": -48.6,
-				"return1m": -5.7,
+				"return6m": -49.9,
+				"return1m": 13.9,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -79,27 +80,27 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": 2.57
 	},
-	"lastUpdated": "2026-04-05T07:21:25.886Z",
+	"lastUpdated": "2026-04-30T00:44:40.645Z",
 	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
 	"analystTargets": {
 		"low": 137,
-		"mean": 278.12,
+		"mean": 277.08,
 		"high": 390
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": -3.33,
-		"totalScore": 4.17,
+		"revisionsScore": -5,
+		"totalScore": 2.5,
 		"raw": {
 			"avgSurprisePct": 386.66,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
 			"downRevisions": 2,
-			"totalAnalysts": 3
+			"totalAnalysts": 2
 		}
 	},
 	"analystConsensus": {
@@ -114,14 +115,15 @@
 	"targetPriceAlternative": "$258.83",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.22,
-			"low": 3.09,
-			"average": 3.52333
+			"high": 3.85,
+			"low": 3.67,
+			"average": 3.76
 		},
 		"2027": {
-			"high": 9.37,
-			"low": 3.19,
-			"average": 5.29767
+			"high": 5.02,
+			"low": 4.04,
+			"average": 4.3975
 		}
-	}
+	},
+	"confidence": "low"
 }

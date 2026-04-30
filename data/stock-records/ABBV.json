@@ -2,21 +2,21 @@
 	"ticker": "ABBV",
 	"name": "AbbVie Inc.",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$369.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-9% - 46%",
-	"expectedVolatility": "~27%",
+	"marketCap": "$360.6B USD",
+	"sharpeRatio": 0.66,
+	"expectedCAGR": "-6% - 48%",
+	"expectedVolatility": "~25%",
 	"valuation": {
-		"trailingPE": 88.5,
-		"forwardPE": 13,
-		"pegRatio": 1.06,
-		"evEbitda": 14.8,
-		"evFcf": 23.6
+		"trailingPE": 86,
+		"forwardPE": 12.7,
+		"pegRatio": 0.46,
+		"evEbitda": 14.1,
+		"evFcf": 22.5
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
 		"fcfYield": "~5%",
-		"roic": "4.4%",
+		"roic": "4.5%",
 		"roe": "6225.0%",
 		"netDebtEbitda": "2.2x",
 		"ruleOf40": "40%",
@@ -26,61 +26,62 @@
 		"revenueGrowth": "10.0%",
 		"interestCoverage": "7.8x"
 	},
-	"targetPrice": "$249.14",
+	"targetPrice": "$249.27",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$208.84",
+	"currentPrice": "$203.89",
 	"consensus": {
 		"tipranks": "$253",
-		"yahoo": "$249.14",
+		"yahoo": "$249.27",
 		"stockanalysis": "$247"
 	},
 	"cagrModel": {
 		"ttmEPS": 12.76,
 		"epsGrowth": "15%",
-		"dividendYield": "3%",
+		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "22%",
-			"bull": "46%"
+			"bear": "-6%",
+			"base": "26%",
+			"bull": "48%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:12.212Z",
+	"lastUpdated": "2026-04-30T00:44:30.803Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.99,
-		"signal": "FAIL",
+		"score": 0.94,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.94 vs 0.8 limit)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14.8,
+			"multiple": 14.1,
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 208.84,
-				"price6mAgo": 230.19,
-				"price1mAgo": 232.35,
-				"low3m": 201.8,
-				"return6m": -9.3,
-				"return1m": -10.1,
-				"near3mLow": true
+				"price": 203.89,
+				"price6mAgo": 228.2,
+				"price1mAgo": 213.12,
+				"low3m": 191,
+				"return6m": -10.7,
+				"return1m": -4.3,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 4
+				"up30d": 6,
+				"down30d": 10
 			},
 			"earningsSurprise": {
-				"surprise": 2.2,
-				"quarter": "2025-12"
+				"surprise": -0.8,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.87
+		"secondaryScore": 0.85
 	},
 	"intrinsicValue": {
 		"dcf": 160.09,
@@ -88,24 +89,24 @@
 		"discount": -24
 	},
 	"qcs": {
-		"earningsScore": 2.93,
+		"earningsScore": 2.04,
 		"flowScore": 0,
-		"revisionsScore": 0.48,
-		"totalScore": 3.41,
+		"revisionsScore": -6.05,
+		"totalScore": -4.01,
 		"raw": {
-			"avgSurprisePct": 2.79,
+			"avgSurprisePct": 1.94,
 			"netInsiderShares": 287182,
 			"instFlowTrend": "negative",
-			"upRevisions": 5,
-			"downRevisions": 2,
-			"totalAnalysts": 31
+			"upRevisions": 0,
+			"downRevisions": 23,
+			"totalAnalysts": 19
 		}
 	},
 	"description": "AbbVie Inc., a research-based biopharmaceutical company, engages in the research and development, manufacturing, commercializing, and sale of medicines and therapies worldwide.",
 	"analystTargets": {
 		"low": 184,
-		"mean": 249.14,
-		"high": 299
+		"mean": 249.27,
+		"high": 294
 	},
 	"analystConsensus": {
 		"ticker": "ABBV",
@@ -118,14 +119,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 15.25,
-			"low": 14.15,
-			"average": 14.5364
+			"high": 14.268,
+			"low": 14.08,
+			"average": 14.14145
 		},
 		"2027": {
-			"high": 17.43,
+			"high": 17.42,
 			"low": 14.95,
-			"average": 16.11592
+			"average": 16.07515
 		}
-	}
+	},
+	"confidence": "cut"
 }

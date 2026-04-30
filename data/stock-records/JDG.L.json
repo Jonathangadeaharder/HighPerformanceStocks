@@ -7,72 +7,73 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 0.82,
-		"dividendYield": "3%",
+		"ttmEPS": 0.81,
+		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "43%",
-			"bull": "72%"
+			"bear": "22%",
+			"base": "40%",
+			"bull": "57%"
 		}
 	},
-	"currentPrice": "£42.50",
+	"currentPrice": "£46.60",
 	"marketCap": "£0.3B",
 	"valuation": {
-		"trailingPE": 51.8,
-		"forwardPE": 21.1,
-		"evEbitda": 10.7,
-		"evFcf": 15
+		"trailingPE": 57.5,
+		"forwardPE": 20.5,
+		"evEbitda": 12.2,
+		"evFcf": 18.1
 	},
 	"metrics": {
-		"roe": "12.9%",
-		"fcfMargin": "~16%",
-		"fcfYield": "~8%",
+		"roe": "7.0%",
+		"fcfMargin": "~13%",
+		"fcfYield": "~6%",
 		"netDebtEbitda": "1.6x",
-		"ruleOf40": "31%",
+		"ruleOf40": "17%",
 		"beta": "0.71",
-		"revenueGrowth": "15.5%",
-		"roic": "10.4%",
+		"revenueGrowth": "3.8%",
+		"roic": "8.3%",
 		"interestCoverage": "8.1x"
 	},
 	"consensus": {
-		"yahoo": "£59.63"
+		"yahoo": "£64.50"
 	},
-	"targetPrice": "£59.63",
-	"expectedCAGR": "-3% - 72%",
+	"targetPrice": "£64.50",
+	"expectedCAGR": "22% - 57%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.71,
-		"signal": "PASS",
+		"score": 0.81,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.81 vs 0.8 limit)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.7,
-			"cvStock": 0.011,
+			"multiple": 12.2,
+			"cvStock": 0.04,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4250,
-				"price6mAgo": 6240,
-				"price1mAgo": 4200,
+				"price": 4660,
+				"price6mAgo": 5780,
+				"price1mAgo": 4020,
 				"low3m": 3480,
-				"return6m": -31.9,
-				"return1m": 1.2,
+				"return6m": -19.4,
+				"return1m": 15.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 1
+				"up30d": 1,
+				"down30d": 0
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.37
 	},
-	"lastUpdated": "2026-04-05T07:21:24.818Z",
+	"lastUpdated": "2026-04-30T00:44:39.732Z",
 	"expectedVolatility": "~43%",
-	"sharpeRatio": 0.7,
+	"sharpeRatio": 0.81,
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,
@@ -82,15 +83,15 @@
 			"avgSurprisePct": 0,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 1,
+			"upRevisions": 1,
+			"downRevisions": 2,
 			"totalAnalysts": 5
 		}
 	},
-	"description": "Judges Scientific plc designs, manufactures, and sells scientific instruments and services.",
+	"description": "Judges Scientific plc designs, manufactures, and sells scientific instruments and services in the United Kingdom and internationally.",
 	"analystTargets": {
-		"low": 40.15,
-		"mean": 59.63,
+		"low": 56,
+		"mean": 64.5,
 		"high": 72
 	},
 	"analystConsensus": {
@@ -103,15 +104,16 @@
 	},
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
-		"2025": {
-			"high": 2.7618,
-			"low": 2.714,
-			"average": 2.73836
-		},
 		"2026": {
 			"high": 2.072,
 			"low": 1.98161,
-			"average": 2.01605
+			"average": 2.02252
+		},
+		"2027": {
+			"high": 2.488,
+			"low": 2.122,
+			"average": 2.27554
 		}
-	}
+	},
+	"confidence": "cut"
 }

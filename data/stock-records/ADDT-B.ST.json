@@ -2,21 +2,21 @@
 	"ticker": "ADDT-B.ST",
 	"name": "Addtech AB",
 	"group": "Serial Acquirers",
-	"marketCap": "86.5B SEK",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "4% - 26%",
+	"marketCap": "88.5B SEK",
+	"sharpeRatio": 0.3,
+	"expectedCAGR": "2% - 24%",
 	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 41.9,
-		"forwardPE": 40.9,
-		"pegRatio": null,
-		"evEbitda": 25.6,
-		"evFcf": 36.9
+		"trailingPE": 42.9,
+		"forwardPE": 41.8,
+		"pegRatio": 4.1,
+		"evEbitda": 26.2,
+		"evFcf": 37.7
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
 		"fcfYield": "~3%",
-		"roic": "3.3%",
+		"roic": "3.2%",
 		"roe": "29.3%",
 		"netDebtEbitda": "1.3x",
 		"ruleOf40": "12%",
@@ -25,53 +25,54 @@
 		"revenueGrowth": "1.4%",
 		"interestCoverage": "11.0x"
 	},
-	"targetPrice": "381 SEK",
+	"targetPrice": "368 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "321 SEK",
+	"currentPrice": "328 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
-		"yahoo": "381 SEK"
+		"yahoo": "368 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.66,
-		"epsGrowth": "17%",
+		"ttmEPS": 7.64,
+		"epsGrowth": "16%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "20%",
-			"bull": "26%"
+			"bear": "2%",
+			"base": "13%",
+			"bull": "24%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:12.215Z",
+	"lastUpdated": "2026-04-30T00:44:30.809Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.51,
-		"signal": "FAIL",
+		"score": 1.64,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 17,
+			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 25.6,
-			"cvStock": 0.053,
+			"multiple": 26.2,
+			"cvStock": 0.058,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 320.6,
-				"price6mAgo": 305.8,
-				"price1mAgo": 312.6,
+				"price": 328,
+				"price6mAgo": 324.6,
+				"price1mAgo": 315.6,
 				"low3m": 283.2,
-				"return6m": 4.8,
-				"return1m": 2.6,
+				"return6m": 1,
+				"return1m": 3.9,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 4,
-				"down30d": 1
+				"pass": false,
+				"up30d": 0,
+				"down30d": 3
 			},
 			"earningsSurprise": {
 				"surprise": -4.4,
@@ -79,26 +80,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.41
+		"secondaryScore": 2.61
 	},
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 0,
-		"revisionsScore": 1,
-		"totalScore": -4,
+		"revisionsScore": -3.33,
+		"totalScore": -8.33,
 		"raw": {
 			"avgSurprisePct": -15.26,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 3,
-			"downRevisions": 2,
-			"totalAnalysts": 5
+			"upRevisions": 0,
+			"downRevisions": 4,
+			"totalAnalysts": 6
 		}
 	},
 	"description": "Addtech AB (publ.) provides high-tech products and solutions in Sweden, Denmark, Finland, Norway, Germany, the United Kingdom, rest of Europe, and internationally.",
 	"analystTargets": {
 		"low": 330,
-		"mean": 380.83,
+		"mean": 368.33,
 		"high": 402
 	},
 	"analystConsensus": {
@@ -112,14 +113,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.91,
+			"high": 9.85,
 			"low": 7.80723,
-			"average": 8.68392
+			"average": 8.73919
 		},
 		"2027": {
 			"high": 11.4,
-			"low": 9.25353,
-			"average": 10.14642
+			"low": 9.05998,
+			"average": 10.10614
 		}
-	}
+	},
+	"confidence": "cut"
 }

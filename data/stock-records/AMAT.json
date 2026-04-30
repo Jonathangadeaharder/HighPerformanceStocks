@@ -3,69 +3,71 @@
 	"name": "Applied Materials",
 	"group": "AI & Semiconductors",
 	"cagrModel": {
-		"epsGrowth": "26%",
+		"epsGrowth": "27%",
 		"basis": "Non-GAAP EPS",
 		"ttmEPS": 9.76,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "21%",
-			"bull": "44%"
+			"bear": "-26%",
+			"base": "12%",
+			"bull": "32%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$348.47",
-	"marketCap": "$276.5B USD",
+	"currentPrice": "$382.59",
+	"marketCap": "$303.6B USD",
 	"valuation": {
-		"trailingPE": 35.7,
-		"forwardPE": 25,
-		"evEbitda": 31,
-		"evFcf": 63.4
+		"trailingPE": 39.2,
+		"forwardPE": 27.2,
+		"evEbitda": 34,
+		"evFcf": 69.6,
+		"pegRatio": 1.82
 	},
 	"metrics": {
 		"roe": "38.9%",
 		"fcfMargin": "~15%",
-		"fcfYield": "~2%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "13%",
 		"beta": "1.64",
 		"revenueGrowth": "-2.1%",
-		"roic": "3.2%",
+		"roic": "2.9%",
 		"interestCoverage": "22.5x"
 	},
 	"consensus": {
-		"yahoo": "$418.28"
+		"yahoo": "$424.38"
 	},
-	"targetPrice": "$418.28",
-	"expectedCAGR": "-19% - 44%",
-	"expectedVolatility": "~48%",
-	"sharpeRatio": 0.17,
+	"targetPrice": "$424.38",
+	"expectedCAGR": "-26% - 32%",
+	"expectedVolatility": "~45%",
+	"sharpeRatio": -0.03,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.96,
-		"signal": "PASS",
+		"score": 1.01,
+		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 1.01 vs 1 limit) (REJECT: Stalled at WAIT with base CAGR 12% < 15%)",
 		"inputs": {
-			"growth": 26,
+			"growth": 27,
 			"multipleType": "Forward P/E",
-			"multiple": 25,
-			"cvStock": 0.102,
+			"multiple": 27.2,
+			"cvStock": 0.101,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 348.47,
-				"price6mAgo": 223.91,
-				"price1mAgo": 346.53,
-				"low3m": 265.1,
-				"return6m": 55.6,
-				"return1m": 0.6,
+				"price": 382.59,
+				"price6mAgo": 232.55,
+				"price1mAgo": 323.12,
+				"low3m": 287.49,
+				"return6m": 64.5,
+				"return1m": 18.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 30,
-				"down30d": 0
+				"up30d": 5,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 7.9,
@@ -73,18 +75,18 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:13.248Z",
+	"lastUpdated": "2026-04-30T00:44:31.509Z",
 	"qcs": {
-		"earningsScore": 1.97,
+		"earningsScore": 1.99,
 		"flowScore": 5,
-		"revisionsScore": 4.85,
-		"totalScore": 11.82,
+		"revisionsScore": 0.15,
+		"totalScore": 7.14,
 		"raw": {
 			"avgSurprisePct": 5.03,
-			"netInsiderShares": 499440,
+			"netInsiderShares": 349526,
 			"instFlowTrend": "positive",
-			"upRevisions": 32,
-			"downRevisions": 0,
+			"upRevisions": 3,
+			"downRevisions": 2,
 			"totalAnalysts": 33
 		}
 	},
@@ -93,7 +95,7 @@
 	"description": "Applied Materials, Inc. provides materials engineering solutions, equipment, services, and software to the semiconductor and related industries in the United States, China, Korea, Taiwan, Japan, So...",
 	"analystTargets": {
 		"low": 280,
-		"mean": 418.28,
+		"mean": 424.38,
 		"high": 500
 	},
 	"analystConsensus": {
@@ -110,12 +112,13 @@
 		"2026": {
 			"high": 11.51,
 			"low": 10.22,
-			"average": 11.04853
+			"average": 11.06664
 		},
 		"2027": {
 			"high": 16.78,
 			"low": 11.1,
-			"average": 13.91739
+			"average": 14.07093
 		}
-	}
+	},
+	"confidence": "medium"
 }
