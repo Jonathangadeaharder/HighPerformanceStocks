@@ -2,102 +2,102 @@
 	"ticker": "ISRG",
 	"name": "Intuitive Surgical",
 	"group": "Robotics",
-	"marketCap": "$160.6B USD",
-	"sharpeRatio": 0.64,
-	"expectedCAGR": "-16% - 66%",
-	"expectedVolatility": "~32%",
+	"marketCap": "$150.4B USD",
+	"sharpeRatio": 0.95,
+	"expectedCAGR": "-11% - 77%",
+	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 57.4,
-		"forwardPE": 39.5,
-		"pegRatio": null,
-		"evEbitda": 43.5,
-		"evFcf": 68.1
+		"trailingPE": 51.5,
+		"forwardPE": 36,
+		"pegRatio": 2.23,
+		"evEbitda": 37.6,
+		"evFcf": 64.8
 	},
 	"metrics": {
-		"fcfMargin": "~23%",
+		"fcfMargin": "~21%",
 		"fcfYield": "~1%",
-		"roic": "2.0%",
-		"roe": "16.7%",
+		"roic": "2.3%",
+		"roe": "17.2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%",
-		"beta": "1.68",
-		"revenueGrowth": "18.8%",
-		"interestCoverage": "378.5x"
+		"ruleOf40": "44%",
+		"beta": "1.51",
+		"revenueGrowth": "23.0%",
+		"interestCoverage": ">50x"
 	},
-	"targetPrice": "$605.08",
+	"targetPrice": "$567.80",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$452.07",
+	"currentPrice": "$424.64",
 	"consensus": {
 		"tipranks": "$620",
-		"yahoo": "$605.08"
+		"yahoo": "$567.80"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.87,
+		"ttmEPS": 8.24,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-16%",
+			"bear": "-11%",
 			"base": "34%",
-			"bull": "66%"
+			"bull": "77%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-04-05T07:21:23.756Z",
+	"lastUpdated": "2026-06-01T00:56:34.700Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 3.11,
+		"score": 2.69,
 		"signal": "WAIT",
+		"note": "Valuation score 2.69 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 33.7%)",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 43.5,
-			"cvStock": 0.031,
+			"multiple": 37.6,
+			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 452.07,
-				"price6mAgo": 449.69,
-				"price1mAgo": 496.7,
-				"low3m": 448.4,
-				"return6m": 0.5,
-				"return1m": -9,
+				"price": 424.64,
+				"price6mAgo": 567.37,
+				"price1mAgo": 457.78,
+				"low3m": 414.3,
+				"return6m": -25.2,
+				"return1m": -7.2,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 26,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 11.6,
-				"quarter": "2025-12"
+				"surprise": 18.7,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.82
+		"secondaryScore": 2.57
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.52,
-		"totalScore": 5.52,
+		"flowScore": 5,
+		"revisionsScore": 4.62,
+		"totalScore": 14.62,
 		"raw": {
-			"avgSurprisePct": 12.69,
-			"netInsiderShares": 150564,
-			"instFlowTrend": "neutral",
-			"upRevisions": 3,
-			"downRevisions": 0,
-			"totalAnalysts": 29
+			"avgSurprisePct": 16.25,
+			"netInsiderShares": 142612,
+			"instFlowTrend": "positive",
+			"upRevisions": 25,
+			"downRevisions": 1,
+			"totalAnalysts": 26
 		}
 	},
 	"description": "Intuitive Surgical, Inc. develops, manufactures, and markets products that enable physicians and healthcare providers to enhance the quality of and access to minimally invasive care in the United S...",
 	"analystTargets": {
 		"low": 378,
-		"mean": 605.08,
+		"mean": 567.8,
 		"high": 750
 	},
 	"analystConsensus": {
@@ -112,14 +112,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 10.65,
-			"low": 9.7,
-			"average": 10.02723
+			"high": 10.76,
+			"low": 10.14,
+			"average": 10.41571
 		},
 		"2027": {
-			"high": 12.21,
-			"low": 10.81,
-			"average": 11.43738
+			"high": 12.61,
+			"low": 10.86,
+			"average": 11.79099
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -2,103 +2,103 @@
 	"ticker": "APP",
 	"name": "AppLovin",
 	"group": "Ad-Tech",
-	"marketCap": "$130.6B USD",
-	"sharpeRatio": 0.69,
-	"expectedCAGR": "-12% - 123%",
-	"expectedVolatility": "~74%",
+	"marketCap": "$206.0B USD",
+	"sharpeRatio": -0.1,
+	"expectedCAGR": "-45% - 40%",
+	"expectedVolatility": "~72%",
 	"valuation": {
-		"trailingPE": 38.4,
-		"forwardPE": 19.1,
-		"pegRatio": 0.8,
-		"evEbitda": 30.8,
-		"evFcf": 48.7
+		"trailingPE": 53.2,
+		"forwardPE": 28,
+		"pegRatio": 1.69,
+		"evEbitda": 42.5,
+		"evFcf": 65.1
 	},
 	"metrics": {
-		"roe": "212.9%",
-		"roic": "3.0%",
-		"fcfMargin": "~49%",
-		"ruleOf40": "115%",
+		"roe": "266.4%",
+		"roic": "2.1%",
+		"fcfMargin": "~52%",
+		"ruleOf40": "111%",
 		"fcfYield": "~2%",
-		"netDebtEbitda": "0.3x",
-		"beta": "2.5",
-		"revenueGrowth": "65.9%",
-		"interestCoverage": "21.2x"
+		"netDebtEbitda": "0.2x",
+		"beta": "2.37",
+		"revenueGrowth": "59.0%",
+		"interestCoverage": "23.0x"
 	},
-	"targetPrice": "$645.74",
+	"targetPrice": "$648.10",
 	"consensus": {
 		"tipranks": "$663",
-		"yahoo": "$645.74"
+		"yahoo": "$648.10"
 	},
 	"bullCase": "AppLovin is the 'Nvidia of Ad-Tech.' Their AXON 2.0 AI recommendation engine is achieving peerless software metrics (Rule of 40 > 135%, ROIC > 114%). The 2026 expansion of AXON into massive new verticals like E-commerce and Connected TV (CTV) via a self-serve platform creates a massive data flywheel that is completely decoupled from their legacy gaming studios.",
 	"bearCase": "Highly sensitive to Apple (ATT) and Google privacy policy changes. The ongoing SEC investigation into data collection practices remains a regulatory overhang. Additionally, there is significant concentration risk as AXON 2.0's financial metrics are heavily reliant on the mobile gaming sector; its success in E-commerce and CTV is still in the 'prove it' phase. As growth inevitably normalizes from the 70% hyper-growth phase, the stock could face severe multiple contraction.",
-	"currentPrice": "$386.37",
+	"currentPrice": "$613.09",
 	"cagrModel": {
-		"epsGrowth": "30%",
+		"epsGrowth": "31%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-12%",
-			"base": "67%",
-			"bull": "123%"
+			"bear": "-45%",
+			"base": "6%",
+			"bull": "40%"
 		},
 		"basis": "Adjusted to reflect execution risk in expansion verticals (CTV/E-commerce).",
 		"ttmEPS": 10.05,
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.295Z",
+	"lastUpdated": "2026-06-01T00:56:28.547Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.62,
-		"signal": "WAIT",
+		"score": 2.12,
+		"signal": "FAIL",
+		"note": "Valuation score 2.12 exceeds 0.8 limit",
 		"inputs": {
-			"growth": 30,
+			"growth": 31,
 			"multipleType": "EV/FCF",
-			"multiple": 48.7,
-			"cvStock": 0.098,
-			"riskMultiplier": 1
+			"multiple": 65.1,
+			"cvStock": 0.123,
+			"riskMultiplier": 1.008
 		},
-		"note": "hasLikelyValueFloor: analyst upside 67.1%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 386.37,
-				"price6mAgo": 587,
-				"price1mAgo": 508.56,
-				"low3m": 359,
-				"return6m": -34.2,
-				"return1m": -24,
+				"price": 613.09,
+				"price6mAgo": 623.59,
+				"price1mAgo": 460,
+				"low3m": 364.64,
+				"return6m": -1.7,
+				"return1m": 33.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 12,
+				"up30d": 15,
 				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 10.1,
-				"quarter": "2025-12"
+				"surprise": 3.4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.64
+		"secondaryScore": 0.91
 	},
 	"qcs": {
-		"earningsScore": 4.99,
-		"flowScore": -5,
-		"revisionsScore": 4.29,
-		"totalScore": 4.28,
+		"earningsScore": 2.97,
+		"flowScore": 2.5,
+		"revisionsScore": 1.25,
+		"totalScore": 6.72,
 		"raw": {
-			"avgSurprisePct": 12.21,
-			"netInsiderShares": -289747,
-			"instFlowTrend": "negative",
-			"upRevisions": 19,
-			"downRevisions": 1,
-			"totalAnalysts": 21
+			"avgSurprisePct": 9.12,
+			"netInsiderShares": -133781,
+			"instFlowTrend": "positive",
+			"upRevisions": 12,
+			"downRevisions": 6,
+			"totalAnalysts": 24
 		}
 	},
 	"description": "AppLovin Corporation provides end-to-end artificial intelligence-powered advertising solutions for businesses in the United States and internationally.",
 	"analystTargets": {
 		"low": 340,
-		"mean": 645.74,
+		"mean": 648.1,
 		"high": 860
 	},
 	"analystConsensus": {
@@ -113,14 +113,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 17.62,
-			"low": 14.32,
-			"average": 15.73543
+			"high": 17.48,
+			"low": 15,
+			"average": 16.10798
 		},
 		"2027": {
-			"high": 23.74657,
+			"high": 26.05,
 			"low": 15.72,
-			"average": 20.43699
+			"average": 21.03074
 		}
-	}
+	},
+	"confidence": "medium"
 }

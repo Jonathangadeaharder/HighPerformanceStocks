@@ -5,101 +5,102 @@
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "Non-GAAP EPS / Cash FCF parity",
-		"ttmEPS": 2.53,
+		"ttmEPS": 3.1,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "15%",
-			"bull": "53%"
+			"bear": "-7%",
+			"base": "33%",
+			"bull": "76%"
 		}
 	},
-	"currentPrice": "$98.66",
-	"marketCap": "$418.5B USD",
+	"currentPrice": "$86.02",
+	"marketCap": "$362.2B USD",
 	"valuation": {
-		"trailingPE": 39,
-		"forwardPE": 25.6,
-		"evEbitda": 31.1,
-		"evFcf": 17.1
+		"trailingPE": 27.7,
+		"forwardPE": 22.4,
+		"evEbitda": 25.7,
+		"evFcf": 14.1,
+		"pegRatio": 1.69
 	},
 	"metrics": {
-		"roe": "42.8%",
+		"roe": "48.5%",
 		"fcfMargin": "~55%",
-		"fcfYield": "~6%",
-		"netDebtEbitda": "0.6x",
-		"ruleOf40": "73%",
-		"beta": "1.67",
-		"revenueGrowth": "17.6%",
-		"roic": "2.4%",
-		"interestCoverage": "14.6x"
+		"fcfYield": "~7%",
+		"netDebtEbitda": "0.3x",
+		"ruleOf40": "72%",
+		"beta": "1.55",
+		"revenueGrowth": "16.2%",
+		"roic": "3.5%",
+		"interestCoverage": "15.5x"
 	},
 	"consensus": {
-		"yahoo": "$113.43"
+		"yahoo": "$114.56"
 	},
-	"targetPrice": "$113.43",
-	"expectedCAGR": "-19% - 53%",
-	"expectedVolatility": "~34%",
-	"sharpeRatio": 0.37,
+	"targetPrice": "$114.56",
+	"expectedCAGR": "-7% - 76%",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.91,
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.95,
-		"signal": "WAIT",
+		"score": 0.78,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/FCF",
-			"multiple": 17.1,
-			"cvStock": 0.07,
+			"multiple": 14.1,
+			"cvStock": 0.041,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 98.66,
-				"price6mAgo": 116.33,
-				"price1mAgo": 99.17,
-				"low3m": 75.01,
-				"return6m": -15.2,
-				"return1m": -0.5,
-				"near3mLow": false
+				"price": 86.02,
+				"price6mAgo": 109.13,
+				"price1mAgo": 92.06,
+				"low3m": 85.1,
+				"return6m": -21.2,
+				"return1m": -6.6,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 0
+				"up30d": 20,
+				"down30d": 17
 			},
 			"earningsSurprise": {
-				"surprise": 1.4,
-				"quarter": "2025-12"
+				"surprise": -1.4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.42
+		"secondaryScore": 1.24
 	},
 	"bullCase": "Netflix won the streaming wars. It is the only pure-play streaming platform with global scale (300M+ subscribers), consistent content investment discipline, and a growing advertising tier that creates a new high-margin revenue stream. Live sports and events (NFL, WWE) are extending the addressable audience. FCF has inflected to $7B+ annually.",
 	"bearCase": "At 24x forward PE for an 18% EPS grower, Netflix is not cheap. Subscriber growth in developed markets is approaching saturation — the next growth leg requires LatAm/Asia penetration at lower ARPU. The advertising tier depends on Netflix building an ad tech stack from scratch. Password sharing re-enforcement tailwind is exhausted in 2025-2026.",
-	"lastUpdated": "2026-04-05T07:21:30.212Z",
+	"lastUpdated": "2026-06-01T00:56:39.528Z",
 	"intrinsicValue": {
 		"dcf": 110.8,
 		"date": "2026-03-28",
 		"discount": 19
 	},
 	"qcs": {
-		"earningsScore": 0.67,
-		"flowScore": 0,
-		"revisionsScore": -0.12,
-		"totalScore": 0.55,
+		"earningsScore": -3.3,
+		"flowScore": 5,
+		"revisionsScore": 4.75,
+		"totalScore": 6.45,
 		"raw": {
-			"avgSurprisePct": 1.17,
-			"netInsiderShares": 759984,
-			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 2,
-			"totalAnalysts": 42
+			"avgSurprisePct": -3.38,
+			"netInsiderShares": 817042,
+			"instFlowTrend": "positive",
+			"upRevisions": 38,
+			"downRevisions": 0,
+			"totalAnalysts": 40
 		}
 	},
 	"description": "Netflix, Inc. provides entertainment services worldwide.",
 	"analystTargets": {
 		"low": 80,
-		"mean": 113.43,
+		"mean": 114.56,
 		"high": 151.4
 	},
 	"analystConsensus": {
@@ -114,14 +115,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.85,
-			"low": 2.88,
-			"average": 3.16764
+			"high": 3.68,
+			"low": 3.33,
+			"average": 3.59407
 		},
 		"2027": {
-			"high": 4.46,
-			"low": 3.39,
-			"average": 3.84269
+			"high": 4.13,
+			"low": 3.5,
+			"average": 3.8306
 		}
-	}
+	},
+	"confidence": "medium"
 }

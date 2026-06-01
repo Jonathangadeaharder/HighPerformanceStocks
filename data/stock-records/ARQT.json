@@ -3,104 +3,109 @@
 	"name": "Arcutis Biotherapeutics",
 	"group": "Biotech",
 	"cagrModel": {
-		"epsGrowth": "248%",
+		"epsGrowth": "372%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "40%",
-			"base": "47%",
-			"bull": "52%"
+			"bear": "54%",
+			"base": "61%",
+			"bull": "68%"
 		}
 	},
-	"currentPrice": "$23.63",
-	"marketCap": "$2.9B USD",
+	"currentPrice": "$21.46",
+	"marketCap": "$2.7B USD",
 	"valuation": {
-		"forwardPE": 18.5,
-		"evFcf": -179.9,
-		"evEbitda": -373.6
+		"forwardPE": 18.6,
+		"evFcf": 729.2,
+		"evEbitda": 471.3
 	},
 	"metrics": {
-		"roe": "-9.3%",
-		"fcfMargin": "~-4%",
-		"fcfYield": "~-1%",
+		"roe": "-1.4%",
+		"fcfMargin": "~1%",
+		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "77%",
-		"beta": "1.77",
-		"revenueGrowth": "81.5%",
-		"roic": "-0.2%"
+		"ruleOf40": "61%",
+		"beta": "1.59",
+		"revenueGrowth": "60.1%",
+		"roic": "1.0%",
+		"interestCoverage": "0.9x"
 	},
 	"consensus": {
-		"yahoo": "$34.75"
+		"yahoo": "$34.63"
 	},
-	"targetPrice": "$34.75",
+	"targetPrice": "$34.63",
 	"analystTargets": {
 		"low": 33,
-		"mean": 34.75,
+		"mean": 34.63,
 		"high": 36
 	},
-	"expectedCAGR": "40% - 52%",
+	"expectedCAGR": "54% - 68%",
 	"expectedVolatility": "~57%",
-	"sharpeRatio": 0.73,
+	"sharpeRatio": 0.99,
 	"screener": {
-		"engine": "fPERG",
-		"score": 0.48,
-		"signal": "PASS",
+		"engine": "fCFG",
+		"score": 19.87,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 248,
-			"multipleType": "Forward P/E",
-			"multiple": 18.5,
-			"cvStock": 0.153,
-			"riskMultiplier": 1.041
+			"growth": 372,
+			"multipleType": "EV/FCF",
+			"multiple": 729.2,
+			"cvStock": 0.177,
+			"riskMultiplier": 1.09
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 23.63,
-				"price6mAgo": 19.76,
-				"price1mAgo": 23.97,
-				"low3m": 21.12,
-				"return6m": 19.6,
-				"return1m": -1.4,
+				"price": 21.46,
+				"price6mAgo": 30.37,
+				"price1mAgo": 23.35,
+				"low3m": 19.3,
+				"return6m": -29.3,
+				"return1m": -8.1,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 2,
+				"pass": false,
+				"up30d": 0,
 				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 46.8,
-				"quarter": "2025-12"
+				"surprise": -55.2,
+				"quarter": "2026-03"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 0.51
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": -5,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"flowScore": 5,
+		"revisionsScore": -1.25,
+		"totalScore": 8.75,
 		"raw": {
-			"avgSurprisePct": 58.27,
-			"netInsiderShares": -148827,
-			"instFlowTrend": "negative",
-			"upRevisions": 2,
+			"avgSurprisePct": 43.28,
+			"netInsiderShares": 28127,
+			"instFlowTrend": "positive",
+			"upRevisions": 1,
 			"downRevisions": 2,
-			"totalAnalysts": 7
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Arcutis Biotherapeutics, Inc., a biopharmaceutical company, focuses on developing and commercializing treatments for dermatological diseases.",
-	"lastUpdated": "2026-04-05T07:21:15.339Z",
+	"lastUpdated": "2026-06-01T00:56:29.205Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": 0.75,
-			"low": 0.08,
-			"average": 0.36714
+			"high": 0.33,
+			"low": 0.18,
+			"average": 0.245
 		},
 		"2027": {
 			"high": 1.61,
-			"low": 0.83,
-			"average": 1.27857
+			"low": 0.79,
+			"average": 1.15571
 		}
-	}
+	},
+	"confidence": "medium"
 }

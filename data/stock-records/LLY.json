@@ -2,91 +2,93 @@
 	"ticker": "LLY",
 	"name": "Eli Lilly",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$837.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-8% - 61%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$985.4B USD",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "-22% - 37%",
+	"expectedVolatility": "~38%",
 	"valuation": {
-		"trailingPE": 40.8,
-		"forwardPE": 22.2,
-		"evEbitda": 27.5,
-		"evFcf": 447.2
+		"trailingPE": 39.2,
+		"forwardPE": 24.8,
+		"evEbitda": 28.3,
+		"evFcf": 111.8,
+		"pegRatio": 1.48
 	},
 	"metrics": {
-		"roe": "101.2%",
-		"fcfMargin": "~3%",
-		"fcfYield": "~0%",
-		"netDebtEbitda": "1.2x",
-		"ruleOf40": "46%",
-		"beta": "0.5",
-		"revenueGrowth": "42.6%",
-		"roic": "1.9%",
-		"interestCoverage": "13.1x"
+		"roe": "107.5%",
+		"fcfMargin": "~13%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "1.1x",
+		"ruleOf40": "68%",
+		"beta": "0.48",
+		"revenueGrowth": "55.5%",
+		"roic": "2.0%",
+		"interestCoverage": "15.2x"
 	},
-	"targetPrice": "$1209.21",
+	"targetPrice": "$1215.10",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$935.58",
+	"currentPrice": "$1105",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-8%",
-			"base": "30%",
-			"bull": "61%"
+			"bear": "-22%",
+			"base": "11%",
+			"bull": "37%"
 		},
-		"ttmEPS": 22.92,
+		"ttmEPS": 28.18,
 		"epsGrowth": "24%",
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.877Z",
+	"lastUpdated": "2026-06-01T00:56:36.698Z",
 	"consensus": {
-		"yahoo": "$1209.21"
+		"yahoo": "$1215.10"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 18.63,
+		"score": 4.66,
 		"signal": "FAIL",
+		"note": "Valuation score 4.66 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "EV/FCF",
-			"multiple": 447.2,
-			"cvStock": 0.051,
+			"multiple": 111.8,
+			"cvStock": 0.058,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 935.58,
-				"price6mAgo": 845.05,
-				"price1mAgo": 983.26,
-				"low3m": 877.11,
-				"return6m": 10.7,
-				"return1m": -4.8,
+				"price": 1105,
+				"price6mAgo": 1057.89,
+				"price1mAgo": 963.33,
+				"low3m": 850.51,
+				"return6m": 4.5,
+				"return1m": 14.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
+				"up30d": 23,
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 9.1,
-				"quarter": "2025-12"
+				"surprise": 25.9,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.92
+		"secondaryScore": 1.03
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.36,
-		"totalScore": 5.36,
+		"flowScore": 2.5,
+		"revisionsScore": 3.93,
+		"totalScore": 11.43,
 		"raw": {
-			"avgSurprisePct": 8.86,
-			"netInsiderShares": -3046744,
-			"instFlowTrend": "neutral",
-			"upRevisions": 3,
+			"avgSurprisePct": 16.77,
+			"netInsiderShares": -143683,
+			"instFlowTrend": "positive",
+			"upRevisions": 23,
 			"downRevisions": 1,
 			"totalAnalysts": 28
 		}
@@ -94,7 +96,7 @@
 	"description": "Eli Lilly and Company discovers, develops, manufactures, and markets human pharmaceutical products in the United States, Europe, China, Japan, and internationally.",
 	"analystTargets": {
 		"low": 850,
-		"mean": 1209.21,
+		"mean": 1215.1,
 		"high": 1500
 	},
 	"analystConsensus": {
@@ -109,14 +111,15 @@
 	"targetPriceAlternative": "$1221.44",
 	"forwardEstimates": {
 		"2026": {
-			"high": 38.02,
-			"low": 33.5,
-			"average": 34.6656
+			"high": 39.91,
+			"low": 27.66,
+			"average": 36.17752
 		},
 		"2027": {
-			"high": 46.48152,
-			"low": 37.9,
-			"average": 42.06553
+			"high": 49.75361,
+			"low": 39.45,
+			"average": 44.47033
 		}
-	}
+	},
+	"confidence": "high"
 }

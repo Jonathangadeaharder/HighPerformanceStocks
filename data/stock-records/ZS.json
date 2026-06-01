@@ -2,78 +2,77 @@
 	"ticker": "ZS",
 	"name": "Zscaler",
 	"group": "Cybersecurity",
-	"marketCap": "$22.3B USD",
-	"sharpeRatio": 1.69,
-	"expectedCAGR": "19% - 142%",
-	"expectedVolatility": "~45%",
+	"marketCap": "$22.6B USD",
+	"sharpeRatio": 0.61,
+	"expectedCAGR": "4% - 79%",
+	"expectedVolatility": "~61%",
 	"valuation": {
 		"trailingPE": null,
 		"forwardPE": 30.4,
-		"pegRatio": null,
-		"evEbitda": -303.3,
-		"evFcf": 20.2
+		"pegRatio": 1.52,
+		"evEbitda": -344.2,
+		"evFcf": 18.9
 	},
 	"metrics": {
-		"fcfMargin": "~34%",
+		"fcfMargin": "~35%",
 		"fcfYield": "~5%",
-		"roic": "5.4%",
-		"roe": "-3.6%",
+		"roic": "5.3%",
+		"roe": "-3.7%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "60%",
-		"beta": "1.11",
-		"revenueGrowth": "25.9%"
+		"beta": "0.96",
+		"revenueGrowth": "25.4%"
 	},
-	"targetPrice": "$233.70",
+	"targetPrice": "$194.46",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$139.52",
+	"currentPrice": "$139.73",
 	"consensus": {
 		"tipranks": "$240",
-		"yahoo": "$233.70"
+		"yahoo": "$194.46"
 	},
 	"cagrModel": {
 		"ttmEPS": 4,
 		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "18%",
-			"base": "68%",
-			"bull": "140%"
+			"bear": "4%",
+			"base": "39%",
+			"bull": "79%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-04-07T11:23:06.462Z",
+	"lastUpdated": "2026-06-01T00:56:45.766Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.81,
-		"signal": "WAIT",
-		"note": "Borderline valuation (Score 0.81 vs 0.8 limit)",
+		"score": 0.76,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
-			"multiple": 20.2,
-			"cvStock": 0.077,
+			"multiple": 18.9,
+			"cvStock": 0.079,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 139.52,
-				"price6mAgo": 292.75,
-				"price1mAgo": 162.62,
-				"low3m": 128,
-				"return6m": -52.3,
-				"return1m": -14.2,
+				"price": 139.73,
+				"price6mAgo": 243.28,
+				"price1mAgo": 139.81,
+				"low3m": 114.63,
+				"return6m": -42.6,
+				"return1m": -0.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 36,
-				"down30d": 6
+				"up30d": 2,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 12.6,
-				"quarter": "2026-01"
+				"surprise": 7.1,
+				"quarter": "2026-04"
 			}
 		},
 		"secondaryEngine": "fPERG",
@@ -82,22 +81,22 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": 4.77,
-		"totalScore": 12.27,
+		"revisionsScore": -0.11,
+		"totalScore": 7.39,
 		"raw": {
-			"avgSurprisePct": 11.45,
-			"netInsiderShares": -10781,
+			"avgSurprisePct": 10.53,
+			"netInsiderShares": -36195,
 			"instFlowTrend": "positive",
-			"upRevisions": 42,
-			"downRevisions": 0,
+			"upRevisions": 0,
+			"downRevisions": 1,
 			"totalAnalysts": 44
 		}
 	},
 	"description": "Zscaler, Inc. operates as a cloud security company worldwide.",
 	"analystTargets": {
-		"low": 165,
-		"mean": 233.7,
-		"high": 335
+		"low": 145,
+		"mean": 194.46,
+		"high": 250
 	},
 	"analystConsensus": {
 		"ticker": "ZS",
@@ -111,14 +110,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.47,
-			"low": 3.99,
-			"average": 4.02691
+			"high": 4.33,
+			"low": 4.1,
+			"average": 4.12767
 		},
 		"2027": {
-			"high": 5.23,
-			"low": 3.81,
-			"average": 4.5886
+			"high": 5.42,
+			"low": 3.96,
+			"average": 4.59744
 		}
-	}
+	},
+	"confidence": "medium"
 }

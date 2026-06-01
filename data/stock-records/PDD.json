@@ -2,98 +2,99 @@
 	"ticker": "PDD",
 	"name": "PDD Holdings",
 	"group": "Emerging Markets",
-	"targetPrice": "$142.42",
+	"targetPrice": "$122.74",
 	"bullCase": "PDD Holdings runs the most efficient e-commerce operation in China (50%+ EBIT margin) while Temu is executing aggressive global expansion. If Temu captures 5% of global cross-border e-commerce, incremental revenue could be $40-60B by 2030. The trailing P/E of 9x prices in a permanent growth halt that fundamentals don't support.",
 	"bearCase": "Temu faces existential tariff risk: US de minimis exemption elimination and 145% tariffs make the sub-$15 product model unprofitable. Pinduoduo's domestic dominance may also erode as JD and Alibaba match its price-discovery algorithm.",
 	"cagrModel": {
 		"epsGrowth": "18%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 9.72,
+		"ttmEPS": 9.52,
 		"scenarios": {
-			"bear": "9%",
-			"base": "41%",
-			"bull": "103%"
+			"bear": "3%",
+			"base": "45%",
+			"bull": "102%"
 		}
 	},
-	"currentPrice": "$100.87",
-	"marketCap": "$143.2B USD",
+	"currentPrice": "$84.44",
+	"marketCap": "$120.2B USD",
 	"consensus": {
-		"yahoo": "$142.42"
+		"yahoo": "$122.74"
 	},
-	"expectedVolatility": "~35%",
+	"expectedVolatility": "~33%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.41,
-		"signal": "REJECTED",
+		"score": 0.39,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 7.1,
-			"cvStock": 0.15,
-			"riskMultiplier": 1.037
+			"multiple": 6.6,
+			"cvStock": 0.172,
+			"riskMultiplier": 1.077
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
+		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 100.87,
-				"price6mAgo": 134.33,
-				"price1mAgo": 100.74,
-				"low3m": 95.37,
-				"return6m": -24.9,
-				"return1m": 0.1,
-				"near3mLow": false
+				"price": 84.44,
+				"price6mAgo": 118.27,
+				"price1mAgo": 99.72,
+				"low3m": 81.56,
+				"return6m": -28.6,
+				"return1m": -15.3,
+				"near3mLow": true
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 5,
-				"down30d": 14
+				"pass": true,
+				"up30d": 1,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": -15.8,
-				"quarter": "2025-12"
+				"surprise": -41.9,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:32.117Z",
+	"lastUpdated": "2026-06-01T00:56:40.243Z",
 	"valuation": {
-		"trailingPE": 10.4,
-		"forwardPE": 7.1,
+		"trailingPE": 8.9,
+		"forwardPE": 6.6,
 		"evEbitda": null,
-		"evFcf": 1.8
+		"evFcf": 0.6,
+		"pegRatio": 0.79
 	},
 	"metrics": {
-		"roe": "27.3%",
-		"fcfMargin": "~19%",
-		"fcfYield": "~58%",
+		"roe": "25.4%",
+		"fcfMargin": "~16%",
+		"fcfYield": "~60%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "31%",
-		"beta": "0.06",
-		"revenueGrowth": "12.0%",
-		"interestCoverage": "322.3x"
+		"ruleOf40": "27%",
+		"beta": "0.03",
+		"revenueGrowth": "11.0%",
+		"interestCoverage": "344.9x"
 	},
-	"expectedCAGR": "9% - 103%",
-	"sharpeRatio": 1.47,
+	"expectedCAGR": "3% - 102%",
+	"sharpeRatio": 1.45,
 	"qcs": {
-		"earningsScore": 1.38,
+		"earningsScore": 1.08,
 		"flowScore": 2.5,
-		"revisionsScore": -2.41,
-		"totalScore": 1.47,
+		"revisionsScore": -0.6,
+		"totalScore": 2.98,
 		"raw": {
-			"avgSurprisePct": 5.17,
+			"avgSurprisePct": 4.66,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 5,
-			"downRevisions": 19,
-			"totalAnalysts": 29
+			"upRevisions": 0,
+			"downRevisions": 3,
+			"totalAnalysts": 25
 		}
 	},
 	"description": "PDD Holdings Inc., a multinational commerce group that owns and operates a portfolio of businesses.",
 	"analystTargets": {
-		"low": 110.17,
-		"mean": 142.42,
-		"high": 204.82
+		"low": 87.18,
+		"mean": 122.74,
+		"high": 170.33
 	},
 	"analystConsensus": {
 		"ticker": "PDD",
@@ -107,14 +108,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 95.26,
-			"low": 71.62,
-			"average": 82.96239
+			"high": 79.17,
+			"low": 50.05,
+			"average": 69.0386
 		},
 		"2027": {
-			"high": 124.04258,
-			"low": 65.46762,
-			"average": 97.67749
+			"high": 112.3,
+			"low": 53.16,
+			"average": 86.15544
 		}
-	}
+	},
+	"confidence": "low"
 }

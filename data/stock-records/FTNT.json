@@ -5,97 +5,99 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 2.42,
+		"ttmEPS": 2.58,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-22%",
-			"base": "8%",
-			"bull": "45%"
+			"bear": "-49%",
+			"base": "-22%",
+			"bull": "9%"
 		}
 	},
-	"currentPrice": "$82.53",
-	"marketCap": "$61.4B USD",
+	"currentPrice": "$137.97",
+	"marketCap": "$101.1B USD",
 	"valuation": {
-		"trailingPE": 34.1,
-		"forwardPE": 24.9,
-		"evEbitda": 26.3,
-		"evFcf": 33.5
+		"trailingPE": 53.5,
+		"forwardPE": 40.3,
+		"evEbitda": 41.7,
+		"evFcf": 54.2,
+		"pegRatio": 3.11
 	},
 	"metrics": {
-		"roe": "135.7%",
+		"roe": "132.4%",
 		"fcfMargin": "~26%",
-		"fcfYield": "~3%",
+		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "40%",
-		"beta": "1",
-		"revenueGrowth": "14.8%",
-		"roic": "4.4%",
-		"interestCoverage": "38.1x"
+		"ruleOf40": "46%",
+		"beta": "0.92",
+		"revenueGrowth": "20.1%",
+		"roic": "2.9%",
+		"interestCoverage": "75.7x"
 	},
 	"consensus": {
-		"yahoo": "$89.12"
+		"yahoo": "$107.86"
 	},
-	"targetPrice": "$89.12",
-	"expectedCAGR": "-22% - 45%",
+	"targetPrice": "$107.86",
+	"expectedCAGR": "-49% - 9%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.23,
-		"signal": "FAIL",
+		"score": 3.61,
+		"signal": "REJECTED",
+		"note": "Valuation score 3.61 exceeds 0.8 limit (Absolute REJECT: Base CAGR -22% is negative)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 33.5,
-			"cvStock": 0.063,
+			"multiple": 54.2,
+			"cvStock": 0.069,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 82.53,
-				"price6mAgo": 86.38,
-				"price1mAgo": 84.42,
-				"low3m": 73.55,
-				"return6m": -4.5,
-				"return1m": -2.2,
+				"price": 137.97,
+				"price6mAgo": 81.82,
+				"price1mAgo": 86.29,
+				"low3m": 76.01,
+				"return6m": 68.6,
+				"return1m": 59.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 2
+				"up30d": 39,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 9,
-				"quarter": "2025-12"
+				"surprise": 32.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.66
+		"secondaryScore": 2.69
 	},
 	"bullCase": "Fortinet's billings cycle has fully recovered from the COVID-era pull-forward with accelerating deferred revenue conversion. Its Secure Networking (SASE/SD-WAN) platform is the most price-competitive enterprise security offering, enabling net new customer wins in mid-market. FCF margins approaching 35% with minimal share dilution.",
 	"bearCase": "Fortinet grew at 50%+ in 2021-22 due to a pull-forward. The hangover created two years of below-consensus billings growth. CrowdStrike and Palo Alto are aggressively platformizing into Fortinet's core NGFW market. At 25x forward PE, execution on the billing recovery needs to be consistent.",
-	"lastUpdated": "2026-04-05T07:21:21.643Z",
-	"expectedVolatility": "~43%",
-	"sharpeRatio": 0.16,
+	"lastUpdated": "2026-06-01T00:56:33.292Z",
+	"expectedVolatility": "~45%",
+	"sharpeRatio": -0.54,
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": -0.24,
-		"totalScore": 4.76,
+		"flowScore": 5,
+		"revisionsScore": 4.76,
+		"totalScore": 14.76,
 		"raw": {
-			"avgSurprisePct": 10.79,
-			"netInsiderShares": 414449,
-			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 42
+			"avgSurprisePct": 16.69,
+			"netInsiderShares": 7687307,
+			"instFlowTrend": "positive",
+			"upRevisions": 39,
+			"downRevisions": 0,
+			"totalAnalysts": 41
 		}
 	},
 	"description": "Fortinet, Inc. provides cybersecurity and convergence of networking and security solutions worldwide.",
 	"analystTargets": {
-		"low": 64,
-		"mean": 89.12,
-		"high": 120
+		"low": 70,
+		"mean": 107.86,
+		"high": 150
 	},
 	"analystConsensus": {
 		"ticker": "FTNT",
@@ -109,14 +111,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.13,
-			"low": 2.91,
-			"average": 2.9807
+			"high": 3.37,
+			"low": 3.11,
+			"average": 3.15682
 		},
 		"2027": {
-			"high": 3.81,
-			"low": 2.97,
-			"average": 3.31038
+			"high": 3.93,
+			"low": 2.99,
+			"average": 3.42591
 		}
-	}
+	},
+	"confidence": "high"
 }

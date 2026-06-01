@@ -11,50 +11,50 @@
 		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-5%",
-			"base": "149%",
-			"bull": "257%"
+			"bear": "-51%",
+			"base": "44%",
+			"bull": "104%"
 		}
 	},
-	"currentPrice": "$4.20",
-	"marketCap": "$8.2B USD",
+	"currentPrice": "$7.34",
+	"marketCap": "$14.4B USD",
 	"valuation": {
-		"forwardPE": -9.3,
-		"evFcf": -18.4,
-		"evEbitda": -7.9
+		"forwardPE": -17.3,
+		"evFcf": -33,
+		"evEbitda": -14.7
 	},
 	"metrics": {
-		"roe": "-40.6%",
-		"fcfMargin": "~-12504%",
-		"fcfYield": "~-5%",
+		"roe": "-44.3%",
+		"fcfMargin": "~-10044%",
+		"fcfYield": "~-3%",
 		"netDebtEbitda": "Net cash",
-		"beta": "2.45",
-		"roic": "-8.3%"
+		"beta": "2.59",
+		"roic": "-4.5%"
 	},
 	"consensus": {
-		"yahoo": "$10.46"
+		"yahoo": "$10.60"
 	},
-	"targetPrice": "$10.46",
+	"targetPrice": "$10.60",
 	"analystTargets": {
-		"low": 4,
-		"mean": 10.46,
+		"low": 3.59,
+		"mean": 10.6,
 		"high": 15
 	},
 	"forwardEstimates": {
 		"2026": {
-			"high": -0.48,
-			"low": -0.48,
-			"average": -0.48
+			"high": -0.45,
+			"low": -0.76,
+			"average": -0.5425
 		},
 		"2027": {
-			"high": -0.45,
+			"high": -0.39,
 			"low": -0.45,
-			"average": -0.45
+			"average": -0.42333
 		}
 	},
-	"expectedCAGR": "-5% - 257%",
-	"expectedVolatility": "~61%",
-	"sharpeRatio": 1.99,
+	"expectedCAGR": "-51% - 104%",
+	"expectedVolatility": "~60%",
+	"sharpeRatio": 0.37,
 	"screener": {
 		"engine": "totalReturn",
 		"signal": "NO_DATA",
@@ -63,17 +63,18 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 5,
-		"totalScore": 15,
+		"revisionsScore": 1.25,
+		"totalScore": 11.25,
 		"raw": {
-			"avgSurprisePct": 22.95,
-			"netInsiderShares": 2211181,
+			"avgSurprisePct": 25.85,
+			"netInsiderShares": 3466211,
 			"instFlowTrend": "positive",
 			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 1
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Aurora Innovation, Inc. engages in the self-driving technology business in the United States.",
-	"lastUpdated": "2026-04-07T10:31:36.078Z"
+	"lastUpdated": "2026-06-01T00:56:29.259Z",
+	"confidence": "high"
 }

@@ -2,105 +2,105 @@
 	"ticker": "ANET",
 	"name": "Arista Networks",
 	"group": "Network Infrastructure",
-	"marketCap": "$159.5B USD",
-	"sharpeRatio": 0.75,
-	"expectedCAGR": "11% - 74%",
-	"expectedVolatility": "~51%",
+	"marketCap": "$200.8B USD",
+	"sharpeRatio": 0.3,
+	"expectedCAGR": "3% - 38%",
+	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": 46.1,
-		"forwardPE": 29.6,
-		"pegRatio": 1.44,
-		"evEbitda": 37.8,
-		"evFcf": 43.8
+		"trailingPE": 55,
+		"forwardPE": 35.8,
+		"pegRatio": 2.05,
+		"evEbitda": 44.5,
+		"evFcf": 43.2
 	},
 	"metrics": {
-		"fcfMargin": "~38%",
+		"fcfMargin": "~45%",
 		"fcfYield": "~2%",
 		"roic": "2.9%",
-		"roe": "31.4%",
+		"roe": "31.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "67%",
-		"grossMargin": "64.06%",
-		"beta": "1.48",
-		"revenueGrowth": "28.9%",
-		"interestCoverage": "789.3x"
+		"ruleOf40": "80%",
+		"grossMargin": "63.54%",
+		"beta": "1.67",
+		"revenueGrowth": "35.1%",
+		"interestCoverage": ">50x"
 	},
-	"targetPrice": "$176.46",
+	"targetPrice": "$188.20",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$126.68",
+	"currentPrice": "$159.47",
 	"consensus": {
 		"tipranks": "$182",
-		"yahoo": "$176.46",
+		"yahoo": "$188.20",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.75,
-		"epsGrowth": "21%",
+		"ttmEPS": 2.9,
+		"epsGrowth": "23%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "39%",
-			"bull": "74%"
+			"bear": "3%",
+			"base": "18%",
+			"bull": "38%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.297Z",
+	"lastUpdated": "2026-06-01T00:56:28.528Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.09,
+		"score": 1.88,
 		"signal": "WAIT",
+		"note": "Valuation score 1.88 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.14))",
 		"inputs": {
-			"growth": 21,
+			"growth": 23,
 			"multipleType": "EV/FCF",
-			"multiple": 43.8,
-			"cvStock": 0.082,
+			"multiple": 43.2,
+			"cvStock": 0.064,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3% + QCS 9.14",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 126.68,
-				"price6mAgo": 149.5,
-				"price1mAgo": 139.4,
+				"price": 159.47,
+				"price6mAgo": 128.11,
+				"price1mAgo": 172.7,
 				"low3m": 115.42,
-				"return6m": -15.3,
-				"return1m": -9.1,
+				"return6m": 24.5,
+				"return1m": -7.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 24,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 8.2,
-				"quarter": "2025-12"
+				"surprise": 7.7,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.56
 	},
 	"qcs": {
-		"earningsScore": 4.33,
-		"flowScore": 5,
-		"revisionsScore": -0.19,
-		"totalScore": 9.14,
+		"earningsScore": 5,
+		"flowScore": 2.5,
+		"revisionsScore": 3.46,
+		"totalScore": 10.96,
 		"raw": {
-			"avgSurprisePct": 8.88,
-			"netInsiderShares": 1197239,
+			"avgSurprisePct": 8.31,
+			"netInsiderShares": -1235623,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
-			"totalAnalysts": 27
+			"upRevisions": 22,
+			"downRevisions": 4,
+			"totalAnalysts": 26
 		}
 	},
 	"description": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Eur...",
 	"analystTargets": {
-		"low": 140,
-		"mean": 176.46,
+		"low": 164,
+		"mean": 188.2,
 		"high": 220
 	},
 	"analystConsensus": {
@@ -114,14 +114,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.81,
-			"low": 3.4,
-			"average": 3.53563
+			"high": 3.77,
+			"low": 3.56,
+			"average": 3.62944
 		},
 		"2027": {
-			"high": 5.24,
-			"low": 3.84,
-			"average": 4.27467
+			"high": 5.2,
+			"low": 4.06,
+			"average": 4.44953
 		}
-	}
+	},
+	"confidence": "high"
 }

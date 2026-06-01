@@ -2,98 +2,98 @@
 	"ticker": "SE",
 	"name": "Sea Limited",
 	"group": "Emerging Markets",
-	"targetPrice": "$140.43",
+	"targetPrice": "$140.14",
 	"bullCase": "Sea Limited holds dominant positions across Southeast Asia in e-commerce (Shopee), digital financial services (SeaMoney), and gaming (Garena). SeaMoney's fintech penetration into underbanked EM populations mirrors the Nu Holdings playbook at scale. If Shopee achieves 15%+ EBIT margins at maturity — already visible in select markets — intrinsic value dramatically exceeds current pricing. The 22x exit P/E represents a modest premium for a dominant EM platform.",
 	"bearCase": "Garena is structurally declining as Free Fire ages and new title launches repeatedly disappoint. TikTok Shop is aggressively competing with Shopee across SEA markets with superior content monetization. SeaMoney faces rising NPL risk in EM credit. The -54% 6-month return reflects genuine fundamental deterioration, not pure macro.",
 	"cagrModel": {
 		"epsGrowth": "22%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 2.52,
+		"ttmEPS": 2.54,
 		"scenarios": {
-			"bear": "22%",
-			"base": "71%",
-			"bull": "137%"
+			"bear": "1%",
+			"base": "55%",
+			"bull": "115%"
 		}
 	},
-	"currentPrice": "$82.28",
-	"marketCap": "$48.7B USD",
+	"currentPrice": "$90.53",
+	"marketCap": "$55.4B USD",
 	"consensus": {
-		"yahoo": "$140.43"
+		"yahoo": "$140.14"
 	},
 	"expectedVolatility": "~50%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.75,
-		"signal": "REJECTED",
+		"score": 0.79,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 16.3,
-			"cvStock": 0.135,
-			"riskMultiplier": 1.019
+			"multiple": 17.4,
+			"cvStock": 0.096,
+			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 82.28,
-				"price6mAgo": 189.5,
-				"price1mAgo": 95.52,
+				"price": 90.53,
+				"price6mAgo": 135.28,
+				"price1mAgo": 86.2,
 				"low3m": 77.05,
-				"return6m": -56.6,
-				"return1m": -13.9,
+				"return6m": -33.1,
+				"return1m": 5,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 4
+				"pass": true,
+				"up30d": 3,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": -5.5,
-				"quarter": "2025-12"
+				"surprise": 5.1,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:34.216Z",
+	"lastUpdated": "2026-06-01T00:56:41.708Z",
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 16.3,
-		"evEbitda": 18,
-		"evFcf": 80.2
+		"trailingPE": 35.6,
+		"forwardPE": 17.4,
+		"evEbitda": 19.4,
+		"evFcf": 54.8,
+		"pegRatio": 1.29
 	},
 	"metrics": {
-		"roe": "15.3%",
-		"fcfMargin": "~2%",
-		"fcfYield": "~1%",
+		"roe": "14.9%",
+		"fcfMargin": "~4%",
+		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%",
-		"beta": "1.7",
-		"revenueGrowth": "38.4%",
-		"roic": "12.1%",
-		"interestCoverage": "12.9x"
+		"ruleOf40": "50%",
+		"beta": "1.57",
+		"revenueGrowth": "46.6%",
+		"roic": "11.0%",
+		"interestCoverage": "12.7x"
 	},
-	"expectedCAGR": "22% - 137%",
-	"sharpeRatio": 1.5,
+	"expectedCAGR": "1% - 115%",
+	"sharpeRatio": 1.07,
 	"qcs": {
-		"earningsScore": -2.83,
+		"earningsScore": -2.54,
 		"flowScore": 2.5,
-		"revisionsScore": -3.5,
-		"totalScore": -3.83,
+		"revisionsScore": 1.43,
+		"totalScore": 1.39,
 		"raw": {
-			"avgSurprisePct": -9.55,
-			"netInsiderShares": -131237,
+			"avgSurprisePct": -6.1,
+			"netInsiderShares": -1766190,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 7,
-			"totalAnalysts": 10
+			"upRevisions": 4,
+			"downRevisions": 2,
+			"totalAnalysts": 7
 		}
 	},
-	"description": "Sea Limited, through its subsidiaries, operates as a consumer internet company in Southeast Asia, Latin America, the rest of Asia, and internationally.",
+	"description": "Sea Limited, through its subsidiaries, operates as a technology company in Southeast Asia, Latin America, the rest of Asia, and internationally.",
 	"analystTargets": {
-		"low": 100,
-		"mean": 140.43,
+		"low": 91,
+		"mean": 140.14,
 		"high": 195
 	},
 	"analystConsensus": {
@@ -108,14 +108,15 @@
 	"targetPriceAlternative": "$166.83",
 	"forwardEstimates": {
 		"2026": {
-			"high": 5.35816,
-			"low": 3.06,
-			"average": 3.86123
+			"high": 4.53164,
+			"low": 3.519,
+			"average": 3.9714
 		},
 		"2027": {
-			"high": 6.70325,
-			"low": 3.98,
-			"average": 5.03711
+			"high": 6.28604,
+			"low": 4.3,
+			"average": 5.19141
 		}
-	}
+	},
+	"confidence": "low"
 }

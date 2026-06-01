@@ -3,107 +3,111 @@
 	"name": "Krystal Biotech",
 	"group": "Biotech",
 	"cagrModel": {
-		"epsGrowth": "37%",
+		"epsGrowth": "20%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.83,
+		"ttmEPS": 7.46,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "20%",
-			"bull": "42%"
+			"bear": "-22%",
+			"base": "4%",
+			"bull": "29%"
 		}
 	},
-	"currentPrice": "$260.95",
-	"marketCap": "$7.6B USD",
+	"currentPrice": "$309.03",
+	"marketCap": "$9.1B USD",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 24.7,
-		"evFcf": 72.5,
-		"evEbitda": 41.8
+		"trailingPE": 41.4,
+		"forwardPE": 30.7,
+		"evFcf": 60.3,
+		"evEbitda": 46
 	},
 	"metrics": {
-		"roe": "18.9%",
-		"fcfMargin": "~24%",
-		"fcfYield": "~1%",
+		"roe": "19.9%",
+		"fcfMargin": "~33%",
+		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "42%",
-		"beta": "0.54",
-		"revenueGrowth": "17.5%",
-		"roic": "2.9%",
-		"interestCoverage": "317.2x"
+		"ruleOf40": "65%",
+		"beta": "0.49",
+		"revenueGrowth": "31.9%",
+		"roic": "3.0%",
+		"interestCoverage": "360.1x"
 	},
 	"consensus": {
-		"yahoo": "$314"
+		"yahoo": "$322.78"
 	},
-	"targetPrice": "$314",
+	"targetPrice": "$322.78",
 	"analystTargets": {
 		"low": 241,
-		"mean": 314,
-		"high": 371
+		"mean": 322.78,
+		"high": 399
 	},
-	"expectedCAGR": "-8% - 42%",
-	"expectedVolatility": "~43%",
-	"sharpeRatio": 0.29,
+	"expectedCAGR": "-22% - 29%",
+	"expectedVolatility": "~39%",
+	"sharpeRatio": -0.03,
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.24,
+		"engine": "fCFG",
+		"score": 3.22,
 		"signal": "FAIL",
+		"note": "Valuation score 3.22 exceeds 0.8 limit",
 		"inputs": {
-			"growth": 37,
-			"multipleType": "Forward P/E",
-			"multiple": 24.7,
-			"cvStock": 0.326,
-			"riskMultiplier": 1.764
+			"growth": 20,
+			"multipleType": "EV/FCF",
+			"multiple": 60.3,
+			"cvStock": 0.168,
+			"riskMultiplier": 1.069
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 260.95,
-				"price6mAgo": 180.57,
-				"price1mAgo": 260.33,
-				"low3m": 235.6,
-				"return6m": 44.5,
-				"return1m": 0.2,
+				"price": 309.03,
+				"price6mAgo": 215.11,
+				"price1mAgo": 266.04,
+				"low3m": 242,
+				"return6m": 43.7,
+				"return1m": 16.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 4,
 				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 5.8,
-				"quarter": "2025-12"
+				"surprise": 29,
+				"quarter": "2026-03"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.64
 	},
 	"qcs": {
-		"earningsScore": 3.42,
-		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 3.42,
+		"earningsScore": 5,
+		"flowScore": 2.5,
+		"revisionsScore": 0.5,
+		"totalScore": 8,
 		"raw": {
-			"avgSurprisePct": 27.91,
-			"netInsiderShares": -31569,
-			"instFlowTrend": "neutral",
-			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 9
+			"avgSurprisePct": 40.42,
+			"netInsiderShares": -32211,
+			"instFlowTrend": "positive",
+			"upRevisions": 3,
+			"downRevisions": 2,
+			"totalAnalysts": 10
 		}
 	},
 	"description": "Krystal Biotech, Inc., a commercial-stage biotechnology company, discovers, develops, manufactures, and commercializes genetic medicines to treat diseases with high unmet medical needs in the Unite...",
-	"lastUpdated": "2026-04-05T07:21:24.957Z",
+	"lastUpdated": "2026-06-01T00:56:36.013Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.59,
-			"low": 5.57305,
-			"average": 7.73256
+			"high": 14.52126,
+			"low": 6.21,
+			"average": 8.37613
 		},
 		"2027": {
-			"high": 20.3,
-			"low": 6.52,
-			"average": 10.57953
+			"high": 13.42,
+			"low": 6.66,
+			"average": 10.08038
 		}
-	}
+	},
+	"confidence": "medium"
 }

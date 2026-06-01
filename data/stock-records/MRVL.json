@@ -2,102 +2,102 @@
 	"ticker": "MRVL",
 	"name": "Marvell Technology",
 	"group": "AI & Semiconductors",
-	"marketCap": "$93.7B USD",
-	"sharpeRatio": 0.19,
-	"expectedCAGR": "-21% - 53%",
-	"expectedVolatility": "~62%",
+	"marketCap": "$179.3B USD",
+	"sharpeRatio": -0.08,
+	"expectedCAGR": "-46% - 46%",
+	"expectedVolatility": "~58%",
 	"valuation": {
-		"trailingPE": 34.9,
-		"forwardPE": 19.8,
-		"pegRatio": 1.5,
-		"evEbitda": 36.4,
-		"evFcf": 66.4
+		"trailingPE": 70.4,
+		"forwardPE": 33.7,
+		"pegRatio": 1.17,
+		"evEbitda": 66.7,
+		"evFcf": 79.6
 	},
 	"metrics": {
-		"fcfMargin": "~18%",
-		"fcfYield": "~2%",
-		"roic": "1.8%",
-		"roe": "19.3%",
-		"netDebtEbitda": "0.8x",
-		"ruleOf40": "40%",
-		"beta": "1.82",
-		"revenueGrowth": "22.1%",
-		"interestCoverage": "10.0x"
+		"fcfMargin": "~26%",
+		"fcfYield": "~1%",
+		"roic": "1.1%",
+		"roe": "16.0%",
+		"netDebtEbitda": "0.5x",
+		"ruleOf40": "54%",
+		"beta": "2.25",
+		"revenueGrowth": "27.6%",
+		"interestCoverage": "9.3x"
 	},
-	"targetPrice": "$120.88",
+	"targetPrice": "$219.80",
 	"bullCase": "The structural bottleneck for AI has shifted from compute to networking. Marvell dominates this space. Trading at a reasonable 29.2x P/E, it offers vastly superior risk-adjusted torque compared to EDA software, bolstered by aggressive optical interconnect M&A.",
 	"bearCase": "High exposure to cyclical legacy enterprise networking markets which can drag down the explosive growth of their AI data center segment.",
-	"currentPrice": "$107.11",
+	"currentPrice": "$205",
 	"consensus": {
 		"tipranks": "$122",
-		"yahoo": "$120.88",
+		"yahoo": "$219.80",
 		"stockanalysis": "$116"
 	},
 	"cagrModel": {
-		"ttmEPS": 3.07,
+		"ttmEPS": 2.91,
 		"epsGrowth": "30%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-21%",
-			"base": "13%",
-			"bull": "53%"
+			"bear": "-46%",
+			"base": "7%",
+			"bull": "46%"
 		},
 		"basis": "Non-GAAP EPS (excl. acquisition amortization from Inphi/Innovium); exit PE calibrated to peer growth premium"
 	},
-	"lastUpdated": "2026-04-05T07:47:17.747Z",
+	"lastUpdated": "2026-06-01T00:56:38.235Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.66,
-		"signal": "PASS",
+		"score": 1.12,
+		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 1.12 vs 1 limit) (REJECT: Stalled at WAIT with base CAGR 7% < 15%)",
 		"inputs": {
 			"growth": 30,
 			"multipleType": "Forward P/E",
-			"multiple": 19.8,
-			"cvStock": 0.094,
+			"multiple": 33.7,
+			"cvStock": 0.073,
 			"riskMultiplier": 1
 		},
-		"note": "Analyst Lag Override: Hurdle adjusted to 10% due to strong up-revisions",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 107.11,
-				"price6mAgo": 88.92,
-				"price1mAgo": 75.68,
-				"low3m": 70.69,
-				"return6m": 20.5,
-				"return1m": 41.5,
+				"price": 205,
+				"price6mAgo": 91.1,
+				"price1mAgo": 164.95,
+				"low3m": 75.24,
+				"return6m": 125,
+				"return1m": 24.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 14,
+				"up30d": 6,
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 1.1,
-				"quarter": "2026-01"
+				"surprise": 0.6,
+				"quarter": "2026-04"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 0.5,
+		"earningsScore": 0.57,
 		"flowScore": 5,
-		"revisionsScore": 1.32,
-		"totalScore": 6.82,
+		"revisionsScore": 0.57,
+		"totalScore": 6.14,
 		"raw": {
-			"avgSurprisePct": 1.17,
-			"netInsiderShares": 410603,
+			"avgSurprisePct": 1.05,
+			"netInsiderShares": 1835985,
 			"instFlowTrend": "positive",
-			"upRevisions": 10,
-			"downRevisions": 0,
-			"totalAnalysts": 38
+			"upRevisions": 5,
+			"downRevisions": 1,
+			"totalAnalysts": 35
 		}
 	},
 	"description": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, Chi...",
 	"analystTargets": {
-		"low": 85,
-		"mean": 120.88,
-		"high": 164
+		"low": 110,
+		"mean": 219.8,
+		"high": 300
 	},
 	"analystConsensus": {
 		"ticker": "MRVL",
@@ -111,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2027": {
-			"high": 4.28,
-			"low": 3.35009,
-			"average": 3.81647
+			"high": 4.19,
+			"low": 3.81,
+			"average": 4.03113
 		},
 		"2028": {
-			"high": 6.02,
-			"low": 4,
-			"average": 5.3966
+			"high": 7.12502,
+			"low": 5.34,
+			"average": 6.07519
 		}
-	}
+	},
+	"confidence": "medium"
 }

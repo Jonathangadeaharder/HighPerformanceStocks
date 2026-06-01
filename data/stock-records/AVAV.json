@@ -11,17 +11,18 @@
 		"epsGrowth": "41%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "27%",
-			"base": "69%",
-			"bull": "144%"
+			"bear": "13%",
+			"base": "50%",
+			"bull": "117%"
 		}
 	},
-	"currentPrice": "$184.36",
-	"marketCap": "$9.3B USD",
+	"currentPrice": "$207.24",
+	"marketCap": "$10.5B USD",
 	"valuation": {
-		"forwardPE": 45.5,
-		"evFcf": -30.9,
-		"evEbitda": 62.2
+		"forwardPE": 51.2,
+		"evFcf": -34.7,
+		"evEbitda": 69.7,
+		"pegRatio": 1.57
 	},
 	"metrics": {
 		"roe": "-8.7%",
@@ -29,75 +30,44 @@
 		"fcfYield": "~-3%",
 		"netDebtEbitda": "1.6x",
 		"ruleOf40": "125%",
-		"beta": "1.38",
+		"beta": "1.35",
 		"revenueGrowth": "143.4%",
-		"roic": "-1.8%",
+		"roic": "-1.6%",
 		"interestCoverage": "3.3x"
 	},
 	"consensus": {
-		"yahoo": "$311.47"
+		"yahoo": "$309.88"
 	},
-	"targetPrice": "$311.47",
+	"targetPrice": "$309.88",
 	"analystTargets": {
 		"low": 235,
-		"mean": 311.47,
+		"mean": 309.88,
 		"high": 450
 	},
-	"expectedCAGR": "27% - 144%",
-	"expectedVolatility": "~70%",
-	"sharpeRatio": 1.16,
+	"expectedCAGR": "13% - 117%",
+	"expectedVolatility": "~73%",
+	"sharpeRatio": 0.83,
 	"screener": {
-		"engine": "fEVG",
-		"score": 1.76,
-		"signal": "REJECTED",
-		"inputs": {
-			"growth": 41,
-			"multipleType": "EV/EBITDA",
-			"multiple": 62.2,
-			"cvStock": 0.149,
-			"riskMultiplier": 1.036
-		},
-		"note": "Consensus actively collapsing (analyst lag)",
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 184.36,
-				"price6mAgo": 391.88,
-				"price1mAgo": 220.56,
-				"low3m": 175.42,
-				"return6m": -53,
-				"return1m": -16.4,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": false,
-				"up30d": 1,
-				"down30d": 12
-			},
-			"earningsSurprise": {
-				"surprise": -7.4,
-				"quarter": "2026-01"
-			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.29
+		"engine": "DISQUALIFIED",
+		"signal": "WAIT",
+		"note": "Extreme earnings volatility detected. Awaiting stabilization."
 	},
 	"qcs": {
-		"earningsScore": -2.86,
+		"earningsScore": -5,
 		"flowScore": 2.5,
-		"revisionsScore": -4.06,
-		"totalScore": -4.42,
+		"revisionsScore": 0.31,
+		"totalScore": -2.19,
 		"raw": {
 			"avgSurprisePct": -10.66,
-			"netInsiderShares": -7046,
+			"netInsiderShares": -3428,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 13,
+			"upRevisions": 1,
+			"downRevisions": 0,
 			"totalAnalysts": 16
 		}
 	},
 	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-04-05T07:21:15.344Z",
+	"lastUpdated": "2026-06-01T00:56:29.257Z",
 	"analystConsensus": {
 		"ticker": "AVAV",
 		"strongBuy": 5,
@@ -112,12 +82,13 @@
 		"2026": {
 			"high": 3.07,
 			"low": 2.70853,
-			"average": 2.88011
+			"average": 2.88073
 		},
 		"2027": {
 			"high": 4.95,
 			"low": 2.53,
-			"average": 4.05194
+			"average": 4.05076
 		}
-	}
+	},
+	"confidence": "cut"
 }

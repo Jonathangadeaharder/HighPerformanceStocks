@@ -2,103 +2,103 @@
 	"ticker": "LMN.V",
 	"name": "Lumine Group",
 	"group": "Serial Acquirers",
-	"marketCap": "C$5.9B",
-	"sharpeRatio": 2.13,
-	"expectedCAGR": "70% - 148%",
-	"expectedVolatility": "~49%",
+	"marketCap": "C$5.5B",
+	"sharpeRatio": 1.89,
+	"expectedCAGR": "63% - 143%",
+	"expectedVolatility": "~52%",
 	"valuation": {
-		"trailingPE": 35.9,
-		"forwardPE": 15.4,
+		"trailingPE": 34.6,
+		"forwardPE": 14.8,
 		"pegRatio": null,
-		"evEbitda": 20.4,
-		"evFcf": 27
+		"evEbitda": 21.4,
+		"evFcf": 30.9
 	},
 	"metrics": {
-		"fcfMargin": "~28%",
-		"fcfYield": "~4%",
-		"roic": "4.1%",
-		"roe": "15.9%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "43%",
-		"beta": "0.78",
-		"revenueGrowth": "15.6%",
-		"interestCoverage": "23.7x"
+		"fcfMargin": "~23%",
+		"fcfYield": "~3%",
+		"roic": "3.8%",
+		"roe": "15.3%",
+		"netDebtEbitda": "0.5x",
+		"ruleOf40": "40%",
+		"beta": "0.71",
+		"revenueGrowth": "16.6%",
+		"interestCoverage": "12.3x"
 	},
-	"targetPrice": "C$44.25",
+	"targetPrice": "C$40.50",
 	"bullCase": "A flawless turnaround execution. Lumine acquired mismanaged telecom software assets at rock-bottom multiples and drove immediate cash flow accretion, swinging from a massive loss to a $118.8M profit.",
 	"bearCase": "Success breeds valuation risk. At 21.1x EV/EBITDA, the multiple has expanded, mathematically reducing future torque. The telecom end-market lacks the organic growth tailwinds of broader enterprise software.",
-	"currentPrice": "C$23",
+	"currentPrice": "C$21.44",
 	"consensus": {
 		"tipranks": "C$49",
-		"yahoo": "C$44.25"
+		"yahoo": "C$40.50"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.21,
 		"epsGrowth": "17%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "70%",
-			"base": "92%",
-			"bull": "148%"
+			"bear": "63%",
+			"base": "89%",
+			"bull": "143%"
 		},
 		"basis": "non-IFRS FCFA2S per share; CAD; Price-to-FCF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.874Z",
+	"lastUpdated": "2026-06-01T00:56:36.715Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.59,
+		"score": 1.82,
 		"signal": "WAIT",
+		"note": "Valuation score 1.82 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 88.9% & elite quality floor (QCS 10))",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 27,
-			"cvStock": 0,
+			"multiple": 30.9,
+			"cvStock": 0.005,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 92.4% + QCS 10",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 23,
-				"price6mAgo": 41.3,
-				"price1mAgo": 26.05,
-				"low3m": 17.77,
-				"return6m": -44.3,
-				"return1m": -11.7,
+				"price": 21.44,
+				"price6mAgo": 29,
+				"price1mAgo": 20.64,
+				"low3m": 18.46,
+				"return6m": -26.1,
+				"return1m": 3.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 1
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 57.8,
-				"quarter": "2025-12"
+				"surprise": -14.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.91
+		"secondaryScore": 0.87
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 5,
-		"totalScore": 10,
+		"revisionsScore": -2.5,
+		"totalScore": 2.5,
 		"raw": {
-			"avgSurprisePct": 17.29,
+			"avgSurprisePct": 12.85,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 0,
+			"upRevisions": 0,
+			"downRevisions": 1,
 			"totalAnalysts": 2
 		}
 	},
 	"description": "Lumine Group Inc. develops, installs, and customizes software, and related professional and support services worldwide.",
 	"analystTargets": {
-		"low": 39,
-		"mean": 44.25,
-		"high": 57
+		"low": 35,
+		"mean": 40.5,
+		"high": 52
 	},
 	"analystConsensus": {
 		"ticker": "LMN.V",
@@ -111,14 +111,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.271,
-			"low": 1.257,
-			"average": 1.264
+			"high": 1.253,
+			"low": 1.198,
+			"average": 1.2255
 		},
 		"2027": {
-			"high": 1.49,
-			"low": 1.49,
-			"average": 1.49
+			"high": 1.458,
+			"low": 1.43,
+			"average": 1.444
 		}
-	}
+	},
+	"confidence": "low"
 }

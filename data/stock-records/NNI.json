@@ -2,53 +2,53 @@
 	"ticker": "NNI",
 	"name": "Nelnet",
 	"group": "The Capital Compounders",
-	"marketCap": "$4.6B USD",
+	"marketCap": "$4.7B USD",
 	"sharpeRatio": 0.28,
-	"expectedVolatility": "~22%",
+	"expectedVolatility": "~25%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 0.46,
 		"evEbitda": null,
-		"trailingPE": 11,
-		"forwardPE": 12.9
+		"trailingPE": 11.4,
+		"forwardPE": 13.1
 	},
 	"metrics": {
-		"roe": "11.6%",
-		"beta": "0.81",
-		"revenueGrowth": "-8.6%",
-		"roic": "3.5%"
+		"roe": "10.7%",
+		"beta": "0.83",
+		"revenueGrowth": "-7.1%",
+		"roic": "3.3%"
 	},
 	"bullCase": "A successful transformation from a melting ice cube (legacy federal student loans) into a diversified tech and services conglomerate. Dominant in education tech and loan servicing (NDS) and highly adept at incubating hidden ventures. It operates as a deep value 'baby Berkshire.'",
 	"bearCase": "Highly complex, sum-of-the-parts business model makes it prone to being misunderstood and ignored by the market. Sensitivity to interest rates and regulatory changes in student loan financing.",
-	"currentPrice": "$129.45",
+	"currentPrice": "$130.57",
 	"cagrModel": {
 		"epsGrowth": "9%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 11.79
+		"ttmEPS": 11.5
 	},
-	"lastUpdated": "2026-04-05T07:21:31.092Z",
+	"lastUpdated": "2026-06-01T00:56:39.561Z",
 	"consensus": {},
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.43,
+		"score": 1.46,
 		"signal": "WAIT",
+		"note": "Valuation score 1.46 exceeds 1 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10))",
 		"inputs": {
 			"growth": 9,
 			"multipleType": "Forward P/E",
-			"multiple": 12.9,
+			"multiple": 13.1,
 			"cvStock": 0,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 129.45,
-				"price6mAgo": 129.84,
-				"price1mAgo": 131.82,
-				"low3m": 122.36,
-				"return6m": -0.3,
-				"return1m": -1.8,
+				"price": 130.57,
+				"price6mAgo": 129.93,
+				"price1mAgo": 141.66,
+				"low3m": 116.62,
+				"return6m": 0.5,
+				"return1m": -7.8,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -57,20 +57,20 @@
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -4.3,
-				"quarter": "2025-12"
+				"surprise": -27.1,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
+		"flowScore": 5,
 		"revisionsScore": 5,
-		"totalScore": 10,
+		"totalScore": 15,
 		"raw": {
-			"avgSurprisePct": 69.67,
-			"netInsiderShares": 117346,
-			"instFlowTrend": "negative",
+			"avgSurprisePct": 56.78,
+			"netInsiderShares": 88398,
+			"instFlowTrend": "positive",
 			"upRevisions": 1,
 			"downRevisions": 0,
 			"totalAnalysts": 1
@@ -89,14 +89,15 @@
 	"targetPriceAlternative": "$140.00",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.2,
-			"low": 9.2,
-			"average": 9.2
+			"high": 8.6,
+			"low": 8.6,
+			"average": 8.6
 		},
 		"2027": {
-			"high": 10,
-			"low": 10,
-			"average": 10
+			"high": 9.8,
+			"low": 9.8,
+			"average": 9.8
 		}
-	}
+	},
+	"confidence": "high"
 }

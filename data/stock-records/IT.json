@@ -7,87 +7,88 @@
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
-		"ttmEPS": 9.64,
+		"ttmEPS": 10.12,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "19%",
-			"bull": "62%"
+			"bear": "-14%",
+			"base": "3%",
+			"bull": "25%"
 		}
 	},
-	"currentPrice": "$157.85",
-	"marketCap": "$11.4B USD",
+	"currentPrice": "$162.20",
+	"marketCap": "$10.9B USD",
 	"valuation": {
-		"trailingPE": 16.4,
-		"forwardPE": 10.9,
-		"evEbitda": 9.7,
-		"evFcf": 13.8
+		"trailingPE": 16,
+		"forwardPE": 10.6,
+		"evEbitda": 9.4,
+		"evFcf": 11.8,
+		"pegRatio": 0.84
 	},
 	"metrics": {
-		"roe": "86.9%",
-		"fcfMargin": "~14%",
-		"fcfYield": "~8%",
-		"netDebtEbitda": "1.2x",
-		"ruleOf40": "16%",
-		"beta": "1.04",
-		"revenueGrowth": "2.2%",
-		"roic": "9.9%",
-		"interestCoverage": "7.1x"
+		"roe": "94.9%",
+		"fcfMargin": "~16%",
+		"fcfYield": "~10%",
+		"netDebtEbitda": "1.3x",
+		"ruleOf40": "15%",
+		"beta": "0.91",
+		"revenueGrowth": "-1.5%",
+		"roic": "10.9%",
+		"interestCoverage": "7.2x"
 	},
 	"consensus": {
-		"yahoo": "$188.62"
+		"yahoo": "$167"
 	},
-	"targetPrice": "$188.62",
-	"expectedCAGR": "-11% - 62%",
+	"targetPrice": "$167",
+	"expectedCAGR": "-14% - 25%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.15,
-		"signal": "WAIT",
+		"score": 0.98,
+		"signal": "REJECTED",
+		"note": "Valuation score 0.98 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10)) (REJECT: Stalled at WAIT with base CAGR 3% < 15%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 13.8,
-			"cvStock": 0.051,
+			"multiple": 11.8,
+			"cvStock": 0.044,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 157.85,
-				"price6mAgo": 256.43,
-				"price1mAgo": 170.98,
-				"low3m": 139.18,
-				"return6m": -38.4,
-				"return1m": -7.7,
+				"price": 162.2,
+				"price6mAgo": 230.78,
+				"price1mAgo": 146.4,
+				"low3m": 140.56,
+				"return6m": -29.7,
+				"return1m": 10.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 12,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 12.2,
-				"quarter": "2025-12"
+				"surprise": 13.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.91
+		"secondaryScore": 0.88
 	},
-	"lastUpdated": "2026-04-05T07:21:23.964Z",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.39,
+	"lastUpdated": "2026-06-01T00:56:35.321Z",
+	"expectedVolatility": "~55%",
+	"sharpeRatio": 0.02,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 10,
+		"revisionsScore": 4.33,
+		"totalScore": 14.33,
 		"raw": {
-			"avgSurprisePct": 10.61,
-			"netInsiderShares": 114253,
+			"avgSurprisePct": 11.59,
+			"netInsiderShares": 115217,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
+			"upRevisions": 14,
 			"downRevisions": 1,
 			"totalAnalysts": 15
 		}
@@ -95,8 +96,8 @@
 	"description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
 	"analystTargets": {
 		"low": 140,
-		"mean": 188.62,
-		"high": 255
+		"mean": 167,
+		"high": 203
 	},
 	"analystConsensus": {
 		"ticker": "IT",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$188.30",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.78907,
-			"low": 12.32,
-			"average": 13.15599
+			"high": 14.16,
+			"low": 13.22,
+			"average": 13.69235
 		},
 		"2027": {
-			"high": 16.14,
-			"low": 13.2,
-			"average": 14.49149
+			"high": 17.00611,
+			"low": 14.3,
+			"average": 15.33666
 		}
-	}
+	},
+	"confidence": "high"
 }

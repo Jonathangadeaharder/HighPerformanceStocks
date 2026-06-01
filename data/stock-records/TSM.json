@@ -2,29 +2,29 @@
 	"ticker": "TSM",
 	"name": "TSMC",
 	"group": "AI & Semiconductors",
-	"marketCap": "$1758.4B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "5% - 54%",
+	"marketCap": "$2170.3B USD",
+	"sharpeRatio": 0.3,
+	"expectedCAGR": "-14% - 44%",
 	"metrics": {
-		"fcfMargin": "~17%",
-		"fcfYield": "~37%",
+		"fcfMargin": "~18%",
+		"fcfYield": "~33%",
 		"roic": "45% - 49%",
-		"roe": "35.1%",
+		"roe": "36.2%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "37%",
+		"ruleOf40": "53%",
 		"netMargin": "45.1%",
-		"grossMargin": "59.89%",
-		"beta": "1.25",
-		"revenueGrowth": "20.5%",
-		"interestCoverage": "44.5x"
+		"grossMargin": "61.87%",
+		"beta": "1.26",
+		"revenueGrowth": "35.1%",
+		"interestCoverage": "47.4x"
 	},
-	"targetPrice": "$430.65",
+	"targetPrice": "$467.84",
 	"bullCase": "PEG of 0.57 indicates undervaluation relative to growth. The 2nm node ramp in 2026 carries a 10-20% price premium. CoWoS advanced packaging capacity expanding 66% by end of 2026. AI chip revenue guided at 60% CAGR through 2029. The competitive moat is widening as Intel and Samsung fall further behind.",
 	"bearCase": "Geopolitical risk (Taiwan Strait) is the elephant in the room. If hyperscaler AI CapEx slows, demand could crater. Heavy capital expenditure (~$40-50B annually) means FCF yield is compressed.",
-	"currentPrice": "$339.04",
+	"currentPrice": "$418.45",
 	"consensus": {
 		"tipranks": "$424",
-		"yahoo": "$430.65",
+		"yahoo": "$467.84",
 		"stockanalysis": "$402"
 	},
 	"cagrModel": {
@@ -32,43 +32,44 @@
 		"epsGrowth": "18%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "28%",
-			"bull": "54%"
+			"bear": "-14%",
+			"base": "13%",
+			"bull": "44%"
 		},
 		"basis": "Non-GAAP EPS (Cycle adjusted)"
 	},
-	"lastUpdated": "2026-04-05T07:21:36.187Z",
+	"lastUpdated": "2026-06-01T00:56:43.649Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
-		"signal": "WAIT",
+		"score": 1.19,
+		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 1.19 vs 1 limit) (REJECT: Stalled at WAIT with base CAGR 13% < 15%)",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 18.9,
-			"cvStock": 0.053,
+			"multiple": 21.4,
+			"cvStock": 0.054,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 339.04,
-				"price6mAgo": 302.4,
-				"price1mAgo": 353.86,
-				"low3m": 311.7,
-				"return6m": 12.1,
-				"return1m": -4.2,
+				"price": 418.45,
+				"price6mAgo": 287.68,
+				"price1mAgo": 397.67,
+				"low3m": 313.8,
+				"return6m": 45.5,
+				"return1m": 5.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 5.5,
-				"quarter": "2025-12"
+				"surprise": 4.7,
+				"quarter": "2026-03"
 			}
 		}
 	},
@@ -78,31 +79,32 @@
 		"discount": -53
 	},
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 18.9,
+		"trailingPE": 35.9,
+		"forwardPE": 21.4,
 		"evEbitda": null,
-		"evFcf": 10.6
+		"evFcf": 12,
+		"pegRatio": 1.3
 	},
-	"expectedVolatility": "~37%",
+	"expectedVolatility": "~35%",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"revisionsScore": 0.5,
+		"totalScore": 5.5,
 		"raw": {
-			"avgSurprisePct": 6.69,
+			"avgSurprisePct": 7.06,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 9
+			"downRevisions": 0,
+			"totalAnalysts": 10
 		}
 	},
 	"description": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and other semiconductor devices in Taiwan, China, Eu...",
 	"analystTargets": {
-		"low": 351,
-		"mean": 430.65,
-		"high": 520
+		"low": 354,
+		"mean": 467.84,
+		"high": 600
 	},
 	"analystConsensus": {
 		"ticker": "TSM",
@@ -116,14 +118,15 @@
 	"targetPriceAlternative": "$391.43",
 	"forwardEstimates": {
 		"2026": {
-			"high": 15.21,
-			"low": 14.182,
-			"average": 14.51715
+			"high": 16.11,
+			"low": 14.742,
+			"average": 15.6093
 		},
 		"2027": {
-			"high": 20.01,
-			"low": 16.186,
-			"average": 17.93122
+			"high": 21.8,
+			"low": 17.55,
+			"average": 19.51673
 		}
-	}
+	},
+	"confidence": "medium"
 }

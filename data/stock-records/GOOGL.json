@@ -2,35 +2,35 @@
 	"ticker": "GOOGL",
 	"name": "Alphabet",
 	"group": "Data & Software Monopolies",
-	"marketCap": "$3577.9B USD",
-	"sharpeRatio": 0.07,
-	"expectedCAGR": "-37% - 50%",
-	"expectedVolatility": "~30%",
+	"marketCap": "$4608.0B USD",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "-11% - 35%",
+	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 27.4,
-		"forwardPE": 22,
-		"pegRatio": 2.3,
-		"evEbitda": 23.4,
-		"evFcf": 92.4
+		"trailingPE": 29,
+		"forwardPE": 26.2,
+		"pegRatio": 1.5,
+		"evEbitda": 28.4,
+		"evFcf": 163.9
 	},
 	"metrics": {
-		"fcfMargin": "~9%",
+		"fcfMargin": "~7%",
 		"fcfYield": "~1%",
-		"roic": "4.7%",
-		"roe": "35.7%",
+		"roic": "3.8%",
+		"roe": "38.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "27%",
-		"beta": "1.13",
-		"revenueGrowth": "18.0%",
-		"interestCoverage": "40.8x"
+		"ruleOf40": "28%",
+		"beta": "1.27",
+		"revenueGrowth": "21.8%",
+		"interestCoverage": "30.6x"
 	},
-	"targetPrice": "$376.29",
+	"targetPrice": "$430.72",
 	"bullCase": "An unstoppable cash-generating monopoly trading at a severe mathematical discount to its intrinsic cash-flow generation capability.",
 	"bearCase": "The PEG ratio of 2.3x indicates slowing growth expectations. It acts as a low-beta gravity well, dragging down the geometric compounding rate of a leveraged basket.",
-	"currentPrice": "$295.77",
+	"currentPrice": "$380.34",
 	"consensus": {
 		"tipranks": "$352",
-		"yahoo": "$376.29",
+		"yahoo": "$430.72",
 		"stockanalysis": "$352"
 	},
 	"cagrModel": {
@@ -38,47 +38,48 @@
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-37%",
-			"base": "27%",
-			"bull": "50%"
+			"bear": "-11%",
+			"base": "13%",
+			"bull": "35%"
 		},
 		"basis": "Non-GAAP EPS (SBC & Depreciation adjusted)"
 	},
-	"lastUpdated": "2026-04-05T07:21:21.641Z",
+	"lastUpdated": "2026-06-01T00:56:33.306Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 7.7,
+		"score": 13.66,
 		"signal": "FAIL",
+		"note": "Valuation score 13.66 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 92.4,
-			"cvStock": 0.074,
+			"multiple": 163.9,
+			"cvStock": 0.095,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 295.77,
-				"price6mAgo": 250.43,
-				"price1mAgo": 300.88,
+				"price": 380.34,
+				"price6mAgo": 314.89,
+				"price1mAgo": 385.69,
 				"low3m": 272.11,
-				"return6m": 18.1,
-				"return1m": -1.7,
+				"return6m": 20.8,
+				"return1m": -1.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 46,
 				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 7,
-				"quarter": "2025-12"
+				"surprise": 91.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.83
+		"secondaryScore": 2.18
 	},
 	"intrinsicValue": {
 		"dcf": 151.54,
@@ -87,23 +88,23 @@
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.27,
-		"totalScore": 5.27,
+		"flowScore": 5,
+		"revisionsScore": 4.81,
+		"totalScore": 14.81,
 		"raw": {
-			"avgSurprisePct": 19.92,
-			"netInsiderShares": 719008,
-			"instFlowTrend": "neutral",
-			"upRevisions": 4,
-			"downRevisions": 1,
-			"totalAnalysts": 55
+			"avgSurprisePct": 32.79,
+			"netInsiderShares": 539308,
+			"instFlowTrend": "positive",
+			"upRevisions": 50,
+			"downRevisions": 0,
+			"totalAnalysts": 52
 		}
 	},
 	"description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America.",
 	"analystTargets": {
-		"low": 185,
-		"mean": 376.29,
-		"high": 443
+		"low": 340,
+		"mean": 430.72,
+		"high": 515
 	},
 	"analystConsensus": {
 		"ticker": "GOOGL",
@@ -117,14 +118,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 12.38,
-			"low": 10.43,
-			"average": 11.43352
+			"high": 15.13,
+			"low": 12.79,
+			"average": 14.23446
 		},
 		"2027": {
-			"high": 14.88,
-			"low": 10.92,
-			"average": 13.324
+			"high": 17.18,
+			"low": 11.7,
+			"average": 14.4522
 		}
-	}
+	},
+	"confidence": "high"
 }

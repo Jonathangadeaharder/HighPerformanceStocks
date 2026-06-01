@@ -2,99 +2,102 @@
 	"ticker": "MELI",
 	"name": "MercadoLibre",
 	"group": "Emerging Markets",
-	"marketCap": "$87.0B USD",
-	"sharpeRatio": 1.29,
-	"expectedCAGR": "6% - 104%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$86.0B USD",
+	"sharpeRatio": 0.74,
+	"expectedCAGR": "3% - 65%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 43.5,
-		"forwardPE": 23.5,
-		"evEbitda": 22.9,
-		"evFcf": -37.5
+		"trailingPE": 44.8,
+		"forwardPE": 28.6,
+		"evEbitda": 23.5,
+		"evFcf": -22.6,
+		"pegRatio": 1.05
 	},
 	"metrics": {
-		"roe": "36.0%",
-		"fcfMargin": "~-8%",
-		"fcfYield": "~-3%",
-		"netDebtEbitda": "1.3x",
+		"roe": "31.3%",
+		"fcfMargin": "~-13%",
+		"fcfYield": "~-5%",
+		"netDebtEbitda": "1.7x",
 		"ruleOf40": "36%",
-		"beta": "1.49",
-		"revenueGrowth": "44.6%",
-		"roic": "13.2%",
-		"interestCoverage": "6.4x"
+		"beta": "1.41",
+		"revenueGrowth": "49.0%",
+		"roic": "14.2%",
+		"interestCoverage": "5.8x"
 	},
-	"targetPrice": "$2544.50",
+	"targetPrice": "$2216.96",
 	"bullCase": "Dismantling LatAm legacy banking/retail structures with massive customer acquisition and elite capital efficiency. High ROE and rapid EPS growth.",
 	"bearCase": "Highly correlated to local central bank rates and currency devaluation in emerging markets.",
-	"currentPrice": "$1715.52",
+	"currentPrice": "$1695.65",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "6%",
-			"base": "48%",
-			"bull": "104%"
+			"bear": "3%",
+			"base": "31%",
+			"bull": "65%"
 		},
-		"ttmEPS": 39.46,
+		"ttmEPS": 37.81,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "Aligned with deteriorating quantitative composite score and forecast revisions."
 	},
-	"lastUpdated": "2026-04-05T07:21:28.114Z",
+	"lastUpdated": "2026-06-01T00:56:38.052Z",
 	"consensus": {
-		"yahoo": "$2544.50"
+		"yahoo": "$2216.96"
 	},
 	"screener": {
-		"engine": "fPERG",
-		"score": 1.13,
+		"engine": "fEVG",
+		"score": 1.12,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 21,
-			"multipleType": "Forward P/E",
+			"multipleType": "EV/EBITDA",
 			"multiple": 23.5,
-			"cvStock": 0.13,
-			"riskMultiplier": 1.013
+			"cvStock": 0.102,
+			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1715.52,
-				"price6mAgo": 2154.22,
-				"price1mAgo": 1780.36,
-				"low3m": 1593.21,
-				"return6m": -20.4,
-				"return1m": -3.6,
+				"price": 1695.65,
+				"price6mAgo": 2064.55,
+				"price1mAgo": 1850.05,
+				"low3m": 1495,
+				"return6m": -17.9,
+				"return1m": -8.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 0,
-				"down30d": 9
+				"up30d": 1,
+				"down30d": 14
 			},
 			"earningsSurprise": {
-				"surprise": -3.6,
-				"quarter": "2025-12"
+				"surprise": 0.3,
+				"quarter": "2026-03"
 			}
-		}
+		},
+		"secondaryEngine": "fPERG",
+		"secondaryScore": 1.36
 	},
 	"qcs": {
-		"earningsScore": -0.74,
-		"flowScore": -5,
-		"revisionsScore": -2.78,
-		"totalScore": -8.52,
+		"earningsScore": -2.65,
+		"flowScore": 2.5,
+		"revisionsScore": -4.38,
+		"totalScore": -4.53,
 		"raw": {
-			"avgSurprisePct": -2.4,
-			"netInsiderShares": -1079,
-			"instFlowTrend": "negative",
+			"avgSurprisePct": -6.75,
+			"netInsiderShares": -479,
+			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 10,
-			"totalAnalysts": 18
+			"downRevisions": 14,
+			"totalAnalysts": 16
 		}
 	},
 	"description": "MercadoLibre, Inc. operates online commerce platforms in Brazil, Mexico, Argentina, and internationally.",
 	"analystTargets": {
-		"low": 1827,
-		"mean": 2544.5,
-		"high": 3500
+		"low": 1750,
+		"mean": 2216.96,
+		"high": 2800
 	},
 	"analystConsensus": {
 		"ticker": "MELI",
@@ -108,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 60.38,
-			"low": 39.74,
-			"average": 51.46614
+			"high": 51.52,
+			"low": 36.48777,
+			"average": 40.6008
 		},
 		"2027": {
-			"high": 87.09,
-			"low": 49.53,
-			"average": 72.44748
+			"high": 73.46,
+			"low": 49.78083,
+			"average": 58.12759
 		}
-	}
+	},
+	"confidence": "cut"
 }

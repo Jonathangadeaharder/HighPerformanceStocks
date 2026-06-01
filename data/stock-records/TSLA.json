@@ -7,97 +7,99 @@
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "35%",
-		"ttmEPS": 1.08,
+		"epsGrowth": "23%",
+		"ttmEPS": 1.09,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-65%",
-			"base": "16%",
-			"bull": "66%"
+			"bear": "-72%",
+			"base": "-5%",
+			"bull": "38%"
 		}
 	},
-	"currentPrice": "$360.59",
-	"marketCap": "$1353.1B USD",
+	"currentPrice": "$435.79",
+	"marketCap": "$1636.7B USD",
 	"valuation": {
-		"trailingPE": 333.9,
-		"forwardPE": 128.3,
-		"evFcf": 354.8,
-		"evEbitda": 126.1
+		"trailingPE": 399.8,
+		"forwardPE": 173.6,
+		"evFcf": 306.3,
+		"evEbitda": 145,
+		"pegRatio": 6
 	},
 	"metrics": {
 		"roe": "4.9%",
-		"fcfMargin": "~4%",
+		"fcfMargin": "~5%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "1%",
-		"beta": "1.92",
-		"revenueGrowth": "-3.1%",
-		"roic": "1.1%",
-		"interestCoverage": "13.0x"
+		"ruleOf40": "21%",
+		"beta": "1.79",
+		"revenueGrowth": "15.8%",
+		"roic": "1.0%",
+		"interestCoverage": "12.7x"
 	},
 	"consensus": {
-		"yahoo": "$417.08"
+		"yahoo": "$411.89"
 	},
-	"targetPrice": "$417.08",
+	"targetPrice": "$411.89",
 	"analystTargets": {
-		"low": 125,
-		"mean": 417.08,
+		"low": 123,
+		"mean": 411.89,
 		"high": 600
 	},
-	"expectedCAGR": "-65% - 66%",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": -0.07,
+	"expectedCAGR": "-72% - 38%",
+	"expectedVolatility": "~47%",
+	"sharpeRatio": -0.46,
 	"screener": {
 		"engine": "fCFG",
-		"score": 25.1,
-		"signal": "FAIL",
+		"score": 16.09,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 35,
+			"growth": 23,
 			"multipleType": "EV/FCF",
-			"multiple": 354.8,
-			"cvStock": 0.406,
-			"riskMultiplier": 2.4
+			"multiple": 306.3,
+			"cvStock": 0.218,
+			"riskMultiplier": 1.208
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 360.59,
-				"price6mAgo": 453.25,
-				"price1mAgo": 405.55,
-				"low3m": 352.14,
-				"return6m": -20.4,
-				"return1m": -11.1,
-				"near3mLow": true
+				"price": 435.79,
+				"price6mAgo": 430.14,
+				"price1mAgo": 390.82,
+				"low3m": 337.24,
+				"return6m": 1.3,
+				"return1m": 11.5,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 1,
-				"down30d": 3
+				"pass": false,
+				"up30d": 3,
+				"down30d": 19
 			},
 			"earningsSurprise": {
-				"surprise": 11,
-				"quarter": "2025-12"
+				"surprise": 17.1,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 9.07
+		"secondaryScore": 9.12
 	},
 	"qcs": {
-		"earningsScore": -0.87,
-		"flowScore": 0,
-		"revisionsScore": -0.15,
-		"totalScore": -1.02,
+		"earningsScore": 0.76,
+		"flowScore": 5,
+		"revisionsScore": -1.62,
+		"totalScore": 4.14,
 		"raw": {
-			"avgSurprisePct": -8.86,
-			"netInsiderShares": 180541,
-			"instFlowTrend": "neutral",
-			"upRevisions": 1,
-			"downRevisions": 2,
+			"avgSurprisePct": 4.15,
+			"netInsiderShares": 180295,
+			"instFlowTrend": "positive",
+			"upRevisions": 7,
+			"downRevisions": 18,
 			"totalAnalysts": 34
 		}
 	},
 	"description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally.",
-	"lastUpdated": "2026-04-05T07:21:36.115Z",
+	"lastUpdated": "2026-06-01T00:56:43.038Z",
 	"intrinsicValue": {
 		"dcf": 17.9,
 		"date": "2026-03-28",
@@ -115,14 +117,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.82,
-			"low": 1.21219,
-			"average": 2.06917
+			"high": 3.19,
+			"low": 1.35491,
+			"average": 2.04835
 		},
 		"2027": {
-			"high": 6.03,
-			"low": 1.49243,
-			"average": 2.79731
+			"high": 3.65,
+			"low": 1.464,
+			"average": 2.50969
 		}
-	}
+	},
+	"confidence": "low"
 }

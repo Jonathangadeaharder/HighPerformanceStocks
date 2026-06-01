@@ -2,102 +2,103 @@
 	"ticker": "VRTX",
 	"name": "Vertex Pharmaceuticals",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$111.4B USD",
-	"sharpeRatio": 0.16,
-	"expectedCAGR": "-25% - 46%",
-	"expectedVolatility": "~38%",
+	"marketCap": "$113.6B USD",
+	"sharpeRatio": 0.11,
+	"expectedCAGR": "-26% - 43%",
+	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 28.7,
-		"forwardPE": 20,
-		"pegRatio": null,
-		"evEbitda": 22,
-		"evFcf": 41.5
+		"trailingPE": 26.5,
+		"forwardPE": 20.8,
+		"pegRatio": 1.68,
+		"evEbitda": 21.7,
+		"evFcf": 38.9
 	},
 	"metrics": {
-		"fcfMargin": "~21%",
+		"fcfMargin": "~23%",
 		"fcfYield": "~2%",
-		"roic": "3.4%",
-		"roe": "22.5%",
+		"roic": "3.9%",
+		"roe": "24.2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "31%",
-		"beta": "0.37",
-		"revenueGrowth": "9.5%",
-		"interestCoverage": "43.5x"
+		"beta": "0.3",
+		"revenueGrowth": "7.8%",
+		"interestCoverage": "45.6x"
 	},
-	"targetPrice": "$547.72",
+	"targetPrice": "$548.69",
 	"bullCase": "An absolute global monopoly in Cystic Fibrosis. Vertex is transitioning into a mature cash-flowing conglomerate, using CF revenues to fund >$0.5B in non-CF product revenue (pain management, sickle cell) in 2026 without diluting shareholders.",
 	"bearCase": "Top-line growth is visibly decelerating. Any unexpected safety issue or novel competitive breakthrough in the core CF franchise would be catastrophic.",
-	"currentPrice": "$438.71",
+	"currentPrice": "$447.54",
 	"consensus": {
 		"tipranks": "$542",
-		"yahoo": "$547.72",
+		"yahoo": "$548.69",
 		"stockanalysis": "$527"
 	},
 	"cagrModel": {
-		"ttmEPS": 15.31,
+		"ttmEPS": 16.87,
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-25%",
-			"base": "25%",
-			"bull": "46%"
+			"bear": "-26%",
+			"base": "23%",
+			"bull": "43%"
 		},
 		"basis": "GAAP diluted EPS; 5yr avg GAAP PE (2024 distorted by Alpine acquisition charges)"
 	},
-	"lastUpdated": "2026-04-05T07:21:39.257Z",
+	"lastUpdated": "2026-06-01T00:56:45.039Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.19,
+		"score": 2.99,
 		"signal": "FAIL",
+		"note": "Valuation score 2.99 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/FCF",
-			"multiple": 41.5,
-			"cvStock": 0.08,
+			"multiple": 38.9,
+			"cvStock": 0.068,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 438.71,
-				"price6mAgo": 402.9,
-				"price1mAgo": 460.82,
-				"low3m": 429,
-				"return6m": 8.9,
-				"return1m": -4.8,
-				"near3mLow": true
+				"price": 447.54,
+				"price6mAgo": 425.6,
+				"price1mAgo": 423.92,
+				"low3m": 412.27,
+				"return6m": 5.2,
+				"return1m": 5.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 7,
-				"down30d": 2
+				"up30d": 8,
+				"down30d": 14
 			},
 			"earningsSurprise": {
-				"surprise": -2.3,
-				"quarter": "2025-12"
+				"surprise": 3.8,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.54
+		"secondaryScore": 1.6
 	},
 	"qcs": {
-		"earningsScore": 0.43,
-		"flowScore": 0,
-		"revisionsScore": -0.19,
-		"totalScore": 0.24,
+		"earningsScore": 1.87,
+		"flowScore": 5,
+		"revisionsScore": 0.18,
+		"totalScore": 7.05,
 		"raw": {
-			"avgSurprisePct": 0.86,
-			"netInsiderShares": 80516,
-			"instFlowTrend": "negative",
-			"upRevisions": 2,
-			"downRevisions": 3,
-			"totalAnalysts": 27
+			"avgSurprisePct": 3.18,
+			"netInsiderShares": 75437,
+			"instFlowTrend": "positive",
+			"upRevisions": 12,
+			"downRevisions": 11,
+			"totalAnalysts": 28
 		}
 	},
 	"description": "Vertex Pharmaceuticals Incorporated operates as a biotechnology company in the United States, Europe, and internationally.",
 	"analystTargets": {
 		"low": 330,
-		"mean": 547.72,
+		"mean": 548.69,
 		"high": 641
 	},
 	"analystConsensus": {
@@ -112,14 +113,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 21.1,
-			"low": 17.49,
-			"average": 19.15876
+			"high": 20.73,
+			"low": 18.42,
+			"average": 19.14625
 		},
 		"2027": {
-			"high": 26.8,
-			"low": 19.78,
-			"average": 21.94631
+			"high": 24.64,
+			"low": 18.77,
+			"average": 21.47174
 		}
-	}
+	},
+	"confidence": "medium"
 }

@@ -2,35 +2,35 @@
 	"ticker": "TDG",
 	"name": "TransDigm Group",
 	"group": "Serial Acquirers",
-	"marketCap": "$65.9B USD",
-	"sharpeRatio": 1.16,
-	"expectedCAGR": "7% - 67%",
-	"expectedVolatility": "~28%",
+	"marketCap": "$70.4B USD",
+	"sharpeRatio": 0.83,
+	"expectedCAGR": "-1% - 58%",
+	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 37.6,
-		"forwardPE": 25.4,
-		"pegRatio": null,
-		"evEbitda": 20.1,
-		"evFcf": 70.4
+		"trailingPE": 39.2,
+		"forwardPE": 26.8,
+		"pegRatio": 3.05,
+		"evEbitda": 20.3,
+		"evFcf": 64.6
 	},
 	"metrics": {
-		"fcfMargin": "~15%",
+		"fcfMargin": "~16%",
 		"fcfYield": "~2%",
-		"roic": "2.3%",
+		"roic": "2.1%",
 		"roe": null,
-		"netDebtEbitda": "5.9x",
-		"ruleOf40": "28%",
-		"beta": "0.95",
-		"revenueGrowth": "13.9%",
+		"netDebtEbitda": "5.8x",
+		"ruleOf40": "34%",
+		"beta": "0.88",
+		"revenueGrowth": "18.3%",
 		"interestCoverage": "2.8x"
 	},
-	"targetPrice": "$1567.86",
+	"targetPrice": "$1524",
 	"bullCase": "45.6% operating margins are exceptional. ~$4.76B annualized EBITDA demonstrates strong cash generation.",
 	"bearCase": "Running a cyclical aerospace business with 5.7x leverage is an existential gamble. A liquidity shock will collapse the interest coverage ratio, forcing punitive equity dilution.",
-	"currentPrice": "$1167",
+	"currentPrice": "$1258.32",
 	"consensus": {
 		"tipranks": "$1,568",
-		"yahoo": "$1567.86",
+		"yahoo": "$1524",
 		"stockanalysis": "$1,590"
 	},
 	"cagrModel": {
@@ -38,68 +38,68 @@
 		"epsGrowth": "18%",
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "38%",
-			"bull": "67%"
+			"bear": "-1%",
+			"base": "25%",
+			"bull": "58%"
 		},
 		"basis": "10yr avg PE; DY includes normalized special dividends"
 	},
-	"lastUpdated": "2026-04-05T07:21:35.268Z",
+	"lastUpdated": "2026-06-01T00:56:42.333Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.12,
-		"signal": "WAIT",
+		"score": 1.13,
+		"signal": "FAIL",
+		"note": "Valuation score 1.13 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20.1,
-			"cvStock": 0.029,
+			"multiple": 20.3,
+			"cvStock": 0.036,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 34.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1167,
-				"price6mAgo": 1291.74,
-				"price1mAgo": 1294.96,
+				"price": 1258.32,
+				"price6mAgo": 1354.86,
+				"price1mAgo": 1154.45,
 				"low3m": 1123.61,
-				"return6m": -9.7,
-				"return1m": -9.9,
-				"near3mLow": true
+				"return6m": -7.1,
+				"return1m": 9,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 14,
 				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 2.3,
-				"quarter": "2025-12"
+				"surprise": 4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.49
 	},
 	"qcs": {
-		"earningsScore": 3.02,
-		"flowScore": -5,
-		"revisionsScore": -0.26,
-		"totalScore": -2.24,
+		"earningsScore": 3.06,
+		"flowScore": 2.5,
+		"revisionsScore": 3.81,
+		"totalScore": 9.37,
 		"raw": {
-			"avgSurprisePct": 2.19,
-			"netInsiderShares": -84402,
-			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 2,
-			"totalAnalysts": 19
+			"avgSurprisePct": 2.75,
+			"netInsiderShares": -86696,
+			"instFlowTrend": "positive",
+			"upRevisions": 17,
+			"downRevisions": 1,
+			"totalAnalysts": 21
 		}
 	},
 	"description": "TransDigm Group Incorporated designs, produces, and supplies aircraft components in the United States and internationally.",
 	"analystTargets": {
 		"low": 1200,
-		"mean": 1567.86,
-		"high": 1900
+		"mean": 1524,
+		"high": 1937
 	},
 	"analystConsensus": {
 		"ticker": "TDG",
@@ -113,14 +113,15 @@
 	"targetPriceAlternative": "$1584.44",
 	"forwardEstimates": {
 		"2026": {
-			"high": 40.4,
-			"low": 37.29,
-			"average": 39.01534
+			"high": 40.63099,
+			"low": 39.26,
+			"average": 40.01632
 		},
 		"2027": {
-			"high": 48.7,
-			"low": 43.4,
-			"average": 46.01462
+			"high": 50.7,
+			"low": 44,
+			"average": 46.88202
 		}
-	}
+	},
+	"confidence": "medium"
 }

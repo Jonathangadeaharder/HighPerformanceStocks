@@ -5,89 +5,90 @@
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 1.59,
+		"ttmEPS": 1.61,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "28%",
-			"bull": "65%"
+			"bear": "-2%",
+			"base": "26%",
+			"bull": "68%"
 		}
 	},
-	"currentPrice": "$33.40",
-	"marketCap": "$32.3B USD",
+	"currentPrice": "$32.77",
+	"marketCap": "$30.3B USD",
 	"valuation": {
-		"trailingPE": 21,
-		"forwardPE": 19.9,
-		"evEbitda": 14,
-		"evFcf": 26.3
+		"trailingPE": 20.4,
+		"forwardPE": 19.3,
+		"evEbitda": 13.4,
+		"evFcf": 26.3,
+		"pegRatio": 3.95
 	},
 	"metrics": {
-		"roe": "17.1%",
+		"roe": "17.6%",
 		"fcfMargin": "~22%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "19%",
-		"beta": "1.14",
-		"revenueGrowth": "-3.6%",
-		"roic": "6.6%",
-		"interestCoverage": "367.7x"
+		"ruleOf40": "24%",
+		"beta": "1.02",
+		"revenueGrowth": "2.1%",
+		"roic": "6.4%",
+		"interestCoverage": "383.0x"
 	},
 	"consensus": {
-		"yahoo": "$42.67"
+		"yahoo": "$41.44"
 	},
-	"targetPrice": "$42.67",
-	"expectedCAGR": "-4% - 65%",
+	"targetPrice": "$41.44",
+	"expectedCAGR": "-2% - 68%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.88,
-		"signal": "REJECTED",
+		"score": 0.84,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.84 vs 0.8 limit)",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14,
-			"cvStock": 0.037,
+			"multiple": 13.4,
+			"cvStock": 0.033,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 33.4,
-				"price6mAgo": 44.45,
-				"price1mAgo": 38.02,
+				"pass": true,
+				"price": 32.77,
+				"price6mAgo": 39.15,
+				"price1mAgo": 33.27,
 				"low3m": 32.2,
-				"return6m": -24.9,
-				"return1m": -12.2,
+				"return6m": -16.3,
+				"return1m": -1.5,
 				"near3mLow": true
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 10
+				"pass": true,
+				"up30d": 4,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -8.1,
-				"quarter": "2026-01"
+				"surprise": 5.7,
+				"quarter": "2026-04"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.24
+		"secondaryScore": 1.21
 	},
-	"lastUpdated": "2026-04-05T07:21:17.645Z",
-	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.96,
+	"lastUpdated": "2026-06-01T00:56:30.582Z",
+	"expectedVolatility": "~23%",
+	"sharpeRatio": 1.24,
 	"qcs": {
-		"earningsScore": 2.98,
+		"earningsScore": 4.84,
 		"flowScore": 5,
-		"revisionsScore": -4.17,
-		"totalScore": 3.81,
+		"revisionsScore": 2,
+		"totalScore": 11.84,
 		"raw": {
-			"avgSurprisePct": 2.76,
-			"netInsiderShares": 275901,
+			"avgSurprisePct": 3.99,
+			"netInsiderShares": 126211,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 10,
-			"totalAnalysts": 12
+			"upRevisions": 5,
+			"downRevisions": 1,
+			"totalAnalysts": 10
 		}
 	},
 	"bullCase": "Copart operates the most defensible marketplace in the salvage vehicle industry — a two-sided network of insurance companies and vehicle dismantlers/exporters, with 50+ years of physical land accumulation that is essentially irreplicable. Total-loss rates are structurally rising as repair costs exceed vehicle values, providing multi-decade volume tailwind.",
@@ -95,7 +96,7 @@
 	"description": "Copart, Inc. provides online auctions and vehicle remarketing services in the United States, the United Kingdom, Germany, Brazil, Canada, the United Arab Emirates, Spain, Finland, Oman, the Republi...",
 	"analystTargets": {
 		"low": 32,
-		"mean": 42.67,
+		"mean": 41.44,
 		"high": 55
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.66,
-			"low": 1.54,
-			"average": 1.57535
+			"high": 1.59,
+			"low": 1.57,
+			"average": 1.58186
 		},
 		"2027": {
 			"high": 1.85,
-			"low": 1.6,
-			"average": 1.68001
+			"low": 1.62632,
+			"average": 1.69838
 		}
-	}
+	},
+	"confidence": "high"
 }

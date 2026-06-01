@@ -2,102 +2,102 @@
 	"ticker": "CDNS",
 	"name": "Cadence Design Systems",
 	"group": "AI & Semiconductors",
-	"marketCap": "$77.0B USD",
-	"sharpeRatio": 0.47,
-	"expectedCAGR": "-1% - 47%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$103.4B USD",
+	"sharpeRatio": -0.26,
+	"expectedCAGR": "-27% - 17%",
+	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 68.5,
-		"forwardPE": 29.6,
-		"pegRatio": 3.9,
-		"evEbitda": 39.6,
-		"evFcf": 50
+		"trailingPE": 87.8,
+		"forwardPE": 39.9,
+		"pegRatio": 3.56,
+		"evEbitda": 52.1,
+		"evFcf": 70
 	},
 	"metrics": {
-		"fcfMargin": "~29%",
-		"fcfYield": "~2%",
-		"roic": "2.3%",
-		"roe": "21.9%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "35%",
-		"beta": "1.04",
-		"revenueGrowth": "6.2%",
-		"interestCoverage": "13.0x"
+		"fcfMargin": "~27%",
+		"fcfYield": "~1%",
+		"roic": "1.5%",
+		"roe": "20.7%",
+		"netDebtEbitda": "0.8x",
+		"ruleOf40": "46%",
+		"beta": "1.13",
+		"revenueGrowth": "18.7%",
+		"interestCoverage": "11.9x"
 	},
-	"targetPrice": "$371.68",
+	"targetPrice": "$383.94",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. With PEG ratios near 4.0x, valuation is severely outpacing growth. Recent shelf registration suggests management believes their own stock is richly valued.",
-	"currentPrice": "$278.72",
+	"currentPrice": "$374.93",
 	"consensus": {
 		"tipranks": "$369",
-		"yahoo": "$371.68",
+		"yahoo": "$383.94",
 		"stockanalysis": "$369"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.07,
+		"ttmEPS": 4.27,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "33%",
-			"bull": "47%"
+			"bear": "-27%",
+			"base": "2%",
+			"bull": "17%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:17.442Z",
+	"lastUpdated": "2026-06-01T00:56:30.566Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "WAIT",
+		"score": 1.99,
+		"signal": "FAIL",
+		"note": "Valuation score 1.99 exceeds 1 limit",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "Forward P/E",
-			"multiple": 29.6,
-			"cvStock": 0.015,
+			"multiple": 39.9,
+			"cvStock": 0.032,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 278.72,
-				"price6mAgo": 353.36,
-				"price1mAgo": 299.84,
-				"low3m": 262.75,
-				"return6m": -21.1,
-				"return1m": -7,
+				"price": 374.93,
+				"price6mAgo": 309.62,
+				"price1mAgo": 340.94,
+				"low3m": 263.38,
+				"return6m": 21.1,
+				"return1m": 10,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 1
+				"up30d": 6,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 4.1,
-				"quarter": "2025-12"
+				"surprise": 4,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"flowScore": 5,
+		"revisionsScore": -0.77,
+		"totalScore": 9.23,
 		"raw": {
-			"avgSurprisePct": 5.67,
-			"netInsiderShares": 436537,
-			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 2
+			"avgSurprisePct": 5.48,
+			"netInsiderShares": 383698,
+			"instFlowTrend": "positive",
+			"upRevisions": 0,
+			"downRevisions": 2,
+			"totalAnalysts": 13
 		}
 	},
 	"description": "Cadence Design Systems, Inc. develops computational, AI-driven software, hardware, and silicon intellectual property products and solutions.",
 	"analystTargets": {
 		"low": 275,
-		"mean": 371.68,
-		"high": 410
+		"mean": 383.94,
+		"high": 440
 	},
 	"analystConsensus": {
 		"ticker": "CDNS",
@@ -111,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.85,
-			"low": 4.74,
-			"average": 4.795
+			"high": 4.66573,
+			"low": 4.38,
+			"average": 4.49288
 		},
 		"2027": {
-			"high": 9.75,
-			"low": 9.18,
-			"average": 9.41429
+			"high": 9.91374,
+			"low": 8.71,
+			"average": 9.385
 		}
-	}
+	},
+	"confidence": "medium"
 }

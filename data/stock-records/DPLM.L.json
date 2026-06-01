@@ -2,99 +2,100 @@
 	"ticker": "DPLM.L",
 	"name": "Diploma PLC",
 	"group": "Serial Acquirers",
-	"marketCap": "£8.3B",
-	"sharpeRatio": 0.05,
-	"expectedCAGR": "-9% - 21%",
-	"expectedVolatility": "~30%",
+	"marketCap": "£9.4B",
+	"sharpeRatio": 0.07,
+	"expectedCAGR": "-17% - 30%",
+	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 45.1,
-		"forwardPE": 26.8,
+		"trailingPE": 49.9,
+		"forwardPE": 28.2,
 		"pegRatio": null,
-		"evEbitda": 24.8,
-		"evFcf": 32.2
+		"evEbitda": 24.6,
+		"evFcf": 40.2
 	},
 	"metrics": {
-		"fcfMargin": "~18%",
+		"fcfMargin": "~15%",
 		"fcfYield": "~3%",
-		"roic": "3.1%",
-		"roe": "19.6%",
+		"roic": "2.9%",
+		"roe": "19.0%",
 		"netDebtEbitda": "1.1x",
-		"ruleOf40": "28%",
+		"ruleOf40": "32%",
 		"organicRevenueGrowth": "14% (Q1 2026)",
-		"beta": "0.89",
-		"revenueGrowth": "9.8%",
-		"interestCoverage": "13.8x"
+		"beta": "0.92",
+		"revenueGrowth": "16.8%",
+		"interestCoverage": "14.5x"
 	},
-	"targetPrice": "£66.56",
+	"targetPrice": "£74.71",
 	"bullCase": "Solid UK-based compounder in technical products distribution. Less well-known than Halma but potentially better growth trajectory. 14% organic revenue growth is strong. Unanimous analyst consensus.",
 	"bearCase": "12-16% CAGR is borderline on the 14% floor. Less proven compounding track record than peers. Premium valuation at 30x forward P/E.",
-	"currentPrice": "£62.25",
+	"currentPrice": "£69.90",
 	"consensus": {
 		"tipranks": "5,634p",
-		"yahoo": "£66.56"
+		"yahoo": "£74.71"
 	},
 	"cagrModel": {
-		"ttmEPS": 1.38,
+		"ttmEPS": 1.4,
 		"epsGrowth": "16%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-9%",
+			"bear": "-17%",
 			"base": "8%",
-			"bull": "21%"
+			"bull": "30%"
 		},
 		"basis": "10yr avg PE (pence basis)"
 	},
-	"lastUpdated": "2026-04-05T07:21:19.532Z",
+	"lastUpdated": "2026-06-01T00:56:31.878Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.55,
+		"score": 1.54,
 		"signal": "FAIL",
+		"note": "Valuation score 1.54 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 24.8,
-			"cvStock": 0.043,
+			"multiple": 24.6,
+			"cvStock": 0.04,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 6225,
-				"price6mAgo": 5330,
-				"price1mAgo": 5280,
+				"price": 6990,
+				"price6mAgo": 5510,
+				"price1mAgo": 6975,
 				"low3m": 4970,
-				"return6m": 16.8,
-				"return1m": 17.9,
+				"return6m": 26.9,
+				"return1m": 0.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 13,
+				"up30d": 11,
 				"down30d": 0
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.68
+		"secondaryScore": 1.76
 	},
 	"qcs": {
 		"earningsScore": 0,
 		"flowScore": 0,
-		"revisionsScore": 4.33,
-		"totalScore": 4.33,
+		"revisionsScore": 3.33,
+		"totalScore": 3.33,
 		"raw": {
 			"avgSurprisePct": 0,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 13,
+			"upRevisions": 10,
 			"downRevisions": 0,
 			"totalAnalysts": 15
 		}
 	},
 	"description": "Diploma PLC, together with its subsidiaries, supplies specialized technical products and services in the United Kingdom, Europe, North America, and internationally.",
 	"analystTargets": {
-		"low": 56,
-		"mean": 66.56,
-		"high": 75
+		"low": 57.6,
+		"mean": 74.71,
+		"high": 90
 	},
 	"analystConsensus": {
 		"ticker": "DPLM.L",
@@ -107,14 +108,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.31088,
-			"low": 2.199,
-			"average": 2.23723
+			"high": 2.43874,
+			"low": 2.21765,
+			"average": 2.34023
 		},
 		"2027": {
-			"high": 2.523,
-			"low": 2.123,
-			"average": 2.32289
+			"high": 2.68838,
+			"low": 2.28973,
+			"average": 2.47848
 		}
-	}
+	},
+	"confidence": "low"
 }

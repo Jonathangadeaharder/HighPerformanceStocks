@@ -2,35 +2,35 @@
 	"ticker": "SNPS",
 	"name": "Synopsys",
 	"group": "AI & Semiconductors",
-	"marketCap": "$75.8B USD",
-	"sharpeRatio": 0.49,
-	"expectedCAGR": "7% - 64%",
-	"expectedVolatility": "~63%",
+	"marketCap": "$91.1B USD",
+	"sharpeRatio": 0.1,
+	"expectedCAGR": "-15% - 37%",
+	"expectedVolatility": "~62%",
 	"valuation": {
-		"trailingPE": 60.6,
-		"forwardPE": 23.2,
-		"pegRatio": null,
-		"evEbitda": 52.3,
-		"evFcf": 27.3
+		"trailingPE": 108.6,
+		"forwardPE": 27.6,
+		"pegRatio": 3.02,
+		"evEbitda": 58.6,
+		"evFcf": 28.1
 	},
 	"metrics": {
-		"fcfMargin": "~39%",
+		"fcfMargin": "~41%",
 		"fcfYield": "~4%",
-		"roic": "2.9%",
-		"roe": "5.5%",
-		"netDebtEbitda": "5.4x",
-		"ruleOf40": "104%",
-		"beta": "1.15",
-		"revenueGrowth": "65.5%",
-		"interestCoverage": "2.7x"
+		"roic": "2.8%",
+		"roe": "3.8%",
+		"netDebtEbitda": "4.9x",
+		"ruleOf40": "83%",
+		"beta": "1.25",
+		"revenueGrowth": "41.9%",
+		"interestCoverage": "2.8x"
 	},
-	"targetPrice": "$537.75",
+	"targetPrice": "$559.61",
 	"bullCase": "An unbreakable EDA software duopoly. They are the ultimate toll road; whether a custom AI chip succeeds or fails, designers must pay for their software licenses.",
 	"bearCase": "The margin of safety is nonexistent. Post-Ansys acquisition debt burden of ~5.4x Net Debt/EBITDA adds financial risk on top of extreme valuation.",
-	"currentPrice": "$395.95",
+	"currentPrice": "$475.62",
 	"consensus": {
 		"tipranks": "$535",
-		"yahoo": "$537.75",
+		"yahoo": "$559.61",
 		"stockanalysis": "$541"
 	},
 	"cagrModel": {
@@ -38,67 +38,67 @@
 		"epsGrowth": "13%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "36%",
-			"bull": "64%"
+			"bear": "-15%",
+			"base": "18%",
+			"bull": "37%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl Ansys amortization & SBC); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:34.406Z",
+	"lastUpdated": "2026-06-01T00:56:42.317Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 4.02,
+		"score": 4.51,
 		"signal": "WAIT",
+		"note": "Valuation score 4.51 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10.95))",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "EV/EBITDA",
-			"multiple": 52.3,
-			"cvStock": 0.038,
+			"multiple": 58.6,
+			"cvStock": 0.034,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 35.8% + QCS 10.95",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 395.95,
-				"price6mAgo": 478.22,
-				"price1mAgo": 442.3,
+				"price": 475.62,
+				"price6mAgo": 438.29,
+				"price1mAgo": 489.02,
 				"low3m": 379.5,
-				"return6m": -17.2,
-				"return1m": -10.5,
-				"near3mLow": true
+				"return6m": 8.5,
+				"return1m": -2.7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
-				"down30d": 4
+				"up30d": 2,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 6,
-				"quarter": "2026-01"
+				"quarter": "2026-04"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.78
+		"secondaryScore": 2.12
 	},
 	"qcs": {
-		"earningsScore": 1.37,
+		"earningsScore": 1.95,
 		"flowScore": 5,
-		"revisionsScore": 4.58,
-		"totalScore": 10.95,
+		"revisionsScore": 0,
+		"totalScore": 6.95,
 		"raw": {
-			"avgSurprisePct": 1.31,
-			"netInsiderShares": 30392,
+			"avgSurprisePct": 1.66,
+			"netInsiderShares": 34745,
 			"instFlowTrend": "positive",
-			"upRevisions": 22,
-			"downRevisions": 0,
-			"totalAnalysts": 24
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 21
 		}
 	},
 	"description": "Synopsys, Inc. provides design IP solutions in the semiconductor and electronics industries.",
 	"analystTargets": {
-		"low": 425,
-		"mean": 537.75,
+		"low": 403.85,
+		"mean": 559.61,
 		"high": 650
 	},
 	"analystConsensus": {
@@ -113,14 +113,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.84904,
-			"low": 14.32,
-			"average": 14.45791
+			"high": 14.94058,
+			"low": 14.42,
+			"average": 14.74492
 		},
 		"2027": {
 			"high": 18.6,
-			"low": 16.01,
-			"average": 17.0551
+			"low": 16.25,
+			"average": 17.21176
 		}
-	}
+	},
+	"confidence": "medium"
 }

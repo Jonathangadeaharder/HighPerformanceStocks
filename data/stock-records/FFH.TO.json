@@ -2,99 +2,99 @@
 	"ticker": "FFH.TO",
 	"name": "Fairfax Financial",
 	"group": "The Capital Compounders",
-	"marketCap": "C$50.7B",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "-26% - 39%",
-	"expectedVolatility": "~21%",
+	"marketCap": "C$44.3B",
+	"sharpeRatio": 0.76,
+	"expectedCAGR": "-13% - 57%",
+	"expectedVolatility": "~23%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 0.28,
 		"evEbitda": null,
-		"trailingPE": 7.9,
-		"forwardPE": 10.8,
-		"evFcf": 26.8
+		"trailingPE": 7.7,
+		"forwardPE": 9.7,
+		"evFcf": 23.3
 	},
 	"metrics": {
-		"roe": "17.8%",
+		"roe": "17.2%",
 		"fcfMargin": "~6%",
 		"fcfYield": "~5%",
-		"netDebtEbitda": "0.8x",
-		"ruleOf40": "15%",
-		"beta": "0.48",
-		"revenueGrowth": "9.6%",
-		"roic": "4.2%",
-		"interestCoverage": "9.6x"
+		"netDebtEbitda": "1.0x",
+		"ruleOf40": "-2%",
+		"beta": "0.46",
+		"revenueGrowth": "-7.8%",
+		"roic": "2.8%",
+		"interestCoverage": "9.8x"
 	},
-	"targetPrice": "C$2751.27",
+	"targetPrice": "C$2757.61",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2363.41",
+	"currentPrice": "C$2145.70",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-26%",
-			"base": "17%",
-			"bull": "39%"
+			"bear": "-13%",
+			"base": "30%",
+			"bull": "57%"
 		},
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
-		"ttmEPS": 297.32
+		"ttmEPS": 280.01
 	},
-	"lastUpdated": "2026-04-05T07:21:20.598Z",
+	"lastUpdated": "2026-06-01T00:56:32.655Z",
 	"consensus": {
-		"yahoo": "C$2751.27"
+		"yahoo": "C$2757.61"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.64,
+		"score": 0.57,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 10.8,
-			"cvStock": 0.041,
+			"multiple": 9.7,
+			"cvStock": 0.035,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2363.41,
-				"price6mAgo": 2445.01,
-				"price1mAgo": 2280.01,
-				"low3m": 2151.07,
-				"return6m": -3.3,
-				"return1m": 3.7,
-				"near3mLow": false
+				"price": 2145.7,
+				"price6mAgo": 2397.71,
+				"price1mAgo": 2170.28,
+				"low3m": 2142.37,
+				"return6m": -10.5,
+				"return1m": -1.1,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 1,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 9.7,
-				"quarter": "2025-12"
+				"surprise": 12.8,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 1.67,
-		"totalScore": -3.33,
+		"revisionsScore": 2.5,
+		"totalScore": 7.5,
 		"raw": {
-			"avgSurprisePct": -11.7,
+			"avgSurprisePct": 12.9,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 3
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 2
 		}
 	},
 	"description": "Fairfax Financial Holdings Limited, through its subsidiaries, provides property and casualty insurance and reinsurance, and investment management services in Canada, the United States, the Middle E...",
 	"analystTargets": {
-		"low": 1728.44,
-		"mean": 2751.27,
-		"high": 3269.99
+		"low": 1849.72,
+		"mean": 2757.61,
+		"high": 3356.17
 	},
 	"analystConsensus": {
 		"ticker": "FFH.TO",
@@ -108,13 +108,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 174.39,
-			"low": 128.47,
-			"average": 148.62666
+			"low": 141.06,
+			"average": 157.725
 		},
 		"2027": {
 			"high": 170.96,
-			"low": 145.16,
-			"average": 157.77333
+			"low": 148.63,
+			"average": 159.795
 		}
-	}
+	},
+	"confidence": "medium"
 }

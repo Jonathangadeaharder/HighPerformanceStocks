@@ -7,95 +7,97 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 13.66,
+		"ttmEPS": 13.96,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "25%",
-			"bull": "51%"
+			"bear": "9%",
+			"base": "19%",
+			"bull": "36%"
 		}
 	},
-	"currentPrice": "$440.79",
-	"marketCap": "$78.5B USD",
+	"currentPrice": "$453.25",
+	"marketCap": "$79.2B USD",
 	"valuation": {
-		"trailingPE": 32.3,
-		"forwardPE": 23.6,
+		"trailingPE": 32.5,
+		"forwardPE": 24.4,
 		"evEbitda": 22.3,
-		"evFcf": 40.5
+		"evFcf": 37.6,
+		"pegRatio": 2.06
 	},
 	"metrics": {
-		"roe": "62.1%",
-		"fcfMargin": "~27%",
+		"roe": "71.4%",
+		"fcfMargin": "~29%",
 		"fcfYield": "~3%",
-		"netDebtEbitda": "1.3x",
-		"ruleOf40": "40%",
-		"beta": "1.45",
-		"revenueGrowth": "13.0%",
-		"roic": "3.5%",
-		"interestCoverage": "9.1x"
+		"netDebtEbitda": "1.5x",
+		"ruleOf40": "37%",
+		"beta": "1.37",
+		"revenueGrowth": "8.1%",
+		"roic": "3.6%",
+		"interestCoverage": "9.4x"
 	},
 	"consensus": {
-		"yahoo": "$546.70"
+		"yahoo": "$536"
 	},
-	"targetPrice": "$546.70",
-	"expectedCAGR": "5% - 51%",
+	"targetPrice": "$536",
+	"expectedCAGR": "9% - 36%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.7,
+		"score": 2.51,
 		"signal": "FAIL",
+		"note": "Valuation score 2.51 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 40.5,
-			"cvStock": 0.021,
+			"multiple": 37.6,
+			"cvStock": 0.029,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 440.79,
-				"price6mAgo": 483.45,
-				"price1mAgo": 470.05,
-				"low3m": 402.28,
-				"return6m": -8.8,
-				"return1m": -6.2,
+				"price": 453.25,
+				"price6mAgo": 487.24,
+				"price1mAgo": 455.77,
+				"low3m": 422.16,
+				"return6m": -7,
+				"return1m": -0.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 10,
-				"down30d": 2
+				"up30d": 8,
+				"down30d": 12
 			},
 			"earningsSurprise": {
-				"surprise": 6,
-				"quarter": "2025-12"
+				"surprise": 2.6,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.57
+		"secondaryScore": 1.63
 	},
-	"lastUpdated": "2026-04-05T07:21:27.923Z",
-	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.84,
+	"lastUpdated": "2026-06-01T00:56:37.393Z",
+	"expectedVolatility": "~26%",
+	"sharpeRatio": 0.69,
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.23,
-		"totalScore": 5.23,
+		"flowScore": 5,
+		"revisionsScore": -1.09,
+		"totalScore": 8.91,
 		"raw": {
-			"avgSurprisePct": 6.41,
-			"netInsiderShares": 51545,
-			"instFlowTrend": "neutral",
-			"upRevisions": 3,
-			"downRevisions": 2,
-			"totalAnalysts": 22
+			"avgSurprisePct": 5,
+			"netInsiderShares": 50789,
+			"instFlowTrend": "positive",
+			"upRevisions": 7,
+			"downRevisions": 12,
+			"totalAnalysts": 23
 		}
 	},
 	"description": "Moody's Corporation, together with its subsidiaries, operates as an integrated risk assessment firm in the United States, the rest of the Americas, Europe, the Middle East, Africa, and the Asia Pac...",
 	"analystTargets": {
-		"low": 460,
-		"mean": 546.7,
-		"high": 660
+		"low": 489,
+		"mean": 536,
+		"high": 610
 	},
 	"analystConsensus": {
 		"ticker": "MCO",
@@ -109,14 +111,15 @@
 	"targetPriceAlternative": "$550.25",
 	"forwardEstimates": {
 		"2026": {
-			"high": 17.05,
-			"low": 16.45,
-			"average": 16.74462
+			"high": 16.86,
+			"low": 16.37,
+			"average": 16.69877
 		},
 		"2027": {
-			"high": 19.55,
-			"low": 17.94282,
-			"average": 18.71478
+			"high": 19.783,
+			"low": 17.66,
+			"average": 18.59652
 		}
-	}
+	},
+	"confidence": "medium"
 }

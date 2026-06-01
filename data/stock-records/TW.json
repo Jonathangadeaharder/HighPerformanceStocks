@@ -7,88 +7,90 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 3.78,
-		"dividendYield": "0%",
+		"ttmEPS": 4.05,
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-10%",
-			"base": "7%",
-			"bull": "58%"
+			"bear": "13%",
+			"base": "37%",
+			"bull": "98%"
 		}
 	},
-	"currentPrice": "$123.20",
-	"marketCap": "$26.9B USD",
+	"currentPrice": "$100.25",
+	"marketCap": "$21.9B USD",
 	"valuation": {
-		"trailingPE": 32.6,
-		"forwardPE": 27.4
+		"trailingPE": 24.8,
+		"forwardPE": 21.9,
+		"pegRatio": 2.01
 	},
 	"metrics": {
-		"roe": "13.6%",
-		"beta": "0.78",
-		"revenueGrowth": "12.5%",
-		"roic": "4.7%"
+		"roe": "14.2%",
+		"beta": "0.67",
+		"revenueGrowth": "21.2%",
+		"roic": "6.0%"
 	},
 	"consensus": {
-		"yahoo": "$131.69"
+		"yahoo": "$136.07"
 	},
-	"targetPrice": "$131.69",
-	"expectedCAGR": "-10% - 58%",
+	"targetPrice": "$136.07",
+	"expectedCAGR": "13% - 98%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.17,
-		"signal": "FAIL",
+		"score": 1.65,
+		"signal": "WAIT",
+		"note": "Valuation score 1.65 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 35.7%)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/CF",
-			"multiple": 32.6,
-			"cvStock": 0.04,
+			"multiple": 24.8,
+			"cvStock": 0.044,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 123.2,
-				"price6mAgo": 103.59,
-				"price1mAgo": 124.49,
-				"low3m": 97.06,
-				"return6m": 18.9,
-				"return1m": -1,
-				"near3mLow": false
+				"price": 100.25,
+				"price6mAgo": 106.79,
+				"price1mAgo": 111.68,
+				"low3m": 98.82,
+				"return6m": -6.1,
+				"return1m": -10.2,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 1
+				"up30d": 5,
+				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": 3,
-				"quarter": "2025-12"
+				"surprise": 1.5,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.83
+		"secondaryScore": 1.46
 	},
-	"lastUpdated": "2026-04-05T07:21:37.244Z",
+	"lastUpdated": "2026-06-01T00:56:43.676Z",
 	"expectedVolatility": "~28%",
-	"sharpeRatio": 0.7,
+	"sharpeRatio": 1.82,
 	"qcs": {
-		"earningsScore": 2.41,
+		"earningsScore": 2.45,
 		"flowScore": 5,
-		"revisionsScore": 0.38,
-		"totalScore": 7.79,
+		"revisionsScore": 0,
+		"totalScore": 7.45,
 		"raw": {
-			"avgSurprisePct": 2.41,
-			"netInsiderShares": 330765,
+			"avgSurprisePct": 2.7,
+			"netInsiderShares": 319256,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 13
+			"upRevisions": 6,
+			"downRevisions": 6,
+			"totalAnalysts": 14
 		}
 	},
 	"description": "Tradeweb Markets Inc. builds and operates electronic marketplaces in the United States and internationally.",
 	"analystTargets": {
-		"low": 111,
-		"mean": 131.69,
-		"high": 195
+		"low": 112,
+		"mean": 136.07,
+		"high": 197
 	},
 	"analystConsensus": {
 		"ticker": "TW",
@@ -102,14 +104,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.32043,
-			"low": 3.86,
-			"average": 4.01238
+			"high": 4.24,
+			"low": 3.897,
+			"average": 4.04958
 		},
 		"2027": {
-			"high": 5.02,
-			"low": 4.3,
-			"average": 4.49117
+			"high": 5.1,
+			"low": 4.299,
+			"average": 4.57146
 		}
-	}
+	},
+	"confidence": "medium"
 }

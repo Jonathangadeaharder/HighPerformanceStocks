@@ -2,101 +2,102 @@
 	"ticker": "NOW",
 	"name": "ServiceNow",
 	"group": "Defensive Monopolies",
-	"marketCap": "$107.6B USD",
-	"sharpeRatio": 1.98,
-	"expectedCAGR": "20% - 155%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$128.3B USD",
+	"sharpeRatio": 0.51,
+	"expectedCAGR": "-32% - 90%",
+	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 61.1,
-		"forwardPE": 20.3,
-		"evEbitda": 37.5,
-		"evFcf": 20.8
+		"trailingPE": 74,
+		"forwardPE": 24.7,
+		"evEbitda": 43.5,
+		"evFcf": 24.6,
+		"pegRatio": 1.21
 	},
 	"metrics": {
-		"roe": "15.5%",
+		"roe": "16.1%",
 		"fcfMargin": "~37%",
-		"fcfYield": "~5%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "58%",
-		"beta": "1",
-		"revenueGrowth": "20.7%",
-		"roic": "5.2%",
-		"interestCoverage": "20.7x"
+		"ruleOf40": "59%",
+		"beta": "0.82",
+		"revenueGrowth": "22.1%",
+		"roic": "4.3%",
+		"interestCoverage": "21.6x"
 	},
-	"targetPrice": "$185.04",
+	"targetPrice": "$142.50",
 	"bullCase": "The central nervous system for enterprise IT. Highly sticky subscription revenue with strong cross-selling opportunities via AI modules.",
 	"bearCase": "Trades at a premium software multiple; vulnerable to broader enterprise IT spending slowdowns.",
-	"currentPrice": "$102",
+	"currentPrice": "$124.37",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "20%",
-			"base": "81%",
-			"bull": "155%"
+			"bear": "-32%",
+			"base": "15%",
+			"bull": "90%"
 		},
 		"ttmEPS": 2.7,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"basis": "10-for-1 split-adjusted adjusted EPS (ServiceNow executed 10-for-1 split February 2025); mature workflow SaaS multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:31.076Z",
+	"lastUpdated": "2026-06-01T00:56:39.564Z",
 	"consensus": {
-		"yahoo": "$185.04"
+		"yahoo": "$142.50"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.99,
-		"signal": "WAIT",
+		"score": 1.17,
+		"signal": "FAIL",
+		"note": "Valuation score 1.17 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 20.8,
-			"cvStock": 0.061,
+			"multiple": 24.6,
+			"cvStock": 0.055,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 81.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 102,
-				"price6mAgo": 182.57,
-				"price1mAgo": 120.38,
-				"low3m": 98,
-				"return6m": -44.1,
-				"return1m": -15.3,
-				"near3mLow": true
+				"price": 124.37,
+				"price6mAgo": 164.41,
+				"price1mAgo": 91.16,
+				"low3m": 81.24,
+				"return6m": -24.4,
+				"return1m": 36.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 2
+				"up30d": 19,
+				"down30d": 17
 			},
 			"earningsSurprise": {
-				"surprise": 3.9,
-				"quarter": "2025-12"
+				"surprise": 0.4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.97
+		"secondaryScore": 1.18
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.23,
-		"totalScore": 5.23,
+		"flowScore": 5,
+		"revisionsScore": -1.43,
+		"totalScore": 8.57,
 		"raw": {
-			"avgSurprisePct": 9.24,
-			"netInsiderShares": 435053,
-			"instFlowTrend": "negative",
-			"upRevisions": 3,
-			"downRevisions": 1,
-			"totalAnalysts": 44
+			"avgSurprisePct": 7.99,
+			"netInsiderShares": 499072,
+			"instFlowTrend": "positive",
+			"upRevisions": 10,
+			"downRevisions": 22,
+			"totalAnalysts": 42
 		}
 	},
 	"description": "ServiceNow, Inc. provides cloud-based solution for digital workflows in the North America, Europe, the Middle East and Africa, Asia Pacific, and internationally.",
 	"analystTargets": {
-		"low": 122.78,
-		"mean": 185.04,
-		"high": 260
+		"low": 85,
+		"mean": 142.5,
+		"high": 236
 	},
 	"analystConsensus": {
 		"ticker": "NOW",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$192.62",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.36284,
-			"low": 3.48,
-			"average": 4.16611
+			"high": 4.33,
+			"low": 3.64,
+			"average": 4.12299
 		},
 		"2027": {
-			"high": 5.4,
-			"low": 4.17,
-			"average": 5.01803
+			"high": 5.31931,
+			"low": 4.21,
+			"average": 5.02669
 		}
-	}
+	},
+	"confidence": "medium"
 }

@@ -8,63 +8,64 @@
 		"ttmEPS": 1.82,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "22%",
-			"base": "95%",
-			"bull": "154%"
+			"bear": "-28%",
+			"base": "-10%",
+			"bull": "10%"
 		}
 	},
-	"currentPrice": "$102.46",
-	"marketCap": "$18.9B USD",
+	"currentPrice": "$236.03",
+	"marketCap": "$43.5B USD",
 	"valuation": {
-		"trailingPE": 56.3,
-		"forwardPE": 21.7,
-		"evEbitda": 49.8,
-		"evFcf": 101.2
+		"trailingPE": 129.7,
+		"forwardPE": 42.8,
+		"evEbitda": 120.6,
+		"evFcf": 245.3
 	},
 	"metrics": {
 		"roe": "27.5%",
 		"fcfMargin": "~16%",
-		"fcfYield": "~1%",
+		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "218%",
-		"beta": "2.72",
+		"beta": "3.18",
 		"revenueGrowth": "201.5%",
-		"roic": "1.9%",
+		"roic": "0.8%",
 		"interestCoverage": "391.3x"
 	},
 	"consensus": {
-		"yahoo": "$199.38"
+		"yahoo": "$211.86"
 	},
-	"targetPrice": "$199.38",
-	"expectedCAGR": "22% - 154%",
-	"expectedVolatility": "~82%",
-	"sharpeRatio": 1.02,
+	"targetPrice": "$211.86",
+	"expectedCAGR": "-28% - 10%",
+	"expectedVolatility": "~85%",
+	"sharpeRatio": -0.16,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.78,
-		"signal": "PASS",
+		"score": 1.53,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.53 exceeds 1 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 11.56)) (Absolute REJECT: Base CAGR -10% is negative)",
 		"inputs": {
 			"growth": 28,
 			"multipleType": "Forward P/E",
-			"multiple": 21.7,
-			"cvStock": 0.034,
+			"multiple": 42.8,
+			"cvStock": 0.052,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 102.46,
-				"price6mAgo": 137.2,
-				"price1mAgo": 115.98,
+				"price": 236.03,
+				"price6mAgo": 171.13,
+				"price1mAgo": 184.38,
 				"low3m": 86.49,
-				"return6m": -25.3,
-				"return1m": -11.7,
+				"return6m": 37.9,
+				"return1m": 28,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 14,
-				"down30d": 0
+				"up30d": 0,
+				"down30d": 1
 			},
 			"earningsSurprise": {
 				"surprise": 13.7,
@@ -72,27 +73,27 @@
 			}
 		}
 	},
-	"lastUpdated": "2026-04-07T11:23:06.359Z",
+	"lastUpdated": "2026-06-01T00:56:31.181Z",
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": 4.06,
-		"totalScore": 11.56,
+		"revisionsScore": 0,
+		"totalScore": 7.5,
 		"raw": {
 			"avgSurprisePct": 30.27,
-			"netInsiderShares": -1736675,
+			"netInsiderShares": -867091,
 			"instFlowTrend": "positive",
-			"upRevisions": 13,
-			"downRevisions": 0,
-			"totalAnalysts": 16
+			"upRevisions": 1,
+			"downRevisions": 1,
+			"totalAnalysts": 17
 		}
 	},
 	"bullCase": "Credo's Active Electrical Cables (AECs) are displacing DACs (direct attach cables) in AI clusters for runs up to 7 meters — a massive addressable market as AI racks pack denser. Design wins at Microsoft (a major hyperscaler) validate the technology. Optical DSP chips for longer runs represent the next growth layer as data centers scale.",
 	"bearCase": "Credo is heavily concentrated in 1-2 hyperscaler customers. Any account loss or product substitution (Marvell or NVIDIA developing competing AEC solutions) would devastate revenue. At 22x forward PE, the stock is not cheap for a company with single-customer concentration risk. AI capex cycles would directly impact order volumes.",
 	"description": "Credo Technology Group Holding Ltd provides various high-speed connectivity solutions for optical and electrical Ethernet, and PCIe applications in the United States, Taiwan, Mainland China, Hong K...",
 	"analystTargets": {
-		"low": 125,
-		"mean": 199.38,
+		"low": 170,
+		"mean": 211.86,
 		"high": 260
 	},
 	"analystConsensus": {
@@ -108,13 +109,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 3.37,
-			"low": 3.27,
-			"average": 3.30884
+			"low": 3.28,
+			"average": 3.31252
 		},
 		"2027": {
-			"high": 5.1,
-			"low": 4.46,
-			"average": 4.72452
+			"high": 6.1303,
+			"low": 4.977,
+			"average": 5.51576
 		}
-	}
+	},
+	"confidence": "medium"
 }

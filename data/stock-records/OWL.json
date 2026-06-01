@@ -2,103 +2,104 @@
 	"ticker": "OWL",
 	"name": "Blue Owl Capital",
 	"group": "Financials & Alt Assets",
-	"targetPrice": "$14.93",
+	"targetPrice": "$12.93",
 	"bullCase": "Permanent capital base means zero redemption risk. Growing GP stakes and direct lending businesses provide durable, fee-based revenue. Massive dividend yield with room for payout growth as FRE scales.",
 	"bearCase": "GAAP profitability is minimal due to heavy intangible amortization from acquisitions. Private credit cycle stress could impair portfolio yields. Share dilution from equity-funded acquisitions.",
 	"cagrModel": {
-		"ttmEPS": 0.92,
+		"ttmEPS": 0.88,
 		"epsGrowth": "15%",
-		"dividendYield": "11%",
+		"dividendYield": "9%",
 		"scenarios": {
-			"bear": "28%",
-			"base": "85%",
-			"bull": "179%"
+			"bear": "-3%",
+			"base": "35%",
+			"bull": "113%"
 		},
 		"basis": "strictly hardcode FRE per share"
 	},
 	"valuation": {
-		"trailingPE": 9.4,
-		"forwardPE": 8.1,
-		"evEbitda": 10.7,
-		"evFcf": 9.8
+		"trailingPE": 11.6,
+		"forwardPE": 10.5,
+		"evEbitda": 11.9,
+		"evFcf": 10.3,
+		"pegRatio": 0.15
 	},
 	"metrics": {
 		"aum": "$235B",
 		"aumGrowth": "20% YoY",
-		"roe": "5.2%",
-		"fcfMargin": "~47%",
-		"fcfYield": "~10%",
-		"netDebtEbitda": "3.0x",
-		"ruleOf40": "67%",
-		"beta": "1.21",
-		"revenueGrowth": "19.7%",
-		"roic": "7.4%",
-		"interestCoverage": "5.8x"
+		"roe": "5.7%",
+		"fcfMargin": "~49%",
+		"fcfYield": "~9%",
+		"netDebtEbitda": "3.3x",
+		"ruleOf40": "59%",
+		"beta": "1.18",
+		"revenueGrowth": "10.3%",
+		"roic": "6.6%",
+		"interestCoverage": "5.2x"
 	},
 	"consensus": {
-		"yahoo": "$14.93"
+		"yahoo": "$12.93"
 	},
-	"currentPrice": "$8.57",
-	"marketCap": "$13.4B USD",
-	"expectedCAGR": "28% - 179%",
+	"currentPrice": "$10.28",
+	"marketCap": "$16.0B USD",
+	"expectedCAGR": "-3% - 113%",
 	"expectedVolatility": "~44%",
-	"sharpeRatio": 2.25,
+	"sharpeRatio": 1.15,
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.62,
+		"score": 0.78,
 		"signal": "REJECTED",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "P/FRE",
-			"multiple": 9.3,
-			"cvStock": 0.048,
+			"multiple": 11.7,
+			"cvStock": 0.061,
 			"riskMultiplier": 1
 		},
 		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 8.57,
-				"price6mAgo": 16.52,
-				"price1mAgo": 10.42,
+				"price": 10.28,
+				"price6mAgo": 15.03,
+				"price1mAgo": 9.98,
 				"low3m": 7.95,
-				"return6m": -48.1,
-				"return1m": -17.8,
+				"return6m": -31.6,
+				"return1m": 3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 0,
-				"down30d": 8
+				"up30d": 3,
+				"down30d": 9
 			},
 			"earningsSurprise": {
-				"surprise": 6.8,
-				"quarter": "2025-12"
+				"surprise": 5.4,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.54
+		"secondaryScore": 0.7
 	},
-	"lastUpdated": "2026-04-05T07:21:32.114Z",
+	"lastUpdated": "2026-06-01T00:56:40.238Z",
 	"qcs": {
-		"earningsScore": 0.16,
+		"earningsScore": 2.2,
 		"flowScore": 2.5,
-		"revisionsScore": -2.67,
-		"totalScore": -0.01,
+		"revisionsScore": -0.36,
+		"totalScore": 4.34,
 		"raw": {
-			"avgSurprisePct": 0.2,
+			"avgSurprisePct": 3.36,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 8,
-			"totalAnalysts": 15
+			"upRevisions": 4,
+			"downRevisions": 5,
+			"totalAnalysts": 14
 		}
 	},
 	"description": "Blue Owl Capital Inc. operates as an alternative asset manager in the United States.",
 	"analystTargets": {
-		"low": 10,
-		"mean": 14.93,
-		"high": 23
+		"low": 9,
+		"mean": 12.93,
+		"high": 21
 	},
 	"analystConsensus": {
 		"ticker": "OWL",
@@ -112,14 +113,15 @@
 	"targetPriceAlternative": "$16.64",
 	"forwardEstimates": {
 		"2026": {
-			"high": 0.98,
-			"low": 0.85,
-			"average": 0.91509
+			"high": 0.92,
+			"low": 0.82592,
+			"average": 0.88433
 		},
 		"2027": {
-			"high": 1.15102,
-			"low": 0.95,
-			"average": 1.05753
+			"high": 1.08,
+			"low": 0.84,
+			"average": 0.98305
 		}
-	}
+	},
+	"confidence": "low"
 }

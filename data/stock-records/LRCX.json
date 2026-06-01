@@ -5,84 +5,86 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.87,
+		"ttmEPS": 5.28,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "26%",
-			"bull": "49%"
+			"bear": "-31%",
+			"base": "-1%",
+			"bull": "21%"
 		}
 	},
-	"currentPrice": "$218.44",
-	"marketCap": "$274.4B USD",
+	"currentPrice": "$318.18",
+	"marketCap": "$397.9B USD",
 	"valuation": {
-		"trailingPE": 44.9,
-		"forwardPE": 31.6,
-		"evEbitda": 36.9,
-		"evFcf": 56.3
+		"trailingPE": 60.3,
+		"forwardPE": 40.1,
+		"evEbitda": 50.6,
+		"evFcf": 91.2,
+		"pegRatio": 1.85
 	},
 	"metrics": {
-		"roe": "65.6%",
-		"fcfMargin": "~23%",
-		"fcfYield": "~2%",
+		"roe": "66.8%",
+		"fcfMargin": "~20%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "46%",
-		"beta": "1.79",
-		"revenueGrowth": "22.1%",
-		"roic": "2.6%",
-		"interestCoverage": "29.8x"
+		"ruleOf40": "44%",
+		"beta": "1.82",
+		"revenueGrowth": "23.8%",
+		"roic": "1.8%",
+		"interestCoverage": "38.2x"
 	},
 	"consensus": {
-		"yahoo": "$274.90"
+		"yahoo": "$313.69"
 	},
-	"targetPrice": "$274.90",
-	"expectedCAGR": "-8% - 49%",
-	"expectedVolatility": "~51%",
-	"sharpeRatio": 0.31,
+	"targetPrice": "$313.69",
+	"expectedCAGR": "-31% - 21%",
+	"expectedVolatility": "~50%",
+	"sharpeRatio": -0.19,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
-		"signal": "FAIL",
+		"score": 2.67,
+		"signal": "REJECTED",
+		"note": "Valuation score 2.67 exceeds 1 limit (Absolute REJECT: Base CAGR -1% is negative)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 31.6,
-			"cvStock": 0.127,
-			"riskMultiplier": 1.011
+			"multiple": 40.1,
+			"cvStock": 0.088,
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 218.44,
-				"price6mAgo": 149.15,
-				"price1mAgo": 214.68,
-				"low3m": 177.5,
-				"return6m": 46.5,
-				"return1m": 1.8,
+				"price": 318.18,
+				"price6mAgo": 154.79,
+				"price1mAgo": 256.72,
+				"low3m": 194.08,
+				"return6m": 105.6,
+				"return1m": 23.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
+				"up30d": 31,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 8.7,
-				"quarter": "2025-12"
+				"surprise": 7.9,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:26.965Z",
+	"lastUpdated": "2026-06-01T00:56:36.740Z",
 	"qcs": {
-		"earningsScore": 2.08,
-		"flowScore": 0,
-		"revisionsScore": 0.15,
-		"totalScore": 2.23,
+		"earningsScore": 3.43,
+		"flowScore": 5,
+		"revisionsScore": 4.71,
+		"totalScore": 13.14,
 		"raw": {
-			"avgSurprisePct": 6.6,
-			"netInsiderShares": 563134,
-			"instFlowTrend": "neutral",
-			"upRevisions": 1,
+			"avgSurprisePct": 7.55,
+			"netInsiderShares": 620640,
+			"instFlowTrend": "positive",
+			"upRevisions": 32,
 			"downRevisions": 0,
 			"totalAnalysts": 34
 		}
@@ -91,9 +93,9 @@
 	"bearCase": "Lam's NAND exposure (~40% of revenue) makes it one of the most cyclically volatile names in semiconductor equipment. Memory capex cycles can compress revenue 30-40% within 12 months. US export controls on advanced equipment to China removed ~$1.5B of annual revenue. Any delay in the NAND recovery or GAA adoption pushes out the earnings inflection.",
 	"description": "Lam Research Corporation designs, manufactures, markets, refurbishes, and services semiconductor processing equipment used in the fabrication of integrated circuits in the United States, China, Kor...",
 	"analystTargets": {
-		"low": 200,
-		"mean": 274.9,
-		"high": 325
+		"low": 220,
+		"mean": 313.69,
+		"high": 385
 	},
 	"analystConsensus": {
 		"ticker": "LRCX",
@@ -107,14 +109,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 5.46326,
-			"low": 4.87,
-			"average": 5.30821
+			"high": 5.79,
+			"low": 5.48,
+			"average": 5.675
 		},
 		"2027": {
-			"high": 8.14124,
-			"low": 4.64,
-			"average": 6.88964
+			"high": 10.03,
+			"low": 7.25,
+			"average": 7.94233
 		}
-	}
+	},
+	"confidence": "high"
 }

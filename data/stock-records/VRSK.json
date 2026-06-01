@@ -7,93 +7,96 @@
 	"cagrModel": {
 		"epsGrowth": "14%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.48,
+		"ttmEPS": 6.56,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "25%",
-			"bull": "50%"
+			"bear": "7%",
+			"base": "27%",
+			"bull": "58%"
 		}
 	},
-	"currentPrice": "$185.08",
-	"marketCap": "$25.8B USD",
+	"currentPrice": "$174.99",
+	"marketCap": "$22.9B USD",
 	"valuation": {
-		"trailingPE": 28.6,
-		"forwardPE": 21.5,
-		"evEbitda": 19,
-		"evFcf": 27.9
+		"trailingPE": 26.7,
+		"forwardPE": 20.2,
+		"evEbitda": 17.9,
+		"evFcf": 28.6,
+		"pegRatio": 1.7
 	},
 	"metrics": {
 		"roe": "437.9%",
-		"fcfMargin": "~33%",
+		"fcfMargin": "~30%",
 		"fcfYield": "~4%",
-		"netDebtEbitda": "1.8x",
-		"beta": "0.82",
-		"roic": "5.0%",
-		"interestCoverage": "5.5x"
+		"netDebtEbitda": "2.7x",
+		"beta": "0.73",
+		"roic": "5.1%",
+		"interestCoverage": "5.9x",
+		"ruleOf40": "34%",
+		"revenueGrowth": "3.9%"
 	},
 	"consensus": {
-		"yahoo": "$229.53"
+		"yahoo": "$220.47"
 	},
-	"targetPrice": "$229.53",
-	"expectedCAGR": "0% - 50%",
+	"targetPrice": "$220.47",
+	"expectedCAGR": "7% - 58%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.99,
+		"score": 2.04,
 		"signal": "WAIT",
+		"note": "Valuation score 2.04 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.72))",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
-			"multiple": 27.9,
-			"cvStock": 0.016,
+			"multiple": 28.6,
+			"cvStock": 0.017,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.72 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 185.08,
-				"price6mAgo": 245.07,
-				"price1mAgo": 211.22,
-				"low3m": 164.6,
-				"return6m": -24.5,
-				"return1m": -12.4,
+				"price": 174.99,
+				"price6mAgo": 224.01,
+				"price1mAgo": 181.11,
+				"low3m": 155.94,
+				"return6m": -21.9,
+				"return1m": -3.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 13,
 				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 12.9,
-				"quarter": "2025-12"
+				"surprise": 4.7,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.54
+		"secondaryScore": 1.44
 	},
-	"lastUpdated": "2026-04-05T07:21:38.279Z",
-	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.71,
+	"lastUpdated": "2026-06-01T00:56:45.033Z",
+	"expectedVolatility": "~32%",
+	"sharpeRatio": 0.88,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.28,
-		"totalScore": 9.72,
+		"revisionsScore": 2.22,
+		"totalScore": 12.22,
 		"raw": {
-			"avgSurprisePct": 5.7,
-			"netInsiderShares": 75698,
+			"avgSurprisePct": 6.17,
+			"netInsiderShares": 90067,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 3,
+			"upRevisions": 12,
+			"downRevisions": 4,
 			"totalAnalysts": 18
 		}
 	},
 	"description": "Verisk Analytics, Inc. engages in the provision of data analytics and technology solutions to the insurance industry in the United States and internationally.",
 	"analystTargets": {
-		"low": 183,
-		"mean": 229.53,
+		"low": 185,
+		"mean": 220.47,
 		"high": 275
 	},
 	"analystConsensus": {
@@ -108,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 7.718,
-			"low": 7.19549,
-			"average": 7.62072
+			"high": 7.77,
+			"low": 7.33143,
+			"average": 7.64958
 		},
 		"2027": {
-			"high": 8.85,
-			"low": 8.29827,
-			"average": 8.59282
+			"high": 8.9,
+			"low": 8.309,
+			"average": 8.65734
 		}
-	}
+	},
+	"confidence": "high"
 }

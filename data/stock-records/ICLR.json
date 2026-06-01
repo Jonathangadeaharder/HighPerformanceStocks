@@ -10,92 +10,94 @@
 		"ttmEPS": 7.42,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-34%",
-			"base": "18%",
-			"bull": "89%"
+			"bear": "-23%",
+			"base": "9%",
+			"bull": "32%"
 		}
 	},
-	"currentPrice": "$114.19",
-	"marketCap": "$8.9B USD",
+	"currentPrice": "$136.07",
+	"marketCap": "$10.4B USD",
 	"valuation": {
-		"trailingPE": 15.4,
-		"forwardPE": 9.1,
-		"evEbitda": 7.8,
-		"evFcf": 12.8
+		"trailingPE": 46.9,
+		"forwardPE": 11.6,
+		"evEbitda": 9.6,
+		"evFcf": 17.3,
+		"pegRatio": 23.89
 	},
 	"metrics": {
-		"roe": "6.3%",
-		"fcfMargin": "~11%",
-		"fcfYield": "~10%",
-		"netDebtEbitda": "2.0x",
-		"ruleOf40": "12%",
-		"beta": "1.28",
-		"revenueGrowth": "0.6%",
-		"roic": "9.5%",
-		"interestCoverage": "7.7x"
+		"roe": "2.5%",
+		"fcfMargin": "~9%",
+		"fcfYield": "~7%",
+		"netDebtEbitda": "2.1x",
+		"ruleOf40": "22%",
+		"beta": "1.23",
+		"revenueGrowth": "12.4%",
+		"roic": "7.8%",
+		"interestCoverage": "7.1x"
 	},
 	"consensus": {
-		"yahoo": "$134.69"
+		"yahoo": "$147.69"
 	},
-	"targetPrice": "$134.69",
-	"expectedCAGR": "-34% - 89%",
+	"targetPrice": "$147.69",
+	"expectedCAGR": "-23% - 32%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.56,
-		"signal": "PASS",
+		"score": 0.69,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 7.8,
-			"cvStock": 0.069,
+			"multiple": 9.6,
+			"cvStock": 0.033,
 			"riskMultiplier": 1
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 114.19,
-				"price6mAgo": 190.43,
-				"price1mAgo": 110.6,
-				"low3m": 66.57,
-				"return6m": -40,
-				"return1m": 3.2,
+				"price": 136.07,
+				"price6mAgo": 179.71,
+				"price1mAgo": 112.85,
+				"low3m": 95.75,
+				"return6m": -24.3,
+				"return1m": 20.6,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 1,
-				"down30d": 2
+				"pass": false,
+				"up30d": 0,
+				"down30d": 7
 			},
 			"earningsSurprise": {
-				"surprise": 1,
-				"quarter": "2025-09"
+				"surprise": -18.9,
+				"quarter": "2025-12"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.65
+		"secondaryScore": 0.83
 	},
-	"lastUpdated": "2026-04-05T07:21:23.732Z",
-	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.31,
+	"lastUpdated": "2026-06-01T00:56:34.639Z",
+	"expectedVolatility": "~76%",
+	"sharpeRatio": 0,
 	"qcs": {
-		"earningsScore": 0.97,
-		"flowScore": 0,
-		"revisionsScore": -0.63,
-		"totalScore": 0.34,
+		"earningsScore": -3.73,
+		"flowScore": 2.5,
+		"revisionsScore": -2.5,
+		"totalScore": -3.73,
 		"raw": {
-			"avgSurprisePct": 1.68,
+			"avgSurprisePct": -3.08,
 			"netInsiderShares": 0,
-			"instFlowTrend": "neutral",
+			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 2,
+			"downRevisions": 8,
 			"totalAnalysts": 16
 		}
 	},
 	"description": "ICON Public Limited Company, a clinical research organization, provides outsourced development and commercialization services in Ireland, rest of Europe, the United States, and internationally.",
 	"analystTargets": {
-		"low": 75,
-		"mean": 134.69,
-		"high": 216
+		"low": 105,
+		"mean": 147.69,
+		"high": 180
 	},
 	"analystConsensus": {
 		"ticker": "ICLR",
@@ -108,15 +110,16 @@
 	"targetPriceAlternative": "$148.80",
 	"consensusRating": "Hold",
 	"forwardEstimates": {
-		"2025": {
-			"high": 13.10509,
-			"low": 12.28,
-			"average": 12.96204
-		},
 		"2026": {
-			"high": 13.82386,
-			"low": 10.39,
-			"average": 12.51214
+			"high": 11.69,
+			"low": 10.01089,
+			"average": 10.60216
+		},
+		"2027": {
+			"high": 12.68,
+			"low": 11.11,
+			"average": 11.7695
 		}
-	}
+	},
+	"confidence": "cut"
 }

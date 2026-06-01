@@ -7,93 +7,95 @@
 	"cagrModel": {
 		"epsGrowth": "13%",
 		"basis": "Non-GAAP EPS; reflects maturing GLP-1 market share and pipeline resilience",
-		"ttmEPS": 3.56,
-		"dividendYield": "5%",
+		"ttmEPS": 4.26,
+		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "12%",
-			"base": "32%",
-			"bull": "77%"
+			"bear": "-9%",
+			"base": "7%",
+			"bull": "45%"
 		}
 	},
-	"currentPrice": "$36.98",
-	"marketCap": "$164.1B USD",
+	"currentPrice": "$45.58",
+	"marketCap": "$202.0B USD",
 	"valuation": {
-		"trailingPE": 10.4,
-		"forwardPE": 10.8,
+		"trailingPE": 10.7,
+		"forwardPE": 13.7,
 		"evEbitda": null,
-		"evFcf": 712
+		"evFcf": -27.2,
+		"pegRatio": 3.36
 	},
 	"metrics": {
-		"roe": "60.7%",
-		"fcfMargin": "~0%",
-		"fcfYield": "~0%",
+		"roe": "71.4%",
+		"fcfMargin": "~-4%",
+		"fcfYield": "~-6%",
 		"netDebtEbitda": "0.7x",
-		"ruleOf40": "-7%",
-		"beta": "0.27",
-		"revenueGrowth": "-7.6%",
-		"roic": "44.4%",
-		"interestCoverage": "21.3x"
+		"ruleOf40": "20%",
+		"beta": "0.35",
+		"revenueGrowth": "24.0%",
+		"roic": "36.3%",
+		"interestCoverage": "21.6x"
 	},
 	"consensus": {
-		"yahoo": "$47.02"
+		"yahoo": "$46.87"
 	},
-	"targetPrice": "$47.02",
-	"expectedCAGR": "12% - 77%",
-	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.71,
+	"targetPrice": "$46.87",
+	"expectedCAGR": "-9% - 45%",
+	"expectedVolatility": "~54%",
+	"sharpeRatio": 0.25,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.83,
-		"signal": "PASS",
+		"score": 1.05,
+		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 1.05 vs 1 limit) (REJECT: Stalled at WAIT with base CAGR 7% < 15%)",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 10.8,
-			"cvStock": 0.04,
+			"multiple": 13.7,
+			"cvStock": 0.083,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 36.98,
-				"price6mAgo": 59.65,
-				"price1mAgo": 39.07,
+				"price": 45.58,
+				"price6mAgo": 48.43,
+				"price1mAgo": 43.88,
 				"low3m": 35.12,
-				"return6m": -38,
-				"return1m": -5.3,
+				"return6m": -5.9,
+				"return1m": 3.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 3
+				"up30d": 2,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 2.3,
-				"quarter": "2025-12"
+				"surprise": -4.8,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 3.79,
-		"flowScore": 0,
-		"revisionsScore": 2.5,
-		"totalScore": 6.29,
+		"earningsScore": 0.35,
+		"flowScore": 2.5,
+		"revisionsScore": 0.56,
+		"totalScore": 3.41,
 		"raw": {
-			"avgSurprisePct": 3.79,
+			"avgSurprisePct": 0.73,
 			"netInsiderShares": 0,
-			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 0,
-			"totalAnalysts": 4
+			"instFlowTrend": "positive",
+			"upRevisions": 4,
+			"downRevisions": 3,
+			"totalAnalysts": 9
 		}
 	},
 	"description": "Novo Nordisk A/S, together with its subsidiaries, engages in the research and development, manufacture, and distribution of pharmaceutical products.",
-	"lastUpdated": "2026-04-05T07:21:31.278Z",
+	"lastUpdated": "2026-06-01T00:56:40.208Z",
 	"analystTargets": {
-		"low": 39.7,
-		"mean": 47.02,
-		"high": 63.47
+		"low": 39.64,
+		"mean": 46.87,
+		"high": 64.31
 	},
 	"analystConsensus": {
 		"ticker": "NVO",
@@ -107,14 +109,15 @@
 	"targetPriceAlternative": "$65.57",
 	"forwardEstimates": {
 		"2026": {
-			"high": 23.54,
-			"low": 20.45897,
-			"average": 21.44449
+			"high": 25.01,
+			"low": 19.37,
+			"average": 22.32511
 		},
 		"2027": {
-			"high": 23.99834,
-			"low": 20.46,
-			"average": 22.06459
+			"high": 23.915,
+			"low": 16.8,
+			"average": 21.32211
 		}
-	}
+	},
+	"confidence": "low"
 }

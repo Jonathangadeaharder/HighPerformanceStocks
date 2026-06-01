@@ -8,35 +8,35 @@
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "1%",
-			"base": "166%",
-			"bull": "259%"
+			"bear": "4%",
+			"base": "183%",
+			"bull": "282%"
 		}
 	},
-	"currentPrice": "$34.80",
-	"marketCap": "$4.0B USD",
+	"currentPrice": "$32.74",
+	"marketCap": "$3.8B USD",
 	"valuation": {
-		"forwardPE": -7.8,
-		"evFcf": -20.7
+		"forwardPE": -7.2,
+		"evFcf": -18
 	},
 	"metrics": {
-		"roe": "-47.3%",
-		"fcfYield": "~-4%",
-		"beta": "0.82",
-		"roic": "-8.4%"
+		"roe": "-70.0%",
+		"fcfYield": "~-5%",
+		"beta": "0.71",
+		"roic": "-10.6%"
 	},
 	"consensus": {
-		"yahoo": "$92.72"
+		"yahoo": "$92.58"
 	},
-	"targetPrice": "$92.72",
+	"targetPrice": "$92.58",
 	"analystTargets": {
-		"low": 35,
-		"mean": 92.72,
+		"low": 34,
+		"mean": 92.58,
 		"high": 125
 	},
-	"expectedCAGR": "1% - 259%",
-	"expectedVolatility": "~85%",
-	"sharpeRatio": 1.48,
+	"expectedCAGR": "4% - 282%",
+	"expectedVolatility": "~81%",
+	"sharpeRatio": 1.71,
 	"screener": {
 		"engine": "totalReturn",
 		"signal": "NO_DATA",
@@ -45,29 +45,30 @@
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
-		"revisionsScore": -0.33,
-		"totalScore": -0.33,
+		"revisionsScore": 0.31,
+		"totalScore": 0.31,
 		"raw": {
-			"avgSurprisePct": -34.12,
-			"netInsiderShares": 177031,
+			"avgSurprisePct": -38.82,
+			"netInsiderShares": 120072,
 			"instFlowTrend": "positive",
-			"upRevisions": 5,
-			"downRevisions": 6,
-			"totalAnalysts": 15
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 16
 		}
 	},
 	"description": "Viking Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on the development of novel therapies for metabolic and endocrine disorders.",
-	"lastUpdated": "2026-04-05T07:21:38.196Z",
+	"lastUpdated": "2026-06-01T00:56:44.387Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": -2.75,
-			"low": -7.42,
-			"average": -4.04243
+			"high": -3.81,
+			"low": -5.72,
+			"average": -4.72478
 		},
 		"2027": {
-			"high": -2.89,
-			"low": -8.51,
-			"average": -4.46005
+			"high": -2.22,
+			"low": -6.41,
+			"average": -4.56533
 		}
-	}
+	},
+	"confidence": "low"
 }

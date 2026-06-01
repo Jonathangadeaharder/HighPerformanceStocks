@@ -2,69 +2,70 @@
 	"ticker": "RBRK",
 	"name": "Rubrik",
 	"group": "Cybersecurity",
-	"marketCap": "$10.4B USD",
-	"sharpeRatio": 1.33,
-	"expectedCAGR": "24% - 145%",
-	"expectedVolatility": "~60%",
+	"marketCap": "$16.2B USD",
+	"sharpeRatio": 0.27,
+	"expectedCAGR": "-17% - 60%",
+	"expectedVolatility": "~62%",
 	"valuation": {
-		"forwardPE": 87.6,
-		"evEbitda": -30.9,
-		"evFcf": 25.2
+		"forwardPE": 134.9,
+		"evEbitda": -48.1,
+		"evFcf": 39.2
 	},
 	"metrics": {
 		"fcfMargin": "~30%",
-		"fcfYield": "~4%",
+		"fcfYield": "~2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "76%",
 		"revenueGrowth": "46.3%",
-		"roic": "2.9%"
+		"roic": "1.8%",
+		"beta": "0.63"
 	},
-	"targetPrice": "$86.71",
+	"targetPrice": "$84.86",
 	"bullCase": "Zero-trust data security is becoming non-negotiable. 48% YoY revenue growth and recently inflected to profitability and positive FCF.",
 	"bearCase": "Rubrik faces intense competition from Cohesity (now merged with Veritas), Commvault, Veeam, and Zerto in data protection. The path to sustained GAAP profitability requires continued ARR growth at high SBC dilution. Microsoft Backup and AWS native backup services could commoditize the lower end of the market.",
-	"currentPrice": "$51.44",
+	"currentPrice": "$78.63",
 	"cagrModel": {
 		"ttmEPS": null,
 		"epsGrowth": "48%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "24%",
-			"base": "69%",
-			"bull": "145%"
+			"bear": "-17%",
+			"base": "8%",
+			"bull": "60%"
 		},
 		"basis": "Pre-profit cybersecurity platform; track ARR, FCF and analyst target instead of P/E until earnings normalize"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.165Z",
+	"lastUpdated": "2026-06-01T00:56:40.982Z",
 	"consensus": {
-		"yahoo": "$86.71"
+		"yahoo": "$84.86"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.98,
-		"signal": "WAIT",
+		"score": 1.54,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.54 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 12.92)) (REJECT: Stalled at WAIT with base CAGR 8% < 15%)",
 		"inputs": {
 			"growth": 48,
 			"multipleType": "EV/FCF",
-			"multiple": 25.2,
-			"cvStock": 0.281,
-			"riskMultiplier": 1.492
+			"multiple": 39.2,
+			"cvStock": 0.283,
+			"riskMultiplier": 1.503
 		},
-		"note": "hasLikelyValueFloor: analyst upside 68.6% + QCS 12.92",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 51.44,
-				"price6mAgo": 82.21,
-				"price1mAgo": 55.88,
-				"low3m": 44.75,
-				"return6m": -37.4,
-				"return1m": -7.9,
+				"price": 78.63,
+				"price6mAgo": 68.6,
+				"price1mAgo": 55.07,
+				"low3m": 42.25,
+				"return6m": 14.6,
+				"return1m": 42.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 7,
-				"down30d": 5
+				"up30d": 1,
+				"down30d": 0
 			},
 			"earningsSurprise": {
 				"surprise": 136.9,
@@ -72,26 +73,26 @@
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.41
+		"secondaryScore": 5.29
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 2.92,
-		"totalScore": 12.92,
+		"revisionsScore": 0.19,
+		"totalScore": 10.19,
 		"raw": {
 			"avgSurprisePct": 109.78,
-			"netInsiderShares": 3913276,
+			"netInsiderShares": 4477277,
 			"instFlowTrend": "positive",
-			"upRevisions": 17,
-			"downRevisions": 3,
-			"totalAnalysts": 24
+			"upRevisions": 1,
+			"downRevisions": 0,
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Rubrik, Inc. provides data security solutions to individuals and businesses worldwide.",
 	"analystTargets": {
-		"low": 64,
-		"mean": 86.71,
+		"low": 65,
+		"mean": 84.86,
 		"high": 126
 	},
 	"analystConsensus": {
@@ -107,12 +108,13 @@
 		"2027": {
 			"high": 0.27488,
 			"low": 0.08,
-			"average": 0.17425
+			"average": 0.17341
 		},
 		"2028": {
 			"high": 0.95,
 			"low": 0.29,
-			"average": 0.58695
+			"average": 0.58269
 		}
-	}
+	},
+	"confidence": "high"
 }

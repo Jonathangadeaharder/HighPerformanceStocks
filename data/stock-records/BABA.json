@@ -2,35 +2,35 @@
 	"ticker": "BABA",
 	"name": "Alibaba",
 	"group": "Emerging Markets",
-	"marketCap": "$291.4B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "-7% - 113%",
-	"expectedVolatility": "~44%",
+	"marketCap": "$298.0B USD",
+	"sharpeRatio": 1.07,
+	"expectedCAGR": "-8% - 109%",
+	"expectedVolatility": "~43%",
 	"valuation": {
-		"trailingPE": 21.8,
-		"forwardPE": 15.7,
-		"pegRatio": null,
-		"evEbitda": 16.4,
-		"evFcf": -87.3
+		"trailingPE": 19.2,
+		"forwardPE": 13.5,
+		"pegRatio": 0.44,
+		"evEbitda": 21.3,
+		"evFcf": -53.3
 	},
 	"metrics": {
-		"roe": "8.2%",
-		"fcfMargin": "~-3%",
-		"fcfYield": "~-9%",
+		"roe": "9.2%",
+		"fcfMargin": "~-4%",
+		"fcfYield": "~-15%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "-1%",
 		"beta": "0.49",
-		"revenueGrowth": "1.7%",
-		"roic": "39.3%",
-		"interestCoverage": "8.8x"
+		"revenueGrowth": "2.9%",
+		"roic": "29.0%",
+		"interestCoverage": "7.1x"
 	},
-	"targetPrice": "$189.34",
+	"targetPrice": "$192.07",
 	"bullCase": "Alibaba Cloud is the #1 cloud provider in China with AI-driven re-acceleration. The $25B+ annual buyback program is aggressively reducing share count. Core commerce margins are expanding as Taobao/Tmall refocuses on profitability. International e-commerce (Lazada, AliExpress) is gaining traction in SE Asia and Europe. Sum-of-parts valuation implies 40-60% discount — cloud alone could be worth $80-100B. Regulatory cycle has clearly turned positive with government endorsing private tech sector.",
 	"bearCase": "VIE structure means ADR holders don't own the operating company — existential legal risk if US-China relations deteriorate. China's consumer economy remains sluggish with deflationary pressures. Cloud growth has decelerated as government clients shift to domestic alternatives. Competition from PDD (Temu), JD, and Douyin is intense in core commerce. Jack Ma's reduced role and prior regulatory crackdown created lasting governance concerns. Potential Taiwan conflict would be catastrophic for the stock.",
-	"currentPrice": "$122.05",
+	"currentPrice": "$124.22",
 	"consensus": {
 		"tipranks": "$168",
-		"yahoo": "$189.34",
+		"yahoo": "$192.07",
 		"stockanalysis": "$160"
 	},
 	"cagrModel": {
@@ -38,44 +38,44 @@
 		"epsGrowth": "13%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-7%",
+			"bear": "-8%",
 			"base": "56%",
-			"bull": "113%"
+			"bull": "109%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC & investment gains); non-GAAP P/E basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:15.519Z",
+	"lastUpdated": "2026-06-01T00:56:29.870Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.34,
+		"score": 1.2,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 13,
 			"multipleType": "Forward P/E",
-			"multiple": 15.7,
-			"cvStock": 0.186,
-			"riskMultiplier": 1.111
+			"multiple": 13.5,
+			"cvStock": 0.201,
+			"riskMultiplier": 1.152
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 122.05,
-				"price6mAgo": 187.22,
-				"price1mAgo": 130.35,
-				"low3m": 120.14,
-				"return6m": -34.8,
-				"return1m": -6.4,
-				"near3mLow": true
+				"price": 124.22,
+				"price6mAgo": 164.26,
+				"price1mAgo": 131.5,
+				"low3m": 117.93,
+				"return6m": -24.4,
+				"return1m": -5.5,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 2,
-				"down30d": 26
+				"up30d": 6,
+				"down30d": 14
 			},
 			"earningsSurprise": {
-				"surprise": -35.2,
-				"quarter": "2025-12"
+				"surprise": -89.2,
+				"quarter": "2026-03"
 			}
 		}
 	},
@@ -85,24 +85,24 @@
 		"discount": 91
 	},
 	"qcs": {
-		"earningsScore": -3.59,
+		"earningsScore": -5,
 		"flowScore": 0,
-		"revisionsScore": -4.35,
-		"totalScore": -7.94,
+		"revisionsScore": -2.19,
+		"totalScore": -7.19,
 		"raw": {
-			"avgSurprisePct": -16.67,
+			"avgSurprisePct": -38.4,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 27,
-			"totalAnalysts": 31
+			"upRevisions": 5,
+			"downRevisions": 19,
+			"totalAnalysts": 32
 		}
 	},
-	"description": "Alibaba Group Holding Limited, through its subsidiaries, provides technology infrastructure and marketing reach to help merchants, brands, retailers, and other businesses to engage with their users...",
+	"description": "Alibaba Group Holding Limited, through its subsidiaries, provides technology infrastructure and marketing reach to help merchants, brands, retailers, and other businesses in the People's Republic o...",
 	"analystTargets": {
-		"low": 112.07,
-		"mean": 189.34,
-		"high": 258.17
+		"low": 112.66,
+		"mean": 192.07,
+		"high": 258.74
 	},
 	"analystConsensus": {
 		"ticker": "BABA",
@@ -114,15 +114,16 @@
 	},
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
-		"2026": {
-			"high": 46.48,
-			"low": 30.96,
-			"average": 35.42827
-		},
 		"2027": {
-			"high": 75.13,
-			"low": 35.83,
-			"average": 52.85866
+			"high": 60,
+			"low": 29.47,
+			"average": 45.453
+		},
+		"2028": {
+			"high": 86.71739,
+			"low": 36.64,
+			"average": 62.43821
 		}
-	}
+	},
+	"confidence": "cut"
 }

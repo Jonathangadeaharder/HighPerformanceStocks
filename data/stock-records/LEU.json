@@ -2,70 +2,70 @@
 	"ticker": "LEU",
 	"name": "Centrus Energy Corp.",
 	"group": "Energy & Infrastructure",
-	"targetPrice": "$278.12",
+	"targetPrice": "$278.64",
 	"bullCase": "Only US-licensed uranium enrichment facility — irreplaceable national security infrastructure. HALEU production is essential for next-gen advanced reactors (Oklo, TerraPower, etc.) with no domestic alternative. DOE contracts provide long-term revenue visibility. Nuclear renaissance accelerating globally as clean baseload demand surges. $1.96B cash fortress with net cash position. 12 analysts see 23%+ upside to $238 consensus target.",
 	"bearCase": "Earnings are wildly lumpy — recent quarters saw both +1,468% beats and -51% misses depending on contract timing. Forward P/E of ~67x is hard to justify even with monopoly pricing. Highly dependent on government funding and single-facility execution risk. 23.6% short interest signals significant skepticism. Revenue growth is ~3-4% annually with lumpiness making any P/E-based valuation extremely uncertain.",
 	"cagrModel": {
-		"ttmEPS": 3.9,
+		"ttmEPS": 2.76,
 		"epsGrowthSource": "auto",
 		"dividendYield": "0%",
 		"basis": "EV/EBITDA exit multiple",
 		"scenarios": {
-			"bear": "-25%",
-			"base": "52%",
-			"bull": "113%"
+			"bear": "7%",
+			"base": "53%",
+			"bull": "114%"
 		},
-		"epsGrowth": "50%"
+		"epsGrowth": "-4%"
 	},
-	"currentPrice": "$183.21",
+	"currentPrice": "$182.47",
 	"marketCap": "$3.6B USD",
 	"consensus": {
-		"yahoo": "$278.12",
+		"yahoo": "$278.64",
 		"stockanalysis": "$238.83"
 	},
-	"expectedVolatility": "~93%",
-	"expectedCAGR": "-25% - 113%",
-	"sharpeRatio": 0.42,
+	"expectedVolatility": "~91%",
+	"expectedCAGR": "7% - 114%",
+	"sharpeRatio": 0.62,
 	"valuation": {
-		"trailingPE": 47,
-		"forwardPE": 34.6,
-		"evEbitda": 53.7,
-		"evFcf": 75.2
+		"trailingPE": 66.1,
+		"forwardPE": 46,
+		"evEbitda": 84.8,
+		"evFcf": -266.7,
+		"pegRatio": 2.87
 	},
 	"metrics": {
-		"roe": "16.8%",
-		"fcfMargin": "~8%",
-		"fcfYield": "~1%",
+		"roe": "12.3%",
+		"fcfMargin": "~-2%",
+		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"grossMargin": "26.19%",
-		"operatingMargin": "~6%",
-		"ruleOf40": "5%",
-		"beta": "1.36",
-		"revenueGrowth": "-3.6%",
-		"roic": "1.8%",
-		"interestCoverage": "0.8x"
+		"grossMargin": "25.67%",
+		"operatingMargin": "~0%",
+		"ruleOf40": "2%",
+		"beta": "1.44",
+		"revenueGrowth": "4.9%",
+		"roic": "-0.7%",
+		"interestCoverage": "0.5x"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.15,
-		"signal": "WAIT",
+		"score": -42.42,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 50,
+			"growth": -4,
 			"multipleType": "EV/EBITDA",
-			"multiple": 53.7,
-			"cvStock": 0.292,
-			"riskMultiplier": 1.551
+			"multiple": 84.8,
+			"cvStock": 0.358,
+			"riskMultiplier": 2.001
 		},
-		"note": "hasLikelyValueFloor: analyst upside 51.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 183.21,
-				"price6mAgo": 356.28,
-				"price1mAgo": 194.28,
-				"low3m": 165.28,
-				"return6m": -48.6,
-				"return1m": -5.7,
+				"price": 182.47,
+				"price6mAgo": 251.36,
+				"price1mAgo": 206.64,
+				"low3m": 163.28,
+				"return6m": -27.4,
+				"return1m": -11.7,
 				"near3mLow": false
 			},
 			"revisions": {
@@ -74,32 +74,32 @@
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -51.4,
-				"quarter": "2025-12"
+				"surprise": 288.9,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": -23.01
 	},
-	"lastUpdated": "2026-04-05T07:21:25.886Z",
+	"lastUpdated": "2026-06-01T00:56:36.067Z",
 	"description": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Belgium, Japan, the Netherlands, and internationally.",
 	"analystTargets": {
-		"low": 137,
-		"mean": 278.12,
+		"low": 195,
+		"mean": 278.64,
 		"high": 390
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 2.5,
-		"revisionsScore": -3.33,
-		"totalScore": 4.17,
+		"flowScore": 5,
+		"revisionsScore": -1.25,
+		"totalScore": 8.75,
 		"raw": {
-			"avgSurprisePct": 386.66,
-			"netInsiderShares": 0,
+			"avgSurprisePct": 91.75,
+			"netInsiderShares": 9663,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 3
+			"downRevisions": 1,
+			"totalAnalysts": 4
 		}
 	},
 	"analystConsensus": {
@@ -114,14 +114,15 @@
 	"targetPriceAlternative": "$258.83",
 	"forwardEstimates": {
 		"2026": {
-			"high": 4.22,
-			"low": 3.09,
-			"average": 3.52333
+			"high": 6.38,
+			"low": 2.83,
+			"average": 4.155
 		},
 		"2027": {
-			"high": 9.37,
-			"low": 3.19,
-			"average": 5.29767
+			"high": 7.33,
+			"low": 1.64,
+			"average": 3.97
 		}
-	}
+	},
+	"confidence": "medium"
 }

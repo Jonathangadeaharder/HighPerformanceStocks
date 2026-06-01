@@ -8,76 +8,77 @@
 		"ttmEPS": 16,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "6%",
-			"base": "58%",
-			"bull": "96%"
+			"bear": "-10%",
+			"base": "26%",
+			"bull": "94%"
 		}
 	},
-	"currentPrice": "$373.46",
-	"marketCap": "$2775.7B USD",
+	"currentPrice": "$450.24",
+	"marketCap": "$3344.6B USD",
 	"valuation": {
-		"trailingPE": 23.4,
-		"forwardPE": 19.8,
-		"evEbitda": 16,
-		"evFcf": 52.3
+		"trailingPE": 26.8,
+		"forwardPE": 23.3,
+		"evEbitda": 18.4,
+		"evFcf": 91.6,
+		"pegRatio": 1.39
 	},
 	"metrics": {
-		"roe": "34.4%",
-		"fcfMargin": "~18%",
-		"fcfYield": "~2%",
-		"netDebtEbitda": "0.2x",
-		"ruleOf40": "34%",
-		"beta": "1.11",
-		"revenueGrowth": "16.7%",
-		"roic": "5.7%",
-		"interestCoverage": "25.8x"
+		"roe": "34.0%",
+		"fcfMargin": "~12%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "0.3x",
+		"ruleOf40": "30%",
+		"beta": "1.09",
+		"revenueGrowth": "18.3%",
+		"roic": "5.0%",
+		"interestCoverage": "26.7x"
 	},
 	"consensus": {
-		"yahoo": "$587.31"
+		"yahoo": "$560.63"
 	},
-	"targetPrice": "$587.31",
-	"expectedCAGR": "6% - 96%",
-	"expectedVolatility": "~26%",
-	"sharpeRatio": 1.79,
+	"targetPrice": "$560.63",
+	"expectedCAGR": "-10% - 94%",
+	"expectedVolatility": "~25%",
+	"sharpeRatio": 1.5,
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.74,
-		"signal": "WAIT",
+		"score": 6.54,
+		"signal": "FAIL",
+		"note": "Valuation score 6.54 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/FCF",
-			"multiple": 52.3,
-			"cvStock": 0.101,
+			"multiple": 91.6,
+			"cvStock": 0.031,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 57.3%",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 373.46,
-				"price6mAgo": 528.57,
-				"price1mAgo": 410.68,
+				"pass": true,
+				"price": 450.24,
+				"price6mAgo": 486.74,
+				"price1mAgo": 414.44,
 				"low3m": 356.28,
-				"return6m": -29.3,
-				"return1m": -9.1,
-				"near3mLow": true
+				"return6m": -7.5,
+				"return1m": 8.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 2
+				"up30d": 18,
+				"down30d": 9
 			},
 			"earningsSurprise": {
-				"surprise": 34.1,
-				"quarter": "2025-12"
+				"surprise": 5.2,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.66
 	},
 	"bullCase": "Microsoft is the infrastructure layer for enterprise AI — Azure is growing 29% YoY and accelerating as Copilot for M365 and GitHub Copilot begin generating material revenue at $30+/seat. Office 365 pricing power continues with AI-tier upsells. The OpenAI equity stake provides uncapped upside from AGI development. 95%+ recurring revenue base.",
 	"bearCase": "Azure growth faces increasing competition from Google Cloud (BigQuery, Vertex AI) and AWS as hyperscaler lock-in weakens with multi-cloud adoption. Copilot enterprise adoption has been slower than Wall Street expected as enterprises navigate AI governance policies. At 21x forward PE, Microsoft trades at a premium that requires sustained 14%+ EPS growth.",
-	"lastUpdated": "2026-04-05T07:21:29.168Z",
+	"lastUpdated": "2026-06-01T00:56:38.876Z",
 	"intrinsicValue": {
 		"dcf": 314.88,
 		"date": "2026-03-28",
@@ -85,23 +86,23 @@
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": -5,
-		"revisionsScore": 0.31,
-		"totalScore": 0.31,
+		"flowScore": 2.5,
+		"revisionsScore": 3.96,
+		"totalScore": 11.46,
 		"raw": {
-			"avgSurprisePct": 12.82,
-			"netInsiderShares": -38372,
-			"instFlowTrend": "negative",
-			"upRevisions": 2,
+			"avgSurprisePct": 7.93,
+			"netInsiderShares": -22933,
+			"instFlowTrend": "positive",
+			"upRevisions": 19,
 			"downRevisions": 0,
-			"totalAnalysts": 32
+			"totalAnalysts": 24
 		}
 	},
 	"description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide.",
 	"analystTargets": {
-		"low": 392,
-		"mean": 587.31,
-		"high": 730
+		"low": 400,
+		"mean": 560.63,
+		"high": 870
 	},
 	"analystConsensus": {
 		"ticker": "MSFT",
@@ -115,14 +116,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 19.71,
-			"low": 16.47,
-			"average": 17.19787
+			"high": 17.36,
+			"low": 16.69775,
+			"average": 16.81245
 		},
 		"2027": {
-			"high": 24.31,
-			"low": 16.61,
-			"average": 19.00412
+			"high": 20.52,
+			"low": 18.12644,
+			"average": 19.33773
 		}
-	}
+	},
+	"confidence": "high"
 }

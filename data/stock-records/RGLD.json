@@ -2,35 +2,35 @@
 	"ticker": "RGLD",
 	"name": "Royal Gold",
 	"group": "Royalties",
-	"marketCap": "$22.3B USD",
-	"sharpeRatio": 0.44,
-	"expectedCAGR": "0% - 44%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$19.1B USD",
+	"sharpeRatio": 0.9,
+	"expectedCAGR": "11% - 68%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 39.2,
-		"forwardPE": 17.7,
-		"pegRatio": 1.69,
-		"evEbitda": 27.3,
-		"evFcf": -38
+		"trailingPE": 27.2,
+		"forwardPE": 16.3,
+		"pegRatio": 1.06,
+		"evEbitda": 18.1,
+		"evFcf": -47.5
 	},
 	"metrics": {
-		"fcfMargin": "~-59%",
-		"fcfYield": "~-3%",
-		"roic": "3.1%",
-		"roe": "9.1%",
-		"netDebtEbitda": "0.8x",
-		"ruleOf40": "27%",
-		"beta": "0.55",
-		"revenueGrowth": "86.1%",
-		"interestCoverage": "16.4x"
+		"fcfMargin": "~-32%",
+		"fcfYield": "~-2%",
+		"roic": "4.4%",
+		"roe": "12.0%",
+		"netDebtEbitda": "0.3x",
+		"ruleOf40": "111%",
+		"beta": "0.44",
+		"revenueGrowth": "143.0%",
+		"interestCoverage": "32.8x"
 	},
-	"targetPrice": "$330.09",
+	"targetPrice": "$331.67",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
 	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
-	"currentPrice": "$262.63",
+	"currentPrice": "$224.48",
 	"consensus": {
 		"tipranks": "$249",
-		"yahoo": "$330.09",
+		"yahoo": "$331.67",
 		"stockanalysis": "$231"
 	},
 	"cagrModel": {
@@ -38,64 +38,65 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "27%",
-			"bull": "44%"
+			"bear": "11%",
+			"base": "49%",
+			"bull": "68%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.169Z",
+	"lastUpdated": "2026-06-01T00:56:40.959Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.63,
-		"signal": "FAIL",
+		"score": 1.42,
+		"signal": "WAIT",
+		"note": "Valuation score 1.42 exceeds 1 limit (Upgraded from FAIL: Protected by analyst upside 47.7%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 17.7,
-			"cvStock": 0.183,
-			"riskMultiplier": 1.102
+			"multiple": 16.3,
+			"cvStock": 0.154,
+			"riskMultiplier": 1.044
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 262.63,
-				"price6mAgo": 203.57,
-				"price1mAgo": 276.47,
-				"low3m": 213.76,
-				"return6m": 29,
-				"return1m": -5,
+				"price": 224.48,
+				"price6mAgo": 201.25,
+				"price1mAgo": 230.59,
+				"low3m": 213.5,
+				"return6m": 11.5,
+				"return1m": -2.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 4,
 				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": -27.4,
-				"quarter": "2025-12"
+				"surprise": -0.9,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -0.83,
+		"earningsScore": -1.72,
 		"flowScore": 5,
-		"revisionsScore": 1.36,
-		"totalScore": 5.53,
+		"revisionsScore": -2.73,
+		"totalScore": 0.55,
 		"raw": {
-			"avgSurprisePct": -3.8,
-			"netInsiderShares": 3731,
+			"avgSurprisePct": -6.63,
+			"netInsiderShares": 2506,
 			"instFlowTrend": "positive",
-			"upRevisions": 4,
-			"downRevisions": 1,
+			"upRevisions": 2,
+			"downRevisions": 8,
 			"totalAnalysts": 11
 		}
 	},
 	"description": "Royal Gold, Inc., together with its subsidiaries, acquires and manages precious metal streams, royalties, and related interests in North America, South and Central America, Europe, the Middle East,...",
 	"analystTargets": {
-		"low": 260,
-		"mean": 330.09,
+		"low": 246,
+		"mean": 331.67,
 		"high": 375
 	},
 	"analystConsensus": {
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 15.84,
-			"low": 9.93,
-			"average": 12.84455
+			"high": 14.96,
+			"low": 8.88393,
+			"average": 11.62672
 		},
 		"2027": {
-			"high": 21.61,
-			"low": 10.78,
-			"average": 14.82877
+			"high": 20.14,
+			"low": 11.65,
+			"average": 13.78223
 		}
-	}
+	},
+	"confidence": "low"
 }

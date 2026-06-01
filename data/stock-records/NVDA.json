@@ -2,79 +2,79 @@
 	"ticker": "NVDA",
 	"name": "NVIDIA",
 	"group": "AI & Semiconductors",
-	"marketCap": "$4311.5B USD",
-	"sharpeRatio": 1.08,
-	"expectedCAGR": "-21% - 114%",
-	"expectedVolatility": "~39%",
+	"marketCap": "$5114.0B USD",
+	"sharpeRatio": 1.66,
+	"expectedCAGR": "-15% - 137%",
+	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 36.2,
-		"forwardPE": 16,
-		"pegRatio": 1.6,
-		"evEbitda": 32,
-		"evFcf": 73.3
+		"trailingPE": 32.4,
+		"forwardPE": 16.7,
+		"pegRatio": 0.65,
+		"evEbitda": 30.6,
+		"evFcf": 109.4
 	},
 	"metrics": {
-		"fcfMargin": "~27%",
+		"fcfMargin": "~18%",
 		"fcfYield": "~1%",
-		"roic": "2.4%",
-		"roe": "101.5%",
+		"roic": "2.5%",
+		"roe": "114.3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "100%",
-		"beta": "2.33",
-		"revenueGrowth": "73.2%",
-		"interestCoverage": "212.3x"
+		"ruleOf40": "103%",
+		"beta": "2.24",
+		"revenueGrowth": "85.2%",
+		"interestCoverage": "234.8x"
 	},
-	"targetPrice": "$268.22",
+	"targetPrice": "$296.81",
 	"bullCase": "NVIDIA is generating the highest quality earnings in semiconductor history but trades at a massive discount to peers (36x vs 80.7x). The upcoming Vera Rubin platform (H2 2026) promises a 5x inference improvement, implying a $40B upside to consensus. It is now a deeply entrenched value-compounder.",
 	"bearCase": "The trailing PEG ratio has expanded to 1.6x, indicating hyper-growth percentage gains are mathematically exhausting. If hyperscaler CapEx draws down, the cyclical shock will be violent.",
-	"currentPrice": "$177.39",
+	"currentPrice": "$211.14",
 	"consensus": {
 		"tipranks": "$272",
-		"yahoo": "$268.22",
+		"yahoo": "$296.81",
 		"stockanalysis": "$263"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.9,
+		"ttmEPS": 6.52,
 		"epsGrowth": "29%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-21%",
-			"base": "51%",
-			"bull": "114%"
+			"bear": "-15%",
+			"base": "41%",
+			"bull": "137%"
 		},
 		"basis": "Reflects near-term EPS acceleration while normalizing longer-term terminal valuation."
 	},
-	"lastUpdated": "2026-04-05T07:21:31.268Z",
+	"lastUpdated": "2026-06-01T00:56:39.591Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.56,
+		"score": 0.58,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 29,
 			"multipleType": "Forward P/E",
-			"multiple": 16,
-			"cvStock": 0.127,
-			"riskMultiplier": 1.011
+			"multiple": 16.7,
+			"cvStock": 0.125,
+			"riskMultiplier": 1.01
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 177.39,
-				"price6mAgo": 185.54,
-				"price1mAgo": 183.34,
+				"price": 211.14,
+				"price6mAgo": 179.92,
+				"price1mAgo": 198.45,
 				"low3m": 164.27,
-				"return6m": -4.4,
-				"return1m": -3.2,
+				"return6m": 17.4,
+				"return1m": 6.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 26,
-				"down30d": 4
+				"up30d": 40,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 5.3,
-				"quarter": "2026-01"
+				"surprise": 5.5,
+				"quarter": "2026-04"
 			}
 		}
 	},
@@ -84,24 +84,24 @@
 		"discount": 37
 	},
 	"qcs": {
-		"earningsScore": 1.65,
-		"flowScore": 0,
-		"revisionsScore": 3.51,
-		"totalScore": 5.16,
+		"earningsScore": 1.47,
+		"flowScore": 5,
+		"revisionsScore": 4.04,
+		"totalScore": 10.51,
 		"raw": {
-			"avgSurprisePct": 5.22,
-			"netInsiderShares": 57409933,
-			"instFlowTrend": "negative",
-			"upRevisions": 38,
-			"downRevisions": 5,
+			"avgSurprisePct": 4.61,
+			"netInsiderShares": 58260839,
+			"instFlowTrend": "positive",
+			"upRevisions": 40,
+			"downRevisions": 2,
 			"totalAnalysts": 47
 		}
 	},
 	"description": "NVIDIA Corporation operates as a data center scale AI infrastructure company.",
 	"analystTargets": {
-		"low": 140,
-		"mean": 268.22,
-		"high": 380
+		"low": 180,
+		"mean": 296.81,
+		"high": 500
 	},
 	"analystConsensus": {
 		"ticker": "NVDA",
@@ -115,14 +115,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2027": {
-			"high": 9.4,
-			"low": 7.68,
-			"average": 8.29457
+			"high": 9.79,
+			"low": 8.2,
+			"average": 8.9427
 		},
 		"2028": {
-			"high": 13.88,
-			"low": 8.23,
-			"average": 11.11635
+			"high": 16,
+			"low": 9.65,
+			"average": 12.6575
 		}
-	}
+	},
+	"confidence": "high"
 }

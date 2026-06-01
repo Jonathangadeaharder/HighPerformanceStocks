@@ -2,104 +2,105 @@
 	"ticker": "APO",
 	"name": "Apollo Global Management",
 	"group": "Financials & Alt Assets",
-	"marketCap": "$62.1B USD",
-	"sharpeRatio": 0.9,
-	"expectedCAGR": "10% - 71%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$74.2B USD",
+	"sharpeRatio": 0.37,
+	"expectedCAGR": "-1% - 36%",
+	"expectedVolatility": "~35%",
 	"valuation": {
-		"trailingPE": 11.7,
-		"forwardPE": 9.9,
-		"pegRatio": null,
+		"trailingPE": 14.5,
+		"forwardPE": 12.1,
+		"pegRatio": 0.68,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "11.0%",
-		"roe": "14.7%",
+		"roic": "10.9%",
+		"roe": "8.5%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
 		"aum": "$938B",
 		"aumGrowth": "25% YoY",
-		"beta": "1.56",
-		"revenueGrowth": "87.7%"
+		"beta": "1.52",
+		"revenueGrowth": "-9.2%"
 	},
-	"targetPrice": "$151",
+	"targetPrice": "$150.25",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$107.04",
+	"currentPrice": "$128.71",
 	"consensus": {
 		"tipranks": "$165",
-		"yahoo": "$151",
+		"yahoo": "$150.25",
 		"stockanalysis": "$156"
 	},
 	"cagrModel": {
 		"ttmEPS": 8.38,
-		"epsGrowth": "17%",
+		"epsGrowth": "19%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "43%",
-			"bull": "71%"
+			"bear": "-1%",
+			"base": "19%",
+			"bull": "36%"
 		},
 		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.300Z",
+	"lastUpdated": "2026-06-01T00:56:28.538Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.75,
-		"signal": "PASS",
+		"score": 0.81,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.81 vs 0.8 limit)",
 		"inputs": {
-			"growth": 17,
+			"growth": 19,
 			"multipleType": "P/ANI",
-			"multiple": 12.8,
-			"cvStock": 0.035,
+			"multiple": 15.4,
+			"cvStock": 0.036,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 107.04,
-				"price6mAgo": 126.7,
-				"price1mAgo": 111.24,
+				"price": 128.71,
+				"price6mAgo": 131.39,
+				"price1mAgo": 130.46,
 				"low3m": 99.56,
-				"return6m": -15.5,
-				"return1m": -3.8,
+				"return6m": -2,
+				"return1m": -1.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 4
+				"up30d": 10,
+				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": 21.3,
-				"quarter": "2025-12"
+				"surprise": 2.9,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.58
+		"secondaryScore": 0.64
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": -0.79,
-		"totalScore": 4.21,
+		"flowScore": 5,
+		"revisionsScore": -0.28,
+		"totalScore": 9.72,
 		"raw": {
-			"avgSurprisePct": 9.59,
-			"netInsiderShares": 807947,
-			"instFlowTrend": "neutral",
-			"upRevisions": 1,
-			"downRevisions": 4,
-			"totalAnalysts": 19
+			"avgSurprisePct": 10.64,
+			"netInsiderShares": 797093,
+			"instFlowTrend": "positive",
+			"upRevisions": 8,
+			"downRevisions": 9,
+			"totalAnalysts": 18
 		}
 	},
 	"description": "Apollo Global Management, Inc. is a private equity firm specializing in investments in credit, private equity, infrastructure, secondaries and real estate markets.",
 	"analystTargets": {
-		"low": 116,
-		"mean": 151,
-		"high": 181
+		"low": 125,
+		"mean": 150.25,
+		"high": 173
 	},
 	"analystConsensus": {
 		"ticker": "APO",
@@ -113,14 +114,15 @@
 	"targetPriceAlternative": "$158.13",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.50495,
-			"low": 8.7,
-			"average": 9.16279
+			"high": 9.2,
+			"low": 7.98,
+			"average": 8.88093
 		},
 		"2027": {
-			"high": 11.41,
-			"low": 9.9,
-			"average": 10.7638
+			"high": 11.26,
+			"low": 9.74,
+			"average": 10.61176
 		}
-	}
+	},
+	"confidence": "medium"
 }

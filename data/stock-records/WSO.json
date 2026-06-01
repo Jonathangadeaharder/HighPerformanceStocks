@@ -5,43 +5,44 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.26,
+		"ttmEPS": 12.19,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "16%",
-			"bull": "32%"
+			"bear": "5%",
+			"base": "20%",
+			"bull": "36%"
 		}
 	},
-	"currentPrice": "$370.31",
-	"marketCap": "$15.1B USD",
+	"currentPrice": "$367.10",
+	"marketCap": "$14.9B USD",
 	"valuation": {
-		"trailingPE": 30.2,
-		"forwardPE": 26.1,
-		"evEbitda": 19.3,
-		"evFcf": 48.9
+		"trailingPE": 30.1,
+		"forwardPE": 26.4,
+		"evEbitda": 20.8,
+		"evFcf": 29.2,
+		"pegRatio": 1.45
 	},
 	"metrics": {
-		"roe": "18.7%",
-		"fcfMargin": "~4%",
-		"fcfYield": "~2%",
+		"roe": "18.6%",
+		"fcfMargin": "~7%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-6%",
-		"beta": "1.05",
-		"revenueGrowth": "-10.0%",
-		"roic": "3.8%",
-		"interestCoverage": "28.0x"
+		"ruleOf40": "7%",
+		"beta": "1.1",
+		"revenueGrowth": "0.1%",
+		"roic": "4.9%",
+		"interestCoverage": "27.5x"
 	},
 	"consensus": {
-		"yahoo": "$415.42"
+		"yahoo": "$424.67"
 	},
-	"targetPrice": "$415.42",
-	"expectedCAGR": "2% - 32%",
+	"targetPrice": "$424.67",
+	"expectedCAGR": "5% - 36%",
 	"screener": {
 		"engine": "totalReturn",
 		"score": null,
-		"signal": "REJECTED",
-		"note": "Consensus actively collapsing (analyst lag)",
+		"signal": "FAIL",
+		"note": "Dividend exceeds forward earnings (value trap)",
 		"inputs": {
 			"growth": 10,
 			"dividendYield": 4,
@@ -50,49 +51,49 @@
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 370.31,
-				"price6mAgo": 409.99,
-				"price1mAgo": 400.87,
-				"low3m": 336.96,
-				"return6m": -9.7,
-				"return1m": -7.6,
+				"price": 367.1,
+				"price6mAgo": 341.56,
+				"price1mAgo": 428.57,
+				"low3m": 340.01,
+				"return6m": 7.5,
+				"return1m": -14.3,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 1,
-				"down30d": 5
+				"pass": true,
+				"up30d": 2,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -11,
-				"quarter": "2025-12"
+				"surprise": 11.4,
+				"quarter": "2026-03"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:39.272Z",
-	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.38,
+	"lastUpdated": "2026-06-01T00:56:45.110Z",
+	"expectedVolatility": "~31%",
+	"sharpeRatio": 0.52,
 	"qcs": {
-		"earningsScore": -4.7,
+		"earningsScore": -1.57,
 		"flowScore": 2.5,
-		"revisionsScore": -1.92,
-		"totalScore": -4.12,
+		"revisionsScore": 0.83,
+		"totalScore": 1.76,
 		"raw": {
-			"avgSurprisePct": -9.4,
+			"avgSurprisePct": -3.14,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 7,
-			"totalAnalysts": 13
+			"upRevisions": 3,
+			"downRevisions": 2,
+			"totalAnalysts": 6
 		}
 	},
 	"bullCase": "Watsco is the dominant HVAC equipment distributor with a captive network of ~700 locations and a fragmented, 100,000-contractor customer base that has high switching costs. The mandated refrigerant transition (R-410A to R-454B by 2025) creates a multi-year equipment replacement super-cycle as contractors upgrade installed base.",
 	"bearCase": "HVAC equipment spending is tied to new construction and replacement cycles. A housing market slowdown reduces new construction volume. The refrigerant transition cycle may normalize by 2026, and gross margins could compress as new-format competitors (Carrier, Lennox direct distribution) expand.",
 	"description": "Watsco, Inc., together with its subsidiaries, engages in the distribution of air conditioning, heating, and refrigeration equipment, and related parts and supplies in the United States, Canada, Lat...",
 	"analystTargets": {
-		"low": 362,
-		"mean": 415.42,
-		"high": 475
+		"low": 370,
+		"mean": 424.67,
+		"high": 485
 	},
 	"analystConsensus": {
 		"ticker": "WSO",
@@ -107,13 +108,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 14.16,
-			"low": 11.56,
-			"average": 12.74573
+			"low": 12,
+			"average": 12.9095
 		},
 		"2027": {
-			"high": 17.92,
-			"low": 12.44,
-			"average": 14.37378
+			"high": 16.14,
+			"low": 12.73,
+			"average": 14.13388
 		}
-	}
+	},
+	"confidence": "low"
 }

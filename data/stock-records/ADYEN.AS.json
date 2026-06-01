@@ -2,12 +2,12 @@
 	"ticker": "ADYEN.AS",
 	"name": "Adyen N.V.",
 	"group": "Financials & Alt Assets",
-	"marketCap": "€26.7B",
+	"marketCap": "€29.6B",
 	"sharpeRatio": 0.1,
 	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 25.1,
-		"forwardPE": 17.7,
+		"trailingPE": 27.9,
+		"forwardPE": 19.9,
 		"pegRatio": null,
 		"evEbitda": 15.2
 	},
@@ -24,47 +24,47 @@
 	"targetPrice": "€1444.69",
 	"bullCase": "Dominant position in unified commerce payments. Rule of 40 score of 77% is elite. Massive net cash position. Expanding into new geographies and verticals. Enterprise-grade moat with deep integrations.",
 	"bearCase": "37x forward P/E is not cheap. Growth has decelerated from the 30%+ era. Stock has been flat for a year. Competition from Stripe and PayPal. Higher beta (2.11).",
-	"currentPrice": "€845.20",
+	"currentPrice": "€939.30",
 	"consensus": {
 		"tipranks": "€1,494",
 		"yahoo": "€1444.69"
 	},
 	"cagrModel": {
-		"ttmEPS": 33.64,
+		"ttmEPS": 33.63,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"basis": "Post-bubble range 25-55x; base at mid-range, bear at current trailing PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:13.304Z",
+	"lastUpdated": "2026-06-01T00:56:27.853Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.98,
-		"signal": "PASS",
+		"score": 1.11,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 1.11 vs 1 limit) (Used benchmark CV)",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "Forward P/E",
-			"multiple": 17.7,
+			"multiple": 19.9,
 			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 845.2,
-				"price6mAgo": 1476.6,
-				"price1mAgo": 930.4,
+				"price": 939.3,
+				"price6mAgo": 1347.4,
+				"price1mAgo": 970.8,
 				"low3m": 824.4,
-				"return6m": -42.8,
-				"return1m": -9.2,
-				"near3mLow": true
+				"return6m": -30.3,
+				"return1m": -3.2,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
 				"down30d": 0
 			}
-		},
-		"note": "Used benchmark CV"
+		}
 	},
 	"qcs": {
 		"earningsScore": 0,
@@ -88,5 +88,6 @@
 		"moderateSell": 0,
 		"strongSell": 0
 	},
-	"consensusRating": "Unknown"
+	"consensusRating": "Unknown",
+	"confidence": "low"
 }

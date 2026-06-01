@@ -2,102 +2,101 @@
 	"ticker": "HALO",
 	"name": "Halozyme Therapeutics",
 	"group": "Healthcare Technology",
-	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "-13% - 49%",
-	"expectedVolatility": "~46%",
+	"marketCap": "$7.9B USD",
+	"sharpeRatio": 0.35,
+	"expectedCAGR": "-14% - 44%",
+	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 25.2,
-		"forwardPE": 6.6,
+		"trailingPE": 23.3,
+		"forwardPE": 6.7,
 		"pegRatio": null,
-		"evEbitda": 10.7,
-		"evFcf": 52.2
+		"evEbitda": 10.2,
+		"evFcf": 42.7
 	},
 	"metrics": {
-		"fcfMargin": "~13%",
-		"fcfYield": "~2%",
-		"roic": "6.7%",
-		"roe": "153.6%",
-		"netDebtEbitda": "2.3x",
-		"ruleOf40": "65%",
-		"beta": "1.03",
-		"revenueGrowth": "51.6%",
-		"interestCoverage": "7.5x"
+		"fcfMargin": "~15%",
+		"fcfYield": "~3%",
+		"roic": "6.9%",
+		"roe": "99.4%",
+		"netDebtEbitda": "2.0x",
+		"ruleOf40": "57%",
+		"beta": "0.88",
+		"revenueGrowth": "42.2%",
+		"interestCoverage": "8.0x"
 	},
-	"targetPrice": "$84.89",
+	"targetPrice": "$83.90",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
 	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
-	"currentPrice": "$64.49",
+	"currentPrice": "$66.54",
 	"consensus": {
 		"tipranks": "$95",
-		"yahoo": "$84.89"
+		"yahoo": "$83.90"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.56,
+		"ttmEPS": 2.85,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "32%",
-			"bull": "49%"
+			"bear": "-14%",
+			"base": "26%",
+			"bull": "44%"
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-04-05T07:21:21.697Z",
+	"lastUpdated": "2026-06-01T00:56:33.303Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.53,
+		"score": 0.51,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.7,
-			"cvStock": 0.015,
+			"multiple": 10.2,
+			"cvStock": 0.016,
 			"riskMultiplier": 1
 		},
-		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 64.49,
-				"price6mAgo": 66.97,
-				"price1mAgo": 67.36,
+				"price": 66.54,
+				"price6mAgo": 68.1,
+				"price1mAgo": 63.96,
 				"low3m": 61.33,
-				"return6m": -3.7,
-				"return1m": -4.3,
+				"return6m": -2.3,
+				"return1m": 4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 3,
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -110.9,
-				"quarter": "2025-12"
+				"surprise": 5.3,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.33
+		"secondaryScore": 0.34
 	},
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"revisionsScore": 1.67,
+		"totalScore": 1.67,
 		"raw": {
-			"avgSurprisePct": -16.7,
-			"netInsiderShares": 221396,
+			"avgSurprisePct": -19.67,
+			"netInsiderShares": 247547,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 2,
-			"totalAnalysts": 5
+			"upRevisions": 3,
+			"downRevisions": 1,
+			"totalAnalysts": 6
 		}
 	},
 	"description": "Halozyme Therapeutics, Inc., a biopharmaceutical company, researches, develops, and commercializes of proprietary enzymes and devices in the United States, Switzerland, Belgium, Japan, and internat...",
 	"analystTargets": {
-		"low": 56,
-		"mean": 84.89,
+		"low": 57,
+		"mean": 83.9,
 		"high": 96
 	},
 	"analystConsensus": {
@@ -113,13 +112,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 8.21,
-			"low": 7.87,
-			"average": 8.016
+			"low": 8.04,
+			"average": 8.14108
 		},
 		"2027": {
-			"high": 10.07,
-			"low": 9.48,
-			"average": 9.845
+			"high": 10.12335,
+			"low": 9.49,
+			"average": 9.89267
 		}
-	}
+	},
+	"confidence": "low"
 }

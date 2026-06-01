@@ -2,102 +2,103 @@
 	"ticker": "EPD",
 	"name": "Enterprise Products Partners",
 	"group": "Energy",
-	"marketCap": "$81.2B USD",
-	"sharpeRatio": 0.24,
-	"expectedCAGR": "-9% - 26%",
-	"expectedVolatility": "~17%",
+	"marketCap": "$79.6B USD",
+	"sharpeRatio": 1,
+	"expectedCAGR": "7% - 34%",
+	"expectedVolatility": "~16%",
 	"valuation": {
-		"trailingPE": 13.3,
-		"forwardPE": 12.1,
-		"pegRatio": null,
-		"evEbitda": 12.1,
-		"evFcf": 5213.7
+		"trailingPE": 12.7,
+		"forwardPE": 11.7,
+		"pegRatio": 1.5,
+		"evEbitda": 11.7,
+		"evFcf": 735.5
 	},
 	"metrics": {
 		"fcfMargin": "~0%",
 		"fcfYield": "~0%",
-		"roic": "7.5%",
-		"roe": "19.5%",
+		"roic": "6.8%",
+		"roe": "19.8%",
 		"netDebtEbitda": "3.5x",
-		"ruleOf40": "-3%",
-		"beta": "0.53",
-		"revenueGrowth": "-2.9%",
-		"interestCoverage": "5.0x"
+		"ruleOf40": "-6%",
+		"beta": "0.49",
+		"revenueGrowth": "-6.7%",
+		"interestCoverage": "5.2x"
 	},
-	"targetPrice": "$38.81",
+	"targetPrice": "$41.30",
 	"bullCase": "Enterprise Products Partners is one of the most financially disciplined MLPs in North America, with a 1.7x+ distribution coverage ratio, AA-/Baa1 credit rating, and a 22-year track record of consecutive distribution increases. The ~7% yield alone provides equity-like total returns, and organic growth from new natural gas infrastructure projects adds upside.",
 	"bearCase": "Midstream infrastructure is a terminal-value business as the energy transition progresses. Volume risk increases if US LNG export permitting slows or if industrial natural gas demand peaks. The 4.0x+ leverage is manageable but constrains financial flexibility.",
-	"currentPrice": "$37.57",
+	"currentPrice": "$36.79",
 	"consensus": {
 		"tipranks": "$40",
-		"yahoo": "$38.81"
+		"yahoo": "$41.30"
 	},
 	"cagrModel": {
 		"ttmEPS": 2.66,
 		"epsGrowth": "6%",
 		"dividendYield": "6%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "9%",
-			"bull": "26%"
+			"bear": "7%",
+			"base": "18%",
+			"bull": "34%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-04-05T07:21:19.539Z",
+	"lastUpdated": "2026-06-01T00:56:31.900Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.02,
+		"score": 1.95,
 		"signal": "FAIL",
+		"note": "Valuation score 1.95 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 6,
 			"multipleType": "EV/EBITDA",
-			"multiple": 12.1,
-			"cvStock": 0.027,
+			"multiple": 11.7,
+			"cvStock": 0.032,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 37.57,
-				"price6mAgo": 31.5,
-				"price1mAgo": 37.29,
-				"low3m": 31.55,
-				"return6m": 19.3,
-				"return1m": 0.8,
-				"near3mLow": false
+				"price": 36.79,
+				"price6mAgo": 32.53,
+				"price1mAgo": 38.03,
+				"low3m": 36.05,
+				"return6m": 13.1,
+				"return1m": -3.3,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 0
+				"up30d": 4,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 8.5,
-				"quarter": "2025-12"
+				"surprise": -0.8,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.02
+		"secondaryScore": 1.95
 	},
 	"qcs": {
-		"earningsScore": -0.24,
+		"earningsScore": 1.5,
 		"flowScore": 0,
-		"revisionsScore": 1.25,
-		"totalScore": 1.01,
+		"revisionsScore": 0.71,
+		"totalScore": 2.21,
 		"raw": {
-			"avgSurprisePct": -0.16,
+			"avgSurprisePct": 1.2,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 0,
-			"totalAnalysts": 8
+			"upRevisions": 3,
+			"downRevisions": 2,
+			"totalAnalysts": 7
 		}
 	},
 	"description": "Enterprise Products Partners L.P. provides midstream energy services to producers and consumers of natural gas, natural gas liquids (NGLs), crude oil, petrochemicals, and refined products.",
 	"analystTargets": {
-		"low": 32,
-		"mean": 38.81,
-		"high": 45
+		"low": 37,
+		"mean": 41.3,
+		"high": 47
 	},
 	"analystConsensus": {
 		"ticker": "EPD",
@@ -111,14 +112,15 @@
 	"targetPriceAlternative": "$37.20",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.91,
-			"low": 2.7,
-			"average": 2.82234
+			"high": 3.05,
+			"low": 2.81,
+			"average": 2.90368
 		},
 		"2027": {
-			"high": 3.29,
-			"low": 2.95,
-			"average": 3.1037
+			"high": 3.34,
+			"low": 2.94,
+			"average": 3.1457
 		}
-	}
+	},
+	"confidence": "low"
 }

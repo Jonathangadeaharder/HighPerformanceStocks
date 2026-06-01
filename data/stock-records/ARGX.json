@@ -2,15 +2,15 @@
 	"ticker": "ARGX",
 	"name": "argenx SE",
 	"group": "Biotech",
-	"marketCap": "$46.3B USD",
-	"sharpeRatio": 0.78,
-	"expectedCAGR": "-7% - 66%",
-	"expectedVolatility": "~32%",
+	"marketCap": "$52.2B USD",
+	"sharpeRatio": 0.41,
+	"expectedCAGR": "-17% - 50%",
+	"expectedVolatility": "~29%",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 22.4,
-		"pegRatio": null,
-		"evEbitda": 39.5,
+		"trailingPE": 37.1,
+		"forwardPE": 22.6,
+		"pegRatio": 1.39,
+		"evEbitda": 36,
 		"evFcf": 81.8
 	},
 	"metrics": {
@@ -20,84 +20,84 @@
 		"roe": "20.2%",
 		"netDebtEbitda": "Net cash",
 		"ruleOf40": "85%",
-		"beta": "-0.09",
-		"revenueGrowth": "73.0%",
-		"interestCoverage": "409.4x"
+		"beta": "-0.06",
+		"revenueGrowth": "62.6%",
+		"interestCoverage": "508.2x"
 	},
-	"targetPrice": "$1014.69",
+	"targetPrice": "$1029.81",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (36x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$746.42",
+	"currentPrice": "$835.99",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1014.69"
+		"yahoo": "$1029.81"
 	},
 	"cagrModel": {
-		"ttmEPS": 19.56,
-		"epsGrowth": "34%",
+		"ttmEPS": 22.55,
+		"epsGrowth": "44%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-7%",
-			"base": "36%",
-			"bull": "66%"
+			"bear": "-17%",
+			"base": "23%",
+			"bull": "50%"
 		},
 		"basis": "Reflects biotech terminal multiple compression and competitive encroachment risk.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.474Z",
+	"lastUpdated": "2026-06-01T00:56:28.587Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.74,
-		"signal": "REJECTED",
+		"score": 1.29,
+		"signal": "FAIL",
+		"note": "Valuation score 1.29 exceeds 1 limit",
 		"inputs": {
-			"growth": 34,
+			"growth": 44,
 			"multipleType": "Forward P/E",
-			"multiple": 22.4,
-			"cvStock": 0.183,
-			"riskMultiplier": 1.103
+			"multiple": 22.6,
+			"cvStock": 0.377,
+			"riskMultiplier": 2.148
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 746.42,
-				"price6mAgo": 787.94,
-				"price1mAgo": 728.11,
+				"price": 835.99,
+				"price6mAgo": 894.9,
+				"price1mAgo": 783.5,
 				"low3m": 661.85,
-				"return6m": -5.3,
-				"return1m": 2.5,
+				"return6m": -6.6,
+				"return1m": 6.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 2,
-				"down30d": 11
+				"pass": true,
+				"up30d": 10,
+				"down30d": 4
 			},
 			"earningsSurprise": {
-				"surprise": 29.2,
-				"quarter": "2025-12"
+				"surprise": 12,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 4.92,
-		"flowScore": 0,
-		"revisionsScore": -2.81,
-		"totalScore": 2.11,
+		"earningsScore": 2.46,
+		"flowScore": 2.5,
+		"revisionsScore": 1.47,
+		"totalScore": 6.43,
 		"raw": {
-			"avgSurprisePct": 22.5,
+			"avgSurprisePct": 23.22,
 			"netInsiderShares": 0,
-			"instFlowTrend": "negative",
-			"upRevisions": 3,
-			"downRevisions": 12,
-			"totalAnalysts": 16
+			"instFlowTrend": "positive",
+			"upRevisions": 10,
+			"downRevisions": 5,
+			"totalAnalysts": 17
 		}
 	},
 	"description": "argenx SE, a commercial-stage biopharma company, develops various therapies for the treatment of autoimmune diseases in the United States, Japan, China, the Netherlands, and internationally.",
 	"analystTargets": {
-		"low": 690.56,
-		"mean": 1014.69,
-		"high": 1237.37
+		"low": 692.82,
+		"mean": 1029.81,
+		"high": 1254.56
 	},
 	"analystConsensus": {
 		"ticker": "ARGX",
@@ -111,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 26.282,
-			"low": 13.532,
-			"average": 21.46731
+			"high": 25.148,
+			"low": 16.763,
+			"average": 21.99971
 		},
 		"2027": {
-			"high": 39.595,
-			"low": 18.534,
-			"average": 28.77212
+			"high": 70.483,
+			"low": 22.65,
+			"average": 31.747
 		}
-	}
+	},
+	"confidence": "medium"
 }

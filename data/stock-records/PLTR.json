@@ -2,96 +2,98 @@
 	"ticker": "PLTR",
 	"name": "Palantir",
 	"group": "Enterprise Software",
-	"targetPrice": "$185.25",
+	"targetPrice": "$183.73",
 	"bullCase": "Palantir's AIP platform is becoming the enterprise AI operating system — AIP bootcamps are converting Fortune 500 trials to paid contracts at an accelerating pace. US commercial revenue grew 55%+ in 2025. The US government remains a structural buyer (DoD, CIA, NHS equivalent) regardless of political cycles. AIP's value proposition strengthens as AI adoption deepens.",
 	"bearCase": "At 83x forward PE and $370B market cap, Palantir is priced for decades of compounding. Government contract cancellations under DOGE budget cuts pose direct revenue risk. European data sovereignty laws restrict PLTR's commercial expansion on the continent. The AIP e-commerce expansion is early-stage and unproven at scale.",
 	"cagrModel": {
 		"epsGrowth": "35%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 0.62,
+		"ttmEPS": 0.89,
 		"scenarios": {
-			"bear": "-53%",
-			"base": "25%",
-			"bull": "75%"
+			"bear": "-55%",
+			"base": "17%",
+			"bull": "63%"
 		}
 	},
-	"currentPrice": "$148.46",
-	"marketCap": "$355.1B USD",
+	"currentPrice": "$156.54",
+	"marketCap": "$375.3B USD",
 	"consensus": {
-		"yahoo": "$185.25"
+		"yahoo": "$183.73"
 	},
-	"expectedVolatility": "~56%",
+	"expectedVolatility": "~52%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 8.2,
+		"score": 6.3,
 		"signal": "FAIL",
+		"note": "Valuation score 6.30 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 35,
 			"multipleType": "EV/FCF",
-			"multiple": 276.2,
-			"cvStock": 0.122,
-			"riskMultiplier": 1.007
+			"multiple": 209.7,
+			"cvStock": 0.136,
+			"riskMultiplier": 1.02
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 148.46,
-				"price6mAgo": 179.53,
-				"price1mAgo": 152.67,
-				"low3m": 126.23,
-				"return6m": -17.3,
-				"return1m": -2.8,
+				"price": 156.54,
+				"price6mAgo": 167.49,
+				"price1mAgo": 144.07,
+				"low3m": 122.68,
+				"return6m": -6.5,
+				"return1m": 8.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
+				"up30d": 26,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 8.6,
-				"quarter": "2025-12"
+				"surprise": 18.1,
+				"quarter": "2026-03"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.37
+		"secondaryScore": 2.27
 	},
-	"lastUpdated": "2026-04-05T07:21:32.239Z",
+	"lastUpdated": "2026-06-01T00:56:40.280Z",
 	"valuation": {
-		"trailingPE": 239.5,
-		"forwardPE": 79.8,
-		"evEbitda": 241.8,
-		"evFcf": 276.2
+		"trailingPE": 175.9,
+		"forwardPE": 75.5,
+		"evEbitda": 182.1,
+		"evFcf": 209.7,
+		"pegRatio": 2.24
 	},
 	"metrics": {
-		"roe": "26.0%",
-		"fcfMargin": "~28%",
+		"roe": "32.6%",
+		"fcfMargin": "~34%",
 		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "98%",
-		"beta": "1.67",
-		"revenueGrowth": "70.0%",
-		"roic": "0.6%",
-		"interestCoverage": "114.2x"
+		"ruleOf40": "118%",
+		"beta": "1.52",
+		"revenueGrowth": "84.7%",
+		"roic": "0.7%",
+		"interestCoverage": "173.1x"
 	},
-	"expectedCAGR": "-53% - 75%",
-	"sharpeRatio": 0.12,
+	"expectedCAGR": "-55% - 63%",
+	"sharpeRatio": -0.01,
 	"intrinsicValue": {
 		"dcf": 9.53,
 		"date": "2026-03-28",
 		"discount": -93
 	},
 	"qcs": {
-		"earningsScore": 4.16,
-		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 4.16,
+		"earningsScore": 4.98,
+		"flowScore": 2.5,
+		"revisionsScore": 4.64,
+		"totalScore": 12.12,
 		"raw": {
-			"avgSurprisePct": 12.68,
-			"netInsiderShares": -2240639,
-			"instFlowTrend": "neutral",
-			"upRevisions": 0,
+			"avgSurprisePct": 16.93,
+			"netInsiderShares": -2155394,
+			"instFlowTrend": "positive",
+			"upRevisions": 26,
 			"downRevisions": 0,
 			"totalAnalysts": 28
 		}
@@ -99,8 +101,8 @@
 	"description": "Palantir Technologies Inc. builds and deploys software platforms for the intelligence community to assist in counterterrorism investigations and operations in the United States, the United Kingdom,...",
 	"analystTargets": {
 		"low": 70,
-		"mean": 185.25,
-		"high": 260
+		"mean": 183.73,
+		"high": 255
 	},
 	"analystConsensus": {
 		"ticker": "PLTR",
@@ -114,14 +116,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.53,
-			"low": 1.13,
-			"average": 1.3213
+			"high": 1.7,
+			"low": 1.29,
+			"average": 1.46358
 		},
 		"2027": {
-			"high": 2.38,
-			"low": 1.47,
-			"average": 1.86141
+			"high": 2.72,
+			"low": 1.59,
+			"average": 2.07428
 		}
-	}
+	},
+	"confidence": "high"
 }

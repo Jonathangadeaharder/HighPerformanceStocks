@@ -2,103 +2,103 @@
 	"ticker": "0700.HK",
 	"name": "Tencent",
 	"group": "Emerging Markets",
-	"marketCap": "HK$4420.8B",
-	"sharpeRatio": 1.31,
-	"expectedCAGR": "-1% - 81%",
+	"marketCap": "HK$3856.7B",
+	"sharpeRatio": 1.83,
+	"expectedCAGR": "0% - 108%",
 	"expectedVolatility": "~27%",
 	"valuation": {
-		"trailingPE": 17.8,
-		"forwardPE": 12.6,
-		"pegRatio": null,
-		"evEbitda": 16.4,
-		"evFcf": 26.1
+		"trailingPE": 15.3,
+		"forwardPE": 11.1,
+		"pegRatio": 1.27,
+		"evEbitda": 13.8,
+		"evFcf": 29.9
 	},
 	"metrics": {
-		"roe": "20.0%",
-		"fcfMargin": "~23%",
-		"fcfYield": "~4%",
+		"roe": "20.5%",
+		"fcfMargin": "~17%",
+		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "36%",
-		"beta": "0.8",
-		"revenueGrowth": "12.7%",
-		"roic": "6.9%",
-		"interestCoverage": "12.3x"
+		"ruleOf40": "26%",
+		"beta": "0.75",
+		"revenueGrowth": "9.1%",
+		"roic": "8.6%",
+		"interestCoverage": "12.7x"
 	},
-	"targetPrice": "HK$717.46",
+	"targetPrice": "HK$710.97",
 	"bullCase": "WeChat's 1.3B MAU ecosystem is an unassailable moat — payments, mini-programs, video accounts, and e-commerce all monetizing within a single super-app. Gaming revenue re-accelerating with new title pipeline and international expansion (Riot Games, Supercell). AI integration across WeChat, cloud, and advertising is driving margin expansion. $100B+ investment portfolio (Spotify, Sea, Epic Games) provides hidden value. Buyback program retiring 3-4% of shares annually. Video Accounts is the fastest-growing short video platform in China, closing the gap with Douyin.",
 	"bearCase": "Chinese regulatory risk remains — gaming license freezes, antitrust actions, or data privacy rules could resurface. Advertising revenue is cyclically exposed to China's weak consumer economy. International gaming competition from Microsoft/Activision intensifying. VIE structure risk similar to BABA for offshore investors. Heavy investment in AI and cloud could compress margins near-term. HKD-denominated stock adds currency layer for USD-based investors (HKD pegged to USD via 7.75-7.85 band, but peg could theoretically break under extreme stress).",
-	"currentPrice": "HK$489.20",
+	"currentPrice": "HK$427.20",
 	"consensus": {
 		"tipranks": "HK$590",
-		"yahoo": "HK$717.46",
+		"yahoo": "HK$710.97",
 		"stockanalysis": "HK$575"
 	},
 	"cagrModel": {
 		"ttmEPS": 29,
-		"epsGrowth": "12%",
+		"epsGrowth": "10%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-1%",
-			"base": "48%",
-			"bull": "81%"
+			"bear": "0%",
+			"base": "67%",
+			"bull": "108%"
 		},
 		"basis": "Non-IFRS adjusted EPS (excl SBC & investment gains); HKD; non-IFRS P/E basis",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:12.203Z",
+	"lastUpdated": "2026-06-01T00:56:27.187Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.05,
+		"score": 1.11,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 12,
+			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 12.6,
-			"cvStock": 0.054,
+			"multiple": 11.1,
+			"cvStock": 0.076,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 489.2,
-				"price6mAgo": 677.5,
-				"price1mAgo": 519,
-				"low3m": 476,
-				"return6m": -27.8,
-				"return1m": -5.7,
+				"price": 427.2,
+				"price6mAgo": 619.5,
+				"price1mAgo": 473,
+				"low3m": 420.4,
+				"return6m": -31,
+				"return1m": -9.7,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 3,
-				"down30d": 20
+				"up30d": 5,
+				"down30d": 19
 			},
 			"earningsSurprise": {
-				"surprise": 1.5,
-				"quarter": "2025-12"
+				"surprise": 1.8,
+				"quarter": "2026-03"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 3.27,
+		"earningsScore": 2.05,
 		"flowScore": 0,
-		"revisionsScore": -3.03,
-		"totalScore": 0.24,
+		"revisionsScore": -1.14,
+		"totalScore": 0.91,
 		"raw": {
-			"avgSurprisePct": 4.42,
+			"avgSurprisePct": 3.9,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 4,
-			"downRevisions": 24,
-			"totalAnalysts": 33
+			"upRevisions": 9,
+			"downRevisions": 17,
+			"totalAnalysts": 35
 		}
 	},
 	"description": "Tencent Holdings Limited, an investment holding company, provides value-added services, marketing services, fintech, and business services in Mainland China and internationally.",
 	"analystTargets": {
-		"low": 479.14,
-		"mean": 717.46,
-		"high": 879.42
+		"low": 421.22,
+		"mean": 710.97,
+		"high": 884.52
 	},
 	"analystConsensus": {
 		"ticker": "0700.HK",
@@ -111,14 +111,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 32.115,
-			"low": 28.52,
-			"average": 30.5778
+			"high": 33.9,
+			"low": 26.8,
+			"average": 30.18752
 		},
 		"2027": {
-			"high": 36.77,
-			"low": 29.34,
-			"average": 34.21418
+			"high": 37.52,
+			"low": 27.5,
+			"average": 33.15974
 		}
-	}
+	},
+	"confidence": "low"
 }

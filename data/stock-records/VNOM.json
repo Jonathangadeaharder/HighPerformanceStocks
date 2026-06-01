@@ -2,35 +2,35 @@
 	"ticker": "VNOM",
 	"name": "Viper Energy",
 	"group": "Energy Royalties",
-	"marketCap": "$17.4B USD",
-	"sharpeRatio": 0.61,
-	"expectedCAGR": "-2% - 51%",
-	"expectedVolatility": "~33%",
+	"marketCap": "$16.3B USD",
+	"sharpeRatio": 0.87,
+	"expectedCAGR": "13% - 48%",
+	"expectedVolatility": "~30%",
 	"valuation": {
-		"trailingPE": 21.2,
-		"forwardPE": 20.4,
-		"pegRatio": null,
-		"evEbitda": 12.7,
-		"evFcf": -10.3
+		"trailingPE": 17.1,
+		"forwardPE": 18.3,
+		"pegRatio": 0.64,
+		"evEbitda": 10.4,
+		"evFcf": -15
 	},
 	"metrics": {
-		"fcfMargin": "~-120%",
-		"fcfYield": "~-9%",
-		"roic": "5.4%",
-		"roe": "-2.9%",
-		"netDebtEbitda": "1.7x",
-		"ruleOf40": "-30%",
-		"beta": "0.3",
-		"revenueGrowth": "89.4%",
-		"interestCoverage": "10.6x"
+		"fcfMargin": "~-66%",
+		"fcfYield": "~-6%",
+		"roic": "6.6%",
+		"roe": "-1.8%",
+		"netDebtEbitda": "1.0x",
+		"ruleOf40": "43%",
+		"beta": "0.31",
+		"revenueGrowth": "109.1%",
+		"interestCoverage": "17.0x"
 	},
-	"targetPrice": "$54.33",
+	"targetPrice": "$58.17",
 	"bullCase": "Viper owns premier mineral rights in the Permian Basin with the strongest operator (Diamondback) drilling on its acreage. The 93% gross margin and 88% EBITDA margin are among the highest in energy. Management is targeting near-100% cash return to shareholders once $1.5B net debt target is reached. The 8% distributable cash flow yield at $65 WTI provides compelling income. At 7.1x EV/EBITDA, VNOM trades at a significant discount to precious metals royalty peers.",
 	"bearCase": "Viper's earnings are directly tied to oil prices, and any sustained period below $55 WTI would severely compress cash flows and dividends. The Sitio acquisition created $1.6B in net debt and depressed ROIC to ~4% (vs. historical 13.3%). Diamondback controls the board, and the recent secondary offering diluted public shareholders. The forward P/E of 25x above trailing P/E of ~17x suggests analysts expect near-term earnings pressure.",
-	"currentPrice": "$46.47",
+	"currentPrice": "$45.50",
 	"consensus": {
 		"tipranks": "$51",
-		"yahoo": "$54.33",
+		"yahoo": "$58.17",
 		"stockanalysis": "$53"
 	},
 	"cagrModel": {
@@ -38,68 +38,66 @@
 		"epsGrowth": "8%",
 		"dividendYield": "5%",
 		"scenarios": {
-			"bear": "-2%",
-			"base": "22%",
-			"bull": "51%"
+			"bear": "13%",
+			"base": "33%",
+			"bull": "48%"
 		},
 		"basis": "Distributable CF per share; Price-to-DCF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:38.201Z",
+	"lastUpdated": "2026-06-01T00:56:44.392Z",
 	"screener": {
-		"engine": "fEVG",
-		"score": 3.41,
+		"engine": "fPERG",
+		"score": 2.51,
 		"signal": "WAIT",
+		"note": "Valuation score 2.51 exceeds 1 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.71))",
 		"inputs": {
 			"growth": 8,
-			"multipleType": "EV/EBITDA",
-			"multiple": 12.7,
-			"cvStock": 0.377,
-			"riskMultiplier": 2.15
+			"multipleType": "Forward P/E",
+			"multiple": 18.3,
+			"cvStock": 0.18,
+			"riskMultiplier": 1.095
 		},
-		"note": "hasLikelyValueFloor: QCS 9.71 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 46.47,
-				"price6mAgo": 38.9,
-				"price1mAgo": 43.65,
-				"low3m": 35.45,
-				"return6m": 19.5,
-				"return1m": 6.5,
+				"price": 45.5,
+				"price6mAgo": 38.03,
+				"price1mAgo": 49.9,
+				"low3m": 42.98,
+				"return6m": 19.6,
+				"return1m": -8.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 8,
-				"down30d": 2
+				"up30d": 7,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": -1.2,
-				"quarter": "2025-12"
+				"surprise": 3.3,
+				"quarter": "2026-03"
 			}
-		},
-		"secondaryEngine": "fPERG",
-		"secondaryScore": 5.48
+		}
 	},
 	"qcs": {
-		"earningsScore": 0.54,
+		"earningsScore": 0.56,
 		"flowScore": 5,
-		"revisionsScore": 4.17,
-		"totalScore": 9.71,
+		"revisionsScore": 2.5,
+		"totalScore": 8.06,
 		"raw": {
-			"avgSurprisePct": 5.13,
-			"netInsiderShares": 21089,
+			"avgSurprisePct": 2.52,
+			"netInsiderShares": 46373,
 			"instFlowTrend": "positive",
-			"upRevisions": 11,
-			"downRevisions": 1,
+			"upRevisions": 8,
+			"downRevisions": 2,
 			"totalAnalysts": 12
 		}
 	},
 	"description": "Viper Energy, Inc. owns, acquires, and exploits oil and natural gas properties in North America.",
 	"analystTargets": {
-		"low": 43,
-		"mean": 54.33,
-		"high": 68
+		"low": 49,
+		"mean": 58.17,
+		"high": 65
 	},
 	"analystConsensus": {
 		"ticker": "VNOM",
@@ -113,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 5.25,
-			"low": 1.14,
-			"average": 2.19404
+			"high": 3.32,
+			"low": 2.11,
+			"average": 2.66365
 		},
 		"2027": {
-			"high": 4.68,
-			"low": 1.25,
-			"average": 2.27528
+			"high": 3.34,
+			"low": 1.55,
+			"average": 2.49069
 		}
-	}
+	},
+	"confidence": "medium"
 }
