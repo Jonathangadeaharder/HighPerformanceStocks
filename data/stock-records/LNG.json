@@ -2,101 +2,102 @@
 	"ticker": "LNG",
 	"name": "Cheniere Energy",
 	"group": "Energy",
-	"marketCap": "$60.5B USD",
-	"sharpeRatio": 0.09,
-	"expectedCAGR": "-8% - 22%",
-	"expectedVolatility": "~27%",
+	"marketCap": "$57.5B USD",
+	"sharpeRatio": 0.13,
+	"expectedCAGR": "-7% - 23%",
+	"expectedVolatility": "~28%",
 	"valuation": {
-		"trailingPE": 11.7,
-		"forwardPE": 15.7,
-		"pegRatio": null,
-		"evEbitda": 8.5,
-		"evFcf": 33.8
+		"trailingPE": 21.1,
+		"forwardPE": 13.4,
+		"pegRatio": 9.46,
+		"evEbitda": 11.5,
+		"evFcf": 124.3
 	},
 	"metrics": {
-		"fcfMargin": "~14%",
-		"fcfYield": "~4%",
-		"roic": "6.5%",
-		"roe": "58.7%",
-		"netDebtEbitda": "2.4x",
+		"fcfMargin": "~3%",
+		"fcfYield": "~1%",
+		"roic": "7.3%",
+		"roe": "39.1%",
+		"netDebtEbitda": "3.4x",
 		"ruleOf40": "26%",
-		"beta": "0.13",
-		"revenueGrowth": "12.3%",
-		"interestCoverage": "7.2x"
+		"beta": "0",
+		"revenueGrowth": "22.7%",
+		"interestCoverage": "5.1x"
 	},
-	"targetPrice": "$298.86",
+	"targetPrice": "$309.95",
 	"bullCase": "Largest US LNG exporter with 20-year take-or-pay contracts providing revenue visibility. Global LNG demand growing 3-4% annually. Sabine Pass and Corpus Christi expansions add capacity through 2030. Massive FCF funds buybacks and debt reduction.",
 	"bearCase": "High leverage (3.5x net debt/EBITDA). Commodity-linked earnings despite contracts. LNG oversupply risk from Qatar/Australia expansions. Capex-heavy expansion cycle. Energy transition could reduce long-term gas demand.",
-	"currentPrice": "$281.16",
+	"currentPrice": "$278.34",
 	"consensus": {
 		"tipranks": "$280",
-		"yahoo": "$298.86"
+		"yahoo": "$309.95"
 	},
 	"cagrModel": {
-		"ttmEPS": 24.12,
+		"ttmEPS": 13.22,
 		"epsGrowth": "4%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "7%",
-			"bull": "22%"
+			"bear": "-7%",
+			"base": "12%",
+			"bull": "23%"
 		},
 		"basis": "GAAP EPS at cyclical peak; low growth reflects mean-reversion in LNG supply"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.937Z",
+	"lastUpdated": "2026-09-12T03:16:00.837Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.19,
+		"score": 3.24,
 		"signal": "FAIL",
+		"note": "Valuation score 3.24 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 4,
 			"multipleType": "EV/EBITDA",
-			"multiple": 8.5,
-			"cvStock": 0.145,
-			"riskMultiplier": 1.031
+			"multiple": 11.5,
+			"cvStock": 0.192,
+			"riskMultiplier": 1.127
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 281.16,
-				"price6mAgo": 233.26,
-				"price1mAgo": 249.54,
-				"low3m": 191.64,
-				"return6m": 20.5,
-				"return1m": 12.7,
+				"price": 278.34,
+				"price6mAgo": 253.84,
+				"price1mAgo": 268.11,
+				"low3m": 223.7,
+				"return6m": 9.7,
+				"return1m": 3.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 0
+				"up30d": 2,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": -33,
-				"quarter": "2025-12"
+				"surprise": -4.3,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 4.05
+		"secondaryScore": 3.78
 	},
 	"qcs": {
-		"earningsScore": -3.02,
-		"flowScore": 2.5,
-		"revisionsScore": 1.25,
-		"totalScore": 0.73,
+		"earningsScore": 2.8,
+		"flowScore": 0,
+		"revisionsScore": 0,
+		"totalScore": 2.8,
 		"raw": {
-			"avgSurprisePct": -10.93,
-			"netInsiderShares": -17665190,
-			"instFlowTrend": "positive",
+			"avgSurprisePct": 13.43,
+			"netInsiderShares": -121520,
+			"instFlowTrend": "neutral",
 			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 4
+			"downRevisions": 2,
+			"totalAnalysts": 5
 		}
 	},
 	"description": "Cheniere Energy, Inc., an energy infrastructure company, primarily engages in the liquefied natural gas (LNG) related businesses in the United States.",
 	"analystTargets": {
 		"low": 255,
-		"mean": 298.86,
+		"mean": 309.95,
 		"high": 340
 	},
 	"analystConsensus": {
@@ -111,14 +112,15 @@
 	"targetPriceAlternative": "$282.00",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.96,
-			"low": 13.64,
-			"average": 14.35
+			"high": 29.45,
+			"low": 18.39,
+			"average": 22.80495
 		},
 		"2027": {
-			"high": 24.2326,
-			"low": 13.83,
-			"average": 17.91652
+			"high": 29.72,
+			"low": 13.77,
+			"average": 20.76683
 		}
-	}
+	},
+	"confidence": "low"
 }

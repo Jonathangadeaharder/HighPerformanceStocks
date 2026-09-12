@@ -2,106 +2,106 @@
 	"ticker": "HEI",
 	"name": "HEICO Corporation",
 	"group": "Serial Acquirers",
-	"marketCap": "$37.9B USD",
-	"sharpeRatio": 0.83,
-	"expectedCAGR": "4% - 53%",
-	"expectedVolatility": "~29%",
+	"marketCap": "$44.2B USD",
+	"sharpeRatio": 0.61,
+	"expectedCAGR": "-7% - 55%",
+	"expectedVolatility": "~32%",
 	"valuation": {
-		"trailingPE": 53.8,
-		"forwardPE": 42.9,
-		"pegRatio": null,
-		"evEbitda": 32.2,
-		"evFcf": 58.9
+		"trailingPE": 52.1,
+		"forwardPE": 43.9,
+		"pegRatio": 2.15,
+		"evEbitda": 32,
+		"evFcf": 55.8
 	},
 	"metrics": {
-		"fcfMargin": "~15%",
+		"fcfMargin": "~16%",
 		"fcfYield": "~2%",
-		"roic": "2.3%",
-		"roe": "16.6%",
-		"netDebtEbitda": "1.8x",
-		"ruleOf40": "29%",
-		"operatingMargin": "~22%",
+		"roic": "2.4%",
+		"roe": "17.7%",
+		"netDebtEbitda": "1.6x",
+		"ruleOf40": "39%",
+		"operatingMargin": "~25%",
 		"fcfConversion": "~105% of net income",
-		"beta": "1.08",
-		"revenueGrowth": "14.4%",
-		"interestCoverage": "9.2x"
+		"beta": "1.04",
+		"revenueGrowth": "23.1%",
+		"interestCoverage": "10.5x"
 	},
-	"targetPrice": "$363.16",
+	"targetPrice": "$396.55",
 	"bullCase": "Aging airline fleet supercycle extends until at least 2028 — carriers must buy aftermarket parts as new aircraft deliveries are backlogged. Massive fragmented market offers decades of M&A runway. FAA certification requirements create near-monopolistic pricing power. Berkshire Hathaway endorsement.",
 	"bearCase": "Extremely expensive at ~71x trailing P/E. The earnings yield (~1.5%) barely exceeds the risk-free rate. Any aerospace downturn would cause severe multiple compression.",
-	"currentPrice": "$271.77",
+	"currentPrice": "$316",
 	"consensus": {
 		"tipranks": "$366",
-		"yahoo": "$363.16",
+		"yahoo": "$396.55",
 		"stockanalysis": "$366"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.05,
+		"ttmEPS": 6.07,
 		"epsGrowth": "18%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "34%",
-			"bull": "53%"
+			"bear": "-7%",
+			"base": "25%",
+			"bull": "55%"
 		},
 		"basis": "10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:22.688Z",
+	"lastUpdated": "2026-09-12T03:15:58.028Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.79,
+		"score": 1.78,
 		"signal": "WAIT",
+		"note": "Valuation score 1.78 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.75))",
 		"inputs": {
 			"growth": 18,
 			"multipleType": "EV/EBITDA",
-			"multiple": 32.2,
-			"cvStock": 0.048,
+			"multiple": 32,
+			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.6% + QCS 9.75",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 271.77,
-				"price6mAgo": 322.01,
-				"price1mAgo": 307.36,
-				"low3m": 263.55,
-				"return6m": -15.6,
-				"return1m": -11.6,
+				"price": 316,
+				"price6mAgo": 290,
+				"price1mAgo": 373.1,
+				"low3m": 307.69,
+				"return6m": 9,
+				"return1m": -15.3,
 				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 11,
-				"down30d": 4
+				"up30d": 14,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 4.7,
-				"quarter": "2026-01"
+				"surprise": 10.6,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.38
+		"secondaryScore": 2.44
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": 2.25,
-		"totalScore": 9.75,
+		"revisionsScore": 3.25,
+		"totalScore": 10.75,
 		"raw": {
-			"avgSurprisePct": 8.28,
+			"avgSurprisePct": 12.21,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 13,
-			"downRevisions": 4,
+			"downRevisions": 0,
 			"totalAnalysts": 20
 		}
 	},
 	"description": "HEICO Corporation provides aerospace, defense, and electronic related products and services in the United States and internationally.",
 	"analystTargets": {
-		"low": 282,
-		"mean": 363.16,
-		"high": 417
+		"low": 294,
+		"mean": 396.55,
+		"high": 491
 	},
 	"analystConsensus": {
 		"ticker": "HEI",
@@ -115,14 +115,15 @@
 	"targetPriceAlternative": "$364.43",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.14,
-			"low": 5.4,
-			"average": 5.63351
+			"high": 6.87,
+			"low": 6.23,
+			"average": 6.32864
 		},
 		"2027": {
-			"high": 7.16,
-			"low": 5.95,
-			"average": 6.33176
+			"high": 7.62699,
+			"low": 6.55,
+			"average": 7.19931
 		}
-	}
+	},
+	"confidence": "high"
 }

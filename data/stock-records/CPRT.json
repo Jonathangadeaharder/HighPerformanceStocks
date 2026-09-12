@@ -5,97 +5,97 @@
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 1.59,
+		"ttmEPS": 1.61,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "28%",
-			"bull": "65%"
+			"bear": "-17%",
+			"base": "36%",
+			"bull": "84%"
 		}
 	},
-	"currentPrice": "$33.40",
-	"marketCap": "$32.3B USD",
+	"currentPrice": "$29.95",
+	"marketCap": "$27.7B USD",
 	"valuation": {
-		"trailingPE": 21,
-		"forwardPE": 19.9,
-		"evEbitda": 14,
-		"evFcf": 26.3
+		"trailingPE": 18.6,
+		"forwardPE": 16.5,
+		"evEbitda": 12.4,
+		"evFcf": 24.4,
+		"pegRatio": 3.86
 	},
 	"metrics": {
-		"roe": "17.1%",
+		"roe": "17.6%",
 		"fcfMargin": "~22%",
-		"fcfYield": "~3%",
+		"fcfYield": "~4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "19%",
-		"beta": "1.14",
-		"revenueGrowth": "-3.6%",
-		"roic": "6.6%",
-		"interestCoverage": "367.7x"
+		"ruleOf40": "24%",
+		"beta": "1.03",
+		"revenueGrowth": "2.1%",
+		"roic": "7.1%",
+		"interestCoverage": "383.0x"
 	},
 	"consensus": {
-		"yahoo": "$42.67"
+		"yahoo": "$40.80"
 	},
-	"targetPrice": "$42.67",
-	"expectedCAGR": "-4% - 65%",
+	"targetPrice": "$40.80",
+	"expectedCAGR": "-17% - 84%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.88,
-		"signal": "REJECTED",
+		"score": 0.78,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14,
-			"cvStock": 0.037,
+			"multiple": 12.4,
+			"cvStock": 0.023,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 33.4,
-				"price6mAgo": 44.45,
-				"price1mAgo": 38.02,
-				"low3m": 32.2,
-				"return6m": -24.9,
-				"return1m": -12.2,
-				"near3mLow": true
+				"pass": true,
+				"price": 29.95,
+				"price6mAgo": 33.97,
+				"price1mAgo": 28.99,
+				"low3m": 26.81,
+				"return6m": -11.8,
+				"return1m": 3.3,
+				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 10
+				"pass": true,
+				"up30d": 1,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -8.1,
-				"quarter": "2026-01"
+				"surprise": -8.5,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.24
+		"secondaryScore": 1.03
 	},
-	"lastUpdated": "2026-04-05T07:21:17.645Z",
-	"expectedVolatility": "~27%",
-	"sharpeRatio": 0.96,
+	"lastUpdated": "2026-09-12T03:15:54.532Z",
+	"expectedVolatility": "~30%",
+	"sharpeRatio": 0.97,
 	"qcs": {
-		"earningsScore": 2.98,
+		"earningsScore": -2.54,
 		"flowScore": 5,
-		"revisionsScore": -4.17,
-		"totalScore": 3.81,
+		"revisionsScore": -1.67,
+		"totalScore": 0.79,
 		"raw": {
-			"avgSurprisePct": 2.76,
-			"netInsiderShares": 275901,
+			"avgSurprisePct": -1.46,
+			"netInsiderShares": 14663,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 10,
-			"totalAnalysts": 12
+			"downRevisions": 2,
+			"totalAnalysts": 6
 		}
 	},
 	"bullCase": "Copart operates the most defensible marketplace in the salvage vehicle industry — a two-sided network of insurance companies and vehicle dismantlers/exporters, with 50+ years of physical land accumulation that is essentially irreplicable. Total-loss rates are structurally rising as repair costs exceed vehicle values, providing multi-decade volume tailwind.",
 	"bearCase": "Copart's growth is sensitive to used vehicle values — a used-car price collapse reduces salvage vehicle prices and volume simultaneously. Any regulatory or insurance industry change in total-loss thresholds could structurally reduce supply volume.",
 	"description": "Copart, Inc. provides online auctions and vehicle remarketing services in the United States, the United Kingdom, Germany, Brazil, Canada, the United Arab Emirates, Spain, Finland, Oman, the Republi...",
 	"analystTargets": {
-		"low": 32,
-		"mean": 42.67,
+		"low": 25,
+		"mean": 40.8,
 		"high": 55
 	},
 	"analystConsensus": {
@@ -109,15 +109,16 @@
 	"targetPriceAlternative": "$44.40",
 	"consensusRating": "Hold",
 	"forwardEstimates": {
-		"2026": {
-			"high": 1.66,
-			"low": 1.54,
-			"average": 1.57535
-		},
 		"2027": {
-			"high": 1.85,
+			"high": 1.67,
 			"low": 1.6,
-			"average": 1.68001
+			"average": 1.64228
+		},
+		"2028": {
+			"high": 1.9153,
+			"low": 1.75,
+			"average": 1.81959
 		}
-	}
+	},
+	"confidence": "low"
 }

@@ -2,104 +2,104 @@
 	"ticker": "APO",
 	"name": "Apollo Global Management",
 	"group": "Financials & Alt Assets",
-	"marketCap": "$62.1B USD",
-	"sharpeRatio": 0.9,
-	"expectedCAGR": "10% - 71%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$76.2B USD",
+	"sharpeRatio": 0.41,
+	"expectedCAGR": "3% - 36%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 11.7,
-		"forwardPE": 9.9,
-		"pegRatio": null,
+		"trailingPE": 14.7,
+		"forwardPE": 12,
+		"pegRatio": 0.5,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "11.0%",
-		"roe": "14.7%",
+		"roic": "13.4%",
+		"roe": "11.4%",
 		"netDebtEbitda": null,
 		"ruleOf40": null,
 		"aum": "$938B",
 		"aumGrowth": "25% YoY",
-		"beta": "1.56",
-		"revenueGrowth": "87.7%"
+		"beta": "1.51",
+		"revenueGrowth": "63.8%"
 	},
-	"targetPrice": "$151",
+	"targetPrice": "$153.47",
 	"bullCase": "Cheaper than KKR on forward P/E. Record origination and AUM growth. The private credit boom benefits Apollo's credit-focused model. Bridge Investment Group acquisition adds $100M in FRE. Unanimous analyst Buy rating with 44% upside to targets.",
 	"bearCase": "ROIC is currently below WACC (6.57% vs 10.31%). Private credit stress fears (MFIC dividend cut). 20% stock decline signals market skepticism. Interest rate sensitivity.",
-	"currentPrice": "$107.04",
+	"currentPrice": "$128.98",
 	"consensus": {
 		"tipranks": "$165",
-		"yahoo": "$151",
+		"yahoo": "$153.47",
 		"stockanalysis": "$156"
 	},
 	"cagrModel": {
 		"ttmEPS": 8.38,
-		"epsGrowth": "17%",
+		"epsGrowth": "22%",
 		"dividendYield": "2%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "43%",
-			"bull": "71%"
+			"bear": "3%",
+			"base": "21%",
+			"bull": "36%"
 		},
 		"basis": "Reconciled growth with reported ROIC and ANI volatility.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.300Z",
+	"lastUpdated": "2026-09-12T03:15:52.397Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.75,
+		"score": 0.7,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 17,
+			"growth": 22,
 			"multipleType": "P/ANI",
-			"multiple": 12.8,
-			"cvStock": 0.035,
+			"multiple": 15.4,
+			"cvStock": 0.027,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 107.04,
-				"price6mAgo": 126.7,
-				"price1mAgo": 111.24,
-				"low3m": 99.56,
-				"return6m": -15.5,
-				"return1m": -3.8,
+				"price": 128.98,
+				"price6mAgo": 100.3,
+				"price1mAgo": 138.61,
+				"low3m": 114.03,
+				"return6m": 28.6,
+				"return1m": -6.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 4
+				"up30d": 13,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": 21.3,
-				"quarter": "2025-12"
+				"surprise": -2.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.58
+		"secondaryScore": 0.55
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.79,
-		"totalScore": 4.21,
+		"revisionsScore": -2.86,
+		"totalScore": 2.14,
 		"raw": {
-			"avgSurprisePct": 9.59,
-			"netInsiderShares": 807947,
+			"avgSurprisePct": 9.05,
+			"netInsiderShares": 124709,
 			"instFlowTrend": "neutral",
-			"upRevisions": 1,
-			"downRevisions": 4,
-			"totalAnalysts": 19
+			"upRevisions": 3,
+			"downRevisions": 15,
+			"totalAnalysts": 21
 		}
 	},
 	"description": "Apollo Global Management, Inc. is a private equity firm specializing in investments in credit, private equity, infrastructure, secondaries and real estate markets.",
 	"analystTargets": {
-		"low": 116,
-		"mean": 151,
-		"high": 181
+		"low": 130,
+		"mean": 153.47,
+		"high": 173
 	},
 	"analystConsensus": {
 		"ticker": "APO",
@@ -113,14 +113,15 @@
 	"targetPriceAlternative": "$158.13",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.50495,
-			"low": 8.7,
-			"average": 9.16279
+			"high": 8.98,
+			"low": 8.56,
+			"average": 8.76545
 		},
 		"2027": {
-			"high": 11.41,
-			"low": 9.9,
-			"average": 10.7638
+			"high": 11.22839,
+			"low": 10.06,
+			"average": 10.73575
 		}
-	}
+	},
+	"confidence": "low"
 }

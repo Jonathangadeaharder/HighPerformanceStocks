@@ -2,34 +2,34 @@
 	"ticker": "KKR",
 	"name": "KKR & Co.",
 	"group": "Financials & Alt Assets",
-	"marketCap": "$84.5B USD",
-	"sharpeRatio": 1.36,
-	"expectedCAGR": "17% - 106%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$93.4B USD",
+	"sharpeRatio": 0.91,
+	"expectedCAGR": "15% - 65%",
+	"expectedVolatility": "~39%",
 	"valuation": {
-		"trailingPE": 14.2,
-		"forwardPE": 11.6,
-		"pegRatio": null,
+		"trailingPE": 16,
+		"forwardPE": 13.6,
+		"pegRatio": 0.46,
 		"evEbitda": null
 	},
 	"metrics": {
 		"fcfMargin": null,
 		"fcfYield": null,
-		"roic": "0.5%",
-		"roe": "8.6%",
+		"roic": "2.4%",
+		"roe": "7.3%",
 		"netDebtEbitda": "N/M (consolidated)",
 		"ruleOf40": "104%",
 		"bessemerRuleOfX": "158%",
-		"beta": "1.93",
-		"revenueGrowth": "76.3%"
+		"beta": "1.79",
+		"revenueGrowth": "7.8%"
 	},
-	"targetPrice": "$135.30",
+	"targetPrice": "$128.67",
 	"bullCase": "KKR earned $4.70 ANI/share in 2024 (+38% YoY) and is guiding to >$7 ANI/share by 2026. At $91, the stock trades at 19x trailing ANI — a steep discount to peers at 25–30x given the growth rate. AUM at $638B (+15% YoY) with $19B in embedded unrealised gains and a 69% FRE margin. The market is pricing this as a cyclical bank, not a permanent-capital compounding machine.",
 	"bearCase": "Stock is down ~34% over the past 12 months. Performance fees are lumpy and exit markets can freeze for multiple years. The 3.7x net debt ratio amplifies interest rate sensitivity. If market volatility kills deal flow, carry distributions collapse and the premium multiple evaporates quickly.",
-	"currentPrice": "$91.23",
+	"currentPrice": "$101.08",
 	"consensus": {
 		"tipranks": "$149",
-		"yahoo": "$135.30",
+		"yahoo": "$128.67",
 		"stockanalysis": "$149"
 	},
 	"cagrModel": {
@@ -37,68 +37,68 @@
 		"epsGrowth": "20%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "17%",
-			"base": "49%",
-			"bull": "106%"
+			"bear": "15%",
+			"base": "28%",
+			"bull": "65%"
 		},
 		"basis": "ANI (Adjusted Net Income) per share; ANI P/E basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:24.780Z",
+	"lastUpdated": "2026-09-12T03:15:59.457Z",
 	"screener": {
 		"engine": "fANIG",
-		"score": 0.97,
-		"signal": "REJECTED",
+		"score": 1.08,
+		"signal": "FAIL",
+		"note": "Valuation score 1.08 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "P/ANI",
-			"multiple": 19.4,
-			"cvStock": 0.048,
+			"multiple": 21.5,
+			"cvStock": 0.035,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 91.23,
-				"price6mAgo": 126.87,
-				"price1mAgo": 95.59,
-				"low3m": 82.67,
-				"return6m": -28.1,
-				"return1m": -4.6,
+				"price": 101.08,
+				"price6mAgo": 83.88,
+				"price1mAgo": 110.9,
+				"low3m": 88.23,
+				"return6m": 20.5,
+				"return1m": -8.9,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
+				"pass": true,
+				"up30d": 9,
 				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": -1.6,
-				"quarter": "2025-12"
+				"surprise": 14.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.58
+		"secondaryScore": 0.68
 	},
 	"qcs": {
-		"earningsScore": 2.56,
-		"flowScore": 2.5,
-		"revisionsScore": -1.58,
-		"totalScore": 3.48,
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": 5,
+		"totalScore": 10,
 		"raw": {
-			"avgSurprisePct": 3.08,
-			"netInsiderShares": 0,
-			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 6,
-			"totalAnalysts": 19
+			"avgSurprisePct": 7.88,
+			"netInsiderShares": 10000,
+			"instFlowTrend": "neutral",
+			"upRevisions": 16,
+			"downRevisions": 1,
+			"totalAnalysts": 15
 		}
 	},
 	"description": "KKR & Co. Inc.",
 	"analystTargets": {
-		"low": 106,
-		"mean": 135.3,
-		"high": 187
+		"low": 115,
+		"mean": 128.67,
+		"high": 166
 	},
 	"analystConsensus": {
 		"ticker": "KKR",
@@ -112,14 +112,15 @@
 	"targetPriceAlternative": "$149.01",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.99,
-			"low": 5.85,
-			"average": 6.40795
+			"high": 6.53,
+			"low": 6.15,
+			"average": 6.3213
 		},
 		"2027": {
-			"high": 8.57,
-			"low": 7.07071,
-			"average": 7.82282
+			"high": 7.99,
+			"low": 6.95,
+			"average": 7.40917
 		}
-	}
+	},
+	"confidence": "high"
 }

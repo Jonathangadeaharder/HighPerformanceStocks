@@ -3,98 +3,99 @@
 	"name": "Applied Materials",
 	"group": "AI & Semiconductors",
 	"cagrModel": {
-		"epsGrowth": "26%",
+		"epsGrowth": "44%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 9.76,
-		"dividendYield": "1%",
+		"ttmEPS": 11.64,
+		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-19%",
-			"base": "21%",
-			"bull": "44%"
+			"bear": "-22%",
+			"base": "40%",
+			"bull": "97%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$348.47",
-	"marketCap": "$276.5B USD",
+	"currentPrice": "$456.49",
+	"marketCap": "$362.3B USD",
 	"valuation": {
-		"trailingPE": 35.7,
-		"forwardPE": 25,
-		"evEbitda": 31,
-		"evFcf": 63.4
+		"trailingPE": 39.2,
+		"forwardPE": 24.7,
+		"evEbitda": 35.5,
+		"evFcf": 117.2,
+		"pegRatio": 0.9
 	},
 	"metrics": {
-		"roe": "38.9%",
-		"fcfMargin": "~15%",
-		"fcfYield": "~2%",
+		"roe": "41.1%",
+		"fcfMargin": "~10%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "13%",
-		"beta": "1.64",
-		"revenueGrowth": "-2.1%",
-		"roic": "3.2%",
-		"interestCoverage": "22.5x"
+		"ruleOf40": "35%",
+		"beta": "1.6",
+		"revenueGrowth": "24.8%",
+		"roic": "2.3%",
+		"interestCoverage": "25.1x"
 	},
 	"consensus": {
-		"yahoo": "$418.28"
+		"yahoo": "$640.89"
 	},
-	"targetPrice": "$418.28",
-	"expectedCAGR": "-19% - 44%",
-	"expectedVolatility": "~48%",
-	"sharpeRatio": 0.17,
+	"targetPrice": "$640.89",
+	"expectedCAGR": "-22% - 97%",
+	"expectedVolatility": "~59%",
+	"sharpeRatio": 0.56,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.96,
+		"score": 0.66,
 		"signal": "PASS",
 		"inputs": {
-			"growth": 26,
+			"growth": 44,
 			"multipleType": "Forward P/E",
-			"multiple": 25,
-			"cvStock": 0.102,
+			"multiple": 24.7,
+			"cvStock": 0.078,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 348.47,
-				"price6mAgo": 223.91,
-				"price1mAgo": 346.53,
-				"low3m": 265.1,
-				"return6m": 55.6,
-				"return1m": 0.6,
+				"price": 456.49,
+				"price6mAgo": 337.27,
+				"price1mAgo": 548.15,
+				"low3m": 426.13,
+				"return6m": 35.3,
+				"return1m": -16.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 30,
-				"down30d": 0
+				"up30d": 28,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 7.9,
-				"quarter": "2026-01"
+				"surprise": 3.1,
+				"quarter": "2026-07"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:13.248Z",
+	"lastUpdated": "2026-09-12T03:15:51.723Z",
 	"qcs": {
-		"earningsScore": 1.97,
-		"flowScore": 5,
-		"revisionsScore": 4.85,
-		"totalScore": 11.82,
+		"earningsScore": 2.71,
+		"flowScore": 2.5,
+		"revisionsScore": 4.83,
+		"totalScore": 10.04,
 		"raw": {
-			"avgSurprisePct": 5.03,
-			"netInsiderShares": 499440,
+			"avgSurprisePct": 5.29,
+			"netInsiderShares": -242490,
 			"instFlowTrend": "positive",
-			"upRevisions": 32,
-			"downRevisions": 0,
-			"totalAnalysts": 33
+			"upRevisions": 29,
+			"downRevisions": 1,
+			"totalAnalysts": 29
 		}
 	},
 	"bullCase": "Applied Materials has the broadest portfolio in semiconductor equipment — CVD, PVD, CMP, inspection, and display. Its AGS (Applied Global Services) segment generates $6B+ in high-margin recurring revenue from installed base maintenance, providing a 40%+ revenue floor through downturns. Advanced packaging (CoWoS, HBM) is a new growth vector where AMAT has strong positioning.",
 	"bearCase": "China revenues (~30% of total) are structurally at risk from escalating US export controls. If additional equipment restrictions are imposed, AMAT loses its single-largest growth market. Semiconductor equipment spending is among the most capital-intensive and volatile categories — a WFE downcycle of 20%+ is not uncommon. Concentrated customer risk (TSMC, Samsung, Intel).",
 	"description": "Applied Materials, Inc. provides materials engineering solutions, equipment, services, and software to the semiconductor and related industries in the United States, China, Korea, Taiwan, Japan, So...",
 	"analystTargets": {
-		"low": 280,
-		"mean": 418.28,
-		"high": 500
+		"low": 358,
+		"mean": 640.89,
+		"high": 900
 	},
 	"analystConsensus": {
 		"ticker": "AMAT",
@@ -108,14 +109,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 11.51,
-			"low": 10.22,
-			"average": 11.04853
+			"high": 12.98,
+			"low": 12.53,
+			"average": 12.79594
 		},
 		"2027": {
-			"high": 16.78,
-			"low": 11.1,
-			"average": 13.91739
+			"high": 21.77,
+			"low": 16.02,
+			"average": 18.47185
 		}
-	}
+	},
+	"confidence": "high"
 }

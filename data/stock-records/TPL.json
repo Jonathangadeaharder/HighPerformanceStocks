@@ -2,81 +2,94 @@
 	"ticker": "TPL",
 	"name": "Texas Pacific Land",
 	"group": "Energy Royalties",
-	"marketCap": "$30.6B USD",
-	"sharpeRatio": -0.11,
-	"expectedVolatility": "~46%",
+	"marketCap": "$25.5B USD",
+	"sharpeRatio": 0.33,
+	"expectedVolatility": "~48%",
 	"valuation": {
-		"trailingPE": 63.7,
-		"forwardPE": 6.1,
-		"pegRatio": null,
-		"evEbitda": 55.7
+		"trailingPE": 46.7,
+		"forwardPE": 5,
+		"pegRatio": 7.33,
+		"evEbitda": 34,
+		"evFcf": -768.3
 	},
 	"metrics": {
-		"fcfMargin": "~-10%",
+		"fcfMargin": "~-4%",
 		"fcfYield": "~0%",
-		"roic": "~30%",
-		"roe": "37.2%",
+		"roic": "2.4%",
+		"roe": "36.6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "4%"
+		"ruleOf40": "28%",
+		"beta": "0.62",
+		"revenueGrowth": "31.2%",
+		"interestCoverage": "748.4x"
 	},
-	"targetPrice": "$444.50",
+	"targetPrice": "$442",
 	"bullCase": "Texas Pacific Land is an irreplaceable asset -- 880,000 surface acres in the heart of the Permian Basin generating royalties, surface leases, and water revenues. The 86% EBITDA margin, 39% ROE, and 30% ROIC are world-class. Water revenue (38% of total) is growing as Permian operators demand more water. The Bolt data center partnership (led by Eric Schmidt) could transform the company. Zero debt and $531M cash provide a fortress balance sheet. TPL has no peer -- it is a perpetual royalty on one of the most productive oil basins in history.",
 	"bearCase": "TPL trades at 41x trailing earnings and 31x EV/EBITDA for what is fundamentally an oil royalty and land company. The stock surged 50% in February alone, driven largely by the data center narrative, which is speculative and years from meaningful revenue. Only 1 analyst covers the stock, creating information asymmetry. Royalty revenue still depends on Permian drilling activity, which is sensitive to oil prices. At a $36B market cap, the market is pricing in substantial success from an unproven data center pivot.",
-	"currentPrice": "$444.24",
+	"currentPrice": "$369.10",
 	"consensus": {
 		"tipranks": "$445",
-		"yahoo": "$444.50",
+		"yahoo": "$442",
 		"stockanalysis": "$445"
 	},
 	"cagrModel": {
-		"ttmEPS": 6.97,
+		"ttmEPS": 7.9,
 		"epsGrowth": "15%",
-		"dividendYield": "0%",
-		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple"
+		"dividendYield": "1%",
+		"basis": "Pure Permian Basin royalty; forward PE at cyclical peak oil revenue; exit PE 35 reflects long-run royalty/land trust multiple",
+		"scenarios": {
+			"bear": "-33%",
+			"base": "21%",
+			"bull": "74%"
+		}
 	},
-	"lastUpdated": "2026-04-05T07:21:36.084Z",
+	"lastUpdated": "2026-09-12T03:16:07.456Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.41,
+		"score": 0.33,
 		"signal": "FAIL",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 6.1,
-			"cvStock": 0.08,
+			"multiple": 5,
+			"cvStock": 0.013,
 			"riskMultiplier": 1
 		},
-		"note": "Massive P/E divergence (>300%); potential data hallucination (Used benchmark CV)",
+		"note": "Massive P/E divergence (>300%); potential data hallucination",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 444.24,
-				"price6mAgo": 325.13,
-				"price1mAgo": 523.31,
-				"low3m": 280.95,
-				"return6m": 36.6,
-				"return1m": -15.1,
+				"price": 369.1,
+				"price6mAgo": 528.97,
+				"price1mAgo": 342.77,
+				"low3m": 335.1,
+				"return6m": -30.2,
+				"return1m": 7.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 0,
-				"down30d": 0
+				"down30d": 1
+			},
+			"earningsSurprise": {
+				"surprise": 2.1,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 0,
-		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"earningsScore": -5,
+		"flowScore": -5,
+		"revisionsScore": -5,
+		"totalScore": -15,
 		"raw": {
-			"avgSurprisePct": 0,
-			"netInsiderShares": 0,
-			"instFlowTrend": "neutral",
+			"avgSurprisePct": -13.58,
+			"netInsiderShares": -3206,
+			"instFlowTrend": "negative",
 			"upRevisions": 0,
-			"downRevisions": 0,
-			"totalAnalysts": 1
+			"downRevisions": 2,
+			"totalAnalysts": 2
 		}
 	},
 	"analystConsensus": {
@@ -88,5 +101,25 @@
 		"strongSell": 1
 	},
 	"consensusRating": "Hold",
-	"targetPriceAlternative": "$639.00"
+	"targetPriceAlternative": "$639.00",
+	"analystTargets": {
+		"low": 245,
+		"mean": 442,
+		"high": 639
+	},
+	"forwardEstimates": {
+		"2026": {
+			"high": 8.89,
+			"low": 8.71095,
+			"average": 8.80048
+		},
+		"2027": {
+			"high": 10.01,
+			"low": 9.51977,
+			"average": 9.76488
+		}
+	},
+	"expectedCAGR": "-33% - 74%",
+	"confidence": "cut",
+	"description": "Texas Pacific Land Corporation engages in the land and resource management, and water services and operations businesses."
 }

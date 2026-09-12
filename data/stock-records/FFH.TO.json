@@ -2,99 +2,100 @@
 	"ticker": "FFH.TO",
 	"name": "Fairfax Financial",
 	"group": "The Capital Compounders",
-	"marketCap": "C$50.7B",
-	"sharpeRatio": 0.1,
-	"expectedCAGR": "-26% - 39%",
-	"expectedVolatility": "~21%",
+	"marketCap": "C$46.7B",
+	"sharpeRatio": 0.6,
+	"expectedCAGR": "-14% - 52%",
+	"expectedVolatility": "~24%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 0.28,
 		"evEbitda": null,
-		"trailingPE": 7.9,
-		"forwardPE": 10.8,
-		"evFcf": 26.8
+		"trailingPE": 8,
+		"forwardPE": 9.8,
+		"evFcf": 11.7
 	},
 	"metrics": {
-		"roe": "17.8%",
-		"fcfMargin": "~6%",
-		"fcfYield": "~5%",
+		"roe": "16.5%",
+		"fcfMargin": "~12%",
+		"fcfYield": "~10%",
 		"netDebtEbitda": "0.8x",
-		"ruleOf40": "15%",
-		"beta": "0.48",
-		"revenueGrowth": "9.6%",
-		"roic": "4.2%",
-		"interestCoverage": "9.6x"
+		"ruleOf40": "12%",
+		"beta": "0.43",
+		"revenueGrowth": "-0.5%",
+		"roic": "-0.1%",
+		"interestCoverage": "9.7x"
 	},
-	"targetPrice": "C$2751.27",
+	"targetPrice": "C$2656.73",
 	"bullCase": "The purest modern execution of the Berkshire model. A high-yield fixed-income portfolio combined with disciplined underwriting generates massive, predictable cash flows. Massive 'hidden' fair value on the balance sheet makes the stock intrinsically cheaper than it appears.",
 	"bearCase": "Susceptibility to catastrophic 'fat-tail' insurance events and volatility in global bond markets which can temporarily impair book value.",
-	"currentPrice": "C$2363.41",
+	"currentPrice": "C$2248.17",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-26%",
-			"base": "17%",
-			"bull": "39%"
+			"bear": "-14%",
+			"base": "19%",
+			"bull": "52%"
 		},
 		"epsGrowth": "17%",
 		"dividendYield": "1%",
 		"basis": "Reflects strong underwriting performance and high-yield investment tailwinds.",
-		"ttmEPS": 297.32
+		"ttmEPS": 280.67
 	},
-	"lastUpdated": "2026-04-05T07:21:20.598Z",
+	"lastUpdated": "2026-09-12T03:15:56.651Z",
 	"consensus": {
-		"yahoo": "C$2751.27"
+		"yahoo": "C$2656.73"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.64,
+		"score": 0.58,
 		"signal": "PASS",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "Forward P/E",
-			"multiple": 10.8,
-			"cvStock": 0.041,
+			"multiple": 9.8,
+			"cvStock": 0.03,
 			"riskMultiplier": 1
 		},
+		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 2363.41,
-				"price6mAgo": 2445.01,
-				"price1mAgo": 2280.01,
-				"low3m": 2151.07,
-				"return6m": -3.3,
-				"return1m": 3.7,
-				"near3mLow": false
+				"price": 2248.17,
+				"price6mAgo": 2262.93,
+				"price1mAgo": 2304.02,
+				"low3m": 2170.53,
+				"return6m": -0.7,
+				"return1m": -2.4,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
+				"up30d": 0,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 9.7,
-				"quarter": "2025-12"
+				"surprise": -15.5,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 1.67,
-		"totalScore": -3.33,
+		"revisionsScore": 0,
+		"totalScore": 5,
 		"raw": {
-			"avgSurprisePct": -11.7,
+			"avgSurprisePct": 6.13,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 3
+			"upRevisions": 0,
+			"downRevisions": 0,
+			"totalAnalysts": 2
 		}
 	},
 	"description": "Fairfax Financial Holdings Limited, through its subsidiaries, provides property and casualty insurance and reinsurance, and investment management services in Canada, the United States, the Middle E...",
 	"analystTargets": {
-		"low": 1728.44,
-		"mean": 2751.27,
-		"high": 3269.99
+		"low": 1907.7,
+		"mean": 2656.73,
+		"high": 3401.78
 	},
 	"analystConsensus": {
 		"ticker": "FFH.TO",
@@ -108,13 +109,14 @@
 	"forwardEstimates": {
 		"2026": {
 			"high": 174.39,
-			"low": 128.47,
-			"average": 148.62666
+			"low": 137.3,
+			"average": 155.845
 		},
 		"2027": {
-			"high": 170.96,
-			"low": 145.16,
-			"average": 157.77333
+			"high": 173.12,
+			"low": 153.4,
+			"average": 165.82668
 		}
-	}
+	},
+	"confidence": "medium"
 }

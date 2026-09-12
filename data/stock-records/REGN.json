@@ -3,104 +3,104 @@
 	"name": "Regeneron Pharmaceuticals",
 	"group": "Healthcare Monopolies",
 	"marketCap": "$80.5B USD",
-	"sharpeRatio": 0.32,
-	"expectedCAGR": "-4% - 39%",
-	"expectedVolatility": "~41%",
+	"sharpeRatio": 0.24,
+	"expectedCAGR": "-7% - 32%",
+	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 18.4,
-		"forwardPE": 14.5,
-		"pegRatio": null,
-		"evEbitda": 17.1,
-		"evFcf": 22.3
+		"trailingPE": 19.6,
+		"forwardPE": 12.9,
+		"pegRatio": 1.14,
+		"evEbitda": 15.5,
+		"evFcf": 23.7
 	},
 	"metrics": {
-		"fcfMargin": "~23%",
+		"fcfMargin": "~20%",
 		"fcfYield": "~4%",
-		"roic": "6.6%",
-		"roe": "14.9%",
+		"roic": "6.2%",
+		"roe": "14.0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "25%",
-		"operatingMargin": "~23%",
-		"beta": "0.4",
-		"revenueGrowth": "2.5%",
-		"interestCoverage": "26.0x"
+		"ruleOf40": "36%",
+		"operatingMargin": "~33%",
+		"beta": "0.19",
+		"revenueGrowth": "16.7%",
+		"interestCoverage": "31.6x"
 	},
-	"targetPrice": "$872.70",
+	"targetPrice": "$849.32",
 	"bullCase": "Dupixent sales surging 32% with multiple label expansions pending. EYLEA HD gaining market share rapidly. At least 4 expected FDA approvals in the next year. Ultra-low beta (0.40) provides portfolio ballast. Aggressive share buybacks enhance EPS.",
 	"bearCase": "If Eylea biosimilar competition intensifies beyond expectations, the cash cow suffers. Drug pricing regulation in the US remains a perennial risk. Post-Dupixent growth story is unclear.",
-	"currentPrice": "$761.85",
+	"currentPrice": "$781.49",
 	"consensus": {
 		"tipranks": "$813",
-		"yahoo": "$872.70",
+		"yahoo": "$849.32",
 		"stockanalysis": "$820"
 	},
 	"cagrModel": {
-		"ttmEPS": 41.44,
+		"ttmEPS": 39.78,
 		"epsGrowth": "12%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-4%",
-			"base": "15%",
-			"bull": "39%"
+			"bear": "-7%",
+			"base": "9%",
+			"bull": "32%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.171Z",
+	"lastUpdated": "2026-09-12T03:16:05.321Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.86,
-		"signal": "WAIT",
+		"score": 1.97,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.97 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.64)) (REJECT: Stalled at WAIT with base CAGR 9% < 15%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 22.3,
-			"cvStock": 0.112,
-			"riskMultiplier": 1.002
+			"multiple": 23.7,
+			"cvStock": 0.073,
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9.64 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 761.85,
-				"price6mAgo": 585.48,
-				"price1mAgo": 764.93,
-				"low3m": 718.38,
-				"return6m": 30.1,
-				"return1m": -0.4,
+				"price": 781.49,
+				"price6mAgo": 746.61,
+				"price1mAgo": 797.99,
+				"low3m": 594.9,
+				"return6m": 4.7,
+				"return1m": -2.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 0
+				"up30d": 5,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 6.4,
-				"quarter": "2025-12"
+				"surprise": 40,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.21
+		"secondaryScore": 1.07
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": -0.36,
-		"totalScore": 9.64,
+		"revisionsScore": 4.11,
+		"totalScore": 14.11,
 		"raw": {
-			"avgSurprisePct": 19.68,
-			"netInsiderShares": 457101,
+			"avgSurprisePct": 18.85,
+			"netInsiderShares": 15819,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 3,
+			"upRevisions": 23,
+			"downRevisions": 0,
 			"totalAnalysts": 28
 		}
 	},
 	"description": "Regeneron Pharmaceuticals, Inc. discovers, invents, develops, manufactures, and commercializes medicines to treat various diseases worldwide.",
 	"analystTargets": {
 		"low": 730,
-		"mean": 872.7,
-		"high": 1057
+		"mean": 849.32,
+		"high": 1030
 	},
 	"analystConsensus": {
 		"ticker": "REGN",
@@ -114,14 +114,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 49.79,
-			"low": 32.31,
-			"average": 44.87904
+			"high": 59.45,
+			"low": 43.42,
+			"average": 53.80118
 		},
 		"2027": {
-			"high": 59.71,
-			"low": 38.31,
-			"average": 47.58308
+			"high": 57.25,
+			"low": 42.52,
+			"average": 50.38474
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -2,35 +2,35 @@
 	"ticker": "TFPM",
 	"name": "Triple Flag Precious Metals",
 	"group": "Royalties",
-	"marketCap": "$7.4B USD",
-	"sharpeRatio": 0.58,
-	"expectedCAGR": "21% - 38%",
-	"expectedVolatility": "~43%",
+	"marketCap": "$7.0B USD",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "11% - 22%",
+	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 30.3,
+		"trailingPE": 16.5,
 		"forwardPE": 21.8,
 		"pegRatio": 1.02,
-		"evEbitda": 24.7,
-		"evFcf": -1750
+		"evEbitda": 19,
+		"evFcf": -18.1
 	},
 	"metrics": {
-		"fcfMargin": "~-1%",
-		"fcfYield": "~0%",
-		"roic": "4.3%",
-		"roe": "12.7%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "59%",
+		"fcfMargin": "~-81%",
+		"fcfYield": "~-6%",
+		"roic": "5.5%",
+		"roe": "20.1%",
+		"netDebtEbitda": "0.5x",
+		"ruleOf40": "-44%",
 		"beta": "0.34",
-		"revenueGrowth": "60.2%",
-		"interestCoverage": "3673.2x"
+		"revenueGrowth": "37.3%",
+		"interestCoverage": "29.0x"
 	},
-	"targetPrice": "$45",
+	"targetPrice": "$39.25",
 	"bullCase": "Triple Flag is the most attractively valued precious metals streamer, trading at a trailing P/E of ~32x versus 42-74x for peers. The PEG ratio of ~1.0 suggests fair value relative to growth. The company has zero net debt, 61.7% net margins, and a clear production growth path to 140-150K GEOs by 2030. At $8B market cap, TFPM is a potential acquisition target. The negative beta (-0.21) provides excellent portfolio diversification.",
 	"bearCase": "TFPM is the smallest and least liquid of the precious metals streamers. The stock has surged from $17 to $39 in 12 months (+129%), leaving limited upside to current consensus targets ($32-$35 USD). Analyst targets actually imply downside from current prices. The Steppe Gold default in Q3 2025 highlights counterparty risk inherent in smaller streaming portfolios. Forward P/E of 34.7x is higher than trailing P/E, suggesting near-term earnings may disappoint.",
-	"currentPrice": "$35.81",
+	"currentPrice": "$33.78",
 	"consensus": {
 		"tipranks": "C$59",
-		"yahoo": "$45",
+		"yahoo": "$39.25",
 		"stockanalysis": "$35"
 	},
 	"cagrModel": {
@@ -38,65 +38,66 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "21%",
-			"base": "27%",
-			"bull": "38%"
+			"bear": "11%",
+			"base": "17%",
+			"bull": "22%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:35.270Z",
+	"lastUpdated": "2026-09-12T03:16:06.788Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "FAIL",
+		"score": 2.64,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
 			"multiple": 21.8,
-			"cvStock": 0.137,
-			"riskMultiplier": 1.02
+			"cvStock": 0.333,
+			"riskMultiplier": 1.818
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 35.81,
-				"price6mAgo": 30.42,
-				"price1mAgo": 38.21,
-				"low3m": 30.04,
-				"return6m": 17.7,
-				"return1m": -6.3,
+				"price": 33.78,
+				"price6mAgo": 37.49,
+				"price1mAgo": 32.25,
+				"low3m": 26.67,
+				"return6m": -9.9,
+				"return1m": 4.7,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 3,
-				"down30d": 1
+				"pass": false,
+				"up30d": 2,
+				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": 4.1,
-				"quarter": "2025-12"
+				"surprise": 19.7,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 2.35,
-		"flowScore": 2.5,
-		"revisionsScore": 2,
-		"totalScore": 6.85,
+		"earningsScore": 1.19,
+		"flowScore": 0,
+		"revisionsScore": 2.22,
+		"totalScore": 3.41,
 		"raw": {
-			"avgSurprisePct": 8.06,
+			"avgSurprisePct": 9.93,
 			"netInsiderShares": 0,
-			"instFlowTrend": "positive",
-			"upRevisions": 4,
-			"downRevisions": 0,
-			"totalAnalysts": 10
+			"instFlowTrend": "neutral",
+			"upRevisions": 6,
+			"downRevisions": 2,
+			"totalAnalysts": 9
 		}
 	},
 	"description": "Triple Flag Precious Metals Corp., a precious metals streaming and royalty company, engages in acquiring and managing precious metals, streams, royalties, and other mineral interests in Australia, ...",
 	"analystTargets": {
-		"low": 43,
-		"mean": 45,
-		"high": 49
+		"low": 37,
+		"mean": 39.25,
+		"high": 41
 	},
 	"analystConsensus": {
 		"ticker": "TFPM",
@@ -109,14 +110,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.71,
-			"low": 1.22,
-			"average": 1.449
+			"high": 1.56108,
+			"low": 1.26,
+			"average": 1.39568
 		},
 		"2027": {
-			"high": 2.18,
-			"low": 1.28,
-			"average": 1.64556
+			"high": 3.09446,
+			"low": 1.03,
+			"average": 1.54768
 		}
-	}
+	},
+	"confidence": "low"
 }

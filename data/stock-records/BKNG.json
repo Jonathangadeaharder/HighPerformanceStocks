@@ -3,100 +3,101 @@
 	"name": "Booking Holdings",
 	"group": "Data & Software Monopolies",
 	"cagrModel": {
-		"epsGrowth": "17%",
+		"epsGrowth": "18%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.63,
+		"ttmEPS": 8.97,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "39%",
-			"bull": "86%"
+			"bear": "9%",
+			"base": "38%",
+			"bull": "74%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$4194.31",
-	"marketCap": "$135.2B USD",
+	"currentPrice": "$173.92",
+	"marketCap": "$130.7B USD",
 	"valuation": {
-		"trailingPE": 632.6,
-		"forwardPE": 13.4,
-		"evEbitda": 13.4,
-		"evFcf": 20.6
+		"trailingPE": 19.4,
+		"forwardPE": 14.1,
+		"evEbitda": 12.9,
+		"evFcf": 17.4,
+		"pegRatio": 0.64
 	},
 	"metrics": {
-		"fcfMargin": "~24%",
-		"fcfYield": "~5%",
-		"netDebtEbitda": "0.2x",
-		"ruleOf40": "40%",
-		"beta": "1.2",
-		"revenueGrowth": "16.0%",
-		"roic": "6.8%",
-		"interestCoverage": "9.5x"
+		"fcfMargin": "~27%",
+		"fcfYield": "~6%",
+		"netDebtEbitda": "0.4x",
+		"ruleOf40": "35%",
+		"beta": "1.07",
+		"revenueGrowth": "8.1%",
+		"roic": "7.3%",
+		"interestCoverage": "9.0x"
 	},
 	"consensus": {
-		"yahoo": "$5799.97"
+		"yahoo": "$238.68"
 	},
-	"targetPrice": "$5799.97",
-	"expectedCAGR": "8% - 86%",
+	"targetPrice": "$238.68",
+	"expectedCAGR": "9% - 74%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.21,
+		"score": 0.97,
 		"signal": "WAIT",
+		"note": "Valuation score 0.97 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 37.2%)",
 		"inputs": {
-			"growth": 17,
+			"growth": 18,
 			"multipleType": "EV/FCF",
-			"multiple": 20.6,
-			"cvStock": 0.029,
+			"multiple": 17.4,
+			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 38.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 4194.31,
-				"price6mAgo": 216.79,
-				"price1mAgo": 184.53,
-				"low3m": 150.62,
-				"return6m": 1834.7,
-				"return1m": 2173,
+				"price": 173.92,
+				"price6mAgo": 168.71,
+				"price1mAgo": 212.26,
+				"low3m": 161.69,
+				"return6m": 3.1,
+				"return1m": -18.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 11,
-				"down30d": 8
+				"up30d": 14,
+				"down30d": 12
 			},
 			"earningsSurprise": {
-				"surprise": 0.3,
-				"quarter": "2025-12"
+				"surprise": 4.5,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.79
+		"secondaryScore": 0.78
 	},
 	"bullCase": "Booking Holdings operates the global OTA duopoly (with Expedia) and is the near-monopoly in European accommodation. Its asset-light model generates 40%+ operating margins. The shift to connected trip — flights, hotels, rental cars, attractions in a single booking — is expanding wallet share per customer. Aggressive share buybacks at 7%+ annually provide EPS floor.",
 	"bearCase": "Travel spending is among the most discretionary consumer categories — Booking's revenue fell 90%+ in COVID and is sensitive to recession and geopolitical disruption. At 14x forward PE, valuation is attractive but the stock has historically compressed to 10-11x in downturns. Airbnb is taking share in leisure accommodation, particularly in major European cities.",
-	"lastUpdated": "2026-04-05T07:21:16.389Z",
-	"expectedVolatility": "~32%",
-	"sharpeRatio": 1.33,
+	"lastUpdated": "2026-09-12T03:15:53.841Z",
+	"expectedVolatility": "~37%",
+	"sharpeRatio": 1,
 	"qcs": {
-		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": -0.5,
-		"totalScore": 4.5,
+		"earningsScore": 3.83,
+		"flowScore": -5,
+		"revisionsScore": 0,
+		"totalScore": -1.17,
 		"raw": {
-			"avgSurprisePct": 13.79,
-			"netInsiderShares": 21284,
+			"avgSurprisePct": 3.54,
+			"netInsiderShares": -131946,
 			"instFlowTrend": "negative",
-			"upRevisions": 12,
-			"downRevisions": 15,
-			"totalAnalysts": 30
+			"upRevisions": 13,
+			"downRevisions": 13,
+			"totalAnalysts": 33
 		}
 	},
 	"description": "Booking Holdings Inc., together with its subsidiaries, provides online and traditional travel and restaurant reservations and related services in the United States, the Netherlands, the United King...",
 	"analystTargets": {
-		"low": 4495,
-		"mean": 5799.97,
-		"high": 7746
+		"low": 188,
+		"mean": 238.68,
+		"high": 301
 	},
 	"analystConsensus": {
 		"ticker": "BKNG",
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 281.85,
-			"low": 260.02,
-			"average": 267.75504
+			"high": 10.8,
+			"low": 10.147,
+			"average": 10.44865
 		},
 		"2027": {
-			"high": 333.24005,
-			"low": 297.25,
-			"average": 313.09357
+			"high": 13.24859,
+			"low": 11.423,
+			"average": 12.37711
 		}
-	}
+	},
+	"confidence": "cut"
 }

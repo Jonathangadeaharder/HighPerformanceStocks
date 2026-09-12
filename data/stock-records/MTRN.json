@@ -2,100 +2,102 @@
 	"ticker": "MTRN",
 	"name": "Materion",
 	"group": "Materials & Infrastructure",
-	"targetPrice": "$178.33",
+	"targetPrice": "$303.75",
 	"bullCase": "Crucial supplier of high-performance alloys and beryllium for space, defense, and next-gen semiconductor applications, enjoying deep moats and pricing power.",
 	"bearCase": "Cyclical exposure to consumer electronics and industrial demand, plus execution risks associated with capacity expansions.",
 	"cagrModel": {
 		"epsGrowth": "11%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 3.58,
+		"ttmEPS": 4.38,
 		"scenarios": {
-			"bear": "14%",
-			"base": "20%",
-			"bull": "24%"
+			"bear": "8%",
+			"base": "18%",
+			"bull": "28%"
 		}
 	},
-	"currentPrice": "$149.12",
-	"marketCap": "$3.1B USD",
+	"currentPrice": "$257.51",
+	"marketCap": "$5.4B USD",
 	"consensus": {
-		"yahoo": "$178.33"
+		"yahoo": "$303.75"
 	},
-	"expectedVolatility": "~43%",
+	"expectedVolatility": "~58%",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.78,
+		"score": 2.59,
 		"signal": "FAIL",
+		"note": "Valuation score 2.59 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 11,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.6,
-			"cvStock": 0.035,
+			"multiple": 28.5,
+			"cvStock": 0.036,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 149.12,
-				"price6mAgo": 125.91,
-				"price1mAgo": 150.4,
-				"low3m": 125.02,
-				"return6m": 18.4,
-				"return1m": -0.9,
+				"price": 257.51,
+				"price6mAgo": 138.4,
+				"price1mAgo": 283.26,
+				"low3m": 188.51,
+				"return6m": 86.1,
+				"return1m": -9.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
+				"up30d": 5,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 1.5,
-				"quarter": "2025-12"
+				"surprise": 25.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.85
+		"secondaryScore": 2.77
 	},
-	"lastUpdated": "2026-04-05T07:21:30.022Z",
+	"lastUpdated": "2026-09-12T03:16:03.165Z",
 	"valuation": {
-		"trailingPE": 41.7,
-		"forwardPE": 20.3,
-		"evEbitda": 19.6,
-		"evFcf": 147.1
+		"trailingPE": 58.8,
+		"forwardPE": 30.5,
+		"evEbitda": 28.5,
+		"evFcf": 438.2,
+		"pegRatio": 1.28
 	},
 	"metrics": {
-		"roe": "8.3%",
+		"roe": "9.5%",
 		"fcfMargin": "~1%",
-		"fcfYield": "~1%",
-		"netDebtEbitda": "2.8x",
-		"ruleOf40": "13%",
-		"beta": "0.91",
-		"revenueGrowth": "12.1%",
-		"roic": "2.8%",
-		"interestCoverage": "6.2x"
+		"fcfYield": "~0%",
+		"netDebtEbitda": "2.4x",
+		"ruleOf40": "43%",
+		"beta": "1.08",
+		"revenueGrowth": "42.2%",
+		"roic": "1.8%",
+		"interestCoverage": "7.3x"
 	},
-	"expectedCAGR": "14% - 24%",
-	"sharpeRatio": 0.34,
+	"expectedCAGR": "8% - 28%",
+	"sharpeRatio": 0.23,
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"flowScore": 5,
+		"revisionsScore": 4.17,
+		"totalScore": 14.17,
 		"raw": {
-			"avgSurprisePct": 7.75,
-			"netInsiderShares": 42469,
-			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 2,
-			"totalAnalysts": 5
+			"avgSurprisePct": 7.1,
+			"netInsiderShares": 98456,
+			"instFlowTrend": "positive",
+			"upRevisions": 5,
+			"downRevisions": 0,
+			"totalAnalysts": 6
 		}
 	},
 	"description": "Materion Corporation, together with its subsidiaries, produces advanced engineered materials in the United States, Asia, Europe, and internationally.",
 	"analystTargets": {
-		"low": 170,
-		"mean": 178.33,
-		"high": 185
+		"low": 278.74,
+		"mean": 303.75,
+		"high": 330
 	},
 	"analystConsensus": {
 		"ticker": "MTRN",
@@ -108,14 +110,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.4,
-			"low": 6.25,
-			"average": 6.314
+			"high": 7.25,
+			"low": 6.65,
+			"average": 7.02
 		},
 		"2027": {
-			"high": 7.91,
-			"low": 6.87,
-			"average": 7.346
+			"high": 9.1,
+			"low": 7.87,
+			"average": 8.43333
 		}
-	}
+	},
+	"confidence": "high"
 }

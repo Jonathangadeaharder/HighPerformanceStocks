@@ -2,103 +2,102 @@
 	"ticker": "ASML",
 	"name": "ASML Holding",
 	"group": "AI & Semiconductors",
-	"marketCap": "$517.2B USD",
-	"sharpeRatio": 0.12,
-	"expectedCAGR": "-31% - 50%",
-	"expectedVolatility": "~41%",
+	"marketCap": "$652.3B USD",
+	"sharpeRatio": 0.15,
+	"expectedCAGR": "-46% - 69%",
+	"expectedVolatility": "~46%",
 	"valuation": {
-		"trailingPE": 46.1,
-		"forwardPE": 30.1,
-		"pegRatio": null,
-		"evEbitda": 40.7,
-		"evFcf": 46
+		"trailingPE": 57.5,
+		"forwardPE": 28.2,
+		"pegRatio": 1.54,
+		"evEbitda": 2686.3,
+		"evFcf": 4294.3
 	},
 	"metrics": {
-		"fcfMargin": "~33%",
-		"fcfYield": "~2%",
-		"roic": "2.5%",
-		"roe": "50.5%",
+		"fcfMargin": "~24%",
+		"fcfYield": "~1%",
+		"roic": "1.8%",
+		"roe": "53.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "38%",
-		"beta": "1.38",
-		"revenueGrowth": "4.9%",
-		"interestCoverage": "47.5x"
+		"ruleOf40": "45%",
+		"beta": "1.36",
+		"revenueGrowth": "21.3%",
+		"interestCoverage": "123.6x"
 	},
-	"targetPrice": "$1472.57",
+	"targetPrice": "$2157.87",
 	"bullCase": "A literal monopoly on EUV lithography with flawless financial metrics (Rule of 40 at 49.5%). Sovereign fab build-outs render their equipment price-inelastic.",
 	"bearCase": "Uncompensated geopolitical variance drag. A 5.3% intraday drop in March 2026 due to export control panic proves that reliance on the Chinese market is a fatal vulnerability to DCF models.",
-	"currentPrice": "$1317.23",
+	"currentPrice": "$1698.30",
 	"consensus": {
 		"tipranks": "$1,625",
-		"yahoo": "$1472.57",
+		"yahoo": "$2157.87",
 		"stockanalysis": "$1,476"
 	},
 	"cagrModel": {
-		"ttmEPS": 28.58,
-		"epsGrowth": "27%",
+		"ttmEPS": 29.53,
+		"epsGrowth": "35%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-31%",
-			"base": "13%",
-			"bull": "50%"
+			"bear": "-46%",
+			"base": "28%",
+			"bull": "69%"
 		},
 		"basis": "5yr & 10yr avg PE (~36) (USD-equivalent ADR basis; underlying financials reported in EUR)",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:15.341Z",
+	"lastUpdated": "2026-09-12T03:15:53.107Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.11,
-		"signal": "REJECTED",
+		"score": 0.83,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 27,
+			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 30.1,
-			"cvStock": 0.098,
+			"multiple": 28.2,
+			"cvStock": 0.105,
 			"riskMultiplier": 1
 		},
-		"note": "REJECT: Stalled at WAIT with base CAGR 13% < 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 1317.23,
-				"price6mAgo": 1043.3,
-				"price1mAgo": 1368.36,
-				"low3m": 1133.48,
-				"return6m": 26.3,
-				"return1m": -3.7,
+				"price": 1698.3,
+				"price6mAgo": 1351.58,
+				"price1mAgo": 1810.07,
+				"low3m": 1530.64,
+				"return6m": 25.7,
+				"return1m": -6.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
+				"up30d": 28,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -2.7,
-				"quarter": "2025-12"
+				"surprise": 9.1,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 1.58,
-		"flowScore": 0,
-		"revisionsScore": 0.43,
-		"totalScore": 2.01,
+		"earningsScore": 1.57,
+		"flowScore": 2.5,
+		"revisionsScore": 4.38,
+		"totalScore": 8.45,
 		"raw": {
-			"avgSurprisePct": 3.87,
+			"avgSurprisePct": 4.13,
 			"netInsiderShares": 0,
-			"instFlowTrend": "neutral",
-			"upRevisions": 3,
+			"instFlowTrend": "positive",
+			"upRevisions": 28,
 			"downRevisions": 0,
-			"totalAnalysts": 35
+			"totalAnalysts": 32
 		}
 	},
 	"description": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems.",
 	"analystTargets": {
-		"low": 891.39,
-		"mean": 1472.57,
-		"high": 1962.6
+		"low": 897.6,
+		"mean": 2157.87,
+		"high": 2861.32
 	},
 	"analystConsensus": {
 		"ticker": "ASML",
@@ -112,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 34,
-			"low": 26.541,
-			"average": 29.75435
+			"high": 40.41908,
+			"low": 31.81,
+			"average": 38.18987
 		},
 		"2027": {
-			"high": 46.37,
-			"low": 31.55,
-			"average": 37.83007
+			"high": 59.10128,
+			"low": 37.43,
+			"average": 51.72248
 		}
-	}
+	},
+	"confidence": "medium"
 }

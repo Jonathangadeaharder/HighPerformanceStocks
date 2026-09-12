@@ -2,104 +2,104 @@
 	"ticker": "MA",
 	"name": "Mastercard",
 	"group": "Defensive Monopolies",
-	"marketCap": "$440.4B USD",
-	"sharpeRatio": 1.17,
-	"expectedCAGR": "12% - 51%",
+	"marketCap": "$498.6B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "-2% - 31%",
 	"expectedVolatility": "~23%",
 	"valuation": {
-		"trailingPE": 29.9,
-		"forwardPE": 21.8,
-		"pegRatio": null,
-		"evEbitda": 21.9,
-		"evFcf": 27.6
+		"trailingPE": 31.3,
+		"forwardPE": 24.7,
+		"pegRatio": 1.48,
+		"evEbitda": 23,
+		"evFcf": 30.2
 	},
 	"metrics": {
-		"fcfMargin": "~50%",
-		"fcfYield": "~4%",
-		"roic": "3.9%",
-		"roe": "209.9%",
-		"netDebtEbitda": "0.4x",
-		"ruleOf40": "67%",
-		"beta": "0.83",
-		"revenueGrowth": "17.6%",
-		"interestCoverage": "18.8x"
+		"fcfMargin": "~48%",
+		"fcfYield": "~3%",
+		"roic": "3.4%",
+		"roe": "241.2%",
+		"netDebtEbitda": "0.6x",
+		"ruleOf40": "62%",
+		"beta": "0.73",
+		"revenueGrowth": "14.1%",
+		"interestCoverage": "16.4x"
 	},
-	"targetPrice": "$657.11",
+	"targetPrice": "$668.53",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing billions of transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$493.44",
+	"currentPrice": "$569.19",
 	"consensus": {
 		"tipranks": "$659",
-		"yahoo": "$657.11",
+		"yahoo": "$668.53",
 		"stockanalysis": "$660"
 	},
 	"cagrModel": {
-		"ttmEPS": 16.53,
+		"ttmEPS": 18.2,
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "12%",
-			"base": "34%",
-			"bull": "51%"
+			"bear": "-2%",
+			"base": "18%",
+			"bull": "31%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-04-05T07:21:27.062Z",
+	"lastUpdated": "2026-09-12T03:16:01.544Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.84,
-		"signal": "WAIT",
+		"score": 2.01,
+		"signal": "FAIL",
+		"note": "Valuation score 2.01 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 27.6,
-			"cvStock": 0.019,
+			"multiple": 30.2,
+			"cvStock": 0.014,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.2%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 493.44,
-				"price6mAgo": 578.81,
-				"price1mAgo": 524.66,
-				"low3m": 480.5,
-				"return6m": -14.7,
-				"return1m": -6,
-				"near3mLow": true
+				"price": 569.19,
+				"price6mAgo": 497.31,
+				"price1mAgo": 559.73,
+				"low3m": 483.14,
+				"return6m": 14.5,
+				"return1m": 1.7,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 0
+				"up30d": 31,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 12.3,
-				"quarter": "2025-12"
+				"surprise": 5.5,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.45
+		"secondaryScore": 1.65
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.43,
-		"totalScore": 5.43,
+		"flowScore": -5,
+		"revisionsScore": 4.44,
+		"totalScore": 4.44,
 		"raw": {
-			"avgSurprisePct": 5.43,
-			"netInsiderShares": 178595,
+			"avgSurprisePct": 5.89,
+			"netInsiderShares": -23184,
 			"instFlowTrend": "negative",
-			"upRevisions": 3,
-			"downRevisions": 0,
-			"totalAnalysts": 35
+			"upRevisions": 33,
+			"downRevisions": 1,
+			"totalAnalysts": 36
 		}
 	},
 	"description": "Mastercard Incorporated, a technology company, provides transaction processing and other payment-related products and services in the United States and internationally.",
 	"analystTargets": {
 		"low": 550,
-		"mean": 657.11,
-		"high": 739
+		"mean": 668.53,
+		"high": 740
 	},
 	"analystConsensus": {
 		"ticker": "MA",
@@ -113,14 +113,15 @@
 	"targetPriceAlternative": "$667.88",
 	"forwardEstimates": {
 		"2026": {
-			"high": 20.11363,
-			"low": 19.15,
-			"average": 19.59812
+			"high": 20.2,
+			"low": 19.64,
+			"average": 19.93002
 		},
 		"2027": {
-			"high": 23.58918,
-			"low": 21.9,
-			"average": 22.66326
+			"high": 23.55833,
+			"low": 22.28,
+			"average": 23.02197
 		}
-	}
+	},
+	"confidence": "low"
 }

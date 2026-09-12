@@ -2,35 +2,35 @@
 	"ticker": "RGLD",
 	"name": "Royal Gold",
 	"group": "Royalties",
-	"marketCap": "$22.3B USD",
-	"sharpeRatio": 0.44,
-	"expectedCAGR": "0% - 44%",
-	"expectedVolatility": "~40%",
+	"marketCap": "$21.4B USD",
+	"sharpeRatio": 0.21,
+	"expectedCAGR": "-13% - 40%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 39.2,
-		"forwardPE": 17.7,
-		"pegRatio": 1.69,
-		"evEbitda": 27.3,
-		"evFcf": -38
+		"trailingPE": 27.9,
+		"forwardPE": 19.5,
+		"pegRatio": 1.06,
+		"evEbitda": 17,
+		"evFcf": -114.2
 	},
 	"metrics": {
-		"fcfMargin": "~-59%",
-		"fcfYield": "~-3%",
-		"roic": "3.1%",
-		"roe": "9.1%",
-		"netDebtEbitda": "0.8x",
-		"ruleOf40": "27%",
-		"beta": "0.55",
-		"revenueGrowth": "86.1%",
-		"interestCoverage": "16.4x"
+		"fcfMargin": "~-12%",
+		"fcfYield": "~-1%",
+		"roic": "4.8%",
+		"roe": "13.6%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "103%",
+		"beta": "0.5",
+		"revenueGrowth": "115.5%",
+		"interestCoverage": "58.5x"
 	},
-	"targetPrice": "$330.09",
+	"targetPrice": "$304.83",
 	"bullCase": "Royal Gold completed a transformational year with the Sandstorm Gold acquisition, record revenue ($645M TTM), and adjusted EBITDA margins of 82%. The combined portfolio now offers superior diversification with over 30 producing assets globally. At a forward P/E of ~19x with 80%+ margins, RGLD trades at a discount to WPM and FNV. Management has a clear path to repay acquisition debt by mid-2027.",
 	"bearCase": "Net debt of ~$1.2B and a net debt/EBITDA ratio of ~1.6x is elevated for a royalty company. The trailing P/E of ~42x reflects rich pricing. Q4 2025 EPS of $1.92 missed consensus of $2.68 significantly, raising execution concerns. If gold prices revert toward $2,000/oz, cash flows compress sharply and acquisition leverage becomes a headwind.",
-	"currentPrice": "$262.63",
+	"currentPrice": "$252.28",
 	"consensus": {
 		"tipranks": "$249",
-		"yahoo": "$330.09",
+		"yahoo": "$304.83",
 		"stockanalysis": "$231"
 	},
 	"cagrModel": {
@@ -38,65 +38,66 @@
 		"epsGrowth": "12%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "0%",
-			"base": "27%",
-			"bull": "44%"
+			"bear": "-13%",
+			"base": "22%",
+			"bull": "40%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:33.169Z",
+	"lastUpdated": "2026-09-12T03:16:05.360Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.63,
+		"score": 1.68,
 		"signal": "FAIL",
+		"note": "Valuation score 1.68 exceeds 1 limit",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "Forward P/E",
-			"multiple": 17.7,
-			"cvStock": 0.183,
-			"riskMultiplier": 1.102
+			"multiple": 19.5,
+			"cvStock": 0.146,
+			"riskMultiplier": 1.032
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 262.63,
-				"price6mAgo": 203.57,
-				"price1mAgo": 276.47,
-				"low3m": 213.76,
-				"return6m": 29,
-				"return1m": -5,
+				"price": 252.28,
+				"price6mAgo": 269.83,
+				"price1mAgo": 232.87,
+				"low3m": 186.33,
+				"return6m": -6.5,
+				"return1m": 8.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 2,
-				"down30d": 3
+				"up30d": 6,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": -27.4,
-				"quarter": "2025-12"
+				"surprise": 0.8,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -0.83,
-		"flowScore": 5,
-		"revisionsScore": 1.36,
-		"totalScore": 5.53,
+		"earningsScore": -2.3,
+		"flowScore": 2.5,
+		"revisionsScore": -2.73,
+		"totalScore": -2.53,
 		"raw": {
-			"avgSurprisePct": -3.8,
-			"netInsiderShares": 3731,
+			"avgSurprisePct": -8.41,
+			"netInsiderShares": -11125,
 			"instFlowTrend": "positive",
-			"upRevisions": 4,
-			"downRevisions": 1,
+			"upRevisions": 2,
+			"downRevisions": 8,
 			"totalAnalysts": 11
 		}
 	},
 	"description": "Royal Gold, Inc., together with its subsidiaries, acquires and manages precious metal streams, royalties, and related interests in North America, South and Central America, Europe, the Middle East,...",
 	"analystTargets": {
-		"low": 260,
-		"mean": 330.09,
-		"high": 375
+		"low": 218,
+		"mean": 304.83,
+		"high": 350
 	},
 	"analystConsensus": {
 		"ticker": "RGLD",
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 15.84,
-			"low": 9.93,
-			"average": 12.84455
+			"high": 11.86,
+			"low": 9.72259,
+			"average": 10.50478
 		},
 		"2027": {
-			"high": 21.61,
-			"low": 10.78,
-			"average": 14.82877
+			"high": 17.51818,
+			"low": 9.96,
+			"average": 12.90529
 		}
-	}
+	},
+	"confidence": "cut"
 }

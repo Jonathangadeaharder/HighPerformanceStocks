@@ -2,98 +2,98 @@
 	"ticker": "SE",
 	"name": "Sea Limited",
 	"group": "Emerging Markets",
-	"targetPrice": "$140.43",
+	"targetPrice": "$157.11",
 	"bullCase": "Sea Limited holds dominant positions across Southeast Asia in e-commerce (Shopee), digital financial services (SeaMoney), and gaming (Garena). SeaMoney's fintech penetration into underbanked EM populations mirrors the Nu Holdings playbook at scale. If Shopee achieves 15%+ EBIT margins at maturity — already visible in select markets — intrinsic value dramatically exceeds current pricing. The 22x exit P/E represents a modest premium for a dominant EM platform.",
 	"bearCase": "Garena is structurally declining as Free Fire ages and new title launches repeatedly disappoint. TikTok Shop is aggressively competing with Shopee across SEA markets with superior content monetization. SeaMoney faces rising NPL risk in EM credit. The -54% 6-month return reflects genuine fundamental deterioration, not pure macro.",
 	"cagrModel": {
 		"epsGrowth": "22%",
 		"basis": "GAAP diluted EPS",
 		"dividendYield": "0%",
-		"ttmEPS": 2.52,
+		"ttmEPS": 2.56,
 		"scenarios": {
-			"bear": "22%",
-			"base": "71%",
-			"bull": "137%"
+			"bear": "-1%",
+			"base": "48%",
+			"bull": "84%"
 		}
 	},
-	"currentPrice": "$82.28",
-	"marketCap": "$48.7B USD",
+	"currentPrice": "$106.24",
+	"marketCap": "$65.1B USD",
 	"consensus": {
-		"yahoo": "$140.43"
+		"yahoo": "$157.11"
 	},
-	"expectedVolatility": "~50%",
+	"expectedVolatility": "~51%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.75,
-		"signal": "REJECTED",
+		"score": 0.94,
+		"signal": "PASS",
 		"inputs": {
 			"growth": 22,
 			"multipleType": "Forward P/E",
-			"multiple": 16.3,
-			"cvStock": 0.135,
-			"riskMultiplier": 1.019
+			"multiple": 20.5,
+			"cvStock": 0.127,
+			"riskMultiplier": 1.011
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 82.28,
-				"price6mAgo": 189.5,
-				"price1mAgo": 95.52,
-				"low3m": 77.05,
-				"return6m": -56.6,
-				"return1m": -13.9,
+				"price": 106.24,
+				"price6mAgo": 85.16,
+				"price1mAgo": 128.11,
+				"low3m": 82.67,
+				"return6m": 24.8,
+				"return1m": -17.1,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 0,
-				"down30d": 4
+				"pass": true,
+				"up30d": 3,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": -5.5,
-				"quarter": "2025-12"
+				"surprise": -2.9,
+				"quarter": "2026-06"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:34.216Z",
+	"lastUpdated": "2026-09-12T03:16:06.050Z",
 	"valuation": {
-		"trailingPE": 32.7,
-		"forwardPE": 16.3,
-		"evEbitda": 18,
-		"evFcf": 80.2
+		"trailingPE": 41.5,
+		"forwardPE": 20.5,
+		"evEbitda": 23.4,
+		"evFcf": 949.4,
+		"pegRatio": 1.05
 	},
 	"metrics": {
-		"roe": "15.3%",
-		"fcfMargin": "~2%",
-		"fcfYield": "~1%",
+		"roe": "14.7%",
+		"fcfMargin": "~0%",
+		"fcfYield": "~0%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%",
-		"beta": "1.7",
-		"revenueGrowth": "38.4%",
-		"roic": "12.1%",
-		"interestCoverage": "12.9x"
+		"ruleOf40": "48%",
+		"beta": "1.52",
+		"revenueGrowth": "48.1%",
+		"roic": "8.7%",
+		"interestCoverage": "11.8x"
 	},
-	"expectedCAGR": "22% - 137%",
-	"sharpeRatio": 1.5,
+	"expectedCAGR": "-1% - 84%",
+	"sharpeRatio": 0.73,
 	"qcs": {
-		"earningsScore": -2.83,
-		"flowScore": 2.5,
-		"revisionsScore": -3.5,
-		"totalScore": -3.83,
+		"earningsScore": -1.82,
+		"flowScore": 0,
+		"revisionsScore": 1.11,
+		"totalScore": -0.71,
 		"raw": {
-			"avgSurprisePct": -9.55,
-			"netInsiderShares": -131237,
-			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 7,
-			"totalAnalysts": 10
+			"avgSurprisePct": -5.77,
+			"netInsiderShares": -4465462,
+			"instFlowTrend": "neutral",
+			"upRevisions": 4,
+			"downRevisions": 2,
+			"totalAnalysts": 9
 		}
 	},
-	"description": "Sea Limited, through its subsidiaries, operates as a consumer internet company in Southeast Asia, Latin America, the rest of Asia, and internationally.",
+	"description": "Sea Limited, through its subsidiaries, operates as a technology company in Southeast Asia, Latin America, the rest of Asia, and internationally.",
 	"analystTargets": {
-		"low": 100,
-		"mean": 140.43,
+		"low": 105,
+		"mean": 157.11,
 		"high": 195
 	},
 	"analystConsensus": {
@@ -108,14 +108,15 @@
 	"targetPriceAlternative": "$166.83",
 	"forwardEstimates": {
 		"2026": {
-			"high": 5.35816,
-			"low": 3.06,
-			"average": 3.86123
+			"high": 4.26,
+			"low": 3.39,
+			"average": 3.81962
 		},
 		"2027": {
-			"high": 6.70325,
-			"low": 3.98,
-			"average": 5.03711
+			"high": 6.68,
+			"low": 4.04,
+			"average": 5.19035
 		}
-	}
+	},
+	"confidence": "cut"
 }

@@ -2,71 +2,72 @@
 	"ticker": "ADDT-B.ST",
 	"name": "Addtech AB",
 	"group": "Serial Acquirers",
-	"marketCap": "86.5B SEK",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "4% - 26%",
-	"expectedVolatility": "~28%",
+	"marketCap": "87.9B SEK",
+	"sharpeRatio": 0.48,
+	"expectedCAGR": "5% - 29%",
+	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 41.9,
-		"forwardPE": 40.9,
-		"pegRatio": null,
-		"evEbitda": 25.6,
-		"evFcf": 36.9
+		"trailingPE": 39.5,
+		"forwardPE": 41.5,
+		"pegRatio": 4.1,
+		"evEbitda": 24.5,
+		"evFcf": 36.3
 	},
 	"metrics": {
 		"fcfMargin": "~11%",
 		"fcfYield": "~3%",
 		"roic": "3.3%",
-		"roe": "29.3%",
-		"netDebtEbitda": "1.3x",
-		"ruleOf40": "12%",
+		"roe": "26.9%",
+		"netDebtEbitda": "1.4x",
+		"ruleOf40": "17%",
 		"roce": "~22%",
-		"beta": "1.16",
-		"revenueGrowth": "1.4%",
-		"interestCoverage": "11.0x"
+		"beta": "1.13",
+		"revenueGrowth": "5.7%",
+		"interestCoverage": "10.2x"
 	},
-	"targetPrice": "381 SEK",
+	"targetPrice": "385 SEK",
 	"bullCase": "20%+ TSR CAGR since 2001. Uses only cash flow and debt for acquisitions — zero dilution. Decentralized model preserves entrepreneurial culture. Strong acquisition pipeline. Energy transition is a secular tailwind.",
 	"bearCase": "Premium valuation (~35x forward P/E) for a mid-single-digit organic grower. European macro headwinds could slow acquisition targets. Currency effects can drag reported growth.",
-	"currentPrice": "321 SEK",
+	"currentPrice": "326 SEK",
 	"consensus": {
 		"tipranks": "378 SEK",
-		"yahoo": "381 SEK"
+		"yahoo": "385 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.66,
-		"epsGrowth": "17%",
+		"ttmEPS": 8.25,
+		"epsGrowth": "13%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "20%",
-			"bull": "26%"
+			"bear": "5%",
+			"base": "19%",
+			"bull": "29%"
 		},
 		"basis": "10yr avg PE",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:12.215Z",
+	"lastUpdated": "2026-09-12T03:15:51.027Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.51,
+		"score": 1.88,
 		"signal": "FAIL",
+		"note": "Valuation score 1.88 exceeds 0.8 limit",
 		"inputs": {
-			"growth": 17,
+			"growth": 13,
 			"multipleType": "EV/EBITDA",
-			"multiple": 25.6,
-			"cvStock": 0.053,
+			"multiple": 24.5,
+			"cvStock": 0.054,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 320.6,
-				"price6mAgo": 305.8,
-				"price1mAgo": 312.6,
-				"low3m": 283.2,
-				"return6m": 4.8,
-				"return1m": 2.6,
-				"near3mLow": false
+				"price": 325.6,
+				"price6mAgo": 313.8,
+				"price1mAgo": 344.4,
+				"low3m": 318,
+				"return6m": 3.8,
+				"return1m": -5.5,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
@@ -74,32 +75,32 @@
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -4.4,
-				"quarter": "2025-12"
+				"surprise": -5.3,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.41
+		"secondaryScore": 3.19
 	},
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": -1.96,
 		"flowScore": 0,
-		"revisionsScore": 1,
-		"totalScore": -4,
+		"revisionsScore": 0.71,
+		"totalScore": -1.25,
 		"raw": {
-			"avgSurprisePct": -15.26,
+			"avgSurprisePct": -2.65,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 3,
 			"downRevisions": 2,
-			"totalAnalysts": 5
+			"totalAnalysts": 7
 		}
 	},
-	"description": "Addtech AB (publ.) provides high-tech products and solutions in Sweden, Denmark, Finland, Norway, Germany, the United Kingdom, rest of Europe, and internationally.",
+	"description": "Addtech AB (publ.) provides technical products and solutions for the manufacturing and infrastructure sectors in Sweden, Denmark, Finland, Norway, Germany, the United Kingdom, the rest of Europe, a...",
 	"analystTargets": {
-		"low": 330,
-		"mean": 380.83,
-		"high": 402
+		"low": 340,
+		"mean": 385,
+		"high": 417
 	},
 	"analystConsensus": {
 		"ticker": "ADDT-B.ST",
@@ -111,15 +112,16 @@
 	},
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
-		"2026": {
-			"high": 9.91,
-			"low": 7.80723,
-			"average": 8.68392
-		},
 		"2027": {
-			"high": 11.4,
-			"low": 9.25353,
-			"average": 10.14642
+			"high": 11.6,
+			"low": 8.93176,
+			"average": 10.36464
+		},
+		"2028": {
+			"high": 12.9,
+			"low": 10.36444,
+			"average": 11.67744
 		}
-	}
+	},
+	"confidence": "cut"
 }

@@ -2,101 +2,102 @@
 	"ticker": "DDOG",
 	"name": "Datadog",
 	"group": "Cloud Infrastructure",
-	"marketCap": "$42.6B USD",
-	"sharpeRatio": 1,
-	"expectedCAGR": "1% - 116%",
-	"expectedVolatility": "~54%",
+	"marketCap": "$79.4B USD",
+	"sharpeRatio": 0.08,
+	"expectedCAGR": "-29% - 49%",
+	"expectedVolatility": "~68%",
 	"valuation": {
-		"trailingPE": 388.3,
-		"forwardPE": 45.7,
-		"evEbitda": 5211.9,
-		"evFcf": 44.6
+		"trailingPE": 433.7,
+		"forwardPE": 74.4,
+		"evEbitda": 913.5,
+		"evFcf": 72,
+		"pegRatio": 1.14
 	},
 	"metrics": {
-		"roe": "3.3%",
-		"fcfMargin": "~26%",
-		"fcfYield": "~2%",
+		"roe": "4.7%",
+		"fcfMargin": "~27%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "55%",
-		"beta": "1.29",
-		"revenueGrowth": "29.2%",
-		"roic": "2.7%",
-		"interestCoverage": "0.1x"
+		"ruleOf40": "62%",
+		"beta": "1.49",
+		"revenueGrowth": "35.6%",
+		"roic": "1.6%",
+		"interestCoverage": "1.2x"
 	},
-	"targetPrice": "$181.52",
+	"targetPrice": "$285.51",
 	"bullCase": "The premier cloud infrastructure monitoring platform. Essential utility as workloads shift to the cloud and become more complex.",
 	"bearCase": "Recent profitability guidance disappointed; intense competition from Cloudflare, Dynatrace, and hyperscalers' native tools.",
-	"currentPrice": "$120.36",
+	"currentPrice": "$221.21",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "51%",
-			"bull": "116%"
+			"bear": "-29%",
+			"base": "29%",
+			"bull": "49%"
 		},
 		"ttmEPS": 2.12,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"basis": "2026E non-GAAP adjusted EPS; high-growth observability SaaS multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.669Z",
+	"lastUpdated": "2026-09-12T03:15:55.253Z",
 	"consensus": {
-		"yahoo": "$181.52"
+		"yahoo": "$285.51"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.23,
-		"signal": "REJECTED",
+		"score": 3.64,
+		"signal": "FAIL",
+		"note": "Valuation score 3.64 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
-			"multiple": 44.6,
-			"cvStock": 0.11,
-			"riskMultiplier": 1.002
+			"multiple": 72,
+			"cvStock": 0.127,
+			"riskMultiplier": 1.011
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 120.36,
-				"price6mAgo": 157.36,
-				"price1mAgo": 122.36,
-				"low3m": 98.01,
-				"return6m": -23.5,
-				"return1m": -1.6,
+				"price": 221.21,
+				"price6mAgo": 127.16,
+				"price1mAgo": 240.91,
+				"low3m": 203.24,
+				"return6m": 74,
+				"return1m": -8.2,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 3,
-				"down30d": 28
+				"pass": true,
+				"up30d": 38,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": 6.3,
-				"quarter": "2025-12"
+				"surprise": 11.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.29
+		"secondaryScore": 3.76
 	},
 	"qcs": {
-		"earningsScore": 4.36,
-		"flowScore": 5,
-		"revisionsScore": -3.41,
-		"totalScore": 5.95,
+		"earningsScore": 4.44,
+		"flowScore": 2.5,
+		"revisionsScore": 4.77,
+		"totalScore": 11.71,
 		"raw": {
-			"avgSurprisePct": 11.99,
-			"netInsiderShares": 892456,
+			"avgSurprisePct": 14.09,
+			"netInsiderShares": -139374,
 			"instFlowTrend": "positive",
-			"upRevisions": 6,
-			"downRevisions": 36,
-			"totalAnalysts": 44
+			"upRevisions": 41,
+			"downRevisions": 0,
+			"totalAnalysts": 43
 		}
 	},
 	"description": "Datadog, Inc. operates an observability and security platform for cloud applications in the United States and internationally.",
 	"analystTargets": {
-		"low": 121,
-		"mean": 181.52,
-		"high": 260
+		"low": 158,
+		"mean": 285.51,
+		"high": 330
 	},
 	"analystConsensus": {
 		"ticker": "DDOG",
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.56,
-			"low": 2.07,
-			"average": 2.16072
+			"high": 2.65,
+			"low": 2.48456,
+			"average": 2.52707
 		},
 		"2027": {
-			"high": 3.51,
-			"low": 2.35,
-			"average": 2.63493
+			"high": 4.16441,
+			"low": 2.66,
+			"average": 2.97173
 		}
-	}
+	},
+	"confidence": "high"
 }

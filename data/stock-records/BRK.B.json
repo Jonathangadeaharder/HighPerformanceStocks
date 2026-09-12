@@ -2,99 +2,100 @@
 	"ticker": "BRK.B",
 	"name": "Berkshire Hathaway",
 	"group": "The Capital Compounders",
-	"marketCap": "$1029.6B USD",
-	"sharpeRatio": 0.38,
-	"expectedCAGR": "1% - 21%",
-	"expectedVolatility": "~17%",
+	"marketCap": "$1092.6B USD",
+	"sharpeRatio": 0.32,
+	"expectedCAGR": "0% - 18%",
+	"expectedVolatility": "~14%",
 	"valuation": {
-		"pegRatio": null,
+		"pegRatio": 10.06,
 		"evEbitda": null,
-		"trailingPE": 15.4,
-		"forwardPE": 21.9,
-		"evFcf": -6.4
+		"trailingPE": 12.8,
+		"forwardPE": 23,
+		"evFcf": -3.3
 	},
 	"metrics": {
-		"roe": "9.8%",
-		"fcfMargin": "~10%",
-		"fcfYield": "~4%",
+		"roe": "12.1%",
+		"fcfMargin": "~19%",
+		"fcfYield": "~7%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "9%",
-		"beta": "0.7",
-		"revenueGrowth": "-0.7%",
-		"roic": "5.8%",
-		"interestCoverage": "14.9x"
+		"ruleOf40": "29%",
+		"beta": "0.6",
+		"revenueGrowth": "10.0%",
+		"roic": "5.5%",
+		"interestCoverage": "18.5x"
 	},
-	"targetPrice": "$523",
+	"targetPrice": "$547.67",
 	"bullCase": "The ultimate defensive safe harbor. Trading at a reasonable 1.5x book value, the company's vast cash reserves provide unmatched optionality. The potential initiation of a dividend or massive buybacks under the Greg Abel era serves as a strong forward catalyst.",
 	"bearCase": "The sheer size of the capital base ($380B+ cash) makes high-velocity geometric compounding mathematically impossible. It serves as a volatility dampener rather than a torque engine.",
-	"currentPrice": "$477.35",
+	"currentPrice": "$510.37",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "1%",
-			"base": "10%",
-			"bull": "21%"
+			"bear": "0%",
+			"base": "7%",
+			"bull": "18%"
 		},
 		"epsGrowth": "10%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline; normalized operating EPS (excl. volatile GAAP investment mark-to-market gains/losses)",
 		"ttmEPS": 31.03
 	},
-	"lastUpdated": "2026-04-05T07:21:16.439Z",
+	"lastUpdated": "2026-09-12T03:15:53.858Z",
 	"consensus": {
-		"yahoo": "$523"
+		"yahoo": "$547.67"
 	},
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.19,
+		"score": 2.3,
 		"signal": "FAIL",
+		"note": "Valuation score 2.30 exceeds 1 limit",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 21.9,
-			"cvStock": 0.02,
+			"multiple": 23,
+			"cvStock": 0.022,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 477.35,
-				"price6mAgo": 500.02,
-				"price1mAgo": 500.4,
-				"low3m": 467.21,
-				"return6m": -4.5,
-				"return1m": -4.6,
-				"near3mLow": true
+				"price": 510.37,
+				"price6mAgo": 491.89,
+				"price1mAgo": 510,
+				"low3m": 484.51,
+				"return6m": 3.8,
+				"return1m": 0.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 3,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": -8.5,
-				"quarter": "2025-12"
+				"surprise": 17.4,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -1.07,
+		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -5,
-		"totalScore": -6.07,
+		"revisionsScore": 5,
+		"totalScore": 10,
 		"raw": {
-			"avgSurprisePct": -0.54,
+			"avgSurprisePct": 5.52,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 3,
+			"upRevisions": 3,
+			"downRevisions": 0,
 			"totalAnalysts": 3
 		}
 	},
 	"description": "Berkshire Hathaway Inc., together with its subsidiaries, engages in the insurance, freight rail transportation, and utility businesses.",
 	"analystTargets": {
-		"low": 481,
-		"mean": 523,
-		"high": 578
+		"low": 510,
+		"mean": 547.67,
+		"high": 604
 	},
 	"analystConsensus": {
 		"ticker": "BRK.B",
@@ -107,14 +108,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 21.38912,
-			"low": 19.45,
-			"average": 20.61304
+			"high": 23.24909,
+			"low": 21.22,
+			"average": 22.25303
 		},
 		"2027": {
-			"high": 22.35,
-			"low": 20.61,
-			"average": 21.77445
+			"high": 23.22,
+			"low": 21.25,
+			"average": 22.19254
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -8,100 +8,72 @@
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-3%",
-			"base": "22%",
-			"bull": "76%"
+			"bear": "2%",
+			"base": "27%",
+			"bull": "80%"
 		}
 	},
-	"currentPrice": "$546.89",
-	"marketCap": "$12.5B USD",
+	"currentPrice": "$534.49",
+	"marketCap": "$12.3B USD",
 	"valuation": {
-		"forwardPE": 42.7,
-		"evFcf": -103.5,
-		"evEbitda": -39.9
+		"forwardPE": 55.5,
+		"evFcf": -147.4,
+		"evEbitda": -36.9
 	},
 	"metrics": {
-		"roe": "-42.5%",
-		"fcfMargin": "~-12%",
+		"roe": "-53.3%",
+		"fcfMargin": "~-6%",
 		"fcfYield": "~-1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "199%",
-		"beta": "-1.01",
-		"revenueGrowth": "210.8%",
-		"roic": "-1.6%"
+		"ruleOf40": "65%",
+		"beta": "-0.99",
+		"revenueGrowth": "71.2%",
+		"roic": "-1.7%"
 	},
 	"consensus": {
-		"yahoo": "$668.57"
+		"yahoo": "$678.06"
 	},
-	"targetPrice": "$668.57",
+	"targetPrice": "$678.06",
 	"analystTargets": {
-		"low": 529,
-		"mean": 668.57,
-		"high": 964
+		"low": 543,
+		"mean": 678.06,
+		"high": 962
 	},
-	"expectedCAGR": "-3% - 76%",
-	"expectedVolatility": "~45%",
-	"sharpeRatio": 0.71,
+	"expectedCAGR": "2% - 80%",
+	"expectedVolatility": "~44%",
+	"sharpeRatio": 0.83,
 	"screener": {
-		"engine": "fPERG",
-		"score": -5.33,
-		"signal": "FLAG FOR MANUAL REVIEW",
-		"inputs": {
-			"growth": -10,
-			"multipleType": "Forward P/E",
-			"multiple": 42.7,
-			"cvStock": 0.228,
-			"riskMultiplier": 1.247
-		},
-		"note": "Earnings miss > 100% broke P/E model structure.",
-		"realityChecks": {
-			"stabilization": {
-				"pass": true,
-				"price": 546.89,
-				"price6mAgo": 442.31,
-				"price1mAgo": 439.34,
-				"low3m": 416.21,
-				"return6m": 23.6,
-				"return1m": 24.5,
-				"near3mLow": false
-			},
-			"revisions": {
-				"pass": true,
-				"up30d": 0,
-				"down30d": 1
-			},
-			"earningsSurprise": {
-				"surprise": -192.2,
-				"quarter": "2025-12"
-			}
-		}
+		"engine": "DISQUALIFIED",
+		"signal": "WAIT",
+		"note": "Extreme earnings volatility detected. Awaiting stabilization."
 	},
 	"qcs": {
 		"earningsScore": -5,
-		"flowScore": 0,
+		"flowScore": 5,
 		"revisionsScore": 0,
-		"totalScore": -5,
+		"totalScore": 0,
 		"raw": {
-			"avgSurprisePct": -70.58,
-			"netInsiderShares": 80423,
-			"instFlowTrend": "negative",
+			"avgSurprisePct": -65.88,
+			"netInsiderShares": 44993,
+			"instFlowTrend": "positive",
 			"upRevisions": 0,
 			"downRevisions": 0,
-			"totalAnalysts": 5
+			"totalAnalysts": 4
 		}
 	},
 	"description": "Madrigal Pharmaceuticals, Inc., a biopharmaceutical company, focuses on delivering novel therapeutics for metabolic dysfunction-associated steatohepatitis (MASH) in the United States.",
-	"lastUpdated": "2026-04-05T07:21:27.924Z",
+	"lastUpdated": "2026-09-12T03:16:01.569Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": -0.6,
-			"low": -9.7,
-			"average": -5.782
+			"high": -4.91,
+			"low": -7.38,
+			"average": -6.4925
 		},
 		"2027": {
-			"high": 17.85,
-			"low": 6.16,
-			"average": 12.794
+			"high": 12.84,
+			"low": 7.01,
+			"average": 9.625
 		}
-	}
+	},
+	"confidence": "low"
 }

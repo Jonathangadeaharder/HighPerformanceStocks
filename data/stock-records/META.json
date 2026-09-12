@@ -2,86 +2,86 @@
 	"ticker": "META",
 	"name": "Meta Platforms",
 	"group": "Data & Software Monopolies",
-	"marketCap": "$1453.1B USD",
-	"sharpeRatio": 1.28,
-	"expectedCAGR": "7% - 99%",
-	"expectedVolatility": "~38%",
+	"marketCap": "$1650.9B USD",
+	"sharpeRatio": 0.44,
+	"expectedCAGR": "-10% - 54%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 24.4,
-		"forwardPE": 16,
-		"pegRatio": 1.05,
-		"evEbitda": 14.3,
-		"evFcf": 62.2
+		"trailingPE": 24.3,
+		"forwardPE": 18.5,
+		"pegRatio": 0.86,
+		"evEbitda": 15.3,
+		"evFcf": 77.6
 	},
 	"metrics": {
-		"fcfMargin": "~12%",
-		"fcfYield": "~2%",
-		"roic": "7.9%",
-		"roe": "30.2%",
-		"netDebtEbitda": "0.0x",
-		"ruleOf40": "35%",
-		"grossMargin": "82.00%",
-		"operatingMargin": "~41%",
-		"beta": "1.31",
-		"revenueGrowth": "23.8%",
-		"interestCoverage": "21.8x"
+		"fcfMargin": "~9%",
+		"fcfYield": "~1%",
+		"roic": "7.8%",
+		"roe": "29.8%",
+		"netDebtEbitda": "0.2x",
+		"ruleOf40": "37%",
+		"grossMargin": "81.75%",
+		"operatingMargin": "~35%",
+		"beta": "1.24",
+		"revenueGrowth": "28.0%",
+		"interestCoverage": "17.8x"
 	},
-	"targetPrice": "$860.25",
+	"targetPrice": "$757.31",
 	"bullCase": "PEG of 1.05 suggests fair pricing for growth. AI-driven ad targeting improvements are accelerating revenue. WhatsApp monetization is still early. Massive buyback program supports EPS growth. Among the cheapest of the Mag 7.",
 	"bearCase": "Enormous CapEx on AI ($66-72B guidance) compresses FCF. Regulatory risk (antitrust, content moderation). Reality Labs remains a cash incinerator. If ad spending slows in a recession, revenue growth decelerates sharply.",
-	"currentPrice": "$574.46",
+	"currentPrice": "$648.03",
 	"consensus": {
 		"tipranks": "$836",
-		"yahoo": "$860.25",
+		"yahoo": "$757.31",
 		"stockanalysis": "$836"
 	},
 	"cagrModel": {
-		"ttmEPS": 23.5,
+		"ttmEPS": 26.7,
 		"epsGrowth": "15%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "7%",
-			"base": "50%",
-			"bull": "99%"
+			"bear": "-10%",
+			"base": "17%",
+			"bull": "54%"
 		},
 		"basis": "Balanced high AI CapEx intensity with successful monetization of WhatsApp/AI."
 	},
-	"lastUpdated": "2026-04-05T07:21:28.979Z",
+	"lastUpdated": "2026-09-12T03:16:02.300Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.15,
-		"signal": "WAIT",
+		"score": 5.17,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/FCF",
-			"multiple": 62.2,
-			"cvStock": 0.084,
+			"multiple": 77.6,
+			"cvStock": 0.091,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 49.7%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 574.46,
-				"price6mAgo": 715.66,
-				"price1mAgo": 660.57,
-				"low3m": 520.26,
-				"return6m": -19.7,
-				"return1m": -13,
+				"price": 648.03,
+				"price6mAgo": 638.18,
+				"price1mAgo": 578.85,
+				"low3m": 524.49,
+				"return6m": 1.5,
+				"return1m": 12,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 2,
-				"down30d": 3
+				"pass": false,
+				"up30d": 7,
+				"down30d": 39
 			},
 			"earningsSurprise": {
-				"surprise": 8,
-				"quarter": "2025-12"
+				"surprise": -14.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.07
+		"secondaryScore": 1.23
 	},
 	"intrinsicValue": {
 		"dcf": 280.69,
@@ -89,24 +89,24 @@
 		"discount": -47
 	},
 	"qcs": {
-		"earningsScore": -3.84,
+		"earningsScore": -3.73,
 		"flowScore": 0,
-		"revisionsScore": -0.09,
-		"totalScore": -3.93,
+		"revisionsScore": -3.8,
+		"totalScore": -7.53,
 		"raw": {
-			"avgSurprisePct": -8.07,
-			"netInsiderShares": 0,
-			"instFlowTrend": "negative",
-			"upRevisions": 2,
-			"downRevisions": 3,
-			"totalAnalysts": 56
+			"avgSurprisePct": -8.49,
+			"netInsiderShares": 1253330,
+			"instFlowTrend": "neutral",
+			"upRevisions": 4,
+			"downRevisions": 45,
+			"totalAnalysts": 54
 		}
 	},
 	"description": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets...",
 	"analystTargets": {
-		"low": 614,
-		"mean": 860.25,
-		"high": 1144
+		"low": 580,
+		"mean": 757.31,
+		"high": 1000
 	},
 	"analystConsensus": {
 		"ticker": "META",
@@ -120,14 +120,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 31.95,
-			"low": 26.43,
-			"average": 29.59606
+			"high": 33.65,
+			"low": 27.78,
+			"average": 31.42921
 		},
 		"2027": {
-			"high": 40,
-			"low": 28.46,
-			"average": 34.37413
+			"high": 40.31488,
+			"low": 27.93,
+			"average": 33.94283
 		}
-	}
+	},
+	"confidence": "cut"
 }

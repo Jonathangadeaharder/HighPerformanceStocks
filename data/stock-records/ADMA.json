@@ -3,110 +3,111 @@
 	"name": "ADMA Biologics",
 	"group": "Biotech",
 	"cagrModel": {
-		"epsGrowth": "33%",
+		"epsGrowth": "23%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 0.6,
+		"ttmEPS": 0.69,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "85%",
-			"base": "156%",
-			"bull": "226%"
+			"bear": "30%",
+			"base": "84%",
+			"bull": "128%"
 		}
 	},
-	"currentPrice": "$9.19",
-	"marketCap": "$2.2B USD",
+	"currentPrice": "$9.23",
+	"marketCap": "$2.1B USD",
 	"valuation": {
-		"trailingPE": 15.3,
-		"forwardPE": 6.7,
-		"evFcf": -2420.1,
-		"evEbitda": 220.2
+		"trailingPE": 13.4,
+		"forwardPE": 9.8,
+		"evFcf": 800.2,
+		"evEbitda": 195.4
 	},
 	"metrics": {
-		"roe": "35.6%",
-		"fcfMargin": "~-4%",
-		"fcfYield": "~-1%",
-		"netDebtEbitda": "209.2x",
-		"ruleOf40": "12%",
-		"beta": "0.82",
+		"roe": "41.9%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~3%",
+		"netDebtEbitda": "186.2x",
+		"ruleOf40": "27%",
+		"beta": "0.77",
 		"revenueGrowth": "15.9%",
-		"roic": "0.1%",
+		"roic": "0.3%",
 		"interestCoverage": "0.0x"
 	},
 	"consensus": {
-		"yahoo": "$23.50"
+		"yahoo": "$17"
 	},
-	"targetPrice": "$23.50",
+	"targetPrice": "$17",
 	"analystTargets": {
-		"low": 17,
-		"mean": 23.5,
-		"high": 30
+		"low": 12,
+		"mean": 17,
+		"high": 21
 	},
-	"expectedCAGR": "85% - 226%",
-	"expectedVolatility": "~58%",
-	"sharpeRatio": 2.6,
+	"expectedCAGR": "30% - 128%",
+	"expectedVolatility": "~55%",
+	"sharpeRatio": 1.35,
 	"screener": {
 		"engine": "fEVG",
-		"score": 6.76,
-		"signal": "WAIT",
+		"score": 8.5,
+		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 33,
+			"growth": 23,
 			"multipleType": "EV/EBITDA",
-			"multiple": 220.2,
-			"cvStock": 0,
+			"multiple": 195.4,
+			"cvStock": 0.074,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 155.7% + QCS 8.06",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 9.19,
-				"price6mAgo": 14.07,
-				"price1mAgo": 15.7,
-				"low3m": 7.21,
-				"return6m": -34.7,
-				"return1m": -41.5,
+				"price": 9.23,
+				"price6mAgo": 14.99,
+				"price1mAgo": 9.78,
+				"low3m": 8.16,
+				"return6m": -38.4,
+				"return1m": -5.6,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": true,
-				"up30d": 1,
-				"down30d": 0
+				"pass": false,
+				"up30d": 0,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 7.8,
-				"quarter": "2025-12"
+				"surprise": 3.5,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.21
+		"secondaryScore": 0.43
 	},
 	"qcs": {
-		"earningsScore": -1.94,
+		"earningsScore": -0.17,
 		"flowScore": 5,
-		"revisionsScore": 5,
-		"totalScore": 8.06,
+		"revisionsScore": -5,
+		"totalScore": -0.17,
 		"raw": {
-			"avgSurprisePct": -3.87,
-			"netInsiderShares": 482300,
+			"avgSurprisePct": -0.32,
+			"netInsiderShares": 170530,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 0,
-			"totalAnalysts": 1
+			"upRevisions": 0,
+			"downRevisions": 3,
+			"totalAnalysts": 3
 		}
 	},
 	"description": "ADMA Biologics, Inc., a biopharmaceutical company, develops, manufactures, and markets specialty plasma-derived biologics for the treatment of immune deficiencies and infectious diseases in the Uni...",
-	"lastUpdated": "2026-04-05T07:21:12.399Z",
+	"lastUpdated": "2026-09-12T03:15:51.028Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.04,
-			"low": 1.04,
-			"average": 1.04
+			"high": 0.83,
+			"low": 0.77,
+			"average": 0.79667
 		},
 		"2027": {
-			"high": 1.38,
-			"low": 1.38,
-			"average": 1.38
+			"high": 1.1,
+			"low": 0.81,
+			"average": 0.9825
 		}
-	}
+	},
+	"confidence": "cut"
 }

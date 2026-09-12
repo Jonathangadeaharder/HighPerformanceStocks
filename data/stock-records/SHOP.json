@@ -2,81 +2,82 @@
 	"ticker": "SHOP",
 	"name": "Shopify",
 	"group": "High-Growth Tech",
-	"marketCap": "$154.3B USD",
-	"sharpeRatio": 0.46,
-	"expectedCAGR": "-7% - 69%",
-	"expectedVolatility": "~57%",
+	"marketCap": "$167.1B USD",
+	"sharpeRatio": 0.4,
+	"expectedCAGR": "-15% - 71%",
+	"expectedVolatility": "~59%",
 	"valuation": {
-		"trailingPE": 127.2,
-		"forwardPE": 51.4,
-		"evEbitda": 77,
-		"evFcf": 115.5
+		"trailingPE": 85.3,
+		"forwardPE": 52.4,
+		"evEbitda": 67.2,
+		"evFcf": 101.4,
+		"pegRatio": 1.73
 	},
 	"metrics": {
-		"roe": "9.8%",
-		"fcfMargin": "~11%",
+		"roe": "15.5%",
+		"fcfMargin": "~12%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "42%",
-		"beta": "2.82",
-		"revenueGrowth": "30.6%",
-		"roic": "1.4%",
-		"interestCoverage": "186.6x"
+		"ruleOf40": "46%",
+		"beta": "2.62",
+		"revenueGrowth": "33.7%",
+		"roic": "1.5%",
+		"interestCoverage": "244.6x"
 	},
-	"targetPrice": "$160.15",
+	"targetPrice": "$171.08",
 	"bullCase": "The default operating system for independent e-commerce globally. Expanding merchant solutions and strong operating leverage driving earnings.",
 	"bearCase": "Current forward PE is ~96x, leaving zero margin for error in growth execution. Consumer spending slowdowns impact gross merchandise volume.",
-	"currentPrice": "$118.25",
+	"currentPrice": "$128.79",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-7%",
-			"base": "35%",
-			"bull": "69%"
+			"bear": "-15%",
+			"base": "33%",
+			"bull": "71%"
 		},
 		"ttmEPS": 1.89,
 		"epsGrowth": "26%",
 		"dividendYield": "0%",
 		"basis": "2026E adjusted EPS; premium software and e-commerce platform multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:34.217Z",
+	"lastUpdated": "2026-09-12T03:16:06.074Z",
 	"consensus": {
-		"yahoo": "$160.15"
+		"yahoo": "$171.08"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.63,
+		"score": 3.9,
 		"signal": "WAIT",
+		"note": "Valuation score 3.90 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 32.8%)",
 		"inputs": {
 			"growth": 26,
 			"multipleType": "EV/FCF",
-			"multiple": 115.5,
-			"cvStock": 0.153,
-			"riskMultiplier": 1.042
+			"multiple": 101.4,
+			"cvStock": 0.098,
+			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 35.4%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 118.25,
-				"price6mAgo": 164.5,
-				"price1mAgo": 134.79,
-				"low3m": 104.92,
-				"return6m": -28.1,
-				"return1m": -12.3,
+				"price": 128.79,
+				"price6mAgo": 126.17,
+				"price1mAgo": 150.41,
+				"low3m": 106,
+				"return6m": 2.1,
+				"return1m": -14.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 13,
-				"down30d": 11
+				"up30d": 28,
+				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": -5.7,
-				"quarter": "2025-12"
+				"surprise": 5.1,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.06
+		"secondaryScore": 2.02
 	},
 	"intrinsicValue": {
 		"dcf": 18,
@@ -84,24 +85,24 @@
 		"discount": -84
 	},
 	"qcs": {
-		"earningsScore": 0.82,
-		"flowScore": 0,
-		"revisionsScore": 0.23,
-		"totalScore": 1.05,
+		"earningsScore": 0.87,
+		"flowScore": 2.5,
+		"revisionsScore": 3.03,
+		"totalScore": 6.4,
 		"raw": {
-			"avgSurprisePct": 3.15,
+			"avgSurprisePct": 2.13,
 			"netInsiderShares": 0,
-			"instFlowTrend": "negative",
-			"upRevisions": 19,
-			"downRevisions": 17,
-			"totalAnalysts": 43
+			"instFlowTrend": "positive",
+			"upRevisions": 29,
+			"downRevisions": 6,
+			"totalAnalysts": 38
 		}
 	},
 	"description": "Shopify Inc., a commerce technology company, provides tools to start, scale, market, and run a business of various sizes in Canada, the United States, Europe, the Middle East, Africa, the Asia Paci...",
 	"analystTargets": {
 		"low": 110,
-		"mean": 160.15,
-		"high": 200
+		"mean": 171.08,
+		"high": 220
 	},
 	"analystConsensus": {
 		"ticker": "SHOP",
@@ -115,14 +116,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.24,
-			"low": 1.32,
-			"average": 1.82903
+			"high": 2.04,
+			"low": 1.74,
+			"average": 1.90676
 		},
 		"2027": {
-			"high": 3.05765,
-			"low": 1.65,
-			"average": 2.30073
+			"high": 2.93,
+			"low": 1.97,
+			"average": 2.45961
 		}
-	}
+	},
+	"confidence": "medium"
 }

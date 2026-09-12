@@ -3,112 +3,114 @@
 	"name": "TransMedics Group",
 	"group": "Healthcare Monopolies",
 	"cagrModel": {
-		"epsGrowth": "50%",
+		"epsGrowth": "51%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.87,
+		"ttmEPS": 3.73,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "29%",
-			"base": "60%",
-			"bull": "89%"
+			"bear": "-21%",
+			"base": "18%",
+			"bull": "52%"
 		}
 	},
-	"currentPrice": "$100.69",
-	"marketCap": "$3.5B USD",
+	"currentPrice": "$82.18",
+	"marketCap": "$2.8B USD",
 	"valuation": {
-		"trailingPE": 20.7,
-		"forwardPE": 27.2,
-		"evFcf": 37.1,
-		"evEbitda": 25.9
+		"trailingPE": 22,
+		"forwardPE": 35.6,
+		"evFcf": 72.9,
+		"evEbitda": 28.1,
+		"pegRatio": 0.74
 	},
 	"metrics": {
-		"roe": "54.2%",
-		"fcfMargin": "~16%",
-		"fcfYield": "~3%",
-		"netDebtEbitda": "0.2x",
-		"ruleOf40": "48%",
-		"beta": "2.08",
-		"revenueGrowth": "32.2%",
-		"roic": "5.5%",
-		"interestCoverage": "4.7x"
+		"roe": "36.3%",
+		"fcfMargin": "~7%",
+		"fcfYield": "~2%",
+		"netDebtEbitda": "3.4x",
+		"ruleOf40": "27%",
+		"beta": "1.88",
+		"revenueGrowth": "20.7%",
+		"roic": "4.5%",
+		"interestCoverage": "2.4x"
 	},
 	"consensus": {
-		"yahoo": "$161.30"
+		"yahoo": "$97.30"
 	},
-	"targetPrice": "$161.30",
+	"targetPrice": "$97.30",
 	"analystTargets": {
-		"low": 130,
-		"mean": 161.3,
-		"high": 190
+		"low": 65,
+		"mean": 97.3,
+		"high": 125
 	},
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.87,
-			"low": 2.08,
-			"average": 2.47
+			"high": 1.72,
+			"low": 1.16761,
+			"average": 1.5211
 		},
 		"2027": {
-			"high": 4.19,
-			"low": 3.01,
-			"average": 3.7
+			"high": 3.04,
+			"low": 1.74,
+			"average": 2.29495
 		}
 	},
-	"expectedCAGR": "29% - 89%",
-	"expectedVolatility": "~56%",
-	"sharpeRatio": 0.97,
+	"expectedCAGR": "-21% - 52%",
+	"expectedVolatility": "~58%",
+	"sharpeRatio": 0.19,
 	"screener": {
-		"engine": "fCFG",
-		"score": 0.96,
+		"engine": "fEVG",
+		"score": 0.74,
 		"signal": "REJECTED",
-		"note": "REJECTED: Reality Check Failure (revisions)",
 		"inputs": {
-			"growth": 50,
-			"multipleType": "EV/FCF",
-			"multiple": 37.1,
-			"cvStock": 0.08,
-			"riskMultiplier": 1
+			"growth": 51,
+			"multipleType": "EV/EBITDA",
+			"multiple": 28.1,
+			"cvStock": 0.142,
+			"riskMultiplier": 1.026
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 100.69,
-				"price6mAgo": 113.93,
-				"price1mAgo": 129.61,
-				"low3m": 93.08,
-				"return6m": -11.6,
-				"return1m": -22.3,
+				"price": 82.18,
+				"price6mAgo": 121.31,
+				"price1mAgo": 87.02,
+				"low3m": 64.85,
+				"return6m": -32.3,
+				"return1m": -5.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 2,
-				"down30d": 6
+				"up30d": 0,
+				"down30d": 7
 			},
 			"earningsSurprise": {
-				"surprise": 41,
-				"quarter": "2025-12"
+				"surprise": -7.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.7
+		"secondaryScore": 0.94
 	},
 	"qcs": {
-		"earningsScore": 5,
+		"earningsScore": 4.64,
 		"flowScore": 5,
-		"revisionsScore": -2.22,
-		"totalScore": 7.78,
+		"revisionsScore": -3.5,
+		"totalScore": 6.14,
 		"raw": {
-			"avgSurprisePct": 107.29,
-			"netInsiderShares": 13539,
+			"avgSurprisePct": 16.48,
+			"netInsiderShares": 142166,
 			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 6,
-			"totalAnalysts": 9
+			"upRevisions": 0,
+			"downRevisions": 7,
+			"totalAnalysts": 10
 		}
 	},
 	"description": "TransMedics Group, Inc., a commercial-stage medical technology company, engages in transforming organ transplant therapy for end-stage organ failure patients in the United States and internationally.",
-	"lastUpdated": "2026-04-05T19:13:55.624Z",
+	"lastUpdated": "2026-09-12T03:16:07.405Z",
 	"bullCase": "TransMedics dominates the active organ preservation space and is building an integrated aviation logistics network to capture end-to-end transplant economics. High unmet medical need will drive long-term hyper-growth.",
-	"bearCase": "Aviation logistics introduce lower margin operations and heavy capex requirements. Any disruption in flight ops or regulatory scrutiny could impede growth in this high-valuation narrative."
+	"bearCase": "Aviation logistics introduce lower margin operations and heavy capex requirements. Any disruption in flight ops or regulatory scrutiny could impede growth in this high-valuation narrative.",
+	"confidence": "medium"
 }

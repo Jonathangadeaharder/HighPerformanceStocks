@@ -2,104 +2,104 @@
 	"ticker": "EXEL",
 	"name": "Exelixis",
 	"group": "Biotech",
-	"marketCap": "$11.8B USD",
-	"sharpeRatio": 0.09,
-	"expectedCAGR": "-20% - 37%",
-	"expectedVolatility": "~44%",
+	"marketCap": "$13.9B USD",
+	"sharpeRatio": -0.24,
+	"expectedCAGR": "-27% - 18%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 15.8,
-		"forwardPE": 11.2,
-		"pegRatio": 0.8,
-		"evEbitda": 11.4,
-		"evFcf": 16.7
+		"trailingPE": 18,
+		"forwardPE": 13.2,
+		"pegRatio": 2.56,
+		"evEbitda": 13,
+		"evFcf": 17.9
 	},
 	"metrics": {
-		"fcfMargin": "~27%",
+		"fcfMargin": "~30%",
 		"fcfYield": "~5%",
-		"roic": "8.1%",
-		"roe": "35.5%",
+		"roic": "8.9%",
+		"roe": "44.4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "33%",
+		"ruleOf40": "41%",
 		"beta": "0.42",
-		"revenueGrowth": "5.6%",
-		"interestCoverage": "83.4x"
+		"revenueGrowth": "10.6%",
+		"interestCoverage": "111.8x"
 	},
-	"targetPrice": "$46.83",
+	"targetPrice": "$53.69",
 	"bullCase": "Exelixis' Cabometyx has label expansions pending in front-line RCC combinations (with nivolumab) and additional tumor types. The pipeline assets XL092 (next-gen cabozantinib) and XB002 (ADC) represent the next growth phase. Massive cash balance ($2B+) with no debt funds buybacks and internal pipeline without equity dilution.",
 	"bearCase": "Severe single-asset reliance on Cabometyx. If pipeline assets fail, the growth narrative dies.",
-	"currentPrice": "$43.88",
+	"currentPrice": "$56.12",
 	"consensus": {
 		"tipranks": "$45",
-		"yahoo": "$46.83",
+		"yahoo": "$53.69",
 		"stockanalysis": "$46"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.78,
+		"ttmEPS": 3.11,
 		"epsGrowth": "21%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-20%",
-			"base": "7%",
-			"bull": "37%"
+			"bear": "-27%",
+			"base": "-4%",
+			"bull": "18%"
 		},
 		"basis": "5yr & 10yr median PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:20.588Z",
+	"lastUpdated": "2026-09-12T03:15:56.609Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.81,
+		"score": 0.85,
 		"signal": "REJECTED",
+		"note": "Borderline valuation (Score 0.85 vs 0.8 limit) (Absolute REJECT: Base CAGR -4% is negative)",
 		"inputs": {
 			"growth": 21,
 			"multipleType": "EV/FCF",
-			"multiple": 16.7,
-			"cvStock": 0.135,
-			"riskMultiplier": 1.018
+			"multiple": 17.9,
+			"cvStock": 0.108,
+			"riskMultiplier": 1.001
 		},
-		"note": "REJECT: Stalled at WAIT with base CAGR 7% < 15%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 43.88,
-				"price6mAgo": 40.01,
-				"price1mAgo": 41.28,
-				"low3m": 39.71,
-				"return6m": 9.7,
-				"return1m": 6.3,
+				"price": 56.12,
+				"price6mAgo": 41.17,
+				"price1mAgo": 50.38,
+				"low3m": 49.97,
+				"return6m": 36.3,
+				"return1m": 11.4,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
+				"up30d": 5,
 				"down30d": 6
 			},
 			"earningsSurprise": {
-				"surprise": 16.2,
-				"quarter": "2025-12"
+				"surprise": 5.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.54
+		"secondaryScore": 0.63
 	},
 	"qcs": {
-		"earningsScore": 5,
-		"flowScore": 5,
-		"revisionsScore": 0.77,
-		"totalScore": 10.77,
+		"earningsScore": 4.78,
+		"flowScore": -5,
+		"revisionsScore": 0.45,
+		"totalScore": 0.23,
 		"raw": {
-			"avgSurprisePct": 22.12,
-			"netInsiderShares": 2157881,
-			"instFlowTrend": "positive",
-			"upRevisions": 7,
-			"downRevisions": 5,
-			"totalAnalysts": 13
+			"avgSurprisePct": 12.91,
+			"netInsiderShares": -5142,
+			"instFlowTrend": "negative",
+			"upRevisions": 5,
+			"downRevisions": 4,
+			"totalAnalysts": 11
 		}
 	},
 	"description": "Exelixis, Inc., an oncology company, focuses on the discovery, development, and commercialization of new medicines for difficult-to-treat cancers in the United States.",
 	"analystTargets": {
-		"low": 35,
-		"mean": 46.83,
-		"high": 60
+		"low": 41,
+		"mean": 53.69,
+		"high": 66
 	},
 	"analystConsensus": {
 		"ticker": "EXEL",
@@ -113,14 +113,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.67,
-			"low": 2.92267,
-			"average": 3.39559
+			"high": 3.77,
+			"low": 3.18,
+			"average": 3.58182
 		},
 		"2027": {
-			"high": 4.89,
-			"low": 2.77,
-			"average": 3.92938
+			"high": 5.41,
+			"low": 3.57,
+			"average": 4.26091
 		}
-	}
+	},
+	"confidence": "low"
 }

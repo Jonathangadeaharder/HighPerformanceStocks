@@ -2,102 +2,103 @@
 	"ticker": "VIT-B.ST",
 	"name": "Vitec Software Group",
 	"group": "Serial Acquirers",
-	"marketCap": "9.6B SEK",
-	"sharpeRatio": 2.23,
-	"expectedCAGR": "59% - 142%",
-	"expectedVolatility": "~43%",
+	"marketCap": "10.3B SEK",
+	"sharpeRatio": 1.6,
+	"expectedCAGR": "43% - 94%",
+	"expectedVolatility": "~40%",
 	"valuation": {
-		"trailingPE": 22.1,
-		"forwardPE": 18.8,
+		"trailingPE": 22.2,
+		"forwardPE": 20.1,
 		"pegRatio": null,
-		"evEbitda": 9.2,
-		"evFcf": 21.8
+		"evEbitda": 12,
+		"evFcf": 24.8
 	},
 	"metrics": {
-		"fcfMargin": "~15%",
-		"fcfYield": "~6%",
-		"roic": "9.1%",
-		"roe": "8.9%",
-		"netDebtEbitda": "2.0x",
-		"ruleOf40": "22%",
-		"beta": "0.82",
-		"revenueGrowth": "6.1%",
-		"interestCoverage": "8.0x"
+		"fcfMargin": "~14%",
+		"fcfYield": "~5%",
+		"roic": "8.5%",
+		"roe": "9.4%",
+		"netDebtEbitda": "2.8x",
+		"ruleOf40": "31%",
+		"beta": "0.85",
+		"revenueGrowth": "16.9%",
+		"interestCoverage": "5.4x"
 	},
-	"targetPrice": "448 SEK",
+	"targetPrice": "420 SEK",
 	"bullCase": "37% selloff creates a rare buying opportunity in a proven compounder. FCF yield of 5.7% is high for a quality serial acquirer. Average price target implies 75% upside. Compressed VMS valuations mean Vitec can acquire targets at even better returns. CSU-style playbook in Europe with decades of runway.",
 	"bearCase": "Company-level ROIC (~6%) is low — the 30% figure only applies to incremental M&A capital. Growth has temporarily stalled. European software spending has slowed. Recent equity raises dilute shareholders.",
-	"currentPrice": "242 SEK",
+	"currentPrice": "259 SEK",
 	"consensus": {
 		"tipranks": "456 SEK",
-		"yahoo": "448 SEK"
+		"yahoo": "420 SEK"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.95,
+		"ttmEPS": 11.69,
 		"epsGrowth": "12%",
-		"dividendYield": "2%",
+		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "59%",
-			"base": "87%",
-			"bull": "142%"
+			"bear": "43%",
+			"base": "63%",
+			"bull": "94%"
 		},
 		"basis": "Current ~22x is cyclical low; base assumes modest reversion, not return to bubble-era 50x avg"
 	},
-	"lastUpdated": "2026-04-05T07:21:38.189Z",
+	"lastUpdated": "2026-09-12T03:16:08.823Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.77,
-		"signal": "PASS",
+		"score": 1,
+		"signal": "WAIT",
+		"note": "Valuation score 1.00 exceeds 0.8 limit (Upgraded from FAIL: Protected by analyst upside 61.9%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/EBITDA",
-			"multiple": 9.2,
-			"cvStock": 0.041,
+			"multiple": 12,
+			"cvStock": 0.024,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 241.8,
-				"price6mAgo": 340.4,
-				"price1mAgo": 248.8,
-				"low3m": 215.4,
-				"return6m": -29,
-				"return1m": -2.8,
+				"price": 259.2,
+				"price6mAgo": 237.4,
+				"price1mAgo": 238.2,
+				"low3m": 212,
+				"return6m": 9.2,
+				"return1m": 8.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 3,
-				"down30d": 0
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 165.6,
-				"quarter": "2025-12"
+				"surprise": 52.6,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.57
+		"secondaryScore": 1.68
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -0.83,
-		"totalScore": 4.17,
+		"revisionsScore": -1,
+		"totalScore": 4,
 		"raw": {
-			"avgSurprisePct": 67.6,
+			"avgSurprisePct": 81.92,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 2,
 			"downRevisions": 3,
-			"totalAnalysts": 6
+			"totalAnalysts": 5
 		}
 	},
-	"description": "Vitec Software Group AB (publ) develops and delivers vertical market software solutions in Sweden, Denmark, Finland, Norway, the Netherlands, the United States, and internationally.",
+	"description": "Vitec Software Group AB (publ) develops and delivers vertical software solutions in Sweden, Denmark, Finland, Norway, the Netherlands, the United States, and internationally.",
 	"analystTargets": {
-		"low": 380,
-		"mean": 447.86,
-		"high": 580
+		"low": 368,
+		"mean": 419.71,
+		"high": 500
 	},
 	"analystConsensus": {
 		"ticker": "VIT-B.ST",
@@ -110,14 +111,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.8,
-			"low": 11.7,
-			"average": 13.21431
+			"high": 14,
+			"low": 12.33686,
+			"average": 12.86537
 		},
 		"2027": {
-			"high": 16.53704,
-			"low": 14,
-			"average": 15.36217
+			"high": 15.7,
+			"low": 14.22,
+			"average": 15.19879
 		}
-	}
+	},
+	"confidence": "low"
 }

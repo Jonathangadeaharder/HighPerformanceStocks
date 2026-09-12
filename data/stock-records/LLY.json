@@ -2,100 +2,102 @@
 	"ticker": "LLY",
 	"name": "Eli Lilly",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$837.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-8% - 61%",
-	"expectedVolatility": "~42%",
+	"marketCap": "$994.9B USD",
+	"sharpeRatio": 0.26,
+	"expectedCAGR": "-16% - 44%",
+	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 40.8,
-		"forwardPE": 22.2,
-		"evEbitda": 27.5,
-		"evFcf": 447.2
+		"trailingPE": 37.7,
+		"forwardPE": 23.6,
+		"evEbitda": 24.9,
+		"evFcf": 94,
+		"pegRatio": 1.11
 	},
 	"metrics": {
-		"roe": "101.2%",
-		"fcfMargin": "~3%",
-		"fcfYield": "~0%",
-		"netDebtEbitda": "1.2x",
-		"ruleOf40": "46%",
+		"roe": "102.3%",
+		"fcfMargin": "~14%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "1.1x",
+		"ruleOf40": "62%",
 		"beta": "0.5",
-		"revenueGrowth": "42.6%",
-		"roic": "1.9%",
-		"interestCoverage": "13.1x"
+		"revenueGrowth": "47.7%",
+		"roic": "2.7%",
+		"interestCoverage": "13.8x"
 	},
-	"targetPrice": "$1209.21",
+	"targetPrice": "$1318.66",
 	"bullCase": "Mounjaro and Zepbound provide a massive, multi-year runway for revenue growth with operating margins holding near 46-47%.",
 	"bearCase": "Priced for perfection; any clinical setbacks, pricing pressure, or new competitors in the GLP-1 space could contract multiples.",
-	"currentPrice": "$935.58",
+	"currentPrice": "$1115.70",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "-8%",
-			"base": "30%",
-			"bull": "61%"
+			"bear": "-16%",
+			"base": "19%",
+			"bull": "44%"
 		},
-		"ttmEPS": 22.92,
+		"ttmEPS": 29.57,
 		"epsGrowth": "24%",
 		"dividendYield": "1%",
 		"basis": "Maturing mega-cap pharma multiple post-GLP-1 hypergrowth phase"
 	},
-	"lastUpdated": "2026-04-05T07:21:26.877Z",
+	"lastUpdated": "2026-09-12T03:16:00.814Z",
 	"consensus": {
-		"yahoo": "$1209.21"
+		"yahoo": "$1318.66"
 	},
 	"screener": {
 		"engine": "fCFG",
-		"score": 18.63,
+		"score": 3.92,
 		"signal": "FAIL",
+		"note": "Valuation score 3.92 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 24,
 			"multipleType": "EV/FCF",
-			"multiple": 447.2,
-			"cvStock": 0.051,
+			"multiple": 94,
+			"cvStock": 0.077,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 935.58,
-				"price6mAgo": 845.05,
-				"price1mAgo": 983.26,
-				"low3m": 877.11,
-				"return6m": 10.7,
-				"return1m": -4.8,
-				"near3mLow": false
+				"price": 1115.7,
+				"price6mAgo": 977.25,
+				"price1mAgo": 1220.28,
+				"low3m": 1079.22,
+				"return6m": 14.2,
+				"return1m": -8.6,
+				"near3mLow": true
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 1
+				"up30d": 20,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 9.1,
-				"quarter": "2025-12"
+				"surprise": 27.3,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.92
+		"secondaryScore": 0.98
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.36,
-		"totalScore": 5.36,
+		"revisionsScore": 0.56,
+		"totalScore": 5.56,
 		"raw": {
-			"avgSurprisePct": 8.86,
-			"netInsiderShares": -3046744,
+			"avgSurprisePct": 20.37,
+			"netInsiderShares": -306759,
 			"instFlowTrend": "neutral",
-			"upRevisions": 3,
-			"downRevisions": 1,
-			"totalAnalysts": 28
+			"upRevisions": 13,
+			"downRevisions": 10,
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Eli Lilly and Company discovers, develops, manufactures, and markets human pharmaceutical products in the United States, Europe, China, Japan, and internationally.",
 	"analystTargets": {
-		"low": 850,
-		"mean": 1209.21,
-		"high": 1500
+		"low": 930,
+		"mean": 1318.66,
+		"high": 1600
 	},
 	"analystConsensus": {
 		"ticker": "LLY",
@@ -109,14 +111,15 @@
 	"targetPriceAlternative": "$1221.44",
 	"forwardEstimates": {
 		"2026": {
-			"high": 38.02,
-			"low": 33.5,
-			"average": 34.6656
+			"high": 40.77,
+			"low": 32.53,
+			"average": 36.71291
 		},
 		"2027": {
-			"high": 46.48152,
-			"low": 37.9,
-			"average": 42.06553
+			"high": 54.94,
+			"low": 40.4,
+			"average": 47.2558
 		}
-	}
+	},
+	"confidence": "medium"
 }

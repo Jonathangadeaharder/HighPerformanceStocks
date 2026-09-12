@@ -11,92 +11,93 @@
 		"ttmEPS": 3.77,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-30%",
-			"base": "41%",
-			"bull": "145%"
+			"bear": "-46%",
+			"base": "14%",
+			"bull": "88%"
 		}
 	},
-	"currentPrice": "$171.46",
+	"currentPrice": "$175.26",
 	"marketCap": "$46.2B USD",
 	"valuation": {
 		"trailingPE": 45.5,
-		"forwardPE": 30.3,
-		"evFcf": 32,
-		"evEbitda": 24.9
+		"forwardPE": 64,
+		"evFcf": 16.5,
+		"evEbitda": 63.1,
+		"pegRatio": 3
 	},
 	"metrics": {
-		"roe": "10.1%",
-		"fcfMargin": "~19%",
-		"fcfYield": "~3%",
+		"roe": "-7.8%",
+		"fcfMargin": "~44%",
+		"fcfYield": "~6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-3%",
-		"beta": "3.61",
-		"revenueGrowth": "-22.2%",
-		"roic": "5.7%",
-		"interestCoverage": "3.9x"
+		"ruleOf40": "27%",
+		"beta": "3.39",
+		"revenueGrowth": "-17.3%",
+		"roic": "3.9%",
+		"interestCoverage": "1.9x"
 	},
 	"consensus": {
-		"yahoo": "$241.66"
+		"yahoo": "$199.76"
 	},
-	"targetPrice": "$241.66",
+	"targetPrice": "$199.76",
 	"analystTargets": {
-		"low": 120,
-		"mean": 241.66,
-		"high": 420
+		"low": 95,
+		"mean": 199.76,
+		"high": 330
 	},
-	"expectedCAGR": "-30% - 145%",
-	"expectedVolatility": "~74%",
-	"sharpeRatio": 0.72,
+	"expectedCAGR": "-46% - 88%",
+	"expectedVolatility": "~70%",
+	"sharpeRatio": 0.24,
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.97,
+		"score": 21.53,
 		"signal": "FLAG FOR MANUAL REVIEW",
+		"note": "Earnings miss > 100% broke P/E model structure.",
 		"inputs": {
 			"growth": 50,
 			"multipleType": "Forward P/E",
-			"multiple": 30.3,
-			"cvStock": 0.226,
-			"riskMultiplier": 1.239
+			"multiple": 64,
+			"cvStock": 0.994,
+			"riskMultiplier": 12.999
 		},
-		"note": "Earnings miss > 100% broke P/E model structure.",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 171.46,
-				"price6mAgo": 386.07,
-				"price1mAgo": 205.71,
-				"low3m": 139.36,
-				"return6m": -55.6,
-				"return1m": -16.6,
+				"price": 175.26,
+				"price6mAgo": 193.23,
+				"price1mAgo": 149.04,
+				"low3m": 139.11,
+				"return6m": -9.3,
+				"return1m": 17.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
 				"up30d": 0,
-				"down30d": 8
+				"down30d": 20
 			},
 			"earningsSurprise": {
-				"surprise": -364.9,
-				"quarter": "2025-12"
+				"surprise": -487.5,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
 		"earningsScore": -5,
-		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"flowScore": 0,
+		"revisionsScore": -2.5,
+		"totalScore": -7.5,
 		"raw": {
-			"avgSurprisePct": -43.43,
-			"netInsiderShares": 1005684,
-			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 17
+			"avgSurprisePct": -1069.73,
+			"netInsiderShares": 38445,
+			"instFlowTrend": "neutral",
+			"upRevisions": 2,
+			"downRevisions": 13,
+			"totalAnalysts": 22
 		}
 	},
 	"description": "Coinbase Global, Inc. operates platform for crypto assets in the United States and internationally.",
-	"lastUpdated": "2026-04-05T07:21:17.439Z",
+	"lastUpdated": "2026-09-12T03:15:54.525Z",
 	"intrinsicValue": {
 		"dcf": 20.77,
 		"date": "2026-03-28",
@@ -114,14 +115,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.15,
-			"low": 1.82731,
-			"average": 3.76969
+			"high": -0.04,
+			"low": -4.05,
+			"average": -1.96974
 		},
 		"2027": {
-			"high": 8.38,
-			"low": 3.26,
-			"average": 5.65871
+			"high": 9.45,
+			"low": -1.44,
+			"average": 2.7379
 		}
-	}
+	},
+	"confidence": "cut"
 }

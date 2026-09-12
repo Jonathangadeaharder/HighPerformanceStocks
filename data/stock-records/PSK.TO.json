@@ -5,92 +5,93 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Price-to-FCF",
-		"ttmEPS": 0.87,
+		"ttmEPS": 1.04,
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-10%",
-			"base": "8%",
-			"bull": "37%"
+			"bear": "-5%",
+			"base": "5%",
+			"bull": "23%"
 		}
 	},
-	"currentPrice": "C$32.09",
-	"marketCap": "C$7.5B",
+	"currentPrice": "C$35.76",
+	"marketCap": "C$8.3B",
 	"valuation": {
-		"trailingPE": 36.9,
-		"forwardPE": 34.5
+		"trailingPE": 34.4,
+		"forwardPE": 32.7
 	},
 	"metrics": {
-		"roe": "7.8%",
-		"fcfMargin": "~46%",
+		"roe": "9.3%",
+		"fcfMargin": "~57%",
 		"fcfYield": "~3%",
-		"ruleOf40": "36%",
-		"beta": "0.86",
-		"revenueGrowth": "-10.2%",
-		"interestCoverage": "32.8x"
+		"ruleOf40": "107%",
+		"beta": "0.87",
+		"revenueGrowth": "50.1%",
+		"interestCoverage": "49.9x"
 	},
 	"consensus": {
-		"yahoo": "C$33.64"
+		"yahoo": "C$36.65"
 	},
-	"targetPrice": "C$33.64",
-	"expectedCAGR": "-10% - 37%",
+	"targetPrice": "C$36.65",
+	"expectedCAGR": "-5% - 23%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 3.69,
+		"score": 3.44,
 		"signal": "FAIL",
+		"note": "Valuation score 3.44 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "P/CF",
-			"multiple": 36.9,
-			"cvStock": 0.016,
+			"multiple": 34.4,
+			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 32.09,
-				"price6mAgo": 26.15,
-				"price1mAgo": 31.37,
-				"low3m": 25.83,
-				"return6m": 22.7,
-				"return1m": 2.3,
+				"price": 35.76,
+				"price6mAgo": 31.7,
+				"price1mAgo": 34.54,
+				"low3m": 30.86,
+				"return6m": 12.8,
+				"return1m": 3.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 2,
 				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 52.9,
-				"quarter": "2025-12"
+				"surprise": -2.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 3.45
+		"secondaryScore": 3.27
 	},
-	"lastUpdated": "2026-04-05T07:21:32.302Z",
-	"expectedVolatility": "~23%",
-	"sharpeRatio": 0.39,
+	"lastUpdated": "2026-09-12T03:16:05.293Z",
+	"expectedVolatility": "~22%",
+	"sharpeRatio": 0.2,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -1.67,
-		"totalScore": 3.33,
+		"revisionsScore": 0,
+		"totalScore": 5,
 		"raw": {
-			"avgSurprisePct": 13.8,
+			"avgSurprisePct": 12.64,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
+			"upRevisions": 1,
 			"downRevisions": 1,
-			"totalAnalysts": 3
+			"totalAnalysts": 2
 		}
 	},
 	"bullCase": "PrairieSky is Canada's premier royalty company with zero operating cost, zero capital requirement, and net cash position. As a royalty, it benefits from every well drilled on its land without sharing development costs. A royalty land base covering 19 million acres in the Western Canada Sedimentary Basin is a multigenerational asset.",
 	"bearCase": "Almost entirely exposed to Western Canada commodity prices and Montney/Duvernay drilling activity. A 20%+ decline in oil or gas prices would directly reduce royalty revenue with no operational lever to offset. The company is small enough that any governance concern or insider selling creates outsized price volatility.",
 	"description": "PrairieSky Royalty Ltd. holds crude oil and natural gas royalty interests in Canada.",
 	"analystTargets": {
-		"low": 28,
-		"mean": 33.64,
+		"low": 33,
+		"mean": 36.65,
 		"high": 43
 	},
 	"analystConsensus": {
@@ -104,14 +105,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.06,
-			"low": 0.89,
-			"average": 0.96
+			"high": 1.3,
+			"low": 1.28,
+			"average": 1.29
 		},
 		"2027": {
-			"high": 0.96,
+			"high": 1.25,
 			"low": 0.9,
-			"average": 0.93
+			"average": 1.09333
 		}
-	}
+	},
+	"confidence": "medium"
 }

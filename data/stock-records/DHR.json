@@ -2,104 +2,104 @@
 	"ticker": "DHR",
 	"name": "Danaher Corporation",
 	"group": "Serial Acquirers",
-	"marketCap": "$135.3B USD",
-	"sharpeRatio": 1.13,
-	"expectedCAGR": "16% - 63%",
+	"marketCap": "$140.7B USD",
+	"sharpeRatio": 0.73,
+	"expectedCAGR": "-2% - 56%",
 	"expectedVolatility": "~31%",
 	"valuation": {
-		"trailingPE": 38,
-		"forwardPE": 21,
-		"pegRatio": null,
-		"evEbitda": 19.2,
-		"evFcf": 33
+		"trailingPE": 35.7,
+		"forwardPE": 21.5,
+		"pegRatio": 1.23,
+		"evEbitda": 20.5,
+		"evFcf": 38
 	},
 	"metrics": {
-		"fcfMargin": "~19%",
+		"fcfMargin": "~17%",
 		"fcfYield": "~3%",
-		"roic": "4.3%",
-		"roe": "7.1%",
-		"netDebtEbitda": "1.9x",
+		"roic": "4.0%",
+		"roe": "7.6%",
+		"netDebtEbitda": "2.9x",
 		"ruleOf40": "23%",
 		"historicalTotalReturn": "450%+ over 10 years",
-		"beta": "0.99",
-		"revenueGrowth": "4.6%",
-		"interestCoverage": "7.2x"
+		"beta": "0.81",
+		"revenueGrowth": "5.5%",
+		"interestCoverage": "5.2x"
 	},
-	"targetPrice": "$264.91",
+	"targetPrice": "$229.09",
 	"bullCase": "Danaher's life sciences tools and bioprocessing businesses (Cytiva) are recovering from the deepest post-COVID inventory destocking in decades. Abcam acquisition ($5.7B, 2023) adds genomic reagents and antibodies to the portfolio. When bioprocessing (bioreactors, filtration) volumes normalize, Danaher's ROIC should recover from trough levels toward 20%+.",
 	"bearCase": "Danaher's bioprocessing recovery has been slower than expected — large pharma customers are still burning through COVID-era inventory builds. The Abcam integration ($9.9B combined with premium paid) creates 3-5 years of amortization drag. If ROIC stays below WACC through 2026, the compounding thesis is impaired.",
-	"currentPrice": "$191.12",
+	"currentPrice": "$200.14",
 	"consensus": {
 		"tipranks": "$248",
-		"yahoo": "$264.91",
+		"yahoo": "$229.09",
 		"stockanalysis": "$251"
 	},
 	"cagrModel": {
-		"ttmEPS": 5.03,
+		"ttmEPS": 5.6,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "16%",
-			"base": "40%",
-			"bull": "63%"
+			"bear": "-2%",
+			"base": "15%",
+			"bull": "56%"
 		},
 		"basis": "GAAP diluted EPS; 10yr avg PE"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.681Z",
+	"lastUpdated": "2026-09-12T03:15:55.884Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.37,
-		"signal": "WAIT",
+		"score": 1.46,
+		"signal": "FAIL",
+		"note": "Valuation score 1.46 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 19.2,
-			"cvStock": 0.012,
+			"multiple": 20.5,
+			"cvStock": 0.01,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 38.6%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 191.12,
-				"price6mAgo": 211.71,
-				"price1mAgo": 202,
-				"low3m": 181.01,
-				"return6m": -9.7,
-				"return1m": -5.4,
+				"price": 200.14,
+				"price6mAgo": 186.26,
+				"price1mAgo": 205.79,
+				"low3m": 165.75,
+				"return6m": 7.5,
+				"return1m": -2.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 2
+				"up30d": 3,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": 2,
-				"quarter": "2025-12"
+				"surprise": 5.3,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.5
+		"secondaryScore": 1.54
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 0.21,
-		"totalScore": 5.21,
+		"flowScore": 5,
+		"revisionsScore": 0,
+		"totalScore": 10,
 		"raw": {
-			"avgSurprisePct": 8.91,
-			"netInsiderShares": -894269,
-			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 24
+			"avgSurprisePct": 5.87,
+			"netInsiderShares": 1025672,
+			"instFlowTrend": "positive",
+			"upRevisions": 3,
+			"downRevisions": 3,
+			"totalAnalysts": 26
 		}
 	},
 	"description": "Danaher Corporation designs, manufactures, and markets professional, medical, research, and industrial products and services in the United States, China, and internationally.",
 	"analystTargets": {
-		"low": 220,
-		"mean": 264.91,
+		"low": 195,
+		"mean": 229.09,
 		"high": 310
 	},
 	"analystConsensus": {
@@ -114,14 +114,15 @@
 	"targetPriceAlternative": "$253.55",
 	"forwardEstimates": {
 		"2026": {
-			"high": 8.51,
-			"low": 8.35,
-			"average": 8.40888
+			"high": 8.55,
+			"low": 8.45,
+			"average": 8.5075
 		},
 		"2027": {
-			"high": 9.42,
-			"low": 8.98235,
-			"average": 9.1029
+			"high": 9.5,
+			"low": 9.12,
+			"average": 9.29788
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -8,39 +8,39 @@
 		"basis": "Non-GAAP EPS",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "38%",
-			"bull": "115%"
+			"bear": "10%",
+			"base": "51%",
+			"bull": "117%"
 		}
 	},
-	"currentPrice": "$73.15",
+	"currentPrice": "$72.44",
 	"marketCap": "$14.2B USD",
 	"valuation": {
-		"forwardPE": 36575,
-		"evFcf": -47.5,
-		"evEbitda": -31.1
+		"forwardPE": 2637.1,
+		"evFcf": -52.5,
+		"evEbitda": -35.6
 	},
 	"metrics": {
-		"fcfMargin": "~-65%",
+		"fcfMargin": "~-45%",
 		"fcfYield": "~-2%",
-		"netDebtEbitda": "-2.6x",
-		"ruleOf40": "2456%",
-		"beta": "1.09",
-		"revenueGrowth": "2521.2%",
-		"roic": "-2.9%"
+		"netDebtEbitda": "-5.6x",
+		"ruleOf40": "75%",
+		"beta": "0.97",
+		"revenueGrowth": "120.4%",
+		"roic": "-2.6%"
 	},
 	"consensus": {
-		"yahoo": "$100.64"
+		"yahoo": "$109.10"
 	},
-	"targetPrice": "$100.64",
+	"targetPrice": "$109.10",
 	"analystTargets": {
 		"low": 80,
-		"mean": 100.64,
+		"mean": 109.1,
 		"high": 157
 	},
-	"expectedCAGR": "9% - 115%",
-	"expectedVolatility": "~48%",
-	"sharpeRatio": 1.2,
+	"expectedCAGR": "10% - 117%",
+	"expectedVolatility": "~46%",
+	"sharpeRatio": 1.28,
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "WAIT",
@@ -49,29 +49,30 @@
 	"qcs": {
 		"earningsScore": -5,
 		"flowScore": 2.5,
-		"revisionsScore": -2,
-		"totalScore": -4.5,
+		"revisionsScore": -4.38,
+		"totalScore": -6.88,
 		"raw": {
-			"avgSurprisePct": -24.79,
-			"netInsiderShares": -631282,
+			"avgSurprisePct": -28.25,
+			"netInsiderShares": -156755,
 			"instFlowTrend": "positive",
 			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 5
+			"downRevisions": 7,
+			"totalAnalysts": 8
 		}
 	},
 	"description": "BridgeBio Pharma, Inc., a biopharmaceutical company, discovers, develops, and delivers medicines for patients with genetic diseases.",
-	"lastUpdated": "2026-04-05T07:21:16.394Z",
+	"lastUpdated": "2026-09-12T03:15:53.792Z",
 	"forwardEstimates": {
 		"2026": {
-			"high": -1.48,
-			"low": -2.68,
-			"average": -2.144
+			"high": -1.88,
+			"low": -2.91,
+			"average": -2.58425
 		},
 		"2027": {
-			"high": 1.83,
-			"low": -1.56,
-			"average": 0.002
+			"high": 1.31,
+			"low": -1.08,
+			"average": 0.02747
 		}
-	}
+	},
+	"confidence": "cut"
 }

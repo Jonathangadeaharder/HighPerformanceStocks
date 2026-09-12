@@ -2,102 +2,102 @@
 	"ticker": "TVK.TO",
 	"name": "TerraVest Industries",
 	"group": "The Capital Compounders",
-	"marketCap": "C$2.8B",
-	"sharpeRatio": 0.91,
-	"expectedCAGR": "32% - 55%",
-	"expectedVolatility": "~43%",
+	"marketCap": "C$2.5B",
+	"sharpeRatio": 0.44,
+	"expectedCAGR": "10% - 53%",
+	"expectedVolatility": "~61%",
 	"valuation": {
-		"pegRatio": null,
-		"evEbitda": 14.4,
-		"trailingPE": 31,
-		"forwardPE": 20.8,
-		"evFcf": 56.1
+		"pegRatio": 0.59,
+		"evEbitda": 12.8,
+		"trailingPE": 28.5,
+		"forwardPE": 22,
+		"evFcf": 153.1
 	},
 	"metrics": {
-		"roe": "16.9%",
-		"fcfMargin": "~4%",
-		"fcfYield": "~2%",
-		"netDebtEbitda": "3.5x",
-		"ruleOf40": "78%",
-		"beta": "0.55",
-		"revenueGrowth": "74.1%",
-		"roic": "4.6%",
-		"interestCoverage": "5.2x"
+		"roe": "13.5%",
+		"fcfMargin": "~1%",
+		"fcfYield": "~1%",
+		"netDebtEbitda": "3.9x",
+		"ruleOf40": "15%",
+		"beta": "0.59",
+		"revenueGrowth": "13.6%",
+		"roic": "5.4%",
+		"interestCoverage": "4.6x"
 	},
-	"targetPrice": "C$182.83",
+	"targetPrice": "C$162",
 	"bullCase": "'The Constellation Software of Tanks and Trailers.' TerraVest is a premier mid-cap serial acquirer buying unglamorous, fragmented manufacturing assets (storage/transport for energy transition) at rock-bottom multiples and squeezing out high cash flow. High insider ownership and disciplined execution create massive compounding torque.",
 	"bearCase": "Integration risk as the pace of M&A accelerates. Also exposed to the cyclicality of the energy sector, even if its 'picks and shovels' approach mitigates direct commodity price risk.",
-	"currentPrice": "C$130.16",
+	"currentPrice": "C$118.41",
 	"cagrModel": {
 		"scenarios": {
-			"bear": "32%",
-			"base": "41%",
-			"bull": "55%"
+			"bear": "10%",
+			"base": "38%",
+			"bull": "53%"
 		},
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"basis": "Estimated compounder baseline",
-		"ttmEPS": 4.2
+		"ttmEPS": 4.15
 	},
-	"lastUpdated": "2026-04-05T07:21:36.309Z",
+	"lastUpdated": "2026-09-12T03:16:08.143Z",
 	"consensus": {
-		"yahoo": "C$182.83"
+		"yahoo": "C$162"
 	},
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.96,
+		"score": 0.88,
 		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.88 vs 0.8 limit)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14.4,
-			"cvStock": 0.107,
-			"riskMultiplier": 1.001
+			"multiple": 12.8,
+			"cvStock": 0.146,
+			"riskMultiplier": 1.032
 		},
-		"note": "hasLikelyValueFloor: analyst upside 40.5%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 130.16,
-				"price6mAgo": 144.26,
-				"price1mAgo": 148.09,
-				"low3m": 124.82,
-				"return6m": -9.8,
-				"return1m": -12.1,
-				"near3mLow": true
+				"price": 118.41,
+				"price6mAgo": 137.28,
+				"price1mAgo": 122.57,
+				"low3m": 111,
+				"return6m": -13.7,
+				"return1m": -3.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 1,
-				"down30d": 0
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 40.1,
-				"quarter": "2025-12"
+				"surprise": 55.7,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.39
+		"secondaryScore": 1.51
 	},
 	"qcs": {
-		"earningsScore": 2.53,
+		"earningsScore": 4.16,
 		"flowScore": 0,
-		"revisionsScore": 1.67,
-		"totalScore": 4.2,
+		"revisionsScore": 3.33,
+		"totalScore": 7.49,
 		"raw": {
-			"avgSurprisePct": 6.77,
+			"avgSurprisePct": 15.18,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 1,
+			"upRevisions": 2,
 			"downRevisions": 0,
 			"totalAnalysts": 3
 		}
 	},
 	"description": "TerraVest Industries Inc., together with its subsidiaries, manufactures and sells goods and services in Canada, the United States, and internationally.",
 	"analystTargets": {
-		"low": 170,
-		"mean": 182.83,
-		"high": 200
+		"low": 129,
+		"mean": 162,
+		"high": 180
 	},
 	"analystConsensus": {
 		"ticker": "TVK.TO",
@@ -110,14 +110,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.89,
-			"low": 2.91,
-			"average": 3.36
+			"high": 4.61,
+			"low": 2.49,
+			"average": 3.63667
 		},
 		"2027": {
-			"high": 7.69,
-			"low": 5.02,
-			"average": 6.24333
+			"high": 7.36,
+			"low": 4.2,
+			"average": 5.39333
 		}
-	}
+	},
+	"confidence": "medium"
 }

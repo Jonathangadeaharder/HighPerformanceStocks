@@ -2,103 +2,103 @@
 	"ticker": "ISRG",
 	"name": "Intuitive Surgical",
 	"group": "Robotics",
-	"marketCap": "$160.6B USD",
-	"sharpeRatio": 0.64,
-	"expectedCAGR": "-16% - 66%",
-	"expectedVolatility": "~32%",
+	"marketCap": "$132.3B USD",
+	"sharpeRatio": 0.88,
+	"expectedCAGR": "-12% - 86%",
+	"expectedVolatility": "~37%",
 	"valuation": {
-		"trailingPE": 57.4,
-		"forwardPE": 39.5,
-		"pegRatio": null,
-		"evEbitda": 43.5,
-		"evFcf": 68.1
+		"trailingPE": 42.3,
+		"forwardPE": 30.5,
+		"pegRatio": 1.64,
+		"evEbitda": 30,
+		"evFcf": 47.9
 	},
 	"metrics": {
-		"fcfMargin": "~23%",
-		"fcfYield": "~1%",
-		"roic": "2.0%",
-		"roe": "16.7%",
+		"fcfMargin": "~24%",
+		"fcfYield": "~2%",
+		"roic": "2.9%",
+		"roe": "17.4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "41%",
-		"beta": "1.68",
-		"revenueGrowth": "18.8%",
-		"interestCoverage": "378.5x"
+		"ruleOf40": "42%",
+		"beta": "1.47",
+		"revenueGrowth": "18.5%",
+		"interestCoverage": ">50x"
 	},
-	"targetPrice": "$605.08",
+	"targetPrice": "$478.01",
 	"bullCase": "Dominant surgical robotics platform with 9,000+ installed systems globally. Razor-and-blade model: instruments and accessories are ~70% of revenue. da Vinci 5 upgrade cycle drives procedure growth. Expanding into new surgical categories. Deep moat from surgeon training and hospital integration.",
 	"bearCase": "62x trailing PE leaves no room for error. Competition from Medtronic Hugo and J&J Ottava emerging. Procedure growth could decelerate as penetration matures. Large cap limits upside magnitude.",
-	"currentPrice": "$452.07",
+	"currentPrice": "$369.15",
 	"consensus": {
 		"tipranks": "$620",
-		"yahoo": "$605.08"
+		"yahoo": "$478.01"
 	},
 	"cagrModel": {
-		"ttmEPS": 7.87,
+		"ttmEPS": 8.72,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-16%",
-			"base": "34%",
-			"bull": "66%"
+			"bear": "-12%",
+			"base": "29%",
+			"bull": "86%"
 		},
 		"basis": "GAAP EPS; premium monopoly warrants above-market PE; bear assumes compression to 35x"
 	},
-	"lastUpdated": "2026-04-05T07:21:23.756Z",
+	"lastUpdated": "2026-09-12T03:15:58.775Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 3.11,
-		"signal": "WAIT",
+		"score": 2.14,
+		"signal": "FAIL",
+		"note": "Valuation score 2.14 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "EV/EBITDA",
-			"multiple": 43.5,
-			"cvStock": 0.031,
+			"multiple": 30,
+			"cvStock": 0.03,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 33.8%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 452.07,
-				"price6mAgo": 449.69,
-				"price1mAgo": 496.7,
-				"low3m": 448.4,
-				"return6m": 0.5,
-				"return1m": -9,
-				"near3mLow": true
+				"price": 369.15,
+				"price6mAgo": 479.27,
+				"price1mAgo": 401.27,
+				"low3m": 328.57,
+				"return6m": -23,
+				"return1m": -8,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 0
+				"up30d": 24,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 11.6,
-				"quarter": "2025-12"
+				"surprise": 11.9,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.82
+		"secondaryScore": 2.18
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.52,
-		"totalScore": 5.52,
+		"revisionsScore": 0.19,
+		"totalScore": 5.19,
 		"raw": {
-			"avgSurprisePct": 12.69,
-			"netInsiderShares": 150564,
+			"avgSurprisePct": 15.7,
+			"netInsiderShares": -4826,
 			"instFlowTrend": "neutral",
-			"upRevisions": 3,
+			"upRevisions": 1,
 			"downRevisions": 0,
-			"totalAnalysts": 29
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Intuitive Surgical, Inc. develops, manufactures, and markets products that enable physicians and healthcare providers to enhance the quality of and access to minimally invasive care in the United S...",
 	"analystTargets": {
-		"low": 378,
-		"mean": 605.08,
-		"high": 750
+		"low": 324,
+		"mean": 478.01,
+		"high": 685
 	},
 	"analystConsensus": {
 		"ticker": "ISRG",
@@ -112,14 +112,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 10.65,
-			"low": 9.7,
-			"average": 10.02723
+			"high": 11.08,
+			"low": 10.38,
+			"average": 10.77945
 		},
 		"2027": {
-			"high": 12.21,
-			"low": 10.81,
-			"average": 11.43738
+			"high": 12.72,
+			"low": 11.28,
+			"average": 12.07187
 		}
-	}
+	},
+	"confidence": "medium"
 }

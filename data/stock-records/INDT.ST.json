@@ -5,19 +5,19 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 7.04,
+		"ttmEPS": 7.36,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "10%",
-			"base": "24%",
-			"bull": "52%"
+			"bear": "-4%",
+			"base": "9%",
+			"bull": "34%"
 		}
 	},
-	"currentPrice": "211 SEK",
-	"marketCap": "77.0B SEK",
+	"currentPrice": "241 SEK",
+	"marketCap": "87.9B SEK",
 	"valuation": {
-		"trailingPE": 30,
-		"forwardPE": 23.6,
+		"trailingPE": 32.8,
+		"forwardPE": 26.9,
 		"evEbitda": 17.2,
 		"evFcf": 24.9
 	},
@@ -36,58 +36,54 @@
 		"yahoo": "260 SEK"
 	},
 	"targetPrice": "260 SEK",
-	"expectedCAGR": "10% - 52%",
+	"expectedCAGR": "-4% - 34%",
 	"screener": {
 		"engine": "fEVG",
 		"score": 1.15,
-		"signal": "REJECTED",
+		"signal": "FAIL",
+		"note": "Valuation score 1.15 exceeds 0.8 limit (Used benchmark CV)",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
 			"multiple": 17.2,
-			"cvStock": 0.05,
+			"cvStock": 0.08,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 211.4,
-				"price6mAgo": 235,
-				"price1mAgo": 219.2,
-				"low3m": 194,
-				"return6m": -10,
-				"return1m": -3.6,
+				"price": 241.2,
+				"price6mAgo": 218,
+				"price1mAgo": 240.2,
+				"low3m": 180.7,
+				"return6m": 10.6,
+				"return1m": 0.4,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
+				"pass": true,
 				"up30d": 0,
-				"down30d": 4
-			},
-			"earningsSurprise": {
-				"surprise": -14.7,
-				"quarter": "2025-12"
+				"down30d": 0
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.57
+		"secondaryScore": 1.79
 	},
-	"lastUpdated": "2026-04-05T07:21:23.728Z",
-	"expectedVolatility": "~29%",
-	"sharpeRatio": 0.91,
+	"lastUpdated": "2026-09-12T03:15:58.741Z",
+	"expectedVolatility": "~37%",
+	"sharpeRatio": 0.28,
 	"qcs": {
-		"earningsScore": 0.14,
+		"earningsScore": 0,
 		"flowScore": 0,
-		"revisionsScore": -4,
-		"totalScore": -3.86,
+		"revisionsScore": 0,
+		"totalScore": 0,
 		"raw": {
-			"avgSurprisePct": 0.17,
+			"avgSurprisePct": 0,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
 			"upRevisions": 0,
-			"downRevisions": 4,
-			"totalAnalysts": 5
+			"downRevisions": 0,
+			"totalAnalysts": 1
 		}
 	},
 	"bullCase": "Indutrade is Sweden's premier niche industrial serial acquirer, compounding book value at 15%+ for 25 years. Its decentralized model acquires mission-critical technical components and industrial equipment companies at 6-8x EBIT, with organic growth layered on top. The 18x bear exit P/E reflects continued premium to Nordic peers.",
@@ -118,5 +114,6 @@
 			"low": 9.15,
 			"average": 10.5646
 		}
-	}
+	},
+	"confidence": "low"
 }

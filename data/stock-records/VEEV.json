@@ -2,35 +2,35 @@
 	"ticker": "VEEV",
 	"name": "Veeva Systems",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$28.6B USD",
-	"sharpeRatio": 1.4,
-	"expectedCAGR": "9% - 101%",
-	"expectedVolatility": "~36%",
+	"marketCap": "$42.5B USD",
+	"sharpeRatio": -0.08,
+	"expectedCAGR": "-31% - 33%",
+	"expectedVolatility": "~42%",
 	"valuation": {
-		"trailingPE": 31.9,
-		"forwardPE": 17.6,
-		"pegRatio": null,
-		"evEbitda": 22.3,
-		"evFcf": 20.9
+		"trailingPE": 42.7,
+		"forwardPE": 25.6,
+		"pegRatio": 1.16,
+		"evEbitda": 32.9,
+		"evFcf": 28.1
 	},
 	"metrics": {
-		"fcfMargin": "~33%",
-		"fcfYield": "~4%",
-		"roic": "6.4%",
-		"roe": "13.9%",
+		"fcfMargin": "~36%",
+		"fcfYield": "~3%",
+		"roic": "4.7%",
+		"roe": "14.4%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "49%",
-		"beta": "1.1",
-		"revenueGrowth": "16.0%",
-		"interestCoverage": "186.8x"
+		"ruleOf40": "54%",
+		"beta": "0.97",
+		"revenueGrowth": "17.6%",
+		"interestCoverage": "128.9x"
 	},
-	"targetPrice": "$270.93",
+	"targetPrice": "$297.30",
 	"bullCase": "The dominant cloud software provider for life sciences. 16% top-line growth at a $3.2B scale proves the industry is highly resistant to macro spending cuts. Strict FDA compliance needs make Veeva virtually irremovable.",
 	"bearCase": "Growth is decelerating as they saturate their core commercial CRM market, and platform migration introduces execution risk.",
-	"currentPrice": "$173.98",
+	"currentPrice": "$262.40",
 	"consensus": {
 		"tipranks": "$300",
-		"yahoo": "$270.93",
+		"yahoo": "$297.30",
 		"stockanalysis": "$284"
 	},
 	"cagrModel": {
@@ -38,67 +38,67 @@
 		"epsGrowth": "19%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "9%",
-			"base": "56%",
-			"bull": "101%"
+			"bear": "-31%",
+			"base": "13%",
+			"bull": "33%"
 		},
 		"basis": "Normalized vertical SaaS multiple; accounts for CRM saturation and platform migration risk."
 	},
-	"lastUpdated": "2026-04-05T07:21:37.382Z",
+	"lastUpdated": "2026-09-12T03:16:08.843Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.1,
-		"signal": "WAIT",
+		"score": 1.48,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.48 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.33)) (REJECT: Stalled at WAIT with base CAGR 13% < 15%)",
 		"inputs": {
 			"growth": 19,
 			"multipleType": "EV/FCF",
-			"multiple": 20.9,
-			"cvStock": 0.03,
+			"multiple": 28.1,
+			"cvStock": 0.023,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 55.7% + QCS 9.33",
 		"realityChecks": {
 			"stabilization": {
-				"pass": false,
-				"price": 173.98,
-				"price6mAgo": 299.76,
-				"price1mAgo": 196.06,
-				"low3m": 168.14,
-				"return6m": -42,
-				"return1m": -11.3,
-				"near3mLow": true
+				"pass": true,
+				"price": 262.4,
+				"price6mAgo": 180.79,
+				"price1mAgo": 241.51,
+				"low3m": 150.39,
+				"return6m": 45.1,
+				"return1m": 8.6,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 16,
-				"down30d": 5
+				"up30d": 23,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 6.5,
-				"quarter": "2026-01"
+				"surprise": 5.8,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.93
+		"secondaryScore": 1.35
 	},
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 4.33,
-		"totalScore": 9.33,
+		"flowScore": 5,
+		"revisionsScore": 4.44,
+		"totalScore": 14.44,
 		"raw": {
-			"avgSurprisePct": 7.18,
-			"netInsiderShares": 18301,
-			"instFlowTrend": "negative",
-			"upRevisions": 27,
-			"downRevisions": 1,
-			"totalAnalysts": 30
+			"avgSurprisePct": 5.42,
+			"netInsiderShares": 30326,
+			"instFlowTrend": "positive",
+			"upRevisions": 24,
+			"downRevisions": 0,
+			"totalAnalysts": 27
 		}
 	},
 	"description": "Veeva Systems Inc. provides cloud-based software for the life sciences industry in North America, Europe, the Asia Pacific, the Middle East, Africa, and Latin America.",
 	"analystTargets": {
-		"low": 190,
-		"mean": 270.93,
+		"low": 180,
+		"mean": 297.3,
 		"high": 350
 	},
 	"analystConsensus": {
@@ -112,14 +112,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2027": {
-			"high": 9.1,
-			"low": 8.55,
-			"average": 8.83368
+			"high": 9.38,
+			"low": 9.17,
+			"average": 9.2354
 		},
 		"2028": {
-			"high": 10.29,
-			"low": 9.12,
-			"average": 9.88734
+			"high": 10.64,
+			"low": 9.68,
+			"average": 10.25064
 		}
-	}
+	},
+	"confidence": "high"
 }

@@ -2,100 +2,101 @@
 	"ticker": "NBIX",
 	"name": "Neurocrine Biosciences",
 	"group": "Biotech",
-	"marketCap": "$13.2B USD",
-	"sharpeRatio": 0.94,
-	"expectedCAGR": "6% - 65%",
+	"marketCap": "$15.9B USD",
+	"sharpeRatio": 0.88,
+	"expectedCAGR": "5% - 62%",
 	"expectedVolatility": "~33%",
 	"valuation": {
-		"trailingPE": 28.2,
-		"forwardPE": 13.5,
-		"pegRatio": null,
-		"evEbitda": 18.3,
-		"evFcf": 30.7
+		"trailingPE": 22.9,
+		"forwardPE": 13,
+		"pegRatio": 0.31,
+		"evEbitda": 17.5,
+		"evFcf": 25
 	},
 	"metrics": {
-		"fcfMargin": "~14%",
-		"fcfYield": "~3%",
-		"roic": "6.4%",
-		"roe": "16.4%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "42%",
-		"beta": "0.35",
-		"revenueGrowth": "28.3%",
-		"interestCoverage": "25.7x"
+		"fcfMargin": "~19%",
+		"fcfYield": "~4%",
+		"roic": "5.6%",
+		"roe": "22.1%",
+		"netDebtEbitda": "0.1x",
+		"ruleOf40": "58%",
+		"beta": "0.38",
+		"revenueGrowth": "39.5%",
+		"interestCoverage": "36.0x"
 	},
-	"targetPrice": "$178.04",
+	"targetPrice": "$210.79",
 	"bullCase": "Ingrezza is the gold standard for tardive dyskinesia with $2.5B+ peak sales potential. Deep neuropsych pipeline (crinecerfont for CAH, muscarinic agonists for schizophrenia). Net cash balance sheet. 15-20% EPS growth through 2028+.",
 	"bearCase": "Ingrezza is ~90% of revenue — extreme concentration risk. Generic competition could emerge. Pipeline clinical trial risk. Neuropsych drug development has high failure rates.",
-	"currentPrice": "$131.60",
+	"currentPrice": "$156.22",
 	"consensus": {
 		"tipranks": "$180",
-		"yahoo": "$178.04"
+		"yahoo": "$210.79"
 	},
 	"cagrModel": {
-		"ttmEPS": 4.67,
+		"ttmEPS": 6.83,
 		"epsGrowth": "14%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "6%",
+			"bear": "5%",
 			"base": "35%",
-			"bull": "65%"
+			"bull": "62%"
 		},
 		"basis": "GAAP EPS; specialty pharma peers trade 18-30x; base reflects pipeline optionality"
 	},
-	"lastUpdated": "2026-04-05T07:21:30.026Z",
+	"lastUpdated": "2026-09-12T03:16:03.216Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.18,
+		"score": 1.05,
 		"signal": "WAIT",
+		"note": "Borderline valuation (Score 1.05 vs 1 limit)",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 13.5,
-			"cvStock": 0.223,
-			"riskMultiplier": 1.229
+			"multiple": 13,
+			"cvStock": 0.194,
+			"riskMultiplier": 1.133
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 131.6,
-				"price6mAgo": 139.43,
-				"price1mAgo": 129.64,
-				"low3m": 122.14,
-				"return6m": -5.6,
-				"return1m": 1.5,
+				"price": 156.22,
+				"price6mAgo": 127.78,
+				"price1mAgo": 156.49,
+				"low3m": 148.78,
+				"return6m": 22.3,
+				"return1m": -0.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 4
+				"up30d": 5,
+				"down30d": 7
 			},
 			"earningsSurprise": {
-				"surprise": -18.1,
-				"quarter": "2025-12"
+				"surprise": 45.4,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": -1.78,
+		"earningsScore": 2.4,
 		"flowScore": 0,
-		"revisionsScore": -1.18,
-		"totalScore": -2.96,
+		"revisionsScore": 1.25,
+		"totalScore": 3.65,
 		"raw": {
-			"avgSurprisePct": -9.91,
-			"netInsiderShares": 281701,
-			"instFlowTrend": "negative",
-			"upRevisions": 0,
+			"avgSurprisePct": 11.64,
+			"netInsiderShares": -26341,
+			"instFlowTrend": "neutral",
+			"upRevisions": 8,
 			"downRevisions": 4,
-			"totalAnalysts": 17
+			"totalAnalysts": 16
 		}
 	},
 	"description": "Neurocrine Biosciences, Inc. discovers, develops, and commercialize pharmaceuticals for neurological, psychiatric, endocrine, and immunological disorders in the United States and internationally.",
 	"analystTargets": {
-		"low": 140,
-		"mean": 178.04,
-		"high": 217.15
+		"low": 164,
+		"mean": 210.79,
+		"high": 253
 	},
 	"analystConsensus": {
 		"ticker": "NBIX",
@@ -109,14 +110,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 9.52,
-			"low": 6.38,
-			"average": 7.95819
+			"high": 11.34564,
+			"low": 8.6984,
+			"average": 10.19681
 		},
 		"2027": {
-			"high": 15.9,
-			"low": 7.21,
-			"average": 9.72043
+			"high": 17.67,
+			"low": 8.37024,
+			"average": 11.97366
 		}
-	}
+	},
+	"confidence": "low"
 }

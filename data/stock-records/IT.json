@@ -7,96 +7,97 @@
 	"cagrModel": {
 		"epsGrowth": "12%",
 		"basis": "Reduced sensitivity to mean-reversion; reflects modest growth profile.",
-		"ttmEPS": 9.64,
+		"ttmEPS": 11.71,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-11%",
-			"base": "19%",
-			"bull": "62%"
+			"bear": "-16%",
+			"base": "3%",
+			"bull": "28%"
 		}
 	},
-	"currentPrice": "$157.85",
-	"marketCap": "$11.4B USD",
+	"currentPrice": "$179.59",
+	"marketCap": "$11.3B USD",
 	"valuation": {
-		"trailingPE": 16.4,
-		"forwardPE": 10.9,
-		"evEbitda": 9.7,
-		"evFcf": 13.8
+		"trailingPE": 15.3,
+		"forwardPE": 11,
+		"evEbitda": 9.5,
+		"evFcf": 12.5,
+		"pegRatio": 0.68
 	},
 	"metrics": {
-		"roe": "86.9%",
-		"fcfMargin": "~14%",
-		"fcfYield": "~8%",
-		"netDebtEbitda": "1.2x",
+		"roe": "113.6%",
+		"fcfMargin": "~16%",
+		"fcfYield": "~9%",
+		"netDebtEbitda": "1.3x",
 		"ruleOf40": "16%",
-		"beta": "1.04",
-		"revenueGrowth": "2.2%",
-		"roic": "9.9%",
-		"interestCoverage": "7.1x"
+		"beta": "0.95",
+		"revenueGrowth": "-0.6%",
+		"roic": "10.5%",
+		"interestCoverage": "7.6x"
 	},
 	"consensus": {
-		"yahoo": "$188.62"
+		"yahoo": "$185.15"
 	},
-	"targetPrice": "$188.62",
-	"expectedCAGR": "-11% - 62%",
+	"targetPrice": "$185.15",
+	"expectedCAGR": "-16% - 28%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.15,
-		"signal": "WAIT",
+		"score": 1.04,
+		"signal": "REJECTED",
+		"note": "Valuation score 1.04 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 10)) (REJECT: Stalled at WAIT with base CAGR 3% < 15%)",
 		"inputs": {
 			"growth": 12,
 			"multipleType": "EV/FCF",
-			"multiple": 13.8,
-			"cvStock": 0.051,
+			"multiple": 12.5,
+			"cvStock": 0.037,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 10 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 157.85,
-				"price6mAgo": 256.43,
-				"price1mAgo": 170.98,
-				"low3m": 139.18,
-				"return6m": -38.4,
-				"return1m": -7.7,
+				"price": 179.59,
+				"price6mAgo": 160.59,
+				"price1mAgo": 179.46,
+				"low3m": 124.25,
+				"return6m": 11.8,
+				"return1m": 0.1,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 15,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 12.2,
-				"quarter": "2025-12"
+				"surprise": 17.1,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.91
+		"secondaryScore": 0.92
 	},
-	"lastUpdated": "2026-04-05T07:21:23.964Z",
-	"expectedVolatility": "~54%",
-	"sharpeRatio": 0.39,
+	"lastUpdated": "2026-09-12T03:15:59.388Z",
+	"expectedVolatility": "~56%",
+	"sharpeRatio": 0.03,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 10,
+		"revisionsScore": 5,
+		"totalScore": 15,
 		"raw": {
-			"avgSurprisePct": 10.61,
-			"netInsiderShares": 114253,
+			"avgSurprisePct": 14.16,
+			"netInsiderShares": 2768,
 			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 1,
+			"upRevisions": 15,
+			"downRevisions": 0,
 			"totalAnalysts": 15
 		}
 	},
-	"description": "Gartner, Inc. provides business and technology insights for decisions and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle East, Africa,...",
+	"description": "Gartner, Inc. provides business and technology insights to support decision-making and performance on an organization's mission-critical priorities in the United States, Canada, Europe, the Middle ...",
 	"analystTargets": {
-		"low": 140,
-		"mean": 188.62,
-		"high": 255
+		"low": 150,
+		"mean": 185.15,
+		"high": 229
 	},
 	"analystConsensus": {
 		"ticker": "IT",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$188.30",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.78907,
-			"low": 12.32,
-			"average": 13.15599
+			"high": 15.13795,
+			"low": 14.03,
+			"average": 14.48108
 		},
 		"2027": {
-			"high": 16.14,
-			"low": 13.2,
-			"average": 14.49149
+			"high": 17.52096,
+			"low": 15.07,
+			"average": 16.35869
 		}
-	}
+	},
+	"confidence": "high"
 }

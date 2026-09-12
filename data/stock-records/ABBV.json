@@ -2,37 +2,37 @@
 	"ticker": "ABBV",
 	"name": "AbbVie Inc.",
 	"group": "Healthcare Monopolies",
-	"marketCap": "$369.4B USD",
-	"sharpeRatio": 0.52,
-	"expectedCAGR": "-9% - 46%",
-	"expectedVolatility": "~27%",
+	"marketCap": "$454.4B USD",
+	"sharpeRatio": 0.06,
+	"expectedCAGR": "-19% - 31%",
+	"expectedVolatility": "~26%",
 	"valuation": {
-		"trailingPE": 88.5,
-		"forwardPE": 13,
-		"pegRatio": 1.06,
-		"evEbitda": 14.8,
-		"evFcf": 23.6
+		"trailingPE": 72,
+		"forwardPE": 15.8,
+		"pegRatio": 0.52,
+		"evEbitda": 16.9,
+		"evFcf": 30.7
 	},
 	"metrics": {
-		"fcfMargin": "~30%",
-		"fcfYield": "~5%",
-		"roic": "4.4%",
+		"fcfMargin": "~26%",
+		"fcfYield": "~4%",
+		"roic": "3.8%",
 		"roe": "6225.0%",
-		"netDebtEbitda": "2.2x",
-		"ruleOf40": "40%",
-		"grossMargin": "71.62%",
-		"operatingMargin": "~34%",
-		"beta": "0.36",
-		"revenueGrowth": "10.0%",
-		"interestCoverage": "7.8x"
+		"netDebtEbitda": "2.1x",
+		"ruleOf40": "36%",
+		"grossMargin": "72.79%",
+		"operatingMargin": "~40%",
+		"beta": "0.28",
+		"revenueGrowth": "10.2%",
+		"interestCoverage": "7.9x"
 	},
-	"targetPrice": "$249.14",
+	"targetPrice": "$277.31",
 	"bullCase": "Skyrizi + Rinvoq are growing explosively, fully replacing Humira revenue. Clean patent cliff profile going forward. Deeply undervalued relative to growth pharma at 16x forward earnings. Massive FCF supports dividend + buybacks + pipeline investment.",
 	"bearCase": "$68.8B in debt from the Allergan acquisition. Pipeline failures could stall growth beyond current immunology franchise. Regulatory drug pricing risk in the US.",
-	"currentPrice": "$208.84",
+	"currentPrice": "$257.12",
 	"consensus": {
 		"tipranks": "$253",
-		"yahoo": "$249.14",
+		"yahoo": "$277.31",
 		"stockanalysis": "$247"
 	},
 	"cagrModel": {
@@ -40,47 +40,48 @@
 		"epsGrowth": "15%",
 		"dividendYield": "3%",
 		"scenarios": {
-			"bear": "-9%",
-			"base": "22%",
-			"bull": "46%"
+			"bear": "-19%",
+			"base": "11%",
+			"bull": "31%"
 		},
 		"basis": "Adjusted EPS (excl IPR&D); adj PE basis"
 	},
-	"lastUpdated": "2026-04-05T07:21:12.212Z",
+	"lastUpdated": "2026-09-12T03:15:51.057Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.99,
+		"score": 1.13,
 		"signal": "FAIL",
+		"note": "Valuation score 1.13 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "EV/EBITDA",
-			"multiple": 14.8,
+			"multiple": 16.9,
 			"cvStock": 0.038,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 208.84,
-				"price6mAgo": 230.19,
-				"price1mAgo": 232.35,
-				"low3m": 201.8,
-				"return6m": -9.3,
-				"return1m": -10.1,
-				"near3mLow": true
+				"price": 257.12,
+				"price6mAgo": 225.37,
+				"price1mAgo": 248.76,
+				"low3m": 215.37,
+				"return6m": 14.1,
+				"return1m": 3.4,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 4
+				"up30d": 10,
+				"down30d": 9
 			},
 			"earningsSurprise": {
-				"surprise": 2.2,
-				"quarter": "2025-12"
+				"surprise": 1.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.87
+		"secondaryScore": 1.05
 	},
 	"intrinsicValue": {
 		"dcf": 160.09,
@@ -88,24 +89,24 @@
 		"discount": -24
 	},
 	"qcs": {
-		"earningsScore": 2.93,
+		"earningsScore": 1.78,
 		"flowScore": 0,
-		"revisionsScore": 0.48,
-		"totalScore": 3.41,
+		"revisionsScore": -3.65,
+		"totalScore": -1.87,
 		"raw": {
-			"avgSurprisePct": 2.79,
-			"netInsiderShares": 287182,
+			"avgSurprisePct": 1.69,
+			"netInsiderShares": 12298,
 			"instFlowTrend": "negative",
-			"upRevisions": 5,
-			"downRevisions": 2,
-			"totalAnalysts": 31
+			"upRevisions": 1,
+			"downRevisions": 20,
+			"totalAnalysts": 26
 		}
 	},
 	"description": "AbbVie Inc., a research-based biopharmaceutical company, engages in the research and development, manufacturing, commercializing, and sale of medicines and therapies worldwide.",
 	"analystTargets": {
-		"low": 184,
-		"mean": 249.14,
-		"high": 299
+		"low": 200,
+		"mean": 277.31,
+		"high": 328
 	},
 	"analystConsensus": {
 		"ticker": "ABBV",
@@ -118,14 +119,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 15.25,
-			"low": 14.15,
-			"average": 14.5364
+			"high": 14.12,
+			"low": 13.9,
+			"average": 14.01058
 		},
 		"2027": {
-			"high": 17.43,
-			"low": 14.95,
-			"average": 16.11592
+			"high": 17.59,
+			"low": 15.13207,
+			"average": 16.27952
 		}
-	}
+	},
+	"confidence": "cut"
 }

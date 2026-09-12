@@ -5,94 +5,97 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 12.26,
+		"ttmEPS": 11.78,
 		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "2%",
-			"base": "16%",
-			"bull": "32%"
+			"bear": "9%",
+			"base": "25%",
+			"bull": "58%"
 		}
 	},
-	"currentPrice": "$370.31",
-	"marketCap": "$15.1B USD",
+	"currentPrice": "$314.22",
+	"marketCap": "$13.0B USD",
 	"valuation": {
-		"trailingPE": 30.2,
-		"forwardPE": 26.1,
-		"evEbitda": 19.3,
-		"evFcf": 48.9
+		"trailingPE": 26.7,
+		"forwardPE": 23.7,
+		"evEbitda": 18.1,
+		"evFcf": 26.2,
+		"pegRatio": 1.19
 	},
 	"metrics": {
-		"roe": "18.7%",
-		"fcfMargin": "~4%",
-		"fcfYield": "~2%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "-6%",
-		"beta": "1.05",
-		"revenueGrowth": "-10.0%",
-		"roic": "3.8%",
-		"interestCoverage": "28.0x"
+		"roe": "16.7%",
+		"fcfMargin": "~7%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "0.1x",
+		"ruleOf40": "9%",
+		"beta": "1.04",
+		"revenueGrowth": "2.1%",
+		"roic": "5.6%",
+		"interestCoverage": "23.8x"
 	},
 	"consensus": {
-		"yahoo": "$415.42"
+		"yahoo": "$379"
 	},
-	"targetPrice": "$415.42",
-	"expectedCAGR": "2% - 32%",
+	"targetPrice": "$379",
+	"expectedCAGR": "9% - 58%",
 	"screener": {
 		"engine": "totalReturn",
-		"score": null,
+		"score": 0.86,
 		"signal": "REJECTED",
-		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
 			"growth": 10,
 			"dividendYield": 4,
-			"earningsYield": 3.8
+			"debtToEquity": 15,
+			"debtPenalty": false,
+			"rawReturn": 14
 		},
+		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 370.31,
-				"price6mAgo": 409.99,
-				"price1mAgo": 400.87,
-				"low3m": 336.96,
-				"return6m": -9.7,
-				"return1m": -7.6,
+				"price": 314.22,
+				"price6mAgo": 363.79,
+				"price1mAgo": 309.41,
+				"low3m": 295.75,
+				"return6m": -13.6,
+				"return1m": 1.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 1,
-				"down30d": 5
+				"up30d": 0,
+				"down30d": 4
 			},
 			"earningsSurprise": {
-				"surprise": -11,
-				"quarter": "2025-12"
+				"surprise": -8.8,
+				"quarter": "2026-06"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:39.272Z",
-	"expectedVolatility": "~33%",
-	"sharpeRatio": 0.38,
+	"lastUpdated": "2026-09-12T03:16:09.526Z",
+	"expectedVolatility": "~35%",
+	"sharpeRatio": 0.83,
 	"qcs": {
-		"earningsScore": -4.7,
-		"flowScore": 2.5,
-		"revisionsScore": -1.92,
-		"totalScore": -4.12,
+		"earningsScore": -1.97,
+		"flowScore": 0,
+		"revisionsScore": -1.67,
+		"totalScore": -3.64,
 		"raw": {
-			"avgSurprisePct": -9.4,
+			"avgSurprisePct": -3.93,
 			"netInsiderShares": 0,
-			"instFlowTrend": "positive",
-			"upRevisions": 2,
-			"downRevisions": 7,
-			"totalAnalysts": 13
+			"instFlowTrend": "neutral",
+			"upRevisions": 0,
+			"downRevisions": 4,
+			"totalAnalysts": 12
 		}
 	},
 	"bullCase": "Watsco is the dominant HVAC equipment distributor with a captive network of ~700 locations and a fragmented, 100,000-contractor customer base that has high switching costs. The mandated refrigerant transition (R-410A to R-454B by 2025) creates a multi-year equipment replacement super-cycle as contractors upgrade installed base.",
 	"bearCase": "HVAC equipment spending is tied to new construction and replacement cycles. A housing market slowdown reduces new construction volume. The refrigerant transition cycle may normalize by 2026, and gross margins could compress as new-format competitors (Carrier, Lennox direct distribution) expand.",
 	"description": "Watsco, Inc., together with its subsidiaries, engages in the distribution of air conditioning, heating, and refrigeration equipment, and related parts and supplies in the United States, Canada, Lat...",
 	"analystTargets": {
-		"low": 362,
-		"mean": 415.42,
-		"high": 475
+		"low": 330,
+		"mean": 379,
+		"high": 485
 	},
 	"analystConsensus": {
 		"ticker": "WSO",
@@ -106,14 +109,15 @@
 	"targetPriceAlternative": "$409.00",
 	"forwardEstimates": {
 		"2026": {
-			"high": 14.16,
-			"low": 11.56,
-			"average": 12.74573
+			"high": 13.89,
+			"low": 11.15,
+			"average": 12.17656
 		},
 		"2027": {
-			"high": 17.92,
-			"low": 12.44,
-			"average": 14.37378
+			"high": 15.83,
+			"low": 12.15,
+			"average": 13.23244
 		}
-	}
+	},
+	"confidence": "cut"
 }

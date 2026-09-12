@@ -2,80 +2,80 @@
 	"ticker": "V",
 	"name": "Visa",
 	"group": "Defensive Monopolies",
-	"marketCap": "$580.0B USD",
-	"sharpeRatio": 1.14,
-	"expectedCAGR": "8% - 51%",
+	"marketCap": "$691.6B USD",
+	"sharpeRatio": 0.18,
+	"expectedCAGR": "-10% - 27%",
 	"expectedVolatility": "~22%",
 	"valuation": {
-		"trailingPE": 28.2,
-		"forwardPE": 20.7,
-		"pegRatio": null,
-		"evEbitda": 20,
-		"evFcf": 26.3
+		"trailingPE": 31.3,
+		"forwardPE": 24.7,
+		"pegRatio": 1.66,
+		"evEbitda": 22.2,
+		"evFcf": 33.9
 	},
 	"metrics": {
-		"fcfMargin": "~53%",
-		"fcfYield": "~4%",
-		"roic": "4.2%",
-		"roe": "54.0%",
-		"netDebtEbitda": "0.2x",
-		"ruleOf40": "68%",
-		"beta": "0.8",
-		"revenueGrowth": "14.6%",
-		"interestCoverage": "24.9x"
+		"fcfMargin": "~46%",
+		"fcfYield": "~3%",
+		"roic": "3.2%",
+		"roe": "61.2%",
+		"netDebtEbitda": "0.3x",
+		"ruleOf40": "60%",
+		"beta": "0.76",
+		"revenueGrowth": "14.4%",
+		"interestCoverage": "23.7x"
 	},
-	"targetPrice": "$396.83",
+	"targetPrice": "$419.36",
 	"bullCase": "The ultimate inflation-protected toll roads. Processing 67.7 billion transactions with effectively zero marginal cost of operation yields supreme pricing power.",
 	"bearCase": "Mature global penetration results in highly predictable, low-volatility compounding. Inadequate for a synthetic leverage strategy requiring violent upside velocity.",
-	"currentPrice": "$300.80",
+	"currentPrice": "$370.45",
 	"consensus": {
 		"tipranks": "$400",
-		"yahoo": "$396.83",
+		"yahoo": "$419.36",
 		"stockanalysis": "$399"
 	},
 	"cagrModel": {
-		"ttmEPS": 10.65,
+		"ttmEPS": 11.85,
 		"epsGrowth": "14%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "8%",
-			"base": "33%",
-			"bull": "51%"
+			"bear": "-10%",
+			"base": "14%",
+			"bull": "27%"
 		},
 		"basis": "Non-GAAP EPS; exit PE calibrated to 5yr average trading range"
 	},
-	"lastUpdated": "2026-04-05T07:21:37.225Z",
+	"lastUpdated": "2026-09-12T03:16:08.798Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 1.48,
-		"signal": "WAIT",
+		"score": 1.76,
+		"signal": "FAIL",
+		"note": "Valuation score 1.76 exceeds 1 limit",
 		"inputs": {
 			"growth": 14,
 			"multipleType": "Forward P/E",
-			"multiple": 20.7,
+			"multiple": 24.7,
 			"cvStock": 0.015,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 300.8,
-				"price6mAgo": 349.28,
-				"price1mAgo": 319.8,
-				"low3m": 293.89,
-				"return6m": -13.9,
-				"return1m": -5.9,
-				"near3mLow": true
+				"price": 370.45,
+				"price6mAgo": 306.5,
+				"price1mAgo": 359.42,
+				"low3m": 319.8,
+				"return6m": 20.9,
+				"return1m": 3.1,
+				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 3,
-				"down30d": 0
+				"up30d": 28,
+				"down30d": 4
 			},
 			"earningsSurprise": {
-				"surprise": 0.9,
-				"quarter": "2025-12"
+				"surprise": 2.8,
+				"quarter": "2026-06"
 			}
 		}
 	},
@@ -87,22 +87,22 @@
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0.14,
-		"totalScore": 5.14,
+		"revisionsScore": 3.08,
+		"totalScore": 8.08,
 		"raw": {
-			"avgSurprisePct": 2.21,
-			"netInsiderShares": 284580,
+			"avgSurprisePct": 2.68,
+			"netInsiderShares": -29748,
 			"instFlowTrend": "neutral",
-			"upRevisions": 2,
-			"downRevisions": 1,
-			"totalAnalysts": 37
+			"upRevisions": 30,
+			"downRevisions": 6,
+			"totalAnalysts": 39
 		}
 	},
 	"description": "Visa Inc. operates as a payment technology company in the United States and internationally.",
 	"analystTargets": {
-		"low": 323,
-		"mean": 396.83,
-		"high": 450
+		"low": 330,
+		"mean": 419.36,
+		"high": 466
 	},
 	"analystConsensus": {
 		"ticker": "V",
@@ -116,14 +116,15 @@
 	"targetPriceAlternative": "$392.65",
 	"forwardEstimates": {
 		"2026": {
-			"high": 13.2,
-			"low": 12.66,
-			"average": 12.85541
+			"high": 13.5,
+			"low": 13.1,
+			"average": 13.22816
 		},
 		"2027": {
-			"high": 15.01,
-			"low": 14.11,
-			"average": 14.5393
+			"high": 15.42195,
+			"low": 14.53,
+			"average": 15.0043
 		}
-	}
+	},
+	"confidence": "medium"
 }

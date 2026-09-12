@@ -5,98 +5,99 @@
 	"cagrModel": {
 		"epsGrowth": "16%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 6.78,
+		"ttmEPS": 7.81,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "4%",
-			"base": "24%",
-			"bull": "47%"
+			"bear": "-2%",
+			"base": "17%",
+			"bull": "33%"
 		}
 	},
-	"currentPrice": "$254.80",
-	"marketCap": "$18.4B USD",
+	"currentPrice": "$346.23",
+	"marketCap": "$24.4B USD",
 	"valuation": {
-		"trailingPE": 37.6,
-		"forwardPE": 28.8,
-		"evEbitda": 22.1,
-		"evFcf": 65.3
+		"trailingPE": 44.3,
+		"forwardPE": 34.7,
+		"evEbitda": 26.6,
+		"evFcf": 87.2,
+		"pegRatio": 2.62
 	},
 	"metrics": {
-		"roe": "16.9%",
-		"fcfMargin": "~9%",
+		"roe": "19.1%",
+		"fcfMargin": "~8%",
 		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "16%",
-		"beta": "1.15",
-		"revenueGrowth": "7.5%",
-		"roic": "4.2%",
-		"interestCoverage": "45.2x"
+		"ruleOf40": "22%",
+		"beta": "1.14",
+		"revenueGrowth": "13.8%",
+		"roic": "2.7%",
+		"interestCoverage": "52.4x"
 	},
 	"consensus": {
-		"yahoo": "$316.69"
+		"yahoo": "$405.38"
 	},
-	"targetPrice": "$316.69",
-	"expectedCAGR": "4% - 47%",
+	"targetPrice": "$405.38",
+	"expectedCAGR": "-2% - 33%",
 	"screener": {
 		"engine": "fCFG",
-		"score": 4.08,
+		"score": 5.45,
 		"signal": "WAIT",
+		"note": "Valuation score 5.45 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9))",
 		"inputs": {
 			"growth": 16,
 			"multipleType": "EV/FCF",
-			"multiple": 65.3,
-			"cvStock": 0.028,
+			"multiple": 87.2,
+			"cvStock": 0.024,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: QCS 9 >= 8 (elite quality floor)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 254.8,
-				"price6mAgo": 268.07,
-				"price1mAgo": 244.35,
-				"low3m": 223.83,
-				"return6m": -5,
-				"return1m": 4.3,
+				"price": 346.23,
+				"price6mAgo": 231.09,
+				"price1mAgo": 352.29,
+				"low3m": 321.94,
+				"return6m": 49.8,
+				"return1m": -1.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 7,
-				"down30d": 4
+				"up30d": 14,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 11.5,
-				"quarter": "2025-12"
+				"surprise": 13.9,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.8
+		"secondaryScore": 2.17
 	},
-	"lastUpdated": "2026-04-05T07:21:39.457Z",
-	"expectedVolatility": "~40%",
-	"sharpeRatio": 0.53,
+	"lastUpdated": "2026-09-12T03:16:10.180Z",
+	"expectedVolatility": "~33%",
+	"sharpeRatio": 0.33,
 	"qcs": {
 		"earningsScore": 5,
-		"flowScore": 0,
-		"revisionsScore": 4,
-		"totalScore": 9,
+		"flowScore": 5,
+		"revisionsScore": 4.12,
+		"totalScore": 14.12,
 		"raw": {
-			"avgSurprisePct": 15.27,
-			"netInsiderShares": 0,
-			"instFlowTrend": "neutral",
+			"avgSurprisePct": 16.75,
+			"netInsiderShares": 15828,
+			"instFlowTrend": "positive",
 			"upRevisions": 14,
-			"downRevisions": 2,
-			"totalAnalysts": 15
+			"downRevisions": 0,
+			"totalAnalysts": 17
 		}
 	},
 	"bullCase": "West Pharmaceutical is the near-monopoly supplier of drug containment components (stoppers, seals, closures) for injectable pharmaceuticals. Every pre-filled syringe and vial of injectable drug uses West components — this embedded position provides pricing power and secular volume growth from biologics and GLP-1 manufacturing ramp.",
 	"bearCase": "The pandemic-era demand surge (COVID vaccines required 2x normal closure volume) created a massive revenue pull-forward. The post-COVID inventory destocking cycle has been severe, with volumes declining 15-20% from peak. Recovery timeline remains uncertain.",
 	"description": "West Pharmaceutical Services, Inc. designs, manufactures, and sells containment and delivery systems for injectable drugs and healthcare products in the Americas, Europe, the Middle East, Africa, a...",
 	"analystTargets": {
-		"low": 265,
-		"mean": 316.69,
-		"high": 375
+		"low": 340,
+		"mean": 405.38,
+		"high": 459
 	},
 	"analystConsensus": {
 		"ticker": "WST",
@@ -110,14 +111,15 @@
 	"targetPriceAlternative": "$314.56",
 	"forwardEstimates": {
 		"2026": {
-			"high": 8.21181,
-			"low": 7.9,
-			"average": 8.02283
+			"high": 9.05,
+			"low": 8.83,
+			"average": 8.962
 		},
 		"2027": {
-			"high": 9.29798,
-			"low": 8.31,
-			"average": 8.85366
+			"high": 10.66619,
+			"low": 9.71,
+			"average": 9.9766
 		}
-	}
+	},
+	"confidence": "high"
 }

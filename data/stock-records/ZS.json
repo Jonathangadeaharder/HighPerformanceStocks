@@ -2,102 +2,103 @@
 	"ticker": "ZS",
 	"name": "Zscaler",
 	"group": "Cybersecurity",
-	"marketCap": "$22.3B USD",
-	"sharpeRatio": 1.69,
-	"expectedCAGR": "19% - 142%",
-	"expectedVolatility": "~45%",
+	"marketCap": "$26.8B USD",
+	"sharpeRatio": 0.28,
+	"expectedCAGR": "-6% - 52%",
+	"expectedVolatility": "~67%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": 30.4,
-		"pegRatio": null,
-		"evEbitda": -303.3,
-		"evFcf": 20.2
+		"forwardPE": 29.4,
+		"pegRatio": 1.7,
+		"evEbitda": 575.2,
+		"evFcf": 23.5
 	},
 	"metrics": {
-		"fcfMargin": "~34%",
-		"fcfYield": "~5%",
-		"roic": "5.4%",
-		"roe": "-3.6%",
+		"fcfMargin": "~32%",
+		"fcfYield": "~4%",
+		"roic": "4.5%",
+		"roe": "-2.9%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "60%",
-		"beta": "1.11",
-		"revenueGrowth": "25.9%"
+		"ruleOf40": "57%",
+		"beta": "0.95",
+		"revenueGrowth": "24.9%",
+		"interestCoverage": "0.4x"
 	},
-	"targetPrice": "$233.70",
+	"targetPrice": "$207.29",
 	"bullCase": "Leading zero-trust security platform replacing legacy firewalls. 125%+ net retention rate. TAM expanding as enterprises shift to cloud-native security. Rule of 40 score of ~55%. AI-powered threat detection adds differentiation. Only pure-play zero-trust at scale.",
 	"bearCase": "Still GAAP unprofitable. High SBC dilution. Competition from PANW and CRWD expanding into SASE. CEO transition risk. 40x forward non-GAAP PE is demanding. Customer concentration in large enterprises.",
-	"currentPrice": "$139.52",
+	"currentPrice": "$164.54",
 	"consensus": {
 		"tipranks": "$240",
-		"yahoo": "$233.70"
+		"yahoo": "$207.29"
 	},
 	"cagrModel": {
 		"ttmEPS": 4,
 		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "18%",
-			"base": "68%",
-			"bull": "140%"
+			"bear": "-6%",
+			"base": "26%",
+			"bull": "52%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); growth premium; bear assumes deceleration + compression"
 	},
-	"lastUpdated": "2026-04-07T11:23:06.462Z",
+	"lastUpdated": "2026-09-12T03:16:10.189Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 0.81,
+		"score": 0.94,
 		"signal": "WAIT",
-		"note": "Borderline valuation (Score 0.81 vs 0.8 limit)",
+		"note": "Borderline valuation (Score 0.94 vs 0.8 limit)",
 		"inputs": {
 			"growth": 25,
 			"multipleType": "EV/FCF",
-			"multiple": 20.2,
-			"cvStock": 0.077,
+			"multiple": 23.5,
+			"cvStock": 0.094,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 139.52,
-				"price6mAgo": 292.75,
-				"price1mAgo": 162.62,
-				"low3m": 128,
-				"return6m": -52.3,
-				"return1m": -14.2,
+				"price": 164.54,
+				"price6mAgo": 151.61,
+				"price1mAgo": 177.32,
+				"low3m": 119.5,
+				"return6m": 8.5,
+				"return1m": -7.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 36,
-				"down30d": 6
+				"up30d": 0,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 12.6,
-				"quarter": "2026-01"
+				"surprise": 9.2,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.22
+		"secondaryScore": 1.18
 	},
 	"qcs": {
-		"earningsScore": 5,
+		"earningsScore": 4.28,
 		"flowScore": 2.5,
-		"revisionsScore": 4.77,
-		"totalScore": 12.27,
+		"revisionsScore": 0.12,
+		"totalScore": 6.9,
 		"raw": {
-			"avgSurprisePct": 11.45,
-			"netInsiderShares": -10781,
+			"avgSurprisePct": 10.07,
+			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 42,
-			"downRevisions": 0,
-			"totalAnalysts": 44
+			"upRevisions": 2,
+			"downRevisions": 1,
+			"totalAnalysts": 42
 		}
 	},
 	"description": "Zscaler, Inc. operates as a cloud security company worldwide.",
 	"analystTargets": {
-		"low": 165,
-		"mean": 233.7,
-		"high": 335
+		"low": 155,
+		"mean": 207.29,
+		"high": 250
 	},
 	"analystConsensus": {
 		"ticker": "ZS",
@@ -110,15 +111,16 @@
 	"targetPriceAlternative": "$267.13",
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
-		"2026": {
-			"high": 4.47,
-			"low": 3.99,
-			"average": 4.02691
-		},
 		"2027": {
-			"high": 5.23,
-			"low": 3.81,
-			"average": 4.5886
+			"high": 5.42,
+			"low": 4.86,
+			"average": 4.90886
+		},
+		"2028": {
+			"high": 6.78,
+			"low": 4.68,
+			"average": 5.59962
 		}
-	}
+	},
+	"confidence": "medium"
 }

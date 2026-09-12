@@ -2,35 +2,35 @@
 	"ticker": "WPM",
 	"name": "Wheaton Precious Metals",
 	"group": "Royalties",
-	"marketCap": "$61.7B USD",
-	"sharpeRatio": 1.1,
-	"expectedCAGR": "12% - 94%",
-	"expectedVolatility": "~44%",
+	"marketCap": "$70.0B USD",
+	"sharpeRatio": 0.36,
+	"expectedCAGR": "0% - 46%",
+	"expectedVolatility": "~51%",
 	"valuation": {
-		"trailingPE": 41.8,
-		"forwardPE": 22.7,
-		"pegRatio": 1.41,
-		"evEbitda": 31.8,
-		"evFcf": 800.3
+		"trailingPE": 33.4,
+		"forwardPE": 30.5,
+		"pegRatio": 0.43,
+		"evEbitda": 26.9,
+		"evFcf": -20.4
 	},
 	"metrics": {
-		"fcfMargin": "~3%",
-		"fcfYield": "~0%",
-		"roic": "3.1%",
-		"roe": "18.5%",
-		"netDebtEbitda": "Net cash",
-		"ruleOf40": "130%",
-		"beta": "1.22",
-		"revenueGrowth": "127.2%",
-		"interestCoverage": "4364.4x"
+		"fcfMargin": "~-111%",
+		"fcfYield": "~-5%",
+		"roic": "3.5%",
+		"roe": "23.5%",
+		"netDebtEbitda": "0.7x",
+		"ruleOf40": "-26%",
+		"beta": "1.27",
+		"revenueGrowth": "84.7%",
+		"interestCoverage": "24.5x"
 	},
-	"targetPrice": "$188.90",
+	"targetPrice": "$177.61",
 	"bullCase": "Wheaton offers the best organic production growth in the precious metals streaming space -- 40% growth by 2029, with 2026 guidance of 860-940K GEOs representing a ~28% jump. The company has a pristine balance sheet (net cash of $1.15B), 54.7% net margins, and 13%+ ROIC. With gold prices above $2,800/oz, the fixed-cost streaming model provides massive operating leverage.",
 	"bearCase": "WPM trades at a trailing P/E of 65x and a market cap of $66.7B on $1B of trailing earnings -- pricing in near-flawless execution and sustained high gold prices. The stock has risen 107% in 52 weeks. FCF yield is approximately 1%, which is thin. Any gold price correction toward $2,200/oz would compress earnings significantly.",
-	"currentPrice": "$135.56",
+	"currentPrice": "$154.12",
 	"consensus": {
 		"tipranks": "$140",
-		"yahoo": "$188.90",
+		"yahoo": "$177.61",
 		"stockanalysis": "$133"
 	},
 	"cagrModel": {
@@ -38,66 +38,66 @@
 		"epsGrowth": "15%",
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "12%",
-			"base": "40%",
-			"bull": "94%"
+			"bear": "0%",
+			"base": "16%",
+			"bull": "46%"
 		},
 		"basis": "Operating CFO per share; Price-to-CF exit multiple"
 	},
-	"lastUpdated": "2026-04-05T07:21:39.268Z",
+	"lastUpdated": "2026-09-12T03:16:09.531Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
-		"signal": "WAIT",
+		"score": 2.18,
+		"signal": "FAIL",
+		"note": "Valuation score 2.18 exceeds 1 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 22.7,
-			"cvStock": 0.264,
-			"riskMultiplier": 1.405
+			"multiple": 30.5,
+			"cvStock": 0.169,
+			"riskMultiplier": 1.072
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 135.56,
-				"price6mAgo": 109.81,
-				"price1mAgo": 147.83,
-				"low3m": 113.39,
-				"return6m": 23.4,
-				"return1m": -8.3,
+				"price": 154.12,
+				"price6mAgo": 145.73,
+				"price1mAgo": 134.88,
+				"low3m": 101.59,
+				"return6m": 5.8,
+				"return1m": 14.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 5,
-				"down30d": 2
+				"up30d": 8,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": 11.7,
-				"quarter": "2025-12"
+				"surprise": 2.9,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 1.21,
+		"earningsScore": 1.49,
 		"flowScore": 2.5,
-		"revisionsScore": 2.31,
-		"totalScore": 6.02,
+		"revisionsScore": 0.77,
+		"totalScore": 4.76,
 		"raw": {
-			"avgSurprisePct": 7.96,
+			"avgSurprisePct": 6.29,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 7,
-			"downRevisions": 1,
+			"downRevisions": 5,
 			"totalAnalysts": 13
 		}
 	},
 	"description": "Wheaton Precious Metals Corp. operates as a precious metal streaming company.",
 	"analystTargets": {
-		"low": 150,
-		"mean": 188.9,
-		"high": 260.97
+		"low": 153,
+		"mean": 177.61,
+		"high": 224.11
 	},
 	"analystConsensus": {
 		"ticker": "WPM",
@@ -111,14 +111,15 @@
 	"targetPriceAlternative": "$145.36",
 	"forwardEstimates": {
 		"2026": {
-			"high": 7.78,
-			"low": 4.25943,
-			"average": 5.71596
+			"high": 5.05,
+			"low": 4.525,
+			"average": 4.81269
 		},
 		"2027": {
-			"high": 9.66,
-			"low": 3.43,
-			"average": 5.89121
+			"high": 6.71,
+			"low": 3.28,
+			"average": 5.05921
 		}
-	}
+	},
+	"confidence": "low"
 }

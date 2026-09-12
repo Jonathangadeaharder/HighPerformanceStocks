@@ -2,102 +2,103 @@
 	"ticker": "PANW",
 	"name": "Palo Alto Networks",
 	"group": "Cybersecurity",
-	"marketCap": "$133.2B USD",
-	"sharpeRatio": 0.32,
-	"expectedCAGR": "-30% - 62%",
-	"expectedVolatility": "~36%",
+	"marketCap": "$270.5B USD",
+	"sharpeRatio": -0.09,
+	"expectedCAGR": "-43% - 44%",
+	"expectedVolatility": "~45%",
 	"valuation": {
-		"trailingPE": 90.7,
-		"forwardPE": 41.1,
-		"pegRatio": null,
-		"evEbitda": 84,
-		"evFcf": 45.2
+		"trailingPE": 295.2,
+		"forwardPE": 67.8,
+		"pegRatio": 1.71,
+		"evEbitda": 144.9,
+		"evFcf": 60.3
 	},
 	"metrics": {
-		"fcfMargin": "~29%",
+		"fcfMargin": "~39%",
 		"fcfYield": "~2%",
-		"roic": "3.1%",
-		"roe": "16.3%",
+		"roic": "1.7%",
+		"roe": "1.7%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "44%",
-		"beta": "0.77",
-		"revenueGrowth": "14.9%",
-		"interestCoverage": "60.9x"
+		"ruleOf40": "73%",
+		"beta": "0.91",
+		"revenueGrowth": "34.4%",
+		"interestCoverage": "13.5x"
 	},
-	"targetPrice": "$206.83",
+	"targetPrice": "$393.42",
 	"bullCase": "Platformization strategy is working — customers consolidating 5-10 security tools onto PANW. Best-in-class FCF margins (~38%). Expanding TAM across network, cloud, and SOC security. AI-native security products add growth vectors. Dominant brand with enterprise trust.",
 	"bearCase": "Platformization involves free product periods that depress near-term revenue. 45x trailing PE is premium. Competition from CRWD and ZS in specific segments. Large cap limits upside magnitude. GAAP profitability still low due to SBC.",
-	"currentPrice": "$163.21",
+	"currentPrice": "$330.65",
 	"consensus": {
 		"tipranks": "$220",
-		"yahoo": "$206.83"
+		"yahoo": "$393.42"
 	},
 	"cagrModel": {
 		"ttmEPS": 3.68,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-30%",
-			"base": "27%",
-			"bull": "62%"
+			"bear": "-43%",
+			"base": "19%",
+			"bull": "44%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); platform leader premium; bear assumes deceleration"
 	},
-	"lastUpdated": "2026-04-05T07:21:32.119Z",
+	"lastUpdated": "2026-09-12T03:16:04.571Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.4,
+		"score": 3.41,
 		"signal": "FAIL",
+		"note": "Valuation score 3.41 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/FCF",
-			"multiple": 45.2,
-			"cvStock": 0.164,
-			"riskMultiplier": 1.061
+			"multiple": 60.3,
+			"cvStock": 0.193,
+			"riskMultiplier": 1.131
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 163.21,
-				"price6mAgo": 212.58,
-				"price1mAgo": 163.16,
-				"low3m": 139.57,
-				"return6m": -23.2,
-				"return1m": 0,
+				"price": 330.65,
+				"price6mAgo": 168.12,
+				"price1mAgo": 387.01,
+				"low3m": 271.49,
+				"return6m": 96.7,
+				"return1m": -14.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 7,
-				"down30d": 8
+				"up30d": 1,
+				"down30d": 2
 			},
 			"earningsSurprise": {
-				"surprise": 9.9,
-				"quarter": "2026-01"
+				"surprise": 4.4,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.18
+		"secondaryScore": 3.83
 	},
 	"qcs": {
-		"earningsScore": 1.54,
-		"flowScore": 5,
-		"revisionsScore": -4.18,
-		"totalScore": 2.36,
+		"earningsScore": 1.41,
+		"flowScore": 2.5,
+		"revisionsScore": 0.1,
+		"totalScore": 4.01,
 		"raw": {
-			"avgSurprisePct": 6.3,
-			"netInsiderShares": 2280571,
+			"avgSurprisePct": 6.82,
+			"netInsiderShares": -65286,
 			"instFlowTrend": "positive",
 			"upRevisions": 3,
-			"downRevisions": 44,
-			"totalAnalysts": 49
+			"downRevisions": 2,
+			"totalAnalysts": 52
 		}
 	},
-	"description": "Palo Alto Networks, Inc. provides cybersecurity solutions in the Americas, Europe, the Middle East, Africa, the Asia Pacific, and Japan.",
+	"description": "Palo Alto Networks, Inc. provides artificial intelligence (AI) cybersecurity solutions in the Americas, Europe, the Middle East, Africa, the Asia Pacific, and Japan.",
 	"analystTargets": {
-		"low": 114,
-		"mean": 206.83,
-		"high": 265
+		"low": 190,
+		"mean": 393.42,
+		"high": 475
 	},
 	"analystConsensus": {
 		"ticker": "PANW",
@@ -120,5 +121,6 @@
 			"low": 1.69,
 			"average": 2.29168
 		}
-	}
+	},
+	"confidence": "low"
 }

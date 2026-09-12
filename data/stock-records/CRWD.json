@@ -2,101 +2,103 @@
 	"ticker": "CRWD",
 	"name": "CrowdStrike Holdings",
 	"group": "Cybersecurity",
-	"marketCap": "$101.2B USD",
-	"sharpeRatio": 0.68,
-	"expectedCAGR": "-8% - 77%",
-	"expectedVolatility": "~44%",
+	"marketCap": "$211.7B USD",
+	"sharpeRatio": -0.06,
+	"expectedCAGR": "-42% - 45%",
+	"expectedVolatility": "~53%",
 	"valuation": {
-		"trailingPE": null,
-		"forwardPE": 64.7,
-		"pegRatio": null,
+		"trailingPE": 5168.5,
+		"forwardPE": 128.9,
+		"pegRatio": 6.65,
 		"evEbitda": null,
-		"evFcf": 60.4
+		"evFcf": 104
 	},
 	"metrics": {
-		"fcfMargin": "~33%",
-		"fcfYield": "~2%",
-		"roic": "1.7%",
-		"roe": "-4.1%",
+		"fcfMargin": "~37%",
+		"fcfYield": "~1%",
+		"roic": "1.0%",
+		"roe": "1.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "57%",
-		"beta": "1.07",
-		"revenueGrowth": "23.3%"
+		"ruleOf40": "63%",
+		"beta": "1.25",
+		"revenueGrowth": "25.8%",
+		"interestCoverage": "2.4x"
 	},
-	"targetPrice": "$489.86",
+	"targetPrice": "$232.69",
 	"bullCase": "Best-in-class endpoint security expanding into 28+ modules. ~62% Rule of 40 score is elite. Customers adopting 5+ modules (from 1-2 at entry). AI-native Falcon platform has data advantage from largest endpoint install base. 120%+ net retention.",
 	"bearCase": "55x forward non-GAAP PE is extremely demanding. July 2024 global outage damaged brand trust. Still GAAP unprofitable. High SBC dilution. Competition from SentinelOne, Microsoft, and PANW expanding into endpoint.",
-	"currentPrice": "$399.12",
+	"currentPrice": "$206.74",
 	"consensus": {
 		"tipranks": "$550",
-		"yahoo": "$489.86"
+		"yahoo": "$232.69"
 	},
 	"cagrModel": {
 		"ttmEPS": 3.79,
 		"epsGrowth": "32%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "23%",
-			"bull": "77%"
+			"bear": "-42%",
+			"base": "13%",
+			"bull": "45%"
 		},
 		"basis": "Non-GAAP adjusted EPS (excl SBC); hypergrowth premium; bear assumes significant PE compression"
 	},
-	"lastUpdated": "2026-04-05T07:21:18.490Z",
+	"lastUpdated": "2026-09-12T03:15:55.250Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 1.9,
+		"score": 3.27,
 		"signal": "FAIL",
+		"note": "Valuation score 3.27 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 32,
 			"multipleType": "EV/FCF",
-			"multiple": 60.4,
-			"cvStock": 0.087,
+			"multiple": 104,
+			"cvStock": 0.084,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 399.12,
-				"price6mAgo": 495.95,
-				"price1mAgo": 426.16,
-				"low3m": 342.72,
-				"return6m": -19.5,
-				"return1m": -6.3,
+				"price": 206.74,
+				"price6mAgo": 110.39,
+				"price1mAgo": 221.78,
+				"low3m": 165.23,
+				"return6m": 87.3,
+				"return1m": -6.8,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 23,
-				"down30d": 6
+				"up30d": 40,
+				"down30d": 3
 			},
 			"earningsSurprise": {
-				"surprise": 1.6,
-				"quarter": "2026-01"
+				"surprise": 6.4,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.03
+		"secondaryScore": 4.05
 	},
 	"qcs": {
-		"earningsScore": 3.01,
-		"flowScore": 0,
-		"revisionsScore": 2.22,
-		"totalScore": 5.23,
+		"earningsScore": 1.54,
+		"flowScore": 2.5,
+		"revisionsScore": 4.5,
+		"totalScore": 8.54,
 		"raw": {
-			"avgSurprisePct": 6.55,
-			"netInsiderShares": 138477,
-			"instFlowTrend": "negative",
-			"upRevisions": 35,
-			"downRevisions": 11,
-			"totalAnalysts": 54
+			"avgSurprisePct": 3.24,
+			"netInsiderShares": -685945,
+			"instFlowTrend": "positive",
+			"upRevisions": 45,
+			"downRevisions": 0,
+			"totalAnalysts": 50
 		}
 	},
 	"description": "CrowdStrike Holdings, Inc. provides cybersecurity solutions in the United States and internationally.",
 	"analystTargets": {
-		"low": 368,
-		"mean": 489.86,
-		"high": 706
+		"low": 119,
+		"mean": 232.69,
+		"high": 300
 	},
 	"analystConsensus": {
 		"ticker": "CRWD",
@@ -110,14 +112,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2027": {
-			"high": 5,
-			"low": 4.79,
-			"average": 4.85741
+			"high": 1.32,
+			"low": 1.24633,
+			"average": 1.25621
 		},
 		"2028": {
-			"high": 7.74,
-			"low": 5.6,
-			"average": 6.17242
+			"high": 2.04,
+			"low": 1.5,
+			"average": 1.6045
 		}
-	}
+	},
+	"confidence": "medium"
 }

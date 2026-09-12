@@ -10,77 +10,78 @@
 		"ttmEPS": 2.56,
 		"dividendYield": "0%"
 	},
-	"currentPrice": "C$99.49",
-	"marketCap": "C$8.6B",
+	"currentPrice": "C$105.32",
+	"marketCap": "C$9.0B",
 	"valuation": {
-		"trailingPE": 38.3,
-		"forwardPE": 22.2,
-		"evEbitda": 26.7,
-		"evFcf": 34.8
+		"trailingPE": 38,
+		"forwardPE": 23.8,
+		"evEbitda": 25.3,
+		"evFcf": 30.2,
+		"pegRatio": 1.67
 	},
 	"metrics": {
-		"roe": "10.9%",
-		"fcfMargin": "~32%",
+		"roe": "11.4%",
+		"fcfMargin": "~36%",
 		"fcfYield": "~3%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "48%",
-		"beta": "0.19",
-		"revenueGrowth": "15.1%",
-		"roic": "3.2%",
-		"interestCoverage": "668.6x"
+		"ruleOf40": "50%",
+		"beta": "0.2",
+		"revenueGrowth": "14.7%",
+		"roic": "3.3%",
+		"interestCoverage": "715.2x"
 	},
 	"consensus": {},
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.05,
-		"signal": "WAIT",
+		"score": 1.78,
+		"signal": "FAIL",
+		"note": "Valuation score 1.78 exceeds 0.8 limit",
 		"inputs": {
 			"growth": 17,
 			"multipleType": "EV/FCF",
-			"multiple": 34.8,
+			"multiple": 30.2,
 			"cvStock": 0.072,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 31.9%",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 99.49,
-				"price6mAgo": 131.98,
-				"price1mAgo": 97.89,
-				"low3m": 85.26,
-				"return6m": -24.6,
-				"return1m": 1.6,
+				"price": 105.32,
+				"price6mAgo": 98.09,
+				"price1mAgo": 108.2,
+				"low3m": 92.56,
+				"return6m": 7.4,
+				"return1m": -2.7,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
 				"up30d": 4,
-				"down30d": 0
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -5.8,
-				"quarter": "2026-01"
+				"surprise": 9.2,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.31
+		"secondaryScore": 1.4
 	},
-	"lastUpdated": "2026-04-05T07:21:19.535Z",
-	"expectedVolatility": "~37%",
+	"lastUpdated": "2026-09-12T03:15:55.942Z",
+	"expectedVolatility": "~42%",
 	"sharpeRatio": 0.74,
 	"qcs": {
-		"earningsScore": -5,
+		"earningsScore": 5,
 		"flowScore": 2.5,
-		"revisionsScore": 2.86,
-		"totalScore": 0.36,
+		"revisionsScore": 5,
+		"totalScore": 12.5,
 		"raw": {
-			"avgSurprisePct": -13.74,
+			"avgSurprisePct": 22.38,
 			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
 			"upRevisions": 4,
-			"downRevisions": 0,
-			"totalAnalysts": 7
+			"downRevisions": 1,
+			"totalAnalysts": 3
 		}
 	},
 	"description": "The Descartes Systems Group Inc. provides global logistics technology solutions in the United States, Europe, the Middle East, Africa, Canada, and the Asia Pacific.",
@@ -95,14 +96,15 @@
 	"consensusRating": "Unknown",
 	"forwardEstimates": {
 		"2027": {
-			"high": 3.25,
-			"low": 2.32,
-			"average": 2.80574
+			"high": 3.09,
+			"low": 2.39,
+			"average": 2.67507
 		},
 		"2028": {
-			"high": 3.66,
-			"low": 2.73,
-			"average": 3.22013
+			"high": 3.77,
+			"low": 2.83,
+			"average": 3.25554
 		}
-	}
+	},
+	"confidence": "high"
 }

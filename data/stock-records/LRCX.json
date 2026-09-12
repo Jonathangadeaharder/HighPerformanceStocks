@@ -5,95 +5,97 @@
 	"cagrModel": {
 		"epsGrowth": "15%",
 		"basis": "Non-GAAP EPS",
-		"ttmEPS": 4.87,
+		"ttmEPS": 5.75,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "26%",
-			"bull": "49%"
+			"bear": "-3%",
+			"base": "25%",
+			"bull": "68%"
 		}
 	},
-	"currentPrice": "$218.44",
-	"marketCap": "$274.4B USD",
+	"currentPrice": "$298.22",
+	"marketCap": "$373.2B USD",
 	"valuation": {
-		"trailingPE": 44.9,
-		"forwardPE": 31.6,
-		"evEbitda": 36.9,
-		"evFcf": 56.3
+		"trailingPE": 51.9,
+		"forwardPE": 25.6,
+		"evEbitda": 43,
+		"evFcf": 120.3,
+		"pegRatio": 1.47
 	},
 	"metrics": {
-		"roe": "65.6%",
-		"fcfMargin": "~23%",
-		"fcfYield": "~2%",
+		"roe": "65.1%",
+		"fcfMargin": "~13%",
+		"fcfYield": "~1%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "46%",
-		"beta": "1.79",
-		"revenueGrowth": "22.1%",
-		"roic": "2.6%",
-		"interestCoverage": "29.8x"
+		"ruleOf40": "43%",
+		"beta": "1.86",
+		"revenueGrowth": "30.0%",
+		"roic": "1.6%",
+		"interestCoverage": "38.1x"
 	},
 	"consensus": {
-		"yahoo": "$274.90"
+		"yahoo": "$373.13"
 	},
-	"targetPrice": "$274.90",
-	"expectedCAGR": "-8% - 49%",
-	"expectedVolatility": "~51%",
-	"sharpeRatio": 0.31,
+	"targetPrice": "$373.13",
+	"expectedCAGR": "-3% - 68%",
+	"expectedVolatility": "~64%",
+	"sharpeRatio": 0.44,
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.13,
+		"score": 1.73,
 		"signal": "FAIL",
+		"note": "Valuation score 1.73 exceeds 1 limit",
 		"inputs": {
 			"growth": 15,
 			"multipleType": "Forward P/E",
-			"multiple": 31.6,
-			"cvStock": 0.127,
-			"riskMultiplier": 1.011
+			"multiple": 25.6,
+			"cvStock": 0.132,
+			"riskMultiplier": 1.016
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 218.44,
-				"price6mAgo": 149.15,
-				"price1mAgo": 214.68,
-				"low3m": 177.5,
-				"return6m": 46.5,
-				"return1m": 1.8,
+				"price": 298.22,
+				"price6mAgo": 209.49,
+				"price1mAgo": 326.11,
+				"low3m": 250.5,
+				"return6m": 42.4,
+				"return1m": -8.6,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 4,
-				"down30d": 0
+				"up30d": 19,
+				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": 8.7,
-				"quarter": "2025-12"
+				"surprise": 8.1,
+				"quarter": "2026-06"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:26.965Z",
+	"lastUpdated": "2026-09-12T03:16:00.866Z",
 	"qcs": {
-		"earningsScore": 2.08,
-		"flowScore": 0,
-		"revisionsScore": 0.15,
-		"totalScore": 2.23,
+		"earningsScore": 2.12,
+		"flowScore": 2.5,
+		"revisionsScore": 4.66,
+		"totalScore": 9.28,
 		"raw": {
-			"avgSurprisePct": 6.6,
-			"netInsiderShares": 563134,
-			"instFlowTrend": "neutral",
-			"upRevisions": 1,
+			"avgSurprisePct": 6.99,
+			"netInsiderShares": -183097,
+			"instFlowTrend": "positive",
+			"upRevisions": 27,
 			"downRevisions": 0,
-			"totalAnalysts": 34
+			"totalAnalysts": 29
 		}
 	},
 	"bullCase": "Lam Research dominates etch and deposition equipment — the two most critical process steps in advanced semiconductor manufacturing. As NAND recovers from its trough and advanced foundry (3D-stacking, gate-all-around) accelerates, Lam's wafer-fab equipment revenue is positioned for a major upcycle. Its high-margin Customer Support Business Group provides a ~$4B recurring revenue floor.",
 	"bearCase": "Lam's NAND exposure (~40% of revenue) makes it one of the most cyclically volatile names in semiconductor equipment. Memory capex cycles can compress revenue 30-40% within 12 months. US export controls on advanced equipment to China removed ~$1.5B of annual revenue. Any delay in the NAND recovery or GAA adoption pushes out the earnings inflection.",
 	"description": "Lam Research Corporation designs, manufactures, markets, refurbishes, and services semiconductor processing equipment used in the fabrication of integrated circuits in the United States, China, Kor...",
 	"analystTargets": {
-		"low": 200,
-		"mean": 274.9,
-		"high": 325
+		"low": 290,
+		"mean": 373.13,
+		"high": 500
 	},
 	"analystConsensus": {
 		"ticker": "LRCX",
@@ -106,15 +108,16 @@
 	"targetPriceAlternative": "$245.35",
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
-		"2026": {
-			"high": 5.46326,
-			"low": 4.87,
-			"average": 5.30821
-		},
 		"2027": {
-			"high": 8.14124,
-			"low": 4.64,
-			"average": 6.88964
+			"high": 10.82,
+			"low": 8.44,
+			"average": 9.46911
+		},
+		"2028": {
+			"high": 15.12,
+			"low": 8.96,
+			"average": 11.65184
 		}
-	}
+	},
+	"confidence": "medium"
 }

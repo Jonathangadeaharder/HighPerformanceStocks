@@ -2,72 +2,72 @@
 	"ticker": "RXRX",
 	"name": "Recursion Pharmaceuticals",
 	"group": "Disqualified",
-	"marketCap": "$1.6B USD",
-	"sharpeRatio": 1.49,
-	"expectedCAGR": "-4% - 254%",
-	"expectedVolatility": "~81%",
+	"marketCap": "$1.7B USD",
+	"sharpeRatio": 1.61,
+	"expectedCAGR": "25% - 213%",
+	"expectedVolatility": "~71%",
 	"valuation": {
 		"trailingPE": null,
-		"forwardPE": -3.7,
+		"forwardPE": -3.6,
 		"pegRatio": null,
 		"evEbitda": null,
-		"evFcf": -4.7
+		"evFcf": -5.6
 	},
 	"metrics": {
-		"fcfMargin": "~-279%",
+		"fcfMargin": "~-400%",
 		"fcfYield": "~-13%",
-		"roic": "-38.0%",
-		"roe": "-59.5%",
+		"roic": "-28.3%",
+		"roe": "-56.6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "402%",
-		"beta": "1.01",
-		"revenueGrowth": "681.7%"
+		"ruleOf40": "-460%",
+		"beta": "1.07",
+		"revenueGrowth": "-60.1%"
 	},
-	"targetPrice": "$6.71",
+	"targetPrice": "$7.22",
 	"bullCase": "A massive + venture cash infusion provides the runway necessary to execute their ambitious AI-driven drug discovery pipeline. If their Phase 2 clinical trials succeed, they possess the structural monopoly of a foundational AI dataset that traditional pharma companies cannot easily replicate.",
 	"bearCase": "DISQUALIFIED: Pre-revenue, binary-outcome biotech. Pricing relies on venture-style clinical trial probabilities, completely breaking the EPS compounding model. A capital incinerator. The business model is mathematically unsustainable without continuous dilution ($368.57M in recent filings). If Phase 2 trials fail, intrinsic equity value approaches zero.",
-	"currentPrice": "$3.11",
+	"currentPrice": "$3.20",
 	"consensus": {
 		"tipranks": "$7.00",
-		"yahoo": "$6.71",
+		"yahoo": "$7.22",
 		"stockanalysis": "$7.20"
 	},
 	"cagrModel": {
 		"ttmEPS": null,
 		"scenarios": {
-			"bear": "-4%",
-			"base": "116%",
-			"bull": "254%"
+			"bear": "25%",
+			"base": "126%",
+			"bull": "213%"
 		},
 		"epsGrowth": "0%",
 		"dividendYield": "0%",
 		"basis": "Estimated compounder baseline"
 	},
-	"lastUpdated": "2026-04-05T07:21:34.214Z",
+	"lastUpdated": "2026-09-12T03:16:06.016Z",
 	"screener": {
 		"engine": "DISQUALIFIED",
 		"signal": "REJECTED",
 		"note": "Extreme earnings volatility detected. Strategically disqualified."
 	},
 	"qcs": {
-		"earningsScore": 3.26,
+		"earningsScore": 5,
 		"flowScore": 5,
-		"revisionsScore": 3.13,
-		"totalScore": 11.39,
+		"revisionsScore": 0.71,
+		"totalScore": 10.71,
 		"raw": {
-			"avgSurprisePct": 6.52,
-			"netInsiderShares": 2004670,
+			"avgSurprisePct": 11.65,
+			"netInsiderShares": 423693,
 			"instFlowTrend": "positive",
-			"upRevisions": 6,
-			"downRevisions": 1,
-			"totalAnalysts": 8
+			"upRevisions": 3,
+			"downRevisions": 2,
+			"totalAnalysts": 7
 		}
 	},
 	"description": "Recursion Pharmaceuticals, Inc., a clinical-stage biotechnology company, engages in the decoding biology and chemistry by integrating technological innovations across biology, chemistry, automation...",
 	"analystTargets": {
-		"low": 3,
-		"mean": 6.71,
-		"high": 11
+		"low": 4,
+		"mean": 7.22,
+		"high": 10
 	},
 	"analystConsensus": {
 		"ticker": "RXRX",
@@ -81,14 +81,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": -0.83,
-			"low": -1.15,
-			"average": -0.98625
+			"high": -0.89,
+			"low": -0.97,
+			"average": -0.92272
 		},
 		"2027": {
-			"high": -0.61,
-			"low": -0.96,
-			"average": -0.85097
+			"high": -0.7,
+			"low": -1.04,
+			"average": -0.89474
 		}
-	}
+	},
+	"confidence": "high"
 }

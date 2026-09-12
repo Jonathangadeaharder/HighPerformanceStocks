@@ -2,103 +2,103 @@
 	"ticker": "HALO",
 	"name": "Halozyme Therapeutics",
 	"group": "Healthcare Technology",
-	"marketCap": "$7.6B USD",
-	"sharpeRatio": 0.29,
-	"expectedCAGR": "-13% - 49%",
-	"expectedVolatility": "~46%",
+	"marketCap": "$12.2B USD",
+	"sharpeRatio": -0.51,
+	"expectedCAGR": "-35% - 7%",
+	"expectedVolatility": "~36%",
 	"valuation": {
-		"trailingPE": 25.2,
-		"forwardPE": 6.6,
+		"trailingPE": 31.4,
+		"forwardPE": 10.3,
 		"pegRatio": null,
-		"evEbitda": 10.7,
-		"evFcf": 52.2
+		"evEbitda": 13.4,
+		"evFcf": 41.8
 	},
 	"metrics": {
-		"fcfMargin": "~13%",
-		"fcfYield": "~2%",
-		"roic": "6.7%",
-		"roe": "153.6%",
-		"netDebtEbitda": "2.3x",
-		"ruleOf40": "65%",
-		"beta": "1.03",
-		"revenueGrowth": "51.6%",
-		"interestCoverage": "7.5x"
+		"fcfMargin": "~20%",
+		"fcfYield": "~3%",
+		"roic": "5.8%",
+		"roe": "173.7%",
+		"netDebtEbitda": "1.9x",
+		"ruleOf40": "68%",
+		"beta": "0.88",
+		"revenueGrowth": "47.7%",
+		"interestCoverage": "8.8x"
 	},
-	"targetPrice": "$84.89",
+	"targetPrice": "$99.56",
 	"bullCase": "Halozyme's ENHANZE drug delivery technology is licensed to 13+ pharmaceutical partners including Roche, Pfizer, Janssen, and AstraZeneca. Each partner pays upfront milestones, annual fees, and royalties on sales of ENHANZE-enabled subcutaneous formulations (e.g., DARZALEX SC, Phesgo). The royalty stack grows as more ENHANZE-based drugs reach commercial scale — a royalty-on-royalties compounding model.",
 	"bearCase": "Halozyme's ENHANZE patent expiry (2034-2036) creates a finite royalty runway. Partners could develop competing subcutaneous delivery technology or not submit additional drugs to ENHANZE licensing. A large one-time GAAP charge distorted recent earnings (Q4 2025 -110.9% surprise) — transparency on one-time items is important for monitoring underlying earnings quality.",
-	"currentPrice": "$64.49",
+	"currentPrice": "$107.20",
 	"consensus": {
 		"tipranks": "$95",
-		"yahoo": "$84.89"
+		"yahoo": "$99.56"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.56,
+		"ttmEPS": 3.41,
 		"epsGrowth": "20%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-13%",
-			"base": "32%",
-			"bull": "49%"
+			"bear": "-35%",
+			"base": "-7%",
+			"bull": "7%"
 		},
 		"basis": "Accounts for 2034 patent cliff and GAAP earnings volatility; terminal multiple compressed."
 	},
-	"lastUpdated": "2026-04-05T07:21:21.697Z",
+	"lastUpdated": "2026-09-12T03:15:57.360Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 0.53,
-		"signal": "PASS",
+		"score": 0.67,
+		"signal": "REJECTED",
 		"inputs": {
 			"growth": 20,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.7,
-			"cvStock": 0.015,
+			"multiple": 13.4,
+			"cvStock": 0.024,
 			"riskMultiplier": 1
 		},
-		"note": "Recent earnings miss",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 64.49,
-				"price6mAgo": 66.97,
-				"price1mAgo": 67.36,
-				"low3m": 61.33,
-				"return6m": -3.7,
-				"return1m": -4.3,
+				"price": 107.2,
+				"price6mAgo": 63.56,
+				"price1mAgo": 101.79,
+				"low3m": 67.02,
+				"return6m": 68.7,
+				"return1m": 5.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
+				"up30d": 3,
 				"down30d": 1
 			},
 			"earningsSurprise": {
-				"surprise": -110.9,
-				"quarter": "2025-12"
+				"surprise": 25.5,
+				"quarter": "2026-06"
 			}
 		},
+		"note": "Cheap (0.67) but base return -7% misses the 15% hurdle (Absolute REJECT: Base CAGR -7% is negative)",
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.33
+		"secondaryScore": 0.52
 	},
 	"qcs": {
 		"earningsScore": -5,
-		"flowScore": 5,
-		"revisionsScore": 0,
-		"totalScore": 0,
+		"flowScore": 0,
+		"revisionsScore": 0.83,
+		"totalScore": -4.17,
 		"raw": {
-			"avgSurprisePct": -16.7,
-			"netInsiderShares": 221396,
-			"instFlowTrend": "positive",
+			"avgSurprisePct": -18.65,
+			"netInsiderShares": 25470,
+			"instFlowTrend": "neutral",
 			"upRevisions": 2,
-			"downRevisions": 2,
-			"totalAnalysts": 5
+			"downRevisions": 1,
+			"totalAnalysts": 6
 		}
 	},
 	"description": "Halozyme Therapeutics, Inc., a biopharmaceutical company, researches, develops, and commercializes of proprietary enzymes and devices in the United States, Switzerland, Belgium, Japan, and internat...",
 	"analystTargets": {
-		"low": 56,
-		"mean": 84.89,
-		"high": 96
+		"low": 70,
+		"mean": 99.56,
+		"high": 115
 	},
 	"analystConsensus": {
 		"ticker": "HALO",
@@ -112,14 +112,15 @@
 	"consensusRating": "Hold",
 	"forwardEstimates": {
 		"2026": {
-			"high": 8.21,
-			"low": 7.87,
-			"average": 8.016
+			"high": 8.9,
+			"low": 7.91,
+			"average": 8.57694
 		},
 		"2027": {
-			"high": 10.07,
-			"low": 9.48,
-			"average": 9.845
+			"high": 11.01,
+			"low": 10,
+			"average": 10.39306
 		}
-	}
+	},
+	"confidence": "cut"
 }

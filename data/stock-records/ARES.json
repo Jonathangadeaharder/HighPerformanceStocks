@@ -5,99 +5,100 @@
 	"bullCase": "Ares is the largest pure-play private credit manager with $450B+ AUM, growing 20%+ annually in the direct lending boom. Its permanent capital vehicles (ARCC, ACRE) provide structural FRE visibility. Credit spreads remaining elevated extends the private credit wave. Growing insurance channel (via Aspida Life) adds recurring fee flow.",
 	"bearCase": "A sharp credit cycle downturn with default rates spiking would impair Ares' direct lending book and compress marks on private equity. The 5% dividend yield is funded by distributable earnings — any payout cut would crater the stock. Regulatory scrutiny of private credit opacity is an emerging risk.",
 	"cagrModel": {
-		"epsGrowth": "20%",
+		"epsGrowth": "23%",
 		"basis": "FRE per share",
-		"ttmEPS": 6.32,
-		"dividendYield": "5%",
+		"ttmEPS": 5.84,
+		"dividendYield": "4%",
 		"scenarios": {
-			"bear": "14%",
-			"base": "63%",
-			"bull": "115%"
+			"bear": "-3%",
+			"base": "16%",
+			"bull": "32%"
 		},
 		"epsGrowthSource": "auto"
 	},
-	"currentPrice": "$102.43",
-	"marketCap": "$33.9B USD",
+	"currentPrice": "$131.64",
+	"marketCap": "$43.7B USD",
 	"valuation": {
-		"trailingPE": 16.2,
-		"forwardPE": 13.5,
-		"evEbitda": 33.6,
-		"evFcf": 20.6
+		"trailingPE": 22.6,
+		"forwardPE": 18.3,
+		"evEbitda": 34.3,
+		"evFcf": 22.7,
+		"pegRatio": 1.03
 	},
 	"metrics": {
-		"roe": "13.5%",
+		"roe": "14.9%",
 		"fcfMargin": "~36%",
-		"fcfYield": "~6%",
-		"netDebtEbitda": "10.3x",
-		"ruleOf40": "56%",
-		"beta": "1.54",
-		"revenueGrowth": "19.5%",
-		"roic": "7.0%",
-		"interestCoverage": "1.6x"
+		"fcfYield": "~5%",
+		"netDebtEbitda": "9.1x",
+		"ruleOf40": "42%",
+		"beta": "1.52",
+		"revenueGrowth": "5.8%",
+		"roic": "1.6%",
+		"interestCoverage": "1.7x"
 	},
 	"consensus": {
-		"yahoo": "$161.76"
+		"yahoo": "$147.78"
 	},
-	"targetPrice": "$161.76",
-	"expectedCAGR": "14% - 115%",
+	"targetPrice": "$147.78",
+	"expectedCAGR": "-3% - 32%",
 	"screener": {
 		"engine": "fFREG",
-		"score": 0.81,
+		"score": 0.98,
 		"signal": "REJECTED",
+		"note": "Consensus actively collapsing (analyst lag)",
 		"inputs": {
-			"growth": 20,
+			"growth": 23,
 			"multipleType": "P/FRE",
-			"multiple": 16.2,
-			"cvStock": 0.038,
+			"multiple": 22.5,
+			"cvStock": 0.022,
 			"riskMultiplier": 1
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 102.43,
-				"price6mAgo": 150.1,
-				"price1mAgo": 117.04,
-				"low3m": 95.8,
-				"return6m": -31.8,
-				"return1m": -12.5,
+				"price": 131.64,
+				"price6mAgo": 96.5,
+				"price1mAgo": 142.35,
+				"low3m": 105.79,
+				"return6m": 36.4,
+				"return1m": -7.5,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 0,
-				"down30d": 5
+				"up30d": 3,
+				"down30d": 7
 			},
 			"earningsSurprise": {
-				"surprise": -14,
-				"quarter": "2025-12"
+				"surprise": 1.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 0.68
+		"secondaryScore": 0.8
 	},
-	"lastUpdated": "2026-04-05T07:21:14.341Z",
-	"expectedVolatility": "~42%",
-	"sharpeRatio": 1.43,
+	"lastUpdated": "2026-09-12T03:15:52.437Z",
+	"expectedVolatility": "~45%",
+	"sharpeRatio": 0.22,
 	"qcs": {
-		"earningsScore": 0.04,
-		"flowScore": 5,
-		"revisionsScore": -1.56,
-		"totalScore": 3.48,
+		"earningsScore": -5,
+		"flowScore": 2.5,
+		"revisionsScore": -2,
+		"totalScore": -4.5,
 		"raw": {
-			"avgSurprisePct": 0.03,
-			"netInsiderShares": 944634,
+			"avgSurprisePct": -3.78,
+			"netInsiderShares": 0,
 			"instFlowTrend": "positive",
-			"upRevisions": 0,
-			"downRevisions": 5,
-			"totalAnalysts": 16
+			"upRevisions": 2,
+			"downRevisions": 8,
+			"totalAnalysts": 15
 		}
 	},
 	"description": "Ares Management Corporation operates as an alternative asset manager.",
 	"analystTargets": {
-		"low": 112,
-		"mean": 161.76,
-		"high": 215
+		"low": 122,
+		"mean": 147.78,
+		"high": 168
 	},
 	"analystConsensus": {
 		"ticker": "ARES",
@@ -110,14 +111,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 6.76,
-			"low": 5.9,
-			"average": 6.31624
+			"high": 5.96,
+			"low": 5.73,
+			"average": 5.83639
 		},
 		"2027": {
-			"high": 8,
-			"low": 6.85,
-			"average": 7.56187
+			"high": 7.53693,
+			"low": 6.9,
+			"average": 7.19327
 		}
-	}
+	},
+	"confidence": "cut"
 }

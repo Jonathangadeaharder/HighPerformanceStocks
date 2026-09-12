@@ -7,86 +7,88 @@
 	"cagrModel": {
 		"epsGrowth": "10%",
 		"basis": "Non-GAAP EPS; minority interest structure: public share represents ~25% economic interest in IBG LLC",
-		"ttmEPS": 2.22,
+		"ttmEPS": 2.58,
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-17%",
-			"base": "19%",
-			"bull": "34%"
+			"bear": "-23%",
+			"base": "16%",
+			"bull": "32%"
 		}
 	},
-	"currentPrice": "$67.74",
-	"marketCap": "$115.2B USD",
+	"currentPrice": "$91.37",
+	"marketCap": "$155.7B USD",
 	"valuation": {
-		"trailingPE": 30.5,
-		"forwardPE": 24.6
+		"trailingPE": 35.4,
+		"forwardPE": 28.7,
+		"pegRatio": 1.46
 	},
 	"metrics": {
-		"roe": "23.5%",
-		"beta": "1.26",
-		"revenueGrowth": "15.2%",
-		"roic": "45.0%"
+		"roe": "24.0%",
+		"beta": "1.35",
+		"revenueGrowth": "26.3%",
+		"roic": "22.5%"
 	},
 	"consensus": {
-		"yahoo": "$80.44"
+		"yahoo": "$105.74"
 	},
-	"targetPrice": "$80.44",
-	"expectedCAGR": "-17% - 34%",
+	"targetPrice": "$105.74",
+	"expectedCAGR": "-23% - 32%",
 	"screener": {
 		"engine": "fPERG",
-		"score": 2.46,
+		"score": 2.87,
 		"signal": "FAIL",
+		"note": "Valuation score 2.87 exceeds 1 limit",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "Forward P/E",
-			"multiple": 24.6,
-			"cvStock": 0.042,
+			"multiple": 28.7,
+			"cvStock": 0.043,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 67.74,
-				"price6mAgo": 69.61,
-				"price1mAgo": 68.05,
-				"low3m": 63.02,
-				"return6m": -2.7,
-				"return1m": -0.5,
+				"price": 91.37,
+				"price6mAgo": 66.92,
+				"price1mAgo": 91.66,
+				"low3m": 85.37,
+				"return6m": 36.5,
+				"return1m": -0.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 11,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 11,
-				"quarter": "2025-12"
+				"surprise": 8,
+				"quarter": "2026-06"
 			}
 		}
 	},
-	"lastUpdated": "2026-04-05T07:21:22.858Z",
-	"expectedVolatility": "~41%",
-	"sharpeRatio": 0.1,
+	"lastUpdated": "2026-09-12T03:15:58.703Z",
+	"expectedVolatility": "~40%",
+	"sharpeRatio": 0,
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": -1.11,
-		"totalScore": 3.89,
+		"revisionsScore": 3.85,
+		"totalScore": 8.85,
 		"raw": {
-			"avgSurprisePct": 5.8,
-			"netInsiderShares": -192323,
-			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 2,
-			"totalAnalysts": 9
+			"avgSurprisePct": 6.3,
+			"netInsiderShares": 777793,
+			"instFlowTrend": "negative",
+			"upRevisions": 10,
+			"downRevisions": 0,
+			"totalAnalysts": 13
 		}
 	},
 	"description": "Interactive Brokers Group, Inc. operates as an automated electronic broker in the United States and internationally.",
 	"analystTargets": {
-		"low": 56,
-		"mean": 80.44,
-		"high": 91
+		"low": 70,
+		"mean": 105.74,
+		"high": 121
 	},
 	"analystConsensus": {
 		"ticker": "IBKR",
@@ -100,14 +102,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 2.56,
-			"low": 2.26,
-			"average": 2.4427
+			"high": 2.82,
+			"low": 2.59,
+			"average": 2.70532
 		},
 		"2027": {
-			"high": 2.969,
-			"low": 2.51,
-			"average": 2.75576
+			"high": 3.53,
+			"low": 2.98,
+			"average": 3.18632
 		}
-	}
+	},
+	"confidence": "medium"
 }

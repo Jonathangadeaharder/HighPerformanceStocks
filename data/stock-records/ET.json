@@ -2,82 +2,83 @@
 	"ticker": "ET",
 	"name": "Energy Transfer",
 	"group": "Energy",
-	"marketCap": "$65.1B USD",
-	"sharpeRatio": 0.83,
-	"expectedCAGR": "5% - 39%",
-	"expectedVolatility": "~21%",
+	"marketCap": "$74.2B USD",
+	"sharpeRatio": 1.03,
+	"expectedCAGR": "8% - 36%",
+	"expectedVolatility": "~17%",
 	"valuation": {
-		"trailingPE": 12.4,
-		"forwardPE": 12,
-		"pegRatio": null,
-		"evEbitda": 10.2,
-		"evFcf": 68.9
+		"trailingPE": 12.5,
+		"forwardPE": 12.3,
+		"pegRatio": 0.67,
+		"evEbitda": 9.5,
+		"evFcf": 51.4
 	},
 	"metrics": {
 		"fcfMargin": "~3%",
-		"fcfYield": "~3%",
-		"roic": "7.6%",
-		"roe": "11.9%",
-		"netDebtEbitda": "4.6x",
-		"ruleOf40": "32%",
-		"beta": "0.62",
-		"revenueGrowth": "29.6%",
-		"interestCoverage": "3.9x"
+		"fcfYield": "~4%",
+		"roic": "8.4%",
+		"roe": "14.6%",
+		"netDebtEbitda": "4.0x",
+		"ruleOf40": "81%",
+		"beta": "0.57",
+		"revenueGrowth": "78.4%",
+		"interestCoverage": "4.4x"
 	},
-	"targetPrice": "$22.07",
+	"targetPrice": "$24.58",
 	"bullCase": "Energy Transfer has the most diversified midstream footprint in the US, with exposure to crude, natural gas, NGLs, and LNG exports. The $0.32/unit quarterly distribution yields 7-8% and is covered 1.9x. Permian Basin volume growth provides organic throughput growth without new capital commitments.",
 	"bearCase": "At 4.6x Net Debt/EBITDA, ET has the highest leverage among major midstream peers. A deterioration in credit markets, distribution cut risk, or volume decline from customer bankruptcies could trigger significant unit price declines.",
-	"currentPrice": "$18.93",
+	"currentPrice": "$21.55",
 	"consensus": {
 		"tipranks": "$23",
-		"yahoo": "$22.07"
+		"yahoo": "$24.58"
 	},
 	"cagrModel": {
 		"ttmEPS": 1.21,
 		"epsGrowth": "10%",
-		"dividendYield": "7%",
+		"dividendYield": "6%",
 		"scenarios": {
-			"bear": "5%",
-			"base": "24%",
-			"bull": "39%"
+			"bear": "8%",
+			"base": "20%",
+			"bull": "36%"
 		},
 		"basis": "Distributable Cash Flow per unit"
 	},
-	"lastUpdated": "2026-04-05T07:21:19.724Z",
+	"lastUpdated": "2026-09-12T03:15:56.595Z",
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.14,
-		"signal": "FAIL",
+		"score": 0.95,
+		"signal": "WAIT",
+		"note": "Borderline valuation (Score 0.95 vs 0.8 limit)",
 		"inputs": {
 			"growth": 10,
 			"multipleType": "EV/EBITDA",
-			"multiple": 10.2,
-			"cvStock": 0.189,
-			"riskMultiplier": 1.119
+			"multiple": 9.5,
+			"cvStock": 0.096,
+			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 18.93,
-				"price6mAgo": 16.66,
-				"price1mAgo": 18.67,
-				"low3m": 16.24,
-				"return6m": 13.6,
-				"return1m": 1.4,
+				"price": 21.55,
+				"price6mAgo": 18.56,
+				"price1mAgo": 20.95,
+				"low3m": 18.46,
+				"return6m": 16.1,
+				"return1m": 2.9,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 1,
-				"down30d": 1
+				"up30d": 7,
+				"down30d": 4
 			},
 			"earningsSurprise": {
-				"surprise": -30.4,
-				"quarter": "2025-12"
+				"surprise": 60.4,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.34
+		"secondaryScore": 1.23
 	},
 	"intrinsicValue": {
 		"dcf": 60.21,
@@ -85,24 +86,24 @@
 		"discount": 206
 	},
 	"qcs": {
-		"earningsScore": -2.5,
+		"earningsScore": 0.73,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": -2.5,
+		"revisionsScore": 3.33,
+		"totalScore": 4.06,
 		"raw": {
-			"avgSurprisePct": -11.8,
+			"avgSurprisePct": 1.75,
 			"netInsiderShares": 0,
 			"instFlowTrend": "neutral",
-			"upRevisions": 0,
-			"downRevisions": 0,
-			"totalAnalysts": 11
+			"upRevisions": 9,
+			"downRevisions": 1,
+			"totalAnalysts": 12
 		}
 	},
 	"description": "Energy Transfer LP, together with its subsidiaries, provides energy-related services in the United States.",
 	"analystTargets": {
-		"low": 18.5,
-		"mean": 22.07,
-		"high": 25
+		"low": 22,
+		"mean": 24.58,
+		"high": 28
 	},
 	"analystConsensus": {
 		"ticker": "ET",
@@ -116,14 +117,15 @@
 	"targetPriceAlternative": "$21.61",
 	"forwardEstimates": {
 		"2026": {
-			"high": 1.77,
-			"low": 1.16678,
-			"average": 1.52071
+			"high": 1.86,
+			"low": 1.63,
+			"average": 1.71889
 		},
 		"2027": {
-			"high": 2.54,
-			"low": 1.26405,
-			"average": 1.68759
+			"high": 2.02,
+			"low": 1.37,
+			"average": 1.68529
 		}
-	}
+	},
+	"confidence": "low"
 }

@@ -2,106 +2,106 @@
 	"ticker": "ANET",
 	"name": "Arista Networks",
 	"group": "Network Infrastructure",
-	"marketCap": "$159.5B USD",
-	"sharpeRatio": 0.75,
-	"expectedCAGR": "11% - 74%",
-	"expectedVolatility": "~51%",
+	"marketCap": "$251.7B USD",
+	"sharpeRatio": 0.27,
+	"expectedCAGR": "-7% - 45%",
+	"expectedVolatility": "~54%",
 	"valuation": {
-		"trailingPE": 46.1,
-		"forwardPE": 29.6,
+		"trailingPE": 63.2,
+		"forwardPE": 38.7,
 		"pegRatio": 1.44,
-		"evEbitda": 37.8,
-		"evFcf": 43.8
+		"evEbitda": 51.4,
+		"evFcf": 61.3
 	},
 	"metrics": {
-		"fcfMargin": "~38%",
+		"fcfMargin": "~37%",
 		"fcfYield": "~2%",
-		"roic": "2.9%",
-		"roe": "31.4%",
+		"roic": "2.2%",
+		"roe": "31.5%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "67%",
-		"grossMargin": "64.06%",
-		"beta": "1.48",
-		"revenueGrowth": "28.9%",
-		"interestCoverage": "789.3x"
+		"ruleOf40": "75%",
+		"grossMargin": "63.00%",
+		"beta": "1.62",
+		"revenueGrowth": "37.7%",
+		"interestCoverage": ">50x"
 	},
-	"targetPrice": "$176.46",
+	"targetPrice": "$241.04",
 	"bullCase": "25% revenue growth is the new baseline through 2026. The 1.6T Ethernet transition is just beginning. Asset-light model means nearly all growth drops to the bottom line. Addressable market expanding to $105B in AI networking.",
 	"bearCase": "Forward P/E of 43x leaves little room for misses. Dependent on hyperscaler CapEx cycles. NVIDIA could fight back to keep InfiniBand dominant.",
-	"currentPrice": "$126.68",
+	"currentPrice": "$199.59",
 	"consensus": {
 		"tipranks": "$182",
-		"yahoo": "$176.46",
+		"yahoo": "$241.04",
 		"stockanalysis": "$174"
 	},
 	"cagrModel": {
-		"ttmEPS": 2.75,
-		"epsGrowth": "21%",
+		"ttmEPS": 3.16,
+		"epsGrowth": "25%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "11%",
-			"base": "39%",
-			"bull": "74%"
+			"bear": "-7%",
+			"base": "21%",
+			"bull": "45%"
 		},
 		"basis": "GAAP EPS; exit PE calibrated to 10yr average trading range",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.297Z",
+	"lastUpdated": "2026-09-12T03:15:52.381Z",
 	"screener": {
 		"engine": "fCFG",
-		"score": 2.09,
+		"score": 2.45,
 		"signal": "WAIT",
+		"note": "Valuation score 2.45 exceeds 0.8 limit (Upgraded from FAIL: Protected by elite quality floor (QCS 9.14))",
 		"inputs": {
-			"growth": 21,
+			"growth": 25,
 			"multipleType": "EV/FCF",
-			"multiple": 43.8,
-			"cvStock": 0.082,
+			"multiple": 61.3,
+			"cvStock": 0.064,
 			"riskMultiplier": 1
 		},
-		"note": "hasLikelyValueFloor: analyst upside 39.3% + QCS 9.14",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 126.68,
-				"price6mAgo": 149.5,
-				"price1mAgo": 139.4,
-				"low3m": 115.42,
-				"return6m": -15.3,
-				"return1m": -9.1,
+				"price": 199.59,
+				"price6mAgo": 134.03,
+				"price1mAgo": 210.5,
+				"low3m": 154.74,
+				"return6m": 48.9,
+				"return1m": -5.2,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 26,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 8.2,
-				"quarter": "2025-12"
+				"surprise": 15.2,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.41
+		"secondaryScore": 1.55
 	},
 	"qcs": {
-		"earningsScore": 4.33,
-		"flowScore": 5,
-		"revisionsScore": -0.19,
-		"totalScore": 9.14,
+		"earningsScore": 5,
+		"flowScore": -5,
+		"revisionsScore": 4.81,
+		"totalScore": 4.81,
 		"raw": {
-			"avgSurprisePct": 8.88,
-			"netInsiderShares": 1197239,
-			"instFlowTrend": "positive",
-			"upRevisions": 1,
-			"downRevisions": 2,
+			"avgSurprisePct": 9.01,
+			"netInsiderShares": -5904277,
+			"instFlowTrend": "negative",
+			"upRevisions": 26,
+			"downRevisions": 0,
 			"totalAnalysts": 27
 		}
 	},
 	"description": "Arista Networks, Inc. engages in the development, marketing, and sale of data-driven, client to cloud networking solutions for AI, data center, campus, and routing environments in the Americas, Eur...",
 	"analystTargets": {
-		"low": 140,
-		"mean": 176.46,
-		"high": 220
+		"low": 185,
+		"mean": 241.04,
+		"high": 289
 	},
 	"analystConsensus": {
 		"ticker": "ANET",
@@ -114,14 +114,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 3.81,
-			"low": 3.4,
-			"average": 3.53563
+			"high": 4.22,
+			"low": 4.05,
+			"average": 4.11262
 		},
 		"2027": {
-			"high": 5.24,
-			"low": 3.84,
-			"average": 4.27467
+			"high": 5.73,
+			"low": 4.4,
+			"average": 5.16028
 		}
-	}
+	},
+	"confidence": "low"
 }

@@ -7,97 +7,99 @@
 	"cagrModel": {
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "10%",
-		"ttmEPS": 4.96,
+		"epsGrowth": "8%",
+		"ttmEPS": 5.67,
 		"dividendYield": "1%",
 		"scenarios": {
-			"bear": "-8%",
-			"base": "11%",
-			"bull": "24%"
+			"bear": "2%",
+			"base": "20%",
+			"bull": "35%"
 		}
 	},
-	"currentPrice": "$196.21",
-	"marketCap": "$264.1B USD",
+	"currentPrice": "$197.68",
+	"marketCap": "$266.4B USD",
 	"valuation": {
-		"trailingPE": 39.6,
-		"forwardPE": 26.1,
-		"evFcf": 46.1,
-		"evEbitda": 20.2
+		"trailingPE": 34.9,
+		"forwardPE": 25.2,
+		"evFcf": 30.2,
+		"evEbitda": 18.8,
+		"pegRatio": 2.3
 	},
 	"metrics": {
-		"roe": "11.0%",
-		"fcfMargin": "~7%",
-		"fcfYield": "~2%",
-		"netDebtEbitda": "2.2x",
-		"ruleOf40": "19%",
-		"beta": "0.43",
-		"revenueGrowth": "12.1%",
-		"roic": "3.6%",
-		"interestCoverage": "6.7x"
+		"roe": "12.3%",
+		"fcfMargin": "~11%",
+		"fcfYield": "~4%",
+		"netDebtEbitda": "1.9x",
+		"ruleOf40": "25%",
+		"beta": "0.29",
+		"revenueGrowth": "14.5%",
+		"roic": "4.8%",
+		"interestCoverage": "7.4x"
 	},
 	"consensus": {
-		"yahoo": "$216.34"
+		"yahoo": "$234.82"
 	},
-	"targetPrice": "$216.34",
+	"targetPrice": "$234.82",
 	"analystTargets": {
-		"low": 179,
-		"mean": 216.34,
-		"high": 242
+		"low": 200,
+		"mean": 234.82,
+		"high": 265
 	},
-	"expectedCAGR": "-8% - 24%",
+	"expectedCAGR": "2% - 35%",
 	"expectedVolatility": "~26%",
-	"sharpeRatio": 0.13,
+	"sharpeRatio": 0.54,
 	"screener": {
 		"engine": "fEVG",
-		"score": 2.02,
+		"score": 2.35,
 		"signal": "FAIL",
+		"note": "Valuation score 2.35 exceeds 0.8 limit",
 		"inputs": {
-			"growth": 10,
+			"growth": 8,
 			"multipleType": "EV/EBITDA",
-			"multiple": 20.2,
-			"cvStock": 0.027,
+			"multiple": 18.8,
+			"cvStock": 0.028,
 			"riskMultiplier": 1
 		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 196.21,
-				"price6mAgo": 168.8,
-				"price1mAgo": 203.86,
-				"low3m": 182.17,
-				"return6m": 16.2,
-				"return1m": -3.8,
+				"price": 197.68,
+				"price6mAgo": 203.04,
+				"price1mAgo": 222.76,
+				"low3m": 180.97,
+				"return6m": -2.6,
+				"return1m": -11.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": true,
-				"up30d": 0,
-				"down30d": 2
+				"up30d": 23,
+				"down30d": 0
 			},
 			"earningsSurprise": {
-				"surprise": 5.3,
-				"quarter": "2025-12"
+				"surprise": 13.7,
+				"quarter": "2026-06"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 2.61
+		"secondaryScore": 3.15
 	},
 	"qcs": {
 		"earningsScore": 5,
 		"flowScore": 0,
-		"revisionsScore": 0,
-		"totalScore": 5,
+		"revisionsScore": 5,
+		"totalScore": 10,
 		"raw": {
-			"avgSurprisePct": 10.74,
-			"netInsiderShares": 154645,
-			"instFlowTrend": "negative",
-			"upRevisions": 1,
-			"downRevisions": 1,
-			"totalAnalysts": 22
+			"avgSurprisePct": 14.16,
+			"netInsiderShares": 1152,
+			"instFlowTrend": "neutral",
+			"upRevisions": 23,
+			"downRevisions": 0,
+			"totalAnalysts": 23
 		}
 	},
 	"description": "RTX Corporation, an aerospace and defense company, provides systems and services for commercial, military, and government customers worldwide.",
-	"lastUpdated": "2026-04-05T07:21:33.351Z",
+	"lastUpdated": "2026-09-12T03:16:06.005Z",
 	"analystConsensus": {
 		"ticker": "RTX",
 		"strongBuy": 5,
@@ -110,14 +112,15 @@
 	"targetPriceAlternative": "$202.01",
 	"forwardEstimates": {
 		"2026": {
-			"high": 7.03811,
-			"low": 6.63,
-			"average": 6.8242
+			"high": 7.4,
+			"low": 7.1,
+			"average": 7.24276
 		},
 		"2027": {
-			"high": 7.84032,
-			"low": 7.04,
-			"average": 7.52682
+			"high": 8.2,
+			"low": 7.33,
+			"average": 7.85586
 		}
-	}
+	},
+	"confidence": "high"
 }

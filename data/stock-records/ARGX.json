@@ -2,102 +2,101 @@
 	"ticker": "ARGX",
 	"name": "argenx SE",
 	"group": "Biotech",
-	"marketCap": "$46.3B USD",
-	"sharpeRatio": 0.78,
-	"expectedCAGR": "-7% - 66%",
-	"expectedVolatility": "~32%",
+	"marketCap": "$61.2B USD",
+	"sharpeRatio": 0.43,
+	"expectedCAGR": "-9% - 47%",
+	"expectedVolatility": "~34%",
 	"valuation": {
-		"trailingPE": 38.2,
-		"forwardPE": 22.4,
-		"pegRatio": null,
-		"evEbitda": 39.5,
-		"evFcf": 81.8
+		"trailingPE": 37.4,
+		"forwardPE": 28.5,
+		"pegRatio": 1.25,
+		"evEbitda": 951,
+		"evFcf": 2013.6
 	},
 	"metrics": {
-		"fcfMargin": "~12%",
+		"fcfMargin": "~14%",
 		"fcfYield": "~1%",
-		"roic": "1.6%",
-		"roe": "20.2%",
+		"roic": "1.7%",
+		"roe": "23.6%",
 		"netDebtEbitda": "Net cash",
-		"ruleOf40": "85%",
-		"beta": "-0.09",
-		"revenueGrowth": "73.0%",
-		"interestCoverage": "409.4x"
+		"ruleOf40": "74%",
+		"beta": "-0.03",
+		"revenueGrowth": "59.3%",
+		"interestCoverage": "623.9x"
 	},
-	"targetPrice": "$1014.69",
+	"targetPrice": "$1179.74",
 	"bullCase": "Vyvgart is a platform drug expanding across 8+ autoimmune indications. gMG approval was just the start — CIDP, ITP, pemphigus, and lupus nephritis in pipeline. FcRn antagonism is a validated mechanism with multi-billion peak sales potential. Net cash provides runway.",
 	"bearCase": "Premium valuation (36x trailing) requires flawless execution. Recently profitable — margins still ramping. Clinical trial failures in any indication would reset expectations. Competition from other FcRn antagonists (Rystiggo).",
-	"currentPrice": "$746.42",
+	"currentPrice": "$984.39",
 	"consensus": {
 		"tipranks": "$900",
-		"yahoo": "$1014.69"
+		"yahoo": "$1179.74"
 	},
 	"cagrModel": {
-		"ttmEPS": 19.56,
-		"epsGrowth": "34%",
+		"ttmEPS": 26.31,
+		"epsGrowth": "35%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "-7%",
-			"base": "36%",
-			"bull": "66%"
+			"bear": "-9%",
+			"base": "20%",
+			"bull": "47%"
 		},
 		"basis": "Reflects biotech terminal multiple compression and competitive encroachment risk.",
 		"epsGrowthSource": "auto"
 	},
-	"lastUpdated": "2026-04-05T07:21:14.474Z",
+	"lastUpdated": "2026-09-12T03:15:52.448Z",
 	"screener": {
 		"engine": "fPERG",
-		"score": 0.74,
-		"signal": "REJECTED",
+		"score": 0.97,
+		"signal": "PASS",
 		"inputs": {
-			"growth": 34,
+			"growth": 35,
 			"multipleType": "Forward P/E",
-			"multiple": 22.4,
-			"cvStock": 0.183,
-			"riskMultiplier": 1.103
+			"multiple": 28.5,
+			"cvStock": 0.2,
+			"riskMultiplier": 1.15
 		},
-		"note": "Consensus actively collapsing (analyst lag)",
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 746.42,
-				"price6mAgo": 787.94,
-				"price1mAgo": 728.11,
-				"low3m": 661.85,
-				"return6m": -5.3,
-				"return1m": 2.5,
+				"price": 984.39,
+				"price6mAgo": 708.85,
+				"price1mAgo": 876,
+				"low3m": 826.45,
+				"return6m": 38.9,
+				"return1m": 12.4,
 				"near3mLow": false
 			},
 			"revisions": {
-				"pass": false,
-				"up30d": 2,
-				"down30d": 11
+				"pass": true,
+				"up30d": 6,
+				"down30d": 5
 			},
 			"earningsSurprise": {
-				"surprise": 29.2,
-				"quarter": "2025-12"
+				"surprise": 18.2,
+				"quarter": "2026-06"
 			}
 		}
 	},
 	"qcs": {
-		"earningsScore": 4.92,
-		"flowScore": 0,
-		"revisionsScore": -2.81,
-		"totalScore": 2.11,
+		"earningsScore": 4.3,
+		"flowScore": 2.5,
+		"revisionsScore": 3.82,
+		"totalScore": 10.62,
 		"raw": {
-			"avgSurprisePct": 22.5,
+			"avgSurprisePct": 21.5,
 			"netInsiderShares": 0,
-			"instFlowTrend": "negative",
-			"upRevisions": 3,
-			"downRevisions": 12,
-			"totalAnalysts": 16
+			"instFlowTrend": "positive",
+			"upRevisions": 14,
+			"downRevisions": 1,
+			"totalAnalysts": 17
 		}
 	},
 	"description": "argenx SE, a commercial-stage biopharma company, develops various therapies for the treatment of autoimmune diseases in the United States, Japan, China, the Netherlands, and internationally.",
 	"analystTargets": {
-		"low": 690.56,
-		"mean": 1014.69,
-		"high": 1237.37
+		"low": 900,
+		"mean": 1179.74,
+		"high": 1450
 	},
 	"analystConsensus": {
 		"ticker": "ARGX",
@@ -111,14 +110,15 @@
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
 		"2026": {
-			"high": 26.282,
-			"low": 13.532,
-			"average": 21.46731
+			"high": 37.17,
+			"low": 26.04,
+			"average": 29.03352
 		},
 		"2027": {
-			"high": 39.595,
-			"low": 18.534,
-			"average": 28.77212
+			"high": 61.03,
+			"low": 29.57,
+			"average": 39.30937
 		}
-	}
+	},
+	"confidence": "high"
 }

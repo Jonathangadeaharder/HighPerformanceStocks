@@ -8,96 +8,97 @@
 		"ttmEPS": 3.01,
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
-		"epsGrowth": "41%",
+		"epsGrowth": "37%",
 		"dividendYield": "0%",
 		"scenarios": {
-			"bear": "27%",
-			"base": "69%",
-			"bull": "144%"
+			"bear": "1%",
+			"base": "54%",
+			"bull": "122%"
 		}
 	},
-	"currentPrice": "$184.36",
-	"marketCap": "$9.3B USD",
+	"currentPrice": "$146.71",
+	"marketCap": "$7.5B USD",
 	"valuation": {
-		"forwardPE": 45.5,
-		"evFcf": -30.9,
-		"evEbitda": 62.2
+		"forwardPE": 32.9,
+		"evFcf": -297,
+		"evEbitda": 35.2,
+		"pegRatio": 1.57
 	},
 	"metrics": {
-		"roe": "-8.7%",
-		"fcfMargin": "~-19%",
-		"fcfYield": "~-3%",
-		"netDebtEbitda": "1.6x",
-		"ruleOf40": "125%",
-		"beta": "1.38",
-		"revenueGrowth": "143.4%",
-		"roic": "-1.8%",
-		"interestCoverage": "3.3x"
+		"roe": "-4.6%",
+		"fcfMargin": "~-1%",
+		"fcfYield": "~0%",
+		"netDebtEbitda": "1.2x",
+		"ruleOf40": "4%",
+		"beta": "1.41",
+		"revenueGrowth": "5.7%",
+		"roic": "0.8%",
+		"interestCoverage": "4.7x"
 	},
 	"consensus": {
-		"yahoo": "$311.47"
+		"yahoo": "$226.50"
 	},
-	"targetPrice": "$311.47",
+	"targetPrice": "$226.50",
 	"analystTargets": {
-		"low": 235,
-		"mean": 311.47,
-		"high": 450
+		"low": 148.57,
+		"mean": 226.5,
+		"high": 326
 	},
-	"expectedCAGR": "27% - 144%",
-	"expectedVolatility": "~70%",
-	"sharpeRatio": 1.16,
+	"expectedCAGR": "1% - 122%",
+	"expectedVolatility": "~76%",
+	"sharpeRatio": 0.75,
 	"screener": {
 		"engine": "fEVG",
-		"score": 1.76,
+		"score": 1.01,
 		"signal": "REJECTED",
-		"inputs": {
-			"growth": 41,
-			"multipleType": "EV/EBITDA",
-			"multiple": 62.2,
-			"cvStock": 0.149,
-			"riskMultiplier": 1.036
-		},
 		"note": "Consensus actively collapsing (analyst lag)",
+		"inputs": {
+			"growth": 37,
+			"multipleType": "EV/EBITDA",
+			"multiple": 35.2,
+			"cvStock": 0.119,
+			"riskMultiplier": 1.006
+		},
 		"realityChecks": {
 			"stabilization": {
 				"pass": true,
-				"price": 184.36,
-				"price6mAgo": 391.88,
-				"price1mAgo": 220.56,
-				"low3m": 175.42,
-				"return6m": -53,
-				"return1m": -16.4,
+				"price": 146.71,
+				"price6mAgo": 211.88,
+				"price1mAgo": 193.81,
+				"low3m": 135.2,
+				"return6m": -30.8,
+				"return1m": -24.3,
 				"near3mLow": false
 			},
 			"revisions": {
 				"pass": false,
-				"up30d": 1,
-				"down30d": 12
+				"up30d": 2,
+				"down30d": 9
 			},
 			"earningsSurprise": {
-				"surprise": -7.4,
-				"quarter": "2026-01"
+				"surprise": 138,
+				"quarter": "2026-07"
 			}
 		},
 		"secondaryEngine": "fPERG",
-		"secondaryScore": 1.29
+		"secondaryScore": 0.94
 	},
 	"qcs": {
-		"earningsScore": -2.86,
-		"flowScore": 2.5,
-		"revisionsScore": -4.06,
-		"totalScore": -4.42,
+		"earningsScore": 5,
+		"flowScore": 0,
+		"revisionsScore": -0.26,
+		"totalScore": 4.74,
 		"raw": {
-			"avgSurprisePct": -10.66,
-			"netInsiderShares": -7046,
-			"instFlowTrend": "positive",
+			"avgSurprisePct": 27.86,
+			"netInsiderShares": 112837,
+			"instFlowTrend": "negative",
 			"upRevisions": 0,
-			"downRevisions": 13,
-			"totalAnalysts": 16
+			"downRevisions": 1,
+			"totalAnalysts": 19
 		}
 	},
-	"description": "AeroVironment, Inc. designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in the United States and internati...",
-	"lastUpdated": "2026-04-05T07:21:15.344Z",
+	"description": "AeroVironment, Inc., a defense technology provider, designs, develops, produces, delivers, and supports a portfolio of robotic systems and related services for government agencies and businesses in...",
+	"lastUpdated": "2026-09-12T03:15:53.149Z",
 	"analystConsensus": {
 		"ticker": "AVAV",
 		"strongBuy": 5,
@@ -109,15 +110,16 @@
 	"targetPriceAlternative": "$318.79",
 	"consensusRating": "Moderate Buy",
 	"forwardEstimates": {
-		"2026": {
-			"high": 3.07,
-			"low": 2.70853,
-			"average": 2.88011
-		},
 		"2027": {
-			"high": 4.95,
-			"low": 2.53,
-			"average": 4.05194
+			"high": 3.42,
+			"low": 3.05,
+			"average": 3.254
+		},
+		"2028": {
+			"high": 5.57,
+			"low": 3.44,
+			"average": 4.46204
 		}
-	}
+	},
+	"confidence": "low"
 }
