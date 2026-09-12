@@ -64,10 +64,8 @@ const BETA_MIN_CLAMP = 0.5;
 const BETA_MAX_CLAMP = 2;
 const BETA_DEFAULT = 1;
 
-// Phase 2: Full VAMS (Volatility-Adjusted Momentum Score) rejection threshold.
-// Blended multi-horizon z-score below this triggers falling-knife rejection.
-// -1.25σ balances sensitivity: catches genuine structural breakdowns while
-// allowing normal rotational noise on high-volatility assets.
+// Phase 2: VAMS (Volatility-Adjusted Momentum Score) rejection threshold.
+// Blended multi-horizon z-score below -1.25σ triggers falling-knife rejection.
 const VAMS_REJECT_THRESHOLD = -1.25;
 const FORWARD_PE_LABEL = 'Forward P/E';
 // DEPLOY CAGRs are hardcoded (15 for PASS, 20 for WAIT)
@@ -230,6 +228,14 @@ export function detectGrowthBranch(
 		valuationPrice != null && ttmBasis != null && ttmBasis > 0 ? valuationPrice / ttmBasis : null;
 
 	if (group.includes('disqualified') || group.includes('pre-profit') || group.includes('binary')) {
+		const fpe = valuation.forwardPE;
+		if (fpe != null && fpe > 0 && /cyclical/i.test(stock.cagrModel?.basis ?? '')) {
+			return {
+				engine: 'fPERG',
+				multipleType: FORWARD_PE_LABEL,
+				multiple: fpe
+			};
+		}
 		return {
 			engine: 'DISQUALIFIED',
 			multipleType: 'N/A',
@@ -306,11 +312,8 @@ export function detectGrowthBranch(
 		};
 	}
 
-	// --- AUTO RULE 1: fEVG for leveraged industrials (net debt ≥ 1.5x EBITDA) ---
-	// Non-GAAP EPS aggressively backs out D&A on heavily debt-funded capex, causing
-	// fPERG to drastically understate true economic leverage. Any stock with net
-	// debt/EBITDA ≥ 1.5x must be evaluated on EV/EBITDA to properly price in the
-	// cost of its capital structure. (RTX at 2.2x is the canonical example.)
+	// AUTO RULE 1: fEVG for leveraged industrials (net debt >= 1.5x EBITDA).
+	// Prevents fPERG from understating capital structure costs on capex-heavy debt.
 	const netDebtRatioStr = stock.metrics?.netDebtEbitda ?? '';
 	const netDebtRatioMatch = /^([\d.]+)x?$/i.exec(netDebtRatioStr);
 	const netDebtRatio = netDebtRatioMatch ? parseFloat(netDebtRatioMatch[1] ?? '0') : null;
@@ -322,10 +325,8 @@ export function detectGrowthBranch(
 		};
 	}
 
-	// --- AUTO RULE 2: fCFG for pre-profit platforms (ttmEPS is null/missing) ---
-	// Pre-profit hyper-growth platforms (e.g. RBRK) have no valid EPS denominator.
-	// Routing them to totalReturn via a 0% growth parse is a fatal mis-classification
-	// that bypasses the required dividendYield ≥ 4% gate. Use EV/FCF instead.
+	// AUTO RULE 2: fCFG for pre-profit platforms (ttmEPS is null/missing).
+	// Routes platforms without valid EPS denominator to EV/FCF.
 	const isPreProfitPlatform = stock.cagrModel?.ttmEPS == null && valuation.evFcf != null && valuation.evFcf > 0;
 	if (isPreProfitPlatform) {
 		return {
@@ -335,14 +336,8 @@ export function detectGrowthBranch(
 		};
 	}
 
-	// --- AUTO RULE 3: fCFG for high-FCF SBC-distorted platforms ---
-	// Cybersecurity and SaaS platforms that (a) generate ≥ 25% FCF margins AND
-	// (b) have ≥ 15% modelled growth AND (c) have a valid EV/FCF multiple are
-	// systematically under-served by fPERG: their GAAP/non-GAAP EPS gap (caused
-	// by heavy SBC, deferred-revenue accounting, or free-product transition periods)
-	// inflates the apparent forward PE, generating false rejections.
-	// Using EV/FCF as the primary anchor correctly prices the cash generation floor.
-	// (Canonical examples: PANW, ZS, FTNT.)
+	// AUTO RULE 3: fCFG for high-FCF platforms (>=25% FCF margin, >=15% growth).
+	// Prices cash generation floor directly via EV/FCF.
 	const fcfMarginStr = stock.metrics?.fcfMargin ?? '';
 	const fcfMarginMatch = /([\d.]+)/.exec(fcfMarginStr);
 	const fcfMarginPct = fcfMarginMatch ? parseFloat(fcfMarginMatch[1] ?? '0') : null;
@@ -354,7 +349,7 @@ export function detectGrowthBranch(
 		growthNum >= 15 &&
 		valuation.evFcf != null &&
 		valuation.evFcf > 0 &&
-		// Only apply to pure-software/SaaS/cybersecurity groups — not hardware, industrials, or royalties
+		// Apply to pure-software/SaaS groups — exclude hardware, industrials, royalties
 		!/(hardware|semicon|industrial|equipment|royalt|stream|energy|financ)/i.test(group);
 	if (isHighFcfPlatform) {
 		return {
@@ -571,9 +566,8 @@ function applyRealityChecks(
 	// Two-pronged consensus-collapse rule:
 	// Rule A (legacy): overwhelmingly one-sided with zero upgrades
 	const collapseRuleA = down30d >= downgradeThreshold && up30d === 0;
-	// Rule B (ratio): down revisions dominate by 2:1+ AND there are at least COLLAPSE_MIN_ABS downgrades.
-	//   This catches cases like 0700.HK (4 up / 19 down) and MELI (1 up / 11 down)
-	//   that Rule A misses because up30d > 0.
+	// Rule B (ratio): down revisions dominate 2:1+ with min COLLAPSE_MIN_ABS.
+	// Catches cases where up30d > 0 (e.g. 4 up / 19 down).
 	const collapseRuleB = down30d >= COLLAPSE_MIN_ABS && down30d >= COLLAPSE_RATIO * up30d;
 	const consensusCollapsing = collapseRuleA || collapseRuleB;
 	checks.revisions = { pass: !consensusCollapsing, up30d, down30d };
@@ -828,17 +822,23 @@ export function computeScreener(
 
 	const group = stock.group?.toLowerCase() ?? '';
 	if (group.includes('disqualified') || group.includes('pre-profit') || group.includes('binary')) {
-		return {
-			engine: 'DISQUALIFIED',
-			signal: 'REJECTED',
-			note: 'Extreme earnings volatility detected. Strategically disqualified.'
-		};
+		const entry = summary?.earningsTrend?.trend?.find((trend) => trend.period === '+1y');
+		const up30d = entry?.epsRevisions?.upLast30days ?? 0;
+		const down30d = entry?.epsRevisions?.downLast30days ?? 0;
+		const fpe = stock.valuation?.forwardPE;
+		const hasStrongRevisions = up30d >= 10 && up30d >= 2 * down30d;
+
+		if (!hasStrongRevisions || fpe == null || fpe <= 0 || !/cyclical/i.test(stock.cagrModel?.basis ?? '')) {
+			return {
+				engine: 'DISQUALIFIED',
+				signal: 'REJECTED',
+				note: 'Extreme earnings volatility detected. Strategically disqualified.'
+			};
+		}
 	}
 
-	// Only treat as pre-profit (and block evaluation) when ttmEPS is a known
-	// negative value. ttmEPS === null means the field is intentionally absent
-	// (pre-profit platform like RBRK) — those route to fCFG via AUTO RULE 2
-	// in detectGrowthBranch rather than returning early here.
+	// Only treat as pre-profit when ttmEPS is a known negative value.
+	// Null ttmEPS routes to fCFG via AUTO RULE 2 in detectGrowthBranch.
 	const isPreProfit = model?.ttmEPS != null && model.ttmEPS <= 0;
 	if (isPreProfit) {
 		return { engine: 'N/A', signal: 'NO_DATA', note: 'Pre-profit; screener not applicable' };
@@ -846,10 +846,8 @@ export function computeScreener(
 
 	const divYieldPct = parsePercent(model?.dividendYield) ?? 0;
 
-	// Route all hyper-growth stocks (growth > threshold) AND low-yield low-growth stocks
-	// with a valid forward PE through the PE-growth engine family.
-	// totalReturn engine is only appropriate for genuine dividend payers (divYield >= 5%).
-	// Alt Assets (FRE/ANI basis) must NEVER route to totalReturn regardless of dividend.
+	// Route hyper-growth or low-yield stocks with forward PE through PE-growth.
+	// Alt assets (FRE/ANI basis) never route to totalReturn regardless of dividend.
 	const basisText = stock.cagrModel?.basis ?? '';
 	const isAltAsset =
 		stock.group === 'Financials & Alt Assets' || /fre|ani|fee-related|distributable/i.test(basisText);

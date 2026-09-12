@@ -10,7 +10,8 @@ import {
 	VALUE_FLOOR_UPSIDE,
 	VALUE_FLOOR_MAX_SCORE,
 	ETF_HURDLE_RETURN,
-	BEAR_FLOOR_RETURN
+	BEAR_FLOOR_RETURN,
+	TARGET_OVERSHOOT_THRESHOLD
 } from '../src/lib/domain/ranking/rules';
 import type { FindingStock } from '../src/lib/types/dashboard';
 
@@ -181,6 +182,13 @@ describe('deploymentForPass', () => {
 		const stock = createMockStock();
 		const result = deploymentForPass(stock);
 		expect(result.status).toBe('DEPLOY');
+	});
+
+	it('returns TRIM when target price is significantly overshot (upside <= TARGET_OVERSHOOT_THRESHOLD)', () => {
+		const stock = createMockStock({ upside: TARGET_OVERSHOOT_THRESHOLD - 5 });
+		const result = deploymentForPass(stock);
+		expect(result.status).toBe('TRIM');
+		expect(result.reason).toContain('Target overshoot');
 	});
 
 	it('returns WAIT when stabilization fails', () => {

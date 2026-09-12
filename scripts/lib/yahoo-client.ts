@@ -15,6 +15,18 @@ export function yahooTicker(ticker: string): string {
 	return YAHOO_TICKER_MAP[ticker] ?? ticker;
 }
 
+async function fetchChunkIndividually(chunk: string[], result: Record<string, unknown>): Promise<void> {
+	for (const t of chunk) {
+		try {
+			const q = await yf.quote(t);
+			if (q) result[t] = q;
+		} catch {
+			console.warn(`  Individual quote for ${t} failed.`);
+		}
+		await new Promise((r) => setTimeout(r, 100));
+	}
+}
+
 export async function fetchAllQuotes(tickers: string[]): Promise<Record<string, unknown>> {
 	const result: Record<string, unknown> = {};
 	const chunkSize = 20;
@@ -26,7 +38,8 @@ export async function fetchAllQuotes(tickers: string[]): Promise<Record<string, 
 			Object.assign(result, response);
 		} catch (error) {
 			const message = error instanceof Error ? error.message : 'Unknown error';
-			console.error(`Chunk quote failed: ${message}`);
+			console.error(`Chunk quote failed: ${message}. Retrying individually...`);
+			await fetchChunkIndividually(chunk, result);
 		}
 
 		if (index + chunkSize < tickers.length) {

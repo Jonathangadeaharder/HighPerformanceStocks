@@ -52,12 +52,12 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Reset deploy to main
+      - name: Sync deploy with main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          git reset --hard origin/main
+          git merge origin/main --no-edit || (git checkout -B deploy origin/main)
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -78,8 +78,24 @@ jobs:
           pip install nodriver
           sudo apt-get update && sudo apt-get install -y xvfb
 
-      - name: Update stock data
-        run: xvfb-run --auto-servernum pnpm run update-data
+      - name: Update stock data and record daily snapshot
+        run: |
+          xvfb-run --auto-servernum pnpm run update-data
+          mkdir -p data/history
+          TODAY=$(date +'%Y-%m-%d')
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dir = 'data/stock-records';
+            const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+            const snapshot = files.map(f => {
+              try {
+                const d = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
+                return { ticker: d.ticker, price: d.currentPrice, signal: d.screener?.signal, score: d.screener?.score, target: d.targetPrice };
+              } catch { return null; }
+            }).filter(Boolean);
+            fs.writeFileSync('data/history/' + '$TODAY' + '.json', JSON.stringify(snapshot, null, 2));
+          "
 
       - name: Commit updated data (if changed)
         run: |
@@ -93,7 +109,7 @@ jobs:
           fi
 
       - name: Push deploy branch
-        run: git push origin deploy --force-with-lease
+        run: git push origin deploy
 
   build-and-deploy:
     if: github.event_name != 'pull_request'
