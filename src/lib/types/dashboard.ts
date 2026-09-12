@@ -1,5 +1,5 @@
 export type ScenarioKey = 'bear' | 'base' | 'bull';
-export type DeploymentStatus = 'DEPLOY' | 'WAIT' | 'REJECT' | 'FAIL' | 'OVERPRICED' | 'NO_DATA' | 'FLAG FOR MANUAL REVIEW';
+export type DeploymentStatus = 'DEPLOY' | 'TRIM' | 'WAIT' | 'REJECT' | 'FAIL' | 'OVERPRICED' | 'NO_DATA' | 'FLAG FOR MANUAL REVIEW';
 export type ScreenerSignal = 'FLAG FOR MANUAL REVIEW' | 'PASS' | 'WAIT' | 'REJECTED' | 'FAIL' | 'NO_DATA';
 export type VolTone = 'buy' | 'hold' | 'sell';
 
@@ -218,6 +218,7 @@ export interface DashboardCounts {
 	fail: number;
 	overpriced: number;
 	noData: number;
+	trim?: number;
 }
 
 export interface DashboardHurdles {

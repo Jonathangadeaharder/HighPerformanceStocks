@@ -105,8 +105,9 @@ function compareWatchlistStocks(left: FindingStock, right: FindingStock): number
 		OVERPRICED: 2,
 		NO_DATA: 3,
 		'FLAG FOR MANUAL REVIEW': 4,
-		DEPLOY: 5,
-		WAIT: 6
+		TRIM: 5,
+		DEPLOY: 6,
+		WAIT: 7
 	};
 	const deploymentDiff =
 		order[left.deployment?.status ?? 'NO_DATA'] - order[right.deployment?.status ?? 'NO_DATA'];
@@ -136,7 +137,8 @@ function buildCounts(
 		reject: watchlist.filter((stock) => stock.deployment?.status === 'REJECT').length,
 		fail: watchlist.filter((stock) => stock.deployment?.status === 'FAIL').length,
 		overpriced: watchlist.filter((stock) => stock.deployment?.status === 'OVERPRICED').length,
-		noData: watchlist.filter((stock) => stock.deployment?.status === 'NO_DATA').length
+		noData: watchlist.filter((stock) => stock.deployment?.status === 'NO_DATA').length,
+		trim: watchlist.filter((stock) => stock.deployment?.status === 'TRIM').length
 	};
 }
 

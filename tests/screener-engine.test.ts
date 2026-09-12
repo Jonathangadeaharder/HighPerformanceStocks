@@ -7,9 +7,7 @@ import {
 	computeDynamicPegCeiling
 } from '../src/lib/domain/screener/engine';
 
-// ────────────────────────────────────────────────────────
 // Component 1: Hyper-Growth Exponential Decay
-// ────────────────────────────────────────────────────────
 describe('computeEffectiveGrowth (exponential decay)', () => {
 	it('passes through growth ≤ 30% unchanged', () => {
 		expect(computeEffectiveGrowth(10)).toBe(10);
@@ -67,9 +65,7 @@ describe('computeEffectiveGrowth (exponential decay)', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
 // Component 2: Analyst Dispersion Convex Penalty
-// ────────────────────────────────────────────────────────
 describe('computeDispersionMultiplier (convex power-law)', () => {
 	it('returns 1.0 for CV at or below safe threshold (0.10)', () => {
 		expect(computeDispersionMultiplier(0.05)).toBe(1);
@@ -110,9 +106,7 @@ describe('computeDispersionMultiplier (convex power-law)', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
 // Component 3: ROIC-Adjusted Dynamic PEG Ceiling
-// ────────────────────────────────────────────────────────
 describe('computeDynamicPegCeiling (ROIC-adjusted)', () => {
 	it('returns null when both ROIC and ROE are null', () => {
 		expect(computeDynamicPegCeiling(null, null)).toBeNull();
@@ -171,9 +165,7 @@ describe('computeDynamicPegCeiling (ROIC-adjusted)', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
-// Component 4: Continuous Leverage Sigmoid
-// ────────────────────────────────────────────────────────
+// Component 4: Leverage Penalty
 describe('computeLeveragePenalty (logistic sigmoid)', () => {
 	it('imposes near-zero penalty for low-debt firms', () => {
 		const p50 = computeLeveragePenalty(50);
@@ -220,9 +212,7 @@ describe('computeLeveragePenalty (logistic sigmoid)', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
 // Component 4 Phase 2: ICR-Based Leverage Sigmoid
-// ────────────────────────────────────────────────────────
 describe('computeLeveragePenaltyICR (interest coverage sigmoid)', () => {
 	it('imposes near-maximum penalty for very low coverage (ICR < 1x)', () => {
 		const p05 = computeLeveragePenaltyICR(0.5);
@@ -265,10 +255,7 @@ describe('computeLeveragePenaltyICR (interest coverage sigmoid)', () => {
 	});
 });
 
-
-// ────────────────────────────────────────────────────────
-// Component 5: Beta-Adaptive Momentum (threshold math)
-// ────────────────────────────────────────────────────────
+// Component 5: Beta-Adaptive Stabilization
 describe('beta-adaptive momentum thresholds', () => {
 	const STAB_6M_BASE = -10;
 	const STAB_1M_BASE = -3;
@@ -326,9 +313,7 @@ describe('beta-adaptive momentum thresholds', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
 // Phase 2: Full VAMS (Volatility-Adjusted Momentum Score)
-// ────────────────────────────────────────────────────────
 describe('VAMS (Volatility-Adjusted Momentum Score)', () => {
 	const VAMS_REJECT_THRESHOLD = -1.25;
 
@@ -405,9 +390,7 @@ describe('VAMS (Volatility-Adjusted Momentum Score)', () => {
 	});
 });
 
-// ────────────────────────────────────────────────────────
 // computeScreener: threshold & WAIT-band boundaries
-// ────────────────────────────────────────────────────────
 import { computeScreener } from '../src/lib/domain/screener/engine';
 import type { ScreenerStock } from '../src/lib/domain/screener/types';
 
@@ -453,11 +436,8 @@ describe('computeScreener — fPERG threshold and WAIT-band', () => {
 		expect(result.signal).toBe('NO_DATA');
 	});
 
-	// Regression: the hardcoded bearCase string-match that capped
-	// "customer concentration" stocks at WAIT was removed in
-	// refactor/remove-customer-concentration-filter. This test asserts it
-	// is never reintroduced — a clear PASS stock must remain PASS regardless
-	// of what prose appears in its bearCase narrative.
+	// Regression: bearCase string-match capped "customer concentration" stocks at WAIT.
+	// Clean PASS stock must remain PASS regardless of narrative prose.
 	it('does NOT cap a clean fPERG PASS to WAIT when bearCase mentions "customer concentration"', () => {
 		const stock: ScreenerStock = {
 			cagrModel: { epsGrowth: '57%', ttmEPS: 5 },
@@ -467,5 +447,26 @@ describe('computeScreener — fPERG threshold and WAIT-band', () => {
 		const result = computeScreener(stock, undefined, 100, 100, undefined);
 		expect(result.engine).toBe('fPERG');
 		expect(result.signal).toBe('PASS');
+	});
+
+	it('evaluates cyclical stock via fPERG when analyst revision momentum is strong', () => {
+		const stock: ScreenerStock = {
+			group: 'Disqualified',
+			cagrModel: { epsGrowth: '25%', ttmEPS: 10, basis: 'Cyclical memory' },
+			valuation: { forwardPE: 10 }
+		};
+		const summary = {
+			earningsTrend: {
+				trend: [
+					{
+						period: '+1y',
+						epsRevisions: { upLast30days: 15, downLast30days: 2 }
+					}
+				]
+			}
+		} as any;
+		const result = computeScreener(stock, summary, 100, 100, undefined);
+		expect(result.engine).toBe('fPERG');
+		expect(result.signal).not.toBe('REJECTED');
 	});
 });

@@ -131,23 +131,18 @@ export function applyUpdates(
 			stock.metrics.ebitdaMargin = fmtApproxPct(fd.ebitdaMargins * 100);
 		}
 
-		// --- Phase 2: Always populate beta (required by Component 5: beta-adaptive momentum) ---
+		// Phase 2: populate beta (required by Component 5)
 		const betaRaw = sd.beta ?? ks.beta;
 		if (betaRaw != null) {
 			stock.metrics.beta = String(+betaRaw.toFixed(2));
 		}
 
-		// --- Phase 2: Always populate revenueGrowth ---
+		// Phase 2: populate revenueGrowth
 		if (revGrowth != null) {
 			stock.metrics.revenueGrowth = fmtPct(revGrowth * 100, 1);
 		}
 
-		// --- Phase 2: Compute ROIC (required by Component 3: ROIC-adjusted PEG ceilings) ---
-		// ROIC ≈ NOPAT / Invested Capital
-		// NOPAT ≈ operatingCashflow (as proxy since net income + interest is not directly available)
-		// Invested Capital ≈ totalDebt + marketCap - totalCash (total capital deployed)
-		// More precisely: ROIC = Operating Income * (1 - tax rate) / (Total Equity + Total Debt - Cash)
-		// We approximate using: operatingCashflow / (marketCap + totalDebt - totalCash)
+		// Phase 2: ROIC ≈ operatingCashflow / (marketCap + totalDebt - totalCash)
 		const opCashflow = fd.operatingCashflow;
 		if (opCashflow != null && rawCap != null && rawCap > 0 && totalDebt != null && totalCash != null) {
 			const investedCapital = rawCap + totalDebt - totalCash;
@@ -157,13 +152,8 @@ export function applyUpdates(
 			}
 		}
 
-		// --- Phase 2: Compute Interest Coverage Ratio (future upgrade for Component 4 leverage sigmoid) ---
-		// ICR = EBITDA / Interest Expense
-		// Yahoo's financialData doesn't provide interestExpense directly,
-		// but we can derive it from: debtToEquity and totalDebt patterns.
-		// For now: if EBITDA and totalDebt are available, approximate:
-		// interestExpense ≈ totalDebt * assumed_rate (5.5% blended corp rate)
-		// This is imperfect but directionally correct and self-consistent.
+		// Phase 2: ICR = EBITDA / Interest Expense.
+		// Approximates interestExpense ≈ totalDebt * 5.5% blended rate.
 		if (ebitda != null && ebitda > 0 && totalDebt != null && totalDebt > 0) {
 			const assumedRate = 0.055;
 			const estInterest = totalDebt * assumedRate;
@@ -226,42 +216,49 @@ export function applyUpdates(
 		}
 	}
 
+function deriveEpsGrowthFromEstimates(stock: any, model: any): void {
+	const fwdEst = stock.forwardEstimates;
+	if (!fwdEst || typeof fwdEst !== 'object') {
+		console.warn(`  ⚠️  ${stock.ticker}: NO forwardEstimates — no earningsTrend data available`);
+		return;
+	}
+
+	const years = Object.keys(fwdEst)
+		.filter((y) => /^\d{4}$/.test(y))
+		.sort((a, b) => a.localeCompare(b));
+
+	if (years.length < 2) {
+		console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but only ${years.length} year(s) — need >=2`);
+		return;
+	}
+
+	const firstYearKey = years[0]!;
+	const lastYearKey = years.at(-1)!;
+	const firstYear = fwdEst[firstYearKey];
+	const lastYear = fwdEst[lastYearKey];
+
+	if (firstYear?.average > 0 && lastYear?.average > 0) {
+		const n = years.length - 1;
+		const cagr = (Math.pow(lastYear.average / firstYear.average, 1 / n) - 1) * 100;
+		model.epsGrowth = `${Math.round(cagr)}%`;
+		model.epsGrowthSource = 'auto';
+		return;
+	}
+
+	if ((firstYear?.average ?? 0) <= 0 && (lastYear?.average ?? 0) > 0) {
+		if (!model.epsGrowth) {
+			console.warn(`  ⚠️  ${stock.ticker}: turnaround (first=${firstYear?.average}, last=${lastYear?.average}) — set epsGrowth manually`);
+		}
+		return;
+	}
+
+	console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates averages invalid for CAGR (first=${firstYear?.average}, last=${lastYear?.average})`);
+}
+
 	const model = stock.cagrModel;
 	if (model) {
 		if (model.epsGrowthSource === 'auto' || (!model.epsGrowth && !model.epsGrowthSource)) {
-			// Multi-year CAGR from forwardEstimates (analyst consensus)
-			// No artificial cap — analyst estimates determine what is realistic.
-			const fwdEst = stock.forwardEstimates;
-			if (fwdEst && typeof fwdEst === 'object') {
-				const years = Object.keys(fwdEst)
-					.filter((y) => /^\d{4}$/.test(y))
-					.sort();
-				if (years.length >= 2) {
-					const firstYearKey = years[0]!;
-					const lastYearKey = years[years.length - 1]!;
-					const firstYear = fwdEst[firstYearKey];
-					const lastYear = fwdEst[lastYearKey];
-					if (firstYear?.average > 0 && lastYear?.average > 0) {
-						const n = years.length - 1;
-						const cagr = (Math.pow(lastYear.average / firstYear.average, 1 / n) - 1) * 100;
-						model.epsGrowth = `${Math.round(cagr)}%`;
-						model.epsGrowthSource = 'auto';
-					} else if ((firstYear?.average ?? 0) <= 0 && (lastYear?.average ?? 0) > 0) {
-						// Turnaround: moving from loss to profit — CAGR formula undefined.
-						// Preserve any manually-set growth; screener handles via ttmEPS guard.
-						if (!model.epsGrowth) {
-							console.warn(`  ⚠️  ${stock.ticker}: turnaround (first=${firstYear?.average}, last=${lastYear?.average}) — set epsGrowth manually`);
-						}
-					} else {
-						// Both years negative or last year negative: cannot derive growth.
-						console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates averages invalid for CAGR (first=${firstYear?.average}, last=${lastYear?.average})`);
-					}
-				} else {
-					console.warn(`  ⚠️  ${stock.ticker}: forwardEstimates present but only ${years.length} year(s) — need >=2`);
-				}
-			} else {
-				console.warn(`  ⚠️  ${stock.ticker}: NO forwardEstimates — no earningsTrend data available`);
-			}
+			deriveEpsGrowthFromEstimates(stock, model);
 		}
 
 		let ttmEpsRaw = quote.epsTrailingTwelveMonths;

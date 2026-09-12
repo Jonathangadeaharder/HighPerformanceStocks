@@ -8,6 +8,7 @@ export const VALUE_FLOOR_BEAR_RETURN = 5;
 export const VALUE_FLOOR_BASE_RETURN = 25;
 export const VALUE_FLOOR_UPSIDE = 25;
 export const VALUE_FLOOR_MAX_SCORE = 0.65;
+export const TARGET_OVERSHOOT_THRESHOLD = -20;
 
 function getEffectiveHurdle(stock: FindingStock): number {
 	const revisions = stock.screener?.realityChecks?.revisions;
@@ -46,6 +47,13 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
 		return { status: 'NO_DATA', reason: 'Missing forward estimates' };
 	}
 
+	if (stock.upside != null && stock.upside <= TARGET_OVERSHOOT_THRESHOLD) {
+		return {
+			status: 'TRIM',
+			reason: `Target overshoot: upside is ${stock.upside}% (current price exceeds consensus target). Trim to harvest alpha.`
+		};
+	}
+
 	const hurdle = getEffectiveHurdle(stock);
 
 	const basePass = base >= hurdle;
@@ -76,6 +84,13 @@ export function deploymentForPass(stock: FindingStock): DeploymentInfo {
  * Rules for stocks in WAIT state.
  */
 export function deploymentForWait(stock: FindingStock): DeploymentInfo {
+	if (stock.upside != null && stock.upside <= TARGET_OVERSHOOT_THRESHOLD) {
+		return {
+			status: 'TRIM',
+			reason: `Target overshoot: upside is ${stock.upside}% (current price exceeds consensus target). Trim to harvest alpha.`
+		};
+	}
+
 	return hasLikelyValueFloor(stock)
 		? {
 				status: 'DEPLOY',
@@ -96,6 +111,13 @@ export function deploymentForFail(stock: FindingStock): DeploymentInfo {
 
 	if (base == null || base === -999) {
 		return { status: 'NO_DATA', reason: 'Missing forward estimates.' };
+	}
+
+	if (stock.upside != null && stock.upside <= TARGET_OVERSHOOT_THRESHOLD) {
+		return {
+			status: 'TRIM',
+			reason: `Target overshoot: upside is ${stock.upside}% (current price exceeds consensus target). Trim to harvest alpha.`
+		};
 	}
 
 	if ((score ?? 0) >= 1.5 && base >= 20) {
