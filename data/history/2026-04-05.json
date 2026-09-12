@@ -1,0 +1,1095 @@
+[
+  {
+    "ticker": "0700.HK",
+    "price": "HK$489.20",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.05,
+    "target": "HK$717.46"
+  },
+  {
+    "ticker": "AAPL",
+    "price": "$255.92",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.75,
+    "target": "$295.07"
+  },
+  {
+    "ticker": "ABBV",
+    "price": "$208.84",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 0.99,
+    "target": "$249.14"
+  },
+  {
+    "ticker": "ADDT-B.ST",
+    "price": "321 SEK",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.51,
+    "target": "381 SEK"
+  },
+  {
+    "ticker": "ADMA",
+    "price": "$9.19",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 6.76,
+    "target": "$23.50"
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "price": "€845.20",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.98,
+    "target": "€1444.69"
+  },
+  {
+    "ticker": "ALAB",
+    "price": "$117.99",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.9,
+    "target": "$204.25"
+  },
+  {
+    "ticker": "AMAT",
+    "price": "$348.47",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.96,
+    "target": "$418.28"
+  },
+  {
+    "ticker": "AMD",
+    "price": "$217.50",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 0.54,
+    "target": "$289.61"
+  },
+  {
+    "ticker": "AMZN",
+    "price": "$209.77",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 4.76,
+    "target": "$281.27"
+  },
+  {
+    "ticker": "ANET",
+    "price": "$126.68",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.09,
+    "target": "$176.46"
+  },
+  {
+    "ticker": "APO",
+    "price": "$107.04",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.75,
+    "target": "$151"
+  },
+  {
+    "ticker": "APP",
+    "price": "$386.37",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.62,
+    "target": "$645.74"
+  },
+  {
+    "ticker": "ARES",
+    "price": "$102.43",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.81,
+    "target": "$161.76"
+  },
+  {
+    "ticker": "ARGX",
+    "price": "$746.42",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.74,
+    "target": "$1014.69"
+  },
+  {
+    "ticker": "ARQT",
+    "price": "$23.63",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.48,
+    "target": "$34.75"
+  },
+  {
+    "ticker": "ASML",
+    "price": "$1317.23",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.11,
+    "target": "$1472.57"
+  },
+  {
+    "ticker": "AUR",
+    "price": "$4.20",
+    "signal": "NO_DATA",
+    "deployment": "NO_DATA",
+    "target": "$10.46"
+  },
+  {
+    "ticker": "AVAV",
+    "price": "$184.36",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.76,
+    "target": "$311.47"
+  },
+  {
+    "ticker": "AVGO",
+    "price": "$314.43",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.45,
+    "target": "$471.55"
+  },
+  {
+    "ticker": "BABA",
+    "price": "$122.05",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.34,
+    "target": "$189.34"
+  },
+  {
+    "ticker": "BBIO",
+    "price": "$73.15",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "target": "$100.64"
+  },
+  {
+    "ticker": "BKNG",
+    "price": "$4194.31",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.21,
+    "target": "$5799.97"
+  },
+  {
+    "ticker": "BN",
+    "price": "$40.89",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 0.42,
+    "target": "$53.60"
+  },
+  {
+    "ticker": "BRK.B",
+    "price": "$477.35",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.19,
+    "target": "$523"
+  },
+  {
+    "ticker": "CCJ",
+    "price": "$112.57",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 3.57,
+    "target": "$128.43"
+  },
+  {
+    "ticker": "CDNS",
+    "price": "$278.72",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.48,
+    "target": "$371.68"
+  },
+  {
+    "ticker": "COIN",
+    "price": "$171.46",
+    "signal": "FLAG FOR MANUAL REVIEW",
+    "deployment": "FLAG FOR MANUAL REVIEW",
+    "score": 0.97,
+    "target": "$241.66"
+  },
+  {
+    "ticker": "COR",
+    "price": "$320.96",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.96,
+    "target": "$407.92"
+  },
+  {
+    "ticker": "CPRT",
+    "price": "$33.40",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.88,
+    "target": "$42.67"
+  },
+  {
+    "ticker": "CRDO",
+    "price": "$102.46",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.78,
+    "target": "$199.38"
+  },
+  {
+    "ticker": "CRM",
+    "price": "$187.18",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.74,
+    "target": "$273.06"
+  },
+  {
+    "ticker": "CRWD",
+    "price": "$399.12",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.9,
+    "target": "$489.86"
+  },
+  {
+    "ticker": "CSU.TO",
+    "price": "C$2441.27",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.23,
+    "target": "C$4222.33"
+  },
+  {
+    "ticker": "DDOG",
+    "price": "$120.36",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 2.23,
+    "target": "$181.52"
+  },
+  {
+    "ticker": "DHR",
+    "price": "$191.12",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.37,
+    "target": "$264.91"
+  },
+  {
+    "ticker": "DPLM.L",
+    "price": "£62.25",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.55,
+    "target": "£66.56"
+  },
+  {
+    "ticker": "DSG.TO",
+    "price": "C$99.49",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.05
+  },
+  {
+    "ticker": "EPD",
+    "price": "$37.57",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.02,
+    "target": "$38.81"
+  },
+  {
+    "ticker": "EQT.ST",
+    "price": "287 SEK",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.05,
+    "target": "400 SEK"
+  },
+  {
+    "ticker": "ET",
+    "price": "$18.93",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.14,
+    "target": "$22.07"
+  },
+  {
+    "ticker": "EXEL",
+    "price": "$43.88",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.81,
+    "target": "$46.83"
+  },
+  {
+    "ticker": "EXO.AS",
+    "price": "€67.35",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.7,
+    "target": "€109.38"
+  },
+  {
+    "ticker": "FFH.TO",
+    "price": "C$2363.41",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.64,
+    "target": "C$2751.27"
+  },
+  {
+    "ticker": "FICO",
+    "price": "$1089.76",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.59,
+    "target": "$1851.55"
+  },
+  {
+    "ticker": "FIH.U.TO",
+    "price": "$16.34",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.39,
+    "target": "$21"
+  },
+  {
+    "ticker": "FNV",
+    "price": "$257.74",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.18,
+    "target": "$305.90"
+  },
+  {
+    "ticker": "FTNT",
+    "price": "$82.53",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.23,
+    "target": "$89.12"
+  },
+  {
+    "ticker": "GOOGL",
+    "price": "$295.77",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 7.7,
+    "target": "$376.29"
+  },
+  {
+    "ticker": "HALO",
+    "price": "$64.49",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.53,
+    "target": "$84.89"
+  },
+  {
+    "ticker": "HDB",
+    "price": "$24.83",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.35,
+    "target": "$39.52"
+  },
+  {
+    "ticker": "HEI.A",
+    "price": "$211.04",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.59
+  },
+  {
+    "ticker": "HEI",
+    "price": "$271.77",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.79,
+    "target": "$363.16"
+  },
+  {
+    "ticker": "HOOD",
+    "price": "$68.90",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.49,
+    "target": "$111.37"
+  },
+  {
+    "ticker": "HWM",
+    "price": "$232.68",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.67,
+    "target": "$277.52"
+  },
+  {
+    "ticker": "IBKR",
+    "price": "$67.74",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.46,
+    "target": "$80.44"
+  },
+  {
+    "ticker": "ICLR",
+    "price": "$114.19",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.56,
+    "target": "$134.69"
+  },
+  {
+    "ticker": "INDT.ST",
+    "price": "211 SEK",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.15,
+    "target": "260 SEK"
+  },
+  {
+    "ticker": "INVE-B.ST",
+    "price": "355 SEK",
+    "signal": "NO_DATA",
+    "deployment": "NO_DATA",
+    "target": "362 SEK"
+  },
+  {
+    "ticker": "ISRG",
+    "price": "$452.07",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 3.11,
+    "target": "$605.08"
+  },
+  {
+    "ticker": "IT",
+    "price": "$157.85",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.15,
+    "target": "$188.62"
+  },
+  {
+    "ticker": "JDG.L",
+    "price": "£42.50",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.71,
+    "target": "£59.63"
+  },
+  {
+    "ticker": "KAP.IL",
+    "price": "$80.30",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.63,
+    "target": "$95.00"
+  },
+  {
+    "ticker": "KKR",
+    "price": "$91.23",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.97,
+    "target": "$135.30"
+  },
+  {
+    "ticker": "KNSL",
+    "price": "$344.90",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.42,
+    "target": "$407.33"
+  },
+  {
+    "ticker": "KRYS",
+    "price": "$260.95",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.24,
+    "target": "$314"
+  },
+  {
+    "ticker": "KTOS",
+    "price": "$67.31",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "target": "$118.35"
+  },
+  {
+    "ticker": "KYCCF",
+    "price": "$363.63",
+    "signal": "NO_DATA",
+    "deployment": "NO_DATA",
+    "target": "$550"
+  },
+  {
+    "ticker": "LAGR-B.ST",
+    "price": "200 SEK",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.55,
+    "target": "250 SEK"
+  },
+  {
+    "ticker": "LEU",
+    "price": "$183.21",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.15,
+    "target": "$278.12"
+  },
+  {
+    "ticker": "LIFCO-B.ST",
+    "price": "275 SEK",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.66,
+    "target": "356 SEK"
+  },
+  {
+    "ticker": "LLY",
+    "price": "$935.58",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 18.63,
+    "target": "$1209.21"
+  },
+  {
+    "ticker": "LMN.V",
+    "price": "C$23",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.59,
+    "target": "C$44.25"
+  },
+  {
+    "ticker": "LNG",
+    "price": "$281.16",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.19,
+    "target": "$298.86"
+  },
+  {
+    "ticker": "LRCX",
+    "price": "$218.44",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.13,
+    "target": "$274.90"
+  },
+  {
+    "ticker": "MA",
+    "price": "$493.44",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.84,
+    "target": "$657.11"
+  },
+  {
+    "ticker": "MCK",
+    "price": "$884.28",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.84,
+    "target": "$997.67"
+  },
+  {
+    "ticker": "MCO",
+    "price": "$440.79",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.7,
+    "target": "$546.70"
+  },
+  {
+    "ticker": "MDGL",
+    "price": "$546.89",
+    "signal": "FLAG FOR MANUAL REVIEW",
+    "deployment": "FLAG FOR MANUAL REVIEW",
+    "score": -5.33,
+    "target": "$668.57"
+  },
+  {
+    "ticker": "MEDP",
+    "price": "$498.34",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 2.16,
+    "target": "$500.08"
+  },
+  {
+    "ticker": "MELI",
+    "price": "$1715.52",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.13,
+    "target": "$2544.50"
+  },
+  {
+    "ticker": "META",
+    "price": "$574.46",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 4.15,
+    "target": "$860.25"
+  },
+  {
+    "ticker": "MKL",
+    "price": "$1898.98",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.88,
+    "target": "$2085.40"
+  },
+  {
+    "ticker": "MKTX",
+    "price": "$171.46",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.86,
+    "target": "$194.70"
+  },
+  {
+    "ticker": "MRVL",
+    "price": "$107.11",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.66,
+    "target": "$120.88"
+  },
+  {
+    "ticker": "MSFT",
+    "price": "$373.46",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 3.74,
+    "target": "$587.31"
+  },
+  {
+    "ticker": "MTRN",
+    "price": "$149.12",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.78,
+    "target": "$178.33"
+  },
+  {
+    "ticker": "MU",
+    "price": "$366.24",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "target": "$525.48"
+  },
+  {
+    "ticker": "NBIX",
+    "price": "$131.60",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.18,
+    "target": "$178.04"
+  },
+  {
+    "ticker": "NET",
+    "price": "$211.69",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 5.44,
+    "target": "$233.47"
+  },
+  {
+    "ticker": "NFLX",
+    "price": "$98.66",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.95,
+    "target": "$113.43"
+  },
+  {
+    "ticker": "NNI",
+    "price": "$129.45",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.43
+  },
+  {
+    "ticker": "NOW",
+    "price": "$102",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.99,
+    "target": "$185.04"
+  },
+  {
+    "ticker": "NU",
+    "price": "$14.15",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.44,
+    "target": "$20.04"
+  },
+  {
+    "ticker": "NVDA",
+    "price": "$177.39",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.56,
+    "target": "$268.22"
+  },
+  {
+    "ticker": "NVO",
+    "price": "$36.98",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.83,
+    "target": "$47.02"
+  },
+  {
+    "ticker": "OWL",
+    "price": "$8.57",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.62,
+    "target": "$14.93"
+  },
+  {
+    "ticker": "PANW",
+    "price": "$163.21",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.4,
+    "target": "$206.83"
+  },
+  {
+    "ticker": "PDD",
+    "price": "$100.87",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.41,
+    "target": "$142.42"
+  },
+  {
+    "ticker": "PLTR",
+    "price": "$148.46",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 8.2,
+    "target": "$185.25"
+  },
+  {
+    "ticker": "PSK.TO",
+    "price": "C$32.09",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 3.69,
+    "target": "C$33.64"
+  },
+  {
+    "ticker": "RBRK",
+    "price": "$51.44",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.98,
+    "target": "$86.71"
+  },
+  {
+    "ticker": "REGN",
+    "price": "$761.85",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.86,
+    "target": "$872.70"
+  },
+  {
+    "ticker": "RGLD",
+    "price": "$262.63",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.63,
+    "target": "$330.09"
+  },
+  {
+    "ticker": "ROP",
+    "price": "$357.88",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 1.81,
+    "target": "$460.38"
+  },
+  {
+    "ticker": "RTX",
+    "price": "$196.21",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.02,
+    "target": "$216.34"
+  },
+  {
+    "ticker": "RXRX",
+    "price": "$3.11",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "target": "$6.71"
+  },
+  {
+    "ticker": "SE",
+    "price": "$82.28",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.75,
+    "target": "$140.43"
+  },
+  {
+    "ticker": "SHOP",
+    "price": "$118.25",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 4.63,
+    "target": "$160.15"
+  },
+  {
+    "ticker": "SMSN.IL",
+    "price": "$3022",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 5.36,
+    "target": "$4500.00"
+  },
+  {
+    "ticker": "SNPS",
+    "price": "$395.95",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 4.02,
+    "target": "$537.75"
+  },
+  {
+    "ticker": "SPGI",
+    "price": "$431.16",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.99,
+    "target": "$538.52"
+  },
+  {
+    "ticker": "SQ",
+    "price": "$55.98",
+    "signal": "DEPLOY",
+    "deployment": "DEPLOY",
+    "score": 2.05,
+    "target": "$86.29"
+  },
+  {
+    "ticker": "TDG",
+    "price": "$1167",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.12,
+    "target": "$1567.86"
+  },
+  {
+    "ticker": "TFPM",
+    "price": "$35.81",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.48,
+    "target": "$45"
+  },
+  {
+    "ticker": "TMDX",
+    "price": "$100.69",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": 0.96,
+    "target": "$161.30"
+  },
+  {
+    "ticker": "TOI.V",
+    "price": "C$96.37",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.77,
+    "target": "C$143.87"
+  },
+  {
+    "ticker": "TPL",
+    "price": "$444.24",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 0.41,
+    "target": "$444.50"
+  },
+  {
+    "ticker": "TPZ.TO",
+    "price": "C$31.09",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.86,
+    "target": "C$34.08"
+  },
+  {
+    "ticker": "TSLA",
+    "price": "$360.59",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 25.1,
+    "target": "$417.08"
+  },
+  {
+    "ticker": "TSM",
+    "price": "$339.04",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.05,
+    "target": "$430.65"
+  },
+  {
+    "ticker": "TVK.TO",
+    "price": "C$130.16",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.96,
+    "target": "C$182.83"
+  },
+  {
+    "ticker": "TW",
+    "price": "$123.20",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 2.17,
+    "target": "$131.69"
+  },
+  {
+    "ticker": "UBER",
+    "price": "$71.84",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.99,
+    "target": "$103.58"
+  },
+  {
+    "ticker": "URI",
+    "price": "$732.09",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.76,
+    "target": "$985.89"
+  },
+  {
+    "ticker": "V",
+    "price": "$300.80",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.48,
+    "target": "$396.83"
+  },
+  {
+    "ticker": "VEEV",
+    "price": "$173.98",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.1,
+    "target": "$270.93"
+  },
+  {
+    "ticker": "VIT-B.ST",
+    "price": "242 SEK",
+    "signal": "PASS",
+    "deployment": "DEPLOY",
+    "score": 0.77,
+    "target": "448 SEK"
+  },
+  {
+    "ticker": "VKTX",
+    "price": "$34.80",
+    "signal": "NO_DATA",
+    "deployment": "NO_DATA",
+    "target": "$92.72"
+  },
+  {
+    "ticker": "VNOM",
+    "price": "$46.47",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 3.41,
+    "target": "$54.33"
+  },
+  {
+    "ticker": "VRSK",
+    "price": "$185.08",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1.99,
+    "target": "$229.53"
+  },
+  {
+    "ticker": "VRT",
+    "price": "$261.29",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 1.54,
+    "target": "$271.21"
+  },
+  {
+    "ticker": "VRTX",
+    "price": "$438.71",
+    "signal": "FAIL",
+    "deployment": "FAIL",
+    "score": 3.19,
+    "target": "$547.72"
+  },
+  {
+    "ticker": "WPM",
+    "price": "$135.56",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 2.13,
+    "target": "$188.90"
+  },
+  {
+    "ticker": "WSO",
+    "price": "$370.31",
+    "signal": "REJECTED",
+    "deployment": "REJECTED",
+    "score": null,
+    "target": "$415.42"
+  },
+  {
+    "ticker": "WST",
+    "price": "$254.80",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 4.08,
+    "target": "$316.69"
+  },
+  {
+    "ticker": "ZS",
+    "price": "$139.52",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 0.81,
+    "target": "$233.70"
+  },
+  {
+    "ticker": "ZTS",
+    "price": "$117.94",
+    "signal": "WAIT",
+    "deployment": "WAIT",
+    "score": 1,
+    "target": "$151"
+  }
+]
