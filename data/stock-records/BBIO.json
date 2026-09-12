@@ -6,6 +6,7 @@
 		"epsGrowth": "-10%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
+		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "9%",
@@ -33,6 +34,8 @@
 		"yahoo": "$100.64"
 	},
 	"targetPrice": "$100.64",
+	"bullCase": "Commercial launch of acoramidis in ATTR cardiomyopathy provides recurring blockbuster revenue stream alongside rare genetic disease pipeline catalysts.",
+	"bearCase": "Commercial competition from established incumbent therapies (tafamidis) and reimbursement approval delays constrain adoption ramp.",
 	"analystTargets": {
 		"low": 80,
 		"mean": 100.64,

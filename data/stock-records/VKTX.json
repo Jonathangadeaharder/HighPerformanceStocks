@@ -6,6 +6,7 @@
 		"epsGrowth": "10%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
+		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "1%",
@@ -29,6 +30,8 @@
 		"yahoo": "$92.72"
 	},
 	"targetPrice": "$92.72",
+	"bullCase": "Best-in-class efficacy profile for oral and subcutaneous dual GLP-1/GIP agonist VK2735 positions Viking for obesity market share or strategic acquisition.",
+	"bearCase": "Clinical trial execution delays, heavy trial financing dilution, or aggressive counter-moves from mega-cap obesity incumbents (LLY, NVO).",
 	"analystTargets": {
 		"low": 35,
 		"mean": 92.72,

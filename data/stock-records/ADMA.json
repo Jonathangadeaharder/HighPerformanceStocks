@@ -37,6 +37,8 @@
 		"yahoo": "$23.50"
 	},
 	"targetPrice": "$23.50",
+	"bullCase": "Accelerating commercial adoption of proprietary plasma biologics (BIVIGAM, ASCENIV) driving operating leverage and margin expansion toward sustainable cash flow inflection.",
+	"bearCase": "Plasma collection supply constraints, donor fee inflation, or manufacturing batch yields impair gross margins.",
 	"analystTargets": {
 		"low": 17,
 		"mean": 23.5,

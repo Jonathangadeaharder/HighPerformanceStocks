@@ -6,6 +6,7 @@
 		"epsGrowth": "-10%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
+		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "-3%",
@@ -34,6 +35,8 @@
 		"yahoo": "$668.57"
 	},
 	"targetPrice": "$668.57",
+	"bullCase": "First-mover advantage with Rezdiffra in massive underserved MASH/NASH liver disease establishes standard-of-care with expanding payer reimbursement.",
+	"bearCase": "Slow physician adoption of non-invasive biomarker testing, prior authorization friction, or upcoming Phase 3 competitors restrict market share.",
 	"analystTargets": {
 		"low": 529,
 		"mean": 668.57,

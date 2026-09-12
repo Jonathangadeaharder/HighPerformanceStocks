@@ -53,11 +53,11 @@
 			"stabilization": {
 				"pass": true,
 				"price": 4194.31,
-				"price6mAgo": 216.79,
-				"price1mAgo": 184.53,
-				"low3m": 150.62,
-				"return6m": 1834.7,
-				"return1m": 2173,
+				"price6mAgo": 5419.75,
+				"price1mAgo": 4613.25,
+				"low3m": 3765.5,
+				"return6m": -22.6,
+				"return1m": -9.1,
 				"near3mLow": false
 			},
 			"revisions": {

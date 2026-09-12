@@ -6,6 +6,7 @@
 		"epsGrowth": "248%",
 		"epsGrowthSource": "auto",
 		"basis": "Non-GAAP EPS",
+		"ttmEPS": null,
 		"dividendYield": "0%",
 		"scenarios": {
 			"bear": "40%",
@@ -34,6 +35,8 @@
 		"yahoo": "$34.75"
 	},
 	"targetPrice": "$34.75",
+	"bullCase": "Rapid commercial uptake of ZORYVE (roflumilast) topical cream and foam across plaque psoriasis, seborrheic dermatitis, and atopic dermatitis drives operating leverage.",
+	"bearCase": "Payer formulary access friction, gross-to-net discounting pressure, or competing topical therapeutics constrain peak penetration.",
 	"analystTargets": {
 		"low": 33,
 		"mean": 34.75,
